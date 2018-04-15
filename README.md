@@ -18,7 +18,7 @@ Using this repo requires having [Docker](https://store.docker.com/search?type=ed
 
 Clone the repository to a new directory:
 
-    $ git clone git@github.com:helrond/nebula.git new_project
+    $ git clone git@github.com:RockefellerArchiveCenter/nebula.git new_project
 
 Move to the root directory of the repository:
 
