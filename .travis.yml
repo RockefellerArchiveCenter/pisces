@@ -12,5 +12,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - cp pleiades/config.py.example pleiades/config.py
   - docker-compose up -d
+  - sleep 20s
+install: true
 script:
   - docker-compose exec web python manage.py test
