@@ -1,5 +1,5 @@
 # nebula
-A toolkit for [Project Electron](http://projectelectron.rockarch.org/) microservices, built with Django 2.0/MySQL/Python 3.6.
+A toolkit for [Project Electron](http://projectelectron.rockarch.org/) microservices, built with Django 2.0/Postgres/Python 3.6.
 
 ## What's here
 
@@ -8,7 +8,7 @@ A toolkit for [Project Electron](http://projectelectron.rockarch.org/) microserv
 - `docker-compose.yml` - Docker Compose configuration
 - `entrypoint.sh` - A script which runs after the container starts up. If you want to add default objects or users, this is a good place to do it.
 - `requirements.txt` - Python package requirements
-- `wait-for-it.sh` - Makes the Django server wait until the MySQL service is up before attempting to start.
+- `wait-for-it.sh` - Makes the Django server wait until the Postgres service is up before attempting to start.
 
 ## Requirements
 

@@ -1,4 +1,4 @@
-Django==2.0
+Django==2.0.10
 mysqlclient
 djangorestframework
 djangorestframework-jwt
@@ -6,6 +6,6 @@ coreapi
 django_cron
 health-check
 ArchivesSnake
-jq
 structlog
 uuid
+psycopg2-binary
