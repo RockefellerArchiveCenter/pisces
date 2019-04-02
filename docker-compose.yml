@@ -7,8 +7,7 @@ services:
       - dbvolume:/var/lib/postgresql/data/
   web:
     build: .
-    environment:
-    # entrypoint: /code/entrypoint.sh
+    entrypoint: /code/entrypoint.sh
     volumes:
       - .:/code
     ports:
