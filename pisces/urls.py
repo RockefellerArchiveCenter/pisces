@@ -14,8 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import url
-from django.urls import include, path
+from django.urls import include, path, re_path
 from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -36,8 +35,8 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path(r'^', include(router.urls)),
     path('admin/', admin.site.urls),
-    url(r'^status/', include('health_check.api.urls')),
-    url(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
+    path('status/', include('health_check.api.urls')),
+    re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
+    path('', include(router.urls)),
 ]

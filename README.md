@@ -41,7 +41,7 @@ pisces has two main services, both of which are exposed via HTTP endpoints (see 
 
 | Method | URL | Parameters | Response  | Behavior  |
 |--------|-----|---|---|---|
-|POST|/|`source`, `identifier`|201|Creates an identifier object as well as an external identifier|
+|POST|/|`source`, `identifier`|200|Creates an identifier object as well as an external identifier|
 |GET|/| |200|Returns a list of identifiers|
 |GET|/{id}| |200|Returns data about an individual identifier|
 |PUT|/{id}|`source`, `identifier`|200|Updates an existing identifier|
