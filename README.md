@@ -16,7 +16,7 @@ Install [Docker](https://store.docker.com/search?type=edition&offering=community
     $ cd pisces
     $ docker-compose up
 
-Once the application starts successfully, you should be able to access the application in your browser at `http://localhost:8005`
+Once the application starts successfully, you should be able to access the application in your browser at `http://localhost:8000`
 
 When you're done, shut down docker-compose
 
