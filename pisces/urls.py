@@ -18,10 +18,10 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from identifiers.views import IdentifierViewSet
+# from identifiers.views import IdentifierViewSet
 
 router = routers.DefaultRouter()
-router.register(r'', IdentifierViewSet, 'identifier')
+# router.register(r'', IdentifierViewSet, 'identifier')
 schema_view = get_schema_view(
    openapi.Info(
       title="Pisces API",
@@ -38,5 +38,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
-    path('', include(router.urls)),
+    # path('', include(router.urls)),
 ]

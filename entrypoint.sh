@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Apply database migrations
-echo "Apply database migrations"
 ./wait-for-it.sh db:5432 -- python manage.py migrate
 
 if [ ! -f pisces/config.py ]; then
