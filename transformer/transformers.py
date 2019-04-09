@@ -24,9 +24,22 @@ class ArchivesSpaceDataTransformer:
         for cls in [(Agent, 'agent'), (Collection, 'collection'), (Object, 'object'), (Term, 'term')]:
             for obj in cls[0].objects.filter(modified__lte=self.last_run):
                 self.obj = obj
-                self.source_data = SourceData.objects.get(cls[1]=self.obj, source=SourceData.ARCHIVESSPACE)
+                self.source_data = SourceData.objects.get(cls[1]=self.obj, source=SourceData.ARCHIVESSPACE).data
                 getattr(self, "transform_to_{}".format(self.destination_type))()
         TransformRun.objects.create(run_time=self.run_time)
+
+    def agents(self, agents):
+        agent_set = []
+        creator_set = []
+        for agent in agents:
+            if agent['role'] != 'creator':
+                agent_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
+            else:
+                creator_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
+        self.object.agents.clear()
+        self.objects.agents.set(agent_set)
+        self.object.creators.clear()
+        self.object.creators.set(creator_set)
 
     def dates(self, dates, relation_key):
         for date in dates:
@@ -124,11 +137,11 @@ class ArchivesSpaceDataTransformer:
             self.notes(self.source_data.get('notes'), 'collection')
             self.rights_statements(self.source_data.get('rights_statements'), 'collection')
             self.terms(self.source_data.get('subjects'), 'collection')
+            self.agents(self.source_data.get('linked_agents'))
+            self.creators(self.source_data.get('linked_agents'))
         self.obj.save()
 
         # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
-        # "creators": self.creators(self.source_data.get('linked_agents')),
-        # "agents": self.agents(self.source_data.get('linked_agents')),
         # "parents": self.parents(self.source_data),
         # "members": self.collection_members(self.source_data)}
 
@@ -142,10 +155,10 @@ class ArchivesSpaceDataTransformer:
             self.rights_statements(self.source_data.get('rights_statements'), 'object')
             self.languages(self.source_data.get('language'))
             self.terms(self.source_data.get('subjects'))
+            self.agents(self.source_data.get('linked_agents'))
         self.obj.save()
 
         # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
-        # "agents": self.agents(self.source_data.get('linked_agents')),
         # "parents": self.parents(self.source_data),
         # "members": self.object_members(self.source_data)}
 
