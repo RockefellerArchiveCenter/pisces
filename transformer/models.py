@@ -3,7 +3,17 @@ from django.contrib.postgres.fields import JSONField
 
 
 class TransformRun(models.Model):
-    run_time = models.DateTimeField(default=0)
+    RUNNING = 0
+    FINISHED = 1
+    ERRORED = 2
+    STATUS_CHOICES = (
+        (RUNNING, 'Running'),
+        (FINISHED, 'Finished'),
+        (ERRORED, 'Errored'),
+    )
+    start_time = models.DateTimeField(auto_now_add=True)
+    end_time = models.DateTimeField()
+    status = models.CharField(max_length=100, choices=STATUS_CHOICES)
 
 
 class Language(models.Model):
