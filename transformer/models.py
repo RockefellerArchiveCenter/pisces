@@ -20,6 +20,8 @@ class Agent(models.Model):
     )
     title = models.CharField(max_length=255, null=True, blank=True)
     type = models.CharField(max_length=255, choices=AGENT_TYPE_CHOICES, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class Term(models.Model):
@@ -36,6 +38,8 @@ class Term(models.Model):
     )
     title = models.CharField(max_length=255, null=True, blank=True)
     type = models.CharField(max_length=255, choices=TERM_TYPE_CHOICES, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class Collection(models.Model):
@@ -59,6 +63,8 @@ class Collection(models.Model):
     agents = models.ManyToManyField(Agent, related_name='agent_collections')
     terms = models.ManyToManyField(Term, related_name='term_collections')
     parents = models.ManyToManyField('self')
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class Object(models.Model):
@@ -66,6 +72,8 @@ class Object(models.Model):
     terms = models.ManyToManyField(Term, related_name='term_objects')
     languages = models.ManyToManyField(Language, related_name='language_objects')
     parents = models.ManyToManyField(Collection)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class RightsStatement(models.Model):
@@ -89,6 +97,8 @@ class RightsStatement(models.Model):
     jurisdiction = models.CharField(max_length=255, blank=True, null=True)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
 
 
 class RightsGranted(models.Model):
@@ -221,6 +231,8 @@ class Identifier(models.Model):
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
@@ -240,6 +252,8 @@ class SourceData(models.Model):
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     data = JSONField()
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
