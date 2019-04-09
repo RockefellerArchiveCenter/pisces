@@ -2,6 +2,10 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
+class TransformRun(models.Model):
+    run_time = models.DateTimeField(default=0)
+
+
 class Language(models.Model):
     expression = models.CharField(max_length=255)
     identifier = models.CharField(max_length=255)
