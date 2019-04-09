@@ -1,5 +1,6 @@
 import json
 import os
+from pycountry import languages
 
 from django.utils import timezone
 
@@ -24,53 +25,8 @@ class ArchivesSpaceDataTransformer:
             for obj in cls[0].objects.filter(modified__lte=self.last_run):
                 self.obj = obj
                 self.source_data = SourceData.objects.get(cls[1]=self.obj, source=SourceData.ARCHIVESSPACE)
-                getattr(self, "transform_to_{}".format(self.destination_type))(self.obj)
+                getattr(self, "transform_to_{}".format(self.destination_type))()
         TransformRun.objects.create(run_time=self.run_time)
-
-    def find_in_dict(dict, val):
-        reverse_linked_q = list()
-        reverse_linked_q.append((list(), dict))
-        while reverse_linked_q:
-            this_key_chain, this_v = reverse_linked_q.pop()
-            if this_v == val:
-                return this_key_chain
-            try:
-                items = this_v.items()
-            except AttributeError:
-                continue
-            for k, v in items:
-                reverse_linked_q.append((this_key_chain + [k], v))
-        raise KeyError
-
-    def id_from_as_uri(self, uri):
-        return int(uri.split('/',)[-1])
-
-    def agents(self, source_agents):
-        agents = []
-        for agent in source_agents: # TODO: REVIEW MAPPING
-            if agent['role'] != 'creator':
-                new_agent = {"type": self.agent_type(agent),
-                             "role": agent.get('role'),
-                             "relator": agent.get('relator'),
-                             "ref": self.agent_ref(agent)}
-                agents.append(new_agent)
-        return agents
-
-    def agent_ref(self, agent):
-        path = [t[2] for t in OBJECT_MAP if t[0] == agent.get('jsonmodel_type')][0] # TODO: this is wrong
-        return "/{}/{}".format(path, self.id_from_as_uri(agent.get('uri'))) # TODO: replace this with a call to identifier service
-
-    def agent_type(self, agent):
-        return [t[1] for t in OBJECT_MAP if t[0] == agent.get('jsonmodel_type')][0] # TODO: this is wrong
-
-    def creators(self, source_creators):
-        creators = []
-        for creator in source_creators: # TODO: review mapping
-            if creator['role'] == 'creator':
-                new_creator = {"type": self.agent_type(agent),
-                               "ref": self.agent_ref(agent)}
-                creators.append(new_creator)
-        return creators
 
     def dates(self, dates, relation_key):
         for date in dates:
@@ -94,12 +50,13 @@ class ArchivesSpaceDataTransformer:
                                   source=source,
                                   relation_key=self.obj)
 
-    def languages(self, languages, relation_key):
-        for language in languages:
-            # TODO: check if in DB first
-            Language.objects.create(expression="", # TODO: write function
-                                    identifier=language, # TODO: write function
-                                    relation_key=self.obj)
+    def languages(self, lang):
+        lang_data = languages.get(alpha_3=lang)
+        l = (Language.objects.get(identifier=lang)
+             if Language.objects.filter(identifier=l, expression=lang_data.name).exists()
+             else Language.objects.create(expression=lang_data.name, identifier=l))
+        self.object.languages.clear()
+        self.object.languages.add(l)
 
     def notes(self, notes, relation_key):
         for note in notes:
@@ -108,45 +65,57 @@ class ArchivesSpaceDataTransformer:
                                 content=note.get('content')
                                 relation_key=self.obj)
 
-    def rights_statements(self, rights_statements, relation_key): # TODO: figure out mapping
+    def rights_statements(self, rights_statements, relation_key):
         for statement in rights_statements:
             new_rights = RightsStatement.objects.create(
-                relation_key=self.obj
-            )
-            for rights_granted in statement.get(rights_granted):
+                determinationDate=statement.get('determination_date'),
+                rightsType=statement.get('rights_type'),
+                dateStart=statement.get('start_date'),
+                dateEnd=statement.get('end_date'),
+                copyrightStatus=statement.get('status'),
+                otherBasis=statement.get('other_rights_basis'),
+                jurisdiction=statement.get('jurisdiction'),
+                relation_key=self.obj)
+            for rights_granted in statement.get('acts'):
                 RightsGranted.objects.create(
-                    rights_statement=new_rights
-                )
+                    rights_statement=new_rights,
+                    act=rights_granted.get('act_type')
+                    dateStart=rights_granted.get('start_date')
+                    dateEnd=rights_granted.get('end_date')
+                    restriction=rights_granted.get('restriction'))
 
-    def terms(self, terms, relation_key):
-        for term in terms:
-            # TODO: check if in DB first
-            Terms.objects.create(title=term.title,
-                                 ref=term.get('ref'), # TODO: this is not right
-                                 relation_key=self.obj)
+    def terms(self, terms):
+        term_set = []
+        for t in terms:
+            term_set.append(Term.objects.get(title=t.title))
+        self.object.terms.clear()
+        self.object.terms.set(term_set)
 
-    def transform_to_agent(self, obj, agent_type):
-        obj.title = self.source_data.get('display_name').get('sort_name')
+    def transform_to_agent(self, agent_type):
+        self.obj.title = self.source_data.get('display_name').get('sort_name')
+        self.obj.type = getattr(Agent, agent_type.upper())
         try:
             self.identifiers('pisces', 'agent')
             self.identifiers(self.source_data['display_name'].get('rules', 'local'), 'agent', self.source_data['display_name'].get('authority_id'))
             self.notes(self.source_data.get('notes'), 'agent')
+        self.obj.save()
 
+        # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
         # "collections": self.agent_collections(self.source_data),
         # "objects": self.agent_objects(self.source_data)}
 
-    def transform_to_family(self, obj):
-        return self.transform_to_agent(obj, 'family')
+    def transform_to_family(self):
+        self.transform_to_agent('family')
 
-    def transform_to_organization(self, obj):
-        return self.transform_to_agent(obj, 'organization')
+    def transform_to_organization(self):
+        self.transform_to_agent('organization')
 
-    def transform_to_person(self, obj):
-        return self.transform_to_agent(obj, 'person')
+    def transform_to_person(self):
+        self.transform_to_agent('person')
 
-    def transform_to_collection(self, obj):
-        obj.title = self.source_data.get('title')
-        obj.level = self.source_data.get('level')
+    def transform_to_collection(self):
+        self.obj.title = self.source_data.get('title')
+        self.obj.level = self.source_data.get('level')
         try:
             self.identifiers('pisces', 'collection')
             self.dates(self.source_data.get('dates'), 'collection')
@@ -155,36 +124,38 @@ class ArchivesSpaceDataTransformer:
             self.notes(self.source_data.get('notes'), 'collection')
             self.rights_statements(self.source_data.get('rights_statements'), 'collection')
             self.terms(self.source_data.get('subjects'), 'collection')
+        self.obj.save()
 
-        obj.save()
-
+        # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
         # "creators": self.creators(self.source_data.get('linked_agents')),
         # "agents": self.agents(self.source_data.get('linked_agents')),
         # "parents": self.parents(self.source_data),
         # "members": self.collection_members(self.source_data)}
 
-    def transform_to_object(self, obj):
-        obj.title = self.source_data.get('title')
+    def transform_to_object(self):
+        self.obj.title = self.source_data.get('title')
         try:
             self.identifiers('pisces', 'object')
             self.dates(self.source_data.get('dates'), 'object')
             self.extents(self.source_data.get('extents'), 'object')
-            self.languages(self.source_data.get('language'), 'object')
             self.notes(self.source_data.get('notes'), 'object')
             self.rights_statements(self.source_data.get('rights_statements'), 'object')
-            self.terms(self.source_data.get('subjects'), 'object')
+            self.languages(self.source_data.get('language'))
+            self.terms(self.source_data.get('subjects'))
+        self.obj.save()
 
-        obj.save()
-
+        # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
         # "agents": self.agents(self.source_data.get('linked_agents')),
         # "parents": self.parents(self.source_data),
         # "members": self.object_members(self.source_data)}
 
-    def transform_to_term(self, obj):
-        obj.title = self.source_data.get('title')
+    def transform_to_term(self):
+        self.obj.title = self.source_data.get('title')
         try:
             self.identifiers('pisces', 'term')
             self.identifiers(self.source_data.get('source'), 'term', self.source_data.get('authority_id'))
+        self.obj.save()
 
+        # CAN WE ASSUME THESE RELATIONSHIPS WILL EXIST ALREADY?
         # "collections": self.term_collections(self.source_data),
         # "objects": self.term_objects(self.source_data)}
