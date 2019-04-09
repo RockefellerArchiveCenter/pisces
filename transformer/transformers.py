@@ -34,10 +34,14 @@ class ArchivesSpaceDataTransformer:
         for agent in agents:
             if agent['role'] != 'creator':
                 agent_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
-            else:
-                creator_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
         self.object.agents.clear()
         self.objects.agents.set(agent_set)
+
+    def creators(self, agents):
+        creator_set = []
+        for agent in agents:
+            if agent['role'] == 'creator':
+                creator_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
         self.object.creators.clear()
         self.object.creators.set(creator_set)
 
