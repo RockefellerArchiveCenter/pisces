@@ -1,26 +1,23 @@
-
-
 # Add data fetchers here
 
 #LOGIC
-#Get all archival objects updated in the last hour
-    #For each updated archival object
-        #Open and read the JSON
-            #With JSON Open
-                #Iterate through all linked agents and append their ids to a list
-                    #Check to see if id exists in database
-                        #if exists
-                            #do nothing
-                        #if doesn't exists
-                            #get agent JSON based on its ID
-                            #save JSON data for transformation and placement into DB
-                #Iterate through all linked terms and append their ids to a list
-                    #Check to see if id exists in database
-                        #if exists
-                            #do nothing
-                        #if doesn't exists
-                            #get term JSON based on its ID
-                            #save JSON data for transformation and placement into DB
+#Get all archival objects, resources, agents, terms updated in the last hour
+    #For each updated archival object, agent, term, resource
+        #set term.json to a variable
+        #get ref
+            #Check to see if id exists in database
+                #if exists
+                    #get object from database
+                    #set object to new object variable
+                    #get source data
+                    #set source data to nobj.sourcedata_set().filter(source) - this is checking for a matching foreign key in the source data
+                    #set sd.data to term.json (set the source data section to the updated exported json)
+                    #sd.save() save the updated data
+                #if doesn't exists
+                    #create the object
+                    #create Identifier(object=ob)
+                    #create SourceData(object=ob)
+#Separate steps for AO. Tackle in future.
                 #Find ref for the resource (this should be the same as the tree id)
                 #Use that ref to grab the tree JSON
                 #Store the tree data
