@@ -12,7 +12,7 @@ class TransformRun(models.Model):
         (ERRORED, 'Errored'),
     )
     start_time = models.DateTimeField(auto_now_add=True)
-    end_time = models.DateTimeField()
+    end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
 
 
@@ -82,6 +82,7 @@ class Collection(models.Model):
 
 
 class Object(models.Model):
+    title = models.CharField(max_length=16384, null=True, blank=True)
     agents = models.ManyToManyField(Agent, related_name='agent_objects')
     terms = models.ManyToManyField(Term, related_name='term_objects')
     languages = models.ManyToManyField(Language, related_name='language_objects')
@@ -102,9 +103,9 @@ class RightsStatement(models.Model):
         ('public domain', 'public domain'),
         ('unknown', 'unknown'),
     )
-    determinationDate = models.DateTimeField()
+    determinationDate = models.DateTimeField(null=True, blank=True)
     rightsType = models.CharField(max_length=255, choices=RIGHTS_TYPE_CHOICES)
-    dateStart = models.DateTimeField()
+    dateStart = models.DateTimeField(null=True, blank=True)
     dateEnd = models.DateTimeField(null=True, blank=True)
     copyrightStatus = models.CharField(max_length=255, choices=COPYRIGHT_STATUSES, blank=True, null=True)
     otherBasis = models.CharField(max_length=255, blank=True, null=True)
@@ -154,10 +155,13 @@ class Date(models.Model):
         ('usage', 'Usage'),
         ('other', 'Other'),
     )
-    begin = models.DateTimeField()
-    end = models.DateTimeField()
+    begin = models.DateTimeField(blank=True, null=True)
+    end = models.DateTimeField(blank=True, null=True)
     expression = models.CharField(max_length=255)
     label = models.CharField(max_length=100, choices=DATE_TYPE_CHOICES)
+    collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
+    object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
+    agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
 
 
 class Extent(models.Model):
@@ -237,11 +241,13 @@ class Identifier(models.Model):
     ARCHIVEMATICA = 1
     FEDORA = 2
     ARCHIVESSPACE = 3
+    PISCES = 4
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
-        (ARCHIVESSPACE, 'ArchivesSpace')
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (PISCES, 'Pisces')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
@@ -257,7 +263,7 @@ class SourceData(models.Model):
     AURORA = 0
     ARCHIVEMATICA = 1
     FEDORA = 2
-    ARCHIVESSPACE = 4
+    ARCHIVESSPACE = 3
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
