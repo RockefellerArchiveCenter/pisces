@@ -25,20 +25,40 @@ class ArchivesSpaceDataTransformer:
         self.current_run.end_time = timezone.now()
         self.current_run.save()
 
-    def parse_date(self, date_string):
+    def datetime_from_string(self, date_string):
         if date_string:
             try:
                 return timezone.make_aware(parser.parse(date_string))
             except Exception:
                 return None
-        return None
 
-    def parse_date_expression(self, date):
-        if not date.get('expression'):
+    def num_from_string(self, string):
+        try:
+            return int(string)
+        except ValueError:
+            try:
+                return float(string)
+            except ValueError:
+                return False
+
+    def parse_date(self, date):
+        # TODO: mapping for different date types
+        # TODO: normalize?
+        begin = self.datetime_from_string(date.get('begin'))
+        end = self.datetime_from_string(date.get('end'))
+        expression = date.get('expression')
+        if not expression:
             if date.get('end'):
-                return "{}-{}".format(date.get('begin'), date.get('end'))
-            return date.get('begin')
-        return date.get('expression')
+                expression = "{}-{}".format(date.get('begin'), date.get('end'))
+            expression = date.get('begin')
+        return (begin, end, expression)
+
+    def parse_note(self, note):
+        # TODO: mapping for different note types
+        type = note.get('type', note.get('jsonmodel_type').split('note_',1)[1])
+        title = note.get('label', "THIS DIDN'T WORK")
+        content = note.get('content', "THIS DIDN'T WORK")
+        return (type, title, content)
 
     def agents(self, agents):
         agent_set = []
@@ -60,26 +80,20 @@ class ArchivesSpaceDataTransformer:
         self.obj.creators.set(creator_set)
 
     def dates(self, dates, relation_key):
-        self.obj.date_set.clear()
+        Date.objects.filter(**{relation_key: self.obj}).delete()
         for date in dates:
-            # TODO: mapping for different date types
-            # TODO: normalize?
-            begin = self.parse_date(date.get('begin'))
-            end = self.parse_date(date.get('end'))
-            expression = self.parse_date_expression(date)
-            Date.objects.create(**{"begin": begin,
-                                   "end": end,
-                                   "expression": expression,
+            parsed = self.parse_date(date)
+            Date.objects.create(**{"begin": parsed[0],
+                                   "end": parsed[1],
+                                   "expression": parsed[2],
                                    "label": date.get('label'),
                                    relation_key: self.obj})
 
     def extents(self, extents, relation_key):
-        self.obj.extent_set.clear()
+        Extent.objects.filter(**{relation_key: self.obj}).delete()
         for extent in extents:
-            # TODO: handling things that are not numbers?? WTF??
-            # this just eats everything because these are strings...
-            if isinstance(extent.get('number'), (float, int)):
-                Extent.objects.create(**{"value": extent.get('number'),
+            if self.num_from_string(extent.get('number')):
+                Extent.objects.create(**{"value": self.num_from_string(extent.get('number')),
                                          "type": extent.get('extent_type'),
                                          relation_key: self.obj})
 
@@ -97,35 +111,36 @@ class ArchivesSpaceDataTransformer:
 
     def languages(self, lang):
         lang_data = languages.get(alpha_3=lang)
-        l = (Language.objects.get(identifier=lang)
-             if Language.objects.filter(identifier=lang, expression=lang_data.name).exists()
-             else Language.objects.create(expression=lang_data.name, identifier=lang))
+        new_lang = (Language.objects.get(identifier=lang)
+                    if Language.objects.filter(identifier=lang, expression=lang_data.name).exists()
+                    else Language.objects.create(expression=lang_data.name, identifier=lang))
         self.obj.languages.clear()
-        self.obj.languages.add(l)
+        self.obj.languages.set([new_lang])
 
     def notes(self, notes, relation_key):
-        self.obj.notes_set.clear()
+        Note.objects.filter(**{relation_key: self.obj}).delete()
         for note in notes:
-            # TODO: mapping for different note types
-            Note.objects.create(**{"type": note.get('type', note.get('jsonmodel_type').split('note_',1)[1]),
-                                   "title": note.get('label', "THIS DIDN'T WORK"),
-                                   "content": note.get('content', "THIS DIDN'T WORK"),
+            parsed = self.parse_note(note)
+            Note.objects.create(**{"type": parsed[0],
+                                   "title": parsed[1],
+                                   "content": parsed[2],
                                    relation_key: self.obj})
 
     def rights_statements(self, rights_statements, relation_key):
-        self.obj.rights_statement_set.clear()
+        RightsStatement.objects.filter(**{relation_key: self.obj}).delete()
         for statement in rights_statements:
             new_rights = RightsStatement.objects.create(**{
                 "determinationDate": statement.get('determination_date'),
                 "rightsType": statement.get('rights_type'),
-                "dateStart": self.parse_date(statement.get('start_date')),
-                "dateEnd": self.parse_date(statement.get('end_date')),
+                "dateStart": self.datetime_from_string(statement.get('start_date')),
+                "dateEnd": self.datetime_from_string(statement.get('end_date')),
                 "copyrightStatus": statement.get('status'),
                 "otherBasis": statement.get('other_rights_basis'),
                 "jurisdiction": statement.get('jurisdiction'),
                 relation_key: self.obj})
             for rights_granted in statement.get('acts'):
-                statement.rights_granted_set.clear()
+                for r in statement.rights_granted_set.all():
+                    r.delete()
                 RightsGranted.objects.create(
                     rights_statement=new_rights,
                     act=rights_granted.get('act_type'),
@@ -135,9 +150,9 @@ class ArchivesSpaceDataTransformer:
 
     def terms(self, terms):
         term_set = []
-        for t in terms:
-            if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=t.get('ref')).exists(): # TODO: remove, for testing only!
-                term_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=t.get('ref')).term)
+        for term in terms:
+            if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists(): # TODO: remove, for testing only!
+                term_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).term)
         self.obj.terms.clear()
         self.obj.terms.set(term_set)
 
