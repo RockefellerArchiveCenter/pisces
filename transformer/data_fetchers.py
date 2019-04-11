@@ -18,12 +18,18 @@ aspace = ASpace(
               )
 repo = aspace.repositories(2)
 
-terms = ['77', '123']
+terms = []
+
+def check_subjects(self, archival=False, library=False, updated=0):
+        for s in self.repo.subjects.with_params(all_ids=True, modified_since=updated):
+            if s.publish:
+                terms.append(s['ref'])
+            else:
+                pass
 
 #terms function
 for term in terms:
     term_json = aspace.subjects(term).json()
-    print(term_json)
     if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists():
         new_object = term.objects.get('ref')
         SourceData.objects.get('ref') #not exactly sure what to do here. Don't know what to pass in the get statement
