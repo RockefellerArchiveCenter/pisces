@@ -14,6 +14,7 @@ class ArchivesSpaceDataTransformer:
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED).order_by('-start_time')[0].start_time
                          if TransformRun.objects.filter(status=TransformRun.FINISHED).exists() else None)
         self.current_run = TransformRun.objects.create(status=TransformRun.RUNNING)
+        self.missing = []
 
     def run(self):
         for cls in [(Agent, 'agent'), (Collection, 'collection'), (Object, 'object'), (Term, 'term')]:
@@ -24,6 +25,7 @@ class ArchivesSpaceDataTransformer:
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
+        print(set(self.missing))
 
     def datetime_from_string(self, date_string):
         if date_string:
@@ -31,6 +33,7 @@ class ArchivesSpaceDataTransformer:
                 return timezone.make_aware(parser.parse(date_string))
             except Exception:
                 return None
+        return None
 
     def num_from_string(self, string):
         try:
@@ -42,8 +45,6 @@ class ArchivesSpaceDataTransformer:
                 return False
 
     def parse_date(self, date):
-        # TODO: mapping for different date types
-        # TODO: normalize?
         begin = self.datetime_from_string(date.get('begin'))
         end = self.datetime_from_string(date.get('end'))
         expression = date.get('expression')
@@ -56,7 +57,7 @@ class ArchivesSpaceDataTransformer:
     def parse_note(self, note):
         # TODO: mapping for different note types
         type = note.get('type', note.get('jsonmodel_type').split('note_',1)[1])
-        title = note.get('label', "THIS DIDN'T WORK")
+        title = note.get('label', [t[1] for t in Note.NOTE_TYPE_CHOICES if t[0] == type][0])
         content = note.get('content', "THIS DIDN'T WORK")
         return (type, title, content)
 
@@ -67,6 +68,8 @@ class ArchivesSpaceDataTransformer:
             if agent['role'] != 'creator':
                 if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).exists(): # TODO: remove this, for testing purposes only!
                     agent_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
+                else:
+                    self.missing.append(agent.get('ref'))
         self.obj.agents.clear()
         self.obj.agents.set(agent_set)
 
@@ -76,6 +79,8 @@ class ArchivesSpaceDataTransformer:
             if agent['role'] == 'creator':
                 if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).exists(): # TODO: remove, for testing purposes only!!
                     creator_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
+                else:
+                    self.missing.append(agent.get('ref'))
         self.obj.creators.clear()
         self.obj.creators.set(creator_set)
 
@@ -117,14 +122,22 @@ class ArchivesSpaceDataTransformer:
         self.obj.languages.clear()
         self.obj.languages.set([new_lang])
 
-    def notes(self, notes, relation_key):
-        Note.objects.filter(**{relation_key: self.obj}).delete()
+    def notes(self, notes, relation_key, object=None):
+        object = object if object else self.obj
+        Note.objects.filter(**{relation_key: object}).delete()
         for note in notes:
             parsed = self.parse_note(note)
             Note.objects.create(**{"type": parsed[0],
                                    "title": parsed[1],
                                    "content": parsed[2],
-                                   relation_key: self.obj})
+                                   relation_key: object})
+
+    def parents(self, parent):
+        if not Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=parent.get('ref')).exists():
+            # TODO: finish when objects are properly created as Collections or Objects
+            # parent_collection = Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=parent.get('ref')).collection
+            # self.obj.parents.add(parent_collection)
+            self.missing.append(parent.get('ref'))
 
     def rights_statements(self, rights_statements, relation_key):
         RightsStatement.objects.filter(**{relation_key: self.obj}).delete()
@@ -138,26 +151,27 @@ class ArchivesSpaceDataTransformer:
                 "otherBasis": statement.get('other_rights_basis'),
                 "jurisdiction": statement.get('jurisdiction'),
                 relation_key: self.obj})
+            self.notes(self.source_data.get('notes'), 'rights_statement', new_rights)
             for rights_granted in statement.get('acts'):
-                for r in statement.rights_granted_set.all():
-                    r.delete()
-                RightsGranted.objects.create(
+                new_grant = RightsGranted.objects.create(
                     rights_statement=new_rights,
                     act=rights_granted.get('act_type'),
                     dateStart=self.parse_date(rights_granted.get('start_date')),
                     dateEnd=self.parse_date(rights_granted.get('end_date')),
                     restriction=rights_granted.get('restriction'))
+                self.notes(self.source_data.get('notes'), 'rights_granted', new_grant)
 
     def terms(self, terms):
         term_set = []
         for term in terms:
             if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists(): # TODO: remove, for testing only!
                 term_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).term)
-        self.obj.terms.clear()
+            else:
+                self.missing.append(term.get('ref'))
+        self.obj.terms.clear()  # This could be problematic
         self.obj.terms.set(term_set)
 
     def transform_to_agent(self):
-        print("Agent", self.source_data.get('uri'))
         self.obj.title = self.source_data.get('display_name').get('sort_name')
         self.obj.type = self.source_data.get('jsonmodel_type')
         try:
@@ -175,7 +189,6 @@ class ArchivesSpaceDataTransformer:
         # "objects": self.agent_objects(self.source_data)}
 
     def transform_to_collection(self):
-        print("Collection", self.source_data.get('uri'))
         self.obj.title = self.source_data.get('title')
         self.obj.level = self.source_data.get('level')
         try:
@@ -188,6 +201,11 @@ class ArchivesSpaceDataTransformer:
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
             self.creators(self.source_data.get('linked_agents'))
+            if self.source_data.get('jsonmodel_type') == 'archival_object':
+                self.parents(self.source_data.get('parent'))
+            # else:
+            #     Look at the map
+            # TODO: also need to look at maps above resource level
             self.obj.save()
         except Exception as e:
             print(e)
@@ -196,11 +214,9 @@ class ArchivesSpaceDataTransformer:
             self.current_run.save()
 
         # TODO
-        # "parents": self.parents(self.source_data),
         # "members": self.collection_members(self.source_data)}
 
     def transform_to_object(self):
-        print("Object", self.source_data.get('uri'))
         self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
         try:
             self.identifiers(Identifier.PISCES, 'object')
@@ -212,6 +228,7 @@ class ArchivesSpaceDataTransformer:
                 self.languages(self.source_data.get('language'))
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
+            self.parents(self.source_data.get('parent'))
             self.obj.save()
         except Exception as e:
             print(e)
@@ -220,11 +237,9 @@ class ArchivesSpaceDataTransformer:
             self.current_run.save()
 
         # TODO
-        # "parents": self.parents(self.source_data),
         # "members": self.object_members(self.source_data)}
 
     def transform_to_term(self):
-        print("Term", self.source_data.get('uri'))
         self.obj.title = self.source_data.get('title')
         try:
             self.identifiers(Identifier.PISCES, 'term')
