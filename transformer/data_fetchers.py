@@ -1,4 +1,39 @@
 # Add data fetchers here
+from dateutil import parser
+import os
+import json
+from asnake.aspace import ASpace
+from pycountry import languages
+from uuid import uuid4
+
+from django.utils import timezone
+
+from .models import *
+
+
+aspace = ASpace(
+              baseurl='http://192.168.50.4:8089',
+              user='admin',
+              password='admin'
+              )
+repo = aspace.repositories(2)
+
+terms = ['77', '123']
+
+#terms function
+for term in terms:
+    term_json = aspace.subjects(term).json()
+    print(term_json)
+    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists():
+        new_object = term.objects.get('ref')
+        SourceData.objects.get('ref') #not exactly sure what to do here. Don't know what to pass in the get statement
+        sd = new_object.sourcedata_set().filter(source) #not sure about what's happening here
+        sd.data = term_json
+        sd.save()
+    else:
+        Term.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "data": term_json}) #not sure about the key: obj part
+        Identifier.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "identifier": data.get('uri')})
+        SourceData.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "data": term_json})
 
 #LOGIC
 #Get all archival objects, resources, agents, terms updated in the last hour
