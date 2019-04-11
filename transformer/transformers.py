@@ -13,7 +13,7 @@ class ArchivesSpaceDataTransformer:
     def __init__(self):
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED).order_by('-start_time')[0].start_time
                          if TransformRun.objects.filter(status=TransformRun.FINISHED).exists() else None)
-        self.current_run = TransformRun.objects.create(status=TransformRun.RUNNING)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED)
         self.missing = []
 
     def run(self):

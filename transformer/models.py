@@ -3,11 +3,11 @@ from django.contrib.postgres.fields import JSONField
 
 
 class TransformRun(models.Model):
-    RUNNING = 0
+    STARTED = 0
     FINISHED = 1
     ERRORED = 2
     STATUS_CHOICES = (
-        (RUNNING, 'Running'),
+        (STARTED, 'Started'),
         (FINISHED, 'Finished'),
         (ERRORED, 'Errored'),
     )
