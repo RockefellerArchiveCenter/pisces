@@ -71,7 +71,7 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
                   "extents", "level", "agents", "terms", "parents", "rights_statements",
-                  "identifiers", "source_data", "created", "modified", )
+                  "identifiers", "source_data", "tree", "created", "modified", )
 
 
 class CollectionListSerializer(serializers.HyperlinkedModelSerializer):

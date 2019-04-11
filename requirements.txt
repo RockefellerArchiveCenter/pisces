@@ -17,6 +17,7 @@ itypes==1.1.0
 Jinja2==2.10
 jsonschema==3.0.1
 MarkupSafe==1.1.1
+objectpath==0.6.1
 psycopg2-binary==2.7.7
 pycountry==18.12.8
 pyrsistent==0.14.11
