@@ -20,7 +20,14 @@ class LanguageSerializer(serializers.ModelSerializer):
         fields = ('expression', 'identifier')
 
 
+class SubnoteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subnote
+        fields = ("type", "content")
+
+
 class NoteSerializer(serializers.ModelSerializer):
+    content = SubnoteSerializer(source="subnote_set", many=True)
 
     class Meta:
         model = Note

@@ -16,6 +16,12 @@ class TransformRun(models.Model):
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
 
 
+class TransformRunError(models.Model):
+    datetime = models.DateTimeField(auto_now_add=True)
+    message = models.CharField(max_length=255)
+    run = models.ForeignKey(TransformRun, on_delete=models.CASCADE)
+
+
 class Language(models.Model):
     expression = models.CharField(max_length=255)
     identifier = models.CharField(max_length=255)
@@ -228,13 +234,24 @@ class Note(models.Model):
     )
     type = models.CharField(max_length=100, choices=NOTE_TYPE_CHOICES)
     title = models.CharField(max_length=255)
-    content = models.TextField()
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
     term = models.ForeignKey(Term, on_delete=models.CASCADE, null=True, blank=True)
     rights_statement = models.ForeignKey(RightsStatement, on_delete=models.CASCADE, null=True, blank=True)
     rights_granted = models.ForeignKey(RightsGranted, on_delete=models.CASCADE, null=True, blank=True)
+
+
+class Subnote(models.Model):
+    SUBNOTE_TYPE_CHOICES = (
+        ('text', 'Text'),
+        ('orderedlist', 'Ordered List'),
+        ('definedlist', 'Defined List'),
+    )
+    type = models.CharField(max_length=100, choices=SUBNOTE_TYPE_CHOICES)
+    title = models.CharField(max_length=255)
+    content = JSONField()
+    note = models.ForeignKey(Note, on_delete=models.CASCADE)
 
 
 class Identifier(models.Model):
