@@ -10,18 +10,46 @@ from .models import *
 
 
 class ArchivesSpaceTransformError(Exception): pass
+class ArrangementMapTransformError(Exception): pass
+
+
+class ArrangementMapDataTransformer:
+    def __init(self):
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
+
+    def run(self):
+        for collection in (Collection.objects.filter(modified__gte=self.last_run, source=TransformRun.CARTOGRAPHER)
+                           if self.last_run else Collection.objects.filter(source=TransformRun.CARTOGRAPHER)):
+            self.obj = obj
+            self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER)
+            self.obj.title = self.source_data.get('title')
+            # Identifiers
+            if self.source_data.get('arrangement'):
+                try:
+                    Note.objects.filter(collection=self.obj).delete()
+                    note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
+                    Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
+                except Exception as e:
+                    raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
+            self.obj.save()
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        return True
 
 
 class ArchivesSpaceDataTransformer:
     def __init__(self):
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED).exists() else None)
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED)
-        self.missing = []
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE)
 
     def run(self):
         for cls in [(Agent, 'agent'), (Collection, 'collection'), (Object, 'object'), (Term, 'term')]:
-            for obj in (cls[0].objects.filter(modified__gte=self.last_run) if self.last_run else cls[0].objects.all()):
+            for obj in (cls[0].objects.filter(modified__gte=self.last_run, source=TransformRun.ARCHIVESSPACE)
+                        if self.last_run else cls[0].objects.filter(source=TransformRun.ARCHIVESSPACE)):
                 self.obj = obj
                 self.source_data = SourceData.objects.get(**{cls[1]: self.obj, "source": SourceData.ARCHIVESSPACE}).data
                 getattr(self, "transform_to_{}".format(cls[1]))()

@@ -11,9 +11,24 @@ class TransformRun(models.Model):
         (FINISHED, 'Finished'),
         (ERRORED, 'Errored'),
     )
+    AURORA = 0
+    ARCHIVEMATICA = 1
+    FEDORA = 2
+    ARCHIVESSPACE = 3
+    PISCES = 4
+    CARTOGRAPHER = 5
+    SOURCE_CHOICES = (
+        (AURORA, 'Aurora'),
+        (ARCHIVEMATICA, 'Archivematica'),
+        (FEDORA, 'Fedora'),
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (PISCES, 'Pisces'),
+        (CARTOGRAPHER, 'Cartographer')
+    )
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
+    source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
 
 
 class TransformRunError(models.Model):
@@ -260,12 +275,14 @@ class Identifier(models.Model):
     FEDORA = 2
     ARCHIVESSPACE = 3
     PISCES = 4
+    CARTOGRAPHER = 5
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
-        (PISCES, 'Pisces')
+        (PISCES, 'Pisces'),
+        (CARTOGRAPHER, 'Cartographer')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
@@ -282,11 +299,13 @@ class SourceData(models.Model):
     ARCHIVEMATICA = 1
     FEDORA = 2
     ARCHIVESSPACE = 3
+    CARTOGRAPHER = 4
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
-        (ARCHIVESSPACE, 'ArchivesSpace')
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (CARTOGRAPHER, 'Cartographer')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     data = JSONField()
