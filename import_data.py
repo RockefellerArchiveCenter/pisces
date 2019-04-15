@@ -4,7 +4,7 @@ import os
 from transformer.models import *
 from pisces import settings
 
-source_filepath = 'source_data'
+source_filepath = 'fixtures'
 TYPE_MAP = {'agent_corporate_entity': [Agent, 'agent'],
             'agent_family': [Agent, 'agent'],
             'agent_person': [Agent, 'agent'],
@@ -13,7 +13,7 @@ TYPE_MAP = {'agent_corporate_entity': [Agent, 'agent'],
             'subjects': [Term, 'term']}
 
 for d in os.listdir(os.path.join(settings.BASE_DIR, source_filepath)):
-    if d != 'trees':
+    if (d not in ['trees', 'maps']) and isinstance(d, dir):
         cls = TYPE_MAP[d][0]
         key = TYPE_MAP[d][1]
         for f in os.listdir(os.path.join(settings.BASE_DIR, source_filepath, d)):
