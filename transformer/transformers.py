@@ -33,7 +33,7 @@ class ArrangementMapDataTransformer:
                 except Exception as e:
                     raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
             self.identifiers(Identifier.PISCES, collection)
-            # TODO: Members
+            # TODO: Parent (need data in arrangement maps)
             self.obj.save()
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
@@ -297,9 +297,6 @@ class ArchivesSpaceDataTransformer:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
 
-        # TODO
-        # "members": self.collection_members(self.source_data)} - use the tree
-
     def transform_to_object(self):
         self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
         try:
@@ -314,7 +311,6 @@ class ArchivesSpaceDataTransformer:
             self.agents(self.source_data.get('linked_agents'))
             if self.source_data.get('parent'):
                 self.parent(self.source_data.get('parent'))
-            self.obj.members = []
             self.obj.save()
         except Exception as e:
             print(e)

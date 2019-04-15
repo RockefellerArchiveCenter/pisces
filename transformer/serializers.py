@@ -1,3 +1,4 @@
+from django.urls import reverse
 from rest_framework import serializers
 from transformer.models import *
 
@@ -73,12 +74,15 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
     source_data = SourceDataSerializer(source="sourcedata_set", many=True)
+    collections = serializers.HyperlinkedRelatedField(source="collection_set", many=True, read_only=True, view_name='collection-detail')
+    objects = serializers.HyperlinkedRelatedField(source="object_set", many=True, read_only=True, view_name='object-detail')
 
     class Meta:
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
-                  "extents", "level", "agents", "terms", "parent", "rights_statements",
-                  "identifiers", "source_data", "tree", "created", "modified", )
+                  "extents", "level", "agents", "terms", "parent", "collections",
+                  "objects", "rights_statements", "identifiers", "source_data",
+                  "tree", "created", "modified", )
 
 
 class CollectionListSerializer(serializers.HyperlinkedModelSerializer):
