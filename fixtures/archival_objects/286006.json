@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 11,
+  "publish": true,
+  "ref_id": "84ce8e6b68dc46598a6ad532e9c17929",
+  "title": "Tax Receipts and Miscellaneous Papers",
+  "display_string": "Tax Receipts and Miscellaneous Papers, 1942-1946",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:11Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:25:42Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171860",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:42Z",
+      "system_mtime": "2017-02-19T18:25:42Z",
+      "user_mtime": "2017-02-19T18:25:42Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1942-1946",
+      "begin": "1942",
+      "end": "1946",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:42Z",
+      "system_mtime": "2017-02-19T18:25:42Z",
+      "user_mtime": "2017-02-19T18:25:42Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285994",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/285983",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:42Z",
+      "system_mtime": "2017-02-19T18:25:42Z",
+      "user_mtime": "2017-02-19T18:25:42Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "747",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:25:42Z",
+        "system_mtime": "2017-02-19T18:25:42Z",
+        "user_mtime": "2017-02-19T18:25:42Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49247"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Notes, memos, agendas. Copy of agreement between Museum of Modern Art and Museum of Modern Art Film Library Corporation, 1942.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "62acab99d91353821d0929a4af5fa9d7",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286006",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285994"
+  },
+  "has_unpublished_ancestor": false
+}

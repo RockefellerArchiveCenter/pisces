@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 76,
+  "publish": true,
+  "ref_id": "630eb1d4c4144cd9b22fd330a9603e61",
+  "title": "Albany, NY, Philanthropies - Correspondence (A-I)",
+  "display_string": "Albany, NY, Philanthropies - Correspondence (A-I), 1960-1969",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:01Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:23:35Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172101",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:23:35Z",
+      "system_mtime": "2017-02-19T18:23:35Z",
+      "user_mtime": "2017-02-19T18:23:35Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1960-1969",
+      "begin": "1960",
+      "end": "1969",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:23:35Z",
+      "system_mtime": "2017-02-19T18:23:35Z",
+      "user_mtime": "2017-02-19T18:23:35Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285687",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:23:35Z",
+      "system_mtime": "2017-02-19T18:23:35Z",
+      "user_mtime": "2017-02-19T18:23:35Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "530",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:23:35Z",
+        "system_mtime": "2017-02-19T18:23:35Z",
+        "user_mtime": "2017-02-19T18:23:35Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49213"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NAR contributions to various Albany organizations, institutions and projects.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a9c995f61a18c7bf469092c7fc4864fd",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285764",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285687"
+  },
+  "has_unpublished_ancestor": false
+}

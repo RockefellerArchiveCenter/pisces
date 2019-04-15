@@ -1,0 +1,126 @@
+{
+  "lock_version": 2,
+  "position": 108,
+  "publish": true,
+  "ref_id": "4e2bf39c82eebdf4e2f74799662c08e7",
+  "title": "Post-Election Press Conference",
+  "display_string": "Post-Election Press Conference, 1965 November 3",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2018-11-15T15:03:40Z",
+  "system_mtime": "2018-11-15T16:59:03Z",
+  "user_mtime": "2018-11-15T16:25:17Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 November 3",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:25:17Z",
+      "system_mtime": "2018-11-15T16:25:17Z",
+      "user_mtime": "2018-11-15T16:25:17Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1084620",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1084619",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:25:17Z",
+      "system_mtime": "2018-11-15T16:25:17Z",
+      "user_mtime": "2018-11-15T16:25:17Z",
+      "instance_type": "audio",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 9835",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-11-15T16:25:17Z",
+        "system_mtime": "2018-11-15T16:25:17Z",
+        "user_mtime": "2018-11-15T16:25:17Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/182106"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "22458d044baafbb8d525eb1a597f191e",
+      "type": "physdesc",
+      "content": [
+        "Sound"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5c3af65dc429ef1cade503f64fc9e4e8",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "1/4 inch audio tape"
+      ],
+      "persistent_id": "818eaf3a4f7b62cc53b4e65c32773e5b",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1084729",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1084620"
+  },
+  "has_unpublished_ancestor": false
+}

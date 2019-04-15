@@ -1,0 +1,116 @@
+{
+  "lock_version": 1,
+  "position": 88,
+  "publish": true,
+  "ref_id": "9f5d2c097590c3d513b002d4c225e039",
+  "title": "Robert Bruce Orr Interview",
+  "display_string": "Robert Bruce Orr Interview, November 12, 1979",
+  "restrictions_apply": false,
+  "created_by": "fitcha",
+  "last_modified_by": "fitcha",
+  "create_time": "2018-11-08T22:23:46Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-11-08T22:24:35Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "31",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-08T22:24:35Z",
+      "system_mtime": "2018-11-08T22:24:35Z",
+      "user_mtime": "2018-11-08T22:24:35Z",
+      "portion": "whole",
+      "extent_type": "Pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "November 12, 1979",
+      "begin": "1979-11-12",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-08T22:24:35Z",
+      "system_mtime": "2018-11-08T22:24:35Z",
+      "user_mtime": "2018-11-08T22:24:35Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-08T22:24:35Z",
+      "system_mtime": "2018-11-08T22:24:35Z",
+      "user_mtime": "2018-11-08T22:24:35Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "65",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-11-08T22:24:35Z",
+        "system_mtime": "2018-11-08T22:24:35Z",
+        "user_mtime": "2018-11-08T22:24:35Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/181887"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5c5f8315f53df3b697d76ff17c7e4d18",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Lawyer, Room 5600",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1083468",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

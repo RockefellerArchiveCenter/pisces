@@ -1,0 +1,67 @@
+{
+  "lock_version": 1,
+  "position": 60,
+  "publish": true,
+  "ref_id": "1910492c00984b12b1bdea93b298f042",
+  "title": "R63: Louis Lefkowitz Family",
+  "display_string": "R63: Louis Lefkowitz Family",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:01:25Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:36:03Z",
+  "suppressed": false,
+  "level": "item",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669227",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:36:03Z",
+      "system_mtime": "2017-02-20T21:36:03Z",
+      "user_mtime": "2017-02-20T21:36:03Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471809",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471808",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/471870",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471809"
+  },
+  "has_unpublished_ancestor": true
+}

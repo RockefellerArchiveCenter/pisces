@@ -1,0 +1,138 @@
+{
+  "lock_version": 7,
+  "position": 1,
+  "publish": true,
+  "ref_id": "4fabd8a54030af859692b68652592366",
+  "title": "Senator's Report",
+  "display_string": "Senator's Report, 1975 February 25",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:33Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-05-26T17:46:39Z",
+  "suppressed": false,
+  "language": "eng",
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 February 25",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-26T17:46:39Z",
+      "system_mtime": "2017-05-26T17:46:39Z",
+      "user_mtime": "2017-05-26T17:46:39Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043762",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-26T17:46:39Z",
+      "system_mtime": "2017-05-26T17:46:39Z",
+      "user_mtime": "2017-05-26T17:46:39Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-05-26T17:46:39Z",
+        "system_mtime": "2017-05-26T17:46:39Z",
+        "user_mtime": "2017-05-26T17:46:39Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168255"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "c79c4f49ce52317e7de2a7c02c18f7a2",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 30 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "d927d5e7a8026f4fd7fcac3841f1b1c4",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d9ab8d14e171be7e021a2e8fc196987e",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9b43c41da08d4babc20c3ab5e700be0f",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "From Washington, a report to Pennsylvania from the U.S. Senate by Senator Hugh Scott. Scott answers questions from his three guests from the press.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1016987",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043762"
+  },
+  "has_unpublished_ancestor": false
+}

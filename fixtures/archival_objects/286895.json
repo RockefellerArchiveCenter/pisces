@@ -1,0 +1,129 @@
+{
+  "lock_version": 1,
+  "position": 67,
+  "publish": true,
+  "ref_id": "e056c3e062a04bf280907f8bb8eebd50",
+  "title": "Africa - General - Purchases",
+  "display_string": "Africa - General - Purchases, July 1956",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:59Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:33:13Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170969",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:13Z",
+      "system_mtime": "2017-02-19T18:33:13Z",
+      "user_mtime": "2017-02-19T18:33:13Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "July 1956",
+      "begin": "1956",
+      "end": "1956",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:13Z",
+      "system_mtime": "2017-02-19T18:33:13Z",
+      "user_mtime": "2017-02-19T18:33:13Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286827",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:13Z",
+      "system_mtime": "2017-02-19T18:33:13Z",
+      "user_mtime": "2017-02-19T18:33:13Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1617.4",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:33:13Z",
+        "system_mtime": "2017-02-19T18:33:13Z",
+        "user_mtime": "2017-02-19T18:33:13Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49315"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Sightseeing with family.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "45c2b92d9f21c15505345faf4206f446",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "Restricted material from Folder 1617E\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d37f8bd331536595480b56210306f474",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286895",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286827"
+  },
+  "has_unpublished_ancestor": false
+}

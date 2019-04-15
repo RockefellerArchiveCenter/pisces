@@ -1,0 +1,135 @@
+{
+  "lock_version": 2,
+  "position": 11,
+  "publish": true,
+  "ref_id": "db86962818f94e68b496e778ab29157e",
+  "title": "Berent Friele Interview",
+  "display_string": "Berent Friele Interview, 1979 November 28",
+  "restrictions_apply": true,
+  "created_by": "admin",
+  "last_modified_by": "fitcha",
+  "create_time": "2014-12-06T09:47:56Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-02-13T20:54:23Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942713",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:54:23Z",
+      "system_mtime": "2018-02-13T20:54:23Z",
+      "user_mtime": "2018-02-13T20:54:23Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1979 November 28",
+      "begin": "1979",
+      "end": "1979",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:54:23Z",
+      "system_mtime": "2018-02-13T20:54:23Z",
+      "user_mtime": "2018-02-13T20:54:23Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:54:23Z",
+      "system_mtime": "2018-02-13T20:54:23Z",
+      "user_mtime": "2018-02-13T20:54:23Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "0008A",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-02-13T20:54:23Z",
+        "system_mtime": "2018-02-13T20:54:23Z",
+        "user_mtime": "2018-02-13T20:54:23Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50913"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f03e6983833b5320785a00819bd9f6cf",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted material\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "6d0106650c519d2289ce13f9826113cf",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "\nRestriction-Steven C. Rockefeller\nRestriction-Mary Rockefeller Morgan\nRestriction-Michael Rockefeller's disappearance/search\n\n",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298877",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

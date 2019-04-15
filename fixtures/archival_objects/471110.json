@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 16,
+  "publish": true,
+  "ref_id": "b7ebdb7f98db4154955bd02904972562",
+  "title": "Nelson A. Rockefeller calls on President Tiburcio Carias of Honduras, Tegucigalpa",
+  "display_string": "Nelson A. Rockefeller calls on President Tiburcio Carias of Honduras, Tegucigalpa, 1944",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:46Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:30:18Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669981",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:18Z",
+      "system_mtime": "2017-02-20T21:30:18Z",
+      "user_mtime": "2017-02-20T21:30:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1944",
+      "begin": "1944",
+      "end": "1944",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:18Z",
+      "system_mtime": "2017-02-20T21:30:18Z",
+      "user_mtime": "2017-02-20T21:30:18Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471092",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:18Z",
+      "system_mtime": "2017-02-20T21:30:18Z",
+      "user_mtime": "2017-02-20T21:30:18Z",
+      "instance_type": "Still Image",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "71",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:30:18Z",
+        "system_mtime": "2017-02-20T21:30:18Z",
+        "user_mtime": "2017-02-20T21:30:18Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80854"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "dcf52f5d1ccea27ec63d1ec08bf68ff3",
+      "label": "General Physical Description note",
+      "content": [
+        "(1) [63]"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471110",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471092"
+  },
+  "has_unpublished_ancestor": false
+}

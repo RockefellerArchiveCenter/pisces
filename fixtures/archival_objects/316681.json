@@ -1,0 +1,67 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "13f57af45e964361bdb4e36c37ff53e6",
+  "component_id": "1",
+  "title": "Name File",
+  "display_string": "Name File",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:12:27Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:12:33Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1800537",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:12:33Z",
+      "system_mtime": "2017-02-19T22:12:33Z",
+      "user_mtime": "2017-02-19T22:12:33Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "persistent_id": "12e0f6c5665a98bfa9a2a01fa71a0357",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "content": "Carbon copies of outgoing correspondence are filed in the name, subject, and chronological files. Routine incoming correspondence is filed in the name file, while incoming correspondence of significance was photocopied and filed in both the name and subject files.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316681",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "has_unpublished_ancestor": false
+}

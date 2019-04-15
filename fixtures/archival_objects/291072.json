@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 66,
+  "publish": true,
+  "ref_id": "6e2a61e589964ca1894271ed02f19b8b",
+  "title": "Republican National Committee/Republican National Finance Committee",
+  "display_string": "Republican National Committee/Republican National Finance Committee, 1947-1966",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:18Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:58:16Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936969",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:16Z",
+      "system_mtime": "2017-02-19T18:58:16Z",
+      "user_mtime": "2017-02-19T18:58:16Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1947-1966",
+      "begin": "1947",
+      "end": "1966",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:16Z",
+      "system_mtime": "2017-02-19T18:58:16Z",
+      "user_mtime": "2017-02-19T18:58:16Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291005",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:16Z",
+      "system_mtime": "2017-02-19T18:58:16Z",
+      "user_mtime": "2017-02-19T18:58:16Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "67",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:58:16Z",
+        "system_mtime": "2017-02-19T18:58:16Z",
+        "user_mtime": "2017-02-19T18:58:16Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49773"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Miscellaneous correspondence of committee; Republican Women's fund raising for the 1956 campaign; polls 1954-1955; 1950 Len Hall [US Congressman from New York, head of Republican Congressional Committee statement, chairman of Republican Congressional Committee.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "c3a89375f511659fafbeb0ad983f1e2a",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291072",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291005"
+  },
+  "has_unpublished_ancestor": false
+}

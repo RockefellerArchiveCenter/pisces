@@ -1,0 +1,85 @@
+{
+  "lock_version": 1,
+  "position": 149,
+  "publish": true,
+  "ref_id": "9e4177431a1348628cc7976d4e5e07bb",
+  "title": "Nebraska - Hruska - post-April 6, 1974",
+  "display_string": "Nebraska - Hruska - post-April 6, 1974",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:38:21Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:06:48Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "935974",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:06:48Z",
+      "system_mtime": "2017-02-19T19:06:48Z",
+      "user_mtime": "2017-02-19T19:06:48Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291917",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:06:48Z",
+      "system_mtime": "2017-02-19T19:06:48Z",
+      "user_mtime": "2017-02-19T19:06:48Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "21",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:06:48Z",
+        "system_mtime": "2017-02-19T19:06:48Z",
+        "user_mtime": "2017-02-19T19:06:48Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49854"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/292067",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291917"
+  },
+  "has_unpublished_ancestor": false
+}

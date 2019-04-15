@@ -1,0 +1,92 @@
+{
+  "lock_version": 0,
+  "position": 152,
+  "publish": true,
+  "ref_id": "b8b93cd9201bf18a3305d7ecab1ece1c",
+  "title": "CLOSED ITEMS",
+  "display_string": "CLOSED ITEMS",
+  "restrictions_apply": true,
+  "created_by": "fitcha",
+  "last_modified_by": "fitcha",
+  "create_time": "2019-01-07T21:52:25Z",
+  "system_mtime": "2019-01-23T20:43:05Z",
+  "user_mtime": "2019-01-07T21:52:25Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1035408",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2019-01-07T21:52:25Z",
+      "system_mtime": "2019-01-07T21:52:25Z",
+      "user_mtime": "2019-01-07T21:52:25Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "122a",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2019-01-07T21:52:25Z",
+        "system_mtime": "2019-01-07T21:52:25Z",
+        "user_mtime": "2019-01-07T21:52:25Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/171496"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "label": "Conditions Governing Access Note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted material",
+          "publish": true
+        }
+      ],
+      "persistent_id": "da70d4d05dd67be08f8137e962f20fd9",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1088945",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1035408"
+  },
+  "has_unpublished_ancestor": false
+}

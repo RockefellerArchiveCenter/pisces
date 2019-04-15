@@ -1,0 +1,111 @@
+{
+  "lock_version": 4,
+  "position": 37,
+  "publish": false,
+  "ref_id": "355b7d25c21d7d9f29e672d1ff2584f8",
+  "title": "No. 1A - Our Proven Friend",
+  "display_string": "No. 1A - Our Proven Friend",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:41Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-04-24T19:24:01Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043746",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-04-24T19:24:01Z",
+      "system_mtime": "2017-04-25T17:13:49Z",
+      "user_mtime": "2017-04-24T19:24:01Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-04-24T19:24:01Z",
+        "system_mtime": "2017-04-24T19:24:01Z",
+        "user_mtime": "2017-04-24T19:24:01Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168325"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "32a50eccd304ff5a6c40e65eaab1416d",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 30 seconds"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "15cbff36f21b86a063e38401c029bbfe",
+      "type": "materialspec",
+      "content": [
+        "2 inch Quad video reel"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "8f06d5330b29a9f12651e47d10b0a008",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017057",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043746"
+  },
+  "has_unpublished_ancestor": true
+}

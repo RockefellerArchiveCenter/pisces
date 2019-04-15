@@ -1,0 +1,115 @@
+{
+  "lock_version": 2,
+  "position": 0,
+  "publish": true,
+  "ref_id": "816e811956c04dbaa85d03588966d19d",
+  "title": "Candidate Debate",
+  "display_string": "Candidate Debate, 1968",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:39:24Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-08-29T19:57:56Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937809",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-29T19:57:57Z",
+      "system_mtime": "2017-08-29T19:57:57Z",
+      "user_mtime": "2017-08-29T19:57:57Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968",
+      "begin": "1968",
+      "end": "1968",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-29T19:57:56Z",
+      "system_mtime": "2017-08-29T19:57:56Z",
+      "user_mtime": "2017-08-29T19:57:56Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/292928",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/546",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-29T19:57:56Z",
+      "system_mtime": "2017-08-29T19:57:56Z",
+      "user_mtime": "2017-08-29T19:57:56Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "27",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-29T19:57:56Z",
+        "system_mtime": "2017-08-29T19:57:56Z",
+        "user_mtime": "2017-08-29T19:57:56Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49961"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Correspondence and memoranda surrounding NAR open offer to debate Richard Nixon and other presidential candidates in a debate.\n\n",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ff63c9cecbb561a20fc6b2fba13f6bb9",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/292929",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/546"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/292928"
+  },
+  "has_unpublished_ancestor": false
+}

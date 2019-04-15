@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 1,
+  "publish": true,
+  "ref_id": "4bccc5332eec4e9ab6bc22775e668ff4",
+  "title": "Nelson A. Rockefeller Miscellaneous Photos",
+  "display_string": "Nelson A. Rockefeller Miscellaneous Photos, 1974-1975",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:59Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:32:05Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669734",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:32:05Z",
+      "system_mtime": "2017-02-20T21:32:05Z",
+      "user_mtime": "2017-02-20T21:32:05Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1974-1975",
+      "begin": "1974",
+      "end": "1975",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:32:05Z",
+      "system_mtime": "2017-02-20T21:32:05Z",
+      "user_mtime": "2017-02-20T21:32:05Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471336",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:32:05Z",
+      "system_mtime": "2017-02-20T21:32:05Z",
+      "user_mtime": "2017-02-20T21:32:05Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "276",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:32:05Z",
+        "system_mtime": "2017-02-20T21:32:05Z",
+        "user_mtime": "2017-02-20T21:32:05Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80881"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "1b0f148d20b330b09b717c4170a3954d",
+      "label": "General Physical Description note",
+      "content": [
+        "(4)"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471338",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471336"
+  },
+  "has_unpublished_ancestor": false
+}

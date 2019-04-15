@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 1,
+  "publish": true,
+  "ref_id": "265fd43236db44ad8d6d9b43a1a9ceb4",
+  "title": "1956 Presidential Campaign - Republican National Convention",
+  "display_string": "1956 Presidential Campaign - Republican National Convention, 1956",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:21Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:58:28Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936942",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:28Z",
+      "system_mtime": "2017-02-19T18:58:28Z",
+      "user_mtime": "2017-02-19T18:58:28Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1956",
+      "begin": "1956",
+      "end": "1956",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:28Z",
+      "system_mtime": "2017-02-19T18:58:28Z",
+      "user_mtime": "2017-02-19T18:58:28Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291097",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:28Z",
+      "system_mtime": "2017-02-19T18:58:28Z",
+      "user_mtime": "2017-02-19T18:58:28Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "91",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:58:28Z",
+        "system_mtime": "2017-02-19T18:58:28Z",
+        "user_mtime": "2017-02-19T18:58:28Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49775"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Correspondence; NAR served as NY delegate at large, schedules, memos; excerpts from transcript of Eisenhower news conference; directory of NY delegates &amp; alternates; summary of news &amp; comments on convention.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "49b5265ece836b2bbc0a7a8081128e36",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291099",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291097"
+  },
+  "has_unpublished_ancestor": false
+}

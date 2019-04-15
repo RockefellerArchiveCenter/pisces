@@ -1,0 +1,139 @@
+{
+  "lock_version": 2,
+  "position": 100,
+  "publish": true,
+  "ref_id": "94d39c7be8546ee2dc7eccf92456da7b",
+  "title": "Women's Committee of Buffalo Philharmonic",
+  "display_string": "Women's Committee of Buffalo Philharmonic, 1965 October 21",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2018-11-15T15:03:39Z",
+  "system_mtime": "2018-11-15T16:59:03Z",
+  "user_mtime": "2018-11-15T16:20:49Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 October 21",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:20:50Z",
+      "system_mtime": "2018-11-15T16:20:50Z",
+      "user_mtime": "2018-11-15T16:20:50Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1084620",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1084619",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:20:50Z",
+      "system_mtime": "2018-11-15T16:20:50Z",
+      "user_mtime": "2018-11-15T16:20:50Z",
+      "instance_type": "audio",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 9833A",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-11-15T16:20:50Z",
+        "system_mtime": "2018-11-15T16:20:50Z",
+        "user_mtime": "2018-11-15T16:20:50Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/182106"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3078362a367fb7a2c6193483657d0e05",
+      "type": "physdesc",
+      "content": [
+        "Sound"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "6aa8822b81f633c499f928fc3e580406",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "63e9808de670326081cc54c9bc8711c2",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "2 pm, Kleinhans Music Hall, Buffalo, NY",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "1/4 inch audio tape"
+      ],
+      "persistent_id": "045dff57bf437315727ce4567ac2e676",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1084721",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1084620"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,128 @@
+{
+  "lock_version": 1,
+  "position": 35,
+  "publish": true,
+  "ref_id": "dd1cf5b488d94f2d8f873aef3515e84c",
+  "title": "John R. Camp Interview",
+  "display_string": "John R. Camp Interview, 1979 November 3",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:47:59Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2017-02-19T19:45:03Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942682",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:03Z",
+      "system_mtime": "2017-02-19T19:45:03Z",
+      "user_mtime": "2017-02-19T19:45:03Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "56",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:03Z",
+      "system_mtime": "2017-02-19T19:45:03Z",
+      "user_mtime": "2017-02-19T19:45:03Z",
+      "portion": "whole",
+      "extent_type": "pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1979 November 3",
+      "begin": "1979",
+      "end": "1979",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:03Z",
+      "system_mtime": "2017-02-19T19:45:03Z",
+      "user_mtime": "2017-02-19T19:45:03Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:03Z",
+      "system_mtime": "2017-02-19T19:45:03Z",
+      "user_mtime": "2017-02-19T19:45:03Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "25",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:45:03Z",
+        "system_mtime": "2017-02-19T19:45:03Z",
+        "user_mtime": "2017-02-19T19:45:03Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50914"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Coordinator of Inter-American Affairs, Paraguay and Venezuela offices; International Basic Economy Corporation; 1969 Presidential Mission to Latin America\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "779b7e6a00d4bde88963046cf002be12",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298908",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

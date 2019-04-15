@@ -1,0 +1,91 @@
+{
+  "lock_version": 2,
+  "position": 7,
+  "publish": true,
+  "ref_id": "41d7a2c4ae98429eb553a6796a7422b8",
+  "title": "Northeast Forest Fire Protection Committee",
+  "display_string": "Northeast Forest Fire Protection Committee",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:53:30Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-05-31T17:30:11Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1747970",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-05-31T17:30:11Z",
+      "system_mtime": "2017-05-31T17:30:11Z",
+      "user_mtime": "2017-05-31T17:30:11Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/462512",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/462511",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/462237",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/638",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-05-31T17:30:11Z",
+      "system_mtime": "2017-05-31T17:30:11Z",
+      "user_mtime": "2017-05-31T17:30:11Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-05-31T17:30:11Z",
+        "system_mtime": "2017-05-31T17:30:11Z",
+        "user_mtime": "2017-05-31T17:30:11Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/76754"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/462524",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/638"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/462512"
+  },
+  "has_unpublished_ancestor": false
+}

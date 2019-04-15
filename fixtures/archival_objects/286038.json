@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 25,
+  "publish": true,
+  "ref_id": "da45ec693e8740b584fecb3af89aa4d5",
+  "title": "Invitations to Speak - National Conference of Christians and Jews",
+  "display_string": "Invitations to Speak - National Conference of Christians and Jews, 1949-1956",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:12Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:26:01Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171826",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:26:01Z",
+      "system_mtime": "2017-02-19T18:26:01Z",
+      "user_mtime": "2017-02-19T18:26:01Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1949-1956",
+      "begin": "1949",
+      "end": "1956",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:26:01Z",
+      "system_mtime": "2017-02-19T18:26:01Z",
+      "user_mtime": "2017-02-19T18:26:01Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286012",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:26:01Z",
+      "system_mtime": "2017-02-19T18:26:01Z",
+      "user_mtime": "2017-02-19T18:26:01Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "778",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:26:01Z",
+        "system_mtime": "2017-02-19T18:26:01Z",
+        "user_mtime": "2017-02-19T18:26:01Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49251"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Invitations to speak declined.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bb50f6a31650dc68b2f8684b61b238d1",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286038",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286012"
+  },
+  "has_unpublished_ancestor": false
+}

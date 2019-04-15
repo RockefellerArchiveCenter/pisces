@@ -1,0 +1,124 @@
+{
+  "lock_version": 7,
+  "position": 1,
+  "publish": false,
+  "ref_id": "eedc865c3147323df028db8527ec699d",
+  "title": "1964 CA Primary: The Extremists",
+  "display_string": "1964 CA Primary: The Extremists, 1964",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:30Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-12-12T21:52:25Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1964",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-12-12T21:52:25Z",
+      "system_mtime": "2017-12-12T21:52:25Z",
+      "user_mtime": "2017-12-12T21:52:25Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043731",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-12-12T21:52:25Z",
+      "system_mtime": "2017-12-12T21:52:25Z",
+      "user_mtime": "2017-12-12T21:52:25Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-12-12T21:52:25Z",
+        "system_mtime": "2017-12-12T21:52:25Z",
+        "user_mtime": "2017-12-12T21:52:25Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168236"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "dd982ceb69fb026592e0eddad9b66136",
+      "type": "physdesc",
+      "content": [
+        "Sound, 30 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "1912397789be08c087b699cbfd53d37b",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a345d45981c8793ab11b07c980cf284f",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1016968",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043731"
+  },
+  "has_unpublished_ancestor": false
+}

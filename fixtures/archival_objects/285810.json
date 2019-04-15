@@ -1,0 +1,93 @@
+{
+  "lock_version": 2,
+  "position": 36,
+  "publish": true,
+  "ref_id": "f341f4b8f52240b29b84c854f3c66c83",
+  "title": "Economics Group - Reports",
+  "display_string": "Economics Group - Reports, 1958",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:02Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:23:48Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172054",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:23:48Z",
+      "system_mtime": "2017-08-31T17:23:48Z",
+      "user_mtime": "2017-08-31T17:23:48Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1958",
+      "begin": "1958",
+      "end": "1958",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:23:48Z",
+      "system_mtime": "2017-08-31T17:23:48Z",
+      "user_mtime": "2017-08-31T17:23:48Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:23:48Z",
+      "system_mtime": "2017-08-31T17:23:48Z",
+      "user_mtime": "2017-08-31T17:23:48Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "573",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:23:48Z",
+        "system_mtime": "2017-08-31T17:23:48Z",
+        "user_mtime": "2017-08-31T17:23:48Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49221"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/285810",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

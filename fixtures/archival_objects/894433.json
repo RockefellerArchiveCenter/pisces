@@ -1,0 +1,142 @@
+{
+  "lock_version": 3,
+  "position": 6,
+  "publish": true,
+  "ref_id": "9e80d92cafac447a89eb0ecfa03f34d2",
+  "title": "Rockefeller Statement",
+  "display_string": "Rockefeller Statement, 1968 April 30",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2015-06-03T23:39:56Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-04-27T16:56:52Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968 April 30",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-04-27T16:56:52Z",
+      "system_mtime": "2017-04-27T16:56:52Z",
+      "user_mtime": "2017-04-27T16:56:52Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894347",
+      "level": "Date"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/894334",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-04-27T16:56:52Z",
+      "system_mtime": "2017-04-27T16:56:52Z",
+      "user_mtime": "2017-04-27T16:56:52Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2017-04-27T16:56:52Z",
+        "system_mtime": "2017-04-27T16:56:52Z",
+        "user_mtime": "2017-04-27T16:56:52Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/128047"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_d1fc19ebd6a23fb2ba5718f20ffef794",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 30 minutes. Only available on original 16mm film."
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_45ec82eb14b355535895e3db08ac159b",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "NAR declares his candidacy, in Albany NY.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "4d8a849525628b5f3223582dc4673eed",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.1 Fe 23",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "<p>When requesting to view audiovisual material, please refer to the Title and the AV Number (example: AV 1916). Researchers are asked to check the \"Restrictions\" note for each Title. If a Title does not currently have an access copy, please contact a RAC archivist for further instruction. </p>\n\n<p>All inquiries to view films require advanced notice of at least 2 business days, and may necessitate notice of up to one week. Individual items, including those that are not available in modern formats, may be restricted from access at the discretion of RAC.</p>\n",
+          "publish": true
+        }
+      ],
+      "persistent_id": "1981e13f13f120b0b146dd883377315f",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894433",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894347"
+  },
+  "has_unpublished_ancestor": false
+}

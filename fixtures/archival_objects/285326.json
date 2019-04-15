@@ -1,0 +1,115 @@
+{
+  "lock_version": 2,
+  "position": 2,
+  "publish": true,
+  "ref_id": "0ce34d8fb6a04da3af91db9cdd7fa829",
+  "title": "\"The Future of Federalism\" - Correspondence",
+  "display_string": "\"The Future of Federalism\" - Correspondence, 1962",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:29:38Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:21:45Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172539",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:21:45Z",
+      "system_mtime": "2017-08-31T17:21:45Z",
+      "user_mtime": "2017-08-31T17:21:45Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1962",
+      "begin": "1962",
+      "end": "1962",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:21:45Z",
+      "system_mtime": "2017-08-31T17:21:45Z",
+      "user_mtime": "2017-08-31T17:21:45Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285323",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:21:45Z",
+      "system_mtime": "2017-08-31T17:21:45Z",
+      "user_mtime": "2017-08-31T17:21:45Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "100",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:21:45Z",
+        "system_mtime": "2017-08-31T17:21:45Z",
+        "user_mtime": "2017-08-31T17:21:45Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49160"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Based on NAR's three lectures at the Godkin Lectures series, Harvard University, February 7 - 9, 1962. Preparation of text, comments, publication and distribution. Correspondents include NAR, Henry Kissinger, Hugh Morrow, Emmet J. Hughes.\n\n",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "1158b2d1624bd005add1a38b7f23b469",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285326",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285323"
+  },
+  "has_unpublished_ancestor": false
+}

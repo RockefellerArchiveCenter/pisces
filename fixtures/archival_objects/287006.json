@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 6,
+  "publish": true,
+  "ref_id": "30e00d9f31df482e9ff2949b6851f0e1",
+  "title": "Chagall Memorial Windows - Seven Side Windows",
+  "display_string": "Chagall Memorial Windows - Seven Side Windows, 1954-1967",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:07Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:34:13Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170858",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:13Z",
+      "system_mtime": "2017-02-19T18:34:13Z",
+      "user_mtime": "2017-02-19T18:34:13Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1954-1967",
+      "begin": "1954",
+      "end": "1967",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:13Z",
+      "system_mtime": "2017-02-19T18:34:13Z",
+      "user_mtime": "2017-02-19T18:34:13Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286994",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:13Z",
+      "system_mtime": "2017-02-19T18:34:13Z",
+      "user_mtime": "2017-02-19T18:34:13Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1720",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:34:13Z",
+        "system_mtime": "2017-02-19T18:34:13Z",
+        "user_mtime": "2017-02-19T18:34:13Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49326"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Correspondence, minutes of special joint meeting of Board of Deacons and of Trustees to discuss offer of windows.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bbefdf75544bb11cd086db4de0f823df",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/287006",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286994"
+  },
+  "has_unpublished_ancestor": false
+}

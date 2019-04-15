@@ -1,0 +1,124 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "b215387814e04a099c1126bdb44f55e7",
+  "title": "Personnel Clearances",
+  "display_string": "Personnel Clearances, 1975 July",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:14:12Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:32:59Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1800240",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:59Z",
+      "system_mtime": "2017-02-19T22:32:59Z",
+      "user_mtime": "2017-02-19T22:32:59Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 July",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:59Z",
+      "system_mtime": "2017-02-19T22:32:59Z",
+      "user_mtime": "2017-02-19T22:32:59Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/319208",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:59Z",
+      "system_mtime": "2017-02-19T22:32:59Z",
+      "user_mtime": "2017-02-19T22:32:59Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T22:32:59Z",
+        "system_mtime": "2017-02-19T22:32:59Z",
+        "user_mtime": "2017-02-19T22:32:59Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/52162"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "persistent_id": "4f6f7bc77d1bed018d935fa87c3df5a5",
+      "type": "custodhist",
+      "subnotes": [
+        {
+          "content": "Sent to Central Files by Richard Allison\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "Lists of candidates for Presidential Appointments.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9a32642b5bcfff57e75e7dbd534cba7c",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/319209",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/319208"
+  },
+  "has_unpublished_ancestor": false
+}

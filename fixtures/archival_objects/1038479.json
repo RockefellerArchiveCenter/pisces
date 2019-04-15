@@ -1,0 +1,124 @@
+{
+  "lock_version": 3,
+  "position": 13,
+  "publish": true,
+  "ref_id": "2f0721291f0ec5ad28dfe7902989f49c",
+  "title": "Endorsement: Unidentified Man Endorses Nelson A. Rockefeller\n",
+  "display_string": "Endorsement: Unidentified Man Endorses Nelson A. Rockefeller\n, c.1970",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:38Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-10-26T15:34:57Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "c.1970",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:34:57Z",
+      "system_mtime": "2017-10-26T15:34:57Z",
+      "user_mtime": "2017-10-26T15:34:57Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043745",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:34:57Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-10-26T15:34:57Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-10-26T15:34:57Z",
+        "system_mtime": "2017-10-26T15:34:57Z",
+        "user_mtime": "2017-10-26T15:34:57Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173391"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "baf5ee973c0ef076468e241dd19fca24",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 2 min."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "64f685594e7bba1dddbda5140f3f0fcf",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "9a099060cdca03f9822d50e6dae5e705",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038479",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043745"
+  },
+  "has_unpublished_ancestor": false
+}

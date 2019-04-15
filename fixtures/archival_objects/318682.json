@@ -1,0 +1,60 @@
+{
+  "lock_version": 1,
+  "position": 46,
+  "publish": true,
+  "ref_id": "97f079209caf4a04adf7810b680c7618",
+  "component_id": "47",
+  "title": "Recreation - Sports (RE)",
+  "display_string": "Recreation - Sports (RE)",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:13:49Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:28:40Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1799361",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:28:40Z",
+      "system_mtime": "2017-02-19T22:28:40Z",
+      "user_mtime": "2017-02-19T22:28:40Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/317856",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/318682",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/317856"
+  },
+  "has_unpublished_ancestor": false
+}

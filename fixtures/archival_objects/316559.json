@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 7,
+  "publish": true,
+  "ref_id": "3d96ec1c3aba4494a3780b3ac72b53ff",
+  "component_id": "08",
+  "title": "Vice Presidential Miscellaneous Files",
+  "display_string": "Vice Presidential Miscellaneous Files, 1974-1977",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:24Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:11:35Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960179",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:35Z",
+      "system_mtime": "2017-02-19T22:11:35Z",
+      "user_mtime": "2017-02-19T22:11:35Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "3.6",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:35Z",
+      "system_mtime": "2017-02-19T22:11:35Z",
+      "user_mtime": "2017-02-19T22:11:35Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1974-1977",
+      "begin": "1974",
+      "end": "1977",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:35Z",
+      "system_mtime": "2017-02-19T22:11:35Z",
+      "user_mtime": "2017-02-19T22:11:35Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of correspondence and memos generated in the Office of the Vice President.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a49124eab82f4d1c483549a56c4d9547",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316559",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

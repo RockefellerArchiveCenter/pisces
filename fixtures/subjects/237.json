@@ -1,0 +1,62 @@
+{
+  "lock_version": 692,
+  "title": "Philanthropy -- United States",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2014-12-06T02:30:06Z",
+  "system_mtime": "2019-04-02T13:29:19Z",
+  "user_mtime": "2014-12-06T02:30:06Z",
+  "source": "local",
+  "jsonmodel_type": "subject",
+  "external_ids": [
+    {
+      "external_id": "292",
+      "source": "Archivists Toolkit Database::SUBJECT",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:30:06Z",
+      "system_mtime": "2014-12-06T02:30:06Z",
+      "user_mtime": "2014-12-06T02:30:06Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "publish": true,
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "Philanthropy",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:29:54Z",
+      "system_mtime": "2014-12-06T02:29:54Z",
+      "user_mtime": "2014-12-06T02:29:54Z",
+      "term_type": "topical",
+      "jsonmodel_type": "term",
+      "uri": "/terms/105",
+      "vocabulary": "/vocabularies/1"
+    },
+    {
+      "lock_version": 0,
+      "term": "United States",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:29:45Z",
+      "system_mtime": "2014-12-06T02:29:45Z",
+      "user_mtime": "2014-12-06T02:29:45Z",
+      "term_type": "topical",
+      "jsonmodel_type": "term",
+      "uri": "/terms/22",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/237",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

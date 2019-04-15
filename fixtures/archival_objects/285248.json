@@ -1,0 +1,82 @@
+{
+  "lock_version": 1,
+  "position": 4,
+  "publish": true,
+  "ref_id": "0659e89b6ee54ac58e6ced7d2f852db3",
+  "title": "Appointment Books",
+  "display_string": "Appointment Books, 1932-1968",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:29:33Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:19:21Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172582",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:19:21Z",
+      "system_mtime": "2017-02-19T18:19:21Z",
+      "user_mtime": "2017-02-19T18:19:21Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1932-1968",
+      "begin": "1932",
+      "end": "1968",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:19:21Z",
+      "system_mtime": "2017-02-19T18:19:21Z",
+      "user_mtime": "2017-02-19T18:19:21Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NAR's daily professional activities.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d150bebf38c1b2498104909b2284a19f",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285248",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

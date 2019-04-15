@@ -1,0 +1,100 @@
+{
+  "lock_version": 2,
+  "position": 2,
+  "publish": true,
+  "ref_id": "8d1da1c57b6445f8a3977596f8d48c6e",
+  "title": "Lists of NAR's Associations",
+  "display_string": "Lists of NAR's Associations, 1952-1978",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:15Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:24:59Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171781",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:59Z",
+      "system_mtime": "2017-08-31T17:24:59Z",
+      "user_mtime": "2017-08-31T17:24:59Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1952-1978",
+      "begin": "1952",
+      "end": "1978",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:59Z",
+      "system_mtime": "2017-08-31T17:24:59Z",
+      "user_mtime": "2017-08-31T17:24:59Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286080",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:59Z",
+      "system_mtime": "2017-08-31T17:24:59Z",
+      "user_mtime": "2017-08-31T17:24:59Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "820",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:24:59Z",
+        "system_mtime": "2017-08-31T17:24:59Z",
+        "user_mtime": "2017-08-31T17:24:59Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49257"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/286083",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286080"
+  },
+  "has_unpublished_ancestor": false
+}

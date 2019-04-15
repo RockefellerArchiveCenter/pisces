@@ -1,0 +1,139 @@
+{
+  "lock_version": 3,
+  "position": 17,
+  "publish": true,
+  "ref_id": "d89973a0893b8fd53a48a30b7529c9c6",
+  "title": "Community Dialogue",
+  "display_string": "Community Dialogue, 1965 May 14",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2018-11-15T15:03:21Z",
+  "system_mtime": "2018-11-15T16:59:03Z",
+  "user_mtime": "2018-11-15T15:32:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 May 14",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T15:32:39Z",
+      "system_mtime": "2018-11-15T15:32:39Z",
+      "user_mtime": "2018-11-15T15:32:39Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1084620",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1084619",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T15:32:39Z",
+      "system_mtime": "2018-11-15T15:32:39Z",
+      "user_mtime": "2018-11-15T15:32:39Z",
+      "instance_type": "audio",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 9809A",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-11-15T15:32:39Z",
+        "system_mtime": "2018-11-15T15:32:39Z",
+        "user_mtime": "2018-11-15T15:32:39Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/182106"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3ddb51c77aaea6dd6c3cb7cd5be280fd",
+      "type": "physdesc",
+      "content": [
+        "Sound"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "dc93a0f7da78357a7dead72c0320fd89",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "10c2424572e86dbb393805452c935b12",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Metromedia, New York City",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "1/4 inch audio tape"
+      ],
+      "persistent_id": "44d051054eb1b17a96c7b6666bb925d5",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1084638",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1084620"
+  },
+  "has_unpublished_ancestor": false
+}

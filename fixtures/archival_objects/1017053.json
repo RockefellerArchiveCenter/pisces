@@ -1,0 +1,111 @@
+{
+  "lock_version": 4,
+  "position": 33,
+  "publish": false,
+  "ref_id": "d98f764591cee1c4f427fa0e5e71ec6c",
+  "title": "Rockefeller 'Narcotics'",
+  "display_string": "Rockefeller 'Narcotics'",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:40Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-04-24T19:24:43Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043746",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-04-24T19:24:43Z",
+      "system_mtime": "2017-04-25T17:13:49Z",
+      "user_mtime": "2017-04-24T19:24:43Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-04-24T19:24:43Z",
+        "system_mtime": "2017-04-24T19:24:43Z",
+        "user_mtime": "2017-04-24T19:24:43Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168321"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3307bcbafcd6496ac75f8df60b75e48e",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and White"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "d11167feb1093102d3cfd3705ea64f8e",
+      "type": "materialspec",
+      "content": [
+        "2 inch Quad video reel"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5c972891bb920a330670ab09df08c075",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017053",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043746"
+  },
+  "has_unpublished_ancestor": true
+}

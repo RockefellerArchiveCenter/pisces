@@ -1,0 +1,100 @@
+{
+  "lock_version": 1,
+  "position": 11,
+  "publish": true,
+  "ref_id": "2db3ff8eba71425a9c7ea0104c3c3a8b",
+  "title": "\"Political Opinion in New York State\"",
+  "display_string": "\"Political Opinion in New York State\"",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:39:27Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:13:24Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937772",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:24Z",
+      "system_mtime": "2017-02-19T19:13:24Z",
+      "user_mtime": "2017-02-19T19:13:24Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/292954",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/546",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:24Z",
+      "system_mtime": "2017-02-19T19:13:24Z",
+      "user_mtime": "2017-02-19T19:13:24Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "62",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:13:24Z",
+        "system_mtime": "2017-02-19T19:13:24Z",
+        "user_mtime": "2017-02-19T19:13:24Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49966"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Poll conducted by Political Surveys and Analyses, Inc., interviews conducted in late April and Early May 1970.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "32c55e577e17f50ad45c25545fc5431c",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/292966",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/546"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/292954"
+  },
+  "has_unpublished_ancestor": false
+}

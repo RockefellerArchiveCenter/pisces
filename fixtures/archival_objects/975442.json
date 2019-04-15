@@ -1,0 +1,89 @@
+{
+  "lock_version": 1,
+  "position": 170,
+  "publish": true,
+  "ref_id": "07f24f660a671a8ca659e6deed3487f8",
+  "title": "Republican National Committee Reception, Washington, D. C.",
+  "display_string": "Republican National Committee Reception, Washington, D. C., 1976 February 27",
+  "restrictions_apply": false,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-09T16:23:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-09T16:36:32Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1976 February 27",
+      "begin": "1976",
+      "end": "1976",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-09T16:36:32Z",
+      "system_mtime": "2016-06-09T16:36:32Z",
+      "user_mtime": "2016-06-09T16:36:32Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-09T16:36:32Z",
+      "system_mtime": "2016-06-09T16:36:32Z",
+      "user_mtime": "2016-06-09T16:36:32Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "152",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:14Z",
+        "system_mtime": "2016-08-13T09:11:14Z",
+        "user_mtime": "2016-08-13T09:11:14Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132437"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/975442",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

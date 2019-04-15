@@ -1,0 +1,63 @@
+{
+  "lock_version": 1,
+  "position": 21,
+  "publish": true,
+  "ref_id": "cb43319f61dc44c5a2d5f5e96468aa7a",
+  "title": "Nelson A. Rockefeller - Government Service, Under Secretary of Department of Health, Education and Welfare",
+  "display_string": "Nelson A. Rockefeller - Government Service, Under Secretary of Department of Health, Education and Welfare",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:53Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:31:10Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669849",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:31:10Z",
+      "system_mtime": "2017-02-20T21:31:10Z",
+      "user_mtime": "2017-02-20T21:31:10Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/471222",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471018"
+  },
+  "has_unpublished_ancestor": false
+}

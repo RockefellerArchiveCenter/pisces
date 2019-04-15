@@ -1,0 +1,52 @@
+{
+  "lock_version": 1,
+  "position": 90,
+  "publish": true,
+  "ref_id": "4c5a7c53cfe64792966a6b7ae613941c",
+  "title": "Standard Oil of New Jersey",
+  "display_string": "Standard Oil of New Jersey",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:51Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:32:14Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171079",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:32:14Z",
+      "system_mtime": "2017-02-19T18:32:14Z",
+      "user_mtime": "2017-02-19T18:32:14Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/286778",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

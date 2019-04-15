@@ -1,0 +1,139 @@
+{
+  "lock_version": 3,
+  "position": 107,
+  "publish": true,
+  "ref_id": "959a087b65a6d24daf8ffc678145dae6",
+  "title": "Lindsay Debate",
+  "display_string": "Lindsay Debate, 1965 October 30",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2018-11-15T15:03:39Z",
+  "system_mtime": "2018-11-15T16:59:03Z",
+  "user_mtime": "2018-11-15T16:39:48Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 October 30",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:39:48Z",
+      "system_mtime": "2018-11-15T16:39:48Z",
+      "user_mtime": "2018-11-15T16:39:48Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1084620",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1084619",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:39:48Z",
+      "system_mtime": "2018-11-15T16:39:48Z",
+      "user_mtime": "2018-11-15T16:39:48Z",
+      "instance_type": "audio",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 9834D",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-11-15T16:39:48Z",
+        "system_mtime": "2018-11-15T16:39:48Z",
+        "user_mtime": "2018-11-15T16:39:48Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/182106"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "45c312824e8c5b761bab151a66eaa8f6",
+      "type": "physdesc",
+      "content": [
+        "Sound"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f5d2f8570c14425fd4d8f660375eaef1",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "db8297531759b205ecfe5cb3df83c95c",
+      "type": "materialspec",
+      "content": [
+        "1/4 inch audio tape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Balance at 7 1/2 ips",
+          "publish": true
+        }
+      ],
+      "persistent_id": "07ffaa7af45c5158198f925e8fda8a39",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1084728",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1084620"
+  },
+  "has_unpublished_ancestor": false
+}

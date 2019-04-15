@@ -1,0 +1,124 @@
+{
+  "lock_version": 2,
+  "position": 12,
+  "publish": true,
+  "ref_id": "44327532cabe8fa59ac6ae6694a6449c",
+  "title": "Vincent Impellitteri Re-election Spot for NAR (10 second version)\n",
+  "display_string": "Vincent Impellitteri Re-election Spot for NAR (10 second version)\n, 1970 October 13",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:37Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-01T20:43:51Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1970 October 13",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T20:43:51Z",
+      "system_mtime": "2017-11-01T20:43:51Z",
+      "user_mtime": "2017-11-01T20:43:51Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043745",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T20:43:51Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-11-01T20:43:51Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-11-01T20:43:51Z",
+        "system_mtime": "2017-11-01T20:43:51Z",
+        "user_mtime": "2017-11-01T20:43:51Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173388"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "61dc958ad0b20ef94cd378584758d2b3",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 1 min."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a1b4d82bf0be05b65448cd2807232ed7",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "persistent_id": "5c7bbf5fbf83efa99f62a42ec7720927",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038476",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043745"
+  },
+  "has_unpublished_ancestor": false
+}

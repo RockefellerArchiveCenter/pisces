@@ -1,0 +1,115 @@
+{
+  "lock_version": 2,
+  "position": 2,
+  "publish": true,
+  "ref_id": "3479efdb39c04e0cb082d6046be8c568",
+  "title": "General Correspondence",
+  "display_string": "General Correspondence, 1937-1971",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:07Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:29:08Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170867",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:08Z",
+      "system_mtime": "2017-08-31T17:29:08Z",
+      "user_mtime": "2017-08-31T17:29:08Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1937-1971",
+      "begin": "1937",
+      "end": "1971",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:08Z",
+      "system_mtime": "2017-08-31T17:29:08Z",
+      "user_mtime": "2017-08-31T17:29:08Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286994",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:08Z",
+      "system_mtime": "2017-08-31T17:29:08Z",
+      "user_mtime": "2017-08-31T17:29:08Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1712",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:29:08Z",
+        "system_mtime": "2017-08-31T17:29:08Z",
+        "user_mtime": "2017-08-31T17:29:08Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49321"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Re: appeals, contributions; budgets; Rockefeller family interest in Union Church. Annual reports.\n\n",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d19a3e350189ae7d1d7d3f96a3dc3c46",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286997",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286994"
+  },
+  "has_unpublished_ancestor": false
+}

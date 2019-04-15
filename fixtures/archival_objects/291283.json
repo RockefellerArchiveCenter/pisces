@@ -1,0 +1,108 @@
+{
+  "lock_version": 1,
+  "position": 2,
+  "publish": true,
+  "ref_id": "2b4d9f471f344e95a5e2b02e50b6c1b8",
+  "component_id": "3",
+  "title": "New York State Gubernatorial Campaigns",
+  "display_string": "New York State Gubernatorial Campaigns, 1958-1970",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:31Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:59:59Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936338",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:59:59Z",
+      "system_mtime": "2017-02-19T18:59:59Z",
+      "user_mtime": "2017-02-19T18:59:59Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "33",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:59:59Z",
+      "system_mtime": "2017-02-19T18:59:59Z",
+      "user_mtime": "2017-02-19T18:59:59Z",
+      "portion": "whole",
+      "extent_type": "document box(es)",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1958-1970",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:59:59Z",
+      "system_mtime": "2017-02-19T18:59:59Z",
+      "user_mtime": "2017-02-19T18:59:59Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Subseries 3 is arranged chronologically by campaign, and thereunder alphabetically by subject.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "3e1a4f2fee1e73c4aec46e532e3fe687",
+      "label": "Arrangement note",
+      "type": "arrangement",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "The majority of this material pertains to the initial campaign in 1958 (82%), with the remaining material distributed between the 1962 (11%), 1966 (6%), and 1970 (1%) campaigns. The 1958 portion begins with three large files of letters to Rockefeller congratulating him upon his nomination and subsequent election as Governor of New York or inquiring about his stand on particular issues. These files include Rockefeller's replies and are arranged alphabetically by correspondent. The remainder of the 1958 material, as with the successive campaign files, consists of alphabetically arranged subject files.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "b85c6d00b2f2e659cbe6bc43729f3e40",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291283",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "has_unpublished_ancestor": false
+}

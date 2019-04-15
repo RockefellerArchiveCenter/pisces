@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 222,
+  "publish": true,
+  "ref_id": "0e13962527534bdc9076c81b3130d4d6",
+  "title": "1958 Gubernatorial Campaign - Subject Files - Metropolitan Political Club",
+  "display_string": "1958 Gubernatorial Campaign - Subject Files - Metropolitan Political Club, 1958",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:48Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:01:57Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936535",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:57Z",
+      "system_mtime": "2017-02-19T19:01:57Z",
+      "user_mtime": "2017-02-19T19:01:57Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1958",
+      "begin": "1958",
+      "end": "1958",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:57Z",
+      "system_mtime": "2017-02-19T19:01:57Z",
+      "user_mtime": "2017-02-19T19:01:57Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291283",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:57Z",
+      "system_mtime": "2017-02-19T19:01:57Z",
+      "user_mtime": "2017-02-19T19:01:57Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "483",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:01:57Z",
+        "system_mtime": "2017-02-19T19:01:57Z",
+        "user_mtime": "2017-02-19T19:01:57Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49813"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NAR correspondence with with MPC, Charles B. Schmertz, Morton Lawrence of NY Telephone; Rockefeller for Governor Club opening July 21, 1958.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "6b9ee4f4677a24058eb88602b064a6e1",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291506",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291283"
+  },
+  "has_unpublished_ancestor": false
+}

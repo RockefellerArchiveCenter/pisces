@@ -1,0 +1,67 @@
+{
+  "lock_version": 1,
+  "position": 104,
+  "publish": true,
+  "ref_id": "d5d1dd818ee04394a3a0699114625db9",
+  "title": "Acknowledgements of Appointment to Vice Presidency",
+  "display_string": "Acknowledgements of Appointment to Vice Presidency, 1974",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:10Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:34:29Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170802",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:29Z",
+      "system_mtime": "2017-02-19T18:34:29Z",
+      "user_mtime": "2017-02-19T18:34:29Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1974",
+      "begin": "1974",
+      "end": "1974",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:29Z",
+      "system_mtime": "2017-02-19T18:34:29Z",
+      "user_mtime": "2017-02-19T18:34:29Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/287041",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

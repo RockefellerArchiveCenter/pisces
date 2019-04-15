@@ -1,0 +1,60 @@
+{
+  "lock_version": 1,
+  "position": 12,
+  "publish": true,
+  "ref_id": "7b886933caab489dafb0c9805830272f",
+  "title": "Operating Records of the Committee",
+  "display_string": "Operating Records of the Committee",
+  "other_level": "unspecified",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:15Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:26:18Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171786",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:26:18Z",
+      "system_mtime": "2017-02-19T18:26:18Z",
+      "user_mtime": "2017-02-19T18:26:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286059",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/286072",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286059"
+  },
+  "has_unpublished_ancestor": false
+}

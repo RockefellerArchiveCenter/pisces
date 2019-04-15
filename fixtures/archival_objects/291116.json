@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 18,
+  "publish": true,
+  "ref_id": "8b345fe08f434e19984cda4c8ac69dae",
+  "title": "1960 Presidential Campaign - McCann-Erickson, Inc., Advertising",
+  "display_string": "1960 Presidential Campaign - McCann-Erickson, Inc., Advertising, 1960",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:22Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:58:36Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936925",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:36Z",
+      "system_mtime": "2017-02-19T18:58:36Z",
+      "user_mtime": "2017-02-19T18:58:36Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1960",
+      "begin": "1960",
+      "end": "1960",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:36Z",
+      "system_mtime": "2017-02-19T18:58:36Z",
+      "user_mtime": "2017-02-19T18:58:36Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291097",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:36Z",
+      "system_mtime": "2017-02-19T18:58:36Z",
+      "user_mtime": "2017-02-19T18:58:36Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "108",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:58:36Z",
+        "system_mtime": "2017-02-19T18:58:36Z",
+        "user_mtime": "2017-02-19T18:58:36Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49778"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NY Republican State Committee 1960 Campaign: History; Media Estimates; Call Reports &amp; Pertinent Memoranda.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "444cffd3ee6443d933d8dbd12fed499d",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291116",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291097"
+  },
+  "has_unpublished_ancestor": false
+}

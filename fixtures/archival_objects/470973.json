@@ -1,0 +1,60 @@
+{
+  "lock_version": 2,
+  "position": 1,
+  "publish": true,
+  "ref_id": "1511913d0b6e4d54a96a677e87a89a90",
+  "title": "Albums",
+  "display_string": "Albums",
+  "other_level": "Format",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:18Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:29:05Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1665196",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:29:05Z",
+      "system_mtime": "2017-02-20T21:29:05Z",
+      "user_mtime": "2017-02-20T21:29:05Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/470942",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/653",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/470973",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/653"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/470942"
+  },
+  "has_unpublished_ancestor": false
+}

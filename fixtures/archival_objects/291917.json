@@ -1,0 +1,110 @@
+{
+  "lock_version": 1,
+  "position": 5,
+  "publish": true,
+  "ref_id": "e13401604033408eb10596f3328e5ab1",
+  "component_id": "6",
+  "title": "State Issues Files",
+  "display_string": "State Issues Files, 1973-1975",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:38:15Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:05:35Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "935863",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:05:35Z",
+      "system_mtime": "2017-02-19T19:05:35Z",
+      "user_mtime": "2017-02-19T19:05:35Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "12",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:05:35Z",
+      "system_mtime": "2017-02-19T19:05:35Z",
+      "user_mtime": "2017-02-19T19:05:35Z",
+      "portion": "whole",
+      "extent_type": "record cartons",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1973-1975",
+      "begin": "1973",
+      "end": "1975",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:05:35Z",
+      "system_mtime": "2017-02-19T19:05:35Z",
+      "user_mtime": "2017-02-19T19:05:35Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Subseries 6 is arranged alphabetically by state.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a984ac10cd7f3f09bb4621ea2ec80ac5",
+      "label": "Arrangement note",
+      "type": "arrangement",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "This subseries is composed of topical records on state issues that document Rockefeller's speeches and public activities from early 1973 through 1975. His support of other Republicans, particularly during the 1974 congressional campaigns, is also shown here. These state files contain issues and political memoranda for all 50 states, the District of Columbia, Guam, and Puerto Rico. Some of the states are more fully represented than others, particularly those which Rockefeller visited. For such states, there are background binders prepared for speeches he gave on behalf of Republican congressional and state candidates. These binders include itineraries, information on the respective state political government structure, statewide issues, and local issues for specific urban areas. There are also substantial newspaper clippings detailing political themes and events in each state.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "fb734c7be38116f4cc870e4ae3904a69",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291917",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "has_unpublished_ancestor": false
+}

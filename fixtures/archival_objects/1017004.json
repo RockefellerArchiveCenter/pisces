@@ -1,0 +1,138 @@
+{
+  "lock_version": 6,
+  "position": 3,
+  "publish": true,
+  "ref_id": "937a78a2975f8a234db4de93043a2660",
+  "title": "Executive Chamber, Number 8: A Walk in the Glen",
+  "display_string": "Executive Chamber, Number 8: A Walk in the Glen, 1965 May",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:35Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-10-17T19:58:56Z",
+  "suppressed": false,
+  "language": "eng",
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 May",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-17T19:58:56Z",
+      "system_mtime": "2017-10-17T19:58:56Z",
+      "user_mtime": "2017-10-17T19:58:56Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043732",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-17T19:58:56Z",
+      "system_mtime": "2017-10-17T19:58:56Z",
+      "user_mtime": "2017-10-17T19:58:56Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-10-17T19:58:56Z",
+        "system_mtime": "2017-10-17T19:58:56Z",
+        "user_mtime": "2017-10-17T19:58:56Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168272"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "542bd40ab4fc8b9b45821da917339610",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 30 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "0937b8a14d8a022737c370d4ac431618",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5a6cdf7529f2152e5e9b2c7307fa7ad0",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f168834e77ae6677176247f77310b55c",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "New York State Governor Nelson A. Rockefeller profiles Watkins Glen, New York, to show a small community and its problems and achievements. Some stories from locals and a visit to the Watkins Glen cemetery and Watkins Glen National Park.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017004",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043732"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,139 @@
+{
+  "lock_version": 2,
+  "position": 93,
+  "publish": true,
+  "ref_id": "7769da625b33fde915e24729ec2407c5",
+  "title": "Madison, Wisconsin - Water",
+  "display_string": "Madison, Wisconsin - Water, 1965 October 14",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2018-11-15T15:03:38Z",
+  "system_mtime": "2018-11-15T16:59:03Z",
+  "user_mtime": "2018-11-15T16:17:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 October 14",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:17:39Z",
+      "system_mtime": "2018-11-15T16:17:39Z",
+      "user_mtime": "2018-11-15T16:17:39Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1084620",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1084619",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-11-15T16:17:39Z",
+      "system_mtime": "2018-11-15T16:17:39Z",
+      "user_mtime": "2018-11-15T16:17:39Z",
+      "instance_type": "audio",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 9831B",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-11-15T16:17:39Z",
+        "system_mtime": "2018-11-15T16:17:39Z",
+        "user_mtime": "2018-11-15T16:17:39Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/182106"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "c3657d804378e8322acd8b0810d45400",
+      "type": "physdesc",
+      "content": [
+        "Sound"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "eb1c43d54e3bd61555862c60de425e38",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "22ef025abae84f72b60500756648c2d8",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "State Capital, Madison, Wisconsin",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "1/4 inch audio tape"
+      ],
+      "persistent_id": "590fc93f00bf40c45c32967fe1f7930d",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1084714",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1084620"
+  },
+  "has_unpublished_ancestor": false
+}

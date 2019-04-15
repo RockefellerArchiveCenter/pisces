@@ -1,0 +1,114 @@
+{
+  "lock_version": 1,
+  "position": 21,
+  "publish": true,
+  "ref_id": "eb9d6fc8c6d444a0b0c08c9331bd4600",
+  "title": "Special Events",
+  "display_string": "Special Events",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:03Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:24:15Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172032",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:24:15Z",
+      "system_mtime": "2017-02-19T18:24:15Z",
+      "user_mtime": "2017-02-19T18:24:15Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285811",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:24:15Z",
+      "system_mtime": "2017-02-19T18:24:15Z",
+      "user_mtime": "2017-02-19T18:24:15Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "0587A",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:24:15Z",
+        "system_mtime": "2017-02-19T18:24:15Z",
+        "user_mtime": "2017-02-19T18:24:15Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49222"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Arrangements and guest lists for the following special events: Family Christmas Luncheon, 12/19/71 Happy Rockefeller Tea, 4/14/71\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "3058089e81ef14041e3be20deef32ca9",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "Restricted material\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a91f8ea31bbaf66fec933129da06a9cf",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285833",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285811"
+  },
+  "has_unpublished_ancestor": false
+}

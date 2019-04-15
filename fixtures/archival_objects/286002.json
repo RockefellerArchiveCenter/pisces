@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 7,
+  "publish": true,
+  "ref_id": "1ab9b7713b5846118968e50434a29bd1",
+  "title": "Memoranda",
+  "display_string": "Memoranda, 1967",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:10Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:25:40Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171864",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:40Z",
+      "system_mtime": "2017-02-19T18:25:40Z",
+      "user_mtime": "2017-02-19T18:25:40Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1967",
+      "begin": "1967",
+      "end": "1967",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:40Z",
+      "system_mtime": "2017-02-19T18:25:40Z",
+      "user_mtime": "2017-02-19T18:25:40Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285994",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/285983",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:25:40Z",
+      "system_mtime": "2017-02-19T18:25:40Z",
+      "user_mtime": "2017-02-19T18:25:40Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "743",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:25:40Z",
+        "system_mtime": "2017-02-19T18:25:40Z",
+        "user_mtime": "2017-02-19T18:25:40Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49247"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Memo of 3/7/67 transferring Hemisphere Films files to Rockefeller Family Archives.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ba5ef6eac5200100444b4f6d55d5ca37",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286002",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285994"
+  },
+  "has_unpublished_ancestor": false
+}

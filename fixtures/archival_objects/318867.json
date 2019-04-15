@@ -1,0 +1,87 @@
+{
+  "lock_version": 1,
+  "position": 35,
+  "publish": true,
+  "ref_id": "51257a5d77314c2f97b307fb49ff2b64",
+  "title": "VP 11 - Names in honor of the Vice President",
+  "display_string": "VP 11 - Names in honor of the Vice President",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:13:56Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:30:08Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1799192",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:30:08Z",
+      "system_mtime": "2017-02-19T22:30:08Z",
+      "user_mtime": "2017-02-19T22:30:08Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/318831",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/317856",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:30:08Z",
+      "system_mtime": "2017-02-19T22:30:08Z",
+      "user_mtime": "2017-02-19T22:30:08Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T22:30:08Z",
+        "system_mtime": "2017-02-19T22:30:08Z",
+        "user_mtime": "2017-02-19T22:30:08Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/52111"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/318867",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/318831"
+  },
+  "has_unpublished_ancestor": false
+}

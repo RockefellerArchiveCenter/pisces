@@ -1,0 +1,108 @@
+{
+  "lock_version": 1,
+  "position": 60,
+  "publish": true,
+  "ref_id": "9e80bd8029c14e65b76eebd8e7935c63",
+  "title": "Miscellaneous Files - Abortion",
+  "display_string": "Miscellaneous Files - Abortion, 1968",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:48:09Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:45:49Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1181294",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:49Z",
+      "system_mtime": "2017-02-19T19:45:49Z",
+      "user_mtime": "2017-02-19T19:45:49Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968",
+      "begin": "1968",
+      "end": "1968",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:49Z",
+      "system_mtime": "2017-02-19T19:45:49Z",
+      "user_mtime": "2017-02-19T19:45:49Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/552",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:49Z",
+      "system_mtime": "2017-02-19T19:45:49Z",
+      "user_mtime": "2017-02-19T19:45:49Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "61",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:45:49Z",
+        "system_mtime": "2017-02-19T19:45:49Z",
+        "user_mtime": "2017-02-19T19:45:49Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50920"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Correspondence, memoranda on abortion in New York State, including statistical information and material on the Committee to Study Abortion Laws in New York State, reports, polling data on abortion, medical reports, statistical information, legal precedents.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "cd14ec82e92615c62b826d4fd088526a",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/299013",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/552"
+  },
+  "has_unpublished_ancestor": false
+}

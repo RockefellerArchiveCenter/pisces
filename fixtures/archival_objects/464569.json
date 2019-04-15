@@ -1,0 +1,67 @@
+{
+  "lock_version": 2,
+  "position": 7,
+  "publish": true,
+  "ref_id": "622da4426f1c428c9baee1970d9ce958",
+  "title": "New York City",
+  "display_string": "New York City",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:54:37Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:50:26Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1745880",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:50:26Z",
+      "system_mtime": "2017-02-20T20:50:26Z",
+      "user_mtime": "2017-02-20T20:50:26Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/464559",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464487",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464127",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11967",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/464569",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11967"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/464559"
+  },
+  "has_unpublished_ancestor": false
+}

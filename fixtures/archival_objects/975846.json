@@ -1,0 +1,89 @@
+{
+  "lock_version": 0,
+  "position": 268,
+  "publish": true,
+  "ref_id": "7d1d73cbbc8525e16900c016a62fa59c",
+  "title": "Emily DuPont's Reception for Senator Bill Roth, Wilmington, DE",
+  "display_string": "Emily DuPont's Reception for Senator Bill Roth, Wilmington, DE, 1976 October 21",
+  "restrictions_apply": false,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-15T15:34:38Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-15T15:34:38Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1976 October 21",
+      "begin": "1976",
+      "end": "1976",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-15T15:34:38Z",
+      "system_mtime": "2016-06-15T15:34:38Z",
+      "user_mtime": "2016-06-15T15:34:38Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-15T15:34:38Z",
+      "system_mtime": "2016-06-15T15:34:38Z",
+      "user_mtime": "2016-06-15T15:34:38Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "246",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:17Z",
+        "system_mtime": "2016-08-13T09:11:17Z",
+        "user_mtime": "2016-08-13T09:11:17Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132444"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/975846",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,67 @@
+{
+  "lock_version": 2,
+  "position": 0,
+  "publish": true,
+  "ref_id": "739b2b08c560410e81577f40d7965f37",
+  "title": "Governor's Conference on Crime",
+  "display_string": "Governor's Conference on Crime",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:54:54Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:54:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1745405",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:54:39Z",
+      "system_mtime": "2017-02-20T20:54:39Z",
+      "user_mtime": "2017-02-20T20:54:39Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/465108",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465092",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464127",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11967",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/465109",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11967"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/465108"
+  },
+  "has_unpublished_ancestor": false
+}

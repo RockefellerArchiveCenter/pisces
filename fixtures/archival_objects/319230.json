@@ -1,0 +1,67 @@
+{
+  "lock_version": 1,
+  "position": 8,
+  "publish": true,
+  "ref_id": "99420bc5522e4d5e87192f8d02142a48",
+  "component_id": "9",
+  "title": "Oversized Items Sent to the Vice President",
+  "display_string": "Oversized Items Sent to the Vice President",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:14:14Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:33:06Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1800506",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:33:06Z",
+      "system_mtime": "2017-02-19T22:33:06Z",
+      "user_mtime": "2017-02-19T22:33:06Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "persistent_id": "b8aee49e0c5ec21fca717b5aaedaccd4",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "content": "Contains albums, books, correspondence, photographs, reports, etc.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/319230",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "has_unpublished_ancestor": false
+}

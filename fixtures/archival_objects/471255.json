@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 28,
+  "publish": true,
+  "ref_id": "e97cdba5e8844e7a91e1890b89fca2ba",
+  "title": "Airport with Mr. and Mrs. George Hinman",
+  "display_string": "Airport with Mr. and Mrs. George Hinman, 1968 November 6",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:55Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:31:24Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669817",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:31:24Z",
+      "system_mtime": "2017-02-20T21:31:24Z",
+      "user_mtime": "2017-02-20T21:31:24Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968 November 6",
+      "begin": "1968",
+      "end": "1968",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:31:24Z",
+      "system_mtime": "2017-02-20T21:31:24Z",
+      "user_mtime": "2017-02-20T21:31:24Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471226",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:31:24Z",
+      "system_mtime": "2017-02-20T21:31:24Z",
+      "user_mtime": "2017-02-20T21:31:24Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "197",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:31:24Z",
+        "system_mtime": "2017-02-20T21:31:24Z",
+        "user_mtime": "2017-02-20T21:31:24Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80872"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "c10ac884bc9132db48f5b97d50ef354b",
+      "label": "General Physical Description note",
+      "content": [
+        "(2)"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471255",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471226"
+  },
+  "has_unpublished_ancestor": false
+}

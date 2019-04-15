@@ -1,0 +1,137 @@
+{
+  "lock_version": 9,
+  "position": 2,
+  "publish": true,
+  "ref_id": "8e37c3bcd235827db03cf4c2596423a0",
+  "title": "Executive Chamber, Number 7: Troubled Mind",
+  "display_string": "Executive Chamber, Number 7: Troubled Mind, 1965 April",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:31Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-05-18T20:25:05Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1965 April",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-18T20:25:05Z",
+      "system_mtime": "2017-05-18T20:25:05Z",
+      "user_mtime": "2017-05-18T20:25:05Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043732",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-18T20:25:05Z",
+      "system_mtime": "2017-05-18T20:25:05Z",
+      "user_mtime": "2017-05-18T20:25:05Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-05-18T20:25:05Z",
+        "system_mtime": "2017-05-18T20:25:05Z",
+        "user_mtime": "2017-05-18T20:25:05Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168238"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "7875218ed1b416fcae9e6d9e0cc1cba2",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 30 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "7ee9aa4422c9b058982f0763e5fa7948",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "7fc93bce78f7c3248f8b45c317592f6b",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9f99fbd53c26db7e5b3a94cd18f3b0df",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "New York State Governor Nelson A. Rockefeller and health professionals discusses mental illness, the need to create new facilities, and the progress of New York State hospitals.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1016970",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043732"
+  },
+  "has_unpublished_ancestor": false
+}

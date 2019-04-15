@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 6,
+  "publish": true,
+  "ref_id": "76ca2c82f1e5492983649c494262836d",
+  "title": "Notes",
+  "display_string": "Notes, 1968",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:39:26Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:13:18Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937785",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968",
+      "begin": "1968",
+      "end": "1968",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/292946",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/546",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "50",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:13:18Z",
+        "system_mtime": "2017-02-19T19:13:18Z",
+        "user_mtime": "2017-02-19T19:13:18Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49964"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Oscar M. Ruebhausen notes on issues of campaign.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "33bcdf58a9aab8280be0e9088424a9a9",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/292953",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/546"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/292946"
+  },
+  "has_unpublished_ancestor": false
+}

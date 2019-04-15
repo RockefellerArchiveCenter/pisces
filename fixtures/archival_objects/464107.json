@@ -1,0 +1,87 @@
+{
+  "lock_version": 1,
+  "position": 7,
+  "publish": true,
+  "ref_id": "d9d5fa72d8e742e3ad81b82479b3d445",
+  "title": "Citizens Committee for Children - Community Service Society",
+  "display_string": "Citizens Committee for Children - Community Service Society",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:54:21Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:47:07Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1746371",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:47:07Z",
+      "system_mtime": "2017-02-20T20:47:07Z",
+      "user_mtime": "2017-02-20T20:47:07Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/464099",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/462237",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/638",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:47:07Z",
+      "system_mtime": "2017-02-20T20:47:07Z",
+      "user_mtime": "2017-02-20T20:47:07Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T20:47:07Z",
+        "system_mtime": "2017-02-20T20:47:07Z",
+        "user_mtime": "2017-02-20T20:47:07Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/75530"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/464107",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/638"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/464099"
+  },
+  "has_unpublished_ancestor": false
+}

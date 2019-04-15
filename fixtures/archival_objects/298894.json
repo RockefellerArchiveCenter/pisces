@@ -1,0 +1,128 @@
+{
+  "lock_version": 1,
+  "position": 23,
+  "publish": true,
+  "ref_id": "e16e4c936b264a2593584e8168646178",
+  "title": "Kenneth Riland Interview",
+  "display_string": "Kenneth Riland Interview, 1979 September 14",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:47:58Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2017-02-19T19:44:56Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942696",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:44:56Z",
+      "system_mtime": "2017-02-19T19:44:56Z",
+      "user_mtime": "2017-02-19T19:44:56Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "97",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:44:56Z",
+      "system_mtime": "2017-02-19T19:44:56Z",
+      "user_mtime": "2017-02-19T19:44:56Z",
+      "portion": "whole",
+      "extent_type": "pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1979 September 14",
+      "begin": "1979",
+      "end": "1979",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:44:56Z",
+      "system_mtime": "2017-02-19T19:44:56Z",
+      "user_mtime": "2017-02-19T19:44:56Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:44:56Z",
+      "system_mtime": "2017-02-19T19:44:56Z",
+      "user_mtime": "2017-02-19T19:44:56Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "17",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:44:56Z",
+        "system_mtime": "2017-02-19T19:44:56Z",
+        "user_mtime": "2017-02-19T19:44:56Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50914"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Physician\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "c7d63e680c14ea7bf17aae9a696c8d22",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298894",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

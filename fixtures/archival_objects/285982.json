@@ -1,0 +1,108 @@
+{
+  "lock_version": 2,
+  "position": 46,
+  "publish": true,
+  "ref_id": "7c2d0dab06b14f918de5c20d6ebcb76b",
+  "title": "Governors Conferences - Other",
+  "display_string": "Governors Conferences - Other, 1960, 1967-1970",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:09Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:24:31Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171882",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:31Z",
+      "system_mtime": "2017-08-31T17:24:31Z",
+      "user_mtime": "2017-08-31T17:24:31Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1960, 1967-1970",
+      "begin": "1960",
+      "end": "1970",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:31Z",
+      "system_mtime": "2017-08-31T17:24:31Z",
+      "user_mtime": "2017-08-31T17:24:31Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:24:31Z",
+      "system_mtime": "2017-08-31T17:24:31Z",
+      "user_mtime": "2017-08-31T17:24:31Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "725",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:24:31Z",
+        "system_mtime": "2017-08-31T17:24:31Z",
+        "user_mtime": "2017-08-31T17:24:31Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49244"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NAR invited attendees of the Governors' Conference and other dignitaries to a day at the Dorado Beach Hotel. Correspondence, arrangements, guest lists.\n\n",
+          "jsonmodel_type": "note_text",
+          "publish": true
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "67063adfd452f6f214a79ddc49f05305",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285982",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

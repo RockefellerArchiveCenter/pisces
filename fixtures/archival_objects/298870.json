@@ -1,0 +1,135 @@
+{
+  "lock_version": 2,
+  "position": 5,
+  "publish": true,
+  "ref_id": "f65a13552f584698b1eb48fcf5d7d5bf",
+  "title": "J. Richardson Dilworth Interview",
+  "display_string": "J. Richardson Dilworth Interview, 1980 May 2",
+  "restrictions_apply": true,
+  "created_by": "admin",
+  "last_modified_by": "fitcha",
+  "create_time": "2014-12-06T09:47:56Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-02-13T20:36:23Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942720",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:36:23Z",
+      "system_mtime": "2018-02-13T20:36:23Z",
+      "user_mtime": "2018-02-13T20:36:23Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1980 May 2",
+      "begin": "1980",
+      "end": "1980",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:36:23Z",
+      "system_mtime": "2018-02-13T20:36:23Z",
+      "user_mtime": "2018-02-13T20:36:23Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:36:23Z",
+      "system_mtime": "2018-02-13T20:36:23Z",
+      "user_mtime": "2018-02-13T20:36:23Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "0004A",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-02-13T20:36:23Z",
+        "system_mtime": "2018-02-13T20:36:23Z",
+        "user_mtime": "2018-02-13T20:36:23Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50913"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "cb7d27691b1763057673163b6a4078c0",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted material\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "7b6ada00e29b8fc443ada5abb6176c4e",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restriction-Ann Rockefeller Roberts\nRestriction-Steven C. Rockefeller (negative comments about)\nRestriction-Mary Rockefeller Morgan (negative comments about)\nRestriction-Nelson Rockefeller Jr.\nRestriction-Mark Fitler Rockefeller\n\n",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298870",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

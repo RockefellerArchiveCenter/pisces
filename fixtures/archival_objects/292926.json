@@ -1,0 +1,85 @@
+{
+  "lock_version": 1,
+  "position": 24,
+  "publish": true,
+  "ref_id": "0f55010e76f34ee19eca0f8d544b0cf9",
+  "title": "Welfare",
+  "display_string": "Welfare",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:39:24Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:13:06Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937812",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:06Z",
+      "system_mtime": "2017-02-19T19:13:06Z",
+      "user_mtime": "2017-02-19T19:13:06Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/292901",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/546",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:06Z",
+      "system_mtime": "2017-02-19T19:13:06Z",
+      "user_mtime": "2017-02-19T19:13:06Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "25",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:13:06Z",
+        "system_mtime": "2017-02-19T19:13:06Z",
+        "user_mtime": "2017-02-19T19:13:06Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49961"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/292926",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/546"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/292901"
+  },
+  "has_unpublished_ancestor": false
+}

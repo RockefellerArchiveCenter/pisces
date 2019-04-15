@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 76,
+  "publish": true,
+  "ref_id": "0f523dbd1abb4f04bbf04dcf437d4184",
+  "title": "Inauguration, 1963",
+  "display_string": "Inauguration, 1963, 1963",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:38:09Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:04:53Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936207",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:53Z",
+      "system_mtime": "2017-02-19T19:04:53Z",
+      "user_mtime": "2017-02-19T19:04:53Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1963",
+      "begin": "1963",
+      "end": "1963",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:53Z",
+      "system_mtime": "2017-02-19T19:04:53Z",
+      "user_mtime": "2017-02-19T19:04:53Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291757",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:53Z",
+      "system_mtime": "2017-02-19T19:04:53Z",
+      "user_mtime": "2017-02-19T19:04:53Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "805",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:04:53Z",
+        "system_mtime": "2017-02-19T19:04:53Z",
+        "user_mtime": "2017-02-19T19:04:53Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49840"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "NAR schedule; invitations to NAR's children; organization chart &amp; diagram of seating arrangements; plans for reception &amp; open house; Inaugural Prayer; invitation list for Swearing-In Ceremony; copy of NAR address.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "0ef500af97ffe6b79427638c7d12fc68",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291834",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291757"
+  },
+  "has_unpublished_ancestor": false
+}

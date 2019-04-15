@@ -1,0 +1,132 @@
+{
+  "lock_version": 4,
+  "position": 89,
+  "publish": false,
+  "ref_id": "b77fe22bbb9d12c71b42d83ab194e5b0",
+  "title": "Richard D. Parsons Interview",
+  "display_string": "Richard D. Parsons Interview, September 12 and 21, 1979",
+  "restrictions_apply": true,
+  "created_by": "fitcha",
+  "last_modified_by": "fitcha",
+  "create_time": "2018-11-09T17:30:37Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-11-09T19:38:11Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "94",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-09T19:38:11Z",
+      "system_mtime": "2018-11-09T19:38:11Z",
+      "user_mtime": "2018-11-09T19:38:11Z",
+      "portion": "whole",
+      "extent_type": "Pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "September 12 and 21, 1979",
+      "begin": "1979-09-12",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-09T19:38:11Z",
+      "system_mtime": "2018-11-09T19:38:11Z",
+      "user_mtime": "2018-11-09T19:38:11Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-11-09T19:38:11Z",
+      "system_mtime": "2018-11-09T19:38:11Z",
+      "user_mtime": "2018-11-09T19:38:11Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "66",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-11-09T19:38:11Z",
+        "system_mtime": "2018-11-09T19:38:11Z",
+        "user_mtime": "2018-11-09T19:38:11Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/181887"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bc34d2359cb4a1cd36017ddd86428d98",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Assistant Counsel to the Governor; Deputy Counsel to the Vice President; Personal Counsel; Rockefeller Brothers Fund Trustee; Executor for Margaretta F. Rockefeller",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "efc0142639daa17679d487c44229ecbb",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted folder: Do not open until after death of interviewee.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1083482",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

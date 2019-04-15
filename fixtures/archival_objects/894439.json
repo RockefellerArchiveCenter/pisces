@@ -1,0 +1,165 @@
+{
+  "lock_version": 3,
+  "position": 0,
+  "publish": true,
+  "ref_id": "0fcdcde4a0ab4950924805aa0b1f7254",
+  "title": "Message to Legislature",
+  "display_string": "Message to Legislature, 1969 January 8",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2015-06-03T23:39:57Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-04-27T16:51:34Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1969 January 8",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-04-27T16:51:34Z",
+      "system_mtime": "2017-04-27T16:51:34Z",
+      "user_mtime": "2017-04-27T16:51:34Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894348",
+      "level": "Date"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/894334",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-04-27T16:51:34Z",
+      "system_mtime": "2017-04-27T16:51:34Z",
+      "user_mtime": "2017-04-27T16:51:34Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2017-04-27T16:51:34Z",
+        "system_mtime": "2017-04-27T16:51:34Z",
+        "user_mtime": "2017-04-27T16:51:34Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/128055"
+        }
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-04-27T16:51:34Z",
+      "system_mtime": "2017-04-27T16:51:34Z",
+      "user_mtime": "2017-04-27T16:51:34Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2017-04-27T16:51:34Z",
+        "system_mtime": "2017-04-27T16:51:34Z",
+        "user_mtime": "2017-04-27T16:51:34Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/128056"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_7a1d28aed55c10b014691266f11bbd34",
+      "type": "physdesc",
+      "content": [
+        "Silent, Color, 40 minutes. Only available on original 16mm film."
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_14dec9b44b37913ec493b33f1448f383",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "NAR annual message to the NYS legislature, Albany, NY.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "71a51e89a3737d5075108cba827fe20e",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.1 Fg 19 (AV 1942) and III 14.1 Fg 20 (AV 1943)",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "<p>When requesting to view audiovisual material, please refer to the Title and the AV Number (example: AV 1916). Researchers are asked to check the \"Restrictions\" note for each Title. If a Title does not currently have an access copy, please contact a RAC archivist for further instruction. </p>\n\n<p>All inquiries to view films require advanced notice of at least 2 business days, and may necessitate notice of up to one week. Individual items, including those that are not available in modern formats, may be restricted from access at the discretion of RAC.</p>\n",
+          "publish": true
+        }
+      ],
+      "persistent_id": "8d357699b9c94c6634280f1e0ba5ff7e",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894439",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894348"
+  },
+  "has_unpublished_ancestor": false
+}

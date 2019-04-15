@@ -1,0 +1,75 @@
+{
+  "lock_version": 1,
+  "position": 2,
+  "publish": false,
+  "ref_id": "42ca1e78df54450496d024b4ce736375",
+  "title": "Appendix A. 1958 Campaign, Photo List (Sammy Schulman's Photos)",
+  "display_string": "Appendix A. 1958 Campaign, Photo List (Sammy Schulman's Photos)",
+  "other_level": "unspecified",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:01:23Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:35:42Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669192",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:35:42Z",
+      "system_mtime": "2017-02-20T21:35:42Z",
+      "user_mtime": "2017-02-20T21:35:42Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "(these photos are currently in Series 2, Nelson A. Rockefeller Photographs, Box 4.)\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5d4e3987eb4fc770661e34d2a87ca03a",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471808",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471017"
+  },
+  "has_unpublished_ancestor": false
+}

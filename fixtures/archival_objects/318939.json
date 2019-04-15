@@ -1,0 +1,80 @@
+{
+  "lock_version": 1,
+  "position": 3,
+  "publish": true,
+  "ref_id": "08628bb796c9459292ac46f136fafefa",
+  "component_id": "4",
+  "title": "Invitations",
+  "display_string": "Invitations",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:13:59Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:30:43Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1800266",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:30:43Z",
+      "system_mtime": "2017-02-19T22:30:43Z",
+      "user_mtime": "2017-02-19T22:30:43Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "persistent_id": "3cc50e75056c8266bcd4ab97102af6d1",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "content": "Invitations to speak, appear, attend; most declined.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    },
+    {
+      "persistent_id": "4cdf77d1e7df77b64e24a50e409f3b33",
+      "type": "arrangement",
+      "subnotes": [
+        {
+          "content": "Invitations is arranged in 4 subseries:\n1. General.\n2. Domestic.\n3. Foreign.\n4. Other.\n\nDomestic invitations are primarily filed by the year of the event/state or geographic area in which the event is being held in/city the event is being held in.\n\nEach state or geographic area is assigned a number. The states are then arranged numerically/alphabetically. For example, ST 1 is Alabama, ST 2 is Alaska, ST 3 is Arizona and so on.\n\nIf a folder becomes too large to hold invitations from a particular state or geographic area, it is then divided alphabetically by the name of the city. Cities represented by a significant amount of documentation will have their own folder, or multiple folders.\n\nForeign invitations are primarily filed by the year of the event/country/city.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/318939",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "has_unpublished_ancestor": false
+}

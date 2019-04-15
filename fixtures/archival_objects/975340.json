@@ -1,0 +1,89 @@
+{
+  "lock_version": 0,
+  "position": 102,
+  "publish": true,
+  "ref_id": "092603d0ace9a542bc9be8515bd4b018",
+  "title": "Change Magazine Award Luncheon, Washington. D. C.",
+  "display_string": "Change Magazine Award Luncheon, Washington. D. C., 1975 October 7",
+  "restrictions_apply": false,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-06T16:48:27Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-06T16:48:27Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 October 7",
+      "begin": "1975",
+      "end": "1975",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-06T16:48:27Z",
+      "system_mtime": "2016-06-06T16:48:27Z",
+      "user_mtime": "2016-06-06T16:48:27Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-06T16:48:27Z",
+      "system_mtime": "2016-06-06T16:48:27Z",
+      "user_mtime": "2016-06-06T16:48:27Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "92",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:12Z",
+        "system_mtime": "2016-08-13T09:11:12Z",
+        "user_mtime": "2016-08-13T09:11:12Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132432"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/975340",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

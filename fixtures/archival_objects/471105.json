@@ -1,0 +1,97 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "934f5a0eb0334ab399a8802f1cb363ff",
+  "title": "Dr. Felipe A. Espil, Argentine Ambassador to the U.S.; Nelson A. Rockefeller, Buenos Aires",
+  "display_string": "Dr. Felipe A. Espil, Argentine Ambassador to the U.S.; Nelson A. Rockefeller, Buenos Aires, 1942",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:46Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:30:15Z",
+  "suppressed": false,
+  "level": "item",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669976",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:15Z",
+      "system_mtime": "2017-02-20T21:30:15Z",
+      "user_mtime": "2017-02-20T21:30:15Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1942",
+      "begin": "1942",
+      "end": "1942",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:15Z",
+      "system_mtime": "2017-02-20T21:30:15Z",
+      "user_mtime": "2017-02-20T21:30:15Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471104",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471092",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "03cb123f0010a78064126d6979c4ea5b",
+      "label": "General Physical Description note",
+      "content": [
+        "(1)"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471105",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471104"
+  },
+  "has_unpublished_ancestor": false
+}

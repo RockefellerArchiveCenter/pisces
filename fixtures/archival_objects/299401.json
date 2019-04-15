@@ -1,0 +1,78 @@
+{
+  "lock_version": 1,
+  "position": 371,
+  "publish": true,
+  "ref_id": "b6bd59cd2c594343a2a0a396981bbea4",
+  "title": "1969 Senate Internal Memo 5237-5507",
+  "display_string": "1969 Senate Internal Memo 5237-5507",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:48:37Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:48:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1181408",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:48:39Z",
+      "system_mtime": "2017-02-19T19:48:39Z",
+      "user_mtime": "2017-02-19T19:48:39Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/553",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:48:39Z",
+      "system_mtime": "2017-02-19T19:48:39Z",
+      "user_mtime": "2017-02-19T19:48:39Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "371",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:48:39Z",
+        "system_mtime": "2017-02-19T19:48:39Z",
+        "user_mtime": "2017-02-19T19:48:39Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50961"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/299401",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/553"
+  },
+  "has_unpublished_ancestor": false
+}

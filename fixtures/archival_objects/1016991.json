@@ -1,0 +1,138 @@
+{
+  "lock_version": 6,
+  "position": 9,
+  "publish": true,
+  "ref_id": "c2e137b59015f69dfb6cf63ee0792a97",
+  "title": "Victory Vanguard - 1962 Campaign",
+  "display_string": "Victory Vanguard - 1962 Campaign, 1962",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:33Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-05-26T17:45:12Z",
+  "suppressed": false,
+  "language": "eng",
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1962",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-26T17:45:12Z",
+      "system_mtime": "2017-05-26T17:45:12Z",
+      "user_mtime": "2017-05-26T17:45:12Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043729",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-26T17:45:12Z",
+      "system_mtime": "2017-05-26T17:45:12Z",
+      "user_mtime": "2017-05-26T17:45:12Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-05-26T17:45:12Z",
+        "system_mtime": "2017-05-26T17:45:12Z",
+        "user_mtime": "2017-05-26T17:45:12Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168259"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "656bebec758adca67d5591e6cdaa0ab0",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 30 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "9708239109b72038a93236e50786769c",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "da60c9fbb3bc3a6e7387a44c0dbe1d81",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "20ab43355e76e5532547786212cc3bab",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Episode of Victory Vanguard that looks at the 1962 state election, with Governor Nelson A. Rockefeller. Program sponsored by the New York Republican State Committee.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1016991",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043729"
+  },
+  "has_unpublished_ancestor": false
+}

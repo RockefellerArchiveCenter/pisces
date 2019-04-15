@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 33,
+  "publish": true,
+  "ref_id": "a8f86ec236044b33b411faff0f8d2d73",
+  "title": "Eisenhower, Dwight David - 1952 Campaign, Vandenberg Memo",
+  "display_string": "Eisenhower, Dwight David - 1952 Campaign, Vandenberg Memo, 1952",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:16Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:58:00Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937002",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:00Z",
+      "system_mtime": "2017-02-19T18:58:00Z",
+      "user_mtime": "2017-02-19T18:58:00Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1952",
+      "begin": "1952",
+      "end": "1952",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:00Z",
+      "system_mtime": "2017-02-19T18:58:00Z",
+      "user_mtime": "2017-02-19T18:58:00Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291005",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:00Z",
+      "system_mtime": "2017-02-19T18:58:00Z",
+      "user_mtime": "2017-02-19T18:58:00Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "34",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:58:00Z",
+        "system_mtime": "2017-02-19T18:58:00Z",
+        "user_mtime": "2017-02-19T18:58:00Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49769"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Memo from NAR on suggested Dwight D. Eisenhower positions on economic and social issues. Suggests names of individuals to help draft position papers.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e5114d4a6cd204b0bd05baee2fadc955",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291039",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291005"
+  },
+  "has_unpublished_ancestor": false
+}

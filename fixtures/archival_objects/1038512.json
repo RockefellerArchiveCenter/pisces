@@ -1,0 +1,124 @@
+{
+  "lock_version": 2,
+  "position": 27,
+  "publish": true,
+  "ref_id": "b5178b5ca4bf3e855635e22fd4b3f7a3",
+  "title": "Governor Rockefeller Campaign Spots Compilation (30 seconds)\n",
+  "display_string": "Governor Rockefeller Campaign Spots Compilation (30 seconds)\n, 1970",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:47Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-01T19:42:18Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1970",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T19:42:18Z",
+      "system_mtime": "2017-11-01T19:42:18Z",
+      "user_mtime": "2017-11-01T19:42:18Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043745",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T19:42:18Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-11-01T19:42:18Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-11-01T19:42:18Z",
+        "system_mtime": "2017-11-01T19:42:18Z",
+        "user_mtime": "2017-11-01T19:42:18Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173424"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "f8e9f84f903501e4483a6f4178526c97",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 17 min. 15 sec."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "74a34fe498d0ac865a14a9aa3b53f19c",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "persistent_id": "dd9ea0c544a09b88db2f4082d8254fd5",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038512",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043745"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,153 @@
+{
+  "lock_version": 5,
+  "position": 1,
+  "publish": true,
+  "ref_id": "a781f7ca9457516ab4e6d6309504de98",
+  "title": "Breakfast with the Long Island Association",
+  "display_string": "Breakfast with the Long Island Association, 1969 August 7",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:33Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-05-18T20:46:27Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1969 August 7",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-18T20:46:27Z",
+      "system_mtime": "2017-05-18T20:46:27Z",
+      "user_mtime": "2017-05-18T20:46:27Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043744",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-05-18T20:46:27Z",
+      "system_mtime": "2017-05-18T20:46:27Z",
+      "user_mtime": "2017-05-18T20:46:27Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-05-18T20:46:27Z",
+        "system_mtime": "2017-05-18T20:46:27Z",
+        "user_mtime": "2017-05-18T20:46:27Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168254"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "faf260cb0d7ef52506d1235b7fd22a00",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 1 hour, 42 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "207f78a2a6004e4df461d55c548a37e7",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9ab1ecd64f0107b8ab29b82362f1863a",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "From Georgian Room of the Garden City Hotel, Governor Nelson A. Rockefeller speaks to members of the Long Island Association of Commerce and Industry about the Long Island Railroad.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "c68a1097abde05d4602f154c7d7235ff",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "59276750ca894a0d5a5e84efce38640b",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1016986",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043744"
+  },
+  "has_unpublished_ancestor": false
+}

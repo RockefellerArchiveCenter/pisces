@@ -1,0 +1,105 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "d46a107725834a83927d2a2eb57f2083",
+  "title": "Rodman Clark Rockefeller family",
+  "display_string": "Rodman Clark Rockefeller family",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:29:32Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1665195",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:29:33Z",
+      "system_mtime": "2017-02-20T21:29:33Z",
+      "user_mtime": "2017-02-20T21:29:33Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471012",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471011",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/470942",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/653",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:29:32Z",
+      "system_mtime": "2017-02-20T21:29:32Z",
+      "user_mtime": "2017-02-20T21:29:32Z",
+      "instance_type": "Still Image",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:29:32Z",
+        "system_mtime": "2017-02-20T21:29:32Z",
+        "user_mtime": "2017-02-20T21:29:32Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80843"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "persistent_id": "86861e4f74b235557487032c280c0825",
+      "type": "userestrict",
+      "subnotes": [
+        {
+          "content": "Permission is required in order to publish or otherwise use photographs and other visual materials of living members of the Rockefeller family. See RAC Head of Reference for details.\n\nImages of Happy Rockefeller while she is officially serving as the First Lady of New York or as the Second Lady of the United States are open for scholarly use.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471013",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/653"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471012"
+  },
+  "has_unpublished_ancestor": false
+}

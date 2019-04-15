@@ -1,0 +1,110 @@
+{
+  "lock_version": 1,
+  "position": 5,
+  "publish": true,
+  "ref_id": "7597be43ad074f0e93a065de2503e4a3",
+  "component_id": "06",
+  "title": "Science Advisory Groups for the Office of Science and Technology Policy (OSTP)",
+  "display_string": "Science Advisory Groups for the Office of Science and Technology Policy (OSTP), 1975-1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:18Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:10:42Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960290",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:42Z",
+      "system_mtime": "2017-02-19T22:10:42Z",
+      "user_mtime": "2017-02-19T22:10:42Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "2",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:42Z",
+      "system_mtime": "2017-02-19T22:10:42Z",
+      "user_mtime": "2017-02-19T22:10:42Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975-1976",
+      "begin": "1975",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:42Z",
+      "system_mtime": "2017-02-19T22:10:42Z",
+      "user_mtime": "2017-02-19T22:10:42Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries is arranged chronologically.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e8ae28dc36ef977e0fa89df4905b0f2d",
+      "label": "Arrangement note",
+      "type": "arrangement",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "This subseries contains memos and information on meetings with the science advisory groups. Two science advisory groups were appointed by President Ford in November 1975. The first group, chaired by Dr. Simon Ramo, provided advice on the contributions of technology to economic strength. The other group, chaired by Dr. William Baker, provided advice on anticipated advances in science and technology. The groups' priorities were to set up a list of urgent scientific issues. The list included energy, food and nutrition, space, industrial productivity, health and safety regulations, and basic research.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ac772789f03047c1a64f19f6b3d6991d",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316448",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

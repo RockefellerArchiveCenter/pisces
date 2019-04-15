@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "a985f40c85f04267b33f594aceab986f",
+  "component_id": "01",
+  "title": "Presidential Campaign 1976",
+  "display_string": "Presidential Campaign 1976, 1975-1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:11Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:09:37Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960432",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:37Z",
+      "system_mtime": "2017-02-19T22:09:37Z",
+      "user_mtime": "2017-02-19T22:09:37Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "2",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:37Z",
+      "system_mtime": "2017-02-19T22:09:37Z",
+      "user_mtime": "2017-02-19T22:09:37Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975-1976",
+      "begin": "1975",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:37Z",
+      "system_mtime": "2017-02-19T22:09:37Z",
+      "user_mtime": "2017-02-19T22:09:37Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of correspondence and newspaper clippings pertaining to the 1976 Presidential election. The bulk of the material deals with the 1976 campaign strategy for President Gerald Ford. Notable figures in this subseries are Bob Dole, Jimmy Carter, Gerald Ford, Ronald Reagan, and Walter Mondale.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "583cc2ca0eb01c8254d5c1a61babfe11",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316305",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

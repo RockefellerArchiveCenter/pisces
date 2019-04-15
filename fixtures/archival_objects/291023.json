@@ -1,0 +1,129 @@
+{
+  "lock_version": 1,
+  "position": 17,
+  "publish": true,
+  "ref_id": "6697394acc64448fafa813e1c3daa595",
+  "title": "Contributions, Rockefeller Family (CLOSED FOLDER)",
+  "display_string": "Contributions, Rockefeller Family (CLOSED FOLDER), 1961",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:15Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:57:52Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937018",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:57:52Z",
+      "system_mtime": "2017-02-19T18:57:52Z",
+      "user_mtime": "2017-02-19T18:57:52Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1961",
+      "begin": "1961",
+      "end": "1961",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:57:52Z",
+      "system_mtime": "2017-02-19T18:57:52Z",
+      "user_mtime": "2017-02-19T18:57:52Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291005",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:57:52Z",
+      "system_mtime": "2017-02-19T18:57:52Z",
+      "user_mtime": "2017-02-19T18:57:52Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "18",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:57:52Z",
+        "system_mtime": "2017-02-19T18:57:52Z",
+        "user_mtime": "2017-02-19T18:57:52Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49767"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Restricted material\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "4e210decb8050d6101f0edac5f9a4945",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "Restriction-Various Rockefeller family members\n\n",
+          "publish": false,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "0d23225c89a466f76ac9c43ed632ef66",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291023",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291005"
+  },
+  "has_unpublished_ancestor": false
+}

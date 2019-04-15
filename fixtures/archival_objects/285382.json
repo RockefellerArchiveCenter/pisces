@@ -1,0 +1,94 @@
+{
+  "lock_version": 1,
+  "position": 48,
+  "publish": true,
+  "ref_id": "3371fc8b81694a709daa897027a00374",
+  "title": "Documents and Research Files",
+  "display_string": "Documents and Research Files, 1940-1950",
+  "other_level": "unspecified",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:29:42Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:20:24Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172471",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:20:24Z",
+      "system_mtime": "2017-02-19T18:20:24Z",
+      "user_mtime": "2017-02-19T18:20:24Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1940-1950",
+      "begin": "1940",
+      "end": "1950",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:20:24Z",
+      "system_mtime": "2017-02-19T18:20:24Z",
+      "user_mtime": "2017-02-19T18:20:24Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285333",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/285323",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Memos, notes, revisions of drafts, and NAR's comments divided into the following sub-files within this folder: Miscellaneous (includes list of members of \"the group\"); Argentina; Development Corporations; Editorials, Use of; European Aid; Oil - Mexico; Rio de Janeiro Conference; \"Dumbarton Oaks and the Small Nations,\" from John Foster Dulles' \"War or Peace;\" Mexico City Conference; San Francisco Conference.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "8740b1b2e59fb45fd0622722cf4dcfca",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285382",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285333"
+  },
+  "has_unpublished_ancestor": false
+}

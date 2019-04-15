@@ -1,0 +1,119 @@
+{
+  "lock_version": 1,
+  "position": 13,
+  "publish": true,
+  "ref_id": "95e5eb7386054e07b03cf43fa6846053",
+  "title": "Nelson A. Rockefeller; Jose Irineu Cabral, executive director of ABCAR; Joao Napoleao de Andrade, President of ABCAR; Walter Crawford",
+  "display_string": "Nelson A. Rockefeller; Jose Irineu Cabral, executive director of ABCAR; Joao Napoleao de Andrade, President of ABCAR; Walter Crawford, 1958",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:46Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:30:16Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669984",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:16Z",
+      "system_mtime": "2017-02-20T21:30:16Z",
+      "user_mtime": "2017-02-20T21:30:16Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1958",
+      "begin": "1958",
+      "end": "1958",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:16Z",
+      "system_mtime": "2017-02-20T21:30:16Z",
+      "user_mtime": "2017-02-20T21:30:16Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471092",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471018",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:30:16Z",
+      "system_mtime": "2017-02-20T21:30:16Z",
+      "user_mtime": "2017-02-20T21:30:16Z",
+      "instance_type": "Still Image",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "68",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:30:16Z",
+        "system_mtime": "2017-02-20T21:30:16Z",
+        "user_mtime": "2017-02-20T21:30:16Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80854"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "46971a11afc4ed30bcba38b12173d5a0",
+      "label": "General Physical Description note",
+      "content": [
+        "(1) [58]"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471107",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471092"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,130 @@
+{
+  "lock_version": 2,
+  "position": 7,
+  "publish": false,
+  "ref_id": "4f1233c1ac9651ca19486eeaddaf076c",
+  "title": "Nelson Rockefeller on The David Frost Show: Episode 524 - Part 2",
+  "display_string": "Nelson Rockefeller on The David Frost Show: Episode 524 - Part 2, 1971 July 20",
+  "restrictions_apply": false,
+  "created_by": "bphillips",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-10-23T20:09:41Z",
+  "system_mtime": "2019-03-28T18:02:30Z",
+  "user_mtime": "2019-03-28T18:02:30Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1971 July 20",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2019-03-28T18:02:31Z",
+      "system_mtime": "2019-03-28T18:02:31Z",
+      "user_mtime": "2019-03-28T18:02:31Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043762",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2019-03-28T18:02:31Z",
+      "system_mtime": "2019-03-28T18:02:31Z",
+      "user_mtime": "2019-03-28T18:02:31Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "AV 11563",
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2019-03-28T18:02:31Z",
+        "system_mtime": "2019-03-28T18:02:31Z",
+        "user_mtime": "2019-03-28T18:02:31Z",
+        "type_2": "reel",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/184973"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "312dfab4e49a931e07e5b02b77de08ec",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "6fe62fbf4fb9d6085ad9da7b87a45e0d",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "ef0063a44882ada764624a4bfb90a5dc",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Inferior quality of AV 11564",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1042155",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043762"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 9,
+  "publish": true,
+  "ref_id": "edd735ac7e96447bbb18dbb227c821ec",
+  "component_id": "10",
+  "title": "Chronological Files",
+  "display_string": "Chronological Files, 1975-1977",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:26Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:11:57Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960120",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:57Z",
+      "system_mtime": "2017-02-19T22:11:57Z",
+      "user_mtime": "2017-02-19T22:11:57Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "2.8",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:57Z",
+      "system_mtime": "2017-02-19T22:11:57Z",
+      "user_mtime": "2017-02-19T22:11:57Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975-1977",
+      "begin": "1975",
+      "end": "1977",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:57Z",
+      "system_mtime": "2017-02-19T22:11:57Z",
+      "user_mtime": "2017-02-19T22:11:57Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of memos from Richard Allison to either Nelson Rockefeller or Central Files on various issues.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d74cf325d1c628b24185f5a94b46bee3",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316601",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

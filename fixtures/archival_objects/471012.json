@@ -1,0 +1,64 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "f86a60b68fbe448fb8b5e430cdaef660",
+  "title": "Prints",
+  "display_string": "Prints",
+  "other_level": "unspecified",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:00:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:29:32Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1665194",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:29:32Z",
+      "system_mtime": "2017-02-20T21:29:32Z",
+      "user_mtime": "2017-02-20T21:29:32Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471011",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/470942",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/653",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/471012",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/653"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471011"
+  },
+  "has_unpublished_ancestor": false
+}

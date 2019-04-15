@@ -1,0 +1,78 @@
+{
+  "lock_version": 1,
+  "position": 59,
+  "publish": true,
+  "ref_id": "317aa4a440b14921b5a8b2b866ce2072",
+  "title": "1962 Assembly Internal Memo 4031-4286",
+  "display_string": "1962 Assembly Internal Memo 4031-4286",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:48:24Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:46:22Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1181720",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:46:22Z",
+      "system_mtime": "2017-02-19T19:46:22Z",
+      "user_mtime": "2017-02-19T19:46:22Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/553",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:46:22Z",
+      "system_mtime": "2017-02-19T19:46:22Z",
+      "user_mtime": "2017-02-19T19:46:22Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "59",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:46:22Z",
+        "system_mtime": "2017-02-19T19:46:22Z",
+        "user_mtime": "2017-02-19T19:46:22Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50927"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/299089",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/553"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,135 @@
+{
+  "lock_version": 3,
+  "position": 4,
+  "publish": true,
+  "ref_id": "26bda2ae958b4ceebb77e9108ec230a5",
+  "title": "Maragoli: A Population Study",
+  "display_string": "Maragoli: A Population Study",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2015-06-03T23:40:12Z",
+  "system_mtime": "2018-07-25T18:57:46Z",
+  "user_mtime": "2018-07-25T18:57:46Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894498",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/11524",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T18:57:46Z",
+      "system_mtime": "2018-07-25T18:57:46Z",
+      "user_mtime": "2018-07-25T18:57:46Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-07-25T18:57:46Z",
+        "system_mtime": "2018-07-25T18:57:46Z",
+        "user_mtime": "2018-07-25T18:57:46Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/127936"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_7bf3d382e304fcd64b09d29202eb2b32",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 50 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_9bc747ad70dd3481023fa0035672fb52",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently unavailable. Please contact an RAC archivist for further instruction.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_4cd9007a583ac926172bfad78064cd54",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Documentary on overpopulation in Western Kenya.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "56f91a65114fb3be517995f2ceee6a30",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.1 Fg 58",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "16mm film"
+      ],
+      "persistent_id": "de4c310ccf887ef3f445f7b6aef0ef1c",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894503",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11524"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894498"
+  },
+  "has_unpublished_ancestor": false
+}

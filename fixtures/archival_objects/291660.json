@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 376,
+  "publish": true,
+  "ref_id": "151de4e366f244f1a3703f60146b1122",
+  "title": "1962 Gubernatorial Campaign - Subject Files - Kick-Off Program",
+  "display_string": "1962 Gubernatorial Campaign - Subject Files - Kick-Off Program, 1962",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:58Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:03:28Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936381",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:03:28Z",
+      "system_mtime": "2017-02-19T19:03:28Z",
+      "user_mtime": "2017-02-19T19:03:28Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1962",
+      "begin": "1962",
+      "end": "1962",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:03:28Z",
+      "system_mtime": "2017-02-19T19:03:28Z",
+      "user_mtime": "2017-02-19T19:03:28Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291283",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:03:28Z",
+      "system_mtime": "2017-02-19T19:03:28Z",
+      "user_mtime": "2017-02-19T19:03:28Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "635",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:03:28Z",
+        "system_mtime": "2017-02-19T19:03:28Z",
+        "user_mtime": "2017-02-19T19:03:28Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49823"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Republican Kick-Off Dinner; TV shows, Victory Vanguard, WNEW-TV.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "5c8341e8e7c25ec6d6aa4fba97e29bdd",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291660",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291283"
+  },
+  "has_unpublished_ancestor": false
+}

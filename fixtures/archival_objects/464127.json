@@ -1,0 +1,99 @@
+{
+  "lock_version": 3,
+  "position": 0,
+  "publish": true,
+  "ref_id": "c0e0e28dd57a44bb84611b9c332a959d",
+  "component_id": "2",
+  "title": "Second Administration",
+  "display_string": "Second Administration, 1963-1966",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:54:22Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:47:15Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1745181",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:47:15Z",
+      "system_mtime": "2017-02-20T20:47:15Z",
+      "user_mtime": "2017-02-20T20:47:15Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [
+    {
+      "ref": "/repositories/2/events/54741"
+    }
+  ],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "120",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:47:15Z",
+      "system_mtime": "2017-02-20T20:47:15Z",
+      "user_mtime": "2017-02-20T20:47:15Z",
+      "portion": "whole",
+      "extent_type": "microform reels",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1963-1966",
+      "begin": "1963",
+      "end": "1966",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:47:15Z",
+      "system_mtime": "2017-02-20T20:47:15Z",
+      "user_mtime": "2017-02-20T20:47:15Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/11967",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "type": "scopecontent",
+      "persistent_id": "07ce4edcc86eb5c40c56fe0690f8c38f",
+      "subnotes": [
+        {
+          "content": "The following microfilm reels do not exist: Reel 47, Reel 80, Reel 114, Reel 115 and Reel 116.",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/464127",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11967"
+  },
+  "has_unpublished_ancestor": false
+}

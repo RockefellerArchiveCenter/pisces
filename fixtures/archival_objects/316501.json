@@ -1,0 +1,111 @@
+{
+  "lock_version": 1,
+  "position": 22,
+  "publish": true,
+  "ref_id": "b898dce65da14863a96ce6578345f6c2",
+  "title": "\"Future of Freedom\" Speech Project",
+  "display_string": "\"Future of Freedom\" Speech Project, January 1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:21Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:11:08Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960264",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:08Z",
+      "system_mtime": "2017-02-19T22:11:08Z",
+      "user_mtime": "2017-02-19T22:11:08Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "January 1976",
+      "begin": "1976",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:08Z",
+      "system_mtime": "2017-02-19T22:11:08Z",
+      "user_mtime": "2017-02-19T22:11:08Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/316475",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:11:08Z",
+      "system_mtime": "2017-02-19T22:11:08Z",
+      "user_mtime": "2017-02-19T22:11:08Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "189",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T22:11:08Z",
+        "system_mtime": "2017-02-19T22:11:08Z",
+        "user_mtime": "2017-02-19T22:11:08Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/51901"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "6494c5bc64a58c1b4c96d9979672ac26",
+      "label": "General Physical Description note",
+      "content": [
+        "Folder 2 of 2"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316501",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/316475"
+  },
+  "has_unpublished_ancestor": false
+}

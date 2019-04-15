@@ -1,0 +1,93 @@
+{
+  "lock_version": 2,
+  "position": 111,
+  "publish": true,
+  "ref_id": "6d61b1fac0b740f7a98cb864b9ad5db1",
+  "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - VIPs and Friends",
+  "display_string": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - VIPs and Friends, 1978",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:11Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-08-31T17:29:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170795",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:40Z",
+      "system_mtime": "2017-08-31T17:29:40Z",
+      "user_mtime": "2017-08-31T17:29:40Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1978",
+      "begin": "1978",
+      "end": "1978",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:40Z",
+      "system_mtime": "2017-08-31T17:29:40Z",
+      "user_mtime": "2017-08-31T17:29:40Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-08-31T17:29:40Z",
+      "system_mtime": "2017-08-31T17:29:40Z",
+      "user_mtime": "2017-08-31T17:29:40Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1780",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-08-31T17:29:40Z",
+        "system_mtime": "2017-08-31T17:29:40Z",
+        "user_mtime": "2017-08-31T17:29:40Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49334"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/287068",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "has_unpublished_ancestor": false
+}

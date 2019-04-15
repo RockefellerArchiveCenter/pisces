@@ -1,0 +1,109 @@
+{
+  "lock_version": 1,
+  "position": 0,
+  "publish": true,
+  "ref_id": "fbca7140272c489cad35fd1919a43754",
+  "title": "Nelson A. Rockefeller Children, Portraits",
+  "display_string": "Nelson A. Rockefeller Children, Portraits",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:01:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:35:18Z",
+  "suppressed": false,
+  "level": "item",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669325",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:35:18Z",
+      "system_mtime": "2017-02-20T21:35:18Z",
+      "user_mtime": "2017-02-20T21:35:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471751",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471686",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471685",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:35:18Z",
+      "system_mtime": "2017-02-20T21:35:18Z",
+      "user_mtime": "2017-02-20T21:35:18Z",
+      "instance_type": "Still Image",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T21:35:18Z",
+        "system_mtime": "2017-02-20T21:35:18Z",
+        "user_mtime": "2017-02-20T21:35:18Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/80938"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "persistent_id": "6423c5ad008346b1a00d6cdabed6e653",
+      "type": "userestrict",
+      "subnotes": [
+        {
+          "content": "Permission is required in order to publish or otherwise use photographs and other visual materials of living members of the Rockefeller family. See RAC Head of Reference for details.\n\nImages of Happy Rockefeller while she is officially serving as the Second Lady of the United States are open for scholarly use.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/471752",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471751"
+  },
+  "has_unpublished_ancestor": false
+}

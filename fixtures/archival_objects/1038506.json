@@ -1,0 +1,137 @@
+{
+  "lock_version": 3,
+  "position": 24,
+  "publish": true,
+  "ref_id": "96fd3113f607da9ce8b422ea7df33b80",
+  "title": "Governor Rockefeller Budget Message Spots\n",
+  "display_string": "Governor Rockefeller Budget Message Spots\n, 1970 January 16",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:45Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-10-26T15:41:23Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1970 January 16",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:41:23Z",
+      "system_mtime": "2017-10-26T15:41:23Z",
+      "user_mtime": "2017-10-26T15:41:23Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043745",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:41:23Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-10-26T15:41:23Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-10-26T15:41:23Z",
+        "system_mtime": "2017-10-26T15:41:23Z",
+        "user_mtime": "2017-10-26T15:41:23Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173418"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "e4f91d8341ffa4b0ac48588042380ced",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 9 min."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "074538c3d1694f3aee40d4004ca36407",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "bde7377a925b58231d28deb78bf82f36",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f0851474832681a39685d51f23549516",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Compilation reel with Governor Rockefeller discussing various issues, including education, human well-being, and the environment.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038506",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043745"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,137 @@
+{
+  "lock_version": 2,
+  "position": 15,
+  "publish": false,
+  "ref_id": "85bb9ceded00e085a4b4b3aba2d8157a",
+  "title": "Rockefeller for President: Excerpt from \"The Man Who Can\"\n",
+  "display_string": "Rockefeller for President: Excerpt from \"The Man Who Can\"\n, 1968",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:38Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-01T20:20:54Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T20:20:55Z",
+      "system_mtime": "2017-11-01T20:20:55Z",
+      "user_mtime": "2017-11-01T20:20:55Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043743",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T20:20:55Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-11-01T20:20:55Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-11-01T20:20:55Z",
+        "system_mtime": "2017-11-01T20:20:55Z",
+        "user_mtime": "2017-11-01T20:20:55Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173390"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "bb7e4d5178e1f8b078698da0dea65d5e",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "82729d848808ef99f3dd2aef03a7e894",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "persistent_id": "f944c3bb19c9ff73bdc7be7cc06ecda1",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Fair quality. Same content as AV 11405, AV 11496.",
+          "publish": false
+        }
+      ],
+      "persistent_id": "12966f1e2fa5b3916fb4521303810a6e",
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038478",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043743"
+  },
+  "has_unpublished_ancestor": false
+}

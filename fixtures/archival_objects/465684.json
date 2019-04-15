@@ -1,0 +1,71 @@
+{
+  "lock_version": 2,
+  "position": 0,
+  "publish": true,
+  "ref_id": "2426d6aad8034ed689261f8cdc125c47",
+  "title": "Shakespeare Festival",
+  "display_string": "Shakespeare Festival",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:55:10Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:59:00Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1744798",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:59:00Z",
+      "system_mtime": "2017-02-20T20:59:00Z",
+      "user_mtime": "2017-02-20T20:59:00Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/465683",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465681",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465549",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465299",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11968",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/465684",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11968"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/465683"
+  },
+  "has_unpublished_ancestor": false
+}

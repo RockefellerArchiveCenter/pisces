@@ -1,0 +1,111 @@
+{
+  "lock_version": 4,
+  "position": 11,
+  "publish": false,
+  "ref_id": "05660c60b585c95c107882b22b6de14a",
+  "title": "TELPAC Rockefeller Question No. 6",
+  "display_string": "TELPAC Rockefeller Question No. 6",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:38Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-04-24T19:17:53Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043746",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-04-24T19:17:53Z",
+      "system_mtime": "2017-04-25T17:13:49Z",
+      "user_mtime": "2017-04-24T19:17:53Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-04-24T19:17:53Z",
+        "system_mtime": "2017-04-24T19:17:53Z",
+        "user_mtime": "2017-04-24T19:17:53Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168298"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "f8d8e65478137193a8b0d5c4eca61880",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 20 seconds"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3cfd8cb072e7bc8eb7ad52075f7b6785",
+      "type": "materialspec",
+      "content": [
+        "2 inch Quad video reel"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "4341f25964427ba4dbc85389a2d6ea6c",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017030",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043746"
+  },
+  "has_unpublished_ancestor": true
+}

@@ -1,0 +1,89 @@
+{
+  "lock_version": 0,
+  "position": 124,
+  "publish": true,
+  "ref_id": "f7b0ce01cec2e64f84b102c3e132ab3e",
+  "title": "Future Farmers of America Convention, Kansas City, MO",
+  "display_string": "Future Farmers of America Convention, Kansas City, MO, 1975 November 14",
+  "restrictions_apply": false,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-07T14:28:13Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-07T14:28:13Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 November 14",
+      "begin": "1975",
+      "end": "1975",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-07T14:28:13Z",
+      "system_mtime": "2016-06-07T14:28:13Z",
+      "user_mtime": "2016-06-07T14:28:13Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-07T14:28:13Z",
+      "system_mtime": "2016-06-07T14:28:13Z",
+      "user_mtime": "2016-06-07T14:28:13Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "113",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:13Z",
+        "system_mtime": "2016-08-13T09:11:13Z",
+        "user_mtime": "2016-08-13T09:11:13Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132434"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/975368",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

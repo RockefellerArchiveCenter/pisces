@@ -1,0 +1,137 @@
+{
+  "lock_version": 2,
+  "position": 72,
+  "publish": false,
+  "ref_id": "6b745248ef84e727f643a6cf06dd77ae",
+  "title": "State University of New York - Take 6, Governor Rockefeller Campaign Spot\n",
+  "display_string": "State University of New York - Take 6, Governor Rockefeller Campaign Spot\n, 1966 October 7\n",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:46Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-01T17:48:53Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1966 October 7\n",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T17:48:53Z",
+      "system_mtime": "2017-11-01T17:48:53Z",
+      "user_mtime": "2017-11-01T17:48:53Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043733",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T17:48:53Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-11-01T17:48:53Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-11-01T17:48:53Z",
+        "system_mtime": "2017-11-01T17:48:53Z",
+        "user_mtime": "2017-11-01T17:48:53Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173423"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "d709c2c6c17755e486031e51c2cb1b96",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "4caecba0d5c1a6c9a1338795665be0cc",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "persistent_id": "96f2028f6e0dc3337ba82daa38182a4e",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Poor quality. Same content as AV 11464.",
+          "publish": false
+        }
+      ],
+      "persistent_id": "14500865b7a20ab3998d7853be0ec4ee",
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038511",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043733"
+  },
+  "has_unpublished_ancestor": false
+}

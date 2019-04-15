@@ -1,0 +1,6390 @@
+{
+  "title": "Nelson A. Rockefeller gubernatorial records, Assembly and Senate Memos, Series 3",
+  "id": 553,
+  "node_type": "resource",
+  "publish": true,
+  "suppressed": false,
+  "children": [
+    {
+      "title": "1959 Assembly Internal Memo 9-684",
+      "id": 299030,
+      "record_uri": "/repositories/2/archival_objects/299030",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 688-1151",
+      "id": 299031,
+      "record_uri": "/repositories/2/archival_objects/299031",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 152-1523",
+      "id": 299032,
+      "record_uri": "/repositories/2/archival_objects/299032",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 1525-1820",
+      "id": 299033,
+      "record_uri": "/repositories/2/archival_objects/299033",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 1826-2125",
+      "id": 299034,
+      "record_uri": "/repositories/2/archival_objects/299034",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2133-2252",
+      "id": 299035,
+      "record_uri": "/repositories/2/archival_objects/299035",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2253-2481",
+      "id": 299036,
+      "record_uri": "/repositories/2/archival_objects/299036",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2502-2654",
+      "id": 299037,
+      "record_uri": "/repositories/2/archival_objects/299037",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2655-2797",
+      "id": 299038,
+      "record_uri": "/repositories/2/archival_objects/299038",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2798-2926",
+      "id": 299039,
+      "record_uri": "/repositories/2/archival_objects/299039",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 2929-3076",
+      "id": 299040,
+      "record_uri": "/repositories/2/archival_objects/299040",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3079-3188",
+      "id": 299041,
+      "record_uri": "/repositories/2/archival_objects/299041",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3192-3336",
+      "id": 299042,
+      "record_uri": "/repositories/2/archival_objects/299042",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3367-3551",
+      "id": 299043,
+      "record_uri": "/repositories/2/archival_objects/299043",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3554-3735",
+      "id": 299044,
+      "record_uri": "/repositories/2/archival_objects/299044",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3736-3864",
+      "id": 299045,
+      "record_uri": "/repositories/2/archival_objects/299045",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 3866-4046",
+      "id": 299046,
+      "record_uri": "/repositories/2/archival_objects/299046",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 4048-4171",
+      "id": 299047,
+      "record_uri": "/repositories/2/archival_objects/299047",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 4177-4323",
+      "id": 299048,
+      "record_uri": "/repositories/2/archival_objects/299048",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 4325-4409",
+      "id": 299049,
+      "record_uri": "/repositories/2/archival_objects/299049",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Assembly Internal Memo 4416-4438",
+      "id": 299050,
+      "record_uri": "/repositories/2/archival_objects/299050",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 28-672",
+      "id": 299051,
+      "record_uri": "/repositories/2/archival_objects/299051",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 674-1063",
+      "id": 299052,
+      "record_uri": "/repositories/2/archival_objects/299052",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 1064-1322",
+      "id": 299053,
+      "record_uri": "/repositories/2/archival_objects/299053",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 1327-1858",
+      "id": 299054,
+      "record_uri": "/repositories/2/archival_objects/299054",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 1859-2189",
+      "id": 299055,
+      "record_uri": "/repositories/2/archival_objects/299055",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 2193-2594",
+      "id": 299056,
+      "record_uri": "/repositories/2/archival_objects/299056",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 2596-2993",
+      "id": 299057,
+      "record_uri": "/repositories/2/archival_objects/299057",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 3016-3354",
+      "id": 299058,
+      "record_uri": "/repositories/2/archival_objects/299058",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 3355-3651",
+      "id": 299059,
+      "record_uri": "/repositories/2/archival_objects/299059",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 3653-3881",
+      "id": 299060,
+      "record_uri": "/repositories/2/archival_objects/299060",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 3882-4155",
+      "id": 299061,
+      "record_uri": "/repositories/2/archival_objects/299061",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 4165-4420",
+      "id": 299062,
+      "record_uri": "/repositories/2/archival_objects/299062",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 4426-4582",
+      "id": 299063,
+      "record_uri": "/repositories/2/archival_objects/299063",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Assembly Internal Memo 4583-4727",
+      "id": 299064,
+      "record_uri": "/repositories/2/archival_objects/299064",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 43-894",
+      "id": 299065,
+      "record_uri": "/repositories/2/archival_objects/299065",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 905-1223",
+      "id": 299066,
+      "record_uri": "/repositories/2/archival_objects/299066",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 1226-1594",
+      "id": 299067,
+      "record_uri": "/repositories/2/archival_objects/299067",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 1597-1998",
+      "id": 299068,
+      "record_uri": "/repositories/2/archival_objects/299068",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 2014-2436",
+      "id": 299069,
+      "record_uri": "/repositories/2/archival_objects/299069",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 2443-2759",
+      "id": 299070,
+      "record_uri": "/repositories/2/archival_objects/299070",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 2762-3142",
+      "id": 299071,
+      "record_uri": "/repositories/2/archival_objects/299071",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 3151-3508",
+      "id": 299072,
+      "record_uri": "/repositories/2/archival_objects/299072",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 3509-3731",
+      "id": 299073,
+      "record_uri": "/repositories/2/archival_objects/299073",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 3740-3999",
+      "id": 299074,
+      "record_uri": "/repositories/2/archival_objects/299074",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 4002-4225",
+      "id": 299075,
+      "record_uri": "/repositories/2/archival_objects/299075",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 4241-4456",
+      "id": 299076,
+      "record_uri": "/repositories/2/archival_objects/299076",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 4463-4677",
+      "id": 299077,
+      "record_uri": "/repositories/2/archival_objects/299077",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 4678-4862",
+      "id": 299078,
+      "record_uri": "/repositories/2/archival_objects/299078",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Assembly Internal Memo 4870-4992",
+      "id": 299079,
+      "record_uri": "/repositories/2/archival_objects/299079",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 25-1036",
+      "id": 299080,
+      "record_uri": "/repositories/2/archival_objects/299080",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 1038-1485",
+      "id": 299081,
+      "record_uri": "/repositories/2/archival_objects/299081",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 1490-1905",
+      "id": 299082,
+      "record_uri": "/repositories/2/archival_objects/299082",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 1970-2298",
+      "id": 299083,
+      "record_uri": "/repositories/2/archival_objects/299083",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 2312-2647",
+      "id": 299084,
+      "record_uri": "/repositories/2/archival_objects/299084",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 2648-2900",
+      "id": 299085,
+      "record_uri": "/repositories/2/archival_objects/299085",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 2905-3403",
+      "id": 299086,
+      "record_uri": "/repositories/2/archival_objects/299086",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 3415-3699",
+      "id": 299087,
+      "record_uri": "/repositories/2/archival_objects/299087",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 3702-4024",
+      "id": 299088,
+      "record_uri": "/repositories/2/archival_objects/299088",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 4031-4286",
+      "id": 299089,
+      "record_uri": "/repositories/2/archival_objects/299089",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 4294-4562",
+      "id": 299090,
+      "record_uri": "/repositories/2/archival_objects/299090",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 4565-4863",
+      "id": 299091,
+      "record_uri": "/repositories/2/archival_objects/299091",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 4864-5025",
+      "id": 299092,
+      "record_uri": "/repositories/2/archival_objects/299092",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Assembly Internal Memo 5026-5196",
+      "id": 299093,
+      "record_uri": "/repositories/2/archival_objects/299093",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 20-247",
+      "id": 299094,
+      "record_uri": "/repositories/2/archival_objects/299094",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 250-871",
+      "id": 299095,
+      "record_uri": "/repositories/2/archival_objects/299095",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 877-1241",
+      "id": 299096,
+      "record_uri": "/repositories/2/archival_objects/299096",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 1242-1772",
+      "id": 299097,
+      "record_uri": "/repositories/2/archival_objects/299097",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 1773-2215",
+      "id": 299098,
+      "record_uri": "/repositories/2/archival_objects/299098",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 2234-2669",
+      "id": 299099,
+      "record_uri": "/repositories/2/archival_objects/299099",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 2679-3228",
+      "id": 299100,
+      "record_uri": "/repositories/2/archival_objects/299100",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 3234-3606",
+      "id": 299101,
+      "record_uri": "/repositories/2/archival_objects/299101",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 3927-4130",
+      "id": 299102,
+      "record_uri": "/repositories/2/archival_objects/299102",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 3610-3926",
+      "id": 299103,
+      "record_uri": "/repositories/2/archival_objects/299103",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 4131-4329",
+      "id": 299104,
+      "record_uri": "/repositories/2/archival_objects/299104",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 4333-4538",
+      "id": 299105,
+      "record_uri": "/repositories/2/archival_objects/299105",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 4540-4758",
+      "id": 299106,
+      "record_uri": "/repositories/2/archival_objects/299106",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 4763-4918",
+      "id": 299107,
+      "record_uri": "/repositories/2/archival_objects/299107",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 4920-5052",
+      "id": 299108,
+      "record_uri": "/repositories/2/archival_objects/299108",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Assembly Internal Memo 5053-5189",
+      "id": 299109,
+      "record_uri": "/repositories/2/archival_objects/299109",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 1-581",
+      "id": 299110,
+      "record_uri": "/repositories/2/archival_objects/299110",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 604-1281",
+      "id": 299111,
+      "record_uri": "/repositories/2/archival_objects/299111",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 1291-1708",
+      "id": 299112,
+      "record_uri": "/repositories/2/archival_objects/299112",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 1716-1970",
+      "id": 299113,
+      "record_uri": "/repositories/2/archival_objects/299113",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 1977-2349",
+      "id": 299114,
+      "record_uri": "/repositories/2/archival_objects/299114",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 2358-2847",
+      "id": 299115,
+      "record_uri": "/repositories/2/archival_objects/299115",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 2848-3158",
+      "id": 299116,
+      "record_uri": "/repositories/2/archival_objects/299116",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 3161-3600",
+      "id": 299117,
+      "record_uri": "/repositories/2/archival_objects/299117",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 3611-4030",
+      "id": 299118,
+      "record_uri": "/repositories/2/archival_objects/299118",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 4031-4244",
+      "id": 299119,
+      "record_uri": "/repositories/2/archival_objects/299119",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 4245-4450",
+      "id": 299120,
+      "record_uri": "/repositories/2/archival_objects/299120",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 4435-4659",
+      "id": 299121,
+      "record_uri": "/repositories/2/archival_objects/299121",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 4660-4894",
+      "id": 299122,
+      "record_uri": "/repositories/2/archival_objects/299122",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 4898-5112",
+      "id": 299123,
+      "record_uri": "/repositories/2/archival_objects/299123",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 5125-5260",
+      "id": 299124,
+      "record_uri": "/repositories/2/archival_objects/299124",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Assembly Internal Memo 5261-5397",
+      "id": 299125,
+      "record_uri": "/repositories/2/archival_objects/299125",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 9-530",
+      "id": 299126,
+      "record_uri": "/repositories/2/archival_objects/299126",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 531-1116",
+      "id": 299127,
+      "record_uri": "/repositories/2/archival_objects/299127",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 1130-1843",
+      "id": 299128,
+      "record_uri": "/repositories/2/archival_objects/299128",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 1868-2194",
+      "id": 299129,
+      "record_uri": "/repositories/2/archival_objects/299129",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 2195-2440",
+      "id": 299130,
+      "record_uri": "/repositories/2/archival_objects/299130",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 2442-2856",
+      "id": 299131,
+      "record_uri": "/repositories/2/archival_objects/299131",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 2857-3092",
+      "id": 299132,
+      "record_uri": "/repositories/2/archival_objects/299132",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 3101-3275",
+      "id": 299133,
+      "record_uri": "/repositories/2/archival_objects/299133",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 3282-3571",
+      "id": 299134,
+      "record_uri": "/repositories/2/archival_objects/299134",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 3575-3861",
+      "id": 299135,
+      "record_uri": "/repositories/2/archival_objects/299135",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 3862-4061",
+      "id": 299136,
+      "record_uri": "/repositories/2/archival_objects/299136",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 4063-4284",
+      "id": 299137,
+      "record_uri": "/repositories/2/archival_objects/299137",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 4285-4519",
+      "id": 299138,
+      "record_uri": "/repositories/2/archival_objects/299138",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 4534-4759",
+      "id": 299139,
+      "record_uri": "/repositories/2/archival_objects/299139",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 4763-4964",
+      "id": 299140,
+      "record_uri": "/repositories/2/archival_objects/299140",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 4972-5187",
+      "id": 299141,
+      "record_uri": "/repositories/2/archival_objects/299141",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 5190-5434",
+      "id": 299142,
+      "record_uri": "/repositories/2/archival_objects/299142",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 5436-5680",
+      "id": 299143,
+      "record_uri": "/repositories/2/archival_objects/299143",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 5683-5891",
+      "id": 299144,
+      "record_uri": "/repositories/2/archival_objects/299144",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 5900-6080",
+      "id": 299145,
+      "record_uri": "/repositories/2/archival_objects/299145",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Assembly Internal Memo 6085-6176",
+      "id": 299146,
+      "record_uri": "/repositories/2/archival_objects/299146",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 5-846",
+      "id": 299147,
+      "record_uri": "/repositories/2/archival_objects/299147",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 847-1472",
+      "id": 299148,
+      "record_uri": "/repositories/2/archival_objects/299148",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 1473-1819",
+      "id": 299149,
+      "record_uri": "/repositories/2/archival_objects/299149",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 1820-2200",
+      "id": 299150,
+      "record_uri": "/repositories/2/archival_objects/299150",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 2236-2632",
+      "id": 299151,
+      "record_uri": "/repositories/2/archival_objects/299151",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 2634-2997",
+      "id": 299152,
+      "record_uri": "/repositories/2/archival_objects/299152",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 3010-3447",
+      "id": 299153,
+      "record_uri": "/repositories/2/archival_objects/299153",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 3451-3921",
+      "id": 299154,
+      "record_uri": "/repositories/2/archival_objects/299154",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 3923-4180",
+      "id": 299155,
+      "record_uri": "/repositories/2/archival_objects/299155",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 4184-4466",
+      "id": 299156,
+      "record_uri": "/repositories/2/archival_objects/299156",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 4471-4901",
+      "id": 299157,
+      "record_uri": "/repositories/2/archival_objects/299157",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 4912-5232",
+      "id": 299158,
+      "record_uri": "/repositories/2/archival_objects/299158",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 5240-5494",
+      "id": 299159,
+      "record_uri": "/repositories/2/archival_objects/299159",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 5513-5769",
+      "id": 299160,
+      "record_uri": "/repositories/2/archival_objects/299160",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 5772-6007",
+      "id": 299161,
+      "record_uri": "/repositories/2/archival_objects/299161",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Assembly Internal Memo 6009-6155",
+      "id": 299162,
+      "record_uri": "/repositories/2/archival_objects/299162",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 2-738",
+      "id": 299163,
+      "record_uri": "/repositories/2/archival_objects/299163",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 779-1460",
+      "id": 299164,
+      "record_uri": "/repositories/2/archival_objects/299164",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 1493-1943",
+      "id": 299165,
+      "record_uri": "/repositories/2/archival_objects/299165",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 1953-2250",
+      "id": 299166,
+      "record_uri": "/repositories/2/archival_objects/299166",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 2251-2660",
+      "id": 299167,
+      "record_uri": "/repositories/2/archival_objects/299167",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 2664-2912",
+      "id": 299168,
+      "record_uri": "/repositories/2/archival_objects/299168",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 2935-3421",
+      "id": 299169,
+      "record_uri": "/repositories/2/archival_objects/299169",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 3426-3786",
+      "id": 299170,
+      "record_uri": "/repositories/2/archival_objects/299170",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 3787-4367",
+      "id": 299171,
+      "record_uri": "/repositories/2/archival_objects/299171",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 4378-4734",
+      "id": 299172,
+      "record_uri": "/repositories/2/archival_objects/299172",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 4739-4986",
+      "id": 299173,
+      "record_uri": "/repositories/2/archival_objects/299173",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 4987-5421",
+      "id": 299174,
+      "record_uri": "/repositories/2/archival_objects/299174",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 5429-5808",
+      "id": 299175,
+      "record_uri": "/repositories/2/archival_objects/299175",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Assembly Internal Memo 5809-6076",
+      "id": 299176,
+      "record_uri": "/repositories/2/archival_objects/299176",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 2-760-A",
+      "id": 299177,
+      "record_uri": "/repositories/2/archival_objects/299177",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 799-1570",
+      "id": 299178,
+      "record_uri": "/repositories/2/archival_objects/299178",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 1572-2236-A",
+      "id": 299179,
+      "record_uri": "/repositories/2/archival_objects/299179",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 2266-2825",
+      "id": 299180,
+      "record_uri": "/repositories/2/archival_objects/299180",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 2846-3310",
+      "id": 299181,
+      "record_uri": "/repositories/2/archival_objects/299181",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 3311-3623-A",
+      "id": 299182,
+      "record_uri": "/repositories/2/archival_objects/299182",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 3628-A-4089",
+      "id": 299183,
+      "record_uri": "/repositories/2/archival_objects/299183",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 4096-4675",
+      "id": 299184,
+      "record_uri": "/repositories/2/archival_objects/299184",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 4683-5083",
+      "id": 299185,
+      "record_uri": "/repositories/2/archival_objects/299185",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 5085-5458-C",
+      "id": 299186,
+      "record_uri": "/repositories/2/archival_objects/299186",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 5471-5684",
+      "id": 299187,
+      "record_uri": "/repositories/2/archival_objects/299187",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 5689-6155",
+      "id": 299188,
+      "record_uri": "/repositories/2/archival_objects/299188",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 6161-6315-A",
+      "id": 299189,
+      "record_uri": "/repositories/2/archival_objects/299189",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 6316-6539",
+      "id": 299190,
+      "record_uri": "/repositories/2/archival_objects/299190",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 6545-6771-A",
+      "id": 299191,
+      "record_uri": "/repositories/2/archival_objects/299191",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 6774-7084",
+      "id": 299192,
+      "record_uri": "/repositories/2/archival_objects/299192",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Assembly Internal Memo 7087-7177",
+      "id": 299193,
+      "record_uri": "/repositories/2/archival_objects/299193",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 29-1032",
+      "id": 299194,
+      "record_uri": "/repositories/2/archival_objects/299194",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 1096-1770-A",
+      "id": 299195,
+      "record_uri": "/repositories/2/archival_objects/299195",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 1773-C-2279-A",
+      "id": 299196,
+      "record_uri": "/repositories/2/archival_objects/299196",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 2306-2874",
+      "id": 299197,
+      "record_uri": "/repositories/2/archival_objects/299197",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 2878-A-3410-A",
+      "id": 299198,
+      "record_uri": "/repositories/2/archival_objects/299198",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 3418-3910",
+      "id": 299199,
+      "record_uri": "/repositories/2/archival_objects/299199",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 3912-4581",
+      "id": 299200,
+      "record_uri": "/repositories/2/archival_objects/299200",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 4593-A-4962-B",
+      "id": 299201,
+      "record_uri": "/repositories/2/archival_objects/299201",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 4967-5537",
+      "id": 299202,
+      "record_uri": "/repositories/2/archival_objects/299202",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 5346-A-5750",
+      "id": 299203,
+      "record_uri": "/repositories/2/archival_objects/299203",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 5751-6182",
+      "id": 299204,
+      "record_uri": "/repositories/2/archival_objects/299204",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 6185-A-6597",
+      "id": 299205,
+      "record_uri": "/repositories/2/archival_objects/299205",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 6606-6867",
+      "id": 299206,
+      "record_uri": "/repositories/2/archival_objects/299206",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 6868-7084",
+      "id": 299207,
+      "record_uri": "/repositories/2/archival_objects/299207",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Assembly Internal Memo 7097-7210",
+      "id": 299208,
+      "record_uri": "/repositories/2/archival_objects/299208",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 4-B-532-A",
+      "id": 299209,
+      "record_uri": "/repositories/2/archival_objects/299209",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 536-1089",
+      "id": 299210,
+      "record_uri": "/repositories/2/archival_objects/299210",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 1099-1658-A",
+      "id": 299211,
+      "record_uri": "/repositories/2/archival_objects/299211",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 1659-2234",
+      "id": 299212,
+      "record_uri": "/repositories/2/archival_objects/299212",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 2238-2666",
+      "id": 299213,
+      "record_uri": "/repositories/2/archival_objects/299213",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 2638-3265",
+      "id": 299214,
+      "record_uri": "/repositories/2/archival_objects/299214",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 3274-3967-A",
+      "id": 299215,
+      "record_uri": "/repositories/2/archival_objects/299215",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 3968-4709",
+      "id": 299216,
+      "record_uri": "/repositories/2/archival_objects/299216",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 4730-5047-A",
+      "id": 299217,
+      "record_uri": "/repositories/2/archival_objects/299217",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 5051-A-5570",
+      "id": 299218,
+      "record_uri": "/repositories/2/archival_objects/299218",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 5581-A-5920",
+      "id": 299219,
+      "record_uri": "/repositories/2/archival_objects/299219",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 5923-6262",
+      "id": 299220,
+      "record_uri": "/repositories/2/archival_objects/299220",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 6282-6488",
+      "id": 299221,
+      "record_uri": "/repositories/2/archival_objects/299221",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Assembly Internal Memo 6493-6828",
+      "id": 299222,
+      "record_uri": "/repositories/2/archival_objects/299222",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 1-852-A",
+      "id": 299223,
+      "record_uri": "/repositories/2/archival_objects/299223",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 857-1643-A",
+      "id": 299224,
+      "record_uri": "/repositories/2/archival_objects/299224",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 1744-2436",
+      "id": 299225,
+      "record_uri": "/repositories/2/archival_objects/299225",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 2438-A-3004",
+      "id": 299226,
+      "record_uri": "/repositories/2/archival_objects/299226",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 3006-3607-A",
+      "id": 299227,
+      "record_uri": "/repositories/2/archival_objects/299227",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 3617-4117",
+      "id": 299228,
+      "record_uri": "/repositories/2/archival_objects/299228",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 4126-4676-A",
+      "id": 299229,
+      "record_uri": "/repositories/2/archival_objects/299229",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 4687-5230",
+      "id": 299230,
+      "record_uri": "/repositories/2/archival_objects/299230",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 5243-B-5649",
+      "id": 299231,
+      "record_uri": "/repositories/2/archival_objects/299231",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 5651-5948",
+      "id": 299232,
+      "record_uri": "/repositories/2/archival_objects/299232",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 5950-A-6254-A",
+      "id": 299233,
+      "record_uri": "/repositories/2/archival_objects/299233",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 6280-6719-A",
+      "id": 299234,
+      "record_uri": "/repositories/2/archival_objects/299234",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 6821-6972",
+      "id": 299235,
+      "record_uri": "/repositories/2/archival_objects/299235",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 6974-B-7113-B",
+      "id": 299236,
+      "record_uri": "/repositories/2/archival_objects/299236",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 7114-7473",
+      "id": 299237,
+      "record_uri": "/repositories/2/archival_objects/299237",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 7501-7790",
+      "id": 299238,
+      "record_uri": "/repositories/2/archival_objects/299238",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 7792-7996",
+      "id": 299239,
+      "record_uri": "/repositories/2/archival_objects/299239",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Assembly Internal Memo 7997-8105",
+      "id": 299240,
+      "record_uri": "/repositories/2/archival_objects/299240",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 19-A-4385",
+      "id": 299241,
+      "record_uri": "/repositories/2/archival_objects/299241",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 4387-7780",
+      "id": 299242,
+      "record_uri": "/repositories/2/archival_objects/299242",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 7817-A-8351-A",
+      "id": 299243,
+      "record_uri": "/repositories/2/archival_objects/299243",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 8352-A-8647",
+      "id": 299244,
+      "record_uri": "/repositories/2/archival_objects/299244",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 8651-A-8862",
+      "id": 299245,
+      "record_uri": "/repositories/2/archival_objects/299245",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 8869-9245-A",
+      "id": 299246,
+      "record_uri": "/repositories/2/archival_objects/299246",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 9247-9617",
+      "id": 299247,
+      "record_uri": "/repositories/2/archival_objects/299247",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 9630-A-10263-A",
+      "id": 299248,
+      "record_uri": "/repositories/2/archival_objects/299248",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 10276-10600-A",
+      "id": 299249,
+      "record_uri": "/repositories/2/archival_objects/299249",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 10602-10871-A",
+      "id": 299250,
+      "record_uri": "/repositories/2/archival_objects/299250",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 10878-11284-A",
+      "id": 299251,
+      "record_uri": "/repositories/2/archival_objects/299251",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 11285-11621",
+      "id": 299252,
+      "record_uri": "/repositories/2/archival_objects/299252",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 11627-11819",
+      "id": 299253,
+      "record_uri": "/repositories/2/archival_objects/299253",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 11822-12060",
+      "id": 299254,
+      "record_uri": "/repositories/2/archival_objects/299254",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 12062-12220",
+      "id": 299255,
+      "record_uri": "/repositories/2/archival_objects/299255",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 12221-12329",
+      "id": 299256,
+      "record_uri": "/repositories/2/archival_objects/299256",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Assembly Internal Memo 12230-12407",
+      "id": 299257,
+      "record_uri": "/repositories/2/archival_objects/299257",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 1-352",
+      "id": 299258,
+      "record_uri": "/repositories/2/archival_objects/299258",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 373-785",
+      "id": 299259,
+      "record_uri": "/repositories/2/archival_objects/299259",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 814-B-1192",
+      "id": 299260,
+      "record_uri": "/repositories/2/archival_objects/299260",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 1194-B-1558",
+      "id": 299261,
+      "record_uri": "/repositories/2/archival_objects/299261",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 1561-A-2181",
+      "id": 299262,
+      "record_uri": "/repositories/2/archival_objects/299262",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 2183-2911-B",
+      "id": 299263,
+      "record_uri": "/repositories/2/archival_objects/299263",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 2933-3803",
+      "id": 299264,
+      "record_uri": "/repositories/2/archival_objects/299264",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 3817-4136-A",
+      "id": 299265,
+      "record_uri": "/repositories/2/archival_objects/299265",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 4146-4645",
+      "id": 299266,
+      "record_uri": "/repositories/2/archival_objects/299266",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 4652-A-5308-B",
+      "id": 299267,
+      "record_uri": "/repositories/2/archival_objects/299267",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 5320-5907",
+      "id": 299268,
+      "record_uri": "/repositories/2/archival_objects/299268",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 5950-6401-D",
+      "id": 299269,
+      "record_uri": "/repositories/2/archival_objects/299269",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 6404-6690-A",
+      "id": 299270,
+      "record_uri": "/repositories/2/archival_objects/299270",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 6695-7259-B",
+      "id": 299271,
+      "record_uri": "/repositories/2/archival_objects/299271",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 7260-7456",
+      "id": 299272,
+      "record_uri": "/repositories/2/archival_objects/299272",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 7460-A-7729",
+      "id": 299273,
+      "record_uri": "/repositories/2/archival_objects/299273",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 7733-7972",
+      "id": 299274,
+      "record_uri": "/repositories/2/archival_objects/299274",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Assembly Internal Memo 7974-8138",
+      "id": 299275,
+      "record_uri": "/repositories/2/archival_objects/299275",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "Extraordinary Session Assembly and Senate Internal Memos",
+      "id": 299276,
+      "record_uri": "/repositories/2/archival_objects/299276",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 22-575",
+      "id": 299277,
+      "record_uri": "/repositories/2/archival_objects/299277",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 579-849",
+      "id": 299278,
+      "record_uri": "/repositories/2/archival_objects/299278",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 864-1141",
+      "id": 299279,
+      "record_uri": "/repositories/2/archival_objects/299279",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 1162-1436",
+      "id": 299280,
+      "record_uri": "/repositories/2/archival_objects/299280",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 1444-1740",
+      "id": 299281,
+      "record_uri": "/repositories/2/archival_objects/299281",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 1741-1969",
+      "id": 299282,
+      "record_uri": "/repositories/2/archival_objects/299282",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 1970-2236",
+      "id": 299283,
+      "record_uri": "/repositories/2/archival_objects/299283",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 2239-2449",
+      "id": 299284,
+      "record_uri": "/repositories/2/archival_objects/299284",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 2450-2643",
+      "id": 299285,
+      "record_uri": "/repositories/2/archival_objects/299285",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 2647-2850",
+      "id": 299286,
+      "record_uri": "/repositories/2/archival_objects/299286",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 2851-3138",
+      "id": 299287,
+      "record_uri": "/repositories/2/archival_objects/299287",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 3143-3315",
+      "id": 299288,
+      "record_uri": "/repositories/2/archival_objects/299288",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 3316-3454",
+      "id": 299289,
+      "record_uri": "/repositories/2/archival_objects/299289",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 3455-3668",
+      "id": 299290,
+      "record_uri": "/repositories/2/archival_objects/299290",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 3678-3747",
+      "id": 299291,
+      "record_uri": "/repositories/2/archival_objects/299291",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1959 Senate Internal Memo 3748-3898",
+      "id": 299292,
+      "record_uri": "/repositories/2/archival_objects/299292",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 6-731",
+      "id": 299293,
+      "record_uri": "/repositories/2/archival_objects/299293",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 734-1124",
+      "id": 299294,
+      "record_uri": "/repositories/2/archival_objects/299294",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 1129-1807",
+      "id": 299295,
+      "record_uri": "/repositories/2/archival_objects/299295",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 1808-2342",
+      "id": 299296,
+      "record_uri": "/repositories/2/archival_objects/299296",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 2347-2713",
+      "id": 299297,
+      "record_uri": "/repositories/2/archival_objects/299297",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 2715-3191",
+      "id": 299298,
+      "record_uri": "/repositories/2/archival_objects/299298",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 3195-3538",
+      "id": 299299,
+      "record_uri": "/repositories/2/archival_objects/299299",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 3542-3789",
+      "id": 299300,
+      "record_uri": "/repositories/2/archival_objects/299300",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1960 Senate Internal Memo 3790-3934",
+      "id": 299301,
+      "record_uri": "/repositories/2/archival_objects/299301",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 4-734",
+      "id": 299302,
+      "record_uri": "/repositories/2/archival_objects/299302",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 740-1155",
+      "id": 299303,
+      "record_uri": "/repositories/2/archival_objects/299303",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 1157-1657",
+      "id": 299304,
+      "record_uri": "/repositories/2/archival_objects/299304",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 1682-2097",
+      "id": 299305,
+      "record_uri": "/repositories/2/archival_objects/299305",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 2098-2493",
+      "id": 299306,
+      "record_uri": "/repositories/2/archival_objects/299306",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 2498-2953",
+      "id": 299307,
+      "record_uri": "/repositories/2/archival_objects/299307",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 2955-3169",
+      "id": 299308,
+      "record_uri": "/repositories/2/archival_objects/299308",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 3171-3546",
+      "id": 299309,
+      "record_uri": "/repositories/2/archival_objects/299309",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1961 Senate Internal Memo 3558-3842",
+      "id": 299310,
+      "record_uri": "/repositories/2/archival_objects/299310",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 10-806",
+      "id": 299311,
+      "record_uri": "/repositories/2/archival_objects/299311",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 807-1184",
+      "id": 299312,
+      "record_uri": "/repositories/2/archival_objects/299312",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 1186-1759",
+      "id": 299313,
+      "record_uri": "/repositories/2/archival_objects/299313",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 1760-2144",
+      "id": 299314,
+      "record_uri": "/repositories/2/archival_objects/299314",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 2151-2598",
+      "id": 299315,
+      "record_uri": "/repositories/2/archival_objects/299315",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 2599-2793",
+      "id": 299316,
+      "record_uri": "/repositories/2/archival_objects/299316",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 2794-3140",
+      "id": 299317,
+      "record_uri": "/repositories/2/archival_objects/299317",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 3142-3487",
+      "id": 299318,
+      "record_uri": "/repositories/2/archival_objects/299318",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 3512-3767",
+      "id": 299319,
+      "record_uri": "/repositories/2/archival_objects/299319",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1962 Senate Internal Memo 3773-3937",
+      "id": 299320,
+      "record_uri": "/repositories/2/archival_objects/299320",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 11-669",
+      "id": 299321,
+      "record_uri": "/repositories/2/archival_objects/299321",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 671-1189",
+      "id": 299322,
+      "record_uri": "/repositories/2/archival_objects/299322",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 1190-1650",
+      "id": 299323,
+      "record_uri": "/repositories/2/archival_objects/299323",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 1653-2118",
+      "id": 299324,
+      "record_uri": "/repositories/2/archival_objects/299324",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 2119-2419",
+      "id": 299325,
+      "record_uri": "/repositories/2/archival_objects/299325",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 2421-2693",
+      "id": 299326,
+      "record_uri": "/repositories/2/archival_objects/299326",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 2694-3006",
+      "id": 299327,
+      "record_uri": "/repositories/2/archival_objects/299327",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 3020-3295",
+      "id": 299328,
+      "record_uri": "/repositories/2/archival_objects/299328",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 3297-3578",
+      "id": 299329,
+      "record_uri": "/repositories/2/archival_objects/299329",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1963 Senate Internal Memo 3579-3786",
+      "id": 299330,
+      "record_uri": "/repositories/2/archival_objects/299330",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 2-574",
+      "id": 299331,
+      "record_uri": "/repositories/2/archival_objects/299331",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 577-864",
+      "id": 299332,
+      "record_uri": "/repositories/2/archival_objects/299332",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 868-1217",
+      "id": 299333,
+      "record_uri": "/repositories/2/archival_objects/299333",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 1223-1650",
+      "id": 299334,
+      "record_uri": "/repositories/2/archival_objects/299334",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 1677-2166",
+      "id": 299335,
+      "record_uri": "/repositories/2/archival_objects/299335",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 2167-2463",
+      "id": 299336,
+      "record_uri": "/repositories/2/archival_objects/299336",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 2465-2909",
+      "id": 299337,
+      "record_uri": "/repositories/2/archival_objects/299337",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 2923-3303",
+      "id": 299338,
+      "record_uri": "/repositories/2/archival_objects/299338",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 3304-3716",
+      "id": 299339,
+      "record_uri": "/repositories/2/archival_objects/299339",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1964 Senate Internal Memo 3729-3919",
+      "id": 299340,
+      "record_uri": "/repositories/2/archival_objects/299340",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 1-552",
+      "id": 299341,
+      "record_uri": "/repositories/2/archival_objects/299341",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 555-969",
+      "id": 299342,
+      "record_uri": "/repositories/2/archival_objects/299342",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 970-1451",
+      "id": 299343,
+      "record_uri": "/repositories/2/archival_objects/299343",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 1470-1802",
+      "id": 299344,
+      "record_uri": "/repositories/2/archival_objects/299344",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 1804-2161",
+      "id": 299345,
+      "record_uri": "/repositories/2/archival_objects/299345",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 2175-2545",
+      "id": 299346,
+      "record_uri": "/repositories/2/archival_objects/299346",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 2551-2908",
+      "id": 299347,
+      "record_uri": "/repositories/2/archival_objects/299347",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 2909-3225",
+      "id": 299348,
+      "record_uri": "/repositories/2/archival_objects/299348",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 3230-3451",
+      "id": 299349,
+      "record_uri": "/repositories/2/archival_objects/299349",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 3452-3829",
+      "id": 299350,
+      "record_uri": "/repositories/2/archival_objects/299350",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 3830-4088",
+      "id": 299351,
+      "record_uri": "/repositories/2/archival_objects/299351",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 4102-4383",
+      "id": 299352,
+      "record_uri": "/repositories/2/archival_objects/299352",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 4384-4572",
+      "id": 299353,
+      "record_uri": "/repositories/2/archival_objects/299353",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1965 Senate Internal Memo 4578-4741",
+      "id": 299354,
+      "record_uri": "/repositories/2/archival_objects/299354",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 21-628",
+      "id": 299355,
+      "record_uri": "/repositories/2/archival_objects/299355",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 629-1093",
+      "id": 299356,
+      "record_uri": "/repositories/2/archival_objects/299356",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 1096-1499",
+      "id": 299357,
+      "record_uri": "/repositories/2/archival_objects/299357",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 1526-2049",
+      "id": 299358,
+      "record_uri": "/repositories/2/archival_objects/299358",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 2052-2537",
+      "id": 299359,
+      "record_uri": "/repositories/2/archival_objects/299359",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 2538-2857",
+      "id": 299360,
+      "record_uri": "/repositories/2/archival_objects/299360",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 2859-3174",
+      "id": 299361,
+      "record_uri": "/repositories/2/archival_objects/299361",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 3214-3694",
+      "id": 299362,
+      "record_uri": "/repositories/2/archival_objects/299362",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 3736-4428",
+      "id": 299363,
+      "record_uri": "/repositories/2/archival_objects/299363",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 4434-4679",
+      "id": 299364,
+      "record_uri": "/repositories/2/archival_objects/299364",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1966 Senate Internal Memo 4686-5003",
+      "id": 299365,
+      "record_uri": "/repositories/2/archival_objects/299365",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 2-A-536",
+      "id": 299366,
+      "record_uri": "/repositories/2/archival_objects/299366",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 542-903",
+      "id": 299367,
+      "record_uri": "/repositories/2/archival_objects/299367",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 912-A-1657",
+      "id": 299368,
+      "record_uri": "/repositories/2/archival_objects/299368",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 1664-2131",
+      "id": 299369,
+      "record_uri": "/repositories/2/archival_objects/299369",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 2132-2568-A",
+      "id": 299370,
+      "record_uri": "/repositories/2/archival_objects/299370",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 2575-3075",
+      "id": 299371,
+      "record_uri": "/repositories/2/archival_objects/299371",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 3098-A-3479",
+      "id": 299372,
+      "record_uri": "/repositories/2/archival_objects/299372",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 3510-4025",
+      "id": 299373,
+      "record_uri": "/repositories/2/archival_objects/299373",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 4030-A-4445",
+      "id": 299374,
+      "record_uri": "/repositories/2/archival_objects/299374",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1967 Senate Internal Memo 4446-4645",
+      "id": 299375,
+      "record_uri": "/repositories/2/archival_objects/299375",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 3-A-659-A",
+      "id": 299376,
+      "record_uri": "/repositories/2/archival_objects/299376",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 661-1293=A",
+      "id": 299377,
+      "record_uri": "/repositories/2/archival_objects/299377",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 1303-A-1839",
+      "id": 299378,
+      "record_uri": "/repositories/2/archival_objects/299378",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 1847-2594",
+      "id": 299379,
+      "record_uri": "/repositories/2/archival_objects/299379",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 2597-3106",
+      "id": 299380,
+      "record_uri": "/repositories/2/archival_objects/299380",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 3107-3620",
+      "id": 299381,
+      "record_uri": "/repositories/2/archival_objects/299381",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 3621-3989-A",
+      "id": 299382,
+      "record_uri": "/repositories/2/archival_objects/299382",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 3996-A-4499",
+      "id": 299383,
+      "record_uri": "/repositories/2/archival_objects/299383",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 4503-A-5035-A",
+      "id": 299384,
+      "record_uri": "/repositories/2/archival_objects/299384",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 5060-5368",
+      "id": 299385,
+      "record_uri": "/repositories/2/archival_objects/299385",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 5369-5601",
+      "id": 299386,
+      "record_uri": "/repositories/2/archival_objects/299386",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 5604-A-5736-A",
+      "id": 299387,
+      "record_uri": "/repositories/2/archival_objects/299387",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1968 Senate Internal Memo 5739-5951",
+      "id": 299388,
+      "record_uri": "/repositories/2/archival_objects/299388",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 2-612",
+      "id": 299389,
+      "record_uri": "/repositories/2/archival_objects/299389",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 634-A-1017",
+      "id": 299390,
+      "record_uri": "/repositories/2/archival_objects/299390",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 1018-A-1440",
+      "id": 299391,
+      "record_uri": "/repositories/2/archival_objects/299391",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 1442-1890",
+      "id": 299392,
+      "record_uri": "/repositories/2/archival_objects/299392",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 1891-2143-A",
+      "id": 299393,
+      "record_uri": "/repositories/2/archival_objects/299393",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 2150-2515",
+      "id": 299394,
+      "record_uri": "/repositories/2/archival_objects/299394",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 2517-3010-A",
+      "id": 299395,
+      "record_uri": "/repositories/2/archival_objects/299395",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 3014-3538-B",
+      "id": 299396,
+      "record_uri": "/repositories/2/archival_objects/299396",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 3540-4066",
+      "id": 299397,
+      "record_uri": "/repositories/2/archival_objects/299397",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 4076-4405",
+      "id": 299398,
+      "record_uri": "/repositories/2/archival_objects/299398",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 4406-4883",
+      "id": 299399,
+      "record_uri": "/repositories/2/archival_objects/299399",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 4884-A-5229",
+      "id": 299400,
+      "record_uri": "/repositories/2/archival_objects/299400",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 5237-5507",
+      "id": 299401,
+      "record_uri": "/repositories/2/archival_objects/299401",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1969 Senate Internal Memo 5508-5694",
+      "id": 299402,
+      "record_uri": "/repositories/2/archival_objects/299402",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 147-3851",
+      "id": 299403,
+      "record_uri": "/repositories/2/archival_objects/299403",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 3871-A-5912",
+      "id": 299404,
+      "record_uri": "/repositories/2/archival_objects/299404",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 5913-6383",
+      "id": 299405,
+      "record_uri": "/repositories/2/archival_objects/299405",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 6392-6851",
+      "id": 299406,
+      "record_uri": "/repositories/2/archival_objects/299406",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 6858-7193",
+      "id": 299407,
+      "record_uri": "/repositories/2/archival_objects/299407",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 7201-7517",
+      "id": 299408,
+      "record_uri": "/repositories/2/archival_objects/299408",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 7521-A-7998",
+      "id": 299409,
+      "record_uri": "/repositories/2/archival_objects/299409",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 8002-B-8525",
+      "id": 299410,
+      "record_uri": "/repositories/2/archival_objects/299410",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 8526-A-8816",
+      "id": 299411,
+      "record_uri": "/repositories/2/archival_objects/299411",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 8822-A-9156",
+      "id": 299412,
+      "record_uri": "/repositories/2/archival_objects/299412",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1970 Senate Internal Memo 9161-9484",
+      "id": 299413,
+      "record_uri": "/repositories/2/archival_objects/299413",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 3-879",
+      "id": 299414,
+      "record_uri": "/repositories/2/archival_objects/299414",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 902-C-1684",
+      "id": 299415,
+      "record_uri": "/repositories/2/archival_objects/299415",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 1691-B-2417-A",
+      "id": 299416,
+      "record_uri": "/repositories/2/archival_objects/299416",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 2429-A-3284-A",
+      "id": 299417,
+      "record_uri": "/repositories/2/archival_objects/299417",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 3291-3730",
+      "id": 299418,
+      "record_uri": "/repositories/2/archival_objects/299418",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 3733-4197-B",
+      "id": 299419,
+      "record_uri": "/repositories/2/archival_objects/299419",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 4201-4572",
+      "id": 299420,
+      "record_uri": "/repositories/2/archival_objects/299420",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 4585-4958",
+      "id": 299421,
+      "record_uri": "/repositories/2/archival_objects/299421",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 4975-5510-C",
+      "id": 299422,
+      "record_uri": "/repositories/2/archival_objects/299422",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 5513-5746",
+      "id": 299423,
+      "record_uri": "/repositories/2/archival_objects/299423",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 5784-A-6302-A",
+      "id": 299424,
+      "record_uri": "/repositories/2/archival_objects/299424",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 6304-6585",
+      "id": 299425,
+      "record_uri": "/repositories/2/archival_objects/299425",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 6587-6822",
+      "id": 299426,
+      "record_uri": "/repositories/2/archival_objects/299426",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1971 Senate Internal Memo 6824-7070",
+      "id": 299427,
+      "record_uri": "/repositories/2/archival_objects/299427",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 110-5430-A",
+      "id": 299428,
+      "record_uri": "/repositories/2/archival_objects/299428",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 5491-7265",
+      "id": 299429,
+      "record_uri": "/repositories/2/archival_objects/299429",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 7278-A-7576-B",
+      "id": 299430,
+      "record_uri": "/repositories/2/archival_objects/299430",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 7582-A-7898-A",
+      "id": 299431,
+      "record_uri": "/repositories/2/archival_objects/299431",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 7910-A-8181",
+      "id": 299432,
+      "record_uri": "/repositories/2/archival_objects/299432",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 8196-A-8496-A",
+      "id": 299433,
+      "record_uri": "/repositories/2/archival_objects/299433",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 8497-8785",
+      "id": 299434,
+      "record_uri": "/repositories/2/archival_objects/299434",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 8794-9441-A",
+      "id": 299435,
+      "record_uri": "/repositories/2/archival_objects/299435",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 9442-9768",
+      "id": 299436,
+      "record_uri": "/repositories/2/archival_objects/299436",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 9772-10046",
+      "id": 299437,
+      "record_uri": "/repositories/2/archival_objects/299437",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1972 Senate Internal Memo 10318-10560",
+      "id": 299438,
+      "record_uri": "/repositories/2/archival_objects/299438",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 6-907-A",
+      "id": 299439,
+      "record_uri": "/repositories/2/archival_objects/299439",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 908-1323",
+      "id": 299440,
+      "record_uri": "/repositories/2/archival_objects/299440",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 1330-1732-A",
+      "id": 299441,
+      "record_uri": "/repositories/2/archival_objects/299441",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 1737-2288-A",
+      "id": 299442,
+      "record_uri": "/repositories/2/archival_objects/299442",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 2309-3032-A",
+      "id": 299443,
+      "record_uri": "/repositories/2/archival_objects/299443",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 3038-B-3513",
+      "id": 299444,
+      "record_uri": "/repositories/2/archival_objects/299444",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 3514-4179",
+      "id": 299445,
+      "record_uri": "/repositories/2/archival_objects/299445",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 4183-4589",
+      "id": 299446,
+      "record_uri": "/repositories/2/archival_objects/299446",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 4613-A-5228",
+      "id": 299447,
+      "record_uri": "/repositories/2/archival_objects/299447",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 5235-A-5938-B",
+      "id": 299448,
+      "record_uri": "/repositories/2/archival_objects/299448",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "Not Used",
+      "id": 299449,
+      "record_uri": "/repositories/2/archival_objects/299449",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 5950-A-6216",
+      "id": 299450,
+      "record_uri": "/repositories/2/archival_objects/299450",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 6221-6476",
+      "id": 299451,
+      "record_uri": "/repositories/2/archival_objects/299451",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "1973 Senate Internal Memo 6487-6638",
+      "id": 299452,
+      "record_uri": "/repositories/2/archival_objects/299452",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "Memoranda of Law (1)",
+      "id": 299453,
+      "record_uri": "/repositories/2/archival_objects/299453",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    },
+    {
+      "title": "Memoranda of Law (2)",
+      "id": 299454,
+      "record_uri": "/repositories/2/archival_objects/299454",
+      "publish": true,
+      "suppressed": false,
+      "node_type": "archival_object",
+      "level": "file",
+      "instance_types": [
+        "mixed materials"
+      ],
+      "has_children": false,
+      "children": [],
+      "containers": []
+    }
+  ],
+  "record_uri": "/repositories/2/resources/553",
+  "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Assembly and Senate Memos, Series 3",
+  "level": "series",
+  "jsonmodel_type": "resource_tree",
+  "instance_types": [],
+  "containers": []
+}

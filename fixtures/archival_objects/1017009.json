@@ -1,0 +1,124 @@
+{
+  "lock_version": 5,
+  "position": 4,
+  "publish": false,
+  "ref_id": "a755678cc5ffb17056d8d396c828dd92",
+  "title": "Rockefeller Video Tape Spots",
+  "display_string": "Rockefeller Video Tape Spots",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:35Z",
+  "system_mtime": "2018-08-06T18:01:26Z",
+  "user_mtime": "2018-08-06T18:01:26Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043743",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-08-06T18:01:26Z",
+      "system_mtime": "2018-08-06T18:01:26Z",
+      "user_mtime": "2018-08-06T18:01:26Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-08-06T18:01:26Z",
+        "system_mtime": "2018-08-06T18:01:26Z",
+        "user_mtime": "2018-08-06T18:01:26Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168277"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "ca95a57a2a0c0f8a8d4fa4a8eac3659b",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, Black and White"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "d1a5297af1e15b42f71e2c1547388568",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a08ea11345fc4b85b434aaee07fc1ef6",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Same content as AV 10628",
+          "publish": false
+        }
+      ],
+      "persistent_id": "13b648025a4c6bae001f67eda5bff1ec",
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017009",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043743"
+  },
+  "has_unpublished_ancestor": false
+}

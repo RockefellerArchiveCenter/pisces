@@ -1,0 +1,67 @@
+{
+  "lock_version": 1,
+  "position": 7,
+  "publish": true,
+  "ref_id": "412db39a9cba4462a45bcde62b0c298e",
+  "title": "R8: Nelson A. Rockefeller with Paul Williams & wife at Young Republicans reception",
+  "display_string": "R8: Nelson A. Rockefeller with Paul Williams & wife at Young Republicans reception",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T13:01:23Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T21:35:46Z",
+  "suppressed": false,
+  "level": "item",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1669280",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T21:35:46Z",
+      "system_mtime": "2017-02-20T21:35:46Z",
+      "user_mtime": "2017-02-20T21:35:46Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/471809",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471808",
+      "level": "unspecified"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/471017",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/654",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/471817",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/654"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/471809"
+  },
+  "has_unpublished_ancestor": true
+}

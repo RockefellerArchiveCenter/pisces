@@ -1,0 +1,135 @@
+{
+  "lock_version": 3,
+  "position": 0,
+  "publish": true,
+  "ref_id": "4a4d98b2f56d474683492318658dcf98",
+  "title": "The Art of Collecting",
+  "display_string": "The Art of Collecting",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2015-06-03T23:40:12Z",
+  "system_mtime": "2018-07-25T18:50:41Z",
+  "user_mtime": "2018-07-25T18:50:41Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894498",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/11524",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T18:50:42Z",
+      "system_mtime": "2018-07-25T18:50:42Z",
+      "user_mtime": "2018-07-25T18:50:42Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-07-25T18:50:42Z",
+        "system_mtime": "2018-07-25T18:50:42Z",
+        "user_mtime": "2018-07-25T18:50:42Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/127932"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_4f3ceb57f4db6fca0d58de78a876b6fb",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 40 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_21870ad6c3918076886f40b86c638886",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently unavailable. Please contact an RAC archivist for further instruction.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_74d4011212ed84d59e77cd2c4b3fdc7d",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "NBC documentary on wealthy figures and their various collections (includes interview with Nelson Rockefeller in the Executive Mansion in Albany).",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "b0f7b0571c83cdd06d7a69007688536a",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.1 Fg 59",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "16mm film"
+      ],
+      "persistent_id": "c46cc1602c7b55528ec022c39b99a0cb",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894499",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11524"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894498"
+  },
+  "has_unpublished_ancestor": false
+}

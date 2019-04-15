@@ -1,0 +1,148 @@
+{
+  "lock_version": 3,
+  "position": 5,
+  "publish": true,
+  "ref_id": "8fcb3e1f7854436cb746a16e5b26adfa",
+  "title": "NASA Astronaut Film",
+  "display_string": "NASA Astronaut Film, 1969 January 10 (Event Date)",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2015-06-03T23:40:12Z",
+  "system_mtime": "2018-07-25T18:59:48Z",
+  "user_mtime": "2018-07-25T18:59:48Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1969 January 10 (Event Date)",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T18:59:48Z",
+      "system_mtime": "2018-07-25T18:59:48Z",
+      "user_mtime": "2018-07-25T18:59:48Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894498",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/11524",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T18:59:48Z",
+      "system_mtime": "2018-07-25T18:59:48Z",
+      "user_mtime": "2018-07-25T18:59:48Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-07-25T18:59:49Z",
+        "system_mtime": "2018-07-25T18:59:49Z",
+        "user_mtime": "2018-07-25T18:59:49Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/127937"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_0fb7222a20a7fffb34db1b3b9363f853",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 5 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_a4c0d001f5d3c705678c4c2459b83828",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy currently unavailable. Please contact an RAC archivist for further instruction.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_0043d45c9adcc3a7516d5add18cc8e41",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Film of Apollo VIII mission, narrated by Art Fleming, which was shown at a New York State dinner for the Apollo VIII astronauts and their wives (1969 January 10).",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "8f8f60723a3b48c3d4aa79212a93c239",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.1 Fa 103",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "16mm film"
+      ],
+      "persistent_id": "af90ac57328fe8a4999522af30dc226b",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894504",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11524"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894498"
+  },
+  "has_unpublished_ancestor": false
+}

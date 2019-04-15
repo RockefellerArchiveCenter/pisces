@@ -1,0 +1,94 @@
+{
+  "lock_version": 1,
+  "position": 3,
+  "publish": true,
+  "ref_id": "5aae08d6350b446085fc210ef29643b0",
+  "component_id": "4",
+  "title": "Notebooks and Reports",
+  "display_string": "Notebooks and Reports, 1967-1970",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:39:26Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:13:18Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "937761",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "1.2",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1967-1970",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:13:18Z",
+      "system_mtime": "2017-02-19T19:13:18Z",
+      "user_mtime": "2017-02-19T19:13:18Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/546",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "The final subseries consists of materials accumulated by DNA staff and the Answer Desk, a research group headed by Graham Molitor to assist with the Presidential campaign. Also found in this subseries are two general issues polls of New York voters undertaken prior to the 1970 gubernatorial reelection of Nelson Rockefeller.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e112f876380a8cb10d97de1ad17a1759",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/292954",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/546"
+  },
+  "has_unpublished_ancestor": false
+}

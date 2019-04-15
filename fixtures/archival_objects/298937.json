@@ -1,0 +1,128 @@
+{
+  "lock_version": 1,
+  "position": 57,
+  "publish": true,
+  "ref_id": "682df709527d4b5ebdc6c547babf86ef",
+  "title": "Carl Spad Interview",
+  "display_string": "Carl Spad Interview, 1980 January 9",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:48:01Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2017-02-19T19:45:18Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942653",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:18Z",
+      "system_mtime": "2017-02-19T19:45:18Z",
+      "user_mtime": "2017-02-19T19:45:18Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "21",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:18Z",
+      "system_mtime": "2017-02-19T19:45:18Z",
+      "user_mtime": "2017-02-19T19:45:18Z",
+      "portion": "whole",
+      "extent_type": "pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1980 January 9",
+      "begin": "1980",
+      "end": "1980",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:18Z",
+      "system_mtime": "2017-02-19T19:45:18Z",
+      "user_mtime": "2017-02-19T19:45:18Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:18Z",
+      "system_mtime": "2017-02-19T19:45:18Z",
+      "user_mtime": "2017-02-19T19:45:18Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "42",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:45:18Z",
+        "system_mtime": "2017-02-19T19:45:18Z",
+        "user_mtime": "2017-02-19T19:45:18Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50915"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "New York State Appointments Officer; State Chair of Young Republicans\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "1b31d14a390c1e6ca4517695fff7f949",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298937",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

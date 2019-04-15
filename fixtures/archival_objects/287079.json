@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 8,
+  "publish": true,
+  "ref_id": "0d852ddd1144418fa359ca9d573f6e84",
+  "title": "Miscellaneous",
+  "display_string": "Miscellaneous, 1977",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:12Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:34:50Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170785",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:50Z",
+      "system_mtime": "2017-02-19T18:34:50Z",
+      "user_mtime": "2017-02-19T18:34:50Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1977",
+      "begin": "1977",
+      "end": "1977",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:50Z",
+      "system_mtime": "2017-02-19T18:34:50Z",
+      "user_mtime": "2017-02-19T18:34:50Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/287070",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:34:50Z",
+      "system_mtime": "2017-02-19T18:34:50Z",
+      "user_mtime": "2017-02-19T18:34:50Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1790",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:34:50Z",
+        "system_mtime": "2017-02-19T18:34:50Z",
+        "user_mtime": "2017-02-19T18:34:50Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49335"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "A list of those traveling with NAR and those in the advance team, thank you letters to French and British hosts and officials, two NAR letters to Alfred L. Atherton, U.S. Assistant Secretary of State for Near East and South Asian Affairs, regarding the trip, one letter from Atherton to NAR, a list of gifts presented to heads of state and other officials (gilt bowls, dishes, platters, candelabra, and copies of \"Asmat\"). Also included are a memo from NAR to Laurance Spelman Rockefeller and David Rockefeller regarding the Saudi Royal Family's desire to set up a family foundation, a resume for Dr. John S. Foster, and a newspaper clipping on a Sudanese investment project.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "07bdfc51793eb58a5bb90da5a14ce643",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/287079",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/287070"
+  },
+  "has_unpublished_ancestor": false
+}

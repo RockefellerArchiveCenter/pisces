@@ -1,0 +1,100 @@
+{
+  "lock_version": 1,
+  "position": 94,
+  "publish": true,
+  "ref_id": "56db1d0f572f49d38ec38ff5be8aae77",
+  "title": "Louisiana - New Orleans, American Political Science Association",
+  "display_string": "Louisiana - New Orleans, American Political Science Association, September 5, 1973",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:38:19Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:06:22Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936029",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:06:23Z",
+      "system_mtime": "2017-02-19T19:06:23Z",
+      "user_mtime": "2017-02-19T19:06:23Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "September 5, 1973",
+      "begin": "1973",
+      "end": "1973",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:06:23Z",
+      "system_mtime": "2017-02-19T19:06:23Z",
+      "user_mtime": "2017-02-19T19:06:23Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291917",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:06:23Z",
+      "system_mtime": "2017-02-19T19:06:23Z",
+      "user_mtime": "2017-02-19T19:06:23Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "6",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:06:23Z",
+        "system_mtime": "2017-02-19T19:06:23Z",
+        "user_mtime": "2017-02-19T19:06:23Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49852"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/292012",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291917"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,125 @@
+{
+  "lock_version": 2,
+  "position": 0,
+  "publish": true,
+  "ref_id": "b223eb31fca242639f8974c61989e51b",
+  "display_string": "1962",
+  "other_level": "Date of Legislation",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:53:57Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:41:21Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1747091",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:41:21Z",
+      "system_mtime": "2017-02-20T20:41:21Z",
+      "user_mtime": "2017-02-20T20:41:21Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1962",
+      "begin": "1962",
+      "end": "1962",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:41:21Z",
+      "system_mtime": "2017-02-20T20:41:21Z",
+      "user_mtime": "2017-02-20T20:41:21Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/463392",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/462237",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/638",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:41:21Z",
+      "system_mtime": "2017-02-20T20:41:21Z",
+      "user_mtime": "2017-02-20T20:41:21Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T20:41:21Z",
+        "system_mtime": "2017-02-20T20:41:21Z",
+        "user_mtime": "2017-02-20T20:41:21Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/76073"
+        }
+      }
+    },
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:41:21Z",
+      "system_mtime": "2017-02-20T20:41:21Z",
+      "user_mtime": "2017-02-20T20:41:21Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T20:41:21Z",
+        "system_mtime": "2017-02-20T20:41:21Z",
+        "user_mtime": "2017-02-20T20:41:21Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/76074"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/463393",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/638"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/463392"
+  },
+  "has_unpublished_ancestor": false
+}

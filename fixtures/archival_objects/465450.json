@@ -1,0 +1,93 @@
+{
+  "lock_version": 3,
+  "position": 1,
+  "publish": true,
+  "ref_id": "59050adc73e14e03897e7d181e308d16",
+  "title": "Movie: \"I am Curious Yellow\"",
+  "display_string": "Movie: \"I am Curious Yellow\"",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:55:05Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:57:17Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1745030",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:57:17Z",
+      "system_mtime": "2017-02-20T20:57:17Z",
+      "user_mtime": "2017-02-20T20:57:17Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/465448",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465432",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/465299",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11968",
+      "level": "subseries"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:57:17Z",
+      "system_mtime": "2017-02-20T20:57:17Z",
+      "user_mtime": "2017-02-20T20:57:17Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "176",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T20:57:17Z",
+        "system_mtime": "2017-02-20T20:57:17Z",
+        "user_mtime": "2017-02-20T20:57:17Z",
+        "type_2": "frame",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/75702"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/465450",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11968"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/465448"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,121 @@
+{
+  "lock_version": 1,
+  "position": 3,
+  "publish": true,
+  "ref_id": "4dd5c59d42df42d2844f7fd752bb7e0e",
+  "title": "TR 2-1 through 2-5 - Trips by Vice President",
+  "display_string": "TR 2-1 through 2-5 - Trips by Vice President, 1975 January 23-February 26",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:14:11Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:32:47Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1800262",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:47Z",
+      "system_mtime": "2017-02-19T22:32:47Z",
+      "user_mtime": "2017-02-19T22:32:47Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 January 23-February 26",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:47Z",
+      "system_mtime": "2017-02-19T22:32:47Z",
+      "user_mtime": "2017-02-19T22:32:47Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/319183",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/577",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:32:47Z",
+      "system_mtime": "2017-02-19T22:32:47Z",
+      "user_mtime": "2017-02-19T22:32:47Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T22:32:47Z",
+        "system_mtime": "2017-02-19T22:32:47Z",
+        "user_mtime": "2017-02-19T22:32:47Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/52152"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "a1301619508ca463a436eacfaf3fa8bc",
+      "label": "General Physical Description note",
+      "content": [
+        "Individual folder for each trip."
+      ],
+      "type": "physdesc",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "All trips taken by the Vice President are given individual numbers and all folders provide the location of the trip or event.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "6f58b9d355eccd81124cb00ddf0b8176",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/319187",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/577"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/319183"
+  },
+  "has_unpublished_ancestor": false
+}

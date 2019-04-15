@@ -1,0 +1,137 @@
+{
+  "lock_version": 3,
+  "position": 6,
+  "publish": false,
+  "ref_id": "378b8c1b1d4bdd3392251da3ff2cac93",
+  "title": "B.S. Thruway Statewide - Take 7, Governor Rockefeller Campaign Spot\n",
+  "display_string": "B.S. Thruway Statewide - Take 7, Governor Rockefeller Campaign Spot\n, 1966 September 30\n",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:56Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-10-26T17:09:13Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1966 September 30\n",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T17:09:13Z",
+      "system_mtime": "2017-10-26T17:09:13Z",
+      "user_mtime": "2017-10-26T17:09:13Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043733",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T17:09:13Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-10-26T17:09:13Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-10-26T17:09:13Z",
+        "system_mtime": "2017-10-26T17:09:13Z",
+        "user_mtime": "2017-10-26T17:09:13Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173457"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "02c3f84c8d12ebb862973e9bfeca8014",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "eeccddec2d63072843ba4f3fcec6834e",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "0a947640974934bc66e818b2dde4da9b",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "901523a3e6d30850e2e9b56b380a36e0",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Poor quality. Same content as AV 11501.",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038545",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043733"
+  },
+  "has_unpublished_ancestor": false
+}

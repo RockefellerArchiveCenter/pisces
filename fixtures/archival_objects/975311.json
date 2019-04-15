@@ -1,0 +1,89 @@
+{
+  "lock_version": 0,
+  "position": 75,
+  "publish": true,
+  "ref_id": "6d543124ab675586954bb742e5103c5a",
+  "title": "Vice Presidential Press Picnic, Washington, D. C.",
+  "display_string": "Vice Presidential Press Picnic, Washington, D. C., 1975 July 23",
+  "restrictions_apply": false,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-01T17:19:01Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-01T17:19:01Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975 July 23",
+      "begin": "1975",
+      "end": "1975",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-01T17:19:01Z",
+      "system_mtime": "2016-06-01T17:19:01Z",
+      "user_mtime": "2016-06-01T17:19:01Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-01T17:19:01Z",
+      "system_mtime": "2016-06-01T17:19:01Z",
+      "user_mtime": "2016-06-01T17:19:01Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "69",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:11Z",
+        "system_mtime": "2016-08-13T09:11:11Z",
+        "user_mtime": "2016-08-13T09:11:11Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132431"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/975311",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

@@ -1,0 +1,152 @@
+{
+  "lock_version": 2,
+  "position": 13,
+  "publish": true,
+  "ref_id": "fb47b072c960457d8fe992362bc2b1d7",
+  "title": "Nancy Hanks Interview",
+  "display_string": "Nancy Hanks Interview, 1979 November 19",
+  "restrictions_apply": true,
+  "created_by": "admin",
+  "last_modified_by": "fitcha",
+  "create_time": "2014-12-06T09:47:57Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-02-13T20:55:33Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942711",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:55:33Z",
+      "system_mtime": "2018-02-13T20:55:33Z",
+      "user_mtime": "2018-02-13T20:55:33Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1979 November 19",
+      "begin": "1979",
+      "end": "1979",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:55:33Z",
+      "system_mtime": "2018-02-13T20:55:33Z",
+      "user_mtime": "2018-02-13T20:55:33Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-13T20:55:33Z",
+      "system_mtime": "2018-02-13T20:55:33Z",
+      "user_mtime": "2018-02-13T20:55:33Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "0009A",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-02-13T20:55:33Z",
+        "system_mtime": "2018-02-13T20:55:33Z",
+        "user_mtime": "2018-02-13T20:55:33Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50913"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "18ff7cd23006f1a74f95152cade092e0",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restriction-NAR's health\n\n",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f9184dc15293285c635db995a0b7264c",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted material\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e92e96c90f57ffc7dc37916da041ad6e",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "\nRestriction-Ann Rockefeller Roberts\nRestriction-Steven C. Rockefeller\nRestriction-Mary Rockefeller Morgan\n\n",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298879",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

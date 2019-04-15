@@ -1,0 +1,75 @@
+{
+  "lock_version": 1,
+  "position": 9,
+  "publish": true,
+  "ref_id": "fa317dd5e6d740d8a35155b328fedccb",
+  "title": "\"The U.S. and the World\"",
+  "display_string": "\"The U.S. and the World\"",
+  "other_level": "unspecified",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:29:39Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:20:02Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1172470",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:20:02Z",
+      "system_mtime": "2017-02-19T18:20:02Z",
+      "user_mtime": "2017-02-19T18:20:02Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285323",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Unpublished manuscript of NAR's thoughts on U.S. foreign policy and the future role of the United States as a global power. James Monahan and Lois Mattox Monahan, husband and wife, were hired as ghost writers. NAR abandoned the project when President Harry Truman appointed him chair of the International Development Advisory Board in November 1950. NAR included his thoughts on the subject in the IDAB's final report, \"Partners in Progress.\"\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "768a4b4827fa046b73c1ac5e2d092c3b",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285333",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285323"
+  },
+  "has_unpublished_ancestor": false
+}

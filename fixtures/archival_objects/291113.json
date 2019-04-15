@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 15,
+  "publish": true,
+  "ref_id": "e66190151f0d4b959f5a0ded729d91a5",
+  "title": "1960 Presidential Campaign - Losee, Tom",
+  "display_string": "1960 Presidential Campaign - Losee, Tom, 1959-1960",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:22Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T18:58:34Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936928",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:34Z",
+      "system_mtime": "2017-02-19T18:58:34Z",
+      "user_mtime": "2017-02-19T18:58:34Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1959-1960",
+      "begin": "1959",
+      "end": "1960",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:34Z",
+      "system_mtime": "2017-02-19T18:58:34Z",
+      "user_mtime": "2017-02-19T18:58:34Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291097",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:58:34Z",
+      "system_mtime": "2017-02-19T18:58:34Z",
+      "user_mtime": "2017-02-19T18:58:34Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "105",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:58:34Z",
+        "system_mtime": "2017-02-19T18:58:34Z",
+        "user_mtime": "2017-02-19T18:58:34Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49778"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Portfolios &amp; mailing packets; status report \"Public Relations Opportunities\"; NAR speech at Economics Club of NY dinner 1959; \"The Rockefeller Record\"; \"NAR: Man with a Mission\"; reprint of \"San Francisco Chronicle,\" November 1959 [Losee managed public relations for campaigns].\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a867a8ab9a31ea9cf38dac46fc0e28be",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291113",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291097"
+  },
+  "has_unpublished_ancestor": false
+}

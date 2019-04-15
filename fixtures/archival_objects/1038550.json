@@ -1,0 +1,137 @@
+{
+  "lock_version": 3,
+  "position": 9,
+  "publish": true,
+  "ref_id": "be692c7c9ce3158f4a0a4f41ea316cfe",
+  "title": "Governor Rockefeller Campaign Compilation Reel - 1\n",
+  "display_string": "Governor Rockefeller Campaign Compilation Reel - 1\n, 1964 January 18",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:57Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-10-26T15:50:39Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1964 January 18",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:50:39Z",
+      "system_mtime": "2017-10-26T15:50:39Z",
+      "user_mtime": "2017-10-26T15:50:39Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043731",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-10-26T15:50:39Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-10-26T15:50:39Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-10-26T15:50:39Z",
+        "system_mtime": "2017-10-26T15:50:39Z",
+        "user_mtime": "2017-10-26T15:50:39Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173462"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "c2a0275b6d2bfd2205bdf908e9a971cb",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 7 min. 45 sec."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "471a7634db722d37337f81352cc4c2a2",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "b54fd6d9f560bcf2e1c80b59531f8d0b",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Includes the following spots: Welfare, Withdrawing Recognition, and the United Nations.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "ff83094a0ff71abb80188524053deaad",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038550",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043731"
+  },
+  "has_unpublished_ancestor": false
+}

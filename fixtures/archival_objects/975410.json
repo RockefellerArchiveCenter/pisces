@@ -1,0 +1,103 @@
+{
+  "lock_version": 0,
+  "position": 166,
+  "publish": true,
+  "ref_id": "36236193f27aebedae8d3a706055dc7b",
+  "title": "American Association for Advancement of Science, Boston, MA",
+  "display_string": "American Association for Advancement of Science, Boston, MA, 1976 February 23",
+  "restrictions_apply": true,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-08T19:03:36Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-08T19:03:36Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1976 February 23",
+      "begin": "1976",
+      "end": "1976",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-08T19:03:36Z",
+      "system_mtime": "2016-06-08T19:03:36Z",
+      "user_mtime": "2016-06-08T19:03:36Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975134",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-08T19:03:36Z",
+      "system_mtime": "2016-06-08T19:03:36Z",
+      "user_mtime": "2016-06-08T19:03:36Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "149A",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:14Z",
+        "system_mtime": "2016-08-13T09:11:14Z",
+        "user_mtime": "2016-08-13T09:11:14Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132437"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "accessrestrict",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted from scholarly access-Confidential material",
+          "publish": true
+        }
+      ],
+      "persistent_id": "73842324e0c802485086838f6865c971",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/975410",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975134"
+  },
+  "has_unpublished_ancestor": false
+}

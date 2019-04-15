@@ -1,0 +1,97 @@
+{
+  "lock_version": 2,
+  "position": 15,
+  "publish": true,
+  "ref_id": "3572bab783a643c7bcbf1b7c00e24170",
+  "title": "Science Centers",
+  "display_string": "Science Centers",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:54:30Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:49:02Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1746080",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:49:02Z",
+      "system_mtime": "2017-02-20T20:49:02Z",
+      "user_mtime": "2017-02-20T20:49:02Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/464349",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464346",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464333",
+      "level": "Subject"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/464127",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11967",
+      "level": "subseries"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:49:02Z",
+      "system_mtime": "2017-02-20T20:49:02Z",
+      "user_mtime": "2017-02-20T20:49:02Z",
+      "instance_type": "microform",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "4",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-20T20:49:02Z",
+        "system_mtime": "2017-02-20T20:49:02Z",
+        "user_mtime": "2017-02-20T20:49:02Z",
+        "type_2": "frame",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/76928"
+        }
+      }
+    }
+  ],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/464367",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11967"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/464349"
+  },
+  "has_unpublished_ancestor": false
+}

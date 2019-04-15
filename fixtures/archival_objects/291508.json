@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 224,
+  "publish": true,
+  "ref_id": "3ccc546440d0460281734e23402d866e",
+  "title": "1958 Gubernatorial Campaign - Subject Files - News Summaries",
+  "display_string": "1958 Gubernatorial Campaign - Subject Files - News Summaries, 1956-1958",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:37:48Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:01:58Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936533",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:58Z",
+      "system_mtime": "2017-02-19T19:01:58Z",
+      "user_mtime": "2017-02-19T19:01:58Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1956-1958",
+      "begin": "1956",
+      "end": "1958",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:58Z",
+      "system_mtime": "2017-02-19T19:01:58Z",
+      "user_mtime": "2017-02-19T19:01:58Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/291283",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:01:58Z",
+      "system_mtime": "2017-02-19T19:01:58Z",
+      "user_mtime": "2017-02-19T19:01:58Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "485",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:01:58Z",
+        "system_mtime": "2017-02-19T19:01:58Z",
+        "user_mtime": "2017-02-19T19:01:58Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49813"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Summaries of articles on gubernatorial campaign in Manhattan &amp; out of town newspapers, August 1956 - September 1958.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e944324a687f406323bf864c0e8437f6",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291508",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/291283"
+  },
+  "has_unpublished_ancestor": false
+}

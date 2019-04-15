@@ -1,0 +1,115 @@
+{
+  "lock_version": 1,
+  "position": 130,
+  "publish": true,
+  "ref_id": "5e012786446b47b8a336fe86fe62aa5b",
+  "title": "Jackson Hole, WY, Los Angeles, CA, Hawaii, San Francisco, CA",
+  "display_string": "Jackson Hole, WY, Los Angeles, CA, Hawaii, San Francisco, CA, June-July 1967",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:31:04Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:33:48Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1170906",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:48Z",
+      "system_mtime": "2017-02-19T18:33:48Z",
+      "user_mtime": "2017-02-19T18:33:48Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "June-July 1967",
+      "begin": "1967",
+      "end": "1967",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:48Z",
+      "system_mtime": "2017-02-19T18:33:48Z",
+      "user_mtime": "2017-02-19T18:33:48Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/286827",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:33:48Z",
+      "system_mtime": "2017-02-19T18:33:48Z",
+      "user_mtime": "2017-02-19T18:33:48Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "1675",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:33:48Z",
+        "system_mtime": "2017-02-19T18:33:48Z",
+        "user_mtime": "2017-02-19T18:33:48Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49319"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Governor and Mrs. NAR's &amp; children's trip to Jackson Hole (Governors' Conference), Los Angeles - MGM studio, Disneyland, Hawaii, San Francisco from 6/27-7/20, letters of thanks A-Z, memos re: trip, itinerary.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f4aa08c37370e2ac790725f77cb67558",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/286958",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/286827"
+  },
+  "has_unpublished_ancestor": false
+}

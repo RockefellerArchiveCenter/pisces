@@ -1,0 +1,111 @@
+{
+  "lock_version": 1,
+  "position": 6,
+  "publish": true,
+  "ref_id": "eebd7b04e9cc44609115533f785cc84c",
+  "title": "Activities Inventory",
+  "display_string": "Activities Inventory, March 7, 1975",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:13Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:09:56Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960413",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:56Z",
+      "system_mtime": "2017-02-19T22:09:56Z",
+      "user_mtime": "2017-02-19T22:09:56Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "March 7, 1975",
+      "begin": "1975",
+      "end": "1975",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:56Z",
+      "system_mtime": "2017-02-19T22:09:56Z",
+      "user_mtime": "2017-02-19T22:09:56Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/316345",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:56Z",
+      "system_mtime": "2017-02-19T22:09:56Z",
+      "user_mtime": "2017-02-19T22:09:56Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "45",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T22:09:56Z",
+        "system_mtime": "2017-02-19T22:09:56Z",
+        "user_mtime": "2017-02-19T22:09:56Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/51878"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "0093f029d2108ace1c55df9f1e9e4d25",
+      "label": "General Physical Description note",
+      "content": [
+        "Folder 1 of 2"
+      ],
+      "type": "physdesc",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316352",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/316345"
+  },
+  "has_unpublished_ancestor": false
+}

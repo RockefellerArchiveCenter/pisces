@@ -1,0 +1,103 @@
+{
+  "lock_version": 0,
+  "position": 19,
+  "publish": true,
+  "ref_id": "7f8cb1a9a7c02870b4eb7e269ac5ba81",
+  "title": "Advancemen-Resumes",
+  "display_string": "Advancemen-Resumes, 1975-1976",
+  "restrictions_apply": true,
+  "created_by": "jaffeb",
+  "last_modified_by": "jaffeb",
+  "create_time": "2016-06-17T16:17:18Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-06-17T16:17:18Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975-1976",
+      "begin": "1975",
+      "end": "1976",
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-17T16:17:18Z",
+      "system_mtime": "2016-06-17T16:17:18Z",
+      "user_mtime": "2016-06-17T16:17:18Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/975862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11708",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "jaffeb",
+      "last_modified_by": "jaffeb",
+      "create_time": "2016-06-17T16:17:18Z",
+      "system_mtime": "2016-06-17T16:17:18Z",
+      "user_mtime": "2016-06-17T16:17:18Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "280A",
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2016-08-13T09:11:18Z",
+        "system_mtime": "2016-08-13T09:11:18Z",
+        "user_mtime": "2016-08-13T09:11:18Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/132446"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "accessrestrict",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted from scholarly access-Confidential material",
+          "publish": true
+        }
+      ],
+      "persistent_id": "72fb5e36c998e62ae36f21ca8357c282",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/976650",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11708"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/975862"
+  },
+  "has_unpublished_ancestor": false
+}

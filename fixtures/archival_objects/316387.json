@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 3,
+  "publish": true,
+  "ref_id": "de15f7c68e4e41058c7478a33aa85e35",
+  "component_id": "04",
+  "title": "Energy Independence Authority (EIA)",
+  "display_string": "Energy Independence Authority (EIA), 1974-1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:15Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:10:14Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960337",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:14Z",
+      "system_mtime": "2017-02-19T22:10:14Z",
+      "user_mtime": "2017-02-19T22:10:14Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "2.5",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:14Z",
+      "system_mtime": "2017-02-19T22:10:14Z",
+      "user_mtime": "2017-02-19T22:10:14Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1974-1976",
+      "begin": "1974",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:14Z",
+      "system_mtime": "2017-02-19T22:10:14Z",
+      "user_mtime": "2017-02-19T22:10:14Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of correspondence and information on meetings regarding the proposed Energy Independence Authority (EIA). President Gerald Ford submitted legislation proposing the establishment of the EIA on October 10, 1975. The proposal from President Ford was to establish an independent government-owned corporation, managed by a five-member board of directors, with authority to invest a total of $100 billion over a 7-year period in energy projects that would help the United States achieve energy independence. The EIA was to support projects in nuclear energy, solar energy, geothermal energy, and synthetic fuel technology. The legislation was never passed by Congress.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "a25c2cce4549a1faccc8a8048467fa02",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316387",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

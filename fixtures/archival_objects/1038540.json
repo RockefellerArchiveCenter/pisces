@@ -1,0 +1,137 @@
+{
+  "lock_version": 2,
+  "position": 11,
+  "publish": true,
+  "ref_id": "f1252d4e58882e1c2eb60afe23ba84d4",
+  "title": "The Bosses - Take 31, Governor Rockefeller Campaign Spot\n",
+  "display_string": "The Bosses - Take 31, Governor Rockefeller Campaign Spot\n, 1966 September 15\n",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:55Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-01T19:33:30Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1966 September 15\n",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T19:33:31Z",
+      "system_mtime": "2017-11-01T19:33:31Z",
+      "user_mtime": "2017-11-01T19:33:31Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043733",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-11-01T19:33:31Z",
+      "system_mtime": "2017-11-03T18:51:33Z",
+      "user_mtime": "2017-11-01T19:33:31Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-11-01T19:33:31Z",
+        "system_mtime": "2017-11-01T19:33:31Z",
+        "user_mtime": "2017-11-01T19:33:31Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173452"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "83b49d04af22d67bbc8cdbcd9de8ee19",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 2 min. "
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "24aedc14c98950bac0ecf01b600a1cef",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "persistent_id": "daf4a568a981fe6faf5050f773846e98",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "phystech",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Image is dark.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "9b04232a43e2d8cccbb454da53afef1c",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038540",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043733"
+  },
+  "has_unpublished_ancestor": false
+}

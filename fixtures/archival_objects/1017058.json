@@ -1,0 +1,150 @@
+{
+  "lock_version": 5,
+  "position": 4,
+  "publish": true,
+  "ref_id": "92cd3a0f5717602068029b59aaca3333",
+  "title": "Scenes of Kykuit",
+  "display_string": "Scenes of Kykuit, c.1970s",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-03-27T16:44:41Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-06-15T18:33:49Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "c.1970s",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-06-15T18:33:49Z",
+      "system_mtime": "2017-06-15T18:33:49Z",
+      "user_mtime": "2017-06-15T18:33:49Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043762",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2017-06-15T18:33:49Z",
+      "system_mtime": "2017-06-15T18:33:49Z",
+      "user_mtime": "2017-06-15T18:33:49Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2017-06-15T18:33:49Z",
+        "system_mtime": "2017-06-15T18:33:49Z",
+        "user_mtime": "2017-06-15T18:33:49Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/168326"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3820951af65449ddcb5652847e32149b",
+      "type": "physdesc",
+      "content": [
+        "Silent, Color, 14 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "b56ddd048078a0bc57e9296fd301e8a0",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d2fd6e3e64c71b27592c53f19b0b900f",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "phystech",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Begins with color bars and tones. Program begins at 1:30. Heavy image distortion from 4:45 - 7:15.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "adfb106c5dec603280360fd87745771c",
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Exterior and interior footage of Kyikuit, a 40-room house in Westchester County, New York, built by John D. Rockefeller.",
+          "publish": true
+        }
+      ],
+      "persistent_id": "5dfa7ed2dcba6e7a4d0513fd386867a5",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1017058",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043762"
+  },
+  "has_unpublished_ancestor": false
+}

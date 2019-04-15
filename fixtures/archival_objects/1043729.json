@@ -1,0 +1,62 @@
+{
+  "lock_version": 0,
+  "position": 2,
+  "publish": true,
+  "ref_id": "6393c79ca8e2350ec30ef6dd4978ae87",
+  "display_string": "1962",
+  "other_level": "Year",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "battalb",
+  "create_time": "2017-11-02T14:55:53Z",
+  "system_mtime": "2018-02-05T15:22:58Z",
+  "user_mtime": "2017-11-02T14:55:53Z",
+  "suppressed": false,
+  "level": "otherlevel",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1962",
+      "begin": "1962",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2017-11-02T14:55:53Z",
+      "system_mtime": "2017-11-02T14:55:53Z",
+      "user_mtime": "2017-11-02T14:55:53Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/1043729",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1016965"
+  },
+  "has_unpublished_ancestor": false
+}

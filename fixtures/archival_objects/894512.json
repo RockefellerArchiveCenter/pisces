@@ -1,0 +1,148 @@
+{
+  "lock_version": 4,
+  "position": 13,
+  "publish": true,
+  "ref_id": "2e207f0b0788418da02c791f5cc00b8b",
+  "title": "Rodman Rockefeller on Newsfront",
+  "display_string": "Rodman Rockefeller on Newsfront, 1968 May 18",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2015-06-03T23:40:13Z",
+  "system_mtime": "2018-07-25T19:24:08Z",
+  "user_mtime": "2018-07-25T19:24:08Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968 May 18",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T19:24:08Z",
+      "system_mtime": "2018-07-25T19:24:08Z",
+      "user_mtime": "2018-07-25T19:24:08Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/894498",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/11524",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-07-25T19:24:08Z",
+      "system_mtime": "2018-07-25T19:24:08Z",
+      "user_mtime": "2018-07-25T19:24:08Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-07-25T19:24:08Z",
+        "system_mtime": "2018-07-25T19:24:08Z",
+        "user_mtime": "2018-07-25T19:24:08Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/127947"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "aspace_7c70e2447ee7f3fb39bdd9e3a4dda10a",
+      "type": "physdesc",
+      "content": [
+        "Sound, Black and white, 13 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_cbcacc9a011555e193b38175682cc7ee",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "aspace_8f506efa5e65616f6127a6388e5b2411",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "New York City NY: interview about history of the International Basic Economy Corporation (IBEC).",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f3ac91be380fc26e22d37b5451c03ce6",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "III 14.11-1",
+          "publish": false
+        }
+      ],
+      "publish": false
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "1136918bb19fda9c134096c12d02241a",
+      "type": "materialspec",
+      "content": [
+        "16mm film"
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/894512",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11524"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/894498"
+  },
+  "has_unpublished_ancestor": false
+}

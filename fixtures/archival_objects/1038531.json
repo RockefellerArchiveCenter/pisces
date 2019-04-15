@@ -1,0 +1,124 @@
+{
+  "lock_version": 3,
+  "position": 13,
+  "publish": true,
+  "ref_id": "0f736fbfa807808726bbf8074c47b9a1",
+  "title": "Rockefeller: The Presidential Man (from The Man Who Can) - Segment Three\n",
+  "display_string": "Rockefeller: The Presidential Man (from The Man Who Can) - Segment Three\n, 1968",
+  "restrictions_apply": false,
+  "created_by": "battalb",
+  "last_modified_by": "bphillips",
+  "create_time": "2017-09-14T18:00:52Z",
+  "system_mtime": "2018-08-06T18:12:10Z",
+  "user_mtime": "2018-08-06T18:12:10Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1968",
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-08-06T18:12:10Z",
+      "system_mtime": "2018-08-06T18:12:10Z",
+      "user_mtime": "2018-08-06T18:12:10Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1043743",
+      "level": "Year"
+    },
+    {
+      "ref": "/repositories/2/archival_objects/1016965",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/11523",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "bphillips",
+      "last_modified_by": "bphillips",
+      "create_time": "2018-08-06T18:12:10Z",
+      "system_mtime": "2018-08-06T18:12:10Z",
+      "user_mtime": "2018-08-06T18:12:10Z",
+      "instance_type": "Moving Images",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "created_by": "bphillips",
+        "last_modified_by": "bphillips",
+        "create_time": "2018-08-06T18:12:10Z",
+        "system_mtime": "2018-08-06T18:12:10Z",
+        "user_mtime": "2018-08-06T18:12:10Z",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/173443"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "3cbf3eb0dc84188fda156e7014a3701c",
+      "type": "physdesc",
+      "content": [
+        "Sound, Color, 16 minutes"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "12ee605e37a0fa56df376827042e17d1",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Access copy available.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "e367b951d6a6d8046a1f1b3ff78c8354",
+      "type": "materialspec",
+      "content": [
+        "2 inch videotape"
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/1038531",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11523"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1043743"
+  },
+  "has_unpublished_ancestor": false
+}

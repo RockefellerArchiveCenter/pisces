@@ -1,0 +1,110 @@
+{
+  "lock_version": 1,
+  "position": 4,
+  "publish": true,
+  "ref_id": "d53734d1306d43768139f00fe245b5c6",
+  "component_id": "5",
+  "title": "Office of the Governor",
+  "display_string": "Office of the Governor, 1958-1971",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:38:04Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T19:04:14Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "936124",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:14Z",
+      "system_mtime": "2017-02-19T19:04:14Z",
+      "user_mtime": "2017-02-19T19:04:14Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "14",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:14Z",
+      "system_mtime": "2017-02-19T19:04:14Z",
+      "user_mtime": "2017-02-19T19:04:14Z",
+      "portion": "whole",
+      "extent_type": "document box(es)",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1958-1971",
+      "begin": "1958",
+      "end": "1971",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:04:14Z",
+      "system_mtime": "2017-02-19T19:04:14Z",
+      "user_mtime": "2017-02-19T19:04:14Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/544",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Subseries 5 is arranged alphabetically by subject.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "cd930f93331ddbd21a651c09e8abeec8",
+      "label": "Arrangement note",
+      "type": "arrangement",
+      "publish": true
+    },
+    {
+      "subnotes": [
+        {
+          "content": "This subseries, a collection of alphabetically arranged subject files, partially documents the early years of Rockefeller's tenure as Governor. The majority of the files dates from Governor Rockefeller's inauguration in January 1959 or document activities in the first two administrations. A few files date as late as 1971. Few files offer complete documentation of a particular issue or activity.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "c6fc9b0da3d7eaca499a7b8a1f3c5e9b",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/291757",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/544"
+  },
+  "has_unpublished_ancestor": false
+}

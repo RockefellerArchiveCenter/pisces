@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 2,
+  "publish": true,
+  "ref_id": "f5e7a047b3fd4302af2eb958bd907f10",
+  "component_id": "03",
+  "title": "Domestic Council",
+  "display_string": "Domestic Council, 1970-1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:13Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:09:54Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960378",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:54Z",
+      "system_mtime": "2017-02-19T22:09:54Z",
+      "user_mtime": "2017-02-19T22:09:54Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "3.2",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:54Z",
+      "system_mtime": "2017-02-19T22:09:54Z",
+      "user_mtime": "2017-02-19T22:09:54Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1970-1976",
+      "begin": "1970",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:09:54Z",
+      "system_mtime": "2017-02-19T22:09:54Z",
+      "user_mtime": "2017-02-19T22:09:54Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of memos, background papers, activity reports, and policy reviews of the Domestic Council. The Domestic Council was formed in 1970 on the recommendation of the President's Advisory Council on Executive Organization. Developed as the domestic counterpart to the National Security Council, its major purpose was to create for the President a centralized, comprehensive policy-formulating group that would work closely with the relevant executive departments to analyze and develop policy initiatives on issues such as education, health care, welfare, drug abuse, veteran programs, civil rights, and natural resources.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "812131597d71f2e049461e3f2d110d7c",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316345",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}

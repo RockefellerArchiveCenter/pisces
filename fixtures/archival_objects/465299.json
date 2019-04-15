@@ -1,0 +1,86 @@
+{
+  "lock_version": 3,
+  "position": 0,
+  "publish": true,
+  "ref_id": "b7d3527975b14307bb62a562140ff636",
+  "component_id": "3",
+  "title": "Third Administration",
+  "display_string": "Third Administration, 1967-1970",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T12:55:00Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-20T20:56:04Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1743857",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:56:04Z",
+      "system_mtime": "2017-02-20T20:56:04Z",
+      "user_mtime": "2017-02-20T20:56:04Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [
+    {
+      "ref": "/repositories/2/events/54742"
+    }
+  ],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "115",
+      "container_summary": "115 microfilm reels.",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:56:04Z",
+      "system_mtime": "2017-02-20T20:56:04Z",
+      "user_mtime": "2017-02-20T20:56:04Z",
+      "portion": "whole",
+      "extent_type": "microform reels",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1967-1970",
+      "begin": "1967",
+      "end": "1970",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-20T20:56:04Z",
+      "system_mtime": "2017-02-20T20:56:04Z",
+      "user_mtime": "2017-02-20T20:56:04Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/11968",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/465299",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/11968"
+  },
+  "has_unpublished_ancestor": false
+}

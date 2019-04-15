@@ -1,0 +1,49 @@
+{
+  "lock_version": 301,
+  "title": "Venezuela",
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2014-12-06T02:30:17Z",
+  "system_mtime": "2018-12-11T20:41:03Z",
+  "user_mtime": "2014-12-06T02:30:17Z",
+  "source": "lcsh",
+  "jsonmodel_type": "subject",
+  "external_ids": [
+    {
+      "external_id": "415",
+      "source": "Archivists Toolkit Database::SUBJECT",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:30:17Z",
+      "system_mtime": "2014-12-06T02:30:17Z",
+      "user_mtime": "2014-12-06T02:30:17Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "publish": true,
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "Venezuela",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:30:17Z",
+      "system_mtime": "2014-12-06T02:30:17Z",
+      "user_mtime": "2014-12-06T02:30:17Z",
+      "term_type": "geographic",
+      "jsonmodel_type": "term",
+      "uri": "/terms/357",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/354",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

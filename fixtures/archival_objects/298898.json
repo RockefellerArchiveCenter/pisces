@@ -1,0 +1,135 @@
+{
+  "lock_version": 2,
+  "position": 27,
+  "publish": true,
+  "ref_id": "473fafa906ef461687fe368df96252d4",
+  "title": "Laurance Rockefeller Interview",
+  "display_string": "Laurance Rockefeller Interview, 1980 September 24",
+  "restrictions_apply": true,
+  "created_by": "admin",
+  "last_modified_by": "fitcha",
+  "create_time": "2014-12-06T09:47:58Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2018-02-14T20:52:23Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942692",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-14T20:52:23Z",
+      "system_mtime": "2018-02-14T20:52:23Z",
+      "user_mtime": "2018-02-14T20:52:23Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1980 September 24",
+      "begin": "1980",
+      "end": "1980",
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-14T20:52:23Z",
+      "system_mtime": "2018-02-14T20:52:23Z",
+      "user_mtime": "2018-02-14T20:52:23Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "fitcha",
+      "last_modified_by": "fitcha",
+      "create_time": "2018-02-14T20:52:23Z",
+      "system_mtime": "2018-02-14T20:52:23Z",
+      "user_mtime": "2018-02-14T20:52:23Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "0019A",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-02-14T20:52:23Z",
+        "system_mtime": "2018-02-14T20:52:23Z",
+        "user_mtime": "2018-02-14T20:52:23Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50914"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "900e55825dfea7afeafd2d80cf150ef7",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Restricted material\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bdcf38f28a5a661534d0f7006a017ebf",
+      "label": "Conditions Governing Access note",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "\nRestriction-Ann Rockefeller Roberts\nRestriction-Steven C. Rockefeller\nRestriction-Mary Rockefeller Morgan\nRestriction-Nelson Rockefeller Jr.\nRestriction-Mark F. Rockefeller\n\n",
+          "publish": false
+        }
+      ],
+      "publish": false
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298898",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

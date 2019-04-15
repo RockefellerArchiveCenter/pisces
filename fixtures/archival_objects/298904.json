@@ -1,0 +1,128 @@
+{
+  "lock_version": 1,
+  "position": 32,
+  "publish": true,
+  "ref_id": "b386589392be4d9c9990a438e660d81e",
+  "title": "Jack Wells Interview",
+  "display_string": "Jack Wells Interview, 1979 August 14-15",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:47:59Z",
+  "system_mtime": "2018-11-09T20:29:35Z",
+  "user_mtime": "2017-02-19T19:45:01Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "942686",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:01Z",
+      "system_mtime": "2017-02-19T19:45:01Z",
+      "user_mtime": "2017-02-19T19:45:01Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "33",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:01Z",
+      "system_mtime": "2017-02-19T19:45:01Z",
+      "user_mtime": "2017-02-19T19:45:01Z",
+      "portion": "whole",
+      "extent_type": "pages",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1979 August 14-15",
+      "begin": "1979",
+      "end": "1979",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:01Z",
+      "system_mtime": "2017-02-19T19:45:01Z",
+      "user_mtime": "2017-02-19T19:45:01Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/298862",
+      "level": "subseries"
+    },
+    {
+      "ref": "/repositories/2/resources/551",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T19:45:01Z",
+      "system_mtime": "2017-02-19T19:45:01Z",
+      "user_mtime": "2017-02-19T19:45:01Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "23",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T19:45:01Z",
+        "system_mtime": "2017-02-19T19:45:01Z",
+        "user_mtime": "2017-02-19T19:45:01Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/50914"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "1964 Presidential Campaign Manager\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "17baef978bff5774d5cf7e4c9a3d5081",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/298904",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/551"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/298862"
+  },
+  "has_unpublished_ancestor": false
+}

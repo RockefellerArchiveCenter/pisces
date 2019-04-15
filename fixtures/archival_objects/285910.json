@@ -1,0 +1,100 @@
+{
+  "lock_version": 1,
+  "position": 99,
+  "publish": true,
+  "ref_id": "2f11abf9dd54413eae7a1c2fc4895462",
+  "title": "Special Events",
+  "display_string": "Special Events",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T09:30:07Z",
+  "system_mtime": "2019-01-15T19:33:16Z",
+  "user_mtime": "2017-02-19T18:24:56Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "1171955",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:24:56Z",
+      "system_mtime": "2017-02-19T18:24:56Z",
+      "user_mtime": "2017-02-19T18:24:56Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/285811",
+      "level": "file"
+    },
+    {
+      "ref": "/repositories/2/resources/537",
+      "level": "series"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T18:24:56Z",
+      "system_mtime": "2017-02-19T18:24:56Z",
+      "user_mtime": "2017-02-19T18:24:56Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "655",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-19T18:24:56Z",
+        "system_mtime": "2017-02-19T18:24:56Z",
+        "user_mtime": "2017-02-19T18:24:56Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/49233"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Arrangements and guest lists for the following special events: Mayor's Reception Committee, Dinner - Pres. Auriol, 4/2/51 Metropolitan Museum of Art Committee on Art Education, 3/16/51 Metropolitan Museum of Art - Abstract Art Opening, 1/23/51 Mr. and Mrs. John, Sr., Jr., Music Hall Dinner, 1/22/51 Dr. Antonio Martin Araujo Luncheon, 1/22/51 ABID - Luncheon, Dinner, 1950-51\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "7ceda6d4266a2aa0631859c41a1dec54",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/285910",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/537"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/285811"
+  },
+  "has_unpublished_ancestor": false
+}

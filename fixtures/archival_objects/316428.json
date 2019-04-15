@@ -1,0 +1,96 @@
+{
+  "lock_version": 1,
+  "position": 4,
+  "publish": true,
+  "ref_id": "3ad8a63e4a7a41249e073284fbc5b894",
+  "component_id": "05",
+  "title": "Establishment of Office of Science and Technology Policy (OSTP)",
+  "display_string": "Establishment of Office of Science and Technology Policy (OSTP), 1975-1976",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T10:11:17Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-19T22:10:34Z",
+  "suppressed": false,
+  "level": "subseries",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "960317",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:34Z",
+      "system_mtime": "2017-02-19T22:10:34Z",
+      "user_mtime": "2017-02-19T22:10:34Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "1.5",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:34Z",
+      "system_mtime": "2017-02-19T22:10:34Z",
+      "user_mtime": "2017-02-19T22:10:34Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1975-1976",
+      "begin": "1975",
+      "end": "1976",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-19T22:10:34Z",
+      "system_mtime": "2017-02-19T22:10:34Z",
+      "user_mtime": "2017-02-19T22:10:34Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/resources/576",
+      "level": "series"
+    }
+  ],
+  "instances": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "This subseries consists of correspondence and information on meetings of the Office of Science and Technology Policy, which Congress established in 1976 with a broad mandate to advise the President and others within the Executive branch on the impact of science and technology on domestic and international affairs.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "c163182509721389b3e44766f878dd6e",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/316428",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/576"
+  },
+  "has_unpublished_ancestor": false
+}
