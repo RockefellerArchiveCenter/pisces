@@ -214,11 +214,11 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming notes: {}'.format(e))
 
-    def parents(self, parent):
+    def parent(self, parent):
         try:
             if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=parent.get('ref')).exists():
-                parent_collection = Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=parent.get('ref')).collection
-                self.obj.parents.add(parent_collection)
+                self.obj.parent = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
+                                                         identifier__identifier=parent.get('ref'))
             else:
                 raise ArchivesSpaceTransformError('Missing parent data {}'.format(parent.get('ref')))
         except Exception as e:
@@ -291,7 +291,7 @@ class ArchivesSpaceDataTransformer:
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
             if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('parent'):
-                self.parents(self.source_data.get('parent'))
+                self.parent(self.source_data.get('parent'))
             self.obj.save()
         except Exception as e:
             print(e)
@@ -313,7 +313,7 @@ class ArchivesSpaceDataTransformer:
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
             if self.source_data.get('parent'):
-                self.parents(self.source_data.get('parent'))
+                self.parent(self.source_data.get('parent'))
             self.obj.members = []
             self.obj.save()
         except Exception as e:

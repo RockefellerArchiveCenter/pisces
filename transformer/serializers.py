@@ -77,7 +77,7 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
-                  "extents", "level", "agents", "terms", "parents", "rights_statements",
+                  "extents", "level", "agents", "terms", "parent", "rights_statements",
                   "identifiers", "source_data", "tree", "created", "modified", )
 
 
@@ -99,7 +99,7 @@ class ObjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Object
         fields = ("url", "title", "dates", "languages", "notes", "extents",
-                  "agents", "terms", "parents", "identifiers", "rights_statements",
+                  "agents", "terms", "parent", "identifiers", "rights_statements",
                   "source_data", "created", "modified")
 
 

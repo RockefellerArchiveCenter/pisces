@@ -98,7 +98,7 @@ class Collection(models.Model):
     languages = models.ManyToManyField(Language, related_name='language_collections')
     agents = models.ManyToManyField(Agent, related_name='agent_collections')
     terms = models.ManyToManyField(Term, related_name='term_collections')
-    parents = models.ManyToManyField('self')
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
@@ -108,7 +108,7 @@ class Object(models.Model):
     agents = models.ManyToManyField(Agent, related_name='agent_objects')
     terms = models.ManyToManyField(Term, related_name='term_objects')
     languages = models.ManyToManyField(Language, related_name='language_objects')
-    parents = models.ManyToManyField(Collection)
+    parent = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
