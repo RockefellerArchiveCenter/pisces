@@ -14,18 +14,17 @@ class ArrangementMapTransformError(Exception): pass
 
 
 class ArrangementMapDataTransformer:
-    def __init(self):
+    def __init__(self):
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).order_by('-start_time')[0].start_time
                          if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).exists() else None)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
-        for collection in (Collection.objects.filter(modified__gte=self.last_run, source=TransformRun.CARTOGRAPHER)
-                           if self.last_run else Collection.objects.filter(source=TransformRun.CARTOGRAPHER)):
-            self.obj = obj
-            self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER)
+        for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=TransformRun.CARTOGRAPHER)
+                           if self.last_run else Collection.objects.filter(identifier__source=TransformRun.CARTOGRAPHER)):
+            self.obj = collection
+            self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
             self.obj.title = self.source_data.get('title')
-            # Identifiers
             if self.source_data.get('arrangement'):
                 try:
                     Note.objects.filter(collection=self.obj).delete()
@@ -33,11 +32,23 @@ class ArrangementMapDataTransformer:
                     Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
                 except Exception as e:
                     raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
+            self.identifiers(Identifier.PISCES, collection)
+            # TODO: Members
             self.obj.save()
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
         return True
+
+    def identifiers(self, source, collection):
+        try:
+            if not Identifier.objects.filter(source=source, collection=collection).exists():
+                new_id = "{}/{}".format('collections', str(uuid4())[:8])
+                if Identifier.objects.filter(identifier=new_id, source=source).exists():
+                    self.identifiers(source, collection)
+                Identifier.objects.create(identifier=new_id, source=source, collection=collection)
+        except Exception as e:
+            raise ArchivesSpaceTransformError('Error transforming identifiers: {}'.format(e))
 
 
 class ArchivesSpaceDataTransformer:
@@ -48,8 +59,8 @@ class ArchivesSpaceDataTransformer:
 
     def run(self):
         for cls in [(Agent, 'agent'), (Collection, 'collection'), (Object, 'object'), (Term, 'term')]:
-            for obj in (cls[0].objects.filter(modified__gte=self.last_run, source=TransformRun.ARCHIVESSPACE)
-                        if self.last_run else cls[0].objects.filter(source=TransformRun.ARCHIVESSPACE)):
+            for obj in (cls[0].objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE)
+                        if self.last_run else cls[0].objects.filter(identifier__source=Identifier.ARCHIVESSPACE)):
                 self.obj = obj
                 self.source_data = SourceData.objects.get(**{cls[1]: self.obj, "source": SourceData.ARCHIVESSPACE}).data
                 getattr(self, "transform_to_{}".format(cls[1]))()
