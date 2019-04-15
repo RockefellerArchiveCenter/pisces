@@ -237,15 +237,15 @@ class ArchivesSpaceDataTransformer:
                     "otherBasis": statement.get('other_rights_basis'),
                     "jurisdiction": statement.get('jurisdiction'),
                     relation_key: self.obj})
-                self.notes(self.source_data.get('notes'), 'rights_statement', new_rights)
+                self.notes(statement.get('notes'), 'rights_statement', new_rights)
                 for rights_granted in statement.get('acts'):
                     new_grant = RightsGranted.objects.create(
                         rights_statement=new_rights,
                         act=rights_granted.get('act_type'),
-                        dateStart=self.parse_date(rights_granted.get('start_date')),
-                        dateEnd=self.parse_date(rights_granted.get('end_date')),
+                        dateStart=self.datetime_from_string(rights_granted.get('start_date')),
+                        dateEnd=self.datetime_from_string(rights_granted.get('end_date')),
                         restriction=rights_granted.get('restriction'))
-                    self.notes(self.source_data.get('notes'), 'rights_granted', new_grant)
+                    self.notes(rights_granted.get('notes'), 'rights_granted', new_grant)
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming rights: {}'.format(e))
 

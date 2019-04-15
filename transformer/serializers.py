@@ -66,6 +66,15 @@ class SourceDataSerializer(serializers.ModelSerializer):
         fields = ('source', 'data')
 
 
+class RelatedSerializer(serializers.Serializer):
+    title = serializers.StringRelatedField()
+    ref = serializers.SerializerMethodField()
+
+    def get_ref(self, obj):
+        print(self)
+        return "test"
+
+
 class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     languages = LanguageSerializer(many=True)
     dates = DateSerializer(source="date_set", many=True)
@@ -74,7 +83,7 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
     source_data = SourceDataSerializer(source="sourcedata_set", many=True)
-    collections = serializers.HyperlinkedRelatedField(source="collection_set", many=True, read_only=True, view_name='collection-detail')
+    collections = RelatedSerializer(source="collection_set", many=True, context={"view_name": 'collection-detail'})
     objects = serializers.HyperlinkedRelatedField(source="object_set", many=True, read_only=True, view_name='object-detail')
 
     class Meta:

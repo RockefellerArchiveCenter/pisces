@@ -245,7 +245,15 @@ class Note(models.Model):
       ('physloc', 'Physical Location'),
       ('materialspec', 'Materials Specific Details'),
       ('physfacet', 'Physical Facet'),
-      ('rights_statement', 'Rights')
+      ('rights_statement', 'Rights'),
+      ('rights_statement_act', 'Acts'),
+      ('materials', 'Materials'),
+      ('type_note', 'Type Note'),
+      ('additional_information', 'Additional Information'),
+      ('expiration', 'Expiration'),
+      ('extension', 'Extension'),
+      ('permissions', 'Permissions'),
+      ('restrictions', 'Restrictions')
     )
     type = models.CharField(max_length=100, choices=NOTE_TYPE_CHOICES)
     title = models.CharField(max_length=255)
