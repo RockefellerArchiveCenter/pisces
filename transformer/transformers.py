@@ -60,24 +60,25 @@ class ArchivesSpaceDataTransformer:
     def parse_note_content(self, note, content=None):
         try:
             content = content if content else []
-            if note.get('jsonmodel_type') in ['note_orderedlist', 'note_definedlist']:
-                content.append((note.get('jsonmodel_type').split('note_')[1], note.get('items')))
-            elif note.get('jsonmodel_type') == 'note_bibliography':
-                content.append(('text', note.get('content')))
-                content.append(('orderedlist', note.get('items')))
-            elif note.get('jsonmodel_type') == 'note_index':
-                l = [{'label': i.get('reference'), 'value': i.get('reference_text')} for i in note.get('items')]
-                content.append(('text', note.get('content')))
-                content.append(('definedlist', l))
-            elif note.get('jsonmodel_type') == 'note_chronology':
-                m = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in note.get('items')]
-                content.append(('definedlist', m))
-            elif note.get('jsonmodel_type') in ['note_bioghist', 'note_multipart']:
+            if note.get('jsonmodel_type') in ['note_bioghist', 'note_multipart']:
                 for n in note.get('subnotes'):
-                    self.parse_note_content(n, content=content)
+                    content.append(self.parse_note_content(n, content=content)[0])
             else:
-                content.append(('text', (note.get('content')
-                                if isinstance(note.get('content'), list) else [note.get('content')])))
+                if note.get('jsonmodel_type') in ['note_orderedlist', 'note_definedlist']:
+                    content.append((note.get('jsonmodel_type').split('note_')[1], note.get('items')))
+                elif note.get('jsonmodel_type') == 'note_bibliography':
+                    content.append(('text', note.get('content')))
+                    content.append(('orderedlist', note.get('items')))
+                elif note.get('jsonmodel_type') == 'note_index':
+                    l = [{'label': i.get('reference'), 'value': i.get('reference_text')} for i in note.get('items')]
+                    content.append(('text', note.get('content')))
+                    content.append(('definedlist', l))
+                elif note.get('jsonmodel_type') == 'note_chronology':
+                    m = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in note.get('items')]
+                    content.append(('definedlist', m))
+                else:
+                    content.append(('text', (note.get('content')
+                                    if isinstance(note.get('content'), list) else [note.get('content')])))
             return content
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming note content {}'.format(e))
@@ -252,9 +253,6 @@ class ArchivesSpaceDataTransformer:
             self.agents(self.source_data.get('linked_agents'))
             if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('parent'):
                 self.parents(self.source_data.get('parent'))
-            # else:
-            #     Look at the map
-            # TODO: also need to look at maps above resource level
             self.obj.save()
         except Exception as e:
             print(e)
