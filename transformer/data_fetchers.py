@@ -28,18 +28,16 @@ def check_subjects(self, archival=False, library=False, updated=0):
                 pass
 
 #terms function
-for term in terms:
-    term_json = aspace.subjects(term).json()
-    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists():
-        new_object = term.objects.get('ref')
-        SourceData.objects.get('ref') #not exactly sure what to do here. Don't know what to pass in the get statement
-        sd = new_object.sourcedata_set().filter(source) #not sure about what's happening here
-        sd.data = term_json
+def term_check()
+    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=s.ref.exists():
+        new_object = Term.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=s.ref)
+        sd = SourceData.objects.get(term=new_object)
+        sd.data = s.json
         sd.save()
     else:
-        Term.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "data": term_json}) #not sure about the key: obj part
-        Identifier.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "identifier": data.get('uri')})
-        SourceData.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "data": term_json})
+        term = Term.objects.create(source=Identifier.ARCHIVESSPACE, data=s.json) #not sure about the key: obj part
+        Identifier.objects.create(term=term, source=Identifier.ARCHIVESSPACE, identifier=s.ref)
+        SourceData.objects.create(term=term, source=Identifier.ARCHIVESSPACE, data=s.json)
 
 #LOGIC
 #Get all archival objects, resources, agents, terms updated in the last hour
