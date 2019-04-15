@@ -1,22 +1,22 @@
 {
-  "lock_version": 230,
-  "title": "Civil defense",
+  "lock_version": 5,
+  "title": "Coronary heart disease",
   "created_by": "admin",
   "last_modified_by": "admin",
-  "create_time": "2014-12-06T02:29:43Z",
-  "system_mtime": "2019-04-15T20:41:14Z",
-  "user_mtime": "2014-12-06T02:29:43Z",
+  "create_time": "2014-12-06T02:36:56Z",
+  "system_mtime": "2019-04-15T20:49:21Z",
+  "user_mtime": "2014-12-06T02:36:56Z",
   "source": "lcsh",
   "jsonmodel_type": "subject",
   "external_ids": [
     {
-      "external_id": "13",
+      "external_id": "7137",
       "source": "Archivists Toolkit Database::SUBJECT",
       "created_by": "admin",
       "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:29:43Z",
-      "system_mtime": "2014-12-06T02:29:43Z",
-      "user_mtime": "2014-12-06T02:29:43Z",
+      "create_time": "2014-12-06T02:36:56Z",
+      "system_mtime": "2014-12-06T02:36:56Z",
+      "user_mtime": "2014-12-06T02:36:56Z",
       "jsonmodel_type": "external_id"
     }
   ],
@@ -30,20 +30,20 @@
   "terms": [
     {
       "lock_version": 0,
-      "term": "Civil defense",
+      "term": "Coronary heart disease",
       "created_by": "admin",
       "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:29:44Z",
-      "system_mtime": "2014-12-06T02:29:44Z",
-      "user_mtime": "2014-12-06T02:29:44Z",
+      "create_time": "2014-12-06T02:36:56Z",
+      "system_mtime": "2014-12-06T02:36:56Z",
+      "user_mtime": "2014-12-06T02:36:56Z",
       "term_type": "topical",
       "jsonmodel_type": "term",
-      "uri": "/terms/10",
+      "uri": "/terms/3420",
       "vocabulary": "/vocabularies/1"
     }
   ],
   "external_documents": [],
-  "uri": "/subjects/9",
+  "uri": "/subjects/4763",
   "vocabulary": "/vocabularies/1",
   "is_linked_to_published_record": true
 }

@@ -1,44 +1,17 @@
 {
-  "title": "Nelson A. Rockefeller papers",
-  "arrangement": "The Nelson A. Rockefeller papers are comprised of the following four OPEN collections, which are each further subdivided into series by subject, file type, or originating office/associate.",
+  "title": "Test Archive",
+  "arrangement": "The Test Archive is comprised of one collection.",
+  "id": 1,
   "children": [
     {
-      "title": "Nelson A. Rockefeller Personal papers",
+      "title": "Series 1",
+      "id": 2,
+      "parent": 1,
       "children": [
-        {"ref": "/repositories/2/resources/537"},
         {
-          "title": "Series J: Politics",
-          "children": [
-            {"ref": "/repositories/2/resources/544"},
-          ]
-        },
-        {"ref": "/repositories/2/resources/11524"}
-      ]
-    },
-    {
-      "title": "Nelson A. Rockefeller Gubernatorial records",
-      "children": [
-        {"ref": "/repositories/2/resources/552"},
-        {"ref": "/repositories/2/resources/553"},
-        {
-          "title": "Series 38: Office Subject Files, 1959-1973, 515 microfilm reels",
-          "children": [
-            {"ref": "/repositories/2/resources/638"}
-          ]
-        },
-        {"ref": "/repositories/2/resources/11523"}
-      ]
-    },
-    {
-      "title": "Nelson A. Rockefeller Vice-Presidential records",
-      "children": [
-        {"ref": "/repositories/2/resources/577"}
-      ]
-    },
-    {
-      "title": "Nelson A. Rockefeller Photographs",
-      "children": [
-        {"ref": "/repositories/2/resources/654"}
+          "ref": "/repositories/2/resources/12332",
+          "parent": 2
+        }
       ]
     }
   ]

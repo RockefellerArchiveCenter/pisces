@@ -1,0 +1,62 @@
+{
+  "lock_version": 0,
+  "position": 0,
+  "publish": true,
+  "ref_id": "8d789c95513402e0fe7beab23dc3f0c9",
+  "title": "title",
+  "display_string": "title, 1945 - 1947",
+  "restrictions_apply": false,
+  "created_by": "harnold",
+  "last_modified_by": "harnold",
+  "create_time": "2019-04-15T20:48:30Z",
+  "system_mtime": "2019-04-15T20:48:30Z",
+  "user_mtime": "2019-04-15T20:48:30Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "begin": "1945",
+      "end": "1947",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-15T20:48:30Z",
+      "system_mtime": "2019-04-15T20:48:30Z",
+      "user_mtime": "2019-04-15T20:48:30Z",
+      "date_type": "inclusive",
+      "label": "other",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1098093",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/12332",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/1098105",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/12332"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1098093"
+  },
+  "has_unpublished_ancestor": false
+}
