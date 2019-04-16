@@ -101,7 +101,7 @@ class ArchivesSpaceDataTransformer:
             content = content if content else []
             if note.get('jsonmodel_type') in ['note_bioghist', 'note_multipart']:
                 for n in note.get('subnotes'):
-                    content.append(self.parse_note_content(n, content=content)[0])
+                    content.append(self.parse_note_content(n)[0])
             else:
                 if note.get('jsonmodel_type') in ['note_orderedlist', 'note_definedlist']:
                     content.append((note.get('jsonmodel_type').split('note_')[1], note.get('items')))
