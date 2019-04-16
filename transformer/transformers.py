@@ -33,7 +33,8 @@ class ArrangementMapDataTransformer:
                 except Exception as e:
                     raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
             self.identifiers(Identifier.PISCES, collection)
-            # TODO: Parent (need data in arrangement maps)
+            if self.source_data.get('parent'):
+                self.parent(self.source_data.get('parent'))
             self.obj.save()
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
@@ -48,7 +49,17 @@ class ArrangementMapDataTransformer:
                     self.identifiers(source, collection)
                 Identifier.objects.create(identifier=new_id, source=source, collection=collection)
         except Exception as e:
-            raise ArchivesSpaceTransformError('Error transforming identifiers: {}'.format(e))
+            raise ArrangementMapTransformError('Error transforming identifiers: {}'.format(e))
+
+    def parent(self, parent):
+        try:
+            if Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=parent).exists():
+                self.obj.parent = Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER,
+                                                         identifier__identifier=parent)
+            else:
+                raise ArrangementMapTransformError('Missing parent data {}'.format(parent.get('ref')))
+        except Exception as e:
+            raise ArrangementMapTransformError('Error transforming parent: {}'.format(e))
 
 
 class ArchivesSpaceDataTransformer:
