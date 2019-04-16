@@ -67,12 +67,11 @@ class SourceDataSerializer(serializers.ModelSerializer):
 
 
 class RelatedSerializer(serializers.Serializer):
-    title = serializers.StringRelatedField()
-    ref = serializers.SerializerMethodField()
-
-    def get_ref(self, obj):
-        print(self)
-        return "test"
+    def to_representation(self, obj):
+        return {
+            "title": obj.title,
+            "ref": reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk})
+        }
 
 
 class CollectionSerializer(serializers.HyperlinkedModelSerializer):
@@ -82,16 +81,19 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
-    source_data = SourceDataSerializer(source="sourcedata_set", many=True)
-    collections = RelatedSerializer(source="collection_set", many=True, context={"view_name": 'collection-detail'})
-    objects = serializers.HyperlinkedRelatedField(source="object_set", many=True, read_only=True, view_name='object-detail')
+    collections = RelatedSerializer(source="collection_set", many=True)
+    objects = RelatedSerializer(source="object_set", many=True)
+    terms = RelatedSerializer(many=True)
+    agents = RelatedSerializer(many=True)
+    creators = RelatedSerializer(many=True)
+    parent = RelatedSerializer()
 
     class Meta:
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
                   "extents", "level", "agents", "terms", "parent", "collections",
-                  "objects", "rights_statements", "identifiers", "source_data",
-                  "tree", "created", "modified", )
+                  "objects", "rights_statements", "identifiers", "tree", "created",
+                  "modified", )
 
 
 class CollectionListSerializer(serializers.HyperlinkedModelSerializer):
@@ -107,13 +109,15 @@ class ObjectSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
-    source_data = SourceDataSerializer(source="sourcedata_set", many=True)
+    terms = RelatedSerializer(many=True)
+    agents = RelatedSerializer(many=True)
+    parent = RelatedSerializer()
 
     class Meta:
         model = Object
         fields = ("url", "title", "dates", "languages", "notes", "extents",
                   "agents", "terms", "parent", "identifiers", "rights_statements",
-                  "source_data", "created", "modified")
+                  "created", "modified")
 
 
 class ObjectListSerializer(serializers.HyperlinkedModelSerializer):
@@ -126,12 +130,11 @@ class AgentSerializer(serializers.HyperlinkedModelSerializer):
     dates = DateSerializer(source="date_set", many=True)
     notes = NoteSerializer(source="note_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
-    source_data = SourceDataSerializer(source="sourcedata_set", many=True)
 
     class Meta:
         model = Agent
         fields = ("url", "title", "dates", "type", "notes", "identifiers",
-                  "source_data", "created", "modified")
+                  "created", "modified")
 
 
 class AgentListSerializer(serializers.HyperlinkedModelSerializer):
@@ -143,12 +146,10 @@ class AgentListSerializer(serializers.HyperlinkedModelSerializer):
 class TermSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
-    source_data = SourceDataSerializer(source="sourcedata_set", many=True)
 
     class Meta:
         model = Term
-        fields = ("url", "title", "type", "notes", "identifiers", "source_data",
-                  "created", "modified")
+        fields = ("url", "title", "type", "notes", "identifiers", "created", "modified")
 
 
 class TermListSerializer(serializers.HyperlinkedModelSerializer):

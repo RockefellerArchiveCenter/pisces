@@ -290,8 +290,8 @@ class ArchivesSpaceDataTransformer:
                 self.languages(self.source_data.get('language'))
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
-            if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('parent'):
-                self.parent(self.source_data.get('parent'))
+            if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('ancestors'):
+                self.parent(self.source_data.get('ancestors')[0])
             self.obj.save()
         except Exception as e:
             print(e)
@@ -309,8 +309,8 @@ class ArchivesSpaceDataTransformer:
                 self.languages(self.source_data.get('language'))
             self.terms(self.source_data.get('subjects'))
             self.agents(self.source_data.get('linked_agents'))
-            if self.source_data.get('parent'):
-                self.parent(self.source_data.get('parent'))
+            if self.source_data.get('ancestors'):
+                self.parent(self.source_data.get('ancestors')[0])
             self.obj.save()
         except Exception as e:
             print(e)
