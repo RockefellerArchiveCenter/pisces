@@ -35,9 +35,21 @@ def term_check()
         sd.data = s.json
         sd.save()
     else:
-        term = Term.objects.create(source=Identifier.ARCHIVESSPACE, data=s.json) #not sure about the key: obj part
+        term = Term.objects.create(source=Identifier.ARCHIVESSPACE, data=s.json)
         Identifier.objects.create(term=term, source=Identifier.ARCHIVESSPACE, identifier=s.ref)
         SourceData.objects.create(term=term, source=Identifier.ARCHIVESSPACE, data=s.json)
+
+#agents function
+def agent_check()
+    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=a.ref.exists():
+        new_object = Agent.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=a.ref)
+        sd = SourceData.objects.get(agent=new_object)
+        sd.data = a.json
+        sd.save()
+    else:
+        agent = Agent.objects.create(source=Identifier.ARCHIVESSPACE, data=a.json)
+        Identifier.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, identifier=a.ref)
+        SourceData.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, data=a.json)
 
 #LOGIC
 #Get all archival objects, resources, agents, terms updated in the last hour
