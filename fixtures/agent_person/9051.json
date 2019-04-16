@@ -1,0 +1,65 @@
+{
+  "lock_version": 285,
+  "publish": true,
+  "created_by": "pgalligan",
+  "last_modified_by": "pgalligan",
+  "create_time": "2015-04-28T19:00:17Z",
+  "system_mtime": "2019-04-15T20:41:14Z",
+  "user_mtime": "2015-04-28T19:00:17Z",
+  "jsonmodel_type": "agent_person",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "creator",
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Rockefeller, John D. (John Davison)",
+      "sort_name": "Rockefeller, John D. (John Davison)",
+      "sort_name_auto_generate": true,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-04-28T19:00:17Z",
+      "system_mtime": "2017-08-22T15:44:45Z",
+      "user_mtime": "2015-04-28T19:00:17Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "naf",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": []
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/people/9051",
+  "agent_type": "agent_person",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Rockefeller, John D. (John Davison)",
+    "sort_name": "Rockefeller, John D. (John Davison)",
+    "sort_name_auto_generate": true,
+    "created_by": "pgalligan",
+    "last_modified_by": "pgalligan",
+    "create_time": "2015-04-28T19:00:17Z",
+    "system_mtime": "2017-08-22T15:44:45Z",
+    "user_mtime": "2015-04-28T19:00:17Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "naf",
+    "name_order": "inverted",
+    "jsonmodel_type": "name_person",
+    "use_dates": []
+  },
+  "title": "Rockefeller, John D. (John Davison)"
+}

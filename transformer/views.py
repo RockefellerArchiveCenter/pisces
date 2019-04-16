@@ -14,7 +14,7 @@ class CollectionViewSet(ModelViewSet):
     Return paginated data about all Collections.
     """
     model = Collection
-    queryset = Collection.objects.all()
+    queryset = Collection.objects.all().order_by('-modified')
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -31,7 +31,7 @@ class ObjectViewSet(ModelViewSet):
     Return paginated data about all Objects.
     """
     model = Object
-    queryset = Object.objects.all()
+    queryset = Object.objects.all().order_by('-modified')
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -48,7 +48,7 @@ class AgentViewSet(ModelViewSet):
     Return paginated data about all Agents.
     """
     model = Agent
-    queryset = Agent.objects.all()
+    queryset = Agent.objects.all().order_by('-modified')
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -65,7 +65,7 @@ class TermViewSet(ModelViewSet):
     Return paginated data about all Terms.
     """
     model = Term
-    queryset = Term.objects.all()
+    queryset = Term.objects.all().order_by('-modified')
 
     def get_serializer_class(self):
         if self.action == 'list':

@@ -2,6 +2,41 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
+class TransformRun(models.Model):
+    STARTED = 0
+    FINISHED = 1
+    ERRORED = 2
+    STATUS_CHOICES = (
+        (STARTED, 'Started'),
+        (FINISHED, 'Finished'),
+        (ERRORED, 'Errored'),
+    )
+    AURORA = 0
+    ARCHIVEMATICA = 1
+    FEDORA = 2
+    ARCHIVESSPACE = 3
+    PISCES = 4
+    CARTOGRAPHER = 5
+    SOURCE_CHOICES = (
+        (AURORA, 'Aurora'),
+        (ARCHIVEMATICA, 'Archivematica'),
+        (FEDORA, 'Fedora'),
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (PISCES, 'Pisces'),
+        (CARTOGRAPHER, 'Cartographer')
+    )
+    start_time = models.DateTimeField(auto_now_add=True)
+    end_time = models.DateTimeField(blank=True, null=True)
+    status = models.CharField(max_length=100, choices=STATUS_CHOICES)
+    source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
+
+
+class TransformRunError(models.Model):
+    datetime = models.DateTimeField(auto_now_add=True)
+    message = models.CharField(max_length=255)
+    run = models.ForeignKey(TransformRun, on_delete=models.CASCADE)
+
+
 class Language(models.Model):
     expression = models.CharField(max_length=255)
     identifier = models.CharField(max_length=255)
@@ -58,20 +93,22 @@ class Collection(models.Model):
     )
     title = models.CharField(max_length=255, null=True, blank=True)
     level = models.CharField(max_length=100, choices=LEVEL_CHOICES, null=True, blank=True)
+    tree = JSONField()
     creators = models.ManyToManyField(Agent, related_name='creator_collections')
     languages = models.ManyToManyField(Language, related_name='language_collections')
     agents = models.ManyToManyField(Agent, related_name='agent_collections')
     terms = models.ManyToManyField(Term, related_name='term_collections')
-    parents = models.ManyToManyField('self')
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
 
 class Object(models.Model):
+    title = models.CharField(max_length=16384, null=True, blank=True)
     agents = models.ManyToManyField(Agent, related_name='agent_objects')
     terms = models.ManyToManyField(Term, related_name='term_objects')
     languages = models.ManyToManyField(Language, related_name='language_objects')
-    parents = models.ManyToManyField(Collection)
+    parent = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
@@ -88,9 +125,9 @@ class RightsStatement(models.Model):
         ('public domain', 'public domain'),
         ('unknown', 'unknown'),
     )
-    determinationDate = models.DateTimeField()
+    determinationDate = models.DateTimeField(null=True, blank=True)
     rightsType = models.CharField(max_length=255, choices=RIGHTS_TYPE_CHOICES)
-    dateStart = models.DateTimeField()
+    dateStart = models.DateTimeField(null=True, blank=True)
     dateEnd = models.DateTimeField(null=True, blank=True)
     copyrightStatus = models.CharField(max_length=255, choices=COPYRIGHT_STATUSES, blank=True, null=True)
     otherBasis = models.CharField(max_length=255, blank=True, null=True)
@@ -140,10 +177,13 @@ class Date(models.Model):
         ('usage', 'Usage'),
         ('other', 'Other'),
     )
-    begin = models.DateTimeField()
-    end = models.DateTimeField()
+    begin = models.DateTimeField(blank=True, null=True)
+    end = models.DateTimeField(blank=True, null=True)
     expression = models.CharField(max_length=255)
     label = models.CharField(max_length=100, choices=DATE_TYPE_CHOICES)
+    collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
+    object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
+    agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
 
 
 class Extent(models.Model):
@@ -205,11 +245,18 @@ class Note(models.Model):
       ('physloc', 'Physical Location'),
       ('materialspec', 'Materials Specific Details'),
       ('physfacet', 'Physical Facet'),
-      ('rights_statement', 'Rights')
+      ('rights_statement', 'Rights'),
+      ('rights_statement_act', 'Acts'),
+      ('materials', 'Materials'),
+      ('type_note', 'Type Note'),
+      ('additional_information', 'Additional Information'),
+      ('expiration', 'Expiration'),
+      ('extension', 'Extension'),
+      ('permissions', 'Permissions'),
+      ('restrictions', 'Restrictions')
     )
     type = models.CharField(max_length=100, choices=NOTE_TYPE_CHOICES)
     title = models.CharField(max_length=255)
-    content = models.TextField()
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
@@ -218,16 +265,32 @@ class Note(models.Model):
     rights_granted = models.ForeignKey(RightsGranted, on_delete=models.CASCADE, null=True, blank=True)
 
 
+class Subnote(models.Model):
+    SUBNOTE_TYPE_CHOICES = (
+        ('text', 'Text'),
+        ('orderedlist', 'Ordered List'),
+        ('definedlist', 'Defined List'),
+    )
+    type = models.CharField(max_length=100, choices=SUBNOTE_TYPE_CHOICES)
+    title = models.CharField(max_length=255)
+    content = JSONField()
+    note = models.ForeignKey(Note, on_delete=models.CASCADE)
+
+
 class Identifier(models.Model):
     AURORA = 0
     ARCHIVEMATICA = 1
     FEDORA = 2
     ARCHIVESSPACE = 3
+    PISCES = 4
+    CARTOGRAPHER = 5
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
-        (ARCHIVESSPACE, 'ArchivesSpace')
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (PISCES, 'Pisces'),
+        (CARTOGRAPHER, 'Cartographer')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
@@ -243,12 +306,14 @@ class SourceData(models.Model):
     AURORA = 0
     ARCHIVEMATICA = 1
     FEDORA = 2
-    ARCHIVESSPACE = 4
+    ARCHIVESSPACE = 3
+    CARTOGRAPHER = 4
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
-        (ARCHIVESSPACE, 'ArchivesSpace')
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (CARTOGRAPHER, 'Cartographer')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     data = JSONField()
