@@ -91,9 +91,9 @@ class ArchivesSpaceDataTransformer:
         end = self.datetime_from_string(date.get('end'))
         expression = date.get('expression')
         if not expression:
+            expression = date.get('begin')
             if date.get('end'):
                 expression = "{}-{}".format(date.get('begin'), date.get('end'))
-            expression = date.get('begin')
         return (begin, end, expression)
 
     def parse_note_content(self, note, content=None):
@@ -134,10 +134,10 @@ class ArchivesSpaceDataTransformer:
             creator_list = [a for a in agents if a['role'] == 'creator']
             agent_set = []
             creator_set = []
-            for list in [agent_list, creator_list]:
-                for agent in list:
+            for list in [(agent_list, agent_set), (creator_list, creator_set)]:
+                for agent in list[0]:
                     if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).exists():
-                        agent_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
+                        list[1].append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
                     else:
                         raise ArchivesSpaceTransformError('Missing data for agent {}'.format(agent.get('ref')))
             self.obj.agents.clear()
