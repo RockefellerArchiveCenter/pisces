@@ -120,7 +120,7 @@ class ArchivesSpaceDataTransformer:
                     content.append(('text', note.get('content')))
                     content.append(('orderedlist', note.get('items')))
                 elif note.get('jsonmodel_type') == 'note_index':
-                    l = [{'label': i.get('reference'), 'value': i.get('reference_text')} for i in note.get('items')]
+                    l = [{'label': i.get('type'), 'value': i.get('value')} for i in note.get('items')]
                     content.append(('text', note.get('content')))
                     content.append(('definedlist', l))
                 elif note.get('jsonmodel_type') == 'note_chronology':
