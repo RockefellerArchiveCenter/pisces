@@ -1,3 +1,5 @@
+from itertools import chain
+
 from django.urls import reverse
 from rest_framework import serializers
 from transformer.models import *
@@ -69,9 +71,38 @@ class SourceDataSerializer(serializers.ModelSerializer):
 class RelatedSerializer(serializers.Serializer):
     def to_representation(self, obj):
         return {
-            "title": obj.title,
-            "ref": reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk})
+            'title': obj.title,
+            'ref': reverse('{}-detail'.format(obj.__class__.__name__.lower()), kwargs={'pk': obj.pk})
         }
+
+
+class TreeSerializer(serializers.Serializer):
+    def to_representation(self, obj):
+        if not len(obj.collection_set.all() or obj.object_set.all()):
+            return {
+                'title': obj.title,
+                'ref': reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk})
+                }
+        else:
+            self.tree = {
+                'title': obj.title,
+                'ref': reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk}),
+                'children': []
+                }
+            self.process_tree_item(chain(obj.collection_set.all(), obj.object_set.all()), self.tree['children'])
+            return self.tree
+
+    def process_tree_item(self, objects, tree):
+        for item in objects:
+            if isinstance(item, Collection) and len(item.collection_set.all() or item.object_set.all()):
+                tree.append({'title': item.title,
+                             'ref': reverse("{}-detail".format(item.__class__.__name__.lower()), kwargs={"pk": item.pk}),
+                             'children': []})
+                self.process_tree_item(chain(item.collection_set.all(), item.object_set.all()), tree[-1].get('children'))
+            else:
+                tree.append({'title': item.title,
+                             'ref': reverse("{}-detail".format(item.__class__.__name__.lower()), kwargs={"pk": item.pk})})
+        return tree
 
 
 class CollectionSerializer(serializers.HyperlinkedModelSerializer):
@@ -87,6 +118,7 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     agents = RelatedSerializer(many=True)
     creators = RelatedSerializer(many=True)
     parent = RelatedSerializer()
+    tree = TreeSerializer(source="collection_set", many=True)
 
     class Meta:
         model = Collection

@@ -93,7 +93,7 @@ class Collection(models.Model):
     )
     title = models.CharField(max_length=255, null=True, blank=True)
     level = models.CharField(max_length=100, choices=LEVEL_CHOICES, null=True, blank=True)
-    tree = JSONField()
+    source_tree = JSONField()
     creators = models.ManyToManyField(Agent, related_name='creator_collections')
     languages = models.ManyToManyField(Language, related_name='language_collections')
     agents = models.ManyToManyField(Agent, related_name='agent_collections')

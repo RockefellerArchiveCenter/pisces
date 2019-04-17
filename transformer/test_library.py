@@ -36,7 +36,7 @@ def import_fixture_data():
                                 for p in partial_tree:
                                     if p.get('has_children'):
                                         key = 'collection'
-                                        obj = Collection.objects.create(tree=p)
+                                        obj = Collection.objects.create(source_tree=p)
                                     else:
                                         key = 'object'
                                         obj = cls.objects.create()
@@ -45,7 +45,7 @@ def import_fixture_data():
                             resource_id = data.get('uri').split('/')[-1]
                             with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
                                 tree_data = json.load(tf)
-                                obj = cls.objects.create(tree=tree_data)
+                                obj = cls.objects.create(source_tree=tree_data)
                         # Handle agent and term records
                         else:
                             obj = cls.objects.create()
@@ -61,14 +61,14 @@ def import_fixture_data():
                     data = json.load(jf)
                     if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('title')).exists():
                         # Handle top-level collection from arrangement map
-                        c = Collection.objects.create(tree=data)
+                        c = Collection.objects.create(source_tree=data)
                         SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
                         Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('id')) # TODO: this needs to be updated
                         print("Imported {}".format(data.get('id')))
                         # Save collections in tree that don't have refs (ie things that don't come from AS)
                         for collection in data.get('children'):
                             if not collection.get('ref'):
-                                c = Collection.objects.create(tree=collection)
+                                c = Collection.objects.create(source_tree=collection)
                                 SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=collection)
                                 Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=collection.get('id')) # TODO: this needs to be updated
                                 print("Imported {}".format(collection.get('id')))
