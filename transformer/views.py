@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from .models import Collection, Object, Agent, Term
 from .serializers import *
 from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer
+from .test_library import import_fixture_data
 
 
 class CollectionViewSet(ModelViewSet):
@@ -83,5 +84,16 @@ class TransformerRunView(APIView):
             ArchivesSpaceDataTransformer().run()
             ArrangementMapDataTransformer().run()
             return Response({"detail": "Transformation routines complete."}, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)
+
+
+class ImportRunView(APIView):
+    """Runs import routine."""
+
+    def post(self, request, format=None):
+        try:
+            import_fixture_data()
+            return Response({"detail": "Import complete."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)

@@ -59,7 +59,7 @@ def import_fixture_data():
                 # Load arrangement map data
                 with open(os.path.join(settings.BASE_DIR, source_filepath, d, f)) as jf:
                     data = json.load(jf)
-                    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('title')).exists():
+                    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('id')).exists():
                         # Handle top-level collection from arrangement map
                         c = Collection.objects.create(source_tree=data)
                         SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
