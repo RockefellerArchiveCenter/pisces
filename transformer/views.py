@@ -1,8 +1,10 @@
+from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
 from .models import Collection, Object, Agent, Term
 from .serializers import *
+from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer
 
 
 class CollectionViewSet(ModelViewSet):
@@ -71,3 +73,15 @@ class TermViewSet(ModelViewSet):
         if self.action == 'list':
             return TermListSerializer
         return TermSerializer
+
+
+class TransformerRunView(APIView):
+    """Runs transformation routines."""
+
+    def post(self, request, format=None):
+        try:
+            ArchivesSpaceDataTransformer().run()
+            ArrangementMapDataTransformer().run()
+            return Response({"detail": "Transformation routines complete."}, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)

@@ -18,7 +18,7 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from transformer.views import CollectionViewSet, ObjectViewSet, AgentViewSet, TermViewSet
+from transformer.views import CollectionViewSet, ObjectViewSet, AgentViewSet, TermViewSet, TransformerRunView
 
 router = routers.DefaultRouter()
 router.register(r'agents', AgentViewSet, 'agent')
@@ -39,6 +39,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('transform/', TransformerRunView.as_view(), name='transform-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
     path('', include(router.urls)),
