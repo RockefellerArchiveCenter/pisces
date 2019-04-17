@@ -35,11 +35,21 @@ class ArrangementMapDataTransformer:
             self.identifiers(Identifier.PISCES, collection)
             if self.source_data.get('parent'):
                 self.parent(self.source_data.get('parent'))
+            if self.source_data.get('children'):
+                self.children(self.source_data.get('children'))
             self.obj.save()
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
         return True
+
+    def children(self, children):
+        for child in children:
+            if not child.get('children'):
+                c = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
+                                           identifier__identifier=child.get('ref'))
+                c.parent = self.obj
+                c.save()
 
     def identifiers(self, source, collection):
         try:
