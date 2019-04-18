@@ -2,7 +2,6 @@ from dateutil import parser
 import json
 import os
 from pycountry import languages
-from uuid import uuid4
 
 from django.utils import timezone
 
