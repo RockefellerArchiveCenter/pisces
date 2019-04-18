@@ -57,15 +57,14 @@ class RightsStatementSerializer(serializers.ModelSerializer):
 
 
 class IdentifierSerializer(serializers.ModelSerializer):
+    source = serializers.SerializerMethodField()
+
     class Meta:
         model = Identifier
         fields = ("source", "identifier", "created", "modified")
 
-
-class SourceDataSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = SourceData
-        fields = ('source', 'data')
+    def get_source(self, obj):
+        return obj.SOURCE_CHOICES[int(obj.source)][1]
 
 
 class RelatedSerializer(serializers.Serializer):
@@ -199,13 +198,30 @@ class TermListSerializer(serializers.HyperlinkedModelSerializer):
 
 class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
     errors = serializers.StringRelatedField(source='transformrunerror_set', many=True)
+    source = serializers.SerializerMethodField()
+    status = serializers.SerializerMethodField()
 
     class Meta:
         model = TransformRun
         fields = ('url', 'status', 'source', 'errors', 'start_time', 'end_time')
 
+    def get_source(self, obj):
+        return obj.SOURCE_CHOICES[int(obj.source)][1]
+
+    def get_status(self, obj):
+        return obj.STATUS_CHOICES[int(obj.status)][1]
+
 
 class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
+    source = serializers.SerializerMethodField()
+    status = serializers.SerializerMethodField()
+
     class Meta:
         model = TransformRun
         fields = ('url', 'status', 'source')
+
+    def get_source(self, obj):
+        return obj.SOURCE_CHOICES[int(obj.source)][1]
+
+    def get_status(self, obj):
+        return obj.STATUS_CHOICES[int(obj.status)][1]
