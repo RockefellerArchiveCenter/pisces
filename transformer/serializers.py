@@ -76,6 +76,26 @@ class RelatedSerializer(serializers.Serializer):
         }
 
 
+class AncestorSerializer(serializers.Serializer):
+    def to_representation(self, obj):
+        view_name = "{}-detail".format(obj.__class__.__name__.lower())
+        if obj.parent:
+            self.ancestors = {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk}), 'parent': []}
+            self.process_ancestor_item(obj.parent, self.ancestors['parent'])
+            return self.ancestors
+        else:
+            return {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk})}
+
+    def process_ancestor_item(self, obj, ancestors):
+        view_name = "{}-detail".format(obj.__class__.__name__.lower())
+        if obj.parent:
+            ancestors.append({'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk}), 'parent': []})
+            self.process_ancestor_item(obj.parent, ancestors[-1].get('parent'))
+        else:
+            ancestors.append({'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk})})
+        return ancestors
+
+
 class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     languages = LanguageSerializer(many=True)
     dates = DateSerializer(source="date_set", many=True)
@@ -88,42 +108,33 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     terms = RelatedSerializer(many=True)
     agents = RelatedSerializer(many=True)
     creators = RelatedSerializer(many=True)
-    parent = RelatedSerializer()
     tree = serializers.SerializerMethodField()
+    ancestors = AncestorSerializer(source="parent")
 
     class Meta:
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
-                  "extents", "level", "agents", "terms", "parent", "collections",
+                  "extents", "level", "agents", "terms", "ancestors", "collections",
                   "objects", "rights_statements", "identifiers", "tree", "created",
                   "modified", )
 
     def get_tree(self, obj):
-        if not len(obj.collection_set.all() or obj.object_set.all()):
-            return {
-                'title': obj.title,
-                'ref': reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk})
-                }
-        else:
-            self.tree = {
-                'title': obj.title,
-                'ref': reverse("{}-detail".format(obj.__class__.__name__.lower()), kwargs={"pk": obj.pk}),
-                'children': []
-                }
+        view_name = "{}-detail".format(obj.__class__.__name__.lower())
+        if len(obj.collection_set.all() or obj.object_set.all()):
+            self.tree = {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk}), 'children': []}
             self.process_tree_item(chain(obj.collection_set.all(), obj.object_set.all()), self.tree['children'])
             return self.tree
-        return tree
+        else:
+            return {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk})}
 
     def process_tree_item(self, objects, tree):
         for item in objects:
+            view_name = "{}-detail".format(item.__class__.__name__.lower())
             if isinstance(item, Collection) and len(item.collection_set.all() or item.object_set.all()):
-                tree.append({'title': item.title,
-                             'ref': reverse("{}-detail".format(item.__class__.__name__.lower()), kwargs={"pk": item.pk}),
-                             'children': []})
+                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk}), 'children': []})
                 self.process_tree_item(chain(item.collection_set.all(), item.object_set.all()), tree[-1].get('children'))
             else:
-                tree.append({'title': item.title,
-                             'ref': reverse("{}-detail".format(item.__class__.__name__.lower()), kwargs={"pk": item.pk})})
+                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk})})
         return tree
 
 
