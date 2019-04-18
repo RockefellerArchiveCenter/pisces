@@ -18,13 +18,14 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from transformer.views import CollectionViewSet, ObjectViewSet, AgentViewSet, TermViewSet, TransformerRunView, ImportRunView
+from transformer.views import *
 
 router = routers.DefaultRouter()
 router.register(r'agents', AgentViewSet, 'agent')
 router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'objects', ObjectViewSet, 'object')
 router.register(r'terms', TermViewSet, 'term')
+router.register(r'transforms', TransformRunViewSet, 'transformrun')
 schema_view = get_schema_view(
    openapi.Info(
       title="Pisces API",

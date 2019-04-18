@@ -103,8 +103,6 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
-    collections = RelatedSerializer(source="collection_set", many=True)
-    objects = RelatedSerializer(source="object_set", many=True)
     terms = RelatedSerializer(many=True)
     agents = RelatedSerializer(many=True)
     creators = RelatedSerializer(many=True)
@@ -114,9 +112,8 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Collection
         fields = ("url", "title", "dates", "creators", "languages", "notes",
-                  "extents", "level", "agents", "terms", "ancestors", "collections",
-                  "objects", "rights_statements", "identifiers", "tree", "created",
-                  "modified", )
+                  "extents", "level", "agents", "terms", "rights_statements",
+                  "identifiers", "ancestors", "tree", "created", "modified", )
 
     def get_tree(self, obj):
         view_name = "{}-detail".format(obj.__class__.__name__.lower())
@@ -153,12 +150,12 @@ class ObjectSerializer(serializers.HyperlinkedModelSerializer):
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
     terms = RelatedSerializer(many=True)
     agents = RelatedSerializer(many=True)
-    parent = RelatedSerializer()
+    ancestors = AncestorSerializer(source="parent")
 
     class Meta:
         model = Object
         fields = ("url", "title", "dates", "languages", "notes", "extents",
-                  "agents", "terms", "parent", "identifiers", "rights_statements",
+                  "agents", "terms", "ancestors", "identifiers", "rights_statements",
                   "created", "modified")
 
 
@@ -198,3 +195,17 @@ class TermListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Term
         fields = ('url', 'title')
+
+
+class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
+    errors = serializers.StringRelatedField(source='transformrunerror_set', many=True)
+
+    class Meta:
+        model = TransformRun
+        fields = ('url', 'status', 'source', 'errors', 'start_time', 'end_time')
+
+
+class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = TransformRun
+        fields = ('url', 'status', 'source')

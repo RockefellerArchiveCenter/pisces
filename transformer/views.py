@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
-from .models import Collection, Object, Agent, Term
+from .models import Collection, Object, Agent, Term, TransformRun
 from .serializers import *
 from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer
 from .test_library import import_fixture_data
@@ -74,6 +74,23 @@ class TermViewSet(ModelViewSet):
         if self.action == 'list':
             return TermListSerializer
         return TermSerializer
+
+
+class TransformRunViewSet(ModelViewSet):
+    """
+    retrieve:
+    Return data about a TransformRun object, identified by a primary key.
+
+    list:
+    Return paginated data about all TranformRun objects.
+    """
+    model = TransformRun
+    queryset = TransformRun.objects.all().order_by('-end_time')
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return TransformRunListSerializer
+        return TransformRunSerializer
 
 
 class TransformerRunView(APIView):
