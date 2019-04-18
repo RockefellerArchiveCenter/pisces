@@ -32,7 +32,6 @@ class ArrangementMapDataTransformer:
                     Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
                 except Exception as e:
                     raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
-            self.identifiers(Identifier.PISCES, collection)
             if self.source_data.get('parent'):
                 self.parent(self.source_data.get('parent'))
             if self.source_data.get('children'):
@@ -50,16 +49,6 @@ class ArrangementMapDataTransformer:
                                            identifier__identifier=child.get('ref'))
                 c.parent = self.obj
                 c.save()
-
-    def identifiers(self, source, collection):
-        try:
-            if not Identifier.objects.filter(source=source, collection=collection).exists():
-                new_id = "{}/{}".format('collections', str(uuid4())[:8])
-                if Identifier.objects.filter(identifier=new_id, source=source).exists():
-                    self.identifiers(source, collection)
-                Identifier.objects.create(identifier=new_id, source=source, collection=collection)
-        except Exception as e:
-            raise ArrangementMapTransformError('Error transforming identifiers: {}'.format(e))
 
     def parent(self, parent):
         try:
@@ -193,21 +182,6 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming extents: {}'.format(e))
 
-    def identifiers(self, source, relation_key, identifier=None):
-        try:
-            if not Identifier.objects.filter(**{'source': source, relation_key: self.obj}).exists():
-                url_prefix = 'agents'
-                if relation_key in ['collection', 'object']:
-                    url_prefix = relation_key+'s'
-                new_id = identifier if identifier else "{}/{}".format(url_prefix, str(uuid4())[:8])
-                if Identifier.objects.filter(identifier=new_id, source=source).exists():
-                    self.identifiers(source, relation_key)
-                Identifier.objects.create(**{"identifier": new_id,
-                                             "source": source,
-                                             relation_key: self.obj})
-        except Exception as e:
-            raise ArchivesSpaceTransformError('Error transforming identifiers: {}'.format(e))
-
     def languages(self, lang):
         try:
             lang_data = languages.get(alpha_3=lang)
@@ -287,7 +261,6 @@ class ArchivesSpaceDataTransformer:
         self.obj.title = self.source_data.get('display_name').get('sort_name')
         self.obj.type = self.source_data.get('jsonmodel_type')
         try:
-            self.identifiers(Identifier.PISCES, 'agent')
             self.notes(self.source_data.get('notes'), 'agent')
             self.obj.save()
         except Exception as e:
@@ -302,7 +275,6 @@ class ArchivesSpaceDataTransformer:
         self.obj.title = self.source_data.get('title')
         self.obj.level = self.source_data.get('level')
         try:
-            self.identifiers(Identifier.PISCES, 'collection')
             self.dates(self.source_data.get('dates'), 'collection')
             self.extents(self.source_data.get('extents'), 'collection')
             self.notes(self.source_data.get('notes'), 'collection')
@@ -321,7 +293,6 @@ class ArchivesSpaceDataTransformer:
     def transform_to_object(self):
         self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
         try:
-            self.identifiers(Identifier.PISCES, 'object')
             self.dates(self.source_data.get('dates'), 'object')
             self.extents(self.source_data.get('extents'), 'object')
             self.notes(self.source_data.get('notes'), 'object')
@@ -340,7 +311,6 @@ class ArchivesSpaceDataTransformer:
     def transform_to_term(self):
         self.obj.title = self.source_data.get('title')
         try:
-            self.identifiers(Identifier.PISCES, 'term')
             self.obj.save()
         except Exception as e:
             print(e)
