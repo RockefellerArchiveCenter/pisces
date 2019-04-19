@@ -266,10 +266,6 @@ class ArchivesSpaceDataTransformer:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
 
-        # TODO
-        # "collections": self.agent_collections(self.source_data),
-        # "objects": self.agent_objects(self.source_data)}
-
     def transform_to_collection(self):
         self.obj.title = self.source_data.get('title')
         self.obj.level = self.source_data.get('level')
@@ -314,7 +310,3 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
-
-        # TODO
-        # "collections": self.term_collections(self.source_data),
-        # "objects": self.term_objects(self.source_data)}

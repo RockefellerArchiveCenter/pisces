@@ -167,11 +167,13 @@ class ObjectListSerializer(serializers.HyperlinkedModelSerializer):
 class AgentSerializer(serializers.HyperlinkedModelSerializer):
     dates = DateSerializer(source="date_set", many=True)
     notes = NoteSerializer(source="note_set", many=True)
+    objects = RelatedSerializer(source="agent_objects", many=True)
+    collections = RelatedSerializer(source="agent_collections", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
 
     class Meta:
         model = Agent
-        fields = ("url", "title", "dates", "type", "notes", "identifiers",
+        fields = ("url", "title", "dates", "type", "notes", "objects", "collections", "identifiers",
                   "created", "modified")
 
 
@@ -183,11 +185,13 @@ class AgentListSerializer(serializers.HyperlinkedModelSerializer):
 
 class TermSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
+    objects = RelatedSerializer(source="term_objects", many=True)
+    collections = RelatedSerializer(source="term_collections", many=True)
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
 
     class Meta:
         model = Term
-        fields = ("url", "title", "type", "notes", "identifiers", "created", "modified")
+        fields = ("url", "title", "type", "notes", "objects", "collections", "identifiers", "created", "modified")
 
 
 class TermListSerializer(serializers.HyperlinkedModelSerializer):
