@@ -310,3 +310,30 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
+
+
+class TreeOrderTransformer:
+    def __init__(self):
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
+
+    def run(self):
+        for collection in (Collection.objects.filter(parent__isnull=True) |
+                           Collection.objects.filter(identifier__identifier__contains='resource')):
+            tree = collection.source_tree
+            self.process_tree(tree.get('children'), 0)
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        return True
+
+    def process_tree(self, tree, idx):
+        for tree_item in tree:
+            has_children = bool(tree_item.get('has_children') or len(tree_item.get('children', '')) > 0)
+            is_collection = bool(has_children or 'resources' in tree_item.get('ref', ""))
+            obj = (Collection.objects.get(identifier__identifier=tree_item.get('ref', tree_item.get('record_uri', tree_item.get('id')))) if is_collection
+                   else Object.objects.get(identifier__identifier=tree_item.get('ref', tree_item.get('record_uri', tree_item.get('id')))))
+            obj.tree_order = idx
+            obj.save()
+            if has_children:
+                self.process_tree(tree_item.get('children'), 0)
+            idx += 1

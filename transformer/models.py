@@ -93,6 +93,7 @@ class Collection(models.Model):
     )
     title = models.CharField(max_length=255, null=True, blank=True)
     level = models.CharField(max_length=100, choices=LEVEL_CHOICES, null=True, blank=True)
+    tree_order = models.IntegerField(null=True, blank=True)
     source_tree = JSONField()
     creators = models.ManyToManyField(Agent, related_name='creator_collections')
     languages = models.ManyToManyField(Language, related_name='language_collections')
@@ -105,6 +106,7 @@ class Collection(models.Model):
 
 class Object(models.Model):
     title = models.CharField(max_length=16384, null=True, blank=True)
+    tree_order = models.IntegerField(null=True, blank=True)
     agents = models.ManyToManyField(Agent, related_name='agent_objects')
     terms = models.ManyToManyField(Term, related_name='term_objects')
     languages = models.ManyToManyField(Language, related_name='language_objects')
