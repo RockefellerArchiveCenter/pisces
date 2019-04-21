@@ -17,13 +17,15 @@ class TransformRun(models.Model):
     ARCHIVESSPACE = 3
     PISCES = 4
     CARTOGRAPHER = 5
+    TREES = 6
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
         (PISCES, 'Pisces'),
-        (CARTOGRAPHER, 'Cartographer')
+        (CARTOGRAPHER, 'Cartographer'),
+        (TREES, 'Trees'),
     )
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)

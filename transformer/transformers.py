@@ -19,8 +19,8 @@ class ArrangementMapDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
-        for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=TransformRun.CARTOGRAPHER)
-                           if self.last_run else Collection.objects.filter(identifier__source=TransformRun.CARTOGRAPHER)):
+        for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
+                           if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
             self.obj = collection
             self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
             self.obj.title = self.source_data.get('title')
@@ -314,11 +314,17 @@ class ArchivesSpaceDataTransformer:
 
 class TreeOrderTransformer:
     def __init__(self):
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.TREES).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.TREES).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.TREES)
 
     def run(self):
-        for collection in (Collection.objects.filter(parent__isnull=True) |
-                           Collection.objects.filter(identifier__identifier__contains='resource')):
+        for collection in (
+            (Collection.objects.filter(parent__isnull=True, modified__gte=self.last_run) |
+             Collection.objects.filter(identifier__identifier__contains='resource', modified__gte=self.last_run))
+            if self.last_run else
+            (Collection.objects.filter(parent__isnull=True) |
+             Collection.objects.filter(identifier__identifier__contains='resource'))):
             tree = collection.source_tree
             self.process_tree(tree.get('children'), 0)
         self.current_run.status = TransformRun.FINISHED
