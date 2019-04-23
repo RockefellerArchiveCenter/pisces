@@ -1,14 +1,13 @@
-# Add data fetchers here
-#from dateutil import parser
+from dateutil import parser
 import os
 import json
 from asnake.aspace import ASpace
-#from pycountry import languages
-#from uuid import uuid4
+from pycountry import languages
+from uuid import uuid4
 
-#from django.utils import timezone
+from django.utils import timezone
 
-#from .models import *
+from .models import *
 
 
 aspace = ASpace(
@@ -18,35 +17,48 @@ aspace = ASpace(
               )
 repo = aspace.repositories(2)
 
-terms = []
+def get_resources():
+        for r in aspace.resources.with_params(all_ids=True, modified_since=updated):
+            if r.publish:
+                if r.jsonmodel_type=='resource' and r.id_0.startswith('FA'):
+                    collections_check()
 
-def check_subjects(self, archival=False, library=False, updated=0):
+def get_objects():
+        for o in aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
+            r = o.resource
+            resource_id = o.get('resource').get('ref').split('/')[-1]
+            with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
+                tree_data = json.load(tf)
+                full_tree = objectpath.Tree(tree_data)
+                partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
+                # Save archival object as Collection if it has children, otherwise save as Object
+                # Tree.execute() is a generator function so we have to loop through the results
+                    for p in partial_tree:
+                        if p.get('has_children'):
+                            collections_check()
+                        else:
+                            objects_check()
+            if r.publish and o.publish:
+                pass
+
+def get_subjects():
         for s in aspace.subjects:
-            if s.publish:
+            if s.publish and s.system_mtime > updated:
                 term_check()
-            else:
-                pass
 
-def check_agents():
-        #for a in self.repo.agents.with_params(all_ids=True, modified_since=updated):
+def get_agents():
         for a in aspace.agents["people"]:
-            print(a.uri)
-            #if a.publish:
-                #agent_check()
-            #else:
-                #pass
-
-with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
-    tree_data = json.load(tf)
-    full_tree = objectpath.Tree(tree_data)
-    partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
-    # Save archival object as Collection if it has children, otherwise save as Object
-    # Tree.execute() is a generator function so we have to loop through the results
-        for p in partial_tree:
-            if p.get('has_children'):
-                pass
-            else:
-                pass
+            if a.publish and a.system_mtime > updated:
+                agent_check()
+        for a in aspace.agents["corporate_entities"]:
+            if a.publish and a.system_mtime > updated:
+                agent_check()
+        for a in aspace.agents["families"]:
+            if a.publish and a.system_mtime > updated:
+                agent_check()
+        for a in aspace.agents["software"]:
+            if a.publish and a.system_mtime > updated:
+                agent_check()
 
 #objects function
 def objects_check():
@@ -62,15 +74,15 @@ def objects_check():
 
 #objects function
 def collections_check():
-    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=p.ref.exists():
-        new_object = Collection.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=p.ref)
+    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=r.ref.exists():
+        new_object = Collection.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=r.ref)
         sd = SourceData.objects.get(collection=new_object)
-        sd.data = p.json
+        sd.data = r.json
         sd.save()
     else:
-        collection = Collection.objects.create(source=Identifier.ARCHIVESSPACE, data=p.json)
-        Identifier.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, identifier=p.ref)
-        SourceData.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, data=p.json)
+        collection = Collection.objects.create(source=Identifier.ARCHIVESSPACE, data=r.json)
+        Identifier.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, identifier=r.ref)
+        SourceData.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, data=r.json)
 
 #terms function
 def term_check():
