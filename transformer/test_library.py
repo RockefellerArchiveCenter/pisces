@@ -53,22 +53,24 @@ def import_fixture_data():
                         SourceData.objects.create(**{key: obj, "source": SourceData.ARCHIVESSPACE, "data": data})
                         Identifier.objects.create(**{key: obj, "source": Identifier.ARCHIVESSPACE, "identifier": data.get('uri')})
                         print("Imported {}".format(data.get('uri')))
+                    else:
+                        print("Skipped {}".format(data.get('uri')))
         # Handle data from Cartographer
         elif d == 'maps':
             for f in os.listdir(os.path.join(settings.BASE_DIR, source_filepath, d)):
                 # Load arrangement map data
                 with open(os.path.join(settings.BASE_DIR, source_filepath, d, f)) as jf:
                     data = json.load(jf)
-                    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('id')).exists():
+                    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('ref')).exists():
                         # Handle top-level collection from arrangement map
                         c = Collection.objects.create(source_tree=data)
                         SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
-                        Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('id')) # TODO: this needs to be updated
-                        print("Imported {}".format(data.get('id')))
+                        Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
+                        print("Imported {}".format(data.get('ref')))
                         # Save collections in tree that don't have refs (ie things that don't come from AS)
                         for collection in data.get('children'):
-                            if not collection.get('ref'):
+                            if 'maps' in collection.get('ref'):
                                 c = Collection.objects.create(source_tree=collection)
                                 SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=collection)
-                                Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=collection.get('id')) # TODO: this needs to be updated
-                                print("Imported {}".format(collection.get('id')))
+                                Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=collection.get('ref'))
+                                print("Imported {}".format(collection.get('ref')))

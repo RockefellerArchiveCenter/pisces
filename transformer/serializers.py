@@ -112,12 +112,12 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
         model = Collection
         fields = ("url", "title", "tree_order", "dates", "creators", "languages", "notes",
                   "extents", "level", "agents", "terms", "rights_statements",
-                  "identifiers", "ancestors", "tree", "created", "modified", )
+                  "identifiers", "ancestors", "tree", "created", "modified",)
 
     def get_tree(self, obj):
         view_name = "{}-detail".format(obj.__class__.__name__.lower())
         if len(obj.collection_set.all() or obj.object_set.all()):
-            self.tree = {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk}), 'children': []}
+            self.tree = {'title': obj.title, 'ref': reverse(view_name, kwargs={"pk": obj.pk}), 'tree_order': obj.tree_order, 'children': []}
             self.process_tree_item(chain(obj.collection_set.all().order_by('tree_order'), obj.object_set.all().order_by('tree_order')), self.tree['children'])
             return self.tree
         else:
@@ -127,17 +127,17 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
         for item in objects:
             view_name = "{}-detail".format(item.__class__.__name__.lower())
             if isinstance(item, Collection) and len(item.collection_set.all() or item.object_set.all()):
-                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk}), 'children': []})
+                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk}), 'tree_order': item.tree_order, 'children': []})
                 self.process_tree_item(chain(item.collection_set.all().order_by('tree_order'), item.object_set.all().order_by('tree_order')), tree[-1].get('children'))
             else:
-                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk})})
+                tree.append({'title': item.title, 'ref': reverse(view_name, kwargs={"pk": item.pk}), 'tree_order': item.tree_order})
         return tree
 
 
 class CollectionListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Collection
-        fields = ('url', 'title')
+        fields = ('url', 'title',)
 
 
 class ObjectSerializer(serializers.HyperlinkedModelSerializer):

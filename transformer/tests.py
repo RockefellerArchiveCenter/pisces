@@ -2,7 +2,7 @@ from django.test import TestCase
 
 from .test_library import import_fixture_data
 from .models import TransformRun, TransformRunError
-from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer, TreeOrderTransformer
+from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer
 
 
 class TransformTest(TestCase):
@@ -12,7 +12,7 @@ class TransformTest(TestCase):
     def test_transform(self):
         print("*** Testing transforms ***")
         run_number = 1
-        for transformer in [ArchivesSpaceDataTransformer, ArrangementMapDataTransformer, TreeOrderTransformer]:
+        for transformer in [ArchivesSpaceDataTransformer, ArrangementMapDataTransformer]:
             run = transformer().run()
             self.assertTrue(run)
             self.assertEqual(len(TransformRun.objects.all()), run_number)

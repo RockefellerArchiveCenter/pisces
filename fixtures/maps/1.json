@@ -1,16 +1,16 @@
 {
   "title": "Test Archive",
   "arrangement": "The Test Archive is comprised of one collection.",
-  "id": 1,
+  "ref": "/maps/1",
   "children": [
     {
       "title": "Series 1",
-      "id": 2,
-      "parent": 1,
+      "ref": "/maps/2",
+      "parent": "/maps/1",
       "children": [
         {
           "ref": "/repositories/2/resources/12332",
-          "parent": 2
+          "parent": "/maps/2"
         }
       ]
     }
