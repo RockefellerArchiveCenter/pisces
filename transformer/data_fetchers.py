@@ -24,22 +24,22 @@ def get_resources():
                     collections_check()
 
 def get_objects():
-        for o in aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
-            r = o.resource
-            resource_id = o.get('resource').get('ref').split('/')[-1]
-            with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
-                tree_data = json.load(tf)
-                full_tree = objectpath.Tree(tree_data)
-                partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
-                # Save archival object as Collection if it has children, otherwise save as Object
-                # Tree.execute() is a generator function so we have to loop through the results
-                    for p in partial_tree:
-                        if p.get('has_children'):
-                            collections_check()
-                        else:
-                            objects_check()
-            if r.publish and o.publish:
-                pass
+    for o in aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
+        r = o.resource
+        resource_id = o.get('resource').get('ref').split('/')[-1]
+        with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
+            tree_data = json.load(tf)
+            full_tree = objectpath.Tree(tree_data)
+            partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
+            # Save archival object as Collection if it has children, otherwise save as Object
+            # Tree.execute() is a generator function so we have to loop through the results
+                for p in partial_tree:
+                    if p.get('has_children'):
+                        collections_check()
+                    else:
+                        objects_check()
+        if r.publish and o.publish:
+            pass
 
 def get_subjects():
         for s in aspace.subjects:
