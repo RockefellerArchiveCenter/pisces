@@ -5,6 +5,18 @@ from transformer.models import *
 from pisces import settings
 
 
+def process_tree_item(data):
+    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('ref')).exists():
+        c = Collection.objects.create(source_tree=data)
+        SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
+        Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
+        print("Imported {}".format(data.get('ref')))
+        # Save collections in tree that come from AS
+    for collection in data.get('children'):
+        if 'maps' in collection.get('ref'):
+            process_tree_item(collection)
+
+
 def import_fixture_data():
     source_filepath = 'fixtures'
     TYPE_MAP = {'agent_corporate_entity': [Agent, 'agent'],
@@ -61,16 +73,4 @@ def import_fixture_data():
                 # Load arrangement map data
                 with open(os.path.join(settings.BASE_DIR, source_filepath, d, f)) as jf:
                     data = json.load(jf)
-                    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('ref')).exists():
-                        # Handle top-level collection from arrangement map
-                        c = Collection.objects.create(source_tree=data)
-                        SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
-                        Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
-                        print("Imported {}".format(data.get('ref')))
-                        # Save collections in tree that don't have refs (ie things that don't come from AS)
-                        for collection in data.get('children'):
-                            if 'maps' in collection.get('ref'):
-                                c = Collection.objects.create(source_tree=collection)
-                                SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=collection)
-                                Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=collection.get('ref'))
-                                print("Imported {}".format(collection.get('ref')))
+                    process_tree_item(data)
