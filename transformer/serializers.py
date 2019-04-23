@@ -200,8 +200,14 @@ class TermListSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'title')
 
 
+class TransformRunErrorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransformRunError
+        fields = ('datetime', 'message')
+
+
 class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
-    errors = serializers.StringRelatedField(source='transformrunerror_set', many=True)
+    errors = TransformRunErrorSerializer(source='transformrunerror_set', many=True)
     source = serializers.SerializerMethodField()
     status = serializers.SerializerMethodField()
 
