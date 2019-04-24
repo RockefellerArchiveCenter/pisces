@@ -177,7 +177,7 @@ class AgentSerializer(serializers.HyperlinkedModelSerializer):
                   "created", "modified")
 
     def get_collections(self, obj):
-        queryset = Collection.objects.filter(agents=obj) | Collection.objects.filter(creators=obj)
+        queryset = set(Collection.objects.filter(agents=obj) | Collection.objects.filter(creators=obj))
         return RelatedSerializer(queryset, many=True).data
 
 
