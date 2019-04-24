@@ -19,29 +19,33 @@ class ArrangementMapDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
-        for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
-                           if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
-            self.obj = collection
-            self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
-            self.obj.title = self.source_data.get('title')
-            if self.source_data.get('arrangement'):
-                try:
-                    Note.objects.filter(collection=self.obj).delete()
-                    note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
-                    Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
-                except Exception as e:
-                    raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
-            if self.source_data.get('parent'):
-                self.parent(self.source_data.get('parent'))
-            if self.source_data.get('children'):
-                self.children(self.source_data.get('children'))
-                if not self.obj.parent:
-                    self.process_tree(self.source_data.get('children'), 0)
-            self.obj.save()
-        self.current_run.status = TransformRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
-        return True
+        try:
+            for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
+                               if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
+                self.obj = collection
+                self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
+                self.obj.title = self.source_data.get('title')
+                if self.source_data.get('arrangement'):
+                    try:
+                        Note.objects.filter(collection=self.obj).delete()
+                        note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
+                        Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
+                    except Exception as e:
+                        raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
+                if self.source_data.get('parent'):
+                    self.parent(self.source_data.get('parent'))
+                if self.source_data.get('children'):
+                    self.children(self.source_data.get('children'))
+                    if not self.obj.parent:
+                        self.process_tree(self.source_data.get('children'), 0)
+                self.obj.save()
+            self.current_run.status = TransformRun.FINISHED
+            self.current_run.end_time = timezone.now()
+            self.current_run.save()
+            return True
+        except Exception as e:
+            print(e)
+            TransformRunError.objects.create(message=str(e), run=self.current_run)
 
     def children(self, children):
         for child in children:
@@ -67,7 +71,7 @@ class ArrangementMapDataTransformer:
                 obj = Collection.objects.get(identifier__identifier=tree_item.get('ref'))
                 obj.tree_order = idx
                 obj.save()
-                if len(tree_item.get('children', '')) > 0:
+                if tree_item.get('children'):
                     self.process_tree(tree_item.get('children'), 0)
                 idx += 1
         except Exception as e:
@@ -75,18 +79,25 @@ class ArrangementMapDataTransformer:
 
 
 class ArchivesSpaceDataTransformer:
-    def __init__(self):
+    def __init__(self, object_type):
+        CLS_MAP = {
+            "agents": [Agent, 'agent'],
+            "collections": [Collection, 'collection'],
+            "objects": [Object, 'object'],
+            "terms": [Term, 'term']}
+        self.cls = CLS_MAP[object_type][0]
+        self.key = CLS_MAP[object_type][1]
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).order_by('-start_time')[0].start_time
                          if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).exists() else None)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE)
 
     def run(self):
-        for cls in [(Agent, 'agent'), (Collection, 'collection'), (Object, 'object'), (Term, 'term')]:
-            for obj in (cls[0].objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE)
-                        if self.last_run else cls[0].objects.filter(identifier__source=Identifier.ARCHIVESSPACE)):
-                self.obj = obj
-                self.source_data = SourceData.objects.get(**{cls[1]: self.obj, "source": SourceData.ARCHIVESSPACE}).data
-                getattr(self, "transform_to_{}".format(cls[1]))()
+        for obj in (self.cls.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
+                    if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
+            self.obj = obj
+            self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
+            getattr(self, "transform_to_{}".format(self.key))()
+            print(self.obj)
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
@@ -295,7 +306,7 @@ class ArchivesSpaceDataTransformer:
             TransformRunError.objects.create(message=str(e), run=self.current_run)
 
     def transform_to_collection(self):
-        self.obj.title = self.source_data.get('title')
+        self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
         self.obj.level = self.source_data.get('level')
         try:
             self.dates(self.source_data.get('dates'), 'collection')
