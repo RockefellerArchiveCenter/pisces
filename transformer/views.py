@@ -85,7 +85,7 @@ class TransformRunViewSet(ModelViewSet):
     Return paginated data about all TranformRun objects.
     """
     model = TransformRun
-    queryset = TransformRun.objects.all().order_by('-end_time')
+    queryset = TransformRun.objects.all().order_by('-start_time')
 
     def get_serializer_class(self):
         if self.action == 'list':
