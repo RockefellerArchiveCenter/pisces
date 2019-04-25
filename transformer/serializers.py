@@ -168,13 +168,17 @@ class AgentSerializer(serializers.HyperlinkedModelSerializer):
     dates = DateSerializer(source="date_set", many=True)
     notes = NoteSerializer(source="note_set", many=True)
     objects = RelatedSerializer(source="agent_objects", many=True)
-    collections = RelatedSerializer(source="agent_collections", many=True)
+    collections = serializers.SerializerMethodField()
     identifiers = IdentifierSerializer(source="identifier_set", many=True)
 
     class Meta:
         model = Agent
         fields = ("url", "title", "dates", "type", "notes", "objects", "collections", "identifiers",
                   "created", "modified")
+
+    def get_collections(self, obj):
+        queryset = set(Collection.objects.filter(agents=obj) | Collection.objects.filter(creators=obj))
+        return RelatedSerializer(queryset, many=True).data
 
 
 class AgentListSerializer(serializers.HyperlinkedModelSerializer):
