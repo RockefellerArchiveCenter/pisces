@@ -17,8 +17,8 @@ def process_tree_item(data):
             process_tree_item(collection)
 
 
-def import_fixture_data():
-    source_filepath = 'fixtures'
+def import_fixture_data(source_filepath=None):
+    source_filepath = os.path.join(source_filepath) if source_filepath else os.path.join(settings.BASE_DIR, 'fixtures')
     TYPE_MAP = {'agent_corporate_entity': [Agent, 'agent'],
                 'agent_family': [Agent, 'agent'],
                 'agent_person': [Agent, 'agent'],
@@ -26,20 +26,20 @@ def import_fixture_data():
                 'resources': [Collection, 'collection'],
                 'subjects': [Term, 'term']}
 
-    for d in os.listdir(os.path.join(settings.BASE_DIR, source_filepath)):
+    for d in os.listdir(source_filepath):
         # Handle data from ArchivesSpace
-        if (d not in ['trees', 'maps']) and os.path.isdir(os.path.join(settings.BASE_DIR, source_filepath, d)):
+        if (d not in ['trees', 'maps']) and os.path.isdir(os.path.join(source_filepath, d)):
             cls = TYPE_MAP[d][0]
             key = TYPE_MAP[d][1]
-            for f in os.listdir(os.path.join(settings.BASE_DIR, source_filepath, d)):
-                with open(os.path.join(settings.BASE_DIR, source_filepath, d, f)) as jf:
+            for f in os.listdir(os.path.join(source_filepath, d)):
+                with open(os.path.join(source_filepath, d, f)) as jf:
                     data = json.load(jf)
                     if not Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=data.get('uri')).exists():
                         # Handle archival object records
                         if d == 'archival_objects':
                             resource_id = data.get('resource').get('ref').split('/')[-1]
                             # Load tree JSON
-                            with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
+                            with open(os.path.join(source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
                                 tree_data = json.load(tf)
                                 full_tree = objectpath.Tree(tree_data)
                                 partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
@@ -55,7 +55,7 @@ def import_fixture_data():
                         # Handle resource records
                         elif d == 'resources':
                             resource_id = data.get('uri').split('/')[-1]
-                            with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
+                            with open(os.path.join(source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
                                 tree_data = json.load(tf)
                                 obj = cls.objects.create(source_tree=tree_data)
                         # Handle agent and term records
@@ -69,8 +69,8 @@ def import_fixture_data():
                         print("Skipped {}".format(data.get('uri')))
         # Handle data from Cartographer
         elif d == 'maps':
-            for f in os.listdir(os.path.join(settings.BASE_DIR, source_filepath, d)):
+            for f in os.listdir(os.path.join(source_filepath, d)):
                 # Load arrangement map data
-                with open(os.path.join(settings.BASE_DIR, source_filepath, d, f)) as jf:
+                with open(os.path.join(source_filepath, d, f)) as jf:
                     data = json.load(jf)
                     process_tree_item(data)
