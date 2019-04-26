@@ -5,6 +5,7 @@ from transformer.models import Agent, Collection, Object, Term
 
 class CollectionListView(ListView):
     model = Collection
+    queryset = Collection.objects.filter(parent__isnull=True)
     template_name = 'viewer/collection_list.html'
 
 

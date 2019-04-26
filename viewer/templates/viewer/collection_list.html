@@ -5,8 +5,6 @@
 
 {% block content %}
   {% for object in object_list %}
-    {% if not object.parent %}
-      <p><a href="{% url 'app:collection-detail' object.pk %}">{{object.title}}</a></p>
-    {% endif %}
+    <p><a href="{% url 'app:collection-detail' object.pk %}">{{object.title}}</a></p>
   {% endfor %}
 {% endblock %}

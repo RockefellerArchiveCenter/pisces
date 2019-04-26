@@ -113,7 +113,7 @@ class Collection(models.Model):
         return bool([len(self.collection_set.all()), len(self.object_set.all())])
 
     def children(self):
-        # This is probably not the most performant way to do this
+        # This is probably not the most performant way to do this.
         return list(chain(self.collection_set.all().order_by('tree_order'), self.object_set.all().order_by('tree_order')))
 
     def ancestors(self):
