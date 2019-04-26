@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.postgres.fields import JSONField
+from itertools import chain
 
 
 class TransformRun(models.Model):
@@ -60,6 +61,9 @@ class Agent(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
+    def collections(self):
+        return set(chain(self.agent_collections.all(), self.creator_collections.all()))
+
 
 class Term(models.Model):
     TERM_TYPE_CHOICES = (
@@ -105,6 +109,23 @@ class Collection(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
+    def has_children(self):
+        return bool([len(self.collection_set.all()), len(self.object_set.all())])
+
+    def children(self):
+        # This is probably not the most performant way to do this
+        return list(chain(self.collection_set.all().order_by('tree_order'), self.object_set.all().order_by('tree_order')))
+
+    def ancestors(self):
+        return self.get_ancestor(self.parent, [])
+
+    def get_ancestor(self, ancestor, array):
+        if ancestor:
+            array.insert(0, ancestor)
+            if ancestor.parent:
+                self.get_ancestor(ancestor.parent, array)
+        return array
+
 
 class Object(models.Model):
     title = models.CharField(max_length=16384, null=True, blank=True)
@@ -115,6 +136,16 @@ class Object(models.Model):
     parent = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    def ancestors(self):
+        return self.get_ancestor(self.parent, [])
+
+    def get_ancestor(self, ancestor, array):
+        if ancestor:
+            array.insert(0, ancestor)
+            if ancestor.parent:
+                self.get_ancestor(ancestor.parent, array)
+        return array
 
 
 class RightsStatement(models.Model):

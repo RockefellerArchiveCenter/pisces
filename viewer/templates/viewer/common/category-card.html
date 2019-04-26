@@ -1,0 +1,11 @@
+<div class="card full-height">
+  <div class="card-header"><h2>{{include.title}}</h2></div>
+  <div class="card-body">
+    {% assign sorted = "" | split: "," %}
+    {% for o in include.objects %}{% assign sorted = sorted | push: o[1] %}{% endfor %}
+    {% assign sorted = sorted | sort: 'title' %}
+    {% for a in sorted %}
+      <p><a href="{{a.url | replace: "http://localhost:8000"}}">{{a.title}}</a></p>
+    {% endfor %}
+  </div>
+</div>

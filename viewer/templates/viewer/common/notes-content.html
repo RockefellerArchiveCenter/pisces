@@ -1,0 +1,19 @@
+{% for subnote in subnotes %}
+  {% if subnote.type == 'text' %}
+    {% for text in subnote.content %}
+    <p>{{text}}</p>
+    {% endfor %}
+  {% elif subnote.type == 'orderedlist' %}
+  <ul>
+    {% for item in subnote.content %}
+    <li>{{item}}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <dl>
+    {% for item in subnote.content %}
+    <dt>{{item.label}}</dt><dd>{{item.value}}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+{% endfor %}

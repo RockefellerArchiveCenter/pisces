@@ -44,5 +44,6 @@ urlpatterns = [
     path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
+    path('', include('viewer.urls')),
 ]

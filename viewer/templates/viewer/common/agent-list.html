@@ -1,0 +1,5 @@
+<ul class="list-unstyled">
+{% for agent in agents %}
+  <li><a href="{% url 'app:agent-detail' agent.pk %}">{{agent.title}}</a> <span class="badge badge-secondary">{{agent.type}}</span></li>
+{% endfor %}
+</ul>

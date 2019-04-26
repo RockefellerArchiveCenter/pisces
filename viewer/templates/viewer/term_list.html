@@ -1,0 +1,10 @@
+{% extends "viewer/base.html" %}
+
+{% block title %}Terms{% endblock %}
+
+
+{% block content %}
+  {% for object in object_list %}
+    <p><a href="{% url 'app:term-detail' object.pk %}">{{object.title}}</a></p>
+  {% endfor %}
+{% endblock %}

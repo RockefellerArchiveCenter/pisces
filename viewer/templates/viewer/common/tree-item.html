@@ -1,0 +1,17 @@
+<div class="col-12">
+  {% if item.has_children %}
+    <h{{h}}>
+      <a class="collapse-icon {% if item.children.0.has_children %}show{% else %}collapsed{% endif %}" href="#children-{{item.pk}}" data-toggle="collapse" aria-expanded="{% if item.children.0.has_children %}true{%else%}false{% endif %}" aria-controls="children-{{item.pk}}"></a>
+      <a href="{% url 'app:collection-detail' item.pk %}">{{item.title}}</a>
+    </h{{h}}>
+  {% else %}
+    <a href="{% url 'app:object-detail' item.pk %}">{{item.title}}</a>
+  {% endif %}
+  {% if item.has_children %}
+    <div id="children-{{item.pk}}" class="col-12 list-unstyled collapse {% if item.children.0.has_children %}show{% else %}collapsed{% endif %}">
+    {% for item in item.children %}
+      {% include 'viewer/common/tree-item.html' with h=h|add:"1" %}
+    {% endfor %}
+    </div>
+  {% endif %}
+</div>

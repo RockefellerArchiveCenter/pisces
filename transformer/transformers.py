@@ -19,33 +19,22 @@ class CartographerDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
-        try:
-            for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
-                               if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
-                self.obj = collection
-                self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
-                self.obj.title = self.source_data.get('title')
-                if self.source_data.get('arrangement'):
-                    try:
-                        Note.objects.filter(collection=self.obj).delete()
-                        note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
-                        Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
-                    except Exception as e:
-                        raise CartographerTransformError('Error transforming notes: {}'.format(e))
-                if self.source_data.get('parent'):
-                    self.parent(self.source_data.get('parent'))
-                if self.source_data.get('children'):
-                    self.children(self.source_data.get('children'))
-                    if not self.obj.parent:
-                        self.process_tree(self.source_data.get('children'), 0)
-                self.obj.save()
-            self.current_run.status = TransformRun.FINISHED
-            self.current_run.end_time = timezone.now()
-            self.current_run.save()
-            return True
-        except Exception as e:
-            print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+        for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
+                           if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
+            self.obj = collection
+            self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
+            self.obj.title = self.source_data.get('title')
+            if self.source_data.get('parent'):
+                self.parent(self.source_data.get('parent'))
+            if self.source_data.get('children'):
+                self.children(self.source_data.get('children'))
+                if not self.obj.parent:
+                    self.process_tree(self.source_data.get('children'), 0)
+            self.obj.save()
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        return True
 
     def children(self, children):
         for child in children:

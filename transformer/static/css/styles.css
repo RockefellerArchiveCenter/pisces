@@ -1,16 +1,25 @@
-html {
-  height:100%
+.collapse-icon::before {
+    content: '▶︎';
+    transform:scale(1,.5);
 }
 
-body.bg-image {
-    background-image: url(/static/img/fornax.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.collapse-icon:not(.collapsed)::before {
+    content: '▼';
+    transform:scale(1,.5);
 }
 
-.prettyprint {
-    padding: 8px;
-    background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;
+.collapse-icon:hover {
+    text-decoration: none!important;
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  .card {
+    height: 100%;
+  }
+}
+
+.full-height {
+  height: 100%;
 }
