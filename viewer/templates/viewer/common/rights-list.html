@@ -1,0 +1,11 @@
+<ul class="list-group">
+  {% for r in rights %}
+    {% for a in r.rightsgranted_set.all %}
+    <li class="list-group-item">
+      <p>{% include 'viewer/common/notes.html' with notes=a.note_set.all %}</p>
+      <span class="badge badge-secondary">{{r.rightsType}} {{a.restriction}} {{a.act}}</span>
+      <span class="badge badge-secondary float-right">{{a.dateStart}}-{{a.dateEnd}}</span>
+    </li>
+    {% endfor %}
+  {% endfor %}
+</ul>

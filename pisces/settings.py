@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'health_check',
     'transformer',
+    'viewer'
 ]
 
 MIDDLEWARE = [
