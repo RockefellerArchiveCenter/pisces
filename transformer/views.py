@@ -99,7 +99,8 @@ class TransformerRunView(APIView):
 
     def post(self, request, format=None):
         try:
-            ArchivesSpaceDataTransformer().run()
+            for object_type in ['agents', 'collections', 'objects', 'terms']:
+                ArchivesSpaceDataTransformer(object_type).run()
             CartographerDataTransformer().run()
             return Response({"detail": "Transformation routines complete."}, status=200)
         except Exception as e:
