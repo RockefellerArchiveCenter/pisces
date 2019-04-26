@@ -28,7 +28,7 @@ class ArrangementMapDataTransformer:
                 try:
                     Note.objects.filter(collection=self.obj).delete()
                     note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
-                    Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
+                    Subnote.objects.create(type='text', content=[self.source_data.get('arrangement')], note=note)
                 except Exception as e:
                     raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
             if self.source_data.get('parent'):
