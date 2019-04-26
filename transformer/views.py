@@ -4,7 +4,7 @@ from rest_framework.response import Response
 
 from .models import Collection, Object, Agent, Term, TransformRun
 from .serializers import *
-from .transformers import ArchivesSpaceDataTransformer, ArrangementMapDataTransformer
+from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer
 from .test_library import import_fixture_data
 
 
@@ -99,7 +99,7 @@ class TransformerRunView(APIView):
     def post(self, request, format=None):
         try:
             ArchivesSpaceDataTransformer().run()
-            ArrangementMapDataTransformer().run()
+            CartographerDataTransformer().run()
             return Response({"detail": "Transformation routines complete."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)

@@ -9,10 +9,10 @@ from .models import *
 
 
 class ArchivesSpaceTransformError(Exception): pass
-class ArrangementMapTransformError(Exception): pass
+class CartographerTransformError(Exception): pass
 
 
-class ArrangementMapDataTransformer:
+class CartographerDataTransformer:
     def __init__(self):
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).order_by('-start_time')[0].start_time
                          if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).exists() else None)
@@ -31,7 +31,7 @@ class ArrangementMapDataTransformer:
                         note = Note.objects.create(type='arrangement', title="Arrangement", collection=self.obj)
                         Subnote.objects.create(type='text', content=self.source_data.get('arrangement'), note=note)
                     except Exception as e:
-                        raise ArrangementMapTransformError('Error transforming notes: {}'.format(e))
+                        raise CartographerTransformError('Error transforming notes: {}'.format(e))
                 if self.source_data.get('parent'):
                     self.parent(self.source_data.get('parent'))
                 if self.source_data.get('children'):
@@ -61,9 +61,9 @@ class ArrangementMapDataTransformer:
                 self.obj.parent = Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER,
                                                          identifier__identifier=parent)
             else:
-                raise ArrangementMapTransformError('Missing parent data {}'.format(parent.get('ref')))
+                raise CartographerTransformError('Missing parent data {}'.format(parent.get('ref')))
         except Exception as e:
-            raise ArrangementMapTransformError('Error transforming parent: {}'.format(e))
+            raise CartographerTransformError('Error transforming parent: {}'.format(e))
 
     def process_tree(self, tree, idx):
         try:
@@ -75,7 +75,7 @@ class ArrangementMapDataTransformer:
                     self.process_tree(tree_item.get('children'), 0)
                 idx += 1
         except Exception as e:
-            raise ArrangementMapTransformError('Error processing tree: {}'.format(e))
+            raise CartographerTransformError('Error processing tree: {}'.format(e))
 
 
 class ArchivesSpaceDataTransformer:
@@ -97,7 +97,6 @@ class ArchivesSpaceDataTransformer:
             self.obj = obj
             self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
             getattr(self, "transform_to_{}".format(self.key))()
-            print(self.obj)
         self.current_run.status = TransformRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
