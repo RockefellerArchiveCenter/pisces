@@ -28,10 +28,17 @@ class TransformRun(models.Model):
         (CARTOGRAPHER, 'Cartographer'),
         (TREES, 'Trees'),
     )
+    OBJECT_TYPE_CHOICES = (
+        ('agents', 'Agents'),
+        ('collections', 'Collections'),
+        ('objects', 'Objects'),
+        ('terms', 'Terms')
+    )
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
+    object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES, null=True, blank=True)
 
 
 class TransformRunError(models.Model):

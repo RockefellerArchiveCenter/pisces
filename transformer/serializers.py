@@ -217,7 +217,7 @@ class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = TransformRun
-        fields = ('url', 'status', 'source', 'errors', 'start_time', 'end_time')
+        fields = ('url', 'status', 'source', 'object_type', 'errors', 'start_time', 'end_time')
 
     def get_source(self, obj):
         return obj.SOURCE_CHOICES[int(obj.source)][1]
@@ -232,7 +232,7 @@ class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = TransformRun
-        fields = ('url', 'status', 'source')
+        fields = ('url', 'status', 'source', 'object_type')
 
     def get_source(self, obj):
         return obj.SOURCE_CHOICES[int(obj.source)][1]

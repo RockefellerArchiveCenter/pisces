@@ -23,15 +23,16 @@ class CartographerDataTransformer:
             for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
                                if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
                 self.obj = collection
+                self.obj.refresh_from_db() # refresh fields in order to avoid overwriting tree_order
                 self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
                 self.obj.title = self.source_data.get('title')
                 if self.source_data.get('parent'):
                     self.parent(self.source_data.get('parent'))
+                self.obj.save()
                 if self.source_data.get('children'):
                     self.children(self.source_data.get('children'))
                     if not self.obj.parent:
-                        self.process_tree(self.source_data.get('children'), 0)
-                self.obj.save()
+                        self.process_tree(self.source_data)
             self.current_run.status = TransformRun.FINISHED
             self.current_run.end_time = timezone.now()
             self.current_run.save()
@@ -50,7 +51,7 @@ class CartographerDataTransformer:
 
     def parent(self, parent):
         try:
-            if Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=parent).exists():
+            if Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=parent).exists():
                 self.obj.parent = Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER,
                                                          identifier__identifier=parent)
             else:
@@ -58,17 +59,16 @@ class CartographerDataTransformer:
         except Exception as e:
             raise CartographerTransformError('Error transforming parent: {}'.format(e))
 
-    def process_tree(self, tree, idx):
+    def process_tree(self, data, idx=0):
         try:
-            for tree_item in tree:
-                print(tree_item)
-                obj = Collection.objects.get(identifier__identifier=tree_item.get('ref'))
-                obj.tree_order = idx
-                obj.save()
-                if tree_item.get('children'):
-                    print(tree_item.get('children'))
-                    self.process_tree(tree_item.get('children'), 0)
-                idx += 1
+            c = Collection.objects.get(identifier__identifier=data.get('ref'))
+            c.tree_order = idx
+            c.save()
+            if data.get('children'):
+                i = 0
+                for item in data.get('children'):
+                    self.process_tree(item, i)
+                    i += 1
         except Exception as e:
             raise CartographerTransformError('Error processing tree: {}'.format(e))
 
@@ -82,14 +82,19 @@ class ArchivesSpaceDataTransformer:
             "terms": [Term, 'term']}
         self.cls = CLS_MAP[object_type][0]
         self.key = CLS_MAP[object_type][1]
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.ARCHIVESSPACE).exists() else None)
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE)
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED,
+                                                     source=TransformRun.ARCHIVESSPACE,
+                                                     object_type=object_type).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED,
+                                                        source=TransformRun.ARCHIVESSPACE,
+                                                        object_type=object_type).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
         for obj in (self.cls.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
                     if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
             self.obj = obj
+            self.obj.refresh_from_db() # refresh fields in order to avoid overwriting tree_order
             self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
             getattr(self, "transform_to_{}".format(self.key))()
         self.current_run.status = TransformRun.FINISHED
@@ -237,17 +242,18 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming parent: {}'.format(e))
 
-    def process_tree(self, tree, idx):
+    def process_tree(self, tree, idx=0):
         try:
-            for tree_item in tree:
-                obj = (Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,identifier__identifier=tree_item.get('record_uri'))
-                       if tree_item.get('has_children') else
-                       Object.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=tree_item.get('record_uri')))
-                obj.tree_order = idx
-                obj.save()
-                if tree_item.get('has_children'):
-                    self.process_tree(tree_item.get('children'), 0)
-                idx += 1
+            obj = (Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,identifier__identifier=tree.get('record_uri'))
+                   if tree.get('children') else
+                   Object.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=tree.get('record_uri')))
+            obj.tree_order = idx
+            obj.save()
+            if tree.get('children'):
+                i = 0
+                for item in tree.get('children'):
+                    self.process_tree(item, i)
+                    i += 1
         except Exception as e:
             raise ArchivesSpaceTransformError('Error processing tree: {}'.format(e))
 
@@ -313,9 +319,9 @@ class ArchivesSpaceDataTransformer:
             self.agents(self.source_data.get('linked_agents'))
             if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('ancestors'):
                 self.parent(self.source_data.get('ancestors')[0])
-            if self.source_data.get('jsonmodel_type') == 'resource':
-                self.process_tree(self.obj.source_tree.get('children'), 0)
             self.obj.save()
+            if self.source_data.get('jsonmodel_type') == 'resource':
+                self.process_tree(self.obj.source_tree)
         except Exception as e:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
