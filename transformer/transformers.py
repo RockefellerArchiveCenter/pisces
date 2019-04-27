@@ -51,7 +51,7 @@ class CartographerDataTransformer:
 
     def parent(self, parent):
         try:
-            if Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=parent).exists():
+            if Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=parent).exists():
                 self.obj.parent = Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER,
                                                          identifier__identifier=parent)
             else:

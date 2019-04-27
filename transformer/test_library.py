@@ -6,7 +6,7 @@ from pisces import settings
 
 
 def process_tree_item(data):
-    if not Identifier.objects.filter(source=Identifier.CARTOGRAPHER, identifier=data.get('ref')).exists():
+    if not Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=data.get('ref')).exists():
         c = Collection.objects.create(source_tree=data)
         SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
         Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
@@ -34,7 +34,8 @@ def import_fixture_data(source_filepath=None):
             for f in os.listdir(os.path.join(source_filepath, d)):
                 with open(os.path.join(source_filepath, d, f)) as jf:
                     data = json.load(jf)
-                    if not Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=data.get('uri')).exists():
+                    if not Collection.objects.filter(identifier__source=Identifier.ARCHIVESSPACE,
+                                                     identifier__identifier=data.get('uri')).exists():
                         # Handle archival object records
                         if d == 'archival_objects':
                             resource_id = data.get('resource').get('ref').split('/')[-1]
