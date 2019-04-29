@@ -5,8 +5,6 @@ services:
     image: postgres:10.4
     volumes:
       - piscesdbvolume:/var/lib/postgresql/data/
-    ports:
-      - "5432:5432"
   pisces_web:
     build: .
     entrypoint: /code/entrypoint.sh
