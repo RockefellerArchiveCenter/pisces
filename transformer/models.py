@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.postgres.fields import JSONField
 from itertools import chain
+from operator import attrgetter
 
 
 class TransformRun(models.Model):
@@ -121,7 +122,7 @@ class Collection(models.Model):
 
     def children(self):
         # This is probably not the most performant way to do this.
-        return list(chain(self.collection_set.all().order_by('tree_order'), self.object_set.all().order_by('tree_order')))
+        return sorted(list(chain(self.collection_set.all(), self.object_set.all())), key=attrgetter('tree_order'))
 
     def ancestors(self):
         return self.get_ancestor(self.parent, [])
