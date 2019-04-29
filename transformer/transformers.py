@@ -94,7 +94,8 @@ class ArchivesSpaceDataTransformer:
         for obj in (self.cls.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
                     if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
             self.obj = obj
-            self.obj.refresh_from_db() # refresh fields in order to avoid overwriting tree_order
+            print(self.obj)
+            self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
             self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
             getattr(self, "transform_to_{}".format(self.key))()
         self.current_run.status = TransformRun.FINISHED
@@ -234,7 +235,8 @@ class ArchivesSpaceDataTransformer:
 
     def parent(self, parent):
         try:
-            if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=parent.get('ref')).exists():
+            if Collection.objects.filter(identifier__source=Identifier.ARCHIVESSPACE,
+                                         identifier__identifier=parent.get('ref')).exists():
                 self.obj.parent = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
                                                          identifier__identifier=parent.get('ref'))
             else:
