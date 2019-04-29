@@ -1,5 +1,5 @@
 # pisces
-A service for getting and transforming data for discovery.
+A service for fetching and transforming data for discovery.
 
 pisces is part of [Project Electron](https://github.com/RockefellerArchiveCenter/project_electron), an initiative to build sustainable, open and user-centered infrastructure for the archival management of digital records at the [Rockefeller Archive Center](http://rockarch.org/).
 
@@ -34,19 +34,15 @@ pisces has two main services, both of which are exposed via HTTP endpoints (see 
 * Create, get, update and delete identifiers - basic operations to manage identifiers.
 * Get or create identifiers - a single endpoint which returns an identifier if a match is found, or creates a new one if none exists.
 
-![Ursa Major diagram](ursa-major-services.png)
+![Pisces diagram](pisces-services.png)
 
 
 ### Routes
 
 | Method | URL | Parameters | Response  | Behavior  |
 |--------|-----|---|---|---|
-|POST|/|`source`, `identifier`|200|Creates an identifier object as well as an external identifier|
-|GET|/| |200|Returns a list of identifiers|
-|GET|/{id}| |200|Returns data about an individual identifier|
-|PUT|/{id}|`source`, `identifier`|200|Updates an existing identifier|
-|DELETE|/{id}| |200|Deletes an existing identifier|
-|GET|/get_or_create|`source`, `identifier`|200|Gets an identifier based on an external identifier or creates one if no match is found|
+|POST|/import||200|Imports sample data, will be replaced by fetchers|
+|POST|/transform||200|Transforms data|
 |GET|/status||200|Return the status of the service|
 |GET|/schema.json||200|Returns the OpenAPI schema for this service|
 
