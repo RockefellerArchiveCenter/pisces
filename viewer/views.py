@@ -5,7 +5,7 @@ from transformer.models import Agent, Collection, Object, Term
 
 class CollectionListView(ListView):
     model = Collection
-    queryset = Collection.objects.filter(parent__isnull=True)
+    queryset = Collection.objects.filter(parent__isnull=True).order_by('title')
     template_name = 'viewer/collection_list.html'
 
 
@@ -21,6 +21,7 @@ class ObjectDetailView(DetailView):
 
 class AgentListView(ListView):
     model = Agent
+    queryset = Agent.objects.all().order_by('title')
     template_name = 'viewer/agent_list.html'
 
 
@@ -31,6 +32,7 @@ class AgentDetailView(DetailView):
 
 class TermListView(ListView):
     model = Term
+    queryset = Term.objects.all().order_by('title')
     template_name = 'viewer/term_list.html'
 
 
