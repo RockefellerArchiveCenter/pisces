@@ -348,6 +348,7 @@ class ArchivesSpaceDataTransformer:
 
     def transform_to_term(self):
         self.obj.title = self.source_data.get('title')
+        self.obj.type = self.source_data.get('terms')[0]['term_type']
         try:
             self.obj.save()
         except Exception as e:

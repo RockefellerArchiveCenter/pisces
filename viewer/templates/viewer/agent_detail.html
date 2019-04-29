@@ -1,6 +1,6 @@
 {% extends "viewer/base.html" %}
 
-{% block title %}{{object.title}}{% endblock %}
+{% block title %}{{object.title}} {% include 'viewer/common/agent-tag.html' with agent=object %}{% endblock %}
 
 
 {% block content %}
