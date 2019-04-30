@@ -5,9 +5,20 @@
 
 {% block content %}
 <div class="row">
-  <div class="col agent__notes">
+  <div class="{% if object.image_url %}col-9{% else %}col{% endif %} agent__description">
+    {% if object.description %}
+    <p class="lead">{{object.description}}</p>
+    {% endif %}
     {% include 'viewer/common/notes.html' with notes=object.note_set.all %}
+    {% if object.wikipedia_url %}
+    <a href="{{object.wikipedia_url}}" target="_new" class="btn btn-primary">See more on Wikipedia</a>
+    {% endif %}
   </div>
+  {% if object.image_url %}
+  <div class="col-3 agent__image">
+    <img src="{{object.image_url}}" width="100%">
+  </div>
+  {% endif %}
 </div>
 
 <hr/>

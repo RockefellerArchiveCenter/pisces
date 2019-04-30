@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from .models import Collection, Object, Agent, Term, TransformRun
 from .serializers import *
-from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer
+from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer, WikidataDataTransformer, WikipediaDataTransformer
 from .test_library import import_fixture_data
 
 
@@ -102,6 +102,8 @@ class TransformerRunView(APIView):
             for object_type in ['agents', 'collections', 'objects', 'terms']:
                 ArchivesSpaceDataTransformer(object_type).run()
             CartographerDataTransformer().run()
+            WikidataDataTransformer().run()
+            WikipediaDataTransformer().run()
             return Response({"detail": "Transformation routines complete."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)

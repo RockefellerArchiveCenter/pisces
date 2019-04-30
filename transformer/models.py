@@ -20,6 +20,8 @@ class TransformRun(models.Model):
     PISCES = 4
     CARTOGRAPHER = 5
     TREES = 6
+    WIKIDATA = 7
+    WIKIPEDIA = 8
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
@@ -28,6 +30,8 @@ class TransformRun(models.Model):
         (PISCES, 'Pisces'),
         (CARTOGRAPHER, 'Cartographer'),
         (TREES, 'Trees'),
+        (WIKIDATA, 'Wikidata'),
+        (WIKIPEDIA, 'Wikipedia')
     )
     OBJECT_TYPE_CHOICES = (
         ('agents', 'Agents'),
@@ -52,22 +56,20 @@ class Language(models.Model):
     expression = models.CharField(max_length=255)
     identifier = models.CharField(max_length=255)
 
+    def __str__(self): return self.expression
+
 
 class Agent(models.Model):
-    PERSON = 0
-    ORGANIZATION = 1
-    FAMILY = 2
-    SOFTWARE = 3
-    AGENT_TYPE_CHOICES = (
-        (PERSON, 'Person'),
-        (ORGANIZATION, 'Organization'),
-        (FAMILY, 'Family'),
-        (SOFTWARE, 'Software'),
-    )
     title = models.CharField(max_length=255, null=True, blank=True)
-    type = models.CharField(max_length=255, choices=AGENT_TYPE_CHOICES, null=True, blank=True)
+    type = models.CharField(max_length=255, null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
+    image_url = models.URLField(null=True, blank=True)
+    wikipedia_url = models.URLField(null=True, blank=True)
+    wikidata_id = models.CharField(max_length=100, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self): return self.title if self.title else "Agent ({})".format(self.pk)
 
     def collections(self):
         return set(chain(self.agent_collections.all(), self.creator_collections.all()))
@@ -89,6 +91,8 @@ class Term(models.Model):
     type = models.CharField(max_length=255, choices=TERM_TYPE_CHOICES, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self): return self.title if self.title else "Term ({})".format(self.pk)
 
 
 class Collection(models.Model):
@@ -117,6 +121,8 @@ class Collection(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
+    def __str__(self): return self.title if self.title else "Collection ({})".format(self.pk)
+
     def has_children(self):
         return bool([len(self.collection_set.all()), len(self.object_set.all())])
 
@@ -144,6 +150,8 @@ class Object(models.Model):
     parent = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self): return self.title if self.title else "Object ({})".format(self.pk)
 
     def ancestors(self):
         return self.get_ancestor(self.parent, [])
@@ -228,6 +236,8 @@ class Date(models.Model):
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
 
+    def __str__(self): return self.expression
+
 
 class Extent(models.Model):
     EXTENT_TYPE_CHOICES = (
@@ -249,6 +259,8 @@ class Extent(models.Model):
     type = models.CharField(max_length=100, choices=EXTENT_TYPE_CHOICES)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self): return "{} {}".format(self.value, self.type)
 
 
 class Note(models.Model):
@@ -327,13 +339,17 @@ class Identifier(models.Model):
     ARCHIVESSPACE = 3
     PISCES = 4
     CARTOGRAPHER = 5
+    WIKIDATA = 6
+    WIKIPEDIA = 7
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
         (PISCES, 'Pisces'),
-        (CARTOGRAPHER, 'Cartographer')
+        (CARTOGRAPHER, 'Cartographer'),
+        (WIKIDATA, 'Wikidata'),
+        (WIKIPEDIA, 'Wikipedia')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
@@ -344,6 +360,8 @@ class Identifier(models.Model):
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
     term = models.ForeignKey(Term, on_delete=models.CASCADE, null=True, blank=True)
 
+    def __str__(self): return "{}: {}".format(self.source, self.identifier)
+
 
 class SourceData(models.Model):
     AURORA = 0
@@ -351,12 +369,16 @@ class SourceData(models.Model):
     FEDORA = 2
     ARCHIVESSPACE = 3
     CARTOGRAPHER = 4
+    WIKIDATA = 5
+    WIKIPEDIA = 6
     SOURCE_CHOICES = (
         (AURORA, 'Aurora'),
         (ARCHIVEMATICA, 'Archivematica'),
         (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
-        (CARTOGRAPHER, 'Cartographer')
+        (CARTOGRAPHER, 'Cartographer'),
+        (WIKIDATA, 'Wikidata'),
+        (WIKIPEDIA, 'Wikipedia')
     )
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     data = JSONField()
@@ -366,3 +388,5 @@ class SourceData(models.Model):
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
     term = models.ForeignKey(Term, on_delete=models.CASCADE, null=True, blank=True)
+
+    def __str__(self): return "{} {}".format(self.source, self.created)
