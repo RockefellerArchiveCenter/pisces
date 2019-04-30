@@ -1,4 +1,5 @@
 from dateutil import parser
+import hashlib
 import json
 import os
 from pycountry import languages
@@ -299,7 +300,7 @@ class ArchivesSpaceDataTransformer:
 
     def transform_to_agent(self):
         self.obj.title = self.source_data.get('display_name').get('sort_name')
-        self.obj.type = self.source_data.get('jsonmodel_type')
+        self.obj.type = self.source_data.get('jsonmodel_type')  #
         try:
             self.notes(self.source_data.get('notes'), 'agent')
             self.obj.save()
@@ -354,3 +355,74 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             print(e)
             TransformRunError.objects.create(message=str(e), run=self.current_run)
+
+
+class WikidataDataTransformer:
+    def __init__(self):
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIDATA).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIDATA).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIDATA)
+
+    def run(self):
+        for agent in (Agent.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.WIKIDATA).order_by('modified')
+                      if self.last_run else Agent.objects.filter(identifier__source=Identifier.WIKIDATA).order_by('modified')):
+            try:
+                self.agent = agent
+                self.agent.refresh_from_db()
+                print(self.agent)
+                self.source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=self.agent).data
+                self.agent.description = self.source_data.get('descriptions').get('en')['value']
+                self.agent.image_url = self.image_url(self.source_data.get('claims').get('P18'))
+                self.agent.wikipedia_url = self.source_data.get('sitelinks').get('enwiki')['url']
+                self.agent.save()
+            except Exception as e:
+                print(e)
+                TransformRunError.objects.create(message=str(e), run=self.current_run)
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        return True
+
+    def image_url(self, image_prop):
+        # https://stackoverflow.com/questions/34393884/how-to-get-image-url-property-from-wikidata-item-by-api
+        # could also get this when fetching data, since the wikidata python client has built-in methods for this which are probably more tested
+        if image_prop:
+            filename = image_prop[0]['mainsnak']['datavalue']['value'].replace(" ", "_")
+            md5 = hashlib.md5(filename.encode()).hexdigest()
+            return "https://upload.wikimedia.org/wikipedia/commons/{}/{}/{}".format(md5[:1], md5[:2], filename)
+
+
+class WikipediaDataTransformer:
+    def __init__(self):
+        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIPEDIA).order_by('-start_time')[0].start_time
+                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIPEDIA).exists() else None)
+        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIPEDIA)
+
+    def run(self):
+        for agent in (Agent.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.WIKIPEDIA).order_by('modified')
+                      if self.last_run else Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA).order_by('modified')):
+            try:
+                self.agent = agent
+                self.agent.refresh_from_db()
+                print(self.agent)
+                self.source_data = SourceData.objects.get(source=SourceData.WIKIPEDIA, agent=self.agent).data
+                self.notes('bioghist')
+            except Exception as e:
+                print(e)
+                TransformRunError.objects.create(message=str(e), run=self.current_run)
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        return True
+
+    def notes(self, note_type):
+        print(self.agent.type)
+        title = 'Biography' if self.agent.type in ['agent_person', 'agent_family'] else 'Administrative History'
+        if Note.objects.filter(agent=self.agent, type=note_type).exists():
+            note = Note.objects.get(agent=self.agent, type=note_type)
+            note.subnote_set.all().delete()
+            note.title = title
+            note.save()
+        else:
+            note = Note.objects.create(type=note_type, title=title, agent=self.agent)
+        Subnote.objects.create(type='text', content=[self.source_data], note=note)

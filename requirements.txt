@@ -31,3 +31,5 @@ smmap2==2.0.5
 swagger-spec-validator==2.4.3
 uritemplate==3.0.0
 urllib3==1.24.2
+Wikidata==0.6.1
+Wikipedia-API==0.5.1
