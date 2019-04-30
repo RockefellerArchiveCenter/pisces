@@ -43,3 +43,8 @@ class TermDetailView(DetailView):
 
 class IndexView(TemplateView):
     template_name = 'viewer/index.html'
+
+
+class TreeView(DetailView):
+    model = Collection
+    template_name = 'viewer/collection-tree.html'

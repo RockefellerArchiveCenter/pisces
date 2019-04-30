@@ -1,0 +1,3 @@
+{% for item in object.children %}
+  {% include 'viewer/common/tree-item.html' with h=object.ancestors|length|add:"2" %}
+{% endfor %}
