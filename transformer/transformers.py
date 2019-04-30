@@ -21,7 +21,7 @@ class CartographerDataTransformer:
 
     def run(self):
         try:
-            for collection in (Collection.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
+            for collection in (Collection.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
                                if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
                 self.obj = collection
                 self.obj.refresh_from_db() # refresh fields in order to avoid overwriting tree_order
@@ -92,7 +92,7 @@ class ArchivesSpaceDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
-        for obj in (self.cls.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
+        for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
                     if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
             self.obj = obj
             print(self.obj)
@@ -364,16 +364,18 @@ class WikidataDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIDATA)
 
     def run(self):
-        for agent in (Agent.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.WIKIDATA).order_by('modified')
+        for agent in (Agent.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.WIKIDATA).order_by('modified')
                       if self.last_run else Agent.objects.filter(identifier__source=Identifier.WIKIDATA).order_by('modified')):
             try:
                 self.agent = agent
                 self.agent.refresh_from_db()
                 print(self.agent)
                 self.source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=self.agent).data
-                self.agent.description = self.source_data.get('descriptions').get('en')['value']
+                if self.source_data.get('descriptions').get('en'):
+                    self.agent.description = self.source_data.get('descriptions').get('en')['value']
                 self.agent.image_url = self.image_url(self.source_data.get('claims').get('P18'))
-                self.agent.wikipedia_url = self.source_data.get('sitelinks').get('enwiki')['url']
+                if self.source_data.get('sitelinks').get('enwiki'):
+                    self.agent.wikipedia_url = self.source_data.get('sitelinks').get('enwiki')['url']
                 self.agent.save()
             except Exception as e:
                 print(e)
@@ -394,13 +396,10 @@ class WikidataDataTransformer:
 
 class WikipediaDataTransformer:
     def __init__(self):
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIPEDIA).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIPEDIA).exists() else None)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIPEDIA)
 
     def run(self):
-        for agent in (Agent.objects.filter(modified__gte=self.last_run, identifier__source=Identifier.WIKIPEDIA).order_by('modified')
-                      if self.last_run else Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA).order_by('modified')):
+        for agent in Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA).order_by('modified'):
             try:
                 self.agent = agent
                 self.agent.refresh_from_db()
@@ -416,7 +415,6 @@ class WikipediaDataTransformer:
         return True
 
     def notes(self, note_type):
-        print(self.agent.type)
         title = 'Biography' if self.agent.type in ['agent_person', 'agent_family'] else 'Administrative History'
         if Note.objects.filter(agent=self.agent, type=note_type).exists():
             note = Note.objects.get(agent=self.agent, type=note_type)

@@ -21,6 +21,7 @@ class WikidataDataFetcher:
                 source_data.save()
             else:
                 SourceData.objects.create(source=SourceData.WIKIDATA, data=agent_data, agent=agent)
+            if not Identifier.objects.filter(source=Identifier.WIKIDATA, agent=agent).exists():
                 Identifier.objects.create(source=Identifier.WIKIDATA, identifier=agent.wikidata_id, agent=agent)
 
 
@@ -39,4 +40,7 @@ class WikipediaDataFetcher:
                 source_data.save()
             else:
                 SourceData.objects.create(source=SourceData.WIKIPEDIA, data=agent_page.summary, agent=agent)
+            if not Identifier.objects.filter(source=SourceData.WIKIPEDIA, agent=agent).exists():
+                # TODO: Something is happening to agent_name in the save that is stripping spaces and truncating, etc.
+                # Maybe get a better identifier?
                 Identifier.objects.create(source=Identifier.WIKIPEDIA, identifier=agent_name, agent=agent)
