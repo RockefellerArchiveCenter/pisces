@@ -26,7 +26,7 @@
 
     <div class="wrapper">
       {% block navbar %}
-        <div class="navbar navbar-static-top navbar-expand navbar-dark bg-dark"
+        <nav class="navbar navbar-static-top navbar-expand navbar-dark bg-dark"
              role="navigation" aria-label="{% trans "navbar" %}">
           <div class="container">
             {% block branding %}
@@ -38,15 +38,15 @@
               <li class="nav-item"><a class="nav-link" href="{% url 'app:term-list' %}">Terms</a></li>
             </ul>
           </div>
-        </div>
+        </nav>
       {% endblock %}
 
       <div class="container mt-3">
         <!-- Content -->
-        <div id="content" role="main" aria-label="{% trans "content" %}">
+        <main id="content" role="main" aria-label="{% trans "content" %}">
           <h1>{% block title %}{% endblock %}</h1>
           {% block content %}{% endblock content %}
-        </div><!-- /.content -->
+        </main><!-- /.content -->
       </div><!-- /.container -->
     </div><!-- ./wrapper -->
 
