@@ -1,11 +1,12 @@
-<div class="card full-height">
-  <div class="card-header"><h2>{{include.title}}</h2></div>
+<div class="card mb-3">
+  <div class="card-header">
+    <h3>{{header}} <small>({{object_list|length}})</small></h3>
+  </div>
   <div class="card-body">
-    {% assign sorted = "" | split: "," %}
-    {% for o in include.objects %}{% assign sorted = sorted | push: o[1] %}{% endfor %}
-    {% assign sorted = sorted | sort: 'title' %}
-    {% for a in sorted %}
-      <p><a href="{{a.url | replace: "http://localhost:8000"}}">{{a.title}}</a></p>
+    <ul class="list-unstyled" style="columns:{{columns}};">
+    {% for object in object_list %}
+      <li><a href="{% url view object.pk %}">{{object.title}}</a></li>
     {% endfor %}
+    </ul>
   </div>
 </div>

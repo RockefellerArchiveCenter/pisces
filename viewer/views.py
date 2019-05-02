@@ -21,8 +21,14 @@ class ObjectDetailView(DetailView):
 
 class AgentListView(ListView):
     model = Agent
-    queryset = Agent.objects.all().order_by('title')
     template_name = 'viewer/agent_list.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(AgentListView, self).get_context_data(**kwargs)
+        context['data'] = {}
+        for agent_type in ['agent_person', 'agent_corporate_entity', 'agent_family']:
+            context[agent_type] = Agent.objects.filter(type=agent_type).order_by('title')
+        return context
 
 
 class AgentDetailView(DetailView):
@@ -32,8 +38,16 @@ class AgentDetailView(DetailView):
 
 class TermListView(ListView):
     model = Term
-    queryset = Term.objects.all().order_by('title')
     template_name = 'viewer/term_list.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(TermListView, self).get_context_data(**kwargs)
+        context['data'] = {}
+        for term_type in ['cultural_context', 'function', 'geographic',
+                          'genre_form', 'occupation', 'style_period',
+                          'technique', 'temporal', 'topical']:
+            context[term_type] = Term.objects.filter(type=term_type).order_by('title')
+        return context
 
 
 class TermDetailView(DetailView):

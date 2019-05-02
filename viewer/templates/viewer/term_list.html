@@ -4,7 +4,41 @@
 
 
 {% block content %}
-  {% for object in object_list %}
-    <p><a href="{% url 'app:term-detail' object.pk %}">{{object.title}}</a></p>
-  {% endfor %}
+
+{% if cultural_context %}
+  {% include 'viewer/common/category-card.html' with object_list=cultural_context header="Cultural Contexts" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if function %}
+  {% include 'viewer/common/category-card.html' with object_list=function header="Functions" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if geographic %}
+  {% include 'viewer/common/category-card.html' with object_list=geographic header="Geographic Areas" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if genre_form %}
+  {% include 'viewer/common/category-card.html' with object_list=genre_form header="Genres & Forms" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if occupation %}
+  {% include 'viewer/common/category-card.html' with object_list=occupation header="Occupations" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if style_period %}
+  {% include 'viewer/common/category-card.html' with object_list=style_period header="Styles & Periods" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if technique %}
+  {% include 'viewer/common/category-card.html' with object_list=technique header="Techniques" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if temporal %}
+  {% include 'viewer/common/category-card.html' with object_list=temporal header="Time Periods" view='app:term-detail' columns=3 %}
+{% endif %}
+
+{% if topical %}
+  {% include 'viewer/common/category-card.html' with object_list=topical header="Topics" view='app:term-detail' columns=2 %}
+{% endif %}
+
 {% endblock %}
