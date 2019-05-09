@@ -131,7 +131,7 @@ class FetcherRunView(APIView):
 
     def post(self, request, format=None):
         try:
-            for object_type in ['agents', 'collections', 'objects', 'terms']:
+            for object_type in ['agents', 'resources', 'objects', 'terms']:
                 ArchivesSpaceDataFetcher(object_type).run()
             # WikidataDataTransformer().run()
             # WikipediaDataTransformer().run()

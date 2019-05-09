@@ -83,7 +83,7 @@ class FetchRun(models.Model):
     )
     OBJECT_TYPE_CHOICES = (
         ('agents', 'Agents'),
-        ('collections', 'Collections'),
+        ('resources', 'Resources'),
         ('objects', 'Objects'),
         ('terms', 'Terms')
     )
