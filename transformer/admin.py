@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Agent, Identifier, SourceData, TransformRun
+from .models import Agent, Identifier, SourceData, Collection
 
 
 @admin.register(Agent)
@@ -18,6 +18,6 @@ class IdentifierAdmin(admin.ModelAdmin):
     pass
 
 
-@admin.register(TransformRun)
-class TransformRunAdmin(admin.ModelAdmin):
+@admin.register(Collection)
+class CollectionAdmin(admin.ModelAdmin):
     pass
