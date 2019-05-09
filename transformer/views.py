@@ -2,8 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
-
-from .models import Collection, Object, Agent, Term, TransformRun
+from .data_fetchers import ArchivesSpaceDataFetcher, WikidataDataFetcher, WikipediaDataFetcher
+from .models import Collection, Object, Agent, Term, TransformRun, FetchRun
 from .serializers import *
 from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer, WikidataDataTransformer, WikipediaDataTransformer
 from .test_library import import_fixture_data
@@ -94,6 +94,23 @@ class TransformRunViewSet(ModelViewSet):
         return TransformRunSerializer
 
 
+class FetchRunViewSet(ModelViewSet):
+    """
+    retrieve:
+    Return data about a TransformRun object, identified by a primary key.
+
+    list:
+    Return paginated data about all TranformRun objects.
+    """
+    model = FetchRun
+    queryset = FetchRun.objects.all().order_by('-start_time')
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return FetchRunListSerializer
+        return FetchRunSerializer
+
+
 class TransformerRunView(APIView):
     """Runs transformation routines."""
 
@@ -105,6 +122,20 @@ class TransformerRunView(APIView):
             WikidataDataTransformer().run()
             WikipediaDataTransformer().run()
             return Response({"detail": "Transformation routines complete."}, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)
+
+
+class FetcherRunView(APIView):
+    """Runs transformation routines."""
+
+    def post(self, request, format=None):
+        try:
+            for object_type in ['agents', 'collections', 'objects', 'terms']:
+                ArchivesSpaceDataFetcher(object_type).run()
+            # WikidataDataTransformer().run()
+            # WikipediaDataTransformer().run()
+            return Response({"detail": "Fetcher routines complete."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 

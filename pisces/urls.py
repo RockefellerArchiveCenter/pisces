@@ -26,6 +26,7 @@ router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'objects', ObjectViewSet, 'object')
 router.register(r'terms', TermViewSet, 'term')
 router.register(r'transforms', TransformRunViewSet, 'transformrun')
+router.register(r'fetches', FetchRunViewSet, 'fetchrun')
 schema_view = get_schema_view(
    openapi.Info(
       title="Pisces API",
@@ -40,6 +41,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('fetch/', FetcherRunView.as_view(), name='fetch-data'),
     path('transform/', TransformerRunView.as_view(), name='transform-data'),
     path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
