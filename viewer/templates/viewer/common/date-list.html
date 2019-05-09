@@ -1,0 +1,11 @@
+<ul class="list-unstyled">
+  {% for date in dates %}
+  <li>
+  {% if date.expression %}
+    <span class="badge badge-secondary">{{date.label}}</span> {{date.expression}}
+  {% else %}
+    <span class="badge badge-secondary">{{date.label}}</span> {{date.begin}}-{{date.end}}
+  {% endif %}
+  </li>
+  {% endfor %}
+</ul>

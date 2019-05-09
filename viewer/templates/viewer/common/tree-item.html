@@ -1,0 +1,13 @@
+<div class="col-12">
+  {% if item.has_children %}
+    <h{{h}}>
+      <a class="collapse-icon collapsed" href="#children-{{item.pk}}" data-toggle="collapse" aria-expanded="false" aria-controls="children-{{item.pk}}"></a>
+      <a href="{% url 'app:collection-detail' item.pk %}">{{item.title}}</a>
+    </h{{h}}>
+  {% else %}
+    <a href="{% url 'app:object-detail' item.pk %}">{{item.title}}</a>
+  {% endif %}
+  {% if item.has_children %}
+    <div id="children-{{item.pk}}" class="col-12 collapse collapsed test" data-src="{% url 'app:collection-tree' item.pk %}"></div>
+  {% endif %}
+</div>

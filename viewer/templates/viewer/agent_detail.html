@@ -1,0 +1,39 @@
+{% extends "viewer/base.html" %}
+
+{% block title %}{{object.title}} {% include 'viewer/common/agent-tag.html' with agent=object %}{% endblock %}
+
+
+{% block content %}
+<div class="row">
+  <div class="{% if object.image_url %}col-9{% else %}col{% endif %} agent__description">
+    {% if object.description %}
+    <p class="lead">{{object.description}}</p>
+    {% endif %}
+    {% include 'viewer/common/notes.html' with notes=object.note_set.all %}
+    {% if object.wikipedia_url %}
+    <a href="{{object.wikipedia_url}}" target="_new" class="btn btn-primary">See more on Wikipedia</a>
+    {% endif %}
+  </div>
+  {% if object.image_url %}
+  <div class="col-3 agent__image">
+    <img src="{{object.image_url}}" width="100%" alt="{{object.title}}">
+  </div>
+  {% endif %}
+</div>
+
+<hr/>
+
+<div class="row">
+  <div class="col agent__related__collections">
+    <h2>Related Collections</h2>
+    {% include 'viewer/common/horizontal-list.html' with items=object.collections label="related collections" view="app:collection-detail" %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col agent__related__objects">
+    <h2>Related Objects</h2>
+    {% include 'viewer/common/horizontal-list.html' with items=object.agent_objects.all label="related objects" view="app:object-detail" %}
+  </div>
+</div>
+{% endblock %}

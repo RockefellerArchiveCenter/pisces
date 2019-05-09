@@ -18,13 +18,14 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from transformer.views import CollectionViewSet, ObjectViewSet, AgentViewSet, TermViewSet
+from transformer.views import *
 
 router = routers.DefaultRouter()
 router.register(r'agents', AgentViewSet, 'agent')
 router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'objects', ObjectViewSet, 'object')
 router.register(r'terms', TermViewSet, 'term')
+router.register(r'transforms', TransformRunViewSet, 'transformrun')
 schema_view = get_schema_view(
    openapi.Info(
       title="Pisces API",
@@ -39,7 +40,10 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('transform/', TransformerRunView.as_view(), name='transform-data'),
+    path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
+    path('', include('viewer.urls')),
 ]
