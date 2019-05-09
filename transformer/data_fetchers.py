@@ -5,26 +5,36 @@ from asnake.aspace import ASpace
 from wikipediaapi import Wikipedia
 from wikidata.client import Client as wd_client
 
-from .models import Agent, Identifier, SourceData
 from .models import *
 
 
 class ArchivesSpaceDataFetcher:
-    def __init__(self):
+    def __init__(self, object_type):
         self.aspace = ASpace(
                       baseurl='http://192.168.50.4:8089',
                       user='admin',
                       password='admin')
-        self.repo = aspace.repositories(2)
+        self.repo = self.aspace.repositories(2)
+        self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time
+                         if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
+                         else None)
+        self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.ARCHIVESSPACE, object_type=object_type)
+        self.object_type = object_type
+
+    def run(self):
+        getattr(self, "get_{}".format(self.object_type))()
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
 
     def get_resources(self):
-            for r in aspace.resources.with_params(all_ids=True, modified_since=updated):
+            for r in self.aspace.resources.with_params(all_ids=True, modified_since=updated):
                 if r.publish:
                     if r.jsonmodel_type == 'resource' and r.id_0.startswith('FA'):
                         collections_check()
 
     def get_objects(self):
-        for o in aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
+        for o in self.aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
             r = o.resource
             resource_id = o.get('resource').get('ref').split('/')[-1]
             with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
@@ -42,21 +52,21 @@ class ArchivesSpaceDataFetcher:
                 pass
 
     def get_subjects(self):
-            for s in aspace.subjects:
+            for s in self.aspace.subjects:
                 if s.publish and s.system_mtime > updated:
                     term_check()
 
     def get_agents(self):
-            for a in aspace.agents["people"]:
+            for a in self.aspace.agents["people"]:
                 if a.publish and a.system_mtime > updated:
                     agent_check()
-            for a in aspace.agents["corporate_entities"]:
+            for a in self.aspace.agents["corporate_entities"]:
                 if a.publish and a.system_mtime > updated:
                     agent_check()
-            for a in aspace.agents["families"]:
+            for a in self.aspace.agents["families"]:
                 if a.publish and a.system_mtime > updated:
                     agent_check()
-            for a in aspace.agents["software"]:
+            for a in self.aspace.agents["software"]:
                 if a.publish and a.system_mtime > updated:
                     agent_check()
 

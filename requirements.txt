@@ -1,4 +1,7 @@
+ArchivesSnake==0.8.1
 attrs==19.1.0
+Babel==2.6.0
+boltons==19.1.0
 certifi==2019.3.9
 chardet==3.0.4
 clinner==1.12.3
@@ -17,6 +20,7 @@ itypes==1.1.0
 Jinja2==2.10.1
 jsonschema==3.0.1
 MarkupSafe==1.1.1
+more-itertools==7.0.0
 objectpath==0.6.1
 psycopg2-binary==2.7.7
 pycountry==18.12.8
@@ -28,6 +32,7 @@ requests==2.21.0
 ruamel.yaml==0.15.89
 six==1.12.0
 smmap2==2.0.5
+structlog==19.1.0
 swagger-spec-validator==2.4.3
 uritemplate==3.0.0
 urllib3==1.24.2
