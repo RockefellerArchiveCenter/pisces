@@ -15,9 +15,9 @@ class ArchivesSpaceDataFetcher:
                       user='admin',
                       password='admin')
         self.repo = self.aspace.repositories(2)
-        self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time
+        self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time.timestamp()
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
-                         else None)
+                         else 0)
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.ARCHIVESSPACE, object_type=object_type)
         self.object_type = object_type
 
@@ -28,10 +28,10 @@ class ArchivesSpaceDataFetcher:
         self.current_run.save()
 
     def get_resources(self):
-            for r in self.aspace.resources.with_params(all_ids=True, modified_since=updated):
-                if r.publish:
-                    if r.jsonmodel_type == 'resource' and r.id_0.startswith('FA'):
-                        collections_check()
+            for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
+                if (r.publish and r.id_0.startswith('FA')):
+                        tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
+                        self.save_data(Collection, 'collection', r, tree)
 
     def get_objects(self):
         for o in self.aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
@@ -117,6 +117,21 @@ class ArchivesSpaceDataFetcher:
             agent = Agent.objects.create(source=Identifier.ARCHIVESSPACE, data=a.json)
             Identifier.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, identifier=a.ref)
             SourceData.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, data=a.json)
+
+    # Generic function to save data.
+    def save_data(self, cls, key, data, source_tree=None):
+        if cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri).exists():
+            object = cls.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri)
+            if source_tree:
+                object.source_tree = source_tree.json()
+                object.save()
+            source_data = SourceData.objects.get(**{key: object, "source": Identifier.ARCHIVESSPACE})
+            source_data.data = data._json
+            source_data.save()
+        else:
+            object = cls.objects.create(source_tree=source_tree._json) if source_tree else cls.objects.create()
+            Identifier.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
+            SourceData.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
 
 
 class WikidataDataFetcher:
