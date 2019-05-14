@@ -41,7 +41,7 @@ pisces has two main services, both of which are exposed via HTTP endpoints (see 
 
 | Method | URL | Parameters | Response  | Behavior  |
 |--------|-----|---|---|---|
-|POST|/import||200|Imports sample data, will be replaced by fetchers|
+|POST|/import|`source` - target data source, one of `archivesspace`, `cartographer`, `wikidata` or `wikipedia` <br/> `object_type` - target object type, one of `collections`, `objects`, `agents`, `terms` (only relevant for ArchivesSpace data)|200|Imports sample data, will be replaced by fetchers|
 |POST|/transform||200|Transforms data|
 |GET|/status||200|Return the status of the service|
 |GET|/schema.json||200|Returns the OpenAPI schema for this service|
