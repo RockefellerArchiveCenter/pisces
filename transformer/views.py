@@ -98,13 +98,34 @@ class TransformerRunView(APIView):
     """Runs transformation routines."""
 
     def post(self, request, format=None):
+        source = request.GET.get('source')
+        object_type = request.GET.get('object_type')
         try:
-            for object_type in ['agents', 'collections', 'objects', 'terms']:
-                ArchivesSpaceDataTransformer(object_type).run()
-            CartographerDataTransformer().run()
-            WikidataDataTransformer().run()
-            WikipediaDataTransformer().run()
-            return Response({"detail": "Transformation routines complete."}, status=200)
+            if source:
+                if source == 'archivesspace':
+                    if object_type:
+                        ArchivesSpaceDataTransformer(object_type).run()
+                    else:
+                        for object_type in ['agents', 'collections', 'objects', 'terms']:
+                            ArchivesSpaceDataTransformer(object_type).run()
+                elif source == 'cartographer':
+                    CartographerDataTransformer().run()
+                elif source == 'wikidata':
+                    WikidataDataTransformer().run()
+                elif source == 'wikipedia':
+                    WikipediaDataTransformer().run()
+                else:
+                    return Response({"detail": "Unknown source {}.".format(source)}, status=400)
+                message = ("Transformation routines complete for source {}.".format(source) if not object_type
+                           else "Transformation routines complete for {} {}.".format(source, object_type))
+                return Response({"detail": message}, status=200)
+            else:
+                for object_type in ['agents', 'collections', 'objects', 'terms']:
+                    ArchivesSpaceDataTransformer(object_type).run()
+                CartographerDataTransformer().run()
+                WikidataDataTransformer().run()
+                WikipediaDataTransformer().run()
+                return Response({"detail": "Transformation routines complete for all sources and object types."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
