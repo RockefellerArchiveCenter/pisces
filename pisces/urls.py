@@ -40,6 +40,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
     path('transform/', TransformerRunView.as_view(), name='transform-data'),
     path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),

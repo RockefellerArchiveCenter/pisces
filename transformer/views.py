@@ -1,3 +1,4 @@
+from django.urls import reverse
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
@@ -128,6 +129,25 @@ class TransformerRunView(APIView):
                 return Response({"detail": "Transformation routines complete for all sources and object types."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
+
+
+class FindByIDView(APIView):
+    """Gets objects by ID."""
+    def get(self, request, format=None):
+        source = request.GET.get('source')
+        identifier = request.GET.get('identifier')
+        if source and identifier:
+            s = getattr(Identifier, source.upper())
+            if Identifier.objects.filter(identifier=identifier, source=s).exists():
+                identifier = Identifier.objects.get(identifier=identifier, source=s)
+                results = []
+                for relation in ['collection', 'object', 'agent', 'term']:
+                    object = getattr(identifier, relation)
+                    if object:
+                        results.append({"ref": reverse("{}-detail".format(relation), kwargs={"pk": object.pk}), "type": relation})
+                return Response(results, status=200)
+            return Response({"detail": "Identifier {} from {} not found".format(identifier, source)}, status=404)
+        return Response({"detail": "You must include both a source and an identifier as URL parameters"}, status=400)
 
 
 class ImportRunView(APIView):
