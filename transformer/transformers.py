@@ -226,6 +226,7 @@ class ArchivesSpaceDataTransformer:
                 parsed = self.parse_note(note)
                 note = Note.objects.create(**{"type": parsed[0],
                                               "title": parsed[1],
+                                              "source": Note.ARCHIVESSPACE,
                                               relation_key: object})
                 for subnote in parsed[2]:
                     Subnote.objects.create(type=subnote[0],
@@ -416,11 +417,11 @@ class WikipediaDataTransformer:
 
     def notes(self, note_type):
         title = 'Biography' if self.agent.type in ['agent_person', 'agent_family'] else 'Administrative History'
-        if Note.objects.filter(agent=self.agent, type=note_type).exists():
-            note = Note.objects.get(agent=self.agent, type=note_type)
+        if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIPEDIA).exists():
+            note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIPEDIA)
             note.subnote_set.all().delete()
             note.title = title
             note.save()
         else:
-            note = Note.objects.create(type=note_type, title=title, agent=self.agent)
+            note = Note.objects.create(type=note_type, title=title, agent=self.agent, source=Note.WIKIPEDIA)
         Subnote.objects.create(type='text', content=[self.source_data], note=note)

@@ -13,23 +13,13 @@ class TransformRun(models.Model):
         (FINISHED, 'Finished'),
         (ERRORED, 'Errored'),
     )
-    AURORA = 0
-    ARCHIVEMATICA = 1
-    FEDORA = 2
-    ARCHIVESSPACE = 3
-    PISCES = 4
-    CARTOGRAPHER = 5
-    TREES = 6
-    WIKIDATA = 7
-    WIKIPEDIA = 8
+    ARCHIVESSPACE = 1
+    CARTOGRAPHER = 2
+    WIKIDATA = 3
+    WIKIPEDIA = 4
     SOURCE_CHOICES = (
-        (AURORA, 'Aurora'),
-        (ARCHIVEMATICA, 'Archivematica'),
-        (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
-        (PISCES, 'Pisces'),
         (CARTOGRAPHER, 'Cartographer'),
-        (TREES, 'Trees'),
         (WIKIDATA, 'Wikidata'),
         (WIKIPEDIA, 'Wikipedia')
     )
@@ -264,6 +254,16 @@ class Extent(models.Model):
 
 
 class Note(models.Model):
+    ARCHIVESSPACE = 1
+    CARTOGRAPHER = 2
+    WIKIDATA = 3
+    WIKIPEDIA = 4
+    SOURCE_CHOICES = (
+        (ARCHIVESSPACE, 'ArchivesSpace'),
+        (CARTOGRAPHER, 'Cartographer'),
+        (WIKIDATA, 'Wikidata'),
+        (WIKIPEDIA, 'Wikipedia')
+    )
     NOTE_TYPE_CHOICES = (
       ('accessrestrict', 'Conditions Governing Access'),
       ('accruals', 'Accruals'),
@@ -312,6 +312,7 @@ class Note(models.Model):
     )
     type = models.CharField(max_length=100, choices=NOTE_TYPE_CHOICES)
     title = models.CharField(max_length=255)
+    source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE, null=True, blank=True)
     object = models.ForeignKey(Object, on_delete=models.CASCADE, null=True, blank=True)
     agent = models.ForeignKey(Agent, on_delete=models.CASCADE, null=True, blank=True)
@@ -333,20 +334,12 @@ class Subnote(models.Model):
 
 
 class Identifier(models.Model):
-    AURORA = 0
-    ARCHIVEMATICA = 1
-    FEDORA = 2
-    ARCHIVESSPACE = 3
-    PISCES = 4
-    CARTOGRAPHER = 5
-    WIKIDATA = 6
-    WIKIPEDIA = 7
+    ARCHIVESSPACE = 1
+    CARTOGRAPHER = 2
+    WIKIDATA = 3
+    WIKIPEDIA = 4
     SOURCE_CHOICES = (
-        (AURORA, 'Aurora'),
-        (ARCHIVEMATICA, 'Archivematica'),
-        (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
-        (PISCES, 'Pisces'),
         (CARTOGRAPHER, 'Cartographer'),
         (WIKIDATA, 'Wikidata'),
         (WIKIPEDIA, 'Wikipedia')
@@ -364,17 +357,11 @@ class Identifier(models.Model):
 
 
 class SourceData(models.Model):
-    AURORA = 0
-    ARCHIVEMATICA = 1
-    FEDORA = 2
-    ARCHIVESSPACE = 3
-    CARTOGRAPHER = 4
-    WIKIDATA = 5
-    WIKIPEDIA = 6
+    ARCHIVESSPACE = 1
+    CARTOGRAPHER = 2
+    WIKIDATA = 3
+    WIKIPEDIA = 4
     SOURCE_CHOICES = (
-        (AURORA, 'Aurora'),
-        (ARCHIVEMATICA, 'Archivematica'),
-        (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
         (CARTOGRAPHER, 'Cartographer'),
         (WIKIDATA, 'Wikidata'),
