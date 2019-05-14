@@ -3,7 +3,8 @@
 {% for note in notes %}
   {% if note.type == 'scopecontent' or note.type == 'abstract' %}
   {% else %}
-  <h2>{% if note.title %}{{note.title}}{% else %}{{note.type}}{% endif %} <small>{{note.source | source_filter }}</small></h2>
+  <h2>{% if note.title %}{{note.title}}{% else %}{{note.type}}{% endif %}</h2>
+  <cite title="{{note.source | source_filter }}">{{note.source | source_filter }}</cite>
   {% include 'viewer/common/notes-content.html' with subnotes=note.subnote_set.all %}
   {% endif %}
 {% endfor %}

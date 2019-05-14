@@ -1,5 +1,5 @@
 from django import template
-from .models import Note
+from transformer.models import Note
 
 register = template.Library()
 
@@ -35,9 +35,9 @@ def term_type_filter(value):
 @register.filter
 def source_filter(value):
     SOURCE_MAP = {
-        Note.ARCHIVESSPACE: "Rockefeller Archive Center",
-        Note.CARTOGRAPHER: "Rockefeller Archive Center",
+        # Note.ARCHIVESSPACE: "Rockefeller Archive Center",
+        # Note.CARTOGRAPHER: "Rockefeller Archive Center",
         Note.WIKIDATA: "Wikidata",
         Note.WIKIPEDIA: "Wikipedia",
         }
-    return SOURCE_MAP.get(value, value)
+    return SOURCE_MAP.get(int(value), '')
