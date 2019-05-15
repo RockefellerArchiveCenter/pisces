@@ -62,54 +62,6 @@ class ArchivesSpaceDataFetcher:
             if r.publish and o.publish:
                 pass
 
-    #objects function
-    def objects_check(self):
-        if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=p.ref).exists():
-            new_object = Object.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=p.ref)
-            sd = SourceData.objects.get(object=new_object)
-            sd.data = p.json
-            sd.save()
-        else:
-            object = Obect.objects.create(source=Identifier.ARCHIVESSPACE, data=p.json)
-            Identifier.objects.create(object=object, source=Identifier.ARCHIVESSPACE, identifier=p.ref)
-            SourceData.objects.create(object=object, source=Identifier.ARCHIVESSPACE, data=p.json)
-
-    #objects function
-    def collections_check(self):
-        if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=r.ref).exists():
-            new_object = Collection.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=r.ref)
-            sd = SourceData.objects.get(collection=new_object)
-            sd.data = r.json
-            sd.save()
-        else:
-            collection = Collection.objects.create(source=Identifier.ARCHIVESSPACE, data=r.json)
-            Identifier.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, identifier=r.ref)
-            SourceData.objects.create(collection=collection, source=Identifier.ARCHIVESSPACE, data=r.json)
-
-    #terms function
-    def term_check(self):
-        if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=s.ref).exists():
-            new_object = Term.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=s.ref)
-            sd = SourceData.objects.get(term=new_object)
-            sd.data = s.json
-            sd.save()
-        else:
-            term = Term.objects.create(source=Identifier.ARCHIVESSPACE, data=s.json)
-            Identifier.objects.create(term=term, source=Identifier.ARCHIVESSPACE, identifier=s.ref)
-            SourceData.objects.create(term=term, source=Identifier.ARCHIVESSPACE, data=s.json)
-
-    #agents function
-    def agent_check(self):
-        if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=a.ref).exists():
-            new_object = Agent.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=a.ref)
-            sd = SourceData.objects.get(agent=new_object)
-            sd.data = a.json
-            sd.save()
-        else:
-            agent = Agent.objects.create(source=Identifier.ARCHIVESSPACE, data=a.json)
-            Identifier.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, identifier=a.ref)
-            SourceData.objects.create(agent=agent, source=Identifier.ARCHIVESSPACE, data=a.json)
-
     # Generic function to save data.
     def save_data(self, cls, key, data, source_tree=None):
         """
