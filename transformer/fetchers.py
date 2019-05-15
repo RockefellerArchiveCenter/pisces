@@ -23,7 +23,7 @@ class ArchivesSpaceDataFetcher:
 
     def run(self):
         getattr(self, "get_{}".format(self.object_type))()
-        self.current_run.status = TransformRun.FINISHED
+        self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
 
@@ -88,21 +88,25 @@ class WikidataDataFetcher:
 
     def run(self):
         self.get_agents()
-        self.current_run.status = TransformRun.FINISHED
+        self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
 
     def get_agents(self):
         for agent in Agent.objects.filter(identifier__source=Identifier.WIKIDATA):
             print(agent)
-            wikidata_id = Identifier.objects.filter(source=Identifier.WIKIDATA, agent=agent).identifier
-            agent_data = self.client.get(wikidata_id, load=True).data
-            if SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent).exists():
-                source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent)
-                source_data.data = agent_data
-                source_data.save()
-            else:
-                SourceData.objects.create(source=SourceData.WIKIDATA, data=agent_data, agent=agent)
+            try:
+                wikidata_id = Identifier.objects.filter(source=Identifier.WIKIDATA, agent=agent).identifier
+                agent_data = self.client.get(wikidata_id, load=True).data
+                if SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent).exists():
+                    source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent)
+                    source_data.data = agent_data
+                    source_data.save()
+                else:
+                    SourceData.objects.create(source=SourceData.WIKIDATA, data=agent_data, agent=agent)
+            except Exception as e:
+                print(e)
+                FetchRunError.objects.create(run=self.current_run, message="Error fetching agent: {}".format(e))
 
 
 class WikipediaDataFetcher:
@@ -112,17 +116,21 @@ class WikipediaDataFetcher:
 
     def run(self):
         self.get_agents()
-        self.current_run.status = TransformRun.FINISHED
+        self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
 
     def get_agents(self):
         for agent in Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA):
-            wikipedia_id = Identifier.objects.get(source=WIKIPEDIA, agent=agent)
-            agent_page = self.client.page(wikipedia_id)
-            if SourceData.objects.filter(source=SourceData.WIKIPEDIA, agent=agent).exists():
-                source_data = SourceData.objects.get(source=SourceData.WIKIPEDIA, agent=agent)
-                source_data.data = agent_page.summary
-                source_data.save()
-            else:
-                SourceData.objects.create(source=SourceData.WIKIPEDIA, data=agent_page.summary, agent=agent)
+            try:
+                wikipedia_id = Identifier.objects.get(source=WIKIPEDIA, agent=agent)
+                agent_page = self.client.page(wikipedia_id)
+                if SourceData.objects.filter(source=SourceData.WIKIPEDIA, agent=agent).exists():
+                    source_data = SourceData.objects.get(source=SourceData.WIKIPEDIA, agent=agent)
+                    source_data.data = agent_page.summary
+                    source_data.save()
+                else:
+                    SourceData.objects.create(source=SourceData.WIKIPEDIA, data=agent_page.summary, agent=agent)
+            except Exception as e:
+                print(e)
+                FetchRunError.objects.create(run=self.current_run, message="Error fetching agent: {}".format(e))
