@@ -25,6 +25,7 @@ router.register(r'agents', AgentViewSet, 'agent')
 router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'objects', ObjectViewSet, 'object')
 router.register(r'terms', TermViewSet, 'term')
+router.register(r'identifiers', IdentifierViewSet, 'identifier')
 router.register(r'transforms', TransformRunViewSet, 'transformrun')
 schema_view = get_schema_view(
    openapi.Info(
@@ -40,8 +41,9 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('transform/', TransformerRunView.as_view(), name='transform-data'),
-    path('import/', ImportRunView.as_view(), name='import-data'),
+    path('api/find-by-id/', FindByIDView.as_view(), name='find-by-id'),
+    path('api/transform/', TransformerRunView.as_view(), name='transform-data'),
+    path('api/import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
     path('api/', include(router.urls)),

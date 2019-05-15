@@ -338,12 +338,12 @@ class Identifier(models.Model):
     CARTOGRAPHER = 2
     WIKIDATA = 3
     WIKIPEDIA = 4
-    SOURCE_CHOICES = (
+    SOURCE_CHOICES = [
         (ARCHIVESSPACE, 'ArchivesSpace'),
         (CARTOGRAPHER, 'Cartographer'),
         (WIKIDATA, 'Wikidata'),
         (WIKIPEDIA, 'Wikipedia')
-    )
+    ]
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
     identifier = models.CharField(max_length=255)
     created = models.DateTimeField(auto_now_add=True)
