@@ -25,6 +25,7 @@ router.register(r'agents', AgentViewSet, 'agent')
 router.register(r'collections', CollectionViewSet, 'collection')
 router.register(r'objects', ObjectViewSet, 'object')
 router.register(r'terms', TermViewSet, 'term')
+router.register(r'identifiers', IdentifierViewSet, 'identifier')
 router.register(r'transforms', TransformRunViewSet, 'transformrun')
 schema_view = get_schema_view(
    openapi.Info(

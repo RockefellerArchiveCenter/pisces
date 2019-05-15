@@ -2,6 +2,7 @@ from itertools import chain
 
 from django.urls import reverse
 from rest_framework import serializers
+from rest_framework.validators import UniqueTogetherValidator
 from transformer.models import *
 
 
@@ -56,12 +57,12 @@ class RightsStatementSerializer(serializers.ModelSerializer):
                   "note", "created", "modified")
 
 
-class IdentifierSerializer(serializers.ModelSerializer):
+class IdentifierSerializer(serializers.HyperlinkedModelSerializer):
     source = serializers.SerializerMethodField()
 
     class Meta:
         model = Identifier
-        fields = ("id", "source", "identifier", "created", "modified")
+        fields = ("url", "source", "identifier", "created", "modified")
 
     def get_source(self, obj):
         return [o[1] for o in obj.SOURCE_CHOICES if o[0] == int(obj.source)][0]

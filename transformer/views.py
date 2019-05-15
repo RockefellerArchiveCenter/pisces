@@ -1,9 +1,8 @@
 from django.urls import reverse
-from rest_framework.decorators import detail_route
+from rest_framework.decorators import action
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
-
 
 from .models import Collection, Object, Agent, Term, TransformRun
 from .serializers import *
@@ -27,21 +26,26 @@ class CollectionViewSet(ModelViewSet):
             return CollectionListSerializer
         return CollectionSerializer
 
-    @detail_route()
+    @action(detail=True)
     def identifiers(self, request, *args, **kwargs):
         collection = self.get_object()
         identifiers = Identifier.objects.filter(collection=collection)
         serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
         return Response(serializer.data)
 
-    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
-    def identifiers_detail(self, request, number=None, *args, **kwargs):
+    @identifiers.mapping.post
+    def add_identifier(self, request, pk=None):
         collection = self.get_object()
-        if Identifier.objects.filter(id=number, collection=collection).exists():
-            identifier = Identifier.objects.get(id=number, collection=collection)
-            serializer = IdentifierSerializer(identifier, context={'request': request})
-            return Response(serializer.data)
-        return Response("Identifier not found", status=404)
+        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        identifier = request.POST.get('identifier')
+        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "collection": collection})
+        if serializer.is_valid(raise_exception=True):
+            if not Identifier.objects.filter(collection=collection, source=source, identifier=identifier).exists():
+                Identifier.objects.create(collection=collection, source=source, identifier=identifier,)
+                identifiers = Identifier.objects.filter(collection=collection)
+                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+                return Response(serializer.data, status=201)
+            return Response({"detail": "Identifier already exists".format(source)}, status=400)
 
 
 class ObjectViewSet(ModelViewSet):
@@ -60,21 +64,26 @@ class ObjectViewSet(ModelViewSet):
             return ObjectListSerializer
         return ObjectSerializer
 
-    @detail_route()
+    @action(detail=True)
     def identifiers(self, request, *args, **kwargs):
         object = self.get_object()
         identifiers = Identifier.objects.filter(object=object)
         serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
         return Response(serializer.data)
 
-    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
-    def identifiers_detail(self, request, number=None, *args, **kwargs):
+    @identifiers.mapping.post
+    def add_identifier(self, request, pk=None):
         object = self.get_object()
-        if Identifier.objects.filter(id=number, object=object).exists():
-            identifier = Identifier.objects.get(id=number, object=object)
-            serializer = IdentifierSerializer(identifier, context={'request': request})
-            return Response(serializer.data)
-        return Response("Identifier not found", status=404)
+        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        identifier = request.POST.get('identifier')
+        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "object": object})
+        if serializer.is_valid(raise_exception=True):
+            if not Identifier.objects.filter(object=object, source=source, identifier=identifier).exists():
+                Identifier.objects.create(object=object, source=source, identifier=identifier,)
+                identifiers = Identifier.objects.filter(object=object)
+                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+                return Response(serializer.data, status=201)
+            return Response({"detail": "Identifier already exists".format(source)}, status=400)
 
 
 class AgentViewSet(ModelViewSet):
@@ -93,21 +102,26 @@ class AgentViewSet(ModelViewSet):
             return AgentListSerializer
         return AgentSerializer
 
-    @detail_route()
+    @action(detail=True)
     def identifiers(self, request, *args, **kwargs):
         agent = self.get_object()
         identifiers = Identifier.objects.filter(agent=agent)
         serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
         return Response(serializer.data)
 
-    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
-    def identifiers_detail(self, request, number=None, *args, **kwargs):
+    @identifiers.mapping.post
+    def add_identifier(self, request, pk=None):
         agent = self.get_object()
-        if Identifier.objects.filter(id=number, agent=agent).exists():
-            identifier = Identifier.objects.get(id=number, agent=agent)
-            serializer = IdentifierSerializer(identifier, context={'request': request})
-            return Response(serializer.data)
-        return Response("Identifier not found", status=404)
+        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        identifier = request.POST.get('identifier')
+        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "agent": agent})
+        if serializer.is_valid(raise_exception=True):
+            if not Identifier.objects.filter(agent=agent, source=source, identifier=identifier).exists():
+                Identifier.objects.create(agent=agent, source=source, identifier=identifier,)
+                identifiers = Identifier.objects.filter(agent=agent)
+                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+                return Response(serializer.data, status=201)
+            return Response({"detail": "Identifier already exists".format(source)}, status=400)
 
 
 class TermViewSet(ModelViewSet):
@@ -126,21 +140,39 @@ class TermViewSet(ModelViewSet):
             return TermListSerializer
         return TermSerializer
 
-    @detail_route()
+    @action(detail=True)
     def identifiers(self, request, *args, **kwargs):
         term = self.get_object()
         identifiers = Identifier.objects.filter(term=term)
         serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
         return Response(serializer.data)
 
-    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
-    def identifiers_detail(self, request, number=None, *args, **kwargs):
-        agent = self.get_object()
-        if Identifier.objects.filter(id=number, term=term).exists():
-            identifier = Identifier.objects.get(id=number, term=term)
-            serializer = IdentifierSerializer(identifier, context={'request': request})
-            return Response(serializer.data)
-        return Response("Identifier not found", status=404)
+    @identifiers.mapping.post
+    def add_identifier(self, request, pk=None):
+        term = self.get_object()
+        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        identifier = request.POST.get('identifier')
+        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "term": term})
+        if serializer.is_valid(raise_exception=True):
+            if not Identifier.objects.filter(term=term, source=source, identifier=identifier).exists():
+                Identifier.objects.create(term=term, source=source, identifier=identifier,)
+                identifiers = Identifier.objects.filter(term=term)
+                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+                return Response(serializer.data, status=201)
+            return Response({"detail": "Identifier already exists".format(source)}, status=400)
+
+
+class IdentifierViewSet(ModelViewSet):
+    """
+    retrieve:
+    Return data about an Identifier object, identified by a primary key.
+
+    list:
+    Return paginated data about all Identifier objects, ordered by last modified.
+    """
+    model = Identifier
+    queryset = Identifier.objects.all().order_by('-modified')
+    serializer = IdentifierSerializer
 
 
 class TransformRunViewSet(ModelViewSet):
@@ -199,7 +231,7 @@ class TransformerRunView(APIView):
 class FindByIDView(APIView):
     """Gets objects by ID."""
     def get(self, request, format=None):
-        source = request.GET.get('source')
+        getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
         identifier = request.GET.get('identifier')
         if source and identifier:
             s = getattr(Identifier, source.upper())
