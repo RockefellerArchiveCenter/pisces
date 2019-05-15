@@ -28,7 +28,7 @@
     <div class="collection__notes">
       {% include 'viewer/common/notes.html' with notes=object.note_set.all %}
     </div>
-    {% if object.rightsstatements_set.all %}
+    {% if object.rightsstatement_set.all %}
     <div class="collection__rights">
       <h2>Rights</h2>
       {% include 'viewer/common/rights-list.html' with rights=object.rightsstatement_set.all %}
