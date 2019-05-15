@@ -231,7 +231,7 @@ class TransformerRunView(APIView):
 class FindByIDView(APIView):
     """Gets objects by ID."""
     def get(self, request, format=None):
-        getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
         identifier = request.GET.get('identifier')
         if source and identifier:
             s = getattr(Identifier, source.upper())
