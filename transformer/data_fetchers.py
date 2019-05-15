@@ -46,79 +46,83 @@ class ArchivesSpaceDataFetcher:
 
     def get_objects(self):
         for o in self.repo.archival_objects.with_params(all_ids=True, modified_since=self.last_run):
-            r = o.resource
-            resource_id = o.get('resource').get('ref').split('/')[-1]
-            with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
-                tree_data = json.load(tf)
+            if o.publish:
+                r = o.resource
+                tree_data = self.aspace.client.get(r.tree.ref).json()
                 full_tree = objectpath.Tree(tree_data)
                 partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(data.get('uri')))
                 # Save archival object as Collection if it has children, otherwise save as Object
                 # Tree.execute() is a generator function so we have to loop through the results
                 for p in partial_tree:
                     if p.get('has_children'):
-                        collections_check()
+                        self.save_data(Collection, 'collection', o, p)
                     else:
-                        objects_check()
-            if r.publish and o.publish:
-                pass
+                        self.save_data(Object, 'object', o)
 
-    # Generic function to save data.
-    def save_data(self, cls, key, data, source_tree=None):
+    def save_data(self, cls, relation_key, data, source_tree=None):
         """
         A generic function to save data. Takes the following arguments:
         cls: an instance of a class (Agent, Term, Collection or Object)
-        key: a string representation of a relation key for Identifier and SourceData objects
-
+        relation_key: a string representation of a relation key for Identifier and SourceData objects
+        data: a JSONModel instance of an Agent, Term, Collection or Object
+        source_tree (optional): source data tree containing all children of a Collection
         """
         if cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri).exists():
             object = cls.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri)
             if source_tree:
                 object.source_tree = source_tree.json()
                 object.save()
-            source_data = SourceData.objects.get(**{key: object, "source": Identifier.ARCHIVESSPACE})
+            source_data = SourceData.objects.get(**{relation_key: object, "source": Identifier.ARCHIVESSPACE})
             source_data.data = data._json
             source_data.save()
         else:
             object = cls.objects.create(source_tree=source_tree.json()) if source_tree else cls.objects.create()
-            Identifier.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
-            SourceData.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
+            Identifier.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
+            SourceData.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
 
 
 class WikidataDataFetcher:
     def __init__(self):
         self.client = wd_client()
+        self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.WIKIDATA)
 
     def run(self):
-        for agent in Agent.objects.filter(wikidata_id__isnull=False):
+        self.get_agents()
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+
+    def get_agents(self):
+        for agent in Agent.objects.filter(identifier__source=Identifier.WIKIDATA):
             print(agent)
-            agent_data = self.client.get(agent.wikidata_id, load=True).data
-            if SourceData.objects.filter(source=SourceData.WIKIDATA, agent=agent).exists():
+            wikidata_id = Identifier.objects.filter(source=Identifier.WIKIDATA, agent=agent).identifier
+            agent_data = self.client.get(wikidata_id, load=True).data
+            if SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent).exists():
                 source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=agent)
-                # Could insert a check here to see if data has been updated since last save.
                 source_data.data = agent_data
                 source_data.save()
             else:
                 SourceData.objects.create(source=SourceData.WIKIDATA, data=agent_data, agent=agent)
-            if not Identifier.objects.filter(source=Identifier.WIKIDATA, agent=agent).exists():
-                Identifier.objects.create(source=Identifier.WIKIDATA, identifier=agent.wikidata_id, agent=agent)
 
 
 class WikipediaDataFetcher:
     def __init__(self):
         self.client = Wikipedia('en')
+        self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.WIKIPEDIA)
 
     def run(self):
-        for agent in Agent.objects.filter(wikipedia_url__isnull=False):
-            agent_name = agent.wikipedia_url.split('/')[-1]
-            print(agent)
-            agent_page = self.client.page(agent_name)
+        self.get_agents()
+        self.current_run.status = TransformRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+
+    def get_agents(self):
+        for agent in Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA):
+            wikipedia_id = Identifier.objects.get(source=WIKIPEDIA, agent=agent)
+            agent_page = self.client.page(wikipedia_id)
             if SourceData.objects.filter(source=SourceData.WIKIPEDIA, agent=agent).exists():
                 source_data = SourceData.objects.get(source=SourceData.WIKIPEDIA, agent=agent)
                 source_data.data = agent_page.summary
                 source_data.save()
             else:
                 SourceData.objects.create(source=SourceData.WIKIPEDIA, data=agent_page.summary, agent=agent)
-            if not Identifier.objects.filter(source=SourceData.WIKIPEDIA, agent=agent).exists():
-                # TODO: Something is happening to agent_name in the save that is stripping spaces and truncating, etc.
-                # Maybe get a better identifier?
-                Identifier.objects.create(source=Identifier.WIKIPEDIA, identifier=agent_name, agent=agent)
