@@ -34,7 +34,7 @@ class ArchivesSpaceDataFetcher:
                         self.save_data(Collection, 'collection', r, tree) #Not exactly sure how this is working
 
     def get_subjects(self):
-            for s in self.repo.subjects.with_params(all_ids=True, modified_since=self.last_run): #Not sure this will work, but want to work out general logic first
+            for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run): #Not sure this will work, but want to work out general logic first
                 if s.publish:
                     self.save_data(Term, 'term', s) # a little unsure about this line
 
