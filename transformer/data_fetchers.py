@@ -129,7 +129,7 @@ class ArchivesSpaceDataFetcher:
             source_data.data = data._json
             source_data.save()
         else:
-            object = cls.objects.create(source_tree=source_tree._json) if source_tree else cls.objects.create()
+            object = cls.objects.create(source_tree=source_tree.json()) if source_tree else cls.objects.create()
             Identifier.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
             SourceData.objects.create(**{key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
 
