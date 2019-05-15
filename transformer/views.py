@@ -1,4 +1,5 @@
 from django.urls import reverse
+from rest_framework.decorators import detail_route
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
@@ -26,6 +27,22 @@ class CollectionViewSet(ModelViewSet):
             return CollectionListSerializer
         return CollectionSerializer
 
+    @detail_route()
+    def identifiers(self, request, *args, **kwargs):
+        collection = self.get_object()
+        identifiers = Identifier.objects.filter(collection=collection)
+        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+        return Response(serializer.data)
+
+    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
+    def identifiers_detail(self, request, number=None, *args, **kwargs):
+        collection = self.get_object()
+        if Identifier.objects.filter(id=number, collection=collection).exists():
+            identifier = Identifier.objects.get(id=number, collection=collection)
+            serializer = IdentifierSerializer(identifier, context={'request': request})
+            return Response(serializer.data)
+        return Response("Identifier not found", status=404)
+
 
 class ObjectViewSet(ModelViewSet):
     """
@@ -42,6 +59,22 @@ class ObjectViewSet(ModelViewSet):
         if self.action == 'list':
             return ObjectListSerializer
         return ObjectSerializer
+
+    @detail_route()
+    def identifiers(self, request, *args, **kwargs):
+        object = self.get_object()
+        identifiers = Identifier.objects.filter(object=object)
+        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+        return Response(serializer.data)
+
+    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
+    def identifiers_detail(self, request, number=None, *args, **kwargs):
+        object = self.get_object()
+        if Identifier.objects.filter(id=number, object=object).exists():
+            identifier = Identifier.objects.get(id=number, object=object)
+            serializer = IdentifierSerializer(identifier, context={'request': request})
+            return Response(serializer.data)
+        return Response("Identifier not found", status=404)
 
 
 class AgentViewSet(ModelViewSet):
@@ -60,6 +93,22 @@ class AgentViewSet(ModelViewSet):
             return AgentListSerializer
         return AgentSerializer
 
+    @detail_route()
+    def identifiers(self, request, *args, **kwargs):
+        agent = self.get_object()
+        identifiers = Identifier.objects.filter(agent=agent)
+        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+        return Response(serializer.data)
+
+    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
+    def identifiers_detail(self, request, number=None, *args, **kwargs):
+        agent = self.get_object()
+        if Identifier.objects.filter(id=number, agent=agent).exists():
+            identifier = Identifier.objects.get(id=number, agent=agent)
+            serializer = IdentifierSerializer(identifier, context={'request': request})
+            return Response(serializer.data)
+        return Response("Identifier not found", status=404)
+
 
 class TermViewSet(ModelViewSet):
     """
@@ -76,6 +125,22 @@ class TermViewSet(ModelViewSet):
         if self.action == 'list':
             return TermListSerializer
         return TermSerializer
+
+    @detail_route()
+    def identifiers(self, request, *args, **kwargs):
+        term = self.get_object()
+        identifiers = Identifier.objects.filter(term=term)
+        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+        return Response(serializer.data)
+
+    @detail_route(url_path='identifiers/(?P<number>[0-9]+)')
+    def identifiers_detail(self, request, number=None, *args, **kwargs):
+        agent = self.get_object()
+        if Identifier.objects.filter(id=number, term=term).exists():
+            identifier = Identifier.objects.get(id=number, term=term)
+            serializer = IdentifierSerializer(identifier, context={'request': request})
+            return Response(serializer.data)
+        return Response("Identifier not found", status=404)
 
 
 class TransformRunViewSet(ModelViewSet):
