@@ -39,16 +39,8 @@ class ArchivesSpaceDataFetcher:
                     self.save_data(Term, 'term', s) # a little unsure about this line
 
     def get_agents(self):
-            for a in self.repo.agents["people"].with_params(all_ids=True, modified_since=self.last_run): #definitely sketchy, just want some logic here
-                if a.publish:
-                    self.save_data(Agent, 'agent', a)
-            for a in self.repo.agents["corporate_entities"].with_params(all_ids=True, modified_since=self.last_run):
-                if a.publish:
-                    self.save_data(Agent, 'agent', a)
-            for a in self.repo.agents["families"].with_params(all_ids=True, modified_since=self.last_run):
-                if a.publish:
-                    self.save_data(Agent, 'agent', a)
-            for a in self.repo.agents["software"].with_params(all_ids=True, modified_since=self.last_run):
+        for agent_type in ["people", "corporate_entities", "families", "software"]:
+            for a in self.aspace.agents[agent_type].with_params(all_ids=True, modified_since=self.last_run): #definitely sketchy, just want some logic here
                 if a.publish:
                     self.save_data(Agent, 'agent', a)
 
@@ -120,6 +112,12 @@ class ArchivesSpaceDataFetcher:
 
     # Generic function to save data.
     def save_data(self, cls, key, data, source_tree=None):
+        """
+        A generic function to save data. Takes the following arguments:
+        cls: an instance of a class (Agent, Term, Collection or Object)
+        key: a string representation of a relation key for Identifier and SourceData objects
+
+        """
         if cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri).exists():
             object = cls.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri)
             if source_tree:
