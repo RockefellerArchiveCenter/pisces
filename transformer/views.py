@@ -41,12 +41,12 @@ class CollectionViewSet(ModelViewSet):
         identifier = request.POST.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "collection": collection})
         if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(collection=collection, source=source, identifier=identifier).exists():
-                Identifier.objects.create(collection=collection, source=source, identifier=identifier,)
+            if not Identifier.objects.filter(collection=collection, source=source).exists():
+                Identifier.objects.create(collection=collection, source=source, identifier=identifier)
                 identifiers = Identifier.objects.filter(collection=collection)
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier already exists".format(source)}, status=400)
+            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
 
 
 class ObjectViewSet(ModelViewSet):
@@ -79,12 +79,12 @@ class ObjectViewSet(ModelViewSet):
         identifier = request.POST.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "object": object})
         if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(object=object, source=source, identifier=identifier).exists():
+            if not Identifier.objects.filter(object=object, source=source).exists():
                 Identifier.objects.create(object=object, source=source, identifier=identifier,)
                 identifiers = Identifier.objects.filter(object=object)
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier already exists".format(source)}, status=400)
+            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
 
 
 class AgentViewSet(ModelViewSet):
@@ -117,12 +117,12 @@ class AgentViewSet(ModelViewSet):
         identifier = request.POST.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "agent": agent})
         if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(agent=agent, source=source, identifier=identifier).exists():
+            if not Identifier.objects.filter(agent=agent, source=source).exists():
                 Identifier.objects.create(agent=agent, source=source, identifier=identifier,)
                 identifiers = Identifier.objects.filter(agent=agent)
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier already exists".format(source)}, status=400)
+            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
 
 
 class TermViewSet(ModelViewSet):
@@ -155,12 +155,12 @@ class TermViewSet(ModelViewSet):
         identifier = request.POST.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "term": term})
         if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(term=term, source=source, identifier=identifier).exists():
+            if not Identifier.objects.filter(term=term, source=source).exists():
                 Identifier.objects.create(term=term, source=source, identifier=identifier,)
                 identifiers = Identifier.objects.filter(term=term)
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier already exists".format(source)}, status=400)
+            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
 
 
 class IdentifierViewSet(ModelViewSet):
