@@ -250,12 +250,34 @@ class FetcherRunView(APIView):
     """Runs transformation routines."""
 
     def post(self, request, format=None):
+        source = request.GET.get('source')
+        object_type = request.GET.get('object_type')
         try:
-            for object_type in ['agents', 'resources', 'objects', 'terms']:
-                ArchivesSpaceDataFetcher(object_type).run()
-            # WikidataDataTransformer().run()
-            # WikipediaDataTransformer().run()
-            return Response({"detail": "Fetcher routines complete."}, status=200)
+            if source:
+                if source == 'archivesspace':
+                    if object_type:
+                        ArchivesSpaceDataFetcher(object_type).run()
+                    else:
+                        for object_type in ['agents', 'resources', 'subjects', 'objects']:
+                            ArchivesSpaceDataFetcher(object_type).run()
+                elif source == 'cartographer':
+                    CartographerDataFetcher().run()
+                elif source == 'wikidata':
+                    WikidataDataFetcher().run()
+                elif source == 'wikipedia':
+                    WikipediaDataFetcher().run()
+                else:
+                    return Response({"detail": "Unknown source {}.".format(source)}, status=400)
+                message = ("Fetch routines complete for source {}.".format(source) if not object_type
+                           else "Fetch routines complete for {} {}.".format(source, object_type))
+                return Response({"detail": message}, status=200)
+            else:
+                for object_type in ['agents', 'collections', 'objects', 'terms']:
+                    ArchivesSpaceDataFetcher(object_type).run()
+                CartographerDataFetcher().run()
+                WikidataDataFetcher().run()
+                WikipediaDataFetcher().run()
+                return Response({"detail": "Fetcher routines complete for all sources and object types."}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
