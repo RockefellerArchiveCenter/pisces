@@ -24,7 +24,7 @@ class CartographerDataTransformer:
             for collection in (Collection.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
                                if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
                 self.obj = collection
-                self.obj.refresh_from_db() # refresh fields in order to avoid overwriting tree_order
+                self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
                 self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
                 self.obj.title = self.source_data.get('title')
                 if self.source_data.get('parent'):
@@ -373,10 +373,8 @@ class WikidataDataTransformer:
                 print(self.agent)
                 self.source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=self.agent).data
                 if self.source_data.get('descriptions').get('en'):
-                    self.agent.description = self.source_data.get('descriptions').get('en')['value']
+                    self.notes('abstract', self.source_data.get('descriptions').get('en')['value'])
                 self.agent.image_url = self.image_url(self.source_data.get('claims').get('P18'))
-                if self.source_data.get('sitelinks').get('enwiki'):
-                    self.agent.wikipedia_url = self.source_data.get('sitelinks').get('enwiki')['url']
                 self.agent.save()
             except Exception as e:
                 print(e)
@@ -385,6 +383,16 @@ class WikidataDataTransformer:
         self.current_run.end_time = timezone.now()
         self.current_run.save()
         return True
+
+    def notes(self, note_type, content):
+        if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIDATA).exists():
+            note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIDATA)
+            note.subnote_set.all().delete()
+            note.title = title
+            note.save()
+        else:
+            note = Note.objects.create(type=note_type, title="Abstract", agent=self.agent, source=Note.WIKIDATA)
+        Subnote.objects.create(type='text', content=content, note=note)
 
     def image_url(self, image_prop):
         # https://stackoverflow.com/questions/34393884/how-to-get-image-url-property-from-wikidata-item-by-api

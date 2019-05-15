@@ -102,8 +102,6 @@ class Agent(models.Model):
     type = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     image_url = models.URLField(null=True, blank=True)
-    wikipedia_url = models.URLField(null=True, blank=True)
-    wikidata_id = models.CharField(max_length=100, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
