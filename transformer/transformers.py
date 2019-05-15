@@ -293,7 +293,7 @@ class ArchivesSpaceDataTransformer:
                 if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists():
                     term_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).term)
                 else:
-                    self.missing.append(term.get('ref'))
+                    raise ArchivesSpaceTransformError('Missing data for term {}'.format(term.get('ref')))
             self.obj.terms.clear()  # This could be problematic
             self.obj.terms.set(term_set)
         except Exception as e:
