@@ -31,10 +31,29 @@ class ArchivesSpaceDataFetcher:
             for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
                 if (r.publish and r.id_0.startswith('FA')):
                         tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
-                        self.save_data(Collection, 'collection', r, tree)
+                        self.save_data(Collection, 'collection', r, tree) #Not exactly sure how this is working
+
+    def get_subjects(self):
+            for s in self.repo.subjects.with_params(all_ids=True, modified_since=self.last_run): #Not sure this will work, but want to work out general logic first
+                if s.publish:
+                    self.save_data(Term, 'term', s) # a little unsure about this line
+
+    def get_agents(self):
+            for a in self.repo.agents["people"].with_params(all_ids=True, modified_since=self.last_run): #definitely sketchy, just want some logic here
+                if a.publish:
+                    self.save_data(Agent, 'agent', a)
+            for a in self.repo.agents["corporate_entities"].with_params(all_ids=True, modified_since=self.last_run):
+                if a.publish:
+                    self.save_data(Agent, 'agent', a)
+            for a in self.repo.agents["families"].with_params(all_ids=True, modified_since=self.last_run):
+                if a.publish:
+                    self.save_data(Agent, 'agent', a)
+            for a in self.repo.agents["software"].with_params(all_ids=True, modified_since=self.last_run):
+                if a.publish:
+                    self.save_data(Agent, 'agent', a)
 
     def get_objects(self):
-        for o in self.aspace.archival_objects.with_params(all_ids=True, modified_since=updated):
+        for o in self.repo.archival_objects.with_params(all_ids=True, modified_since=self.last_run):
             r = o.resource
             resource_id = o.get('resource').get('ref').split('/')[-1]
             with open(os.path.join(settings.BASE_DIR, source_filepath, 'trees', '{}.json'.format(resource_id))) as tf:
@@ -50,25 +69,6 @@ class ArchivesSpaceDataFetcher:
                         objects_check()
             if r.publish and o.publish:
                 pass
-
-    def get_subjects(self):
-            for s in self.aspace.subjects:
-                if s.publish and s.system_mtime > updated:
-                    term_check()
-
-    def get_agents(self):
-            for a in self.aspace.agents["people"]:
-                if a.publish and a.system_mtime > updated:
-                    agent_check()
-            for a in self.aspace.agents["corporate_entities"]:
-                if a.publish and a.system_mtime > updated:
-                    agent_check()
-            for a in self.aspace.agents["families"]:
-                if a.publish and a.system_mtime > updated:
-                    agent_check()
-            for a in self.aspace.agents["software"]:
-                if a.publish and a.system_mtime > updated:
-                    agent_check()
 
     #objects function
     def objects_check(self):
