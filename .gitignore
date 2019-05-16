@@ -2,6 +2,7 @@
 .archivessnake.yml
 *.pickle
 config.py
+source_data
 
 ### Django ###
 *.log

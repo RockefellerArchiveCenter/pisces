@@ -1,0 +1,63 @@
+{% extends "viewer/base.html" %}
+
+{% block title %}{{object.title}}{% endblock %}
+
+
+{% block content %}
+{% include 'viewer/common/breadcrumb.html' with ancestor=object.parent %}
+
+<div class="row">
+  <div class="col object__terms">
+    {% include 'viewer/common/term-tags.html' with terms=object.term_set.all %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8">
+    <div class="object__description">
+      {% for note in object.notes %}
+        {% if note.type == 'scopecontent' or note.type == 'abstract' %}
+          {% for subnote in note.subnote_set.all %}
+            {% for text in subnote.content %}
+              <p class="lead">{{text}}</p>
+            {% endfor %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="object__notes">
+      {% include 'viewer/common/notes.html' with notes=object.note_set.all %}
+    </div>
+    {% if object.rightsstatement_set.all %}
+    <div class="collection__rights">
+      <h2>Rights</h2>
+      {% include 'viewer/common/rights-list.html' with rights=object.rightsstatement_set.all %}
+    </div>
+    {% endif %}
+  </div>
+  <div class="col-4 object__details">
+    <div class="card">
+      <div class="card-header"><h2>Details</h2></div>
+      <div class="card-body">
+        <h3>Dates</h3>
+        {% include 'viewer/common/date-list.html' with dates=object.date_set.all %}
+        {% if object.extent_set.all %}
+        <hr/ >
+        <h3>Size</h3>
+        {% include 'viewer/common/extent-list.html' with extents=object.extent_set.all %}
+        {% endif %}
+        {% if object.languages.all %}
+        <hr/ >
+        <h3>Languages</h3>
+        {% include 'viewer/common/language-list.html' with languages=object.languages.all %}
+        {% endif %}
+        {% if object.agents.all %}
+        <hr/ >
+        <h3>Related Agents</h3>
+        {% include 'viewer/common/agent-list.html' with agents=object.agents.all %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

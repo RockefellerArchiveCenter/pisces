@@ -1,0 +1,20 @@
+{% extends "viewer/base.html" %}
+
+{% block title %}Agents{% endblock %}
+
+
+{% block content %}
+
+{% if agent_person %}
+  {% include 'viewer/common/category-card.html' with object_list=agent_person header="People" view='app:agent-detail' columns=3 %}
+{% endif %}
+
+{% if agent_corporate_entity %}
+  {% include 'viewer/common/category-card.html' with object_list=agent_corporate_entity header="Organizations" view='app:agent-detail' columns=2 %}
+{% endif %}
+
+{% if agent_family %}
+  {% include 'viewer/common/category-card.html' with object_list=agent_family header="Families" view='app:agent-detail' columns=3 %}
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{
+  "lock_version": 0,
+  "position": 8,
+  "publish": true,
+  "ref_id": "391d7e56582c7ac4e5784ea13063a102",
+  "title": "make it happen",
+  "display_string": "make it happen, 1973",
+  "restrictions_apply": false,
+  "created_by": "harnold",
+  "last_modified_by": "harnold",
+  "create_time": "2019-04-15T20:46:16Z",
+  "system_mtime": "2019-04-16T19:17:30Z",
+  "user_mtime": "2019-04-15T20:46:16Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1973",
+      "begin": "1973",
+      "end": "1973",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-15T20:46:16Z",
+      "system_mtime": "2019-04-15T20:46:16Z",
+      "user_mtime": "2019-04-15T20:46:16Z",
+      "date_type": "single",
+      "label": "other",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1098092",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/12332",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/1098102",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/12332"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1098092"
+  },
+  "has_unpublished_ancestor": false
+}

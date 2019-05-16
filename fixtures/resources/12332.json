@@ -1,0 +1,633 @@
+{
+  "lock_version": 7,
+  "title": "Subseries 1",
+  "publish": true,
+  "restrictions": false,
+  "created_by": "harnold",
+  "last_modified_by": "harnold",
+  "create_time": "2019-04-15T20:11:01Z",
+  "system_mtime": "2019-04-16T19:16:50Z",
+  "user_mtime": "2019-04-16T19:16:50Z",
+  "suppressed": false,
+  "id_0": "test1",
+  "language": "eng",
+  "level": "subseries",
+  "jsonmodel_type": "resource",
+  "external_ids": [],
+  "subjects": [
+    {
+      "ref": "/subjects/9"
+    },
+    {
+      "ref": "/subjects/443"
+    },
+    {
+      "ref": "/subjects/7379"
+    }
+  ],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "34",
+      "container_summary": "34 record cartons",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-16T19:17:29Z",
+      "system_mtime": "2019-04-16T19:17:29Z",
+      "user_mtime": "2019-04-16T19:17:29Z",
+      "portion": "whole",
+      "extent_type": "Cubic Feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1910-1968",
+      "begin": "1910",
+      "end": "1968",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-16T19:17:29Z",
+      "system_mtime": "2019-04-16T19:17:29Z",
+      "user_mtime": "2019-04-16T19:17:29Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    },
+    {
+      "lock_version": 0,
+      "begin": "1950",
+      "end": "1960",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-16T19:17:29Z",
+      "system_mtime": "2019-04-16T19:17:29Z",
+      "user_mtime": "2019-04-16T19:17:29Z",
+      "date_type": "bulk",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [
+    {
+      "lock_version": 0,
+      "identifier": "3cb7312d24a317e98c6916a30b053913",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-16T19:17:29Z",
+      "system_mtime": "2019-04-16T19:17:29Z",
+      "user_mtime": "2019-04-16T19:17:29Z",
+      "start_date": "1945-01-01",
+      "rights_type": "copyright",
+      "status": "copyrighted",
+      "jurisdiction": "US",
+      "jsonmodel_type": "rights_statement",
+      "external_documents": [],
+      "acts": [
+        {
+          "start_date": "1945-01-01",
+          "created_by": "harnold",
+          "last_modified_by": "harnold",
+          "create_time": "2019-04-16T19:17:29Z",
+          "system_mtime": "2019-04-16T19:17:29Z",
+          "user_mtime": "2019-04-16T19:17:29Z",
+          "act_type": "disseminate",
+          "restriction": "disallow",
+          "jsonmodel_type": "rights_statement_act",
+          "notes": [
+            {
+              "jsonmodel_type": "note_rights_statement_act",
+              "persistent_id": "389650bbbb58b64ec7734905ee83a39d",
+              "type": "restrictions",
+              "content": [
+                "You can't do anything with this."
+              ],
+              "publish": true
+            }
+          ]
+        }
+      ],
+      "linked_agents": [],
+      "notes": [
+        {
+          "jsonmodel_type": "note_rights_statement",
+          "persistent_id": "447d1388dbf1c4413537ebd4ad12d585",
+          "type": "additional_information",
+          "content": [
+            "Materials are under copyright."
+          ],
+          "publish": true
+        }
+      ]
+    },
+    {
+      "lock_version": 0,
+      "identifier": "33dca4c4a18dcd4223370934916d0a87",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-16T19:17:30Z",
+      "system_mtime": "2019-04-16T19:17:30Z",
+      "user_mtime": "2019-04-16T19:17:30Z",
+      "start_date": "1978-01-01",
+      "end_date": "1990-12-31",
+      "rights_type": "other",
+      "other_rights_basis": "donor",
+      "jsonmodel_type": "rights_statement",
+      "external_documents": [],
+      "acts": [
+        {
+          "start_date": "1990-12-31",
+          "created_by": "harnold",
+          "last_modified_by": "harnold",
+          "create_time": "2019-04-16T19:17:30Z",
+          "system_mtime": "2019-04-16T19:17:30Z",
+          "user_mtime": "2019-04-16T19:17:30Z",
+          "act_type": "disseminate",
+          "restriction": "allow",
+          "jsonmodel_type": "rights_statement_act",
+          "notes": [
+            {
+              "jsonmodel_type": "note_rights_statement_act",
+              "persistent_id": "fc1e00594d5b8a68c4b576c2fe3eb9ac",
+              "type": "permissions",
+              "content": [
+                "You can do whatever you want."
+              ],
+              "publish": true
+            }
+          ]
+        }
+      ],
+      "linked_agents": [],
+      "notes": [
+        {
+          "jsonmodel_type": "note_rights_statement",
+          "persistent_id": "1ab2f40f5ee5531c5b39811ae5d2f781",
+          "type": "additional_information",
+          "content": [
+            "Donor agreement has expired"
+          ],
+          "publish": true
+        }
+      ]
+    }
+  ],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "terms": [],
+      "ref": "/agents/people/147"
+    },
+    {
+      "role": "source",
+      "terms": [],
+      "ref": "/agents/corporate_entities/4884"
+    },
+    {
+      "role": "subject",
+      "terms": [],
+      "ref": "/agents/people/9051"
+    }
+  ],
+  "revision_statements": [],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "525951610041bae7cfb8d2d723e973b0",
+      "type": "abstract",
+      "content": [
+        "This is an abstract with very important content.",
+        "This is a second text element in the abstract, for some reason."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e534d8472dec38d108eeddc47edabc5c",
+      "label": "Accruals to the Collection",
+      "type": "accruals",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Here is some text for about accruals",
+          "publish": true
+        },
+        {
+          "jsonmodel_type": "note_orderedlist",
+          "title": "List of accruals",
+          "enumeration": "arabic",
+          "publish": true,
+          "items": [
+            "item 1",
+            "Item 2",
+            "item 3"
+          ]
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "be5269c46895471dda54c79876a13e40",
+      "type": "appraisal",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This is an appraisal note. Don't mess with this y'all.",
+          "publish": true
+        },
+        {
+          "jsonmodel_type": "note_chronology",
+          "title": "Chronology of accessions for some reason",
+          "publish": true,
+          "items": [
+            {
+              "event_date": "1978",
+              "events": [
+                "We got some stuff",
+                "Then we got some more stuff"
+              ]
+            },
+            {
+              "event_date": "1980",
+              "events": [
+                "Then something else happened"
+              ]
+            }
+          ]
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f52788c00fcfa08bccc3858d512e719c",
+      "type": "arrangement",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This is how things are arranged.",
+          "publish": true
+        },
+        {
+          "jsonmodel_type": "note_definedlist",
+          "title": "arrangement list",
+          "publish": true,
+          "items": [
+            {
+              "label": "alphabetical",
+              "value": "things are in alpha order"
+            },
+            {
+              "label": "numerical",
+              "value": "Things are in numerical order"
+            }
+          ]
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_bibliography",
+      "persistent_id": "ab0a8cff899dd637ceb352f5b215d05d",
+      "content": [
+        "Here's a bibliography which we have lovingly maintained"
+      ],
+      "items": [
+        "Awesome citation",
+        "Another key citation"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bec9d124e5b117d9caaed632e5231e2e",
+      "label": "Biography",
+      "type": "bioghist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This is a really insightful biography",
+          "publish": true
+        },
+        {
+          "jsonmodel_type": "note_text",
+          "content": "This is part II of this really insightful biography",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "572aad8f0f130291620c6267e149a7e6",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Can't touch this",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "459f76df54d27a8f2a9c16de72c7a3e8",
+      "type": "userestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "You can use this yo.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "944b023b3ae3c88b4e5aca2072bd433c",
+      "type": "custodhist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "I can't even begin to tell you about it.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d9a0b3e3002dcbd51622e8dc01f624ae",
+      "type": "dimensions",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Very big.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "326c4e6b79b3b73cf389127bfa5db130",
+      "type": "altformavail",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "There aren't any.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "22e5436e6c633ba912b060271e1b2447",
+      "type": "originalsloc",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "We can't tell you.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "52a955e5159e7693d07e105f7303c332",
+      "type": "fileplan",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "It's not logical and besides, you wouldn't understand.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9b4ab0eaad143ce42c0513e0e857ef0f",
+      "type": "odd",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "We're going to stuff a lot of things here just because.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "7fb52136582080f4f7a2928c8eef8f4d",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "From Nelson Rockefeller's attic.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_index",
+      "persistent_id": "996d7af13e748ff3c7c3d6406d3bf66d",
+      "content": [
+        "This is a content item",
+        "this is another content item"
+      ],
+      "items": [
+        {
+          "jsonmodel_type": "note_index_item",
+          "value": "This is an index value",
+          "type": "corporate_entity",
+          "reference": "reference",
+          "reference_text": "some reference text"
+        },
+        {
+          "jsonmodel_type": "note_index_item",
+          "value": "another index value",
+          "type": "function",
+          "reference": "another reference",
+          "reference_text": "some more reference text"
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "36c77102f305788accb909a5d24f9258",
+      "type": "langmaterial",
+      "content": [
+        "Mostly in English"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bc1d6756280ef19085b0a6101ea4aeeb",
+      "type": "legalstatus",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Copyrighted, don't even try it.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "ca08524be10b6d0b952635afc0ccb8ee",
+      "type": "materialspec",
+      "content": [
+        "Some very specific information about materials"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "0176d6d3fc7be8c29c3aa7699323ad99",
+      "type": "otherfindaid",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Binders and index cards, oh my!",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d1f205567100d9b18b3aafcd78e17a06",
+      "type": "phystech",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "You need to use VR to access this collection.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "c52e512e1a9f793fa901bc953b0c5be9",
+      "type": "physdesc",
+      "content": [
+        "This collection is swole."
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "a38c59203e9f12baf76b6880fadd56ee",
+      "type": "physfacet",
+      "content": [
+        "What's a facet?"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "39e88c0154dfc762a4117673b07a2718",
+      "type": "physloc",
+      "content": [
+        "In an undisclosed location"
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e55b6825a30b39742ea43ecb84534bed",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Something really long and nonstandard.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "325adb99298b5d1d8018d7f8d2786760",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "We did all kinds of stuff we're not going to tell you about",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "0e31cb531634b225bda987e908afc9ff",
+      "type": "relatedmaterial",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Look, this is so important everything is related.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "db1c3d8046e9357ee943561bf53f0f28",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Let us tell you all about this collection and why it matters.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "46f14bd6d2bd0372e0224bb53b509304",
+      "type": "separatedmaterial",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Nothing has been separated from this collection",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/resources/12332",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "tree": {
+    "ref": "/repositories/2/resources/12332/tree"
+  }
+}

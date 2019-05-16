@@ -1,0 +1,146 @@
+{
+  "lock_version": 0,
+  "position": 1,
+  "publish": true,
+  "ref_id": "89acb52dc9d3aa865bcf53e2d77b64b7",
+  "title": "This could be something",
+  "display_string": "This could be something, 1970",
+  "restrictions_apply": false,
+  "created_by": "harnold",
+  "last_modified_by": "harnold",
+  "create_time": "2019-04-15T20:46:15Z",
+  "system_mtime": "2019-04-16T19:17:30Z",
+  "user_mtime": "2019-04-15T20:46:15Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1970",
+      "begin": "1970",
+      "end": "1977",
+      "created_by": "harnold",
+      "last_modified_by": "harnold",
+      "create_time": "2019-04-15T20:46:15Z",
+      "system_mtime": "2019-04-15T20:46:15Z",
+      "user_mtime": "2019-04-15T20:46:15Z",
+      "date_type": "inclusive",
+      "label": "other",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [
+        {
+            "lock_version": 0,
+            "identifier": "bc818fe925414f77cb16efe3bc73d99b",
+            "created_by": "harnold",
+            "last_modified_by": "harnold",
+            "create_time": "2019-05-15T19:39:40Z",
+            "system_mtime": "2019-05-15T19:39:40Z",
+            "user_mtime": "2019-05-15T19:39:40Z",
+            "start_date": "2019-05-15",
+            "determination_date": "2019-05-15",
+            "rights_type": "copyright",
+            "status": "copyrighted",
+            "jurisdiction": "US",
+            "jsonmodel_type": "rights_statement",
+            "external_documents": [],
+            "acts": [
+                {
+                    "start_date": "2019-05-15",
+                    "created_by": "harnold",
+                    "last_modified_by": "harnold",
+                    "create_time": "2019-05-15T19:39:40Z",
+                    "system_mtime": "2019-05-15T19:39:40Z",
+                    "user_mtime": "2019-05-15T19:39:40Z",
+                    "act_type": "use",
+                    "restriction": "allow",
+                    "jsonmodel_type": "rights_statement_act",
+                    "notes": []
+                }
+            ],
+            "linked_agents": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_rights_statement",
+                    "type": "type_note",
+                    "content": [
+                        "Work for hire - copyright term 120 years from date of creation. Copyright held by the Rockefeller Foundation."
+                    ],
+                    "persistent_id": "e0b0efefee1c06c420dc811f9a97ab8c",
+                    "publish": true
+                }
+            ]
+        },
+        {
+            "lock_version": 0,
+            "identifier": "ca0e1d548d57eedb21ddcb073505eb98",
+            "created_by": "harnold",
+            "last_modified_by": "harnold",
+            "create_time": "2019-05-15T19:39:40Z",
+            "system_mtime": "2019-05-15T19:39:40Z",
+            "user_mtime": "2019-05-15T19:39:40Z",
+            "start_date": "2019-05-15",
+            "rights_type": "other",
+            "other_rights_basis": "policy",
+            "jsonmodel_type": "rights_statement",
+            "external_documents": [],
+            "acts": [
+                {
+                    "start_date": "2019-05-15",
+                    "created_by": "harnold",
+                    "last_modified_by": "harnold",
+                    "create_time": "2019-05-15T19:39:40Z",
+                    "system_mtime": "2019-05-15T19:39:40Z",
+                    "user_mtime": "2019-05-15T19:39:40Z",
+                    "act_type": "disseminate",
+                    "restriction": "allow",
+                    "jsonmodel_type": "rights_statement_act",
+                    "notes": []
+                }
+            ],
+            "linked_agents": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_rights_statement",
+                    "type": "type_note",
+                    "content": [
+                        "International Education Board records are open to research."
+                    ],
+                    "persistent_id": "72166d5d15667d64a128c6830dd89f8d",
+                    "publish": true
+                }
+            ]
+        }
+    ],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/1098092",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/12332",
+      "level": "subseries"
+    }
+  ],
+  "instances": [],
+  "notes": [],
+  "uri": "/repositories/2/archival_objects/1098095",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/12332"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/1098092"
+  },
+  "has_unpublished_ancestor": false
+}
