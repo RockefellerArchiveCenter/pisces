@@ -1,5 +1,6 @@
 import os
 import json
+import requests
 
 from asnake.aspace import ASpace
 from wikipediaapi import Wikipedia
@@ -79,6 +80,39 @@ class ArchivesSpaceDataFetcher:
             object = cls.objects.create(source_tree=source_tree.json()) if source_tree else cls.objects.create()
             Identifier.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
             SourceData.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
+
+
+class CartographerDataFetcher:
+    def __init__(self):
+        ## TODO: add client
+        self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).order_by('-start_time')[0].start_time.timestamp()
+                         if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).exists()
+                         else 0)
+        self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
+
+    def run(self):
+        self.get_maps()
+        self.current_run.status = FetchRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+
+    def get_maps(self):
+        for map in requests.get('http://localhost:8007/maps?updated_since={}'.format(self.last_run)):
+            print(map)
+            try:
+                m = requests.get(map.url)
+                process_tree_item(m)
+            except Exception as e:
+                FetchRunError(run=self.current_run, message="Error fetching map: {}".format(e))
+
+    def process_tree_item(self, data):
+        if not Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=data.get('ref')).exists():
+            c = Collection.objects.create(source_tree=data)
+            SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
+            Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
+        for collection in data.get('children'):
+            if 'maps' in collection.get('ref'):
+                process_tree_item(collection)
 
 
 class WikidataDataFetcher:
