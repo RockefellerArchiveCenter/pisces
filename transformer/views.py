@@ -285,18 +285,18 @@ class FetcherRunView(APIView):
 class FindByIDView(APIView):
     """Gets objects by ID."""
     def get(self, request, format=None):
-        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
+        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
         identifier = request.GET.get('identifier')
         if source and identifier:
-            s = getattr(Identifier, source.upper())
-            if Identifier.objects.filter(identifier=identifier, source=s).exists():
-                identifier = Identifier.objects.get(identifier=identifier, source=s)
-                results = []
+            if Identifier.objects.filter(identifier=identifier, source=source).exists():
+                identifier = Identifier.objects.get(identifier=identifier, source=source)
+                data = {"count": 0, "results": []}
                 for relation in ['collection', 'object', 'agent', 'term']:
                     object = getattr(identifier, relation)
                     if object:
-                        results.append({"ref": reverse("{}-detail".format(relation), kwargs={"pk": object.pk}), "type": relation})
-                return Response(results, status=200)
+                        data['results'].append({"ref": reverse("{}-detail".format(relation), kwargs={"pk": object.pk}), "type": relation})
+                        data['count'] += 1
+                return Response(data, status=200)
             return Response({"detail": "Identifier {} from {} not found".format(identifier, source)}, status=404)
         return Response({"detail": "You must include both a source and an identifier as URL parameters"}, status=400)
 
