@@ -5,16 +5,18 @@ import requests
 from asnake.aspace import ASpace
 from wikipediaapi import Wikipedia
 from wikidata.client import Client as wd_client
+from electronbonder.client import ElectronBond
 
 from .models import *
+from pisces import settings
 
 
 class ArchivesSpaceDataFetcher:
     def __init__(self, object_type):
         self.aspace = ASpace(
-                      baseurl='http://192.168.50.4:8089',
-                      user='admin',
-                      password='admin')
+                      baseurl=settings.ARCHIVESSPACE['baseurl'],
+                      user=settings.ARCHIVESSPACE['user'],
+                      password=settings.ARCHIVESSPACE['password'])
         self.repo = self.aspace.repositories(2)
         self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time.timestamp()
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
@@ -32,16 +34,16 @@ class ArchivesSpaceDataFetcher:
             for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
                 if (r.publish and r.id_0.startswith('FA')):
                         tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
-                        self.save_data(Collection, 'collection', r, tree) #Not exactly sure how this is working
+                        self.save_data(Collection, 'collection', r, tree)
 
     def get_subjects(self):
-            for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run): #Not sure this will work, but want to work out general logic first
+            for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run):
                 if s.publish:
-                    self.save_data(Term, 'term', s) # a little unsure about this line
+                    self.save_data(Term, 'term', s)
 
     def get_agents(self):
         for agent_type in ["people", "corporate_entities", "families", "software"]:
-            for a in self.aspace.agents[agent_type].with_params(all_ids=True, modified_since=self.last_run): #definitely sketchy, just want some logic here
+            for a in self.aspace.agents[agent_type].with_params(all_ids=True, modified_since=self.last_run):
                 if a.publish:
                     self.save_data(Agent, 'agent', a)
 
@@ -84,7 +86,7 @@ class ArchivesSpaceDataFetcher:
 
 class CartographerDataFetcher:
     def __init__(self):
-        ## TODO: add client
+        self.client = ElectronBond(baseurl=settings.CARTOGRAPHER['baseurl'], user=settings.CARTOGRAPHER['user'], password=settings.CARTOGRAPHER['password'])
         self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).order_by('-start_time')[0].start_time.timestamp()
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).exists()
                          else 0)
@@ -97,10 +99,10 @@ class CartographerDataFetcher:
         self.current_run.save()
 
     def get_maps(self):
-        for map in requests.get('http://localhost:8007/maps?updated_since={}'.format(self.last_run)):
+        for map in self.client.get('/maps', params={"updated_since": self.last_run}):
             print(map)
             try:
-                m = requests.get(map.url)
+                m = self.client.get(map.url)
                 process_tree_item(m)
             except Exception as e:
                 FetchRunError(run=self.current_run, message="Error fetching map: {}".format(e))

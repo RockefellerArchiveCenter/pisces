@@ -4,10 +4,10 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
-from .fetchers import ArchivesSpaceDataFetcher, WikidataDataFetcher, WikipediaDataFetcher
+from .fetchers import *
 from .models import Collection, Object, Agent, Term, TransformRun, FetchRun
 from .serializers import *
-from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer, WikidataDataTransformer, WikipediaDataTransformer
+from .transformers import *
 from .test_library import import_fixture_data
 
 

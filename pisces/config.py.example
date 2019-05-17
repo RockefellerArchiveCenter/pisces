@@ -7,3 +7,15 @@ DATABASES = {
         'PORT': 5432,
     }
 }
+
+ARCHIVESSPACE = {
+    "baseurl": "http://sandbox.archivesspace.org/api",
+    "user": "admin",
+    "password": "admin",
+}
+
+CARTOGRAPHER = {
+    "baseurl": "http://localhost:8007",
+    "user": "admin",
+    "password": "admin",
+}

@@ -11,6 +11,7 @@ coreschema==0.0.4
 Django==2.0.13
 djangorestframework==3.9.2
 drf-yasg==1.15.0
+ElectronBonder==0.5
 gitdb2==2.0.5
 GitPython==2.1.11
 health-check==3.4.1
