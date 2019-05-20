@@ -26,7 +26,7 @@ class TransformTest(TestCase):
     def fetchers(self):
         FETCHER_MAP = [
             # (ArchivesSpaceDataFetcher, 'archivesspace_fetch.json', 'ARCHIVESSPACE'),
-            (CartographerDataFetcher, 'cartographer_fetch.json', 'CARTOGRAPHER'),
+            (CartographerDataFetcher, 'cartographer_fetch.yml', 'CARTOGRAPHER'),
             (WikidataDataFetcher, 'wikidata_fetch.yml', 'WIKIDATA'),
             (WikipediaDataFetcher, 'wikipedia_fetch.yml', 'WIKIPEDIA'),
         ]
