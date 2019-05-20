@@ -13,10 +13,9 @@ from pisces import settings
 
 class ArchivesSpaceDataFetcher:
     def __init__(self, object_type):
-        self.aspace = ASpace(
-                      baseurl=settings.ARCHIVESSPACE['baseurl'],
-                      user=settings.ARCHIVESSPACE['user'],
-                      password=settings.ARCHIVESSPACE['password'])
+        self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
+                             user=settings.ARCHIVESSPACE['user'],
+                             password=settings.ARCHIVESSPACE['password'])
         self.repo = self.aspace.repositories(2)
         self.last_run = (FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time.timestamp()
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
@@ -29,6 +28,7 @@ class ArchivesSpaceDataFetcher:
         self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
+        return True
 
     def get_resources(self):
             for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
@@ -91,21 +91,28 @@ class CartographerDataFetcher:
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).exists()
                          else 0)
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
+        try:
+            resp = self.client.get('/status/')
+            if resp.status_code != 200:
+                FetchRunError.objects.create(run=self.current_run, message="Cartographer status endpoint is not available. Service may be down.")
+        except Exception as e:
+            FetchRunError.objects.create(run=self.current_run, message="Cartographer is not available.")
 
     def run(self):
         self.get_maps()
         self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
+        return True
 
     def get_maps(self):
-        for map in self.client.get('/maps', params={"updated_since": self.last_run}):
+        for map in self.client.get('/maps/', params={"updated_since": self.last_run}):
             print(map)
             try:
                 m = self.client.get(map.url)
                 process_tree_item(m)
             except Exception as e:
-                FetchRunError(run=self.current_run, message="Error fetching map: {}".format(e))
+                FetchRunError.objects.create(run=self.current_run, message="Error fetching map: {}".format(e))
 
     def process_tree_item(self, data):
         if not Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=data.get('ref')).exists():

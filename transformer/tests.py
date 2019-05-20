@@ -1,44 +1,81 @@
+import vcr
+
 from django.test import Client, TestCase
 from django.urls import reverse
 
-from .test_library import import_fixture_data
+from .test_library import import_fixture_data, add_wikidata_ids, add_wikipedia_ids
 from .models import TransformRun, TransformRunError
-from .transformers import ArchivesSpaceDataTransformer, CartographerDataTransformer
+from .transformers import *
+
+fetch_vcr = vcr.VCR(
+    serializer='json',
+    cassette_library_dir='fixtures/cassettes',
+    record_mode='once',
+    match_on=['path', 'method', 'query'],
+    filter_query_parameters=['username', 'password'],
+    filter_headers=['Authorization'],
+)
 
 
 class TransformTest(TestCase):
     def setUp(self):
         self.client = Client()
+        import_fixture_data()
 
-    def import_endpoint(self):
-        print("*** Testing import endpoint ***")
-        response = self.client.post(reverse('import-data'))
-        self.assertEqual(response.status_code, 200)
+    def fetchers(self):
+        FETCHER_MAP = [
+            # (ArchivesSpaceDataFetcher, 'archivesspace_fetch.json', 'ARCHIVESSPACE'),
+            # (CartographerDataFetcher, 'cartographer_fetch.json', 'CARTOGRAPHER'),
+            # (WikidataDataFetcher, 'wikidata_fetch.json', 'WIKIDATA'),
+            # (WikipediaDataFetcher, 'wikipedia_fetch.json', 'WIKIPEDIA'),
+        ]
+        for fetcher in FETCHER_MAP:
+            if fetch[2] == 'WIKIDATA': add_wikidata_ids()
+            if fetch[2] == 'WIKIPEDIA': add_wikipedia_ids()
+            fetch_source = getattr(FetchRun, fetcher[2])
+            source_source = getattr(Source, fetcher[2])
+            identifier_source = getattr(Identifier, fetcher[2])
+            with fetch_vcr.use_cassette(fetcher[1]):
+                run = fetcher[0]().run()
+            self.assertTrue(run)
+            self.assertEqual(len(FetchRun.objects.filter(source=fetch_source)), 1)
+            fetch_obj = FetchRun.objects.get(source=fetch_source)
+            self.assertEqual(fetch_obj.status, FetchRun.FINISHED)
+            self.assertEqual(len(FetchRunError.objects.filter(run=run)), 0)
+            self.assertTrue(len(SourceData.objects.filter(source=source_source)) > 0)
+            self.assertTrue(len(Identifier.objects.filter(source=identifier_source)) > 0)
+            self.assertEqual(len(SourceData.objects.filter(source=source_source)), len(Identifier.objects.filter(source=identifier_source)))
 
     def archivesspace_transform(self):
-        print("*** Testing ArchivesSpace transforms ***")
-        run_number = 1
         for object_type in ['agents', 'collections', 'objects', 'terms']:
             run = ArchivesSpaceDataTransformer(object_type).run()
             self.assertTrue(run)
-            self.assertEqual(len(TransformRun.objects.all()), run_number)
-            self.assertEqual(len(TransformRunError.objects.all()), 0)
-            run_number += 1
-
-    def cartographer_transform(self):
-        print("*** Testing Cartographer transforms ***")
-        run = CartographerDataTransformer().run()
-        self.assertTrue(run)
+        self.assertEqual(len(TransformRun.objects.all()), 4)
         self.assertEqual(len(TransformRunError.objects.all()), 0)
+
+    def transformers(self):
+        TRANSFORMER_MAP = [
+            (CartographerDataTransformer, 'CARTOGRAPHER'),
+            (WikidataDataTransformer, 'WIKIDATA'),
+            (WikipediaDataTransformer, 'WIKIPEDIA'),
+        ]
+        for transformer in TRANSFORMER_MAP:
+            transform_source = getattr(TransformRun, transformer[1])
+            id_source = getattr(Identifier, transformer[1])
+            run = transformer[0]().run()
+            self.assertTrue(run)
+            self.assertEqual(len(TransformRun.objects.filter(source=transform_source)), 1)
+            transform_obj = TransformRun.objects.get(source=transform_source)
+            self.assertEqual(int(transform_obj.status), TransformRun.FINISHED)
+            self.assertEqual(len(TransformRunError.objects.filter(run=run)), 0)
 
     def transform_endpoint(self):
         print("*** Testing transform endpoint ***")
-        for endpoint in ['transform-data', 'import-data']:
-            response = self.client.post(reverse(endpoint))
-            self.assertEqual(response.status_code, 200)
+        response = self.client.post(reverse('transform-data'))
+        self.assertEqual(response.status_code, 200)
 
     def test_transforms(self):
-        self.import_endpoint()
+        self.fetchers()
         self.archivesspace_transform()
-        self.cartographer_transform()
+        self.transformers()
         self.transform_endpoint()
