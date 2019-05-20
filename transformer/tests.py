@@ -46,15 +46,9 @@ class TransformTest(TestCase):
             self.assertTrue(len(Identifier.objects.filter(source=identifier_source)) > 0)
             self.assertEqual(len(SourceData.objects.filter(source=source_source)), len(Identifier.objects.filter(source=identifier_source)))
 
-    def archivesspace_transform(self):
-        for object_type in ['agents', 'collections', 'objects', 'terms']:
-            run = ArchivesSpaceDataTransformer(object_type).run()
-            self.assertTrue(run)
-        self.assertEqual(len(TransformRun.objects.all()), 4)
-        self.assertEqual(len(TransformRunError.objects.all()), 0)
-
     def transformers(self):
         TRANSFORMER_MAP = [
+            (ArchivesSpaceDataTransformer, 'ARCHIVESSPACE'),
             (CartographerDataTransformer, 'CARTOGRAPHER'),
             (WikidataDataTransformer, 'WIKIDATA'),
             (WikipediaDataTransformer, 'WIKIPEDIA'),
@@ -76,6 +70,5 @@ class TransformTest(TestCase):
 
     def test_transforms(self):
         self.fetchers()
-        self.archivesspace_transform()
         self.transformers()
         self.transform_endpoint()

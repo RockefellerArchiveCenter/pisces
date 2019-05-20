@@ -75,14 +75,8 @@ class CartographerDataTransformer:
 
 
 class ArchivesSpaceDataTransformer:
-    def __init__(self, object_type):
-        CLS_MAP = {
-            "agents": [Agent, 'agent'],
-            "collections": [Collection, 'collection'],
-            "objects": [Object, 'object'],
-            "terms": [Term, 'term']}
-        self.cls = CLS_MAP[object_type][0]
-        self.key = CLS_MAP[object_type][1]
+    def __init__(self, object_type=None):
+        self.object_types = [object_type] if object_type else ['agents', 'collections', 'objects', 'terms']
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED,
                                                      source=TransformRun.ARCHIVESSPACE,
                                                      object_type=object_type).order_by('-start_time')[0].start_time
@@ -92,16 +86,24 @@ class ArchivesSpaceDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
-        for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
-                    if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
-            self.obj = obj
-            print(self.obj)
-            self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-            self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
-            getattr(self, "transform_to_{}".format(self.key))()
-        self.current_run.status = TransformRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
+        for object_type in self.object_types:
+            CLS_MAP = {
+                "agents": [Agent, 'agent'],
+                "collections": [Collection, 'collection'],
+                "objects": [Object, 'object'],
+                "terms": [Term, 'term']}
+            self.cls = CLS_MAP[object_type][0]
+            self.key = CLS_MAP[object_type][1]
+            for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
+                        if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
+                self.obj = obj
+                print(self.obj)
+                self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
+                self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
+                getattr(self, "transform_to_{}".format(self.key))()
+            self.current_run.status = TransformRun.FINISHED
+            self.current_run.end_time = timezone.now()
+            self.current_run.save()
         return True
 
     def datetime_from_string(self, date_string):

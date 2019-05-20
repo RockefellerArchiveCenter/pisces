@@ -219,11 +219,7 @@ class TransformerRunView(APIView):
         try:
             if source:
                 if source == 'archivesspace':
-                    if object_type:
-                        ArchivesSpaceDataTransformer(object_type).run()
-                    else:
-                        for object_type in ['agents', 'collections', 'objects', 'terms']:
-                            ArchivesSpaceDataTransformer(object_type).run()
+                    ArchivesSpaceDataTransformer(object_type).run()
                 elif source == 'cartographer':
                     CartographerDataTransformer().run()
                 elif source == 'wikidata':
@@ -236,8 +232,7 @@ class TransformerRunView(APIView):
                            else "Transformation routines complete for {} {}.".format(source, object_type))
                 return Response({"detail": message}, status=200)
             else:
-                for object_type in ['agents', 'collections', 'objects', 'terms']:
-                    ArchivesSpaceDataTransformer(object_type).run()
+                ArchivesSpaceDataTransformer(object_type).run()
                 CartographerDataTransformer().run()
                 WikidataDataTransformer().run()
                 WikipediaDataTransformer().run()
