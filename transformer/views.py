@@ -173,7 +173,7 @@ class IdentifierViewSet(ModelViewSet):
     """
     model = Identifier
     queryset = Identifier.objects.all().order_by('-modified')
-    serializer = IdentifierSerializer
+    serializer_class = IdentifierSerializer
 
 
 class TransformRunViewSet(ModelViewSet):

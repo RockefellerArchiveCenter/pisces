@@ -12,6 +12,7 @@ ARCHIVESSPACE = {
     "baseurl": "http://sandbox.archivesspace.org/api",
     "user": "admin",
     "password": "admin",
+    "repo": 2,
 }
 
 CARTOGRAPHER = {

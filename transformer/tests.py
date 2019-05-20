@@ -14,7 +14,7 @@ fetch_vcr = vcr.VCR(
     record_mode='once',
     match_on=['path', 'method', 'query'],
     filter_query_parameters=['username', 'password'],
-    filter_headers=['Authorization'],
+    filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
 
@@ -25,7 +25,7 @@ class TransformTest(TestCase):
 
     def fetchers(self):
         FETCHER_MAP = [
-            # (ArchivesSpaceDataFetcher, 'archivesspace_fetch.json', 'ARCHIVESSPACE'),
+            (ArchivesSpaceDataFetcher, 'archivesspace_fetch.yml', 'ARCHIVESSPACE'),
             (CartographerDataFetcher, 'cartographer_fetch.yml', 'CARTOGRAPHER'),
             (WikidataDataFetcher, 'wikidata_fetch.yml', 'WIKIDATA'),
             (WikipediaDataFetcher, 'wikipedia_fetch.yml', 'WIKIPEDIA'),
