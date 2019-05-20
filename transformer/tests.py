@@ -5,6 +5,7 @@ from django.urls import reverse
 
 from .test_library import import_fixture_data, add_wikidata_ids, add_wikipedia_ids
 from .models import TransformRun, TransformRunError
+from .fetchers import *
 from .transformers import *
 
 fetch_vcr = vcr.VCR(
@@ -25,26 +26,25 @@ class TransformTest(TestCase):
     def fetchers(self):
         FETCHER_MAP = [
             # (ArchivesSpaceDataFetcher, 'archivesspace_fetch.json', 'ARCHIVESSPACE'),
-            # (CartographerDataFetcher, 'cartographer_fetch.json', 'CARTOGRAPHER'),
+            (CartographerDataFetcher, 'cartographer_fetch.json', 'CARTOGRAPHER'),
             # (WikidataDataFetcher, 'wikidata_fetch.json', 'WIKIDATA'),
             # (WikipediaDataFetcher, 'wikipedia_fetch.json', 'WIKIPEDIA'),
         ]
         for fetcher in FETCHER_MAP:
-            if fetch[2] == 'WIKIDATA': add_wikidata_ids()
-            if fetch[2] == 'WIKIPEDIA': add_wikipedia_ids()
+            if fetcher[2] == 'WIKIDATA': add_wikidata_ids()
+            if fetcher[2] == 'WIKIPEDIA': add_wikipedia_ids()
             fetch_source = getattr(FetchRun, fetcher[2])
-            source_source = getattr(Source, fetcher[2])
+            source_source = getattr(SourceData, fetcher[2])
             identifier_source = getattr(Identifier, fetcher[2])
             with fetch_vcr.use_cassette(fetcher[1]):
                 run = fetcher[0]().run()
             self.assertTrue(run)
             self.assertEqual(len(FetchRun.objects.filter(source=fetch_source)), 1)
             fetch_obj = FetchRun.objects.get(source=fetch_source)
-            self.assertEqual(fetch_obj.status, FetchRun.FINISHED)
+            self.assertEqual(int(fetch_obj.status), FetchRun.FINISHED)
             self.assertEqual(len(FetchRunError.objects.filter(run=run)), 0)
             self.assertTrue(len(SourceData.objects.filter(source=source_source)) > 0)
             self.assertTrue(len(Identifier.objects.filter(source=identifier_source)) > 0)
-            self.assertEqual(len(SourceData.objects.filter(source=source_source)), len(Identifier.objects.filter(source=identifier_source)))
 
     def transformers(self):
         TRANSFORMER_MAP = [

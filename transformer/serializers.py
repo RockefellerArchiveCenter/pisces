@@ -230,7 +230,7 @@ class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
         return [o[1] for o in obj.SOURCE_CHOICES if o[0] == int(obj.source)][0]
 
     def get_status(self, obj):
-        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.source)][0]
+        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.status)][0]
 
 
 class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
@@ -245,7 +245,7 @@ class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
         return [o[1] for o in obj.SOURCE_CHOICES if o[0] == int(obj.source)][0]
 
     def get_status(self, obj):
-        return obj.STATUS_CHOICES[int(obj.status)][1]
+        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.status)][0]
 
 
 class FetchRunSerializer(serializers.HyperlinkedModelSerializer):
@@ -269,7 +269,7 @@ class FetchRunListSerializer(serializers.HyperlinkedModelSerializer):
     status = serializers.SerializerMethodField()
 
     class Meta:
-        model = TransformRun
+        model = FetchRun
         fields = ('url', 'status', 'source', 'object_type')
 
     def get_source(self, obj):

@@ -28,7 +28,7 @@ def import_fixture_data(source_filepath=None):
 
     for d in os.listdir(source_filepath):
         # Handle data from ArchivesSpace
-        if (d not in ['trees', 'maps']) and os.path.isdir(os.path.join(source_filepath, d)):
+        if (d not in ['trees', 'maps', 'cassettes']) and os.path.isdir(os.path.join(source_filepath, d)):
             cls = TYPE_MAP[d][0]
             key = TYPE_MAP[d][1]
             for f in os.listdir(os.path.join(source_filepath, d)):

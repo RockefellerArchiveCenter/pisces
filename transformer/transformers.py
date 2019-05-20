@@ -25,15 +25,16 @@ class CartographerDataTransformer:
                                if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
                 self.obj = collection
                 self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-                self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
-                self.obj.title = self.source_data.get('title')
-                if self.source_data.get('parent'):
-                    self.parent(self.source_data.get('parent'))
-                self.obj.save()
-                if self.source_data.get('children'):
-                    self.children(self.source_data.get('children'))
-                    if not self.obj.parent:
-                        self.process_tree(self.source_data)
+                if SourceData.objects.filter(collection=self.obj, source=SourceData.CARTOGRAPHER).exists():
+                    self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
+                    self.obj.title = self.source_data.get('title')
+                    if self.source_data.get('parent'):
+                        self.parent(self.source_data.get('parent'))
+                    self.obj.save()
+                    if self.source_data.get('children'):
+                        self.children(self.source_data.get('children'))
+                        if not self.obj.parent:
+                            self.process_tree(self.source_data)
             self.current_run.status = TransformRun.FINISHED
             self.current_run.end_time = timezone.now()
             self.current_run.save()
@@ -45,8 +46,10 @@ class CartographerDataTransformer:
     def children(self, children):
         for child in children:
             if not child.get('children'):
-                c = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
-                                           identifier__identifier=child.get('ref', child.get('id')))
+                identifier = child.get('ref', child.get('url'))
+                source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
+                c = Collection.objects.get(identifier__source=source,
+                                           identifier__identifier=identifier)
                 c.parent = self.obj
                 c.save()
 
@@ -97,10 +100,10 @@ class ArchivesSpaceDataTransformer:
             for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
                         if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
                 self.obj = obj
-                print(self.obj)
                 self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-                self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
-                getattr(self, "transform_to_{}".format(self.key))()
+                if SourceData.objects.filter(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).exists():
+                    self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
+                    getattr(self, "transform_to_{}".format(self.key))()
             self.current_run.status = TransformRun.FINISHED
             self.current_run.end_time = timezone.now()
             self.current_run.save()

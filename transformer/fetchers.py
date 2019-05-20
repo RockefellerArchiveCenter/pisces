@@ -3,6 +3,7 @@ import json
 import requests
 
 from asnake.aspace import ASpace
+from django.utils import timezone
 from wikipediaapi import Wikipedia
 from wikidata.client import Client as wd_client
 from electronbonder.client import ElectronBond
@@ -21,13 +22,14 @@ class ArchivesSpaceDataFetcher:
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
                          else 0)
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.ARCHIVESSPACE, object_type=object_type)
-        self.object_type = object_type
+        self.object_types = [object_type] if object_type else ['resources', 'subjects', 'agents', 'objects']
 
     def run(self):
-        getattr(self, "get_{}".format(self.object_type))()
-        self.current_run.status = FetchRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
+        for object_type in self.object_types:
+            getattr(self, "get_{}".format(object_type))()
+            self.current_run.status = FetchRun.FINISHED
+            self.current_run.end_time = timezone.now()
+            self.current_run.save()
         return True
 
     def get_resources(self):
@@ -93,7 +95,7 @@ class CartographerDataFetcher:
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
         try:
             resp = self.client.get('/status/')
-            if resp.status_code != 200:
+            if not resp.status_code:
                 FetchRunError.objects.create(run=self.current_run, message="Cartographer status endpoint is not available. Service may be down.")
         except Exception as e:
             FetchRunError.objects.create(run=self.current_run, message="Cartographer is not available.")
@@ -106,22 +108,24 @@ class CartographerDataFetcher:
         return True
 
     def get_maps(self):
-        for map in self.client.get('/maps/', params={"updated_since": self.last_run}):
-            print(map)
+        for map in self.client.get('/api/maps/', params={"updated_since": self.last_run}).json()['results']:
             try:
-                m = self.client.get(map.url)
-                process_tree_item(m)
+                m = self.client.get(map.get('url')).json()
+                self.process_map_item(m)
             except Exception as e:
                 FetchRunError.objects.create(run=self.current_run, message="Error fetching map: {}".format(e))
 
-    def process_tree_item(self, data):
-        if not Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=data.get('ref')).exists():
+    def process_map_item(self, data):
+        identifier = data.get('ref', data.get('url'))
+        source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
+        print(source, identifier)
+        if not Collection.objects.filter(identifier__source=source, identifier__identifier=identifier).exists():
             c = Collection.objects.create(source_tree=data)
             SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
-            Identifier.objects.create(collection=c, source=Identifier.CARTOGRAPHER, identifier=data.get('ref'))
-        for collection in data.get('children'):
-            if 'maps' in collection.get('ref'):
-                process_tree_item(collection)
+            Identifier.objects.create(collection=c, source=source, identifier=identifier)
+        if data.get('children'):
+            for item in data.get('children'):
+                self.process_map_item(item)
 
 
 class WikidataDataFetcher:
