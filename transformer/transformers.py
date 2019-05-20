@@ -393,11 +393,11 @@ class WikidataDataTransformer:
         if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIDATA).exists():
             note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIDATA)
             note.subnote_set.all().delete()
-            note.title = title
+            note.title = "Abstract"
             note.save()
         else:
             note = Note.objects.create(type=note_type, title="Abstract", agent=self.agent, source=Note.WIKIDATA)
-        Subnote.objects.create(type='text', content=content, note=note)
+        Subnote.objects.create(type='text', content=[content], note=note)
 
     def image_url(self, image_prop):
         # https://stackoverflow.com/questions/34393884/how-to-get-image-url-property-from-wikidata-item-by-api

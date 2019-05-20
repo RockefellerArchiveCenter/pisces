@@ -9,7 +9,7 @@ from .fetchers import *
 from .transformers import *
 
 fetch_vcr = vcr.VCR(
-    serializer='json',
+    serializer='yaml',
     cassette_library_dir='fixtures/cassettes',
     record_mode='once',
     match_on=['path', 'method', 'query'],
@@ -27,8 +27,8 @@ class TransformTest(TestCase):
         FETCHER_MAP = [
             # (ArchivesSpaceDataFetcher, 'archivesspace_fetch.json', 'ARCHIVESSPACE'),
             (CartographerDataFetcher, 'cartographer_fetch.json', 'CARTOGRAPHER'),
-            # (WikidataDataFetcher, 'wikidata_fetch.json', 'WIKIDATA'),
-            # (WikipediaDataFetcher, 'wikipedia_fetch.json', 'WIKIPEDIA'),
+            (WikidataDataFetcher, 'wikidata_fetch.yml', 'WIKIDATA'),
+            (WikipediaDataFetcher, 'wikipedia_fetch.yml', 'WIKIPEDIA'),
         ]
         for fetcher in FETCHER_MAP:
             if fetcher[2] == 'WIKIDATA': add_wikidata_ids()
