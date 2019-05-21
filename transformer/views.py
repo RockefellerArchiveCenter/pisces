@@ -37,8 +37,8 @@ class CollectionViewSet(ModelViewSet):
     @identifiers.mapping.post
     def add_identifier(self, request, pk=None):
         collection = self.get_object()
-        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
-        identifier = request.POST.get('identifier')
+        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
+        identifier = request.GET.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "collection": collection})
         if serializer.is_valid(raise_exception=True):
             if not Identifier.objects.filter(collection=collection, source=source).exists():
@@ -47,6 +47,21 @@ class CollectionViewSet(ModelViewSet):
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
             return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
+
+    @identifiers.mapping.delete
+    def delete_identifier(self, request, pk=None):
+        collection = self.get_object()
+        try:
+            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
+        except Exception as e:
+            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
+        if source:
+            Identifier.objects.filter(collection=collection, source=source).delete()
+            Note.objects.filter(collection=collection, source=source).delete()
+            identifiers = Identifier.objects.filter(collection=collection)
+            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+            return Response(serializer.data, status=200)
+        return Response({"detail": "No source specified."}, status=400)
 
 
 class ObjectViewSet(ModelViewSet):
@@ -75,8 +90,8 @@ class ObjectViewSet(ModelViewSet):
     @identifiers.mapping.post
     def add_identifier(self, request, pk=None):
         object = self.get_object()
-        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
-        identifier = request.POST.get('identifier')
+        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
+        identifier = request.GET.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "object": object})
         if serializer.is_valid(raise_exception=True):
             if not Identifier.objects.filter(object=object, source=source).exists():
@@ -85,6 +100,21 @@ class ObjectViewSet(ModelViewSet):
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
             return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
+
+    @identifiers.mapping.delete
+    def delete_identifier(self, request, pk=None):
+        object = self.get_object()
+        try:
+            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
+        except Exception as e:
+            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
+        if source:
+            Identifier.objects.filter(object=object, source=source).delete()
+            Note.objects.filter(object=object, source=source).delete()
+            identifiers = Identifier.objects.filter(object=object)
+            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+            return Response(serializer.data, status=200)
+        return Response({"detail": "No source specified."}, status=400)
 
 
 class AgentViewSet(ModelViewSet):
@@ -113,8 +143,8 @@ class AgentViewSet(ModelViewSet):
     @identifiers.mapping.post
     def add_identifier(self, request, pk=None):
         agent = self.get_object()
-        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
-        identifier = request.POST.get('identifier')
+        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
+        identifier = request.GET.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "agent": agent})
         if serializer.is_valid(raise_exception=True):
             if not Identifier.objects.filter(agent=agent, source=source).exists():
@@ -123,6 +153,21 @@ class AgentViewSet(ModelViewSet):
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
             return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
+
+    @identifiers.mapping.delete
+    def delete_identifier(self, request, pk=None):
+        agent = self.get_object()
+        try:
+            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
+        except Exception as e:
+            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
+        if source:
+            Identifier.objects.filter(agent=agent, source=source).delete()
+            Note.objects.filter(agent=agent, source=source).delete()
+            identifiers = Identifier.objects.filter(agent=agent)
+            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+            return Response(serializer.data, status=200)
+        return Response({"detail": "No source specified."}, status=400)
 
 
 class TermViewSet(ModelViewSet):
@@ -151,8 +196,8 @@ class TermViewSet(ModelViewSet):
     @identifiers.mapping.post
     def add_identifier(self, request, pk=None):
         term = self.get_object()
-        source = getattr(Identifier, request.POST.get('source').upper()) if request.POST.get('source') else None
-        identifier = request.POST.get('identifier')
+        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
+        identifier = request.GET.get('identifier')
         serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "term": term})
         if serializer.is_valid(raise_exception=True):
             if not Identifier.objects.filter(term=term, source=source).exists():
@@ -161,6 +206,21 @@ class TermViewSet(ModelViewSet):
                 serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
                 return Response(serializer.data, status=201)
             return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
+
+    @identifiers.mapping.delete
+    def delete_identifier(self, request, pk=None):
+        term = self.get_object()
+        try:
+            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
+        except Exception as e:
+            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
+        if source:
+            Identifier.objects.filter(term=term, source=source).delete()
+            Note.objects.filter(term=term, source=source).delete()
+            identifiers = Identifier.objects.filter(term=term)
+            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
+            return Response(serializer.data, status=200)
+        return Response({"detail": "No source specified."}, status=400)
 
 
 class IdentifierViewSet(ModelViewSet):
