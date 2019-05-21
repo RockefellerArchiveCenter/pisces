@@ -77,9 +77,8 @@ class TransformTest(TestCase):
 
     def transform_endpoint(self):
         print("*** Testing transform endpoint ***")
-        for endpoint in ['transform-data', 'fetch-data']:
-            response = self.client.post(reverse(endpoint))
-            self.assertEqual(response.status_code, 200)
+        response = self.client.post(reverse('transform-data'))
+        self.assertEqual(response.status_code, 200)
 
     def object_identifier_api(self):
         print("*** Testing custom identifier endpoints ***")
