@@ -39,7 +39,8 @@ class ArchivesSpaceDataFetcher:
 
     def get_delete_feed(self):
         deletions = self.aspace.client.get("delete-feed?page=1&page_size=10000000&modified_since="+str(self.last_run)).json()
-        print(deletions)
+        for d in deletions['results']:
+            print(d)
 
     def get_resources(self):
         for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
