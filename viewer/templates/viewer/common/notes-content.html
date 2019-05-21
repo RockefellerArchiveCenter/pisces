@@ -1,7 +1,9 @@
+{% load util %}
+
 {% for subnote in subnotes %}
   {% if subnote.type == 'text' %}
     {% for text in subnote.content %}
-    <p>{{text}}</p>
+    <p>{{text}} <small class="text-muted"><cite title="{{source | source_filter }}">{{source | source_filter }}</cite></small></p>
     {% endfor %}
   {% elif subnote.type == 'orderedlist' %}
   <ul>
@@ -9,11 +11,13 @@
     <li>{{item}}</li>
     {% endfor %}
   </ul>
+  <small class="text-muted"><cite title="{{source | source_filter }}">{{source | source_filter }}</cite></small>
   {% else %}
   <dl>
     {% for item in subnote.content %}
     <dt>{{item.label}}</dt><dd>{{item.value}}</dd>
     {% endfor %}
   </dl>
+  <small class="text-muted"><cite title="{{source | source_filter }}">{{source | source_filter }}</cite></small>
   {% endif %}
 {% endfor %}

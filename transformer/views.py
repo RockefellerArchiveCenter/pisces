@@ -173,7 +173,7 @@ class IdentifierViewSet(ModelViewSet):
     """
     model = Identifier
     queryset = Identifier.objects.all().order_by('-modified')
-    serializer = IdentifierSerializer
+    serializer_class = IdentifierSerializer
 
 
 class TransformRunViewSet(ModelViewSet):
@@ -196,10 +196,10 @@ class TransformRunViewSet(ModelViewSet):
 class FetchRunViewSet(ModelViewSet):
     """
     retrieve:
-    Return data about a TransformRun object, identified by a primary key.
+    Return data about a FetchRun object, identified by a primary key.
 
     list:
-    Return paginated data about all TranformRun objects.
+    Return paginated data about all FetchRun objects.
     """
     model = FetchRun
     queryset = FetchRun.objects.all().order_by('-start_time')
@@ -219,11 +219,7 @@ class TransformerRunView(APIView):
         try:
             if source:
                 if source == 'archivesspace':
-                    if object_type:
-                        ArchivesSpaceDataTransformer(object_type).run()
-                    else:
-                        for object_type in ['agents', 'collections', 'objects', 'terms']:
-                            ArchivesSpaceDataTransformer(object_type).run()
+                    ArchivesSpaceDataTransformer(object_type).run()
                 elif source == 'cartographer':
                     CartographerDataTransformer().run()
                 elif source == 'wikidata':
@@ -236,8 +232,7 @@ class TransformerRunView(APIView):
                            else "Transformation routines complete for {} {}.".format(source, object_type))
                 return Response({"detail": message}, status=200)
             else:
-                for object_type in ['agents', 'collections', 'objects', 'terms']:
-                    ArchivesSpaceDataTransformer(object_type).run()
+                ArchivesSpaceDataTransformer(object_type).run()
                 CartographerDataTransformer().run()
                 WikidataDataTransformer().run()
                 WikipediaDataTransformer().run()
@@ -255,11 +250,7 @@ class FetcherRunView(APIView):
         try:
             if source:
                 if source == 'archivesspace':
-                    if object_type:
-                        ArchivesSpaceDataFetcher(object_type).run()
-                    else:
-                        for object_type in ['agents', 'resources', 'subjects', 'objects']:
-                            ArchivesSpaceDataFetcher(object_type).run()
+                    ArchivesSpaceDataFetcher(object_type).run()
                 elif source == 'cartographer':
                     CartographerDataFetcher().run()
                 elif source == 'wikidata':
@@ -272,8 +263,7 @@ class FetcherRunView(APIView):
                            else "Fetch routines complete for {} {}.".format(source, object_type))
                 return Response({"detail": message}, status=200)
             else:
-                for object_type in ['agents', 'collections', 'objects', 'terms']:
-                    ArchivesSpaceDataFetcher(object_type).run()
+                ArchivesSpaceDataFetcher(object_type).run()
                 CartographerDataFetcher().run()
                 WikidataDataFetcher().run()
                 WikipediaDataFetcher().run()

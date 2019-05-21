@@ -1,0 +1,114 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ElectronBond/0.1
+    method: GET
+    uri: http://cartographer-web:8000/status/
+  response:
+    body:
+      string: '{"health": {"ping": {"pong": true}, "databases": {"default": true},
+        "caches": {"default": true}}, "stats": {"databases": {"default": {"vendor":
+        "postgresql", "is_usable": true, "allow_thread_sharing": false, "autocommit":
+        true, "commit_on_exit": true, "in_atomic_block": false, "settings": {"ENGINE":
+        "django.db.backends.postgresql", "NAME": "postgres", "HOST": "cartographer-db",
+        "PORT": 5432, "ATOMIC_REQUESTS": false, "AUTOCOMMIT": true, "CONN_MAX_AGE":
+        0, "OPTIONS": {}, "TIME_ZONE": null, "TEST": {"CHARSET": null, "COLLATION":
+        null, "NAME": null, "MIRROR": null}}}}, "code": {"debug": true, "scm": "git",
+        "branch": {"local": "master", "remote": ["origin/master"]}, "commit": {"id":
+        "0782a7e81769e80280997f46f08a7d4c24901c06", "summary": "improve serializers",
+        "author": "Hillel Arnold", "date": "2019-05-20T12:03:13"}}}}'
+    headers:
+      Content-Length:
+      - '826'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 20 May 2019 18:22:34 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ElectronBond/0.1
+    method: GET
+    uri: http://cartographer-web:8000/api/maps/?updated_since=0
+  response:
+    body:
+      string: '{"count":1,"next":null,"previous":null,"results":[{"url":"http://cartographer-web:8000/api/maps/2/","title":"test
+        map"}]}'
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Length:
+      - '121'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 20 May 2019 18:22:34 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      Vary:
+      - Accept, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ElectronBond/0.1
+    method: GET
+    uri: http://cartographer-web:8000/api/maps/2/
+  response:
+    body:
+      string: '{"ref":"/api/maps/2/","title":"test map","children":[{"title":"Child
+        component","ref":"/api/components/14/","children":[{"title":"Population Council,
+        Bernard Berelson administration file","ref":"/repositories/2/resources/2","parent":"/api/components/14/"},{"title":"yet
+        another grandchild","ref":"/api/components/18/","parent":"/api/components/14/"}]},{"title":"sibling","ref":"/api/components/19/"}],"publish":true,"created":"2019-05-12T14:11:17.801481-04:00","modified":"2019-05-19T14:21:12.680321-04:00"}'
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Length:
+      - '507'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 20 May 2019 18:22:34 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      Vary:
+      - Accept, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+version: 1

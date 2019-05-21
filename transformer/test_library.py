@@ -28,7 +28,7 @@ def import_fixture_data(source_filepath=None):
 
     for d in os.listdir(source_filepath):
         # Handle data from ArchivesSpace
-        if (d not in ['trees', 'maps']) and os.path.isdir(os.path.join(source_filepath, d)):
+        if (d not in ['trees', 'maps', 'cassettes']) and os.path.isdir(os.path.join(source_filepath, d)):
             cls = TYPE_MAP[d][0]
             key = TYPE_MAP[d][1]
             for f in os.listdir(os.path.join(source_filepath, d)):
@@ -75,3 +75,32 @@ def import_fixture_data(source_filepath=None):
                 with open(os.path.join(source_filepath, d, f)) as jf:
                     data = json.load(jf)
                     process_tree_item(data)
+
+WIKIDATA_MAP = [
+    ("/agents/people/138", "Q11239"), # David Rockefeller
+    ("/agents/people/147", "Q11237"), # Nelson Rockefeller
+    ("/agents/people/9051", "Q160278"), # Sr
+    ("/agents/people/9175", "Q878708"), # Winthrop
+    ("/agents/corporate_entities/4884", "Q862034") # RF
+]
+
+
+def add_wikidata_ids():
+    for obj in WIKIDATA_MAP:
+        print(obj[0])
+        agent = Agent.objects.get(identifier__identifier=obj[0], identifier__source=Identifier.ARCHIVESSPACE)
+        Identifier.objects.create(agent=agent, source=Identifier.WIKIDATA, identifier=obj[1])
+
+WIKIPEDIA_MAP = [
+    ("/agents/people/138", "David_Rockefeller"), # David Rockefeller
+    ("/agents/people/147", "Nelson_Rockefeller"), # Nelson Rockefeller
+    ("/agents/people/9051", "John_D._Rockefeller"), # Sr
+    ("/agents/people/9175", "Winthrop_Rockefeller"), # Winthrop
+    ("/agents/corporate_entities/4884", "Rockefeller_Foundation") # RF
+]
+
+
+def add_wikipedia_ids():
+    for obj in WIKIPEDIA_MAP:
+        agent = Agent.objects.get(identifier__identifier=obj[0], identifier__source=Identifier.ARCHIVESSPACE)
+        Identifier.objects.create(agent=agent, source=Identifier.WIKIPEDIA, identifier=obj[1])

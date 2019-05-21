@@ -25,15 +25,16 @@ class CartographerDataTransformer:
                                if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
                 self.obj = collection
                 self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-                self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
-                self.obj.title = self.source_data.get('title')
-                if self.source_data.get('parent'):
-                    self.parent(self.source_data.get('parent'))
-                self.obj.save()
-                if self.source_data.get('children'):
-                    self.children(self.source_data.get('children'))
-                    if not self.obj.parent:
-                        self.process_tree(self.source_data)
+                if SourceData.objects.filter(collection=self.obj, source=SourceData.CARTOGRAPHER).exists():
+                    self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
+                    self.obj.title = self.source_data.get('title')
+                    if self.source_data.get('parent'):
+                        self.parent(self.source_data.get('parent'))
+                    self.obj.save()
+                    if self.source_data.get('children'):
+                        self.children(self.source_data.get('children'))
+                        if not self.obj.parent:
+                            self.process_tree(self.source_data)
             self.current_run.status = TransformRun.FINISHED
             self.current_run.end_time = timezone.now()
             self.current_run.save()
@@ -45,8 +46,10 @@ class CartographerDataTransformer:
     def children(self, children):
         for child in children:
             if not child.get('children'):
-                c = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
-                                           identifier__identifier=child.get('ref', child.get('id')))
+                identifier = child.get('ref', child.get('url'))
+                source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
+                c = Collection.objects.get(identifier__source=source,
+                                           identifier__identifier=identifier)
                 c.parent = self.obj
                 c.save()
 
@@ -75,14 +78,8 @@ class CartographerDataTransformer:
 
 
 class ArchivesSpaceDataTransformer:
-    def __init__(self, object_type):
-        CLS_MAP = {
-            "agents": [Agent, 'agent'],
-            "collections": [Collection, 'collection'],
-            "objects": [Object, 'object'],
-            "terms": [Term, 'term']}
-        self.cls = CLS_MAP[object_type][0]
-        self.key = CLS_MAP[object_type][1]
+    def __init__(self, object_type=None):
+        self.object_types = [object_type] if object_type else ['agents', 'collections', 'objects', 'terms']
         self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED,
                                                      source=TransformRun.ARCHIVESSPACE,
                                                      object_type=object_type).order_by('-start_time')[0].start_time
@@ -92,16 +89,24 @@ class ArchivesSpaceDataTransformer:
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
-        for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
-                    if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
-            self.obj = obj
-            print(self.obj)
-            self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-            self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
-            getattr(self, "transform_to_{}".format(self.key))()
-        self.current_run.status = TransformRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
+        for object_type in self.object_types:
+            CLS_MAP = {
+                "agents": [Agent, 'agent'],
+                "collections": [Collection, 'collection'],
+                "objects": [Object, 'object'],
+                "terms": [Term, 'term']}
+            self.cls = CLS_MAP[object_type][0]
+            self.key = CLS_MAP[object_type][1]
+            for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
+                        if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
+                self.obj = obj
+                self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
+                if SourceData.objects.filter(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).exists():
+                    self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
+                    getattr(self, "transform_to_{}".format(self.key))()
+            self.current_run.status = TransformRun.FINISHED
+            self.current_run.end_time = timezone.now()
+            self.current_run.save()
         return True
 
     def datetime_from_string(self, date_string):
@@ -388,11 +393,11 @@ class WikidataDataTransformer:
         if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIDATA).exists():
             note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIDATA)
             note.subnote_set.all().delete()
-            note.title = title
+            note.title = "Abstract"
             note.save()
         else:
             note = Note.objects.create(type=note_type, title="Abstract", agent=self.agent, source=Note.WIKIDATA)
-        Subnote.objects.create(type='text', content=content, note=note)
+        Subnote.objects.create(type='text', content=[content], note=note)
 
     def image_url(self, image_prop):
         # https://stackoverflow.com/questions/34393884/how-to-get-image-url-property-from-wikidata-item-by-api

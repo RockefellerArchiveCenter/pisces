@@ -102,7 +102,6 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
     extents = ExtentSerializer(source="extent_set", many=True)
     notes = NoteSerializer(source="note_set", many=True)
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
-    identifiers = IdentifierSerializer(source="identifier_set", many=True)
     terms = RelatedSerializer(many=True)
     agents = RelatedSerializer(many=True)
     creators = RelatedSerializer(many=True)
@@ -113,7 +112,7 @@ class CollectionSerializer(serializers.HyperlinkedModelSerializer):
         model = Collection
         fields = ("url", "title", "tree_order", "dates", "creators", "languages", "notes",
                   "extents", "level", "agents", "terms", "rights_statements",
-                  "identifiers", "ancestors", "tree", "created", "modified",)
+                  "ancestors", "tree", "created", "modified",)
 
     def get_tree(self, obj):
         view_name = "{}-detail".format(obj.__class__.__name__.lower())
@@ -147,7 +146,6 @@ class ObjectSerializer(serializers.HyperlinkedModelSerializer):
     extents = ExtentSerializer(source="extent_set", many=True)
     notes = NoteSerializer(source="note_set", many=True)
     rights_statements = RightsStatementSerializer(source="rightsstatement_set", many=True)
-    identifiers = IdentifierSerializer(source="identifier_set", many=True)
     terms = RelatedSerializer(many=True)
     agents = RelatedSerializer(many=True)
     ancestors = AncestorSerializer(source="parent")
@@ -155,8 +153,7 @@ class ObjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Object
         fields = ("url", "title", "tree_order", "dates", "languages", "notes", "extents",
-                  "agents", "terms", "ancestors", "identifiers", "rights_statements",
-                  "created", "modified")
+                  "agents", "terms", "ancestors", "rights_statements", "created", "modified")
 
 
 class ObjectListSerializer(serializers.HyperlinkedModelSerializer):
@@ -170,12 +167,10 @@ class AgentSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     objects = RelatedSerializer(source="agent_objects", many=True)
     collections = serializers.SerializerMethodField()
-    identifiers = IdentifierSerializer(source="identifier_set", many=True)
 
     class Meta:
         model = Agent
-        fields = ("url", "title", "dates", "type", "notes", "objects", "collections", "identifiers",
-                  "created", "modified")
+        fields = ("url", "title", "dates", "type", "notes", "objects", "collections", "created", "modified")
 
     def get_collections(self, obj):
         queryset = set(Collection.objects.filter(agents=obj) | Collection.objects.filter(creators=obj))
@@ -192,11 +187,10 @@ class TermSerializer(serializers.HyperlinkedModelSerializer):
     notes = NoteSerializer(source="note_set", many=True)
     objects = RelatedSerializer(source="term_objects", many=True)
     collections = RelatedSerializer(source="term_collections", many=True)
-    identifiers = IdentifierSerializer(source="identifier_set", many=True)
 
     class Meta:
         model = Term
-        fields = ("url", "title", "type", "notes", "objects", "collections", "identifiers", "created", "modified")
+        fields = ("url", "title", "type", "notes", "objects", "collections", "created", "modified")
 
 
 class TermListSerializer(serializers.HyperlinkedModelSerializer):
@@ -230,7 +224,7 @@ class TransformRunSerializer(serializers.HyperlinkedModelSerializer):
         return [o[1] for o in obj.SOURCE_CHOICES if o[0] == int(obj.source)][0]
 
     def get_status(self, obj):
-        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.source)][0]
+        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.status)][0]
 
 
 class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
@@ -245,7 +239,7 @@ class TransformRunListSerializer(serializers.HyperlinkedModelSerializer):
         return [o[1] for o in obj.SOURCE_CHOICES if o[0] == int(obj.source)][0]
 
     def get_status(self, obj):
-        return obj.STATUS_CHOICES[int(obj.status)][1]
+        return [o[1] for o in obj.STATUS_CHOICES if o[0] == int(obj.status)][0]
 
 
 class FetchRunSerializer(serializers.HyperlinkedModelSerializer):
@@ -269,7 +263,7 @@ class FetchRunListSerializer(serializers.HyperlinkedModelSerializer):
     status = serializers.SerializerMethodField()
 
     class Meta:
-        model = TransformRun
+        model = FetchRun
         fields = ('url', 'status', 'source', 'object_type')
 
     def get_source(self, obj):
