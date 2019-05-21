@@ -1,4 +1,5 @@
 {% extends "viewer/base.html" %}
+{% load util %}
 
 {% block title %}{{object.title}} {% include 'viewer/common/agent-tag.html' with agent=object %}{% endblock %}
 
@@ -6,9 +7,15 @@
 {% block content %}
 <div class="row">
   <div class="{% if object.image_url %}col-9{% else %}col{% endif %} agent__description">
-    {% if object.description %}
-    <p class="lead">{{object.description}}</p>
-    {% endif %}
+    {% for note in object.note_set.all %}
+      {% if note.type == 'abstract' or note.type == 'scopecontent' %}
+        {% for subnote in note.subnote_set.all %}
+          {% for text in subnote.content %}
+            <p class="lead">{{text}} <small class="text-muted"><cite title="{{note.source | source_filter }}">{{note.source | source_filter }}</cite></small></p>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
     {% include 'viewer/common/notes.html' with notes=object.note_set.all %}
     {% if object.wikipedia_url %}
     <a href="{{object.wikipedia_url}}" target="_new" class="btn btn-primary">See more on Wikipedia</a>
@@ -16,7 +23,10 @@
   </div>
   {% if object.image_url %}
   <div class="col-3 agent__image">
-    <img src="{{object.image_url}}" width="100%" alt="{{object.title}}">
+    <figure class="figure" style="width: 100%;" >
+      <img src="{{object.image_url}}" width="100%" alt="{{object.title}}">
+      <figcaption class="figure-caption text-right">source: Wikidata</figcaption>
+    </figure>
   </div>
   {% endif %}
 </div>
