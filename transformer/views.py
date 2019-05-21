@@ -60,7 +60,7 @@ class CollectionViewSet(ModelViewSet):
             Note.objects.filter(collection=collection, source=source).delete()
             identifiers = Identifier.objects.filter(collection=collection)
             serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=201)
+            return Response(serializer.data, status=200)
         return Response({"detail": "No source specified."}, status=400)
 
 
@@ -113,7 +113,7 @@ class ObjectViewSet(ModelViewSet):
             Note.objects.filter(object=object, source=source).delete()
             identifiers = Identifier.objects.filter(object=object)
             serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=201)
+            return Response(serializer.data, status=200)
         return Response({"detail": "No source specified."}, status=400)
 
 
@@ -166,7 +166,7 @@ class AgentViewSet(ModelViewSet):
             Note.objects.filter(agent=agent, source=source).delete()
             identifiers = Identifier.objects.filter(agent=agent)
             serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=201)
+            return Response(serializer.data, status=200)
         return Response({"detail": "No source specified."}, status=400)
 
 
@@ -219,7 +219,7 @@ class TermViewSet(ModelViewSet):
             Note.objects.filter(term=term, source=source).delete()
             identifiers = Identifier.objects.filter(term=term)
             serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=201)
+            return Response(serializer.data, status=200)
         return Response({"detail": "No source specified."}, status=400)
 
 

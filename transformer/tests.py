@@ -61,7 +61,7 @@ class TransformTest(TestCase):
             self.assertEqual(len(Identifier.objects.filter(**{obj[1]: o})), len(assigned_ids)+1, "An identifier was not created.")
 
             delete = self.client.delete("{}?source={}".format(reverse(view, kwargs={"pk": o.pk}), s))
-            self.assertEqual(delete.status_code, 201, "Wrong HTTP status returned, should be 201")
+            self.assertEqual(delete.status_code, 200, "Wrong HTTP status returned, should be 200")
             self.assertEqual(len(Identifier.objects.filter(**{obj[1]: o})), len(assigned_ids), "An identifier was not deleted.")
             self.assertEqual(len(Note.objects.filter(**{obj[1]: o, "source": getattr(Note, s.upper())})), 0, "Notes from identifier's source were not deleted")
 
