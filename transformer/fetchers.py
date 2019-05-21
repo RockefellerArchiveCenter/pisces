@@ -37,16 +37,19 @@ class ArchivesSpaceDataFetcher:
             print(e)
             FetchRunError.objects.create(run=self.current_run, message="Error fetching ArchivesSpace data: {}".format(e))
 
+    def get_delete_feed(self):
+        deletions = self.aspace.client.get("delete-feed?page=1&page_size=10000000&modified_since="+str(self.last_run)).json()
+
     def get_resources(self):
-            for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
-                if (r.publish and r.id_0.startswith('FA')):
-                        tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
-                        self.save_data(Collection, 'collection', r, tree.json())
+        for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
+            if (r.publish and r.id_0.startswith('FA')):
+                    tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
+                    self.save_data(Collection, 'collection', r, tree.json())
 
     def get_subjects(self):
-            for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run):
-                if s.publish:
-                    self.save_data(Term, 'term', s)
+        for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run):
+            if s.publish:
+                self.save_data(Term, 'term', s)
 
     def get_agents(self):
         for agent_type in ["people", "corporate_entities", "families", "software"]:
