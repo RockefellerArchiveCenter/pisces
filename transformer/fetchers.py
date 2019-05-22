@@ -40,7 +40,14 @@ class ArchivesSpaceDataFetcher:
     def get_delete_feed(self):
         deletions = self.aspace.client.get("delete-feed?page=1&page_size=10000000&modified_since="+str(self.last_run)).json()
         for d in deletions['results']:
-            print(d)
+            if "agents/" in d:
+                self.delete_data(Agent, 'agent')
+            elif "subjects/" in d:
+                self.delete_data(Term, 'term')
+            elif "archival_objects/" in d:
+                self.delete_data(Object, 'object')
+            elif "resources/" in d:
+                self.delete_data(Collection, 'collection')
 
     def get_resources(self):
         for r in self.repo.resources.with_params(all_ids=True, modified_since=self.last_run):
@@ -95,8 +102,8 @@ class ArchivesSpaceDataFetcher:
             Identifier.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
             SourceData.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
 
-    def delete_data(self, cls, relation_key, data, source_tree=None):
-        if cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=data.uri).exists():
+    def delete_data(self, cls, relation_key, source_tree=None):
+        if cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=d).exists():
             object = cls.objects.delete(source_tree=source_tree) if source_tree else cls.objects.delete()
 
 class CartographerDataFetcher:
