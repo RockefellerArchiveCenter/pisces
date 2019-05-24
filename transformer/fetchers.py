@@ -86,7 +86,7 @@ class ArchivesSpaceDataFetcher:
     def get_agents(self):
         for agent_type in ["people", "corporate_entities", "families", "software"]:
             for a in self.aspace.agents[agent_type].with_params(all_ids=True, modified_since=self.last_run):
-                if a.json().get('publish'):  # this seems like an ASnake bug
+                if a.publish:
                     self.save_data(Agent, 'agent', a)
                 else:
                     self.delete_data(Agent, a.uri)
