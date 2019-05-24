@@ -119,7 +119,7 @@ class TransformTest(TestCase):
         self.assertEqual(find.json()['count'], 1, "Wrong number of objects returned")
 
     def test_transforms(self):
-        self.fetchers()
         self.transformers()
+        self.fetchers()
         self.api()
         self.find_by_id()
