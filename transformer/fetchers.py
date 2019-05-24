@@ -92,12 +92,14 @@ class ArchivesSpaceDataFetcher:
 
 
 class CartographerDataFetcher:
-    def __init__(self):
+    def __init__(self, target=None):
         self.client = ElectronBond(baseurl=settings.CARTOGRAPHER['baseurl'], user=settings.CARTOGRAPHER['user'], password=settings.CARTOGRAPHER['password'])
         self.last_run = (int(FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).order_by('-start_time')[0].start_time.timestamp())
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.CARTOGRAPHER).exists()
                          else 0)
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
+        self.status = FetchRun.FINISHED
+        self.targets = [target] if target else ['updated', 'deleted']
         try:
             resp = self.client.get('/status/')
             if not resp.status_code:
@@ -106,30 +108,58 @@ class CartographerDataFetcher:
             FetchRunError.objects.create(run=self.current_run, message="Cartographer is not available.")
 
     def run(self):
-        self.get_maps()
-        self.current_run.status = FetchRun.FINISHED
+        for target in self.targets:
+            getattr(self, "get_{}".format(target))()
+        self.current_run.status = self.status
         self.current_run.end_time = timezone.now()
         self.current_run.save()
         return True
 
-    def get_maps(self):
-        for map in self.client.get('/api/maps/', params={"updated_since": self.last_run}).json()['results']:
+    def get_updated(self):
+        for map in self.client.get('/api/maps/', params={"modified_since": self.last_run}).json()['results']:
             try:
                 m = self.client.get(map.get('url')).json()
-                self.process_map_item(m)
+                if m.get('publish'):
+                    self.process_map_item(m)
+                else:
+                    self.delete_data(m.get('ref', m.get('url')))
             except Exception as e:
                 FetchRunError.objects.create(run=self.current_run, message="Error fetching Cartographer map: {}".format(e))
+                self.status = FetchRun.ERRORED
+
+    def get_deleted(self):
+        for object in self.client.get('/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
+            try:
+                self.delete_data(object)
+            except Exception as e:
+                FetchRunError.objects.create(run=self.current_run, message="Error deleting {}: {}".format(object.get('ref'), e))
+                self.status = FetchRun.ERRORED
 
     def process_map_item(self, data):
-        identifier = data.get('ref', data.get('url'))
-        source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
-        if not Collection.objects.filter(identifier__source=source, identifier__identifier=identifier).exists():
-            c = Collection.objects.create(source_tree=data)
-            SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
-            Identifier.objects.create(collection=c, source=source, identifier=identifier)
+        self.save_data(data)
         if data.get('children'):
             for item in data.get('children'):
                 self.process_map_item(item)
+
+    def save_data(self, data):
+        identifier = data.get('ref', data.get('url'))
+        source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
+        if Collection.objects.filter(identifier__source=source, identifier__identifier=identifier).exists():
+            c = Collection.objects.get(identifier__source=source, identifier__identifier=identifier)
+            c.source_tree = data
+            c.save()
+            sd = SourceData.objects.get(collection=c, source=Identifier.CARTOGRAPHER)
+            sd.data = data
+            sd.save()
+        else:
+            c = Collection.objects.create(source_tree=data)
+            SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
+            Identifier.objects.create(collection=c, source=source, identifier=identifier)
+
+    def delete_data(self, identifier):
+        source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
+        if Collection.objects.filter(identifier__source=source, identifier__identifier=identifier).exists():
+            Collection.objects.get(identifier__source=source, identifier__identifier=identifier).delete()
 
 
 class WikidataDataFetcher:

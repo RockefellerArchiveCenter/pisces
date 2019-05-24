@@ -9,7 +9,7 @@ from pisces import settings
 
 def get_random_string(length=10):
     letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(10))
+    return ''.join(random.choice(letters) for i in range(length))
 
 
 def process_tree_item(data):
