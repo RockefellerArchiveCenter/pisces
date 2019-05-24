@@ -73,17 +73,23 @@ class ArchivesSpaceDataFetcher:
             if (r.publish and r.id_0.startswith('FA')):
                     tree = self.aspace.client.get(r.tree.ref)  # Is there a better way to do this?
                     self.save_data(Collection, 'collection', r, tree.json())
+            else:
+                self.delete_data(Collection, r.uri)
 
     def get_subjects(self):
         for s in self.aspace.subjects.with_params(all_ids=True, modified_since=self.last_run):
             if s.publish:
                 self.save_data(Term, 'term', s)
+            else:
+                self.delete_data(Term, s.uri)
 
     def get_agents(self):
         for agent_type in ["people", "corporate_entities", "families", "software"]:
             for a in self.aspace.agents[agent_type].with_params(all_ids=True, modified_since=self.last_run):
                 if a.json().get('publish'):  # this seems like an ASnake bug
                     self.save_data(Agent, 'agent', a)
+                else:
+                    self.delete_data(Agent, a.uri)
 
     def get_objects(self):
         for o in self.repo.archival_objects.with_params(all_ids=True, modified_since=self.last_run):
@@ -99,6 +105,9 @@ class ArchivesSpaceDataFetcher:
                         self.save_data(Collection, 'collection', o, p)
                     else:
                         self.save_data(Object, 'object', o)
+            else:
+                self.delete_data(Object, o.uri)
+                self.delete_data(Collection, o.uri)
 
     def save_data(self, cls, relation_key, data, source_tree=None):
         """
