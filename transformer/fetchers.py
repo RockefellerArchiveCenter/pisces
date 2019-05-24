@@ -13,6 +13,9 @@ from .models import *
 from pisces import settings
 
 
+class CartographerDataFetcherError(Exception): pass
+
+
 class ArchivesSpaceDataFetcher:
     def __init__(self, object_type=None):
         self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
@@ -99,13 +102,16 @@ class CartographerDataFetcher:
                          else 0)
         self.current_run = FetchRun.objects.create(status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
         self.status = FetchRun.FINISHED
-        self.targets = [target] if target else ['updated', 'deleted']
+        if target in ['updated', 'deleted', None]:
+            self.targets = [target] if target else ['updated', 'deleted']
+        else:
+            raise CartographerDataFetcherError("Unknown target {}".format(target))
         try:
             resp = self.client.get('/status/')
             if not resp.status_code:
-                FetchRunError.objects.create(run=self.current_run, message="Cartographer status endpoint is not available. Service may be down.")
+                raise CartographerDataFetcherError("Cartographer status endpoint is not available. Service may be down.")
         except Exception as e:
-            FetchRunError.objects.create(run=self.current_run, message="Cartographer is not available.")
+            raise CartographerDataFetcherError("Cartographer is not available.")
 
     def run(self):
         for target in self.targets:
