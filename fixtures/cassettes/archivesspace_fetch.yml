@@ -13,10 +13,10 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: POST
-    uri: http://192.168.2.49:8089/users/admin/login?expiring=False
+    uri: http://25.145.18.140:8089/users/admin/login?expiring=False
   response:
     body:
-      string: '{"session":"6a1f56f5815b591e8b96f8aed2b14dd872d76b4ef83eebd2aba603bfa6c8b0fa","user":{"lock_version":36,"username":"admin","name":"Administrator","is_system_user":true,"create_time":"2019-05-20T18:51:21Z","system_mtime":"2019-05-20T20:19:47Z","user_mtime":"2019-05-20T20:19:47Z","jsonmodel_type":"user","groups":[],"is_admin":true,"uri":"/users/1","agent_record":{"ref":"/agents/people/1"},"permissions":{"/repositories/1":["update_location_record","delete_vocabulary_record","update_subject_record","delete_subject_record","update_agent_record","delete_agent_record","update_vocabulary_record","update_enumeration_record","merge_subject_record","merge_agent_record","update_container_profile_record","update_location_profile_record","administer_system","become_user","cancel_importer_job","cancel_job","create_job","create_repository","delete_archival_record","delete_assessment_record","delete_classification_record","delete_event_record","delete_repository","import_records","index_system","manage_agent_record","manage_assessment_attributes","manage_container_profile_record","manage_container_record","manage_enumeration_record","manage_location_profile_record","manage_rde_templates","manage_repository","manage_subject_record","manage_users","manage_vocabulary_record","mediate_edits","merge_agents_and_subjects","merge_archival_record","suppress_archival_record","transfer_archival_record","transfer_repository","update_accession_record","update_assessment_record","update_classification_record","update_container_record","update_digital_object_record","update_event_record","update_resource_record","view_all_records","view_repository","view_suppressed"],"_archivesspace":["administer_system","become_user","cancel_importer_job","cancel_job","create_job","create_repository","delete_archival_record","delete_assessment_record","delete_classification_record","delete_event_record","delete_repository","import_records","index_system","manage_agent_record","manage_assessment_attributes","manage_container_profile_record","manage_container_record","manage_enumeration_record","manage_location_profile_record","manage_rde_templates","manage_repository","manage_subject_record","manage_users","manage_vocabulary_record","mediate_edits","merge_agents_and_subjects","merge_archival_record","suppress_archival_record","transfer_archival_record","transfer_repository","update_accession_record","update_assessment_record","update_classification_record","update_container_record","update_digital_object_record","update_event_record","update_resource_record","view_all_records","view_repository","view_suppressed","update_location_record","delete_vocabulary_record","update_subject_record","delete_subject_record","update_agent_record","delete_agent_record","update_vocabulary_record","update_enumeration_record","merge_subject_record","merge_agent_record","update_container_profile_record","update_location_profile_record"]}}}
+      string: '{"session":"e969113c4015a6b32b4058b7bc5745e8344c3c7bd05404cf88e4bf47e83b51bc","user":{"lock_version":44,"username":"admin","name":"Administrator","is_system_user":true,"create_time":"2019-05-20T18:51:21Z","system_mtime":"2019-05-24T13:22:37Z","user_mtime":"2019-05-24T13:22:37Z","jsonmodel_type":"user","groups":[],"is_admin":true,"uri":"/users/1","agent_record":{"ref":"/agents/people/1"},"permissions":{"/repositories/1":["update_enumeration_record","update_location_record","delete_vocabulary_record","update_subject_record","delete_subject_record","update_agent_record","delete_agent_record","update_vocabulary_record","merge_subject_record","merge_agent_record","update_container_profile_record","update_location_profile_record","administer_system","become_user","cancel_importer_job","cancel_job","create_job","create_repository","delete_archival_record","delete_assessment_record","delete_classification_record","delete_event_record","delete_repository","import_records","index_system","manage_agent_record","manage_assessment_attributes","manage_container_profile_record","manage_container_record","manage_enumeration_record","manage_location_profile_record","manage_rde_templates","manage_repository","manage_subject_record","manage_users","manage_vocabulary_record","mediate_edits","merge_agents_and_subjects","merge_archival_record","suppress_archival_record","transfer_archival_record","transfer_repository","update_accession_record","update_assessment_record","update_classification_record","update_container_record","update_digital_object_record","update_event_record","update_resource_record","view_all_records","view_repository","view_suppressed"],"_archivesspace":["administer_system","become_user","cancel_importer_job","cancel_job","create_job","create_repository","delete_archival_record","delete_assessment_record","delete_classification_record","delete_event_record","delete_repository","import_records","index_system","manage_agent_record","manage_assessment_attributes","manage_container_profile_record","manage_container_record","manage_enumeration_record","manage_location_profile_record","manage_rde_templates","manage_repository","manage_subject_record","manage_users","manage_vocabulary_record","mediate_edits","merge_agents_and_subjects","merge_archival_record","suppress_archival_record","transfer_archival_record","transfer_repository","update_accession_record","update_assessment_record","update_classification_record","update_container_record","update_digital_object_record","update_event_record","update_resource_record","view_all_records","view_repository","view_suppressed","update_enumeration_record","update_location_record","delete_vocabulary_record","update_subject_record","delete_subject_record","update_agent_record","delete_agent_record","update_vocabulary_record","merge_subject_record","merge_agent_record","update_container_profile_record","update_location_profile_record"]}}}
 
 '
     headers:
@@ -27,7 +27,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -47,7 +47,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/version
+    uri: http://25.145.18.140:8089/version
   response:
     body:
       string: ArchivesSpace (v2.5.2)
@@ -59,7 +59,7 @@ interactions:
       Content-Type:
       - text/html;charset=UTF-8
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -83,7 +83,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2
+    uri: http://25.145.18.140:8089/repositories/2
   response:
     body:
       string: '{"lock_version":0,"repo_code":"test","name":"Test Repository","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T18:58:58Z","system_mtime":"2019-05-20T18:58:58Z","user_mtime":"2019-05-20T18:58:58Z","publish":false,"oai_is_disabled":false,"oai_sets_available":"[\"888\",\"889\",\"890\",\"891\",\"892\",\"893\",\"894\",\"895\",\"896\",\"897\",\"898\"]","jsonmodel_type":"repository","uri":"/repositories/2","display_string":"Test
@@ -98,7 +98,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -118,7 +118,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources?all_ids=True
+    uri: http://25.145.18.140:8089/repositories/2/resources?all_ids=True
   response:
     body:
       string: '[4]
@@ -132,7 +132,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -152,7 +152,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/resources?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":1,"this_page":1,"total":1,"results":[{"lock_version":0,"title":"Harold
@@ -214,7 +214,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -234,7 +234,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -345,7 +345,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:37 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -365,7 +365,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/subjects?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/subjects?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":2,"this_page":1,"total":18,"results":[{"lock_version":1,"title":"Indonesia","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T20:12:12Z","system_mtime":"2019-05-20T20:12:13Z","user_mtime":"2019-05-20T20:12:12Z","source":"lcsh","jsonmodel_type":"subject","external_ids":[],"publish":true,"used_within_repositories":["/repositories/2"],"used_within_published_repositories":[],"terms":[{"lock_version":0,"term":"Indonesia","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T19:25:57Z","system_mtime":"2019-05-20T19:25:57Z","user_mtime":"2019-05-20T19:25:57Z","term_type":"topical","jsonmodel_type":"term","uri":"/terms/1","vocabulary":"/vocabularies/1"}],"external_documents":[],"uri":"/subjects/22","vocabulary":"/vocabularies/1","is_linked_to_published_record":false},{"lock_version":1,"title":"Political
@@ -383,7 +383,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -403,7 +403,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/subjects?all_ids=True&modified_since=0&page=2&page_size=10
+    uri: http://25.145.18.140:8089/subjects?all_ids=True&modified_since=0&page=2&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":2,"this_page":2,"total":18,"results":[{"lock_version":1,"title":"Lebanon","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T20:12:13Z","system_mtime":"2019-05-20T20:12:13Z","user_mtime":"2019-05-20T20:12:13Z","source":"lcsh","jsonmodel_type":"subject","external_ids":[],"publish":true,"used_within_repositories":["/repositories/2"],"used_within_published_repositories":[],"terms":[{"lock_version":0,"term":"Lebanon","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T19:25:57Z","system_mtime":"2019-05-20T19:25:57Z","user_mtime":"2019-05-20T19:25:57Z","term_type":"geographic","jsonmodel_type":"term","uri":"/terms/11","vocabulary":"/vocabularies/1"}],"external_documents":[],"uri":"/subjects/32","vocabulary":"/vocabularies/1","is_linked_to_published_record":false},{"lock_version":1,"title":"Korea","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T20:12:13Z","system_mtime":"2019-05-20T20:12:13Z","user_mtime":"2019-05-20T20:12:13Z","source":"lcsh","jsonmodel_type":"subject","external_ids":[],"publish":true,"used_within_repositories":["/repositories/2"],"used_within_published_repositories":[],"terms":[{"lock_version":0,"term":"Korea","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T19:25:57Z","system_mtime":"2019-05-20T19:25:57Z","user_mtime":"2019-05-20T19:25:57Z","term_type":"geographic","jsonmodel_type":"term","uri":"/terms/12","vocabulary":"/vocabularies/1"}],"external_documents":[],"uri":"/subjects/33","vocabulary":"/vocabularies/1","is_linked_to_published_record":false},{"lock_version":1,"title":"China","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T20:12:13Z","system_mtime":"2019-05-20T20:12:13Z","user_mtime":"2019-05-20T20:12:13Z","source":"lcsh","jsonmodel_type":"subject","external_ids":[],"publish":true,"used_within_repositories":["/repositories/2"],"used_within_published_repositories":[],"terms":[{"lock_version":0,"term":"China","created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T19:25:57Z","system_mtime":"2019-05-20T19:25:57Z","user_mtime":"2019-05-20T19:25:57Z","term_type":"geographic","jsonmodel_type":"term","uri":"/terms/13","vocabulary":"/vocabularies/1"}],"external_documents":[],"uri":"/subjects/34","vocabulary":"/vocabularies/1","is_linked_to_published_record":false},{"lock_version":1,"title":"Social
@@ -423,7 +423,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -443,7 +443,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/agents/people?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/agents/people?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":1,"this_page":1,"total":2,"results":[{"lock_version":0,"publish":false,"create_time":"2019-05-20T18:51:21Z","system_mtime":"2019-05-20T18:51:21Z","user_mtime":"2019-05-20T18:51:21Z","jsonmodel_type":"agent_person","agent_contacts":[],"linked_agent_roles":[],"external_documents":[],"notes":[],"used_within_repositories":["/repositories/1"],"used_within_published_repositories":[],"dates_of_existence":[],"names":[{"lock_version":0,"primary_name":"Administrator","sort_name":"Administrator","sort_name_auto_generate":true,"create_time":"2019-05-20T18:51:21Z","system_mtime":"2019-05-20T18:51:21Z","user_mtime":"2019-05-20T18:51:21Z","authorized":true,"is_display_name":true,"source":"local","rules":"local","name_order":"direct","jsonmodel_type":"name_person","use_dates":[]}],"related_agents":[],"uri":"/agents/people/1","agent_type":"agent_person","is_linked_to_published_record":false,"display_name":{"lock_version":0,"primary_name":"Administrator","sort_name":"Administrator","sort_name_auto_generate":true,"create_time":"2019-05-20T18:51:21Z","system_mtime":"2019-05-20T18:51:21Z","user_mtime":"2019-05-20T18:51:21Z","authorized":true,"is_display_name":true,"source":"local","rules":"local","name_order":"direct","jsonmodel_type":"name_person","use_dates":[]},"title":"Administrator","is_user":"admin"},{"lock_version":2,"publish":true,"created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T20:12:12Z","system_mtime":"2019-05-20T20:15:04Z","user_mtime":"2019-05-20T20:15:04Z","jsonmodel_type":"agent_person","agent_contacts":[],"linked_agent_roles":["creator"],"external_documents":[],"notes":[],"used_within_repositories":["/repositories/2"],"used_within_published_repositories":[],"dates_of_existence":[],"names":[{"lock_version":0,"primary_name":"Loucks,
@@ -460,7 +460,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:47 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -480,7 +480,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/agents/corporate_entities?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/agents/corporate_entities?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":1,"this_page":1,"total":3,"results":[{"lock_version":0,"publish":false,"created_by":"admin","last_modified_by":"admin","create_time":"2019-05-20T18:58:57Z","system_mtime":"2019-05-20T18:58:57Z","user_mtime":"2019-05-20T18:58:57Z","jsonmodel_type":"agent_corporate_entity","agent_contacts":[{"lock_version":0,"name":"Test
@@ -504,7 +504,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -524,7 +524,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/agents/families?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/agents/families?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":1,"this_page":1,"total":0,"results":[]}
@@ -538,7 +538,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -558,7 +558,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/agents/software?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/agents/software?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":1,"this_page":1,"total":1,"results":[{"lock_version":0,"publish":false,"create_time":"2019-05-20T18:51:20Z","system_mtime":"2019-05-20T18:51:20Z","user_mtime":"2019-05-20T18:51:20Z","jsonmodel_type":"agent_software","agent_contacts":[],"linked_agent_roles":[],"external_documents":[],"notes":[],"used_within_repositories":[],"used_within_published_repositories":[],"dates_of_existence":[],"names":[{"lock_version":0,"software_name":"ArchivesSpace","version":"v2.5.2","sort_name":"ArchivesSpace
@@ -575,7 +575,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:38 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -595,7 +595,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True
   response:
     body:
       string: '[471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520]
@@ -609,7 +609,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:39 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -629,7 +629,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=1&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=1&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":5,"this_page":1,"total":50,"results":[{"lock_version":0,"position":0,"publish":true,"ref_id":"102d9da23c2f47d1932c8af4d5311bf7","component_id":"1","title":"Correspondence","display_string":"Correspondence,
@@ -690,7 +690,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:39 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -710,7 +710,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -771,7 +771,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:39 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -791,7 +791,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -902,7 +902,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:39 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -922,7 +922,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -983,7 +983,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1003,7 +1003,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -1114,7 +1114,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1134,7 +1134,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -1195,7 +1195,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1215,7 +1215,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -1326,7 +1326,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:48 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1346,7 +1346,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -1407,7 +1407,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1427,7 +1427,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -1538,7 +1538,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1558,7 +1558,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -1619,7 +1619,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:40 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1639,7 +1639,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -1750,7 +1750,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1770,7 +1770,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -1831,7 +1831,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1851,7 +1851,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -1962,7 +1962,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -1982,7 +1982,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -2043,7 +2043,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2063,7 +2063,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -2174,7 +2174,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2194,7 +2194,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -2255,7 +2255,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2275,7 +2275,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -2386,7 +2386,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2406,7 +2406,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -2467,7 +2467,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2487,7 +2487,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -2598,7 +2598,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2618,7 +2618,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -2679,7 +2679,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:41 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2699,7 +2699,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -2810,7 +2810,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2830,7 +2830,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=2&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=2&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":5,"this_page":2,"total":50,"results":[{"lock_version":0,"position":7,"publish":true,"ref_id":"624f0c956bd24733a6697ac06ab73b9e","title":"Gregg,
@@ -2870,7 +2870,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2890,7 +2890,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -2951,7 +2951,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -2971,7 +2971,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -3082,7 +3082,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:49 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3102,7 +3102,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -3163,7 +3163,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3183,7 +3183,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -3294,7 +3294,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:42 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3314,7 +3314,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -3375,7 +3375,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3395,7 +3395,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -3506,7 +3506,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3526,7 +3526,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -3587,7 +3587,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3607,7 +3607,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -3718,7 +3718,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3738,7 +3738,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -3799,7 +3799,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3819,7 +3819,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -3930,7 +3930,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -3950,7 +3950,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -4011,7 +4011,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4031,7 +4031,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -4142,7 +4142,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4162,7 +4162,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -4223,7 +4223,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4243,7 +4243,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -4354,7 +4354,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4374,7 +4374,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -4435,7 +4435,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4455,7 +4455,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -4566,7 +4566,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:43 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4586,7 +4586,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -4647,7 +4647,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4667,7 +4667,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -4778,7 +4778,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4798,7 +4798,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -4859,7 +4859,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -4879,7 +4879,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -4990,7 +4990,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:50 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5010,7 +5010,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=3&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=3&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":5,"this_page":3,"total":50,"results":[{"lock_version":0,"position":17,"publish":true,"ref_id":"ccf82a30510644d99d1b1328c36d659c","title":"Parker,
@@ -5050,7 +5050,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5070,7 +5070,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -5131,7 +5131,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5151,7 +5151,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -5262,7 +5262,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:44 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5282,7 +5282,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -5343,7 +5343,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5363,7 +5363,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -5474,7 +5474,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5494,7 +5494,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -5555,7 +5555,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5575,7 +5575,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -5686,7 +5686,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5706,7 +5706,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -5767,7 +5767,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5787,7 +5787,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -5898,7 +5898,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5918,7 +5918,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -5979,7 +5979,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -5999,7 +5999,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -6110,7 +6110,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6130,7 +6130,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -6191,7 +6191,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6211,7 +6211,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -6322,7 +6322,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6342,7 +6342,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -6403,7 +6403,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:51 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6423,7 +6423,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -6534,7 +6534,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6554,7 +6554,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -6615,7 +6615,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6635,7 +6635,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -6746,7 +6746,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:45 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6766,7 +6766,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -6827,7 +6827,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6847,7 +6847,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -6958,7 +6958,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -6978,7 +6978,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -7039,7 +7039,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7059,7 +7059,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -7170,7 +7170,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7190,7 +7190,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=4&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=4&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":5,"this_page":4,"total":50,"results":[{"lock_version":0,"position":6,"publish":true,"ref_id":"b7d18379626f49f2a37604838f315ae3","title":"Trip","display_string":"Trip,
@@ -7224,7 +7224,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7244,7 +7244,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -7305,7 +7305,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7325,7 +7325,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -7436,7 +7436,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7456,7 +7456,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -7517,7 +7517,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:52 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7537,7 +7537,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -7648,7 +7648,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:46 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7668,7 +7668,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -7729,7 +7729,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7749,7 +7749,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -7860,7 +7860,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7880,7 +7880,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -7941,7 +7941,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -7961,7 +7961,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -8072,7 +8072,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8092,7 +8092,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -8153,7 +8153,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8173,7 +8173,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -8284,7 +8284,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8304,7 +8304,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -8365,7 +8365,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8385,7 +8385,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -8496,7 +8496,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8516,7 +8516,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -8577,7 +8577,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8597,7 +8597,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -8708,7 +8708,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8728,7 +8728,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -8789,7 +8789,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8809,7 +8809,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -8920,7 +8920,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -8940,7 +8940,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -9001,7 +9001,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9021,7 +9021,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -9132,7 +9132,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9152,7 +9152,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -9213,7 +9213,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9233,7 +9233,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -9344,7 +9344,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:47 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9364,7 +9364,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=5&page_size=10
+    uri: http://25.145.18.140:8089/repositories/2/archival_objects?all_ids=True&modified_since=0&page=5&page_size=10
   response:
     body:
       string: '{"first_page":1,"last_page":5,"this_page":5,"total":50,"results":[{"lock_version":0,"position":6,"publish":true,"ref_id":"aaeaf8053f0146ce81e6d44c6487b8e2","title":"Chapters
@@ -9397,7 +9397,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:53 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9417,7 +9417,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -9478,7 +9478,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9498,7 +9498,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -9609,7 +9609,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9629,7 +9629,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -9690,7 +9690,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9710,7 +9710,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -9821,7 +9821,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9841,7 +9841,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -9902,7 +9902,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -9922,7 +9922,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -10033,7 +10033,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10053,7 +10053,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -10114,7 +10114,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10134,7 +10134,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -10245,7 +10245,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10265,7 +10265,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -10326,7 +10326,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:48 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10346,7 +10346,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -10457,7 +10457,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:54 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10477,7 +10477,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -10538,7 +10538,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10558,7 +10558,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -10669,7 +10669,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10689,7 +10689,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -10750,7 +10750,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10770,7 +10770,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -10881,7 +10881,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10901,7 +10901,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -10962,7 +10962,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -10982,7 +10982,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -11093,7 +11093,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -11113,7 +11113,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -11174,7 +11174,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -11194,7 +11194,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -11305,7 +11305,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -11325,7 +11325,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4
+    uri: http://25.145.18.140:8089/repositories/2/resources/4
   response:
     body:
       string: '{"lock_version":0,"title":"Harold H. Loucks papers","publish":true,"restrictions":false,"ead_id":"FA050.xml","finding_aid_title":"A
@@ -11386,7 +11386,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:
@@ -11406,7 +11406,7 @@ interactions:
       User-Agent:
       - ArchivesSnake/0.1
     method: GET
-    uri: http://192.168.2.49:8089/repositories/2/resources/4/tree
+    uri: http://25.145.18.140:8089/repositories/2/resources/4/tree
   response:
     body:
       string: '{"title":"Harold H. Loucks papers","id":4,"node_type":"resource","publish":true,"suppressed":false,"children":[{"title":"Correspondence,
@@ -11517,7 +11517,1707 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 20:19:55 GMT
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=1&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":1,"results":["/repositories/2/archival_objects/1","/repositories/2/archival_objects/2","/repositories/2/archival_objects/3","/repositories/2/archival_objects/4","/repositories/2/archival_objects/5","/repositories/2/archival_objects/6","/repositories/2/archival_objects/7","/repositories/2/archival_objects/8","/repositories/2/archival_objects/9","/repositories/2/archival_objects/10"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '429'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=2&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":2,"results":["/repositories/2/archival_objects/11","/repositories/2/archival_objects/12","/repositories/2/archival_objects/13","/repositories/2/archival_objects/14","/repositories/2/archival_objects/15","/repositories/2/archival_objects/16","/repositories/2/archival_objects/17","/repositories/2/archival_objects/18","/repositories/2/archival_objects/19","/repositories/2/archival_objects/20"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=3&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":3,"results":["/repositories/2/archival_objects/21","/repositories/2/archival_objects/22","/repositories/2/archival_objects/23","/repositories/2/archival_objects/24","/repositories/2/archival_objects/25","/repositories/2/archival_objects/26","/repositories/2/archival_objects/27","/repositories/2/archival_objects/28","/repositories/2/archival_objects/29","/repositories/2/archival_objects/30"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=4&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":4,"results":["/repositories/2/archival_objects/31","/repositories/2/archival_objects/32","/repositories/2/archival_objects/37","/repositories/2/archival_objects/38","/repositories/2/archival_objects/44","/repositories/2/archival_objects/45","/repositories/2/archival_objects/46","/repositories/2/archival_objects/47","/repositories/2/archival_objects/48","/repositories/2/archival_objects/49"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=5&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":5,"results":["/repositories/2/archival_objects/50","/repositories/2/archival_objects/51","/repositories/2/archival_objects/52","/repositories/2/archival_objects/53","/repositories/2/archival_objects/54","/repositories/2/archival_objects/55","/repositories/2/archival_objects/56","/repositories/2/archival_objects/57","/repositories/2/archival_objects/58","/repositories/2/archival_objects/59"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=6&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":6,"results":["/repositories/2/archival_objects/60","/repositories/2/archival_objects/61","/repositories/2/archival_objects/62","/repositories/2/archival_objects/63","/repositories/2/archival_objects/64","/repositories/2/archival_objects/65","/repositories/2/archival_objects/66","/repositories/2/archival_objects/67","/repositories/2/archival_objects/68","/repositories/2/archival_objects/69"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:49 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=7&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":7,"results":["/repositories/2/archival_objects/70","/repositories/2/archival_objects/71","/repositories/2/archival_objects/72","/repositories/2/archival_objects/73","/repositories/2/archival_objects/74","/repositories/2/archival_objects/75","/repositories/2/archival_objects/76","/repositories/2/archival_objects/77","/repositories/2/archival_objects/78","/repositories/2/archival_objects/79"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=8&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":8,"results":["/repositories/2/archival_objects/80","/repositories/2/archival_objects/81","/repositories/2/archival_objects/82","/repositories/2/archival_objects/83","/repositories/2/archival_objects/84","/repositories/2/archival_objects/85","/repositories/2/archival_objects/86","/repositories/2/archival_objects/87","/repositories/2/archival_objects/88","/repositories/2/archival_objects/89"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '438'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=9&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":9,"results":["/repositories/2/archival_objects/90","/repositories/2/archival_objects/165","/repositories/2/archival_objects/166","/repositories/2/archival_objects/167","/repositories/2/archival_objects/168","/repositories/2/archival_objects/169","/repositories/2/archival_objects/170","/repositories/2/archival_objects/171","/repositories/2/archival_objects/172","/repositories/2/archival_objects/173"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '447'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=10&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":10,"results":["/repositories/2/archival_objects/91","/repositories/2/archival_objects/92","/repositories/2/archival_objects/93","/repositories/2/archival_objects/94","/repositories/2/archival_objects/95","/repositories/2/archival_objects/96","/repositories/2/archival_objects/97","/repositories/2/archival_objects/98","/repositories/2/archival_objects/99","/repositories/2/archival_objects/100"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '440'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=11&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":11,"results":["/repositories/2/archival_objects/101","/repositories/2/archival_objects/102","/repositories/2/archival_objects/103","/repositories/2/archival_objects/104","/repositories/2/archival_objects/105","/repositories/2/archival_objects/106","/repositories/2/archival_objects/107","/repositories/2/archival_objects/108","/repositories/2/archival_objects/109","/repositories/2/archival_objects/110"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=12&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":12,"results":["/repositories/2/archival_objects/111","/repositories/2/archival_objects/112","/repositories/2/archival_objects/113","/repositories/2/archival_objects/114","/repositories/2/archival_objects/115","/repositories/2/archival_objects/116","/repositories/2/archival_objects/117","/repositories/2/archival_objects/118","/repositories/2/archival_objects/119","/repositories/2/archival_objects/120"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=13&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":13,"results":["/repositories/2/archival_objects/121","/repositories/2/archival_objects/122","/repositories/2/archival_objects/123","/repositories/2/archival_objects/124","/repositories/2/archival_objects/125","/repositories/2/archival_objects/126","/repositories/2/archival_objects/127","/repositories/2/archival_objects/128","/repositories/2/archival_objects/129","/repositories/2/archival_objects/130"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=14&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":14,"results":["/repositories/2/archival_objects/131","/repositories/2/archival_objects/132","/repositories/2/archival_objects/133","/repositories/2/archival_objects/134","/repositories/2/archival_objects/135","/repositories/2/archival_objects/136","/repositories/2/archival_objects/137","/repositories/2/archival_objects/138","/repositories/2/archival_objects/139","/repositories/2/archival_objects/140"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=15&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":15,"results":["/repositories/2/archival_objects/141","/repositories/2/archival_objects/142","/repositories/2/archival_objects/143","/repositories/2/archival_objects/144","/repositories/2/archival_objects/145","/repositories/2/archival_objects/146","/repositories/2/archival_objects/147","/repositories/2/archival_objects/148","/repositories/2/archival_objects/149","/repositories/2/archival_objects/150"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=16&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":16,"results":["/repositories/2/archival_objects/151","/repositories/2/archival_objects/152","/repositories/2/archival_objects/153","/repositories/2/archival_objects/154","/repositories/2/archival_objects/155","/repositories/2/archival_objects/156","/repositories/2/archival_objects/157","/repositories/2/archival_objects/158","/repositories/2/archival_objects/159","/repositories/2/archival_objects/160"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=17&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":17,"results":["/repositories/2/archival_objects/161","/repositories/2/archival_objects/162","/repositories/2/archival_objects/163","/repositories/2/archival_objects/164","/repositories/2/resources/1","/revision_statement/2","/repositories/2/archival_objects/221","/repositories/2/archival_objects/203","/repositories/2/archival_objects/196","/repositories/2/archival_objects/174"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '425'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=18&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":18,"results":["/repositories/2/archival_objects/220","/repositories/2/archival_objects/187","/repositories/2/archival_objects/180","/repositories/2/archival_objects/200","/repositories/2/archival_objects/199","/repositories/2/archival_objects/223","/repositories/2/archival_objects/176","/repositories/2/archival_objects/212","/repositories/2/archival_objects/208","/repositories/2/archival_objects/189"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=19&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":19,"results":["/repositories/2/archival_objects/183","/repositories/2/archival_objects/219","/repositories/2/archival_objects/193","/repositories/2/archival_objects/215","/repositories/2/archival_objects/175","/repositories/2/archival_objects/198","/repositories/2/archival_objects/195","/repositories/2/archival_objects/178","/repositories/2/archival_objects/222","/repositories/2/archival_objects/182"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=20&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":20,"results":["/repositories/2/archival_objects/184","/repositories/2/archival_objects/207","/repositories/2/archival_objects/201","/repositories/2/archival_objects/218","/repositories/2/archival_objects/188","/repositories/2/archival_objects/206","/repositories/2/archival_objects/177","/repositories/2/archival_objects/185","/repositories/2/archival_objects/213","/repositories/2/archival_objects/217"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=21&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":21,"results":["/repositories/2/archival_objects/210","/repositories/2/archival_objects/216","/repositories/2/archival_objects/214","/repositories/2/archival_objects/190","/repositories/2/archival_objects/204","/repositories/2/archival_objects/205","/repositories/2/archival_objects/194","/repositories/2/archival_objects/179","/repositories/2/archival_objects/197","/repositories/2/archival_objects/181"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=22&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":22,"results":["/repositories/2/archival_objects/211","/repositories/2/archival_objects/202","/repositories/2/archival_objects/192","/repositories/2/archival_objects/186","/repositories/2/archival_objects/191","/repositories/2/archival_objects/209","/repositories/2/resources/2","/repositories/2/archival_objects/224","/repositories/2/archival_objects/225","/repositories/2/archival_objects/226"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '440'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=23&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":23,"results":["/repositories/2/archival_objects/227","/repositories/2/archival_objects/228","/repositories/2/archival_objects/229","/repositories/2/archival_objects/230","/repositories/2/archival_objects/231","/repositories/2/archival_objects/232","/repositories/2/archival_objects/233","/repositories/2/archival_objects/234","/repositories/2/archival_objects/235","/repositories/2/archival_objects/236"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=24&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":24,"results":["/repositories/2/archival_objects/237","/repositories/2/archival_objects/238","/repositories/2/archival_objects/239","/repositories/2/archival_objects/240","/repositories/2/archival_objects/247","/repositories/2/archival_objects/248","/repositories/2/archival_objects/249","/repositories/2/archival_objects/250","/repositories/2/archival_objects/251","/repositories/2/archival_objects/252"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=25&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":25,"results":["/repositories/2/archival_objects/253","/repositories/2/archival_objects/254","/repositories/2/archival_objects/255","/repositories/2/archival_objects/256","/repositories/2/archival_objects/257","/repositories/2/archival_objects/258","/repositories/2/archival_objects/259","/repositories/2/archival_objects/260","/repositories/2/archival_objects/261","/repositories/2/archival_objects/262"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=26&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":26,"results":["/repositories/2/archival_objects/263","/repositories/2/archival_objects/264","/repositories/2/archival_objects/265","/repositories/2/archival_objects/266","/repositories/2/archival_objects/267","/repositories/2/archival_objects/268","/repositories/2/archival_objects/269","/repositories/2/archival_objects/241","/repositories/2/archival_objects/242","/repositories/2/archival_objects/243"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=27&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":27,"results":["/repositories/2/archival_objects/244","/repositories/2/archival_objects/245","/repositories/2/archival_objects/246","/repositories/2/archival_objects/270","/repositories/2/archival_objects/271","/repositories/2/archival_objects/272","/repositories/2/archival_objects/273","/repositories/2/archival_objects/274","/repositories/2/archival_objects/275","/repositories/2/archival_objects/276"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:50 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=28&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":28,"results":["/repositories/2/archival_objects/277","/repositories/2/archival_objects/278","/repositories/2/archival_objects/279","/repositories/2/archival_objects/280","/repositories/2/archival_objects/281","/repositories/2/archival_objects/282","/repositories/2/archival_objects/283","/repositories/2/archival_objects/284","/repositories/2/archival_objects/285","/repositories/2/archival_objects/286"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=29&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":29,"results":["/repositories/2/archival_objects/287","/repositories/2/archival_objects/288","/repositories/2/archival_objects/289","/repositories/2/archival_objects/290","/repositories/2/archival_objects/291","/repositories/2/archival_objects/292","/repositories/2/archival_objects/293","/repositories/2/archival_objects/294","/repositories/2/archival_objects/295","/repositories/2/archival_objects/296"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=30&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":30,"results":["/repositories/2/archival_objects/297","/repositories/2/archival_objects/298","/repositories/2/archival_objects/299","/repositories/2/archival_objects/300","/repositories/2/archival_objects/301","/repositories/2/archival_objects/302","/repositories/2/archival_objects/303","/repositories/2/archival_objects/304","/repositories/2/archival_objects/305","/repositories/2/archival_objects/306"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=31&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":31,"results":["/repositories/2/archival_objects/307","/repositories/2/archival_objects/308","/repositories/2/archival_objects/309","/repositories/2/archival_objects/310","/repositories/2/archival_objects/311","/repositories/2/archival_objects/312","/repositories/2/archival_objects/313","/repositories/2/archival_objects/314","/repositories/2/archival_objects/315","/repositories/2/archival_objects/316"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=32&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":32,"results":["/repositories/2/archival_objects/317","/repositories/2/archival_objects/318","/repositories/2/archival_objects/319","/repositories/2/archival_objects/320","/repositories/2/archival_objects/321","/repositories/2/archival_objects/322","/repositories/2/archival_objects/323","/repositories/2/archival_objects/324","/repositories/2/archival_objects/325","/repositories/2/archival_objects/326"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=33&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":33,"results":["/repositories/2/archival_objects/327","/repositories/2/archival_objects/328","/repositories/2/archival_objects/329","/repositories/2/archival_objects/330","/repositories/2/archival_objects/331","/repositories/2/archival_objects/332","/repositories/2/archival_objects/333","/repositories/2/archival_objects/334","/repositories/2/archival_objects/335","/repositories/2/archival_objects/336"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=34&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":34,"results":["/repositories/2/archival_objects/337","/repositories/2/archival_objects/338","/repositories/2/archival_objects/339","/repositories/2/archival_objects/340","/repositories/2/archival_objects/341","/repositories/2/archival_objects/342","/repositories/2/archival_objects/343","/repositories/2/archival_objects/344","/repositories/2/archival_objects/345","/repositories/2/archival_objects/346"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=35&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":35,"results":["/repositories/2/archival_objects/347","/repositories/2/archival_objects/348","/repositories/2/archival_objects/349","/repositories/2/archival_objects/350","/repositories/2/archival_objects/351","/repositories/2/archival_objects/352","/repositories/2/archival_objects/353","/repositories/2/archival_objects/354","/repositories/2/archival_objects/355","/repositories/2/archival_objects/356"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=36&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":36,"results":["/repositories/2/archival_objects/357","/repositories/2/archival_objects/358","/repositories/2/archival_objects/359","/repositories/2/archival_objects/360","/repositories/2/archival_objects/361","/repositories/2/archival_objects/362","/repositories/2/archival_objects/363","/repositories/2/archival_objects/364","/repositories/2/archival_objects/365","/repositories/2/archival_objects/366"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=37&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":37,"results":["/repositories/2/archival_objects/367","/repositories/2/archival_objects/368","/repositories/2/archival_objects/369","/repositories/2/archival_objects/370","/repositories/2/archival_objects/371","/repositories/2/archival_objects/372","/repositories/2/archival_objects/373","/repositories/2/archival_objects/374","/repositories/2/archival_objects/375","/repositories/2/archival_objects/376"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=38&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":38,"results":["/repositories/2/archival_objects/377","/repositories/2/archival_objects/378","/repositories/2/archival_objects/379","/repositories/2/archival_objects/380","/repositories/2/archival_objects/381","/repositories/2/archival_objects/382","/repositories/2/archival_objects/383","/repositories/2/archival_objects/384","/repositories/2/archival_objects/385","/repositories/2/archival_objects/386"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=39&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":39,"results":["/repositories/2/archival_objects/387","/repositories/2/archival_objects/388","/repositories/2/archival_objects/389","/repositories/2/archival_objects/390","/repositories/2/archival_objects/391","/repositories/2/archival_objects/392","/repositories/2/archival_objects/393","/repositories/2/archival_objects/394","/repositories/2/archival_objects/395","/repositories/2/archival_objects/396"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=40&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":40,"results":["/repositories/2/archival_objects/397","/repositories/2/archival_objects/398","/repositories/2/archival_objects/399","/repositories/2/archival_objects/400","/repositories/2/archival_objects/401","/repositories/2/archival_objects/402","/repositories/2/archival_objects/403","/repositories/2/archival_objects/404","/repositories/2/archival_objects/405","/repositories/2/archival_objects/406"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=41&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":41,"results":["/repositories/2/archival_objects/407","/repositories/2/archival_objects/408","/repositories/2/archival_objects/409","/repositories/2/archival_objects/410","/repositories/2/archival_objects/411","/repositories/2/archival_objects/412","/repositories/2/archival_objects/413","/repositories/2/archival_objects/414","/repositories/2/archival_objects/415","/repositories/2/archival_objects/416"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=42&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":42,"results":["/repositories/2/archival_objects/417","/repositories/2/archival_objects/418","/repositories/2/archival_objects/419","/repositories/2/archival_objects/420","/repositories/2/archival_objects/421","/repositories/2/archival_objects/422","/repositories/2/archival_objects/423","/repositories/2/archival_objects/424","/repositories/2/archival_objects/425","/repositories/2/archival_objects/426"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=43&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":43,"results":["/repositories/2/archival_objects/427","/repositories/2/archival_objects/428","/repositories/2/archival_objects/429","/repositories/2/archival_objects/430","/repositories/2/archival_objects/431","/repositories/2/archival_objects/432","/repositories/2/archival_objects/433","/repositories/2/archival_objects/434","/repositories/2/archival_objects/435","/repositories/2/archival_objects/436"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=44&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":44,"results":["/repositories/2/archival_objects/437","/repositories/2/archival_objects/438","/repositories/2/archival_objects/439","/repositories/2/archival_objects/440","/repositories/2/archival_objects/441","/repositories/2/archival_objects/442","/repositories/2/archival_objects/443","/repositories/2/archival_objects/444","/repositories/2/archival_objects/445","/repositories/2/archival_objects/446"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=45&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":45,"results":["/repositories/2/archival_objects/447","/repositories/2/archival_objects/448","/repositories/2/archival_objects/449","/repositories/2/archival_objects/450","/repositories/2/archival_objects/451","/repositories/2/archival_objects/452","/repositories/2/archival_objects/453","/repositories/2/archival_objects/454","/repositories/2/archival_objects/455","/repositories/2/archival_objects/456"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=46&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":46,"results":["/repositories/2/archival_objects/457","/repositories/2/archival_objects/458","/repositories/2/archival_objects/459","/repositories/2/archival_objects/460","/repositories/2/archival_objects/461","/repositories/2/archival_objects/462","/repositories/2/archival_objects/463","/repositories/2/archival_objects/464","/repositories/2/archival_objects/465","/repositories/2/archival_objects/466"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '449'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=47&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":47,"results":["/repositories/2/archival_objects/467","/repositories/2/archival_objects/468","/repositories/2/archival_objects/469","/repositories/2/archival_objects/470","/repositories/2/resources/3","/agents/people/3","/agents/people/4","/agents/corporate_entities/5","/agents/people/2","/agents/corporate_entities/4"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=48&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":48,"results":["/agents/corporate_entities/6","/agents/corporate_entities/3","/agents/corporate_entities/2","/agents/corporate_entities/7","/subjects/21","/subjects/7","/subjects/6","/subjects/20","/subjects/13","/subjects/16"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '271'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:51 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=49&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":49,"results":["/subjects/4","/subjects/18","/subjects/1","/subjects/5","/subjects/19","/subjects/12","/subjects/11","/subjects/9","/subjects/15","/subjects/10"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '205'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:52 GMT
+      Server:
+      - Jetty(8.1.5.v20120716)
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://25.145.18.140:8089/delete-feed?modified_since=0&page=50&page_size=10
+  response:
+    body:
+      string: '{"first_page":1,"last_page":50,"this_page":50,"results":["/subjects/3","/subjects/2","/subjects/14","/subjects/8","/subjects/17","/repositories/2/resources/104"]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Content-Length:
+      - '163'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 24 May 2019 13:22:52 GMT
       Server:
       - Jetty(8.1.5.v20120716)
       X-Content-Type-Options:

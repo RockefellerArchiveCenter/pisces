@@ -24,6 +24,7 @@ class TransformTest(TestCase):
         import_fixture_data()
 
     def fetchers(self):
+        print("*** Testing fetchers ***")
         FETCHER_MAP = [
             (ArchivesSpaceDataFetcher, 'archivesspace_fetch.yml', 'ARCHIVESSPACE'),
             (CartographerDataFetcher, 'cartographer_fetch.yml', 'CARTOGRAPHER'),
@@ -47,6 +48,7 @@ class TransformTest(TestCase):
             self.assertTrue(len(Identifier.objects.filter(source=identifier_source)) > 0)
 
     def transformers(self):
+        print("*** Testing transformers ***")
         TRANSFORMER_MAP = [
             (ArchivesSpaceDataTransformer, 'ARCHIVESSPACE'),
             (CartographerDataTransformer, 'CARTOGRAPHER'),
@@ -69,6 +71,6 @@ class TransformTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_transforms(self):
-        self.fetchers()
         self.transformers()
+        self.fetchers()
         self.transform_endpoint()
