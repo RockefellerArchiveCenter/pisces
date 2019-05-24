@@ -307,10 +307,11 @@ class FetcherRunView(APIView):
     def post(self, request, format=None):
         source = request.GET.get('source')
         object_type = request.GET.get('object_type')
+        target = request.GET.get('target')
         try:
             if source:
                 if source == 'archivesspace':
-                    ArchivesSpaceDataFetcher(object_type).run()
+                    ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
                 elif source == 'cartographer':
                     CartographerDataFetcher().run()
                 elif source == 'wikidata':
@@ -323,7 +324,7 @@ class FetcherRunView(APIView):
                            else "Fetch routines complete for {} {}.".format(source, object_type))
                 return Response({"detail": message}, status=200)
             else:
-                ArchivesSpaceDataFetcher(object_type).run()
+                ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
                 CartographerDataFetcher().run()
                 WikidataDataFetcher().run()
                 WikipediaDataFetcher().run()
