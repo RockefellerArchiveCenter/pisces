@@ -45,10 +45,8 @@ class ArchivesSpaceDataFetcher:
 
     def get_deleted(self):
         try:
-            deletions = self.aspace.client.get("delete-feed",
-                                               params={"page": 1, "page_size": 10000000,
-                                                       "modified_since": str(self.last_run)}).json()
-            for d in deletions.get('results'):
+            deletions = self.aspace.client.get_paged("delete-feed", params={"modified_since": str(self.last_run)})
+            for d in deletions:
                 if "agents/" in d:
                     self.delete_data(Agent, d)
                 elif "subjects/" in d:
@@ -59,6 +57,7 @@ class ArchivesSpaceDataFetcher:
                 elif "resources/" in d:
                     self.delete_data(Collection, d)
         except Exception as e:
+            print(e)
             FetchRunError.objects.create(run=self.current_run, message="Error fetching deleted ArchivesSpace data: {}".format(e))
 
     def get_updated(self):
