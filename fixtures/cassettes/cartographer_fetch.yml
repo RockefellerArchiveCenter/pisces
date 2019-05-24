@@ -23,15 +23,15 @@ interactions:
         0, "OPTIONS": {}, "TIME_ZONE": null, "TEST": {"CHARSET": null, "COLLATION":
         null, "NAME": null, "MIRROR": null}}}}, "code": {"debug": true, "scm": "git",
         "branch": {"local": "master", "remote": ["origin/master"]}, "commit": {"id":
-        "0782a7e81769e80280997f46f08a7d4c24901c06", "summary": "improve serializers",
-        "author": "Hillel Arnold", "date": "2019-05-20T12:03:13"}}}}'
+        "cefb4cd7b19fc8b9d799d8d448abde0cd0e15b9e", "summary": "updating serializer
+        to show parents", "author": "Hillel Arnold", "date": "2019-05-23T18:30:12"}}}}'
     headers:
       Content-Length:
-      - '826'
+      - '842'
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 18:22:34 GMT
+      - Thu, 23 May 2019 22:31:18 GMT
       Server:
       - WSGIServer/0.2 CPython/3.6.5
       X-Frame-Options:
@@ -51,20 +51,20 @@ interactions:
       User-Agent:
       - ElectronBond/0.1
     method: GET
-    uri: http://cartographer-web:8000/api/maps/?updated_since=0
+    uri: http://cartographer-web:8000/api/maps/?modified_since=0
   response:
     body:
-      string: '{"count":1,"next":null,"previous":null,"results":[{"url":"http://cartographer-web:8000/api/maps/2/","title":"test
-        map"}]}'
+      string: '{"count":1,"next":null,"previous":null,"results":[{"url":"http://cartographer-web:8000/api/maps/2/","title":"Village
+        Green Preservation Society records"}]}'
     headers:
       Allow:
       - GET, HEAD, OPTIONS
       Content-Length:
-      - '121'
+      - '155'
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 18:22:34 GMT
+      - Thu, 23 May 2019 22:31:18 GMT
       Server:
       - WSGIServer/0.2 CPython/3.6.5
       Vary:
@@ -89,19 +89,55 @@ interactions:
     uri: http://cartographer-web:8000/api/maps/2/
   response:
     body:
-      string: '{"ref":"/api/maps/2/","title":"test map","children":[{"title":"Child
-        component","ref":"/api/components/14/","children":[{"title":"Population Council,
-        Bernard Berelson administration file","ref":"/repositories/2/resources/2","parent":"/api/components/14/"},{"title":"yet
-        another grandchild","ref":"/api/components/18/","parent":"/api/components/14/"}]},{"title":"sibling","ref":"/api/components/19/"}],"publish":true,"created":"2019-05-12T14:11:17.801481-04:00","modified":"2019-05-19T14:21:12.680321-04:00"}'
+      string: '{"ref":"/api/maps/2/","title":"Village Green Preservation Society records","children":[{"title":"Picture
+        books","ref":"/api/components/1/","parent":"/api/maps/2/"},{"title":"Custard
+        Pie Appreciation Consortium records","ref":"/api/components/2/","parent":"/api/maps/2/","children":[{"title":"Correspondence","ref":"/api/components/3/","parent":"/api/components/2/"},{"title":"Photos","ref":"/api/components/4/","parent":"/api/components/2/"}]},{"title":"King
+        George''s Cross (and all those who were awarded one)","ref":"/api/components/5/","parent":"/api/maps/2/","children":[{"title":"Awards","ref":"/api/components/6/","parent":"/api/components/5/","children":[{"title":"ephemera","ref":"/api/components/7/","parent":"/api/components/6/","children":[{"title":"A
+        plaque","ref":"/api/components/9/","parent":"/api/components/7/"},{"title":"Yet
+        another plaque","ref":"/api/components/10/","parent":"/api/components/7/"}]}]}]}],"publish":true,"created":"2019-05-22T08:39:32.479632-04:00","modified":"2019-05-22T09:47:01.394733-04:00"}'
     headers:
       Allow:
       - GET, HEAD, OPTIONS
       Content-Length:
-      - '507'
+      - '1031'
       Content-Type:
       - application/json
       Date:
-      - Mon, 20 May 2019 18:22:34 GMT
+      - Thu, 23 May 2019 22:31:18 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      Vary:
+      - Accept, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ElectronBond/0.1
+    method: GET
+    uri: http://cartographer-web:8000/api/delete-feed/?deleted_since=0
+  response:
+    body:
+      string: '{"count":2,"next":null,"previous":null,"results":[{"ref":"/api/components/8/","deleted":"2019-05-22T08:41:46.477897-04:00"},{"ref":"/api/maps/1/","deleted":"2019-05-22T08:39:39.840266-04:00"}]}'
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Length:
+      - '193'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 23 May 2019 22:31:18 GMT
       Server:
       - WSGIServer/0.2 CPython/3.6.5
       Vary:

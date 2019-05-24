@@ -313,7 +313,7 @@ class FetcherRunView(APIView):
                 if source == 'archivesspace':
                     ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
                 elif source == 'cartographer':
-                    CartographerDataFetcher().run()
+                    CartographerDataFetcher(target).run()
                 elif source == 'wikidata':
                     WikidataDataFetcher().run()
                 elif source == 'wikipedia':
@@ -325,7 +325,7 @@ class FetcherRunView(APIView):
                 return Response({"detail": message}, status=200)
             else:
                 ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
-                CartographerDataFetcher().run()
+                CartographerDataFetcher(target).run()
                 WikidataDataFetcher().run()
                 WikipediaDataFetcher().run()
                 return Response({"detail": "Fetcher routines complete for all sources and object types."}, status=200)

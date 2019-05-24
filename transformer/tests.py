@@ -18,17 +18,6 @@ fetch_vcr = vcr.VCR(
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
-# (Class, prefix, has identifier endpoints)
-OBJECT_MAP = [
-    (Collection, 'collection', True),
-    (Object, 'object', True),
-    (Term, 'term', True),
-    (Agent, 'agent', True),
-    (Identifier, 'identifier', False),
-    (TransformRun, 'transformrun', False),
-    (FetchRun, 'fetchrun', False)
-]
-
 
 class TransformTest(TestCase):
     def setUp(self):
@@ -36,7 +25,7 @@ class TransformTest(TestCase):
         import_fixture_data()
 
     def fetchers(self):
-        print("*** Testing fetchers ***")
+        print("*** Testing data fetchers ***")
         FETCHER_MAP = [
             (ArchivesSpaceDataFetcher, 'archivesspace_fetch.yml', 'ARCHIVESSPACE'),
             (CartographerDataFetcher, 'cartographer_fetch.yml', 'CARTOGRAPHER'),
@@ -60,7 +49,7 @@ class TransformTest(TestCase):
             self.assertTrue(len(Identifier.objects.filter(source=identifier_source)) > 0)
 
     def transformers(self):
-        print("*** Testing transformers ***")
+        print("*** Testing data transformer ***")
         TRANSFORMER_MAP = [
             (ArchivesSpaceDataTransformer, 'ARCHIVESSPACE'),
             (CartographerDataTransformer, 'CARTOGRAPHER'),
@@ -77,12 +66,21 @@ class TransformTest(TestCase):
             self.assertEqual(int(transform_obj.status), TransformRun.FINISHED)
             self.assertEqual(len(TransformRunError.objects.filter(run=run)), 0)
 
-    def transform_endpoint(self):
+    def api(self):
+        # (Class, prefix, has identifier endpoints)
+        OBJECT_MAP = [
+            (Collection, 'collection', True),
+            (Object, 'object', True),
+            (Term, 'term', True),
+            (Agent, 'agent', True),
+            (Identifier, 'identifier', False),
+            (TransformRun, 'transformrun', False),
+            (FetchRun, 'fetchrun', False)
+        ]
         print("*** Testing transform endpoint ***")
         response = self.client.post(reverse('transform-data'))
         self.assertEqual(response.status_code, 200)
 
-    def object_identifier_api(self):
         print("*** Testing custom identifier endpoints ***")
         for obj in OBJECT_MAP:
             if obj[2]:
@@ -103,8 +101,7 @@ class TransformTest(TestCase):
                 self.assertEqual(len(Identifier.objects.filter(**{obj[1]: o})), len(assigned_ids), "An identifier was not deleted.")
                 self.assertEqual(len(Note.objects.filter(**{obj[1]: o, "source": getattr(Note, s.upper())})), 0, "Notes from identifier's source were not deleted")
 
-    def generic_api_views(self):
-        print("*** Testing API views ***")
+        print("*** Testing generic API views ***")
         for obj in OBJECT_MAP:
             list = self.client.get(reverse("{}-list".format(obj[1])))
             self.assertEqual(list.status_code, 200, "Wrong HTTP status returned, should be 200")
@@ -124,7 +121,5 @@ class TransformTest(TestCase):
     def test_transforms(self):
         self.transformers()
         self.fetchers()
-        self.transform_endpoint()
-        self.object_identifier_api()
-        self.generic_api_views()
+        self.api()
         self.find_by_id()
