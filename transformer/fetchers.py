@@ -94,8 +94,11 @@ class ArchivesSpaceDataFetcher:
     def get_objects(self):
         for o in self.repo.archival_objects.with_params(all_ids=True, modified_since=self.last_run):
             if o.publish:
-                r = o.resource
-                tree_data = self.aspace.client.get(r.tree.ref).json()
+                if Collection.objects.filter(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=o.resource.ref).exists():
+                    tree_data = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=o.resource.ref).source_tree
+                else:
+                    r = o.resource
+                    tree_data = self.aspace.client.get(r.tree.ref).json()
                 full_tree = objectpath.Tree(tree_data)
                 partial_tree = full_tree.execute("$..children[@.record_uri is '{}']".format(o.uri))
                 # Save archival object as Collection if it has children, otherwise save as Object
