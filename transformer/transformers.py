@@ -253,9 +253,10 @@ class ArchivesSpaceDataTransformer:
 
     def process_tree(self, tree, idx=0):
         try:
-            obj = (Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,identifier__identifier=tree.get('record_uri'))
-                   if tree.get('children') else
-                   Object.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=tree.get('record_uri')))
+            identifier = tree.get('record_uri', tree.get('ref'))
+            obj = (Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,identifier__identifier=identifier)
+                   if (tree.get('children') or 'resources' in identifier) else
+                   Object.objects.get(identifier__source=Identifier.ARCHIVESSPACE, identifier__identifier=identifier))
             obj.tree_order = idx
             obj.save()
             if tree.get('children'):
