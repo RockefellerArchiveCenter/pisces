@@ -23,6 +23,8 @@ class ArchivesSpaceDataFetcher:
                              user=settings.ARCHIVESSPACE['user'],
                              password=settings.ARCHIVESSPACE['password'])
         self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
+        if type(self.repo) == dict and 'error' in self.repo:
+            raise ArchivesSpaceDataFetcherError(self.repo['error'])
         self.last_run = (int(FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).order_by('-start_time')[0].start_time.timestamp())
                          if FetchRun.objects.filter(status=FetchRun.FINISHED, source=FetchRun.ARCHIVESSPACE, object_type=object_type).exists()
                          else 0)
@@ -122,9 +124,12 @@ class ArchivesSpaceDataFetcher:
             if source_tree:
                 object.source_tree = source_tree
                 object.save()
-            source_data = SourceData.objects.get(**{relation_key: object, "source": Identifier.ARCHIVESSPACE})
-            source_data.data = data._json
-            source_data.save()
+            if SourceData.objects.filter(**{relation_key: object, "source": Identifier.ARCHIVESSPACE}).exists():
+                source_data = SourceData.objects.get(**{relation_key: object, "source": Identifier.ARCHIVESSPACE})
+                source_data.data = data._json
+                source_data.save()
+            else:
+                SourceData.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "data": data._json})
         else:
             object = cls.objects.create(source_tree=source_tree) if source_tree else cls.objects.create()
             Identifier.objects.create(**{relation_key: object, "source": Identifier.ARCHIVESSPACE, "identifier": data.uri})
@@ -148,7 +153,7 @@ class CartographerDataFetcher:
         else:
             raise CartographerDataFetcherError("Unknown target {}".format(target))
         try:
-            resp = self.client.get('/status/')
+            resp = self.client.get('/status/health/')
             if not resp.status_code:
                 raise CartographerDataFetcherError("Cartographer status endpoint is not available. Service may be down.")
         except Exception as e:
@@ -195,9 +200,12 @@ class CartographerDataFetcher:
             c = Collection.objects.get(identifier__source=source, identifier__identifier=identifier)
             c.source_tree = data
             c.save()
-            sd = SourceData.objects.get(collection=c, source=Identifier.CARTOGRAPHER)
-            sd.data = data
-            sd.save()
+            if SourceData.objects.filter(collection=c, source=Identifier.CARTOGRAPHER).exists():
+                sd = SourceData.objects.get(collection=c, source=Identifier.CARTOGRAPHER)
+                sd.data = data
+                sd.save()
+            else:
+                SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
         else:
             c = Collection.objects.create(source_tree=data)
             SourceData.objects.create(collection=c, source=SourceData.CARTOGRAPHER, data=data)
