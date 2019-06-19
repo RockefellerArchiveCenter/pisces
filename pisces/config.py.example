@@ -3,7 +3,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'HOST': 'pisces_db',
+        'HOST': 'pisces-db',
         'PORT': 5432,
     }
 }
