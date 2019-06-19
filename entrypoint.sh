@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Apply database migrations
-./wait-for-it.sh db:5432 -- echo "Creating config file"
-
 if [ ! -f manage.py ]; then
   cd pisces
 fi
+
+./wait-for-it.sh db:5432 -- echo "Creating config file"
 
 if [ ! -f pisces/config.py ]; then
     cp pisces/config.py.example pisces/config.py
