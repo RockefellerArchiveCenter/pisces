@@ -324,8 +324,8 @@ class FetcherRunView(APIView):
                            else "Fetch routines complete for {} {}.".format(source, object_type))
                 return Response({"detail": message}, status=200)
             else:
-                ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
                 CartographerDataFetcher(target).run()
+                ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
                 WikidataDataFetcher().run()
                 WikipediaDataFetcher().run()
                 return Response({"detail": "Fetcher routines complete for all sources and object types."}, status=200)
