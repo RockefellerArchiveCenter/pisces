@@ -22,5 +22,5 @@ before_script:
 script:
   - docker-compose exec pisces-web coverage run manage.py test
 after_script:
-  - coverage xml
+  - docker-compose exec pisces-web coverage xml
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
