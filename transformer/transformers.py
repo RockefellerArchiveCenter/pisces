@@ -13,10 +13,14 @@ class ArchivesSpaceTransformError(Exception): pass
 class CartographerTransformError(Exception): pass
 
 
+def get_last_run_time(source):
+    return (TransformRun.objects.filter(status=TransformRun.FINISHED, source=source).order_by('-start_time')[0].start_time
+            if TransformRun.objects.filter(status=TransformRun.FINISHED, source=source).exists() else None)
+
+
 class CartographerDataTransformer:
     def __init__(self):
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.CARTOGRAPHER).exists() else None)
+        self.last_run = get_last_run_time(TransformRun.CARTOGRAPHER)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
@@ -80,12 +84,7 @@ class CartographerDataTransformer:
 class ArchivesSpaceDataTransformer:
     def __init__(self, object_type=None):
         self.object_types = [object_type] if object_type else ['agents', 'collections', 'objects', 'terms']
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED,
-                                                     source=TransformRun.ARCHIVESSPACE,
-                                                     object_type=object_type).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED,
-                                                        source=TransformRun.ARCHIVESSPACE,
-                                                        object_type=object_type).exists() else None)
+        self.last_run = get_last_run_time(TransformRun.ARCHIVESSPACE)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
@@ -366,8 +365,7 @@ class ArchivesSpaceDataTransformer:
 
 class WikidataDataTransformer:
     def __init__(self):
-        self.last_run = (TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIDATA).order_by('-start_time')[0].start_time
-                         if TransformRun.objects.filter(status=TransformRun.FINISHED, source=TransformRun.WIKIDATA).exists() else None)
+        self.last_run = get_last_run_time(TransformRun.WIKIDATA)
         self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIDATA)
 
     def run(self):
