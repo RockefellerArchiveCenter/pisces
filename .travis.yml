@@ -5,7 +5,6 @@ services:
 env:
   global:
     - DOCKER_COMPOSE_VERSION: 1.18.0
-    - CC_TEST_REPORTER_ID: 1141ccd11dc9dce1e7f3767e4fc840441d9798f027beada3a0e96a7450009501
 before_install:
   - sudo rm /usr/local/bin/docker-compose
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
