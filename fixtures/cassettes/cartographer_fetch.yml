@@ -11,7 +11,7 @@ interactions:
       User-Agent:
       - ElectronBond/0.1
     method: GET
-    uri: http://cartographer-web:8000/status/
+    uri: http://cartographer-web:8000/status/health/
   response:
     body:
       string: '{"health": {"ping": {"pong": true}, "databases": {"default": true},

@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  pisces_db:
+  pisces-db:
     image: postgres:10.4
     volumes:
       - piscesdbvolume:/var/lib/postgresql/data/
-  pisces_web:
+  pisces-web:
     build: .
     entrypoint: /code/entrypoint.sh
     volumes:
@@ -13,7 +13,7 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - pisces_db
+      - pisces-db
 
 volumes:
   piscesdbvolume:
