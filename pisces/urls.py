@@ -42,10 +42,12 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fetch/', FetcherRunView.as_view(), name='fetch-data'),
+    path('fetch/archivesspace/', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
+    path('delete/', DeleteView.as_view(), name='delete'),
+    path('update/', UpdateView.as_view(), name='update'),
     path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
-    path('transform/', TransformerRunView.as_view(), name='transform-data'),
-    path('import/', ImportRunView.as_view(), name='import-data'),
+    # path('transform/', TransformerRunView.as_view(), name='transform-data'),
+    # path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),
     path('', include(router.urls)),

@@ -5,6 +5,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
 from .fetchers import *
+from .indexers import Indexer
 from .models import Collection, Object, Agent, Term, TransformRun, FetchRun
 from .serializers import *
 from .transformers import *
@@ -270,65 +271,53 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class TransformerRunView(APIView):
+class UpdateView(APIView):
     """Runs transformation routines."""
 
     def post(self, request, format=None):
         source = request.GET.get('source')
-        object_type = request.GET.get('object_type')
+        uri = request.GET.get('uri')
         try:
-            if source:
-                if source == 'archivesspace':
-                    ArchivesSpaceDataTransformer(object_type).run()
-                elif source == 'cartographer':
-                    CartographerDataTransformer().run()
-                elif source == 'wikidata':
-                    WikidataDataTransformer().run()
-                elif source == 'wikipedia':
-                    WikipediaDataTransformer().run()
-                else:
-                    return Response({"detail": "Unknown source {}.".format(source)}, status=400)
-                message = ("Transformation routines complete for source {}.".format(source) if not object_type
-                           else "Transformation routines complete for {} {}.".format(source, object_type))
-                return Response({"detail": message}, status=200)
+            if source == 'archivesspace':
+                json = ArchivesSpaceDataFetcher.from_uri(uri)
+                data = ArchivesSpaceDataTransformer().transform(json)
+                Indexer().index_data(data)
             else:
-                ArchivesSpaceDataTransformer(object_type).run()
-                CartographerDataTransformer().run()
-                WikidataDataTransformer().run()
-                WikipediaDataTransformer().run()
-                return Response({"detail": "Transformation routines complete for all sources and object types."}, status=200)
+                return Response({"detail": "Unknown source {}.".format(source)}, status=400)
+            message = ("Transformation routines complete for source {}.".format(source) if not object_type
+                       else "Transformation routines complete for {} {}.".format(source, object_type))
+            return Response({"detail": message}, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)
+
+class DeleteView(APIView):
+    """Runs transformation routines."""
+
+    def post(self, request, format=None):
+        source = request.GET.get('source')
+        uri = request.GET.get('uri')
+        try:
+            if source == 'archivesspace':
+                Indexer().delete_data(source, uri)
+            else:
+                return Response({"detail": "Unknown source {}.".format(source)}, status=400)
+            message = ("Transformation routines complete for source {}.".format(source) if not object_type
+                       else "Transformation routines complete for {} {}.".format(source, object_type))
+            return Response({"detail": message}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
 
-class FetcherRunView(APIView):
-    """Runs transformation routines."""
+class ArchivesSpaceFetchChangesView(APIView):
+    """Fetches list of objects to be updated or deleted."""
 
     def post(self, request, format=None):
-        source = request.GET.get('source')
-        object_type = request.GET.get('object_type')
-        target = request.GET.get('target')
         try:
-            if source:
-                if source == 'archivesspace':
-                    ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
-                elif source == 'cartographer':
-                    CartographerDataFetcher(target).run()
-                elif source == 'wikidata':
-                    WikidataDataFetcher().run()
-                elif source == 'wikipedia':
-                    WikipediaDataFetcher().run()
-                else:
-                    return Response({"detail": "Unknown source {}.".format(source)}, status=400)
-                message = ("Fetch routines complete for source {}.".format(source) if not object_type
-                           else "Fetch routines complete for {} {}.".format(source, object_type))
-                return Response({"detail": message}, status=200)
-            else:
-                CartographerDataFetcher(target).run()
-                ArchivesSpaceDataFetcher(object_type=object_type, target=target).run()
-                WikidataDataFetcher().run()
-                WikipediaDataFetcher().run()
-                return Response({"detail": "Fetcher routines complete for all sources and object types."}, status=200)
+            object_type = request.data.get('object_type')
+            if not object_type:
+                return Response({"detail": "Missing required field 'object_type' in request data"}, status=500)
+            resp = ArchivesSpaceDataFetcher(object_type=object_type, action=action).changes()
+            return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
