@@ -2,7 +2,7 @@ from dateutil import parser
 import hashlib
 import json
 import os
-from pycountry import languages
+from iso639 import languages
 
 from django.utils import timezone
 
@@ -11,61 +11,35 @@ from .models import *
 
 class ArchivesSpaceTransformError(Exception): pass
 class CartographerTransformError(Exception): pass
-
-
-def get_last_run_time(source):
-    return (TransformRun.objects.filter(status=TransformRun.FINISHED, source=source).order_by('-start_time')[0].start_time
-            if TransformRun.objects.filter(status=TransformRun.FINISHED, source=source).exists() else None)
+class WikidataTransformError(Exception): pass
+class WikipediaTransformError(Exception): pass
 
 
 class CartographerDataTransformer:
-    def __init__(self):
-        self.last_run = get_last_run_time(TransformRun.CARTOGRAPHER)
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.CARTOGRAPHER)
 
     def run(self):
+        self.source_data = data
+        obj = {}
         try:
-            for collection in (Collection.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.CARTOGRAPHER)
-                               if self.last_run else Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER)):
-                self.obj = collection
-                self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-                if SourceData.objects.filter(collection=self.obj, source=SourceData.CARTOGRAPHER).exists():
-                    self.source_data = SourceData.objects.get(collection=self.obj, source=SourceData.CARTOGRAPHER).data
-                    self.obj.title = self.source_data.get('title')
-                    if self.source_data.get('parent'):
-                        self.parent(self.source_data.get('parent'))
-                    self.obj.save()
-                    if self.source_data.get('children'):
-                        self.children(self.source_data.get('children'))
-                        if not self.obj.parent:
-                            self.process_tree(self.source_data)
-            self.current_run.status = TransformRun.FINISHED
-            self.current_run.end_time = timezone.now()
-            self.current_run.save()
-            return True
+            obj['title'] = self.source_data.get('title')
+            obj['uri'] = self.source_data.get('ref')
+            if self.source_data.get('parent'):
+                obj['parent'] = self.parent(self.source_data['parent'].get('ref'))
+            if self.source_data.get('children'):
+                obj['children'] = self.children(self.source_data.get('children'), obj, [])
+            #     if not self.obj.parent:
+            #         self.process_tree(self.source_data)
+            return obj
         except Exception as e:
             print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+            raise CartographerTransformError(e)
 
-    def children(self, children):
+    def children(self, children, parent, data):
         for child in children:
-            if not child.get('children'):
-                identifier = child.get('ref', child.get('url'))
-                source = Identifier.ARCHIVESSPACE if 'repositories' in identifier else Identifier.CARTOGRAPHER
-                c = Collection.objects.get(identifier__source=source,
-                                           identifier__identifier=identifier)
-                c.parent = self.obj
-                c.save()
-
-    def parent(self, parent):
-        try:
-            if Collection.objects.filter(identifier__source=Identifier.CARTOGRAPHER, identifier__identifier=parent).exists():
-                self.obj.parent = Collection.objects.get(identifier__source=Identifier.CARTOGRAPHER,
-                                                         identifier__identifier=parent)
-            else:
-                raise CartographerTransformError('Missing parent data {}'.format(parent.get('ref')))
-        except Exception as e:
-            raise CartographerTransformError('Error transforming parent: {}'.format(e))
+            data.append({"title": child.get("title"), "parent": parent.get("ref"), "children": []})
+            if child.get('children'):
+                self.children(child.get("children"), child, data)
+        return data
 
     def process_tree(self, data, idx=0):
         try:
@@ -82,31 +56,25 @@ class CartographerDataTransformer:
 
 
 class ArchivesSpaceDataTransformer:
-    def __init__(self, object_type=None):
-        self.object_types = [object_type] if object_type else ['agents', 'collections', 'objects', 'terms']
-        self.last_run = get_last_run_time(TransformRun.ARCHIVESSPACE)
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.ARCHIVESSPACE, object_type=object_type)
 
     def run(self):
-        for object_type in self.object_types:
+        self.source_data = data
+        self.object_type = self.data.get('jsonmodel_type')
+        try:
+            # TODO: parse out objects and collections
             CLS_MAP = {
-                "agents": [Agent, 'agent'],
-                "collections": [Collection, 'collection'],
-                "objects": [Object, 'object'],
-                "terms": [Term, 'term']}
-            self.cls = CLS_MAP[object_type][0]
-            self.key = CLS_MAP[object_type][1]
-            for obj in (self.cls.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')
-                        if self.last_run else self.cls.objects.filter(identifier__source=Identifier.ARCHIVESSPACE).order_by('modified')):
-                self.obj = obj
-                self.obj.refresh_from_db()  # refresh fields in order to avoid overwriting tree_order
-                if SourceData.objects.filter(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).exists():
-                    self.source_data = SourceData.objects.get(**{self.key: self.obj, "source": SourceData.ARCHIVESSPACE}).data
-                    getattr(self, "transform_to_{}".format(self.key))()
-            self.current_run.status = TransformRun.FINISHED
-            self.current_run.end_time = timezone.now()
-            self.current_run.save()
-        return True
+                "agent_person": [Agent, 'agent'],
+                "agent_corporate_entity": [Agent, 'agent'],
+                "agent_family": [Agent, 'agent'],
+                "resource": [Collection, 'collection'],
+                "archival_object": [Object, 'object'],
+                "subject": [Term, 'term']}
+            self.cls = CLS_MAP[self.object_type][0]
+            self.key = CLS_MAP[self.object_type][1]
+            return getattr(self, "transform_to_{}".format(self.key))()
+        except Exception as e:
+            print(e)
+            raise ArchivesSpaceTransformError(str(e))
 
     def datetime_from_string(self, date_string):
         if date_string:
@@ -167,88 +135,57 @@ class ArchivesSpaceDataTransformer:
         content = self.parse_note_content(note)
         return (type, title, content)
 
-    def agents(self, agents):
+    def agents(self, agents, creator=False):
         try:
-            agent_list = [a for a in agents if a['role'] != 'creator']
-            creator_list = [a for a in agents if a['role'] == 'creator']
-            agent_set = []
-            creator_set = []
-            for list in [(agent_list, agent_set), (creator_list, creator_set)]:
-                for agent in list[0]:
-                    if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).exists():
-                        list[1].append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=agent.get('ref')).agent)
-                    else:
-                        raise ArchivesSpaceTransformError('Missing data for agent {}'.format(agent.get('ref')))
-            self.obj.agents.clear()
-            self.obj.agents.set(agent_set)
-            if type(self.obj) == Collection:
-                self.obj.creators.clear()
-                self.obj.creators.set(creator_set)
+            agent_list = [a for a in agents if a['role'] == 'creator'] if creator else [a for a in agents if a['role'] != 'creator']
+            return [agent.get('ref') for agent in agent_list]
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming agent: {}'.format(e))
 
-    def dates(self, dates, relation_key):
+    def dates(self, dates):
         try:
-            Date.objects.filter(**{relation_key: self.obj}).delete()
+            new_dates = []
             for date in dates:
                 parsed = self.parse_date(date)
-                Date.objects.create(**{"begin": parsed[0],
-                                       "end": parsed[1],
-                                       "expression": parsed[2],
-                                       "label": date.get('label'),
-                                       relation_key: self.obj})
+                new_dates.append({"begin": parsed[0], "end": parsed[1],
+                                  "expression": parsed[2], "label": date.get('label')})
+            return new_dates
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming dates: {}'.format(e))
 
-    def extents(self, extents, relation_key):
+    def extents(self, extents):
         try:
-            Extent.objects.filter(**{relation_key: self.obj}).delete()
+            new_extents = []
             for extent in extents:
                 if self.num_from_string(extent.get('number')):
-                    Extent.objects.create(**{"value": self.num_from_string(extent.get('number')),
-                                             "type": extent.get('extent_type'),
-                                             relation_key: self.obj})
+                    new_extents.append({"value": self.num_from_string(extent.get('number')),
+                                        "type": extent.get('extent_type')})
+            return new_extents
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming extents: {}'.format(e))
 
     def languages(self, lang):
         try:
-            lang_data = languages.get(alpha_3=lang)
-            new_lang = (Language.objects.get(identifier=lang)
-                        if Language.objects.filter(identifier=lang, expression=lang_data.name).exists()
-                        else Language.objects.create(expression=lang_data.name, identifier=lang))
-            self.obj.languages.clear()
-            self.obj.languages.set([new_lang])
+            lang_data = languages.get(part2b=lang)
+            return [{"expression": lang_data.name, "identifier": lang}]
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming languages: {}'.format(e))
 
-    def notes(self, notes, relation_key, object=None):
+    def notes(self, notes):
         try:
-            object = object if object else self.obj
-            Note.objects.filter(**{relation_key: object}).delete()
+            new_notes = []
             for note in notes:
+                new_subnotes = []
                 parsed = self.parse_note(note)
-                note = Note.objects.create(**{"type": parsed[0],
-                                              "title": parsed[1],
-                                              "source": Note.ARCHIVESSPACE,
-                                              relation_key: object})
+                new_note = {"type": parsed[0], "title": parsed[1],
+                        "source": Note.ARCHIVESSPACE}
                 for subnote in parsed[2]:
-                    Subnote.objects.create(type=subnote[0],
-                                           content=subnote[1],
-                                           note=note)
+                    new_subnotes.append({"type": subnote[0], "content": subnote[1]})
+                new_note['contents'].append(new_subnotes)
+                new_notes.append(new_note)
+            return new_notes
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming notes: {}'.format(e))
-
-    def parent(self, parent):
-        try:
-            if Collection.objects.filter(identifier__source=Identifier.ARCHIVESSPACE,
-                                         identifier__identifier=parent.get('ref')).exists():
-                self.obj.parent = Collection.objects.get(identifier__source=Identifier.ARCHIVESSPACE,
-                                                         identifier__identifier=parent.get('ref'))
-            else:
-                raise ArchivesSpaceTransformError('Missing parent data {}'.format(parent.get('ref')))
-        except Exception as e:
-            raise ArchivesSpaceTransformError('Error transforming parent: {}'.format(e))
 
     def process_tree(self, tree, idx=0):
         try:
@@ -266,11 +203,12 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError('Error processing tree: {}'.format(e))
 
-    def rights_statements(self, rights_statements, relation_key):
+    def rights_statements(self, rights_statements):
         try:
-            RightsStatement.objects.filter(**{relation_key: self.obj}).delete()
+            rights = []
             for statement in rights_statements:
-                new_rights = RightsStatement.objects.create(**{
+                new_acts = []
+                new_rights = {
                     "determinationDate": statement.get('determination_date'),
                     "rightsType": statement.get('rights_type'),
                     "dateStart": self.datetime_from_string(statement.get('start_date')),
@@ -278,16 +216,15 @@ class ArchivesSpaceDataTransformer:
                     "copyrightStatus": statement.get('status'),
                     "otherBasis": statement.get('other_rights_basis'),
                     "jurisdiction": statement.get('jurisdiction'),
-                    relation_key: self.obj})
-                self.notes(statement.get('notes'), 'rights_statement', new_rights)
-                for rights_granted in statement.get('acts'):
-                    new_grant = RightsGranted.objects.create(
-                        rights_statement=new_rights,
-                        act=rights_granted.get('act_type'),
-                        dateStart=self.datetime_from_string(rights_granted.get('start_date')),
-                        dateEnd=self.datetime_from_string(rights_granted.get('end_date')),
-                        restriction=rights_granted.get('restriction'))
-                    self.notes(rights_granted.get('notes'), 'rights_granted', new_grant)
+                    "notes": self.notes(statement.get('notes'))}
+                for act in statement.get('acts'):
+                    new_acts.append({"act": act.get('act_type'),
+                                     "dateStart": self.datetime_from_string(act.get('start_date')),
+                                     "dateEnd": self.datetime_from_string(act.get('end_date')),
+                                     "restriction": act.get('restriction'),
+                                     "notes": self.notes(act.get('notes'))})
+                new_rights["acts"] = new_acts
+                return new_rights
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming rights: {}'.format(e))
 
@@ -295,112 +232,105 @@ class ArchivesSpaceDataTransformer:
         try:
             term_set = []
             for term in terms:
-                if Identifier.objects.filter(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).exists():
-                    term_set.append(Identifier.objects.get(source=Identifier.ARCHIVESSPACE, identifier=term.get('ref')).term)
-                else:
-                    raise ArchivesSpaceTransformError('Missing data for term {}'.format(term.get('ref')))
-            self.obj.terms.clear()  # This could be problematic
-            self.obj.terms.set(term_set)
+                term_set.append(term.get('ref'))
+            return term_set
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming terms: {}'.format(e))
 
     def transform_to_agent(self):
-        self.obj.title = self.source_data.get('display_name').get('sort_name')
-        self.obj.type = self.source_data.get('jsonmodel_type')  #
+        obj = {}
         try:
-            self.notes(self.source_data.get('notes'), 'agent')
-            self.obj.save()
+            obj['type'] = 'agent'
+            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
+            obj['title'] = self.source_data.get('display_name').get('sort_name')
+            obj['type'] = self.source_data.get('jsonmodel_type')
+            obj['notes'] = self.notes(self.source_data.get('notes'))
+            return self.obj
         except Exception as e:
             print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+            raise ArchivesSpaceTransformError("Error transforming agent: {}".format(e))
 
     def transform_to_collection(self):
-        self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
-        self.obj.level = self.source_data.get('level')
+        obj = {}
         try:
-            self.dates(self.source_data.get('dates'), 'collection')
-            self.extents(self.source_data.get('extents'), 'collection')
-            self.notes(self.source_data.get('notes'), 'collection')
-            self.rights_statements(self.source_data.get('rights_statements'), 'collection')
+            obj['type'] = 'collection'
+            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
+            obj['title'] = self.source_data.get('title', self.source_data.get('display_string'))
+            obj['level'] = self.source_data.get('level')
+            obj['dates'] = self.dates(self.source_data.get('dates'))
+            obj['creators'] = self.agents(self.source_data.get('linked_agents'), creator=True)
+            obj['extents'] = self.extents(self.source_data.get('extents'))
+            obj['notes'] = self.notes(self.source_data.get('notes'))
+            obj['rights_statements'] = self.rights_statements(self.source_data.get('rights_statements'))
             if self.source_data.get('language'):
-                self.languages(self.source_data.get('language'))
-            self.terms(self.source_data.get('subjects'))
-            self.agents(self.source_data.get('linked_agents'))
+                obj['languages'] = self.languages(self.source_data.get('language'))
+            obj['terms'] = self.terms(self.source_data.get('subjects'))
+            obj['agents'] = self.agents(self.source_data.get('linked_agents'))
             if (self.source_data.get('jsonmodel_type') == 'archival_object') and self.source_data.get('ancestors'):
-                self.parent(self.source_data.get('ancestors')[0])
-            self.obj.save()
-            if self.source_data.get('jsonmodel_type') == 'resource':
-                self.process_tree(self.obj.source_tree)
+                obj['parent'] = self.source_data.get('ancestors')[0].get('ref')
+            return obj
+            # if self.source_data.get('jsonmodel_type') == 'resource':
+            #     self.process_tree(self.obj.source_tree)
         except Exception as e:
             print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+            raise ArchivesSpaceTransformError("Error transforming collection: {}".format(e))
 
     def transform_to_object(self):
-        self.obj.title = self.source_data.get('title', self.source_data.get('display_string'))
+        obj = {}
         try:
-            self.dates(self.source_data.get('dates'), 'object')
-            self.extents(self.source_data.get('extents'), 'object')
-            self.notes(self.source_data.get('notes'), 'object')
-            self.rights_statements(self.source_data.get('rights_statements'), 'object')
+            obj['type'] = 'object'
+            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
+            obj['title'] = self.source_data.get('title', self.source_data.get('display_string'))
+            obj['dates'] = self.dates(self.source_data.get('dates'))
+            obj['extents'] = self.extents(self.source_data.get('extents'))
+            obj['creators'] = self.agents(self.source_data.get('linked_agents'), creator=True)
+            obj['notes'] = self.notes(self.source_data.get('notes'))
+            obj['rights_statements'] = self.rights_statements(self.source_data.get('rights_statements'))
             if self.source_data.get('language'):
-                self.languages(self.source_data.get('language'))
-            self.terms(self.source_data.get('subjects'))
-            self.agents(self.source_data.get('linked_agents'))
+                obj['languages'] = self.languages(self.source_data.get('language'))
+            obj['terms'] = self.terms(self.source_data.get('subjects'))
+            obj['agents'] = self.agents(self.source_data.get('linked_agents'))
             if self.source_data.get('ancestors'):
-                self.parent(self.source_data.get('ancestors')[0])
-            self.obj.save()
+                obj['parent'] = self.source_data.get('ancestors')[0].get('ref')
+            return obj
         except Exception as e:
             print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+            raise ArchivesSpaceTransformError("Error transforming object: {}".format(e))
 
     def transform_to_term(self):
-        self.obj.title = self.source_data.get('title')
-        self.obj.type = self.source_data.get('terms')[0]['term_type']
+        obj = {}
         try:
-            self.obj.save()
+            obj['type'] = 'term'
+            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
+            obj['title'] = self.source_data.get('title')
+            obj['type'] = self.source_data.get('terms')[0]['term_type']
+            return obj
         except Exception as e:
             print(e)
-            TransformRunError.objects.create(message=str(e), run=self.current_run)
+            raise ArchivesSpaceTransformError("Error transforming term: {}".format(e))
 
 
 class WikidataDataTransformer:
-    def __init__(self):
-        self.last_run = get_last_run_time(TransformRun.WIKIDATA)
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIDATA)
 
     def run(self):
-        for agent in (Agent.objects.filter(modified__lte=self.last_run, identifier__source=Identifier.WIKIDATA).order_by('modified')
-                      if self.last_run else Agent.objects.filter(identifier__source=Identifier.WIKIDATA).order_by('modified')):
-            try:
-                self.agent = agent
-                self.agent.refresh_from_db()
-                print(self.agent)
-                self.source_data = SourceData.objects.get(source=SourceData.WIKIDATA, agent=self.agent).data
-                if self.source_data.get('descriptions').get('en'):
-                    self.notes('abstract', self.source_data.get('descriptions').get('en')['value'])
-                self.agent.image_url = self.image_url(self.source_data.get('claims').get('P18'))
-                self.agent.save()
-            except Exception as e:
-                print(e)
-                TransformRunError.objects.create(message=str(e), run=self.current_run)
-        self.current_run.status = TransformRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
-        return True
+        self.source_data = data
+        try:
+            obj = {}
+            if self.source_data.get('descriptions').get('en'):
+                obj['notes'] = self.notes('abstract', self.source_data.get('descriptions').get('en')['value'])
+            obj['image_url'] = self.image_url(self.source_data.get('claims').get('P18'))
+            return obj
+        except Exception as e:
+            print(e)
+            raise WikidataTransformError(e)
 
     def notes(self, note_type, content):
-        if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIDATA).exists():
-            note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIDATA)
-            note.subnote_set.all().delete()
-            note.title = "Abstract"
-            note.save()
-        else:
-            note = Note.objects.create(type=note_type, title="Abstract", agent=self.agent, source=Note.WIKIDATA)
-        Subnote.objects.create(type='text', content=[content], note=note)
+        return {"type": note_type, "title": "Abstract", "source": "wikidata",
+                "content": [{"type": "text", "content": [content]}]}
 
     def image_url(self, image_prop):
         # https://stackoverflow.com/questions/34393884/how-to-get-image-url-property-from-wikidata-item-by-api
-        # could also get this when fetching data, since the wikidata python client has built-in methods for this which are probably more tested
+        # Do we want the actual image binary?
         if image_prop:
             filename = image_prop[0]['mainsnak']['datavalue']['value'].replace(" ", "_")
             md5 = hashlib.md5(filename.encode()).hexdigest()
@@ -408,32 +338,16 @@ class WikidataDataTransformer:
 
 
 class WikipediaDataTransformer:
-    def __init__(self):
-        self.current_run = TransformRun.objects.create(status=TransformRun.STARTED, source=TransformRun.WIKIPEDIA)
 
-    def run(self):
-        for agent in Agent.objects.filter(identifier__source=Identifier.WIKIPEDIA).order_by('modified'):
-            try:
-                self.agent = agent
-                self.agent.refresh_from_db()
-                print(self.agent)
-                self.source_data = SourceData.objects.get(source=SourceData.WIKIPEDIA, agent=self.agent).data
-                self.notes('bioghist')
-            except Exception as e:
-                print(e)
-                TransformRunError.objects.create(message=str(e), run=self.current_run)
-        self.current_run.status = TransformRun.FINISHED
-        self.current_run.end_time = timezone.now()
-        self.current_run.save()
-        return True
+    def run(self, data):
+        self.source_data = data
+        obj = {}
+        try:
+            obj['notes'] = self.notes('bioghist')
+        except Exception as e:
+            print(e)
+            raise WikipediaTransformError(e)
 
     def notes(self, note_type):
-        title = 'Biography' if self.agent.type in ['agent_person', 'agent_family'] else 'Administrative History'
-        if Note.objects.filter(agent=self.agent, type=note_type, source=Note.WIKIPEDIA).exists():
-            note = Note.objects.get(agent=self.agent, type=note_type, source=Note.WIKIPEDIA)
-            note.subnote_set.all().delete()
-            note.title = title
-            note.save()
-        else:
-            note = Note.objects.create(type=note_type, title=title, agent=self.agent, source=Note.WIKIPEDIA)
-        Subnote.objects.create(type='text', content=[self.source_data], note=note)
+        return {"type": note_type, "title": "Description", "source": "wikipedia",
+                "content": [{"type": "text", "content": [sef.source_data]}]}

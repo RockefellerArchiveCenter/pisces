@@ -21,12 +21,6 @@ from drf_yasg import openapi
 from transformer.views import *
 
 router = routers.DefaultRouter()
-router.register(r'agents', AgentViewSet, 'agent')
-router.register(r'collections', CollectionViewSet, 'collection')
-router.register(r'objects', ObjectViewSet, 'object')
-router.register(r'terms', TermViewSet, 'term')
-router.register(r'identifiers', IdentifierViewSet, 'identifier')
-router.register(r'transforms', TransformRunViewSet, 'transformrun')
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
 schema_view = get_schema_view(
    openapi.Info(
@@ -42,11 +36,12 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fetch/archivesspace/', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
-    path('delete/', DeleteView.as_view(), name='delete'),
-    path('update/', UpdateView.as_view(), name='update'),
-    path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
-    # path('transform/', TransformerRunView.as_view(), name='transform-data'),
+    path('fetch/archivesspace/changes', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
+    path('fetch/archivesspace/uri', ArchivesSpaceFetchURIView.as_view(), name='fetch-archivesspace-uri'),
+    path('transform/archivesspace', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
+    path('index/add', IndexAddView.as_view(), name='index-add'),
+    path('index/delete', IndexDeleteView.as_view(), name='index-delete'),
+    # path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
     # path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     re_path(r'^schema(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=None), name='schema-json'),

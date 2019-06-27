@@ -6,252 +6,10 @@ from rest_framework.response import Response
 
 from .fetchers import *
 from .indexers import Indexer
-from .models import Collection, Object, Agent, Term, TransformRun, FetchRun
+from .models import FetchRun
 from .serializers import *
 from .transformers import *
 from .test_library import import_fixture_data
-
-
-class CollectionViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about a Collection, identified by a primary key.
-
-    list:
-    Return paginated data about all Collections.
-    """
-    model = Collection
-    queryset = Collection.objects.all().order_by('-modified')
-
-    def get_serializer_class(self):
-        if self.action == 'list':
-            return CollectionListSerializer
-        return CollectionSerializer
-
-    @action(detail=True)
-    def identifiers(self, request, *args, **kwargs):
-        collection = self.get_object()
-        identifiers = Identifier.objects.filter(collection=collection)
-        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-        return Response(serializer.data)
-
-    @identifiers.mapping.post
-    def add_identifier(self, request, pk=None):
-        collection = self.get_object()
-        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
-        identifier = request.GET.get('identifier')
-        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "collection": collection})
-        if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(collection=collection, source=source).exists():
-                Identifier.objects.create(collection=collection, source=source, identifier=identifier)
-                identifiers = Identifier.objects.filter(collection=collection)
-                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-                return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
-
-    @identifiers.mapping.delete
-    def delete_identifier(self, request, pk=None):
-        collection = self.get_object()
-        try:
-            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
-        except Exception as e:
-            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
-        if source:
-            Identifier.objects.filter(collection=collection, source=source).delete()
-            Note.objects.filter(collection=collection, source=source).delete()
-            identifiers = Identifier.objects.filter(collection=collection)
-            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=200)
-        return Response({"detail": "No source specified."}, status=400)
-
-
-class ObjectViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about an Object, identified by a primary key.
-
-    list:
-    Return paginated data about all Objects.
-    """
-    model = Object
-    queryset = Object.objects.all().order_by('-modified')
-
-    def get_serializer_class(self):
-        if self.action == 'list':
-            return ObjectListSerializer
-        return ObjectSerializer
-
-    @action(detail=True)
-    def identifiers(self, request, *args, **kwargs):
-        object = self.get_object()
-        identifiers = Identifier.objects.filter(object=object)
-        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-        return Response(serializer.data)
-
-    @identifiers.mapping.post
-    def add_identifier(self, request, pk=None):
-        object = self.get_object()
-        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
-        identifier = request.GET.get('identifier')
-        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "object": object})
-        if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(object=object, source=source).exists():
-                Identifier.objects.create(object=object, source=source, identifier=identifier,)
-                identifiers = Identifier.objects.filter(object=object)
-                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-                return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
-
-    @identifiers.mapping.delete
-    def delete_identifier(self, request, pk=None):
-        object = self.get_object()
-        try:
-            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
-        except Exception as e:
-            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
-        if source:
-            Identifier.objects.filter(object=object, source=source).delete()
-            Note.objects.filter(object=object, source=source).delete()
-            identifiers = Identifier.objects.filter(object=object)
-            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=200)
-        return Response({"detail": "No source specified."}, status=400)
-
-
-class AgentViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about an Agent, identified by a primary key.
-
-    list:
-    Return paginated data about all Agents.
-    """
-    model = Agent
-    queryset = Agent.objects.all().order_by('-modified')
-
-    def get_serializer_class(self):
-        if self.action == 'list':
-            return AgentListSerializer
-        return AgentSerializer
-
-    @action(detail=True)
-    def identifiers(self, request, *args, **kwargs):
-        agent = self.get_object()
-        identifiers = Identifier.objects.filter(agent=agent)
-        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-        return Response(serializer.data)
-
-    @identifiers.mapping.post
-    def add_identifier(self, request, pk=None):
-        agent = self.get_object()
-        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
-        identifier = request.GET.get('identifier')
-        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "agent": agent})
-        if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(agent=agent, source=source).exists():
-                Identifier.objects.create(agent=agent, source=source, identifier=identifier,)
-                identifiers = Identifier.objects.filter(agent=agent)
-                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-                return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
-
-    @identifiers.mapping.delete
-    def delete_identifier(self, request, pk=None):
-        agent = self.get_object()
-        try:
-            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
-        except Exception as e:
-            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
-        if source:
-            Identifier.objects.filter(agent=agent, source=source).delete()
-            Note.objects.filter(agent=agent, source=source).delete()
-            identifiers = Identifier.objects.filter(agent=agent)
-            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=200)
-        return Response({"detail": "No source specified."}, status=400)
-
-
-class TermViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about a Term, identified by a primary key.
-
-    list:
-    Return paginated data about all Terms.
-    """
-    model = Term
-    queryset = Term.objects.all().order_by('-modified')
-
-    def get_serializer_class(self):
-        if self.action == 'list':
-            return TermListSerializer
-        return TermSerializer
-
-    @action(detail=True)
-    def identifiers(self, request, *args, **kwargs):
-        term = self.get_object()
-        identifiers = Identifier.objects.filter(term=term)
-        serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-        return Response(serializer.data)
-
-    @identifiers.mapping.post
-    def add_identifier(self, request, pk=None):
-        term = self.get_object()
-        source = getattr(Identifier, request.GET.get('source').upper()) if request.GET.get('source') else None
-        identifier = request.GET.get('identifier')
-        serializer = IdentifierSerializer(data={"source": source, "identifier": identifier, "term": term})
-        if serializer.is_valid(raise_exception=True):
-            if not Identifier.objects.filter(term=term, source=source).exists():
-                Identifier.objects.create(term=term, source=source, identifier=identifier,)
-                identifiers = Identifier.objects.filter(term=term)
-                serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-                return Response(serializer.data, status=201)
-            return Response({"detail": "Identifier for that source already exists".format(source)}, status=400)
-
-    @identifiers.mapping.delete
-    def delete_identifier(self, request, pk=None):
-        term = self.get_object()
-        try:
-            source = getattr(Note, request.GET.get('source').upper()) if request.GET.get('source') else None
-        except Exception as e:
-            return Response({"detail": "Unrecognized source: {}.".format(request.GET.get('source'))}, status=400)
-        if source:
-            Identifier.objects.filter(term=term, source=source).delete()
-            Note.objects.filter(term=term, source=source).delete()
-            identifiers = Identifier.objects.filter(term=term)
-            serializer = IdentifierSerializer(identifiers, context={'request': request}, many=True)
-            return Response(serializer.data, status=200)
-        return Response({"detail": "No source specified."}, status=400)
-
-
-class IdentifierViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about an Identifier object, identified by a primary key.
-
-    list:
-    Return paginated data about all Identifier objects, ordered by last modified.
-    """
-    model = Identifier
-    queryset = Identifier.objects.all().order_by('-modified')
-    serializer_class = IdentifierSerializer
-
-
-class TransformRunViewSet(ModelViewSet):
-    """
-    retrieve:
-    Return data about a TransformRun object, identified by a primary key.
-
-    list:
-    Return paginated data about all TranformRun objects.
-    """
-    model = TransformRun
-    queryset = TransformRun.objects.all().order_by('-start_time')
-
-    def get_serializer_class(self):
-        if self.action == 'list':
-            return TransformRunListSerializer
-        return TransformRunSerializer
 
 
 class FetchRunViewSet(ModelViewSet):
@@ -271,39 +29,26 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class UpdateView(APIView):
-    """Runs transformation routines."""
+class IndexAddView(APIView):
+    """Adds a data object to index."""
 
     def post(self, request, format=None):
-        source = request.GET.get('source')
-        uri = request.GET.get('uri')
+        data = request.GET.get('data')
         try:
-            if source == 'archivesspace':
-                json = ArchivesSpaceDataFetcher.from_uri(uri)
-                data = ArchivesSpaceDataTransformer().transform(json)
-                Indexer().index_data(data)
-            else:
-                return Response({"detail": "Unknown source {}.".format(source)}, status=400)
-            message = ("Transformation routines complete for source {}.".format(source) if not object_type
-                       else "Transformation routines complete for {} {}.".format(source, object_type))
-            return Response({"detail": message}, status=200)
+            resp = Indexer().add_single(data)
+            return Response({"detail": resp}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
-class DeleteView(APIView):
-    """Runs transformation routines."""
+
+class IndexDeleteView(APIView):
+    """Deletes a data object from index."""
 
     def post(self, request, format=None):
-        source = request.GET.get('source')
         uri = request.GET.get('uri')
         try:
-            if source == 'archivesspace':
-                Indexer().delete_data(source, uri)
-            else:
-                return Response({"detail": "Unknown source {}.".format(source)}, status=400)
-            message = ("Transformation routines complete for source {}.".format(source) if not object_type
-                       else "Transformation routines complete for {} {}.".format(source, object_type))
-            return Response({"detail": message}, status=200)
+            resp = Indexer().delete_single(uri)
+            return Response({"detail": resp}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
 
@@ -316,7 +61,35 @@ class ArchivesSpaceFetchChangesView(APIView):
             object_type = request.data.get('object_type')
             if not object_type:
                 return Response({"detail": "Missing required field 'object_type' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher(object_type=object_type, action=action).changes()
+            resp = ArchivesSpaceDataFetcher(object_type=object_type).changes()
+            return Response(resp, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)
+
+
+class ArchivesSpaceFetchURIView(APIView):
+    """Fetches a data object by URI."""
+
+    def post(self, request, format=None):
+        try:
+            uri = request.data.get('uri')
+            if not uri:
+                return Response({"detail": "Missing required field 'uri' in request data"}, status=500)
+            resp = ArchivesSpaceDataFetcher().from_uri(uri)
+            return Response(resp, status=200)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=500)
+
+
+class ArchivesSpaceTransformView(APIView):
+    """Transforms ArchivesSpace data."""
+
+    def post(self, request, format=None):
+        try:
+            data = request.data.get('data')
+            if not data:
+                return Response({"detail": "Missing required field 'data' in request data"}, status=500)
+            resp = ArchivesSpaceDataTransformer(data).run()
             return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
