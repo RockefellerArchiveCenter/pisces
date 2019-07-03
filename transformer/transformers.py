@@ -57,21 +57,19 @@ class CartographerDataTransformer:
 
 class ArchivesSpaceDataTransformer:
 
-    def run(self):
+    def run(self, data):
         self.source_data = data
-        self.object_type = self.data.get('jsonmodel_type')
+        self.object_type = self.source_data.get('jsonmodel_type')
         try:
             # TODO: parse out objects and collections
-            CLS_MAP = {
-                "agent_person": [Agent, 'agent'],
-                "agent_corporate_entity": [Agent, 'agent'],
-                "agent_family": [Agent, 'agent'],
-                "resource": [Collection, 'collection'],
-                "archival_object": [Object, 'object'],
-                "subject": [Term, 'term']}
-            self.cls = CLS_MAP[self.object_type][0]
-            self.key = CLS_MAP[self.object_type][1]
-            return getattr(self, "transform_to_{}".format(self.key))()
+            TYPE_MAP = {
+                "agent_person": "agent",
+                "agent_corporate_entity": "agent",
+                "agent_family": "agent",
+                "resource": "collection",
+                "archival_object": "object",
+                "subject": "term"}
+            return getattr(self, "transform_to_{}".format(TYPE_MAP[self.object_type]))()
         except Exception as e:
             print(e)
             raise ArchivesSpaceTransformError(str(e))
@@ -131,7 +129,7 @@ class ArchivesSpaceDataTransformer:
 
     def parse_note(self, note):
         type = note.get('type', note.get('jsonmodel_type').split('note_',1)[1])
-        title = note.get('label', [t[1] for t in Note.NOTE_TYPE_CHOICES if t[0] == type][0])
+        title = note.get('label', 'Note')
         content = self.parse_note_content(note)
         return (type, title, content)
 
@@ -178,10 +176,10 @@ class ArchivesSpaceDataTransformer:
                 new_subnotes = []
                 parsed = self.parse_note(note)
                 new_note = {"type": parsed[0], "title": parsed[1],
-                        "source": Note.ARCHIVESSPACE}
+                            "source": 'archivesspace', 'content': []}
                 for subnote in parsed[2]:
                     new_subnotes.append({"type": subnote[0], "content": subnote[1]})
-                new_note['contents'].append(new_subnotes)
+                new_note['content'].append(new_subnotes)
                 new_notes.append(new_note)
             return new_notes
         except Exception as e:

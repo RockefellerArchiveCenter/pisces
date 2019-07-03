@@ -29,7 +29,7 @@ class ArchivesSpaceDataFetcher:
         if type(self.repo) == dict and 'error' in self.repo:
             raise ArchivesSpaceDataFetcherError(self.repo['error'])
 
-    def changes(self):
+    def changes(self, object_type):
         if object_type in ['resource', 'subject', 'archival_object', 'person', 'organization', 'family']:
             self.object_type = object_type
         else:
@@ -43,7 +43,7 @@ class ArchivesSpaceDataFetcher:
             # # TODO: we don't need to fetch this every time
             for d in self.aspace.client.get_paged("delete-feed", params={"modified_since": str(self.last_run)}):
                 data['deleted'].append(d)
-            for u in self.from_list(self.object_type):
+            for u in self.updated_list(self.object_type):
                 if u.publish:
                     data['updated'].append(u.uri)
                 else:
@@ -58,7 +58,7 @@ class ArchivesSpaceDataFetcher:
             self.current_run.save()
             raise ArchivesSpaceDataFetcherError(str(e))
 
-    def from_list(self, object_type):
+    def updated_list(self, object_type):
         if self.object_type == 'resource':
             return self.repo.resources.with_params(all_ids=True, modified_since=self.last_run)
         elif self.object_type == 'archival_object':

@@ -33,7 +33,7 @@ class IndexAddView(APIView):
     """Adds a data object to index."""
 
     def post(self, request, format=None):
-        data = request.GET.get('data')
+        data = request.data.get('data')
         try:
             resp = Indexer().add_single(data)
             return Response({"detail": resp}, status=200)
@@ -45,9 +45,9 @@ class IndexDeleteView(APIView):
     """Deletes a data object from index."""
 
     def post(self, request, format=None):
-        uri = request.GET.get('uri')
+        data = request.data.get('data')
         try:
-            resp = Indexer().delete_single(uri)
+            resp = Indexer().delete_single(data)
             return Response({"detail": resp}, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
@@ -61,7 +61,7 @@ class ArchivesSpaceFetchChangesView(APIView):
             object_type = request.data.get('object_type')
             if not object_type:
                 return Response({"detail": "Missing required field 'object_type' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher(object_type=object_type).changes()
+            resp = ArchivesSpaceDataFetcher().changes(object_type=object_type)
             return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
@@ -72,10 +72,10 @@ class ArchivesSpaceFetchURIView(APIView):
 
     def post(self, request, format=None):
         try:
-            uri = request.data.get('uri')
-            if not uri:
-                return Response({"detail": "Missing required field 'uri' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher().from_uri(uri)
+            data = request.data.get('data')
+            if not data:
+                return Response({"detail": "Missing required field 'data' in request data"}, status=500)
+            resp = ArchivesSpaceDataFetcher().from_uri(data)
             return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
@@ -89,7 +89,7 @@ class ArchivesSpaceTransformView(APIView):
             data = request.data.get('data')
             if not data:
                 return Response({"detail": "Missing required field 'data' in request data"}, status=500)
-            resp = ArchivesSpaceDataTransformer(data).run()
+            resp = ArchivesSpaceDataTransformer().run(data)
             return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
