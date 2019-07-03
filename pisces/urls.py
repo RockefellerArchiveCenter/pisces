@@ -36,11 +36,11 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('fetch/archivesspace/changes', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
-    path('fetch/archivesspace/uri', ArchivesSpaceFetchURIView.as_view(), name='fetch-archivesspace-uri'),
-    path('transform/archivesspace', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
-    path('index/add', IndexAddView.as_view(), name='index-add'),
-    path('index/delete', IndexDeleteView.as_view(), name='index-delete'),
+    re_path(r'^fetch/archivesspace/changes/$', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
+    re_path(r'^fetch/archivesspace/uri/$', ArchivesSpaceFetchURIView.as_view(), name='fetch-archivesspace-uri'),
+    re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
+    re_path(r'^index/add/$', IndexAddView.as_view(), name='index-add'),
+    re_path(r'^index/delete/$', IndexDeleteView.as_view(), name='index-delete'),
     # path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
     # path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
