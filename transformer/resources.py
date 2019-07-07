@@ -147,14 +147,27 @@ class ArchivesSpaceLinkedAgent(odin.Resource):
     ref = odin.StringField()
 
 
-class ArchivesSpaceName(odin.Resource):
-    primary_name = odin.StringField()
+class ArchivesSpaceNameBase(odin.Resource):
     sort_name = odin.StringField()
     authorized = odin.BooleanField()
     is_display_name = odin.BooleanField()
-    source = odin.StringField(choices=resource_configs.NAME_SOURCE_CHOICES, null=True)
-    rules = odin.StringField(null=True)
     use_dates = odin.ArrayOf(ArchivesSpaceDate)
+    rules = odin.StringField(choices=resource_configs.NAME_RULES_CHOICES, null=True)
+    source = odin.StringField(choices=resource_configs.NAME_SOURCE_CHOICES, null=True)
+
+
+class ArchivesSpaceNameCorporateEntity(ArchivesSpaceNameBase):
+    primary_name = odin.StringField()
+
+
+class ArchivesSpaceNameFamily(ArchivesSpaceNameBase):
+    family_name = odin.StringField()
+
+
+class ArchivesSpaceNamePerson(ArchivesSpaceNameBase):
+    primary_name = odin.StringField()
+    rest_of_name = odin.StringField(null=True)
+    name_order = odin.StringField(choices=(('direct', 'Direct'),('inverted', 'Inverted')))
 
 
 class ArchivesSpaceNote(odin.Resource): pass
@@ -201,8 +214,8 @@ class ArchivesSpaceArchivalObject(ArchivesSpaceComponentBase):
     display_string = odin.StringField()
     restrictions_apply = odin.BooleanField()
     ancestors = odin.ArrayOf(ArchivesSpaceAncestor)
-    # resource = odin.DictOf(ArchivesSpaceRef)
-    # parent = odin.DictOf(ArchivesSpaceRef, null=True)
+    resource = odin.DictAs(ArchivesSpaceRef)
+    parent = odin.DictAs(ArchivesSpaceRef, null=True)
     has_unpublished_ancestor = odin.BooleanField()
 
 
@@ -216,7 +229,7 @@ class ArchivesSpaceResource(ArchivesSpaceComponentBase):
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)
     language = odin.StringField()
-    # tree = odin.DictOf(ArchivesSpaceRef)
+    tree = odin.DictAs(ArchivesSpaceRef)
 
 
 class ArchivesSpaceSubject(odin.Resource):
@@ -246,16 +259,20 @@ class ArchivesSpaceAgentBase(odin.Resource):
     jsonmodel_type = odin.StringField(choices=AGENT_TYPES)
     notes = odin.ArrayOf(ArchivesSpaceNote)
     dates_of_existence = odin.ArrayOf(ArchivesSpaceDate)
-    # names = odin.ArrayOf(ArchivesSpaceName)
     uri = odin.StringField()
-    # display_name = odin.DictOf(ArchivesSpaceName)
     title = odin.StringField()
 
 
-class ArchivesSpaceAgentCorporateEntity(ArchivesSpaceAgentBase): pass
+class ArchivesSpaceAgentCorporateEntity(ArchivesSpaceAgentBase):
+    names = odin.ArrayOf(ArchivesSpaceNameCorporateEntity)
+    display_name = odin.DictAs(ArchivesSpaceNameCorporateEntity)
 
 
-class ArchivesSpaceAgentFamily(ArchivesSpaceAgentBase): pass
+class ArchivesSpaceAgentFamily(ArchivesSpaceAgentBase):
+    names = odin.ArrayOf(ArchivesSpaceNameFamily)
+    display_name = odin.DictAs(ArchivesSpaceNameFamily)
 
 
-class ArchivesSpaceAgentPerson(ArchivesSpaceAgentBase): pass
+class ArchivesSpaceAgentPerson(ArchivesSpaceAgentBase):
+    names = odin.ArrayOf(ArchivesSpaceNamePerson)
+    display_name = odin.DictAs(ArchivesSpaceNamePerson)

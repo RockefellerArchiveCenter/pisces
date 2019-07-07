@@ -27,7 +27,7 @@ DATE_TYPE_CHOICES = (
     ('other', 'Other'),
 )
 
-EXTENT_TYPE_CHOICES = (
+EXTENT_TYPE_CHOICES = ( # TODO: update from AS
     ('cassettes', 'Cassettes'),
     ('cubic_feet', 'Cubic Feet'),
     ('files', 'Files'),
@@ -61,8 +61,15 @@ LEVEL_CHOICES = (
     ('subseries', 'Sub-Series'),
 )
 
-NAME_SOURCE_CHOICES = (
-    ()
+NAME_SOURCE_CHOICES = ( # TODO: get from AS
+    ('local', 'Local sources'),
+    ('naf', 'Library of Congress Name Authority File'),
+    ('ingest', 'Ingested'),
+)
+
+NAME_RULES_CHOICES = ( # TODO: update from AS
+    ('dacs', 'Describing Archives: a Content Standard'),
+    ('local', 'Local Rules')
 )
 
 NOTE_TYPE_CHOICES = (
