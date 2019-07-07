@@ -2,6 +2,10 @@ import odin
 from . import resource_configs
 
 
+class Ref(odin.Resource):
+    ref = odin.StringField()
+
+
 class Date(odin.Resource):
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
@@ -61,15 +65,15 @@ class Collection(odin.Resource):
     title = odin.StringField()
     level = odin.StringField(choices=resource_configs.LEVEL_CHOICES)
     dates = odin.ArrayOf(Date)
-    # creators = odin.ArrayOf(Agent)
+    creators = odin.ArrayOf(Ref)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    # agents = odin.ArrayOf(Agent)
-    # terms = odin.ArrayOf(Term)
-    # parent = odin.DictAs(Collection)
-    # children = odin.ArrayOf(Collection)
-    # ancestors = odin.ArrayOf(Collection)
+    agents = odin.ArrayOf(Ref)
+    terms = odin.ArrayOf(Ref)
+    parent = odin.DictAs(Ref)
+    children = odin.ArrayOf(Ref)
+    ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
 
 
@@ -79,10 +83,10 @@ class Object(odin.Resource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    # agents = odin.ArrayOf(Agent)
-    # terms = odin.ArrayOf(Term)
-    # parent = odin.DictAs(Collection)
-    # ancestors = odin.ArrayOf(Collection)
+    agents = odin.ArrayOf(Ref)
+    terms = odin.ArrayOf(Ref)
+    parent = odin.DictAs(Ref)
+    ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
 
 
@@ -91,8 +95,8 @@ class Agent(odin.Resource):
     type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Collection)
-    objects = odin.ArrayOf(Object)
+    collections = odin.ArrayOf(Ref)
+    objects = odin.ArrayOf(Ref)
     notes = odin.ArrayOf(Note)
 
 
