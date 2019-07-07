@@ -30,6 +30,7 @@ DATE_TYPE_CHOICES = (
 EXTENT_TYPE_CHOICES = ( # TODO: update from AS
     ('cassettes', 'Cassettes'),
     ('cubic_feet', 'Cubic Feet'),
+    ('Cubic Feet', 'Cubic Feet'),
     ('files', 'Files'),
     ('gigabytes', 'Gigabytes'),
     ('leaves', 'Leaves'),
@@ -159,6 +160,10 @@ SUBNOTE_TYPE_CHOICES = (
     ('text', 'Text'),
     ('orderedlist', 'Ordered List'),
     ('definedlist', 'Defined List'),
+)
+
+SUBJECT_SOURCE_CHOICES = ( # TODO: add AS subject sources
+    ('lcsh', 'Library of Congress Subject Headings'),
 )
 
 TERM_TYPE_CHOICES = (

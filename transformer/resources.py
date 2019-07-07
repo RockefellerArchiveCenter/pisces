@@ -67,7 +67,7 @@ class Collection(odin.Resource):
     notes = odin.ArrayOf(Note)
     # agents = odin.ArrayOf(Agent)
     # terms = odin.ArrayOf(Term)
-    # parent = odin.DictOf(Collection)
+    # parent = odin.DictAs(Collection)
     # children = odin.ArrayOf(Collection)
     # ancestors = odin.ArrayOf(Collection)
     rights_statements = odin.ArrayOf(RightsStatement)
@@ -81,7 +81,7 @@ class Object(odin.Resource):
     notes = odin.ArrayOf(Note)
     # agents = odin.ArrayOf(Agent)
     # terms = odin.ArrayOf(Term)
-    # parent = odin.DictOf(Collection)
+    # parent = odin.DictAs(Collection)
     # ancestors = odin.ArrayOf(Collection)
     rights_statements = odin.ArrayOf(RightsStatement)
 
@@ -121,7 +121,7 @@ class ArchivesSpaceExtent(odin.Resource):
     number = odin.FloatField()
     container_summary = odin.StringField(null=True)
     portion = odin.StringField(choices=(('whole', 'Whole'), ('part', 'Part'))),
-    # extent_type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
+    extent_type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
 
 
 class ArchivesSpaceExternalId(odin.Resource):
@@ -233,12 +233,8 @@ class ArchivesSpaceResource(ArchivesSpaceComponentBase):
 
 
 class ArchivesSpaceSubject(odin.Resource):
-    SUBJECT_SOURCE_CHOICES = ( # TODO: add AS subject sources
-        ()
-    )
-
     title = odin.StringField()
-    source = odin.StringField(choices=SUBJECT_SOURCE_CHOICES)
+    source = odin.StringField(choices=resource_configs.SUBJECT_SOURCE_CHOICES)
     external_ids = odin.ArrayOf(ArchivesSpaceExternalId)
     publish = odin.BooleanField()
     terms = odin.ArrayOf(ArchivesSpaceTerm)
