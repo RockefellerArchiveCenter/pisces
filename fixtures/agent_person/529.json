@@ -1,0 +1,154 @@
+{
+  "lock_version": 272,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T02:42:14Z",
+  "system_mtime": "2017-12-15T22:30:28Z",
+  "user_mtime": "2015-08-25T14:25:51Z",
+  "jsonmodel_type": "agent_person",
+  "agent_contacts": [
+    {
+      "lock_version": 0,
+      "name": "Whitman",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-08-25T14:25:52Z",
+      "system_mtime": "2015-08-25T14:25:52Z",
+      "user_mtime": "2015-08-25T14:25:52Z",
+      "jsonmodel_type": "agent_contact",
+      "telephones": []
+    }
+  ],
+  "linked_agent_roles": [
+    "creator",
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "dates_of_existence": [
+    {
+      "lock_version": 0,
+      "expression": "1908-",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-08-25T14:25:52Z",
+      "system_mtime": "2015-08-25T14:25:52Z",
+      "user_mtime": "2015-08-25T14:25:52Z",
+      "date_type": "single",
+      "label": "existence",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Whitman",
+      "rest_of_name": "Ann",
+      "sort_name": "Whitman, Ann",
+      "sort_name_auto_generate": true,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-08-25T14:25:52Z",
+      "system_mtime": "2017-08-22T15:44:45Z",
+      "user_mtime": "2015-08-25T14:25:52Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "naf",
+      "rules": "dacs",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": []
+    },
+    {
+      "lock_version": 0,
+      "primary_name": "Cook",
+      "rest_of_name": "Ann Elizabeth",
+      "sort_name": "Cook, Ann Elizabeth",
+      "sort_name_auto_generate": true,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-08-25T14:25:52Z",
+      "system_mtime": "2015-08-25T14:25:52Z",
+      "user_mtime": "2015-08-25T14:25:52Z",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": [
+        {
+          "lock_version": 0,
+          "expression": "1908-",
+          "created_by": "pgalligan",
+          "last_modified_by": "pgalligan",
+          "create_time": "2015-08-25T14:25:52Z",
+          "system_mtime": "2015-08-25T14:25:52Z",
+          "user_mtime": "2015-08-25T14:25:52Z",
+          "date_type": "single",
+          "label": "usage",
+          "jsonmodel_type": "date"
+        }
+      ],
+      "authorized": false,
+      "is_display_name": false
+    },
+    {
+      "lock_version": 0,
+      "primary_name": "Moore",
+      "rest_of_name": "Ann",
+      "sort_name": "Moore, Ann",
+      "sort_name_auto_generate": true,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-08-25T14:25:52Z",
+      "system_mtime": "2015-08-25T14:25:52Z",
+      "user_mtime": "2015-08-25T14:25:52Z",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": [
+        {
+          "lock_version": 0,
+          "expression": "1908-",
+          "created_by": "pgalligan",
+          "last_modified_by": "pgalligan",
+          "create_time": "2015-08-25T14:25:52Z",
+          "system_mtime": "2015-08-25T14:25:52Z",
+          "user_mtime": "2015-08-25T14:25:52Z",
+          "date_type": "single",
+          "label": "usage",
+          "jsonmodel_type": "date"
+        }
+      ],
+      "authorized": false,
+      "is_display_name": false
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/people/529",
+  "agent_type": "agent_person",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Whitman",
+    "rest_of_name": "Ann",
+    "sort_name": "Whitman, Ann",
+    "sort_name_auto_generate": true,
+    "created_by": "pgalligan",
+    "last_modified_by": "pgalligan",
+    "create_time": "2015-08-25T14:25:52Z",
+    "system_mtime": "2017-08-22T15:44:45Z",
+    "user_mtime": "2015-08-25T14:25:52Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "naf",
+    "rules": "dacs",
+    "name_order": "inverted",
+    "jsonmodel_type": "name_person",
+    "use_dates": []
+  },
+  "title": "Whitman, Ann"
+}

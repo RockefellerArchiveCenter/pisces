@@ -1,0 +1,100 @@
+{
+  "lock_version": 1,
+  "position": 6,
+  "publish": true,
+  "ref_id": "a090767a74844df09fbe120b078a964a",
+  "title": "Clarke Publications",
+  "display_string": "Clarke Publications",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T03:43:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-16T22:48:49Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "730148",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:49Z",
+      "system_mtime": "2017-02-16T22:48:49Z",
+      "user_mtime": "2017-02-16T22:48:49Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/11440",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/93",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:49Z",
+      "system_mtime": "2017-02-16T22:48:49Z",
+      "user_mtime": "2017-02-16T22:48:49Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "7",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-16T22:48:49Z",
+        "system_mtime": "2017-02-16T22:48:49Z",
+        "user_mtime": "2017-02-16T22:48:49Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/11132"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Cross-reference sheet only.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f166ae308d2d065a1fb56cafbfac809e",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/11447",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/93"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/11440"
+  },
+  "has_unpublished_ancestor": false
+}

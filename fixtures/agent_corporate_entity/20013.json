@@ -1,0 +1,63 @@
+{
+  "lock_version": 37,
+  "publish": true,
+  "created_by": "pgalligan",
+  "last_modified_by": "pgalligan",
+  "create_time": "2015-05-02T06:17:53Z",
+  "system_mtime": "2017-12-15T22:26:27Z",
+  "user_mtime": "2015-05-02T06:17:53Z",
+  "jsonmodel_type": "agent_corporate_entity",
+  "agent_contacts": [],
+  "linked_agent_roles": [
+    "creator",
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Rockefeller Foundation. International Health Division",
+      "sort_name": "Rockefeller Foundation. International Health Division",
+      "sort_name_auto_generate": true,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-05-02T06:17:53Z",
+      "system_mtime": "2017-08-22T15:44:40Z",
+      "user_mtime": "2015-05-02T06:17:53Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "naf",
+      "jsonmodel_type": "name_corporate_entity",
+      "use_dates": []
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/corporate_entities/20013",
+  "agent_type": "agent_corporate_entity",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Rockefeller Foundation. International Health Division",
+    "sort_name": "Rockefeller Foundation. International Health Division",
+    "sort_name_auto_generate": true,
+    "created_by": "pgalligan",
+    "last_modified_by": "pgalligan",
+    "create_time": "2015-05-02T06:17:53Z",
+    "system_mtime": "2017-08-22T15:44:40Z",
+    "user_mtime": "2015-05-02T06:17:53Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "naf",
+    "jsonmodel_type": "name_corporate_entity",
+    "use_dates": []
+  },
+  "title": "Rockefeller Foundation. International Health Division"
+}
