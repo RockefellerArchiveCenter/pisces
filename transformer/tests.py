@@ -33,7 +33,6 @@ class TransformerTest(TestCase):
 
     def test_as_resources(self):
         for resource in AS_TYPE_MAP:
-            print(resource)
             for f in os.listdir(os.path.join('fixtures', resource[0])):
                 with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
                     obj = json_codec.load(json_file, resource=resource[1])

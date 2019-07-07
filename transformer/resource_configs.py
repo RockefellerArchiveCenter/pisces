@@ -28,16 +28,20 @@ DATE_TYPE_CHOICES = (
 )
 
 EXTENT_TYPE_CHOICES = ( # TODO: update from AS
+    ('box(es)', 'Boxes'),
     ('cassettes', 'Cassettes'),
     ('cubic_feet', 'Cubic Feet'),
     ('Cubic Feet', 'Cubic Feet'),
+    ('document box(es)', 'Document Boxes'),
     ('files', 'Files'),
     ('gigabytes', 'Gigabytes'),
     ('leaves', 'Leaves'),
     ('linear_feet', 'Linear Feet'),
     ('megabytes', 'Megabytes'),
+    ('microform reels', 'Microform Reels'),
     ('photographic_prints', 'Photographic Prints'),
     ('photographic_slides', 'Photographic Slides'),
+    ('record cartons', 'Record Cartons'),
     ('reels', 'Reels'),
     ('sheets', 'Sheets'),
     ('terabytes', 'Terabytes'),
@@ -60,6 +64,7 @@ LEVEL_CHOICES = (
     ('subfonds', 'Sub-Fonds'),
     ('subgrp', 'Sub-Group'),
     ('subseries', 'Sub-Series'),
+    ('unspecified', 'Unspecified')
 )
 
 NAME_SOURCE_CHOICES = ( # TODO: get from AS
@@ -164,6 +169,7 @@ SUBNOTE_TYPE_CHOICES = (
 
 SUBJECT_SOURCE_CHOICES = ( # TODO: add AS subject sources
     ('lcsh', 'Library of Congress Subject Headings'),
+    ('local', 'Local sources')
 )
 
 TERM_TYPE_CHOICES = (

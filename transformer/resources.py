@@ -42,7 +42,7 @@ class RightsGranted(odin.Resource):
     dateStart = odin.DateTimeField()
     dateEnd = odin.DateTimeField()
     restriction = odin.StringField(choices=resource_configs.RIGHTS_RESTRICTION_CHOICES)
-    note = odin.DictOf(Note)
+    note = odin.DictAs(Note)
 
 
 class RightsStatement(odin.Resource):
@@ -132,13 +132,13 @@ class ArchivesSpaceExternalId(odin.Resource):
 class ArchivesSpaceSubcontainer(odin.Resource):
     indicator_2 = odin.StringField()
     type_2 = odin.StringField(choices=resource_configs.CONTAINER_TYPE_CHOICES)
-    top_container = odin.DictOf(ArchivesSpaceRef)
+    top_container = odin.DictAs(ArchivesSpaceRef)
 
 
 class ArchivesSpaceInstance(odin.Resource):
     instance_type = odin.StringField(choices=resource_configs.INSTANCE_TYPE_CHOICES)
     is_representative = odin.BooleanField()
-    sub_container = odin.DictOf(ArchivesSpaceSubcontainer)
+    sub_container = odin.DictAs(ArchivesSpaceSubcontainer)
 
 
 class ArchivesSpaceLinkedAgent(odin.Resource):
@@ -224,7 +224,6 @@ class ArchivesSpaceResource(ArchivesSpaceComponentBase):
     ead_id = odin.StringField(null=True)
     finding_aid_title = odin.StringField(null=True)
     finding_aid_filing_title = odin.StringField(null=True)
-    finding_aid_date = odin.DateField(null=True)
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)
