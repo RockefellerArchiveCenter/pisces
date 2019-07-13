@@ -74,7 +74,7 @@ class ArchivesSpaceDataTransformer:
                 ("subject", "term", ArchivesSpaceSubject, Term))
             from_obj = json_codec.loads(data, resource=[t[2] for t in TYPE_MAP if t[0] == self.object_type][0])
             to_obj = [t[3] for t in TYPE_MAP if t[0] == self.object_type][0]
-            return from_obj.convert_to(to_obj)
+            return json_codec.dumps(from_obj.convert_to(to_obj))
         except Exception as e:
             print(e)
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
