@@ -10,7 +10,8 @@ class Date(odin.Resource):
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
     expression = odin.StringField()
-    label = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
+    type = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
+    label = odin.StringField(choices=resource_configs.DATE_LABEL_CHOICES)
 
 
 class Extent(odin.Resource):
@@ -38,7 +39,6 @@ class Language(odin.Resource):
 class Term(odin.Resource):
     title = odin.StringField()
     type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
-    notes = odin.ArrayOf(Note)
 
 
 class RightsGranted(odin.Resource):
@@ -51,6 +51,7 @@ class RightsGranted(odin.Resource):
 
 class RightsStatement(odin.Resource):
     determinationDate = odin.DateTimeField()
+    type = odin.StringField()
     rightsType = odin.StringField(choices=resource_configs.RIGHTS_TYPE_CHOICES)
     dateStart = odin.DateTimeField()
     dateEnd = odin.DateTimeField()
@@ -63,6 +64,7 @@ class RightsStatement(odin.Resource):
 
 class Collection(odin.Resource):
     title = odin.StringField()
+    type = odin.StringField()
     level = odin.StringField(choices=resource_configs.LEVEL_CHOICES)
     dates = odin.ArrayOf(Date)
     creators = odin.ArrayOf(Ref)
@@ -79,13 +81,14 @@ class Collection(odin.Resource):
 
 class Object(odin.Resource):
     title = odin.StringField()
+    type = odin.StringField()
     dates = odin.ArrayOf(Date)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
     agents = odin.ArrayOf(Ref)
     terms = odin.ArrayOf(Ref)
-    parent = odin.DictAs(Ref)
+    parent = odin.DictAs(Ref, null=True)
     ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
 
@@ -95,9 +98,9 @@ class Agent(odin.Resource):
     type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Ref)
-    objects = odin.ArrayOf(Ref)
-    notes = odin.ArrayOf(Note)
+    collections = odin.ArrayOf(Ref, null=True)
+    objects = odin.ArrayOf(Ref, null=True)
+    # notes = odin.ArrayOf(Note)
 
 
 ####################################
@@ -117,8 +120,8 @@ class ArchivesSpaceDate(odin.Resource):
     expression = odin.StringField(null=True)
     begin = odin.StringField(null=True)
     end = odin.StringField(null=True)
-    date_type = odin.StringField(choices=(('single', 'Single'), ('inclusive', 'Inclusive'), ('bulk', 'Bulk')))
-    label = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
+    date_type = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
+    label = odin.StringField(choices=resource_configs.DATE_LABEL_CHOICES)
 
 
 class ArchivesSpaceExtent(odin.Resource):
@@ -174,15 +177,24 @@ class ArchivesSpaceNamePerson(ArchivesSpaceNameBase):
     name_order = odin.StringField(choices=(('direct', 'Direct'),('inverted', 'Inverted')))
 
 
+class ArchivesSpaceSubnote(odin.Resource): pass
+# TODO: add fields
+
+
 class ArchivesSpaceNote(odin.Resource): pass
+# TODO: add fields
 
 
 class ArchivesSpaceRightsStatement(odin.Resource): pass
+# TODO: add fields and nested resources
 
 
 class ArchivesSpaceTerm(odin.Resource):
-    term = odin.StringField()
     term_type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
+
+
+class ArchivesSpaceSubject(odin.Resource):
+    terms = odin.ArrayOf(ArchivesSpaceTerm)
     uri = odin.StringField()
 
 
@@ -240,7 +252,7 @@ class ArchivesSpaceSubject(odin.Resource):
     source = odin.StringField(choices=resource_configs.SUBJECT_SOURCE_CHOICES)
     external_ids = odin.ArrayOf(ArchivesSpaceExternalId)
     publish = odin.BooleanField()
-    terms = odin.ArrayOf(ArchivesSpaceTerm)
+    terms = odin.ArrayOf(ArchivesSpaceSubject)
     uri = odin.StringField()
 
 
@@ -258,8 +270,8 @@ class ArchivesSpaceAgentBase(odin.Resource):
     jsonmodel_type = odin.StringField(choices=AGENT_TYPES)
     notes = odin.ArrayOf(ArchivesSpaceNote)
     dates_of_existence = odin.ArrayOf(ArchivesSpaceDate)
-    uri = odin.StringField()
     title = odin.StringField()
+    uri = odin.StringField()
 
 
 class ArchivesSpaceAgentCorporateEntity(ArchivesSpaceAgentBase):

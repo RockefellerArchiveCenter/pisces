@@ -21,12 +21,12 @@ fetch_vcr = vcr.VCR(
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
-AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity),
-               ('agent_family', ArchivesSpaceAgentFamily),
-               ('agent_person', ArchivesSpaceAgentPerson),
-               ('archival_objects', ArchivesSpaceArchivalObject),
-               ('resources', ArchivesSpaceResource),
-               ('subjects', ArchivesSpaceSubject)]
+AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Agent),
+               ('agent_family', ArchivesSpaceAgentFamily, Agent),
+               ('agent_person', ArchivesSpaceAgentPerson, Agent),
+               ('archival_objects', ArchivesSpaceArchivalObject, Object),
+               ('resources', ArchivesSpaceResource, Collection),
+               ('subjects', ArchivesSpaceSubject, Term)]
 
 
 class TransformerTest(TestCase):
@@ -36,3 +36,10 @@ class TransformerTest(TestCase):
             for f in os.listdir(os.path.join('fixtures', resource[0])):
                 with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
                     obj = json_codec.load(json_file, resource=resource[1])
+                    self.assertNotEqual(obj, False)
+
+    def test_as_mappings(self):
+        for resource in AS_TYPE_MAP:
+            for f in os.listdir(os.path.join('fixtures', resource[0])):
+                with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
+                    ArchivesSpaceDataTransformer().run(json.load(json_file))

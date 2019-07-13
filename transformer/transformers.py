@@ -5,8 +5,11 @@ import os
 from iso639 import languages
 
 from django.utils import timezone
+from odin.codecs import json_codec
 
 from .models import *
+from .resources import *
+from .mappings import *
 
 
 class ArchivesSpaceTransformError(Exception): pass
@@ -58,21 +61,23 @@ class CartographerDataTransformer:
 class ArchivesSpaceDataTransformer:
 
     def run(self, data):
-        self.source_data = data
-        self.object_type = self.source_data.get('jsonmodel_type')
+        self.object_type = data.get('jsonmodel_type')
+        data = json.dumps(data) if isinstance(data, dict) else data
         try:
             # TODO: parse out objects and collections
-            TYPE_MAP = {
-                "agent_person": "agent",
-                "agent_corporate_entity": "agent",
-                "agent_family": "agent",
-                "resource": "collection",
-                "archival_object": "object",
-                "subject": "term"}
-            return getattr(self, "transform_to_{}".format(TYPE_MAP[self.object_type]))()
+            TYPE_MAP = (
+                ("agent_person", "agent", ArchivesSpaceAgentPerson, Agent),
+                ("agent_corporate_entity", "agent", ArchivesSpaceAgentCorporateEntity, Agent),
+                ("agent_family", "agent", ArchivesSpaceAgentFamily, Agent),
+                ("resource", "collection", ArchivesSpaceResource, Collection),
+                ("archival_object", "object", ArchivesSpaceArchivalObject, Object),
+                ("subject", "term", ArchivesSpaceSubject, Term))
+            from_obj = json_codec.loads(data, resource=[t[2] for t in TYPE_MAP if t[0] == self.object_type][0])
+            to_obj = [t[3] for t in TYPE_MAP if t[0] == self.object_type][0]
+            return from_obj.convert_to(to_obj)
         except Exception as e:
             print(e)
-            raise ArchivesSpaceTransformError(str(e))
+            raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
 
     def datetime_from_string(self, date_string):
         if date_string:
@@ -235,19 +240,6 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError('Error transforming terms: {}'.format(e))
 
-    def transform_to_agent(self):
-        obj = {}
-        try:
-            obj['type'] = 'agent'
-            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
-            obj['title'] = self.source_data.get('display_name').get('sort_name')
-            obj['type'] = self.source_data.get('jsonmodel_type')
-            obj['notes'] = self.notes(self.source_data.get('notes'))
-            return self.obj
-        except Exception as e:
-            print(e)
-            raise ArchivesSpaceTransformError("Error transforming agent: {}".format(e))
-
     def transform_to_collection(self):
         obj = {}
         try:
@@ -272,40 +264,6 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             print(e)
             raise ArchivesSpaceTransformError("Error transforming collection: {}".format(e))
-
-    def transform_to_object(self):
-        obj = {}
-        try:
-            obj['type'] = 'object'
-            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
-            obj['title'] = self.source_data.get('title', self.source_data.get('display_string'))
-            obj['dates'] = self.dates(self.source_data.get('dates'))
-            obj['extents'] = self.extents(self.source_data.get('extents'))
-            obj['creators'] = self.agents(self.source_data.get('linked_agents'), creator=True)
-            obj['notes'] = self.notes(self.source_data.get('notes'))
-            obj['rights_statements'] = self.rights_statements(self.source_data.get('rights_statements'))
-            if self.source_data.get('language'):
-                obj['languages'] = self.languages(self.source_data.get('language'))
-            obj['terms'] = self.terms(self.source_data.get('subjects'))
-            obj['agents'] = self.agents(self.source_data.get('linked_agents'))
-            if self.source_data.get('ancestors'):
-                obj['parent'] = self.source_data.get('ancestors')[0].get('ref')
-            return obj
-        except Exception as e:
-            print(e)
-            raise ArchivesSpaceTransformError("Error transforming object: {}".format(e))
-
-    def transform_to_term(self):
-        obj = {}
-        try:
-            obj['type'] = 'term'
-            obj['uri'] = self.source_data.get('uri') # TODO: look at ID generation
-            obj['title'] = self.source_data.get('title')
-            obj['type'] = self.source_data.get('terms')[0]['term_type']
-            return obj
-        except Exception as e:
-            print(e)
-            raise ArchivesSpaceTransformError("Error transforming term: {}".format(e))
 
 
 class WikidataDataTransformer:
