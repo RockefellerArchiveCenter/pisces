@@ -21,7 +21,7 @@ class Extent(odin.Resource):
 
 class Subnote(odin.Resource):
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
-    title = odin.StringField()
+    content = odin.StringField()
 
 
 class Note(odin.Resource):
@@ -91,6 +91,7 @@ class Object(odin.Resource):
     parent = odin.DictAs(Ref, null=True)
     ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
+    tree_position = odin.IntegerField()
 
 
 class Agent(odin.Resource):
@@ -177,12 +178,18 @@ class ArchivesSpaceNamePerson(ArchivesSpaceNameBase):
     name_order = odin.StringField(choices=(('direct', 'Direct'),('inverted', 'Inverted')))
 
 
-class ArchivesSpaceSubnote(odin.Resource): pass
-# TODO: add fields
+class ArchivesSpaceSubnote(odin.Resource):
+    jsonmodel_type = odin.StringField()
+    content = odin.StringField(null=True)
+    items = odin.StringField(null=True)
 
 
-class ArchivesSpaceNote(odin.Resource): pass
-# TODO: add fields
+class ArchivesSpaceNote(odin.Resource):
+    jsonmodel_type = odin.StringField()
+    label = odin.StringField(null=True)
+    subnotes = odin.ArrayOf(ArchivesSpaceSubnote, null=True)
+    content = odin.StringField(null=True)
+    items = odin.StringField(null=True)
 
 
 class ArchivesSpaceRightsStatement(odin.Resource): pass
@@ -194,6 +201,7 @@ class ArchivesSpaceTerm(odin.Resource):
 
 
 class ArchivesSpaceSubject(odin.Resource):
+    title = odin.StringField()
     terms = odin.ArrayOf(ArchivesSpaceTerm)
     uri = odin.StringField()
 
@@ -228,6 +236,7 @@ class ArchivesSpaceArchivalObject(ArchivesSpaceComponentBase):
     ref_id = odin.StringField()
     component_id = odin.StringField(null=True)
     display_string = odin.StringField()
+    language = odin.StringField(null=True)
     restrictions_apply = odin.BooleanField()
     ancestors = odin.ArrayOf(ArchivesSpaceAncestor)
     resource = odin.DictAs(ArchivesSpaceRef)
@@ -240,10 +249,10 @@ class ArchivesSpaceResource(ArchivesSpaceComponentBase):
     ead_id = odin.StringField(null=True)
     finding_aid_title = odin.StringField(null=True)
     finding_aid_filing_title = odin.StringField(null=True)
+    language = odin.StringField()
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)
-    language = odin.StringField()
     tree = odin.DictAs(ArchivesSpaceRef)
 
 
