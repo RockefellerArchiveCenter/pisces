@@ -109,6 +109,15 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Collection
 
+    def convert_dates(dates):
+        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
+
+    mappings = (
+        odin.define(from_field='subjects', to_field='terms'),
+        odin.define(from_field='linked_agents', to_field='agents'),
+        odin.define(from_field='dates', to_field='dates', action=convert_dates, to_list=True),
+    )
+
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
@@ -119,7 +128,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     mappings = (
         odin.define(from_field='position', to_field='tree_position'),
-        odin.define(from_field='jsonmodel_type', to_field='type'),
         odin.define(from_field='subjects', to_field='terms'),
         odin.define(from_field='linked_agents', to_field='agents'),
         odin.define(from_field='parent', to_field='parent'),

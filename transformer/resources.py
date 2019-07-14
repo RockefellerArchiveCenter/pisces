@@ -64,7 +64,7 @@ class RightsStatement(odin.Resource):
 
 class Collection(odin.Resource):
     title = odin.StringField()
-    type = odin.StringField()
+    type = odin.StringField(default="collection")
     level = odin.StringField(choices=resource_configs.LEVEL_CHOICES)
     dates = odin.ArrayOf(Date)
     creators = odin.ArrayOf(Ref)
@@ -81,7 +81,7 @@ class Collection(odin.Resource):
 
 class Object(odin.Resource):
     title = odin.StringField()
-    type = odin.StringField()
+    type = odin.StringField(default="object")
     dates = odin.ArrayOf(Date)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
