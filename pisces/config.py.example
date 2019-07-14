@@ -21,4 +21,8 @@ CARTOGRAPHER = {
     "password": "admin",
 }
 
+ELASTICSEARCH = {
+    "host": "elasticsearch",
+}
+
 ALLOWED_HOSTS = ['localhost', 'pisces-web']
