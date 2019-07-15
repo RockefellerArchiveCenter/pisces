@@ -19,6 +19,11 @@ class Extent(odin.Resource):
     type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
 
 
+class ExternalIdentifier(odin.Resource):
+    identifier = odin.StringField()
+    source = odin.StringField(choices=resource_configs.SOURCE_CHOICES)
+
+
 class Subnote(odin.Resource):
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
     content = odin.StringField()
@@ -39,6 +44,7 @@ class Language(odin.Resource):
 class Term(odin.Resource):
     title = odin.StringField()
     type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
 class RightsGranted(odin.Resource):
@@ -77,6 +83,7 @@ class Collection(odin.Resource):
     children = odin.ArrayOf(Ref)
     ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
 class Object(odin.Resource):
@@ -91,6 +98,7 @@ class Object(odin.Resource):
     parent = odin.DictAs(Ref, null=True)
     ancestors = odin.ArrayOf(Ref)
     rights_statements = odin.ArrayOf(RightsStatement)
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
 
 
@@ -101,7 +109,8 @@ class Agent(odin.Resource):
     dates = odin.ArrayOf(Date)
     collections = odin.ArrayOf(Ref, null=True)
     objects = odin.ArrayOf(Ref, null=True)
-    # notes = odin.ArrayOf(Note)
+    notes = odin.ArrayOf(Note)
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
 ####################################

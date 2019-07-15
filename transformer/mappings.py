@@ -104,6 +104,19 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     from_obj = ArchivesSpaceResource
     to_obj = Collection
 
+    mappings = (
+        odin.define(from_field='subjects', to_field='terms'),
+        odin.define(from_field='linked_agents', to_field='agents'),
+    )
+
+    @odin.map_list_field(from_field='dates', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
+
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
+
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
@@ -117,6 +130,17 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
+
+    @odin.map_field(from_field='language', to_field='languages', to_list=True)
+    def languages(self, value):
+        if value:
+            lang_data = languages.get(part2b=value)
+            return Language(expression=lang_data.name, identifier=value)
+        return []
+
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
@@ -142,9 +166,12 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     def languages(self, value):
         if value:
             lang_data = languages.get(part2b=value)
-            print(lang_data)
-            return {"expression": lang_data.name, "identifier": lang}
+            return Language(expression=lang_data.name, identifier=value)
         return []
+
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
 
 
 class ArchivesSpaceSubjectToTerm(odin.Mapping):
@@ -154,6 +181,10 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
     @odin.map_field(from_field='terms', to_field='type')
     def type(self, value):
         return next(iter(value), None).term_type
+
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
 
 
 class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
@@ -168,6 +199,10 @@ class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
+
 
 class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
     from_obj = ArchivesSpaceAgentFamily
@@ -181,6 +216,10 @@ class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
+
 
 class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     from_obj = ArchivesSpaceAgentPerson
@@ -193,3 +232,7 @@ class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
+
+    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    def external_identifiers(self, value):
+        return ExternalIdentifier(identifier=value, source='archivesspace')
