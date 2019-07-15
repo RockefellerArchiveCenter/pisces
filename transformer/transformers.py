@@ -79,6 +79,7 @@ class ArchivesSpaceDataTransformer:
             print(e)
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
 
+    # TODO: move this to mappings
     def rights_statements(self, rights_statements):
         try:
             rights = []

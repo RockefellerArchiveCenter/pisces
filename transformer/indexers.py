@@ -13,7 +13,7 @@ class Indexer:
     def add(self, data):
         if isinstance(data, str):
             data = json.loads(data)
-        # TODO: figure out id generation
+        # TODO: get id from external id, if none exists create a new one
         return self.client.index(index=data.get('type'), doc_type=data.get('type'), body=data)
 
     def delete(self, data):
