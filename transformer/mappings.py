@@ -109,34 +109,34 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Collection
 
-    def convert_dates(dates):
-        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
-
     mappings = (
         odin.define(from_field='subjects', to_field='terms'),
         odin.define(from_field='linked_agents', to_field='agents'),
-        odin.define(from_field='dates', to_field='dates', action=convert_dates, to_list=True),
     )
+
+    @odin.map_list_field(from_field='dates', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Object
 
-    def convert_dates(dates):
-        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
-
     mappings = (
         odin.define(from_field='position', to_field='tree_position'),
         odin.define(from_field='subjects', to_field='terms'),
         odin.define(from_field='linked_agents', to_field='agents'),
         odin.define(from_field='parent', to_field='parent'),
-        odin.define(from_field='dates', to_field='dates', action=convert_dates, to_list=True),
     )
+
+    @odin.map_list_field(from_field='dates', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field
     def title(self, value):
-        return value or self.source.display_string
+        return value if value else self.source.display_string
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
@@ -160,36 +160,36 @@ class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
     from_obj = ArchivesSpaceAgentCorporateEntity
     to_obj = Agent
 
-    def convert_dates(dates):
-        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
-
     mappings = (
         odin.define(from_field='jsonmodel_type', to_field='type'),
-        odin.define(from_field='dates_of_existence', to_field='dates', action=convert_dates, to_list=True)
     )
+
+    @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
 
 
 class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
     from_obj = ArchivesSpaceAgentFamily
     to_obj = Agent
 
-    def convert_dates(dates):
-        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
-
     mappings = (
         odin.define(from_field='jsonmodel_type', to_field='type'),
-        odin.define(from_field='dates_of_existence', to_field='dates', action=convert_dates, to_list=True)
     )
+
+    @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
 
 
 class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     from_obj = ArchivesSpaceAgentPerson
     to_obj = Agent
 
-    def convert_dates(dates):
-        return (ArchivesSpaceDateToDate.apply(d) for d in dates)
-
     mappings = (
         odin.define(from_field='jsonmodel_type', to_field='type'),
-        odin.define(from_field='dates_of_existence', to_field='dates', action=convert_dates, to_list=True)
     )
+
+    @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
+    def dates(self, value):
+        return ArchivesSpaceDateToDate.apply(value)
