@@ -113,9 +113,9 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
@@ -138,9 +138,9 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
             return Language(expression=lang_data.name, identifier=value)
         return []
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
@@ -169,9 +169,9 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
             return Language(expression=lang_data.name, identifier=value)
         return []
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceSubjectToTerm(odin.Mapping):
@@ -182,9 +182,9 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
     def type(self, value):
         return next(iter(value), None).term_type
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
@@ -199,9 +199,9 @@ class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
@@ -216,9 +216,9 @@ class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
@@ -233,6 +233,6 @@ class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
-    @odin.map_field(from_field='uri', to_field='external_identifiers')
+    @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
-        return ExternalIdentifier(identifier=value, source='archivesspace')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]

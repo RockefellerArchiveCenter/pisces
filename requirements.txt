@@ -12,6 +12,7 @@ Django==2.0.13
 djangorestframework==3.9.2
 drf-yasg==1.15.0
 elasticsearch==7.0.2
+elasticsearch-dsl==7.0.0
 ElectronBonder==0.5
 gitdb2==2.0.5
 GitPython==2.1.11
@@ -35,6 +36,7 @@ pytz==2018.9
 PyYAML==5.1
 requests==2.21.0
 ruamel.yaml==0.15.89
+shortuuid==0.5.0
 six==1.12.0
 smmap2==2.0.5
 structlog==19.1.0
