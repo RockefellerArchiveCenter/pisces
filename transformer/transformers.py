@@ -79,32 +79,6 @@ class ArchivesSpaceDataTransformer:
             print(e)
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
 
-    # TODO: move this to mappings
-    def rights_statements(self, rights_statements):
-        try:
-            rights = []
-            for statement in rights_statements:
-                new_acts = []
-                new_rights = {
-                    "determinationDate": statement.get('determination_date'),
-                    "rightsType": statement.get('rights_type'),
-                    "dateStart": self.datetime_from_string(statement.get('start_date')),
-                    "dateEnd": self.datetime_from_string(statement.get('end_date')),
-                    "copyrightStatus": statement.get('status'),
-                    "otherBasis": statement.get('other_rights_basis'),
-                    "jurisdiction": statement.get('jurisdiction'),
-                    "notes": self.notes(statement.get('notes'))}
-                for act in statement.get('acts'):
-                    new_acts.append({"act": act.get('act_type'),
-                                     "dateStart": self.datetime_from_string(act.get('start_date')),
-                                     "dateEnd": self.datetime_from_string(act.get('end_date')),
-                                     "restriction": act.get('restriction'),
-                                     "notes": self.notes(act.get('notes'))})
-                new_rights["acts"] = new_acts
-                return new_rights
-        except Exception as e:
-            raise ArchivesSpaceTransformError('Error transforming rights: {}'.format(e))
-
 
 class WikidataDataTransformer:
 

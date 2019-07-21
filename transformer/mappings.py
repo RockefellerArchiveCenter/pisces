@@ -95,9 +95,34 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='orderedlist', content=value)
 
 
+class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
+    from_obj = ArchivesSpaceRightsStatementAct
+    to_obj = RightsGranted
+
+    mappings = (
+        ('act_type', None, 'act'),
+        ('start_date', None, 'dateStart'),
+        ('end_date', None, 'dateEnd'),
+        ('restriction', None, 'restriction'),
+        ('notes', None, 'notes')
+    )
+
+
 class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
     from_obj = ArchivesSpaceRightsStatement
     to_obj = RightsStatement
+
+    mappings = (
+        ('determination_date', None, 'determinationDate'),
+        ('rights_type', None, 'type'),
+        ('start_date', None, 'dateStart'),
+        ('end_date', None, 'dateEnd'),
+        ('status', None, 'copyrightStatus'),
+        ('other_rights_basis', None, 'otherBasis'),
+        ('jurisdiction', None, 'jurisdiction'),
+        ('notes', None, 'notes'),
+        ('acts', None, 'rights_granted'),
+    )
 
 
 class ArchivesSpaceResourceToCollection(odin.Mapping):

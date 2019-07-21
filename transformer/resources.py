@@ -52,7 +52,7 @@ class RightsGranted(odin.Resource):
     dateStart = odin.DateTimeField()
     dateEnd = odin.DateTimeField()
     restriction = odin.StringField(choices=resource_configs.RIGHTS_RESTRICTION_CHOICES)
-    note = odin.DictAs(Note)
+    notes = odin.ArrayOf(Note)
 
 
 class RightsStatement(odin.Resource):
@@ -201,8 +201,24 @@ class ArchivesSpaceNote(odin.Resource):
     items = odin.StringField(null=True)
 
 
-class ArchivesSpaceRightsStatement(odin.Resource): pass
-# TODO: add fields and nested resources
+class ArchivesSpaceRightsStatementAct(odin.Resource):
+    act_type = odin.StringField()
+    start_date = odin.DateField()
+    end_date = odin.DateField(null=True)
+    restriction = odin.StringField()
+    notes = odin.ArrayOf(ArchivesSpaceNote)
+
+
+class ArchivesSpaceRightsStatement(odin.Resource):
+    determination_date = odin.DateField(null=True)
+    rights_type = odin.StringField()
+    start_date = odin.DateField()
+    end_date = odin.DateField(null=True)
+    status = odin.StringField(null=True)
+    other_rights_basis = odin.StringField(null=True)
+    jurisdiction = odin.StringField(null=True)
+    notes = odin.ArrayOf(ArchivesSpaceNote)
+    acts = odin.ArrayOf(ArchivesSpaceRightsStatementAct)
 
 
 class ArchivesSpaceTerm(odin.Resource):
