@@ -1,5 +1,4 @@
 from django import template
-from transformer.models import Note
 
 register = template.Library()
 

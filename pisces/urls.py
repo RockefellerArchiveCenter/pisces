@@ -36,6 +36,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('viewer.urls')),
     re_path(r'^fetch/archivesspace/changes/$', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
     re_path(r'^fetch/archivesspace/uri/$', ArchivesSpaceFetchURIView.as_view(), name='fetch-archivesspace-uri'),
     re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
