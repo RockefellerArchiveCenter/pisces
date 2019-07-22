@@ -1,58 +1,58 @@
-from django.http import JsonResponse
-from django.views.generic import DetailView, ListView, TemplateView
+from django.views.generic import View, TemplateView
 
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import connections, Search
 
+from transformer.documents import Collection, Object, Agent, Term
+from .helpers import document_or_404, documents_of_type
+
 from pisces import config
 
 
-class CollectionListView(ListView):
+class SearchView(View):
     def __init__(self):
-        self.client = Elasticsearch([config.ELASTICSEARCH['host']])
+        connections.create_connection(hosts=['elasticsearch'], timeout=20)
 
+
+class CollectionListView(SearchView):
     def get(self, request, *args, **kwargs):
-        s = Search(index='collection', using=self.client)\
-            .query('match_all')
-        resp = s.execute()
-        data = []
-        for hit in resp:
-            data.append({'title': hit.title, 'id': hit.meta.id, 'doc_type': hit.meta.doc_type})
-        return JsonResponse({'collections': data})
+        return documents_of_type(Collection, 'collection')
 
 
-class CollectionDetailView(DetailView):
-    def __init__(self):
-        self.client = Elasticsearch([config.ELASTICSEARCH['host']])
-
+class CollectionDetailView(SearchView):
     def get(self, request, *args, **kwargs):
-        identifier = kwargs.get('id')
-        print(identifier)
-        s = Search(index='collection', using=self.client)\
-            .query('match', _id=identifier)
-        resp = s.execute()
-        if resp.hits.total == 1:
-            return JsonResponse({'title': resp.hits[0].title, 'id': resp.hits[0].meta.id, 'doc_type': resp.hits[0].meta.doc_type})
-        return JsonResponse({"detail": "Wrong number of hits. Got {}, expected 1".format(resp.hits.total)}, status_code=500)
+        return document_or_404(Collection, kwargs.get('id'))
 
 
-class ObjectDetailView(DetailView): pass
+class ObjectListView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return documents_of_type(Object, 'object')
 
 
-class AgentListView(ListView): pass
+class ObjectDetailView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return document_or_404(Object, kwargs.get('id'))
 
 
-class AgentDetailView(DetailView): pass
+class AgentListView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return documents_of_type(Agent, 'agent')
 
 
-class TermListView(ListView): pass
+class AgentDetailView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return document_or_404(Agent, kwargs.get('id'))
 
 
-class TermDetailView(DetailView): pass
+class TermListView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return documents_of_type(Term, 'term')
+
+
+class TermDetailView(SearchView):
+    def get(self, request, *args, **kwargs):
+        return document_or_404(Term, kwargs.get('id'))
 
 
 class IndexView(TemplateView):
     template_name = 'viewer/index.html'
-
-
-class TreeView(DetailView): pass

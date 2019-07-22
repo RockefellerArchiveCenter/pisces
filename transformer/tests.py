@@ -53,5 +53,5 @@ class TransformerTest(TestCase):
                     obj = ArchivesSpaceDataTransformer().run(json.load(json_file))
                     add = Indexer().add(obj)
                     self.assertNotEqual(add, False)
-                    # delete = Indexer().delete(obj)
-                    # self.assertNotEqual(delete, False)
+                    delete = Indexer().delete(obj)
+                    self.assertNotEqual(delete, False)

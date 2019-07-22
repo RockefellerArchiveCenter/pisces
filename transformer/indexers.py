@@ -32,10 +32,7 @@ class Indexer:
         if isinstance(data, str):
             data = json.loads(data)
         identifier = [i['identifier'] for i in data['external_identifiers'] if i['source'] == 'archivesspace'][0]
-        s = Search(using=self.client).query('match_phrase', external_identifiers__identifier=identifier)
-        response = s.execute()
-        deleted = []
-        for hit in response:
-            d = self.client.delete(index=hit.meta.index, id=hit.meta.id)
-            deleted.append(d)
-        return deleted
+        # TODO: better type handling
+        s = Search(using=self.client, index=data.get('$').lstrip('transformer.resources.').lower()).query('match_phrase', external_identifiers__identifier=identifier)
+        response = s.delete()
+        return response
