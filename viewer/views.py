@@ -1,4 +1,5 @@
-from django.views.generic import View, TemplateView
+from django.views.generic import TemplateView
+from rest_framework.views import APIView
 
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import connections, Search
@@ -9,7 +10,7 @@ from .helpers import document_or_404, documents_of_type
 from pisces import config
 
 
-class SearchView(View):
+class SearchView(APIView):
     def __init__(self):
         connections.create_connection(hosts=['elasticsearch'], timeout=20)
 

@@ -1,15 +1,17 @@
 from django.http import JsonResponse
 from django.urls import reverse
 
+from rest_framework.response import Response
+
 from elasticsearch import NotFoundError
 
 
 def document_or_404(cls, identifier):
     try:
         s = cls.get(id=identifier)
-        return JsonResponse(s.to_dict())
+        return Response(s.to_dict())
     except NotFoundError:
-        return JsonResponse({"detail": "Not found"}, status=404)
+        return Response({"detail": "Not found"}, status=404)
 
 
 def documents_of_type(cls, key):
@@ -21,4 +23,4 @@ def documents_of_type(cls, key):
         c = hit.to_dict()
         c.update({'uri': reverse('api:{}-detail'.format(key), kwargs={'id': hit.meta.id})})
         data.append(c)
-    return JsonResponse({'{}s'.format(key): data})
+    return Response({'{}s'.format(key): data})
