@@ -26,7 +26,8 @@ class Indexer:
         es_id = self.generate_id()
         # TODO: better type handling
         # TODO: handle cases where there is more than one hit
-        return self.client.index(index=data.get('$').lstrip('transformer.resources.').lower(), doc_type='_doc', id=es_id, body=data)
+        return self.client.index(index=data.get('$').lstrip('transformer.resources.').lower(),
+                                 doc_type='_doc', id=es_id, body=data, refresh=True)
 
     def delete(self, data):
         if isinstance(data, str):
