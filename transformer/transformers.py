@@ -64,7 +64,7 @@ class ArchivesSpaceDataTransformer:
         self.object_type = data.get('jsonmodel_type')
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
-            # TODO: parse out objects and collections
+            # TODO: parse out objects and collections. The tree/node endpoint looks promising
             TYPE_MAP = (
                 ("agent_person", "agent", ArchivesSpaceAgentPerson, Agent),
                 ("agent_corporate_entity", "agent", ArchivesSpaceAgentCorporateEntity, Agent),
