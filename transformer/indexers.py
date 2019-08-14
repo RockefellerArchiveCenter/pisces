@@ -23,7 +23,8 @@ class Indexer:
         response = s.execute()
         if response.hits.total == 1:
             es_id = response[0].meta.id
-        es_id = self.generate_id()
+        else:
+            es_id = self.generate_id()
         # TODO: better type handling
         # TODO: handle cases where there is more than one hit
         return self.client.index(index=data.get('$').lstrip('transformer.resources.').lower(),
