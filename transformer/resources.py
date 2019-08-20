@@ -49,20 +49,20 @@ class Term(odin.Resource):
 
 class RightsGranted(odin.Resource):
     act = odin.StringField(choices=resource_configs.RIGHTS_ACT_CHOICES)
-    dateStart = odin.DateTimeField()
-    dateEnd = odin.DateTimeField()
+    begin = odin.DateTimeField()
+    end = odin.DateTimeField()
     restriction = odin.StringField(choices=resource_configs.RIGHTS_RESTRICTION_CHOICES)
     notes = odin.ArrayOf(Note)
 
 
 class RightsStatement(odin.Resource):
-    determinationDate = odin.DateTimeField()
+    determination_date = odin.DateTimeField()
     type = odin.StringField()
-    rightsType = odin.StringField(choices=resource_configs.RIGHTS_TYPE_CHOICES)
-    dateStart = odin.DateTimeField()
-    dateEnd = odin.DateTimeField()
-    copyrightStatus = odin.StringField(choices=resource_configs.RIGHTS_COPYRIGHT_STATUSES, null=True)
-    otherBasis = odin.StringField(null=True)
+    rights_type = odin.StringField(choices=resource_configs.RIGHTS_TYPE_CHOICES)
+    begin = odin.DateTimeField()
+    end = odin.DateTimeField()
+    copyright_status = odin.StringField(choices=resource_configs.RIGHTS_COPYRIGHT_STATUSES, null=True)
+    other_basis = odin.StringField(null=True)
     jurisdiction = odin.StringField(null=True)
     notes = odin.ArrayOf(Note)
     rights_granted = odin.ArrayOf(RightsGranted)

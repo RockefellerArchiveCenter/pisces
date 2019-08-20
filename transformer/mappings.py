@@ -101,8 +101,8 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
 
     mappings = (
         ('act_type', None, 'act'),
-        ('start_date', None, 'dateStart'),
-        ('end_date', None, 'dateEnd'),
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
         ('restriction', None, 'restriction'),
         ('notes', None, 'notes')
     )
@@ -113,12 +113,12 @@ class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
     to_obj = RightsStatement
 
     mappings = (
-        ('determination_date', None, 'determinationDate'),
+        ('determination_date', None, 'determination_date'),
         ('rights_type', None, 'type'),
-        ('start_date', None, 'dateStart'),
-        ('end_date', None, 'dateEnd'),
-        ('status', None, 'copyrightStatus'),
-        ('other_rights_basis', None, 'otherBasis'),
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
+        ('status', None, 'copyright_status'),
+        ('other_rights_basis', None, 'other_basis'),
         ('jurisdiction', None, 'jurisdiction'),
         ('notes', None, 'notes'),
         ('acts', None, 'rights_granted'),
