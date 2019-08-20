@@ -120,7 +120,7 @@ NOTE_TYPE_CHOICES = (
   ('prefercite', 'Preferred Citation'),
   ('processinfo', 'Processing Information'),
   ('relatedmaterial', 'Related Archival Materials'),
-  ('restrictions', 'Restrictions')
+  ('restrictions', 'Restrictions'),
   ('rights_statement', 'Rights'),
   ('rights_statement_act', 'Acts'),
   ('scopecontent', 'Scope and Contents'),

@@ -1,5 +1,0 @@
-<ul class="list-unstyled">
-{% for agent in agents %}
-  <li><a href="{% url 'app:agent-detail' agent.pk %}">{{agent.title}}</a> {% include 'viewer/common/agent-tag.html' with agent=agent %}</li>
-{% endfor %}
-</ul>
