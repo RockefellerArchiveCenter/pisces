@@ -3,6 +3,8 @@ import os
 import random
 import vcr
 
+from jsonschema import validate
+
 from django.test import Client, TestCase
 from django.urls import reverse
 from odin.codecs import json_codec
@@ -31,6 +33,18 @@ AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Age
 
 
 class TransformerTest(TestCase):
+
+    def validate_trasnformers(self):
+        print("Validating transformers")
+        with open(os.path.join(settings.BASE_DIR, 'rac-data-model', 'schema.json')) as sf:
+            schema = json.load(sf)
+            for resource in AS_TYPE_MAP:
+                for f in os.listdir(os.path.join('fixtures', resource[0])):
+                    with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
+                        transform = ArchivesSpaceDataTransformer().run(json.load(json_file))
+                        valid = validate(instance=transform, schema=schema)
+                        self.assertEqual(valid, None)
+
 
     def test_as_resources(self):
         for resource in AS_TYPE_MAP:
