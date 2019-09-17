@@ -130,6 +130,24 @@ NOTE_TYPE_CHOICES = (
   ('userestrict', 'Conditions Governing Use'),
 )
 
+REFERENCE_TYPE_CHOICES = (
+    ("cultural_context", "Cultural Context"),
+    ("function", "Function"),
+    ("geographic", "Geographic"),
+    ("genre_form", "Genre Form"),
+    ("occupation", "Occupation"),
+    ("style_period", "Style Period"),
+    ("technique", "Technique"),
+    ("temporal", "Temporal"),
+    ("topical", "Topical"),
+    ("person", "Person"),
+    ("organization", "Organization"),
+    ("family", "Family"),
+    ("software", "Software"),
+    ("object", "Object"),
+    ("collection", "Collection"),
+)
+
 RIGHTS_ACT_CHOICES = (
     ('publish', 'Publish'),
     ('disseminate', 'Disseminate'),
