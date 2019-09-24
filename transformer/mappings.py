@@ -8,39 +8,38 @@ class ArchivesSpaceRefToReference(odin.Mapping):
     from_obj = ArchivesSpaceRef
     to_obj = Reference
 
-    @odin.map_field(from_field='ref', to_field='external_identifiers', to_list=True)
+    mappings = (
+        ('ref', None, 'title'),
+    )
+
+    @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
     def external_identifiers(self,value):
-        if value:
-            external_identifier = ExternalIdentifier(identifier=value, source='archivesspace')
-            print(external_identifier.identifier)
-            return external_identifier
-        return []
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+class ArchivesSpaceAncestorToReference(odin.Mapping):
+    from_obj = ArchivesSpaceAncestor
+    to_obj = Reference
+
+    mappings = (
+        ('ref', None, 'title'),
+    )
+
+    @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
+    def external_identifiers(self,value):
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
     from_obj = ArchivesSpaceLinkedAgent
     to_obj = Reference
 
-    @odin.map_field(from_field='ref', to_field='external_identifiers', to_list=True)
+    mappings = (
+        ('ref', None, 'title'),
+    )
+
+    @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
     def external_identifiers(self,value):
-        if value:
-            external_identifier = ExternalIdentifier(identifier=value, source='archivesspace')
-            return external_identifier
-        return []
-
-
-class ArchivesSpaceAncestorToReference(odin.Mapping):
-    from_obj = ArchivesSpaceAncestor
-    to_obj = Reference
-
-    @odin.map_field(from_field='ref', to_field='external_identifiers', to_list=True)
-    def external_identifiers(self,value):
-        if value:
-            external_identifier = ExternalIdentifier(identifier=value, source='archivesspace')
-            return external_identifier
-        return []
-
-    #@odin.map_field(from_field='level', to_field='')
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
 class ArchivesSpaceDateToDate(odin.Mapping):
@@ -158,11 +157,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     from_obj = ArchivesSpaceResource
     to_obj = Collection
 
-    mappings = (
-        odin.define(from_field='subjects', to_field='terms'),
-        odin.define(from_field='linked_agents', to_field='agents'),
-    )
-
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
@@ -170,6 +164,14 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_list_field(from_field='subjects', to_field='terms')
+    def terms(self, value):
+        return ArchivesSpaceRefToReference.apply(value)
+
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return ArchivesSpaceLinkedAgentToReference.apply(value)
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
@@ -203,9 +205,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     mappings = (
         odin.define(from_field='position', to_field='tree_position'),
-        #odin.define(from_field='subjects', to_field='terms'),
-        #odin.define(from_field='linked_agents', to_field='agents'),
-        #odin.define(from_field='parent', to_field='parent'),
     )
 
     @odin.map_list_field(from_field='dates', to_field='dates')
@@ -230,6 +229,18 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
+
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return ArchivesSpaceLinkedAgentToReference.apply(value)
+
+    @odin.map_list_field(from_field='parent', to_field='parent', to_list=True)
+    def parents(self,value):
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_list_field(from_field='ancestors', to_field='ancestors')
+    def agents(self, value):
+        return ArchivesSpaceAncestorToReference.apply(value)
 
 
 class ArchivesSpaceSubjectToTerm(odin.Mapping):

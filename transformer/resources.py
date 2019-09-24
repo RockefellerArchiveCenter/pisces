@@ -13,12 +13,14 @@ class Reference(odin.Resource):
     title = odin.StringField(null=True)
     type = odin.StringField(choices=resource_configs.REFERENCE_TYPE_CHOICES, null=True)
     uri = odin.StringField(null=True)
-    #role = odin.StringField(null=True)
-    #relator = odin.StringField(null=True)
+    relator = odin.StringField(null=True)
+    role = odin.StringField(null=True)
+    level = odin.StringField(null=True)
 
 
 class Ref(odin.Resource):
     ref = odin.StringField()
+    #test = odin.StringField(default="test")
     ##TODO Check if this is necessary or pulling the correct information
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
@@ -90,11 +92,11 @@ class Collection(odin.Resource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Ref)
+    agents = odin.ArrayOf(Reference)
     terms = odin.ArrayOf(Reference)
-    parent = odin.DictAs(Ref)
-    children = odin.ArrayOf(Ref)
-    ancestors = odin.ArrayOf(Ref)
+    parent = odin.DictAs(Reference, null=True)
+    children = odin.ArrayOf(Reference, null=True)
+    ancestors = odin.ArrayOf(Reference, null=True)
     rights_statements = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
@@ -106,10 +108,10 @@ class Object(odin.Resource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    #agents = odin.ArrayOf(Reference)
+    agents = odin.ArrayOf(Reference)
     terms = odin.ArrayOf(Reference)
-    #parent = odin.DictAs(Reference, null=True)
-    #ancestors = odin.ArrayOf(Reference)
+    parent = odin.DictAs(Reference, null=True)
+    ancestors = odin.ArrayOf(Reference, null=True)
     rights_statements = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
