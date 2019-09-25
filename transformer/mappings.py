@@ -173,6 +173,14 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     def agents(self, value):
         return ArchivesSpaceLinkedAgentToReference.apply(value)
 
+    #@odin.map_list_field(from_field='parent', to_field='parent', to_list=True)
+    #def parents(self,value):
+        #return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    #@odin.map_list_field(from_field='ancestors', to_field='ancestors')
+    #def ancestors(self, value):
+        #return ArchivesSpaceAncestorToReference.apply(value)
+
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
@@ -239,7 +247,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
-    def agents(self, value):
+    def ancestors(self, value):
         return ArchivesSpaceAncestorToReference.apply(value)
 
 
@@ -247,7 +255,7 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
     from_obj = ArchivesSpaceSubject
     to_obj = Term
 
-    @odin.map_field(from_field='terms', to_field='type')
+    @odin.map_field(from_field='terms', to_field='term_type')
     def type(self, value):
         return next(iter(value), None).term_type
 

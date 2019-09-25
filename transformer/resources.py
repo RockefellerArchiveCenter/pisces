@@ -58,7 +58,8 @@ class Language(odin.Resource):
 
 class Term(odin.Resource):
     title = odin.StringField()
-    type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
+    type = type = odin.StringField(default="term")
+    term_type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
@@ -88,7 +89,7 @@ class Collection(odin.Resource):
     type = odin.StringField(default="collection")
     level = odin.StringField(choices=resource_configs.LEVEL_CHOICES)
     dates = odin.ArrayOf(Date)
-    creators = odin.ArrayOf(Ref)
+    creators = odin.ArrayOf(Reference)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
@@ -291,6 +292,8 @@ class ArchivesSpaceResource(ArchivesSpaceComponentBase):
     finding_aid_title = odin.StringField(null=True)
     finding_aid_filing_title = odin.StringField(null=True)
     language = odin.StringField()
+    #ancestors = odin.ArrayOf(ArchivesSpaceAncestor, null=True)
+    #parent = odin.DictAs(ArchivesSpaceRef, null=True)
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)
