@@ -2,6 +2,7 @@ import odin
 from iso639 import languages
 
 from .resources import *
+from .mappings_helpers import ArchivesSpaceHelper as AS
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -13,7 +14,7 @@ class ArchivesSpaceRefToReference(odin.Mapping):
     )
 
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
-    def external_identifiers(self,value):
+    def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
@@ -26,7 +27,7 @@ class ArchivesSpaceAncestorToReference(odin.Mapping):
     )
 
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
-    def external_identifiers(self,value):
+    def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
@@ -39,7 +40,7 @@ class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
     )
 
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
-    def external_identifiers(self,value):
+    def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
@@ -162,6 +163,13 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     def dates(self, value):
         return ArchivesSpaceDateToDate.apply(value)
 
+    @odin.map_field(from_field='language', to_field='languages', to_list=True)
+    def languages(self, value):
+        if value:
+            lang_data = languages.get(part2b=value)
+            return [Language(expression=lang_data.name, identifier=value)]
+        return [Language(expression="English", identifier="eng")]
+
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
@@ -190,10 +198,9 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        if value:
-            lang_data = languages.get(part2b=value)
-            return Language(expression=lang_data.name, identifier=value)
-        return []
+        value = value if value else AS().closest_parent_value(self.source.uri, 'language')
+        lang_data = languages.get(part2b=value)
+        return Language(expression=lang_data.name, identifier=value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -218,10 +225,9 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        if value:
-            lang_data = languages.get(part2b=value)
-            return Language(expression=lang_data.name, identifier=value)
-        return []
+        value = value if value else AS().closest_parent_value(self.source.uri, 'language')
+        lang_data = languages.get(part2b=value)
+        return Language(expression=lang_data.name, identifier=value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -236,7 +242,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
         return ArchivesSpaceLinkedAgentToReference.apply(value)
 
     @odin.map_list_field(from_field='parent', to_field='parent', to_list=True)
-    def parents(self,value):
+    def parents(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
