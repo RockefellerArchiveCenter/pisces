@@ -22,7 +22,6 @@ class Reference(odin.Resource):
 
 class Ref(odin.Resource):
     ref = odin.StringField()
-    #test = odin.StringField(default="test")
     ##TODO Check if this is necessary or pulling the correct information
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
