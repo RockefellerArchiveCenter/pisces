@@ -223,7 +223,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     def dates(self, value):
         if not value:
             value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in AS().closest_parent_value(self.source.uri, 'dates')]
-        #value = value if value else AS().closest_parent_value(self.source.uri, 'dates')
         for v in value:
             print(v.__dict__)
         print(value)
