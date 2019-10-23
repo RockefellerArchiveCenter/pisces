@@ -218,7 +218,8 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
         value = value if value else AS().closest_parent_value(self.source.uri, 'dates')
-        return ArchivesSpaceDateToDate.apply(value)
+        print(value)
+        #return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field
     def title(self, value):

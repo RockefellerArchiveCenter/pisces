@@ -25,6 +25,7 @@ class ArchivesSpaceHelper:
         for a in obj.ancestors:
             try:
                 if getattr(a, key) not in ['', [], {}, None]:
-                    return getattr(a, key)
+                    obj = a.json()
+                    return obj[key]
             except AttributeError:
                 continue
