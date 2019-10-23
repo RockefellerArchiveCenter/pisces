@@ -1,8 +1,12 @@
+import json
+
 import odin
 from iso639 import languages
 
 from .resources import *
 from .mappings_helpers import ArchivesSpaceHelper as AS
+
+from odin.codecs import json_codec
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -217,9 +221,13 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
-        value = value if value else AS().closest_parent_value(self.source.uri, 'dates')
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in AS().closest_parent_value(self.source.uri, 'dates')]
+        #value = value if value else AS().closest_parent_value(self.source.uri, 'dates')
+        for v in value:
+            print(v.__dict__)
         print(value)
-        #return ArchivesSpaceDateToDate.apply(value)
+        return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field
     def title(self, value):
