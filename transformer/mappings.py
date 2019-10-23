@@ -217,6 +217,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
+        value = value if value else AS().closest_parent_value(self.source.uri, 'dates')
         return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field
@@ -227,7 +228,8 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     def languages(self, value):
         value = value if value else AS().closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
-        return Language(expression=lang_data.name, identifier=value)
+        print(lang_data.name)
+        return [Language(expression=lang_data.name, identifier=value)]
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):

@@ -15,9 +15,13 @@ class ArchivesSpaceHelper:
     def closest_parent_value(self, uri, key):
         """Iterates up through an archival object's ancestors looking for the
         first value in a particular field. Returns that value."""
-        obj = self.aspace.client.get(uri)
-        if obj.status_code != 200:
-            raise Exception("Error getting {} from ArchivesSpace: {}".format(uri, obj.json()['error']))
+        # obj = self.aspace.client.get(uri)
+        ao_id = uri.split('/')[-1]
+        endpoint = uri.split('/')[-2]
+        obj = getattr(self.repo, endpoint)(ao_id)
+        # obj = self.repo.archival_objects(ao_id)
+        # if obj.status_code != 200:
+        #     raise Exception("Error getting {} from ArchivesSpace: {}".format(uri, obj.json()['error']))
         for a in obj.ancestors:
             try:
                 if getattr(a, key) not in ['', [], {}, None]:
