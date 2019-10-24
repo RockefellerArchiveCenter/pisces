@@ -15,7 +15,7 @@ from .test_library import import_fixture_data, add_wikidata_ids, add_wikipedia_i
 from .transformers import *
 
 fetch_vcr = vcr.VCR(
-    serializer='yaml',
+    serializer='json',
     cassette_library_dir='fixtures/cassettes',
     record_mode='once',
     match_on=['path', 'method', 'query'],
@@ -44,12 +44,12 @@ class TransformerTest(TestCase):
         with open(os.path.join(settings.BASE_DIR, 'rac-data-model', 'schema.json')) as sf:
             schema = json.load(sf)
             for resource in AS_TYPE_MAP:
-                #with fetch_vcr.use_cassette("{}.json".format(resource[0])):
-                for f in os.listdir(os.path.join('fixtures', resource[0])):
-                    print(f)
-                    with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
-                        transform = ArchivesSpaceDataTransformer().run(json.load(json_file))
-                        print(transform)
-                        self.assertNotEqual(transform, False)
-                        valid = validate(instance=json.loads(transform), schema=schema)
-                        self.assertEqual(valid, None)
+                with fetch_vcr.use_cassette("{}.json".format(resource[0])):
+                    for f in os.listdir(os.path.join('fixtures', resource[0])):
+                        print(f)
+                        with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
+                            transform = ArchivesSpaceDataTransformer().run(json.load(json_file))
+                            print(transform)
+                            self.assertNotEqual(transform, False)
+                            valid = validate(instance=json.loads(transform), schema=schema)
+                            self.assertEqual(valid, None)
