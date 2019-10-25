@@ -1,12 +1,11 @@
 import json
 
 import odin
+from odin.codecs import json_codec
 from iso639 import languages
 
 from .resources import *
-from .mappings_helpers import ArchivesSpaceHelper as AS
-
-from odin.codecs import json_codec
+from .mappings_helpers import ArchivesSpaceHelper
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -215,6 +214,10 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Object
 
+    def __init__(self, *args, **kwargs):
+        self.aspace_helper = ArchivesSpaceHelper()
+        return super(ArchivesSpaceArchivalObjectToObject, self).__init__(*args, **kwargs)
+
     mappings = (
         odin.define(from_field='position', to_field='tree_position'),
     )
@@ -222,10 +225,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
         if not value:
-            value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in AS().closest_parent_value(self.source.uri, 'dates')]
-        for v in value:
-            print(v.__dict__)
-        print(value)
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
         return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field
@@ -234,7 +234,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        value = value if value else AS().closest_parent_value(self.source.uri, 'language')
+        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
         print(lang_data.name)
         return [Language(expression=lang_data.name, identifier=value)]
