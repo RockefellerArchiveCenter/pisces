@@ -181,6 +181,11 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
 
+    @odin.map_list_field(from_field='linked_agents', to_field='creators')
+    def creators(self, value):
+        if ArchivesSpaceLinkedAgent(role="creator"):
+            return ArchivesSpaceLinkedAgentToReference.apply(value)
+
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return ArchivesSpaceLinkedAgentToReference.apply(value)
@@ -192,8 +197,11 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     mappings = (
         odin.define(from_field='subjects', to_field='terms'),
-        odin.define(from_field='linked_agents', to_field='agents'),
     )
+
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return ArchivesSpaceLinkedAgentToReference.apply(value)
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):

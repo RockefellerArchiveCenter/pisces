@@ -55,7 +55,8 @@ EXTENT_TYPE_CHOICES = ( # TODO: update from AS
 )
 
 INSTANCE_TYPE_CHOICES = ( # TODO: add from AS
-    ()
+    ('collection', 'Collection'),
+    ('mixed materials', 'Mixed Materials')
 )
 
 LEVEL_CHOICES = (
