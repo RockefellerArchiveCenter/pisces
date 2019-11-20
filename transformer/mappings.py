@@ -183,12 +183,16 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):
-        if ArchivesSpaceLinkedAgent(role="creator"):
-            return ArchivesSpaceLinkedAgentToReference.apply(value)
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
-        return ArchivesSpaceLinkedAgentToReference.apply(value)
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+
+    @odin.map_list_field(from_field='notes', to_field='notes')
+    def notes(self, value):
+        return ArchivesSpaceNoteToNote.apply(value)
+
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):

@@ -1,1 +1,219 @@
-{"lock_version": 6, "title": "Rockefeller Foundation records, Biographical File", "publish": true, "restrictions": false, "ead_id": "FA485.xml", "finding_aid_title": "A Guide to the Rockefeller Foundation records, Biographical File\n", "finding_aid_filing_title": "Rockefeller Foundation records, Biographical File", "finding_aid_language": "English", "created_by": "admin", "last_modified_by": "battalb", "create_time": "2014-12-06T13:46:59Z", "system_mtime": "2017-12-15T22:28:33Z", "user_mtime": "2016-10-23T15:58:12Z", "suppressed": false, "id_0": "FA485", "language": "eng", "level": "collection", "finding_aid_description_rules": "dacs", "jsonmodel_type": "resource", "external_ids": [{"external_id": "20503", "source": "Archivists Toolkit Database::RESOURCE", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T15:58:12Z", "system_mtime": "2016-10-23T15:58:12Z", "user_mtime": "2016-10-23T15:58:12Z", "jsonmodel_type": "external_id"}], "subjects": [], "linked_events": [], "extents": [{"lock_version": 0, "number": "3.5", "container_summary": "8 document boxes.", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T15:58:12Z", "system_mtime": "2016-10-23T15:58:12Z", "user_mtime": "2016-10-23T15:58:12Z", "portion": "whole", "extent_type": "cubic_feet", "jsonmodel_type": "extent"}], "dates": [{"lock_version": 0, "expression": "undated", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T15:58:12Z", "system_mtime": "2016-10-23T15:58:12Z", "user_mtime": "2016-10-23T15:58:12Z", "date_type": "single", "label": "creation", "jsonmodel_type": "date"}], "external_documents": [], "rights_statements": [], "linked_agents": [{"role": "creator", "relator": "aut", "terms": [], "ref": "/agents/corporate_entities/4746"}], "revision_statements": [], "instances": [], "deaccessions": [], "related_accessions": [], "classifications": [], "notes": [{"jsonmodel_type": "note_multipart", "persistent_id": "137a67becfd0bffeb1e324fd364a3c35", "type": "arrangement", "subnotes": [{"jsonmodel_type": "note_text", "content": "The Rockefeller Foundation Biographical File is arranged alphabetically by the last name/family name of the individual or by institutional name.\n", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "667f86c573282a16759d5e187c028b2c", "type": "accessrestrict", "rights_restriction": {"local_access_restriction_type": []}, "subnotes": [{"jsonmodel_type": "note_text", "content": "Open for research. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "349cd1d84b68be5f177a58fcf418e68b", "type": "prefercite", "subnotes": [{"jsonmodel_type": "note_text", "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "db987b2683395b1762e131e6866275ff", "type": "processinfo", "subnotes": [{"jsonmodel_type": "note_text", "content": "Level 2 Limited Processing has been conducted by RAC to establish basic intellectual and physical control of the material and assess immediate preservation and conservation needs. Records have been rehoused into acid-free boxes. All records remain in original folders.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "f418509f7cac95fbe88d25729c9567ac", "type": "acqinfo", "subnotes": [{"jsonmodel_type": "note_text", "content": "The Rockefeller Foundation Biographical File was created and maintained by the Foundation staff until the 1980's, at which time the File was transferred to the Rockefeller Archive Center.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "2bf0e52fbefeecc3d74d876837b635af", "type": "scopecontent", "subnotes": [{"jsonmodel_type": "note_text", "content": "The scope and breadth of the Biographical File is inconsistent. Some files are rich, while others are sparse.\n\nIndividual files may contain: biographical sketches, curriculum vitaes and resumes, obituaries, press releases, photographs, articles and publications. Files may also document honors, awards, appointments and positions held.\n ", "publish": true}], "publish": true}, {"jsonmodel_type": "note_singlepart", "persistent_id": "7012e6157c591ab96725a5fd83146a66", "type": "physdesc", "content": ["8 document boxes."], "publish": true}], "uri": "/repositories/2/resources/683", "repository": {"ref": "/repositories/2"}, "collection_management": {"lock_version": 0, "rights_determined": false, "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T15:58:12Z", "system_mtime": "2017-06-02T20:50:51Z", "user_mtime": "2016-10-23T15:58:12Z", "processing_status": "completed", "jsonmodel_type": "collection_management", "external_ids": [], "uri": "/repositories/2/collection_management/3977", "repository": {"ref": "/repositories/2"}, "parent": {"ref": "/repositories/2/resources/683"}}, "user_defined": {"lock_version": 0, "boolean_1": false, "boolean_2": false, "boolean_3": false, "date_2": "2014-12-31", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T15:58:12Z", "system_mtime": "2016-10-23T15:58:12Z", "user_mtime": "2016-10-23T15:58:12Z", "enum_1": "2 - Minimal", "jsonmodel_type": "user_defined", "repository": {"ref": "/repositories/2"}}, "tree": {"ref": "/repositories/2/resources/683/tree"}}
+{
+  "lock_version": 6,
+  "title": "Rockefeller Foundation records, Biographical File",
+  "publish": true,
+  "restrictions": false,
+  "ead_id": "FA485.xml",
+  "finding_aid_title": "A Guide to the Rockefeller Foundation records, Biographical File\n",
+  "finding_aid_filing_title": "Rockefeller Foundation records, Biographical File",
+  "finding_aid_language": "English",
+  "created_by": "admin",
+  "last_modified_by": "battalb",
+  "create_time": "2014-12-06T13:46:59Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-10-23T15:58:12Z",
+  "suppressed": false,
+  "id_0": "FA485",
+  "language": "eng",
+  "level": "collection",
+  "finding_aid_description_rules": "dacs",
+  "jsonmodel_type": "resource",
+  "external_ids": [
+    {
+      "external_id": "20503",
+      "source": "Archivists Toolkit Database::RESOURCE",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T15:58:12Z",
+      "system_mtime": "2016-10-23T15:58:12Z",
+      "user_mtime": "2016-10-23T15:58:12Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "3.5",
+      "container_summary": "8 document boxes.",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T15:58:12Z",
+      "system_mtime": "2016-10-23T15:58:12Z",
+      "user_mtime": "2016-10-23T15:58:12Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "undated",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T15:58:12Z",
+      "system_mtime": "2016-10-23T15:58:12Z",
+      "user_mtime": "2016-10-23T15:58:12Z",
+      "date_type": "single",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [
+    {
+  		"role": "subject",
+  		"terms": [],
+  		"ref": "/agents/corporate_entities/1843"
+  	},
+    {
+      "role": "creator",
+      "relator": "aut",
+      "terms": [],
+      "ref": "/agents/corporate_entities/4746"
+    }
+  ],
+  "revision_statements": [],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "137a67becfd0bffeb1e324fd364a3c35",
+      "type": "arrangement",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The Rockefeller Foundation Biographical File is arranged alphabetically by the last name/family name of the individual or by institutional name.\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "667f86c573282a16759d5e187c028b2c",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Open for research. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "349cd1d84b68be5f177a58fcf418e68b",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "db987b2683395b1762e131e6866275ff",
+      "type": "processinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Level 2 Limited Processing has been conducted by RAC to establish basic intellectual and physical control of the material and assess immediate preservation and conservation needs. Records have been rehoused into acid-free boxes. All records remain in original folders.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "f418509f7cac95fbe88d25729c9567ac",
+      "type": "acqinfo",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The Rockefeller Foundation Biographical File was created and maintained by the Foundation staff until the 1980's, at which time the File was transferred to the Rockefeller Archive Center.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "2bf0e52fbefeecc3d74d876837b635af",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The scope and breadth of the Biographical File is inconsistent. Some files are rich, while others are sparse.\n\nIndividual files may contain: biographical sketches, curriculum vitaes and resumes, obituaries, press releases, photographs, articles and publications. Files may also document honors, awards, appointments and positions held.\n ",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_singlepart",
+      "persistent_id": "7012e6157c591ab96725a5fd83146a66",
+      "type": "physdesc",
+      "content": [
+        "8 document boxes."
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/resources/683",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "collection_management": {
+    "lock_version": 0,
+    "rights_determined": false,
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2016-10-23T15:58:12Z",
+    "system_mtime": "2017-06-02T20:50:51Z",
+    "user_mtime": "2016-10-23T15:58:12Z",
+    "processing_status": "completed",
+    "jsonmodel_type": "collection_management",
+    "external_ids": [],
+    "uri": "/repositories/2/collection_management/3977",
+    "repository": {
+      "ref": "/repositories/2"
+    },
+    "parent": {
+      "ref": "/repositories/2/resources/683"
+    }
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "date_2": "2014-12-31",
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2016-10-23T15:58:12Z",
+    "system_mtime": "2016-10-23T15:58:12Z",
+    "user_mtime": "2016-10-23T15:58:12Z",
+    "enum_1": "2 - Minimal",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/2"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/2/resources/683/tree"
+  }
+}
