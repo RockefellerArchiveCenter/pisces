@@ -48,7 +48,7 @@ class Subnote(odin.Resource):
 class Note(odin.Resource):
     type = odin.StringField(choices=resource_configs.NOTE_TYPE_CHOICES)
     title = odin.StringField()
-    source = odin.StringField(choices=resource_configs.SOURCE_CHOICES)
+    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
     subnotes = odin.ArrayOf(Subnote)
 
 

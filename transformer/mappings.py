@@ -72,34 +72,6 @@ class ArchivesSpaceExtentToExtent(odin.Mapping):
     )
 
 
-class ArchivesSpaceSubnoteToSubnote(odin.Mapping):
-    from_obj = ArchivesSpaceSubnote
-    to_obj = Subnote
-
-    @odin.map_field(from_field='jsonmodel_type')
-    def type(self, value):
-        if value:
-            if value in ['note_orderedlist', 'note_definedlist']:
-                return Subnote(type=value.split('note_')[1], content=self.source.items)
-            elif value == 'note_bibliography':
-                data = []
-                data.append(Subnote(type='text', content=self.source.content))
-                data.append(Subnote(type='orderedlist', content=self.source.items))
-                return data
-            elif value == 'note_index':
-                data = []
-                l = [{'label': i.get('type'), 'value': i.get('value')} for i in self.source.items]
-                data.append(Subnote(type='text', content=self.source.content))
-                data.append(Subnote(type='definedlist', content=l))
-                return data
-            elif value == 'note_chronology':
-                m = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in self.source.items]
-                return Subnote(type='definedlist', content=m)
-            else:
-                return Subnote(type='text', content=self.source.content
-                               if isinstance(self.source.content, list) else [self.source.content])
-
-
 class ArchivesSpaceNoteToNote(odin.Mapping):
     from_obj = ArchivesSpaceNote
     to_obj = Note
@@ -112,20 +84,35 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     def type(self, value):
         return value.split('note_',1)[1]
 
+    def map_subnotes(self, value):
+        if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
+            return Subnote(type=value.jsonmodel_type.split('note_')[1], content=value.items)
+        elif value == 'note_bibliography':
+            data = []
+            data.append(Subnote(type='text', content=value.content))
+            data.append(Subnote(type='orderedlist', content=value.items))
+            return data
+        elif value.jsonmodel_type == 'note_index':
+            data = []
+            l = [{'label': i.get('type'), 'value': i.get('value')} for i in value.items]
+            data.append(Subnote(type='text', content=value.content))
+            data.append(Subnote(type='definedlist', content=l))
+            return data
+        elif value.jsonmodel_type == 'note_chronology':
+            m = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in value.items]
+            return Subnote(type='definedlist', content=m)
+        else:
+            return Subnote(type='text', content=value.content
+                           if isinstance(value.content, list) else [value.content])
+
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
-        if value:
-            return (ArchivesSpaceSubnoteToSubnote.apply(v) for v in value)
-
-    @odin.map_field(from_field='content', to_field='subnotes', to_list=True)
-    def subnotes(self, value):
-        if value:
-            return Subnote(type='text', content=value)
-
-    @odin.map_field(from_field='items', to_field='subnotes', to_list=True)
-    def subnotes(self, value):
-        if value:
-            return Subnote(type='orderedlist', content=value)
+        if self.source.jsonmodel_type == 'note_multipart':
+            return (self.map_subnotes(v) for v in value)
+        elif self.source.jsonmodel_type == 'note_singlepart':
+            return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
+        elif self.source.jsonmodel_type == 'note_index':
+            return [Subnote(type='orderedlist', content=self.source.items.strip("]['").split(', '))]
 
 
 class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
@@ -188,10 +175,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
-
-    @odin.map_list_field(from_field='notes', to_field='notes')
-    def notes(self, value):
-        return ArchivesSpaceNoteToNote.apply(value)
 
 
 
