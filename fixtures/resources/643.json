@@ -1,1 +1,177 @@
-{"lock_version": 6, "title": "Rockefeller Foundation records, Program and Policy photographs", "publish": false, "restrictions": false, "ead_id": "FA444.xml", "finding_aid_title": "A Guide to the Rockefeller Foundation records, Program and Policy photographs\n", "finding_aid_filing_title": "Rockefeller Foundation records, Program and Policy photographs", "finding_aid_date": "2014", "created_by": "admin", "last_modified_by": "battalb", "create_time": "2014-12-06T12:58:25Z", "system_mtime": "2017-12-15T22:28:33Z", "user_mtime": "2016-10-23T13:49:10Z", "suppressed": false, "id_0": "FA444", "language": "eng", "level": "collection", "finding_aid_status": "in_progress", "jsonmodel_type": "resource", "external_ids": [{"external_id": "19912", "source": "Archivists Toolkit Database::RESOURCE", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T13:49:10Z", "system_mtime": "2016-10-23T13:49:10Z", "user_mtime": "2016-10-23T13:49:10Z", "jsonmodel_type": "external_id"}], "subjects": [{"ref": "/subjects/962"}], "linked_events": [], "extents": [{"lock_version": 0, "number": "4.8", "container_summary": "Extent is approximate.", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T13:49:10Z", "system_mtime": "2016-10-23T13:49:10Z", "user_mtime": "2016-10-23T13:49:10Z", "portion": "whole", "extent_type": "cubic_feet", "jsonmodel_type": "extent"}], "dates": [{"lock_version": 0, "expression": "circa 1905-1980", "begin": "1905", "end": "1980", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T13:49:10Z", "system_mtime": "2016-10-23T13:49:10Z", "user_mtime": "2016-10-23T13:49:10Z", "date_type": "inclusive", "label": "creation", "jsonmodel_type": "date"}], "external_documents": [], "rights_statements": [], "linked_agents": [{"role": "creator", "relator": "aut", "terms": [], "ref": "/agents/corporate_entities/4746"}], "revision_statements": [], "instances": [], "deaccessions": [], "related_accessions": [], "classifications": [], "notes": [{"jsonmodel_type": "note_multipart", "persistent_id": "9a724e624cb7636ba6e47cfa003f1ac1", "label": "Conditions Governing Use note", "type": "userestrict", "rights_restriction": {"local_access_restriction_type": []}, "subnotes": [{"jsonmodel_type": "note_text", "content": "Researchers who visit the Rockefeller Archive Center are granted permission to examine archival material. Permission to cite, quote from, or publish material from the Center's collections must be requested separately by writing. See Archivists for details\n\nA formal request for such permission should include the name of the collection(s) from which the relevant material is drawn; the title of the proposed article, book, or dissertation; the journal title for articles; the name of the publisher for books or the university for dissertations; and the anticipated date of publication. Permission to use and/or publish images requires completion of a use application with additional pertinent information.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n\n", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "9da0280e8e4b4ea8fbd3e943aa22a99a", "label": "Conditions Governing Access note", "type": "accessrestrict", "rights_restriction": {"local_access_restriction_type": []}, "subnotes": [{"jsonmodel_type": "note_text", "content": "Collection is open for scholarly research, with select materials restricted as noted.\n\nRAC is unable to provide access to obsolete media and original digital media. In addition separated media may not yet have undergone stabilization procedures. When feasible, a digital surrogate may be created via special order. All applicable charges will apply. See RAC Head of Archival Services or RAC Head of Digital Programs for details.\n\n", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "dc14e600acb4d2203c7c082780c73de3", "label": "Preferred Citation note", "type": "prefercite", "subnotes": [{"jsonmodel_type": "note_text", "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n", "publish": true}], "publish": true}], "uri": "/repositories/2/resources/643", "repository": {"ref": "/repositories/2"}, "collection_management": {"lock_version": 0, "rights_determined": false, "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T13:49:10Z", "system_mtime": "2017-06-02T20:50:51Z", "user_mtime": "2016-10-23T13:49:10Z", "processing_priority": "medium", "processing_status": "Backlog", "jsonmodel_type": "collection_management", "external_ids": [], "uri": "/repositories/2/collection_management/3936", "repository": {"ref": "/repositories/2"}, "parent": {"ref": "/repositories/2/resources/643"}}, "user_defined": {"lock_version": 0, "boolean_1": false, "boolean_2": false, "boolean_3": false, "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2016-10-23T13:49:10Z", "system_mtime": "2016-10-23T13:49:10Z", "user_mtime": "2016-10-23T13:49:10Z", "enum_1": "2 - Minimal", "jsonmodel_type": "user_defined", "repository": {"ref": "/repositories/2"}}, "tree": {"ref": "/repositories/2/resources/643/tree"}}
+{
+  "lock_version": 6,
+  "title": "Rockefeller Foundation records, Program and Policy photographs",
+  "publish": false,
+  "restrictions": false,
+  "ead_id": "FA444.xml",
+  "finding_aid_title": "A Guide to the Rockefeller Foundation records, Program and Policy photographs\n",
+  "finding_aid_filing_title": "Rockefeller Foundation records, Program and Policy photographs",
+  "finding_aid_date": "2014",
+  "created_by": "admin",
+  "last_modified_by": "battalb",
+  "create_time": "2014-12-06T12:58:25Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2016-10-23T13:49:10Z",
+  "suppressed": false,
+  "id_0": "FA444",
+  "language": "eng",
+  "level": "collection",
+  "finding_aid_status": "in_progress",
+  "jsonmodel_type": "resource",
+  "external_ids": [
+    {
+      "external_id": "19912",
+      "source": "Archivists Toolkit Database::RESOURCE",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T13:49:10Z",
+      "system_mtime": "2016-10-23T13:49:10Z",
+      "user_mtime": "2016-10-23T13:49:10Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [
+    {
+      "ref": "/subjects/962"
+    }
+  ],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "4.8",
+      "container_summary": "Extent is approximate.",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T13:49:10Z",
+      "system_mtime": "2016-10-23T13:49:10Z",
+      "user_mtime": "2016-10-23T13:49:10Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "circa 1905-1980",
+      "begin": "1905",
+      "end": "1980",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2016-10-23T13:49:10Z",
+      "system_mtime": "2016-10-23T13:49:10Z",
+      "user_mtime": "2016-10-23T13:49:10Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "relator": "aut",
+      "terms": [],
+      "ref": "/agents/corporate_entities/4746"
+    }
+  ],
+  "revision_statements": [],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9a724e624cb7636ba6e47cfa003f1ac1",
+      "label": "Conditions Governing Use note",
+      "type": "userestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Researchers who visit the Rockefeller Archive Center are granted permission to examine archival material. Permission to cite, quote from, or publish material from the Center's collections must be requested separately by writing. See Archivists for details\n\nA formal request for such permission should include the name of the collection(s) from which the relevant material is drawn; the title of the proposed article, book, or dissertation; the journal title for articles; the name of the publisher for books or the university for dissertations; and the anticipated date of publication. Permission to use and/or publish images requires completion of a use application with additional pertinent information.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "9da0280e8e4b4ea8fbd3e943aa22a99a",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Collection is open for scholarly research, with select materials restricted as noted.\n\nRAC is unable to provide access to obsolete media and original digital media. In addition separated media may not yet have undergone stabilization procedures. When feasible, a digital surrogate may be created via special order. All applicable charges will apply. See RAC Head of Archival Services or RAC Head of Digital Programs for details.\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "dc14e600acb4d2203c7c082780c73de3",
+      "label": "Preferred Citation note",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/resources/643",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "collection_management": {
+    "lock_version": 0,
+    "rights_determined": false,
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2016-10-23T13:49:10Z",
+    "system_mtime": "2017-06-02T20:50:51Z",
+    "user_mtime": "2016-10-23T13:49:10Z",
+    "processing_priority": "medium",
+    "processing_status": "Backlog",
+    "jsonmodel_type": "collection_management",
+    "external_ids": [],
+    "uri": "/repositories/2/collection_management/3936",
+    "repository": {
+      "ref": "/repositories/2"
+    },
+    "parent": {
+      "ref": "/repositories/2/resources/643"
+    }
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2016-10-23T13:49:10Z",
+    "system_mtime": "2016-10-23T13:49:10Z",
+    "user_mtime": "2016-10-23T13:49:10Z",
+    "enum_1": "2 - Minimal",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/2"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/2/resources/643/tree"
+  }
+}

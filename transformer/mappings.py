@@ -5,6 +5,7 @@ from odin.codecs import json_codec
 from iso639 import languages
 
 from .resources import *
+from .resource_configs import NOTE_TYPE_CHOICES
 from .mappings_helpers import ArchivesSpaceHelper
 
 
@@ -78,7 +79,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='label', to_field='title')
     def title(self, value):
-        return value if value else 'Note'
+        return value if value else [v[1] for v in NOTE_TYPE_CHOICES if v[0] == self.source.type]
 
     @odin.map_field(from_field='jsonmodel_type', to_field='type')
     def type(self, value):

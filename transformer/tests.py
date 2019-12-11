@@ -23,12 +23,12 @@ fetch_vcr = vcr.VCR(
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
-AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Agent),
-               ('agent_family', ArchivesSpaceAgentFamily, Agent),
-               ('agent_person', ArchivesSpaceAgentPerson, Agent),
-               ('archival_objects', ArchivesSpaceArchivalObject, Object),
-               ('resources', ArchivesSpaceResource, Collection),
-               ('subjects', ArchivesSpaceSubject, Term)]
+AS_TYPE_MAP = [#('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Agent),
+               #('agent_family', ArchivesSpaceAgentFamily, Agent),
+               #('agent_person', ArchivesSpaceAgentPerson, Agent),
+               #('archival_objects', ArchivesSpaceArchivalObject, Object),
+               ('resources', ArchivesSpaceResource, Collection)]
+               #('subjects', ArchivesSpaceSubject, Term)]
 
 
 class TransformerTest(TestCase):

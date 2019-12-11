@@ -62,13 +62,65 @@
     }
   ],
   "external_documents": [],
-  "rights_statements": [],
+  "rights_statements": [
+        {
+            "lock_version": 0,
+            "identifier": "65c0e828afbfaf80154cb0b3badc658b",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2019-12-05T14:49:12Z",
+            "system_mtime": "2019-12-05T14:49:12Z",
+            "user_mtime": "2019-12-05T14:49:12Z",
+            "start_date": "2019-12-02",
+            "end_date": "2019-12-31",
+            "determination_date": "2019-12-01",
+            "rights_type": "copyright",
+            "status": "copyrighted",
+            "jurisdiction": "US",
+            "jsonmodel_type": "rights_statement",
+            "external_documents": [],
+            "acts": [
+                {
+                    "start_date": "2019-12-14",
+                    "end_date": "2019-12-31",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2019-12-05T14:49:12Z",
+                    "system_mtime": "2019-12-05T14:49:12Z",
+                    "user_mtime": "2019-12-05T14:49:12Z",
+                    "act_type": "disseminate",
+                    "restriction": "allow",
+                    "jsonmodel_type": "rights_statement_act",
+                    "notes": [
+                        {
+                            "jsonmodel_type": "note_rights_statement_act",
+                            "label": "restrictions note",
+                            "type": "restrictions",
+                            "content": [
+                                "granted restrictions note"
+                            ],
+                            "persistent_id": "ac6cf5891d46552762ff86ef586159f4",
+                            "publish": true
+                        }
+                    ]
+                }
+            ],
+            "linked_agents": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_rights_statement",
+                    "label": "materials note",
+                    "type": "materials",
+                    "content": [
+                        "materials note content"
+                    ],
+                    "persistent_id": "b15c892aeff64d49529ae21f6734dc34",
+                    "publish": true
+                }
+            ]
+        }
+    ],
   "linked_agents": [
-    {
-  		"role": "subject",
-  		"terms": [],
-  		"ref": "/agents/corporate_entities/1843"
-  	},
     {
       "role": "creator",
       "relator": "aut",

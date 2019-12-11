@@ -2,9 +2,22 @@ import odin
 from . import resource_configs
 
 
+
+class Subnote(odin.Resource):
+    type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
+    content = odin.StringField()
+
+    
+class Note(odin.Resource):
+    type = odin.StringField(choices=resource_configs.NOTE_TYPE_CHOICES)
+    title = odin.StringField(null=True)
+    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
+    subnotes = odin.ArrayOf(Subnote)
+
+
 class ExternalIdentifier(odin.Resource):
     identifier = odin.StringField()
-    source = odin.StringField(choices=resource_configs.SOURCE_CHOICES)
+    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
 
 
 class Reference(odin.Resource):
@@ -18,6 +31,7 @@ class Reference(odin.Resource):
     level = odin.StringField(null=True)
     expression = odin.StringField(null=True)
     identifier = odin.StringField(null=True)
+    notes = odin.ArrayOf(Note)
 
 
 class Ref(odin.Resource):
@@ -38,18 +52,6 @@ class Date(odin.Resource):
 class Extent(odin.Resource):
     value = odin.StringField()
     type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
-
-
-class Subnote(odin.Resource):
-    type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
-    content = odin.StringField()
-
-
-class Note(odin.Resource):
-    type = odin.StringField(choices=resource_configs.NOTE_TYPE_CHOICES)
-    title = odin.StringField(null=True)
-    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
-    subnotes = odin.ArrayOf(Subnote)
 
 
 class Language(odin.Resource):
@@ -213,6 +215,7 @@ class ArchivesSpaceSubnote(odin.Resource):
 
 class ArchivesSpaceNote(odin.Resource):
     jsonmodel_type = odin.StringField()
+    type = odin.StringField(null=True)
     label = odin.StringField(null=True)
     subnotes = odin.ArrayOf(ArchivesSpaceSubnote, null=True)
     content = odin.StringField(null=True)

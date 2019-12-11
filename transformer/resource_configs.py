@@ -13,7 +13,8 @@ CONTAINER_TYPE_CHOICES = ( # TODO: add from AS
 DATE_TYPE_CHOICES = (
     ('single', 'Single'),
     ('inclusive', 'Inclusive'),
-    ('bulk', 'Bulk')
+    ('bulk', 'Bulk'),
+    ('range', 'Range')
 )
 
 DATE_LABEL_CHOICES = (

@@ -25,7 +25,21 @@
     "subject"
   ],
   "external_documents": [],
-  "notes": [],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928).",
+          "jsonmodel_type": "note_text",
+          "publish": false
+        }
+      ],
+      "label": "biographical statement",
+      "jsonmodel_type": "note_bioghist",
+      "persistent_id": "5106f6f3f49a3ba91e763dc837798e2a",
+      "publish": true
+    }
+  ],
   "used_within_repositories": [
     "/repositories/2"
   ],
