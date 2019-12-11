@@ -103,7 +103,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=m)
         else:
             return Subnote(type='text', content=value.content
-                           if isinstance(value.content, list) else [value.content])
+            if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -231,7 +231,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     def languages(self, value):
         value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
-        print(lang_data.name)
         return [Language(expression=lang_data.name, identifier=value)]
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
