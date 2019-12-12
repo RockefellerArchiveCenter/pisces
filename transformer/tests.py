@@ -25,9 +25,9 @@ fetch_vcr = vcr.VCR(
 
 AS_TYPE_MAP = [#('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Agent),
                #('agent_family', ArchivesSpaceAgentFamily, Agent),
-               #('agent_person', ArchivesSpaceAgentPerson, Agent),
+               ('agent_person', ArchivesSpaceAgentPerson, Agent)]
                #('archival_objects', ArchivesSpaceArchivalObject, Object),
-               ('resources', ArchivesSpaceResource, Collection)]
+               #('resources', ArchivesSpaceResource, Collection),
                #('subjects', ArchivesSpaceSubject, Term)]
 
 

@@ -7,11 +7,11 @@ class Subnote(odin.Resource):
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
     content = odin.StringField()
 
-    
+
 class Note(odin.Resource):
     type = odin.StringField(choices=resource_configs.NOTE_TYPE_CHOICES)
     title = odin.StringField(null=True)
-    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
+    source = odin.StringField(null=True, default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
     subnotes = odin.ArrayOf(Subnote)
 
 
@@ -31,7 +31,6 @@ class Reference(odin.Resource):
     level = odin.StringField(null=True)
     expression = odin.StringField(null=True)
     identifier = odin.StringField(null=True)
-    notes = odin.ArrayOf(Note)
 
 
 class Ref(odin.Resource):
@@ -47,6 +46,7 @@ class Date(odin.Resource):
     expression = odin.StringField()
     type = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
     label = odin.StringField(choices=resource_configs.DATE_LABEL_CHOICES)
+    source = odin.StringField(null=True, default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
 
 
 class Extent(odin.Resource):
