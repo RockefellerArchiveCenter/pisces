@@ -108,7 +108,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
-        if self.source.jsonmodel_type == 'note_multipart':
+        if self.source.jsonmodel_type in ['note_multipart', 'note_bioghist']:
             return (self.map_subnotes(v) for v in value)
         elif self.source.jsonmodel_type == 'note_singlepart':
             return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
