@@ -1,0 +1,123 @@
+{
+  "lock_version": 1101,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2014-12-06T02:40:38Z",
+  "system_mtime": "2019-03-21T19:54:01Z",
+  "user_mtime": "2014-12-06T02:40:38Z",
+  "jsonmodel_type": "agent_family",
+  "agent_contacts": [
+    {
+      "lock_version": 0,
+      "name": "Rockefeller family",
+      "address_1": "30 Rockefeller Plaza, Mezzanine Level Room 53 49th Street Side",
+      "address_2": "Opposite 50th between 5th and 6th ",
+      "city": "New York",
+      "region": "NY",
+      "country": "USA",
+      "email": "mstern@rockco.com",
+      "note": "Label: Additional Contacts\nContent: \nElizabeth Haviland \u2013 Assistant to Clayton W. Frye (also LSR Estate)\n30 Rockefeller Plaza, Suite 5600\nEmail: ehaviland@rockco.com\nPhone: 212-649-5651\nFax: 212-649-5841\n\n\nLabel: Family Financial Contact\nContent: \nFely Co: Rockefeller Family Financial \nEmail: fco@rockco.com\n\n\n",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:40:38Z",
+      "system_mtime": "2014-12-06T02:40:38Z",
+      "user_mtime": "2014-12-06T02:40:38Z",
+      "jsonmodel_type": "agent_contact",
+      "telephones": [
+        {
+          "number": "(212) 649-5901\t",
+          "last_modified_by": "admin",
+          "create_time": "2014-12-06T02:40:38Z",
+          "system_mtime": "2014-12-06T02:40:38Z",
+          "user_mtime": "2014-12-06T02:40:38Z",
+          "jsonmodel_type": "telephone",
+          "uri": "/telephone/3"
+        }
+      ]
+    }
+  ],
+  "linked_agent_roles": [
+    "creator",
+    "source",
+    "subject"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "family_name": "Rockefeller family",
+      "sort_name": "Rockefeller family",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:40:38Z",
+      "system_mtime": "2014-12-06T02:40:38Z",
+      "user_mtime": "2014-12-06T02:40:38Z",
+      "authorized": true,
+      "is_display_name": true,
+      "rules": "dacs",
+      "jsonmodel_type": "name_family",
+      "use_dates": []
+    },
+    {
+      "lock_version": 0,
+      "family_name": "R family",
+      "sort_name": "R family",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:40:38Z",
+      "system_mtime": "2014-12-06T02:40:38Z",
+      "user_mtime": "2014-12-06T02:40:38Z",
+      "jsonmodel_type": "name_family",
+      "use_dates": [],
+      "authorized": false,
+      "is_display_name": false
+    },
+    {
+      "lock_version": 0,
+      "family_name": "RFAM",
+      "sort_name": "RFAM",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:40:38Z",
+      "system_mtime": "2014-12-06T02:40:38Z",
+      "user_mtime": "2014-12-06T02:40:38Z",
+      "jsonmodel_type": "name_family",
+      "use_dates": [],
+      "authorized": false,
+      "is_display_name": false
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/families/1",
+  "agent_type": "agent_family",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "family_name": "Rockefeller family",
+    "sort_name": "Rockefeller family",
+    "sort_name_auto_generate": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:40:38Z",
+    "system_mtime": "2014-12-06T02:40:38Z",
+    "user_mtime": "2014-12-06T02:40:38Z",
+    "authorized": true,
+    "is_display_name": true,
+    "rules": "dacs",
+    "jsonmodel_type": "name_family",
+    "use_dates": []
+  },
+  "title": "Rockefeller family"
+}

@@ -26,7 +26,7 @@ SECRET_KEY = '=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = CF.ALLOWED_HOSTS
 
 
 # Application definition
@@ -39,10 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'drf_yasg',
     'health_check',
     'transformer',
-    'viewer'
 ]
 
 MIDDLEWARE = [
@@ -100,6 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "transformer.User"
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/

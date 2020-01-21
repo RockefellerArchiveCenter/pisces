@@ -9,7 +9,7 @@ DATABASES = {
 }
 
 ARCHIVESSPACE = {
-    "baseurl": "http://sandbox.archivesspace.org:8089",
+    "baseurl": "http://sandbox.archivesspace.org/",
     "user": "admin",
     "password": "admin",
     "repo": 2,
@@ -20,3 +20,9 @@ CARTOGRAPHER = {
     "user": "admin",
     "password": "admin",
 }
+
+ELASTICSEARCH = {
+    "host": "elasticsearch",
+}
+
+ALLOWED_HOSTS = ['localhost', 'pisces-web']

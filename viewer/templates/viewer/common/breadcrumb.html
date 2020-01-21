@@ -1,9 +1,0 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="{% url 'app:collection-list' %}">Collections</a></li>
-    {% for ancestor in object.ancestors %}
-    <li class="breadcrumb-item"><a href="{% url 'app:collection-detail' ancestor.pk %}">{{ancestor.title}}</a></li>
-    {% endfor %}
-    <li class="breadcrumb-item active" aria-current="page">{{object.title}}</li>
-  </ol>
-</nav>
