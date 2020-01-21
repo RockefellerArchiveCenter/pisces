@@ -121,8 +121,8 @@ class Agent(odin.Resource):
     agent_type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Ref, null=True)
-    objects = odin.ArrayOf(Ref, null=True)
+    collections = odin.ArrayOf(Reference, null=True)
+    objects = odin.ArrayOf(Reference, null=True)
     notes = odin.ArrayOf(Note)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
