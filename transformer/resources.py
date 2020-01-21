@@ -33,12 +33,6 @@ class Reference(odin.Resource):
     identifier = odin.StringField(null=True)
 
 
-class Ref(odin.Resource):
-    ref = odin.StringField()
-    ##TODO Check if this is necessary or pulling the correct information
-    external_identifiers = odin.ArrayOf(ExternalIdentifier)
-
-
 class Date(odin.Resource):
     #TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
     begin = odin.DateTimeField(default="2019")
@@ -127,8 +121,8 @@ class Agent(odin.Resource):
     agent_type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Ref, null=True)
-    objects = odin.ArrayOf(Ref, null=True)
+    collections = odin.ArrayOf(Reference, null=True)
+    objects = odin.ArrayOf(Reference, null=True)
     notes = odin.ArrayOf(Note)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
