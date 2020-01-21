@@ -295,7 +295,7 @@ CONTAINER_TYPE_CHOICES = (
     ('package', 'Package'),
     ('page', 'Page'),
     ('reel', 'Reel'),
-    ('Reel', 'Reel')
+    ('Reel', 'Reel'),
     ('roll', 'Roll'),
     ('sheet', 'Sheet'),
     ('Tape', 'Tape'),
