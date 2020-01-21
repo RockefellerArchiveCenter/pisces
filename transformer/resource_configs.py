@@ -13,7 +13,8 @@ CONTAINER_TYPE_CHOICES = ( # TODO: add from AS
 DATE_TYPE_CHOICES = (
     ('single', 'Single'),
     ('inclusive', 'Inclusive'),
-    ('bulk', 'Bulk')
+    ('bulk', 'Bulk'),
+    ('range', 'Range')
 )
 
 DATE_LABEL_CHOICES = (
@@ -55,7 +56,8 @@ EXTENT_TYPE_CHOICES = ( # TODO: update from AS
 )
 
 INSTANCE_TYPE_CHOICES = ( # TODO: add from AS
-    ()
+    ('collection', 'Collection'),
+    ('mixed materials', 'Mixed Materials')
 )
 
 LEVEL_CHOICES = (
@@ -128,6 +130,24 @@ NOTE_TYPE_CHOICES = (
   ('summary', 'Summary'),
   ('type_note', 'Type Note'),
   ('userestrict', 'Conditions Governing Use'),
+)
+
+REFERENCE_TYPE_CHOICES = (
+    ("cultural_context", "Cultural Context"),
+    ("function", "Function"),
+    ("geographic", "Geographic"),
+    ("genre_form", "Genre Form"),
+    ("occupation", "Occupation"),
+    ("style_period", "Style Period"),
+    ("technique", "Technique"),
+    ("temporal", "Temporal"),
+    ("topical", "Topical"),
+    ("person", "Person"),
+    ("organization", "Organization"),
+    ("family", "Family"),
+    ("software", "Software"),
+    ("object", "Object"),
+    ("collection", "Collection"),
 )
 
 RIGHTS_ACT_CHOICES = (

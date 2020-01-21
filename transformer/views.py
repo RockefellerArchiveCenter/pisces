@@ -5,7 +5,6 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
 from .fetchers import *
-from .indexers import Indexer
 from .models import FetchRun
 from .serializers import *
 from .transformers import *
@@ -27,30 +26,6 @@ class FetchRunViewSet(ModelViewSet):
         if self.action == 'list':
             return FetchRunListSerializer
         return FetchRunSerializer
-
-
-class IndexAddView(APIView):
-    """Adds a data object to index."""
-
-    def post(self, request, format=None):
-        data = request.data.get('data')
-        try:
-            resp = Indexer().add_single(data)
-            return Response({"detail": resp}, status=200)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=500)
-
-
-class IndexDeleteView(APIView):
-    """Deletes a data object from index."""
-
-    def post(self, request, format=None):
-        data = request.data.get('data')
-        try:
-            resp = Indexer().delete_single(data)
-            return Response({"detail": resp}, status=200)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=500)
 
 
 class ArchivesSpaceFetchChangesView(APIView):

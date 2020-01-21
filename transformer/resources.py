@@ -2,27 +2,6 @@ import odin
 from . import resource_configs
 
 
-class Ref(odin.Resource):
-    ref = odin.StringField()
-
-
-class Date(odin.Resource):
-    begin = odin.DateTimeField()
-    end = odin.DateTimeField()
-    expression = odin.StringField()
-    type = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
-    label = odin.StringField(choices=resource_configs.DATE_LABEL_CHOICES)
-
-
-class Extent(odin.Resource):
-    value = odin.FloatField()
-    type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
-
-
-class ExternalIdentifier(odin.Resource):
-    identifier = odin.StringField()
-    source = odin.StringField(choices=resource_configs.SOURCE_CHOICES)
-
 
 class Subnote(odin.Resource):
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
@@ -31,9 +10,48 @@ class Subnote(odin.Resource):
 
 class Note(odin.Resource):
     type = odin.StringField(choices=resource_configs.NOTE_TYPE_CHOICES)
-    title = odin.StringField()
-    source = odin.StringField(choices=resource_configs.SOURCE_CHOICES)
+    title = odin.StringField(null=True)
+    source = odin.StringField(null=True, default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
     subnotes = odin.ArrayOf(Subnote)
+
+
+class ExternalIdentifier(odin.Resource):
+    identifier = odin.StringField()
+    source = odin.StringField(default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
+
+
+class Reference(odin.Resource):
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
+    order = odin.StringField(null=True)
+    title = odin.StringField(null=True)
+    type = odin.StringField(choices=resource_configs.REFERENCE_TYPE_CHOICES, null=True)
+    uri = odin.StringField(null=True)
+    relator = odin.StringField(null=True)
+    role = odin.StringField(null=True)
+    level = odin.StringField(null=True)
+    expression = odin.StringField(null=True)
+    identifier = odin.StringField(null=True)
+
+
+class Ref(odin.Resource):
+    ref = odin.StringField()
+    ##TODO Check if this is necessary or pulling the correct information
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
+
+
+class Date(odin.Resource):
+    #TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
+    begin = odin.DateTimeField(default="2019")
+    end = odin.DateTimeField()
+    expression = odin.StringField()
+    type = odin.StringField(choices=resource_configs.DATE_TYPE_CHOICES)
+    label = odin.StringField(choices=resource_configs.DATE_LABEL_CHOICES)
+    source = odin.StringField(null=True, default='archivesspace', choices=resource_configs.SOURCE_CHOICES)
+
+
+class Extent(odin.Resource):
+    value = odin.StringField()
+    type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
 
 
 class Language(odin.Resource):
@@ -43,7 +61,8 @@ class Language(odin.Resource):
 
 class Term(odin.Resource):
     title = odin.StringField()
-    type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
+    type = odin.StringField(default="term")
+    term_type = odin.StringField(choices=resource_configs.TERM_TYPE_CHOICES)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
@@ -73,15 +92,15 @@ class Collection(odin.Resource):
     type = odin.StringField(default="collection")
     level = odin.StringField(choices=resource_configs.LEVEL_CHOICES)
     dates = odin.ArrayOf(Date)
-    creators = odin.ArrayOf(Ref)
+    creators = odin.ArrayOf(Reference)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Ref)
-    terms = odin.ArrayOf(Ref)
-    parent = odin.DictAs(Ref)
-    children = odin.ArrayOf(Ref)
-    ancestors = odin.ArrayOf(Ref)
+    agents = odin.ArrayOf(Reference)
+    terms = odin.ArrayOf(Reference)
+    parent = odin.DictAs(Reference, null=True)
+    children = odin.ArrayOf(Reference, null=True)
+    ancestors = odin.ArrayOf(Reference, null=True)
     rights_statements = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
@@ -93,10 +112,10 @@ class Object(odin.Resource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Ref)
-    terms = odin.ArrayOf(Ref)
-    parent = odin.DictAs(Ref, null=True)
-    ancestors = odin.ArrayOf(Ref)
+    agents = odin.ArrayOf(Reference)
+    terms = odin.ArrayOf(Reference)
+    parent = odin.DictAs(Reference, null=True)
+    ancestors = odin.ArrayOf(Reference, null=True)
     rights_statements = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
@@ -104,7 +123,8 @@ class Object(odin.Resource):
 
 class Agent(odin.Resource):
     title = odin.StringField()
-    type = odin.StringField()
+    type = odin.StringField(default="agent")
+    agent_type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
     collections = odin.ArrayOf(Ref, null=True)
@@ -135,7 +155,7 @@ class ArchivesSpaceDate(odin.Resource):
 
 
 class ArchivesSpaceExtent(odin.Resource):
-    number = odin.FloatField()
+    number = odin.StringField()
     container_summary = odin.StringField(null=True)
     portion = odin.StringField(choices=(('whole', 'Whole'), ('part', 'Part'))),
     extent_type = odin.StringField(choices=resource_configs.EXTENT_TYPE_CHOICES)
@@ -195,6 +215,7 @@ class ArchivesSpaceSubnote(odin.Resource):
 
 class ArchivesSpaceNote(odin.Resource):
     jsonmodel_type = odin.StringField()
+    type = odin.StringField(null=True)
     label = odin.StringField(null=True)
     subnotes = odin.ArrayOf(ArchivesSpaceSubnote, null=True)
     content = odin.StringField(null=True)
