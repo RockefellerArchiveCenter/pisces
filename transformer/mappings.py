@@ -95,16 +95,16 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return data
         elif value.jsonmodel_type == 'note_index':
             data = []
-            l = [{'label': i.get('type'), 'value': i.get('value')} for i in value.items]
+            content = [{'label': i.get('type'), 'value': i.get('value')} for i in value.items]
             data.append(Subnote(type='text', content=value.content))
-            data.append(Subnote(type='definedlist', content=l))
+            data.append(Subnote(type='definedlist', content=content))
             return data
         elif value.jsonmodel_type == 'note_chronology':
-            m = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in value.items]
-            return Subnote(type='definedlist', content=m)
+            content = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in value.items]
+            return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-            if isinstance(value.content, list) else [value.content])
+                           if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -178,7 +178,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
 
-
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Collection
@@ -197,7 +196,7 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        value = value if value else AS().closest_parent_value(self.source.uri, 'language')
+        value = value if value else ArchivesSpaceHelper().closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
         return Language(expression=lang_data.name, identifier=value)
 

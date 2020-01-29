@@ -1,9 +1,5 @@
-from itertools import chain
-
-from django.urls import reverse
 from rest_framework import serializers
-from rest_framework.validators import UniqueTogetherValidator
-from transformer.models import *
+from .models import FetchRun, FetchRunError
 
 
 class FetchRunErrorSerializer(serializers.ModelSerializer):

@@ -1,22 +1,27 @@
-import os
-import objectpath
-import json
-import requests
-
 from asnake.aspace import ASpace
 from django.utils import timezone
 from wikipediaapi import Wikipedia
 from wikidata.client import Client as wd_client
 from electronbonder.client import ElectronBond
 
-from .models import *
+from .models import FetchRun
 from pisces import settings
 
 
-class ArchivesSpaceDataFetcherError(Exception): pass
-class CartographerDataFetcherError(Exception): pass
-class WikidataDataFetcherError(Exception): pass
-class WikipediaDataFetcherError(Exception): pass
+class ArchivesSpaceDataFetcherError(Exception):
+    pass
+
+
+class CartographerDataFetcherError(Exception):
+    pass
+
+
+class WikidataDataFetcherError(Exception):
+    pass
+
+
+class WikipediaDataFetcherError(Exception):
+    pass
 
 
 class ArchivesSpaceDataFetcher:
@@ -83,7 +88,7 @@ class CartographerDataFetcher:
             resp = self.client.get('/status/health/')
             if not resp.status_code:
                 raise CartographerDataFetcherError("Cartographer status endpoint is not available. Service may be down.")
-        except Exception as e:
+        except Exception:
             raise CartographerDataFetcherError("Cartographer is not available.")
 
     def changes(self):

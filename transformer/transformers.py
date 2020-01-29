@@ -1,26 +1,32 @@
-from dateutil import parser
 import hashlib
 import json
-import os
-from iso639 import languages
 
-from django.utils import timezone
 from odin.codecs import json_codec
 
-from .models import *
-from .resources import *
+from .resources import Agent, Collection, Object, Term, ArchivesSpaceAgentPerson, ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentFamily, ArchivesSpaceResource, ArchivesSpaceArchivalObject, ArchivesSpaceSubject
+# not sure why we need to import mappings here, but we do
 from .mappings import *
 
 
-class ArchivesSpaceTransformError(Exception): pass
-class CartographerTransformError(Exception): pass
-class WikidataTransformError(Exception): pass
-class WikipediaTransformError(Exception): pass
+class ArchivesSpaceTransformError(Exception):
+    pass
+
+
+class CartographerTransformError(Exception):
+    pass
+
+
+class WikidataTransformError(Exception):
+    pass
+
+
+class WikipediaTransformError(Exception):
+    pass
 
 
 class CartographerDataTransformer:
 
-    def run(self):
+    def run(self, data):
         self.source_data = data
         obj = {}
         try:
@@ -82,7 +88,7 @@ class ArchivesSpaceDataTransformer:
 
 class WikidataDataTransformer:
 
-    def run(self):
+    def run(self, data):
         self.source_data = data
         try:
             obj = {}
@@ -120,4 +126,4 @@ class WikipediaDataTransformer:
 
     def notes(self, note_type):
         return {"type": note_type, "title": "Description", "source": "wikipedia",
-                "content": [{"type": "text", "content": [sef.source_data]}]}
+                "content": [{"type": "text", "content": [self.source_data]}]}
