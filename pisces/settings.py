@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'health_check',
+    'fetcher',
     'transformer',
 ]
 
@@ -98,7 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = "transformer.User"
+AUTH_USER_MODEL = "fetcher.User"
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
