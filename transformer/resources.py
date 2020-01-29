@@ -2,7 +2,6 @@ import odin
 from . import resource_configs
 
 
-
 class Subnote(odin.Resource):
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
     content = odin.StringField()

@@ -1,5 +1,6 @@
 from asnake.aspace import ASpace
 
+from fetcher.fetchers import ArchivesSpaceDataFetcherError
 from pisces import settings
 
 
