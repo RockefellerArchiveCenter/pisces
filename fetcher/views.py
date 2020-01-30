@@ -24,29 +24,17 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class ArchivesSpaceFetchChangesView(APIView):
-    """Fetches list of objects to be updated or deleted."""
+class ArchivesSpaceUpdatedView(APIView):
+    """Fetches list of objects to be updated or added."""
 
     def post(self, request, format=None):
         try:
             object_type = request.data.get('object_type')
+            if object_type not in ['resource', 'subject', 'archival_object', 'person', 'organization', 'family']:
+                raise ArchivesSpaceDataFetcherError("Unknown object type {}".format(object_type))
             if not object_type:
                 return Response({"detail": "Missing required field 'object_type' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher().changes(object_type=object_type)
-            return Response(resp, status=200)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=500)
-
-
-class ArchivesSpaceFetchURIView(APIView):
-    """Fetches a data object by URI."""
-
-    def post(self, request, format=None):
-        try:
-            data = request.data.get('data')
-            if not data:
-                return Response({"detail": "Missing required field 'data' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher().from_uri(data)
+            resp = ArchivesSpaceDataFetcher().get_updated(object_type=object_type)
             return Response(resp, status=200)
         except Exception as e:
             return Response({"detail": str(e)}, status=500)
