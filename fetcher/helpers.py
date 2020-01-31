@@ -1,7 +1,7 @@
 from .models import FetchRun
 
 
-def last_run_time(source, object_type=None):
+def last_run_time(source, object_type):
     return (int(
         FetchRun.objects.filter(
             status=FetchRun.FINISHED,

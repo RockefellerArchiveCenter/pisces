@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
 
-from .fetchers import ArchivesSpaceDataFetcher
+from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .models import FetchRun
 from .serializers import FetchRunSerializer, FetchRunListSerializer
 
@@ -25,32 +25,60 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class ArchivesSpaceFetchView(APIView):
-    """Fetches list of objects to be updated or added."""
-
+class BaseFetchView(APIView):
     def post(self, request, format=None):
         try:
-            object_type = request.data.get('object_type')
-            object_type_choices = [obj[0] for obj in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES]
-            if object_type not in object_type_choices:
+            object_type = request.GET.get('object_type')
+            if object_type not in self.object_type_choices:
                 return Response(
                     prepare_response(
                         "object_type must be one of {}, got {} instead".format(
-                            object_type_choices,
+                            self.object_type_choices,
                             object_type)
                         ), status=500
                     )
-            resp = getattr(ArchivesSpaceDataFetcher(), "get_{}".format(self.action))(object_type=object_type)
-            return Response(prepare_response(("{} {} data fetched".format(self.action, object_type), resp)), status=200)
+            resp = self.fetcher_class().fetch(self.status, object_type)
+            return Response(
+                prepare_response(
+                    ("{} {} data fetched".format(self.status, object_type), resp)
+                ), status=200)
         except Exception as e:
             return Response(prepare_response(str(e)), status=500)
 
 
+class ArchivesSpaceFetchView(BaseFetchView):
+    """
+    Base ArchivesSpace fetcher view which provides a fetcher class and
+    object type choices.
+    """
+    fetcher_class = ArchivesSpaceDataFetcher
+    object_type_choices = [obj[0] for obj in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES]
+
+
 class ArchivesSpaceUpdatesView(ArchivesSpaceFetchView):
     """Fetches list of objects to be updated or added."""
-    action = "updated"
+    status = "updated"
 
 
-class ArchivesSpaceDeletesView(APIView):
+class ArchivesSpaceDeletesView(ArchivesSpaceFetchView):
     """Fetches list of objects to be deleted."""
-    action = "deleted"
+    status = "deleted"
+
+
+class CartographerFetchView(BaseFetchView):
+    """
+    Base Cartographer fetcher view which provides a fetcher class and
+    object type choices.
+    """
+    fetcher_class = CartographerDataFetcher
+    object_type_choices = [obj[0] for obj in FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES]
+
+
+class CartographerUpdatesView(CartographerFetchView):
+    """Fetches list of objects to be updated or added."""
+    status = "updated"
+
+
+class CartographerDeletesView(CartographerFetchView):
+    """Fetches list of objects to be deleted."""
+    status = "deleted"

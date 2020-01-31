@@ -18,7 +18,7 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from rest_framework.schemas import get_schema_view
 from transformer.views import ArchivesSpaceTransformView
-from fetcher.views import ArchivesSpaceUpdatesView, ArchivesSpaceDeletesView, FetchRunViewSet
+from fetcher.views import (ArchivesSpaceUpdatesView, ArchivesSpaceDeletesView, CartographerUpdatesView, CartographerDeletesView, FetchRunViewSet)
 
 router = routers.DefaultRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
@@ -33,6 +33,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^fetch/archivesspace/updates/$', ArchivesSpaceUpdatesView.as_view(), name='fetch-archivesspace-updates'),
     re_path(r'^fetch/archivesspace/deletes/$', ArchivesSpaceDeletesView.as_view(), name='fetch-archivesspace-deletes'),
+    re_path(r'^fetch/cartographer/updates/$', CartographerUpdatesView.as_view(), name='fetch-cartographer-updates'),
+    re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
     re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),
