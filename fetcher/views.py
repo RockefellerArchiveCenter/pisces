@@ -35,8 +35,8 @@ class BaseFetchView(APIView):
                         "object_type must be one of {}, got {} instead".format(
                             self.object_type_choices,
                             object_type)
-                        ), status=500
-                    )
+                    ), status=500
+                )
             resp = self.fetcher_class().fetch(self.status, object_type)
             return Response(
                 prepare_response(

@@ -28,7 +28,9 @@ class BaseDataFetcher:
             object_type=object_type)
         last_run = last_run_time(self.source, object_type)
         try:
-            fetched = getattr(self, "get_{}".format(status))(object_type, last_run)
+            fetched = getattr(
+                self, "get_{}".format(status))(
+                object_type, last_run)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
             current_run.save()
@@ -45,6 +47,7 @@ class BaseDataFetcher:
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
+
     def __init__(self):
         self.source = FetchRun.ARCHIVESSPACE
         self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
@@ -67,6 +70,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         last_run = last_run_time(object_type)
         for d in self.aspace.client.get_paged(
                 "delete-feed", params={"modified_since": str(last_run)}):
+            # look for string in uri
             # POST it
             data.append(d)
         for u in self.updated_list(object_type, last_run):
@@ -98,6 +102,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
+
     def __init__(self):
         self.source = FetchRun.CARTOGRAPHER
         self.client = ElectronBond(
@@ -115,23 +120,25 @@ class CartographerDataFetcher(BaseDataFetcher):
 
     def get_updated(self, last_run):
         data = []
-        for map in self.client.get(
-                '/api/maps/', params={"modified_since": last_run}).json()['results']:
-            if map.get('publish'):
-                map_data = self.client.get(map['ref']).json()
-                # POST it
-                data.append(map['ref'])
+        for map in self.updated_list(last_run, True):
+            map_data = self.client.get(map['ref']).json()
+            # POST it
+            data.append(map['ref'])
         return data
 
-    def get_deleted(self):
+    def get_deleted(self, last_run):
         data = []
-        for map in self.client.get(
-                '/api/maps/', params={"modified_since": last_run}).json()['results']:
-            if not map.get('publish'):
-                # POST it
-                data.append(map['ref'])
+        for map in self.updated_list(last_run, False):
+            # POST it
+            data.append(map['ref'])
         for uri in self.client.get(
                 '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
             # POST it
             data.append(uri)
         return data
+
+        def updated_list(self, last_run, publish):
+            for map in self.client.get(
+                    '/api/maps/', params={"modified_since": last_run}).json()['results']:
+                if map.get('publish') == publish:
+                    yield map
