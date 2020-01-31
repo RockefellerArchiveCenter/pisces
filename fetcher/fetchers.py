@@ -3,15 +3,11 @@ from django.utils import timezone
 from electronbonder.client import ElectronBond
 
 from .models import FetchRun, FetchRunError
-from .helpers import last_run_time
+from .helpers import last_run_time, send_post_request
 from pisces import settings
 
 
-class ArchivesSpaceDataFetcherError:
-    pass
-
-
-class CartographerDataFetcherError:
+class FetcherError:
     pass
 
 
@@ -21,7 +17,7 @@ class BaseDataFetcher:
     fetchers. Requires a source attribute to be set on inheriting fetchers.
     """
 
-    def fetch(self, status, object_type):
+    def fetch(self, status, object_type, post_service_url):
         current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
             source=self.source,
@@ -30,7 +26,7 @@ class BaseDataFetcher:
         try:
             fetched = getattr(
                 self, "get_{}".format(status))(
-                object_type, last_run)
+                object_type, last_run, post_service_url)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
             current_run.save()
@@ -43,6 +39,7 @@ class BaseDataFetcher:
                 run=current_run,
                 message=e,
             )
+            raise FetcherError("Error fetching data: {}".format(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
@@ -55,49 +52,54 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                              password=settings.ARCHIVESSPACE['password'])
         self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
         if isinstance(self.repo, dict) and 'error' in self.repo:
-            raise ArchivesSpaceDataFetcherError(self.repo['error'])
+            raise FetcherError(self.repo['error'])
 
-    def get_updated(self, object_type, last_run):
+    def get_updated(self, object_type, last_run, post_service_url):
         data = []
-        for u in self.updated_list(object_type, last_run):
-            if u.publish:
-                # POST it
-                data.append(u.uri)
+        for u in self.updated_list(object_type, last_run, True):
+            send_post_request(post_service_url, u.json())
+            data.append(u.uri)
         return data
 
-    def get_deleted(self, object_type, last_run):
+    def get_deleted(self, object_type, last_run, post_service_url):
         data = []
         last_run = last_run_time(object_type)
-        for d in self.aspace.client.get_paged(
-                "delete-feed", params={"modified_since": str(last_run)}):
-            # look for string in uri
-            # POST it
+        for d in self.deleted_list(object_type, last_run):
+            send_post_request(post_service_url, d)
             data.append(d)
-        for u in self.updated_list(object_type, last_run):
-            if not u.publish:
-                # POST it
-                data.append(u.uri)
+        for u in self.updated_list(object_type, last_run, False):
+            send_post_request(post_service_url, u.uri)
+            data.append(u.uri)
         return data
 
-    def updated_list(self, object_type, last_run):
+    def updated_list(self, object_type, last_run, publish):
         if object_type == 'resource':
-            return self.repo.resources.with_params(
+            list = self.repo.resources.with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'archival_object':
-            return self.repo.archival_objects.with_params(
+            list = self.repo.archival_objects.with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'subject':
-            return self.aspace.subjects.with_params(
+            list = self.aspace.subjects.with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'person':
-            return self.aspace.agents["people"].with_params(
+            list = self.aspace.agents["people"].with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'organization':
-            return self.aspace.agents["corporate_entities"].with_params(
+            list = self.aspace.agents["corporate_entities"].with_params(
                 all_ids=True, modified_since=last_run)
         elif self.object_type == 'family':
-            return self.aspace.agents["families"].with_params(
+            list = self.aspace.agents["families"].with_params(
                 all_ids=True, modified_since=last_run)
+        for obj in list:
+            if obj.publish == publish:
+                yield obj
+
+    def deleted_list(self, object_type, last_run):
+        for d in self.aspace.client.get_paged(
+                "delete-feed", params={"modified_since": str(last_run)}):
+            if object_type in d:
+                yield d
 
 
 class CartographerDataFetcher(BaseDataFetcher):
@@ -112,33 +114,37 @@ class CartographerDataFetcher(BaseDataFetcher):
         try:
             resp = self.client.get('/status/health/')
             if not resp.status_code:
-                raise CartographerDataFetcherError(
+                raise FetcherError(
                     "Cartographer status endpoint is not available. Service may be down.")
         except Exception:
-            raise CartographerDataFetcherError(
+            raise FetcherError(
                 "Cartographer is not available.")
 
-    def get_updated(self, last_run):
+    def get_updated(self, object_type, last_run, post_service_url):
         data = []
         for map in self.updated_list(last_run, True):
-            map_data = self.client.get(map['ref']).json()
-            # POST it
-            data.append(map['ref'])
+            map_data = self.client.get(map.get('ref')).json()
+            send_post_request(post_service_url, map_data)
+            data.append(map.get('ref'))
         return data
 
-    def get_deleted(self, last_run):
+    def get_deleted(self, object_type, last_run, post_service_url):
         data = []
         for map in self.updated_list(last_run, False):
-            # POST it
-            data.append(map['ref'])
-        for uri in self.client.get(
-                '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
-            # POST it
+            send_post_request(post_service_url, map.get('ref'))
+            data.append(map.get('ref'))
+        for uri in self.deleted_list(last_run):
+            send_post_request(post_service_url, uri)
             data.append(uri)
         return data
 
-        def updated_list(self, last_run, publish):
-            for map in self.client.get(
-                    '/api/maps/', params={"modified_since": last_run}).json()['results']:
-                if map.get('publish') == publish:
-                    yield map
+    def updated_list(self, last_run, publish):
+        for map in self.client.get(
+                '/api/maps/', params={"modified_since": last_run}).json()['results']:
+            if map.get('publish') == publish:
+                yield map
+
+    def deleted_list(self, last_run):
+        for uri in self.client.get(
+                '/api/delete-feed/', params={"deleted_since": last_run}).json()['results']:
+            yield uri

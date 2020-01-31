@@ -23,11 +23,11 @@ class FetcherTest(TestCase):
             with fetch_vcr.use_cassette("ArchivesSpace-{}.json".format(resource[0])) as cass:
                 for i, object_type in enumerate(FetchRun.OBJECT_TYPE_CHOICES):
                     list = getattr(ArchivesSpaceDataFetcher, meth)(object_type)
-                    self.assertEqual(len(FetchRun.objects.all()), i+1)
+                    self.assertEqual(len(FetchRun.objects.all()), i + 1)
                     if meth == "get_updated":
                         for obj in list:
                             self.assertTrue(isinstance(obj, dict))
-                            self.assertTrue(obj.get(publish))
+                            self.assertTrue(obj.get('publish'))
                     else:
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))

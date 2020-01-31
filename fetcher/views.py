@@ -1,3 +1,5 @@
+import urllib
+
 from asterism.views import prepare_response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -29,6 +31,7 @@ class BaseFetchView(APIView):
     def post(self, request, format=None):
         try:
             object_type = request.GET.get('object_type')
+            post_service_url = self.get_post_service_url(request)
             if object_type not in self.object_type_choices:
                 return Response(
                     prepare_response(
@@ -37,13 +40,17 @@ class BaseFetchView(APIView):
                             object_type)
                     ), status=500
                 )
-            resp = self.fetcher_class().fetch(self.status, object_type)
+            resp = self.fetcher_class().fetch(self.status, object_type, post_service_url)
             return Response(
                 prepare_response(
                     ("{} {} data fetched".format(self.status, object_type), resp)
                 ), status=200)
         except Exception as e:
             return Response(prepare_response(str(e)), status=500)
+
+    def get_post_service_url(self, request):
+        url = request.GET.get('post_service_url')
+        return urllib.parse.unquote(url) if url else ''
 
 
 class ArchivesSpaceFetchView(BaseFetchView):
