@@ -21,3 +21,6 @@ class ArchivesSpaceHelper:
             ancestor = self.aspace.client.get(a['ref']).json()
             if ancestor.get(key) not in ['', [], {}, None]:
                 return ancestor[key]
+
+    def get_tree(self, uri):
+        obj = self.aspace.client.get(uri)
