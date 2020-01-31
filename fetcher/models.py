@@ -35,12 +35,18 @@ class FetchRun(models.Model):
         (WIKIDATA, 'Wikidata'),
         (WIKIPEDIA, 'Wikipedia')
     )
-    OBJECT_TYPE_CHOICES = (
-        ('agents', 'Agents'),
-        ('resources', 'Resources'),
-        ('objects', 'Objects'),
-        ('terms', 'Terms')
+    ARCHIVESSPACE_OBJECT_TYPE_CHOICES = (
+        ('resource', 'Resource'),
+        ('archival_object', 'Archival Object'),
+        ('subject', 'Subject'),
+        ('person', 'Person'),
+        ('organization', 'Organization'),
+        ('family', 'Family'),
     )
+    CARTOGRAPHER_OBJECT_TYPE_CHOICES = (
+        ('arrangement_map', 'Arrangement Map'),
+    )
+    OBJECT_TYPE_CHOICES = ARCHIVESSPACE_OBJECT_TYPE_CHOICES + CARTOGRAPHER_OBJECT_TYPE_CHOICES
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
