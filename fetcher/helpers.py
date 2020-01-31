@@ -2,7 +2,7 @@ from .models import FetchRun
 
 
 def last_run_time(source, object_type=None):
-    return int(
+    return (int(
         FetchRun.objects.filter(
             status=FetchRun.FINISHED,
             source=source,
@@ -13,4 +13,4 @@ def last_run_time(source, object_type=None):
         source=source,
         object_type=object_type
         ).exists()
-    else 0
+    else 0)

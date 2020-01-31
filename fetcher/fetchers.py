@@ -18,14 +18,14 @@ class CartographerDataFetcherError:
 class ArchivesSpaceDataFetcher:
     def __init__(self):
         self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
-                             user=settings.ARCHIVESSPACE['user'],
+                             username=settings.ARCHIVESSPACE['username'],
                              password=settings.ARCHIVESSPACE['password'])
         self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
         if isinstance(self.repo, dict) and 'error' in self.repo:
             raise ArchivesSpaceDataFetcherError(self.repo['error'])
 
     def get_updated(self, object_type):
-        self.last_run = last_run_time(source, object_type)
+        self.last_run = last_run_time(object_type)
         self.current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
             source=FetchRun.ARCHIVESSPACE,
@@ -33,7 +33,8 @@ class ArchivesSpaceDataFetcher:
         data = []
         for u in self.updated_list(object_type):
             if u.publish:
-                data.append(u.json())
+                # POST it
+                data.append(u.uri)
         self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
         self.current_run.save()
@@ -48,9 +49,11 @@ class ArchivesSpaceDataFetcher:
         data = []
         for d in self.aspace.client.get_paged(
                 "delete-feed", params={"modified_since": str(self.last_run)}):
+            # POST it
             data.append(d)
         for u in self.updated_list(object_type):
             if not u.publish:
+                # POST it
                 data.append(u.uri)
         self.current_run.status = FetchRun.FINISHED
         self.current_run.end_time = timezone.now()
@@ -58,19 +61,19 @@ class ArchivesSpaceDataFetcher:
         return data
 
     def updated_list(self, object_type):
-        if self.object_type == 'resource':
+        if object_type == 'resource':
             return self.repo.resources.with_params(
                 all_ids=True, modified_since=self.last_run)
-        elif self.object_type == 'archival_object':
+        elif object_type == 'archival_object':
             return self.repo.archival_objects.with_params(
                 all_ids=True, modified_since=self.last_run)
-        elif self.object_type == 'subject':
+        elif object_type == 'subject':
             return self.aspace.subjects.with_params(
                 all_ids=True, modified_since=self.last_run)
-        elif self.object_type == 'person':
+        elif object_type == 'person':
             return self.aspace.agents["people"].with_params(
                 all_ids=True, modified_since=self.last_run)
-        elif self.object_type == 'organization':
+        elif object_type == 'organization':
             return self.aspace.agents["corporate_entities"].with_params(
                 all_ids=True, modified_since=self.last_run)
         elif self.object_type == 'family':

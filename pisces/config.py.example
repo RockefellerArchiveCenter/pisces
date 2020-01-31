@@ -10,7 +10,7 @@ DATABASES = {
 
 ARCHIVESSPACE = {
     "baseurl": "http://sandbox.archivesspace.org/",
-    "user": "admin",
+    "username": "admin",
     "password": "admin",
     "repo": 2,
 }
