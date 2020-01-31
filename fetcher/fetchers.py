@@ -15,21 +15,18 @@ class CartographerDataFetcherError:
     pass
 
 
-class ArchivesSpaceDataFetcher:
-    def __init__(self):
-        self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
-                             username=settings.ARCHIVESSPACE['username'],
-                             password=settings.ARCHIVESSPACE['password'])
-        self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
-        if isinstance(self.repo, dict) and 'error' in self.repo:
-            raise ArchivesSpaceDataFetcherError(self.repo['error'])
+class BaseDataFetcher:
+    """
+    Base data fetcher class which provides a common run method inherited by other
+    fetchers. Requires a source attribute to be set on inheriting fetchers.
+    """
 
     def fetch(self, status, object_type):
         current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
-            source=FetchRun.ARCHIVESSPACE,
+            source=self.source,
             object_type=object_type)
-        last_run = last_run_time(FetchRun.ARCHIVESSPACE, object_type)
+        last_run = last_run_time(self.source, object_type)
         try:
             fetched = getattr(self, "get_{}".format(status))(object_type, last_run)
             current_run.status = FetchRun.FINISHED
@@ -44,6 +41,18 @@ class ArchivesSpaceDataFetcher:
                 run=current_run,
                 message=e,
             )
+
+
+class ArchivesSpaceDataFetcher(BaseDataFetcher):
+    """Fetches updated and deleted data from ArchivesSpace."""
+    def __init__(self):
+        self.source = FetchRun.ARCHIVESSPACE
+        self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
+                             username=settings.ARCHIVESSPACE['username'],
+                             password=settings.ARCHIVESSPACE['password'])
+        self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
+        if isinstance(self.repo, dict) and 'error' in self.repo:
+            raise ArchivesSpaceDataFetcherError(self.repo['error'])
 
     def get_updated(self, object_type, last_run):
         data = []
@@ -87,8 +96,10 @@ class ArchivesSpaceDataFetcher:
                 all_ids=True, modified_since=last_run)
 
 
-class CartographerDataFetcher:
+class CartographerDataFetcher(BaseDataFetcher):
+    """Fetches updated and deleted data from Cartographer."""
     def __init__(self):
+        self.source = FetchRun.CARTOGRAPHER
         self.client = ElectronBond(
             baseurl=settings.CARTOGRAPHER['baseurl'],
             user=settings.CARTOGRAPHER['user'],
@@ -102,32 +113,14 @@ class CartographerDataFetcher:
             raise CartographerDataFetcherError(
                 "Cartographer is not available.")
 
-    def fetch(self, status, object_type):
-        self.current_run = FetchRun.objects.create(
-            status=FetchRun.STARTED, source=FetchRun.CARTOGRAPHER)
-        last_run = last_run_time(FetchRun.CARTOGRAPHER, object_type)
-        try:
-            fetched = getattr(self, "get_{}".format(status))(last_run)
-            self.current_run.status = FetchRun.FINISHED
-            self.current_run.end_time = timezone.now()
-            self.current_run.save()
-            return fetched
-        except Exception as e:
-            current_run.status = FetchRun.ERRORED
-            current_run.end_time = timezone.now()
-            current_run.save()
-            FetchRunError.objects.create(
-                run=current_run,
-                message=e,
-            )
-
     def get_updated(self, last_run):
         data = []
         for map in self.client.get(
                 '/api/maps/', params={"modified_since": last_run}).json()['results']:
             if map.get('publish'):
                 map_data = self.client.get(map['ref']).json()
-                data.append(map_data)
+                # POST it
+                data.append(map['ref'])
         return data
 
     def get_deleted(self):
@@ -135,9 +128,10 @@ class CartographerDataFetcher:
         for map in self.client.get(
                 '/api/maps/', params={"modified_since": last_run}).json()['results']:
             if not map.get('publish'):
-                map_data = self.client.get(map['ref']).json()
-                data.append(map_data)
+                # POST it
+                data.append(map['ref'])
         for uri in self.client.get(
                 '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
+            # POST it
             data.append(uri)
         return data
