@@ -1,0 +1,208 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: POST
+    uri: http://sandbox.archivesspace.org/api/users/admin/login?expiring=False
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1Wy46bMBTd9zO8zigESCZh13+Y1YxGyNiX1Cl+yDZpo1H+vRcwIQSSSt1VytLn
+        nHt9n5a/iAPnhFYkI/FrysqiiHfRDnYbxrdpGkdsR6O4hJQVScShgHW0ZYwlCV2VryllxXadbAq+
+        TpMtJwtSO7Ak+yKVZj/zI9jOcxzFHaWoBLyIcikUqsPxe3MUzlvqtUVYuNydnAeZd+68rWFBmAXq
+        IfeitUGX0Uu0eok3b9E2i5Is3r2jabCTI1WMwrc4ztabLEnfQ5R/0xycVlJzqHJ/Mo2ujWVB9lbX
+        xpHs47MNtEslhFhbgcJlo3TLFYrpHpTPLTBteVMWC2UjaGG3NKBNBSg8L4gBK0XbCNcIlxaMdgLr
+        IaBxlX2Q2vAmf6ws9SjrvS4IxghIHJEo6ora00AFG1cXB2B+YjLBg34U9kV9gwbtg2tB1RLsTbSI
+        7Gdu7uD5K5hWngqFPTNWl6KCieJSlImAhtlC4242ECuQlJCHhjKqGHZZSKNtIzvoYkDDoRu90eHS
+        oNNVhSz7IY60mpbONVsm56rKKiRFKe50FY5zRqPLu8iDxjWA4vB7SFdSRae17dEhMuq9FUXtwQ30
+        g9JPFLfMfPs77n7DgsByXHWQpqKjeEaJB2w6Sx3eruFwnBtUCVy0k8qFd+MpxNVWvPd9xU1a7Gpj
+        LNZwhsIXTbkSS/OAGmXU7x9j3aM83cyZQeq35M4gTZboluFiLzzGpucfg5sJDChmrGvLrhp3FPAr
+        DFl717WrjquqqyFtoVHyLdJXEzjBBzYUDs+GMmhewec+P/f5uc//5T4vnl+Yf/jCfJ7P529/ABBh
+        jgamCwAA
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:34 GMT
+      Server:
+      - nginx/1.13.12
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/version
+  response:
+    body:
+      string: ArchivesSpace (v2.7.0)
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '22'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Date:
+      - Sat, 01 Feb 2020 22:56:34 GMT
+      Server:
+      - nginx/1.13.12
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/repositories/2
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4WSTWvDMAyG7/sVwacNMhpn/Uh9332UnrYO4yRqp82Jg+UUQul/n9yaHgpjp8d+
+        9UaypJyEdc2PPoIndL1QMhceBqcb14JQYvP6JkUuetPFG1DINhwlDM5PWT92NfgsGhoPJkCr64lt
+        pu2wZ9EaCrpzLe7xPnT164CXvGVRFs+FfC6XWzlXcqHK5TubaKIAne7uXeutrFSxUsUiukYC/59n
+        GGuL9CVU8CPkwhnUSLpFMrWFVqi9sZR0gkDaHA3aGOOUHztRVdVO5JHrK9dFokwsE18S54mLxGXi
+        KpHzfcYO7XjgEjxxqeMY+VFR0mYM7vaqb3I9TxGsDtMAV3taQWzfI0uzm4ZAs5J1bm6wZtIUPPaH
+        v5eXPcYdP/EX5gB90JzIA/HJhMsPceJy+1jhEqZZ4/zgfFweXzHEclKczw+/+6gI00kCAAA=
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:34 GMT
+      Server:
+      - nginx/1.13.12
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/delete-feed?modified_since=1580597787&page=1&page_size=100
+  response:
+    body:
+      string: '{"first_page":1,"last_page":1,"this_page":1,"results":[]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '58'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:34 GMT
+      Server:
+      - nginx/1.13.12
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/agents/people?all_ids=True&modified_since=1580597787&page=1&page_size=100
+  response:
+    body:
+      string: '{"first_page":1,"last_page":1,"this_page":1,"total":0,"results":[]}
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '68'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:35 GMT
+      Server:
+      - nginx/1.13.12
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+version: 1

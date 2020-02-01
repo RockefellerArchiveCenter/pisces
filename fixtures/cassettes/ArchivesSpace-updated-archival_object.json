@@ -1,0 +1,369 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: POST
+    uri: http://sandbox.archivesspace.org/api/users/admin/login?expiring=False
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1Wy27bMBC89zN4dmBJtmVHt/5DTgkCYUWuXKbiAyTl1gj8711JdGxZSgr0VsBH
+        zswu90nwnXn0XhrNCrbeZaLOUljzep0Aisd6t8WV2GCy4iDSHeSrKq14luYAaZVXArY7vgUB+SZP
+        txtgC9Z6dKx4Z43hP8sDusFz+rgeKA0K6SIQSmpSx+P37ih9cBCMI1j60h99QFUO7oJrccG4QwhY
+        BtnbZEmWPCTpQ5Y/JbsiWRXZ4zOZRjs1UmUkfMqyYpMX2fo5Rvk3zZs3WhmBTRmOttP1sSzY3pnW
+        ela8vPaBDqnEEFsnSbjslH6Zkhj2qEPpkBsnurI4rDtBD/ulRWMbJOFpwSw6JftG+E64dGiNl1QP
+        iZ2r4oW1VnT5U2UhkOzsdcEoRiTiQETVNuCOFyra+LZ6Qx4mJhM86kdhf6hv0Kj94lrUrUJ3Ey0h
+        +5mbB3j+Cm50AKmpZ9aZWjY4UXwUZSKAOFtkPMwGYRWRCsvYUA6aU5elssZ1sjdTXdB4GEZvdPho
+        0PGqQo7/kAdopqXz3ZapuaryhkhZy0+6ioc5o9HlQ+RR4ztAC/x9SVeBhmltz+glMgjByaoN6C/0
+        F6WfKG6Z+fYP3OcNiwInaNVR2QZG8YwSj9h0lga8X8PLcW5QFQrZT6qQwY+nkFZbi7PvK27SYt9a
+        66iGMxS9aNrXVJovqFFG5/3jfHiUp5s5M0jnLflkkCZLdMsIuZeBYjPzj8HNBEaUMjat41eNO0j8
+        FYesv+va1cA1zdWQ9tAo+R45VxMFowc2Fo7OFjh2r+B9n+/7fN/n/3KfF/cvzD98YV5Pp9O3P7MR
+        LDimCwAA
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:24 GMT
+      Server:
+      - nginx/1.13.12
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/version
+  response:
+    body:
+      string: ArchivesSpace (v2.7.0)
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '22'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Date:
+      - Sat, 01 Feb 2020 22:56:24 GMT
+      Server:
+      - nginx/1.13.12
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/repositories/2
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4WSTWvDMAyG7/sVwacNMhpn/Uh9332UnrYO4yRqp82Jg+UUQul/n9yaHgpjp8d+
+        9UaypJyEdc2PPoIndL1QMhceBqcb14JQYvP6JkUuetPFG1DINhwlDM5PWT92NfgsGhoPJkCr64lt
+        pu2wZ9EaCrpzLe7xPnT164CXvGVRFs+FfC6XWzlXcqHK5TubaKIAne7uXeutrFSxUsUiukYC/59n
+        GGuL9CVU8CPkwhnUSLpFMrWFVqi9sZR0gkDaHA3aGOOUHztRVdVO5JHrK9dFokwsE18S54mLxGXi
+        KpHzfcYO7XjgEjxxqeMY+VFR0mYM7vaqb3I9TxGsDtMAV3taQWzfI0uzm4ZAs5J1bm6wZtIUPPaH
+        v5eXPcYdP/EX5gB90JzIA/HJhMsPceJy+1jhEqZZ4/zgfFweXzHEclKczw+/+6gI00kCAAA=
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:24 GMT
+      Server:
+      - nginx/1.13.12
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/repositories/2/archival_objects?all_ids=True
+  response:
+    body:
+      string: '[2,3,4,5,6]
+
+'
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:24 GMT
+      Server:
+      - nginx/1.13.12
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - ArchivesSnake/0.1
+    method: GET
+    uri: http://sandbox.archivesspace.org/api/repositories/2/archival_objects?all_ids=True&modified_since=0&page=1&page_size=100
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:25 GMT
+      Server:
+      - nginx/1.13.12
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"lock_version": 0, "position": 0, "publish": true, "ref_id": "f64e7759d6b90d1fc0c9b472eb8bd6d1",
+      "title": "file 1", "display_string": "file 1, 1990", "restrictions_apply": false,
+      "created_by": "admin", "last_modified_by": "admin", "create_time": "2020-01-29T03:29:16Z",
+      "system_mtime": "2020-01-29T18:07:05Z", "user_mtime": "2020-01-29T03:29:16Z",
+      "suppressed": false, "is_slug_auto": false, "level": "file", "jsonmodel_type":
+      "archival_object", "external_ids": [], "subjects": [], "linked_events": [],
+      "extents": [], "lang_materials": [], "dates": [{"lock_version": 0, "expression":
+      "1990", "begin": "1990", "created_by": "admin", "last_modified_by": "admin",
+      "create_time": "2020-01-29T03:29:16Z", "system_mtime": "2020-01-29T03:29:16Z",
+      "user_mtime": "2020-01-29T03:29:16Z", "date_type": "single", "label": "creation",
+      "jsonmodel_type": "date"}], "external_documents": [], "rights_statements": [],
+      "linked_agents": [], "ancestors": [{"ref": "/repositories/2/resources/5", "level":
+      "collection"}], "instances": [{"lock_version": 0, "created_by": "admin", "last_modified_by":
+      "admin", "create_time": "2020-01-29T03:29:16Z", "system_mtime": "2020-01-29T03:29:16Z",
+      "user_mtime": "2020-01-29T03:29:16Z", "instance_type": "mixed_materials", "jsonmodel_type":
+      "instance", "is_representative": false, "sub_container": {"lock_version": 0,
+      "created_by": "admin", "last_modified_by": "admin", "create_time": "2020-01-29T03:29:16Z",
+      "system_mtime": "2020-01-29T03:29:16Z", "user_mtime": "2020-01-29T03:29:16Z",
+      "jsonmodel_type": "sub_container", "top_container": {"ref": "/repositories/2/top_containers/2"}}}],
+      "notes": [{"type": "abstract", "jsonmodel_type": "note_singlepart", "content":
+      ["Abstract text."], "persistent_id": "d1980823cd9c29bf3c4bc35c065b2644", "publish":
+      true}, {"type": "scopecontent", "jsonmodel_type": "note_multipart", "subnotes":
+      [{"jsonmodel_type": "note_text", "content": "Scope and contents text.", "publish":
+      false}], "persistent_id": "b3cf8a644b4e1599d8daea12b07f4fbe", "publish": true}],
+      "uri": "/repositories/2/archival_objects/4", "repository": {"ref": "/repositories/2"},
+      "resource": {"ref": "/repositories/2/resources/5"}, "has_unpublished_ancestor":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2183'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: http://pisces-web:8007/transform/archivesspace/
+  response:
+    body:
+      string: '"success!"'
+    headers:
+      Allow:
+      - POST, OPTIONS
+      Content-Length:
+      - '10'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:25 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      Vary:
+      - Accept, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"lock_version": 1, "position": 1, "publish": true, "ref_id": "42167bbe76308bb1fee12340ca5e13a3",
+      "title": "file 3", "display_string": "file 3, 1990", "restrictions_apply": false,
+      "created_by": "admin", "last_modified_by": "admin", "create_time": "2020-01-29T05:28:12Z",
+      "system_mtime": "2020-01-29T18:07:05Z", "user_mtime": "2020-01-29T05:38:30Z",
+      "suppressed": false, "is_slug_auto": false, "level": "file", "jsonmodel_type":
+      "archival_object", "external_ids": [], "subjects": [], "linked_events": [],
+      "extents": [{"lock_version": 0, "number": "1", "created_by": "admin", "last_modified_by":
+      "admin", "create_time": "2020-01-29T05:38:30Z", "system_mtime": "2020-01-29T05:38:30Z",
+      "user_mtime": "2020-01-29T05:38:30Z", "portion": "whole", "extent_type": "linear_feet",
+      "jsonmodel_type": "extent"}], "lang_materials": [], "dates": [{"lock_version":
+      0, "expression": "1990", "begin": "1990", "created_by": "admin", "last_modified_by":
+      "admin", "create_time": "2020-01-29T05:38:30Z", "system_mtime": "2020-01-29T05:38:30Z",
+      "user_mtime": "2020-01-29T05:38:30Z", "date_type": "single", "label": "creation",
+      "jsonmodel_type": "date"}], "external_documents": [], "rights_statements": [],
+      "linked_agents": [{"role": "creator", "terms": [], "ref": "/agents/people/2"}],
+      "ancestors": [{"ref": "/repositories/2/resources/5", "level": "collection"}],
+      "instances": [{"lock_version": 0, "created_by": "admin", "last_modified_by":
+      "admin", "create_time": "2020-01-29T05:38:30Z", "system_mtime": "2020-01-29T05:38:30Z",
+      "user_mtime": "2020-01-29T05:38:30Z", "instance_type": "mixed_materials", "jsonmodel_type":
+      "instance", "is_representative": false, "sub_container": {"lock_version": 0,
+      "created_by": "admin", "last_modified_by": "admin", "create_time": "2020-01-29T05:38:30Z",
+      "system_mtime": "2020-01-29T05:38:30Z", "user_mtime": "2020-01-29T05:38:30Z",
+      "jsonmodel_type": "sub_container", "top_container": {"ref": "/repositories/2/top_containers/2"}}}],
+      "notes": [{"jsonmodel_type": "note_singlepart", "persistent_id": "f303fb07b0a39933f9c9c72238809898",
+      "type": "abstract", "content": ["text"], "publish": true}, {"jsonmodel_type":
+      "note_multipart", "persistent_id": "3381edf4de99bc98669caf690cc1032c", "type":
+      "bioghist", "subnotes": [{"jsonmodel_type": "note_text", "content": "text",
+      "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id":
+      "d019f0bdfdf0dc3116684d40f733587d", "type": "scopecontent", "subnotes": [{"jsonmodel_type":
+      "note_text", "content": "text", "publish": true}], "publish": true}], "uri":
+      "/repositories/2/archival_objects/6", "repository": {"ref": "/repositories/2"},
+      "resource": {"ref": "/repositories/2/resources/5"}, "has_unpublished_ancestor":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2703'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: http://pisces-web:8007/transform/archivesspace/
+  response:
+    body:
+      string: '"success!"'
+    headers:
+      Allow:
+      - POST, OPTIONS
+      Content-Length:
+      - '10'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 01 Feb 2020 22:56:25 GMT
+      Server:
+      - WSGIServer/0.2 CPython/3.6.5
+      Vary:
+      - Accept, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+version: 1
