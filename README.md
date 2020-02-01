@@ -27,6 +27,13 @@ Or, if you want to remove all data
     $ docker-compose down -v
 
 
+## Developing
+Git pre-commit hooks can be enabled in this repository by running:
+```
+$ pip install pre-commit
+$ pre-commit install
+```
+
 ## Services
 
 pisces has two main services, both of which are exposed via HTTP endpoints (see [Routes](#routes) section below):

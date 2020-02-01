@@ -20,6 +20,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
+  - flake8
   - docker-compose exec pisces-web coverage run manage.py test
 after_script:
   - docker-compose exec pisces-web coverage xml
