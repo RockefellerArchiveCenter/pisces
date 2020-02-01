@@ -15,25 +15,11 @@ class FetchRun(models.Model):
         (FINISHED, 'Finished'),
         (ERRORED, 'Errored'),
     )
-    AURORA = 0
-    ARCHIVEMATICA = 1
-    FEDORA = 2
-    ARCHIVESSPACE = 3
-    PISCES = 4
-    CARTOGRAPHER = 5
-    TREES = 6
-    WIKIDATA = 7
-    WIKIPEDIA = 8
+    ARCHIVESSPACE = 0
+    CARTOGRAPHER = 1
     SOURCE_CHOICES = (
-        (AURORA, 'Aurora'),
-        (ARCHIVEMATICA, 'Archivematica'),
-        (FEDORA, 'Fedora'),
         (ARCHIVESSPACE, 'ArchivesSpace'),
-        (PISCES, 'Pisces'),
         (CARTOGRAPHER, 'Cartographer'),
-        (TREES, 'Trees'),
-        (WIKIDATA, 'Wikidata'),
-        (WIKIPEDIA, 'Wikipedia')
     )
     ARCHIVESSPACE_OBJECT_TYPE_CHOICES = (
         ('resource', 'Resource'),
@@ -56,5 +42,5 @@ class FetchRun(models.Model):
 
 class FetchRunError(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
-    message = models.CharField(max_length=255)
+    message = models.TextField(max_length=255)
     run = models.ForeignKey(FetchRun, on_delete=models.CASCADE)
