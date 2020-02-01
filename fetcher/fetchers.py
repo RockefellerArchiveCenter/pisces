@@ -7,7 +7,7 @@ from .helpers import last_run_time, send_post_request
 from pisces import settings
 
 
-class FetcherError:
+class FetcherError(Exception):
     pass
 
 
@@ -37,7 +37,7 @@ class BaseDataFetcher:
             current_run.save()
             FetchRunError.objects.create(
                 run=current_run,
-                message=e,
+                message=str(e),
             )
             raise FetcherError("Error fetching data: {}".format(e))
 
@@ -63,7 +63,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
     def get_deleted(self, object_type, last_run, post_service_url):
         data = []
-        last_run = last_run_time(object_type)
         for d in self.deleted_list(object_type, last_run):
             send_post_request(post_service_url, d)
             data.append(d)
@@ -88,7 +87,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         elif object_type == 'organization':
             list = self.aspace.agents["corporate_entities"].with_params(
                 all_ids=True, modified_since=last_run)
-        elif self.object_type == 'family':
+        elif object_type == 'family':
             list = self.aspace.agents["families"].with_params(
                 all_ids=True, modified_since=last_run)
         for obj in list:

@@ -19,6 +19,5 @@ def last_run_time(source, object_type):
 
 
 def send_post_request(url, data):
-    # check to make sure data is json?
     resp = requests.post(url, json=data)
     resp.raise_for_status()
