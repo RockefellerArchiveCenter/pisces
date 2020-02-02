@@ -28,6 +28,11 @@ class FetchRunViewSet(ModelViewSet):
 
 
 class BaseFetchView(APIView):
+    """
+    Base view for data fetchers which handles POST requests only. Delegates to
+    a data fetcher which targets a specific data source.
+    """
+
     def post(self, request, format=None):
         try:
             object_type = request.GET.get('object_type')
