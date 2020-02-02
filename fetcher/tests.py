@@ -24,7 +24,7 @@ class FetcherTest(TestCase):
     def test_archivesspace_fetcher(self):
         for status in ["updated", "deleted"]:
             for i, object_type in enumerate(FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES):
-                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
+                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.yml".format(status, object_type[0])):
                     list = ArchivesSpaceDataFetcher().fetch(status, object_type[0], post_url)
                     for obj in list:
                         self.assertTrue(isinstance(obj, str))
