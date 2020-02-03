@@ -10,6 +10,7 @@ from .mappings_helpers import ArchivesSpaceHelper
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
+    """Maps ASRef to Reference object."""
     from_obj = ArchivesSpaceRef
     to_obj = Reference
 
@@ -23,6 +24,7 @@ class ArchivesSpaceRefToReference(odin.Mapping):
 
 
 class ArchivesSpaceAncestorToReference(odin.Mapping):
+    """Maps ASAncestor to Reference object."""
     from_obj = ArchivesSpaceAncestor
     to_obj = Reference
 
@@ -36,6 +38,7 @@ class ArchivesSpaceAncestorToReference(odin.Mapping):
 
 
 class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
+    """Maps ASAgents to Reference object."""
     from_obj = ArchivesSpaceLinkedAgent
     to_obj = Reference
 
@@ -49,6 +52,7 @@ class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
 
 
 class ArchivesSpaceDateToDate(odin.Mapping):
+    """Maps ASDate to Date object."""
     from_obj = ArchivesSpaceDate
     to_obj = Date
 
@@ -64,6 +68,7 @@ class ArchivesSpaceDateToDate(odin.Mapping):
 
 
 class ArchivesSpaceExtentToExtent(odin.Mapping):
+    """Maps ASExtent to Extent object."""
     from_obj = ArchivesSpaceExtent
     to_obj = Extent
 
@@ -74,6 +79,7 @@ class ArchivesSpaceExtentToExtent(odin.Mapping):
 
 
 class ArchivesSpaceNoteToNote(odin.Mapping):
+    """Maps ASNotes to Note object."""
     from_obj = ArchivesSpaceNote
     to_obj = Note
 
@@ -86,6 +92,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
         return value.split('note_',1)[1]
 
     def map_subnotes(self, value):
+        """Maps different AS Subnotes to different values based on the note type."""
         if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
             return Subnote(type=value.jsonmodel_type.split('note_')[1], content=value.items)
         elif value == 'note_bibliography':
@@ -104,7 +111,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-                           if isinstance(value.content, list) else [value.content])
+            if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -117,6 +124,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
 
 class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
+    """Maps AS RightsStatements Acts to Rights Granted object."""
     from_obj = ArchivesSpaceRightsStatementAct
     to_obj = RightsGranted
 
@@ -130,6 +138,7 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
 
 
 class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
+    """Maps AS RightsStatements Statement to Rights Statement object."""
     from_obj = ArchivesSpaceRightsStatement
     to_obj = RightsStatement
 
@@ -147,6 +156,7 @@ class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
 
 
 class ArchivesSpaceResourceToCollection(odin.Mapping):
+    """Mapse ASResources to Collection object."""
     from_obj = ArchivesSpaceResource
     to_obj = Collection
 
@@ -178,13 +188,19 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
 
+
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
+    """Maps ASArchivalObjects to Collection object."""
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Collection
 
-    mappings = (
-        odin.define(from_field='subjects', to_field='terms'),
-    )
+    def __init__(self, *args, **kwargs):
+        self.aspace_helper = ArchivesSpaceHelper()
+        return super(ArchivesSpaceArchivalObjectToCollection, self).__init__(*args, **kwargs)
+
+    @odin.map_list_field(from_field='subjects', to_field='terms')
+    def terms(self, value):
+        return ArchivesSpaceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
@@ -206,6 +222,7 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
+    """Maps ASArchivalObjects to Objects object."""
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Object
 
@@ -255,6 +272,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
 
 class ArchivesSpaceSubjectToTerm(odin.Mapping):
+    """Maps ASSubject to Term object."""
     from_obj = ArchivesSpaceSubject
     to_obj = Term
 
@@ -268,6 +286,7 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
 
 
 class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
+    """Mapse ASAgent Corporate Entities to Agent object."""
     from_obj = ArchivesSpaceAgentCorporateEntity
     to_obj = Agent
 
@@ -285,6 +304,7 @@ class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
 
 
 class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
+    """Maps ASAgent Family to Agent object."""
     from_obj = ArchivesSpaceAgentFamily
     to_obj = Agent
 
@@ -302,6 +322,7 @@ class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
 
 
 class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
+    """Maps ASAgent Person to Agent object."""
     from_obj = ArchivesSpaceAgentPerson
     to_obj = Agent
 

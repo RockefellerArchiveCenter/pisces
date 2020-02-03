@@ -28,6 +28,9 @@ AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Age
 
 
 class TransformerTest(TestCase):
+    """Tests the transformations and mappings against the RAC data model schema. Opens the JSON schema and then runs the
+    transformations against every file in the directories included in the AS_TYPE_MAP. Validates against the correct type
+    in the data model and then provides an error if the validation fails."""
     def test_as_mappings(self):
         with open(os.path.join(settings.BASE_DIR, 'rac-data-model', 'schema.json')) as sf:
             schema = json.load(sf)

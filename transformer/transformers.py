@@ -9,22 +9,28 @@ from .mappings import *
 
 
 class ArchivesSpaceTransformError(Exception):
+    """Sets up the error messaging for AS transformations."""
     pass
 
 
 class CartographerTransformError(Exception):
+    """Sets up the error messaging for Cartographer transformations."""
     pass
 
 
 class WikidataTransformError(Exception):
+    """Sets up the error messaging for WikiData transformations."""
     pass
 
 
 class WikipediaTransformError(Exception):
+    """Sets up the error messaging for Wikipedia transformations."""
     pass
 
 
 class CartographerDataTransformer:
+    """Transforms cartographer data. Sets title and uri based on source data titles and refs. Checks for parents and children
+    and adds the title, parent, ref, and any children to a dictionary."""
 
     def run(self, data):
         self.source_data = data
@@ -65,6 +71,9 @@ class CartographerDataTransformer:
 
 
 class ArchivesSpaceDataTransformer:
+    """Stores each objects jsonmodel type and then checks the type and transforms the from_obj data to the to_obj
+    format based on mappings.py and resources.py Sends a get request for each archival object checking the tree_node
+    endpoint for children. If there are more than 0 children, transform it to a resource."""
 
     def run(self, data):
         self.object_type = data.get('jsonmodel_type')
@@ -87,6 +96,8 @@ class ArchivesSpaceDataTransformer:
 
 
 class WikidataDataTransformer:
+    """"Transforms WikiData content obtained through the WikiData fetcher and sets the source to wikidata. Transforms
+    descriptions to an abstract note and stores an image url from Wikipedia Commons."""
 
     def run(self, data):
         self.source_data = data
@@ -114,6 +125,7 @@ class WikidataDataTransformer:
 
 
 class WikipediaDataTransformer:
+    """"Takes Wikipedia description content from the fetchers and transforms any data to a bioghist note."""
 
     def run(self, data):
         self.source_data = data

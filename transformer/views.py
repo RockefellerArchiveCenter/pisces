@@ -5,7 +5,7 @@ from .transformers import ArchivesSpaceDataTransformer
 
 
 class ArchivesSpaceTransformView(APIView):
-    """Transforms ArchivesSpace data."""
+    """Takes the get request for AS data and returns a web response based on the transformation of that data."""
 
     def post(self, request, format=None):
         try:
