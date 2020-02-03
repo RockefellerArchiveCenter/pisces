@@ -190,19 +190,13 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
-    """Mapse ASArchivalObjects to Collection object."""
+    """Maps ASArchivalObjects to Collection object."""
     from_obj = ArchivesSpaceArchivalObject
     to_obj = Collection
 
     def __init__(self, *args, **kwargs):
         self.aspace_helper = ArchivesSpaceHelper()
         return super(ArchivesSpaceArchivalObjectToCollection, self).__init__(*args, **kwargs)
-
-    # @odin.map_list_field(from_field='linked_agents', to_field='creators')
-    # def creators(self, value):
-        # return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
-        # value = [json_codec.loads(json.dumps(v), ArchivesSpaceLinkedAgent) for v in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
-        # return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):

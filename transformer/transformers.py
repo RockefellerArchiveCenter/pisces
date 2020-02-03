@@ -80,31 +80,19 @@ class ArchivesSpaceDataTransformer:
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
             # TODO: parse out objects and collections. The tree/node endpoint looks promising
-            TYPE_MAP = [
-                {"obj_type": "agent_person", "from_obj": ArchivesSpaceAgentPerson, "to_obj": Agent},
-                {"obj_type": "agent_corporate_entity", "from_obj": ArchivesSpaceAgentCorporateEntity, "to_obj": Agent},
-                {"obj_type": "agent_family", "from_obj": ArchivesSpaceAgentFamily, "to_obj": Agent},
-                {"obj_type": "resource", "from_obj": ArchivesSpaceResource, "to_obj": Collection},
-                {"obj_type": "archival_object", "from_obj": ArchivesSpaceArchivalObject, "to_obj": Object},
-                {"obj_type": "archival_object_collection", "from_obj": ArchivesSpaceArchivalObject, "to_obj": Collection},
-                {"obj_type": "subject", "from_obj": ArchivesSpaceSubject, "to_obj": Term}]
-            from_obj = json_codec.loads(data, resource=[t['from_obj'] for t in TYPE_MAP if t["obj_type"] == self.object_type][0])
-            to_obj = [t['to_obj'] for t in TYPE_MAP if t["obj_type"] == self.object_type][0]
+            TYPE_MAP = (
+                ("agent_person", "agent", ArchivesSpaceAgentPerson, Agent),
+                ("agent_corporate_entity", "agent", ArchivesSpaceAgentCorporateEntity, Agent),
+                ("agent_family", "agent", ArchivesSpaceAgentFamily, Agent),
+                ("resource", "collection", ArchivesSpaceResource, Collection),
+                ("archival_object", "object", ArchivesSpaceArchivalObject, Object),
+                ("subject", "term", ArchivesSpaceSubject, Term))
+            from_obj = json_codec.loads(data, resource=[t[2] for t in TYPE_MAP if t[0] == self.object_type][0])
+            to_obj = [t[3] for t in TYPE_MAP if t[0] == self.object_type][0]
             return json_codec.dumps(from_obj.convert_to(to_obj))
         except Exception as e:
             print(e)
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
-
-    def get_object_type(self, data):
-        if data.get("jsonmodel_type") == "archival_object":
-            pass
-            # tree = ArchivesSpaceHelper().get_tree(self.source.uri)
-            # if tree.child_count > 0:
-                # return obj_type = "archival_object_collection"
-            # else
-                # return data.get("jsonmodel_type")
-        else:
-            return data.get("jsonmodel_type")
 
 
 class WikidataDataTransformer:
