@@ -9,18 +9,22 @@ from .mappings import *
 
 
 class ArchivesSpaceTransformError(Exception):
+    """Sets up the error messaging for AS transformations."""
     pass
 
 
 class CartographerTransformError(Exception):
+    """Sets up the error messaging for Cartographer transformations."""
     pass
 
 
 class WikidataTransformError(Exception):
+    """Sets up the error messaging for WikiData transformations."""
     pass
 
 
 class WikipediaTransformError(Exception):
+    """Sets up the error messaging for Wikipedia transformations."""
     pass
 
 

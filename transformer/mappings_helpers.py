@@ -23,4 +23,5 @@ class ArchivesSpaceHelper:
                 return ancestor[key]
 
     def get_tree(self, uri):
+        """Gets an archival object's tree data. Returns that tree data."""
         obj = self.aspace.client.get(uri)
