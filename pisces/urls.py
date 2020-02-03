@@ -24,8 +24,8 @@ router = routers.DefaultRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
 
 schema_view = get_schema_view(
-      title="Pisces API",
-      description="Endpoints for Pisces microservice application."
+    title="Pisces API",
+    description="Endpoints for Pisces microservice application."
 )
 
 

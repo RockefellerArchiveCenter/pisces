@@ -5,6 +5,7 @@ from . import resource_configs
 Used by mappings.py when transforming data from AS resources to RAC resources.
 Defaults and choices chosen from resource_configs.py are included here."""
 
+
 class Subnote(odin.Resource):
     """Sets the fields in the RAC subnote resource."""
     type = odin.StringField(choices=resource_configs.SUBNOTE_TYPE_CHOICES)
@@ -41,7 +42,7 @@ class Reference(odin.Resource):
 
 class Date(odin.Resource):
     """Sets the fields in the RAC date resource."""
-    #TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
+    # TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
     begin = odin.DateTimeField(default="2019")
     end = odin.DateTimeField()
     expression = odin.StringField()
@@ -224,7 +225,7 @@ class ArchivesSpaceNameFamily(ArchivesSpaceNameBase):
 class ArchivesSpaceNamePerson(ArchivesSpaceNameBase):
     primary_name = odin.StringField()
     rest_of_name = odin.StringField(null=True)
-    name_order = odin.StringField(choices=(('direct', 'Direct'),('inverted', 'Inverted')))
+    name_order = odin.StringField(choices=(('direct', 'Direct'), ('inverted', 'Inverted')))
 
 
 class ArchivesSpaceSubnote(odin.Resource):

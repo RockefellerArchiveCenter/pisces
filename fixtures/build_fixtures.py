@@ -2,10 +2,10 @@ import json
 import os
 from asnake.aspace import ASpace
 aspace = ASpace(
-              baseurl='http://192.168.50.7:8089',
-              user='admin',
-              password='admin'
-              )
+    baseurl='http://192.168.50.7:8089',
+    user='admin',
+    password='admin'
+)
 repo = aspace.repositories(2)
 
 
