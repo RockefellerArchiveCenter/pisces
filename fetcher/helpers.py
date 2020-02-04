@@ -1,4 +1,6 @@
 import requests
+from asnake.aspace import ASpace
+from pisces import settings
 
 from .models import FetchRun
 
@@ -30,3 +32,20 @@ def send_post_request(url, data):
     assert(isinstance(data, dict))
     resp = requests.post(url, json=data)
     resp.raise_for_status()
+
+
+def instantiate_aspace(self, config=None):
+    """
+    Instantiates and returns a tuple containing an ASpace object as well as a
+    a repository. An optional config object can be passed to this function,
+    otherwise the default configs are targeted.
+    """
+    config = config if config else settings.ARCHIVESSPACE
+    aspace = ASpace(baseurl=config['baseurl'],
+                    username=config['username'],
+                    password=config['password'])
+    repo = aspace.repositories(config['repo'])
+    setattr(aspace, 'repo', repo)
+    if isinstance(repo, dict) and 'error' in repo:
+        raise Exception(self.repo['error'])  # TODO: This should probably target a more specific exception
+    return aspace

@@ -1,16 +1,10 @@
-from asnake.aspace import ASpace
-from fetcher.fetchers import FetcherError
+from fetcher.helpers import instantiate_aspace
 from pisces import settings
 
 
 class ArchivesSpaceHelper:
     def __init__(self):
-        self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
-                             username=settings.ARCHIVESSPACE['username'],
-                             password=settings.ARCHIVESSPACE['password'])
-        self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
-        if isinstance(self.repo, dict) and 'error' in self.repo:
-            raise FetcherError(self.repo['error'])
+        self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
 
     def closest_parent_value(self, uri, key):
         """Iterates up through an archival object's ancestors looking for the

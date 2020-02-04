@@ -1,9 +1,8 @@
-from asnake.aspace import ASpace
 from django.utils import timezone
 from electronbonder.client import ElectronBond
 from pisces import settings
 
-from .helpers import last_run_time, send_post_request
+from .helpers import instantiate_aspace, last_run_time, send_post_request
 from .models import FetchRun, FetchRunError
 
 
@@ -47,12 +46,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
     def __init__(self):
         self.source = FetchRun.ARCHIVESSPACE
-        self.aspace = ASpace(baseurl=settings.ARCHIVESSPACE['baseurl'],
-                             username=settings.ARCHIVESSPACE['username'],
-                             password=settings.ARCHIVESSPACE['password'])
-        self.repo = self.aspace.repositories(settings.ARCHIVESSPACE['repo'])
-        if isinstance(self.repo, dict) and 'error' in self.repo:
-            raise FetcherError(self.repo['error'])
+        self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
 
     def get_updated(self, object_type, last_run, post_service_url):
         data = []
@@ -73,10 +67,10 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
     def updated_list(self, object_type, last_run, publish):
         if object_type == 'resource':
-            list = self.repo.resources.with_params(
+            list = self.aspace.repo.resources.with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'archival_object':
-            list = self.repo.archival_objects.with_params(
+            list = self.aspace.repo.archival_objects.with_params(
                 all_ids=True, modified_since=last_run)
         elif object_type == 'subject':
             list = self.aspace.subjects.with_params(
