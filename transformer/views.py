@@ -10,7 +10,6 @@ class ArchivesSpaceTransformView(APIView):
     def post(self, request, format=None):
         try:
             if not request.data:
-                print("no data")
                 return Response({"detail": "Missing request data"}, status=500)
             resp = ArchivesSpaceDataTransformer().run(request.data)
             return Response(resp, status=200)
