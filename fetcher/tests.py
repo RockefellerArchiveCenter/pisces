@@ -1,9 +1,9 @@
 from datetime import datetime
-import vcr
 
+import vcr
 from django.test import TestCase
-from django.utils import timezone
 from django.urls import reverse
+from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
 from .fetchers import ArchivesSpaceDataFetcher

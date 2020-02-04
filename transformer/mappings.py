@@ -1,40 +1,22 @@
 import json
 
 import odin
-from odin.codecs import json_codec
 from iso639 import languages
+from odin.codecs import json_codec
 
-from .resources import (
-    Collection,
-    Object,
-    Agent,
-    Term,
-    Reference,
-    ExternalIdentifier,
-    Date,
-    Note,
-    Language,
-    Subnote,
-    Extent,
-    RightsStatement,
-    RightsGranted,
-    ArchivesSpaceResource,
-    ArchivesSpaceArchivalObject,
-    ArchivesSpaceSubject,
-    ArchivesSpaceRef,
-    ArchivesSpaceAncestor,
-    ArchivesSpaceLinkedAgent,
-    ArchivesSpaceDate,
-    ArchivesSpaceExtent,
-    ArchivesSpaceNote,
-    ArchivesSpaceRightsStatement,
-    ArchivesSpaceRightsStatementAct,
-    ArchivesSpaceAgentCorporateEntity,
-    ArchivesSpaceAgentFamily,
-    ArchivesSpaceAgentPerson
-)
-from .resource_configs import NOTE_TYPE_CHOICES
 from .mappings_helpers import ArchivesSpaceHelper
+from .resource_configs import NOTE_TYPE_CHOICES
+from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceAncestor, ArchivesSpaceArchivalObject,
+                        ArchivesSpaceDate, ArchivesSpaceExtent,
+                        ArchivesSpaceLinkedAgent, ArchivesSpaceNote,
+                        ArchivesSpaceRef, ArchivesSpaceResource,
+                        ArchivesSpaceRightsStatement,
+                        ArchivesSpaceRightsStatementAct, ArchivesSpaceSubject,
+                        Collection, Date, Extent, ExternalIdentifier, Language,
+                        Note, Object, Reference, RightsGranted,
+                        RightsStatement, Subnote, Term)
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):

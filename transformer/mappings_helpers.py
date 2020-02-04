@@ -1,5 +1,4 @@
 from asnake.aspace import ASpace
-
 from fetcher.fetchers import FetcherError
 from pisces import settings
 

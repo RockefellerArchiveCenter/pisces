@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
+from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
+                           CartographerDeletesView, CartographerUpdatesView,
+                           FetchRunViewSet)
 from rest_framework import routers
 from rest_framework.schemas import get_schema_view
 from transformer.views import ArchivesSpaceTransformView
-from fetcher.views import (ArchivesSpaceUpdatesView, ArchivesSpaceDeletesView, CartographerUpdatesView, CartographerDeletesView, FetchRunViewSet)
 
 router = routers.DefaultRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')

@@ -3,20 +3,16 @@ import json
 
 from odin.codecs import json_codec
 
-from .resources import (
-    ArchivesSpaceAgentPerson,
-    ArchivesSpaceAgentCorporateEntity,
-    ArchivesSpaceAgentFamily,
-    ArchivesSpaceResource,
-    ArchivesSpaceArchivalObject,
-    ArchivesSpaceSubject)
-from .mappings import (
-    ArchivesSpaceAgentFamilyToAgent,
-    ArchivesSpaceAgentPersonToAgent,
-    ArchivesSpaceAgentCorporateEntityToAgent,
-    ArchivesSpaceResourceToCollection,
-    ArchivesSpaceArchivalObjectToObject,
-    ArchivesSpaceSubjectToTerm)
+from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
+                       ArchivesSpaceAgentFamilyToAgent,
+                       ArchivesSpaceAgentPersonToAgent,
+                       ArchivesSpaceArchivalObjectToObject,
+                       ArchivesSpaceResourceToCollection,
+                       ArchivesSpaceSubjectToTerm)
+from .resources import (ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceArchivalObject, ArchivesSpaceResource,
+                        ArchivesSpaceSubject)
 
 
 class ArchivesSpaceTransformError(Exception):

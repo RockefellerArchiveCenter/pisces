@@ -1,23 +1,16 @@
 import json
 import os
+
 import vcr
-
-from jsonschema import validate
-
 from django.test import TestCase
-
-from .resources import (
-    Agent,
-    Collection,
-    Object, Term,
-    ArchivesSpaceAgentPerson,
-    ArchivesSpaceAgentCorporateEntity,
-    ArchivesSpaceAgentFamily,
-    ArchivesSpaceResource,
-    ArchivesSpaceArchivalObject,
-    ArchivesSpaceSubject)
-from .transformers import ArchivesSpaceDataTransformer
+from jsonschema import validate
 from pisces import settings
+
+from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceArchivalObject, ArchivesSpaceResource,
+                        ArchivesSpaceSubject, Collection, Object, Term)
+from .transformers import ArchivesSpaceDataTransformer
 
 fetch_vcr = vcr.VCR(
     serializer='json',

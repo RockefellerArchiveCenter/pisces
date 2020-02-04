@@ -1,10 +1,10 @@
 from asnake.aspace import ASpace
 from django.utils import timezone
 from electronbonder.client import ElectronBond
-
-from .models import FetchRun, FetchRunError
-from .helpers import last_run_time, send_post_request
 from pisces import settings
+
+from .helpers import last_run_time, send_post_request
+from .models import FetchRun, FetchRunError
 
 
 class FetcherError(Exception):
