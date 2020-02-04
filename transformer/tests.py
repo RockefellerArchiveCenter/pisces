@@ -6,7 +6,16 @@ from jsonschema import validate
 
 from django.test import TestCase
 
-from .resources import Agent, Collection, Object, Term, ArchivesSpaceAgentPerson, ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentFamily, ArchivesSpaceResource, ArchivesSpaceArchivalObject, ArchivesSpaceSubject
+from .resources import (
+    Agent,
+    Collection,
+    Object, Term,
+    ArchivesSpaceAgentPerson,
+    ArchivesSpaceAgentCorporateEntity,
+    ArchivesSpaceAgentFamily,
+    ArchivesSpaceResource,
+    ArchivesSpaceArchivalObject,
+    ArchivesSpaceSubject)
 from .transformers import ArchivesSpaceDataTransformer
 from pisces import settings
 
