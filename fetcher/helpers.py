@@ -36,8 +36,8 @@ def send_post_request(url, data):
 
 def instantiate_aspace(self, config=None):
     """
-    Instantiates and returns a tuple containing an ASpace object as well as a
-    a repository. An optional config object can be passed to this function,
+    Instantiates and returns an ASpace object with a repository as an attribute.
+    An optional config object can be passed to this function,
     otherwise the default configs are targeted.
     """
     config = config if config else settings.ARCHIVESSPACE
@@ -45,7 +45,7 @@ def instantiate_aspace(self, config=None):
                     username=config['username'],
                     password=config['password'])
     repo = aspace.repositories(config['repo'])
-    setattr(aspace, 'repo', repo)
+    setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
     if isinstance(repo, dict) and 'error' in repo:
         raise Exception(self.repo['error'])  # TODO: This should probably target a more specific exception
     return aspace
