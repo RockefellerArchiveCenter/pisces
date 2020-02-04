@@ -1,3 +1,4 @@
+from datetime import datetime
 import vcr
 
 from django.test import TestCase
@@ -11,7 +12,7 @@ from .models import FetchRun
 from .views import ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView
 
 fetch_vcr = vcr.VCR(
-    serializer='yaml',
+    serializer='json',
     cassette_library_dir='fixtures/cassettes',
     record_mode='once',
     match_on=['path', 'method', 'query'],
@@ -25,11 +26,20 @@ post_service_url = "http://pisces-web:8007/transform/archivesspace/"
 class FetcherTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
+        time = datetime(2020, 2, 1)
+        for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
+            f = FetchRun.objects.create(
+                status=FetchRun.FINISHED,
+                source=FetchRun.ARCHIVESSPACE,
+                object_type=object_type[0]
+            )
+            f.start_time = time
+            f.save()
 
     def test_archivesspace_fetcher(self):
         for status in ["updated", "deleted"]:
             for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
-                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.yml".format(status, object_type[0])):
+                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
                     list = ArchivesSpaceDataFetcher().fetch(status, object_type[0], post_service_url)
                     for obj in list:
                         self.assertTrue(isinstance(obj, str))
@@ -40,7 +50,7 @@ class FetcherTest(TestCase):
                 (ArchivesSpaceDeletesView, "deleted", "fetch-archivesspace-deletes"),
                 (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates")]:
             for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
-                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.yml".format(status, object_type[0])):
+                with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
                     request = self.factory.post("{}?object_type={}&post_service_url={}".format(reverse(url_name), object_type[0], post_service_url))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
