@@ -15,7 +15,7 @@ class ArchivesSpaceHelper:
             if ancestor.get(key) not in ['', [], {}, None]:
                 return ancestor[key]
 
-     def has_children(self, uri):
+    def has_children(self, uri):
         """Checks whether an archival object has children. Returns the has_children value (True or False) if it does,
         and returns False if it cannot get the value."""
         try:
