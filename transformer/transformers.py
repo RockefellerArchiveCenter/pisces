@@ -74,14 +74,13 @@ class ArchivesSpaceDataTransformer:
         self.object_type = self.get_object_type(data)
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
-            TYPE_MAP = [
-                {"obj_type": "agent_person", "from_obj": ArchivesSpaceAgentPerson, "to_obj": Agent},
-                {"obj_type": "agent_corporate_entity", "from_obj": ArchivesSpaceAgentCorporateEntity, "to_obj": Agent},
-                {"obj_type": "agent_family", "from_obj": ArchivesSpaceAgentFamily, "to_obj": Agent},
-                {"obj_type": "resource", "from_obj": ArchivesSpaceResource, "to_obj": Collection},
-                {"obj_type": "archival_object", "from_obj": ArchivesSpaceArchivalObject, "to_obj": Object},
-                {"obj_type": "archival_object_collection", "from_obj": ArchivesSpaceArchivalObject, "to_obj": Collection},
-                {"obj_type": "subject", "from_obj": ArchivesSpaceSubject, "to_obj": Term}]
+            TYPE_MAP = (
+                ("agent_person", ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
+                ("agent_corporate_entity", ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
+                ("agent_family", ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
+                ("resource", ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
+                ("archival_object", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
+                ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
             from_obj = json_codec.loads(data, resource=from_resource)
             return json_codec.dumps(mapping.apply(from_obj))
