@@ -72,7 +72,7 @@ class ArchivesSpaceDataTransformer:
     endpoint for children. If there are more than 0 children, transform it to a resource."""
 
     def run(self, data):
-        self.object_type == self.get_object_type(data)
+        self.object_type = self.get_object_type(data)
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
             TYPE_MAP = (

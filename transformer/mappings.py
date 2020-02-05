@@ -1,22 +1,12 @@
 import json
 
 import odin
-from iso639 import languages
 from odin.codecs import json_codec
+from iso639 import languages
 
-from .mappings_helpers import ArchivesSpaceHelper
+from .resources import *
 from .resource_configs import NOTE_TYPE_CHOICES
-from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
-                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
-                        ArchivesSpaceAncestor, ArchivesSpaceArchivalObject,
-                        ArchivesSpaceDate, ArchivesSpaceExtent,
-                        ArchivesSpaceLinkedAgent, ArchivesSpaceNote,
-                        ArchivesSpaceRef, ArchivesSpaceResource,
-                        ArchivesSpaceRightsStatement,
-                        ArchivesSpaceRightsStatementAct, ArchivesSpaceSubject,
-                        Collection, Date, Extent, ExternalIdentifier, Language,
-                        Note, Object, Reference, RightsGranted,
-                        RightsStatement, Subnote, Term)
+from .mappings_helpers import ArchivesSpaceHelper
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -99,7 +89,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='jsonmodel_type', to_field='type')
     def type(self, value):
-        return value.split('note_', 1)[1]
+        return value.split('note_',1)[1]
 
     def map_subnotes(self, value):
         """Maps different AS Subnotes to different values based on the note type."""
@@ -121,7 +111,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-                           if isinstance(value.content, list) else [value.content])
+            if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -198,6 +188,7 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
 
+
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     """Maps ASArchivalObjects to Collection object."""
     from_obj = ArchivesSpaceArchivalObject
@@ -221,9 +212,9 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        value = value if value else ArchivesSpaceHelper().closest_parent_value(self.source.uri, 'language')
+        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
-        return Language(expression=lang_data.name, identifier=value)
+        return [Language(expression=lang_data.name, identifier=value)]
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -295,7 +286,7 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
 
 
 class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
-    """Mapse ASAgent Corporate Entities to Agent object."""
+    """Maps ASAgent Corporate Entities to Agent object."""
     from_obj = ArchivesSpaceAgentCorporateEntity
     to_obj = Agent
 
