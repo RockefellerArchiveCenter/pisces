@@ -7,6 +7,7 @@ from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
                        ArchivesSpaceAgentPersonToAgent,
                        ArchivesSpaceArchivalObjectToObject,
+                       ArchivesSpaceArchivalObjectToCollection,
                        ArchivesSpaceResourceToCollection,
                        ArchivesSpaceSubjectToTerm)
 from .resources import (ArchivesSpaceAgentCorporateEntity,
@@ -80,6 +81,7 @@ class ArchivesSpaceDataTransformer:
                 ("agent_family", ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
                 ("resource", ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
                 ("archival_object", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
+                ("archival_object_collection", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
                 ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
             from_obj = json_codec.loads(data, resource=from_resource)
@@ -89,7 +91,7 @@ class ArchivesSpaceDataTransformer:
 
     def get_object_type(self, data):
         if data.get("jsonmodel_type") == "archival_object":
-            if ArchivesSpaceHelper().has_children(self.source.uri):
+            if ArchivesSpaceHelper().has_children(data['uri']):
                 return "archival_object_collection"
             else:
                 return data.get("jsonmodel_type")
