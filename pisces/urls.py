@@ -15,27 +15,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
+from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
+                           CartographerDeletesView, CartographerUpdatesView,
+                           FetchRunViewSet)
 from rest_framework import routers
 from rest_framework.schemas import get_schema_view
 from transformer.views import ArchivesSpaceTransformView
-from fetcher.views import ArchivesSpaceFetchChangesView, ArchivesSpaceFetchURIView, FetchRunViewSet
 
 router = routers.DefaultRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
 
 schema_view = get_schema_view(
-      title="Pisces API",
-      description="Endpoints for Pisces microservice application."
+    title="Pisces API",
+    description="Endpoints for Pisces microservice application."
 )
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^fetch/archivesspace/changes/$', ArchivesSpaceFetchChangesView.as_view(), name='fetch-archivesspace-changes'),
-    re_path(r'^fetch/archivesspace/uri/$', ArchivesSpaceFetchURIView.as_view(), name='fetch-archivesspace-uri'),
+    re_path(r'^fetch/archivesspace/updates/$', ArchivesSpaceUpdatesView.as_view(), name='fetch-archivesspace-updates'),
+    re_path(r'^fetch/archivesspace/deletes/$', ArchivesSpaceDeletesView.as_view(), name='fetch-archivesspace-deletes'),
+    re_path(r'^fetch/cartographer/updates/$', CartographerUpdatesView.as_view(), name='fetch-cartographer-updates'),
+    re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
     re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
-    # path('find-by-id/', FindByIDView.as_view(), name='find-by-id'),
-    # path('import/', ImportRunView.as_view(), name='import-data'),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),
     path('', include(router.urls)),

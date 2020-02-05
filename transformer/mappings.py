@@ -1,12 +1,22 @@
 import json
 
 import odin
-from odin.codecs import json_codec
 from iso639 import languages
+from odin.codecs import json_codec
 
-from .resources import *
-from .resource_configs import NOTE_TYPE_CHOICES
 from .mappings_helpers import ArchivesSpaceHelper
+from .resource_configs import NOTE_TYPE_CHOICES
+from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceAncestor, ArchivesSpaceArchivalObject,
+                        ArchivesSpaceDate, ArchivesSpaceExtent,
+                        ArchivesSpaceLinkedAgent, ArchivesSpaceNote,
+                        ArchivesSpaceRef, ArchivesSpaceResource,
+                        ArchivesSpaceRightsStatement,
+                        ArchivesSpaceRightsStatementAct, ArchivesSpaceSubject,
+                        Collection, Date, Extent, ExternalIdentifier, Language,
+                        Note, Object, Reference, RightsGranted,
+                        RightsStatement, Subnote, Term)
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -89,7 +99,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='jsonmodel_type', to_field='type')
     def type(self, value):
-        return value.split('note_',1)[1]
+        return value.split('note_', 1)[1]
 
     def map_subnotes(self, value):
         """Maps different AS Subnotes to different values based on the note type."""
@@ -111,7 +121,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-            if isinstance(value.content, list) else [value.content])
+                           if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -186,7 +196,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
-
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):

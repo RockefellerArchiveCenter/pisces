@@ -3,9 +3,16 @@ import json
 
 from odin.codecs import json_codec
 
-from .resources import Agent, Collection, Object, Term, ArchivesSpaceAgentPerson, ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentFamily, ArchivesSpaceResource, ArchivesSpaceArchivalObject, ArchivesSpaceSubject
-# not sure why we need to import mappings here, but we do
-from .mappings import *
+from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
+                       ArchivesSpaceAgentFamilyToAgent,
+                       ArchivesSpaceAgentPersonToAgent,
+                       ArchivesSpaceArchivalObjectToObject,
+                       ArchivesSpaceResourceToCollection,
+                       ArchivesSpaceSubjectToTerm)
+from .resources import (ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceArchivalObject, ArchivesSpaceResource,
+                        ArchivesSpaceSubject)
 
 
 class ArchivesSpaceTransformError(Exception):
@@ -56,19 +63,6 @@ class CartographerDataTransformer:
                 self.children(child.get("children"), child, data)
         return data
 
-    def process_tree(self, data, idx=0):
-        try:
-            c = Collection.objects.get(identifier__identifier=data.get('ref'))
-            c.tree_order = idx
-            c.save()
-            if data.get('children'):
-                i = 0
-                for item in data.get('children'):
-                    self.process_tree(item, i)
-                    i += 1
-        except Exception as e:
-            raise CartographerTransformError('Error processing tree: {}'.format(e))
-
 
 class ArchivesSpaceDataTransformer:
     """Stores each objects jsonmodel type and then checks the type and transforms the from_obj data to the to_obj
@@ -81,17 +75,16 @@ class ArchivesSpaceDataTransformer:
         try:
             # TODO: parse out objects and collections. The tree/node endpoint looks promising
             TYPE_MAP = (
-                ("agent_person", "agent", ArchivesSpaceAgentPerson, Agent),
-                ("agent_corporate_entity", "agent", ArchivesSpaceAgentCorporateEntity, Agent),
-                ("agent_family", "agent", ArchivesSpaceAgentFamily, Agent),
-                ("resource", "collection", ArchivesSpaceResource, Collection),
-                ("archival_object", "object", ArchivesSpaceArchivalObject, Object),
-                ("subject", "term", ArchivesSpaceSubject, Term))
-            from_obj = json_codec.loads(data, resource=[t[2] for t in TYPE_MAP if t[0] == self.object_type][0])
-            to_obj = [t[3] for t in TYPE_MAP if t[0] == self.object_type][0]
-            return json_codec.dumps(from_obj.convert_to(to_obj))
+                ("agent_person", ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
+                ("agent_corporate_entity", ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
+                ("agent_family", ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
+                ("resource", ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
+                ("archival_object", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
+                ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
+            from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
+            from_obj = json_codec.loads(data, resource=from_resource)
+            return json_codec.dumps(mapping.apply(from_obj))
         except Exception as e:
-            print(e)
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
 
 

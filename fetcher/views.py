@@ -1,10 +1,13 @@
+import urllib
+
+from asterism.views import prepare_response
+from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.response import Response
 
-from .fetchers import ArchivesSpaceDataFetcher
+from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .models import FetchRun
-from .serializers import FetchRunSerializer, FetchRunListSerializer
+from .serializers import FetchRunListSerializer, FetchRunSerializer
 
 
 class FetchRunViewSet(ModelViewSet):
@@ -24,29 +27,70 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class ArchivesSpaceFetchChangesView(APIView):
-    """Fetches list of objects to be updated or deleted."""
+class BaseFetchView(APIView):
+    """
+    Base view for data fetchers which handles POST requests only. Delegates to
+    a data fetcher which targets a specific data source.
+    """
 
     def post(self, request, format=None):
         try:
-            object_type = request.data.get('object_type')
-            if not object_type:
-                return Response({"detail": "Missing required field 'object_type' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher().changes(object_type=object_type)
-            return Response(resp, status=200)
+            object_type = request.GET.get('object_type')
+            post_service_url = self.get_post_service_url(request)
+            if object_type not in self.object_type_choices:
+                return Response(
+                    prepare_response(
+                        "object_type must be one of {}, got {} instead".format(
+                            self.object_type_choices,
+                            object_type)
+                    ), status=500
+                )
+            resp = self.fetcher_class().fetch(self.status, object_type, post_service_url)
+            return Response(
+                prepare_response(
+                    ("{} {} data fetched".format(self.status, object_type), resp)
+                ), status=200)
         except Exception as e:
-            return Response({"detail": str(e)}, status=500)
+            return Response(prepare_response(str(e)), status=500)
+
+    def get_post_service_url(self, request):
+        url = request.GET.get('post_service_url')
+        return urllib.parse.unquote(url) if url else ''
 
 
-class ArchivesSpaceFetchURIView(APIView):
-    """Fetches a data object by URI."""
+class ArchivesSpaceFetchView(BaseFetchView):
+    """
+    Base ArchivesSpace fetcher view which provides a fetcher class and
+    object type choices.
+    """
+    fetcher_class = ArchivesSpaceDataFetcher
+    object_type_choices = [obj[0] for obj in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES]
 
-    def post(self, request, format=None):
-        try:
-            data = request.data.get('data')
-            if not data:
-                return Response({"detail": "Missing required field 'data' in request data"}, status=500)
-            resp = ArchivesSpaceDataFetcher().from_uri(data)
-            return Response(resp, status=200)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=500)
+
+class ArchivesSpaceUpdatesView(ArchivesSpaceFetchView):
+    """Fetches list of objects to be updated or added."""
+    status = "updated"
+
+
+class ArchivesSpaceDeletesView(ArchivesSpaceFetchView):
+    """Fetches list of objects to be deleted."""
+    status = "deleted"
+
+
+class CartographerFetchView(BaseFetchView):
+    """
+    Base Cartographer fetcher view which provides a fetcher class and
+    object type choices.
+    """
+    fetcher_class = CartographerDataFetcher
+    object_type_choices = [obj[0] for obj in FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES]
+
+
+class CartographerUpdatesView(CartographerFetchView):
+    """Fetches list of objects to be updated or added."""
+    status = "updated"
+
+
+class CartographerDeletesView(CartographerFetchView):
+    """Fetches list of objects to be deleted."""
+    status = "deleted"
