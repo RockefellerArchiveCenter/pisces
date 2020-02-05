@@ -21,7 +21,7 @@ class ArchivesSpaceHelper:
         obj = self.aspace.client.get(uri).json()
         resource_id = obj['resource']['ref']
         try:
-            tree_node = self.aspace.client.get(resource_id + '/tree/node?node_uri=' + obj['uri']).json
+            tree_node = self.aspace.client.get(resource_id + '/tree/node?node_uri=' + obj['uri']).json()
             if tree_node['child_count'] > 0:
                 return True
             else:
