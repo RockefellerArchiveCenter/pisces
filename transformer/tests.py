@@ -45,7 +45,6 @@ class TransformerTest(TestCase):
                     for f in os.listdir(os.path.join('fixtures', resource[0])):
                         with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
                             transform = ArchivesSpaceDataTransformer().run(json.load(json_file))
-                            print(transform)
                             self.assertNotEqual(transform, False)
                             valid = validate(instance=json.loads(transform), schema=schema)
                             self.assertEqual(valid, None)
