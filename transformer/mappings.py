@@ -211,17 +211,9 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
             value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
         return ArchivesSpaceDateToDate.apply(value)
 
-    @odin.map_field(from_field='language', to_field='languages', to_list=True)
-    def languages(self, value):
-        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
-        lang_data = languages.get(part2b=value)
-        return [Language(expression=lang_data.name, identifier=value)]
-
-    @odin.map_list_field(from_field='linked_agents', to_field='creators')
-    def creators(self, value):
-        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')
-        print(self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents'))
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return ArchivesSpaceLinkedAgentToReference.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
