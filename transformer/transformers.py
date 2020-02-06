@@ -6,15 +6,15 @@ from odin.codecs import json_codec
 from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
                        ArchivesSpaceAgentPersonToAgent,
-                       ArchivesSpaceArchivalObjectToObject,
                        ArchivesSpaceArchivalObjectToCollection,
+                       ArchivesSpaceArchivalObjectToObject,
                        ArchivesSpaceResourceToCollection,
                        ArchivesSpaceSubjectToTerm)
+from .mappings_helpers import ArchivesSpaceHelper
 from .resources import (ArchivesSpaceAgentCorporateEntity,
                         ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
                         ArchivesSpaceArchivalObject, ArchivesSpaceResource,
                         ArchivesSpaceSubject)
-from .mappings_helpers import ArchivesSpaceHelper
 
 
 class ArchivesSpaceTransformError(Exception):

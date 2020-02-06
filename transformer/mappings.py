@@ -121,7 +121,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-            if isinstance(value.content, list) else [value.content])
+                           if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -196,7 +196,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
-
 
 
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
