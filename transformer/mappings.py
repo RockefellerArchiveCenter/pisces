@@ -188,7 +188,6 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
 
-
 class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     """Maps ASArchivalObjects to Collection object."""
     from_obj = ArchivesSpaceArchivalObject
@@ -198,16 +197,18 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         self.aspace_helper = ArchivesSpaceHelper()
         return super(ArchivesSpaceArchivalObjectToCollection, self).__init__(*args, **kwargs)
 
+    @odin.map_field
+    def title(self, value):
+        return value if value else self.source.display_string
+
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
 
-    @odin.map_list_field(from_field='linked_agents', to_field='agents')
-    def agents(self, value):
-        return ArchivesSpaceLinkedAgentToReference.apply(value)
-
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
         return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
@@ -216,9 +217,23 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         lang_data = languages.get(part2b=value)
         return [Language(expression=lang_data.name, identifier=value)]
 
+    @odin.map_list_field(from_field='linked_agents', to_field='creators')
+    def creators(self, value):
+        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')
+        print(self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents'))
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_list_field(from_field='ancestors', to_field='ancestors')
+    def ancestors(self, value):
+        return ArchivesSpaceAncestorToReference.apply(value)
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
@@ -261,10 +276,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return ArchivesSpaceLinkedAgentToReference.apply(value)
-
-    @odin.map_list_field(from_field='parent', to_field='parent', to_list=True)
-    def parents(self, value):
-        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
     def ancestors(self, value):
