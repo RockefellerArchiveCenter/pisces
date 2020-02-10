@@ -43,7 +43,7 @@ class TransformerTest(TestCase):
                             valid = validate(instance=transformed, schema=schema)
                             self.assertEqual(valid, None, "Transformed object was not valid: {}".format(valid))
                             self.check_list_counts(source, transformed, object)
-                            self.check_agents(source, transformed)
+                            self.check_agent_counts(source, transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """
@@ -64,7 +64,7 @@ class TransformerTest(TestCase):
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         self.assertTrue(len(source.get(date_source_key, "")) <= len(transformed.get("dates", "")))
 
-    def check_agents(self, source, transformed):
+    def check_agent_counts(self, source, transformed):
         """
         Checks that linked_agents on sources are correctly parsed into creators
         and 'regular' agents.
