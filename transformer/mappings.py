@@ -1,12 +1,56 @@
 import json
 
 import odin
-from odin.codecs import json_codec
 from iso639 import languages
+from odin.codecs import json_codec
 
-from .resources import *
-from .resource_configs import NOTE_TYPE_CHOICES
 from .mappings_helpers import ArchivesSpaceHelper
+from .resource_configs import NOTE_TYPE_CHOICES
+from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
+                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
+                        ArchivesSpaceAncestor, ArchivesSpaceArchivalObject,
+                        ArchivesSpaceDate, ArchivesSpaceExtent,
+                        ArchivesSpaceLinkedAgent, ArchivesSpaceNote,
+                        ArchivesSpaceRef, ArchivesSpaceResource,
+                        ArchivesSpaceRightsStatement,
+                        ArchivesSpaceRightsStatementAct, ArchivesSpaceSubject,
+                        Collection, Date, Extent, ExternalIdentifier, Language,
+                        Note, Object, Reference, RightsGranted,
+                        RightsStatement, Subnote, Term)
+
+
+class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
+    """Maps AS RightsStatements Acts to Rights Granted object."""
+    from_obj = ArchivesSpaceRightsStatementAct
+    to_obj = RightsGranted
+
+    mappings = (
+        ('act_type', None, 'act'),
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
+        ('restriction', None, 'restriction'),
+        ('notes', None, 'notes')
+    )
+
+
+class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
+    """Maps AS RightsStatements Statement to Rights Statement object."""
+    from_obj = ArchivesSpaceRightsStatement
+    to_obj = RightsStatement
+
+    mappings = (
+        ('determination_date', None, 'determination_date'),
+        ('rights_type', None, 'rights_type'),
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
+        ('status', None, 'copyright_status'),
+        ('other_rights_basis', None, 'other_basis'),
+        ('jurisdiction', None, 'jurisdiction'),
+        ('notes', None, 'notes')
+    )
+    @odin.map_list_field(from_field='acts', to_field='rights_granted', to_list=True)
+    def rights_granted(self, value):
+        return [ArchivesSpaceRightsStatementActToRightsGranted.apply(value)]
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -89,7 +133,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='jsonmodel_type', to_field='type')
     def type(self, value):
-        return value.split('note_',1)[1]
+        return value.split('note_', 1)[1]
 
     def map_subnotes(self, value):
         """Maps different AS Subnotes to different values based on the note type."""
@@ -111,7 +155,7 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
-            if isinstance(value.content, list) else [value.content])
+                           if isinstance(value.content, list) else [value.content])
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -121,38 +165,6 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
         elif self.source.jsonmodel_type == 'note_index':
             return [Subnote(type='orderedlist', content=self.source.items.strip("]['").split(', '))]
-
-
-class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
-    """Maps AS RightsStatements Acts to Rights Granted object."""
-    from_obj = ArchivesSpaceRightsStatementAct
-    to_obj = RightsGranted
-
-    mappings = (
-        ('act_type', None, 'act'),
-        ('start_date', None, 'begin'),
-        ('end_date', None, 'end'),
-        ('restriction', None, 'restriction'),
-        ('notes', None, 'notes')
-    )
-
-
-class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
-    """Maps AS RightsStatements Statement to Rights Statement object."""
-    from_obj = ArchivesSpaceRightsStatement
-    to_obj = RightsStatement
-
-    mappings = (
-        ('determination_date', None, 'determination_date'),
-        ('rights_type', None, 'type'),
-        ('start_date', None, 'begin'),
-        ('end_date', None, 'end'),
-        ('status', None, 'copyright_status'),
-        ('other_rights_basis', None, 'other_basis'),
-        ('jurisdiction', None, 'jurisdiction'),
-        ('notes', None, 'notes'),
-        ('acts', None, 'rights_granted'),
-    )
 
 
 class ArchivesSpaceResourceToCollection(odin.Mapping):
@@ -178,6 +190,10 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
+
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def terms(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):
@@ -210,6 +226,10 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         if not value:
             value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
         return ArchivesSpaceDateToDate.apply(value)
+
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def terms(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
@@ -264,6 +284,10 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
+
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def terms(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):

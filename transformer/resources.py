@@ -1,9 +1,12 @@
 import odin
+
 from . import resource_configs
+
 
 """Lays out the ArchivesSpace resources and their fields as well as the RAC Model resources and their fields.
 Used by mappings.py when transforming data from AS resources to RAC resources.
 Defaults and choices chosen from resource_configs.py are included here."""
+
 
 class Subnote(odin.Resource):
     """Sets the fields in the RAC subnote resource."""
@@ -41,7 +44,7 @@ class Reference(odin.Resource):
 
 class Date(odin.Resource):
     """Sets the fields in the RAC date resource."""
-    #TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
+    # TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
     begin = odin.DateTimeField(default="2019")
     end = odin.DateTimeField()
     expression = odin.StringField()
@@ -82,7 +85,7 @@ class RightsGranted(odin.Resource):
 class RightsStatement(odin.Resource):
     """Sets the fields in the RAC rights statement resource."""
     determination_date = odin.DateTimeField()
-    type = odin.StringField()
+    type = odin.StringField(default="rights_statement")
     rights_type = odin.StringField(choices=resource_configs.RIGHTS_TYPE_CHOICES)
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
@@ -107,7 +110,7 @@ class Collection(odin.Resource):
     terms = odin.ArrayOf(Reference)
     children = odin.ArrayOf(Reference, null=True)
     ancestors = odin.ArrayOf(Reference, null=True)
-    rights_statements = odin.ArrayOf(RightsStatement)
+    rights = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
@@ -122,7 +125,7 @@ class Object(odin.Resource):
     agents = odin.ArrayOf(Reference)
     terms = odin.ArrayOf(Reference)
     ancestors = odin.ArrayOf(Reference, null=True)
-    rights_statements = odin.ArrayOf(RightsStatement)
+    rights = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
 
@@ -222,7 +225,7 @@ class ArchivesSpaceNameFamily(ArchivesSpaceNameBase):
 class ArchivesSpaceNamePerson(ArchivesSpaceNameBase):
     primary_name = odin.StringField()
     rest_of_name = odin.StringField(null=True)
-    name_order = odin.StringField(choices=(('direct', 'Direct'),('inverted', 'Inverted')))
+    name_order = odin.StringField(choices=(('direct', 'Direct'), ('inverted', 'Inverted')))
 
 
 class ArchivesSpaceSubnote(odin.Resource):
