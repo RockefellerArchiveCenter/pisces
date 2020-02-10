@@ -6,10 +6,6 @@ from django.test import TestCase
 from jsonschema import validate
 from pisces import settings
 
-from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
-                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
-                        ArchivesSpaceArchivalObject, ArchivesSpaceResource,
-                        ArchivesSpaceSubject, Collection, Object, Term)
 from .transformers import ArchivesSpaceDataTransformer
 
 fetch_vcr = vcr.VCR(
@@ -21,12 +17,8 @@ fetch_vcr = vcr.VCR(
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
-AS_TYPE_MAP = [('agent_corporate_entity', ArchivesSpaceAgentCorporateEntity, Agent),
-               ('agent_family', ArchivesSpaceAgentFamily, Agent),
-               ('agent_person', ArchivesSpaceAgentPerson, Agent),
-               ('archival_objects', ArchivesSpaceArchivalObject, Object),
-               ('resources', ArchivesSpaceResource, Collection),
-               ('subjects', ArchivesSpaceSubject, Term)]
+object_types = ['agent_corporate_entity', 'agent_family', 'agent_person',
+                'archival_objects', 'resources', 'subjects']
 
 
 class TransformerTest(TestCase):
@@ -40,11 +32,44 @@ class TransformerTest(TestCase):
     def test_as_mappings(self):
         with open(os.path.join(settings.BASE_DIR, 'rac-data-model', 'schema.json')) as sf:
             schema = json.load(sf)
-            for resource in AS_TYPE_MAP:
-                with fetch_vcr.use_cassette("{}.json".format(resource[0])):
-                    for f in os.listdir(os.path.join('fixtures', resource[0])):
-                        with open(os.path.join('fixtures', resource[0], f), 'r') as json_file:
-                            transform = ArchivesSpaceDataTransformer().run(json.load(json_file))
-                            self.assertNotEqual(transform, False)
-                            valid = validate(instance=json.loads(transform), schema=schema)
-                            self.assertEqual(valid, None)
+            for object in object_types:
+                with fetch_vcr.use_cassette("{}.json".format(object)):
+                    for f in os.listdir(os.path.join('fixtures', object)):
+                        with open(os.path.join('fixtures', object, f), 'r') as json_file:
+                            source = json.load(json_file)
+                            transform = ArchivesSpaceDataTransformer().run(source)
+                            self.assertNotEqual(transform, False, "Transformer returned an error: {}".format(transform))
+                            transformed = json.loads(transform)
+                            valid = validate(instance=transformed, schema=schema)
+                            self.assertEqual(valid, None, "Transformed object was not valid: {}".format(valid))
+                            self.check_list_counts(source, transformed, object)
+                            self.check_agent_counts(source, transformed)
+
+    def check_list_counts(self, source, transformed, object_type):
+        """
+        Check that lists of items are the same on source and data objects. Since
+        transformer logic inherits dates from parent objects in some circumstances,
+        the test for these is less stringent and allows for dates on transformed
+        objects that do not exist on source objects.
+        """
+        for source_key, transformed_key in [("notes", "notes"),
+                                            ("rights_statements", "rights_statements"),
+                                            ("extents", "extents")]:
+            source_len = len(source.get(source_key, ""))
+            transformed_len = len(transformed.get(transformed_key, ""))
+            self.assertEqual(source_len, transformed_len,
+                             "Found {} {} in source but {} {} in transformed.".format(
+                                 source_len, source_key, transformed_len, transformed_key
+                             ))
+        date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
+        self.assertTrue(len(source.get(date_source_key, "")) <= len(transformed.get("dates", "")))
+
+    def check_agent_counts(self, source, transformed):
+        """
+        Checks that linked_agents on sources are correctly parsed into creators
+        and 'regular' agents.
+        """
+        source_creator_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") == "creator"])
+        source_agent_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") != "creator"])
+        self.assertEqual(source_creator_count, len(transformed.get("creators", "")))
+        self.assertEqual(source_agent_count, len(transformed.get("agents", "")))
