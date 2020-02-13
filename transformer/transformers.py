@@ -93,10 +93,7 @@ class ArchivesSpaceDataTransformer:
         if data.get("jsonmodel_type") == "archival_object":
             if ArchivesSpaceHelper().has_children(data['uri']):
                 return "archival_object_collection"
-            else:
-                return data.get("jsonmodel_type")
-        else:
-            return data.get("jsonmodel_type")
+        return data.get("jsonmodel_type")
 
 
 class WikidataDataTransformer:
