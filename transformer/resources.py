@@ -92,7 +92,7 @@ class RightsStatement(odin.Resource):
     copyright_status = odin.StringField(choices=resource_configs.RIGHTS_COPYRIGHT_STATUSES, null=True)
     other_basis = odin.StringField(null=True)
     jurisdiction = odin.StringField(null=True)
-    notes = odin.ArrayOf(Note)
+    rights_notes = odin.ArrayOf(Note)
     rights_granted = odin.ArrayOf(RightsGranted)
 
 

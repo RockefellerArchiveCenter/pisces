@@ -46,8 +46,9 @@ class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
         ('status', None, 'copyright_status'),
         ('other_rights_basis', None, 'other_basis'),
         ('jurisdiction', None, 'jurisdiction'),
-        ('notes', None, 'notes')
+        ('notes', None, 'rights_notes')
     )
+
     @odin.map_list_field(from_field='acts', to_field='rights_granted', to_list=True)
     def rights_granted(self, value):
         return [ArchivesSpaceRightsStatementActToRightsGranted.apply(value)]
