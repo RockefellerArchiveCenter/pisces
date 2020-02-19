@@ -53,7 +53,7 @@ class TransformerTest(TestCase):
         objects that do not exist on source objects.
         """
         for source_key, transformed_key in [("notes", "notes"),
-                                            ("rights_statements", "rights_statements"),
+                                            ("rights_statements", "rights"),
                                             ("extents", "extents")]:
             source_len = len(source.get(source_key, ""))
             transformed_len = len(transformed.get(transformed_key, ""))
