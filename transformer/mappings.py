@@ -29,7 +29,6 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
         ('start_date', None, 'begin'),
         ('end_date', None, 'end'),
         ('restriction', None, 'restriction'),
-        ('notes', None, 'notes')
     )
 
 
@@ -39,19 +38,19 @@ class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
     to_obj = RightsStatement
 
     mappings = (
-        ('determination_date', None, 'determination_date'),
-        ('rights_type', None, 'rights_type'),
         ('start_date', None, 'begin'),
         ('end_date', None, 'end'),
         ('status', None, 'copyright_status'),
         ('other_rights_basis', None, 'other_basis'),
-        ('jurisdiction', None, 'jurisdiction'),
-        ('notes', None, 'rights_notes')
     )
+
+    @odin.map_list_field(from_field="notes", to_field="rights_notes", to_list=True)
+    def rights_notes(self, value):
+        return ArchivesSpaceNoteToNote.apply(value)
 
     @odin.map_list_field(from_field='acts', to_field='rights_granted', to_list=True)
     def rights_granted(self, value):
-        return [ArchivesSpaceRightsStatementActToRightsGranted.apply(value)]
+        return ArchivesSpaceRightsStatementActToRightsGranted.apply(value)
 
 
 class ArchivesSpaceRefToReference(odin.Mapping):
@@ -162,14 +161,14 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     def subnotes(self, value):
         if self.source.jsonmodel_type in ['note_multipart', 'note_bioghist']:
             return (self.map_subnotes(v) for v in value)
-        elif self.source.jsonmodel_type == 'note_singlepart':
+        elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
             return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
         elif self.source.jsonmodel_type == 'note_index':
             return [Subnote(type='orderedlist', content=self.source.items.strip("]['").split(', '))]
 
 
 class ArchivesSpaceResourceToCollection(odin.Mapping):
-    """Mapse ASResources to Collection object."""
+    """Maps ASResources to Collection object."""
     from_obj = ArchivesSpaceResource
     to_obj = Collection
 
@@ -231,10 +230,6 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
         return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
-
-    @odin.map_list_field(from_field='linked_agents', to_field='agents')
-    def agents(self, value):
-        return ArchivesSpaceLinkedAgentToReference.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
