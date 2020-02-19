@@ -193,7 +193,7 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
         return ArchivesSpaceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
-    def terms(self, value):
+    def rights(self, value):
         return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
@@ -229,7 +229,7 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         return ArchivesSpaceDateToDate.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
-    def terms(self, value):
+    def rights(self, value):
         return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
@@ -287,7 +287,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
         return ArchivesSpaceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
-    def terms(self, value):
+    def rights(self, value):
         return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
