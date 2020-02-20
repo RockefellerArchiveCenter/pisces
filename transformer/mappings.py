@@ -218,6 +218,10 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
             value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
         return ArchivesSpaceDateToDate.apply(value)
 
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def rights(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+
     @odin.map_list_field(from_field='extents', to_field='extents')
     def extents(self, value):
         if not value:
