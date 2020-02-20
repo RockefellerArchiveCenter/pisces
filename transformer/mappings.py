@@ -31,6 +31,9 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
         ('restriction', None, 'restriction'),
     )
 
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def rights_notes(self, value):
+        return ArchivesSpaceNoteToNote.apply(value)
 
 class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
     """Maps AS RightsStatements Statement to Rights Statement object."""

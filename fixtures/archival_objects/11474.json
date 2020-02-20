@@ -33,7 +33,13 @@
   "dates": [],
   "external_documents": [],
   "rights_statements": [],
-  "linked_agents": [],
+  "linked_agents": [
+    {
+      "role": "subject",
+      "terms": [],
+      "ref": "/agents/corporate_entities/102"
+    }
+  ],
   "ancestors": [
     {
       "ref": "/repositories/2/archival_objects/11440",
