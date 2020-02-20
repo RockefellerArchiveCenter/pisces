@@ -231,9 +231,17 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     def rights(self, value):
         return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
 
-    @odin.map_list_field(from_field='linked_agents', to_field='agents')
-    def agents(self, value):
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+    @odin.map_list_field(from_field='extents', to_field='extents')
+    def extents(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceExtent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'extents')]
+        return ArchivesSpaceExtentToExtent.apply(value)
+
+    @odin.map_list_field(from_field='linked_agents', to_field='creators')
+    def creators(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')]
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
