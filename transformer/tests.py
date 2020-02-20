@@ -40,6 +40,7 @@ class TransformerTest(TestCase):
                             transform = ArchivesSpaceDataTransformer().run(source)
                             self.assertNotEqual(transform, False, "Transformer returned an error: {}".format(transform))
                             transformed = json.loads(transform)
+                            print(transformed)
                             valid = validate(instance=transformed, schema=schema)
                             self.assertEqual(valid, None, "Transformed object was not valid: {}".format(valid))
                             self.check_list_counts(source, transformed, object)
@@ -76,5 +77,5 @@ class TransformerTest(TestCase):
         """
         source_creator_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") == "creator"])
         source_agent_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") != "creator"])
-        self.assertEqual(source_creator_count, len(transformed.get("creators", "")))
+        self.assertTrue(source_creator_count <= len(transformed.get("creators", "")))
         self.assertEqual(source_agent_count, len(transformed.get("agents", "")))
