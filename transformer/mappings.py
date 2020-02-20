@@ -35,6 +35,7 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
     def rights_notes(self, value):
         return ArchivesSpaceNoteToNote.apply(value)
 
+
 class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
     """Maps AS RightsStatements Statement to Rights Statement object."""
     from_obj = ArchivesSpaceRightsStatement
