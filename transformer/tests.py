@@ -63,8 +63,11 @@ class TransformerTest(TestCase):
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         for source_key, transformed_key in [(date_source_key, "dates"), ("extents", "extents")]:
             source_len = len(source.get(source_key, ""))
-            transformed_key = len(transformed.get(transformed_key, ""))
-            self.assertTrue(source_len <= transformed_len, "Incorrect number of {} in transformed source. Found {} but expecting <= {}".format(transformed_key, transformed_len, source_len))
+            transformed_len = len(transformed.get(transformed_key, ""))
+            self.assertTrue(source_len <= transformed_len,
+                            "Incorrect number of {} in transformed source. Found {} but expecting <= {}".format(
+                                transformed_key, transformed_len, source_len
+                            ))
 
     def check_agent_counts(self, source, transformed):
         """
