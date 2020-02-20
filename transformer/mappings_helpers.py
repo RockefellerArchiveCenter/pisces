@@ -23,7 +23,6 @@ class ArchivesSpaceHelper:
             ancestor = self.aspace.client.get(a['ref']).json()
             if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
                 creators = [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
-                print(creators)
                 return creators
 
     def has_children(self, uri):

@@ -40,7 +40,6 @@ class TransformerTest(TestCase):
                             transform = ArchivesSpaceDataTransformer().run(source)
                             self.assertNotEqual(transform, False, "Transformer returned an error: {}".format(transform))
                             transformed = json.loads(transform)
-                            print(transformed)
                             valid = validate(instance=transformed, schema=schema)
                             self.assertEqual(valid, None, "Transformed object was not valid: {}".format(valid))
                             self.check_list_counts(source, transformed, object)
