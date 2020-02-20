@@ -248,7 +248,11 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
     def creators(self, value):
         if not value:
             value = [json_codec.loads(json.dumps(d), ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')]
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+        if len([v for v in value if v.role == 'creator']) > 0:
+            return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+        else:
+            creators = [json_codec.loads(json.dumps(d), ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_creators(self.source.uri)]
+            return [ArchivesSpaceLinkedAgentToReference.apply(c) for c in creators]
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
