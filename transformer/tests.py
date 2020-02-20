@@ -53,8 +53,7 @@ class TransformerTest(TestCase):
         objects that do not exist on source objects.
         """
         for source_key, transformed_key in [("notes", "notes"),
-                                            ("rights_statements", "rights"),
-                                            ("extents", "extents")]:
+                                            ("rights_statements", "rights")]:
             source_len = len(source.get(source_key, ""))
             transformed_len = len(transformed.get(transformed_key, ""))
             self.assertEqual(source_len, transformed_len,
@@ -62,7 +61,10 @@ class TransformerTest(TestCase):
                                  source_len, source_key, transformed_len, transformed_key
                              ))
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
-        self.assertTrue(len(source.get(date_source_key, "")) <= len(transformed.get("dates", "")))
+        for source_key, transformed_key in [(date_source_key, "dates"), ("extents", "extents")]:
+            source_len = len(source.get(source_key, ""))
+            transformed_key = len(transformed.get(transformed_key, ""))
+            self.assertTrue(source_len <= transformed_len, "Incorrect number of {} in transformed source. Found {} but expecting <= {}".format(transformed_key, transformed_len, source_len))
 
     def check_agent_counts(self, source, transformed):
         """
