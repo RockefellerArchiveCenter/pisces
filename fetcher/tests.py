@@ -13,7 +13,7 @@ from .views import ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView
 
 fetch_vcr = vcr.VCR(
     serializer='json',
-    cassette_library_dir='fixtures/cassettes',
+    cassette_library_dir='fixtures/cassettes/fetcher',
     record_mode='once',
     match_on=['path', 'method', 'query'],
     filter_query_parameters=['username', 'password', 'modified_since'],
