@@ -6,9 +6,11 @@ from odin.codecs import json_codec
 from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
                        ArchivesSpaceAgentPersonToAgent,
+                       ArchivesSpaceArchivalObjectToCollection,
                        ArchivesSpaceArchivalObjectToObject,
                        ArchivesSpaceResourceToCollection,
                        ArchivesSpaceSubjectToTerm)
+from .mappings_helpers import ArchivesSpaceHelper
 from .resources import (ArchivesSpaceAgentCorporateEntity,
                         ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
                         ArchivesSpaceArchivalObject, ArchivesSpaceResource,
@@ -70,22 +72,28 @@ class ArchivesSpaceDataTransformer:
     endpoint for children. If there are more than 0 children, transform it to a resource."""
 
     def run(self, data):
-        self.object_type = data.get('jsonmodel_type')
+        self.object_type = self.get_object_type(data)
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
-            # TODO: parse out objects and collections. The tree/node endpoint looks promising
             TYPE_MAP = (
                 ("agent_person", ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
                 ("agent_corporate_entity", ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
                 ("agent_family", ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
                 ("resource", ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
                 ("archival_object", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
+                ("archival_object_collection", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
                 ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
             from_obj = json_codec.loads(data, resource=from_resource)
             return json_codec.dumps(mapping.apply(from_obj))
         except Exception as e:
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
+
+    def get_object_type(self, data):
+        if data.get("jsonmodel_type") == "archival_object":
+            if ArchivesSpaceHelper().has_children(data['uri']):
+                return "archival_object_collection"
+        return data.get("jsonmodel_type")
 
 
 class WikidataDataTransformer:
