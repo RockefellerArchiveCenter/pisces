@@ -19,6 +19,44 @@ from .resources import (Agent, ArchivesSpaceAgentCorporateEntity,
                         RightsStatement, Subnote, Term)
 
 
+class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
+    """Maps AS RightsStatements Acts to Rights Granted object."""
+    from_obj = ArchivesSpaceRightsStatementAct
+    to_obj = RightsGranted
+
+    mappings = (
+        ('act_type', None, 'act'),
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
+        ('restriction', None, 'restriction'),
+    )
+
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def rights_notes(self, value):
+        return ArchivesSpaceNoteToNote.apply(value)
+
+
+class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
+    """Maps AS RightsStatements Statement to Rights Statement object."""
+    from_obj = ArchivesSpaceRightsStatement
+    to_obj = RightsStatement
+
+    mappings = (
+        ('start_date', None, 'begin'),
+        ('end_date', None, 'end'),
+        ('status', None, 'copyright_status'),
+        ('other_rights_basis', None, 'other_basis'),
+    )
+
+    @odin.map_list_field(from_field="notes", to_field="rights_notes", to_list=True)
+    def rights_notes(self, value):
+        return ArchivesSpaceNoteToNote.apply(value)
+
+    @odin.map_list_field(from_field='acts', to_field='rights_granted', to_list=True)
+    def rights_granted(self, value):
+        return ArchivesSpaceRightsStatementActToRightsGranted.apply(value)
+
+
 class ArchivesSpaceRefToReference(odin.Mapping):
     """Maps ASRef to Reference object."""
     from_obj = ArchivesSpaceRef
@@ -127,46 +165,14 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     def subnotes(self, value):
         if self.source.jsonmodel_type in ['note_multipart', 'note_bioghist']:
             return (self.map_subnotes(v) for v in value)
-        elif self.source.jsonmodel_type == 'note_singlepart':
+        elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
             return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
         elif self.source.jsonmodel_type == 'note_index':
             return [Subnote(type='orderedlist', content=self.source.items.strip("]['").split(', '))]
 
 
-class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
-    """Maps AS RightsStatements Acts to Rights Granted object."""
-    from_obj = ArchivesSpaceRightsStatementAct
-    to_obj = RightsGranted
-
-    mappings = (
-        ('act_type', None, 'act'),
-        ('start_date', None, 'begin'),
-        ('end_date', None, 'end'),
-        ('restriction', None, 'restriction'),
-        ('notes', None, 'notes')
-    )
-
-
-class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
-    """Maps AS RightsStatements Statement to Rights Statement object."""
-    from_obj = ArchivesSpaceRightsStatement
-    to_obj = RightsStatement
-
-    mappings = (
-        ('determination_date', None, 'determination_date'),
-        ('rights_type', None, 'type'),
-        ('start_date', None, 'begin'),
-        ('end_date', None, 'end'),
-        ('status', None, 'copyright_status'),
-        ('other_rights_basis', None, 'other_basis'),
-        ('jurisdiction', None, 'jurisdiction'),
-        ('notes', None, 'notes'),
-        ('acts', None, 'rights_granted'),
-    )
-
-
 class ArchivesSpaceResourceToCollection(odin.Mapping):
-    """Mapse ASResources to Collection object."""
+    """Maps ASResources to Collection object."""
     from_obj = ArchivesSpaceResource
     to_obj = Collection
 
@@ -189,6 +195,10 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
 
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def rights(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):
         return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
@@ -207,17 +217,9 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         self.aspace_helper = ArchivesSpaceHelper()
         return super(ArchivesSpaceArchivalObjectToCollection, self).__init__(*args, **kwargs)
 
-    @odin.map_list_field(from_field='subjects', to_field='terms')
-    def terms(self, value):
-        return ArchivesSpaceRefToReference.apply(value)
-
-    @odin.map_list_field(from_field='linked_agents', to_field='agents')
-    def agents(self, value):
-        return ArchivesSpaceLinkedAgentToReference.apply(value)
-
-    @odin.map_list_field(from_field='dates', to_field='dates')
-    def dates(self, value):
-        return ArchivesSpaceDateToDate.apply(value)
+    @odin.map_field
+    def title(self, value):
+        return value if value else self.source.display_string
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
@@ -225,9 +227,47 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
         lang_data = languages.get(part2b=value)
         return [Language(expression=lang_data.name, identifier=value)]
 
+    @odin.map_list_field(from_field='subjects', to_field='terms')
+    def terms(self, value):
+        return ArchivesSpaceRefToReference.apply(value)
+
+    @odin.map_list_field(from_field='dates', to_field='dates')
+    def dates(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
+        return ArchivesSpaceDateToDate.apply(value)
+
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def rights(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+
+    @odin.map_list_field(from_field='extents', to_field='extents')
+    def extents(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceExtent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'extents')]
+        return ArchivesSpaceExtentToExtent.apply(value)
+
+    @odin.map_list_field(from_field='linked_agents', to_field='creators')
+    def creators(self, value):
+        if not value:
+            value = [json_codec.loads(json.dumps(d), ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')]
+        if len([v for v in value if v.role == 'creator']) > 0:
+            return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+        else:
+            creators = [json_codec.loads(json.dumps(d), ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_creators(self.source.uri)]
+            return [ArchivesSpaceLinkedAgentToReference.apply(c) for c in creators]
+
+    @odin.map_list_field(from_field='linked_agents', to_field='agents')
+    def agents(self, value):
+        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_list_field(from_field='ancestors', to_field='ancestors')
+    def ancestors(self, value):
+        return ArchivesSpaceAncestorToReference.apply(value)
 
 
 class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
@@ -267,13 +307,13 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
     def terms(self, value):
         return ArchivesSpaceRefToReference.apply(value)
 
+    @odin.map_list_field(from_field='rights_statements', to_field='rights')
+    def rights(self, value):
+        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
         return ArchivesSpaceLinkedAgentToReference.apply(value)
-
-    @odin.map_list_field(from_field='parent', to_field='parent', to_list=True)
-    def parents(self, value):
-        return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
     def ancestors(self, value):

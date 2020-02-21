@@ -85,14 +85,14 @@ class RightsGranted(odin.Resource):
 class RightsStatement(odin.Resource):
     """Sets the fields in the RAC rights statement resource."""
     determination_date = odin.DateTimeField()
-    type = odin.StringField()
+    type = odin.StringField(default="rights_statement")
     rights_type = odin.StringField(choices=resource_configs.RIGHTS_TYPE_CHOICES)
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
     copyright_status = odin.StringField(choices=resource_configs.RIGHTS_COPYRIGHT_STATUSES, null=True)
     other_basis = odin.StringField(null=True)
     jurisdiction = odin.StringField(null=True)
-    notes = odin.ArrayOf(Note)
+    rights_notes = odin.ArrayOf(Note)
     rights_granted = odin.ArrayOf(RightsGranted)
 
 
@@ -108,10 +108,9 @@ class Collection(odin.Resource):
     notes = odin.ArrayOf(Note)
     agents = odin.ArrayOf(Reference)
     terms = odin.ArrayOf(Reference)
-    parent = odin.DictAs(Reference, null=True)
     children = odin.ArrayOf(Reference, null=True)
     ancestors = odin.ArrayOf(Reference, null=True)
-    rights_statements = odin.ArrayOf(RightsStatement)
+    rights = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
@@ -125,9 +124,8 @@ class Object(odin.Resource):
     notes = odin.ArrayOf(Note)
     agents = odin.ArrayOf(Reference)
     terms = odin.ArrayOf(Reference)
-    parent = odin.DictAs(Reference, null=True)
     ancestors = odin.ArrayOf(Reference, null=True)
-    rights_statements = odin.ArrayOf(RightsStatement)
+    rights = odin.ArrayOf(RightsStatement)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
 
