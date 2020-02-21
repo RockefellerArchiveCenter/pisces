@@ -16,14 +16,14 @@ class ArchivesSpaceHelper:
                 return ancestor[key]
 
     def closest_creators(self, uri):
-        """Iterates up through an archival object's ancestors looking for the
-        first value in a particular field. Returns that value."""
+        """Iterates up through an archival object's ancestors looking for linked agents.
+        Iterates over the linked agents list while checking if there is a creator using
+        the length of the role. Returns the first creator it finds."""
         obj = self.aspace.client.get(uri).json()
         for a in obj['ancestors']:
             ancestor = self.aspace.client.get(a['ref']).json()
             if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
-                creators = [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
-                return creators
+                return [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
 
     def has_children(self, uri):
         """Checks whether an archival object has children using the tree/node endpoint.
