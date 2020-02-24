@@ -6,12 +6,15 @@ class ArchivesSpaceHelper:
     def __init__(self):
         self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
 
+    def get_ancestors(self, uri):
+        obj = self.aspace.client.get(uri).json()
+        for a in obj['ancestors']:
+            yield self.aspace.client.get(a['ref']).json()
+
     def closest_parent_value(self, uri, key):
         """Iterates up through an archival object's ancestors looking for the
         first value in a particular field. Returns that value."""
-        obj = self.aspace.client.get(uri).json()
-        for a in obj['ancestors']:
-            ancestor = self.aspace.client.get(a['ref']).json()
+        for ancestor in self.get_ancestors(uri):
             if ancestor.get(key) not in ['', [], {}, None]:
                 return ancestor[key]
 
@@ -19,9 +22,7 @@ class ArchivesSpaceHelper:
         """Iterates up through an archival object's ancestors looking for linked agents.
         Iterates over the linked agents list while checking if there is a creator using
         the length of the role. Returns the first creator it finds."""
-        obj = self.aspace.client.get(uri).json()
-        for a in obj['ancestors']:
-            ancestor = self.aspace.client.get(a['ref']).json()
+        for ancestor in self.get_ancestors(uri):
             if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
                 return [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
 
