@@ -16,7 +16,7 @@ class BaseDataFetcher:
     fetchers. Requires a source attribute to be set on inheriting fetchers.
     """
 
-    def fetch(self, status, object_type, post_service_url):
+    def fetch(self, status, object_type):
         current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
             source=self.source,
@@ -25,7 +25,7 @@ class BaseDataFetcher:
         try:
             fetched = getattr(
                 self, "get_{}".format(status))(
-                object_type, last_run, post_service_url)
+                object_type, last_run)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
             current_run.save()
@@ -47,21 +47,22 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def __init__(self):
         self.source = FetchRun.ARCHIVESSPACE
         self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
+        self.transform_url = settings.ARCHIVESSPACE["transform_url"]
 
-    def get_updated(self, object_type, last_run, post_service_url):
+    def get_updated(self, object_type, last_run):
         data = []
         for u in self.updated_list(object_type, last_run, True):
-            send_post_request(post_service_url, u.json())
+            send_post_request(self.transform_url, u.json())
             data.append(u.uri)
         return data
 
-    def get_deleted(self, object_type, last_run, post_service_url):
+    def get_deleted(self, object_type, last_run):
         data = []
         for d in self.deleted_list(object_type, last_run):
-            send_post_request(post_service_url, d)
+            send_post_request(self.transform_url, d)
             data.append(d)
         for u in self.updated_list(object_type, last_run, False):
-            send_post_request(post_service_url, u.uri)
+            send_post_request(self.transform_url, u.uri)
             data.append(u.uri)
         return data
 
@@ -99,6 +100,7 @@ class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
 
     def __init__(self):
+        self.transform_url = settings.CARTOGRAPHER["transform_url"]
         self.source = FetchRun.CARTOGRAPHER
         self.client = ElectronBond(
             baseurl=settings.CARTOGRAPHER['baseurl'],
@@ -113,21 +115,21 @@ class CartographerDataFetcher(BaseDataFetcher):
             raise FetcherError(
                 "Cartographer is not available.")
 
-    def get_updated(self, object_type, last_run, post_service_url):
+    def get_updated(self, object_type, last_run):
         data = []
         for map in self.updated_list(last_run, True):
             map_data = self.client.get(map.get('ref')).json()
-            send_post_request(post_service_url, map_data)
+            send_post_request(self.transform_url, map_data)
             data.append(map.get('ref'))
         return data
 
-    def get_deleted(self, object_type, last_run, post_service_url):
+    def get_deleted(self, object_type, last_run):
         data = []
         for map in self.updated_list(last_run, False):
-            send_post_request(post_service_url, map.get('ref'))
+            send_post_request(self.transform_url, map.get('ref'))
             data.append(map.get('ref'))
         for uri in self.deleted_list(last_run):
-            send_post_request(post_service_url, uri)
+            send_post_request(self.transform_url, uri)
             data.append(uri)
         return data
 
