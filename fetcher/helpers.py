@@ -2,7 +2,7 @@ import requests
 from asnake.aspace import ASpace
 from pisces import settings
 
-from .models import FetchRun
+from .models import FetchRun, FetchRunError
 
 
 def last_run_time(source, object_type):
@@ -25,13 +25,21 @@ def last_run_time(source, object_type):
         else 0)
 
 
-def send_post_request(url, data):
+def send_post_request(url, data, current_run=None):
     """
     Sends a POST request to a specified URL with a JSON payload.
     """
-    assert(isinstance(data, dict))
-    resp = requests.post(url, json=data)
-    resp.raise_for_status()
+    try:
+        assert(isinstance(data, dict))
+        resp = requests.post(url, json=data)
+        resp.raise_for_status()
+    except Exception as e:
+        print(e)
+        if current_run:
+            FetchRunError.objects.create(
+                run=current_run,
+                message=str(e),
+            )
 
 
 def instantiate_aspace(self, config=None):
