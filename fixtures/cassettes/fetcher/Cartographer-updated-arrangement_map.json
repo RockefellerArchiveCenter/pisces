@@ -1,0 +1,220 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/status/health/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    ],
+                    "Content-Length": [
+                        "85"
+                    ]
+                },
+                "body": {
+                    "string": "{\"ping\": {\"pong\": true}, \"databases\": {\"default\": true}, \"caches\": {\"default\": true}}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/maps/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "223"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":2,\"next\":null,\"previous\":null,\"results\":[{\"id\":4,\"ref\":\"/api/components/4/\",\"title\":\"Test map\",\"publish\":false},{\"id\":3,\"ref\":\"/api/components/3/\",\"title\":\"Social Science Research Council records\",\"publish\":true}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/components/3/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "162"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ]
+                },
+                "body": {
+                    "string": "{\"id\":3,\"title\":\"Social Science Research Council records, Record Group 3\",\"map\":3,\"parent\":1,\"tree_index\":2,\"archivesspace_uri\":\"/repositories/2/resources/13016\"}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://pisces-web:8007/transform/cartographer/",
+                "body": "{\"id\": 3, \"title\": \"Social Science Research Council records, Record Group 3\", \"map\": 3, \"parent\": 1, \"tree_index\": 2, \"archivesspace_uri\": \"/repositories/2/resources/13016\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "173"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "2"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ]
+                },
+                "body": {
+                    "string": "{}"
+                }
+            }
+        }
+    ]
+}
