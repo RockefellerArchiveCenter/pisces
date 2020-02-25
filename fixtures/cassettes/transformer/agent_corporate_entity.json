@@ -1,0 +1,3132 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Dept. of State\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/181\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "358"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:15 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"hohgbqmsp9sqpebc4yf4fbtfk3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"New York (State). Governor (1959-1973 : Rockefeller)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/1843\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "382"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:16 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6u8yp9ujyh3pq9tsp3gvir4z85\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of Inter-American Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/180\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "376"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:17 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"4yxai2vsxvmrzh7yadh56sxna4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Museum of Primitive Art (New York, N.Y.)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/179\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "369"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:18 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"63rtgttfbrykwxkahmxsn3uf22\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Peking. Union Medical College\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/102\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "358"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:18 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"t3ahp98sfw6t88wrno3qdbwpc5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Winrock Farms Agri-Services, Inc.\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4620\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "363"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:19 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"cns7xan5bzxxxzvmnweoaujue4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"New York (State). Governor (1959-1973 : Rockefeller).\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20050\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "384"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:20 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"doj7qqypzjgkamfpdz4sypddo4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"China Medical Board. Beijing (China)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/47\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "364"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:22 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"73ozo2g89nf4e4o3iexcswqn23\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Division of Medicine and Public Health\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/51\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "390"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:24 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"cjkdrfp58gncnqaj8jcb5g2am5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4884\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "352"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:25 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"fs22a9wdbh2ird5uh85izn7zd3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Columbia University\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/105\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "348"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:27 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"ibfhdgtcsthar5kmf3rf4658q5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"International Center for Tropical Agriculture CIAT\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/23138\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "381"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:28 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"bm2r84st26h6mhyu8qs2actvg3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Dept. of State. Bureau of Western Hemisphere Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/187\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "396"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:30 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"8qy7kri77xin8wd6mygemquhp2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Dept. of Health and Human Services\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/190\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "378"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:31 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6tcx6dne3b8bksro7wxsyqxmo5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Institute for Medical Research\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20001\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "373"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:33 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"ihpw6rpbab6996x8by8rxqfw25\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Consultative Group on International Agricultural Research\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/348\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "386"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:34 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"e4nzdscy7udtb98r5ap536kof4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of the Coordinator of Inter-American Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20021\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "397"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:36 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"hezg59rroq5vxc7hqhxqvp5gq2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"State of New York\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/3247\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "347"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:37 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"p6r98mhn7qcr6appyxgpu9cfa4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. President's Advisory Committee on Government Organization\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/189\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "401"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:38 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"uifs83smiizoce9gjszmbvhd63\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of the Coordinator of Inter-American Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/131\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "395"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:39 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"suwyxwv25dfchnr2b46unfqdh4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Dept. of State. Bureau of Western Hemisphere Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20022\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "398"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:39 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"fbz58ujzw7thyui9p2wxc7w744\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Unesco\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/53\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "334"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:40 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"9daa3phbpvz6h6sihe6gavwns4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Dept. of Health and Human Services\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20018\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "380"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:41 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"xfwfayjs9ay3v3whjy9j4ietd5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Mexico\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/45\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "358"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:42 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"vtq3e7d6pv9fjydfgcaudatwf3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of the Vice President\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/193\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "372"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:43 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"mcf3rizkcv8aou9tk4n2wc8zf2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"International Laboratory for Research on Animal Diseases (Ilrad)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [{\"begin\": \"1910\", \"end\": \"2019\", \"expression\": \"1910-2019\", \"type\": \"range\", \"label\": \"existence\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.Date\"}], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/10267\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "555"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:44 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"srgkcx3mxdugqnsajruwmowmp4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. International Health Board\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [{\"type\": \"bioghist\", \"title\": \"biographical statement\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928).\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/48\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "843"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:44 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"8jky7voxo25d6bo5fah7gn6mw2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Republican Party (U.S. : 1854- )\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20003\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "363"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:45 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6ctj58xdr4qrxvjhomwmmnz5h4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"New York (State). Governor (1959-1973 : Rockefeller)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20081\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "383"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:46 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6vnjvyjsc3im4nxvh7kquypm44\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Cali (Colombia)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/44\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "367"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:47 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"7u37zynqusw372jjr5qdk4guv2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of Inter-American Affairs\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20019\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "378"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:48 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"dqpuyiipe6bg6gx58erowgovx4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/28983\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "353"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:49 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"4k5gv9nnu3jespzx5eqv7meq52\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United Nations\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/52\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "342"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:50 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"4vx3uh38kgmhpc3bpvr7ivpmn4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. President's Advisory Committee on Government Organization\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20023\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "403"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:51 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"ncnayujaubj2rev9x2cwc9gns4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Inter-American Development Commission\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/188\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "366"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:51 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"m4kq5fmu5zzmvnh6vsa9xgjz72\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. International Development Advisory Board\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/183\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "384"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:52 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"3ucvi6cge4k385csjkeaxh9g25\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"New York (State). Governor (1959-1973 : Rockefeller).\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4766\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "383"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:53 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6nay88x6tjsrams87b85qdnk55\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. International Health Board\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20012\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "381"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:54 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"vw57rpka874i5eehxh6vfsuud5\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Belem (Brazil)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4496\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "368"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:55 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"wekmxig8g4mfwkheqcf6jnoas3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"American International Association for Economic and Social Development\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4896\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "400"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:56 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"683qi6wr4ikoh5rew9sb5qyzh2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"New York (State). Governor (1959-1973 : Rockefeller)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20024\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "383"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:56 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"z62vpt3kmw9u9tfi8h95jjt8d3\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Natural and Environmental Sciences Division\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/55\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "395"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:57 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"viu8hmu9bn7fb6upvmopdpfpg4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"International Center for Living Aquatic Resources Management\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/27734\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "391"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:58 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"d2jyd62xz7vyrpknt99p4tumj4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. New Delhi (India)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/43\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "369"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:21:59 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"vyshv54wjw4vjpybnj7iosv7y4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Paris (France)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/42\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "366"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:00 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"4rorx4dtv7kuh25k3yqfkz8272\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"International Basic Economy Corporation\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4907\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "369"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:01 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"75sd8pc9fge6yoxmg36a7ukff2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Public Health Service\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/54\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "364"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:02 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"goj3darwrub2zsmeh6vvs33z33\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United Nations\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20025\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "345"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:03 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"s2qk8wyxqg78qkhi3deem2i2r4\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. International Health Division\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/20013\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "384"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:04 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"zobesmwpowv4reqou2ksz6nn94\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation. Ankara (Turkey)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/784\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "368"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:04 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"m3nmwwma28eqoctj7s5trmymj2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"United States. Office of the Vice President.\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/4767\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "374"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:05 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"ny9k7h66wusgcx746mm9ns7mn2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Museum of Modern Art (New York, N.Y.)\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/9\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "364"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:06 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"9rpnaoav9guiap4yxfjsqkiuq2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Republican Party (U.S. : 1854- )\", \"type\": \"agent\", \"agent_type\": \"organization\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/182\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "361"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:07 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"a7icnzgj9jwrnqufxsgp5dpqe3\"],\"count\":1}"
+                }
+            }
+        }
+    ]
+}
