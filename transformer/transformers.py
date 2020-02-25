@@ -1,7 +1,10 @@
 import hashlib
 import json
 
+from fetcher.helpers import send_post_request
 from odin.codecs import json_codec
+from pisces import settings
+from requests.exceptions import ConnectionError
 
 from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
@@ -85,7 +88,11 @@ class ArchivesSpaceDataTransformer:
                 ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
             from_obj = json_codec.loads(data, resource=from_resource)
-            return json_codec.dumps(mapping.apply(from_obj))
+            transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
+            send_post_request(settings.DELIVERY_URL, transformed)
+            return json.dumps(transformed)
+        except ConnectionError:
+            raise ArchivesSpaceTransformError("Could not connect to {}".format(settings.DELIVERY_URL))
         except Exception as e:
             raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
 
