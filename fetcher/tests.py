@@ -21,8 +21,6 @@ fetch_vcr = vcr.VCR(
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
-post_service_url = "http://pisces-web:8007/transform/archivesspace/"
-
 
 class FetcherTest(TestCase):
     def setUp(self):
@@ -41,7 +39,7 @@ class FetcherTest(TestCase):
         for status in ["updated", "deleted"]:
             for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
-                    list = ArchivesSpaceDataFetcher().fetch(status, object_type[0], post_service_url)
+                    list = ArchivesSpaceDataFetcher().fetch(status, object_type[0])
                     for obj in list:
                         self.assertTrue(isinstance(obj, str))
         self.assertTrue(len(FetchRun.objects.all()), len(FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES) * 2)
@@ -52,7 +50,7 @@ class FetcherTest(TestCase):
                 (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates")]:
             for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
-                    request = self.factory.post("{}?object_type={}&post_service_url={}".format(reverse(url_name), object_type[0], post_service_url))
+                    request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type[0]))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
 

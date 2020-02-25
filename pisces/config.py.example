@@ -13,12 +13,14 @@ ARCHIVESSPACE = {
     "username": "admin",
     "password": "admin",
     "repo": 2,
+    "transform_url": "http://pisces-web:8007/transform/archivesspace/"
 }
 
 CARTOGRAPHER = {
     "baseurl": "http://localhost:8007",
     "user": "admin",
     "password": "admin",
+    "transform_url": "http://pisces-web:8007/transform/cartographer/"
 }
 
 ALLOWED_HOSTS = ['localhost', 'pisces-web']
