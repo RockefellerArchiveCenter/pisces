@@ -38,7 +38,7 @@ class BaseDataFetcher:
                 run=current_run,
                 message=str(e),
             )
-            raise FetcherError("Error fetching data: {}".format(e))
+            print(e)
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
