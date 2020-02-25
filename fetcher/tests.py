@@ -6,10 +6,11 @@ from django.urls import reverse
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from .fetchers import ArchivesSpaceDataFetcher
+from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
 from .models import FetchRun
-from .views import ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView
+from .views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
+                    CartographerDeletesView, CartographerUpdatesView)
 
 fetch_vcr = vcr.VCR(
     serializer='json',
@@ -52,6 +53,25 @@ class FetcherTest(TestCase):
             for object_type in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 with fetch_vcr.use_cassette("ArchivesSpace-{}-{}.json".format(status, object_type[0])):
                     request = self.factory.post("{}?object_type={}&post_service_url={}".format(reverse(url_name), object_type[0], post_service_url))
+                    response = view().as_view()(request)
+                    self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
+
+    def test_cartographer_fetcher(self):
+        for status in ["updated", "deleted"]:
+            for object_type in FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES:
+                with fetch_vcr.use_cassette("Cartographer-{}-{}.json".format(status, object_type[0])):
+                    list = CartographerDataFetcher().fetch(status, object_type[0])
+                    for obj in list:
+                        self.assertTrue(isinstance(obj, str))
+        self.assertTrue(len(FetchRun.objects.all()), len(FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES) * 2)
+
+    def test_cartographer_views(self):
+        for view, status, url_name in [
+                (CartographerDeletesView, "deleted", "fetch-archivesspace-deletes"),
+                (CartographerUpdatesView, "updated", "fetch-archivesspace-updates")]:
+            for object_type in FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES:
+                with fetch_vcr.use_cassette("Cartographer-{}-{}.json".format(status, object_type[0])):
+                    request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type[0]))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
 
