@@ -1,0 +1,182 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller family\", \"type\": \"agent\", \"agent_type\": \"family\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/families/6\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "329"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:08 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"755om89pvvkj9jp4t4r33cxgu2\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller family\", \"type\": \"agent\", \"agent_type\": \"family\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/families/1\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "329"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:09 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"6d27odhgbbo2x5uc3txzrg8w64\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Rockefeller Foundation\", \"type\": \"agent\", \"agent_type\": \"family\", \"description\": null, \"dates\": [], \"collections\": [], \"objects\": [], \"notes\": [], \"external_identifiers\": [{\"identifier\": \"/agents/families/11\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Agent\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "334"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Tue, 25 Feb 2020 17:22:09 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"z7w95whkes56zp5n68t3xsegx4\"],\"count\":1}"
+                }
+            }
+        }
+    ]
+}

@@ -23,4 +23,6 @@ CARTOGRAPHER = {
     "transform_url": "http://pisces-web:8007/transform/cartographer/"
 }
 
+DELIVERY_URL = "http://scorpio-web:8008/merge/"
+
 ALLOWED_HOSTS = ['localhost', 'pisces-web']
