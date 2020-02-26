@@ -63,7 +63,7 @@ class FetcherTest(TestCase):
         for view, status, url_name, object_type_choices, fetcher_vcr, cassette_prefix in [
                 (ArchivesSpaceDeletesView, "deleted", "fetch-archivesspace-deletes", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
                 (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
-                (CartographerDeletesView, "updated", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
+                (CartographerDeletesView, "deleted", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
                 (CartographerUpdatesView, "updated", "fetch-cartographer-updates", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer")]:
             for object_type in object_type_choices:
                 with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type[0])):

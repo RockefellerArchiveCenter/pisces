@@ -27,23 +27,23 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Content-Length": [
+                        "85"
                     ],
                     "Vary": [
                         "Origin"
                     ],
                     "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                        "Tue, 25 Feb 2020 22:46:20 GMT"
                     ],
-                    "Content-Length": [
-                        "85"
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
                     ]
                 },
                 "body": {
@@ -77,26 +77,26 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "52"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
-                    ],
                     "Content-Type": [
                         "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "52"
                     ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 22:46:20 GMT"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
                     "Allow": [
                         "GET, POST, HEAD, OPTIONS"
-                    ],
-                    "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
                     ]
                 },
                 "body": {
@@ -107,7 +107,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://cartographer-backend:8000/api/delete-feed/?deleted_since=1582659314",
+                "uri": "http://cartographer-backend:8000/api/delete-feed/?deleted_since=1582670779",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -130,26 +130,26 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "52"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
-                    ],
                     "Content-Type": [
                         "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "52"
                     ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 22:46:20 GMT"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
                     "Allow": [
                         "GET, HEAD, OPTIONS"
-                    ],
-                    "Date": [
-                        "Tue, 25 Feb 2020 19:35:15 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
                     ]
                 },
                 "body": {

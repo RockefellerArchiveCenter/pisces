@@ -27,20 +27,20 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
                     "Server": [
                         "WSGIServer/0.2 CPython/3.6.5"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
                     "Vary": [
                         "Origin"
                     ],
                     "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                        "Tue, 25 Feb 2020 22:53:30 GMT"
                     ],
                     "Content-Length": [
                         "85"
@@ -77,11 +77,8 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "223"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -89,14 +86,17 @@
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Allow": [
-                        "GET, POST, HEAD, OPTIONS"
-                    ],
-                    "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 22:53:30 GMT"
+                    ],
+                    "Content-Length": [
+                        "223"
                     ]
                 },
                 "body": {
@@ -130,11 +130,8 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "162"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -142,14 +139,17 @@
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
-                    ],
-                    "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 22:53:30 GMT"
+                    ],
+                    "Content-Length": [
+                        "162"
                     ]
                 },
                 "body": {
@@ -189,11 +189,8 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "2"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -201,18 +198,21 @@
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Allow": [
-                        "POST, OPTIONS"
-                    ],
-                    "Date": [
-                        "Tue, 25 Feb 2020 19:35:14 GMT"
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
+                    ],
+                    "Date": [
+                        "Tue, 25 Feb 2020 22:53:30 GMT"
+                    ],
+                    "Content-Length": [
+                        "19"
                     ]
                 },
                 "body": {
-                    "string": "{}"
+                    "string": "[\"detail: success\"]"
                 }
             }
         }

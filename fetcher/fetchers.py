@@ -25,8 +25,8 @@ class BaseDataFetcher:
         last_run = last_run_time(self.source, object_status, object_type)
         try:
             fetched = getattr(
-                self, "get_{}".format(object_status))(
-                object_type, last_run)
+                self, "get_{}".format(status))(
+                object_type, last_run, current_run)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
             current_run.save()
@@ -39,7 +39,7 @@ class BaseDataFetcher:
                 run=current_run,
                 message=str(e),
             )
-            print(e)
+            raise FetcherError("Error fetching data: {}".format(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
@@ -50,20 +50,20 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
         self.transform_url = settings.ARCHIVESSPACE["transform_url"]
 
-    def get_updated(self, object_type, last_run):
+    def get_updated(self, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(object_type, last_run, True):
-            send_post_request(self.transform_url, u.json())
+            send_post_request(self.transform_url, u.json(), current_run)
             data.append(u.uri)
         return data
 
-    def get_deleted(self, object_type, last_run):
+    def get_deleted(self, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(object_type, last_run):
-            send_post_request(self.transform_url, d)
+            send_post_request(self.transform_url, d, current_run)
             data.append(d)
         for u in self.updated_list(object_type, last_run, False):
-            send_post_request(self.transform_url, u.uri)
+            send_post_request(self.transform_url, u.uri, current_run)
             data.append(u.uri)
         return data
 
@@ -116,21 +116,21 @@ class CartographerDataFetcher(BaseDataFetcher):
             raise FetcherError(
                 "Cartographer is not available.")
 
-    def get_updated(self, object_type, last_run):
+    def get_updated(self, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(last_run, True):
             map_data = self.client.get(map.get('ref')).json()
-            send_post_request(self.transform_url, map_data)
+            send_post_request(self.transform_url, map_data, current_run)
             data.append(map.get('ref'))
         return data
 
-    def get_deleted(self, object_type, last_run):
+    def get_deleted(self, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(last_run, False):
-            send_post_request(self.transform_url, map.get('ref'))
+            send_post_request(self.transform_url, map.get('ref'), current_run)
             data.append(map.get('ref'))
         for uri in self.deleted_list(last_run):
-            send_post_request(self.transform_url, uri)
+            send_post_request(self.transform_url, uri, current_run)
             data.append(uri)
         return data
 
