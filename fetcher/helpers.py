@@ -5,7 +5,7 @@ from pisces import settings
 from .models import FetchRun, FetchRunError
 
 
-def last_run_time(source, object_type):
+def last_run_time(source, object_status, object_type):
     """
     Returns the last time a successful fetch against a given data source
     for a particular object type was started. Allows incremental checking of
@@ -15,12 +15,14 @@ def last_run_time(source, object_type):
         FetchRun.objects.filter(
             status=FetchRun.FINISHED,
             source=source,
-            object_type=object_type
+            object_type=object_type,
+            object_status=object_status
         ).order_by("-start_time")[0].start_time.timestamp())
         if FetchRun.objects.filter(
             status=FetchRun.FINISHED,
             source=source,
-            object_type=object_type
+            object_type=object_type,
+            object_status=object_status
     ).exists()
         else 0)
 

@@ -16,15 +16,16 @@ class BaseDataFetcher:
     fetchers. Requires a source attribute to be set on inheriting fetchers.
     """
 
-    def fetch(self, status, object_type):
+    def fetch(self, object_status, object_type):
         current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
             source=self.source,
-            object_type=object_type)
-        last_run = last_run_time(self.source, object_type)
+            object_type=object_type,
+            object_status=object_status)
+        last_run = last_run_time(self.source, object_status, object_type)
         try:
             fetched = getattr(
-                self, "get_{}".format(status))(
+                self, "get_{}".format(object_status))(
                 object_type, last_run, current_run)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
