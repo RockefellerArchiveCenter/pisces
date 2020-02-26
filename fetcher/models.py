@@ -33,11 +33,13 @@ class FetchRun(models.Model):
         ('arrangement_map', 'Arrangement Map'),
     )
     OBJECT_TYPE_CHOICES = ARCHIVESSPACE_OBJECT_TYPE_CHOICES + CARTOGRAPHER_OBJECT_TYPE_CHOICES
+    OBJECT_STATUS_CHOICES = (("updated", "Updated"), ("deleted", "Deleted"))
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
     source = models.CharField(max_length=100, choices=SOURCE_CHOICES)
-    object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES, null=True, blank=True)
+    object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES)
+    object_status = models.CharField(max_length=100, choices=OBJECT_STATUS_CHOICES)
 
 
 class FetchRunError(models.Model):
