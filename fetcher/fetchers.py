@@ -25,7 +25,7 @@ class BaseDataFetcher:
         last_run = last_run_time(self.source, object_status, object_type)
         try:
             fetched = getattr(
-                self, "get_{}".format(status))(
+                self, "get_{}".format(object_status))(
                 object_type, last_run, current_run)
             current_run.status = FetchRun.FINISHED
             current_run.end_time = timezone.now()
