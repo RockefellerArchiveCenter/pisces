@@ -87,7 +87,8 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 all_ids=True, modified_since=last_run)
         for obj in list:
             if obj.publish == publish:
-                yield obj
+                if not(obj.jsonmodel_type == "resource" and obj.id_0.startswith("LI")):
+                    yield obj
 
     def deleted_list(self, object_type, last_run):
         for d in self.aspace.client.get_paged(
