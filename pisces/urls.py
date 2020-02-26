@@ -20,7 +20,8 @@ from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                            FetchRunViewSet)
 from rest_framework import routers
 from rest_framework.schemas import get_schema_view
-from transformer.views import ArchivesSpaceTransformView
+from transformer.views import (ArchivesSpaceTransformView,
+                               CartographerTransformView)
 
 router = routers.DefaultRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
@@ -38,6 +39,7 @@ urlpatterns = [
     re_path(r'^fetch/cartographer/updates/$', CartographerUpdatesView.as_view(), name='fetch-cartographer-updates'),
     re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
     re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
+    re_path(r'^transform/cartographer/$', CartographerTransformView.as_view(), name='transform-cartographer'),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),
     path('', include(router.urls)),
