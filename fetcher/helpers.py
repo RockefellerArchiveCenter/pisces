@@ -36,12 +36,13 @@ def send_post_request(url, data, current_run=None):
         resp = requests.post(url, json=data)
         resp.raise_for_status()
     except Exception as e:
-        print(e)
         if current_run:
             FetchRunError.objects.create(
                 run=current_run,
                 message=str(e),
             )
+        else:
+            raise Exception(e)
 
 
 def instantiate_aspace(self, config=None):
