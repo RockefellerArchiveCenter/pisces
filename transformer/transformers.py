@@ -1,6 +1,7 @@
 import hashlib
 import json
 
+from asterism.resources import archivesspace
 from fetcher.helpers import send_post_request
 from odin.codecs import json_codec
 from pisces import settings
@@ -14,10 +15,6 @@ from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceResourceToCollection,
                        ArchivesSpaceSubjectToTerm)
 from .mappings_helpers import ArchivesSpaceHelper
-from .resources import (ArchivesSpaceAgentCorporateEntity,
-                        ArchivesSpaceAgentFamily, ArchivesSpaceAgentPerson,
-                        ArchivesSpaceArchivalObject, ArchivesSpaceResource,
-                        ArchivesSpaceSubject)
 
 
 class ArchivesSpaceTransformError(Exception):
@@ -79,13 +76,13 @@ class ArchivesSpaceDataTransformer:
         data = json.dumps(data) if isinstance(data, dict) else data
         try:
             TYPE_MAP = (
-                ("agent_person", ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
-                ("agent_corporate_entity", ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
-                ("agent_family", ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
-                ("resource", ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
-                ("archival_object", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
-                ("archival_object_collection", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
-                ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
+                ("agent_person", archivesspace.ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
+                ("agent_corporate_entity", archivesspace.ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
+                ("agent_family", archivesspace.ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
+                ("resource", archivesspace.ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
+                ("archival_object", archivesspace.ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
+                ("archival_object_collection", archivesspace.ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
+                ("subject", archivesspace.ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
             from_obj = json_codec.loads(data, resource=from_resource)
             transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
