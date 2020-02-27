@@ -48,7 +48,7 @@ pisces has two main services, both of which are exposed via HTTP endpoints (see 
 
 | Method | URL | Parameters | Response  | Behavior  |
 |--------|-----|---|---|---|
-|GET, PUT, POST, DELETE|/api/transforms||200|Returns data about TransformRun routines|
+|GET, PUT, POST, DELETE|/fetches/||200|Returns data about FetchRun routines|
 |POST|/fetch/archivesspace/updates|`object_type` (required) - target object type, one of `resources`, `objects`, `subjects`, `agents`|200|Fetches updated data from ArchivesSpace|
 |POST|/fetch/archivesspace/deletes|`object_type` (required) - target object type, one of `resources`, `objects`, `subjects`, `agents`|200|Fetches deleted data from ArchivesSpace|
 |POST|/fetch/cartographer/updates|`object_type` (required) - target object type, one of `arrangement_map`|200|Fetches updated data from Cartographer|
