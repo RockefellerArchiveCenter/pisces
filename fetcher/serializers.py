@@ -16,7 +16,7 @@ class FetchRunSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = FetchRun
-        fields = ('url', 'status', 'source', 'object_type', 'errors', 'start_time', 'end_time')
+        fields = ('url', 'status', 'source', 'object_type', 'error_count', 'errors', 'start_time', 'end_time')
 
     def get_source(self, obj):
         return obj.SOURCE_CHOICES[int(obj.source)][1]
@@ -31,7 +31,7 @@ class FetchRunListSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = FetchRun
-        fields = ('url', 'status', 'source', 'object_type')
+        fields = ('url', 'status', 'source', 'object_type', 'error_count')
 
     def get_source(self, obj):
         return obj.SOURCE_CHOICES[int(obj.source)][1]
