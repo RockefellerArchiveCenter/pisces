@@ -1,6 +1,4 @@
-from asterism.views import prepare_response
-from rest_framework.response import Response
-from rest_framework.views import APIView
+from asterism.views import BaseServiceView
 from rest_framework.viewsets import ModelViewSet
 
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
@@ -25,30 +23,20 @@ class FetchRunViewSet(ModelViewSet):
         return FetchRunSerializer
 
 
-class BaseFetchView(APIView):
+class BaseFetchView(BaseServiceView):
     """
     Base view for data fetchers which handles POST requests only. Delegates to
     a data fetcher which targets a specific data source.
     """
 
-    def post(self, request, format=None):
-        try:
-            object_type = request.GET.get('object_type')
-            if object_type not in self.object_type_choices:
-                return Response(
-                    prepare_response(
-                        "object_type must be one of {}, got {} instead".format(
-                            self.object_type_choices,
-                            object_type)
-                    ), status=500
-                )
-            resp = self.fetcher_class().fetch(self.status, object_type)
-            return Response(
-                prepare_response(
-                    ("{} {} data fetched".format(self.status, object_type), resp)
-                ), status=200)
-        except Exception as e:
-            return Response(prepare_response(str(e)), status=500)
+    def get_service_response(self, request):
+        object_type = request.GET.get('object_type')
+        if object_type not in self.object_type_choices:
+            raise Exception(
+                "object_type must be one of {}, got {} instead".format(
+                    self.object_type_choices, object_type))
+        resp = self.fetcher_class().fetch(self.status, object_type)
+        return "{} {} data fetched".format(self.status, object_type), resp
 
 
 class ArchivesSpaceFetchView(BaseFetchView):
