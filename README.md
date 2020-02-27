@@ -48,16 +48,13 @@ pisces has two main services, both of which are exposed via HTTP endpoints (see 
 
 | Method | URL | Parameters | Response  | Behavior  |
 |--------|-----|---|---|---|
-|GET, PUT, POST, DELETE|/api/agents||200|Returns data about Agents|
-|GET, PUT, POST, DELETE|/api/collections||200|Returns data about Collections|
-|GET, PUT, POST, DELETE|/api/objects||200|Returns data about Objects|
-|GET, PUT, POST, DELETE|/api/terms||200|Returns data about Terms|
-|GET, PUT, POST, DELETE|/api/identifiers||200|Returns data about Identifiers|
 |GET, PUT, POST, DELETE|/api/transforms||200|Returns data about TransformRun routines|
-|GET|/api/find-by-id|`source` - target data source, one of `archivesspace`, `cartographer`, `wikidata` or `wikipedia` <br/>`identifier` - target identifier|200|Returns data about Agents|
-|POST|/api/fetch|`source` - target data source, one of `archivesspace`, `cartographer`, `wikidata` or `wikipedia` <br/>`target` - specifies whether to fetch only objects which have been updated or deleted, one of `updated` or `deleted`<br/>`object_type` - target object type, one of `resources`, `objects`, `subjects`, `agents` (only relevant for ArchivesSpace data)|200|Imports sample data, will be replaced by fetchers|
-|POST|/api/import||200|Imports sample data, will be replaced by fetchers|
-|POST|/api/transform|`source` - target data source, one of `archivesspace`, `cartographer`, `wikidata` or `wikipedia` <br/> `object_type` - target object type, one of `collections`, `objects`, `agents`, `terms` (only relevant for ArchivesSpace data)|200|Transforms data|
+|POST|/fetch/archivesspace/updates|`object_type` (required) - target object type, one of `resources`, `objects`, `subjects`, `agents`|200|Fetches updated data from ArchivesSpace|
+|POST|/fetch/archivesspace/deletes|`object_type` (required) - target object type, one of `resources`, `objects`, `subjects`, `agents`|200|Fetches deleted data from ArchivesSpace|
+|POST|/fetch/cartographer/updates|`object_type` (required) - target object type, one of `arrangement_map`|200|Fetches updated data from Cartographer|
+|POST|/fetch/cartographer/deletes|`object_type` (required) - target object type, one of `arrangement_map`|200|Fetches deleted data from Cartographer|
+|POST|/transform/archivesspace||200|Transforms data from ArchivesSpace|
+|POST|/transform/cartographer||200|Transforms data from Cartographer|
 |GET|/status||200|Return the status of the service|
 |GET|/schema.json||200|Returns the OpenAPI schema for this service|
 
