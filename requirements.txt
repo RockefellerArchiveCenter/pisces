@@ -1,4 +1,4 @@
-ArchivesSnake==0.8.2
+ArchivesSnake==0.8.5
 attrs==19.3.0
 Babel==2.7.0
 boltons==19.1.0
