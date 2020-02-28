@@ -1,5 +1,6 @@
 import requests
 from asnake.aspace import ASpace
+from electronbonder.client import ElectronBond
 from pisces import settings
 
 from .models import FetchRun, FetchRunError
@@ -59,10 +60,13 @@ def send_post_request(url, data, current_run=None):
 
 
 def instantiate_aspace(self, config=None):
-    """
-    Instantiates and returns an ASpace object with a repository as an attribute.
-    An optional config object can be passed to this function,
-    otherwise the default configs are targeted.
+    """Instantiates and returns an ASpace object with a repository as an attribute.
+
+    Args:
+        config (dict): optional config dict
+
+    An optional config object can be passed to this function, otherwise the
+    default configs are targeted.
     """
     config = config if config else settings.ARCHIVESSPACE
     aspace = ASpace(baseurl=config['baseurl'],
@@ -73,3 +77,25 @@ def instantiate_aspace(self, config=None):
     if isinstance(repo, dict) and 'error' in repo:
         raise Exception(self.repo['error'])
     return aspace
+
+
+def instantiate_electronbond(self, config=None):
+    """Instantiates and returns an ElectronBond client.
+
+    Args:
+        config (dict): an optional config dict
+    """
+    config = config if config else settings.CARTOGRAPHER
+    client = ElectronBond(
+        baseurl=config['baseurl'],
+        user=config['user'],
+        password=config['password'])
+    try:
+        resp = client.get(config['health_check_path'])
+        if not resp.status_code:
+            raise Exception(
+                "Cartographer status endpoint is not available. Service may be down.")
+        return client
+    except Exception as e:
+        raise Exception(
+            "Cartographer is not available: {}".format(e))

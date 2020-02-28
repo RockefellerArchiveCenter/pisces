@@ -1,8 +1,8 @@
 from django.utils import timezone
-from electronbonder.client import ElectronBond
 from pisces import settings
 
-from .helpers import instantiate_aspace, last_run_time, send_post_request
+from .helpers import (instantiate_aspace, instantiate_electronbond,
+                      last_run_time, send_post_request)
 from .models import FetchRun, FetchRunError
 
 
@@ -109,19 +109,7 @@ class CartographerDataFetcher(BaseDataFetcher):
     source = FetchRun.CARTOGRAPHER
 
     def instantiate_client(self):
-        client = ElectronBond(
-            baseurl=settings.CARTOGRAPHER['baseurl'],
-            user=settings.CARTOGRAPHER['user'],
-            password=settings.CARTOGRAPHER['password'])
-        try:
-            resp = client.get('/status/health/')
-            if not resp.status_code:
-                raise FetcherError(
-                    "Cartographer status endpoint is not available. Service may be down.")
-            return client
-        except Exception:
-            raise FetcherError(
-                "Cartographer is not available.")
+        return instantiate_electronbond(settings.CARTOGRAPHER)
 
     def get_updated(self, client, object_type, last_run, current_run):
         data = []
