@@ -28,14 +28,26 @@ def last_run_time(source, object_status, object_type):
 
 
 def send_post_request(url, data, current_run=None):
-    """
-    Sends a POST request to a specified URL with a JSON payload.
+    """Sends a POST request to a specified URL with a JSON payload.
+
+    Args:
+        url (str): the URL to which to send the POST request.
+        data (dict): a data payload
+        current_run (FetchRun): the current FetchRun instance.
     """
     try:
         assert(isinstance(data, dict))
         resp = requests.post(url, json=data)
         resp.raise_for_status()
-    except Exception as e:
+    except requests.exceptions.HTTPError:
+        if current_run:
+            FetchRunError.objects.create(
+                run=current_run,
+                message=resp.json()["detail"],
+            )
+        else:
+            raise Exception(resp.json()["detail"])
+    except AssertionError as e:
         if current_run:
             FetchRunError.objects.create(
                 run=current_run,
