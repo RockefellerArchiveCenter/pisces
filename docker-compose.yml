@@ -5,15 +5,11 @@ services:
     image: postgres:10.4
     volumes:
       - piscesdbvolume:/var/lib/postgresql/data/
-    networks:
-      - microservices
   pisces-web:
     build: .
     entrypoint: /code/entrypoint.sh
     volumes:
       - .:/code
-    networks:
-      - microservices
     ports:
       - "8007:8007"
     depends_on:
@@ -21,6 +17,3 @@ services:
 
 volumes:
   piscesdbvolume:
-
-networks:
-  microservices:
