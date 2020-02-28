@@ -41,6 +41,10 @@ class FetchRun(models.Model):
     object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES)
     object_status = models.CharField(max_length=100, choices=OBJECT_STATUS_CHOICES)
 
+    @property
+    def error_count(self):
+        return len(FetchRunError.objects.filter(run=self))
+
 
 class FetchRunError(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
