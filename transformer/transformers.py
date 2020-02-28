@@ -76,7 +76,7 @@ class ArchivesSpaceDataTransformer:
 
     def run(self, data):
         self.object_type = self.get_object_type(data)
-        data = json.dumps(data) if isinstance(data, dict) else data
+        uri = data.get("uri")
         try:
             TYPE_MAP = (
                 ("agent_person", ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
@@ -87,14 +87,14 @@ class ArchivesSpaceDataTransformer:
                 ("archival_object_collection", ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
                 ("subject", ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm))
             from_type, from_resource, mapping = [t for t in TYPE_MAP if t[0] == self.object_type][0]
-            from_obj = json_codec.loads(data, resource=from_resource)
+            from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
             transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
             send_post_request(settings.DELIVERY_URL, transformed)
             return json.dumps(transformed)
         except ConnectionError:
             raise ArchivesSpaceTransformError("Could not connect to {}".format(settings.DELIVERY_URL))
         except Exception as e:
-            raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)))
+            raise ArchivesSpaceTransformError("Error transforming {}: {}".format(self.object_type, str(e)), uri)
 
     def get_object_type(self, data):
         if data.get("jsonmodel_type") == "archival_object":

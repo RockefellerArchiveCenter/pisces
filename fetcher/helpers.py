@@ -39,6 +39,7 @@ def send_post_request(url, data, current_run=None):
         assert(isinstance(data, dict))
         resp = requests.post(url, json=data)
         resp.raise_for_status()
+        return True
     except requests.exceptions.HTTPError:
         if current_run:
             FetchRunError.objects.create(

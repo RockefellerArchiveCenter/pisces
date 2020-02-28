@@ -53,18 +53,21 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_updated(self, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(object_type, last_run, True):
-            send_post_request(self.transform_url, u.json(), current_run)
-            data.append(u.uri)
+            delivered = send_post_request(self.transform_url, u.json(), current_run)
+            if delivered:
+                data.append(u.uri)
         return data
 
     def get_deleted(self, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(object_type, last_run):
-            send_post_request(self.transform_url, d, current_run)
-            data.append(d)
+            delivered = send_post_request(self.transform_url, d, current_run)
+            if delivered:
+                data.append(d)
         for u in self.updated_list(object_type, last_run, False):
-            send_post_request(self.transform_url, u.uri, current_run)
-            data.append(u.uri)
+            delivered = send_post_request(self.transform_url, u.uri, current_run)
+            if delivered:
+                data.append(u.uri)
         return data
 
     def updated_list(self, object_type, last_run, publish):
@@ -121,18 +124,21 @@ class CartographerDataFetcher(BaseDataFetcher):
         data = []
         for map in self.updated_list(last_run, True):
             map_data = self.client.get(map.get('ref')).json()
-            send_post_request(self.transform_url, map_data, current_run)
-            data.append(map.get('ref'))
+            delivered = send_post_request(self.transform_url, map_data, current_run)
+            if delivered:
+                data.append(map.get('ref'))
         return data
 
     def get_deleted(self, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(last_run, False):
-            send_post_request(self.transform_url, map.get('ref'), current_run)
-            data.append(map.get('ref'))
+            delivered = send_post_request(self.transform_url, map.get('ref'), current_run)
+            if delivered:
+                data.append(map.get('ref'))
         for uri in self.deleted_list(last_run):
-            send_post_request(self.transform_url, uri, current_run)
-            data.append(uri)
+            delivered = send_post_request(self.transform_url, uri, current_run)
+            if delivered:
+                data.append(uri)
         return data
 
     def updated_list(self, last_run, publish):
