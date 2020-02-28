@@ -142,7 +142,9 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     def map_subnotes(self, value):
         """Maps different AS Subnotes to different values based on the note type."""
         if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
-            return Subnote(type=value.jsonmodel_type.split('note_')[1], content=value.items)
+            # items is an odin.StringField so we need to re-convert to a dict here
+            items = json.loads(value.items.replace("'", '"'))
+            return Subnote(type=value.jsonmodel_type.split('note_')[1], content=items)
         elif value == 'note_bibliography':
             data = []
             data.append(Subnote(type='text', content=value.content))
@@ -150,12 +152,16 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
             return data
         elif value.jsonmodel_type == 'note_index':
             data = []
-            content = [{'label': i.get('type'), 'value': i.get('value')} for i in value.items]
+            # items is an odin.StringField so we need to re-convert to a dict here
+            items = json.loads(value.items.replace("'", '"'))
+            content = [{'label': i.get('type'), 'value': i.get('value')} for i in items]
             data.append(Subnote(type='text', content=value.content))
             data.append(Subnote(type='definedlist', content=content))
             return data
         elif value.jsonmodel_type == 'note_chronology':
-            content = [{'label': i.get('event_date'), 'value': ', '.join(i.get('events'))} for i in value.items]
+            # items is an odin.StringField so we need to re-convert to a dict here
+            items = json.loads(value.items.replace("'", '"'))
+            content = [{'label': i.get('event_date'), 'value': i.get('events')} for i in items]
             return Subnote(type='definedlist', content=content)
         else:
             return Subnote(type='text', content=value.content
