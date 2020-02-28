@@ -71,5 +71,5 @@ def instantiate_aspace(self, config=None):
     repo = aspace.repositories(config['repo'])
     setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
     if isinstance(repo, dict) and 'error' in repo:
-        raise Exception(self.repo['error'])  # TODO: This should probably target a more specific exception
+        raise Exception(self.repo['error'])
     return aspace
