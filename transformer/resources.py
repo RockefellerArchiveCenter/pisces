@@ -3,7 +3,8 @@ import odin
 from . import resource_configs
 
 
-"""Lays out the ArchivesSpace resources and their fields as well as the RAC Model resources and their fields.
+"""Lays out RAC Model resources and their fields.
+
 Used by mappings.py when transforming data from AS resources to RAC resources.
 Defaults and choices chosen from resource_configs.py are included here."""
 
