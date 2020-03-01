@@ -58,10 +58,12 @@ class TransformerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", object)):
                     with open(os.path.join("fixtures", object, f), "r") as json_file:
                         source = json.load(json_file)
+                        component_len = json.dumps(source).count("archivesspace_uri")
                         transform = CartographerDataTransformer().run(source)
                         self.assertNotEqual(
                             transform, False,
                             "Transformer returned an error: {}".format(transform))
+                        self.assertEqual(len(json.loads(transform)), component_len)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
