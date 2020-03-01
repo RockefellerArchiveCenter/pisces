@@ -54,13 +54,14 @@ class TransformerTest(TestCase):
     def test_cartographer_mappings(self):
         """Tests transformation of Cartographer data resources."""
         for object in cartographer_object_types:
-            for f in os.listdir(os.path.join("fixtures", object)):
-                with open(os.path.join("fixtures", object, f), "r") as json_file:
-                    source = json.load(json_file)
-                    transform = CartographerDataTransformer().run(source)
-                    self.assertNotEqual(
-                        transform, False,
-                        "Transformer returned an error: {}".format(transform))
+            with transformer_vcr.use_cassette("{}-{}-{}.json".format("Cartographer", "transform", object)):
+                for f in os.listdir(os.path.join("fixtures", object)):
+                    with open(os.path.join("fixtures", object, f), "r") as json_file:
+                        source = json.load(json_file)
+                        transform = CartographerDataTransformer().run(source)
+                        self.assertNotEqual(
+                            transform, False,
+                            "Transformer returned an error: {}".format(transform))
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
