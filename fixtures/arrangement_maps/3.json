@@ -1,0 +1,158 @@
+{
+    "id": 3,
+    "ref": "/api/components/3/",
+    "title": "Population Council records",
+    "children": [
+        {
+            "id": 9,
+            "title": "Population Council records",
+            "ref": "/api/components/9/",
+            "parent": null,
+            "archivesspace_uri": "/repositories/2/resources/13012",
+            "tree_index": 0,
+            "children": [
+                {
+                    "id": 10,
+                    "title": "Population Council records, Index",
+                    "ref": "/api/components/10/",
+                    "parent": 9,
+                    "archivesspace_uri": "/repositories/2/resources/11695",
+                    "tree_index": 1
+                },
+                {
+                    "id": 11,
+                    "title": "Population Council records, Accession 1, RG 1",
+                    "ref": "/api/components/11/",
+                    "parent": 9,
+                    "archivesspace_uri": "/repositories/2/resources/414",
+                    "tree_index": 2
+                },
+                {
+                    "id": 12,
+                    "title": "Population Council records, Accession 2, RG 2",
+                    "ref": "/api/components/12/",
+                    "parent": 9,
+                    "archivesspace_uri": "/repositories/2/resources/13011",
+                    "tree_index": 3,
+                    "children": [
+                        {
+                            "id": 13,
+                            "title": "Population Council records, Central Files, Accession 2, RG 2, Series 1 to Series 4",
+                            "ref": "/api/components/13/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12076",
+                            "tree_index": 4
+                        },
+                        {
+                            "id": 14,
+                            "title": "Population Council records, Ford Foundation Projects, Accession 2, RG 2, Series 6",
+                            "ref": "/api/components/14/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12155",
+                            "tree_index": 5
+                        },
+                        {
+                            "id": 15,
+                            "title": "Population Council records, Morocco Office Files, Accession 2, RG 2, Series 7",
+                            "ref": "/api/components/15/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12158",
+                            "tree_index": 6
+                        },
+                        {
+                            "id": 16,
+                            "title": "Population Council records, Lapham and Van Wie Files, Accession 2, RG 2, Series 8",
+                            "ref": "/api/components/16/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12229",
+                            "tree_index": 7
+                        },
+                        {
+                            "id": 17,
+                            "title": "Population Council records, Board of Trustees Meetings, Accession 2, RG 2, Series 9",
+                            "ref": "/api/components/17/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12594",
+                            "tree_index": 8
+                        },
+                        {
+                            "id": 18,
+                            "title": "Population Council records, John D. Rockefeller 3rd Dockets, Accession 2, RG 2, Series 10",
+                            "ref": "/api/components/18/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12596",
+                            "tree_index": 9
+                        },
+                        {
+                            "id": 19,
+                            "title": "Population Council records, Office of Economic Opportunity (OEO) 1969-1971 Project Files, Accession 2, RG 2, Series 11",
+                            "ref": "/api/components/19/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12604",
+                            "tree_index": 10
+                        },
+                        {
+                            "id": 20,
+                            "title": "Population Council records, Demographic Division and Technical Assistance Division files, Accession 2, RG 2, Series 12",
+                            "ref": "/api/components/20/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12606",
+                            "tree_index": 11
+                        },
+                        {
+                            "id": 21,
+                            "title": "Population Council records, International Programs, Accession 2, RG 2, Series 13",
+                            "ref": "/api/components/21/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12613",
+                            "tree_index": 12
+                        },
+                        {
+                            "id": 22,
+                            "title": "Population Council records, Public Information Office and Publications, Accession 2, RG 2, Series 14",
+                            "ref": "/api/components/22/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12623",
+                            "tree_index": 13
+                        },
+                        {
+                            "id": 23,
+                            "title": "Population Council records, Population in Development Planning Program, Accession 2, RG 2, Series 15",
+                            "ref": "/api/components/23/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12622",
+                            "tree_index": 14
+                        },
+                        {
+                            "id": 24,
+                            "title": "Population Council records, Karen Morrell Fundraising Files, Accession 2, RG 2, Series 16",
+                            "ref": "/api/components/24/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12631",
+                            "tree_index": 15
+                        },
+                        {
+                            "id": 25,
+                            "title": "Population Council records, Miscellaneous Files, Accession 2, RG 2, Series 17",
+                            "ref": "/api/components/25/",
+                            "parent": 12,
+                            "archivesspace_uri": "/repositories/2/resources/12630",
+                            "tree_index": 16
+                        }
+                    ]
+                },
+                {
+                    "id": 26,
+                    "title": "Population Council records, Photographs",
+                    "ref": "/api/components/26/",
+                    "parent": 9,
+                    "archivesspace_uri": "/repositories/2/resources/180",
+                    "tree_index": 17
+                }
+            ]
+        }
+    ],
+    "publish": false,
+    "created": "2019-12-20T13:12:05.007919-05:00",
+    "modified": "2020-02-27T14:48:17.955959-05:00"
+}

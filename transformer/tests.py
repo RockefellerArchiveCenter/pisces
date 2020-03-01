@@ -6,19 +6,22 @@ from django.test import TestCase
 from jsonschema import validate
 from pisces import settings
 
-from .transformers import ArchivesSpaceDataTransformer
+from .transformers import (ArchivesSpaceDataTransformer,
+                           CartographerDataTransformer)
 
-fetch_vcr = vcr.VCR(
-    serializer='json',
-    cassette_library_dir='fixtures/cassettes/transformer',
-    record_mode='once',
-    match_on=['path', 'method', 'query'],
-    filter_query_parameters=['username', 'password'],
-    filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
+transformer_vcr = vcr.VCR(
+    serializer="json",
+    cassette_library_dir="fixtures/cassettes/transformer",
+    record_mode="once",
+    match_on=["path", "method", "query"],
+    filter_query_parameters=["username", "password"],
+    filter_headers=["Authorization", "X-ArchivesSpace-Session"],
 )
 
-object_types = ['agent_corporate_entity', 'agent_family', 'agent_person',
-                'archival_objects', 'resources', 'subjects']
+as_object_types = ["agent_corporate_entity", "agent_family", "agent_person",
+                   "archival_objects", "resources", "subjects"]
+
+cartographer_object_types = ["arrangement_maps"]
 
 
 class TransformerTest(TestCase):
@@ -30,27 +33,41 @@ class TransformerTest(TestCase):
     """
 
     def test_as_mappings(self):
-        with open(os.path.join(settings.BASE_DIR, 'rac-data-model', 'schema.json')) as sf:
+        """Tests transformation of ArchivesSpace data resources."""
+        with open(os.path.join(settings.BASE_DIR, "rac-data-model", "schema.json")) as sf:
             schema = json.load(sf)
-            for object in object_types:
-                with fetch_vcr.use_cassette("{}.json".format(object)):
-                    for f in os.listdir(os.path.join('fixtures', object)):
-                        with open(os.path.join('fixtures', object, f), 'r') as json_file:
+            for object in as_object_types:
+                with transformer_vcr.use_cassette("{}-{}-{}.json".format("ArchivesSpace", "transform", object)):
+                    for f in os.listdir(os.path.join("fixtures", object)):
+                        with open(os.path.join("fixtures", object, f), "r") as json_file:
                             source = json.load(json_file)
                             transform = ArchivesSpaceDataTransformer().run(source)
-                            self.assertNotEqual(transform, False, "Transformer returned an error: {}".format(transform))
+                            self.assertNotEqual(
+                                transform, False,
+                                "Transformer returned an error: {}".format(transform))
                             transformed = json.loads(transform)
                             valid = validate(instance=transformed, schema=schema)
                             self.assertEqual(valid, None, "Transformed object was not valid: {}".format(valid))
                             self.check_list_counts(source, transformed, object)
                             self.check_agent_counts(source, transformed)
 
+    def test_cartographer_mappings(self):
+        """Tests transformation of Cartographer data resources."""
+        for object in cartographer_object_types:
+            for f in os.listdir(os.path.join("fixtures", object)):
+                with open(os.path.join("fixtures", object, f), "r") as json_file:
+                    source = json.load(json_file)
+                    transform = CartographerDataTransformer().run(source)
+                    self.assertNotEqual(
+                        transform, False,
+                        "Transformer returned an error: {}".format(transform))
+
     def check_list_counts(self, source, transformed, object_type):
-        """
-        Check that lists of items are the same on source and data objects. Since
-        transformer logic inherits dates from parent objects in some circumstances,
-        the test for these is less stringent and allows for dates on transformed
-        objects that do not exist on source objects.
+        """Checks that lists of items are the same on source and data objects.
+
+        Since transformer logic inherits dates from parent objects in some
+        circumstances, the test for these is less stringent and allows for
+        dates on transformed objects that do not exist on source objects.
         """
         for source_key, transformed_key in [("notes", "notes"),
                                             ("rights_statements", "rights")]:
@@ -70,10 +87,7 @@ class TransformerTest(TestCase):
                             ))
 
     def check_agent_counts(self, source, transformed):
-        """
-        Checks that linked_agents on sources are correctly parsed into creators
-        and 'regular' agents.
-        """
+        """Checks for correct counts of agents and other creators."""
         source_creator_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") == "creator"])
         source_agent_count = len([obj for obj in source.get("linked_agents", "") if obj.get("role") != "creator"])
         self.assertTrue(source_creator_count <= len(transformed.get("creators", "")))
