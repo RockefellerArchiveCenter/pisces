@@ -7,9 +7,10 @@ from odin.codecs import json_codec
 
 from .mappings_helpers import ArchivesSpaceHelper
 from .resource_configs import NOTE_TYPE_CHOICES
-from .resources import (Agent, Collection, Date, Extent, ExternalIdentifier,
-                        Language, Note, Object, Reference, RightsGranted,
-                        RightsStatement, Subnote, Term)
+from .resources import (Agent, CartographerMapComponent, Collection, Date,
+                        Extent, ExternalIdentifier, Language, Note, Object,
+                        Reference, RightsGranted, RightsStatement, Subnote,
+                        Term)
 
 
 class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
@@ -385,3 +386,14 @@ class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     @odin.assign_field(to_field='agent_type')
     def agent_types(self):
         return "person"
+
+
+class CartographerMapComponentToCollection(odin.Mapping):
+    """Maps CartographerMapComponent to Collection."""
+    from_obj = CartographerMapComponent
+    to_obj = Collection
+
+    @odin.map_field(from_field='archivesspace_uri', to_field='external_identifiers', to_list=True)
+    def external_identifiers(self, value):
+        return [ExternalIdentifier(identifier=value, source='archivesspace'),
+                ExternalIdentifier(identifier=self.source.ref, source='cartographer')]

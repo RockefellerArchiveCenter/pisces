@@ -142,3 +142,13 @@ class Agent(odin.Resource):
     objects = odin.ArrayOf(Reference, null=True)
     notes = odin.ArrayOf(Note)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
+
+
+class CartographerMapComponent(odin.Resource):
+    """A component that can be related to other components within an arrangement map."""
+    'id', 'title', 'map', 'parent', 'tree_index', 'archivesspace_uri'
+    title = odin.StringField()
+    parent = odin.StringField(null=True)
+    archivesspace_uri = odin.StringField()
+    ref = odin.StringField()
+    children = odin.StringField(null=True)
