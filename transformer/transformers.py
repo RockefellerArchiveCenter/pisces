@@ -69,6 +69,7 @@ class CartographerDataTransformer(BaseTransformer):
         send_post_request(settings.DELIVERY_URL, transformed)
         self.transformed_list.append(transformed)
         for child in data.get("children", []):
+            self.identifier = self.get_identifier(child)
             self.process_child(child)
 
 
