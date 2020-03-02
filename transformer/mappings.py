@@ -158,15 +158,16 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
         if self.source.jsonmodel_type in ['note_multipart', 'note_bioghist']:
-            return (self.map_subnotes(v) for v in value)
+            subnotes = (self.map_subnotes(v) for v in value)
         elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
-            return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
+            subnotes = [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
         elif self.source.jsonmodel_type == 'note_index':
-            return self.index_subnotes(self.source.content, self.source.items)
+            subnotes = self.index_subnotes(self.source.content, self.source.items)
         elif self.source.jsonmodel_type == 'note_bibliography':
-            return self.bibliograpy_subnotes(self.source.content, self.source.items)
+            subnotes = self.bibliograpy_subnotes(self.source.content, self.source.items)
         elif self.source.jsonmodel_type == 'note_chronology':
-            return self.chronology_subnotes(self.source.items)
+            subnotes = self.chronology_subnotes(self.source.items)
+        return subnotes
 
     def bibliograpy_subnotes(self, content, items):
         data = []
