@@ -126,11 +126,13 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='type', to_field='title')
     def title(self, value):
-        try:
-            title = (self.source.label if self.source.label
-                     else [v[1] for v in NOTE_TYPE_CHOICES if v[0] == value][0])
-        except AttributeError:
+        print(json_codec.dumps(self.source))
+        if self.source.label:
+            title = self.source.label
+        elif value:
             title = [v[1] for v in NOTE_TYPE_CHOICES if v[0] == value][0]
+        else:
+            title = [v[1] for v in NOTE_TYPE_CHOICES if v[0] == self.source.jsonmodel_type.split('note_')[1]][0]
         return title
 
     @odin.map_field(from_field='jsonmodel_type', to_field='type')
