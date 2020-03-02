@@ -92,7 +92,8 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 all_ids=True, modified_since=last_run)
         for obj in list:
             if obj.publish == publish:
-                if not(obj.jsonmodel_type == "resource" and obj.id_0.startswith("LI")):
+                # If the fetched object is a resource, only return if its id_0 starts with FA
+                if not(obj.jsonmodel_type == "resource" and not (obj.id_0.startswith("FA"))):
                     yield obj
 
     def deleted_list(self, aspace, object_type, last_run):
