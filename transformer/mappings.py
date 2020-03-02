@@ -127,7 +127,8 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
     @odin.map_field(from_field='type', to_field='title')
     def title(self, value):
         try:
-            title = self.source.label
+            title = (self.source.label if self.source.label
+                     else [v[1] for v in NOTE_TYPE_CHOICES if v[0] == value][0])
         except AttributeError:
             title = [v[1] for v in NOTE_TYPE_CHOICES if v[0] == value][0]
         return title
