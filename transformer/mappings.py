@@ -1,4 +1,5 @@
 import json
+from ast import literal_eval
 
 import odin
 from asterism.resources import archivesspace
@@ -126,7 +127,6 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
 
     @odin.map_field(from_field='type', to_field='title')
     def title(self, value):
-        print(json_codec.dumps(self.source))
         if self.source.label:
             title = self.source.label
         elif value:
@@ -143,26 +143,14 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
         """Maps different AS Subnotes to different values based on the note type."""
         if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
             # items is an odin.StringField so we need to re-convert to a dict here
-            items = json.loads(value.items.replace("'", '"'))
+            items = literal_eval(value.items)
             return Subnote(type=value.jsonmodel_type.split('note_')[1], content=items)
         elif value == 'note_bibliography':
-            data = []
-            data.append(Subnote(type='text', content=value.content))
-            data.append(Subnote(type='orderedlist', content=value.items))
-            return data
+            return self.bibliograpy_subnotes(value.content, value.items)
         elif value.jsonmodel_type == 'note_index':
-            data = []
-            # items is an odin.StringField so we need to re-convert to a dict here
-            items = json.loads(value.items.replace("'", '"'))
-            content = [{'label': i.get('type'), 'value': i.get('value')} for i in items]
-            data.append(Subnote(type='text', content=value.content))
-            data.append(Subnote(type='definedlist', content=content))
-            return data
+            return self.index_subnotes(value.content, value.items)
         elif value.jsonmodel_type == 'note_chronology':
-            # items is an odin.StringField so we need to re-convert to a dict here
-            items = json.loads(value.items.replace("'", '"'))
-            content = [{'label': i.get('event_date'), 'value': i.get('events')} for i in items]
-            return Subnote(type='definedlist', content=content)
+            return self.chronology_subnotes(value.items)
         else:
             return Subnote(type='text', content=value.content
                            if isinstance(value.content, list) else [value.content])
@@ -174,7 +162,32 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
         elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
             return [Subnote(type='text', content=self.source.content.strip("]['").split(', '))]
         elif self.source.jsonmodel_type == 'note_index':
-            return [Subnote(type='orderedlist', content=self.source.items.strip("]['").split(', '))]
+            return self.index_subnotes(self.source.content, self.source.items)
+        elif self.source.jsonmodel_type == 'note_bibliography':
+            return self.bibliograpy_subnotes(self.source.content, self.source.items)
+        elif self.source.jsonmodel_type == 'note_chronology':
+            return self.chronology_subnotes(self.source.items)
+
+    def bibliograpy_subnotes(self, content, items):
+        data = []
+        data.append(Subnote(type='text', content=json.loads(content)))
+        data.append(Subnote(type='orderedlist', content=json.loads(items)))
+        return data
+
+    def index_subnotes(self, content, items):
+        data = []
+        # items is an odin.StringField so we need to re-convert to a dict here
+        items_dict = literal_eval(items)
+        items_list = [{'label': i.get('type'), 'value': i.get('value')} for i in items_dict]
+        data.append(Subnote(type='text', content=json.loads(content)))
+        data.append(Subnote(type='definedlist', content=items_list))
+        return data
+
+    def chronology_subnotes(self, items):
+        # items is an odin.StringField so we need to re-convert to a dict here
+        items = literal_eval(items)
+        content = [{'label': i.get('event_date'), 'value': i.get('events')} for i in items]
+        return Subnote(type='definedlist', content=content)
 
 
 class ArchivesSpaceResourceToCollection(odin.Mapping):
