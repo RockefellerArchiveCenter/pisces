@@ -59,17 +59,17 @@ class CartographerDataTransformer(BaseTransformer):
     def get_transformed_object(self, data):
         self.transformed_list = []
         for child in data.get("children"):
-            self.identifier = self.get_identifier(child)
             self.process_child(child)
         return self.transformed_list
 
     def process_child(self, data):
+        self.identifier = self.get_identifier(data)
+        # TODO: fetch data from AS and combine
         from_obj = json_codec.loads(json.dumps(data), resource=CartographerMapComponent)
         transformed = json.loads(json_codec.dumps(CartographerMapComponentToCollection.apply(from_obj)))
         send_post_request(settings.DELIVERY_URL, transformed)
         self.transformed_list.append(transformed)
         for child in data.get("children", []):
-            self.identifier = self.get_identifier(child)
             self.process_child(child)
 
 
