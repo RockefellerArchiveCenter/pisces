@@ -37,7 +37,6 @@ def send_post_request(url, data, current_run=None):
         current_run (FetchRun): the current FetchRun instance.
     """
     try:
-        assert(isinstance(data, dict))
         resp = requests.post(url, json=data)
         resp.raise_for_status()
         return True
@@ -49,14 +48,6 @@ def send_post_request(url, data, current_run=None):
             )
         else:
             raise Exception(resp.json()["detail"])
-    except AssertionError as e:
-        if current_run:
-            FetchRunError.objects.create(
-                run=current_run,
-                message=str(e),
-            )
-        else:
-            raise Exception(e)
 
 
 def instantiate_aspace(self, config=None):
