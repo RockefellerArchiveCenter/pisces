@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'health_check',
     'fetcher',
+    'merger',
     'transformer',
     'silk',
 ]
