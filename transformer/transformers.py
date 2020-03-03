@@ -5,6 +5,7 @@ from fetcher.helpers import send_post_request
 from odin.codecs import json_codec
 from pisces import settings
 from requests.exceptions import ConnectionError
+from silk.profiling.profiler import silk_profile
 
 from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
@@ -35,6 +36,7 @@ class BaseTransformer:
             transformed object.
     """
 
+    @silk_profile()
     def run(self, data):
         try:
             self.identifier = self.get_identifier(data)
@@ -63,12 +65,14 @@ class CartographerDataTransformer(BaseTransformer):
         }
         return CARTOGRAPHER_TYPE_MAP[object_type]
 
+    @silk_profile()
     def get_transformed_object(self, data, from_resource, mapping):
         self.transformed_list = []
         for child in data.get("children"):
             self.process_child(child, from_resource, mapping)
         return self.transformed_list
 
+    @silk_profile()
     def process_child(self, data, from_resource, mapping):
         self.identifier = self.get_identifier(data)
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
@@ -97,12 +101,14 @@ class ArchivesSpaceDataTransformer(BaseTransformer):
         }
         return ARCHIVESSPACE_TYPE_MAP[object_type]
 
+    @silk_profile()
     def get_transformed_object(self, data, from_resource, mapping):
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
         transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
         send_post_request(settings.DELIVERY_URL, transformed)
         return transformed
 
+    @silk_profile()
     def get_object_type(self, data):
         """Parses out archival_objects with children from those without.
 

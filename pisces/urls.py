@@ -40,6 +40,7 @@ urlpatterns = [
     re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
     re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
     re_path(r'^transform/cartographer/$', CartographerTransformView.as_view(), name='transform-cartographer'),
+    re_path(r'^silk/', include('silk.urls', namespace='silk')),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),
     path('', include(router.urls)),
