@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'health_check',
     'fetcher',
     'transformer',
+    'silk',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'pisces.urls'
@@ -126,6 +128,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 100
 }
+
+# Silk Profiling
+SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER
 
 ARCHIVESSPACE = CF.ARCHIVESSPACE
 CARTOGRAPHER = CF.CARTOGRAPHER
