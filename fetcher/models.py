@@ -50,3 +50,6 @@ class FetchRunError(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
     message = models.TextField(max_length=255)
     run = models.ForeignKey(FetchRun, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ('datetime', )

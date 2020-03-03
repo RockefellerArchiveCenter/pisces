@@ -5310,6 +5310,242 @@
                     "string": "{\"detail\":\"Object merged\",\"objects\":[\"6rybrytz92yrqffk3yqitjr694\"],\"count\":1}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7\", \"type\": \"collection\", \"level\": \"series\", \"dates\": [{\"begin\": \"1919\", \"end\": \"1986\", \"expression\": \"1919-1986\", \"type\": \"inclusive\", \"label\": \"creation\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.Date\"}], \"creators\": [{\"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/15\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/corporate_entities/15\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}, {\"external_identifiers\": [{\"identifier\": \"/agents/people/23587\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/people/23587\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}], \"languages\": [{\"expression\": \"English\", \"identifier\": \"eng\", \"$\": \"transformer.resources.Language\"}], \"extents\": [{\"value\": \"2\", \"type\": \"Cubic Feet\", \"$\": \"transformer.resources.Extent\"}], \"notes\": [{\"type\": \"singlepart\", \"title\": \"Language of Materials\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"English\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Access\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Open for research. Brittle or damaged items are available at the discretion of RAC.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Arrangement\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Original order, as received.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Processing Information\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Minimal processing. Some materials remain in original file folders.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Preferred Citation\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\\\"http://www.rockarch.org/research/citations.php\\\">http://www.rockarch.org/research/citations.php</extref>\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Use\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"RAC has legal title, copyright and literary property rights to this collection in so far as it holds them.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Immediate Source of Acquisition\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Commonwealth Fund records were donated to RAC in 1985. The initial transfer of archival records to RAC began in 1986, and transfers continue on a regular basis. This series was donated to RAC as part of the initial transfer in 1985.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}], \"agents\": [], \"terms\": [], \"children\": [], \"ancestors\": [], \"rights\": [], \"external_identifiers\": [{\"identifier\": \"/repositories/2/resources/12725\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Collection\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "3717"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Date": [
+                        "Mon, 02 Mar 2020 17:20:27 GMT"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"sequbd6zfnfmmkpc32yvxn8y52\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7\", \"type\": \"collection\", \"level\": \"series\", \"dates\": [{\"begin\": \"1919\", \"end\": \"1986\", \"expression\": \"1919-1986\", \"type\": \"inclusive\", \"label\": \"creation\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.Date\"}], \"creators\": [{\"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/15\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/corporate_entities/15\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}, {\"external_identifiers\": [{\"identifier\": \"/agents/people/23587\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/people/23587\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}], \"languages\": [{\"expression\": \"English\", \"identifier\": \"eng\", \"$\": \"transformer.resources.Language\"}], \"extents\": [{\"value\": \"2\", \"type\": \"Cubic Feet\", \"$\": \"transformer.resources.Extent\"}], \"notes\": [{\"type\": \"singlepart\", \"title\": \"Language of Materials\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"English\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Access\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Open for research. Brittle or damaged items are available at the discretion of RAC.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Arrangement\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Original order, as received.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Processing Information\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Minimal processing. Some materials remain in original file folders.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Preferred Citation\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\\\"http://www.rockarch.org/research/citations.php\\\">http://www.rockarch.org/research/citations.php</extref>\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Use\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"RAC has legal title, copyright and literary property rights to this collection in so far as it holds them.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Immediate Source of Acquisition\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Commonwealth Fund records were donated to RAC in 1985. The initial transfer of archival records to RAC began in 1986, and transfers continue on a regular basis. This series was donated to RAC as part of the initial transfer in 1985.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"bibliography\", \"title\": \"Bibliography\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Malcolm P. Aldrich served as the second President of the Commonwealth Fund, succeeding Edward S. Harkness, and Chairman of the Fund's Board. As head of the Fund he actively promoted medical education and facilitated the builing of a new wing at the Eye Institute at Columbia Presbyterian Medical Center.\"], \"$\": \"transformer.resources.Subnote\"}, {\"type\": \"orderedlist\", \"content\": [], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Scope and Contents\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Malcolm P. Aldrich papers primarily serve to provide historical context to the work and activities of the Commonwealth Fund. The series includes historical sketches of the Harkness Fellowship Program, as well as the Fund's Publications department. The records also include select Board of Directors files as well as program reviews and recommendations. Aldrich also served as the executor of the Harkness estate, and the series contains a variety of historical files pertaining to the Harkness family. \"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}], \"agents\": [], \"terms\": [], \"children\": [], \"ancestors\": [], \"rights\": [], \"external_identifiers\": [{\"identifier\": \"/repositories/2/resources/12725\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Collection\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "5007"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Mon, 02 Mar 2020 18:26:48 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"sequbd6zfnfmmkpc32yvxn8y52\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7\", \"type\": \"collection\", \"level\": \"series\", \"dates\": [{\"begin\": \"1919\", \"end\": \"1986\", \"expression\": \"1919-1986\", \"type\": \"inclusive\", \"label\": \"creation\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.Date\"}], \"creators\": [{\"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/15\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/corporate_entities/15\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}, {\"external_identifiers\": [{\"identifier\": \"/agents/people/23587\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/people/23587\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}], \"languages\": [{\"expression\": \"English\", \"identifier\": \"eng\", \"$\": \"transformer.resources.Language\"}], \"extents\": [{\"value\": \"2\", \"type\": \"Cubic Feet\", \"$\": \"transformer.resources.Extent\"}], \"notes\": [{\"type\": \"singlepart\", \"title\": \"Language of Materials\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"English\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Access\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Open for research. Brittle or damaged items are available at the discretion of RAC.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Arrangement\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Original order, as received.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Processing Information\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Minimal processing. Some materials remain in original file folders.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Preferred Citation\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\\\"http://www.rockarch.org/research/citations.php\\\">http://www.rockarch.org/research/citations.php</extref>\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Use\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"RAC has legal title, copyright and literary property rights to this collection in so far as it holds them.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Immediate Source of Acquisition\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Commonwealth Fund records were donated to RAC in 1985. The initial transfer of archival records to RAC began in 1986, and transfers continue on a regular basis. This series was donated to RAC as part of the initial transfer in 1985.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"bibliography\", \"title\": \"Bibliography\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Malcolm P. Aldrich served as the second President of the Commonwealth Fund, succeeding Edward S. Harkness, and Chairman of the Fund's Board. As head of the Fund he actively promoted medical education and facilitated the builing of a new wing at the Eye Institute at Columbia Presbyterian Medical Center.\"], \"$\": \"transformer.resources.Subnote\"}, {\"type\": \"orderedlist\", \"content\": [], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Scope and Contents\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Malcolm P. Aldrich papers primarily serve to provide historical context to the work and activities of the Commonwealth Fund. The series includes historical sketches of the Harkness Fellowship Program, as well as the Fund's Publications department. The records also include select Board of Directors files as well as program reviews and recommendations. Aldrich also served as the executor of the Harkness estate, and the series contains a variety of historical files pertaining to the Harkness family. \"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}], \"agents\": [], \"terms\": [], \"children\": [], \"ancestors\": [], \"rights\": [], \"external_identifiers\": [{\"identifier\": \"/repositories/2/resources/12725\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Collection\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "5007"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Mon, 02 Mar 2020 19:29:45 GMT"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"sequbd6zfnfmmkpc32yvxn8y52\"],\"count\":1}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://scorpio-web:8008/merge/",
+                "body": "{\"title\": \"Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7\", \"type\": \"collection\", \"level\": \"series\", \"dates\": [{\"begin\": \"1919\", \"end\": \"1986\", \"expression\": \"1919-1986\", \"type\": \"inclusive\", \"label\": \"creation\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.Date\"}], \"creators\": [{\"external_identifiers\": [{\"identifier\": \"/agents/corporate_entities/15\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/corporate_entities/15\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}, {\"external_identifiers\": [{\"identifier\": \"/agents/people/23587\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"order\": null, \"title\": \"/agents/people/23587\", \"type\": null, \"uri\": null, \"relator\": \"aut\", \"role\": \"creator\", \"level\": null, \"expression\": null, \"identifier\": null, \"$\": \"transformer.resources.Reference\"}], \"languages\": [{\"expression\": \"English\", \"identifier\": \"eng\", \"$\": \"transformer.resources.Language\"}], \"extents\": [{\"value\": \"2\", \"type\": \"Cubic Feet\", \"$\": \"transformer.resources.Extent\"}], \"notes\": [{\"type\": \"singlepart\", \"title\": \"Language of Materials\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"English\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Access\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Open for research. Brittle or damaged items are available at the discretion of RAC.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Arrangement\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Original order, as received.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Processing Information\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Minimal processing. Some materials remain in original file folders.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Preferred Citation\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\\\"http://www.rockarch.org/research/citations.php\\\">http://www.rockarch.org/research/citations.php</extref>\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Conditions Governing Use\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"RAC has legal title, copyright and literary property rights to this collection in so far as it holds them.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Immediate Source of Acquisition\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Commonwealth Fund records were donated to RAC in 1985. The initial transfer of archival records to RAC began in 1986, and transfers continue on a regular basis. This series was donated to RAC as part of the initial transfer in 1985.\"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"bibliography\", \"title\": \"Bibliography\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"Malcolm P. Aldrich served as the second President of the Commonwealth Fund, succeeding Edward S. Harkness, and Chairman of the Fund's Board. As head of the Fund he actively promoted medical education and facilitated the builing of a new wing at the Eye Institute at Columbia Presbyterian Medical Center.\"], \"$\": \"transformer.resources.Subnote\"}, {\"type\": \"orderedlist\", \"content\": [], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}, {\"type\": \"multipart\", \"title\": \"Scope and Contents\", \"source\": \"archivesspace\", \"subnotes\": [{\"type\": \"text\", \"content\": [\"The Malcolm P. Aldrich papers primarily serve to provide historical context to the work and activities of the Commonwealth Fund. The series includes historical sketches of the Harkness Fellowship Program, as well as the Fund's Publications department. The records also include select Board of Directors files as well as program reviews and recommendations. Aldrich also served as the executor of the Harkness estate, and the series contains a variety of historical files pertaining to the Harkness family. \"], \"$\": \"transformer.resources.Subnote\"}], \"$\": \"transformer.resources.Note\"}], \"agents\": [], \"terms\": [], \"children\": [], \"ancestors\": [], \"rights\": [], \"external_identifiers\": [{\"identifier\": \"/repositories/2/resources/12725\", \"source\": \"archivesspace\", \"$\": \"transformer.resources.ExternalIdentifier\"}], \"$\": \"transformer.resources.Collection\"}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.22.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "5007"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "77"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Mon, 02 Mar 2020 22:00:31 GMT"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"Object merged\",\"objects\":[\"sequbd6zfnfmmkpc32yvxn8y52\"],\"count\":1}"
+                }
+            }
         }
     ]
 }

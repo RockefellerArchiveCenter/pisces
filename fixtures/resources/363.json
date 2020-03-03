@@ -1,0 +1,553 @@
+{
+    "lock_version": 10,
+    "title": "Theodosius G. Dobzhansky papers, Rockefeller University Faculty",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA159.xml",
+    "finding_aid_title": "A Guide to the Theodosius G. Dobzhansky papers, Rockefeller University Faculty\n",
+    "finding_aid_filing_title": "Dobzhansky (Theodosius G.) papers",
+    "finding_aid_date": "1980 August",
+    "finding_aid_author": "Ruth Sternfeld",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T06:43:27Z",
+    "system_mtime": "2019-10-31T15:10:01Z",
+    "user_mtime": "2019-10-14T17:42:04Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "id_0": "FA159",
+    "language": "eng",
+    "level": "collection",
+    "finding_aid_status": "under_revision",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "241",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-14T17:42:05Z",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "0.38",
+            "container_summary": "1 box",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-14T17:42:05Z",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "undated",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-14T17:42:05Z",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z",
+            "date_type": "single",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "ctb",
+            "terms": [],
+            "ref": "/agents/people/79"
+        },
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/20083"
+        },
+        {
+            "role": "creator",
+            "relator": "ctb",
+            "terms": [],
+            "ref": "/agents/corporate_entities/20001"
+        },
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/people/415"
+        }
+    ],
+    "revision_statements": [
+        {
+            "date": "2010 August 25",
+            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists’ Toolkit by Becky Robbins.",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-14T17:42:05Z",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z",
+            "publish": false,
+            "jsonmodel_type": "revision_statement",
+            "uri": "/revision_statement/4270",
+            "repository": {
+                "ref": "/repositories/2"
+            }
+        }
+    ],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "a6ecb93b2d49a3781d1ee79b8710a7f1",
+            "label": "General Physical Description note",
+            "type": "physdesc",
+            "content": [
+                "1 box (5 inches)"
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "cd3ee41340f92cf50d41f005917aa987",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Theodosius Dobzhansky, 1900-1975, was \"a major influence on current thought and research on genetic, evolutionary theory and human evolution\". A world renowned geneticist, famous for his research, writing and lecturing about evolution and genetics and their relationship to modern man. He pioneered the use of fruit flies which proved to be excellent research animals.\n\n",
+                    "publish": true
+                },
+                {
+                    "jsonmodel_type": "note_chronology",
+                    "title": "Biographical note",
+                    "publish": true,
+                    "items": [
+                        {
+                            "event_date": "1900",
+                            "events": [
+                                "Born January 25 in Nemirov, Russia"
+                            ]
+                        },
+                        {
+                            "event_date": "1921",
+                            "events": [
+                                "Graduate and Diplomate University of Kiev"
+                            ]
+                        },
+                        {
+                            "event_date": "1921-1924 ",
+                            "events": [
+                                "Assistant in Zoology Polytechnic Institute, Kiev"
+                            ]
+                        },
+                        {
+                            "event_date": "1924-1927 ",
+                            "events": [
+                                "Lecturer and Assistant Professor in genetics University of Leningrad"
+                            ]
+                        },
+                        {
+                            "event_date": "1927-1929 ",
+                            "events": [
+                                "General Education Board Fellow at Columbia University with Thomas Hunt Morgan"
+                            ]
+                        },
+                        {
+                            "event_date": "1929-1936 ",
+                            "events": [
+                                "Assistant Professor Genetics California Institute of Technology (with T.H. Morgan)"
+                            ]
+                        },
+                        {
+                            "event_date": "1936-1940 ",
+                            "events": [
+                                "Professor Genetics California Institute of Technology"
+                            ]
+                        },
+                        {
+                            "event_date": "1940-1958 ",
+                            "events": [
+                                "Professor of Zoology Columbia University"
+                            ]
+                        },
+                        {
+                            "event_date": "1958-1962 ",
+                            "events": [
+                                "da Costa Professor of Zoology Columbia University"
+                            ]
+                        },
+                        {
+                            "event_date": "1962-1970 ",
+                            "events": [
+                                "Professor Rockefeller Institute and Rockefeller University"
+                            ]
+                        },
+                        {
+                            "event_date": "1970-1975 ",
+                            "events": [
+                                "Professor Emeritus Rockefeller University"
+                            ]
+                        },
+                        {
+                            "event_date": "1971-1975 ",
+                            "events": [
+                                "Adjunct Professor Genetics University of California, Davis"
+                            ]
+                        },
+                        {
+                            "event_date": "1975 ",
+                            "events": [
+                                "Died December 18 Davis, California"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "jsonmodel_type": "note_chronology",
+                    "title": "Awards",
+                    "publish": true,
+                    "items": [
+                        {
+                            "event_date": "1946 ",
+                            "events": [
+                                "Daniel Giraud Elliot Medal NAS"
+                            ]
+                        },
+                        {
+                            "event_date": "1958 ",
+                            "events": [
+                                "Kimber Award and Medal NAS"
+                            ]
+                        },
+                        {
+                            "event_date": "1959 ",
+                            "events": [
+                                "Darwin Medal Academia Leopoldina"
+                            ]
+                        },
+                        {
+                            "event_date": "1963 ",
+                            "events": [
+                                "Anisfield-Wolf Book Award"
+                            ]
+                        },
+                        {
+                            "event_date": "1963 ",
+                            "events": [
+                                "Pierre Lecomte du Nouy Award"
+                            ]
+                        },
+                        {
+                            "event_date": "1964 ",
+                            "events": [
+                                "Rational Medal of Science"
+                            ]
+                        },
+                        {
+                            "event_date": "1966 ",
+                            "events": [
+                                "Addison Emery Verrill Medal, Yale University"
+                            ]
+                        },
+                        {
+                            "event_date": "1969 ",
+                            "events": [
+                                "Gold Medal for Distinguished Achievement of Science, American Museum of Natural History"
+                            ]
+                        },
+                        {
+                            "event_date": "1973 ",
+                            "events": [
+                                "Benjamin Franklin Medal, Franklin Institute, Philadelphia"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "jsonmodel_type": "note_chronology",
+                    "title": "Honorary degrees",
+                    "publish": true,
+                    "items": [
+                        {
+                            "event_date": "1943 ",
+                            "events": [
+                                "University of Sao Paulo"
+                            ]
+                        },
+                        {
+                            "event_date": "1945 ",
+                            "events": [
+                                "Wooster College, Ohio"
+                            ]
+                        },
+                        {
+                            "event_date": "1958 ",
+                            "events": [
+                                "University of Münster"
+                            ]
+                        },
+                        {
+                            "event_date": "1958 ",
+                            "events": [
+                                "University of Montreal"
+                            ]
+                        },
+                        {
+                            "event_date": "1959 ",
+                            "events": [
+                                "University of Chicago"
+                            ]
+                        },
+                        {
+                            "event_date": "1960 ",
+                            "events": [
+                                "University of Sydney"
+                            ]
+                        },
+                        {
+                            "event_date": "1964 ",
+                            "events": [
+                                "Columbia University, NY"
+                            ]
+                        },
+                        {
+                            "event_date": "1964 ",
+                            "events": [
+                                "University of Oxford"
+                            ]
+                        },
+                        {
+                            "event_date": "1965 ",
+                            "events": [
+                                "University of Louvain"
+                            ]
+                        },
+                        {
+                            "event_date": "1965 ",
+                            "events": [
+                                "Clarksin College of Technology"
+                            ]
+                        },
+                        {
+                            "event_date": "1966 ",
+                            "events": [
+                                "Kalamazoo College"
+                            ]
+                        },
+                        {
+                            "event_date": "1966 ",
+                            "events": [
+                                "University of Michigan"
+                            ]
+                        },
+                        {
+                            "event_date": "1967 ",
+                            "events": [
+                                "Syracuse University"
+                            ]
+                        },
+                        {
+                            "event_date": "1968 ",
+                            "events": [
+                                "University of Padua"
+                            ]
+                        },
+                        {
+                            "event_date": "1968 ",
+                            "events": [
+                                "University of California Berkeley"
+                            ]
+                        },
+                        {
+                            "event_date": "1968 ",
+                            "events": [
+                                "Northwestern University"
+                            ]
+                        },
+                        {
+                            "event_date": "1970 ",
+                            "events": [
+                                "Wittenberg University"
+                            ]
+                        },
+                        {
+                            "event_date": "1970 ",
+                            "events": [
+                                "St. Mary's College"
+                            ]
+                        },
+                        {
+                            "event_date": "1970 ",
+                            "events": [
+                                "St. Vladimir Theological Academy, NY"
+                            ]
+                        },
+                        {
+                            "event_date": "1975 ",
+                            "events": [
+                                "Mazatlan University, Mexico"
+                            ]
+                        },
+                        {
+                            "event_date": "1975 ",
+                            "events": [
+                                "Sorbonne, Paris"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Membership : Genetics Society of America (president 1941), American Society of Naturalists (president 1950), Society for the Study of Evolution (president 1951), American Society of Zoologists (president 1963), American Teilhard de Chardin Association (president 1969), Behavior Genetics Association (president 1973), National Academy of Sciences, American Philosophical Association, American Academy of Arts and Sciences, Genetics Society of Japan (honorary), Royal Swedish Academy of Sciences (foreign member), Royal Danish Academy of Sciences (foreign member), Brazilian Academy of Sciences (foreign member), Academia Nazionale dei Lincei (foreign member), Royal Society of London (foreign member).\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "a4bfba0b3534f86cd9990d28996654f2",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "This group of papers consists mainly of correspondence.\n\nList of publications enclosed with papers.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "07f03bc1a1dc23954a019962bb42962a",
+            "label": "Immediate Source of Acquisition note",
+            "type": "acqinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The papers of Theodosius Dobzhansky were deposited with the Rockefeller University Archives on June 1980 by Office of Faculty and Student Records.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "df07f8994fc154aab607c219b499eebd",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "2de5af77e1ba402d91e5595b751c744d",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Former Classification: I 450 D656\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "b07327f086f30239b4ee07730eadf2ef",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Access to this collection is restricted pending permission from Rockefeller University.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "4b977e58723568844d2fcb334b00ce0f",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "As received.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/363",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2019-10-14T17:42:05Z",
+        "system_mtime": "2019-10-14T17:42:05Z",
+        "user_mtime": "2019-10-14T17:42:05Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/9416",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/363"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2007-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2019-10-14T17:42:05Z",
+        "system_mtime": "2019-10-14T17:42:05Z",
+        "user_mtime": "2019-10-14T17:42:05Z",
+        "enum_1": "4 - Advanced",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/363/tree"
+    }
+}
