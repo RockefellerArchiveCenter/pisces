@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.utils import timezone
 from pisces import settings
 from silk.profiling.profiler import silk_profile
@@ -47,7 +48,6 @@ class BaseDataFetcher:
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
-    transform_url = settings.ARCHIVESSPACE["transform_url"]
 
     def instantiate_client(self):
         return instantiate_aspace(settings.ARCHIVESSPACE)
@@ -56,7 +56,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_updated(self, aspace, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(aspace, object_type, last_run, True):
-            delivered = send_post_request(self.transform_url, u.json(), current_run)
+            delivered = send_post_request(reverse('merge'), {"object_type": object_type, "object": u.json()}, current_run)
             if delivered:
                 data.append(u.uri)
         return data
@@ -65,11 +65,11 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_deleted(self, aspace, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(aspace, object_type, last_run):
-            delivered = send_post_request(self.transform_url, d, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, d, current_run)
             if delivered:
                 data.append(d)
         for u in self.updated_list(aspace, object_type, last_run, False):
-            delivered = send_post_request(self.transform_url, u.uri, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, u.uri, current_run)
             if delivered:
                 data.append(u.uri)
         return data
@@ -110,8 +110,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
-
-    transform_url = settings.CARTOGRAPHER["transform_url"]
     source = FetchRun.CARTOGRAPHER
 
     def instantiate_client(self):
@@ -119,10 +117,12 @@ class CartographerDataFetcher(BaseDataFetcher):
 
     @silk_profile()
     def get_updated(self, client, object_type, last_run, current_run):
+        # TODO: this needs to return arrangement map components, not arrangement maps
         data = []
         for map in self.updated_list(client, last_run, True):
             map_data = client.get(map.get('ref')).json()
-            delivered = send_post_request(self.transform_url, map_data, current_run)
+            delivered = send_post_request(
+                reverse('merge'), {"object_type": object_type, "object": map_data}, current_run)
             if delivered:
                 data.append(map.get('ref'))
         return data
@@ -131,11 +131,11 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_deleted(self, client, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(client, last_run, False):
-            delivered = send_post_request(self.transform_url, map.get('ref'), current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, map.get("ref"), current_run)
             if delivered:
                 data.append(map.get('ref'))
         for uri in self.deleted_list(client, last_run):
-            delivered = send_post_request(self.transform_url, uri, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, uri, current_run)
             if delivered:
                 data.append(uri)
         return data
