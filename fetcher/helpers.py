@@ -2,6 +2,7 @@ import requests
 from asnake.aspace import ASpace
 from electronbonder.client import ElectronBond
 from pisces import settings
+from silk.profiling.profiler import silk_profile
 
 from .models import FetchRun, FetchRunError
 
@@ -28,6 +29,7 @@ def last_run_time(source, object_status, object_type):
         else 0)
 
 
+@silk_profile()
 def send_post_request(url, data, current_run=None):
     """Sends a POST request to a specified URL with a JSON payload.
 

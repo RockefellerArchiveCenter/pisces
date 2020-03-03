@@ -1,5 +1,6 @@
 from django.utils import timezone
 from pisces import settings
+from silk.profiling.profiler import silk_profile
 
 from .helpers import (instantiate_aspace, instantiate_electronbond,
                       last_run_time, send_post_request)
@@ -51,6 +52,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def instantiate_client(self):
         return instantiate_aspace(settings.ARCHIVESSPACE)
 
+    @silk_profile()
     def get_updated(self, aspace, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(aspace, object_type, last_run, True):
@@ -59,6 +61,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 data.append(u.uri)
         return data
 
+    @silk_profile()
     def get_deleted(self, aspace, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(aspace, object_type, last_run):
@@ -71,6 +74,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 data.append(u.uri)
         return data
 
+    @silk_profile()
     def updated_list(self, aspace, object_type, last_run, publish):
         if object_type == 'resource':
             list = aspace.repo.resources.with_params(
@@ -96,6 +100,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 if not(obj.jsonmodel_type == "resource" and not (obj.id_0.startswith("FA"))):
                     yield obj
 
+    @silk_profile()
     def deleted_list(self, aspace, object_type, last_run):
         for d in aspace.client.get_paged(
                 "delete-feed", params={"modified_since": str(last_run)}):
@@ -112,6 +117,7 @@ class CartographerDataFetcher(BaseDataFetcher):
     def instantiate_client(self):
         return instantiate_electronbond(settings.CARTOGRAPHER)
 
+    @silk_profile()
     def get_updated(self, client, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(client, last_run, True):
@@ -121,6 +127,7 @@ class CartographerDataFetcher(BaseDataFetcher):
                 data.append(map.get('ref'))
         return data
 
+    @silk_profile()
     def get_deleted(self, client, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(client, last_run, False):
@@ -133,12 +140,14 @@ class CartographerDataFetcher(BaseDataFetcher):
                 data.append(uri)
         return data
 
+    @silk_profile()
     def updated_list(self, client, last_run, publish):
         for map in client.get(
                 '/api/maps/', params={"modified_since": last_run}).json()['results']:
             if map.get('publish') == publish:
                 yield map
 
+    @silk_profile()
     def deleted_list(self, client, last_run):
         for uri in client.get(
                 '/api/delete-feed/', params={"deleted_since": last_run}).json()['results']:

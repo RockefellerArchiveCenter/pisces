@@ -6,6 +6,7 @@ from fetcher.helpers import send_post_request
 from odin.codecs import json_codec
 from pisces import settings
 from requests.exceptions import ConnectionError
+from silk.profiling.profiler import silk_profile
 
 from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
                        ArchivesSpaceAgentFamilyToAgent,
@@ -41,6 +42,7 @@ class CartographerDataTransformer:
     """Transforms cartographer data. Sets title and uri based on source data titles and refs. Checks for parents and children
     and adds the title, parent, ref, and any children to a dictionary."""
 
+    @silk_profile()
     def run(self, data):
         self.source_data = data
         obj = {}
@@ -58,6 +60,7 @@ class CartographerDataTransformer:
             print(e)
             raise CartographerTransformError(e)
 
+    @silk_profile()
     def children(self, children, parent, data):
         for child in children:
             data.append({"title": child.get("title"), "parent": parent.get("ref"), "children": []})
@@ -71,6 +74,7 @@ class ArchivesSpaceDataTransformer:
     format based on mappings.py and resources.py Sends a get request for each archival object checking the tree_node
     endpoint for children. If there are more than 0 children, transform it to a resource."""
 
+    @silk_profile()
     def run(self, data):
         self.object_type = self.get_object_type(data)
         identifier = data.get("uri")
@@ -93,6 +97,7 @@ class ArchivesSpaceDataTransformer:
         except Exception as e:
             raise ArchivesSpaceTransformError("Error transforming {} {}: {}".format(self.object_type, identifier, str(e)))
 
+    @silk_profile()
     def get_object_type(self, data):
         if data.get("jsonmodel_type") == "archival_object":
             if ArchivesSpaceHelper().has_children(data['uri']):
