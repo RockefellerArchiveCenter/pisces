@@ -85,9 +85,7 @@ def instantiate_electronbond(self, config=None):
         password=config['password'])
     try:
         resp = client.get(config['health_check_path'])
-        if not resp.status_code:
-            raise Exception(
-                "Cartographer status endpoint is not available. Service may be down.")
+        resp.raise_for_status()
         return client
     except Exception as e:
         raise Exception(
