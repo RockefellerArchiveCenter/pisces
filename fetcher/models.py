@@ -25,9 +25,9 @@ class FetchRun(models.Model):
         ('resource', 'Resource'),
         ('archival_object', 'Archival Object'),
         ('subject', 'Subject'),
-        ('person', 'Person'),
-        ('organization', 'Organization'),
-        ('family', 'Family'),
+        ('agent_person', 'Person'),
+        ('agent_corporate_entity', 'Organization'),
+        ('agent_family', 'Family'),
     )
     CARTOGRAPHER_OBJECT_TYPE_CHOICES = (
         ('arrangement_map', 'Arrangement Map'),
