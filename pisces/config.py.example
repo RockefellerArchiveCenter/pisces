@@ -13,7 +13,6 @@ ARCHIVESSPACE = {
     "username": "admin",
     "password": "admin",
     "repo": 2,
-    "transform_url": "http://pisces-web:8007/transform/archivesspace/"
 }
 
 CARTOGRAPHER = {
@@ -21,7 +20,6 @@ CARTOGRAPHER = {
     "user": "admin",
     "password": "admin",
     "health_check_path": "/status/health/",
-    "transform_url": "http://pisces-web:8007/transform/cartographer/"
 }
 
 SILKY_PYTHON_PROFILER = True
