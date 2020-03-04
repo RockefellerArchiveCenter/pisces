@@ -26,6 +26,10 @@ CARTOGRAPHER = {
 
 SILKY_PYTHON_PROFILER = True
 
-DELIVERY_URL = "http://scorpio-web:8008/merge/"
+MERGE_URL = "http://pisces-web:8007/merge/"
+
+TRANSFORM_URL = "http://pisces-web:8007/transform/"
+
+INDEX_DELETE_URL = "http://scorpio-web:8008/index/delete/"
 
 ALLOWED_HOSTS = ['localhost', 'pisces-web']
