@@ -34,7 +34,7 @@ cartographer_vcr = vcr.VCR(
 class FetcherTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
-        time = datetime(2020, 2, 1)
+        time = datetime(2020, 2, 28)
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
             for object_type, _ in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 f = FetchRun.objects.create(

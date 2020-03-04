@@ -1,4 +1,3 @@
-from django.urls import reverse
 from django.utils import timezone
 from pisces import settings
 from silk.profiling.profiler import silk_profile
@@ -13,9 +12,10 @@ class FetcherError(Exception):
 
 
 class BaseDataFetcher:
-    """
-    Base data fetcher class which provides a common run method inherited by other
-    fetchers. Requires a source attribute to be set on inheriting fetchers.
+    """Base data fetcher.
+
+    Provides a common run method inherited by other fetchers. Requires a source
+    attribute to be set on inheriting fetchers.
     """
 
     def fetch(self, object_status, object_type):
@@ -56,7 +56,9 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_updated(self, aspace, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(aspace, object_type, last_run, True):
-            delivered = send_post_request(reverse('merge'), {"object_type": object_type, "object": u.json()}, current_run)
+            delivered = send_post_request(
+                settings.MERGE_URL,
+                {"object_type": object_type, "object": u.json()}, current_run)
             if delivered:
                 data.append(u.uri)
         return data
@@ -122,7 +124,8 @@ class CartographerDataFetcher(BaseDataFetcher):
         for map in self.updated_list(client, last_run, True):
             map_data = client.get(map.get('ref')).json()
             delivered = send_post_request(
-                reverse('merge'), {"object_type": object_type, "object": map_data}, current_run)
+                settings.MERGE_URL,
+                {"object_type": object_type, "object": map_data}, current_run)
             if delivered:
                 data.append(map.get('ref'))
         return data
