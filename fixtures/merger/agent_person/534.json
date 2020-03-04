@@ -1,0 +1,95 @@
+{
+  "lock_version": 62,
+  "publish": true,
+  "created_by": "admin",
+  "last_modified_by": "admin",
+  "create_time": "2014-12-06T02:42:15Z",
+  "system_mtime": "2017-12-15T22:30:28Z",
+  "user_mtime": "2014-12-06T02:42:15Z",
+  "jsonmodel_type": "agent_person",
+  "agent_contacts": [
+    {
+      "lock_version": 0,
+      "name": "Persico",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:42:15Z",
+      "system_mtime": "2014-12-06T02:42:15Z",
+      "user_mtime": "2014-12-06T02:42:15Z",
+      "jsonmodel_type": "agent_contact",
+      "telephones": []
+    }
+  ],
+  "linked_agent_roles": [
+    "creator"
+  ],
+  "external_documents": [],
+  "notes": [],
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "dates_of_existence": [],
+  "names": [
+    {
+      "lock_version": 0,
+      "primary_name": "Persico",
+      "rest_of_name": "Joseph E.",
+      "sort_name": "Persico, Joseph E.",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:42:15Z",
+      "system_mtime": "2017-08-22T15:44:45Z",
+      "user_mtime": "2014-12-06T02:42:15Z",
+      "authorized": true,
+      "is_display_name": true,
+      "source": "naf",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": []
+    },
+    {
+      "lock_version": 0,
+      "primary_name": "Persico",
+      "rest_of_name": "J. E. (Joseph E.)",
+      "sort_name": "Persico, J. E. (Joseph E.)",
+      "sort_name_auto_generate": true,
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2014-12-06T02:42:15Z",
+      "system_mtime": "2014-12-06T02:42:15Z",
+      "user_mtime": "2014-12-06T02:42:15Z",
+      "name_order": "inverted",
+      "jsonmodel_type": "name_person",
+      "use_dates": [],
+      "authorized": false,
+      "is_display_name": false
+    }
+  ],
+  "related_agents": [],
+  "uri": "/agents/people/534",
+  "agent_type": "agent_person",
+  "is_linked_to_published_record": true,
+  "display_name": {
+    "lock_version": 0,
+    "primary_name": "Persico",
+    "rest_of_name": "Joseph E.",
+    "sort_name": "Persico, Joseph E.",
+    "sort_name_auto_generate": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:42:15Z",
+    "system_mtime": "2017-08-22T15:44:45Z",
+    "user_mtime": "2014-12-06T02:42:15Z",
+    "authorized": true,
+    "is_display_name": true,
+    "source": "naf",
+    "name_order": "inverted",
+    "jsonmodel_type": "name_person",
+    "use_dates": []
+  },
+  "title": "Persico, Joseph E."
+}

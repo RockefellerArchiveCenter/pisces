@@ -1,0 +1,38 @@
+{
+  "lock_version": 138,
+  "title": "Philanthropy -- United States",
+  "created_by": "pgalligan",
+  "last_modified_by": "pgalligan",
+  "create_time": "2015-04-28T19:00:23Z",
+  "system_mtime": "2018-07-31T20:22:57Z",
+  "user_mtime": "2015-04-28T19:00:23Z",
+  "source": "local",
+  "jsonmodel_type": "subject",
+  "external_ids": [],
+  "publish": true,
+  "used_within_repositories": [
+    "/repositories/2"
+  ],
+  "used_within_published_repositories": [
+    "/repositories/2"
+  ],
+  "terms": [
+    {
+      "lock_version": 0,
+      "term": "Philanthropy -- United States",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2015-04-28T19:00:23Z",
+      "system_mtime": "2015-04-28T19:00:23Z",
+      "user_mtime": "2015-04-28T19:00:23Z",
+      "term_type": "topical",
+      "jsonmodel_type": "term",
+      "uri": "/terms/14627",
+      "vocabulary": "/vocabularies/1"
+    }
+  ],
+  "external_documents": [],
+  "uri": "/subjects/17005",
+  "vocabulary": "/vocabularies/1",
+  "is_linked_to_published_record": true
+}

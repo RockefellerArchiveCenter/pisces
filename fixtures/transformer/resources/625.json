@@ -1,0 +1,264 @@
+{
+  "lock_version": 14,
+  "title": "Rockefeller Foundation records, fellowships, fellowship recorder cards, RG 10.2",
+  "publish": true,
+  "restrictions": false,
+  "ead_id": "FA426.xml",
+  "finding_aid_title": "A Guide to the Rockefeller Foundation records, fellowships, fellowship recorder cards, RG 10.2\n",
+  "finding_aid_filing_title": "Rockefeller Foundation records, fellowships, fellowship recorder cards, RG 10.2",
+  "finding_aid_date": "2007, 2009",
+  "finding_aid_author": "Finding aid prepared by Joelle Miller, Beth Jaffe-Davis and Brian Andreycak",
+  "created_by": "admin",
+  "last_modified_by": "battalb",
+  "create_time": "2014-12-06T12:09:27Z",
+  "system_mtime": "2018-12-12T21:53:24Z",
+  "user_mtime": "2018-12-12T21:53:24Z",
+  "suppressed": false,
+  "id_0": "FA426",
+  "language": "eng",
+  "level": "subgrp",
+  "finding_aid_status": "under_revision",
+  "jsonmodel_type": "resource",
+  "external_ids": [
+    {
+      "external_id": "19824",
+      "source": "Archivists Toolkit Database::RESOURCE",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-12-12T21:53:24Z",
+      "system_mtime": "2018-12-12T21:53:24Z",
+      "user_mtime": "2018-12-12T21:53:24Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [
+    {
+      "ref": "/subjects/78"
+    },
+    {
+      "ref": "/subjects/39"
+    },
+    {
+      "ref": "/subjects/33"
+    },
+    {
+      "ref": "/subjects/56"
+    },
+    {
+      "ref": "/subjects/36"
+    },
+    {
+      "ref": "/subjects/69"
+    },
+    {
+      "ref": "/subjects/417"
+    },
+    {
+      "ref": "/subjects/237"
+    },
+    {
+      "ref": "/subjects/35"
+    },
+    {
+      "ref": "/subjects/42"
+    },
+    {
+      "ref": "/subjects/103"
+    },
+    {
+      "ref": "/subjects/22"
+    },
+    {
+      "ref": "/subjects/85"
+    },
+    {
+      "ref": "/subjects/75"
+    },
+    {
+      "ref": "/subjects/76"
+    }
+  ],
+  "linked_events": [],
+  "extents": [
+    {
+      "lock_version": 0,
+      "number": "7.78",
+      "container_summary": "23 Boxes.",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-12-12T21:53:24Z",
+      "system_mtime": "2018-12-12T21:53:24Z",
+      "user_mtime": "2018-12-12T21:53:24Z",
+      "portion": "whole",
+      "extent_type": "cubic_feet",
+      "jsonmodel_type": "extent"
+    }
+  ],
+  "dates": [
+    {
+      "lock_version": 0,
+      "expression": "1917-1979",
+      "begin": "1917",
+      "end": "1979",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-12-12T21:53:24Z",
+      "system_mtime": "2018-12-12T21:53:24Z",
+      "user_mtime": "2018-12-12T21:53:24Z",
+      "date_type": "inclusive",
+      "label": "creation",
+      "jsonmodel_type": "date"
+    }
+  ],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [
+    {
+      "role": "creator",
+      "relator": "aut",
+      "terms": [],
+      "ref": "/agents/corporate_entities/4746"
+    },
+    {
+      "role": "creator",
+      "relator": "aut",
+      "terms": [],
+      "ref": "/agents/corporate_entities/4745"
+    }
+  ],
+  "revision_statements": [
+    {
+      "date": "finding aid revision date not supplied",
+      "description": "<date>2010 November 17</date><item>Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists’ Toolkit by Becky Robbins.</item>",
+      "created_by": "battalb",
+      "last_modified_by": "battalb",
+      "create_time": "2018-12-12T21:53:24Z",
+      "system_mtime": "2018-12-12T21:53:24Z",
+      "user_mtime": "2018-12-12T21:53:24Z",
+      "jsonmodel_type": "revision_statement",
+      "uri": "/revision_statement/3551",
+      "repository": {
+        "ref": "/repositories/2"
+      }
+    }
+  ],
+  "instances": [],
+  "deaccessions": [],
+  "related_accessions": [],
+  "classifications": [],
+  "notes": [
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "e09f932b8f56e7cad7076865404e564d",
+      "label": "Biographical/Historical note",
+      "type": "bioghist",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "History of the Fellowship Program at the Rockefeller Foundation:\n\nThe Rockefeller Foundation Fellowship Program began in 1917 with a few appointments and grew gradually so that there were several hundred fellowships awarded each year by 1925. As stated in the Directory of Fellowship Awards, the basic principle upon which the program was created was \"the conviction that individuals can and should be developed for future leadership and creative achievement in important fields of endeavor. Thus the functions of the Rockefeller Foundation (RF) fellowship program have been to select individuals of outstanding promise in the fields of interest defined by the general program of the Foundation, and to help prepare individuals to make significant contributions to research and teaching or public service in the future.\" [Note: Rockefeller Foundation, Directory of Fellowship Awards, For the Years 1917-1950. New York, 1950.]\n\nThe RF wanted the fellowship program to be an international exchange crossing all racial, cultural and national boundaries. To help facilitate this exchange, the RF installed a general rule that a fellow needed to travel and study outside of his/her own native country. Initially the RF intended for the fellowship program to focus on supporting individuals outside of the United States but over the years, a great number of U.S. citizens were awarded fellowships and related scholarships.\n\nAll fellowships were awarded within the five divisions of the Rockefeller Foundation: International Health Division (IHD), Medical Sciences, Natural Sciences, Social Sciences and Humanities.\n\nThe early fellows mostly came from the Western European countries and concentrated on medical and health issues. During the 1950s and 1960s, the fellowship program changed focus. Beginning in this period, fellows were predominantly from Latin America, Africa and India. Also the emphasis changed; fellowships were awarded primarily in agriculture and public health.\n\nThe Rockefeller Foundation had a standard set of criteria for its fellowship awards. Applicants needed to have finished their formal education with advanced degrees and training. They also needed to be employed by universities, research institutes or governmental bodies. Direct applications were discouraged; potential applicants were identified by RF officers. A fellowship award was typically one to two years in duration.\n\nThe Rockefeller Foundation:\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards. Although the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n\n\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "2f7ec48716d7318fe0e32ee9d2f4facb",
+      "label": "Preferred Citation note",
+      "type": "prefercite",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "d056a318a10de57e97664ef16828bd44",
+      "type": "accessrestrict",
+      "rights_restriction": {
+        "local_access_restriction_type": []
+      },
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "The fellowship recorder cards are open for research.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "587cf9241de6d9c54eaea3458d78e2d4",
+      "type": "arrangement",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "As received.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    },
+    {
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "78c1e640a7fb624a1bcdb13d57e1869b",
+      "type": "scopecontent",
+      "subnotes": [
+        {
+          "jsonmodel_type": "note_text",
+          "content": "Types of record include: recorder cards.",
+          "publish": true
+        }
+      ],
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/resources/625",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "collection_management": {
+    "lock_version": 0,
+    "rights_determined": false,
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2018-12-12T21:53:24Z",
+    "system_mtime": "2018-12-12T21:53:24Z",
+    "user_mtime": "2018-12-12T21:53:24Z",
+    "processing_status": "completed",
+    "jsonmodel_type": "collection_management",
+    "external_ids": [],
+    "uri": "/repositories/2/collection_management/7355",
+    "repository": {
+      "ref": "/repositories/2"
+    },
+    "parent": {
+      "ref": "/repositories/2/resources/625"
+    }
+  },
+  "user_defined": {
+    "lock_version": 0,
+    "boolean_1": false,
+    "boolean_2": false,
+    "boolean_3": false,
+    "date_2": "2016-12-31",
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2018-12-12T21:53:24Z",
+    "system_mtime": "2018-12-12T21:53:24Z",
+    "user_mtime": "2018-12-12T21:53:24Z",
+    "enum_1": "5 - Item-Level",
+    "jsonmodel_type": "user_defined",
+    "repository": {
+      "ref": "/repositories/2"
+    }
+  },
+  "tree": {
+    "ref": "/repositories/2/resources/625/tree"
+  }
+}

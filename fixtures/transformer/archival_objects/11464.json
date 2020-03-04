@@ -1,0 +1,155 @@
+{
+  "lock_version": 1,
+  "position": 24,
+  "publish": true,
+  "ref_id": "09feff44577d470da038ba68120530af",
+  "title": "Laboratories",
+  "display_string": "Laboratories",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T03:43:21Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-16T22:48:59Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "730131",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:59Z",
+      "system_mtime": "2017-02-16T22:48:59Z",
+      "user_mtime": "2017-02-16T22:48:59Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [
+        {
+            "lock_version": 0,
+            "identifier": "aa1d36b57fbb9c05202e6b84921ef156",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2020-02-10T18:34:17Z",
+            "system_mtime": "2020-02-10T18:34:17Z",
+            "user_mtime": "2020-02-10T18:34:17Z",
+            "start_date": "2020-02-07",
+            "end_date": "2020-02-15",
+            "determination_date": "2020-02-06",
+            "rights_type": "copyright",
+            "status": "copyrighted",
+            "jurisdiction": "US",
+            "jsonmodel_type": "rights_statement",
+            "external_documents": [],
+            "acts": [
+                {
+                    "start_date": "2020-02-07",
+                    "end_date": "2020-02-15",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2020-02-10T18:34:17Z",
+                    "system_mtime": "2020-02-10T18:34:17Z",
+                    "user_mtime": "2020-02-10T18:34:17Z",
+                    "act_type": "disseminate",
+                    "restriction": "disallow",
+                    "jsonmodel_type": "rights_statement_act",
+                    "notes": [
+                        {
+                            "jsonmodel_type": "note_rights_statement_act",
+                            "type": "additional_information",
+                            "content": [
+                                "act note"
+                            ],
+                            "persistent_id": "0b2de25be1bb35d44a9bab8ae5a8f96f",
+                            "publish": true
+                        }
+                    ]
+                }
+            ],
+            "linked_agents": [],
+            "notes": [
+                {
+                    "jsonmodel_type": "note_rights_statement",
+                    "type": "type_note",
+                    "content": [
+                        "type note"
+                    ],
+                    "persistent_id": "3a82187efe0573b134c722d2e3821ed0",
+                    "publish": true
+                }
+            ]
+        }
+    ],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/11440",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/93",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:59Z",
+      "system_mtime": "2017-02-16T22:48:59Z",
+      "user_mtime": "2017-02-16T22:48:59Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "24",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-16T22:48:59Z",
+        "system_mtime": "2017-02-16T22:48:59Z",
+        "user_mtime": "2017-02-16T22:48:59Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/11132"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Laboratories, experiments, scientific research.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "36a4488770c9c26a1cb9a4be4ec5f347",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/11464",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/93"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/11440"
+  },
+  "has_unpublished_ancestor": false
+}

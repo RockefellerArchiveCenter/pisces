@@ -1,0 +1,163 @@
+{
+	"lock_version": 10,
+	"title": "Rockefeller Foundation records, photographs, series 100-1000",
+	"publish": true,
+	"restrictions": true,
+	"ead_id": "FA003.xml",
+	"finding_aid_title": "A Guide to the Rockefeller Foundation records, photographs, series 100-1000\n",
+	"finding_aid_filing_title": "Rockefeller Foundation records, photographs, series 100-1000",
+	"finding_aid_date": "2009",
+	"finding_aid_author": "Bethany Francis",
+	"created_by": "admin",
+	"last_modified_by": "battalb",
+	"create_time": "2014-12-06T03:43:19Z",
+	"system_mtime": "2017-12-15T22:28:33Z",
+	"user_mtime": "2016-12-15T12:31:30Z",
+	"suppressed": false,
+	"id_0": "FA003",
+	"language": "eng",
+	"level": "collection",
+	"finding_aid_status": "in_progress",
+	"jsonmodel_type": "resource",
+	"external_ids": [{
+		"external_id": "614",
+		"source": "Archivists Toolkit Database::RESOURCE",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2016-12-15T12:31:30Z",
+		"system_mtime": "2016-12-15T12:31:30Z",
+		"user_mtime": "2016-12-15T12:31:30Z",
+		"jsonmodel_type": "external_id"
+	}],
+	"subjects": [{
+		"ref": "/subjects/962"
+	}],
+	"linked_events": [],
+	"extents": [{
+		"lock_version": 0,
+		"number": "77.88",
+		"container_summary": "177 document boxes.",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2016-12-15T12:31:30Z",
+		"system_mtime": "2016-12-15T12:31:30Z",
+		"user_mtime": "2016-12-15T12:31:30Z",
+		"portion": "whole",
+		"extent_type": "cubic_feet",
+		"jsonmodel_type": "extent"
+	}],
+	"dates": [{
+		"lock_version": 0,
+		"expression": "circa 1905-1980",
+		"begin": "1905",
+		"end": "1980",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2016-12-15T12:31:30Z",
+		"system_mtime": "2016-12-15T12:31:30Z",
+		"user_mtime": "2016-12-15T12:31:30Z",
+		"date_type": "inclusive",
+		"label": "creation",
+		"jsonmodel_type": "date"
+	}],
+	"external_documents": [],
+	"rights_statements": [],
+	"linked_agents": [{
+		"role": "creator",
+		"relator": "aut",
+		"terms": [],
+		"ref": "/agents/corporate_entities/12"
+	}],
+	"revision_statements": [],
+	"instances": [],
+	"deaccessions": [],
+	"related_accessions": [],
+	"classifications": [],
+	"notes": [{
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "e86ff28d752f8cc68935de79d57816cb",
+		"type": "accessrestrict",
+		"rights_restriction": {
+			"local_access_restriction_type": []
+		},
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC.",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "d840f1c215ddbaebcbb733b92de3b3ff",
+		"type": "prefercite",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "0e2c38cc8acc938a13a2a75355ad1fc1",
+		"type": "scopecontent",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "This collectiion is entirely made up photographs which documenti the activities of the Rockefeller Foundation during the years 1905-1980.",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "e1c24dcbe5277a0014062410ce9ac729",
+		"type": "arrangement",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "The Rockefeller Foundation photographs are arranged by topic.",
+			"publish": true
+		}],
+		"publish": true
+	}],
+	"uri": "/repositories/2/resources/93",
+	"repository": {
+		"ref": "/repositories/2"
+	},
+	"collection_management": {
+		"lock_version": 0,
+		"rights_determined": false,
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2016-12-15T12:31:30Z",
+		"system_mtime": "2017-06-02T20:50:51Z",
+		"user_mtime": "2016-12-15T12:31:30Z",
+		"processing_status": "completed",
+		"jsonmodel_type": "collection_management",
+		"external_ids": [],
+		"uri": "/repositories/2/collection_management/5173",
+		"repository": {
+			"ref": "/repositories/2"
+		},
+		"parent": {
+			"ref": "/repositories/2/resources/93"
+		}
+	},
+	"user_defined": {
+		"lock_version": 0,
+		"boolean_1": false,
+		"boolean_2": false,
+		"boolean_3": false,
+		"date_2": "2016-12-14",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2016-12-15T12:31:30Z",
+		"system_mtime": "2016-12-15T12:31:30Z",
+		"user_mtime": "2016-12-15T12:31:30Z",
+		"enum_1": "3 - Standard",
+		"jsonmodel_type": "user_defined",
+		"repository": {
+			"ref": "/repositories/2"
+		}
+	},
+	"tree": {
+		"ref": "/repositories/2/resources/93/tree"
+	}
+}

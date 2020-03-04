@@ -1,0 +1,100 @@
+{
+  "lock_version": 1,
+  "position": 18,
+  "publish": true,
+  "ref_id": "1943ae5686cc4c329342d51e684de869",
+  "title": "International Congress on Tropical Medicine and Malaria",
+  "display_string": "International Congress on Tropical Medicine and Malaria",
+  "restrictions_apply": false,
+  "created_by": "admin",
+  "last_modified_by": "pgalligan",
+  "create_time": "2014-12-06T03:43:20Z",
+  "system_mtime": "2017-12-15T22:28:33Z",
+  "user_mtime": "2017-02-16T22:48:55Z",
+  "suppressed": false,
+  "level": "file",
+  "jsonmodel_type": "archival_object",
+  "external_ids": [
+    {
+      "external_id": "730137",
+      "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:55Z",
+      "system_mtime": "2017-02-16T22:48:55Z",
+      "user_mtime": "2017-02-16T22:48:55Z",
+      "jsonmodel_type": "external_id"
+    }
+  ],
+  "subjects": [],
+  "linked_events": [],
+  "extents": [],
+  "dates": [],
+  "external_documents": [],
+  "rights_statements": [],
+  "linked_agents": [],
+  "ancestors": [
+    {
+      "ref": "/repositories/2/archival_objects/11440",
+      "level": "series"
+    },
+    {
+      "ref": "/repositories/2/resources/93",
+      "level": "collection"
+    }
+  ],
+  "instances": [
+    {
+      "lock_version": 0,
+      "created_by": "pgalligan",
+      "last_modified_by": "pgalligan",
+      "create_time": "2017-02-16T22:48:55Z",
+      "system_mtime": "2017-02-16T22:48:55Z",
+      "user_mtime": "2017-02-16T22:48:55Z",
+      "instance_type": "mixed materials",
+      "jsonmodel_type": "instance",
+      "is_representative": false,
+      "sub_container": {
+        "lock_version": 0,
+        "indicator_2": "18",
+        "created_by": "pgalligan",
+        "last_modified_by": "pgalligan",
+        "create_time": "2017-02-16T22:48:55Z",
+        "system_mtime": "2017-02-16T22:48:55Z",
+        "user_mtime": "2017-02-16T22:48:55Z",
+        "type_2": "folder",
+        "jsonmodel_type": "sub_container",
+        "top_container": {
+          "ref": "/repositories/2/top_containers/11132"
+        }
+      }
+    }
+  ],
+  "notes": [
+    {
+      "subnotes": [
+        {
+          "content": "Group portraits, meetings, conferences.\n\n",
+          "publish": true,
+          "jsonmodel_type": "note_text"
+        }
+      ],
+      "jsonmodel_type": "note_multipart",
+      "persistent_id": "bc313f7b7accaa52d8ead3a09e52bee5",
+      "label": "Scope and Contents note",
+      "type": "scopecontent",
+      "publish": true
+    }
+  ],
+  "uri": "/repositories/2/archival_objects/11458",
+  "repository": {
+    "ref": "/repositories/2"
+  },
+  "resource": {
+    "ref": "/repositories/2/resources/93"
+  },
+  "parent": {
+    "ref": "/repositories/2/archival_objects/11440"
+  },
+  "has_unpublished_ancestor": false
+}
