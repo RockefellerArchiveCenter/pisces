@@ -7,9 +7,9 @@ MERGERS = {
     "resource": ResourceMerger,
     "archival_object": ArchivalObjectMerger,
     "subject": SubjectMerger,
-    "person": AgentMerger,
-    "organization": AgentMerger,
-    "family": AgentMerger,
+    "agent_person": AgentMerger,
+    "agent_corporate_entity": AgentMerger,
+    "agent_family": AgentMerger,
     "arrangement_map": ArrangementMapMerger,
 }
 
@@ -20,6 +20,5 @@ class MergeView(BaseServiceView):
     def get_service_response(self, request):
         if not request.data:
             raise Exception("No data submitted to merge")
-        # merger = MERGERS[request.data.get("object_type")]
-        # return merger().merge(request.data.get("object_type"), request.data.get("object"))
-        return "merged"
+        merger = MERGERS[request.data.get("object_type")]
+        return merger().merge(request.data.get("object_type"), request.data.get("object"))

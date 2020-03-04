@@ -1,3 +1,5 @@
+import json
+
 from fetcher.helpers import instantiate_electronbond, send_post_request
 from pisces import settings
 from silk.profiling.profiler import silk_profile
@@ -19,6 +21,7 @@ class BaseMerger:
         except Exception as e:
             raise MergeError(e)
 
+    @silk_profile()
     def merge(self, object_type, object):
         """Main merge function. Merges transformed object into matched objects
            if they exist and then persists the merged object, or simply persists
@@ -31,7 +34,7 @@ class BaseMerger:
             send_post_request(
                 settings.TRANSFORM_URL,
                 {"object_type": target_object_type, "object": merged})
-            return merged
+            return json.dumps(merged)
         except Exception as e:
             raise MergeError("Error merging {}: {}".format(identifier, e))
 
@@ -60,13 +63,14 @@ class BaseMerger:
 
 class ArchivalObjectMerger(BaseMerger):
 
+    @silk_profile()
     def get_additional_data(self, object, object_type):
-        base_fields = ["dates", "languages"]
+        base_fields = ["dates", "language"]
         extended_fields = base_fields + ["extents"]
         data = {}
         fields = base_fields if object_type == "archival_object" else extended_fields
         for field in fields:
-            if not object.get(field):
+            if object.get(field) in ['', [], {}, None]:
                 value = self.aspace_helper.closest_parent_value(object.get("uri"), field)
                 data[field] = value
         if object_type == "archival_object_collection":
@@ -74,6 +78,7 @@ class ArchivalObjectMerger(BaseMerger):
             # TODO: get children
         return data
 
+    @silk_profile()
     def combine_data(self, object, additional_data):
         for k, v in additional_data.items():
             object[k] = v
@@ -85,9 +90,11 @@ class ArrangementMapMerger(BaseMerger):
     def get_target_object_type(self, data):
         return "resource"
 
+    @silk_profile()
     def get_additional_data(self, object, object_type):
         return self.aspace.client.get(object["archivespace_uri"])
 
+    @silk_profile()
     def combine_data(self, object, additional_data):
         """Prepend Cartographer ancestors to AS ancestors."""
         additional_data["ancestors"].insert(0, object["ancestors"])
@@ -101,11 +108,13 @@ class AgentMerger(BaseMerger):
 
 class ResourceMerger(BaseMerger):
 
+    @silk_profile()
     def get_additional_data(self, object, object_type):
         return None
         # TODO: return data from Cartographer
         # return self.cartographer_client.get("find-by-id", {"uri": object["uri"]}).json()
 
+    @silk_profile()
     def combine_data(self, object, additional_data):
         """Prepend Cartographer ancestors to AS ancestors."""
         object["ancestors"].insert(0, additional_data["ancestors"])
