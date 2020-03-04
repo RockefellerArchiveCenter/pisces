@@ -87,13 +87,13 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         elif object_type == 'subject':
             list = aspace.subjects.with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'person':
+        elif object_type == 'agent_person':
             list = aspace.agents["people"].with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'organization':
+        elif object_type == 'agent_corporate_entity':
             list = aspace.agents["corporate_entities"].with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'family':
+        elif object_type == 'agent_family':
             list = aspace.agents["families"].with_params(
                 all_ids=True, modified_since=last_run)
         for obj in list:

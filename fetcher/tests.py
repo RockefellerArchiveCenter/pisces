@@ -47,7 +47,7 @@ class FetcherTest(TestCase):
                 f.start_time = time
                 f.save()
 
-    @mock.patch("fetcher.helpers.send_post_request")
+    @mock.patch("fetcher.helpers.requests.post")
     def test_fetchers(self, mock_post):
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
                 (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
@@ -55,10 +55,11 @@ class FetcherTest(TestCase):
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
+                        print("{}-{}-{}.json".format(cassette_prefix, status, object_type))
                         list = fetcher().fetch(status, object_type)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
-                        mock_post.call_count = len(list)
+                        self.assertEqual(mock_post.call_count, len(list))
                         mock_post.reset_mock()
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
             self.assertEqual(len(FetchRunError.objects.all()), 0)
