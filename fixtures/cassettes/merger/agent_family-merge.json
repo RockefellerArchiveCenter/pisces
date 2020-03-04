@@ -1,0 +1,818 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://192.168.50.7:8089/users/admin/login?expiring=False",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "0"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "3936"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:54 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"session\":\"0135cf2df3542f09664d0f0c4a6813d80bebfac9e13cb496d13d8ba0b4425157\",\"user\":{\"lock_version\":158671,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-03-04T20:04:54Z\",\"user_mtime\":\"2020-03-04T20:04:54Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/version",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "22"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "text/html;charset=UTF-8"
+                    ]
+                },
+                "body": {
+                    "string": "ArchivesSpace (v2.6.0)"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/repositories/2",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "636"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"repo_code\":\"RAC\",\"name\":\"Rockefeller Archive Center\",\"org_code\":\"NNttR\",\"url\":\"http://www.rockarch.org\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:20:25Z\",\"system_mtime\":\"2018-12-20T15:00:39Z\",\"user_mtime\":\"2018-12-20T15:00:39Z\",\"publish\":true,\"oai_is_disabled\":false,\"oai_sets_available\":\"[\\\"890\\\",\\\"891\\\",\\\"892\\\",\\\"893\\\",\\\"894\\\",\\\"895\\\",\\\"896\\\",\\\"897\\\",\\\"898\\\",\\\"899\\\",\\\"900\\\"]\",\"slug\":\"rac\",\"is_slug_auto\":true,\"jsonmodel_type\":\"repository\",\"uri\":\"/repositories/2\",\"display_string\":\"Rockefeller Archive Center (RAC)\",\"agent_representation\":{\"ref\":\"/agents/corporate_entities/1\"}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.27:8000/status/health/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "85"
+                    ],
+                    "Server": [
+                        "gunicorn/20.0.4"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:50:32 GMT"
+                    ],
+                    "Connection": [
+                        "close"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"ping\": {\"pong\": true}, \"databases\": {\"default\": true}, \"caches\": {\"default\": true}}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://pisces-web:8007/transform/",
+                "body": "{\"object_type\": \"agent_family\", \"object\": {\"lock_version\": 284, \"publish\": true, \"created_by\": \"pgalligan\", \"last_modified_by\": \"pgalligan\", \"create_time\": \"2015-04-28T19:00:16Z\", \"system_mtime\": \"2019-03-07T19:39:17Z\", \"user_mtime\": \"2015-04-28T19:00:16Z\", \"jsonmodel_type\": \"agent_family\", \"agent_contacts\": [], \"linked_agent_roles\": [\"creator\", \"source\", \"subject\"], \"external_documents\": [], \"notes\": [], \"used_within_repositories\": [\"/repositories/2\"], \"used_within_published_repositories\": [\"/repositories/2\"], \"dates_of_existence\": [], \"names\": [{\"lock_version\": 0, \"family_name\": \"Rockefeller family\", \"sort_name\": \"Rockefeller family\", \"sort_name_auto_generate\": true, \"created_by\": \"pgalligan\", \"last_modified_by\": \"pgalligan\", \"create_time\": \"2015-04-28T19:00:16Z\", \"system_mtime\": \"2015-04-28T19:00:16Z\", \"user_mtime\": \"2015-04-28T19:00:16Z\", \"authorized\": true, \"is_display_name\": true, \"source\": \"ingest\", \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}], \"related_agents\": [], \"uri\": \"/agents/families/6\", \"agent_type\": \"agent_family\", \"is_linked_to_published_record\": true, \"display_name\": {\"lock_version\": 0, \"family_name\": \"Rockefeller family\", \"sort_name\": \"Rockefeller family\", \"sort_name_auto_generate\": true, \"created_by\": \"pgalligan\", \"last_modified_by\": \"pgalligan\", \"create_time\": \"2015-04-28T19:00:16Z\", \"system_mtime\": \"2015-04-28T19:00:16Z\", \"user_mtime\": \"2015-04-28T19:00:16Z\", \"authorized\": true, \"is_display_name\": true, \"source\": \"ingest\", \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}, \"title\": \"Rockefeller family\"}}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "1591"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "43"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:48:32 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"success\",\"objects\":[],\"count\":0}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://192.168.50.7:8089/users/admin/login?expiring=False",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "0"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "3936"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"session\":\"d63551546d70415aee1cbd53ac65d474771a0faeccc14e713471b453c957f769\",\"user\":{\"lock_version\":158672,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-03-04T20:04:55Z\",\"user_mtime\":\"2020-03-04T20:04:55Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/version",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "22"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "text/html;charset=UTF-8"
+                    ]
+                },
+                "body": {
+                    "string": "ArchivesSpace (v2.6.0)"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/repositories/2",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "636"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"repo_code\":\"RAC\",\"name\":\"Rockefeller Archive Center\",\"org_code\":\"NNttR\",\"url\":\"http://www.rockarch.org\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:20:25Z\",\"system_mtime\":\"2018-12-20T15:00:39Z\",\"user_mtime\":\"2018-12-20T15:00:39Z\",\"publish\":true,\"oai_is_disabled\":false,\"oai_sets_available\":\"[\\\"890\\\",\\\"891\\\",\\\"892\\\",\\\"893\\\",\\\"894\\\",\\\"895\\\",\\\"896\\\",\\\"897\\\",\\\"898\\\",\\\"899\\\",\\\"900\\\"]\",\"slug\":\"rac\",\"is_slug_auto\":true,\"jsonmodel_type\":\"repository\",\"uri\":\"/repositories/2\",\"display_string\":\"Rockefeller Archive Center (RAC)\",\"agent_representation\":{\"ref\":\"/agents/corporate_entities/1\"}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.27:8000/status/health/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "85"
+                    ],
+                    "Server": [
+                        "gunicorn/20.0.4"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:50:33 GMT"
+                    ],
+                    "Connection": [
+                        "close"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"ping\": {\"pong\": true}, \"databases\": {\"default\": true}, \"caches\": {\"default\": true}}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://pisces-web:8007/transform/",
+                "body": "{\"object_type\": \"agent_family\", \"object\": {\"lock_version\": 1101, \"publish\": true, \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2019-03-21T19:54:01Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"jsonmodel_type\": \"agent_family\", \"agent_contacts\": [{\"lock_version\": 0, \"name\": \"Rockefeller family\", \"address_1\": \"30 Rockefeller Plaza, Mezzanine Level Room 53 49th Street Side\", \"address_2\": \"Opposite 50th between 5th and 6th \", \"city\": \"New York\", \"region\": \"NY\", \"country\": \"USA\", \"email\": \"mstern@rockco.com\", \"note\": \"Label: Additional Contacts\\nContent: \\nElizabeth Haviland \\u2013 Assistant to Clayton W. Frye (also LSR Estate)\\n30 Rockefeller Plaza, Suite 5600\\nEmail: ehaviland@rockco.com\\nPhone: 212-649-5651\\nFax: 212-649-5841\\n\\n\\nLabel: Family Financial Contact\\nContent: \\nFely Co: Rockefeller Family Financial \\nEmail: fco@rockco.com\\n\\n\\n\", \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"jsonmodel_type\": \"agent_contact\", \"telephones\": [{\"number\": \"(212) 649-5901\\t\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"jsonmodel_type\": \"telephone\", \"uri\": \"/telephone/3\"}]}], \"linked_agent_roles\": [\"creator\", \"source\", \"subject\"], \"external_documents\": [], \"notes\": [], \"used_within_repositories\": [\"/repositories/2\"], \"used_within_published_repositories\": [\"/repositories/2\"], \"dates_of_existence\": [], \"names\": [{\"lock_version\": 0, \"family_name\": \"Rockefeller family\", \"sort_name\": \"Rockefeller family\", \"sort_name_auto_generate\": true, \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"authorized\": true, \"is_display_name\": true, \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}, {\"lock_version\": 0, \"family_name\": \"R family\", \"sort_name\": \"R family\", \"sort_name_auto_generate\": true, \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"jsonmodel_type\": \"name_family\", \"use_dates\": [], \"authorized\": false, \"is_display_name\": false}, {\"lock_version\": 0, \"family_name\": \"RFAM\", \"sort_name\": \"RFAM\", \"sort_name_auto_generate\": true, \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"jsonmodel_type\": \"name_family\", \"use_dates\": [], \"authorized\": false, \"is_display_name\": false}], \"related_agents\": [], \"uri\": \"/agents/families/1\", \"agent_type\": \"agent_family\", \"is_linked_to_published_record\": true, \"display_name\": {\"lock_version\": 0, \"family_name\": \"Rockefeller family\", \"sort_name\": \"Rockefeller family\", \"sort_name_auto_generate\": true, \"created_by\": \"admin\", \"last_modified_by\": \"admin\", \"create_time\": \"2014-12-06T02:40:38Z\", \"system_mtime\": \"2014-12-06T02:40:38Z\", \"user_mtime\": \"2014-12-06T02:40:38Z\", \"authorized\": true, \"is_display_name\": true, \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}, \"title\": \"Rockefeller family\"}}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "3322"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "43"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:48:33 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"success\",\"objects\":[],\"count\":0}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://192.168.50.7:8089/users/admin/login?expiring=False",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "0"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "3936"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:55 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"session\":\"88b388e928e0cf8ac5bcdd701e7b9313b0d91637b8a0804292e306708a0aaf53\",\"user\":{\"lock_version\":158673,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-03-04T20:04:56Z\",\"user_mtime\":\"2020-03-04T20:04:56Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/version",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "22"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:56 GMT"
+                    ],
+                    "Content-Type": [
+                        "text/html;charset=UTF-8"
+                    ]
+                },
+                "body": {
+                    "string": "ArchivesSpace (v2.6.0)"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.7:8089/repositories/2",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "636"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 20:04:56 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"repo_code\":\"RAC\",\"name\":\"Rockefeller Archive Center\",\"org_code\":\"NNttR\",\"url\":\"http://www.rockarch.org\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:20:25Z\",\"system_mtime\":\"2018-12-20T15:00:39Z\",\"user_mtime\":\"2018-12-20T15:00:39Z\",\"publish\":true,\"oai_is_disabled\":false,\"oai_sets_available\":\"[\\\"890\\\",\\\"891\\\",\\\"892\\\",\\\"893\\\",\\\"894\\\",\\\"895\\\",\\\"896\\\",\\\"897\\\",\\\"898\\\",\\\"899\\\",\\\"900\\\"]\",\"slug\":\"rac\",\"is_slug_auto\":true,\"jsonmodel_type\":\"repository\",\"uri\":\"/repositories/2\",\"display_string\":\"Rockefeller Archive Center (RAC)\",\"agent_representation\":{\"ref\":\"/agents/corporate_entities/1\"}}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.50.27:8000/status/health/",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "85"
+                    ],
+                    "Server": [
+                        "gunicorn/20.0.4"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:50:33 GMT"
+                    ],
+                    "Connection": [
+                        "close"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"ping\": {\"pong\": true}, \"databases\": {\"default\": true}, \"caches\": {\"default\": true}}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "POST",
+                "uri": "http://pisces-web:8007/transform/",
+                "body": "{\"object_type\": \"agent_family\", \"object\": {\"lock_version\": 36, \"publish\": true, \"created_by\": \"sgandhi\", \"last_modified_by\": \"sgandhi\", \"create_time\": \"2018-06-22T21:14:27Z\", \"system_mtime\": \"2019-04-01T18:50:29Z\", \"user_mtime\": \"2018-06-22T21:14:27Z\", \"jsonmodel_type\": \"agent_family\", \"agent_contacts\": [], \"linked_agent_roles\": [\"creator\", \"source\"], \"external_documents\": [], \"notes\": [], \"used_within_repositories\": [\"/repositories/2\"], \"used_within_published_repositories\": [\"/repositories/2\"], \"dates_of_existence\": [], \"names\": [{\"lock_version\": 0, \"family_name\": \"Rockefeller Foundation\", \"sort_name\": \"Rockefeller Foundation\", \"sort_name_auto_generate\": true, \"created_by\": \"sgandhi\", \"last_modified_by\": \"sgandhi\", \"create_time\": \"2018-06-22T21:14:27Z\", \"system_mtime\": \"2018-06-22T21:14:27Z\", \"user_mtime\": \"2018-06-22T21:14:27Z\", \"authorized\": true, \"is_display_name\": true, \"source\": \"local\", \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}], \"related_agents\": [], \"uri\": \"/agents/families/11\", \"agent_type\": \"agent_family\", \"is_linked_to_published_record\": true, \"display_name\": {\"lock_version\": 0, \"family_name\": \"Rockefeller Foundation\", \"sort_name\": \"Rockefeller Foundation\", \"sort_name_auto_generate\": true, \"created_by\": \"sgandhi\", \"last_modified_by\": \"sgandhi\", \"create_time\": \"2018-06-22T21:14:27Z\", \"system_mtime\": \"2018-06-22T21:14:27Z\", \"user_mtime\": \"2018-06-22T21:14:27Z\", \"authorized\": true, \"is_display_name\": true, \"source\": \"local\", \"rules\": \"dacs\", \"jsonmodel_type\": \"name_family\", \"use_dates\": []}, \"title\": \"Rockefeller Foundation\"}}",
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Content-Length": [
+                        "1586"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "43"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ],
+                    "Allow": [
+                        "POST, OPTIONS"
+                    ],
+                    "Date": [
+                        "Wed, 04 Mar 2020 19:48:33 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"detail\":\"success\",\"objects\":[],\"count\":0}"
+                }
+            }
+        }
+    ]
+}

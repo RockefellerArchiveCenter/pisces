@@ -1,4 +1,3 @@
-from django.urls import reverse
 from fetcher.helpers import instantiate_electronbond, send_post_request
 from pisces import settings
 from silk.profiling.profiler import silk_profile
@@ -14,10 +13,12 @@ class BaseMerger:
     """Base merger class."""
 
     def __init__(self):
-        self.aspace_helper = ArchivesSpaceHelper()
-        self.cartographer_client = instantiate_electronbond(settings.CARTOGRAPHER)
+        try:
+            self.aspace_helper = ArchivesSpaceHelper()
+            self.cartographer_client = instantiate_electronbond(settings.CARTOGRAPHER)
+        except Exception as e:
+            raise MergeError(e)
 
-    @silk_profile()
     def merge(self, object_type, object):
         """Main merge function. Merges transformed object into matched objects
            if they exist and then persists the merged object, or simply persists
@@ -28,9 +29,9 @@ class BaseMerger:
             additional_data = self.get_additional_data(object, target_object_type)
             merged = self.combine_data(object, additional_data) if additional_data else object
             send_post_request(
-                reverse('transform'),
+                settings.TRANSFORM_URL,
                 {"object_type": target_object_type, "object": merged})
-            return "Object merged", identifier
+            return merged
         except Exception as e:
             raise MergeError("Error merging {}: {}".format(identifier, e))
 
@@ -41,7 +42,7 @@ class BaseMerger:
             identifier = object["ref"]
         return identifier
 
-    def get_additional_data(self, object):
+    def get_additional_data(self, object, object_type):
         return None
 
     @silk_profile()
@@ -59,10 +60,9 @@ class BaseMerger:
 
 class ArchivalObjectMerger(BaseMerger):
 
-    @silk_profile
     def get_additional_data(self, object, object_type):
-        base_fields = ["dates", "language"]
-        extended_fields = base_fields + ["extents", "linked_agents"]
+        base_fields = ["dates", "languages"]
+        extended_fields = base_fields + ["extents"]
         data = {}
         fields = base_fields if object_type == "archival_object" else extended_fields
         for field in fields:
@@ -70,10 +70,10 @@ class ArchivalObjectMerger(BaseMerger):
                 value = self.aspace_helper.closest_parent_value(object.get("uri"), field)
                 data[field] = value
         if object_type == "archival_object_collection":
-            data["linked_agents"] = data["linked_agents"] + self.aspace_helper.closest_creators(object.get("uri"))
+            data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object.get("uri"))
+            # TODO: get children
         return data
 
-    @silk_profile
     def combine_data(self, object, additional_data):
         for k, v in additional_data.items():
             object[k] = v
@@ -91,6 +91,7 @@ class ArrangementMapMerger(BaseMerger):
     def combine_data(self, object, additional_data):
         """Prepend Cartographer ancestors to AS ancestors."""
         additional_data["ancestors"].insert(0, object["ancestors"])
+        # TODO: Something with children??
         return additional_data
 
 
@@ -101,11 +102,14 @@ class AgentMerger(BaseMerger):
 class ResourceMerger(BaseMerger):
 
     def get_additional_data(self, object, object_type):
-        return self.cartographer_client.get("find-by-id", {"uri": object["uri"]}).json()
+        return None
+        # TODO: return data from Cartographer
+        # return self.cartographer_client.get("find-by-id", {"uri": object["uri"]}).json()
 
     def combine_data(self, object, additional_data):
         """Prepend Cartographer ancestors to AS ancestors."""
         object["ancestors"].insert(0, additional_data["ancestors"])
+        # TODO: children?
         return object
 
 

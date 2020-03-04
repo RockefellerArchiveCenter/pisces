@@ -20,5 +20,6 @@ class MergeView(BaseServiceView):
     def get_service_response(self, request):
         if not request.data:
             raise Exception("No data submitted to merge")
-        merger = MERGERS[request.data.get("object_type")]
-        return merger().merge(request.data.get("object_type"), request.data.get("object"))
+        # merger = MERGERS[request.data.get("object_type")]
+        # return merger().merge(request.data.get("object_type"), request.data.get("object"))
+        return "merged"
