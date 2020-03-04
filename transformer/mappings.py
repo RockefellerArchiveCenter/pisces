@@ -2,21 +2,24 @@ import json
 from ast import literal_eval
 
 import odin
-from asterism.resources import archivesspace
 from iso639 import languages
-from odin.codecs import json_codec
 
-from .mappings_helpers import ArchivesSpaceHelper
-from .resource_configs import NOTE_TYPE_CHOICES
-from .resources import (Agent, CartographerMapComponent, Collection, Date,
-                        Extent, ExternalIdentifier, Language, Note, Object,
-                        Reference, RightsGranted, RightsStatement, Subnote,
-                        Term)
+from .resources.configs import NOTE_TYPE_CHOICES
+from .resources.rac import (Agent, Collection, Date, Extent,
+                            ExternalIdentifier, Language, Note, Object,
+                            Reference, RightsGranted, RightsStatement, Subnote,
+                            Term)
+from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
+                               SourceAgentPerson, SourceAncestor,
+                               SourceArchivalObject, SourceDate, SourceExtent,
+                               SourceLinkedAgent, SourceNote, SourceRef,
+                               SourceResource, SourceRightsStatement,
+                               SourceRightsStatementAct, SourceSubject)
 
 
-class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
+class SourceRightsStatementActToRightsGranted(odin.Mapping):
     """Maps AS RightsStatements Acts to Rights Granted object."""
-    from_obj = archivesspace.ArchivesSpaceRightsStatementAct
+    from_obj = SourceRightsStatementAct
     to_obj = RightsGranted
 
     mappings = (
@@ -28,12 +31,12 @@ class ArchivesSpaceRightsStatementActToRightsGranted(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def rights_notes(self, value):
-        return ArchivesSpaceNoteToNote.apply(value)
+        return SourceNoteToNote.apply(value)
 
 
-class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
+class SourceRightsStatementToRightsStatement(odin.Mapping):
     """Maps AS RightsStatements Statement to Rights Statement object."""
-    from_obj = archivesspace.ArchivesSpaceRightsStatement
+    from_obj = SourceRightsStatement
     to_obj = RightsStatement
 
     mappings = (
@@ -45,16 +48,16 @@ class ArchivesSpaceRightsStatementToRightsStatement(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="rights_notes", to_list=True)
     def rights_notes(self, value):
-        return ArchivesSpaceNoteToNote.apply(value)
+        return SourceNoteToNote.apply(value)
 
     @odin.map_list_field(from_field='acts', to_field='rights_granted', to_list=True)
     def rights_granted(self, value):
-        return ArchivesSpaceRightsStatementActToRightsGranted.apply(value)
+        return SourceRightsStatementActToRightsGranted.apply(value)
 
 
-class ArchivesSpaceRefToReference(odin.Mapping):
+class SourceRefToReference(odin.Mapping):
     """Maps ASRef to Reference object."""
-    from_obj = archivesspace.ArchivesSpaceRef
+    from_obj = SourceRef
     to_obj = Reference
 
     mappings = (
@@ -66,9 +69,9 @@ class ArchivesSpaceRefToReference(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
-class ArchivesSpaceAncestorToReference(odin.Mapping):
+class SourceAncestorToReference(odin.Mapping):
     """Maps ASAncestor to Reference object."""
-    from_obj = archivesspace.ArchivesSpaceAncestor
+    from_obj = SourceAncestor
     to_obj = Reference
 
     mappings = (
@@ -80,9 +83,9 @@ class ArchivesSpaceAncestorToReference(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
-class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
+class SourceLinkedAgentToReference(odin.Mapping):
     """Maps ASAgents to Reference object."""
-    from_obj = archivesspace.ArchivesSpaceLinkedAgent
+    from_obj = SourceLinkedAgent
     to_obj = Reference
 
     mappings = (
@@ -94,9 +97,9 @@ class ArchivesSpaceLinkedAgentToReference(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
-class ArchivesSpaceDateToDate(odin.Mapping):
+class SourceDateToDate(odin.Mapping):
     """Maps ASDate to Date object."""
-    from_obj = archivesspace.ArchivesSpaceDate
+    from_obj = SourceDate
     to_obj = Date
 
     mappings = (
@@ -110,9 +113,9 @@ class ArchivesSpaceDateToDate(odin.Mapping):
         return value
 
 
-class ArchivesSpaceExtentToExtent(odin.Mapping):
+class SourceExtentToExtent(odin.Mapping):
     """Maps ASExtent to Extent object."""
-    from_obj = archivesspace.ArchivesSpaceExtent
+    from_obj = SourceExtent
     to_obj = Extent
 
     mappings = (
@@ -121,9 +124,9 @@ class ArchivesSpaceExtentToExtent(odin.Mapping):
     )
 
 
-class ArchivesSpaceNoteToNote(odin.Mapping):
+class SourceNoteToNote(odin.Mapping):
     """Maps ASNotes to Note object."""
-    from_obj = archivesspace.ArchivesSpaceNote
+    from_obj = SourceNote
     to_obj = Note
 
     @odin.map_field(from_field='type', to_field='title')
@@ -194,14 +197,14 @@ class ArchivesSpaceNoteToNote(odin.Mapping):
         return Subnote(type='definedlist', content=content)
 
 
-class ArchivesSpaceResourceToCollection(odin.Mapping):
+class SourceResourceToCollection(odin.Mapping):
     """Maps ASResources to Collection object."""
-    from_obj = archivesspace.ArchivesSpaceResource
+    from_obj = SourceResource
     to_obj = Collection
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
@@ -216,29 +219,25 @@ class ArchivesSpaceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return ArchivesSpaceRefToReference.apply(value)
+        return SourceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
-        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+        return SourceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
+        return [SourceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+        return [SourceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
 
-class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
+class SourceArchivalObjectToCollection(odin.Mapping):
     """Maps ASArchivalObjects to Collection object."""
-    from_obj = archivesspace.ArchivesSpaceArchivalObject
+    from_obj = SourceArchivalObject
     to_obj = Collection
-
-    def __init__(self, *args, **kwargs):
-        self.aspace_helper = ArchivesSpaceHelper()
-        return super(ArchivesSpaceArchivalObjectToCollection, self).__init__(*args, **kwargs)
 
     @odin.map_field
     def title(self, value):
@@ -246,43 +245,32 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
         return [Language(expression=lang_data.name, identifier=value)]
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return ArchivesSpaceRefToReference.apply(value)
+        return SourceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
-        if not value:
-            value = [json_codec.loads(json.dumps(d), archivesspace.ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
-        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+        return SourceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='extents', to_field='extents')
     def extents(self, value):
-        if not value:
-            value = [json_codec.loads(json.dumps(d), archivesspace.ArchivesSpaceExtent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'extents')]
-        return ArchivesSpaceExtentToExtent.apply(value)
+        return SourceExtentToExtent.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):
-        if not value:
-            value = [json_codec.loads(json.dumps(d), archivesspace.ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'linked_agents')]
-        if len([v for v in value if v.role == 'creator']) > 0:
-            return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
-        else:
-            creators = [json_codec.loads(json.dumps(d), archivesspace.ArchivesSpaceLinkedAgent) for d in self.aspace_helper.closest_creators(self.source.uri)]
-            return [ArchivesSpaceLinkedAgentToReference.apply(c) for c in creators]
+        return [SourceLinkedAgentToReference.apply(v) for v in value if v.role == 'creator']
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
-        return [ArchivesSpaceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
+        return [SourceLinkedAgentToReference.apply(v) for v in value if v.role != 'creator']
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -290,17 +278,13 @@ class ArchivesSpaceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
     def ancestors(self, value):
-        return ArchivesSpaceAncestorToReference.apply(value)
+        return SourceAncestorToReference.apply(value)
 
 
-class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
+class SourceArchivalObjectToObject(odin.Mapping):
     """Maps ASArchivalObjects to Objects object."""
-    from_obj = archivesspace.ArchivesSpaceArchivalObject
+    from_obj = SourceArchivalObject
     to_obj = Object
-
-    def __init__(self, *args, **kwargs):
-        self.aspace_helper = ArchivesSpaceHelper()
-        return super(ArchivesSpaceArchivalObjectToObject, self).__init__(*args, **kwargs)
 
     mappings = (
         odin.define(from_field='position', to_field='tree_position'),
@@ -308,9 +292,7 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field='dates', to_field='dates')
     def dates(self, value):
-        if not value:
-            value = [json_codec.loads(json.dumps(d), archivesspace.ArchivesSpaceDate) for d in self.aspace_helper.closest_parent_value(self.source.uri, 'dates')]
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_field
     def title(self, value):
@@ -318,7 +300,6 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        value = value if value else self.aspace_helper.closest_parent_value(self.source.uri, 'language')
         lang_data = languages.get(part2b=value)
         return [Language(expression=lang_data.name, identifier=value)]
 
@@ -328,24 +309,24 @@ class ArchivesSpaceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return ArchivesSpaceRefToReference.apply(value)
+        return SourceRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
-        return ArchivesSpaceRightsStatementToRightsStatement.apply(value)
+        return SourceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='agents')
     def agents(self, value):
-        return ArchivesSpaceLinkedAgentToReference.apply(value)
+        return SourceLinkedAgentToReference.apply(value)
 
     @odin.map_list_field(from_field='ancestors', to_field='ancestors')
     def ancestors(self, value):
-        return ArchivesSpaceAncestorToReference.apply(value)
+        return SourceAncestorToReference.apply(value)
 
 
-class ArchivesSpaceSubjectToTerm(odin.Mapping):
+class SourceSubjectToTerm(odin.Mapping):
     """Maps ASSubject to Term object."""
-    from_obj = archivesspace.ArchivesSpaceSubject
+    from_obj = SourceSubject
     to_obj = Term
 
     @odin.map_field(from_field='terms', to_field='term_type')
@@ -357,14 +338,14 @@ class ArchivesSpaceSubjectToTerm(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
-class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
+class SourceAgentCorporateEntityToAgent(odin.Mapping):
     """Maps ASAgent Corporate Entities to Agent object."""
-    from_obj = archivesspace.ArchivesSpaceAgentCorporateEntity
+    from_obj = SourceAgentCorporateEntity
     to_obj = Agent
 
     @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
     def dates(self, value):
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -375,14 +356,14 @@ class ArchivesSpaceAgentCorporateEntityToAgent(odin.Mapping):
         return "organization"
 
 
-class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
+class SourceAgentFamilyToAgent(odin.Mapping):
     """Maps ASAgent Family to Agent object."""
-    from_obj = archivesspace.ArchivesSpaceAgentFamily
+    from_obj = SourceAgentFamily
     to_obj = Agent
 
     @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
     def dates(self, value):
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -393,14 +374,14 @@ class ArchivesSpaceAgentFamilyToAgent(odin.Mapping):
         return "family"
 
 
-class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
+class SourceAgentPersonToAgent(odin.Mapping):
     """Maps ASAgent Person to Agent object."""
-    from_obj = archivesspace.ArchivesSpaceAgentPerson
+    from_obj = SourceAgentPerson
     to_obj = Agent
 
     @odin.map_list_field(from_field='dates_of_existence', to_field='dates')
     def dates(self, value):
-        return ArchivesSpaceDateToDate.apply(value)
+        return SourceDateToDate.apply(value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -409,14 +390,3 @@ class ArchivesSpaceAgentPersonToAgent(odin.Mapping):
     @odin.assign_field(to_field='agent_type')
     def agent_types(self):
         return "person"
-
-
-class CartographerMapComponentToCollection(odin.Mapping):
-    """Maps CartographerMapComponent to Collection."""
-    from_obj = CartographerMapComponent
-    to_obj = Collection
-
-    @odin.map_field(from_field='archivesspace_uri', to_field='external_identifiers', to_list=True)
-    def external_identifiers(self, value):
-        return [ExternalIdentifier(identifier=value, source='archivesspace'),
-                ExternalIdentifier(identifier=self.source.ref, source='cartographer')]
