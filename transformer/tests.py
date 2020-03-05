@@ -40,7 +40,6 @@ class TransformerTest(TestCase):
                     self.assertNotEqual(
                         transformed, False,
                         "Transformer returned an error: {}".format(transformed))
-                    print(source, transformed)
                     transformed_data = json.loads(transformed)
                     self.check_list_counts(source, transformed_data, object_type)
                     self.check_agent_counts(source, transformed_data)
@@ -57,18 +56,20 @@ class TransformerTest(TestCase):
                                             ("rights_statements", "rights"),
                                             (date_source_key, "dates"),
                                             ("extents", "extents"),
-                                            ("children", "children"),
-                                            ("creators", "creators")]:
+                                            ("children", "children")]:
             source_len = len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
                              "Found {} {} in source but {} {} in transformed.".format(
                                  source_len, source_key, transformed_len, transformed_key))
 
-    # TODO: fix this logic (mappings need to be tweaked because source data has changed)
-    # def check_agent_counts(self, source, transformed):
-    #     """Checks for correct counts of agents and other creators."""
-    #     source_creator_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") == "creator"])
-    #     source_agent_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") != "creator"])
-    #     # self.assertTrue(source_creator_count == len(transformed.get("creators", [])), "Expecting {} creators, got {}".format(source_agent_count, len(transformed.get("creators", []))))
-    #     self.assertEqual(source_agent_count, len(transformed.get("agents", [])))
+    def check_agent_counts(self, source, transformed):
+        """Checks for correct counts of agents and other creators."""
+        source_creator_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") == "creator"])
+        source_agent_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") != "creator"])
+        self.assertTrue(
+            source_creator_count == len(transformed.get("creators", [])),
+            "Expecting {} creators, got {}".format(source_agent_count, len(transformed.get("creators", []))))
+        self.assertEqual(
+            source_agent_count, len(transformed.get("agents", [])),
+            "Expecting {} agents, got {} instead".format(source_agent_count, len(transformed.get("agents", []))))
