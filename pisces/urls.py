@@ -19,12 +19,14 @@ from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                            CartographerDeletesView, CartographerUpdatesView,
                            FetchRunViewSet)
 from merger.views import MergeView
-from rest_framework import routers
 from rest_framework.schemas import get_schema_view
-from transformer.views import TransformView
+from transformer.views import DataObjectViewSet, TransformView
 
-router = routers.DefaultRouter()
+from .routers import PiscesRouter
+
+router = PiscesRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
+router.register(r'objects', DataObjectViewSet, 'dataobject')
 
 schema_view = get_schema_view(
     title="Pisces API",
