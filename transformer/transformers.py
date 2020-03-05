@@ -40,7 +40,7 @@ class Transformer:
             transformed = self.get_transformed_object(data, *mapping_configs)
             return json.dumps(transformed)
         except ConnectionError:
-            raise TransformError("Could not connect to {}".format(settings.DELIVERY_URL))
+            raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
         except Exception as e:
             raise TransformError("Error transforming {} {}: {}".format(object_type, self.identifier, str(e)))
 
