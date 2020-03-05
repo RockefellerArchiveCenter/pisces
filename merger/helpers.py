@@ -1,13 +1,6 @@
-import shortuuid
 from fetcher.helpers import instantiate_aspace
 from pisces import settings
 from silk.profiling.profiler import silk_profile
-
-
-def generate_identifier():
-    # TODO: do we need to check uniqueness?
-    shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
-    return shortuuid.uuid()
 
 
 class ArchivesSpaceHelper:

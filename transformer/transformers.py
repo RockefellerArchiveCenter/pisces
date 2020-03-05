@@ -1,5 +1,8 @@
 import json
+from os.path import join
 
+import shortuuid
+from jsonschema import validate
 from odin.codecs import json_codec
 from pisces import settings
 from requests.exceptions import ConnectionError
@@ -10,6 +13,7 @@ from .mappings import (SourceAgentCorporateEntityToAgent,
                        SourceArchivalObjectToCollection,
                        SourceArchivalObjectToObject,
                        SourceResourceToCollection, SourceSubjectToTerm)
+from .models import DataObject
 from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceAgentPerson, SourceArchivalObject,
                                SourceResource, SourceSubject)
@@ -32,12 +36,18 @@ class Transformer:
             transformed object.
     """
 
+    def __init__(self):
+        with open(join(settings.BASE_DIR, "rac-data-model", "schema.json")) as sf:
+            self.schema = json.load(sf)
+
     @silk_profile()
     def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
             mapping_configs = self.get_mapping_configs(object_type)
             transformed = self.get_transformed_object(data, *mapping_configs)
+            self.validate_transformed(transformed)
+            self.save_validated(transformed)
             return json.dumps(transformed)
         except ConnectionError:
             raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
@@ -60,6 +70,36 @@ class Transformer:
     def get_transformed_object(self, data, from_resource, mapping):
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
         transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
-        # validate
-        # persist
         return transformed
+
+    @silk_profile()
+    def validate_transformed(self, data):
+        # TODO: return meaningful validation messages!
+        validate(instance=data, schema=self.schema)
+
+    @silk_profile()
+    def save_validated(self, data):
+        initial_queryset = DataObject.objects.filter(object_type=data["type"])
+        for ident in data["external_identifiers"]:
+            matches = DataObject.find_matches(
+                ident["source"], ident["identifier"],
+                initial_queryset=initial_queryset)
+            if len(matches) > 1:
+                raise Exception(
+                    "Too many matches were found for {}".format(ident["identifier"]))
+            elif len(matches) == 1:
+                existing = matches[0]
+                existing.data = data
+                existing.indexed = False
+                existing.save()
+            else:
+                DataObject.objects.create(
+                    es_id=self.generate_identifier(),
+                    object_type=data["type"],
+                    data=data,
+                    indexed=False)
+
+    @silk_profile()
+    def generate_identifier(self):
+        shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
+        return shortuuid.uuid()
