@@ -9,6 +9,7 @@ class ArchivesSpaceHelper:
 
     @silk_profile()
     def get_ancestors(self, uri):
+        """Returns the full record for each ancestor."""
         obj = self.aspace.client.get(uri).json()
         for a in obj['ancestors']:
             yield self.aspace.client.get(a['ref']).json()

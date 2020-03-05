@@ -23,9 +23,10 @@ class BaseMerger:
 
     @silk_profile()
     def merge(self, object_type, object):
-        """Main merge function. Merges transformed object into matched objects
-           if they exist and then persists the merged object, or simply persists
-           the transformed object if no matches are found."""
+        """Main merge function.
+
+        Fetches and merges additional data from secondary data sources, then
+        delivers merged data to the configured URL."""
         try:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
@@ -39,6 +40,7 @@ class BaseMerger:
             raise MergeError("Error merging {}: {}".format(identifier, e))
 
     def get_identifier(self, object):
+        """Returns the identifier for the object."""
         try:
             identifier = object["uri"]
         except KeyError:
@@ -65,6 +67,7 @@ class ArchivalObjectMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
+        """Fetches additional data from ArchivesSpace."""
         base_fields = ["dates", "language"]
         extended_fields = base_fields + ["extents"]
         data = {}
@@ -92,11 +95,12 @@ class ArrangementMapMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
+        """Fetches the ArchivesSpace resource record referenced by the MapComponent."""
         return self.aspace.client.get(object["archivespace_uri"])
 
     @silk_profile()
     def combine_data(self, object, additional_data):
-        """Prepend Cartographer ancestors to AS ancestors."""
+        """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
         additional_data["ancestors"].insert(0, object["ancestors"])
         # TODO: Something with children??
         return additional_data
@@ -116,7 +120,7 @@ class ResourceMerger(BaseMerger):
 
     @silk_profile()
     def combine_data(self, object, additional_data):
-        """Prepend Cartographer ancestors to AS ancestors."""
+        """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
         object["ancestors"].insert(0, additional_data["ancestors"])
         # TODO: children?
         return object

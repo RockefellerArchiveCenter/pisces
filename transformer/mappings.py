@@ -18,7 +18,7 @@ from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
 
 
 class SourceRightsStatementActToRightsGranted(odin.Mapping):
-    """Maps AS RightsStatements Acts to Rights Granted object."""
+    """Maps SourceRightsStatementsAct to RightsGranted object."""
     from_obj = SourceRightsStatementAct
     to_obj = RightsGranted
 
@@ -35,7 +35,7 @@ class SourceRightsStatementActToRightsGranted(odin.Mapping):
 
 
 class SourceRightsStatementToRightsStatement(odin.Mapping):
-    """Maps AS RightsStatements Statement to Rights Statement object."""
+    """Maps SourceRightsStatement to RightsStatement object."""
     from_obj = SourceRightsStatement
     to_obj = RightsStatement
 
@@ -56,7 +56,7 @@ class SourceRightsStatementToRightsStatement(odin.Mapping):
 
 
 class SourceRefToReference(odin.Mapping):
-    """Maps ASRef to Reference object."""
+    """Maps SourceRef to Reference object."""
     from_obj = SourceRef
     to_obj = Reference
 
@@ -70,7 +70,7 @@ class SourceRefToReference(odin.Mapping):
 
 
 class SourceAncestorToReference(odin.Mapping):
-    """Maps ASAncestor to Reference object."""
+    """Maps SourceAncestor to Reference object."""
     from_obj = SourceAncestor
     to_obj = Reference
 
@@ -84,7 +84,7 @@ class SourceAncestorToReference(odin.Mapping):
 
 
 class SourceLinkedAgentToReference(odin.Mapping):
-    """Maps ASAgents to Reference object."""
+    """Maps SourceLinkedAgent to Reference object."""
     from_obj = SourceLinkedAgent
     to_obj = Reference
 
@@ -98,7 +98,7 @@ class SourceLinkedAgentToReference(odin.Mapping):
 
 
 class SourceDateToDate(odin.Mapping):
-    """Maps ASDate to Date object."""
+    """Maps SourceDate to Date object."""
     from_obj = SourceDate
     to_obj = Date
 
@@ -114,7 +114,7 @@ class SourceDateToDate(odin.Mapping):
 
 
 class SourceExtentToExtent(odin.Mapping):
-    """Maps ASExtent to Extent object."""
+    """Maps SourceExtent to Extent object."""
     from_obj = SourceExtent
     to_obj = Extent
 
@@ -125,7 +125,7 @@ class SourceExtentToExtent(odin.Mapping):
 
 
 class SourceNoteToNote(odin.Mapping):
-    """Maps ASNotes to Note object."""
+    """Maps SourceNote to Note object."""
     from_obj = SourceNote
     to_obj = Note
 
@@ -144,7 +144,7 @@ class SourceNoteToNote(odin.Mapping):
         return value.split('note_', 1)[1]
 
     def map_subnotes(self, value):
-        """Maps different AS Subnotes to different values based on the note type."""
+        """Maps Subnotes to values based on the note type."""
         if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
             # items is an odin.StringField so we need to re-convert to a dict here
             items = literal_eval(value.items.encode('unicode-escape').decode())
@@ -161,6 +161,7 @@ class SourceNoteToNote(odin.Mapping):
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
+        """Handles different note types."""
         if self.source.jsonmodel_type in ['note_multipart', 'note_bioghist']:
             subnotes = (self.map_subnotes(v) for v in value)
         elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
@@ -198,7 +199,7 @@ class SourceNoteToNote(odin.Mapping):
 
 
 class SourceResourceToCollection(odin.Mapping):
-    """Maps ASResources to Collection object."""
+    """Maps SourceResource to Collection object."""
     from_obj = SourceResource
     to_obj = Collection
 
@@ -235,7 +236,7 @@ class SourceResourceToCollection(odin.Mapping):
 
 
 class SourceArchivalObjectToCollection(odin.Mapping):
-    """Maps ASArchivalObjects to Collection object."""
+    """Maps SourceArchivalObject to Collection object."""
     from_obj = SourceArchivalObject
     to_obj = Collection
 
@@ -282,7 +283,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
 
 class SourceArchivalObjectToObject(odin.Mapping):
-    """Maps ASArchivalObjects to Objects object."""
+    """Maps SourceArchivalObject to Objects object."""
     from_obj = SourceArchivalObject
     to_obj = Object
 
@@ -325,7 +326,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
 
 class SourceSubjectToTerm(odin.Mapping):
-    """Maps ASSubject to Term object."""
+    """Maps SourceSubject to Term object."""
     from_obj = SourceSubject
     to_obj = Term
 
@@ -339,7 +340,7 @@ class SourceSubjectToTerm(odin.Mapping):
 
 
 class SourceAgentCorporateEntityToAgent(odin.Mapping):
-    """Maps ASAgent Corporate Entities to Agent object."""
+    """Maps SourceAgentCorporateEntity to Agent object."""
     from_obj = SourceAgentCorporateEntity
     to_obj = Agent
 
@@ -357,7 +358,7 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
 
 
 class SourceAgentFamilyToAgent(odin.Mapping):
-    """Maps ASAgent Family to Agent object."""
+    """Maps SourceAgentFamily to Agent object."""
     from_obj = SourceAgentFamily
     to_obj = Agent
 
@@ -375,7 +376,7 @@ class SourceAgentFamilyToAgent(odin.Mapping):
 
 
 class SourceAgentPersonToAgent(odin.Mapping):
-    """Maps ASAgent Person to Agent object."""
+    """Maps SourceAgentPerson to Agent object."""
     from_obj = SourceAgentPerson
     to_obj = Agent
 

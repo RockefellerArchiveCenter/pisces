@@ -27,13 +27,12 @@ class TransformError(Exception):
 class Transformer:
     """Data Transformer.
 
-    Exposes the following methods:
-        `get_identifier`: returns an identifier for the object being processed.
-        `get_object_type`: returns the type of object being processed.
-        `get_mapping_configs`: returns a two-tuple of the type to map from, and
-            the mapping to be applied to the object.
-        `get_transformed_object`: returns a dict representation of the
-            transformed object.
+    Selects the appropriate mapping configs, transforms and validates data.
+    Validated data is saved to the application's database as a DataObject.
+
+    Args:
+        object_type (str): the object type of the source data.
+        data (dict): the source data to be transformed.
     """
 
     def __init__(self):

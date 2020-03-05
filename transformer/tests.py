@@ -23,11 +23,10 @@ object_types = ["agent_corporate_entity", "agent_family", "agent_person",
 # TODO:  update fixtures after mergers have been updated
 
 class TransformerTest(TestCase):
-    """
-    Tests the transformations and mappings against the RAC data model schema.
-    Opens the JSON schema and then runs the transformations against every file
-    in the directories included in the AS_TYPE_MAP. Validates against the correct
-    type in the data model and then provides an error if the validation fails.
+    """Tests the transformations and mappings.
+
+    Runs the transformations against fixtures of each object type. Additional
+    checks are performed for object counts to ensure successful transformation.
     """
 
     def test_mappings(self):

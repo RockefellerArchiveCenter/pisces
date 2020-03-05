@@ -8,10 +8,15 @@ from .models import FetchRun, FetchRunError
 
 
 def last_run_time(source, object_status, object_type):
-    """
-    Returns the last time a successful fetch against a given data source
-    for a particular object type was started. Allows incremental checking of
-    updates.
+    """Returns a timestamp for a successful fetch.
+
+    Args:
+        source (int): a data source, see FetchRun.SOURCE_CHOICES
+        object_status (int): the process status, see FetchRun.STATUS_CHOICES
+        object_type (str): an object type that was fetched, see FetchRun.OBJECT_TYPE_CHOICES
+
+    Returns:
+        int: A UTC timestamp coerced to an integer.
     """
     return (int(
         FetchRun.objects.filter(
