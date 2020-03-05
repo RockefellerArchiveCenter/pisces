@@ -1,0 +1,461 @@
+{
+    "lock_version": 16,
+    "title": "Rockefeller Foundation records, general correspondence, RG 2, 1924-1939",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA308.xml",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, general correspondence, RG 2, 1924-1939\n",
+    "finding_aid_filing_title": "Rockefeller Foundation records, general correspondence, RG 2, 1924-1939",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T08:52:02Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2016-10-22T12:45:09Z",
+    "suppressed": false,
+    "id_0": "FA308",
+    "language": "eng",
+    "level": "recordgrp",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_status": "under_revision",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2024",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T12:45:09Z",
+            "system_mtime": "2016-10-22T12:45:09Z",
+            "user_mtime": "2016-10-22T12:45:09Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/22"
+        },
+        {
+            "ref": "/subjects/75"
+        },
+        {
+            "ref": "/subjects/21"
+        },
+        {
+            "ref": "/subjects/45"
+        },
+        {
+            "ref": "/subjects/78"
+        },
+        {
+            "ref": "/subjects/67"
+        },
+        {
+            "ref": "/subjects/39"
+        },
+        {
+            "ref": "/subjects/76"
+        },
+        {
+            "ref": "/subjects/65"
+        },
+        {
+            "ref": "/subjects/68"
+        },
+        {
+            "ref": "/subjects/77"
+        },
+        {
+            "ref": "/subjects/33"
+        },
+        {
+            "ref": "/subjects/66"
+        },
+        {
+            "ref": "/subjects/50"
+        },
+        {
+            "ref": "/subjects/85"
+        },
+        {
+            "ref": "/subjects/60"
+        },
+        {
+            "ref": "/subjects/28"
+        },
+        {
+            "ref": "/subjects/61"
+        },
+        {
+            "ref": "/subjects/64"
+        },
+        {
+            "ref": "/subjects/69"
+        },
+        {
+            "ref": "/subjects/62"
+        },
+        {
+            "ref": "/subjects/59"
+        },
+        {
+            "ref": "/subjects/58"
+        },
+        {
+            "ref": "/subjects/63"
+        },
+        {
+            "ref": "/subjects/37"
+        },
+        {
+            "ref": "/subjects/70"
+        },
+        {
+            "ref": "/subjects/191"
+        },
+        {
+            "ref": "/subjects/56"
+        },
+        {
+            "ref": "/subjects/71"
+        },
+        {
+            "ref": "/subjects/57"
+        },
+        {
+            "ref": "/subjects/608"
+        },
+        {
+            "ref": "/subjects/95"
+        },
+        {
+            "ref": "/subjects/73"
+        },
+        {
+            "ref": "/subjects/103"
+        },
+        {
+            "ref": "/subjects/237"
+        },
+        {
+            "ref": "/subjects/72"
+        }
+    ],
+    "linked_events": [
+        {
+            "ref": "/repositories/2/events/30708"
+        },
+        {
+            "ref": "/repositories/2/events/30709"
+        },
+        {
+            "ref": "/repositories/2/events/30710"
+        },
+        {
+            "ref": "/repositories/2/events/30711"
+        },
+        {
+            "ref": "/repositories/2/events/30712"
+        },
+        {
+            "ref": "/repositories/2/events/30713"
+        },
+        {
+            "ref": "/repositories/2/events/30714"
+        },
+        {
+            "ref": "/repositories/2/events/30715"
+        },
+        {
+            "ref": "/repositories/2/events/30716"
+        },
+        {
+            "ref": "/repositories/2/events/30717"
+        },
+        {
+            "ref": "/repositories/2/events/30718"
+        },
+        {
+            "ref": "/repositories/2/events/30719"
+        }
+    ],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "86.7",
+            "container_summary": "Standard document boxes, 1-186, 550-560 (Stack material)",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T12:45:09Z",
+            "system_mtime": "2016-10-22T12:45:09Z",
+            "user_mtime": "2016-10-22T12:45:09Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1924-1939",
+            "begin": "1924",
+            "end": "1939",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T12:45:09Z",
+            "system_mtime": "2016-10-22T12:45:09Z",
+            "user_mtime": "2016-10-22T12:45:09Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/12"
+        },
+        {
+            "role": "source",
+            "terms": [],
+            "ref": "/agents/people/139"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/53"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/54"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/51"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/50"
+        },
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/52"
+        },
+        {
+            "role": "creator",
+            "terms": [],
+            "ref": "/agents/corporate_entities/48"
+        }
+    ],
+    "revision_statements": [
+        {
+            "date": "finding aid revision date not supplied",
+            "description": "<date>May 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins. </item>",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T12:45:09Z",
+            "system_mtime": "2016-10-22T12:45:09Z",
+            "user_mtime": "2016-10-22T12:45:09Z",
+            "jsonmodel_type": "revision_statement",
+            "uri": "/revision_statement/2964",
+            "repository": {
+                "ref": "/repositories/2"
+            }
+        }
+    ],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/296"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "c816f075487ed24d56ede7d8b9ac9813",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation general correspondence:\n\nThe existence of a separate General Correspondence file is in part a result of the reorganization in 1927-1928 of the various philanthropic boards founded by the Rockefeller Family. The Laura Spelman Rockefeller Memorial consolidated with the Foundation; some of its programs emerged in the Division of Social Sciences. The humanities interests of the General Education Board were taken over by the Foundation and provided a basis for the Foundation's new Division of Humanities. The International Health Board was reorganized and renamed the International Health Division. ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "22a6e48ed2742fe7afccc37e84b916fa",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Correspondence of The Rockefeller Foundation consists principally of material not directly connected with an institutional grant. It includes: inter-office memoranda, correspondence between field officers and the home office, extracts from officers' diaries, forms and other material relating to fellowships; casual requests for information, employment, or aid; printed matter and letters of abuse received by the Foundation. As such, the General Correspondence provides insight into the day-to-day workings of the Foundation.\n\nPrograms other than public health are not amply represented in the early portion of the General Correspondence. Material on the Division of Humanities and the Division of Social Sciences is especially scanty before 1935. After 1940, the volume of this material increases steadily. Indeed, the General Correspondence files as a whole are relatively compact up to 1940; after 1941, they expand enormously.\n\nSome of the most important features and subjects of these files are as follows:\n\n100: STAFF COMMUNICATIONS AND INTERNATIONAL AFFAIRS\n\nThis designation applies to two distinct types of documents.\n\n(1) STAFF COMMUNICATIONS. Much of the material under this heading consists of correspondence between or regarding staff officers (eg. a field officer and a member of the home office staff), or gives details of employment and assignment of the field officer. Thus this file is in the nature of a supplement of the Foundation's personnel records. Correspondence between retirees and active staff members is often also filed under this designation, under the names of the individuals. One will also find here inter-office correspondence from the New York headquarters. Of special interest in this connection are the memos of Raymond B. Fosdick (President of the Rockefeller Foundation, 1936-1948), which usually consist of several folders for each year indicated. Some correspondence with trustees, especially Thomas B. Debevoise, may also be found here.\n\n(2) INTERNATIONAL AFFAIRS. Correspondence between The Rockefeller Foundation and the League of Nations (especially with Arthur Sweetser) lodges under this heading and persists into the 1940s. After the establishment of the United Nations Organization in 1944/5, documentation of the Foundation's cooperation with various U.N. efforts is to be found. Of special interest are the files regarding Selskar M. Gunn and Warren Weaver's service with UNRRA (1944-1946) and John Marshall's presence as an observer at the earliest organizational meetings of UNESCO (1946-1947).\n\n200: THE UNITED STATES (201-258: Individual States and Territories)\n\nThe largest concentration of material is to be found under this designation. It is also the most miscellaneous in character. Correspondence ranges from communications with Federal agencies and departments, to letters of advice, records of interviews, appeals for aid, employment inquiries, and crank mail.\n\nThe vast bulk of these files dating between 1927 and 1939 relates to the work of the International Health Division, supplementing material previously processed as RG 5. This includes material on grants to state boards of health, training grants for public health personnel at stations in Ohio or Mississippi, and advice on administrative matters. Following the practice of the IHD, most of these earlier files were arranged under an individual state heading rather than under that of the nation as a whole. By 1935 most of the IHD activities had declined as funding became available to the states through the Federal government for this purpose. Correspondence with the individual state agencies shrank accordingly. The advisory functions of the IHD thereafter took place mainly in the form of pooling information (and occasionally personnel) with the U.S. Public Health Service.\n\nThose states files which remain sizeable after 1935 (such as 216: Illinois-University of Chicago, and 248: Tennessee: TVA) do not relate primarily to IHD activities. In 1951, the use of state numbers in filing was almost totally abandoned.\n\n200: UNITED STATES PUBLIC HEALTH SERVICE\n\nDuring World War II, the Foundation maintained close ties with USPHS, as reflected in the large file of correspondence between Foundation officers and various USPHS officials. This file refers particularly to the Foundation's effort to provide yellow fever vaccine to the Armed Forces. Also of interest for this period is a set of weekly reports on the incidence of virulent disease (plague, smallpox, etc.) around the world.\n\n200E: FELLOWSHIPS\n\nThe earlier portion of material so designated (through 1935) is taken up with grants for training public health personnel as requested by various state boards of health. It thus amplifies the documentation of IHD activities noted above. This material includes both declinations as well as acceptances.\n\nSimilar material through the 1930s is to be found under 200S: Social Science Research Council, consisting mostly of application forms and correspondence concerning potential SSRC grantees.\n\nFor the years 1945-46, an extensive file of Postwar Fellowships follows the regular fellowship file in the General Correspondence. While the character of Foundation support of these Fellows is unclear, the advisory function of Foundation officers in their selection and placement is amply documented here.\n\n300-833: INDIVIDUAL NATIONAL FILES\n\nThe files under this heading include administrative and budgetary material for field offices, reports of interviews with potential grantees, governmental and educational figures, diary extracts (usually travel notes, sometimes quite extensive), and miscellaneous correspondence with private and public scientific or cultural institutions and individuals. The majority of this material (especially before 1935) continues the records of the IHD in its international program (see RG 5), and deals primarily with public health programs and medical training. After 1935, the subject matter in the files becomes more diversified.\n\nScattered throughout these series are observations by Foundation officers on the political and social climate around the world. The Rockefeller Foundation maintained political neutrality regarding the internal affairs of host countries, and cooperated closely with governmental ministries and state-controlled universities -- especially in the areas of public health and the social sciences. Nevertheless, a close watch was kept on developments affecting intellectual freedom and the general climate of cooperation which the Foundation saw as the main prerequisite for performing or sponsoring significant work. This is reflected in the General Correspondence files, where one may find contemporary eyewitness reports and informed outside opinions on such phenomena of this century as the development of Fascism in Europe, the growth of Communism in eastern Europe and China, and the rise or fall of various dictatorships in Latin America.\n\nLarge quantities of material may be found under the following headings:\n\n300: South America 315: Cuba 400: Great Britain 427: Canada 437: Jamaica 464: India (including 464.1: Mysore and 464.5: Travancore, through 1944) 500: France 601: China 700: Europe\n\nThe bulk of these files indicates either high levels of Foundation activity or the presence of a field office in the country concerned, and thus an \"Administration\" file will be found here as well as material filed alphabetically or under a program letter. Special features include the 1945-46, 500E file (France-Government Fellowships), which consist of material similar to that described under 200E for the same period. Under 700, one will also find material on the Paris Field Office supplementing that processed separately as RG 6.1.\n\nSPECIAL TOPIC: REFUGEE SCHOLARS, 1933-1946\n\nThe General Correspondence contains a mass of material on the plight of European scholars deprived of means or work by the rise of Fascism. This material is similar and supplementary to that found in RG 1 under the same heading. Most of the material in the General Correspondence bearing on this topic may be found as listed below:\n\n717: Germany--Refugee Scholars, 1933-1939 789: Poland-----Refugee Scholars, 1936-1939 200: U.S.---------Refugee Scholars, 1940-1945\n\nThese files generally fall into two parts:\n\n(1) A chronological file entitled \"Exiled Scholars\" which consists of officer's correspondence, diary extracts, lists of exiled academics compiled from various sources, correspondence with various committees and institutions engaged in placing these scholars, and copies of the minutes of those committees with which The Rockefeller Foundation cooperated most closely.\n\n(2) An alphabetical file of correspondence with or concerning individual scholars whose placement the Foundation sponsored or financed in part.\n\n(3) Much material filed under 700: Europe and individual European country numbers (including 400: Great Britain, and 805: Turkey) during the period 1933-1945 also deals with this topic.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "74dac19bcee7766a55ff6d3e70e530d4",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The RF General Correspondence is arranged into Subgroups by Year of correspondence.\n\nThe original filing system has been retained. \n\nEach Subgroup/Year is comprised of Series (a geographic-numeric numeric number assigned to each country, state, and/or geographic region) and Subseries (A letter designating the Program/Project area.)\n\nGeneral files within each series are not assinged a program letter.\n\nImportant irregularities in the original filing order are noted below:\n\n(1) Series 100: International files are strictly alphabetical until 1941; after 1941, miscellaneous A-Z files are maintained containing small amounts of material on individuals. These immediately follow the main Series 100 International file.\n\n(2) Correspondence with various state boards of public health precede the alphabetical file for each state or territory of the United States (201-258).\n\n(3) Administration files for RF field offices precede the alphabetical file for the country in which they were established.\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "144fe8b9130389c8774551beb6e85579",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research. Brittle or damaged items are available at the discretion of RAC. ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "86e583ca06f108fc28875726b62c5450",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "5ac6fc143ec4c9297b2335171cf2fc79",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Other available finding aids describing Rockefeller Foundation records, General Correspondence include:\n\n<extref href=\"../FA758/overview\">FA758 Rockefeller Foundation records, General Correspondence, 1940-1946</extref>\n\n<extref href=\"../FA759/overview\">FA759 Rockefeller Foundation records, General Correspondence, 1947-1951</extref>\n\n<extref href=\"../FA425/overview\">FA425 Rockefeller Foundation records, General Correspondence, 1952-1957</extref>\n\n<extref href=\"../FA400/overview\">FA400 Rockefeller Foundation records, General Correspondence, 1958-1970</extref>\n\n<extref href=\"../FA401/overview\">FA401 Rockefeller Foundation records, General Correspondence, 1971-1980</extref>\n\n<extref href=\"../FA402/overview\">FA402 Rockefeller Foundation records, General Correspondence, 1981-1990</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "40a802042398610f2ed47751ff6cf3ad",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RG 2.  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects; RG 2 General Correspondence; RG 3 Administration, Program and Policy; RG 4 China Medical Board; RG 5 International Health Board/Division; RG 6 Field Offices; RG 7 Treasurer's Office; RG 8 Comptroller; RG 9 Personnel; RG 10 Fellowships; RG 11 Information Services; RG 12 Officer's Diaries; RG 13 Oral Histories; RG 14 Counsel; RG 15 Secretary; RG 16 Minutes and Officers Actions; RG 17 Dockets; RG 18 Declinations (100F;) RG 19 Non-textual Materials; RG 20 Communications Office.\n\n",
+                    "publish": false
+                }
+            ],
+            "publish": false
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "b024d5625f21164166f5e84b85a20f8b",
+            "type": "relatedmaterial",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Subjects documented in the Laura Spelman Rockefeller Memorial records, the General Education Board records and the International Health Board/Division (Rockefeller Foundation records, Record Group 5) is continued in the RF General Correspondence -- particularly in the case of the International Health Board.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "51e7493e33d0cf9b5c7a7940e7d18fc0",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The archival boxes housing the RG General Correspondence files are numbered consecutively through Subgroup 1951 (Boxes 1-548). \n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "3da446da5cfa1dfdfb3bca190dde343c",
+            "type": "langmaterial",
+            "content": [
+                "Primarily written in English, although at times correspondence is written in the language or languages of the country/region."
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/509",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T12:45:09Z",
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "user_mtime": "2016-10-22T12:45:09Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/3795",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/509"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2007-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T12:45:09Z",
+        "system_mtime": "2016-10-22T12:45:09Z",
+        "user_mtime": "2016-10-22T12:45:09Z",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/509/tree"
+    }
+}

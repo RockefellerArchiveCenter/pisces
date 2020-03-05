@@ -1,0 +1,90 @@
+{
+    "lock_version": 1,
+    "position": 0,
+    "publish": true,
+    "ref_id": "1d3d0b4d71e347c2a7c4c31666cfe153",
+    "component_id": "100",
+    "title": "International",
+    "display_string": "International",
+    "restrictions_apply": false,
+    "created_by": "admin",
+    "last_modified_by": "pgalligan",
+    "create_time": "2014-12-06T03:43:19Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2017-02-16T22:48:43Z",
+    "suppressed": false,
+    "level": "series",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [
+        {
+            "external_id": "729564",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2017-02-16T22:48:43Z",
+            "system_mtime": "2017-02-16T22:48:43Z",
+            "user_mtime": "2017-02-16T22:48:43Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "88.25",
+            "container_summary": "177 document boxes.",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "circa 1905-1980",
+            "begin": "1905",
+            "end": "1980",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/4884"
+        }
+    ],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ],
+    "instances": [],
+    "notes": [],
+    "uri": "/repositories/2/archival_objects/11440",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/93"
+    },
+    "has_unpublished_ancestor": false,
+    "language": "eng"
+}

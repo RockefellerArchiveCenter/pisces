@@ -1,0 +1,390 @@
+{
+    "lock_version": 10,
+    "title": "Nelson A. Rockefeller vice presidential records, Foreign Affairs and National Security, Series 19",
+    "publish": true,
+    "restrictions": true,
+    "ead_id": "FA385.xml",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Vice Presidential records, Foreign Affairs and National Security, Series 19\n",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, Foreign Affairs and National Security, Series 19",
+    "finding_aid_date": "2007; rev. 2018",
+    "finding_aid_author": "Amy R. Fitch",
+    "created_by": "admin",
+    "last_modified_by": "fitcha",
+    "create_time": "2014-12-06T10:19:56Z",
+    "system_mtime": "2018-07-05T14:26:50Z",
+    "user_mtime": "2018-07-05T14:26:50Z",
+    "suppressed": false,
+    "id_0": "FA385",
+    "language": "eng",
+    "level": "series",
+    "finding_aid_status": "completed",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2202",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "fitcha",
+            "last_modified_by": "fitcha",
+            "create_time": "2018-07-05T14:26:51Z",
+            "system_mtime": "2018-07-05T14:26:51Z",
+            "user_mtime": "2018-07-05T14:26:51Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/572"
+        },
+        {
+            "ref": "/subjects/577"
+        },
+        {
+            "ref": "/subjects/330"
+        },
+        {
+            "ref": "/subjects/193"
+        },
+        {
+            "ref": "/subjects/37"
+        },
+        {
+            "ref": "/subjects/139"
+        },
+        {
+            "ref": "/subjects/110"
+        },
+        {
+            "ref": "/subjects/102"
+        },
+        {
+            "ref": "/subjects/351"
+        },
+        {
+            "ref": "/subjects/187"
+        },
+        {
+            "ref": "/subjects/596"
+        },
+        {
+            "ref": "/subjects/241"
+        },
+        {
+            "ref": "/subjects/294"
+        },
+        {
+            "ref": "/subjects/564"
+        },
+        {
+            "ref": "/subjects/27"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "18.6",
+            "created_by": "fitcha",
+            "last_modified_by": "fitcha",
+            "create_time": "2018-07-05T14:26:51Z",
+            "system_mtime": "2018-07-05T14:26:51Z",
+            "user_mtime": "2018-07-05T14:26:51Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1974-1977",
+            "begin": "1974",
+            "end": "1977",
+            "created_by": "fitcha",
+            "last_modified_by": "fitcha",
+            "create_time": "2018-07-05T14:26:51Z",
+            "system_mtime": "2018-07-05T14:26:51Z",
+            "user_mtime": "2018-07-05T14:26:51Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/193"
+        },
+        {
+            "role": "creator",
+            "relator": "ctb",
+            "terms": [],
+            "ref": "/agents/people/147"
+        }
+    ],
+    "revision_statements": [
+        {
+            "date": "finding aid revision date not supplied",
+            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "created_by": "fitcha",
+            "last_modified_by": "fitcha",
+            "create_time": "2018-07-05T14:26:51Z",
+            "system_mtime": "2018-07-05T14:26:51Z",
+            "user_mtime": "2018-07-05T14:26:51Z",
+            "jsonmodel_type": "revision_statement",
+            "uri": "/revision_statement/3379",
+            "repository": {
+                "ref": "/repositories/2"
+            }
+        }
+    ],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "16f22532dff6f973ea6b39f662125d60",
+            "label": "General Physical Description note",
+            "type": "physdesc",
+            "content": [
+                "<extent>17 record cartons 4 document boxes </extent>"
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "39da61c81d1e252afa423b9d480b9434",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Processing Level 3: Standard Processing.\n\nThe original title of this series was Foreign Policy and Travel. It was changed during the archival processing to Foreign Affairs and National Security to more accurately reflect the contents of the folders. However, the original title may appear on separation sheets and other processing-related documents.\n\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "57c3baf7213a6b213210d78df866e4bd",
+            "label": "Conditions Governing Use note",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "efa3e9d77a698c19ad61356c6aa854f4",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "34709c0390918db04bd7037bf06f38e5",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "3e1f440dcc9f8298dde5ff244fa70c61",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "6b6897d3313f613929a2aa0694ec2d58",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Former Classification: III 26 19\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "58426e14bf07d54898004e4525280e1e",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Nelson A. Rockefeller served as the second unelected Vice President in the history of the United States. (President Gerald Ford, whom Rockefeller served as Vice President, had been the first unelected Vice President.) Although Mr. Rockefeller acted relatively extensively in the areas of foreign relations and national security, his main focus, in the view of many observers, was on domestic policy. At the same time, the work that commanded the greatest public attention during the Ford-Rockefeller Administration was that of the CIA Commission. The recommendations issued by the commission strongly affected the policy and operation of the CIA for a generation.\n\nJonathan T. Howe graduated from the U.S. Naval Academy in 1957 and earned a Ph.D. from the Fletcher School of Law and Diplomacy, Tufts University in 1969. His early career in the Navy was spent on submarines. Prior to serving with Vice President Rockefeller, he was on the National Security Council staff as military assistant to the Assistant to the President for National Security Affairs, 1969 to 1974. Later appointments included senior military assistant to the Deputy Secretary of Defense, 1981 to 1982; Assistant to the Chairman of the Joint Chiefs of Staff, 1987 to 1989; and Deputy Assistant to the President for National Security Affairs, 1991 to 1993. He also served in Somalia as the Special Representative of the UN Secretary-General, 1993 to 1994, and after retirement from the Navy, he ran a philanthropic foundation.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "e3b1db0740fae52abcf39afa88d70d3e",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The arrangement of the series, while mainly by broad topic, is inconsistent on occasion. However, the folder order has been kept intact to maintain a direct correlation to the separated, classified pages. For this same reason, there are no Folders 122 to 192.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "65270aa83fdc048b09f8e02518265c68",
+            "label": "Other Findings Aids note",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA378/overview\">Nelson A. Rockefeller Vice Presidential Records, Central Files (FA378)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA380/overview\">Nelson A. Rockefeller Vice Presidential Records, New York Office (FA380)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA384/overview\">Nelson A. Rockefeller Vice Presidential Records, Working Papers of the Vice President (FA384)</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "418b275779eb2f1f8673f1565ef0d03f",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The bulk of this series of papers consists of files kept by Captain Jonathan T. Howe, Assistant to the Vice President for National Security Affairs, who served Nelson A. Rockefeller during his entire vice presidency (December 19, 1974 to January 20, 1977) in the Gerald R. Ford Administration. The contents reflect international relations and national security topics that Capt. Howe monitored closely for the Vice President. He also oversaw Mr. Rockefeller's appointment schedule on these matters and coordinated with Peter Wallison, Counsel to the Vice President, on suggested responses to inquiries involving foreign officials or national security issues.\n\nThe topics covered include International Travel, National Security, Meetings with Foreign Dignitaries, Meetings with U.S. Officials, the Commission on the Organization of the Government for the Conduct of Foreign Policy (Murphy Commission), Intelligence, Countries/Regions, and the Commission on CIA Activities Within the United States (alternately Rockefeller or CIA Commission). Additionally, there are several folders of background information on the Operations Coordinating Board, which originate from Mr. Rockefeller's tenure as Special Assistant to President Eisenhower during the mid-1950s. Also significant in this series are monthly folders of Captain Howe's chron file. (See topic descriptions below.)\n\nNoticeably absent is documentation of direct communication between the Vice President and President Ford on any of these matters. However, there are numerous memos throughout the series from Secretary of State Henry Kissinger--particularly under International Travel--and National Security Affairs Assistant Brent Scowcroft--particularly under National Security Council Meetings.\n\nThe arrangement of the series, while mainly by broad topic, is inconsistent on occasion. However, the folder order has been kept intact to maintain a direct correlation to the separated, classified pages. For this same reason, there are no Folders 122 to 192.\n\nAdditionally, some folder numbers use a decimal extension (for example, Folder 13.1, Folder 336.4). This designation can mean that either it is a folder created to subdivide an overfilled original folder or it is a closed folder of restricted documents. The latter are prominently labeled as such in the folder list.\n\nDESCRIPTION\n\nInternational Travel (Folders 1-57) ranges from the Vice President serving as the official U.S. representative at funerals of foreign dignitaries or national celebrations to meetings with heads of state or their top ministers. In 1976 he attended several international celebrations to commemorate the U.S. Bicentennial. Some personal travel files exist as well. Every trip includes a substantial amount of U.S. State Department cables, itineraries, background information on the countries being visited, cultural protocol tips, and follow-up correspondence.\n\nNational Security folders are scattered throughout the series but include titles such as National Security Council Meetings, Defense Department Briefings, Cruise Missiles, and Pertinent National Security Developments. Intelligence-related folders also crop up sporadically; Intelligence Review and Reorganization, President's Foreign Intelligence Advisory Board (PFIAB), and Terrorism are a few title examples.\n\nMeetings with Foreign Dignitaries (Folders 64-88) include arrangements, agenda, and either notes or verbatim accounts of the discussions. They are arranged by mouth in roughly reverse chronological order. Meetings with U.S. Officials (Folders 93-97) have similar contents but are less numerous. They too are arranged in roughly reverse chronological order. See the Materials of Special Significance section for specific names and dates of significant meetings with those officials.\n\nIn January 1975, President Ford recommended that Vice President Rockefeller fill an open seat on the Commission on the Organization of the Government for the Conduct of Foreign Policy, more commonly referred to as the Murphy Commission. The commission was established by an act of Congress in June 1972, and it concluded its work in June 1975. Capt. Howe often sat in for the Vice President at the commission meetings. Folders 103-121 hold correspondence, agenda, report drafts, press clippings, and meeting minutes. Folder 120 contains a thorough summary of the history of the commission, including a candid memo on its workings and aftermath written by Capt. Howe to Mr. Rockefeller in January 1977.\n\nAdditionally, the contents of more than 30 binders of working papers and background information on the Murphy Commission are at the end of this series in Folders 393-429. Items labeled Books directly correlate to commission meetings during the Vice President's tenure. A tab-level listing of their contents is provided. Items labeled Background Workbooks are background materials from meetings in 1973 and 1974, prior to Mr. Rockefeller's membership on the commission. There is no tab-level listing for them, but the folders are grouped by topic (e.g., intelligence, internationals economics). Lastly, the eight-volume set of the published final report of the Murphy Commission (1 report volume and 7 appendices) has been removed from this series and added to the RAC library collection (library catalog #353.001 COM).\n\nFolders 232-284 cover issues on specific countries/regions, from Angola to Yugoslavia. These files may contain duplicates of documents found under International Travel but often have unique ones. They are arranged in semi-alphabetical order by country name.\n\nCaptain Jon Howe's Chron Files (Folders 314-320.5 and 333-344) are an informative source on both the daily activities of the Office of the Vice President and the significant national and international events during those years. They are arranged by month in approximate reverse chronological order. A few reference files are interspersed among them.\n\nIn December 1974 at President Ford's request, Nelson Rockefeller became chair of the newly appointed Commission on CIA Activities Within the United States, which was established by Executive Order as a result of ongoing claims of abuse of jurisdiction against the federal agency. The commission, which came to be known as both the Rockefeller Commission and the CIA Commission, is documented from its inception to its final report in Folders 322-332.2 and 346-392. Also among these files are Cold War-era materials from the Operations Coordinating Board that contain information on studies on psychological warfare, Soviet military capabilities, and the Quantico Panel from 1953 to 1955. They are all contemporaneous with Mr. Rockefeller's service in President Eisenhower's Administration as Special Assistant to the President for Foreign Affairs.\n\nMATERIALS OF SPECIAL SIGNIFICANCE\n\nNumerous folders in this series contain materials of special significance for research on Nelson Rockefeller as Vice President, on national intelligence, and on international affairs during the mid-1970s.\n\nOne distinction from other series in the Nelson A. Rockefeller Papers is that these records contain copious amounts of handwritten notes by the Vice President. In particular, refer to Folder 121, NAR Notes on Murphy Commission, 1975; Folder 327, CIA Commission, NAR's Handwritten Notes, 1975; Folder 350, Memo to President from Donald Rumsfeld on CIA Directorship, June 1975; Folders 352 to 353.1, NAR Drafts to CIA Commission Report Chapters, May 1975; and Folders 393 to 420, Murphy Commission Books I-XXVIII.\n\nThere is substantial content on meetings between Vice President Rockefeller and foreign or U.S. officials, including some verbatim accounts. Documentation on meetings with foreign dignitaries, U.S. Defense Department officials, and other U.S. officials are organized by month in Folders 64 to 97. Memoranda of conversations are grouped by year in Folders 98 to 100.1. While this arrangement does not enumerate the names of these people, the following alphabetical list provides dates of meetings between the Vice President and these heads of state and other significant officials:\n\nGeorge H. W. Bush, CIA Director, March 1976.\nPresident Valerie Giscard D'Estaing of France, March 1976.\nGeneral Alexander Haig, NATO Commander, November 1975 and May 1976.\nEmperor Hirohito of Japan, October 1975.\nKing Hussein of Jordan, April 1975.\nKing Juan Carlos of Spain, November 1975.\nKing Khalid and Crown Prince Fahd of Saudi Arabia, March 1975.\nHenry Kissinger, Secretary of State (see folders on International Travel and Countries and Folders 213-215.1).\nReza Shah Pahlavi of Iran, May 1975 and March 1976 (see also Folder 241).\nPrime Minister Yitzhak Rabin of Israel, September 1974 and January 1976.\nPresident Anwar Sadat of Egypt, March and October 1975.\nBrent Scowcroft, Assistant to the President for National Security Affairs (see folders on NSC Meetings, 1975-1977).\nSenator Tran Van Lam of the Republic of Viet Nam, February 1975.\nU.S. Joint Chiefs of Staff, April 1976.\nPaul A. Volcker, economic consultant, May 1975.\nKurt Waldheim, UN Secretary-General, June 1975.\nPrime Minister Harold Wilson of the United Kingdom, January, July, September 1975.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "54c366f28aeb5ac102c56df401c06ab0",
+            "label": "Related Archival Materials note",
+            "type": "relatedmaterial",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Researchers may also wish to consult other portions of the Nelson A. Rockefeller (NAR) Papers, in particular Group 4: NAR Personal, Series O: Washington, DC, Subseries 7: Special Assistant to the President for Foreign Affairs for additional materials on the Operations Coordinating Board from the 1950s. Also, in Record Group 26: NAR Vice Presidential, refer to Series 3: Central Files, Series 13: Press Releases, Series 15: Speeches, and Series 18: Working Papers of the Vice President.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "0ffbf173b0300d3a11bc3c784c91128a",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Amy R. Fitch, March 2007; rev. June 2018\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "3f1303327d9ceb8f1a5391e09b86b040",
+            "type": "custodhist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "This series contains documents that were declassified by the U.S. government during a review by government officials at the Archive Center from 2003 to 2006. Any document that remains classified since the review has been removed from its folder and replaced with a separation sheet to note its original and current locations. Therefore, all materials in the open folders are now declassified, whether or not the classification stamps on them indicate otherwise. Almost all of the declassified documents prominently display a federal agency's declassification stamp and date.\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/584",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-07-05T14:26:51Z",
+        "system_mtime": "2018-07-05T14:26:51Z",
+        "user_mtime": "2018-07-05T14:26:51Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/6675",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/584"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2007-12-31",
+        "created_by": "fitcha",
+        "last_modified_by": "fitcha",
+        "create_time": "2018-07-05T14:26:51Z",
+        "system_mtime": "2018-07-05T14:26:51Z",
+        "user_mtime": "2018-07-05T14:26:51Z",
+        "enum_1": "4 - Advanced",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/584/tree"
+    }
+}

@@ -1,151 +1,151 @@
 {
-  "lock_version": 169,
-  "publish": true,
-  "created_by": "admin",
-  "last_modified_by": "admin",
-  "create_time": "2014-12-06T02:42:15Z",
-  "system_mtime": "2018-02-02T14:15:56Z",
-  "user_mtime": "2014-12-06T02:42:15Z",
-  "jsonmodel_type": "agent_person",
-  "agent_contacts": [
-    {
-      "lock_version": 0,
-      "name": "Ronan",
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:42:15Z",
-      "system_mtime": "2014-12-06T02:42:15Z",
-      "user_mtime": "2014-12-06T02:42:15Z",
-      "jsonmodel_type": "agent_contact",
-      "telephones": []
-    }
-  ],
-  "linked_agent_roles": [
-    "creator"
-  ],
-  "external_documents": [],
-  "notes": [],
-  "used_within_repositories": [
-    "/repositories/2"
-  ],
-  "used_within_published_repositories": [
-    "/repositories/2"
-  ],
-  "dates_of_existence": [
-    {
-      "lock_version": 0,
-      "expression": "1912-",
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:42:15Z",
-      "system_mtime": "2014-12-06T02:42:15Z",
-      "user_mtime": "2014-12-06T02:42:15Z",
-      "date_type": "single",
-      "label": "existence",
-      "jsonmodel_type": "date"
-    }
-  ],
-  "names": [
-    {
-      "lock_version": 0,
-      "primary_name": "Ronan",
-      "rest_of_name": "William J. (William John)",
-      "sort_name": "Ronan, William J. (William John)",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:42:15Z",
-      "system_mtime": "2017-08-22T15:44:45Z",
-      "user_mtime": "2014-12-06T02:42:15Z",
-      "authorized": true,
-      "is_display_name": true,
-      "source": "naf",
-      "name_order": "inverted",
-      "jsonmodel_type": "name_person",
-      "use_dates": []
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "Ronan",
-      "rest_of_name": "W. J. (William John)",
-      "sort_name": "Ronan, W. J. (William John)",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:42:15Z",
-      "system_mtime": "2014-12-06T02:42:15Z",
-      "user_mtime": "2014-12-06T02:42:15Z",
-      "name_order": "inverted",
-      "jsonmodel_type": "name_person",
-      "use_dates": [
-        {
-          "lock_version": 0,
-          "expression": "1912-",
-          "created_by": "admin",
-          "last_modified_by": "admin",
-          "create_time": "2014-12-06T02:42:15Z",
-          "system_mtime": "2014-12-06T02:42:15Z",
-          "user_mtime": "2014-12-06T02:42:15Z",
-          "date_type": "single",
-          "label": "usage",
-          "jsonmodel_type": "date"
-        }
-      ],
-      "authorized": false,
-      "is_display_name": false
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "Ronan",
-      "rest_of_name": "William John",
-      "sort_name": "Ronan, William John",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:42:15Z",
-      "system_mtime": "2014-12-06T02:42:15Z",
-      "user_mtime": "2014-12-06T02:42:15Z",
-      "name_order": "inverted",
-      "jsonmodel_type": "name_person",
-      "use_dates": [
-        {
-          "lock_version": 0,
-          "expression": "1912-",
-          "created_by": "admin",
-          "last_modified_by": "admin",
-          "create_time": "2014-12-06T02:42:15Z",
-          "system_mtime": "2014-12-06T02:42:15Z",
-          "user_mtime": "2014-12-06T02:42:15Z",
-          "date_type": "single",
-          "label": "usage",
-          "jsonmodel_type": "date"
-        }
-      ],
-      "authorized": false,
-      "is_display_name": false
-    }
-  ],
-  "related_agents": [],
-  "uri": "/agents/people/532",
-  "agent_type": "agent_person",
-  "is_linked_to_published_record": true,
-  "display_name": {
-    "lock_version": 0,
-    "primary_name": "Ronan",
-    "rest_of_name": "William J. (William John)",
-    "sort_name": "Ronan, William J. (William John)",
-    "sort_name_auto_generate": true,
+    "lock_version": 169,
+    "publish": true,
     "created_by": "admin",
     "last_modified_by": "admin",
     "create_time": "2014-12-06T02:42:15Z",
-    "system_mtime": "2017-08-22T15:44:45Z",
+    "system_mtime": "2018-02-02T14:15:56Z",
     "user_mtime": "2014-12-06T02:42:15Z",
-    "authorized": true,
-    "is_display_name": true,
-    "source": "naf",
-    "name_order": "inverted",
-    "jsonmodel_type": "name_person",
-    "use_dates": []
-  },
-  "title": "Ronan, William J. (William John)"
+    "jsonmodel_type": "agent_person",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "Ronan",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:42:15Z",
+            "system_mtime": "2014-12-06T02:42:15Z",
+            "user_mtime": "2014-12-06T02:42:15Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [
+        {
+            "lock_version": 0,
+            "expression": "1912-",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:42:15Z",
+            "system_mtime": "2014-12-06T02:42:15Z",
+            "user_mtime": "2014-12-06T02:42:15Z",
+            "date_type": "single",
+            "label": "existence",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "Ronan",
+            "rest_of_name": "William J. (William John)",
+            "sort_name": "Ronan, William J. (William John)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:42:15Z",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "user_mtime": "2014-12-06T02:42:15Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "naf",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": []
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Ronan",
+            "rest_of_name": "W. J. (William John)",
+            "sort_name": "Ronan, W. J. (William John)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:42:15Z",
+            "system_mtime": "2014-12-06T02:42:15Z",
+            "user_mtime": "2014-12-06T02:42:15Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [
+                {
+                    "lock_version": 0,
+                    "expression": "1912-",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2014-12-06T02:42:15Z",
+                    "system_mtime": "2014-12-06T02:42:15Z",
+                    "user_mtime": "2014-12-06T02:42:15Z",
+                    "date_type": "single",
+                    "label": "usage",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Ronan",
+            "rest_of_name": "William John",
+            "sort_name": "Ronan, William John",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:42:15Z",
+            "system_mtime": "2014-12-06T02:42:15Z",
+            "user_mtime": "2014-12-06T02:42:15Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [
+                {
+                    "lock_version": 0,
+                    "expression": "1912-",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2014-12-06T02:42:15Z",
+                    "system_mtime": "2014-12-06T02:42:15Z",
+                    "user_mtime": "2014-12-06T02:42:15Z",
+                    "date_type": "single",
+                    "label": "usage",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "authorized": false,
+            "is_display_name": false
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/people/532",
+    "agent_type": "agent_person",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "Ronan",
+        "rest_of_name": "William J. (William John)",
+        "sort_name": "Ronan, William J. (William John)",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T02:42:15Z",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "user_mtime": "2014-12-06T02:42:15Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "naf",
+        "name_order": "inverted",
+        "jsonmodel_type": "name_person",
+        "use_dates": []
+    },
+    "title": "Ronan, William J. (William John)"
 }

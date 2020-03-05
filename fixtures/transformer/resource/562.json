@@ -1,0 +1,380 @@
+{
+    "lock_version": 6,
+    "title": "Nelson A. Rockefeller gubernatorial records, Issue Books, Series 17",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA363.xml",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Issue Books, Series 17\n",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Issue Books, Series 17",
+    "finding_aid_date": "1999",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T09:52:43Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2016-10-22T18:56:04Z",
+    "suppressed": false,
+    "id_0": "FA363",
+    "language": "eng",
+    "level": "series",
+    "finding_aid_status": "under_revision",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2181",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:56:04Z",
+            "system_mtime": "2016-10-22T18:56:04Z",
+            "user_mtime": "2016-10-22T18:56:04Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/365"
+        },
+        {
+            "ref": "/subjects/329"
+        },
+        {
+            "ref": "/subjects/538"
+        },
+        {
+            "ref": "/subjects/27"
+        },
+        {
+            "ref": "/subjects/37"
+        },
+        {
+            "ref": "/subjects/572"
+        },
+        {
+            "ref": "/subjects/193"
+        },
+        {
+            "ref": "/subjects/546"
+        },
+        {
+            "ref": "/subjects/547"
+        },
+        {
+            "ref": "/subjects/548"
+        },
+        {
+            "ref": "/subjects/575"
+        },
+        {
+            "ref": "/subjects/576"
+        },
+        {
+            "ref": "/subjects/102"
+        },
+        {
+            "ref": "/subjects/330"
+        },
+        {
+            "ref": "/subjects/580"
+        },
+        {
+            "ref": "/subjects/578"
+        },
+        {
+            "ref": "/subjects/9"
+        },
+        {
+            "ref": "/subjects/579"
+        },
+        {
+            "ref": "/subjects/544"
+        },
+        {
+            "ref": "/subjects/577"
+        },
+        {
+            "ref": "/subjects/537"
+        },
+        {
+            "ref": "/subjects/573"
+        },
+        {
+            "ref": "/subjects/36"
+        },
+        {
+            "ref": "/subjects/574"
+        },
+        {
+            "ref": "/subjects/139"
+        },
+        {
+            "ref": "/subjects/294"
+        },
+        {
+            "ref": "/subjects/362"
+        },
+        {
+            "ref": "/subjects/241"
+        },
+        {
+            "ref": "/subjects/26"
+        },
+        {
+            "ref": "/subjects/260"
+        },
+        {
+            "ref": "/subjects/539"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "37",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:56:04Z",
+            "system_mtime": "2016-10-22T18:56:04Z",
+            "user_mtime": "2016-10-22T18:56:04Z",
+            "portion": "whole",
+            "extent_type": "document box(es)",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1959-1964",
+            "begin": "1959",
+            "end": "1964",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:56:04Z",
+            "system_mtime": "2016-10-22T18:56:04Z",
+            "user_mtime": "2016-10-22T18:56:04Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/people/147"
+        }
+    ],
+    "revision_statements": [
+        {
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:56:04Z",
+            "system_mtime": "2016-10-22T18:56:04Z",
+            "user_mtime": "2016-10-22T18:56:04Z",
+            "jsonmodel_type": "revision_statement",
+            "uri": "/revision_statement/3014",
+            "repository": {
+                "ref": "/repositories/2"
+            }
+        }
+    ],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "903f234a0fbe354e31a51eb7027a492e",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "3416a696a85030ab5ec7d29ffec7c08a",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "e7a5f3440b35f73dfcd19d55ede2adaa",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Former Classification: III 15 17\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "2f9171602908540f100bb7428c7a1038",
+            "label": "Conditions Governing Use note",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "dce61b31f7cfca982cea8f141f450e58",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "1ef38518777fd0da4edcc333b372b6fe",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "acbd4bba229a6d3fc6be48ba80fa1ddc",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "This series is divided into two subseries:\n\nSubseries 1 - 1964 Presidential Election, 1959-1964\nSubseries 2 - First Gubernatorial Term, 1958-1962\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "4f025dd8c48d73a6c5b77d1b821e9553",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "SCOPE AND CONTENT\n\nThis series consists of more than 80 volumes of aggregated factual material on both national and state issues. The Issue Books contain statements and press releases issued by the Gubernatorial Press Office in response to important political and policy issues, as well as other substantive material. Governor Rockefeller also had many experts write background papers on various subjects relevant to the two campaigns. In most cases, these papers are coupled with summary papers or supporting memoranda for Governor Rockefeller to assist him with the formulation of a position on the issue.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "b8e54129d7ecba61f6cc6dd25db4b920",
+            "label": "Other Finding Aids note",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "1029d02335adaaed7f4d3e5e94def23f",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "John LeGloahec, Bethany Antos\nDecember 1999\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/562",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T18:56:04Z",
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "user_mtime": "2016-10-22T18:56:04Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/3850",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/562"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2007-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T18:56:04Z",
+        "system_mtime": "2016-10-22T18:56:04Z",
+        "user_mtime": "2016-10-22T18:56:04Z",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/562/tree"
+    }
+}

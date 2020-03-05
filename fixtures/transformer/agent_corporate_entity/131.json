@@ -1,137 +1,137 @@
 {
-  "lock_version": 126,
-  "publish": true,
-  "created_by": "admin",
-  "last_modified_by": "admin",
-  "create_time": "2014-12-06T02:41:39Z",
-  "system_mtime": "2017-12-15T22:26:27Z",
-  "user_mtime": "2014-12-06T02:41:39Z",
-  "jsonmodel_type": "agent_corporate_entity",
-  "agent_contacts": [
-    {
-      "lock_version": 0,
-      "name": "United States",
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2014-12-06T02:41:39Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "jsonmodel_type": "agent_contact",
-      "telephones": []
-    }
-  ],
-  "linked_agent_roles": [
-    "creator",
-    "subject"
-  ],
-  "external_documents": [],
-  "notes": [],
-  "used_within_repositories": [
-    "/repositories/2"
-  ],
-  "used_within_published_repositories": [
-    "/repositories/2"
-  ],
-  "dates_of_existence": [],
-  "names": [
-    {
-      "lock_version": 0,
-      "primary_name": "United States",
-      "subordinate_name_1": "Office of the Coordinator of Inter-American Affairs",
-      "sort_name": "United States. Office of the Coordinator of Inter-American Affairs",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2017-08-22T15:44:40Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "authorized": true,
-      "is_display_name": true,
-      "source": "naf",
-      "jsonmodel_type": "name_corporate_entity",
-      "use_dates": []
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "Office of the Coordinator of Inter-American Affairs (U.S.).",
-      "sort_name": "Office of the Coordinator of Inter-American Affairs (U.S.).",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2014-12-06T02:41:39Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "jsonmodel_type": "name_corporate_entity",
-      "use_dates": [],
-      "authorized": false,
-      "is_display_name": false
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "United States. Coordinator of Inter-American Affairs, Office of the.",
-      "sort_name": "United States. Coordinator of Inter-American Affairs, Office of the.",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2014-12-06T02:41:39Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "jsonmodel_type": "name_corporate_entity",
-      "use_dates": [],
-      "authorized": false,
-      "is_display_name": false
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "United States. Office for Emergency Management. Office of the Coordinator of Inter-American Affairs.",
-      "sort_name": "United States. Office for Emergency Management. Office of the Coordinator of Inter-American Affairs.",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2014-12-06T02:41:39Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "jsonmodel_type": "name_corporate_entity",
-      "use_dates": [],
-      "authorized": false,
-      "is_display_name": false
-    },
-    {
-      "lock_version": 0,
-      "primary_name": "United States. Oficina del Coordinador de Asuntos Interamericanos.",
-      "sort_name": "United States. Oficina del Coordinador de Asuntos Interamericanos.",
-      "sort_name_auto_generate": true,
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:41:39Z",
-      "system_mtime": "2014-12-06T02:41:39Z",
-      "user_mtime": "2014-12-06T02:41:39Z",
-      "jsonmodel_type": "name_corporate_entity",
-      "use_dates": [],
-      "authorized": false,
-      "is_display_name": false
-    }
-  ],
-  "related_agents": [],
-  "uri": "/agents/corporate_entities/131",
-  "agent_type": "agent_corporate_entity",
-  "is_linked_to_published_record": true,
-  "display_name": {
-    "lock_version": 0,
-    "primary_name": "United States",
-    "subordinate_name_1": "Office of the Coordinator of Inter-American Affairs",
-    "sort_name": "United States. Office of the Coordinator of Inter-American Affairs",
-    "sort_name_auto_generate": true,
+    "lock_version": 126,
+    "publish": true,
     "created_by": "admin",
     "last_modified_by": "admin",
     "create_time": "2014-12-06T02:41:39Z",
-    "system_mtime": "2017-08-22T15:44:40Z",
+    "system_mtime": "2017-12-15T22:26:27Z",
     "user_mtime": "2014-12-06T02:41:39Z",
-    "authorized": true,
-    "is_display_name": true,
-    "source": "naf",
-    "jsonmodel_type": "name_corporate_entity",
-    "use_dates": []
-  },
-  "title": "United States. Office of the Coordinator of Inter-American Affairs"
+    "jsonmodel_type": "agent_corporate_entity",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "United States",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2014-12-06T02:41:39Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator",
+        "subject"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "United States",
+            "subordinate_name_1": "Office of the Coordinator of Inter-American Affairs",
+            "sort_name": "United States. Office of the Coordinator of Inter-American Affairs",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2017-08-22T15:44:40Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "naf",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": []
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Office of the Coordinator of Inter-American Affairs (U.S.).",
+            "sort_name": "Office of the Coordinator of Inter-American Affairs (U.S.).",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2014-12-06T02:41:39Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "United States. Coordinator of Inter-American Affairs, Office of the.",
+            "sort_name": "United States. Coordinator of Inter-American Affairs, Office of the.",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2014-12-06T02:41:39Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "United States. Office for Emergency Management. Office of the Coordinator of Inter-American Affairs.",
+            "sort_name": "United States. Office for Emergency Management. Office of the Coordinator of Inter-American Affairs.",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2014-12-06T02:41:39Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "United States. Oficina del Coordinador de Asuntos Interamericanos.",
+            "sort_name": "United States. Oficina del Coordinador de Asuntos Interamericanos.",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:39Z",
+            "system_mtime": "2014-12-06T02:41:39Z",
+            "user_mtime": "2014-12-06T02:41:39Z",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/corporate_entities/131",
+    "agent_type": "agent_corporate_entity",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "United States",
+        "subordinate_name_1": "Office of the Coordinator of Inter-American Affairs",
+        "sort_name": "United States. Office of the Coordinator of Inter-American Affairs",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T02:41:39Z",
+        "system_mtime": "2017-08-22T15:44:40Z",
+        "user_mtime": "2014-12-06T02:41:39Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "naf",
+        "jsonmodel_type": "name_corporate_entity",
+        "use_dates": []
+    },
+    "title": "United States. Office of the Coordinator of Inter-American Affairs"
 }

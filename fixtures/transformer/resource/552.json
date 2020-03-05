@@ -1,0 +1,391 @@
+{
+    "lock_version": 7,
+    "title": "Nelson A. Rockefeller gubernatorial records, Appointments Office, Series 2",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA353.xml",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Appointments Office, Series 2\n",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Appointments Office, Series 2",
+    "finding_aid_date": "2001",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T09:48:06Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2016-10-22T18:41:58Z",
+    "suppressed": false,
+    "id_0": "FA353",
+    "language": "eng",
+    "level": "series",
+    "finding_aid_status": "under_revision",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2171",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:41:58Z",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/539"
+        },
+        {
+            "ref": "/subjects/241"
+        },
+        {
+            "ref": "/subjects/36"
+        },
+        {
+            "ref": "/subjects/294"
+        },
+        {
+            "ref": "/subjects/139"
+        },
+        {
+            "ref": "/subjects/544"
+        },
+        {
+            "ref": "/subjects/362"
+        },
+        {
+            "ref": "/subjects/260"
+        },
+        {
+            "ref": "/subjects/26"
+        },
+        {
+            "ref": "/subjects/574"
+        },
+        {
+            "ref": "/subjects/578"
+        },
+        {
+            "ref": "/subjects/9"
+        },
+        {
+            "ref": "/subjects/579"
+        },
+        {
+            "ref": "/subjects/575"
+        },
+        {
+            "ref": "/subjects/577"
+        },
+        {
+            "ref": "/subjects/537"
+        },
+        {
+            "ref": "/subjects/573"
+        },
+        {
+            "ref": "/subjects/580"
+        },
+        {
+            "ref": "/subjects/547"
+        },
+        {
+            "ref": "/subjects/546"
+        },
+        {
+            "ref": "/subjects/538"
+        },
+        {
+            "ref": "/subjects/548"
+        },
+        {
+            "ref": "/subjects/102"
+        },
+        {
+            "ref": "/subjects/576"
+        },
+        {
+            "ref": "/subjects/193"
+        },
+        {
+            "ref": "/subjects/330"
+        },
+        {
+            "ref": "/subjects/572"
+        },
+        {
+            "ref": "/subjects/365"
+        },
+        {
+            "ref": "/subjects/27"
+        },
+        {
+            "ref": "/subjects/37"
+        },
+        {
+            "ref": "/subjects/329"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "4",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:41:58Z",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z",
+            "portion": "whole",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1958-1970",
+            "begin": "1958",
+            "end": "1970",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:41:58Z",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/182"
+        },
+        {
+            "role": "subject",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/1843"
+        },
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/people/147"
+        }
+    ],
+    "revision_statements": [
+        {
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T18:41:58Z",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z",
+            "jsonmodel_type": "revision_statement",
+            "uri": "/revision_statement/3004",
+            "repository": {
+                "ref": "/repositories/2"
+            }
+        }
+    ],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "29284d64bc6bb8194a6646370584f7ce",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The following 24 series are available for research. Missing numbers denote closed series.\n\nSeries 2 - Appointments Office\nSeries 3 - Assembly and Senate Memos\nSeries 4 - Joseph H. Boyd Files\nSeries 7 - James Cannon Files\nSeries 8 - Affirmative Action Files (N. Lee Cook)\nSeries 10 - Counsel's Office\nSeries 12 - New York State Committee to Reelect the President\nSeries 13 - Jerry A. Danzig Files\nSeries 14 - Executive Chamber\nSeries 16 - 55th Street\nSeries 17 - Issue Books Series\n19 - Arthur Massolo Files\nSeries 22 - New York Office\nSeries 23 - Civil Service Resolutions (Charles H. Palmer)\nSeries 24 - Political Files Series\n25 - Press Office\nSeries 27 - Public Relations\nSeries 28 - Departmental Reports\nSeries 29 - William J. Ronan Files\nSeries 33 - Speeches\nSeries 34 - Diane Van Wie Files\nSeries 35 - Ann C. Whitman, Gubernatorial Files\nSeries 36 - Gene Wyckoff Files\nSeries 38 - New York Republican State Fund Raising Reports\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "f111c4888d04c83f73f1624b132b9967",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "3fb7fdfe9a62d0af1be37f058462079e",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "7b5765ba70f39c421bdea4235f781472",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Former Classification: III 15 2\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "e6a2e8268cad91e0c23dab8429b14587",
+            "label": "Conditions Governing Use note",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "96abb5c9e43c4bf7fc51f1c17f6a54a2",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "f36eee9aa010ff12b8af6091c7995fbf",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "cf3b37657d3a97cae301923dd6cdb813",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "NOTE TO RESEARCHERS\n\nThis subseries contains a portion of the office files of several members of Nelson A. Rockefeller's staff, primarily the Appointments Office. They document official activities in the execution of their duties as members of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administrations, political campaigns, and/or Rockefeller's personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nThis is an incomplete portion of Governor Rockefeller's Appointments Office correspondence, dating from 1958 to 1970. Only three boxes of alphabetical correspondence are represented, from C through L. There is no record or indication of what happened to the rest of the alphabetical run. The final box of the series is a box of miscellaneous subject files, dating from 1967 to 1970. Alphabetically arranged by topic, this portion of the series is also incomplete. The material contained withing these files may be duplicated within the official gubernatorial record, maintained on microfilm at both the New York State Archives and the Rockefeller Archive Center.\n\nA function of the Appointments Office was to sift through the letters of application received for positions in the gubernatorial administrations. The series consists of correspondence to and from the individuals making application, as well as internal memoranda to and from other staff of the Appointments Office or to staff of the various state-level departments to which an applicant was referred.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "653d1c79d1e8141a8e7af09b01e35702",
+            "label": "Other Finding Aids note",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "8642cb4a04964007e2adec58abfa5769",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "John LeGloahec July 2001\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/552",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T18:41:58Z",
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "user_mtime": "2016-10-22T18:41:58Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/3840",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/552"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2007-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T18:41:58Z",
+        "system_mtime": "2016-10-22T18:41:58Z",
+        "user_mtime": "2016-10-22T18:41:58Z",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/552/tree"
+    }
+}

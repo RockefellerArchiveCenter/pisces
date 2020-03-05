@@ -1,0 +1,62 @@
+{
+    "lock_version": 408,
+    "title": "Philanthropy -- New York (N.Y.)",
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:30:06Z",
+    "system_mtime": "2019-03-08T17:57:17Z",
+    "user_mtime": "2014-12-06T02:30:06Z",
+    "source": "local",
+    "jsonmodel_type": "subject",
+    "external_ids": [
+        {
+            "external_id": "293",
+            "source": "Archivists Toolkit Database::SUBJECT",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:30:06Z",
+            "system_mtime": "2014-12-06T02:30:06Z",
+            "user_mtime": "2014-12-06T02:30:06Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "publish": true,
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "terms": [
+        {
+            "lock_version": 0,
+            "term": "Philanthropy",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:29:54Z",
+            "system_mtime": "2014-12-06T02:29:54Z",
+            "user_mtime": "2014-12-06T02:29:54Z",
+            "term_type": "topical",
+            "jsonmodel_type": "term",
+            "uri": "/terms/105",
+            "vocabulary": "/vocabularies/1"
+        },
+        {
+            "lock_version": 0,
+            "term": "New York (N.Y.)",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:30:06Z",
+            "system_mtime": "2014-12-06T02:30:06Z",
+            "user_mtime": "2014-12-06T02:30:06Z",
+            "term_type": "topical",
+            "jsonmodel_type": "term",
+            "uri": "/terms/243",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "external_documents": [],
+    "uri": "/subjects/238",
+    "vocabulary": "/vocabularies/1",
+    "is_linked_to_published_record": true
+}
