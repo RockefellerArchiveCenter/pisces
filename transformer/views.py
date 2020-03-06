@@ -1,21 +1,26 @@
 from asterism.views import BaseServiceView
+from rest_framework.viewsets import ModelViewSet
 
-from .transformers import ArchivesSpaceDataTransformer
-
-
-class ArchivesSpaceTransformView(BaseServiceView):
-    """Takes the get request for AS data and returns a web response based on the transformation of that data."""
-
-    def get_service_response(self, request):
-        if not request.data:
-            raise Exception("Missing request data")
-        return ArchivesSpaceDataTransformer().run(request.data)
+from .models import DataObject
+from .serializers import DataObjectListSerializer, DataObjectSerializer
+from .transformers import Transformer
 
 
-class CartographerTransformView(BaseServiceView):
-    """Takes the get request for AS data and returns a web response based on the transformation of that data."""
+class TransformView(BaseServiceView):
+    """Transforms source data."""
 
     def get_service_response(self, request):
         if not request.data:
             raise Exception("Missing request data")
-        return "success"
+        return Transformer().run(
+            request.data.get("object_type"), request.data.get("object"))
+
+
+class DataObjectViewSet(ModelViewSet):
+    model = DataObject
+    queryset = DataObject.objects.all()
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return DataObjectListSerializer
+        return DataObjectSerializer

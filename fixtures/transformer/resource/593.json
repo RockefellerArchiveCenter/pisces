@@ -1,0 +1,283 @@
+{
+    "lock_version": 8,
+    "title": "Rockefeller Foundation records, officers' diaries, RG 12, S-Z",
+    "publish": true,
+    "restrictions": true,
+    "ead_id": "FA394.xml",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, officers' diaries, RG 12, S-Z\n",
+    "finding_aid_filing_title": "Rockefeller Foundation records, officers' diaries, RG 12, S-Z",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T11:03:32Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2016-10-22T19:46:50Z",
+    "suppressed": false,
+    "id_0": "FA394",
+    "language": "eng",
+    "level": "recordgrp",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_status": "under_revision",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2211",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T19:46:50Z",
+            "system_mtime": "2016-10-22T19:46:50Z",
+            "user_mtime": "2016-10-22T19:46:50Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/237"
+        },
+        {
+            "ref": "/subjects/76"
+        },
+        {
+            "ref": "/subjects/52"
+        },
+        {
+            "ref": "/subjects/75"
+        },
+        {
+            "ref": "/subjects/103"
+        },
+        {
+            "ref": "/subjects/78"
+        },
+        {
+            "ref": "/subjects/219"
+        },
+        {
+            "ref": "/subjects/22"
+        },
+        {
+            "ref": "/subjects/81"
+        },
+        {
+            "ref": "/subjects/33"
+        },
+        {
+            "ref": "/subjects/77"
+        },
+        {
+            "ref": "/subjects/134"
+        },
+        {
+            "ref": "/subjects/85"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "45.2",
+            "container_summary": "Boxes 423-535",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T19:46:50Z",
+            "system_mtime": "2016-10-22T19:46:50Z",
+            "user_mtime": "2016-10-22T19:46:50Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1911-1992",
+            "begin": "1911",
+            "end": "1992",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-22T19:46:50Z",
+            "system_mtime": "2016-10-22T19:46:50Z",
+            "user_mtime": "2016-10-22T19:46:50Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/12"
+        }
+    ],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/255"
+        },
+        {
+            "ref": "/repositories/2/accessions/184"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "6a21d79dd8cc42fb01af0faa9b47920b",
+            "label": "General Physical Description note",
+            "type": "physdesc",
+            "content": [
+                "<extent>Actual extent is unknown.</extent>"
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "06d3e88818af13b5ee7a11cc7a1d8b33",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation diaries:\n\nOfficers of the Rockefeller Foundation in New York and its staff members in the field often visited educational, scientific and research institutions and laboratories in many parts of the world to maintain contacts and assess work being done. Officers and field staff frequently conferred with government officials regarding the operation of the RF's programs. In order to preserve accurate records for the guidance of other RF officers, those who carried on these activities kept diaries of their day-to-day contacts and impressions. These diaries were sent to the RF office, where they circulated among officers and staff to the extent deemed advisable.\n\nRockefeller Foundation:\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "c349d1fc95599ba9e9da4e6d56a904fb",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "c0bb3a9ce28aedfff3021b3b8f862a76",
+            "label": "File Plan note",
+            "type": "fileplan",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RG 12\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "0feef5b40a8da13f6574964f471cd8e0",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation officers' diaries:\n\nDiaries are of two types: regular daily diaries, and special trip diaries. Some diaries have indexes, which are bound in the annual volume; indexing was not a requirement but was left to the discretion of the officers, and not all diaries are indexed.\n\nDiaries frequently contain information given in confidence, and were thus treated as confidential., The period covered is approximately 1911-1992.\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "fd3f7eebcac8db5976b8c071e59d6d01",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Officers' diaries are open for scholarly research provided that (1) the diarist is deceased and (2) the volume to be examined is at least twenty years old. All reasonable efforts will be made to determine the fate of the diarist(s), but if such efforts are fruitless then the material will remain closed to scholarly research until 100 years after the officer's year of birth.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ce798e0ae919de037ac1632370555c52",
+            "label": "Other Finding Aids note",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Other available finding aids describing Rockefeller Foundation records, Officers' Diaries include:\n\n<extref href=\"../FA391/overview\">FA391 Rockefeller Foundation records, Officers' Diaries A-E.</extref>\n\n<extref href=\"../FA392/overview\">FA392 Rockefeller Foundation records, Officers' Diaries F-L.</extref>\n\n<extref href=\"../FA393/overview\">FA393 Rockefeller Foundation records, Officers' Diaries M-R.</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "78eeabd3f44e8a0b4ab02bc63b16bee8",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Alphabetically by surname.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/593",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T19:46:50Z",
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "user_mtime": "2016-10-22T19:46:50Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/3881",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/593"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2013-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-22T19:46:50Z",
+        "system_mtime": "2016-10-22T19:46:50Z",
+        "user_mtime": "2016-10-22T19:46:50Z",
+        "enum_1": "4 - Advanced",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/593/tree"
+    }
+}

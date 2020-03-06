@@ -1,0 +1,80 @@
+{
+    "lock_version": 12,
+    "publish": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:46:05Z",
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "user_mtime": "2014-12-06T02:46:05Z",
+    "jsonmodel_type": "agent_person",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "Danzig",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:46:05Z",
+            "system_mtime": "2014-12-06T02:46:05Z",
+            "user_mtime": "2014-12-06T02:46:05Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "Danzig",
+            "rest_of_name": "Jerry A.",
+            "sort_name": "Danzig, Jerry A.",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:46:05Z",
+            "system_mtime": "2014-12-06T02:46:05Z",
+            "user_mtime": "2014-12-06T02:46:05Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "local",
+            "rules": "dacs",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": []
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/people/1885",
+    "agent_type": "agent_person",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "Danzig",
+        "rest_of_name": "Jerry A.",
+        "sort_name": "Danzig, Jerry A.",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T02:46:05Z",
+        "system_mtime": "2014-12-06T02:46:05Z",
+        "user_mtime": "2014-12-06T02:46:05Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "local",
+        "rules": "dacs",
+        "name_order": "inverted",
+        "jsonmodel_type": "name_person",
+        "use_dates": []
+    },
+    "title": "Danzig, Jerry A."
+}

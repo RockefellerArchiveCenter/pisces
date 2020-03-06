@@ -160,7 +160,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://pisces-web:8007/transform/cartographer/",
+                "uri": "http://pisces-web:8007/merge/",
                 "body": "{\"id\": 3, \"title\": \"Social Science Research Council records, Record Group 3\", \"map\": 3, \"parent\": 1, \"tree_index\": 2, \"archivesspace_uri\": \"/repositories/2/resources/13016\"}",
                 "headers": {
                     "User-Agent": [

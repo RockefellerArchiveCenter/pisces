@@ -18,13 +18,15 @@ from django.urls import include, path, re_path
 from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                            CartographerDeletesView, CartographerUpdatesView,
                            FetchRunViewSet)
-from rest_framework import routers
+from merger.views import MergeView
 from rest_framework.schemas import get_schema_view
-from transformer.views import (ArchivesSpaceTransformView,
-                               CartographerTransformView)
+from transformer.views import DataObjectViewSet, TransformView
 
-router = routers.DefaultRouter()
+from .routers import PiscesRouter
+
+router = PiscesRouter()
 router.register(r'fetches', FetchRunViewSet, 'fetchrun')
+router.register(r'objects', DataObjectViewSet, 'dataobject')
 
 schema_view = get_schema_view(
     title="Pisces API",
@@ -38,8 +40,8 @@ urlpatterns = [
     re_path(r'^fetch/archivesspace/deletes/$', ArchivesSpaceDeletesView.as_view(), name='fetch-archivesspace-deletes'),
     re_path(r'^fetch/cartographer/updates/$', CartographerUpdatesView.as_view(), name='fetch-cartographer-updates'),
     re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
-    re_path(r'^transform/archivesspace/$', ArchivesSpaceTransformView.as_view(), name='transform-archivesspace'),
-    re_path(r'^transform/cartographer/$', CartographerTransformView.as_view(), name='transform-cartographer'),
+    re_path(r'^merge/$', MergeView.as_view(), name='merge'),
+    re_path(r'^transform/$', TransformView.as_view(), name='transform'),
     re_path(r'^silk/', include('silk.urls', namespace='silk')),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),

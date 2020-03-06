@@ -1,0 +1,49 @@
+{
+    "lock_version": 1755,
+    "title": "New York (State)",
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:30:08Z",
+    "system_mtime": "2019-03-08T17:57:17Z",
+    "user_mtime": "2014-12-06T02:30:08Z",
+    "source": "lcsh",
+    "jsonmodel_type": "subject",
+    "external_ids": [
+        {
+            "external_id": "318",
+            "source": "Archivists Toolkit Database::SUBJECT",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:30:08Z",
+            "system_mtime": "2014-12-06T02:30:08Z",
+            "user_mtime": "2014-12-06T02:30:08Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "publish": true,
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "terms": [
+        {
+            "lock_version": 0,
+            "term": "New York (State)",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:30:08Z",
+            "system_mtime": "2014-12-06T02:30:08Z",
+            "user_mtime": "2014-12-06T02:30:08Z",
+            "term_type": "geographic",
+            "jsonmodel_type": "term",
+            "uri": "/terms/266",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "external_documents": [],
+    "uri": "/subjects/260",
+    "vocabulary": "/vocabularies/1",
+    "is_linked_to_published_record": true
+}

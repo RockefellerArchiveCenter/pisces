@@ -1,4 +1,5 @@
 from datetime import datetime
+from unittest import mock
 
 import vcr
 from django.test import TestCase
@@ -34,7 +35,7 @@ cartographer_vcr = vcr.VCR(
 class FetcherTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
-        time = datetime(2020, 2, 1)
+        time = datetime(2020, 2, 28)
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
             for object_type, _ in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 f = FetchRun.objects.create(
@@ -46,16 +47,20 @@ class FetcherTest(TestCase):
                 f.start_time = time
                 f.save()
 
-    def test_fetchers(self):
+    @mock.patch("fetcher.helpers.requests.post")
+    def test_fetchers(self, mock_post):
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
                 (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
+                        print("{}-{}-{}.json".format(cassette_prefix, status, object_type))
                         list = fetcher().fetch(status, object_type)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
+                        self.assertEqual(mock_post.call_count, len(list))
+                        mock_post.reset_mock()
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
             self.assertEqual(len(FetchRunError.objects.all()), 0)
 
@@ -65,9 +70,9 @@ class FetcherTest(TestCase):
                 (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
                 (CartographerDeletesView, "deleted", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
                 (CartographerUpdatesView, "updated", "fetch-cartographer-updates", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer")]:
-            for object_type in object_type_choices:
-                with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type[0])):
-                    request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type[0]))
+            for object_type, _ in object_type_choices:
+                with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
+                    request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
 

@@ -13,7 +13,6 @@ ARCHIVESSPACE = {
     "username": "admin",
     "password": "admin",
     "repo": 2,
-    "transform_url": "http://pisces-web:8007/transform/archivesspace/"
 }
 
 CARTOGRAPHER = {
@@ -21,11 +20,14 @@ CARTOGRAPHER = {
     "user": "admin",
     "password": "admin",
     "health_check_path": "/status/health/",
-    "transform_url": "http://pisces-web:8007/transform/cartographer/"
 }
 
 SILKY_PYTHON_PROFILER = True
 
-DELIVERY_URL = "http://scorpio-web:8008/merge/"
+MERGE_URL = "http://pisces-web:8007/merge/"
+
+TRANSFORM_URL = "http://pisces-web:8007/transform/"
+
+INDEX_DELETE_URL = "http://scorpio-web:8008/index/delete/"
 
 ALLOWED_HOSTS = ['localhost', 'pisces-web']

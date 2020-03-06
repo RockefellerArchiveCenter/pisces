@@ -1,0 +1,38 @@
+{
+    "lock_version": 86,
+    "title": "Philanthropy -- New York (N.Y.)",
+    "created_by": "pgalligan",
+    "last_modified_by": "pgalligan",
+    "create_time": "2015-04-28T19:00:19Z",
+    "system_mtime": "2018-07-31T20:22:57Z",
+    "user_mtime": "2015-04-28T19:00:19Z",
+    "source": "local",
+    "jsonmodel_type": "subject",
+    "external_ids": [],
+    "publish": true,
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "terms": [
+        {
+            "lock_version": 0,
+            "term": "Philanthropy -- New York (N.Y.)",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2015-04-28T19:00:19Z",
+            "system_mtime": "2015-04-28T19:00:19Z",
+            "user_mtime": "2015-04-28T19:00:19Z",
+            "term_type": "topical",
+            "jsonmodel_type": "term",
+            "uri": "/terms/14619",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "external_documents": [],
+    "uri": "/subjects/16997",
+    "vocabulary": "/vocabularies/1",
+    "is_linked_to_published_record": true
+}

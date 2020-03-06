@@ -1,0 +1,157 @@
+{
+    "lock_version": 1058,
+    "publish": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:41:04Z",
+    "system_mtime": "2019-04-16T19:17:30Z",
+    "user_mtime": "2014-12-06T02:41:04Z",
+    "jsonmodel_type": "agent_person",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "Rockefeller",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2014-12-06T02:41:04Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator",
+        "source",
+        "subject"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [
+        {
+            "lock_version": 0,
+            "begin": "1908",
+            "end": "1979",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2014-12-06T02:41:04Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "date_type": "inclusive",
+            "label": "existence",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "Rockefeller",
+            "rest_of_name": "Nelson A. (Nelson Aldrich)",
+            "sort_name": "Rockefeller, Nelson A. (Nelson Aldrich)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "naf",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": []
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "N.A.R.",
+            "sort_name": "N.A.R.",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2014-12-06T02:41:04Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "NAR",
+            "sort_name": "NAR",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2014-12-06T02:41:04Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Rockefeller",
+            "rest_of_name": "Nelson Aldrich",
+            "sort_name": "Rockefeller, Nelson Aldrich",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:04Z",
+            "system_mtime": "2014-12-06T02:41:04Z",
+            "user_mtime": "2014-12-06T02:41:04Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [
+                {
+                    "lock_version": 0,
+                    "begin": "1908",
+                    "end": "1979",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2014-12-06T02:41:04Z",
+                    "system_mtime": "2014-12-06T02:41:04Z",
+                    "user_mtime": "2014-12-06T02:41:04Z",
+                    "date_type": "inclusive",
+                    "label": "usage",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "authorized": false,
+            "is_display_name": false
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/people/147",
+    "agent_type": "agent_person",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "Rockefeller",
+        "rest_of_name": "Nelson A. (Nelson Aldrich)",
+        "sort_name": "Rockefeller, Nelson A. (Nelson Aldrich)",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T02:41:04Z",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "user_mtime": "2014-12-06T02:41:04Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "naf",
+        "name_order": "inverted",
+        "jsonmodel_type": "name_person",
+        "use_dates": []
+    },
+    "title": "Rockefeller, Nelson A. (Nelson Aldrich)"
+}

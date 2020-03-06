@@ -1,0 +1,74 @@
+{
+    "lock_version": 29,
+    "publish": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T03:06:37Z",
+    "system_mtime": "2017-12-15T22:26:27Z",
+    "user_mtime": "2014-12-06T03:06:37Z",
+    "jsonmodel_type": "agent_corporate_entity",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "New York (State). Governor (1959-1973 : Rockefeller).",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T03:06:37Z",
+            "system_mtime": "2014-12-06T03:06:37Z",
+            "user_mtime": "2014-12-06T03:06:37Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+            "sort_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T03:06:37Z",
+            "system_mtime": "2014-12-06T03:06:37Z",
+            "user_mtime": "2014-12-06T03:06:37Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "ingest",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": []
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/corporate_entities/4766",
+    "agent_type": "agent_corporate_entity",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+        "sort_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T03:06:37Z",
+        "system_mtime": "2014-12-06T03:06:37Z",
+        "user_mtime": "2014-12-06T03:06:37Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "ingest",
+        "jsonmodel_type": "name_corporate_entity",
+        "use_dates": []
+    },
+    "title": "New York (State). Governor (1959-1973 : Rockefeller)."
+}

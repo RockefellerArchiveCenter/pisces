@@ -1,22 +1,22 @@
 import json
+from os.path import join
 
-from asterism.resources import archivesspace
-from fetcher.helpers import send_post_request
+import shortuuid
+from jsonschema import validate
 from odin.codecs import json_codec
 from pisces import settings
 from requests.exceptions import ConnectionError
 from silk.profiling.profiler import silk_profile
 
-from .mappings import (ArchivesSpaceAgentCorporateEntityToAgent,
-                       ArchivesSpaceAgentFamilyToAgent,
-                       ArchivesSpaceAgentPersonToAgent,
-                       ArchivesSpaceArchivalObjectToCollection,
-                       ArchivesSpaceArchivalObjectToObject,
-                       ArchivesSpaceResourceToCollection,
-                       ArchivesSpaceSubjectToTerm,
-                       CartographerMapComponentToCollection)
-from .mappings_helpers import ArchivesSpaceHelper
-from .resources import CartographerMapComponent
+from .mappings import (SourceAgentCorporateEntityToAgent,
+                       SourceAgentFamilyToAgent, SourceAgentPersonToAgent,
+                       SourceArchivalObjectToCollection,
+                       SourceArchivalObjectToObject,
+                       SourceResourceToCollection, SourceSubjectToTerm)
+from .models import DataObject
+from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
+                               SourceAgentPerson, SourceArchivalObject,
+                               SourceResource, SourceSubject)
 
 
 class TransformError(Exception):
@@ -24,98 +24,81 @@ class TransformError(Exception):
     pass
 
 
-class BaseTransformer:
-    """Base Data Transformer.
+class Transformer:
+    """Data Transformer.
 
-    Exposes the following methods:
-        `get_identifier`: returns an identifier for the object being processed.
-        `get_object_type`: returns the type of object being processed.
-        `get_mapping_configs`: returns a two-tuple of the type to map from, and
-            the mapping to be applied to the object.
-        `get_transformed_object`: returns a dict representation of the
-            transformed object.
+    Selects the appropriate mapping configs, transforms and validates data.
+    Validated data is saved to the application's database as a DataObject.
+
+    Args:
+        object_type (str): the object type of the source data.
+        data (dict): the source data to be transformed.
     """
 
+    def __init__(self):
+        with open(join(settings.BASE_DIR, "rac-data-model", "schema.json")) as sf:
+            self.schema = json.load(sf)
+
     @silk_profile()
-    def run(self, data):
+    def run(self, object_type, data):
         try:
-            self.identifier = self.get_identifier(data)
-            object_type = self.get_object_type(data)
+            self.identifier = data.get("uri")
             mapping_configs = self.get_mapping_configs(object_type)
             transformed = self.get_transformed_object(data, *mapping_configs)
+            self.validate_transformed(transformed)
+            self.save_validated(transformed)
             return json.dumps(transformed)
         except ConnectionError:
-            raise TransformError("Could not connect to {}".format(settings.DELIVERY_URL))
+            raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
         except Exception as e:
             raise TransformError("Error transforming {} {}: {}".format(object_type, self.identifier, str(e)))
 
-
-class CartographerDataTransformer(BaseTransformer):
-    """Transforms Cartographer data."""
-
-    def get_identifier(self, data):
-        return data.get("ref")
-
-    def get_object_type(self, data):
-        return "arrangement_map"
-
     def get_mapping_configs(self, object_type):
-        CARTOGRAPHER_TYPE_MAP = {
-            "arrangement_map": (CartographerMapComponent, CartographerMapComponentToCollection)
+        TYPE_MAP = {
+            "agent_person": (SourceAgentPerson, SourceAgentPersonToAgent),
+            "agent_corporate_entity": (SourceAgentCorporateEntity, SourceAgentCorporateEntityToAgent),
+            "agent_family": (SourceAgentFamily, SourceAgentFamilyToAgent),
+            "resource": (SourceResource, SourceResourceToCollection),
+            "archival_object": (SourceArchivalObject, SourceArchivalObjectToObject),
+            "archival_object_collection": (SourceArchivalObject, SourceArchivalObjectToCollection),
+            "subject": (SourceSubject, SourceSubjectToTerm)
         }
-        return CARTOGRAPHER_TYPE_MAP[object_type]
-
-    @silk_profile()
-    def get_transformed_object(self, data, from_resource, mapping):
-        self.transformed_list = []
-        for child in data.get("children"):
-            self.process_child(child, from_resource, mapping)
-        return self.transformed_list
-
-    @silk_profile()
-    def process_child(self, data, from_resource, mapping):
-        self.identifier = self.get_identifier(data)
-        from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
-        transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
-        send_post_request(settings.DELIVERY_URL, transformed)
-        self.transformed_list.append(transformed)
-        for child in data.get("children", []):
-            self.process_child(child, from_resource, mapping)
-
-
-class ArchivesSpaceDataTransformer(BaseTransformer):
-    """Transforms ArchivesSpace data."""
-
-    def get_identifier(self, data):
-        return data.get("uri")
-
-    def get_mapping_configs(self, object_type):
-        ARCHIVESSPACE_TYPE_MAP = {
-            "agent_person": (archivesspace.ArchivesSpaceAgentPerson, ArchivesSpaceAgentPersonToAgent),
-            "agent_corporate_entity": (archivesspace.ArchivesSpaceAgentCorporateEntity, ArchivesSpaceAgentCorporateEntityToAgent),
-            "agent_family": (archivesspace.ArchivesSpaceAgentFamily, ArchivesSpaceAgentFamilyToAgent),
-            "resource": (archivesspace.ArchivesSpaceResource, ArchivesSpaceResourceToCollection),
-            "archival_object": (archivesspace.ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToObject),
-            "archival_object_collection": (archivesspace.ArchivesSpaceArchivalObject, ArchivesSpaceArchivalObjectToCollection),
-            "subject": (archivesspace.ArchivesSpaceSubject, ArchivesSpaceSubjectToTerm)
-        }
-        return ARCHIVESSPACE_TYPE_MAP[object_type]
+        return TYPE_MAP[object_type]
 
     @silk_profile()
     def get_transformed_object(self, data, from_resource, mapping):
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
         transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
-        send_post_request(settings.DELIVERY_URL, transformed)
         return transformed
 
     @silk_profile()
-    def get_object_type(self, data):
-        """Parses out archival_objects with children from those without.
+    def validate_transformed(self, data):
+        # TODO: return meaningful validation messages!
+        validate(instance=data, schema=self.schema)
 
-        Archival objects that have children are mapped differently from those
-        without.
-        """
-        if data.get("jsonmodel_type") == "archival_object":
-            if ArchivesSpaceHelper().has_children(data['uri']):
-                return "archival_object_collection"
-        return data.get("jsonmodel_type")
+    @silk_profile()
+    def save_validated(self, data):
+        initial_queryset = DataObject.objects.filter(object_type=data["type"])
+        for ident in data["external_identifiers"]:
+            matches = DataObject.find_matches(
+                ident["source"], ident["identifier"],
+                initial_queryset=initial_queryset)
+            if len(matches) > 1:
+                raise Exception(
+                    "Too many matches were found for {}".format(ident["identifier"]))
+            elif len(matches) == 1:
+                existing = matches[0]
+                existing.data = data
+                existing.indexed = False
+                existing.save()
+            else:
+                DataObject.objects.create(
+                    es_id=self.generate_identifier(),
+                    object_type=data["type"],
+                    data=data,
+                    indexed=False)
+
+    @silk_profile()
+    def generate_identifier(self):
+        shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
+        return shortuuid.uuid()

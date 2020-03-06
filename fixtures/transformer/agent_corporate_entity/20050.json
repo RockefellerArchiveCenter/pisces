@@ -1,0 +1,63 @@
+{
+    "lock_version": 27,
+    "publish": true,
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2015-06-03T23:39:42Z",
+    "system_mtime": "2018-02-05T15:22:58Z",
+    "user_mtime": "2015-06-03T23:39:42Z",
+    "jsonmodel_type": "agent_corporate_entity",
+    "agent_contacts": [],
+    "linked_agent_roles": [
+        "creator",
+        "subject"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+            "sort_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+            "sort_name_auto_generate": true,
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2015-06-03T23:39:42Z",
+            "system_mtime": "2015-06-03T23:39:42Z",
+            "user_mtime": "2015-06-03T23:39:42Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "ingest",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": []
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/corporate_entities/20050",
+    "agent_type": "agent_corporate_entity",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+        "sort_name": "New York (State). Governor (1959-1973 : Rockefeller).",
+        "sort_name_auto_generate": true,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2015-06-03T23:39:42Z",
+        "system_mtime": "2015-06-03T23:39:42Z",
+        "user_mtime": "2015-06-03T23:39:42Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "ingest",
+        "jsonmodel_type": "name_corporate_entity",
+        "use_dates": []
+    },
+    "title": "New York (State). Governor (1959-1973 : Rockefeller)."
+}

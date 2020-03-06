@@ -12,9 +12,10 @@ class FetcherError(Exception):
 
 
 class BaseDataFetcher:
-    """
-    Base data fetcher class which provides a common run method inherited by other
-    fetchers. Requires a source attribute to be set on inheriting fetchers.
+    """Base data fetcher.
+
+    Provides a common run method inherited by other fetchers. Requires a source
+    attribute to be set on inheriting fetchers.
     """
 
     def fetch(self, object_status, object_type):
@@ -47,7 +48,6 @@ class BaseDataFetcher:
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
-    transform_url = settings.ARCHIVESSPACE["transform_url"]
 
     def instantiate_client(self):
         return instantiate_aspace(settings.ARCHIVESSPACE)
@@ -56,7 +56,9 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_updated(self, aspace, object_type, last_run, current_run):
         data = []
         for u in self.updated_list(aspace, object_type, last_run, True):
-            delivered = send_post_request(self.transform_url, u.json(), current_run)
+            delivered = send_post_request(
+                settings.MERGE_URL,
+                {"object_type": object_type, "object": u.json()}, current_run)
             if delivered:
                 data.append(u.uri)
         return data
@@ -65,11 +67,11 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_deleted(self, aspace, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(aspace, object_type, last_run):
-            delivered = send_post_request(self.transform_url, d, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, d, current_run)
             if delivered:
                 data.append(d)
         for u in self.updated_list(aspace, object_type, last_run, False):
-            delivered = send_post_request(self.transform_url, u.uri, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, u.uri, current_run)
             if delivered:
                 data.append(u.uri)
         return data
@@ -85,13 +87,13 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         elif object_type == 'subject':
             list = aspace.subjects.with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'person':
+        elif object_type == 'agent_person':
             list = aspace.agents["people"].with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'organization':
+        elif object_type == 'agent_corporate_entity':
             list = aspace.agents["corporate_entities"].with_params(
                 all_ids=True, modified_since=last_run)
-        elif object_type == 'family':
+        elif object_type == 'agent_family':
             list = aspace.agents["families"].with_params(
                 all_ids=True, modified_since=last_run)
         for obj in list:
@@ -110,8 +112,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
-
-    transform_url = settings.CARTOGRAPHER["transform_url"]
     source = FetchRun.CARTOGRAPHER
 
     def instantiate_client(self):
@@ -119,10 +119,13 @@ class CartographerDataFetcher(BaseDataFetcher):
 
     @silk_profile()
     def get_updated(self, client, object_type, last_run, current_run):
+        # TODO: this needs to return arrangement map components, not arrangement maps
         data = []
         for map in self.updated_list(client, last_run, True):
             map_data = client.get(map.get('ref')).json()
-            delivered = send_post_request(self.transform_url, map_data, current_run)
+            delivered = send_post_request(
+                settings.MERGE_URL,
+                {"object_type": object_type, "object": map_data}, current_run)
             if delivered:
                 data.append(map.get('ref'))
         return data
@@ -131,11 +134,11 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_deleted(self, client, object_type, last_run, current_run):
         data = []
         for map in self.updated_list(client, last_run, False):
-            delivered = send_post_request(self.transform_url, map.get('ref'), current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, map.get("ref"), current_run)
             if delivered:
                 data.append(map.get('ref'))
         for uri in self.deleted_list(client, last_run):
-            delivered = send_post_request(self.transform_url, uri, current_run)
+            delivered = send_post_request(settings.INDEX_DELETE_URL, uri, current_run)
             if delivered:
                 data.append(uri)
         return data

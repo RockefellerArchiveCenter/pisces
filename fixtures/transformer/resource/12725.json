@@ -1,0 +1,238 @@
+{
+    "lock_version": 9,
+    "title": "Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA1464.xml",
+    "finding_aid_title": "A Guide to the Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7",
+    "finding_aid_filing_title": "Commonwealth Fund records, President, Malcolm Aldrich papers, SG 3, Series 7",
+    "created_by": "battalb",
+    "last_modified_by": "battalb",
+    "create_time": "2018-09-28T18:24:23Z",
+    "system_mtime": "2019-11-01T15:44:19Z",
+    "user_mtime": "2019-11-01T15:44:19Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "id_0": "FA1464",
+    "language": "eng",
+    "level": "series",
+    "jsonmodel_type": "resource",
+    "external_ids": [],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "2",
+            "container_summary": "4 letter-size document boxes and 1 legal-size document box.",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-11-01T15:44:19Z",
+            "system_mtime": "2019-11-01T15:44:19Z",
+            "user_mtime": "2019-11-01T15:44:19Z",
+            "portion": "whole",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1919-1986",
+            "begin": "1919",
+            "end": "1986",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-11-01T15:44:19Z",
+            "system_mtime": "2019-11-01T15:44:19Z",
+            "user_mtime": "2019-11-01T15:44:19Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/15"
+        },
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/people/23587"
+        }
+    ],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "35e4be2c084c13fd5a30082c59a33d08",
+            "type": "langmaterial",
+            "content": [
+                "English"
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "dfe0cad8ad7ca93846e9fe4317a526a2",
+            "label": "Conditions Governing Access",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research. Brittle or damaged items are available at the discretion of RAC.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "acdc28ccb6a1332ea650ab1d0d1e6326",
+            "label": "Arrangement",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Original order, as received.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "868a29ea70739340a0b9e9a4440353ed",
+            "label": "Processing Information",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Minimal processing. Some materials remain in original file folders.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "d2cab92edae38b335faa3e212a932c48",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "562f60a97df4775f22e759af06535f56",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC has legal title, copyright and literary property rights to this collection in so far as it holds them.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "67055311656d91fcda2c2ce638190560",
+            "type": "acqinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The Commonwealth Fund records were donated to RAC in 1985. The initial transfer of archival records to RAC began in 1986, and transfers continue on a regular basis. This series was donated to RAC as part of the initial transfer in 1985.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_bibliography",
+            "persistent_id": "6c0505d25c0c9d804944ab5269621720",
+            "content": [
+                "Malcolm P. Aldrich served as the second President of the Commonwealth Fund, succeeding Edward S. Harkness, and Chairman of the Fund's Board. As head of the Fund he actively promoted medical education and facilitated the builing of a new wing at the Eye Institute at Columbia Presbyterian Medical Center."
+            ],
+            "items": [],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "989ceaf68867532867a097c1b5daffb9",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The Malcolm P. Aldrich papers primarily serve to provide historical context to the work and activities of the Commonwealth Fund. The series includes historical sketches of the Harkness Fellowship Program, as well as the Fund's Publications department. The records also include select Board of Directors files as well as program reviews and recommendations. Aldrich also served as the executor of the Harkness estate, and the series contains a variety of historical files pertaining to the Harkness family. ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/12725",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2019-11-01T15:44:19Z",
+        "system_mtime": "2019-11-01T15:44:19Z",
+        "user_mtime": "2019-11-01T15:44:19Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/10464",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/12725"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2018-09-28",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2019-11-01T15:44:19Z",
+        "system_mtime": "2019-11-01T15:44:19Z",
+        "user_mtime": "2019-11-01T15:44:19Z",
+        "enum_1": "2 - Minimal",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/12725/tree"
+    }
+}

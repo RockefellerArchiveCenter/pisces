@@ -1,0 +1,334 @@
+{
+    "lock_version": 31,
+    "title": "Rockefeller Foundation records, projects, RG 1.16-1.19 (A90-A93)",
+    "publish": true,
+    "restrictions": true,
+    "ead_id": "FA469.xml",
+    "finding_aid_title": "A Guide to the Rockefeller foundation records, projects, RG 1.16-1.19 (A90-A93)\n",
+    "finding_aid_filing_title": "Rockefeller foundation records, projects, RG 1.16-1.19 (A90-A93)",
+    "finding_aid_language": "English",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T13:16:59Z",
+    "system_mtime": "2019-01-31T19:23:18Z",
+    "user_mtime": "2018-07-23T15:05:19Z",
+    "suppressed": false,
+    "id_0": "FA469",
+    "language": "eng",
+    "level": "subgrp",
+    "finding_aid_description_rules": "dacs",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "20084",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2018-07-23T15:05:19Z",
+            "system_mtime": "2018-07-23T15:05:19Z",
+            "user_mtime": "2018-07-23T15:05:19Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "308.56",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2018-07-23T15:05:19Z",
+            "system_mtime": "2018-07-23T15:05:19Z",
+            "user_mtime": "2018-07-23T15:05:19Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1978-1993",
+            "begin": "1964",
+            "end": "2007",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2018-07-23T15:05:19Z",
+            "system_mtime": "2018-07-23T15:05:19Z",
+            "user_mtime": "2018-07-23T15:05:19Z",
+            "date_type": "bulk",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/12"
+        }
+    ],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/863"
+        },
+        {
+            "ref": "/repositories/2/accessions/978"
+        },
+        {
+            "ref": "/repositories/2/accessions/971"
+        },
+        {
+            "ref": "/repositories/2/accessions/979"
+        },
+        {
+            "ref": "/repositories/2/accessions/991"
+        },
+        {
+            "ref": "/repositories/2/accessions/993"
+        },
+        {
+            "ref": "/repositories/2/accessions/996"
+        },
+        {
+            "ref": "/repositories/2/accessions/997"
+        },
+        {
+            "ref": "/repositories/2/accessions/1028"
+        },
+        {
+            "ref": "/repositories/2/accessions/1056"
+        },
+        {
+            "ref": "/repositories/2/accessions/968"
+        },
+        {
+            "ref": "/repositories/2/accessions/866"
+        },
+        {
+            "ref": "/repositories/2/accessions/868"
+        },
+        {
+            "ref": "/repositories/2/accessions/869"
+        },
+        {
+            "ref": "/repositories/2/accessions/873"
+        },
+        {
+            "ref": "/repositories/2/accessions/876"
+        },
+        {
+            "ref": "/repositories/2/accessions/879"
+        },
+        {
+            "ref": "/repositories/2/accessions/913"
+        },
+        {
+            "ref": "/repositories/2/accessions/932"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "e385e3cf465503f3d3c24f294d1c2432",
+            "type": "langmaterial",
+            "content": [
+                "Multiple languages contained in written material specific to country/region. Predominately written in English."
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "032a275e8933807dd2efd1740f7c159a",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Records have received basic level 1 processing to establish initial intellectual and physical control of the holdings. Materials remain in original record cartons and folders.\n\nThis guide provides file level description. Each file may represent multiple folders.\n\n\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "5f0b415a673f9c76bac52bf98573a5cf",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "For other open RF project files, please refer to the following finding aids:\n\n<extref href=\"../FA386/overview\">FA386 Rockefeller Foundation records, projects, RG 1.1</extref>\n\n<extref href=\"../FA387/overview\">FA387 Rockefeller Foundation records, projects, RG 1.2</extref>\n\n<extref href=\"../FA388/overview\">FA388 Rockefeller Foundation records, projects, RG 1.3</extref>\n\n<extref href=\"../FA209/overview\">FA209 Rockefeller Foundation records, projects, RG 1.3-1.8</extref>\n\n<extref href=\"../FA479/overview\">FA209 Rockefeller Foundation records, projects, RG 1.9-1.15</extref>\n\n<extref href=\"../FA471/overview\">FA471 Rockefeller Foundation records, projects, RG 1.20-1.23</extref>\n\n<extref href=\"../FA477/overview\">FA477 Rockefeller Foundation records, projects, RG 1.25</extref>\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "b988573aef6c3e29e216339de7cf4770",
+            "type": "acqinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Project files transferred to the RAC by Rockefeller Foundation, 1990-1993.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "104c22a32b3055f34990d3d0217e8516",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Records are arranged as received. Within folders, materials are primarily arranged in reverse chronological order.\n\nRG 1.16 is arranged by the Rockefeller Foundation traditional series (country code) and subseries (program letter) structure.\n\nSubsequent subgroups are arranged by program, with RG 1.17 being the most prominent transition period where some materials are arrranged by the outgoing traditional series/subseries, and others are arranged by program.\n  \n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "e688708464733e0c7d46fc40170a4342",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards. Although the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "6f7bb1af5a786745b487afaaec242a24",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "f5478d9b104ad08df1fa4494e83d6534",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Records are open for scholarly research, with prior archival review. Retrieval time may exceed 24 hours.\n\nRAC is unable to provide access to obsolete media and original digital media. In addition separated media may not yet have undergone stabilization procedures. When feasible, a digital surrogate may be created via special order. All applicable charges will apply. See RAC Head of Archival Services or RAC Head of Digital Programs for details.\n\n\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "8ebfb8e14898ee95a9f8f6d7ea730468",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation retains title, copyright and literary and intellectual property rights to the records, in so far as it holds them.\n\nRAC has authority to grant permission to publish for scholarly purposes.\n\n ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ec5e4cde7e6258459fb79f58a9f423e6",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Types of records include: projects files and related material.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "41517153e555e5037a87b0c5f18a1ae0",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Select digital media was removed from RF Grants that needs to be repatriated during processing.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/668",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-07-23T15:05:19Z",
+        "system_mtime": "2018-07-23T15:05:19Z",
+        "user_mtime": "2018-07-23T15:05:19Z",
+        "processing_priority": "medium",
+        "processing_status": "Backlog",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/6707",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/668"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2015-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2018-07-23T15:05:19Z",
+        "system_mtime": "2018-07-23T15:05:19Z",
+        "user_mtime": "2018-07-23T15:05:19Z",
+        "enum_1": "1 - Basic/Preliminary",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/668/tree"
+    }
+}

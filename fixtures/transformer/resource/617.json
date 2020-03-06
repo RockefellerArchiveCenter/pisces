@@ -1,0 +1,288 @@
+{
+    "lock_version": 6,
+    "title": "Rockefeller Foundation records, Cox and Reece Investigations",
+    "publish": true,
+    "restrictions": true,
+    "ead_id": "FA418.xml",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Cox and Reece Investigations\n",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Cox and Reece Investigations",
+    "finding_aid_language": "English",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T11:49:38Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2016-10-23T12:46:12Z",
+    "suppressed": false,
+    "id_0": "FA418",
+    "language": "eng",
+    "level": "collection",
+    "finding_aid_description_rules": "dacs",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "19906",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-23T12:46:12Z",
+            "system_mtime": "2016-10-23T12:46:12Z",
+            "user_mtime": "2016-10-23T12:46:12Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "43.5",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-23T12:46:12Z",
+            "system_mtime": "2016-10-23T12:46:12Z",
+            "user_mtime": "2016-10-23T12:46:12Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1952-1954 (records 1917-1969)",
+            "begin": "1917",
+            "end": "1969",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-23T12:46:12Z",
+            "system_mtime": "2016-10-23T12:46:12Z",
+            "user_mtime": "2016-10-23T12:46:12Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        },
+        {
+            "lock_version": 0,
+            "begin": "1952",
+            "end": "1954",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2016-10-23T12:46:12Z",
+            "system_mtime": "2016-10-23T12:46:12Z",
+            "user_mtime": "2016-10-23T12:46:12Z",
+            "date_type": "bulk",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/12"
+        }
+    ],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/2760"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "fed4f18ac967fc76852c70ab4df329a5",
+            "label": "Related Archival Material note",
+            "type": "relatedmaterial",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Rockefeller Foundation records, RG 3.2 Administration, Program and Policy \n(including but limited to: Series 900 General Program and Policy, Box 18, Folder 103)\nRockefeller Foundation records, RG 1 Projects;\nRockefeller Foundation records, RG 12 Officer\u2019s Diaries;\nGeneral Education Board Collection;\nLaura Spelman Rockefeller Memorial records;\nFoundation Center Collection;\nWormser, Rene A. Foundations: Their Power and Influence. Devin-Adair, New York: 1958.\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "632d2f62ffe7316621ab14f1db2b789c",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "History of the Cox and Reece Investigations at the Rockefeller Foundation\n\nThe Cox and Reece Investigation files document the Rockefeller Foundation and General Education Board\u2019s preparation for and response to investigations by the United States House of Representatives Select Committee to Investigate Tax-Exempt Foundations and Comparable Organizations, which were held between 1952-1954. The first investigation was headed by Edward Eugene Cox (R-Georgia) and the second by B. Carroll Reece (R-Tennessee).\n\nThe Cox investigation involved subpoenaed responses to a lengthy questionnaire, followed by hearings, at which Dean Rusk, president of the Rockefeller Foundation, testified for the Foundation and the General Education Board, which was inactive, but which maintained a corporate existence whose affairs were administered by the Foundation.\n\nThe Reece investigation also involved responses to written questions, but hearings were not held. In the course of the investigations, the political orientation of various organizations was scrutinized, including the Rockefeller Foundation and the GEB, in part by focusing on the political orientation of grant and fellowship recipients, both individuals and institutions.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ba77785fdd7e3dfa4a4e702708597ab9",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Edward Eugene Cox\n\nRepresentative from Georgia; born near Camilla, Mitchell County, Ga., April 3, 1880; attended the grade schools, Camilla High School, the academic department of Mercer University, Macon, Ga., for nearly four years, and was graduated from the law department of that university in 1902; was admitted to the bar the same year and commenced practice at Camilla, Ga.; mayor of Camilla 1904-1906; delegate to the Democratic National Convention in 1908; appointed and subsequently elected judge of the superior court of the Albany circuit and served from 1912 until he resigned in 1916, having become a candidate for Congress; unsuccessful candidate for election in 1916 to the Sixty-fifth Congress; elected as a Democrat to the Sixty-ninth and to the thirteen succeeding Congresses and served from March 4, 1925, until his death; chairman, Select Committee on Tax Exempt Foundations (Eighty-second Congress); had been reelected to the Eighty-third Congress; died in Bethesda, Md., December 24, 1952; interment in Oakview Cemetery, Camilla, Ga.1.\n\n<extref href=\"http://clerk.house.gov/art_history/mem_bio/index.html\">http://clerk.house.gov/art_history/mem_bio/index.html</extref>\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ef72334dcfc5265a4c714fd753fafe01",
+            "label": "Biographical/Historical note",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "B. Carroll Reece\n\n(husband of Louise G. Reece), a Representative from Tennessee; born on a farm near Butler, Johnson County, Tenn., December 22, 1889; attended the public schools, Watauga Academy, Carson-Newman College, New York University, and the University of London; assistant secretary and instructor in the New York University in 1916 and 1917; during the First World War enlisted in May 1917 and served with the American Expeditionary Forces from October 1917 to July 1919; was decorated with the Distinguished Service Cross, Distinguished Service Medal, Purple Heart, and the French Croix de Guerre with Palm; director of the School of Business Administration of New York University in 1919 and 1920; elected as a Republican to the Sixty-seventh and to the four succeeding Congresses (March 4, 1921-March 3, 1931); unsuccessful candidate for reelection in 1930 to the Seventy-second Congress; elected to the Seventy-third and to the six succeeding Congresses (March 4, 1933-January 3, 1947); was not a candidate for renomination in 1946; delegate to the Republican National Conventions in 1928, 1932, 1936, 1940, 1944, and 1948; lawyer, banker, and publisher; member of the Board of Regents of the Smithsonian Institution in 1945 and 1946; chairman of the Republican National Committee 1946-1948; unsuccessful candidate for election to the United States Senate in 1948; elected to the Eighty-second and to the five succeeding Congresses and served from January 3, 1951, until his death in Bethesda, Md., March 19, 1961; chairman, Special Committee on Tax Exempt Foundations (Eighty-third Congress); interment in Monte Vista Burial Park, Johnson City, Tenn.2.\n\n<extref href=\"http://clerk.house.gov/art_history/mem_bio/index.html\">http://clerk.house.gov/art_history/mem_bio/index.html</extref>\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "50f6b04a34dcfb86dcf2668517d5c68a",
+            "label": "Scope and Contents note",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The preponderance of the collection consists of various summaries of the Rockefeller Foundation and GEB grant administration files prepared by the Foundation staff for use by senior staff and Foundation counsel as they responded to written questions from the Cox and Reece investigations and as they prepared for Dean Rusk\u2019s testimony at the Cox committee hearing.\n\nThe collection is indexed with a number and letter system that made efficient research feasible, in case such reference work had been needed during live testimony. Card indexes also exist.\n\nAlthough most of the information that appears in these records also occurs in grant administration and program and policy files of the Rockefeller Foundation and the General Education Board, as the case may be, the format of these records and the configurations of the information make the records unique in the context of the Foundation and the GEB collections, and offer insight into how the Foundation responded to the congressional investigations.\n\nTwo particular aspects of the Cox and Reece Investigation files not duplicated in the main body of the Rockefeller Foundation and the General Education Board records are the source and citation summaries, as well as the subject files and those documenting the political climate.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "71e8113ff5e6a601379c04bb94d1e570",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The records are arranged into four series: Series 1 Digest Files; Series 2 Witness Statements; Series 3 Washington D.C. Files; and Series 4 Background Information and Miscellaneous.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "170bb25adb4a9d83515010c78801cb04",
+            "label": "Conditions Governing Access note",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "695a07082895923b4a773809a96bcf11",
+            "label": "Processing Information note",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Standard archival processing of the Cox and Reece Investigation files, and preparation of the collection guide, was conducted by Beth Jaffe-Davis, Archivist, Rockefeller Archive Center, 2009-2010.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "839fe10834bd213417de341afd0cc484",
+            "label": "Conditions Governing Use note",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \u201cfair use\u201d. If the RAC does not hold copyright for an archival collection, or items within a collection, it is the users\u2019 responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "e960603d9e171034055c69c252873602",
+            "label": "Preferred Citation note",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/617",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-23T12:46:12Z",
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "user_mtime": "2016-10-23T12:46:12Z",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/3908",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/617"
+        }
+    },
+    "user_defined": {
+        "lock_version": 0,
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "date_2": "2010-12-31",
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2016-10-23T12:46:12Z",
+        "system_mtime": "2016-10-23T12:46:12Z",
+        "user_mtime": "2016-10-23T12:46:12Z",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "repository": {
+            "ref": "/repositories/2"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/617/tree"
+    }
+}

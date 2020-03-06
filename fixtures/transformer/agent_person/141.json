@@ -1,0 +1,155 @@
+{
+    "lock_version": 295,
+    "publish": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T02:41:01Z",
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "user_mtime": "2014-12-06T02:41:01Z",
+    "jsonmodel_type": "agent_person",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "Harrar",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:01Z",
+            "system_mtime": "2014-12-06T02:41:01Z",
+            "user_mtime": "2014-12-06T02:41:01Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator",
+        "subject"
+    ],
+    "external_documents": [],
+    "notes": [
+        {
+            "subnotes": [
+                {
+                    "content": "The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928).",
+                    "jsonmodel_type": "note_text",
+                    "publish": false
+                }
+            ],
+            "label": "biographical statement",
+            "jsonmodel_type": "note_bioghist",
+            "persistent_id": "5106f6f3f49a3ba91e763dc837798e2a",
+            "publish": true
+        }
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [
+        {
+            "lock_version": 0,
+            "begin": "1906",
+            "end": "1982",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:01Z",
+            "system_mtime": "2014-12-06T02:41:01Z",
+            "user_mtime": "2014-12-06T02:41:01Z",
+            "date_type": "inclusive",
+            "label": "existence",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "Harrar",
+            "rest_of_name": "J. George (Jacob George)",
+            "sort_name": "Harrar, J. George (Jacob George)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:01Z",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "user_mtime": "2014-12-06T02:41:01Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "naf",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": []
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Harrar",
+            "rest_of_name": "J. G. (Jacob George)",
+            "sort_name": "Harrar, J. G. (Jacob George)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:01Z",
+            "system_mtime": "2014-12-06T02:41:01Z",
+            "user_mtime": "2014-12-06T02:41:01Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [
+                {
+                    "lock_version": 0,
+                    "begin": "1906",
+                    "end": "1982",
+                    "created_by": "admin",
+                    "last_modified_by": "admin",
+                    "create_time": "2014-12-06T02:41:01Z",
+                    "system_mtime": "2014-12-06T02:41:01Z",
+                    "user_mtime": "2014-12-06T02:41:01Z",
+                    "date_type": "inclusive",
+                    "label": "usage",
+                    "jsonmodel_type": "date"
+                }
+            ],
+            "authorized": false,
+            "is_display_name": false
+        },
+        {
+            "lock_version": 0,
+            "primary_name": "Harrar",
+            "rest_of_name": "Jacob George",
+            "sort_name": "Harrar, Jacob George",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T02:41:01Z",
+            "system_mtime": "2014-12-06T02:41:01Z",
+            "user_mtime": "2014-12-06T02:41:01Z",
+            "name_order": "inverted",
+            "jsonmodel_type": "name_person",
+            "use_dates": [],
+            "authorized": false,
+            "is_display_name": false
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/people/141",
+    "agent_type": "agent_person",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "Harrar",
+        "rest_of_name": "J. George (Jacob George)",
+        "sort_name": "Harrar, J. George (Jacob George)",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T02:41:01Z",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "user_mtime": "2014-12-06T02:41:01Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "naf",
+        "name_order": "inverted",
+        "jsonmodel_type": "name_person",
+        "use_dates": []
+    },
+    "title": "Harrar, J. George (Jacob George)"
+}

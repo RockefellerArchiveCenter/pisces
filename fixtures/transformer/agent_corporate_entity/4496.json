@@ -1,0 +1,75 @@
+{
+    "lock_version": 18,
+    "publish": true,
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T03:05:42Z",
+    "system_mtime": "2017-12-15T22:26:27Z",
+    "user_mtime": "2014-12-06T03:05:42Z",
+    "jsonmodel_type": "agent_corporate_entity",
+    "agent_contacts": [
+        {
+            "lock_version": 0,
+            "name": "Rockefeller Foundation. Belem (Brazil)",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T03:05:42Z",
+            "system_mtime": "2014-12-06T03:05:42Z",
+            "user_mtime": "2014-12-06T03:05:42Z",
+            "jsonmodel_type": "agent_contact",
+            "telephones": []
+        }
+    ],
+    "linked_agent_roles": [
+        "creator",
+        "source"
+    ],
+    "external_documents": [],
+    "notes": [],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "dates_of_existence": [],
+    "names": [
+        {
+            "lock_version": 0,
+            "primary_name": "Rockefeller Foundation. Belem (Brazil)",
+            "sort_name": "Rockefeller Foundation. Belem (Brazil)",
+            "sort_name_auto_generate": true,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2014-12-06T03:05:42Z",
+            "system_mtime": "2014-12-06T03:05:42Z",
+            "user_mtime": "2014-12-06T03:05:42Z",
+            "authorized": true,
+            "is_display_name": true,
+            "source": "local",
+            "jsonmodel_type": "name_corporate_entity",
+            "use_dates": []
+        }
+    ],
+    "related_agents": [],
+    "uri": "/agents/corporate_entities/4496",
+    "agent_type": "agent_corporate_entity",
+    "is_linked_to_published_record": true,
+    "display_name": {
+        "lock_version": 0,
+        "primary_name": "Rockefeller Foundation. Belem (Brazil)",
+        "sort_name": "Rockefeller Foundation. Belem (Brazil)",
+        "sort_name_auto_generate": true,
+        "created_by": "admin",
+        "last_modified_by": "admin",
+        "create_time": "2014-12-06T03:05:42Z",
+        "system_mtime": "2014-12-06T03:05:42Z",
+        "user_mtime": "2014-12-06T03:05:42Z",
+        "authorized": true,
+        "is_display_name": true,
+        "source": "local",
+        "jsonmodel_type": "name_corporate_entity",
+        "use_dates": []
+    },
+    "title": "Rockefeller Foundation. Belem (Brazil)"
+}
