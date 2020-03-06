@@ -1,19 +1,9 @@
 import json
 import os
 
-import vcr
 from django.test import TestCase
 
 from .transformers import Transformer
-
-transformer_vcr = vcr.VCR(
-    serializer="json",
-    cassette_library_dir="fixtures/cassettes/transformer",
-    record_mode="once",
-    match_on=["path", "method", "query"],
-    filter_query_parameters=["username", "password"],
-    filter_headers=["Authorization", "X-ArchivesSpace-Session"],
-)
 
 object_types = ["agent_corporate_entity", "agent_family", "agent_person",
                 "archival_object", "resource", "subject",
