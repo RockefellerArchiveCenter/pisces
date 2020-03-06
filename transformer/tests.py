@@ -1,19 +1,14 @@
 import json
 import os
+import random
 
-import vcr
 from django.test import TestCase
+from django.urls import reverse
+from rest_framework.test import APIRequestFactory
 
+from .models import DataObject
 from .transformers import Transformer
-
-transformer_vcr = vcr.VCR(
-    serializer="json",
-    cassette_library_dir="fixtures/cassettes/transformer",
-    record_mode="once",
-    match_on=["path", "method", "query"],
-    filter_query_parameters=["username", "password"],
-    filter_headers=["Authorization", "X-ArchivesSpace-Session"],
-)
+from .views import DataObjectViewSet
 
 object_types = ["agent_corporate_entity", "agent_family", "agent_person",
                 "archival_object", "resource", "subject",
@@ -29,7 +24,7 @@ class TransformerTest(TestCase):
     checks are performed for object counts to ensure successful transformation.
     """
 
-    def test_mappings(self):
+    def mappings(self):
         """Tests transformation of source data resources."""
         for object_type in object_types:
             for f in os.listdir(os.path.join("fixtures", "transformer", object_type)):
@@ -72,3 +67,25 @@ class TransformerTest(TestCase):
         self.assertEqual(
             source_agent_count, len(transformed.get("agents", [])),
             "Expecting {} agents, got {} instead".format(source_agent_count, len(transformed.get("agents", []))))
+
+    def views(self):
+        for object_type in ["agent", "collection", "object", "term"]:
+            obj = random.choice(DataObject.objects.filter(object_type=object_type))
+            obj.indexed = True
+            obj.save()
+
+        client = APIRequestFactory()
+        for action in ["agents", "collections", "objects", "terms"]:
+            view = DataObjectViewSet.as_view({"get": action})
+            for clean in ["true", "false"]:
+                request = client.get("{}?clean={}".format(reverse("dataobject-list"), clean))
+                response = view(request)
+                self.assertEqual(response.status_code, 200, "View error:  {}".format(response.data))
+                if clean == "true":
+                    self.assertEqual(response.data["count"], len(DataObject.objects.filter(object_type=action.rstrip("s"))))
+                else:
+                    self.assertEqual(response.data["count"] + 1, len(DataObject.objects.filter(object_type=action.rstrip("s"))))
+
+    def test_transformer(self):
+        self.mappings()
+        self.views()
