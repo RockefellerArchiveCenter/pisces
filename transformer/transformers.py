@@ -77,8 +77,21 @@ class Transformer:
         validate(instance=data, schema=self.schema)
 
     @silk_profile()
+    def remove_keys_from_dict(self, data, target_key="$"):
+        """Removes all matching keys from dict."""
+        modified_dict = {}
+        for key, value in data.items():
+            if key != target_key:
+                if isinstance(value, dict):
+                    return self.remove_keys_from_dict(data[key])
+                else:
+                    modified_dict[key] = value
+        return modified_dict
+
+    @silk_profile()
     def save_validated(self, data):
         initial_queryset = DataObject.objects.filter(object_type=data["type"])
+        final_data = self.remove_keys_from_dict(data)
         for ident in data["external_identifiers"]:
             matches = DataObject.find_matches(
                 ident["source"], ident["identifier"],
@@ -88,14 +101,14 @@ class Transformer:
                     "Too many matches were found for {}".format(ident["identifier"]))
             elif len(matches) == 1:
                 existing = matches[0]
-                existing.data = data
+                existing.data = final_data
                 existing.indexed = False
                 existing.save()
             else:
                 DataObject.objects.create(
                     es_id=self.generate_identifier(),
                     object_type=data["type"],
-                    data=data,
+                    data=final_data,
                     indexed=False)
 
     @silk_profile()

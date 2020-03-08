@@ -85,6 +85,8 @@ class TransformerTest(TestCase):
                     self.assertEqual(response.data["count"], len(DataObject.objects.filter(object_type=action.rstrip("s"))))
                 else:
                     self.assertEqual(response.data["count"] + 1, len(DataObject.objects.filter(object_type=action.rstrip("s"))))
+                for obj in response.data["results"]:
+                    self.assertTrue("$" not in obj, "Odin mapping keys were not removed from data.")
 
     def test_transformer(self):
         self.mappings()
