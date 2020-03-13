@@ -119,24 +119,22 @@ class CartographerDataFetcher(BaseDataFetcher):
 
     @silk_profile()
     def get_updated(self, client, object_type, last_run, current_run):
-        # TODO: this needs to return arrangement map components, not arrangement maps
         data = []
-        for map in self.updated_list(client, last_run, True):
-            map_data = client.get(map.get('ref')).json()
+        for component in self.updated_list(client, last_run, True):
             delivered = send_post_request(
                 settings.MERGE_URL,
-                {"object_type": object_type, "object": map_data}, current_run)
+                {"object_type": object_type, "object": component}, current_run)
             if delivered:
-                data.append(map.get('ref'))
+                data.append('/api/components/{}/'.format(component['id']))
         return data
 
     @silk_profile()
     def get_deleted(self, client, object_type, last_run, current_run):
         data = []
-        for map in self.updated_list(client, last_run, False):
-            delivered = send_post_request(settings.INDEX_DELETE_URL, map.get("ref"), current_run)
+        for component in self.updated_list(client, last_run, False):
+            delivered = send_post_request(settings.INDEX_DELETE_URL, component.get("ref"), current_run)
             if delivered:
-                data.append(map.get('ref'))
+                data.append(component.get('ref'))
         for uri in self.deleted_list(client, last_run):
             delivered = send_post_request(settings.INDEX_DELETE_URL, uri, current_run)
             if delivered:
@@ -145,13 +143,15 @@ class CartographerDataFetcher(BaseDataFetcher):
 
     @silk_profile()
     def updated_list(self, client, last_run, publish):
-        for map in client.get(
-                '/api/maps/', params={"modified_since": last_run}).json()['results']:
-            if map.get('publish') == publish:
-                yield map
+        for component_ref in client.get(
+                '/api/components/', params={"modified_since": last_run}).json()['results']:
+            component = client.get('/api/components/{}/'.format(component_ref['id'])).json()
+            if component.get('publish') == publish:
+                yield component
 
     @silk_profile()
     def deleted_list(self, client, last_run):
-        for uri in client.get(
+        for deleted_ref in client.get(
                 '/api/delete-feed/', params={"deleted_since": last_run}).json()['results']:
-            yield uri
+            if '/api/components/' in deleted_ref['ref']:
+                yield deleted_ref['ref']

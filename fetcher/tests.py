@@ -54,8 +54,7 @@ class FetcherTest(TestCase):
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
-                    with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
-                        print("{}-{}-{}.json".format(cassette_prefix, status, object_type))
+                    with fetcher_vcr.use_cassette("{}-fetcher-{}-{}.json".format(cassette_prefix, status, object_type)):
                         list = fetcher().fetch(status, object_type)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
@@ -71,7 +70,7 @@ class FetcherTest(TestCase):
                 (CartographerDeletesView, "deleted", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
                 (CartographerUpdatesView, "updated", "fetch-cartographer-updates", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer")]:
             for object_type, _ in object_type_choices:
-                with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
+                with fetcher_vcr.use_cassette("{}-views-{}-{}.json".format(cassette_prefix, status, object_type)):
                     request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
