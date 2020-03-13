@@ -1,10 +1,10 @@
 from datetime import datetime
-from unittest import mock
 
 import vcr
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
+from pisces import settings
 from rest_framework.test import APIRequestFactory
 
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
@@ -47,19 +47,19 @@ class FetcherTest(TestCase):
                 f.start_time = time
                 f.save()
 
-    @mock.patch("fetcher.helpers.requests.post")
-    def test_fetchers(self, mock_post):
+    def test_fetchers(self):
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
                 (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
-                    with fetcher_vcr.use_cassette("{}-fetcher-{}-{}.json".format(cassette_prefix, status, object_type)):
+                    with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)) as cass:
                         list = fetcher().fetch(status, object_type)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
-                        self.assertEqual(mock_post.call_count, len(list))
-                        mock_post.reset_mock()
+                        self.assertEqual(
+                            len([r for r in cass.requests if r.uri in [settings.MERGE_URL, settings.INDEX_DELETE_URL]]),
+                            len(list))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
             self.assertEqual(len(FetchRunError.objects.all()), 0)
 
@@ -70,7 +70,7 @@ class FetcherTest(TestCase):
                 (CartographerDeletesView, "deleted", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
                 (CartographerUpdatesView, "updated", "fetch-cartographer-updates", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer")]:
             for object_type, _ in object_type_choices:
-                with fetcher_vcr.use_cassette("{}-views-{}-{}.json".format(cassette_prefix, status, object_type)):
+                with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
                     request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
