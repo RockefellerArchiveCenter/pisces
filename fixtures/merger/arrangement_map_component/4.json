@@ -1,0 +1,18 @@
+{
+    "ref": "/api/components/4/",
+    "title": "The Foundation for Child Development records, Presidents Office",
+    "map": 1,
+    "parent": 1,
+    "tree_index": 4,
+    "level": "otherlevel",
+    "archivesspace_uri": "/repositories/2/resources/318",
+    "publish": true,
+    "ancestors": [
+        {
+            "ref": "/api/components/1/",
+            "archivesspace_uri": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ],
+    "children": []
+}

@@ -1,0 +1,23 @@
+{
+    "ref": "/api/components/5/",
+    "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
+    "map": 1,
+    "parent": 2,
+    "tree_index": 2,
+    "level": "otherlevel",
+    "archivesspace_uri": "/repositories/2/resources/15",
+    "publish": true,
+    "ancestors": [
+        {
+            "ref": "/api/components/1/",
+            "archivesspace_uri": "/repositories/2/resources/93",
+            "level": "collection"
+        },
+        {
+            "ref": "/api/components/2/",
+            "archivesspace_uri": "/repositories/2/resources/12",
+            "level": "otherlevel"
+        }
+    ],
+    "children": []
+}

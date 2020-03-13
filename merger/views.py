@@ -10,7 +10,7 @@ MERGERS = {
     "agent_person": AgentMerger,
     "agent_corporate_entity": AgentMerger,
     "agent_family": AgentMerger,
-    "arrangement_map": ArrangementMapMerger,
+    "arrangement_map_component": ArrangementMapMerger,
 }
 
 

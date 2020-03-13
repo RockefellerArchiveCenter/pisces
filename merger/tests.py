@@ -1,14 +1,14 @@
 import json
 import os
-from unittest import mock
 
 import vcr
 from django.test import TestCase
 from django.urls import reverse
+from pisces import settings
 from rest_framework.test import APIRequestFactory
 
-from .mergers import (AgentMerger, ArchivalObjectMerger, ResourceMerger,
-                      SubjectMerger)
+from .mergers import (AgentMerger, ArchivalObjectMerger, ArrangementMapMerger,
+                      ResourceMerger, SubjectMerger)
 from .views import MergeView
 
 merger_vcr = vcr.VCR(
@@ -28,8 +28,7 @@ object_types = [
     ("archival_object", ArchivalObjectMerger, ["archival_object", "archival_object_collection"]),
     ("resource", ResourceMerger, ["resource"]),
     ("subject", SubjectMerger, ["subject"]),
-    # TODO: add arrangement maps
-    # ("arrangement_maps", ArrangementMapMerger, ["resource"])
+    ("arrangement_map_component", ArrangementMapMerger, ["resource"])
 ]
 
 
@@ -39,11 +38,10 @@ class MergerTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
 
-    @mock.patch("fetcher.helpers.requests.post")
-    def test_merge(self, mock_post):
+    def test_merge(self):
         """Tests Merge."""
         for source_object_type, merger, target_object_types in object_types:
-            with merger_vcr.use_cassette("{}-merge.json".format(source_object_type)):
+            with merger_vcr.use_cassette("{}-merge.json".format(source_object_type)) as cass:
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
@@ -51,8 +49,10 @@ class MergerTest(TestCase):
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
-                        mock_post.assert_called_once()
-                        mock_post.reset_mock()
+                        transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
+                        self.assertTrue(
+                            transform_requests, 1,
+                            "Transform service should have been called once, was called {}".format(transform_requests))
                         merged_data = json.loads(merged)
                         self.assertTrue(merged_data.get("jsonmodel_type") in target_object_types)
                         self.check_counts(source, source_object_type, merged_data, merged_data.get("jsonmodel_type"))
@@ -63,8 +63,8 @@ class MergerTest(TestCase):
         Archival objects are expected to have values in dates and languages fields.
         Archival object collections are expected to have values in dates,
             languages, extents, linked_agents and children fields
-        Resources should have as many ancestors in the merged data as in the
-            source, if not more.
+        Resources should have at least as many ancestors in the merged data as
+            in the source.
         """
         if target_object_type == "archival_object":
             for field in ["dates", "language"]:
@@ -83,11 +83,10 @@ class MergerTest(TestCase):
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
 
-    @mock.patch("fetcher.helpers.requests.post")
-    def test_merge_views(self, mock_post):
+    def test_merge_views(self):
         """Tests MergeView."""
         for object_type, merger, _ in object_types:
-            with merger_vcr.use_cassette("{}-merge.json".format(object_type)):
+            with merger_vcr.use_cassette("{}-merge.json".format(object_type)) as cass:
                 for f in os.listdir(os.path.join("fixtures", "merger", object_type)):
                     with open(os.path.join("fixtures", "merger", object_type, f), "r") as json_file:
                         source = json.load(json_file)
@@ -97,5 +96,7 @@ class MergerTest(TestCase):
                             format="json")
                         response = MergeView().as_view()(request)
                         self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
-                        mock_post.assert_called_once()
-                        mock_post.reset_mock()
+                        transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
+                        self.assertTrue(
+                            transform_requests, 1,
+                            "Transform service should have been called once, was called {}".format(transform_requests))

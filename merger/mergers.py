@@ -96,12 +96,12 @@ class ArrangementMapMerger(BaseMerger):
     @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches the ArchivesSpace resource record referenced by the MapComponent."""
-        return self.aspace.client.get(object["archivespace_uri"])
+        return self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json()
 
     @silk_profile()
     def combine_data(self, object, additional_data):
         """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
-        additional_data["ancestors"].insert(0, object["ancestors"])
+        additional_data["ancestors"] = object["ancestors"]
         # TODO: Something with children??
         return additional_data
 
@@ -114,14 +114,18 @@ class ResourceMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
-        return None
-        # TODO: return data from Cartographer
-        # return self.cartographer_client.get("find-by-id", {"uri": object["uri"]}).json()
+        """Gets additional data from Cartographer, or returns None if no
+        matching component is found."""
+        resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
+        if resp["count"] == 0:
+            return None
+        else:
+            return resp["results"][0]
 
     @silk_profile()
     def combine_data(self, object, additional_data):
         """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
-        object["ancestors"].insert(0, additional_data["ancestors"])
+        object["ancestors"] = additional_data.get("ancestors", [])
         # TODO: children?
         return object
 
