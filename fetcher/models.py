@@ -30,7 +30,7 @@ class FetchRun(models.Model):
         ('agent_family', 'Family'),
     )
     CARTOGRAPHER_OBJECT_TYPE_CHOICES = (
-        ('arrangement_map', 'Arrangement Map'),
+        ('arrangement_map_component', 'Arrangement Map Component'),
     )
     OBJECT_TYPE_CHOICES = ARCHIVESSPACE_OBJECT_TYPE_CHOICES + CARTOGRAPHER_OBJECT_TYPE_CHOICES
     OBJECT_STATUS_CHOICES = (("updated", "Updated"), ("deleted", "Deleted"))
