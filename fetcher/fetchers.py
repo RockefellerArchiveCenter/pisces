@@ -125,7 +125,7 @@ class CartographerDataFetcher(BaseDataFetcher):
                 settings.MERGE_URL,
                 {"object_type": object_type, "object": component}, current_run)
             if delivered:
-                data.append('/api/components/{}/'.format(component['id']))
+                data.append(component.get('ref'))
         return data
 
     @silk_profile()

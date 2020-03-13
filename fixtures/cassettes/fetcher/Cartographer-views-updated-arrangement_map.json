@@ -27,23 +27,23 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "85"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
-                    "Vary": [
-                        "Origin"
+                    "Content-Length": [
+                        "85"
                     ],
                     "Server": [
                         "WSGIServer/0.2 CPython/3.6.5"
                     ],
                     "Date": [
-                        "Fri, 13 Mar 2020 16:58:18 GMT"
+                        "Fri, 13 Mar 2020 17:37:06 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Origin"
                     ]
                 },
                 "body": {
@@ -77,26 +77,26 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "372"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, POST, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "372"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:06 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:18 GMT"
-                    ],
-                    "Allow": [
-                        "GET, POST, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
@@ -130,30 +130,30 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "428"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "448"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:06 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:18 GMT"
-                    ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"id\":5,\"title\":\"Michel Nussenzweig papers, Rockefeller University Faculty\",\"map\":1,\"parent\":2,\"tree_index\":2,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/15\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"},{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"}],\"children\":[]}"
+                    "string": "{\"ref\":\"/api/components/5/\",\"title\":\"Michel Nussenzweig papers, Rockefeller University Faculty\",\"map\":1,\"parent\":2,\"tree_index\":2,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/15\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"},{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"}],\"children\":[]}"
                 }
             }
         },
@@ -161,7 +161,7 @@
             "request": {
                 "method": "POST",
                 "uri": "http://pisces-web:8007/merge/",
-                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"id\": 5, \"title\": \"Michel Nussenzweig papers, Rockefeller University Faculty\", \"map\": 1, \"parent\": 2, \"tree_index\": 2, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/15\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}, {\"ref\": \"/api/components/2/\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"level\": \"otherlevel\"}], \"children\": []}}",
+                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"ref\": \"/api/components/5/\", \"title\": \"Michel Nussenzweig papers, Rockefeller University Faculty\", \"map\": 1, \"parent\": 2, \"tree_index\": 2, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/15\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}, {\"ref\": \"/api/components/2/\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"level\": \"otherlevel\"}], \"children\": []}}",
                 "headers": {
                     "User-Agent": [
                         "python-requests/2.23.0"
@@ -176,7 +176,7 @@
                         "keep-alive"
                     ],
                     "Content-Length": [
-                        "504"
+                        "524"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -189,30 +189,30 @@
                     "message": "Internal Server Error"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "92"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "81"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:08 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:20 GMT"
-                    ],
-                    "Allow": [
-                        "POST, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"detail\":\"local variable 'identifier' referenced before assignment\",\"objects\":[],\"count\":0}"
+                    "string": "{\"detail\":\"Error merging 'ancestors': /api/components/5/\",\"objects\":[],\"count\":0}"
                 }
             }
         },
@@ -242,30 +242,30 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "427"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "447"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:08 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:20 GMT"
-                    ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"id\":2,\"title\":\"Michel Nussenzweig papers, Rockefeller University Faculty\",\"map\":1,\"parent\":1,\"tree_index\":1,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[{\"ref\":\"/api/components/5/\",\"archivesspace_uri\":\"/repositories/2/resources/15\",\"level\":\"otherlevel\"}]}"
+                    "string": "{\"ref\":\"/api/components/2/\",\"title\":\"Michel Nussenzweig papers, Rockefeller University Faculty\",\"map\":1,\"parent\":1,\"tree_index\":1,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[{\"ref\":\"/api/components/5/\",\"archivesspace_uri\":\"/repositories/2/resources/15\",\"level\":\"otherlevel\"}]}"
                 }
             }
         },
@@ -273,7 +273,7 @@
             "request": {
                 "method": "POST",
                 "uri": "http://pisces-web:8007/merge/",
-                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"id\": 2, \"title\": \"Michel Nussenzweig papers, Rockefeller University Faculty\", \"map\": 1, \"parent\": 1, \"tree_index\": 1, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": [{\"ref\": \"/api/components/5/\", \"archivesspace_uri\": \"/repositories/2/resources/15\", \"level\": \"otherlevel\"}]}}",
+                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"ref\": \"/api/components/2/\", \"title\": \"Michel Nussenzweig papers, Rockefeller University Faculty\", \"map\": 1, \"parent\": 1, \"tree_index\": 1, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": [{\"ref\": \"/api/components/5/\", \"archivesspace_uri\": \"/repositories/2/resources/15\", \"level\": \"otherlevel\"}]}}",
                 "headers": {
                     "User-Agent": [
                         "python-requests/2.23.0"
@@ -288,7 +288,7 @@
                         "keep-alive"
                     ],
                     "Content-Length": [
-                        "502"
+                        "522"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -301,30 +301,30 @@
                     "message": "Internal Server Error"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "92"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "81"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:09 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:21 GMT"
-                    ],
-                    "Allow": [
-                        "POST, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"detail\":\"local variable 'identifier' referenced before assignment\",\"objects\":[],\"count\":0}"
+                    "string": "{\"detail\":\"Error merging 'ancestors': /api/components/2/\",\"objects\":[],\"count\":0}"
                 }
             }
         },
@@ -354,30 +354,30 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "294"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "314"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:09 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:21 GMT"
-                    ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"id\":3,\"title\":\"Peter F. Geithner papers\",\"map\":1,\"parent\":1,\"tree_index\":3,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[]}"
+                    "string": "{\"ref\":\"/api/components/3/\",\"title\":\"Peter F. Geithner papers\",\"map\":1,\"parent\":1,\"tree_index\":3,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[]}"
                 }
             }
         },
@@ -385,7 +385,7 @@
             "request": {
                 "method": "POST",
                 "uri": "http://pisces-web:8007/merge/",
-                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"id\": 3, \"title\": \"Peter F. Geithner papers\", \"map\": 1, \"parent\": 1, \"tree_index\": 3, \"level\": \"collection\", \"archivesspace_uri\": \"/repositories/2/resources/13\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": []}}",
+                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"ref\": \"/api/components/3/\", \"title\": \"Peter F. Geithner papers\", \"map\": 1, \"parent\": 1, \"tree_index\": 3, \"level\": \"collection\", \"archivesspace_uri\": \"/repositories/2/resources/13\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": []}}",
                 "headers": {
                     "User-Agent": [
                         "python-requests/2.23.0"
@@ -400,7 +400,7 @@
                         "keep-alive"
                     ],
                     "Content-Length": [
-                        "364"
+                        "384"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -413,30 +413,30 @@
                     "message": "Internal Server Error"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "92"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "81"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:13 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:23 GMT"
-                    ],
-                    "Allow": [
-                        "POST, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"detail\":\"local variable 'identifier' referenced before assignment\",\"objects\":[],\"count\":0}"
+                    "string": "{\"detail\":\"Error merging 'ancestors': /api/components/3/\",\"objects\":[],\"count\":0}"
                 }
             }
         },
@@ -466,30 +466,30 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "333"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "353"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:13 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:23 GMT"
-                    ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"id\":4,\"title\":\"The Foundation for Child Development records, Presidents Office\",\"map\":1,\"parent\":1,\"tree_index\":4,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/14\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[]}"
+                    "string": "{\"ref\":\"/api/components/4/\",\"title\":\"The Foundation for Child Development records, Presidents Office\",\"map\":1,\"parent\":1,\"tree_index\":4,\"level\":\"otherlevel\",\"archivesspace_uri\":\"/repositories/2/resources/14\",\"publish\":true,\"ancestors\":[{\"ref\":\"/api/components/1/\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"level\":\"collection\"}],\"children\":[]}"
                 }
             }
         },
@@ -497,7 +497,7 @@
             "request": {
                 "method": "POST",
                 "uri": "http://pisces-web:8007/merge/",
-                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"id\": 4, \"title\": \"The Foundation for Child Development records, Presidents Office\", \"map\": 1, \"parent\": 1, \"tree_index\": 4, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/14\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": []}}",
+                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"ref\": \"/api/components/4/\", \"title\": \"The Foundation for Child Development records, Presidents Office\", \"map\": 1, \"parent\": 1, \"tree_index\": 4, \"level\": \"otherlevel\", \"archivesspace_uri\": \"/repositories/2/resources/14\", \"publish\": true, \"ancestors\": [{\"ref\": \"/api/components/1/\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"level\": \"collection\"}], \"children\": []}}",
                 "headers": {
                     "User-Agent": [
                         "python-requests/2.23.0"
@@ -512,7 +512,7 @@
                         "keep-alive"
                     ],
                     "Content-Length": [
-                        "403"
+                        "423"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -525,30 +525,30 @@
                     "message": "Internal Server Error"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "92"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "81"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:14 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:24 GMT"
-                    ],
-                    "Allow": [
-                        "POST, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"detail\":\"local variable 'identifier' referenced before assignment\",\"objects\":[],\"count\":0}"
+                    "string": "{\"detail\":\"Error merging 'ancestors': /api/components/4/\",\"objects\":[],\"count\":0}"
                 }
             }
         },
@@ -578,30 +578,30 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "495"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "515"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:14 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie, Origin"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:24 GMT"
-                    ],
-                    "Allow": [
-                        "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"id\":1,\"title\":\"Jackson Davis papers\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/14\",\"level\":\"otherlevel\"}]}"
+                    "string": "{\"ref\":\"/api/components/1/\",\"title\":\"Jackson Davis papers\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/123\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/14\",\"level\":\"otherlevel\"}]}"
                 }
             }
         },
@@ -609,7 +609,7 @@
             "request": {
                 "method": "POST",
                 "uri": "http://pisces-web:8007/merge/",
-                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"id\": 1, \"title\": \"Jackson Davis papers\", \"map\": 1, \"parent\": null, \"tree_index\": 0, \"level\": \"collection\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"publish\": true, \"ancestors\": [], \"children\": [{\"ref\": \"/api/components/2/\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"level\": \"otherlevel\"}, {\"ref\": \"/api/components/3/\", \"archivesspace_uri\": \"/repositories/2/resources/13\", \"level\": \"collection\"}, {\"ref\": \"/api/components/4/\", \"archivesspace_uri\": \"/repositories/2/resources/14\", \"level\": \"otherlevel\"}]}}",
+                "body": "{\"object_type\": \"arrangement_map\", \"object\": {\"ref\": \"/api/components/1/\", \"title\": \"Jackson Davis papers\", \"map\": 1, \"parent\": null, \"tree_index\": 0, \"level\": \"collection\", \"archivesspace_uri\": \"/repositories/2/resources/123\", \"publish\": true, \"ancestors\": [], \"children\": [{\"ref\": \"/api/components/2/\", \"archivesspace_uri\": \"/repositories/2/resources/12\", \"level\": \"otherlevel\"}, {\"ref\": \"/api/components/3/\", \"archivesspace_uri\": \"/repositories/2/resources/13\", \"level\": \"collection\"}, {\"ref\": \"/api/components/4/\", \"archivesspace_uri\": \"/repositories/2/resources/14\", \"level\": \"otherlevel\"}]}}",
                 "headers": {
                     "User-Agent": [
                         "python-requests/2.23.0"
@@ -624,7 +624,7 @@
                         "keep-alive"
                     ],
                     "Content-Length": [
-                        "577"
+                        "597"
                     ],
                     "Content-Type": [
                         "application/json"
@@ -637,30 +637,30 @@
                     "message": "Internal Server Error"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "92"
-                    ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
-                    "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                    "Allow": [
+                        "POST, OPTIONS"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Content-Length": [
+                        "81"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Fri, 13 Mar 2020 17:37:16 GMT"
+                    ],
                     "Vary": [
                         "Accept, Cookie"
                     ],
-                    "Date": [
-                        "Fri, 13 Mar 2020 16:58:25 GMT"
-                    ],
-                    "Allow": [
-                        "POST, OPTIONS"
+                    "Content-Type": [
+                        "application/json"
                     ]
                 },
                 "body": {
-                    "string": "{\"detail\":\"local variable 'identifier' referenced before assignment\",\"objects\":[],\"count\":0}"
+                    "string": "{\"detail\":\"Error merging 'ancestors': /api/components/1/\",\"objects\":[],\"count\":0}"
                 }
             }
         }
