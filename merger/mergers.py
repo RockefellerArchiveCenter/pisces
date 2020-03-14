@@ -67,7 +67,20 @@ class ArchivalObjectMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
-        """Fetches additional data from ArchivesSpace and Cartographer."""
+        """Fetches additional data from ArchivesSpace and Cartographer.
+
+        Gets ancestors, if any, from the archival object's resource record in
+        Cartographer, and dates, languages and extents from the same resource
+        record in ArchivesSpace.
+
+        Args:
+            object (dict): source object (an ArchivesSpace archival object record).
+            object_type (str): the source object type, either `archival_object`
+                or `archival_object_collection`.
+
+        Returns:
+            dict: a dictionary of data to be transformed.
+        """
         data = {}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
@@ -130,7 +143,7 @@ class ResourceMerger(BaseMerger):
             object_type (str): the source object type, always `resource`.
 
         Returns:
-            dict: a dictionary of data to be merged.
+            dict: a dictionary of data to be transformed.
         """
         data = {"children": []}
         cartographer_data = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
