@@ -67,10 +67,15 @@ class ArchivalObjectMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
-        """Fetches additional data from ArchivesSpace."""
+        """Fetches additional data from ArchivesSpace and Cartographer."""
+        data = {}
+        resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
+        if resp["count"] >= 1:
+            # TODO: make sure we actually fetch something at least once
+            print("BINGOOOOOOOO")
+            data["ancestors"] = resp["results"][0].get("ancestors")
         base_fields = ["dates", "language"]
         extended_fields = base_fields + ["extents"]
-        data = {}
         fields = base_fields if object_type == "archival_object" else extended_fields
         for field in fields:
             if object.get(field) in ['', [], {}, None]:
@@ -84,7 +89,7 @@ class ArchivalObjectMerger(BaseMerger):
     @silk_profile()
     def combine_data(self, object, additional_data):
         for k, v in additional_data.items():
-            object[k] = v
+            object[k] = object.get(k, []) + v
         return object
 
 
@@ -95,14 +100,14 @@ class ArrangementMapMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
-        """Fetches the ArchivesSpace resource record referenced by the MapComponent."""
+        """Fetches the ArchivesSpace resource record referenced by the
+        ArrangegmentMapComponent."""
         return self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json()
 
     @silk_profile()
     def combine_data(self, object, additional_data):
-        """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
-        additional_data["ancestors"] = object["ancestors"]
-        # TODO: Something with children??
+        """Adds Cartographer ancestors to ArchivesSpace resource record."""
+        additional_data["ancestors"] = object.get("ancestors", [])
         return additional_data
 
 
@@ -114,19 +119,39 @@ class ResourceMerger(BaseMerger):
 
     @silk_profile()
     def get_additional_data(self, object, object_type):
-        """Gets additional data from Cartographer, or returns None if no
-        matching component is found."""
-        resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
-        if resp["count"] == 0:
-            return None
-        else:
-            return resp["results"][0]
+        """Gets additional data from Cartographer and ArchivesSpace.
+
+        Returns ancestors (if any) for the resource record from Cartographer,
+        and returns the first level of the resource record tree from
+        ArchivesSpace.
+
+        Args:
+            object (dict): source object (an ArchivesSpace resource record).
+            object_type (str): the source object type, always `resource`.
+
+        Returns:
+            dict: a dictionary of data to be merged.
+        """
+        data = {"children": []}
+        cartographer_data = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
+        if cartographer_data["count"] > 0:
+            data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
+        as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
+        for child in as_tree:
+            # TODO: make sure we actually fetch something here
+            print("WE HAZ CHILDRENNNNNNN")
+            del child["children"]
+            data["children"].append(child)
+        return data
 
     @silk_profile()
     def combine_data(self, object, additional_data):
-        """Prepends Cartographer ancestors to ArchivesSpace ancestors."""
-        object["ancestors"] = additional_data.get("ancestors", [])
-        # TODO: children?
+        """Combines existing ArchivesSpace data with Cartographer data.
+
+        Adds Cartographer ancestors to object's `ancestors` key, and
+        ArchivesSpace children to object's `children` key."""
+        object["ancestors"] = additional_data["ancestors"]
+        object["children"] = additional_data["children"]
         return object
 
 
