@@ -50,7 +50,7 @@ class MergerTest(TestCase):
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
                         transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
-                        self.assertTrue(
+                        self.assertEqual(
                             transform_requests, 1,
                             "Transform service should have been called once, was called {}".format(transform_requests))
                         merged_data = json.loads(merged)
@@ -97,6 +97,6 @@ class MergerTest(TestCase):
                         response = MergeView().as_view()(request)
                         self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
                         transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
-                        self.assertTrue(
+                        self.assertEqual(
                             transform_requests, 1,
                             "Transform service should have been called once, was called {}".format(transform_requests))

@@ -55,7 +55,6 @@ class FetcherTest(TestCase):
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
-                        print("{}-{}-{}.json".format(cassette_prefix, status, object_type))
                         list = fetcher().fetch(status, object_type)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
