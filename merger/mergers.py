@@ -79,13 +79,11 @@ class ArchivalObjectMerger(BaseMerger):
                 or `archival_object_collection`.
 
         Returns:
-            dict: a dictionary of data to be transformed.
+            dict: a dictionary of data to be merged.
         """
         data = {}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
-            # TODO: make sure we actually fetch something at least once
-            print("BINGOOOOOOOO")
             data["ancestors"] = resp["results"][0].get("ancestors")
         base_fields = ["dates", "language"]
         extended_fields = base_fields + ["extents"]
@@ -96,13 +94,15 @@ class ArchivalObjectMerger(BaseMerger):
                 data[field] = value
         if object_type == "archival_object_collection":
             data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object.get("uri"))
-            # TODO: get children
         return data
 
     @silk_profile()
     def combine_data(self, object, additional_data):
         for k, v in additional_data.items():
-            object[k] = object.get(k, []) + v
+            if isinstance(v, list):
+                object[k] = object.get(k, []) + v
+            else:
+                object[k] = v
         return object
 
 
@@ -114,7 +114,15 @@ class ArrangementMapMerger(BaseMerger):
     @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches the ArchivesSpace resource record referenced by the
-        ArrangegmentMapComponent."""
+        ArrangementMapComponent.
+
+        Args:
+            object (dict): source object (an ArrangementMapComponent).
+            object_type (str): the source object type, `arrangement_map_component`.
+
+        Returns:
+            dict: a dictionary of data to be merged.
+        """
         return self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json()
 
     @silk_profile()
@@ -143,16 +151,14 @@ class ResourceMerger(BaseMerger):
             object_type (str): the source object type, always `resource`.
 
         Returns:
-            dict: a dictionary of data to be transformed.
+            dict: a dictionary of data to be merged.
         """
-        data = {"children": []}
+        data = {"children": [], "ancestors": []}
         cartographer_data = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
         if cartographer_data["count"] > 0:
             data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
         as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
-        for child in as_tree:
-            # TODO: make sure we actually fetch something here
-            print("WE HAZ CHILDRENNNNNNN")
+        for child in as_tree.get("children"):
             del child["children"]
             data["children"].append(child)
         return data
@@ -162,7 +168,8 @@ class ResourceMerger(BaseMerger):
         """Combines existing ArchivesSpace data with Cartographer data.
 
         Adds Cartographer ancestors to object's `ancestors` key, and
-        ArchivesSpace children to object's `children` key."""
+        ArchivesSpace children to object's `children` key.
+        """
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
         return object
