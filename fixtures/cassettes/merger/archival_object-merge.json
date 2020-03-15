@@ -52370,6 +52370,3186 @@
                     "string": "{\"detail\":\"success\",\"objects\":[],\"count\":0}"
                 }
             }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:37:49 GMT"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:23 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:24 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:25 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:26 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:27 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:28 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:29 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:30 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:32 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:34 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:36 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:38 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:40 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:43 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:45 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:48 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:51 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:54 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:40:57 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:00 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:03 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:07 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:11 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:14 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:18 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:23 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:27 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:31 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:35 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:41:40 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:23 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:26 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:29 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:32 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:36 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:39 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:43 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:46 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:50 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:54 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:42:57 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:43:02 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:43:06 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:43:10 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Sat, 14 Mar 2020 23:43:15 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:04 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:14 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:19 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:25 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:29 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:34 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:31:38 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:33:08 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:33:13 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:33:19 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:33:24 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:41:57 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:42:02 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://cartographer-backend:8000/api/find-by-uri/?uri=%2Frepositories%2F2%2Fresources%2F93",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Sun, 15 Mar 2020 01:44:26 GMT"
+                    ],
+                    "Content-Length": [
+                        "607"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie, Origin"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":1,\"next\":null,\"previous\":null,\"results\":[{\"ref\":\"/api/components/1/\",\"title\":\"Rockefeller Foundation records, photographs, series 100-1000\",\"map\":1,\"parent\":null,\"tree_index\":0,\"level\":\"collection\",\"archivesspace_uri\":\"/repositories/2/resources/93\",\"publish\":true,\"ancestors\":[],\"children\":[{\"ref\":\"/api/components/2/\",\"archivesspace_uri\":\"/repositories/2/resources/12\",\"level\":\"otherlevel\"},{\"ref\":\"/api/components/3/\",\"archivesspace_uri\":\"/repositories/2/resources/13\",\"level\":\"collection\"},{\"ref\":\"/api/components/4/\",\"archivesspace_uri\":\"/repositories/2/resources/318\",\"level\":\"otherlevel\"}]}]}"
+                }
+            }
         }
     ]
 }
