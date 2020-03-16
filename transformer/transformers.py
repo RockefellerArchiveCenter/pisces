@@ -1,8 +1,8 @@
 import json
 from os.path import join
 
+import jsonschema
 import shortuuid
-from jsonschema import validate
 from odin.codecs import json_codec
 from pisces import settings
 from requests.exceptions import ConnectionError
@@ -45,11 +45,13 @@ class Transformer:
             self.identifier = data.get("uri")
             mapping_configs = self.get_mapping_configs(object_type)
             transformed = self.get_transformed_object(data, *mapping_configs)
-            self.validate_transformed(transformed)
+            jsonschema.validate(instance=transformed, schema=self.schema)
             self.save_validated(transformed)
             return json.dumps(transformed)
         except ConnectionError:
             raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
+        except jsonschema.exceptions.ValidationError as e:
+            raise TransformError("Transformed data is invalid: {} {}".format(e.message, e.path))
         except Exception as e:
             raise TransformError("Error transforming {} {}: {}".format(object_type, self.identifier, str(e)))
 
@@ -70,11 +72,6 @@ class Transformer:
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
         transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
         return transformed
-
-    @silk_profile()
-    def validate_transformed(self, data):
-        # TODO: return meaningful validation messages!
-        validate(instance=data, schema=self.schema)
 
     @silk_profile()
     def remove_keys_from_dict(self, data, target_key="$"):
