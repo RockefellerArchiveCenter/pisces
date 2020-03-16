@@ -85,7 +85,7 @@ class ArchivalObjectMerger(BaseMerger):
     def get_cartographer_data(self, object):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
-        data = {}
+        data = {"ancestors": []}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
             data["ancestors"] = resp["results"][0].get("ancestors")
@@ -94,7 +94,7 @@ class ArchivalObjectMerger(BaseMerger):
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages and extent data from archival object's resource
         record in ArchivesSpace."""
-        data = {}
+        data = {"linked_agents": []}
         base_fields = ["dates", "language"]
         fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
         for field in fields:
@@ -151,10 +151,6 @@ class ResourceMerger(BaseMerger):
     def get_additional_data(self, object, object_type):
         """Gets additional data from Cartographer and ArchivesSpace.
 
-        Returns ancestors (if any) for the resource record from Cartographer,
-        and returns the first level of the resource record tree from
-        ArchivesSpace.
-
         Args:
             object (dict): source object (an ArchivesSpace resource record).
             object_type (str): the source object type, always `resource`.
@@ -163,9 +159,23 @@ class ResourceMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {"children": [], "ancestors": []}
+        data.update(self.get_cartographer_data(object))
+        data.update(self.get_archivesspace_data(object))
+        return data
+
+    def get_cartographer_data(self, object):
+        """Returns ancestors (if any) for the resource record from
+        Cartographer."""
+        data = {"ancestors": []}
         cartographer_data = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
         if cartographer_data["count"] > 0:
             data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
+        return data
+
+    def get_archivesspace_data(self, object):
+        """Returns the first level of the resource record tree from
+        ArchivesSpace."""
+        data = {"children": []}
         as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
         for child in as_tree.get("children"):
             del child["children"]
