@@ -1,0 +1,28 @@
+{
+    "ref": "/api/components/1/",
+    "title": "Jackson Davis papers",
+    "map": 1,
+    "parent": null,
+    "tree_index": 0,
+    "level": "collection",
+    "archivesspace_uri": "/repositories/2/resources/93",
+    "publish": true,
+    "ancestors": [],
+    "children": [
+        {
+            "ref": "/api/components/2/",
+            "archivesspace_uri": "/repositories/2/resources/12",
+            "level": "otherlevel"
+        },
+        {
+            "ref": "/api/components/3/",
+            "archivesspace_uri": "/repositories/2/resources/13",
+            "level": "collection"
+        },
+        {
+            "ref": "/api/components/4/",
+            "archivesspace_uri": "/repositories/2/resources/318",
+            "level": "otherlevel"
+        }
+    ]
+}
