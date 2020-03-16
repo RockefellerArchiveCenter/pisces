@@ -69,10 +69,6 @@ class ArchivalObjectMerger(BaseMerger):
     def get_additional_data(self, object, object_type):
         """Fetches additional data from ArchivesSpace and Cartographer.
 
-        Gets ancestors, if any, from the archival object's resource record in
-        Cartographer, and dates, languages and extents from the same resource
-        record in ArchivesSpace.
-
         Args:
             object (dict): source object (an ArchivesSpace archival object record).
             object_type (str): the source object type, either `archival_object`
@@ -82,12 +78,25 @@ class ArchivalObjectMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {}
+        data.update(self.get_cartographer_data(object))
+        data.update(self.get_archivesspace_data(object, object_type))
+        return data
+
+    def get_cartographer_data(self, object):
+        """Gets ancestors, if any, from the archival object's resource record in
+        Cartographer."""
+        data = {}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
             data["ancestors"] = resp["results"][0].get("ancestors")
+        return data
+
+    def get_archivesspace_data(self, object, object_type):
+        """Gets dates, languages and extent data from archival object's resource
+        record in ArchivesSpace."""
+        data = {}
         base_fields = ["dates", "language"]
-        extended_fields = base_fields + ["extents"]
-        fields = base_fields if object_type == "archival_object" else extended_fields
+        fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
         for field in fields:
             if object.get(field) in ['', [], {}, None]:
                 value = self.aspace_helper.closest_parent_value(object.get("uri"), field)
