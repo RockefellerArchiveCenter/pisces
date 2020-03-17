@@ -88,7 +88,9 @@ class ArchivalObjectMerger(BaseMerger):
         data = {"ancestors": []}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
-            data["ancestors"] = resp["results"][0].get("ancestors")
+            for a in resp["results"][0].get("ancestors"):
+                a["type"] = "collection"
+                data["ancestors"].append(a)
         return data
 
     def get_archival_object_collection_data(self, object):
@@ -101,14 +103,17 @@ class ArchivalObjectMerger(BaseMerger):
             for child in tree_node["precomputed_waypoints"].get(object["uri"])[idx]:
                 data["children"].append({
                     "title": child["title"],
-                    "record_uri": child["uri"],
-                    "level": child["level"]})
+                    "ref": child["uri"],
+                    "level": child["level"],
+                    "order": child["position"],
+                    "type": "collection" if child["child_count"] > 0 else "object",
+                    "identifier": child["uri"].rstrip("/").split("/")[-1]})
         return data
 
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace."""
-        data = {"linked_agents": []}
+        data = {"linked_agents": [], "children": []}
         base_fields = ["dates", "language"]
         fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
         for field in fields:
@@ -151,7 +156,11 @@ class ArrangementMapMerger(BaseMerger):
     @silk_profile()
     def combine_data(self, object, additional_data):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
-        additional_data["ancestors"] = object.get("ancestors", [])
+        ancestors = []
+        for a in object.get("ancestors"):
+            a["type"] = "collection"
+            ancestors.append(a)
+        additional_data["ancestors"] = ancestors
         return additional_data
 
 
@@ -192,8 +201,12 @@ class ResourceMerger(BaseMerger):
         data = {"children": []}
         as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
         for child in as_tree.get("children"):
-            del child["children"]
-            data["children"].append(child)
+            data["children"].append({
+                "title": child["title"],
+                "ref": child["record_uri"],
+                "level": child["level"],
+                "type": "collection" if child["has_children"] else "object",
+                "identifier": child["id"]})
         return data
 
     @silk_profile()
