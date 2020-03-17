@@ -194,6 +194,7 @@ class SourceResource(SourceComponentBase):
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)
+    children = odin.ArrayOf(SourceAncestor)
     tree = odin.DictAs(SourceRef)
 
 
