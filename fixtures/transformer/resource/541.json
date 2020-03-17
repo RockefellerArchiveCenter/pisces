@@ -432,5 +432,47 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/541/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Notebooks",
+            "id": 289916,
+            "record_uri": "/repositories/2/archival_objects/289916",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Files for the 1968 Campaign",
+            "id": 289974,
+            "record_uri": "/repositories/2/archival_objects/289974",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Files for Other Campaigns and Issues",
+            "id": 290198,
+            "record_uri": "/repositories/2/archival_objects/290198",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

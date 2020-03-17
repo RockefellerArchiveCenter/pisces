@@ -361,5 +361,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/596/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Administrative Correspondence, 1960-1977",
+            "id": 366848,
+            "record_uri": "/repositories/2/archival_objects/366848",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Universidad del Valle--Academic Programs, 1962-1975, n.d.",
+            "id": 366885,
+            "record_uri": "/repositories/2/archival_objects/366885",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Universidad del Valle--Medical Programs, 1960-1976, 1978",
+            "id": 366928,
+            "record_uri": "/repositories/2/archival_objects/366928",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Cooperating Universities and Programs, 1960-1976",
+            "id": 366946,
+            "record_uri": "/repositories/2/archival_objects/366946",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

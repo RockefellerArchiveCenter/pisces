@@ -284,5 +284,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/617/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Digest Files",
+            "id": 409650,
+            "record_uri": "/repositories/2/archival_objects/409650",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Witness Files",
+            "id": 410312,
+            "record_uri": "/repositories/2/archival_objects/410312",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Washington D. C. Files",
+            "id": 410367,
+            "record_uri": "/repositories/2/archival_objects/410367",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Background Information and Miscellaneous",
+            "id": 410865,
+            "record_uri": "/repositories/2/archival_objects/410865",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

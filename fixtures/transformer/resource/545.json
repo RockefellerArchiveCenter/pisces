@@ -432,5 +432,86 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/545/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "General Correspondence, 1960-1970",
+            "id": 292178,
+            "record_uri": "/repositories/2/archival_objects/292178",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "State Files and Summaries, 1960-1970",
+            "id": 292659,
+            "record_uri": "/repositories/2/archival_objects/292659",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Talent File, 1960-1970",
+            "id": 292813,
+            "record_uri": "/repositories/2/archival_objects/292813",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Memos, 1959-1970",
+            "id": 292835,
+            "record_uri": "/repositories/2/archival_objects/292835",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Correspondence, 1960-1968",
+            "id": 292854,
+            "record_uri": "/repositories/2/archival_objects/292854",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Congressional Quarterly, 1960-1971",
+            "id": 1035254,
+            "record_uri": "/repositories/2/archival_objects/1035254",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "6",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -382,5 +382,34 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/574/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "\"Executive Chamber\" Program Files, 1961-1965",
+            "id": 316219,
+            "record_uri": "/repositories/2/archival_objects/316219",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "\"Executive Chamber\" Scripts and Related Materials, 1964-1965",
+            "id": 316256,
+            "record_uri": "/repositories/2/archival_objects/316256",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -376,5 +376,34 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/562/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "1964 Presidential Election, 1959-1964",
+            "id": 302150,
+            "record_uri": "/repositories/2/archival_objects/302150",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "First Gubernatorial Term, 1958-1962",
+            "id": 302279,
+            "record_uri": "/repositories/2/archival_objects/302279",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

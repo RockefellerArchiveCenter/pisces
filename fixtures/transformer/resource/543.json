@@ -431,5 +431,48 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/543/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "1952 Columbia University Oral History, 1951-1952",
+            "id": 290973,
+            "record_uri": "/repositories/2/archival_objects/290973",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "1967 Columbia University Oral History, 1967",
+            "id": 291003,
+            "record_uri": "/repositories/2/archival_objects/291003",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Irwin Gellman Interview with Nelson A. Rockefeller, 1976 August 11 & 12",
+            "id": 291004,
+            "record_uri": "/repositories/2/archival_objects/291004",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        }
+    ]
 }

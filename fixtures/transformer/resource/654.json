@@ -301,5 +301,21 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/654/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Nelson A. Rockefeller Photographs, Room 5600, Rockefeller family office, 1920-1979",
+            "id": 471017,
+            "record_uri": "/repositories/2/archival_objects/471017",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

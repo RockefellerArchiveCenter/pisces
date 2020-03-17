@@ -376,5 +376,20 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/563/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "State Issues",
+            "id": 302355,
+            "record_uri": "/repositories/2/archival_objects/302355",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

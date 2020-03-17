@@ -1,5 +1,5 @@
 {
-    "lock_version": 10,
+    "lock_version": 12,
     "title": "Rockefeller Foundation records, photographs, series 100-1000",
     "publish": true,
     "restrictions": true,
@@ -11,9 +11,10 @@
     "created_by": "admin",
     "last_modified_by": "battalb",
     "create_time": "2014-12-06T03:43:19Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-12-15T12:31:30Z",
+    "system_mtime": "2019-10-31T14:22:12Z",
+    "user_mtime": "2019-10-10T12:39:02Z",
     "suppressed": false,
+    "is_slug_auto": false,
     "id_0": "FA003",
     "language": "eng",
     "level": "collection",
@@ -25,28 +26,24 @@
             "source": "Archivists Toolkit Database::RESOURCE",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-12-15T12:31:30Z",
-            "system_mtime": "2016-12-15T12:31:30Z",
-            "user_mtime": "2016-12-15T12:31:30Z",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
             "jsonmodel_type": "external_id"
         }
     ],
-    "subjects": [
-        {
-            "ref": "/subjects/962"
-        }
-    ],
+    "subjects": [],
     "linked_events": [],
     "extents": [
         {
             "lock_version": 0,
-            "number": "77.88",
+            "number": "88.25",
             "container_summary": "177 document boxes.",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-12-15T12:31:30Z",
-            "system_mtime": "2016-12-15T12:31:30Z",
-            "user_mtime": "2016-12-15T12:31:30Z",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
             "portion": "whole",
             "extent_type": "cubic_feet",
             "jsonmodel_type": "extent"
@@ -60,9 +57,9 @@
             "end": "1980",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-12-15T12:31:30Z",
-            "system_mtime": "2016-12-15T12:31:30Z",
-            "user_mtime": "2016-12-15T12:31:30Z",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
             "date_type": "inclusive",
             "label": "creation",
             "jsonmodel_type": "date"
@@ -75,7 +72,7 @@
             "role": "creator",
             "relator": "aut",
             "terms": [],
-            "ref": "/agents/corporate_entities/12"
+            "ref": "/agents/corporate_entities/4884"
         }
     ],
     "revision_statements": [],
@@ -149,13 +146,13 @@
         "rights_determined": false,
         "created_by": "battalb",
         "last_modified_by": "battalb",
-        "create_time": "2016-12-15T12:31:30Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-12-15T12:31:30Z",
+        "create_time": "2019-10-10T12:39:02Z",
+        "system_mtime": "2019-10-10T12:39:02Z",
+        "user_mtime": "2019-10-10T12:39:02Z",
         "processing_status": "completed",
         "jsonmodel_type": "collection_management",
         "external_ids": [],
-        "uri": "/repositories/2/collection_management/5173",
+        "uri": "/repositories/2/collection_management/9214",
         "repository": {
             "ref": "/repositories/2"
         },
@@ -171,9 +168,9 @@
         "date_2": "2016-12-14",
         "created_by": "battalb",
         "last_modified_by": "battalb",
-        "create_time": "2016-12-15T12:31:30Z",
-        "system_mtime": "2016-12-15T12:31:30Z",
-        "user_mtime": "2016-12-15T12:31:30Z",
+        "create_time": "2019-10-10T12:39:02Z",
+        "system_mtime": "2019-10-10T12:39:02Z",
+        "user_mtime": "2019-10-10T12:39:02Z",
         "enum_1": "3 - Standard",
         "jsonmodel_type": "user_defined",
         "repository": {
@@ -182,5 +179,6 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/93/tree"
-    }
+    },
+    "ancestors": []
 }

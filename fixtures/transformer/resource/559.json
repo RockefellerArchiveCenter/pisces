@@ -410,5 +410,47 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/559/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "\"Executive Chamber\", 1964-1965",
+            "id": 301376,
+            "record_uri": "/repositories/2/archival_objects/301376",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Subject Files, 1964-1971",
+            "id": 301416,
+            "record_uri": "/repositories/2/archival_objects/301416",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Miscellaneous, 1964-1973",
+            "id": 301438,
+            "record_uri": "/repositories/2/archival_objects/301438",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -356,5 +356,138 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/600/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "General Correspondence, 1971",
+            "id": 380404,
+            "record_uri": "/repositories/2/archival_objects/380404",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1971",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1972",
+            "id": 381037,
+            "record_uri": "/repositories/2/archival_objects/381037",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1972",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1973",
+            "id": 381675,
+            "record_uri": "/repositories/2/archival_objects/381675",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1973",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1974",
+            "id": 382404,
+            "record_uri": "/repositories/2/archival_objects/382404",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1974",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1975",
+            "id": 383197,
+            "record_uri": "/repositories/2/archival_objects/383197",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1975",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1976",
+            "id": 384165,
+            "record_uri": "/repositories/2/archival_objects/384165",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1976",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1977",
+            "id": 384888,
+            "record_uri": "/repositories/2/archival_objects/384888",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1977",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1978",
+            "id": 385688,
+            "record_uri": "/repositories/2/archival_objects/385688",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1978",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1979",
+            "id": 386389,
+            "record_uri": "/repositories/2/archival_objects/386389",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1979",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1980",
+            "id": 386951,
+            "record_uri": "/repositories/2/archival_objects/386951",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1980",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -405,5 +405,73 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/580/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "New York State Committee to Reelect the President Research Files, 1972",
+            "id": 321231,
+            "record_uri": "/repositories/2/archival_objects/321231",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Miscellaneous Writings, 1972-1974",
+            "id": 321280,
+            "record_uri": "/repositories/2/archival_objects/321280",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Pre-Vice Presidential Speeches, 1966-1974",
+            "id": 321284,
+            "record_uri": "/repositories/2/archival_objects/321284",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Press Releases, 1970-1974",
+            "id": 321700,
+            "record_uri": "/repositories/2/archival_objects/321700",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Miscellaneous Files, 1958-1974",
+            "id": 321740,
+            "record_uri": "/repositories/2/archival_objects/321740",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

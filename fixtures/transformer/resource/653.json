@@ -299,5 +299,21 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/653/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Nelson A. Rockefeller family photographs",
+            "id": 470942,
+            "record_uri": "/repositories/2/archival_objects/470942",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1008",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

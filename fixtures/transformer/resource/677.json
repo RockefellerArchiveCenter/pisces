@@ -376,5 +376,73 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/677/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Rockefeller Foundation records, projects (A 83), 1961-1991",
+            "id": 494709,
+            "record_uri": "/repositories/2/archival_objects/494709",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.9",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A 84), 1963-1984",
+            "id": 495471,
+            "record_uri": "/repositories/2/archival_objects/495471",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.10",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A 85), 1970-1985",
+            "id": 496186,
+            "record_uri": "/repositories/2/archival_objects/496186",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.11",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A 86), 1965-1991",
+            "id": 496678,
+            "record_uri": "/repositories/2/archival_objects/496678",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.12",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A 87), 1978-1987",
+            "id": 497204,
+            "record_uri": "/repositories/2/archival_objects/497204",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.13",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

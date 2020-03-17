@@ -321,5 +321,86 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/624/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "General Correspondence, 1952",
+            "id": 417841,
+            "record_uri": "/repositories/2/archival_objects/417841",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1952",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1953",
+            "id": 418643,
+            "record_uri": "/repositories/2/archival_objects/418643",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1953",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1954",
+            "id": 419424,
+            "record_uri": "/repositories/2/archival_objects/419424",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1954",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1955",
+            "id": 420295,
+            "record_uri": "/repositories/2/archival_objects/420295",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1955",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1956",
+            "id": 421233,
+            "record_uri": "/repositories/2/archival_objects/421233",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1956",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General Correspondence, 1957",
+            "id": 422272,
+            "record_uri": "/repositories/2/archival_objects/422272",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1957",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

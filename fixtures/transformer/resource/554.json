@@ -374,5 +374,638 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/554/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Air Pollution, 1967",
+            "id": 299455,
+            "record_uri": "/repositories/2/archival_objects/299455",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Appalachian Program, 1967",
+            "id": 299456,
+            "record_uri": "/repositories/2/archival_objects/299456",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Bingham, Jonathan, 1967",
+            "id": 299457,
+            "record_uri": "/repositories/2/archival_objects/299457",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Bohemian Grove, 1963",
+            "id": 299458,
+            "record_uri": "/repositories/2/archival_objects/299458",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Button, Daniel, 1967",
+            "id": 299459,
+            "record_uri": "/repositories/2/archival_objects/299459",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Celler, Emanuel, 1967",
+            "id": 299460,
+            "record_uri": "/repositories/2/archival_objects/299460",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Conable, B., 1967",
+            "id": 299461,
+            "record_uri": "/repositories/2/archival_objects/299461",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Congress, 1967",
+            "id": 299462,
+            "record_uri": "/repositories/2/archival_objects/299462",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Congressional Liaison Office, 1967",
+            "id": 299463,
+            "record_uri": "/repositories/2/archival_objects/299463",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Constitutional Convention, 1965",
+            "id": 299464,
+            "record_uri": "/repositories/2/archival_objects/299464",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Daily Sheets, 1967",
+            "id": 299465,
+            "record_uri": "/repositories/2/archival_objects/299465",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Education, 1967",
+            "id": 299466,
+            "record_uri": "/repositories/2/archival_objects/299466",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Elementary and Secondary Education Act, 1967",
+            "id": 299467,
+            "record_uri": "/repositories/2/archival_objects/299467",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Elementary and Secondary Education Act, 1967",
+            "id": 299468,
+            "record_uri": "/repositories/2/archival_objects/299468",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Federal-State Relations, 1967",
+            "id": 299469,
+            "record_uri": "/repositories/2/archival_objects/299469",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Finance Committee, Daily Legislative Committee Reports, 1967",
+            "id": 299470,
+            "record_uri": "/repositories/2/archival_objects/299470",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Goodell, Charles, 1967",
+            "id": 299471,
+            "record_uri": "/repositories/2/archival_objects/299471",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Hanley, James, 1967",
+            "id": 299472,
+            "record_uri": "/repositories/2/archival_objects/299472",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Healthcare, 1967",
+            "id": 299473,
+            "record_uri": "/repositories/2/archival_objects/299473",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Housing Finance Law, 1967",
+            "id": 299474,
+            "record_uri": "/repositories/2/archival_objects/299474",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Javits, Jacob, 1967",
+            "id": 299475,
+            "record_uri": "/repositories/2/archival_objects/299475",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Kennedy, Robert, 1967",
+            "id": 299476,
+            "record_uri": "/repositories/2/archival_objects/299476",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Kupferman, Theodore, 1967",
+            "id": 299477,
+            "record_uri": "/repositories/2/archival_objects/299477",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Legislative Bills, 1967",
+            "id": 299478,
+            "record_uri": "/repositories/2/archival_objects/299478",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memos, General, 1967",
+            "id": 299479,
+            "record_uri": "/repositories/2/archival_objects/299479",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Mitchell, Donna, 1967",
+            "id": 299480,
+            "record_uri": "/repositories/2/archival_objects/299480",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Mitchell, Donna, 1967",
+            "id": 299481,
+            "record_uri": "/repositories/2/archival_objects/299481",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Multer, Abraham, 1967",
+            "id": 299482,
+            "record_uri": "/repositories/2/archival_objects/299482",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Narcotics Program, 1967",
+            "id": 299483,
+            "record_uri": "/repositories/2/archival_objects/299483",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR Letter to Congress, 1967",
+            "id": 299484,
+            "record_uri": "/repositories/2/archival_objects/299484",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "New York State Congressional Visits, 1967",
+            "id": 299485,
+            "record_uri": "/repositories/2/archival_objects/299485",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "New York State Programs, 1967",
+            "id": 299486,
+            "record_uri": "/repositories/2/archival_objects/299486",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Office of Regional Development, 1963-1965",
+            "id": 299487,
+            "record_uri": "/repositories/2/archival_objects/299487",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Phone Calls, 1967",
+            "id": 299488,
+            "record_uri": "/repositories/2/archival_objects/299488",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Policy Council (NAR), 1963",
+            "id": 299489,
+            "record_uri": "/repositories/2/archival_objects/299489",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Reid, Ogden, 1967",
+            "id": 299490,
+            "record_uri": "/repositories/2/archival_objects/299490",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Rosenthan, Benjamin, 1967",
+            "id": 299491,
+            "record_uri": "/repositories/2/archival_objects/299491",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Ruge, Daniel, 1967",
+            "id": 299492,
+            "record_uri": "/repositories/2/archival_objects/299492",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Smith, Henry, 1967",
+            "id": 299493,
+            "record_uri": "/repositories/2/archival_objects/299493",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Staff Meetings, 1964-1966",
+            "id": 299494,
+            "record_uri": "/repositories/2/archival_objects/299494",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Staff Meetings, 1965",
+            "id": 299495,
+            "record_uri": "/repositories/2/archival_objects/299495",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Teller, Edward, 1963",
+            "id": 299496,
+            "record_uri": "/repositories/2/archival_objects/299496",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Test Ban Treaty, 1963",
+            "id": 299497,
+            "record_uri": "/repositories/2/archival_objects/299497",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vacancies, 1966-1967",
+            "id": 299498,
+            "record_uri": "/repositories/2/archival_objects/299498",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Wydler, John W., 1967",
+            "id": 299499,
+            "record_uri": "/repositories/2/archival_objects/299499",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        }
+    ]
 }

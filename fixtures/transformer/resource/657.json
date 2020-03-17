@@ -310,5 +310,21 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/657/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Nelson A. Rockefeller photographs, Gubernatorial, 1958-1974",
+            "id": 474985,
+            "record_uri": "/repositories/2/archival_objects/474985",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

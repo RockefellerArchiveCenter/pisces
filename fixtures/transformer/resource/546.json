@@ -424,5 +424,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/546/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Current Issues, 1968",
+            "id": 292901,
+            "record_uri": "/repositories/2/archival_objects/292901",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "NAR Political, 1968",
+            "id": 292928,
+            "record_uri": "/repositories/2/archival_objects/292928",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "OMR General, 1968",
+            "id": 292946,
+            "record_uri": "/repositories/2/archival_objects/292946",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Notebooks and Reports, 1967-1970",
+            "id": 292954,
+            "record_uri": "/repositories/2/archival_objects/292954",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

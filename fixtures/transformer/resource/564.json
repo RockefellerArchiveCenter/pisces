@@ -396,5 +396,73 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/564/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Appointments Office, 1959-1965",
+            "id": 302375,
+            "record_uri": "/repositories/2/archival_objects/302375",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Campaign for the 1964 Republican Presidential Nomination, March 1963-June 1964",
+            "id": 303132,
+            "record_uri": "/repositories/2/archival_objects/303132",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Special Assistant to the Governor for Radio and Television, 1961-1965",
+            "id": 303306,
+            "record_uri": "/repositories/2/archival_objects/303306",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "George Hinman and Ilene Slater Files, 1959-1962",
+            "id": 303485,
+            "record_uri": "/repositories/2/archival_objects/303485",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller for President Citizens Information Center, 1958-1960",
+            "id": 303634,
+            "record_uri": "/repositories/2/archival_objects/303634",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

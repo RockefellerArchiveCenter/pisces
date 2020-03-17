@@ -1,0 +1,148 @@
+{
+    "lock_version": 6,
+    "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
+    "other_level": "Accession",
+    "publish": false,
+    "restrictions": true,
+    "repository_processing_note": "Inventory entered by J.E. Molly Seegers, July 2012",
+    "finding_aid_title": "A Guide to the Michel Nussenzweig papers, Rockefeller University Faculty\n",
+    "finding_aid_filing_title": "Nussenzweig (Michel) papers",
+    "finding_aid_language": "English",
+    "created_by": "admin",
+    "last_modified_by": "admin",
+    "create_time": "2014-12-06T03:28:02Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2015-09-18T18:53:04Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "id_0": "AC",
+    "id_1": "2012",
+    "id_2": "046",
+    "language": "eng",
+    "level": "otherlevel",
+    "finding_aid_description_rules": "dacs",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "1792",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2015-09-18T18:53:04Z",
+            "system_mtime": "2015-09-18T18:53:04Z",
+            "user_mtime": "2015-09-18T18:53:04Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "20.4",
+            "container_summary": "17 boxes",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2015-09-18T18:53:04Z",
+            "system_mtime": "2015-09-18T18:53:04Z",
+            "user_mtime": "2015-09-18T18:53:04Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "undated",
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2015-09-18T18:53:04Z",
+            "system_mtime": "2015-09-18T18:53:04Z",
+            "user_mtime": "2015-09-18T18:53:04Z",
+            "date_type": "single",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/3055"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "type": "accessrestrict",
+            "persistent_id": "1af88111cbf5d34236b817f7af83c5be",
+            "subnotes": [
+                {
+                    "content": "Records are closed to scholarly research pending further processing.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "jsonmodel_type": "note_multipart",
+            "publish": true
+        },
+        {
+            "type": "prefercite",
+            "persistent_id": "58d6eadbc2afef0a1191017fdf7c8514",
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "jsonmodel_type": "note_multipart",
+            "publish": true
+        },
+        {
+            "type": "phystech",
+            "persistent_id": "63869346d5920e05415e1cb32bf7f1a6",
+            "subnotes": [
+                {
+                    "content": "Materials requiring specialized equipment for access (film, audio, video, slides) may be restricted from scholarly research dependent on availability of the applicable equipment.\n \nBrittle or damaged items, or materials otherwise in need of preservation care, may be restricted from scholarly research at the discretion of the RAC Head of Archival Services/RAC Head of Reference.\n\n\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "jsonmodel_type": "note_multipart",
+            "publish": true
+        },
+        {
+            "type": "processinfo",
+            "persistent_id": "0393f9f10d60d45636f872fb3ce18dca",
+            "subnotes": [
+                {
+                    "content": "Level 1 Minimal Processing has been conducted to establish basic intellectual and physical control of the material and assess immediate preservation and conservation needs. Material remains as received, in original folders and storage boxes.\n\nInventory entered by J.E. Molly Seegers, July 2012.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "jsonmodel_type": "note_multipart",
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/12",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/12/tree"
+    },
+    "ancestors": [
+        {
+            "ref": "/api/components/1/",
+            "archivesspace_uri": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ]
+}

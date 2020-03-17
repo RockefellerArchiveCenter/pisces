@@ -294,5 +294,21 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/659/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Unprocessed material",
+            "id": 475783,
+            "record_uri": "/repositories/2/archival_objects/475783",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "7",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

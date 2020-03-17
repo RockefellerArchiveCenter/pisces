@@ -227,5 +227,47 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/324/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Minutes",
+            "id": 1075578,
+            "record_uri": "/repositories/2/archival_objects/1075578",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Annual Reports",
+            "id": 1075579,
+            "record_uri": "/repositories/2/archival_objects/1075579",
+            "publish": false,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subgrp",
+            "has_children": false,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Annual Reports/Minutes Duplicates",
+            "id": 982425,
+            "record_uri": "/repositories/2/archival_objects/982425",
+            "publish": false,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "D",
+            "level": "recordgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

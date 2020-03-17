@@ -1,0 +1,1104 @@
+{
+    "lock_version": 1,
+    "position": 34,
+    "publish": true,
+    "ref_id": "d230c8ac1bb8489eb1b821f960785f19",
+    "title": "Portraits",
+    "display_string": "Portraits",
+    "other_level": "unspecified",
+    "restrictions_apply": false,
+    "created_by": "admin",
+    "last_modified_by": "pgalligan",
+    "create_time": "2014-12-06T03:43:22Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2017-02-16T22:49:05Z",
+    "suppressed": false,
+    "level": "otherlevel",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [
+        {
+            "external_id": "1652609",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2017-02-16T22:49:05Z",
+            "system_mtime": "2017-02-16T22:49:05Z",
+            "user_mtime": "2017-02-16T22:49:05Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "88.25",
+            "container_summary": "177 document boxes.",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "circa 1905-1980",
+            "begin": "1905",
+            "end": "1980",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "subject",
+            "terms": [],
+            "ref": "/agents/corporate_entities/102"
+        },
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/4884"
+        }
+    ],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/archival_objects/11440",
+            "level": "series"
+        },
+        {
+            "ref": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ],
+    "instances": [],
+    "notes": [],
+    "uri": "/repositories/2/archival_objects/11474",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/93"
+    },
+    "parent": {
+        "ref": "/repositories/2/archival_objects/11440"
+    },
+    "has_unpublished_ancestor": false,
+    "children": [
+        {
+            "title": "Portraits - A",
+            "record_uri": "/repositories/2/archival_objects/11475",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Acosta G., Dr. and Mrs. Alfonso",
+            "record_uri": "/repositories/2/archival_objects/11476",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Agar, John G.",
+            "record_uri": "/repositories/2/archival_objects/11477",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Aitken, Thomas H. G.",
+            "record_uri": "/repositories/2/archival_objects/11478",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Albani, Felix (FAO)",
+            "record_uri": "/repositories/2/archival_objects/11479",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Albert I, King of the Belgians",
+            "record_uri": "/repositories/2/archival_objects/11480",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Allen, Le Roy R.",
+            "record_uri": "/repositories/2/archival_objects/11481",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Anderson, Dr. and Mrs. Charles R.",
+            "record_uri": "/repositories/2/archival_objects/11482",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Anderson, Richmond K.",
+            "record_uri": "/repositories/2/archival_objects/11483",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Andrews, Chase",
+            "record_uri": "/repositories/2/archival_objects/11484",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Arioiskandar, Raden Toemengoeng",
+            "record_uri": "/repositories/2/archival_objects/11485",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Arnold, Virginia",
+            "record_uri": "/repositories/2/archival_objects/11486",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - B",
+            "record_uri": "/repositories/2/archival_objects/11487",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bailey, Charles A.",
+            "record_uri": "/repositories/2/archival_objects/11488",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Baird, Guy B.",
+            "record_uri": "/repositories/2/archival_objects/11489",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Baldwin, William H., Jr.",
+            "record_uri": "/repositories/2/archival_objects/11490",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Balfour, Marshall, C.",
+            "record_uri": "/repositories/2/archival_objects/11491",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barber, Marshall A.",
+            "record_uri": "/repositories/2/archival_objects/11492",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barlow, Claude H.",
+            "record_uri": "/repositories/2/archival_objects/11493",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barnard, Chester I.",
+            "record_uri": "/repositories/2/archival_objects/11494",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barnard, Chester I.",
+            "record_uri": "/repositories/2/archival_objects/992920",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barnes, Allan C.",
+            "record_uri": "/repositories/2/archival_objects/11495",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Barnett, Doak",
+            "record_uri": "/repositories/2/archival_objects/11496",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bauer, J. H.",
+            "record_uri": "/repositories/2/archival_objects/11497",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bayne-Jones, Stanhope",
+            "record_uri": "/repositories/2/archival_objects/11498",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Beard, Mary",
+            "record_uri": "/repositories/2/archival_objects/11499",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Becker, Eugene Jeno",
+            "record_uri": "/repositories/2/archival_objects/11500",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bell, F. W.",
+            "record_uri": "/repositories/2/archival_objects/11501",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bernard, Zdenek",
+            "record_uri": "/repositories/2/archival_objects/11502",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Best, Charles H.",
+            "record_uri": "/repositories/2/archival_objects/11503",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bevier, George",
+            "record_uri": "/repositories/2/archival_objects/11504",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bigelow, Karl",
+            "record_uri": "/repositories/2/archival_objects/11505",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Biggs, Herman M.",
+            "record_uri": "/repositories/2/archival_objects/11506",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bingham, Barry",
+            "record_uri": "/repositories/2/archival_objects/11507",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bishop, Eugene L.",
+            "record_uri": "/repositories/2/archival_objects/11508",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Black, Davidson",
+            "record_uri": "/repositories/2/archival_objects/11509",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bodian, David",
+            "record_uri": "/repositories/2/archival_objects/11510",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Borbri, Vladimir",
+            "record_uri": "/repositories/2/archival_objects/11511",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Borlaug, Norman E.",
+            "record_uri": "/repositories/2/archival_objects/11512",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Borno, J. L.",
+            "record_uri": "/repositories/2/archival_objects/11513",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bourne, Leonard F.",
+            "record_uri": "/repositories/2/archival_objects/11514",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Boyd, Mark F.",
+            "record_uri": "/repositories/2/archival_objects/11515",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Brace, Lloyd D.",
+            "record_uri": "/repositories/2/archival_objects/11516",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bradfield, Richard",
+            "record_uri": "/repositories/2/archival_objects/11517",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bronk, Detlev",
+            "record_uri": "/repositories/2/archival_objects/11518",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Brumpt, Emil",
+            "record_uri": "/repositories/2/archival_objects/11519",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Buchanan, Norman S.",
+            "record_uri": "/repositories/2/archival_objects/11520",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bugher, John C.",
+            "record_uri": "/repositories/2/archival_objects/11521",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Bunche, Ralph",
+            "record_uri": "/repositories/2/archival_objects/11522",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Burden, Robert P.",
+            "record_uri": "/repositories/2/archival_objects/11523",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Buttrick, Wallace",
+            "record_uri": "/repositories/2/archival_objects/11524",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - C",
+            "record_uri": "/repositories/2/archival_objects/11525",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Calenberg, Constance",
+            "record_uri": "/repositories/2/archival_objects/11526",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Calkins, Robert D.",
+            "record_uri": "/repositories/2/archival_objects/11527",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Camargo, Luis Patino",
+            "record_uri": "/repositories/2/archival_objects/11528",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Carr, Henry P.",
+            "record_uri": "/repositories/2/archival_objects/11529",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Carter, Henry Rose",
+            "record_uri": "/repositories/2/archival_objects/11530",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Castro, Aloysio",
+            "record_uri": "/repositories/2/archival_objects/11531",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Causey, Calista E.",
+            "record_uri": "/repositories/2/archival_objects/11532",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Causey, Ottis R.",
+            "record_uri": "/repositories/2/archival_objects/11533",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chagas, Carlos Pinheiro",
+            "record_uri": "/repositories/2/archival_objects/11534",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chandler, Robert F.",
+            "record_uri": "/repositories/2/archival_objects/11535",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chang, C. W.",
+            "record_uri": "/repositories/2/archival_objects/11536",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chao, W. J.",
+            "record_uri": "/repositories/2/archival_objects/11537",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chesley, Albert J.",
+            "record_uri": "/repositories/2/archival_objects/11538",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Chuian, S. Hsipo",
+            "record_uri": "/repositories/2/archival_objects/11539",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Clark, James Arthur",
+            "record_uri": "/repositories/2/archival_objects/11540",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Cobb, William",
+            "record_uri": "/repositories/2/archival_objects/11541",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Coggeshall, Lowell T.",
+            "record_uri": "/repositories/2/archival_objects/11542",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Cole, Charles W.",
+            "record_uri": "/repositories/2/archival_objects/11543",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Cole, Rufus",
+            "record_uri": "/repositories/2/archival_objects/11544",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Coleman, James S.",
+            "record_uri": "/repositories/2/archival_objects/11545",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Colwell, H. S.",
+            "record_uri": "/repositories/2/archival_objects/11546",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Compton, Boyd",
+            "record_uri": "/repositories/2/archival_objects/11547",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Connor, Michael E.",
+            "record_uri": "/repositories/2/archival_objects/11548",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Covington, Platt Walker",
+            "record_uri": "/repositories/2/archival_objects/11549",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Crawford, Porter J.",
+            "record_uri": "/repositories/2/archival_objects/11550",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Crawford, Robert W.",
+            "record_uri": "/repositories/2/archival_objects/11551",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Crowell, F. Elisabeth",
+            "record_uri": "/repositories/2/archival_objects/11552",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Cross, Howard B.",
+            "record_uri": "/repositories/2/archival_objects/11553",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Crowder, Loy V.",
+            "record_uri": "/repositories/2/archival_objects/11554",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Cummings, Mrs. Ralph",
+            "record_uri": "/repositories/2/archival_objects/11555",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Curtis, General Newton Martin",
+            "record_uri": "/repositories/2/archival_objects/11556",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - D",
+            "record_uri": "/repositories/2/archival_objects/11557",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dana, Doris",
+            "record_uri": "/repositories/2/archival_objects/11558",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Darling, Samuel Taylor",
+            "record_uri": "/repositories/2/archival_objects/11559",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Devinney, Leland C.",
+            "record_uri": "/repositories/2/archival_objects/11560",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - D'Arms, Edward F.",
+            "record_uri": "/repositories/2/archival_objects/11561",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Davis, Jackson",
+            "record_uri": "/repositories/2/archival_objects/11562",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Davis, Jackson",
+            "record_uri": "/repositories/2/archival_objects/992923",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Davis, Katherine Bement",
+            "record_uri": "/repositories/2/archival_objects/11563",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Davis, Nelson C.",
+            "record_uri": "/repositories/2/archival_objects/11564",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Day, Edmund E.",
+            "record_uri": "/repositories/2/archival_objects/11565",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Day, Edmund E.",
+            "record_uri": "/repositories/2/archival_objects/992928",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Debevoise, Thomas M.",
+            "record_uri": "/repositories/2/archival_objects/992929",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dillard, James H.",
+            "record_uri": "/repositories/2/archival_objects/11566",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dillon, Douglas",
+            "record_uri": "/repositories/2/archival_objects/11567",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dinning, James S.",
+            "record_uri": "/repositories/2/archival_objects/11568",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Docherty, John F.",
+            "record_uri": "/repositories/2/archival_objects/11569",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dochez, Alphonse R.",
+            "record_uri": "/repositories/2/archival_objects/11570",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Doornick, John",
+            "record_uri": "/repositories/2/archival_objects/11571",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Downs, Wilbur G.",
+            "record_uri": "/repositories/2/archival_objects/11572",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Drensky, Kosta",
+            "record_uri": "/repositories/2/archival_objects/11573",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dublin, Louis I.",
+            "record_uri": "/repositories/2/archival_objects/11574",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dulles, John Foster",
+            "record_uri": "/repositories/2/archival_objects/11575",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Dunlap, Dr.",
+            "record_uri": "/repositories/2/archival_objects/11576",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Durck, H.",
+            "record_uri": "/repositories/2/archival_objects/11577",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - E",
+            "record_uri": "/repositories/2/archival_objects/11578",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Earle, Walter C.",
+            "record_uri": "/repositories/2/archival_objects/11579",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Eastman, Dr.",
+            "record_uri": "/repositories/2/archival_objects/11580",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Ebert, Robert Higgins",
+            "record_uri": "/repositories/2/archival_objects/11581",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Edsall, David L.",
+            "record_uri": "/repositories/2/archival_objects/11582",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Eliot, Charles W.",
+            "record_uri": "/repositories/2/archival_objects/11583",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Ellison, Ralph",
+            "record_uri": "/repositories/2/archival_objects/11584",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Elmendorf, John B.",
+            "record_uri": "/repositories/2/archival_objects/11585",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Embree, Edwin R.",
+            "record_uri": "/repositories/2/archival_objects/11586",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Epstein, Miss",
+            "record_uri": "/repositories/2/archival_objects/11587",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Estevez, Carlos",
+            "record_uri": "/repositories/2/archival_objects/11588",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Evans, Roger F.",
+            "record_uri": "/repositories/2/archival_objects/11589",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - F",
+            "record_uri": "/repositories/2/archival_objects/11590",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fahs, Charles",
+            "record_uri": "/repositories/2/archival_objects/11591",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fahs, Charles",
+            "record_uri": "/repositories/2/archival_objects/992934",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Favrot, Leo M.",
+            "record_uri": "/repositories/2/archival_objects/11592",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Ferrell, John A.",
+            "record_uri": "/repositories/2/archival_objects/11593",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fitzgerald, Alice",
+            "record_uri": "/repositories/2/archival_objects/11594",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fitzgerald, John G.",
+            "record_uri": "/repositories/2/archival_objects/11595",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Flexner, Abraham",
+            "record_uri": "/repositories/2/archival_objects/11596",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Flexner, Simon",
+            "record_uri": "/repositories/2/archival_objects/11597",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fosdick, Raymond B.",
+            "record_uri": "/repositories/2/archival_objects/11598",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fosdick, Raymond B.",
+            "record_uri": "/repositories/2/archival_objects/992938",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Forsythe, W. A.",
+            "record_uri": "/repositories/2/archival_objects/11599",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Freeman, Ruth B.",
+            "record_uri": "/repositories/2/archival_objects/11600",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Frenette, E.",
+            "record_uri": "/repositories/2/archival_objects/11601",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Freund, Gerald",
+            "record_uri": "/repositories/2/archival_objects/11602",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Frissell, Hollis B.",
+            "record_uri": "/repositories/2/archival_objects/11603",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Frost, Wade Hampton",
+            "record_uri": "/repositories/2/archival_objects/11604",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Fujinami, Akira",
+            "record_uri": "/repositories/2/archival_objects/11605",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - G",
+            "record_uri": "/repositories/2/archival_objects/11606",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gant, H. A.",
+            "record_uri": "/repositories/2/archival_objects/11607",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Germain, S. E.",
+            "record_uri": "/repositories/2/archival_objects/11608",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gates, Frederick T.",
+            "record_uri": "/repositories/2/archival_objects/11609",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gibler, John W.",
+            "record_uri": "/repositories/2/archival_objects/11610",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gilman, Daniel C.",
+            "record_uri": "/repositories/2/archival_objects/11611",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gilmore, Raymond M.",
+            "record_uri": "/repositories/2/archival_objects/11612",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gilpatric, Chadbourne",
+            "record_uri": "/repositories/2/archival_objects/11613",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gimaschewa, S. T. and Family",
+            "record_uri": "/repositories/2/archival_objects/11614",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gipson, Lawrence",
+            "record_uri": "/repositories/2/archival_objects/11615",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Goodpasture, Ernest W.",
+            "record_uri": "/repositories/2/archival_objects/11616",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gorgas, William C.",
+            "record_uri": "/repositories/2/archival_objects/11617",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Grant, John B.",
+            "record_uri": "/repositories/2/archival_objects/11618",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Grant, Ulysses J.",
+            "record_uri": "/repositories/2/archival_objects/11619",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Grassi, Battista",
+            "record_uri": "/repositories/2/archival_objects/11620",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Greene, Jerome D.",
+            "record_uri": "/repositories/2/archival_objects/11621",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Greene, Roger S.",
+            "record_uri": "/repositories/2/archival_objects/11622",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Greenfeldt, John H.",
+            "record_uri": "/repositories/2/archival_objects/11623",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gregg, Alan",
+            "record_uri": "/repositories/2/archival_objects/11624",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gregg, Lucien",
+            "record_uri": "/repositories/2/archival_objects/11625",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Greves, John H.",
+            "record_uri": "/repositories/2/archival_objects/11626",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Gunn, Selskar Michael",
+            "record_uri": "/repositories/2/archival_objects/11627",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - H",
+            "record_uri": "/repositories/2/archival_objects/11628",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hackett, Lewis W.",
+            "record_uri": "/repositories/2/archival_objects/11629",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Halverson, Wilton L.",
+            "record_uri": "/repositories/2/archival_objects/11630",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hanna, Hugh",
+            "record_uri": "/repositories/2/archival_objects/11631",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hanson, Haldore",
+            "record_uri": "/repositories/2/archival_objects/11632",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hardin, Charles M.",
+            "record_uri": "/repositories/2/archival_objects/11633",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harper, William Rainey",
+            "record_uri": "/repositories/2/archival_objects/11634",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/11635",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/11636",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/11637",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/11638",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/11639",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George",
+            "record_uri": "/repositories/2/archival_objects/992942",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrar, J. George - Retirement Dinner",
+            "record_uri": "/repositories/2/archival_objects/11640",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Harrison, John P.",
+            "record_uri": "/repositories/2/archival_objects/11641",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hata, Sahachiro",
+            "record_uri": "/repositories/2/archival_objects/11642",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Havighurst, Robert J.",
+            "record_uri": "/repositories/2/archival_objects/11643",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hayes, Guy S.",
+            "record_uri": "/repositories/2/archival_objects/11644",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hayne, Theodore B.",
+            "record_uri": "/repositories/2/archival_objects/11645",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Heck, William H.",
+            "record_uri": "/repositories/2/archival_objects/11646",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Heger, Paul",
+            "record_uri": "/repositories/2/archival_objects/11647",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Heins, William A.",
+            "record_uri": "/repositories/2/archival_objects/11648",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Heiser, Victor C.",
+            "record_uri": "/repositories/2/archival_objects/11649",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hepburn, A. Barton",
+            "record_uri": "/repositories/2/archival_objects/11650",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hesburgh, Theodore M.",
+            "record_uri": "/repositories/2/archival_objects/11651",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hicks, Clarence J.",
+            "record_uri": "/repositories/2/archival_objects/11652",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hill, Rolla B.",
+            "record_uri": "/repositories/2/archival_objects/11653",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hirzel, William",
+            "record_uri": "/repositories/2/archival_objects/11654",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hopkins, Ernest Martin",
+            "record_uri": "/repositories/2/archival_objects/11655",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Horsfall, Frank L.",
+            "record_uri": "/repositories/2/archival_objects/11656",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - House, Leland R. and Mrs.",
+            "record_uri": "/repositories/2/archival_objects/11657",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Howard, Hector Haldbrook",
+            "record_uri": "/repositories/2/archival_objects/11658",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hsu, Shih-ch'ang",
+            "record_uri": "/repositories/2/archival_objects/11659",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hudson, Paul",
+            "record_uri": "/repositories/2/archival_objects/11660",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hughes, Charles Evans",
+            "record_uri": "/repositories/2/archival_objects/11661",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hulka, Jaroslav",
+            "record_uri": "/repositories/2/archival_objects/11662",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Hydrick, John L.",
+            "record_uri": "/repositories/2/archival_objects/11663",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - I",
+            "record_uri": "/repositories/2/archival_objects/11664",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Irwin, John N., II",
+            "record_uri": "/repositories/2/archival_objects/11665",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - J",
+            "record_uri": "/repositories/2/archival_objects/11666",
+            "level": "file"
+        },
+        {
+            "title": "Portraits - Jacocks, William P.",
+            "record_uri": "/repositories/2/archival_objects/11667",
+            "level": "file"
+        }
+    ],
+    "language": "eng"
+}

@@ -333,5 +333,34 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/597/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "General Office Files, 1943-1965",
+            "id": 366980,
+            "record_uri": "/repositories/2/archival_objects/366980",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Experimental Camp Files, 1943-1965",
+            "id": 367683,
+            "record_uri": "/repositories/2/archival_objects/367683",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

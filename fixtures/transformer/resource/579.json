@@ -385,5 +385,47 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/579/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Vice Presidential Confirmation Hearings, 1974",
+            "id": 320746,
+            "record_uri": "/repositories/2/archival_objects/320746",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Office of the Vice President, 1975-1977",
+            "id": 321078,
+            "record_uri": "/repositories/2/archival_objects/321078",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Sound Recordings, 1974-1977",
+            "id": 321164,
+            "record_uri": "/repositories/2/archival_objects/321164",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

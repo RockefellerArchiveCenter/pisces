@@ -365,5 +365,46 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/551/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Interviews with Nelson A. Rockefeller, 1977",
+            "id": 298842,
+            "record_uri": "/repositories/2/archival_objects/298842",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Interviews with NAR Associates and Family Members, 1979-1980",
+            "id": 298862,
+            "record_uri": "/repositories/2/archival_objects/298862",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Container Management",
+            "id": 1051208,
+            "record_uri": "/repositories/2/archival_objects/1051208",
+            "publish": false,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "fonds",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

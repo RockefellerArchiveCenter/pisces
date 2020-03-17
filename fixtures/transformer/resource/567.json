@@ -362,5 +362,125 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/567/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Public Relations File",
+            "id": 305800,
+            "record_uri": "/repositories/2/archival_objects/305800",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Latin American Mission, 1969",
+            "id": 307081,
+            "record_uri": "/repositories/2/archival_objects/307081",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Agency and Commission Reports",
+            "id": 307105,
+            "record_uri": "/repositories/2/archival_objects/307105",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Positions and Policy Papers",
+            "id": 307519,
+            "record_uri": "/repositories/2/archival_objects/307519",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Political and Election Analysis Files",
+            "id": 307528,
+            "record_uri": "/repositories/2/archival_objects/307528",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "County Visits",
+            "id": 307551,
+            "record_uri": "/repositories/2/archival_objects/307551",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "6",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Recommendations to Fill U.S. Senate Seat Following Robert F. Kennedy's Assassination, 1968",
+            "id": 307593,
+            "record_uri": "/repositories/2/archival_objects/307593",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "7",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Miscellaneous",
+            "id": 307649,
+            "record_uri": "/repositories/2/archival_objects/307649",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "8",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Statements and Press Releases",
+            "id": 307679,
+            "record_uri": "/repositories/2/archival_objects/307679",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "9",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -376,5 +376,47 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/568/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Books and Articles, 1960-1971",
+            "id": 307750,
+            "record_uri": "/repositories/2/archival_objects/307750",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Speeches, 1960-1964",
+            "id": 307809,
+            "record_uri": "/repositories/2/archival_objects/307809",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Campaign Material, 1958-1972",
+            "id": 307859,
+            "record_uri": "/repositories/2/archival_objects/307859",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -173,5 +173,20 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/643/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Program and Policy",
+            "id": 469353,
+            "record_uri": "/repositories/2/archival_objects/469353",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

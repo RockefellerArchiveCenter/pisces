@@ -260,5 +260,21 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/625/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Fellowship recorder cards, 1917-1970s",
+            "id": 423303,
+            "record_uri": "/repositories/2/archival_objects/423303",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -275,5 +275,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/670/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Rockefeller Foundation records, projects (A94), 1966-1994",
+            "id": 484806,
+            "record_uri": "/repositories/2/archival_objects/484806",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.20",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A95), 1984-1994",
+            "id": 486644,
+            "record_uri": "/repositories/2/archival_objects/486644",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.21",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A96), 1965-1996",
+            "id": 486725,
+            "record_uri": "/repositories/2/archival_objects/486725",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.22",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation records, projects (A97), 1966, 1969-1997, 2004",
+            "id": 487168,
+            "record_uri": "/repositories/2/archival_objects/487168",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1.23",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

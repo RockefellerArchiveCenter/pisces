@@ -390,5 +390,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/573/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Correspondence, 1967-1970",
+            "id": 315883,
+            "record_uri": "/repositories/2/archival_objects/315883",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Kissinger Reports on World Affairs and Countries, 1967-1969",
+            "id": 315958,
+            "record_uri": "/repositories/2/archival_objects/315958",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Issues and People, 1966-1973",
+            "id": 316022,
+            "record_uri": "/repositories/2/archival_objects/316022",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Campaign 1968, 1968",
+            "id": 316152,
+            "record_uri": "/repositories/2/archival_objects/316152",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -245,5 +245,20 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/1008/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Bibliography, 1958-1959",
+            "id": 559590,
+            "record_uri": "/repositories/2/archival_objects/559590",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": false,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

@@ -376,5 +376,86 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/561/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Trips, 1973-1974",
+            "id": 301538,
+            "record_uri": "/repositories/2/archival_objects/301538",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Schedules, 1969-1975",
+            "id": 301591,
+            "record_uri": "/repositories/2/archival_objects/301591",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Correspondence Files, 1968-1974",
+            "id": 301654,
+            "record_uri": "/repositories/2/archival_objects/301654",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Letters of Support Regarding the Vice Presidential Nomination, 1974",
+            "id": 301767,
+            "record_uri": "/repositories/2/archival_objects/301767",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Subject Files of Kathy Huldrum and Nancy Towell, 1970-1974",
+            "id": 301790,
+            "record_uri": "/repositories/2/archival_objects/301790",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Invitations, 1972-1974",
+            "id": 302104,
+            "record_uri": "/repositories/2/archival_objects/302104",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "6",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

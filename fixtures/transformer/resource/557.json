@@ -366,5 +366,60 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/557/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Robert MacCrate, Bulk, 1959-1962 1958-1966, bulk 1959-1962",
+            "id": 299698,
+            "record_uri": "/repositories/2/archival_objects/299698",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Sol Neil Corbin, 1958-1965",
+            "id": 299734,
+            "record_uri": "/repositories/2/archival_objects/299734",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Robert R. Douglass, 1959-1972",
+            "id": 299783,
+            "record_uri": "/repositories/2/archival_objects/299783",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Michael Whiteman, 1963-1974",
+            "id": 300497,
+            "record_uri": "/repositories/2/archival_objects/300497",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

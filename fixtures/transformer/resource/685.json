@@ -200,5 +200,86 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/685/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Laboratory Records of West African Yellow Fever Commission",
+            "id": 503968,
+            "record_uri": "/repositories/2/archival_objects/503968",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "International Health Board/Division (IHB/D)",
+            "id": 503980,
+            "record_uri": "/repositories/2/archival_objects/503980",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation Health Commission",
+            "id": 504112,
+            "record_uri": "/repositories/2/archival_objects/504112",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Field Staff - Collected papers",
+            "id": 504115,
+            "record_uri": "/repositories/2/archival_objects/504115",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation War Relief Commission",
+            "id": 504188,
+            "record_uri": "/repositories/2/archival_objects/504188",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Rockefeller Foundation Program Reports",
+            "id": 504190,
+            "record_uri": "/repositories/2/archival_objects/504190",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "6",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

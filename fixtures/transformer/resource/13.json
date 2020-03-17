@@ -1,0 +1,462 @@
+{
+    "lock_version": 43,
+    "title": "Peter F. Geithner papers",
+    "publish": true,
+    "restrictions": false,
+    "ead_id": "FA1408.xml",
+    "finding_aid_title": "A Guide to the Peter F. Geithner papers\n",
+    "finding_aid_filing_title": "Geithner (Peter F.) papers",
+    "finding_aid_language": "English",
+    "created_by": "admin",
+    "last_modified_by": "battalb",
+    "create_time": "2014-12-06T03:28:13Z",
+    "system_mtime": "2019-10-31T16:53:09Z",
+    "user_mtime": "2019-10-31T16:53:09Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "id_0": "FA1408",
+    "language": "eng",
+    "level": "collection",
+    "finding_aid_description_rules": "dacs",
+    "jsonmodel_type": "resource",
+    "external_ids": [
+        {
+            "external_id": "2026",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-31T16:53:09Z",
+            "system_mtime": "2019-10-31T16:53:09Z",
+            "user_mtime": "2019-10-31T16:53:09Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [
+        {
+            "ref": "/subjects/7740"
+        },
+        {
+            "ref": "/subjects/7970"
+        },
+        {
+            "ref": "/subjects/24392"
+        },
+        {
+            "ref": "/subjects/3214"
+        },
+        {
+            "ref": "/subjects/369"
+        },
+        {
+            "ref": "/subjects/5767"
+        },
+        {
+            "ref": "/subjects/17065"
+        },
+        {
+            "ref": "/subjects/1229"
+        },
+        {
+            "ref": "/subjects/1155"
+        },
+        {
+            "ref": "/subjects/17069"
+        },
+        {
+            "ref": "/subjects/14507"
+        },
+        {
+            "ref": "/subjects/26736"
+        },
+        {
+            "ref": "/subjects/47843"
+        },
+        {
+            "ref": "/subjects/342"
+        },
+        {
+            "ref": "/subjects/2569"
+        },
+        {
+            "ref": "/subjects/795"
+        },
+        {
+            "ref": "/subjects/135"
+        },
+        {
+            "ref": "/subjects/9259"
+        },
+        {
+            "ref": "/subjects/31194"
+        },
+        {
+            "ref": "/subjects/25630"
+        },
+        {
+            "ref": "/subjects/351"
+        },
+        {
+            "ref": "/subjects/2184"
+        },
+        {
+            "ref": "/subjects/859"
+        },
+        {
+            "ref": "/subjects/1138"
+        },
+        {
+            "ref": "/subjects/28077"
+        },
+        {
+            "ref": "/subjects/1243"
+        },
+        {
+            "ref": "/subjects/1537"
+        },
+        {
+            "ref": "/subjects/47775"
+        },
+        {
+            "ref": "/subjects/1449"
+        },
+        {
+            "ref": "/subjects/5670"
+        },
+        {
+            "ref": "/subjects/577"
+        },
+        {
+            "ref": "/subjects/26743"
+        },
+        {
+            "ref": "/subjects/7524"
+        },
+        {
+            "ref": "/subjects/19880"
+        },
+        {
+            "ref": "/subjects/1268"
+        },
+        {
+            "ref": "/subjects/139"
+        },
+        {
+            "ref": "/subjects/1635"
+        },
+        {
+            "ref": "/subjects/17010"
+        },
+        {
+            "ref": "/subjects/17053"
+        },
+        {
+            "ref": "/subjects/142"
+        },
+        {
+            "ref": "/subjects/3291"
+        },
+        {
+            "ref": "/subjects/31166"
+        },
+        {
+            "ref": "/subjects/942"
+        },
+        {
+            "ref": "/subjects/1165"
+        },
+        {
+            "ref": "/subjects/1245"
+        },
+        {
+            "ref": "/subjects/17030"
+        },
+        {
+            "ref": "/subjects/46819"
+        },
+        {
+            "ref": "/subjects/1469"
+        },
+        {
+            "ref": "/subjects/20375"
+        },
+        {
+            "ref": "/subjects/20429"
+        },
+        {
+            "ref": "/subjects/22"
+        },
+        {
+            "ref": "/subjects/2551"
+        },
+        {
+            "ref": "/subjects/47746"
+        },
+        {
+            "ref": "/subjects/11820"
+        },
+        {
+            "ref": "/subjects/1137"
+        },
+        {
+            "ref": "/subjects/1459"
+        },
+        {
+            "ref": "/subjects/7541"
+        },
+        {
+            "ref": "/subjects/8007"
+        },
+        {
+            "ref": "/subjects/20287"
+        },
+        {
+            "ref": "/subjects/752"
+        },
+        {
+            "ref": "/subjects/664"
+        },
+        {
+            "ref": "/subjects/17066"
+        },
+        {
+            "ref": "/subjects/2574"
+        },
+        {
+            "ref": "/subjects/2737"
+        },
+        {
+            "ref": "/subjects/37919"
+        },
+        {
+            "ref": "/subjects/16700"
+        },
+        {
+            "ref": "/subjects/1145"
+        }
+    ],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "55.77",
+            "container_summary": "123 LTR size Hollinger boxes, 3 Half-LTR size Hollinger boxes, and 18 LGL size Hollinger boxes",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-31T16:53:09Z",
+            "system_mtime": "2019-10-31T16:53:09Z",
+            "user_mtime": "2019-10-31T16:53:09Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1951-2011",
+            "begin": "1951",
+            "end": "2011",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-31T16:53:09Z",
+            "system_mtime": "2019-10-31T16:53:09Z",
+            "user_mtime": "2019-10-31T16:53:09Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/people/11810"
+        },
+        {
+            "role": "creator",
+            "relator": "ctb",
+            "terms": [],
+            "ref": "/agents/corporate_entities/28901"
+        }
+    ],
+    "revision_statements": [],
+    "instances": [],
+    "deaccessions": [],
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/3057"
+        }
+    ],
+    "classifications": [],
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "f5427930361921cac16281903782b243",
+            "type": "scopecontent",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "This collection holds the papers of Peter F. Geithner who served as Regional Director of Asia Programs for the Ford Foundation between 1990 and 1996. It contains both professional and personal material, and although it chiefly consists of records created during the course of Geithner\u2019s long career in philanthropy, it was maintained by Geithner as an individual person and stored at his home in Orleans, Massachusetts. See the Other Finding Aids note to locate Ford Foundation records created by Geithner during his time as Regional Director of Asia Programs.\n\n\nThe collection consists of six series and seven subseries that correspond to the different organizational systems Geithner employed to arrange his papers. Although the creation dates extend from 1951 when Geithner was a student at Dartmouth College to 2011, the bulk of the collection originates from Geithner\u2019s time as Ford\u2019s Regional Director of Asia Programs as well as from the period following his retirement from Ford in 1996. Furthermore, there is far more professional material than personal material in the collection. It should be noted that a significant amount of the collection\u2019s content was impacted by mold growth and removed for remediation treatment. Files with earlier creation dates and files containing personal material were among those contaminated with mold.\n\n\nThe majority of the collection\u2019s material is encompassed by the first two series. These series are based on the two main arrangement schemes Geithner used to organize his records. Documents that were found in a set of boxes labeled alphabetically, A-Z comprise Series 1, and documents that were found in a set of boxes labeled numerically, 1-14D comprise Series 2. The broad scopes of these two series are represented within the titles created for them during processing. These titles are Series 1. Professional and personal files, first run and Series 2. Professional and personal files, second run. Although the later four series in the collection have more clearly defined focuses and/or internal arrangements, more substantial amounts of records on most of the topics, individuals, and organizations represented within those series are likely to be found in Series 1 and 2.\n\n\nFiles that document Geithner\u2019s professional activities mostly originate from four sources: 1) His career at Ford; 2) His advisor positions at the Harvard University Asia Center and the Japan Foundation Center for Global Partnership (CGP); 3) His consultancy appointments with Ford, the Asia Pacific Philanthropy Consortium (APPC), the Rockefeller Foundation, the Sasakawa Peace Foundation (SPF), and the China Medical Board (CMB); and 4) His board and committee memberships with organizations like the National Committee on U.S.-China Relations (NCUSCR), the Institute of Current World Affairs (ICWA), the University of Pennsylvania Center for the Advanced Study of India (CASI), and the Harvard-Yenching Institute (HYI). Through his work with these organizations and his other professional contacts, he often collaborated with, served, or came into contact with a number of other civil society, research, and international cooperation groups. Some of these organizations include the Japan Center for International Cooperation (JCIE), the Commission on Human Security (CHS), the Asia Society, the Asia Foundation, the Aspen Institute, the Harvard University Ash Center for Democratic Governance and Innovation, the Council on Foundations, the American Indian Foundation (AIF), the City University of New York (CUNY) Center for Philanthropy and Civil Society, and the Asia Development Research Forum (ADRF). \n\n\nPersonal materials within the collection chiefly consist of Geithner\u2019s correspondence with family members and friends as well as a few photographs. Some celebrations and family vacation plans are documented within the files containing personal items.\n\n\nThe most prevalent material formats found in the collection are correspondence, reports, drafts, notes, memos, conference proceedings, agendas, schedules, pamphlets, invoices and receipts, newspaper clippings, cards, maps, and publications. Geithner also created specific files to document his business trips, and they all include copies of the travel reports he would write to log his activities. Additionally, there are several photographs and digital media items in the collection.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "d7afa420086c37934ef5d19ce0854f4b",
+            "type": "accessrestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "f79e8ab98507c133e4113bcaf2c306ea",
+            "type": "prefercite",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "97c3cfdc4cba0c732727a3e0e6dbf675",
+            "type": "userestrict",
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use\". If the RAC does not hold copyright for an archival collection, or items within a collection, it is the users responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "72ce50daf989a6fa9b88ac32abb249c8",
+            "type": "otherfindaid",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Finding aids concerning Ford Foundation records produced by the office of Peter F. Geithner when Geithner served as Regional Director of Asia Programs:\n\n\n<extref href=\"../FA505/overview\">FA505 Ford Foundation records, Asia Programs, Regional Director, Office Files of Peter F. Geithner</extref>\n\n\n<extref href=\"../FA506/overview\">FA506 Ford Foundation records, Asia Programs, Subject Files of Peter F. Geithner</extref>\n",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "fd3bf150214351f5fb0ed5a982387859",
+            "type": "acqinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Donated to the Rockefeller Archive Center by Peter F. Geithner in 2012.",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "937e9a9858b7461c6aedbdb5cdc6a784",
+            "type": "langmaterial",
+            "content": [
+                "Materials are predominately in English. However, due to the nature of Peter F. Geithner\u2019s work in Asia, Africa, and other locations outside of the United States, there are documents in various other languages found throughout the collection. These languages include Chinese, Japanese, Vietnamese, Thai, Korean, and Hindi among others. The items in the collection that are written in these languages generally consist of conference publications and papers, promotional material for organizations in different foreign countries, and travel brochures and maps.  Oftentimes, these items include translations in one or more other languages, and English is usually one of the languages.\n\n\nTravel brochures and other types of travel guide material are not described.  Most other types of documents partially written or completely written in a language other than English are noted at the file level."
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "84f9b8433067c3d91428a529c83df351",
+            "type": "arrangement",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "The collection is arranged into six series and seven subseries.\n\n\nThe six series derive from the original systems of arrangement used to organize the collection that were discerned during acquisition, accessioning, and processing. Peter F. Geithner appears to have used several different systems and methods for organizing his personal papers. His movements between different offices and different homes and the large timespan from which the records originate may help illuminate why the papers have various arrangement schemes. Furthermore, a significant amount of material was impacted by mold growth and removed from the collection pending mold remediation. Greater insight into Geithner\u2019s organizational systems may be gained if the impacted material is treated and reintegrated into the collection.\n\n\nThe bulk of the collection\u2019s content is contained within the first two groupings of material observed within the collection. The first grouping housed the content in a set of boxes labeled alphabetically, A-Z, while the second housed the content in a set of boxes labeled numerically, 1-14D. In regards to the A-Z boxes, the alphabetical arrangement did not reflect the organization of the files within those containers. The 1-14D boxes also did not have a consistent internal organizational structure for the files it held. Both groupings contained records created during Geithner\u2019s time at the Ford Foundation as well as from after he retired from Ford. They also both contain professional and personal material, and they overlap in terms of creation dates. Within the finding aid, they are described as Series 1 and 2. Professional and personal files, first and second run. \n\n\nThe other four groupings are smaller and have more clearly defined points of focus. Original box titles, internal arrangement schemes, and varying points of origin helped identify these groupings. They are described in the finding aid as: Series 3. Ford Foundation, Vietnam and China; Series 4. Ford Foundation, Asia-Pacific regional issues; Series 5. Professional and personal files, third run; and Series 6. Ford Foundation, trips, meetings, and conferences. Series 3 was broken into two subseries during processing in order to represent its different topical groupings and Series 5 was broken into five subseries during processing in order to represent its different topical groupings and internal organizational systems.\n\n\nOriginal order was maintained as much as possible. Records were only moved in the few instances where reordering would support the original arrangement schemes implemented by Geithner. For instance, an original box of materials titled 14C was moved into the second series in order to maintain the numerical system of arrangement Geithner used for that segment of his materials. Likewise, another box of materials was relocated within the collection in order to reconstitute the subject files grouping found in Series 5. \n\n\nAlthough Geithner had created files for the majority of the documents found within the collection, there was a significant amount of loose materials in the original boxes. Files were created during processing in order to organize and properly house those records. Decisions regarding these files were based off of structural indications \u2013 uses of rubber bands or binder clips to group together items \u2013 as well as by contextual and content-centered relationships between items. \n\n\nThe collection arrangement is as follows:\n\n\nSeries 1. Professional and personal files, first run, 1963-2004 \n\n\nSeries 2. Professional and personal files, second run, 1951-2011\n\n\nSeries 3. Ford Foundation, Vietnam and China, 1973-1996\n\n\nSeries 3 Subseries 1. Ford Foundation, Vietnam, 1973-1996\n\n\nSeries 3 Subseries 2. Ford Foundation, China, 1986-1996\n\n\nSeries 4. Ford Foundation, Asia-Pacific regional issues, 1994-1999\n\n\nSeries 5. Professional and personal files, third run, 1982-2005\n\n\nSeries 5. Subseries 1. Philanthropy, 1994-2005\n\n\nSeries 5. Subseries 2. Subject files, 1982-2005\n\n\nSeries 5. Subseries 3. Correspondence with individuals, 1995-2005\n\n\nSeries 5. Subseries 4. Philanthropic organizations and research institutions, 1995-2004\n\n\nSeries 5. Subseries 5. Reports, articles, and publications, 1983-2004\n\n\nSeries 6. Ford Foundation, trips, meetings, and conferences, 1989-1997",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "6e818ad85abd033cf9ce8aa5defb6009",
+            "type": "bioghist",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Peter Franz Geithner (1932-2016) worked in the field of international philanthropy for more than 40 years. Between 1968 and 1996, he provided leadership for the Ford Foundation\u2019s program activities in Asia, becoming Ford\u2019s Regional Director of Asia Programs in 1990. After serving at Ford for almost three decades, he retired from the foundation in 1996, but remained active in philanthropic organizations and research institutions for many years after that through advisory positions, consultancy appointments, and memberships on various boards and committees. Geithner was married to Deborah Moore, and together, they had four children: Timothy, Sarah, Jonathan, and David.\n\nRaised in Philadelphia, Pennsylvania, Geithner attended Northeast High School. He graduated in 1950 and then pursued his undergraduate education at Dartmouth College. Between 1954 and 1958, he served in the U.S. Navy as a naval aviator, and he earned his master\u2019s degree from the John Hopkins University School of Advanced International Studies in 1959. Prior to his work at the Ford Foundation, Geithner had jobs at Columbia Carbon International in New York City between 1959 and 1962 and the U.S. Agency for International Development (USAID) in Zimbabwe, Zambia, and Washington D.C. between 1962 and 1968.\n\n\nGeithner began his career at Ford in 1968 as Assistant/Deputy Director for India, Nepal, and Sri Lanka. The Geithner family moved to New Delhi, India in order for him to take up the post. He held this position until 1973 when he and his family relocated to New York where he became Deputy Head, Office of Asia and Pacific. In 1976, he returned to Asia in order to serve as Ford\u2019s Representative for Southeast Asia at the Bangkok, Thailand Office. This position preceded a move back to New York in 1981 when he worked as Program Officer in Charge, Developing Countries Program. He became Ford\u2019s first representative for China in 1988 and was stationed at the foundation\u2019s new Beijing Office. He finished his career at Ford in New York as Regional Director of Asia Programs.\n\n\nFollowing his retirement from the Ford Foundation in 1996, Geithner became Advisor to the Asia Center at Harvard University. He also worked as an advisor for the Japan Center for Global Partnership (CGP) and had a succession of consulting appointments with the Asia Pacific Philanthropy Consortium (APPC), Ford, the Rockefeller Foundation, the Sasakawa Peace Foundation (SPF), and the China Medical Board (CMB). In addition, he served on boards and committees for organizations like the National Committee on U.S.-China Relations (NCUSCR), the Institute of Current World Affairs (ICWA), the University of Pennsylvania Center for the Advanced Study of India (CASI), and the Harvard-Yenching Institute (HYI). \n\n\nGeithner continued to focus on philanthropy and research related to Asia in his post-Ford career. However, he also participated in some philanthropic work related to Africa such as when he assisted the Rockefeller Foundation\u2019s Nairobi, Kenya Office.\n\n\nGeithner\u2019s work in philanthropy, international relations, and development intersected with and influenced many important historical events and movements affecting the Asia-Pacific Region such as the strengthening of diplomatic ties between the United States and countries like China and Vietnam, the international response to China following the June Fourth Incident at Tiananmen Square, China\u2019s economic development and growing place in world politics, the transfer of Hong Kong back to China, the 1997 Asian Financial Crisis, and the impact of terrorism and the War on Terror on philanthropy and international cooperation.  ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "c463a6f5abc5965ec77813ace47b28f7",
+            "type": "processinfo",
+            "subnotes": [
+                {
+                    "jsonmodel_type": "note_text",
+                    "content": "Processing Level 3: Standard Processing\n\nProcessed by Darren Young, August 2018 ",
+                    "publish": true
+                }
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/resources/13",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "collection_management": {
+        "lock_version": 0,
+        "rights_determined": false,
+        "created_by": "battalb",
+        "last_modified_by": "battalb",
+        "create_time": "2019-10-31T16:53:09Z",
+        "system_mtime": "2019-10-31T16:53:09Z",
+        "user_mtime": "2019-10-31T16:53:09Z",
+        "processing_priority": "high",
+        "processing_status": "completed",
+        "jsonmodel_type": "collection_management",
+        "external_ids": [],
+        "uri": "/repositories/2/collection_management/10424",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "parent": {
+            "ref": "/repositories/2/resources/13"
+        }
+    },
+    "tree": {
+        "ref": "/repositories/2/resources/13/tree"
+    },
+    "ancestors": [
+        {
+            "ref": "/api/components/1/",
+            "archivesspace_uri": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ]
+}

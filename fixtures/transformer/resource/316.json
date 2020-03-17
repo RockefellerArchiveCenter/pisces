@@ -298,5 +298,34 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/316/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Administration, Program and Policy",
+            "id": 116164,
+            "record_uri": "/repositories/2/archival_objects/116164",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Administration, Program and Policy",
+            "id": 117307,
+            "record_uri": "/repositories/2/archival_objects/117307",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subgrp",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

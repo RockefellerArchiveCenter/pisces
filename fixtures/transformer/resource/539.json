@@ -331,5 +331,99 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/539/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Works of Art, 1931-1946",
+            "id": 287463,
+            "record_uri": "/repositories/2/archival_objects/287463",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "NAR Artist Files, 1949-1979",
+            "id": 287470,
+            "record_uri": "/repositories/2/archival_objects/287470",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "CKU Reference Files, 1949-1979",
+            "id": 287987,
+            "record_uri": "/repositories/2/archival_objects/287987",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "3",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Collection Inventories",
+            "id": 288846,
+            "record_uri": "/repositories/2/archival_objects/288846",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "4",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Printed Material, 1935-1978",
+            "id": 289071,
+            "record_uri": "/repositories/2/archival_objects/289071",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "5",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Canceled Art Files, 1949-1979",
+            "id": 289143,
+            "record_uri": "/repositories/2/archival_objects/289143",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "6",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Kendall P. Lutkins files, 1950-1990",
+            "id": 1038681,
+            "record_uri": "/repositories/2/archival_objects/1038681",
+            "publish": false,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "7",
+            "level": "subseries",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }

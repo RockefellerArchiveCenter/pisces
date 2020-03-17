@@ -386,5 +386,4634 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/584/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Saudi Arabia Substance File, March 25-28, 1975",
+            "id": 323385,
+            "record_uri": "/repositories/2/archival_objects/323385",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Saudi Arabia Trip, March 25-28, 1975",
+            "id": 323386,
+            "record_uri": "/repositories/2/archival_objects/323386",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Republic of China, April 13-17, 1975",
+            "id": 323388,
+            "record_uri": "/repositories/2/archival_objects/323388",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "European Trip Thank-You Letters, July 1975",
+            "id": 323389,
+            "record_uri": "/repositories/2/archival_objects/323389",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice President's European Trip, June 26-July 8, 1975",
+            "id": 323391,
+            "record_uri": "/repositories/2/archival_objects/323391",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Franklin-Jefferson Exhibition in London Thank-You Letters",
+            "id": 323393,
+            "record_uri": "/repositories/2/archival_objects/323393",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Franklin-Jefferson Exhibition in London Substance File",
+            "id": 323394,
+            "record_uri": "/repositories/2/archival_objects/323394",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Franklin-Jefferson Exhibition in London, September 14-16, 1975",
+            "id": 323395,
+            "record_uri": "/repositories/2/archival_objects/323395",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Spain Substance File, November 21-27, 1975",
+            "id": 323396,
+            "record_uri": "/repositories/2/archival_objects/323396",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Around the World Trip, March 20-April 4, 1976",
+            "id": 323398,
+            "record_uri": "/repositories/2/archival_objects/323398",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Around the World Trip, March 20-April 4, 1976",
+            "id": 323399,
+            "record_uri": "/repositories/2/archival_objects/323399",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Around the World Substance File, March 20-April 4, 1976",
+            "id": 323401,
+            "record_uri": "/repositories/2/archival_objects/323401",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Overflight Messages from World Trip, March 20-April 4, 1976",
+            "id": 323403,
+            "record_uri": "/repositories/2/archival_objects/323403",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "West Germany Trip, May 13-15, 1976",
+            "id": 323405,
+            "record_uri": "/repositories/2/archival_objects/323405",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "West Germany Trip, May 13-15, 1976",
+            "id": 323406,
+            "record_uri": "/repositories/2/archival_objects/323406",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "West Germany Trip, May 13-15, 1976",
+            "id": 323407,
+            "record_uri": "/repositories/2/archival_objects/323407",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Press Comments on Germany-Italy Trip, May 13-15, 1976",
+            "id": 323410,
+            "record_uri": "/repositories/2/archival_objects/323410",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Germany-Italy Trip Substance File, May 13-15, 1976",
+            "id": 323411,
+            "record_uri": "/repositories/2/archival_objects/323411",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Italy & Germany, May 13-15, 1976",
+            "id": 323413,
+            "record_uri": "/repositories/2/archival_objects/323413",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Italy & Germany, May 13-15, 1976",
+            "id": 323414,
+            "record_uri": "/repositories/2/archival_objects/323414",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Italy & Germany Background, May 13-15, 1976",
+            "id": 323416,
+            "record_uri": "/repositories/2/archival_objects/323416",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "State Cables - London Trip, October 3-5, 1976",
+            "id": 323417,
+            "record_uri": "/repositories/2/archival_objects/323417",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "London Trip for Indian Art Exhibition, October 3-5, 1976",
+            "id": 323419,
+            "record_uri": "/repositories/2/archival_objects/323419",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vacation to Venezuela - Message List, December 26-31, 1976",
+            "id": 323421,
+            "record_uri": "/repositories/2/archival_objects/323421",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Venezuela Trip, December 26-31, 1976",
+            "id": 323422,
+            "record_uri": "/repositories/2/archival_objects/323422",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President's Foreign Intelligence Advisory Board (PFIAB) Documents - Pre-Vice Presidential, July 1974",
+            "id": 323424,
+            "record_uri": "/repositories/2/archival_objects/323424",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Tunisia, March 1976",
+            "id": 323425,
+            "record_uri": "/repositories/2/archival_objects/323425",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR Visits, March 19-April 4, 1976",
+            "id": 323426,
+            "record_uri": "/repositories/2/archival_objects/323426",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Tunisia, March 20-21, 1976",
+            "id": 323427,
+            "record_uri": "/repositories/2/archival_objects/323427",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Paris, March 21-23, 1976",
+            "id": 323429,
+            "record_uri": "/repositories/2/archival_objects/323429",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on France, March 1976",
+            "id": 323431,
+            "record_uri": "/repositories/2/archival_objects/323431",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Iran, March 1976",
+            "id": 323432,
+            "record_uri": "/repositories/2/archival_objects/323432",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Kish Island, Iran, March 23-26, 1976",
+            "id": 323433,
+            "record_uri": "/repositories/2/archival_objects/323433",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Kuala Lumpur, Malaysia, March 26-28, 1976",
+            "id": 323435,
+            "record_uri": "/repositories/2/archival_objects/323435",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Malaysia, March 1976",
+            "id": 323437,
+            "record_uri": "/repositories/2/archival_objects/323437",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Singapore, March 1976",
+            "id": 323439,
+            "record_uri": "/repositories/2/archival_objects/323439",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Singapore, March 28-29, 1976",
+            "id": 323440,
+            "record_uri": "/repositories/2/archival_objects/323440",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Bali; Visit to Tahiti, March 29 and April 2-4, 1976",
+            "id": 323442,
+            "record_uri": "/repositories/2/archival_objects/323442",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Bali, Indonesia, March 29, 1976",
+            "id": 323443,
+            "record_uri": "/repositories/2/archival_objects/323443",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memorandum to the President from Brent Scowcroft, n.d.",
+            "id": 323444,
+            "record_uri": "/repositories/2/archival_objects/323444",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Germany and United Kingdom, May-June 1975",
+            "id": 323445,
+            "record_uri": "/repositories/2/archival_objects/323445",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to United Kingdom Message File, September 1975",
+            "id": 323446,
+            "record_uri": "/repositories/2/archival_objects/323446",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Europe, July 1975",
+            "id": 323447,
+            "record_uri": "/repositories/2/archival_objects/323447",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Europe Message File, June 26-July 8, 1975",
+            "id": 323449,
+            "record_uri": "/repositories/2/archival_objects/323449",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Australia Trip, March 1976",
+            "id": 323451,
+            "record_uri": "/repositories/2/archival_objects/323451",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "New Zealand Trip, April 1-3, 1976",
+            "id": 323453,
+            "record_uri": "/repositories/2/archival_objects/323453",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Brook on New Zealand, April 1976",
+            "id": 323455,
+            "record_uri": "/repositories/2/archival_objects/323455",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Tahiti, French Polynesia, and Thailand Trip, March 25-27, 1976",
+            "id": 323456,
+            "record_uri": "/repositories/2/archival_objects/323456",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Public Statements in France and Tunisia, March 1976",
+            "id": 323458,
+            "record_uri": "/repositories/2/archival_objects/323458",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Briefing Book for Mrs. Rockefeller, Seven-Nation Trip, March-April 1976",
+            "id": 323459,
+            "record_uri": "/repositories/2/archival_objects/323459",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "VP Briefing Book on Visit to Berlin and Frankfurt, Germany, May 13-15, 1976",
+            "id": 323461,
+            "record_uri": "/repositories/2/archival_objects/323461",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Australia, March 1976",
+            "id": 323462,
+            "record_uri": "/repositories/2/archival_objects/323462",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Issues - Asian Strategy Briefing Book, 1976",
+            "id": 323463,
+            "record_uri": "/repositories/2/archival_objects/323463",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Germany, May 13-15, 1976",
+            "id": 323464,
+            "record_uri": "/repositories/2/archival_objects/323464",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Taipei Trip Message File, April 1975",
+            "id": 323465,
+            "record_uri": "/repositories/2/archival_objects/323465",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trip to Italy, May 13, 1976",
+            "id": 323466,
+            "record_uri": "/repositories/2/archival_objects/323466",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Presidential Delegation to Saudi Arabia, March 1975",
+            "id": 323467,
+            "record_uri": "/repositories/2/archival_objects/323467",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice President's Mission to Spain, November 1975",
+            "id": 323468,
+            "record_uri": "/repositories/2/archival_objects/323468",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Spain Trip Message File, November 1975",
+            "id": 323469,
+            "record_uri": "/repositories/2/archival_objects/323469",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "VP Briefing Book on Visit to London, October 1-3, 1976",
+            "id": 323470,
+            "record_uri": "/repositories/2/archival_objects/323470",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Department of State Briefing Book on Taiwan, April 1975",
+            "id": 323471,
+            "record_uri": "/repositories/2/archival_objects/323471",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Council Meetings - General, January-June 1976",
+            "id": 323472,
+            "record_uri": "/repositories/2/archival_objects/323472",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Council Meetings - General, July-December 1976",
+            "id": 323473,
+            "record_uri": "/repositories/2/archival_objects/323473",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Council Semiannual Review, January 13, 1977",
+            "id": 323474,
+            "record_uri": "/repositories/2/archival_objects/323474",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Council Meetings, 1975",
+            "id": 323475,
+            "record_uri": "/repositories/2/archival_objects/323475",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Commission on CIA Activities Within the United States, May 1975-July 1975",
+            "id": 323476,
+            "record_uri": "/repositories/2/archival_objects/323476",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Strategic Arms Limitation Talks (SALT), January 1975-August 1976",
+            "id": 323477,
+            "record_uri": "/repositories/2/archival_objects/323477",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with Foreign Dignitaries, 1975-1977",
+            "id": 323478,
+            "record_uri": "/repositories/2/archival_objects/323478",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "unspecified",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Address to Inter-American Defense College, June 10, 1976",
+            "id": 323510,
+            "record_uri": "/repositories/2/archival_objects/323510",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with Defense Department, 1975-1976",
+            "id": 323511,
+            "record_uri": "/repositories/2/archival_objects/323511",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with Defense Department, 1975-1976",
+            "id": 323512,
+            "record_uri": "/repositories/2/archival_objects/323512",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Visit to Newport News, Virginia, October 11, 1975",
+            "id": 323514,
+            "record_uri": "/repositories/2/archival_objects/323514",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Defense Department Briefings, 1975-1976",
+            "id": 323515,
+            "record_uri": "/repositories/2/archival_objects/323515",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with U.S. Officials, January-June 1976",
+            "id": 323517,
+            "record_uri": "/repositories/2/archival_objects/323517",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with U.S. Officials, July-December 1976",
+            "id": 323518,
+            "record_uri": "/repositories/2/archival_objects/323518",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with U.S. Officials, January 1977",
+            "id": 323519,
+            "record_uri": "/repositories/2/archival_objects/323519",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with U.S. Officials, July-December 1975",
+            "id": 323520,
+            "record_uri": "/repositories/2/archival_objects/323520",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with U.S. Officials, January-June 1975",
+            "id": 323521,
+            "record_uri": "/repositories/2/archival_objects/323521",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memoranda of Conversation, 1976",
+            "id": 323522,
+            "record_uri": "/repositories/2/archival_objects/323522",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memoranda of Conversation, 1976",
+            "id": 323523,
+            "record_uri": "/repositories/2/archival_objects/323523",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Captain Howe Memoranda of Conversation, 1975",
+            "id": 323524,
+            "record_uri": "/repositories/2/archival_objects/323524",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memoranda of Conversation, August 1974-April 1975",
+            "id": 323525,
+            "record_uri": "/repositories/2/archival_objects/323525",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memoranda of Conversation, May-December 1975",
+            "id": 323526,
+            "record_uri": "/repositories/2/archival_objects/323526",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Requests for Meeting with the Vice President, 1975",
+            "id": 323527,
+            "record_uri": "/repositories/2/archival_objects/323527",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Requests for Meeting with the Vice President, 1976",
+            "id": 323529,
+            "record_uri": "/repositories/2/archival_objects/323529",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Murphy Commission, 1973-1977",
+            "id": 323530,
+            "record_uri": "/repositories/2/archival_objects/323530",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "NOT USED",
+            "id": 323551,
+            "record_uri": "/repositories/2/archival_objects/323551",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Intelligence Review and Reorganization, 1975-1976",
+            "id": 323552,
+            "record_uri": "/repositories/2/archival_objects/323552",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Central Intelligence Agency (CIA), 1975-1976",
+            "id": 323553,
+            "record_uri": "/repositories/2/archival_objects/323553",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President's Foreign Intelligence Advisory Board (PFIAB), 1976",
+            "id": 323554,
+            "record_uri": "/repositories/2/archival_objects/323554",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Economic Intelligence Weekly, 1975",
+            "id": 323555,
+            "record_uri": "/repositories/2/archival_objects/323555",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pertinent National Security Developments, 1977",
+            "id": 323556,
+            "record_uri": "/repositories/2/archival_objects/323556",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pertinent National Security Developments, January-June 1976",
+            "id": 323557,
+            "record_uri": "/repositories/2/archival_objects/323557",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pertinent National Security Developments, January-June 1975",
+            "id": 323558,
+            "record_uri": "/repositories/2/archival_objects/323558",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pertinent National Security Developments, July-December 1975",
+            "id": 323559,
+            "record_uri": "/repositories/2/archival_objects/323559",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pertinent National Security Developments, July-December 1976",
+            "id": 323560,
+            "record_uri": "/repositories/2/archival_objects/323560",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Study Memoranda, 1969-1976",
+            "id": 323561,
+            "record_uri": "/repositories/2/archival_objects/323561",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Dr. Edward Teller, 1975-1976",
+            "id": 323562,
+            "record_uri": "/repositories/2/archival_objects/323562",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Council General Items, 1975-1976",
+            "id": 323563,
+            "record_uri": "/repositories/2/archival_objects/323563",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Civil Defense, 1975-1977",
+            "id": 323564,
+            "record_uri": "/repositories/2/archival_objects/323564",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "National Security Decision Memoranda, 1969, 1974-1976",
+            "id": 323565,
+            "record_uri": "/repositories/2/archival_objects/323565",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Defense General Items, 1975-1977",
+            "id": 323566,
+            "record_uri": "/repositories/2/archival_objects/323566",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Defense General Items, 1975-1977",
+            "id": 323567,
+            "record_uri": "/repositories/2/archival_objects/323567",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Strategic, 1976",
+            "id": 323568,
+            "record_uri": "/repositories/2/archival_objects/323568",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Cruise Missiles, 1976",
+            "id": 323569,
+            "record_uri": "/repositories/2/archival_objects/323569",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Mutual Balanced Force Reduction (MBFR), 1975-1976",
+            "id": 323570,
+            "record_uri": "/repositories/2/archival_objects/323570",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Oil, 1975-1976",
+            "id": 323571,
+            "record_uri": "/repositories/2/archival_objects/323571",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Organization of the Petroleum Exporting Countries (OPEC), 1975",
+            "id": 323572,
+            "record_uri": "/repositories/2/archival_objects/323572",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "U.S. Life Lines, Department of Navy Publication, 1971, 1974",
+            "id": 323573,
+            "record_uri": "/repositories/2/archival_objects/323573",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Secretary Kissinger Discussion Items, 1975",
+            "id": 323574,
+            "record_uri": "/repositories/2/archival_objects/323574",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Secretary Kissinger Miscellaneous, 1976",
+            "id": 323575,
+            "record_uri": "/repositories/2/archival_objects/323575",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Secretary Kissinger Press Conferences and Speeches, 1975",
+            "id": 323576,
+            "record_uri": "/repositories/2/archival_objects/323576",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Secretary Kissinger Press Conferences and Speeches, 1976",
+            "id": 323577,
+            "record_uri": "/repositories/2/archival_objects/323577",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Conference on Security and Cooperation in Europe (CSCE), 1975",
+            "id": 323578,
+            "record_uri": "/repositories/2/archival_objects/323578",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Detente, 1975-1976",
+            "id": 323579,
+            "record_uri": "/repositories/2/archival_objects/323579",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Law of the Sea, 1974-1975",
+            "id": 323580,
+            "record_uri": "/repositories/2/archival_objects/323580",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Threshold Nuclear Test Ban Treaty, 1975",
+            "id": 323581,
+            "record_uri": "/repositories/2/archival_objects/323581",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Raw Materials, 1975-1976",
+            "id": 323582,
+            "record_uri": "/repositories/2/archival_objects/323582",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "East-West Economics, 1975",
+            "id": 323583,
+            "record_uri": "/repositories/2/archival_objects/323583",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "International Food, 1975",
+            "id": 323584,
+            "record_uri": "/repositories/2/archival_objects/323584",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Public Opinion Polls, 1975-1976",
+            "id": 323585,
+            "record_uri": "/repositories/2/archival_objects/323585",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Terrorism, 1976-1977",
+            "id": 323586,
+            "record_uri": "/repositories/2/archival_objects/323586",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Trade, 1974-1976",
+            "id": 323587,
+            "record_uri": "/repositories/2/archival_objects/323587",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Multinational Corporations, 1976",
+            "id": 323588,
+            "record_uri": "/repositories/2/archival_objects/323588",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "United Nations, 1975-1976",
+            "id": 323589,
+            "record_uri": "/repositories/2/archival_objects/323589",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Foreign Investment in the United States, 1975",
+            "id": 323590,
+            "record_uri": "/repositories/2/archival_objects/323590",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Speeches by Heads of State and Dignitaries, 1975-1976",
+            "id": 323591,
+            "record_uri": "/repositories/2/archival_objects/323591",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Foreign Concerns About U.S. Policy, 1976",
+            "id": 323592,
+            "record_uri": "/repositories/2/archival_objects/323592",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Foreign Comments on the U.S. Election, November 1976",
+            "id": 323593,
+            "record_uri": "/repositories/2/archival_objects/323593",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Angola, 1975-1976",
+            "id": 323594,
+            "record_uri": "/repositories/2/archival_objects/323594",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Foreign Relations/Policy, 1975-1976",
+            "id": 323595,
+            "record_uri": "/repositories/2/archival_objects/323595",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "White House Fellows Foreign Trips, 1975-1976",
+            "id": 323596,
+            "record_uri": "/repositories/2/archival_objects/323596",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Africa, 1975-1976",
+            "id": 323597,
+            "record_uri": "/repositories/2/archival_objects/323597",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Asia, 1976",
+            "id": 323598,
+            "record_uri": "/repositories/2/archival_objects/323598",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Federal Republic of Germany, 1976",
+            "id": 323599,
+            "record_uri": "/repositories/2/archival_objects/323599",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Japan, 1975-1976",
+            "id": 323600,
+            "record_uri": "/repositories/2/archival_objects/323600",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Greece and Turkey, 1975-1976",
+            "id": 323601,
+            "record_uri": "/repositories/2/archival_objects/323601",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Greenland, 1975",
+            "id": 323602,
+            "record_uri": "/repositories/2/archival_objects/323602",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Iran, 1975-1976",
+            "id": 323603,
+            "record_uri": "/repositories/2/archival_objects/323603",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Israel, 1975-1976",
+            "id": 323604,
+            "record_uri": "/repositories/2/archival_objects/323604",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Italy, 1975-1976",
+            "id": 323605,
+            "record_uri": "/repositories/2/archival_objects/323605",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Malaysia, 1976",
+            "id": 323607,
+            "record_uri": "/repositories/2/archival_objects/323607",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Latin America, 1975-1976",
+            "id": 323608,
+            "record_uri": "/repositories/2/archival_objects/323608",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pakistan, 1975-1976",
+            "id": 323609,
+            "record_uri": "/repositories/2/archival_objects/323609",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "New Zealand, 1976",
+            "id": 323610,
+            "record_uri": "/repositories/2/archival_objects/323610",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Middle East, 1975-1976",
+            "id": 323611,
+            "record_uri": "/repositories/2/archival_objects/323611",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Korea, 1975",
+            "id": 323612,
+            "record_uri": "/repositories/2/archival_objects/323612",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "U.S. Strategy in Asia, 1975-1976",
+            "id": 323613,
+            "record_uri": "/repositories/2/archival_objects/323613",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Bali, 1976",
+            "id": 323614,
+            "record_uri": "/repositories/2/archival_objects/323614",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Canada, 1976",
+            "id": 323616,
+            "record_uri": "/repositories/2/archival_objects/323616",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Australia, 1975-1976",
+            "id": 323617,
+            "record_uri": "/repositories/2/archival_objects/323617",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Cambodia Crisis - \"Mayaguez\", 1975",
+            "id": 323618,
+            "record_uri": "/repositories/2/archival_objects/323618",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Caribbean, 1975-1976",
+            "id": 323619,
+            "record_uri": "/repositories/2/archival_objects/323619",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "People's Republic of China, 1975-1976",
+            "id": 323620,
+            "record_uri": "/repositories/2/archival_objects/323620",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Cyprus, 1975",
+            "id": 323621,
+            "record_uri": "/repositories/2/archival_objects/323621",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "France, 1975-1976",
+            "id": 323622,
+            "record_uri": "/repositories/2/archival_objects/323622",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Panama, 1975-1976",
+            "id": 323623,
+            "record_uri": "/repositories/2/archival_objects/323623",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Spain, 1975-1976",
+            "id": 323624,
+            "record_uri": "/repositories/2/archival_objects/323624",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Lebanon, 1975-1976",
+            "id": 323625,
+            "record_uri": "/repositories/2/archival_objects/323625",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Southeast Asia - Viet Name and Other Countries, 1975-1976",
+            "id": 323626,
+            "record_uri": "/repositories/2/archival_objects/323626",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Southeast Asia - Cambodia, 1975",
+            "id": 323627,
+            "record_uri": "/repositories/2/archival_objects/323627",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Saudi Arabia, 1974-1976",
+            "id": 323628,
+            "record_uri": "/repositories/2/archival_objects/323628",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Portugal, 1975-1976",
+            "id": 323629,
+            "record_uri": "/repositories/2/archival_objects/323629",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Critical Materials/Strategic Stockpile, 1975",
+            "id": 323630,
+            "record_uri": "/repositories/2/archival_objects/323630",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President William Tolbert of Liberia, 1976",
+            "id": 323631,
+            "record_uri": "/repositories/2/archival_objects/323631",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Singapore, 1975",
+            "id": 323632,
+            "record_uri": "/repositories/2/archival_objects/323632",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Contact with Communist Officials, 1975-1976",
+            "id": 323633,
+            "record_uri": "/repositories/2/archival_objects/323633",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Energy, 1975",
+            "id": 323634,
+            "record_uri": "/repositories/2/archival_objects/323634",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Federal Bureau of Investigation (FBI), 1976",
+            "id": 323635,
+            "record_uri": "/repositories/2/archival_objects/323635",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "DC Metro Subway Construction and Financing, 1975",
+            "id": 323636,
+            "record_uri": "/repositories/2/archival_objects/323636",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President Ford's Speeches, 1975-1976",
+            "id": 323637,
+            "record_uri": "/repositories/2/archival_objects/323637",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Science, 1975",
+            "id": 323638,
+            "record_uri": "/repositories/2/archival_objects/323638",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Steel, 1976",
+            "id": 323639,
+            "record_uri": "/repositories/2/archival_objects/323639",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Personnel - General, 1975-1976",
+            "id": 323640,
+            "record_uri": "/repositories/2/archival_objects/323640",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Frances Knight - Passport Office, 1975-1976",
+            "id": 323641,
+            "record_uri": "/repositories/2/archival_objects/323641",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Carleton Smith - Assistant to J. Paul Getty, 1975-1976",
+            "id": 323642,
+            "record_uri": "/repositories/2/archival_objects/323642",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Soviet Union, 1976",
+            "id": 323643,
+            "record_uri": "/repositories/2/archival_objects/323643",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Soviet Union, 1976-1977",
+            "id": 323644,
+            "record_uri": "/repositories/2/archival_objects/323644",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Soviet Union, 1975",
+            "id": 323645,
+            "record_uri": "/repositories/2/archival_objects/323645",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Soviet Statements, 1975",
+            "id": 323646,
+            "record_uri": "/repositories/2/archival_objects/323646",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Tunisia, 1976",
+            "id": 323647,
+            "record_uri": "/repositories/2/archival_objects/323647",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Western Europe, 1975-1976",
+            "id": 323648,
+            "record_uri": "/repositories/2/archival_objects/323648",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Yugoslavia, 1976",
+            "id": 323649,
+            "record_uri": "/repositories/2/archival_objects/323649",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Martim L. Cabral, 1975-1976",
+            "id": 323650,
+            "record_uri": "/repositories/2/archival_objects/323650",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Enzo de Chiara - Cousin of President Leone of Italy, 1975-1976",
+            "id": 323651,
+            "record_uri": "/repositories/2/archival_objects/323651",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Queen Elizabeth II's State Visit, July 6-11, 1976",
+            "id": 323653,
+            "record_uri": "/repositories/2/archival_objects/323653",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President Giscard d'Estaing's Visit to Yorktown, Virginia, May 1976",
+            "id": 323654,
+            "record_uri": "/repositories/2/archival_objects/323654",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Lord Mountbatten, 1975-1976",
+            "id": 323655,
+            "record_uri": "/repositories/2/archival_objects/323655",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with Congressional Leaders, January-September 1975",
+            "id": 323656,
+            "record_uri": "/repositories/2/archival_objects/323656",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Meetings with Congressional Leaders, October 1975-June 1976",
+            "id": 323657,
+            "record_uri": "/repositories/2/archival_objects/323657",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Travel, Miscellaneous, 1975-1977",
+            "id": 323658,
+            "record_uri": "/repositories/2/archival_objects/323658",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Input for Report to the President, January 1976",
+            "id": 323660,
+            "record_uri": "/repositories/2/archival_objects/323660",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR Remarks on the Soviet Union, May 1976",
+            "id": 323661,
+            "record_uri": "/repositories/2/archival_objects/323661",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "International Naval Review and Operation Sail, July 1976",
+            "id": 323662,
+            "record_uri": "/repositories/2/archival_objects/323662",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, January 1977",
+            "id": 323664,
+            "record_uri": "/repositories/2/archival_objects/323664",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, September-December 1976",
+            "id": 323665,
+            "record_uri": "/repositories/2/archival_objects/323665",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, May-August 1976",
+            "id": 323666,
+            "record_uri": "/repositories/2/archival_objects/323666",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, January-April 1976",
+            "id": 323667,
+            "record_uri": "/repositories/2/archival_objects/323667",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, July-December 1975",
+            "id": 323668,
+            "record_uri": "/repositories/2/archival_objects/323668",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Correspondence, January-June 1975",
+            "id": 323669,
+            "record_uri": "/repositories/2/archival_objects/323669",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR on Freedom of the Seas Speech Draft, March 1976",
+            "id": 323670,
+            "record_uri": "/repositories/2/archival_objects/323670",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Staff Organization, 1975-1976",
+            "id": 323671,
+            "record_uri": "/repositories/2/archival_objects/323671",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR Speech Drafts, February-September 1975",
+            "id": 323672,
+            "record_uri": "/repositories/2/archival_objects/323672",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "NAR Speech Drafts, November 1975, January 1976",
+            "id": 323673,
+            "record_uri": "/repositories/2/archival_objects/323673",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Q&A Following Speech by NAR to National Defense University, December 9, 1976",
+            "id": 323674,
+            "record_uri": "/repositories/2/archival_objects/323674",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "\"Donovan and the CIA: A History,\" Volume 1",
+            "id": 323675,
+            "record_uri": "/repositories/2/archival_objects/323675",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "\"Donovan and the CIA: A History,\" Volume 2",
+            "id": 323676,
+            "record_uri": "/repositories/2/archival_objects/323676",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "State Department's Consumer Conference, October 1976",
+            "id": 323677,
+            "record_uri": "/repositories/2/archival_objects/323677",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Drafts for Republican Platform, 1976",
+            "id": 323678,
+            "record_uri": "/repositories/2/archival_objects/323678",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Drafts for Republican Platform, 1976",
+            "id": 323679,
+            "record_uri": "/repositories/2/archival_objects/323679",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Mrs. Rockefeller's Trip to Finland, Soviet Union, and Norway, October 1976 (1 of 3)",
+            "id": 323680,
+            "record_uri": "/repositories/2/archival_objects/323680",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CLOSED FOLDER",
+            "id": 323681,
+            "record_uri": "/repositories/2/archival_objects/323681",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Event for Wives of Japanese Dignitaries, Hosted by Mrs. Rockefeller, July-August 1975",
+            "id": 323682,
+            "record_uri": "/repositories/2/archival_objects/323682",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CLOSED FOLDER",
+            "id": 323683,
+            "record_uri": "/repositories/2/archival_objects/323683",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CLOSED FOLDER",
+            "id": 323684,
+            "record_uri": "/repositories/2/archival_objects/323684",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice Presidential Flag and Seal, 1975-1976",
+            "id": 323685,
+            "record_uri": "/repositories/2/archival_objects/323685",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Vice President's Official Residence, 1974-1976",
+            "id": 323686,
+            "record_uri": "/repositories/2/archival_objects/323686",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Emergency Procedures Plan, 1975-1976",
+            "id": 323687,
+            "record_uri": "/repositories/2/archival_objects/323687",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Service Academy Program, 1975-1976",
+            "id": 323689,
+            "record_uri": "/repositories/2/archival_objects/323689",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Service Academy Program, 1975-1976",
+            "id": 323690,
+            "record_uri": "/repositories/2/archival_objects/323690",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, January 1977",
+            "id": 323691,
+            "record_uri": "/repositories/2/archival_objects/323691",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, September 1976",
+            "id": 323692,
+            "record_uri": "/repositories/2/archival_objects/323692",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, October 1976",
+            "id": 323693,
+            "record_uri": "/repositories/2/archival_objects/323693",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, November 1976",
+            "id": 323695,
+            "record_uri": "/repositories/2/archival_objects/323695",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, December 1976",
+            "id": 323696,
+            "record_uri": "/repositories/2/archival_objects/323696",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board and Psychological Warfare, 1953-1955",
+            "id": 323697,
+            "record_uri": "/repositories/2/archival_objects/323697",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board and Psychological Warfare, 1953-1955",
+            "id": 323698,
+            "record_uri": "/repositories/2/archival_objects/323698",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, May 1976",
+            "id": 323699,
+            "record_uri": "/repositories/2/archival_objects/323699",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, May 1976",
+            "id": 323700,
+            "record_uri": "/repositories/2/archival_objects/323700",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, June 1976",
+            "id": 323701,
+            "record_uri": "/repositories/2/archival_objects/323701",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, June 1976",
+            "id": 323702,
+            "record_uri": "/repositories/2/archival_objects/323702",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, July 1976",
+            "id": 323703,
+            "record_uri": "/repositories/2/archival_objects/323703",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, August 1976",
+            "id": 323704,
+            "record_uri": "/repositories/2/archival_objects/323704",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, July-August 1976",
+            "id": 323705,
+            "record_uri": "/repositories/2/archival_objects/323705",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File (from Folder 319), July 1976",
+            "id": 323706,
+            "record_uri": "/repositories/2/archival_objects/323706",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, March 1976",
+            "id": 323707,
+            "record_uri": "/repositories/2/archival_objects/323707",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, April 1976",
+            "id": 323708,
+            "record_uri": "/repositories/2/archival_objects/323708",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, March-April 1976",
+            "id": 323709,
+            "record_uri": "/repositories/2/archival_objects/323709",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - \"Japan: Making Foreign Economic Policy\", c. 1976",
+            "id": 323713,
+            "record_uri": "/repositories/2/archival_objects/323713",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Statement by the Director of Central Intelligence to the Commission on CIA Activities Within the United States, January 13, 1975",
+            "id": 323714,
+            "record_uri": "/repositories/2/archival_objects/323714",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report to the President on Organization and Management of the Foreign Intelligence Community, December 16, 1975",
+            "id": 323715,
+            "record_uri": "/repositories/2/archival_objects/323715",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Central Intelligence Agency (CIA), 1975-1976",
+            "id": 323716,
+            "record_uri": "/repositories/2/archival_objects/323716",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission - General, January 1975",
+            "id": 323717,
+            "record_uri": "/repositories/2/archival_objects/323717",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Policy and Legal Matters, 1975",
+            "id": 323718,
+            "record_uri": "/repositories/2/archival_objects/323718",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission - NAR's Handwritten Notes, 1975",
+            "id": 323719,
+            "record_uri": "/repositories/2/archival_objects/323719",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Security of U.S. Telecommunications, 1977",
+            "id": 323720,
+            "record_uri": "/repositories/2/archival_objects/323720",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Summary and Analysis of Colby Report, 1975",
+            "id": 323721,
+            "record_uri": "/repositories/2/archival_objects/323721",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, January 1975",
+            "id": 323722,
+            "record_uri": "/repositories/2/archival_objects/323722",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, February-March 1975",
+            "id": 323723,
+            "record_uri": "/repositories/2/archival_objects/323723",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, April 1975",
+            "id": 323724,
+            "record_uri": "/repositories/2/archival_objects/323724",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA News Clippings, January-February 1975",
+            "id": 323725,
+            "record_uri": "/repositories/2/archival_objects/323725",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA News Clippings, March 1975",
+            "id": 323726,
+            "record_uri": "/repositories/2/archival_objects/323726",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA News Clippings, April 1975",
+            "id": 323727,
+            "record_uri": "/repositories/2/archival_objects/323727",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA News Clippings, May-June 1975",
+            "id": 323728,
+            "record_uri": "/repositories/2/archival_objects/323728",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, May 1975",
+            "id": 323729,
+            "record_uri": "/repositories/2/archival_objects/323729",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, June 1975",
+            "id": 323730,
+            "record_uri": "/repositories/2/archival_objects/323730",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, July-August 1975",
+            "id": 323731,
+            "record_uri": "/repositories/2/archival_objects/323731",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Chron File, Unsorted, 1974-1976",
+            "id": 323732,
+            "record_uri": "/repositories/2/archival_objects/323732",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, January-February 1976",
+            "id": 323733,
+            "record_uri": "/repositories/2/archival_objects/323733",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, February 1976",
+            "id": 323734,
+            "record_uri": "/repositories/2/archival_objects/323734",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, January 1976",
+            "id": 323735,
+            "record_uri": "/repositories/2/archival_objects/323735",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, November-December 1975",
+            "id": 323737,
+            "record_uri": "/repositories/2/archival_objects/323737",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, December 1975",
+            "id": 323738,
+            "record_uri": "/repositories/2/archival_objects/323738",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, November 1975",
+            "id": 323739,
+            "record_uri": "/repositories/2/archival_objects/323739",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, August 1975",
+            "id": 323741,
+            "record_uri": "/repositories/2/archival_objects/323741",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, July 1975",
+            "id": 323742,
+            "record_uri": "/repositories/2/archival_objects/323742",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, Unsorted, September-October 1975",
+            "id": 323744,
+            "record_uri": "/repositories/2/archival_objects/323744",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, October 1975",
+            "id": 323745,
+            "record_uri": "/repositories/2/archival_objects/323745",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, September 1975",
+            "id": 323746,
+            "record_uri": "/repositories/2/archival_objects/323746",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, June 1975",
+            "id": 323749,
+            "record_uri": "/repositories/2/archival_objects/323749",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, May 1975",
+            "id": 323750,
+            "record_uri": "/repositories/2/archival_objects/323750",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - \"American Intelligence: A Framework for the Future\", October 13, 1975",
+            "id": 323752,
+            "record_uri": "/repositories/2/archival_objects/323752",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - \"American Intelligence: A Framework for the Future\" - Annexes, October 13, 1975",
+            "id": 323753,
+            "record_uri": "/repositories/2/archival_objects/323753",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #4, 1955, 1974",
+            "id": 323754,
+            "record_uri": "/repositories/2/archival_objects/323754",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #4, 1955, 1974",
+            "id": 323755,
+            "record_uri": "/repositories/2/archival_objects/323755",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. John Howe's Chron File, March/April 1975",
+            "id": 323756,
+            "record_uri": "/repositories/2/archival_objects/323756",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. John Howe's Chron File, April 1975",
+            "id": 323757,
+            "record_uri": "/repositories/2/archival_objects/323757",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. John Howe's Chron File, March 1975",
+            "id": 323758,
+            "record_uri": "/repositories/2/archival_objects/323758",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #2, 1955, 1976",
+            "id": 323759,
+            "record_uri": "/repositories/2/archival_objects/323759",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #2, 1955, 1976",
+            "id": 323760,
+            "record_uri": "/repositories/2/archival_objects/323760",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #3, 1955",
+            "id": 323761,
+            "record_uri": "/repositories/2/archival_objects/323761",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #3, 1955",
+            "id": 323762,
+            "record_uri": "/repositories/2/archival_objects/323762",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Pre-Vice Presidential Period - Briefing Material, 1974",
+            "id": 323763,
+            "record_uri": "/repositories/2/archival_objects/323763",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Capt. Jon Howe's Chron File, January-February 1975",
+            "id": 323764,
+            "record_uri": "/repositories/2/archival_objects/323764",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "President's Foreign Intelligence Advisory Board (PFIAB), June 1975",
+            "id": 323765,
+            "record_uri": "/repositories/2/archival_objects/323765",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Personnel Matters, 1975",
+            "id": 323766,
+            "record_uri": "/repositories/2/archival_objects/323766",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Meeting Agenda and Attendees, 1975",
+            "id": 323767,
+            "record_uri": "/repositories/2/archival_objects/323767",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission General Correspondence, 1975",
+            "id": 323768,
+            "record_uri": "/repositories/2/archival_objects/323768",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Administrative Details, 1975",
+            "id": 323769,
+            "record_uri": "/repositories/2/archival_objects/323769",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memo to President Ford from Donald Rumsfeld on CIA Director Position, June 15, 1975",
+            "id": 323770,
+            "record_uri": "/repositories/2/archival_objects/323770",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Staff Photograph, July 2, 1975",
+            "id": 323771,
+            "record_uri": "/repositories/2/archival_objects/323771",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report, 1975",
+            "id": 323772,
+            "record_uri": "/repositories/2/archival_objects/323772",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "Report of Chief of Central Intelligence Staff, 1975",
+            "id": 323791,
+            "record_uri": "/repositories/2/archival_objects/323791",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA/Office of Economic Research Intelligence Reports for Special Representative for Trade Negotiations, 1974-1975",
+            "id": 323792,
+            "record_uri": "/repositories/2/archival_objects/323792",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CLOSED FOLDER",
+            "id": 323793,
+            "record_uri": "/repositories/2/archival_objects/323793",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Ann Whitman's CIA Commission File, January-June 1975",
+            "id": 323794,
+            "record_uri": "/repositories/2/archival_objects/323794",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Issues for the Intelligence Community, ca. 1976",
+            "id": 323795,
+            "record_uri": "/repositories/2/archival_objects/323795",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Civil Defense, November 1976-January 1977",
+            "id": 323796,
+            "record_uri": "/repositories/2/archival_objects/323796",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - Psychological Aspects of U.S. Strategy, November 1955",
+            "id": 323797,
+            "record_uri": "/repositories/2/archival_objects/323797",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report of the Quantico Vulnerabilities Panel, June 1955",
+            "id": 323798,
+            "record_uri": "/repositories/2/archival_objects/323798",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "White House Press Releases on Intelligence, February 1976",
+            "id": 323799,
+            "record_uri": "/repositories/2/archival_objects/323799",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #6, 1955",
+            "id": 323800,
+            "record_uri": "/repositories/2/archival_objects/323800",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #6, 1955",
+            "id": 323801,
+            "record_uri": "/repositories/2/archival_objects/323801",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #5, 1955",
+            "id": 323802,
+            "record_uri": "/repositories/2/archival_objects/323802",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #5, 1955",
+            "id": 323803,
+            "record_uri": "/repositories/2/archival_objects/323803",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Operations Coordinating Board #5, 1955",
+            "id": 323804,
+            "record_uri": "/repositories/2/archival_objects/323804",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - \"Worldwide Communist Propaganda Activities in 1954\", February 1955",
+            "id": 323805,
+            "record_uri": "/repositories/2/archival_objects/323805",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Report - \"Worldwide Communist Propaganda Activities in 1954\", February 1955",
+            "id": 323806,
+            "record_uri": "/repositories/2/archival_objects/323806",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Jurisdiction of the CIA Commission - Sections A-E, May 1, 1975",
+            "id": 323807,
+            "record_uri": "/repositories/2/archival_objects/323807",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Jurisdiction of the CIA Commission - Sections F-J, May 1, 1975",
+            "id": 323808,
+            "record_uri": "/repositories/2/archival_objects/323808",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Memo to NAR on CIA Commission Report Problems, With Staff Annotations, May 15, 1975",
+            "id": 323809,
+            "record_uri": "/repositories/2/archival_objects/323809",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Current (possibly Peter Wallison files), 1975",
+            "id": 323810,
+            "record_uri": "/repositories/2/archival_objects/323810",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Current (possibly Peter Wallison files), 1976",
+            "id": 323811,
+            "record_uri": "/repositories/2/archival_objects/323811",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Current - Executive Order Drafts, 1975",
+            "id": 323812,
+            "record_uri": "/repositories/2/archival_objects/323812",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Follow-up (possibly Peter Wallison files), May-July 1975",
+            "id": 323813,
+            "record_uri": "/repositories/2/archival_objects/323813",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Follow-up (possibly Peter Wallison files), August-December 1975",
+            "id": 323814,
+            "record_uri": "/repositories/2/archival_objects/323814",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Follow-up (possibly Peter Wallison files), January-June 1975",
+            "id": 323815,
+            "record_uri": "/repositories/2/archival_objects/323815",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book IV - Memo on Restructuring of Intelligence Community, October 15, 1975",
+            "id": 323816,
+            "record_uri": "/repositories/2/archival_objects/323816",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Decision Book for the President on the Intelligence Community, December 1975",
+            "id": 323817,
+            "record_uri": "/repositories/2/archival_objects/323817",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Decision Book for the President on the Intelligence Community, December 1975",
+            "id": 323818,
+            "record_uri": "/repositories/2/archival_objects/323818",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book I - NAR Binder, January-June 1975",
+            "id": 323819,
+            "record_uri": "/repositories/2/archival_objects/323819",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book I - NAR Binder, January-June 1975",
+            "id": 323820,
+            "record_uri": "/repositories/2/archival_objects/323820",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book II - NAR Binder, January-June 1975",
+            "id": 323821,
+            "record_uri": "/repositories/2/archival_objects/323821",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book II - NAR Binder, January-June 1975",
+            "id": 323822,
+            "record_uri": "/repositories/2/archival_objects/323822",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book III - NAR Binder, January-August 1975",
+            "id": 323823,
+            "record_uri": "/repositories/2/archival_objects/323823",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book III - NAR Binder, January-August 1975",
+            "id": 323824,
+            "record_uri": "/repositories/2/archival_objects/323824",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book IV - NAR Binder, August 1975-March 1976",
+            "id": 323825,
+            "record_uri": "/repositories/2/archival_objects/323825",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission Report Book IV - NAR Binder, August 1975-March 1976",
+            "id": 323826,
+            "record_uri": "/repositories/2/archival_objects/323826",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "CIA Commission - Vice President's Annex, 1973-1975",
+            "id": 323827,
+            "record_uri": "/repositories/2/archival_objects/323827",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        },
+        {
+            "title": "Murphy Commission Background Volumes, 1973-1975",
+            "id": 323828,
+            "record_uri": "/repositories/2/archival_objects/323828",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "National Center for Productivity and Quality of Life, 1976",
+            "id": 323866,
+            "record_uri": "/repositories/2/archival_objects/323866",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "level": "file",
+            "instance_types": [
+                "mixed materials"
+            ],
+            "has_children": false,
+            "containers": []
+        }
+    ]
 }

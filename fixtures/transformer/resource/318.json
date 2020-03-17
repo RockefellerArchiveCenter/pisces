@@ -1,5 +1,5 @@
 {
-    "lock_version": 9,
+    "lock_version": 12,
     "title": "Rockefeller Foundation records, China Medical Board records, RG 4",
     "publish": true,
     "restrictions": false,
@@ -9,9 +9,10 @@
     "created_by": "admin",
     "last_modified_by": "battalb",
     "create_time": "2014-12-06T06:00:37Z",
-    "system_mtime": "2018-02-28T20:46:56Z",
-    "user_mtime": "2016-10-15T19:09:47Z",
+    "system_mtime": "2019-12-06T18:57:26Z",
+    "user_mtime": "2019-10-11T14:29:20Z",
     "suppressed": false,
+    "is_slug_auto": false,
     "id_0": "FA114",
     "language": "eng",
     "level": "recordgrp",
@@ -24,9 +25,9 @@
             "source": "Archivists Toolkit Database::RESOURCE",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:09:48Z",
-            "system_mtime": "2016-10-15T19:09:48Z",
-            "user_mtime": "2016-10-15T19:09:48Z",
+            "create_time": "2019-10-11T14:29:20Z",
+            "system_mtime": "2019-10-11T14:29:20Z",
+            "user_mtime": "2019-10-11T14:29:20Z",
             "jsonmodel_type": "external_id"
         }
     ],
@@ -87,13 +88,13 @@
     "extents": [
         {
             "lock_version": 0,
-            "number": "40",
-            "container_summary": "96 document cases",
+            "number": "36.64",
+            "container_summary": "96 document cases and 2 film cans.",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:09:47Z",
-            "system_mtime": "2016-10-15T19:09:47Z",
-            "user_mtime": "2016-10-15T19:09:47Z",
+            "create_time": "2019-10-11T14:29:20Z",
+            "system_mtime": "2019-10-11T14:29:20Z",
+            "user_mtime": "2019-10-11T14:29:20Z",
             "portion": "whole",
             "extent_type": "cubic_feet",
             "jsonmodel_type": "extent"
@@ -107,9 +108,9 @@
             "end": "1929",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:09:48Z",
-            "system_mtime": "2016-10-15T19:09:48Z",
-            "user_mtime": "2016-10-15T19:09:48Z",
+            "create_time": "2019-10-11T14:29:20Z",
+            "system_mtime": "2019-10-11T14:29:20Z",
+            "user_mtime": "2019-10-11T14:29:20Z",
             "date_type": "inclusive",
             "label": "creation",
             "jsonmodel_type": "date"
@@ -120,26 +121,15 @@
     "linked_agents": [
         {
             "role": "creator",
-            "relator": "ctb",
+            "relator": "aut",
             "terms": [],
-            "ref": "/agents/corporate_entities/47"
+            "ref": "/agents/corporate_entities/60"
         },
         {
             "role": "creator",
             "relator": "aut",
             "terms": [],
-            "ref": "/agents/corporate_entities/46"
-        },
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/102"
+            "ref": "/agents/corporate_entities/4884"
         }
     ],
     "revision_statements": [
@@ -148,11 +138,12 @@
             "description": "Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins. ",
             "created_by": "battalb",
             "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:09:48Z",
-            "system_mtime": "2016-10-15T19:09:48Z",
-            "user_mtime": "2016-10-15T19:09:48Z",
+            "create_time": "2019-10-11T14:29:20Z",
+            "system_mtime": "2019-10-11T20:54:09Z",
+            "user_mtime": "2019-10-11T14:29:20Z",
+            "publish": false,
             "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/2823",
+            "uri": "/revision_statement/4175",
             "repository": {
                 "ref": "/repositories/2"
             }
@@ -267,13 +258,13 @@
         "rights_determined": false,
         "created_by": "battalb",
         "last_modified_by": "battalb",
-        "create_time": "2016-10-15T19:09:48Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-15T19:09:48Z",
+        "create_time": "2019-10-11T14:29:20Z",
+        "system_mtime": "2019-10-11T14:29:20Z",
+        "user_mtime": "2019-10-11T14:29:20Z",
         "processing_status": "completed",
         "jsonmodel_type": "collection_management",
         "external_ids": [],
-        "uri": "/repositories/2/collection_management/3603",
+        "uri": "/repositories/2/collection_management/9305",
         "repository": {
             "ref": "/repositories/2"
         },
@@ -289,9 +280,9 @@
         "date_2": "2007-12-31",
         "created_by": "battalb",
         "last_modified_by": "battalb",
-        "create_time": "2016-10-15T19:09:48Z",
-        "system_mtime": "2016-10-15T19:09:48Z",
-        "user_mtime": "2016-10-15T19:09:48Z",
+        "create_time": "2019-10-11T14:29:20Z",
+        "system_mtime": "2019-10-11T14:29:20Z",
+        "user_mtime": "2019-10-11T14:29:20Z",
         "enum_1": "3 - Standard",
         "jsonmodel_type": "user_defined",
         "repository": {
@@ -300,5 +291,12 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/318/tree"
-    }
+    },
+    "ancestors": [
+        {
+            "ref": "/api/components/1/",
+            "archivesspace_uri": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ]
 }

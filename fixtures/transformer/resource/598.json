@@ -359,5 +359,34 @@
     },
     "tree": {
         "ref": "/repositories/2/resources/598/tree"
-    }
+    },
+    "ancestors": [],
+    "children": [
+        {
+            "title": "Wheat Research Center",
+            "id": 367796,
+            "record_uri": "/repositories/2/archival_objects/367796",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "1",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        },
+        {
+            "title": "General files",
+            "id": 367826,
+            "record_uri": "/repositories/2/archival_objects/367826",
+            "publish": true,
+            "suppressed": false,
+            "node_type": "archival_object",
+            "component_id": "2",
+            "level": "series",
+            "has_children": true,
+            "instance_types": [],
+            "containers": []
+        }
+    ]
 }
