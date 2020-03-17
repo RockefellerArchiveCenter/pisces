@@ -91,10 +91,24 @@ class ArchivalObjectMerger(BaseMerger):
             data["ancestors"] = resp["results"][0].get("ancestors")
         return data
 
+    def get_archival_object_collection_data(self, object):
+        data = {"children": []}
+        data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
+        resource_id = object['resource']['ref']
+        tree_node = self.aspace_helper.aspace.client.get(
+            "{}/tree/node?node_uri={}".format(resource_id, object["uri"])).json()
+        for idx in tree_node["precomputed_waypoints"].get(object["uri"]):
+            for child in tree_node["precomputed_waypoints"].get(object["uri"])[idx]:
+                data["children"].append({
+                    "title": child["title"],
+                    "record_uri": child["uri"],
+                    "level": child["level"]})
+        return data
+
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace."""
-        data = {"linked_agents": [], "children": []}
+        data = {"linked_agents": []}
         base_fields = ["dates", "language"]
         fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
         for field in fields:
@@ -102,16 +116,7 @@ class ArchivalObjectMerger(BaseMerger):
                 value = self.aspace_helper.closest_parent_value(object["uri"], field)
                 data[field] = value
         if object_type == "archival_object_collection":
-            data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
-            resource_id = object['resource']['ref']
-            tree_node = self.aspace_helper.aspace.client.get(
-                "{}/tree/node?node_uri={}".format(resource_id, object["uri"])).json()
-            for idx in tree_node["precomputed_waypoints"].get(object["uri"]):
-                for child in tree_node["precomputed_waypoints"].get(object["uri"])[idx]:
-                    data["children"].append({
-                        "title": child["title"],
-                        "record_uri": child["uri"],
-                        "level": child["level"]})
+            data.update(self.get_archival_object_collection_data(object))
         return data
 
     @silk_profile()
