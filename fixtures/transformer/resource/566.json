@@ -381,120 +381,66 @@
     "children": [
         {
             "title": "1959-1960",
-            "id": 303766,
-            "record_uri": "/repositories/2/archival_objects/303766",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/303766",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 303766
         },
         {
             "title": "1961-1962",
-            "id": 304516,
-            "record_uri": "/repositories/2/archival_objects/304516",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/304516",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 304516
         },
         {
             "title": "1963-1964",
-            "id": 304842,
-            "record_uri": "/repositories/2/archival_objects/304842",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/304842",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 304842
         },
         {
             "title": "1965, 1967",
-            "id": 305332,
-            "record_uri": "/repositories/2/archival_objects/305332",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/305332",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305332
         },
         {
             "title": "1968-1969",
-            "id": 305457,
-            "record_uri": "/repositories/2/archival_objects/305457",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/305457",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305457
         },
         {
             "title": "1970-1971",
-            "id": 305550,
-            "record_uri": "/repositories/2/archival_objects/305550",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/305550",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305550
         },
         {
             "title": "1972-1973",
-            "id": 305658,
-            "record_uri": "/repositories/2/archival_objects/305658",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "7",
+            "ref": "/repositories/2/archival_objects/305658",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305658
         },
         {
             "title": "Thank-You Letters, 1968-1972",
-            "id": 305695,
-            "record_uri": "/repositories/2/archival_objects/305695",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "8",
+            "ref": "/repositories/2/archival_objects/305695",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305695
         },
         {
             "title": "Assorted Campaign and Political Materials, 1962-1970",
-            "id": 305728,
-            "record_uri": "/repositories/2/archival_objects/305728",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "9",
+            "ref": "/repositories/2/archival_objects/305728",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305728
         }
     ]
 }

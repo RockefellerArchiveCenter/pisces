@@ -366,55 +366,31 @@
     "children": [
         {
             "title": "Administrative Correspondence, 1960-1977",
-            "id": 366848,
-            "record_uri": "/repositories/2/archival_objects/366848",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/366848",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366848
         },
         {
             "title": "Universidad del Valle--Academic Programs, 1962-1975, n.d.",
-            "id": 366885,
-            "record_uri": "/repositories/2/archival_objects/366885",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/366885",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366885
         },
         {
             "title": "Universidad del Valle--Medical Programs, 1960-1976, 1978",
-            "id": 366928,
-            "record_uri": "/repositories/2/archival_objects/366928",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/366928",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366928
         },
         {
             "title": "Cooperating Universities and Programs, 1960-1976",
-            "id": 366946,
-            "record_uri": "/repositories/2/archival_objects/366946",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/366946",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366946
         }
     ]
 }

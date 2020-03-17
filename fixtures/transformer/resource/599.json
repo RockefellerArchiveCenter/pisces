@@ -361,172 +361,94 @@
     "children": [
         {
             "title": "General Correspondence, 1958",
-            "id": 368022,
-            "record_uri": "/repositories/2/archival_objects/368022",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1958",
+            "ref": "/repositories/2/archival_objects/368022",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 368022
         },
         {
             "title": "General Correspondence, 1959",
-            "id": 369044,
-            "record_uri": "/repositories/2/archival_objects/369044",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1959",
+            "ref": "/repositories/2/archival_objects/369044",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 369044
         },
         {
             "title": "General Correspondence, 1960",
-            "id": 369997,
-            "record_uri": "/repositories/2/archival_objects/369997",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1960",
+            "ref": "/repositories/2/archival_objects/369997",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 369997
         },
         {
             "title": "General Correspondence, 1961",
-            "id": 370942,
-            "record_uri": "/repositories/2/archival_objects/370942",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1961",
+            "ref": "/repositories/2/archival_objects/370942",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 370942
         },
         {
             "title": "General Correspondence, 1962",
-            "id": 371937,
-            "record_uri": "/repositories/2/archival_objects/371937",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1962",
+            "ref": "/repositories/2/archival_objects/371937",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 371937
         },
         {
             "title": "General Correspondence, 1963",
-            "id": 373019,
-            "record_uri": "/repositories/2/archival_objects/373019",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1963",
+            "ref": "/repositories/2/archival_objects/373019",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 373019
         },
         {
             "title": "General Correspondence, 1964",
-            "id": 373996,
-            "record_uri": "/repositories/2/archival_objects/373996",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1964",
+            "ref": "/repositories/2/archival_objects/373996",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 373996
         },
         {
             "title": "General Correspondence, 1965",
-            "id": 374949,
-            "record_uri": "/repositories/2/archival_objects/374949",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1965",
+            "ref": "/repositories/2/archival_objects/374949",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 374949
         },
         {
             "title": "General Correspondence, 1966",
-            "id": 375904,
-            "record_uri": "/repositories/2/archival_objects/375904",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1966",
+            "ref": "/repositories/2/archival_objects/375904",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 375904
         },
         {
             "title": "General Correspondence, 1967",
-            "id": 376772,
-            "record_uri": "/repositories/2/archival_objects/376772",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1967",
+            "ref": "/repositories/2/archival_objects/376772",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 376772
         },
         {
             "title": "General Correspondence, 1968",
-            "id": 377711,
-            "record_uri": "/repositories/2/archival_objects/377711",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1968",
+            "ref": "/repositories/2/archival_objects/377711",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 377711
         },
         {
             "title": "General Correspondence, 1969",
-            "id": 378664,
-            "record_uri": "/repositories/2/archival_objects/378664",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1969",
+            "ref": "/repositories/2/archival_objects/378664",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 378664
         },
         {
             "title": "General Correspondence, 1970",
-            "id": 379632,
-            "record_uri": "/repositories/2/archival_objects/379632",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1970",
+            "ref": "/repositories/2/archival_objects/379632",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 379632
         }
     ]
 }

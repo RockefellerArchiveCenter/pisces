@@ -335,55 +335,31 @@
     "children": [
         {
             "title": "Rockefeller Foundation records, projects (A90), 1980-1988",
-            "id": 481541,
-            "record_uri": "/repositories/2/archival_objects/481541",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1.16",
+            "ref": "/repositories/2/archival_objects/481541",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 481541
         },
         {
             "title": "Rockefeller Foundation records, projects (A91), 1979-1989",
-            "id": 482000,
-            "record_uri": "/repositories/2/archival_objects/482000",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1.17",
+            "ref": "/repositories/2/archival_objects/482000",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 482000
         },
         {
             "title": "Rockefeller Foundation records, projects (A92), 1983-1989",
-            "id": 482785,
-            "record_uri": "/repositories/2/archival_objects/482785",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1.18",
+            "ref": "/repositories/2/archival_objects/482785",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 482785
         },
         {
             "title": "Rockefeller Foundation records, projects (A93), 1974-1993",
-            "id": 483121,
-            "record_uri": "/repositories/2/archival_objects/483121",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1.19",
+            "ref": "/repositories/2/archival_objects/483121",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 483121
         }
     ]
 }

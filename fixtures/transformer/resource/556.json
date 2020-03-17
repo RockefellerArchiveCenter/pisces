@@ -378,549 +378,276 @@
     "children": [
         {
             "title": "Affirmative Action Program (AAP) - Three Basic Plan (Buffalo, New York City, Long Island), 1970-1971",
-            "id": 299659,
-            "record_uri": "/repositories/2/archival_objects/299659",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299659",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299659
         },
         {
             "title": "Affirmative Action - Coordination, 1971",
-            "id": 299660,
-            "record_uri": "/repositories/2/archival_objects/299660",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299660",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299660
         },
         {
             "title": "Affirmative Action - Out of State - General, 1971",
-            "id": 299661,
-            "record_uri": "/repositories/2/archival_objects/299661",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299661",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299661
         },
         {
             "title": "Affirmative Action - Out of State - California, 1971",
-            "id": 299662,
-            "record_uri": "/repositories/2/archival_objects/299662",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299662",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299662
         },
         {
             "title": "Affirmative Action - Out of State - Chicago, 1971",
-            "id": 299663,
-            "record_uri": "/repositories/2/archival_objects/299663",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299663",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299663
         },
         {
             "title": "Affirmative Action - Out of State - Human Interest Regarding Employment (HIRE) (Buffalo), 1971",
-            "id": 299664,
-            "record_uri": "/repositories/2/archival_objects/299664",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299664",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299664
         },
         {
             "title": "Affirmative Action - Out of State - Illinois, 1971",
-            "id": 299665,
-            "record_uri": "/repositories/2/archival_objects/299665",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299665",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299665
         },
         {
             "title": "Affirmative Action - Out of State - Lebron, Roberto, 1971",
-            "id": 299666,
-            "record_uri": "/repositories/2/archival_objects/299666",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299666",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299666
         },
         {
             "title": "Affirmative Action - Out of State - Philadelphia, 1971",
-            "id": 299667,
-            "record_uri": "/repositories/2/archival_objects/299667",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299667",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299667
         },
         {
             "title": "Albany Plan, 1970",
-            "id": 299668,
-            "record_uri": "/repositories/2/archival_objects/299668",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299668",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299668
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), 1970",
-            "id": 299669,
-            "record_uri": "/repositories/2/archival_objects/299669",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299669",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299669
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), 1970",
-            "id": 299670,
-            "record_uri": "/repositories/2/archival_objects/299670",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299670",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299670
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), January 1971",
-            "id": 299671,
-            "record_uri": "/repositories/2/archival_objects/299671",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299671",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299671
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), February 1971",
-            "id": 299672,
-            "record_uri": "/repositories/2/archival_objects/299672",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299672",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299672
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), March 1971",
-            "id": 299673,
-            "record_uri": "/repositories/2/archival_objects/299673",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299673",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299673
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), April 1971",
-            "id": 299674,
-            "record_uri": "/repositories/2/archival_objects/299674",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299674",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299674
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), May 1971",
-            "id": 299675,
-            "record_uri": "/repositories/2/archival_objects/299675",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299675",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299675
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), June 1971",
-            "id": 299676,
-            "record_uri": "/repositories/2/archival_objects/299676",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299676",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299676
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), July 1971",
-            "id": 299677,
-            "record_uri": "/repositories/2/archival_objects/299677",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299677",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299677
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), August 1971",
-            "id": 299678,
-            "record_uri": "/repositories/2/archival_objects/299678",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299678",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299678
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), September 1971",
-            "id": 299679,
-            "record_uri": "/repositories/2/archival_objects/299679",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299679",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299679
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), October 1971",
-            "id": 299680,
-            "record_uri": "/repositories/2/archival_objects/299680",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299680",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299680
         },
         {
             "title": "Affirmative Action Program of Greater Buffalo (BAAP), November 1971",
-            "id": 299681,
-            "record_uri": "/repositories/2/archival_objects/299681",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299681",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299681
         },
         {
             "title": "BUILD Clips, 1971",
-            "id": 299682,
-            "record_uri": "/repositories/2/archival_objects/299682",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299682",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299682
         },
         {
             "title": "Chemung County, 1971",
-            "id": 299683,
-            "record_uri": "/repositories/2/archival_objects/299683",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299683",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299683
         },
         {
             "title": "Cornell Labor School, 1971",
-            "id": 299684,
-            "record_uri": "/repositories/2/archival_objects/299684",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299684",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299684
         },
         {
             "title": "Department of Transportation - Bruckner Interchange, 1971",
-            "id": 299685,
-            "record_uri": "/repositories/2/archival_objects/299685",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299685",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299685
         },
         {
             "title": "Department of Transportation - Jamestown, 1971",
-            "id": 299686,
-            "record_uri": "/repositories/2/archival_objects/299686",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299686",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299686
         },
         {
             "title": "Domed Stadium, 1971",
-            "id": 299687,
-            "record_uri": "/repositories/2/archival_objects/299687",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299687",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299687
         },
         {
             "title": "Governments, Agencies Conforming to March 2 Directive, 1971",
-            "id": 299688,
-            "record_uri": "/repositories/2/archival_objects/299688",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299688",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299688
         },
         {
             "title": "Illinois, 1971",
-            "id": 299689,
-            "record_uri": "/repositories/2/archival_objects/299689",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299689",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299689
         },
         {
             "title": "Ithaca, 1971",
-            "id": 299690,
-            "record_uri": "/repositories/2/archival_objects/299690",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299690",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299690
         },
         {
             "title": "Long Island Plan, 1971",
-            "id": 299691,
-            "record_uri": "/repositories/2/archival_objects/299691",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299691",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299691
         },
         {
             "title": "Long Island Plan, Background, 1971",
-            "id": 299692,
-            "record_uri": "/repositories/2/archival_objects/299692",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299692",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299692
         },
         {
             "title": "Mattina Correspondence, 1971",
-            "id": 299693,
-            "record_uri": "/repositories/2/archival_objects/299693",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299693",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299693
         },
         {
             "title": "Minority Coalition (BUILD), Buffalo Plan, 1970-1971",
-            "id": 299694,
-            "record_uri": "/repositories/2/archival_objects/299694",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299694",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299694
         },
         {
             "title": "Niagara Falls, 1971",
-            "id": 299695,
-            "record_uri": "/repositories/2/archival_objects/299695",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299695",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299695
         },
         {
             "title": "Nixon Administration - Poor and Minority Equal Employment Opportunity, 1971",
-            "id": 299696,
-            "record_uri": "/repositories/2/archival_objects/299696",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299696",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299696
         },
         {
             "title": "Union Jurisdictions, 1971",
-            "id": 299697,
-            "record_uri": "/repositories/2/archival_objects/299697",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/299697",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 299697
         }
     ]
 }

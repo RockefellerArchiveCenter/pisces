@@ -84,12 +84,14 @@
         {
             "ref": "/api/components/1/",
             "archivesspace_uri": "/repositories/2/resources/93",
-            "level": "collection"
+            "level": "collection",
+            "type": "collection"
         },
         {
             "ref": "/api/components/2/",
             "archivesspace_uri": "/repositories/2/resources/12",
-            "level": "otherlevel"
+            "level": "otherlevel",
+            "type": "collection"
         }
     ]
 }

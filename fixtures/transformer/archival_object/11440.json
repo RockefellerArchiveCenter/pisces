@@ -1,0 +1,596 @@
+{
+    "lock_version": 1,
+    "position": 0,
+    "publish": true,
+    "ref_id": "1d3d0b4d71e347c2a7c4c31666cfe153",
+    "component_id": "100",
+    "title": "International",
+    "display_string": "International",
+    "restrictions_apply": false,
+    "created_by": "admin",
+    "last_modified_by": "pgalligan",
+    "create_time": "2014-12-06T03:43:19Z",
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "user_mtime": "2017-02-16T22:48:43Z",
+    "suppressed": false,
+    "level": "series",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [
+        {
+            "external_id": "729564",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2017-02-16T22:48:43Z",
+            "system_mtime": "2017-02-16T22:48:43Z",
+            "user_mtime": "2017-02-16T22:48:43Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "lock_version": 0,
+            "number": "88.25",
+            "container_summary": "177 document boxes.",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "portion": "whole",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "circa 1905-1980",
+            "begin": "1905",
+            "end": "1980",
+            "created_by": "battalb",
+            "last_modified_by": "battalb",
+            "create_time": "2019-10-10T12:39:02Z",
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+        {
+            "role": "creator",
+            "relator": "aut",
+            "terms": [],
+            "ref": "/agents/corporate_entities/4884"
+        }
+    ],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/resources/93",
+            "level": "collection"
+        }
+    ],
+    "instances": [],
+    "notes": [],
+    "uri": "/repositories/2/archival_objects/11440",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/93"
+    },
+    "has_unpublished_ancestor": false,
+    "children": [
+        {
+            "title": "Sculpture for the Pan American Highway",
+            "ref": "/repositories/2/archival_objects/11441",
+            "level": "file",
+            "order": 0,
+            "type": "object",
+            "identifier": "11441"
+        },
+        {
+            "title": "Animals",
+            "ref": "/repositories/2/archival_objects/11442",
+            "level": "file",
+            "order": 1,
+            "type": "object",
+            "identifier": "11442"
+        },
+        {
+            "title": "Atomic Bomb Casualty Commission",
+            "ref": "/repositories/2/archival_objects/11443",
+            "level": "file",
+            "order": 2,
+            "type": "object",
+            "identifier": "11443"
+        },
+        {
+            "title": "Atomic Energy",
+            "ref": "/repositories/2/archival_objects/11444",
+            "level": "file",
+            "order": 3,
+            "type": "object",
+            "identifier": "11444"
+        },
+        {
+            "title": "B",
+            "ref": "/repositories/2/archival_objects/11445",
+            "level": "file",
+            "order": 4,
+            "type": "object",
+            "identifier": "11445"
+        },
+        {
+            "title": "Child Care Conference",
+            "ref": "/repositories/2/archival_objects/11446",
+            "level": "file",
+            "order": 5,
+            "type": "object",
+            "identifier": "11446"
+        },
+        {
+            "title": "Clarke Publications",
+            "ref": "/repositories/2/archival_objects/11447",
+            "level": "file",
+            "order": 6,
+            "type": "object",
+            "identifier": "11447"
+        },
+        {
+            "title": "Congress for Cultural Freedom 1956",
+            "ref": "/repositories/2/archival_objects/11448",
+            "level": "file",
+            "order": 7,
+            "type": "object",
+            "identifier": "11448"
+        },
+        {
+            "title": "Congress for Cultural Freedom",
+            "ref": "/repositories/2/archival_objects/11449",
+            "level": "file",
+            "order": 8,
+            "type": "object",
+            "identifier": "11449"
+        },
+        {
+            "title": "Congress for Cultural Freedom - Hungarian Performing Artists",
+            "ref": "/repositories/2/archival_objects/11450",
+            "level": "file",
+            "order": 9,
+            "type": "object",
+            "identifier": "11450"
+        },
+        {
+            "title": "Congress for Cultural Freedom - Hungarian Performing Arts",
+            "ref": "/repositories/2/archival_objects/992916",
+            "level": "file",
+            "order": 10,
+            "type": "object",
+            "identifier": "992916"
+        },
+        {
+            "title": "D",
+            "ref": "/repositories/2/archival_objects/11451",
+            "level": "file",
+            "order": 11,
+            "type": "object",
+            "identifier": "11451"
+        },
+        {
+            "title": "Diplomatic Service",
+            "ref": "/repositories/2/archival_objects/11452",
+            "level": "file",
+            "order": 12,
+            "type": "object",
+            "identifier": "11452"
+        },
+        {
+            "title": "Economic Commission to Europe",
+            "ref": "/repositories/2/archival_objects/11453",
+            "level": "file",
+            "order": 13,
+            "type": "object",
+            "identifier": "11453"
+        },
+        {
+            "title": "Fish",
+            "ref": "/repositories/2/archival_objects/11454",
+            "level": "file",
+            "order": 14,
+            "type": "object",
+            "identifier": "11454"
+        },
+        {
+            "title": "G",
+            "ref": "/repositories/2/archival_objects/11455",
+            "level": "file",
+            "order": 15,
+            "type": "object",
+            "identifier": "11455"
+        },
+        {
+            "title": "I",
+            "ref": "/repositories/2/archival_objects/11456",
+            "level": "file",
+            "order": 16,
+            "type": "object",
+            "identifier": "11456"
+        },
+        {
+            "title": "Incinerators",
+            "ref": "/repositories/2/archival_objects/11457",
+            "level": "file",
+            "order": 17,
+            "type": "object",
+            "identifier": "11457"
+        },
+        {
+            "title": "International Congress on Tropical Medicine and Malaria",
+            "ref": "/repositories/2/archival_objects/11458",
+            "level": "file",
+            "order": 18,
+            "type": "object",
+            "identifier": "11458"
+        },
+        {
+            "title": "International Council of Nurses Congress",
+            "ref": "/repositories/2/archival_objects/11459",
+            "level": "file",
+            "order": 19,
+            "type": "object",
+            "identifier": "11459"
+        },
+        {
+            "title": "International Health Division - Laboratories",
+            "ref": "/repositories/2/archival_objects/11460",
+            "level": "file",
+            "order": 20,
+            "type": "object",
+            "identifier": "11460"
+        },
+        {
+            "title": "International Health Division - Laboratories - Rockefeller Institute",
+            "ref": "/repositories/2/archival_objects/11461",
+            "level": "file",
+            "order": 21,
+            "type": "object",
+            "identifier": "11461"
+        },
+        {
+            "title": "International Health Division - Laboratories - Vaccine Manufacturing",
+            "ref": "/repositories/2/archival_objects/11462",
+            "level": "file",
+            "order": 22,
+            "type": "object",
+            "identifier": "11462"
+        },
+        {
+            "title": "International Press Institute",
+            "ref": "/repositories/2/archival_objects/11463",
+            "level": "file",
+            "order": 23,
+            "type": "object",
+            "identifier": "11463"
+        },
+        {
+            "title": "Laboratories",
+            "ref": "/repositories/2/archival_objects/11464",
+            "level": "file",
+            "order": 24,
+            "type": "object",
+            "identifier": "11464"
+        },
+        {
+            "title": "Latrines",
+            "ref": "/repositories/2/archival_objects/11465",
+            "level": "file",
+            "order": 25,
+            "type": "object",
+            "identifier": "11465"
+        },
+        {
+            "title": "League of Nations",
+            "ref": "/repositories/2/archival_objects/11466",
+            "level": "file",
+            "order": 26,
+            "type": "object",
+            "identifier": "11466"
+        },
+        {
+            "title": "League of Nations - Economic and Financial Sections - Intitute for Advanced Study",
+            "ref": "/repositories/2/archival_objects/11467",
+            "level": "file",
+            "order": 27,
+            "type": "object",
+            "identifier": "11467"
+        },
+        {
+            "title": "Microphotography",
+            "ref": "/repositories/2/archival_objects/11468",
+            "level": "file",
+            "order": 28,
+            "type": "object",
+            "identifier": "11468"
+        },
+        {
+            "title": "Mosquitoes 1",
+            "ref": "/repositories/2/archival_objects/11469",
+            "level": "file",
+            "order": 29,
+            "type": "object",
+            "identifier": "11469"
+        },
+        {
+            "title": "Penicillin",
+            "ref": "/repositories/2/archival_objects/11470",
+            "level": "file",
+            "order": 30,
+            "type": "object",
+            "identifier": "11470"
+        },
+        {
+            "title": "Photography",
+            "ref": "/repositories/2/archival_objects/11471",
+            "level": "file",
+            "order": 31,
+            "type": "object",
+            "identifier": "11471"
+        },
+        {
+            "title": "Photomontage",
+            "ref": "/repositories/2/archival_objects/11472",
+            "level": "file",
+            "order": 32,
+            "type": "object",
+            "identifier": "11472"
+        },
+        {
+            "title": "Photomontage",
+            "ref": "/repositories/2/archival_objects/11473",
+            "level": "file",
+            "order": 33,
+            "type": "object",
+            "identifier": "11473"
+        },
+        {
+            "title": "Portraits",
+            "ref": "/repositories/2/archival_objects/11474",
+            "level": "unspecified",
+            "order": 34,
+            "type": "collection",
+            "identifier": "11474"
+        },
+        {
+            "title": "Institute of International Education",
+            "ref": "/repositories/2/archival_objects/11974",
+            "level": "file",
+            "order": 35,
+            "type": "object",
+            "identifier": "11974"
+        },
+        {
+            "title": "Mosquitoes 2",
+            "ref": "/repositories/2/archival_objects/11975",
+            "level": "file",
+            "order": 36,
+            "type": "object",
+            "identifier": "11975"
+        },
+        {
+            "title": "Publication",
+            "ref": "/repositories/2/archival_objects/11976",
+            "level": "file",
+            "order": 37,
+            "type": "object",
+            "identifier": "11976"
+        },
+        {
+            "title": "Publications - Clarke",
+            "ref": "/repositories/2/archival_objects/11977",
+            "level": "file",
+            "order": 38,
+            "type": "object",
+            "identifier": "11977"
+        },
+        {
+            "title": "Rockefeller Center",
+            "ref": "/repositories/2/archival_objects/11978",
+            "level": "file",
+            "order": 39,
+            "type": "object",
+            "identifier": "11978"
+        },
+        {
+            "title": "Rockefeller Foundation",
+            "ref": "/repositories/2/archival_objects/11979",
+            "level": "file",
+            "order": 40,
+            "type": "object",
+            "identifier": "11979"
+        },
+        {
+            "title": "S",
+            "ref": "/repositories/2/archival_objects/11980",
+            "level": "file",
+            "order": 41,
+            "type": "object",
+            "identifier": "11980"
+        },
+        {
+            "title": "Typhus Fever",
+            "ref": "/repositories/2/archival_objects/11981",
+            "level": "file",
+            "order": 42,
+            "type": "object",
+            "identifier": "11981"
+        },
+        {
+            "title": "Ultracentrifuge",
+            "ref": "/repositories/2/archival_objects/11982",
+            "level": "file",
+            "order": 43,
+            "type": "object",
+            "identifier": "11982"
+        },
+        {
+            "title": "UNESCO - Haiti - Education",
+            "ref": "/repositories/2/archival_objects/11983",
+            "level": "file",
+            "order": 44,
+            "type": "object",
+            "identifier": "11983"
+        },
+        {
+            "title": "V",
+            "ref": "/repositories/2/archival_objects/11984",
+            "level": "file",
+            "order": 45,
+            "type": "object",
+            "identifier": "11984"
+        },
+        {
+            "title": "Virus Diseases",
+            "ref": "/repositories/2/archival_objects/11985",
+            "level": "file",
+            "order": 46,
+            "type": "object",
+            "identifier": "11985"
+        },
+        {
+            "title": "Virus Diseases",
+            "ref": "/repositories/2/archival_objects/11986",
+            "level": "file",
+            "order": 47,
+            "type": "object",
+            "identifier": "11986"
+        },
+        {
+            "title": "Virus Diseases",
+            "ref": "/repositories/2/archival_objects/11987",
+            "level": "file",
+            "order": 48,
+            "type": "object",
+            "identifier": "11987"
+        },
+        {
+            "title": "Virus Diseases - Exhibit",
+            "ref": "/repositories/2/archival_objects/11988",
+            "level": "file",
+            "order": 49,
+            "type": "object",
+            "identifier": "11988"
+        },
+        {
+            "title": "Virus Diseases - Exhibit",
+            "ref": "/repositories/2/archival_objects/11989",
+            "level": "file",
+            "order": 50,
+            "type": "object",
+            "identifier": "11989"
+        },
+        {
+            "title": "Yeager",
+            "ref": "/repositories/2/archival_objects/11990",
+            "level": "file",
+            "order": 51,
+            "type": "object",
+            "identifier": "11990"
+        },
+        {
+            "title": "International - Natural Sciences and Agriculture",
+            "ref": "/repositories/2/archival_objects/11991",
+            "level": "subseries",
+            "order": 52,
+            "type": "collection",
+            "identifier": "11991"
+        },
+        {
+            "title": "International - Public Health Fellowships, Scholarships, and Training Awards",
+            "ref": "/repositories/2/archival_objects/11996",
+            "level": "subseries",
+            "order": 53,
+            "type": "collection",
+            "identifier": "11996"
+        },
+        {
+            "title": "International - Hookworm",
+            "ref": "/repositories/2/archival_objects/11998",
+            "level": "subseries",
+            "order": 54,
+            "type": "collection",
+            "identifier": "11998"
+        },
+        {
+            "title": "International - Malaria",
+            "ref": "/repositories/2/archival_objects/12007",
+            "level": "subseries",
+            "order": 55,
+            "type": "collection",
+            "identifier": "12007"
+        },
+        {
+            "title": "International - Respiratory Diseases",
+            "ref": "/repositories/2/archival_objects/12012",
+            "level": "subseries",
+            "order": 56,
+            "type": "collection",
+            "identifier": "12012"
+        },
+        {
+            "title": "International - War Relief",
+            "ref": "/repositories/2/archival_objects/12016",
+            "level": "subseries",
+            "order": 57,
+            "type": "collection",
+            "identifier": "12016"
+        },
+        {
+            "title": "International - Yellow Fever",
+            "ref": "/repositories/2/archival_objects/12019",
+            "level": "subseries",
+            "order": 58,
+            "type": "collection",
+            "identifier": "12019"
+        },
+        {
+            "title": "International - Humanities and Arts",
+            "ref": "/repositories/2/archival_objects/12024",
+            "level": "subseries",
+            "order": 59,
+            "type": "collection",
+            "identifier": "12024"
+        },
+        {
+            "title": "International - Social Sciences",
+            "ref": "/repositories/2/archival_objects/12028",
+            "level": "subseries",
+            "order": 60,
+            "type": "collection",
+            "identifier": "12028"
+        },
+        {
+            "title": "International - Tuberculosis",
+            "ref": "/repositories/2/archival_objects/12039",
+            "level": "subseries",
+            "order": 61,
+            "type": "collection",
+            "identifier": "12039"
+        },
+        {
+            "title": "International - Virus Studies",
+            "ref": "/repositories/2/archival_objects/12041",
+            "level": "subseries",
+            "order": 62,
+            "type": "collection",
+            "identifier": "12041"
+        }
+    ],
+    "language": "eng"
+}

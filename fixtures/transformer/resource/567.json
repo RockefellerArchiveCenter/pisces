@@ -367,120 +367,66 @@
     "children": [
         {
             "title": "Public Relations File",
-            "id": 305800,
-            "record_uri": "/repositories/2/archival_objects/305800",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/305800",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 305800
         },
         {
             "title": "Latin American Mission, 1969",
-            "id": 307081,
-            "record_uri": "/repositories/2/archival_objects/307081",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/307081",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307081
         },
         {
             "title": "Agency and Commission Reports",
-            "id": 307105,
-            "record_uri": "/repositories/2/archival_objects/307105",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/307105",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307105
         },
         {
             "title": "Positions and Policy Papers",
-            "id": 307519,
-            "record_uri": "/repositories/2/archival_objects/307519",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/307519",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307519
         },
         {
             "title": "Political and Election Analysis Files",
-            "id": 307528,
-            "record_uri": "/repositories/2/archival_objects/307528",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/307528",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307528
         },
         {
             "title": "County Visits",
-            "id": 307551,
-            "record_uri": "/repositories/2/archival_objects/307551",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/307551",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307551
         },
         {
             "title": "Recommendations to Fill U.S. Senate Seat Following Robert F. Kennedy's Assassination, 1968",
-            "id": 307593,
-            "record_uri": "/repositories/2/archival_objects/307593",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "7",
+            "ref": "/repositories/2/archival_objects/307593",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307593
         },
         {
             "title": "Miscellaneous",
-            "id": 307649,
-            "record_uri": "/repositories/2/archival_objects/307649",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "8",
+            "ref": "/repositories/2/archival_objects/307649",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307649
         },
         {
             "title": "Statements and Press Releases",
-            "id": 307679,
-            "record_uri": "/repositories/2/archival_objects/307679",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "9",
+            "ref": "/repositories/2/archival_objects/307679",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 307679
         }
     ]
 }

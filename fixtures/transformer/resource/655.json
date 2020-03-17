@@ -317,16 +317,10 @@
     "children": [
         {
             "title": "Gubernatorial Press Office",
-            "id": 471904,
-            "record_uri": "/repositories/2/archival_objects/471904",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/471904",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 471904
         }
     ]
 }

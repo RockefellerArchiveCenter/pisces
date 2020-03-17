@@ -432,81 +432,45 @@
     "children": [
         {
             "title": "Politics, General, 1935-1970",
-            "id": 291005,
-            "record_uri": "/repositories/2/archival_objects/291005",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/291005",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291005
         },
         {
             "title": "National Political Campaigns, 1956-1968",
-            "id": 291097,
-            "record_uri": "/repositories/2/archival_objects/291097",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/291097",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291097
         },
         {
             "title": "New York State Gubernatorial Campaigns, 1958-1970",
-            "id": 291283,
-            "record_uri": "/repositories/2/archival_objects/291283",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/291283",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291283
         },
         {
             "title": "Polls, 1958-1970",
-            "id": 291703,
-            "record_uri": "/repositories/2/archival_objects/291703",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/291703",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291703
         },
         {
             "title": "Office of the Governor, 1958-1971",
-            "id": 291757,
-            "record_uri": "/repositories/2/archival_objects/291757",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/291757",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291757
         },
         {
             "title": "State Issues Files, 1973-1975",
-            "id": 291917,
-            "record_uri": "/repositories/2/archival_objects/291917",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/291917",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 291917
         }
     ]
 }

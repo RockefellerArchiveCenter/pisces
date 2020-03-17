@@ -296,147 +296,87 @@
     "children": [
         {
             "title": "J. Curtis Dixon",
-            "id": 131455,
-            "record_uri": "/repositories/2/archival_objects/131455",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131455",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131455
         },
         {
             "title": "John B. Grant",
-            "id": 131459,
-            "record_uri": "/repositories/2/archival_objects/131459",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131459",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131459
         },
         {
             "title": "Alan Gregg",
-            "id": 770388,
-            "record_uri": "/repositories/2/archival_objects/770388",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/770388",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 770388
         },
         {
             "title": "J. George Harrar",
-            "id": 770389,
-            "record_uri": "/repositories/2/archival_objects/770389",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/770389",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 770389
         },
         {
             "title": "Victor G. Heiser",
-            "id": 770390,
-            "record_uri": "/repositories/2/archival_objects/770390",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/770390",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 770390
         },
         {
             "title": "John Marshall",
-            "id": 131470,
-            "record_uri": "/repositories/2/archival_objects/131470",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131470",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131470
         },
         {
             "title": "Flora M. Rhind",
-            "id": 131485,
-            "record_uri": "/repositories/2/archival_objects/131485",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131485",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131485
         },
         {
             "title": "Elvin C. Stakman",
-            "id": 131492,
-            "record_uri": "/repositories/2/archival_objects/131492",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131492",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131492
         },
         {
             "title": "Robert Briggs Watson",
-            "id": 131502,
-            "record_uri": "/repositories/2/archival_objects/131502",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131502",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131502
         },
         {
             "title": "Benjamin E. Washburn",
-            "id": 770391,
-            "record_uri": "/repositories/2/archival_objects/770391",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/770391",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 770391
         },
         {
             "title": "Warren Weaver",
-            "id": 131507,
-            "record_uri": "/repositories/2/archival_objects/131507",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131507",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131507
         },
         {
             "title": "Rockefeller Foundation Program in Agriculture",
-            "id": 131512,
-            "record_uri": "/repositories/2/archival_objects/131512",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131512",
             "level": "Oral History",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 131512
         }
     ]
 }

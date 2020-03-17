@@ -296,16 +296,10 @@
     "children": [
         {
             "title": "Vice Presidential",
-            "id": 475752,
-            "record_uri": "/repositories/2/archival_objects/475752",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/475752",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 475752
         }
     ]
 }

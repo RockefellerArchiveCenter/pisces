@@ -261,2523 +261,1263 @@
     "children": [
         {
             "title": "Grants In Aid - A-H",
-            "id": 131275,
-            "record_uri": "/repositories/2/archival_objects/131275",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131275",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131275
         },
         {
             "title": "Grants In Aid - I-Z",
-            "id": 131276,
-            "record_uri": "/repositories/2/archival_objects/131276",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131276",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131276
         },
         {
             "title": "Grants in Aid - Agriculture, 1959, 1968-1972, 1959, 1968-1972",
-            "id": 131277,
-            "record_uri": "/repositories/2/archival_objects/131277",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131277",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131277
         },
         {
             "title": "Grants In Aid - Agriculture 1953-1959, 1960-1962, 1953-1959, 1960-1962",
-            "id": 131278,
-            "record_uri": "/repositories/2/archival_objects/131278",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131278",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131278
         },
         {
             "title": "Grants In Aid - Agriculture 1966-1967, 1966-1967",
-            "id": 131279,
-            "record_uri": "/repositories/2/archival_objects/131279",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131279",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131279
         },
         {
             "title": "Grants In Aid - Humanities 1963-65, 1963-65",
-            "id": 131280,
-            "record_uri": "/repositories/2/archival_objects/131280",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131280",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131280
         },
         {
             "title": "Grants In Aid - Humanities 1948-1952, Arts 1965-1969, 1948-1952, 1965-1969",
-            "id": 131281,
-            "record_uri": "/repositories/2/archival_objects/131281",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131281",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131281
         },
         {
             "title": "Grants In Aid - Humanities 1953-1960, 1953-1960",
-            "id": 131282,
-            "record_uri": "/repositories/2/archival_objects/131282",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131282",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131282
         },
         {
             "title": "Grants In Aid - Humanities 1960-1964, 1960-1964",
-            "id": 131283,
-            "record_uri": "/repositories/2/archival_objects/131283",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131283",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131283
         },
         {
             "title": "Grants in Aid - Humanities 1965-1966, 1970-1973, 1965-1966, 1970-1973",
-            "id": 131284,
-            "record_uri": "/repositories/2/archival_objects/131284",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131284",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131284
         },
         {
             "title": "Grants in Aid - Humanities 1934, 1934",
-            "id": 131285,
-            "record_uri": "/repositories/2/archival_objects/131285",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131285",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131285
         },
         {
             "title": "Grants in Aid - Humanities 1967-1972, 1967-1972",
-            "id": 131286,
-            "record_uri": "/repositories/2/archival_objects/131286",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131286",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131286
         },
         {
             "title": "Grants in Aid - Social Sciences 1948-1953, Medical 1961-1962, 1948-1953, 1961-1962",
-            "id": 131287,
-            "record_uri": "/repositories/2/archival_objects/131287",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131287",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131287
         },
         {
             "title": "Grants in Aid - Social Sciences - Bio./Med. 1958-1959, 1958-1959",
-            "id": 131288,
-            "record_uri": "/repositories/2/archival_objects/131288",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131288",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131288
         },
         {
             "title": "Grants in Aid - Med./P.H. 1947-1951, Social Sciences 1954-1960, 1947-1951, 1954-1960",
-            "id": 131289,
-            "record_uri": "/repositories/2/archival_objects/131289",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131289",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131289
         },
         {
             "title": "Grants in Aid - Medical Sciences",
-            "id": 131290,
-            "record_uri": "/repositories/2/archival_objects/131290",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131290",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131290
         },
         {
             "title": "Grants in Aid - Medical 1959-1960, 1966-1967, 1959-1960, 1966-1967",
-            "id": 131291,
-            "record_uri": "/repositories/2/archival_objects/131291",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131291",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131291
         },
         {
             "title": "Grants in Aid - Nat. Sciences 1951-1954, Medical 1963-1965, 1951-1954, 1963-1965",
-            "id": 131292,
-            "record_uri": "/repositories/2/archival_objects/131292",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131292",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131292
         },
         {
             "title": "Grants in Aid - Bio./Med. 1955-1957, B.M.S. 1968-1971, 1955-1957, 1968-1971",
-            "id": 131293,
-            "record_uri": "/repositories/2/archival_objects/131293",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131293",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131293
         },
         {
             "title": "Grants in Aid - Med./P.H. 1952-1954, 1955-1959, 1952-1954, 1955-1959",
-            "id": 131294,
-            "record_uri": "/repositories/2/archival_objects/131294",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131294",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131294
         },
         {
             "title": "Grants in Aid - Scholars/Visits",
-            "id": 131295,
-            "record_uri": "/repositories/2/archival_objects/131295",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131295",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131295
         },
         {
             "title": "Grants in Aid - Nat. Sciences, 1934-1950, 1934-1950",
-            "id": 131296,
-            "record_uri": "/repositories/2/archival_objects/131296",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131296",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131296
         },
         {
             "title": "Grants in Aid - Training of Health Workers",
-            "id": 131297,
-            "record_uri": "/repositories/2/archival_objects/131297",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131297",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131297
         },
         {
             "title": "Grants in Aid, 1936-1952",
-            "id": 131298,
-            "record_uri": "/repositories/2/archival_objects/131298",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131298",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131298
         },
         {
             "title": "Vouchers - Treasurer's Reports, #20404-18038",
-            "id": 131299,
-            "record_uri": "/repositories/2/archival_objects/131299",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131299",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131299
         },
         {
             "title": "Vouchers - Treasurer's Reports, #18037B-24304",
-            "id": 131300,
-            "record_uri": "/repositories/2/archival_objects/131300",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131300",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131300
         },
         {
             "title": "Vouchers - Treasurer's Reports, #24303-21240",
-            "id": 131301,
-            "record_uri": "/repositories/2/archival_objects/131301",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131301",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131301
         },
         {
             "title": "Vouchers - Treasurer's Reports, #21239-28722",
-            "id": 131302,
-            "record_uri": "/repositories/2/archival_objects/131302",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131302",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131302
         },
         {
             "title": "Vouchers - Treasurer's Reports, #28721-33177",
-            "id": 131303,
-            "record_uri": "/repositories/2/archival_objects/131303",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131303",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131303
         },
         {
             "title": "Vouchers - Treasurer's Reports, #33176-30827",
-            "id": 131304,
-            "record_uri": "/repositories/2/archival_objects/131304",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131304",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131304
         },
         {
             "title": "Vouchers - Treasurer's Reports, #30826-35103",
-            "id": 131305,
-            "record_uri": "/repositories/2/archival_objects/131305",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131305",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131305
         },
         {
             "title": "Vouchers - Treasurer's Reports, #35102-39482",
-            "id": 131306,
-            "record_uri": "/repositories/2/archival_objects/131306",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131306",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131306
         },
         {
             "title": "Vouchers - Treasurer's Reports, #39481-37432",
-            "id": 131307,
-            "record_uri": "/repositories/2/archival_objects/131307",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131307",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131307
         },
         {
             "title": "Vouchers - Treasurer's Reports, #37431-42413",
-            "id": 131308,
-            "record_uri": "/repositories/2/archival_objects/131308",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131308",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131308
         },
         {
             "title": "Vouchers - Treasurer's Reports, #42412-47477",
-            "id": 131309,
-            "record_uri": "/repositories/2/archival_objects/131309",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131309",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131309
         },
         {
             "title": "Vouchers - Treasurer's Reports, #47476-53379",
-            "id": 131310,
-            "record_uri": "/repositories/2/archival_objects/131310",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131310",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131310
         },
         {
             "title": "Vouchers - Treasurer's Reports, #53378-50294",
-            "id": 131311,
-            "record_uri": "/repositories/2/archival_objects/131311",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131311",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131311
         },
         {
             "title": "Vouchers - Treasurer's Reports, #50293-56414",
-            "id": 131312,
-            "record_uri": "/repositories/2/archival_objects/131312",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131312",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131312
         },
         {
             "title": "Vouchers - Treasurer's Reports, #56413-53905",
-            "id": 131313,
-            "record_uri": "/repositories/2/archival_objects/131313",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131313",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131313
         },
         {
             "title": "Vouchers - Treasurer's Reports, #53904-60371",
-            "id": 131314,
-            "record_uri": "/repositories/2/archival_objects/131314",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131314",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131314
         },
         {
             "title": "Vouchers - Treasurer's Reports, #60370-58078",
-            "id": 131315,
-            "record_uri": "/repositories/2/archival_objects/131315",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131315",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131315
         },
         {
             "title": "Vouchers - Treasurer's Reports, #58077-64257",
-            "id": 131316,
-            "record_uri": "/repositories/2/archival_objects/131316",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131316",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131316
         },
         {
             "title": "Vouchers - Treasurer's Reports, #64256-70328",
-            "id": 131317,
-            "record_uri": "/repositories/2/archival_objects/131317",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131317",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131317
         },
         {
             "title": "Vouchers - Treasurer's Reports, #70327-66951",
-            "id": 131318,
-            "record_uri": "/repositories/2/archival_objects/131318",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131318",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131318
         },
         {
             "title": "Vouchers - Treasurer's Reports, #66950-73648",
-            "id": 131319,
-            "record_uri": "/repositories/2/archival_objects/131319",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131319",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131319
         },
         {
             "title": "Vouchers - Treasurer's Reports, #80209-77092",
-            "id": 131320,
-            "record_uri": "/repositories/2/archival_objects/131320",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131320",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131320
         },
         {
             "title": "Vouchers - Treasurer's Reports, #73647-80210",
-            "id": 131321,
-            "record_uri": "/repositories/2/archival_objects/131321",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131321",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131321
         },
         {
             "title": "Vouchers - Treasurer's Reports, #77091-82221",
-            "id": 131322,
-            "record_uri": "/repositories/2/archival_objects/131322",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131322",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131322
         },
         {
             "title": "Vouchers - Treasurer's Reports, #82220-87282",
-            "id": 131323,
-            "record_uri": "/repositories/2/archival_objects/131323",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131323",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131323
         },
         {
             "title": "Vouchers - Treasurer's Reports, #87281-91882",
-            "id": 131324,
-            "record_uri": "/repositories/2/archival_objects/131324",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131324",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131324
         },
         {
             "title": "Vouchers - Treasurer's Reports, #91881-1728",
-            "id": 131325,
-            "record_uri": "/repositories/2/archival_objects/131325",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131325",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131325
         },
         {
             "title": "Vouchers - Treasurer's Reports, #1709-8478",
-            "id": 131326,
-            "record_uri": "/repositories/2/archival_objects/131326",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131326",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131326
         },
         {
             "title": "Vouchers - Treasurer's Reports, #8477-4116",
-            "id": 131327,
-            "record_uri": "/repositories/2/archival_objects/131327",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131327",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131327
         },
         {
             "title": "Vouchers - Treasurer's Reports, #4115-16476",
-            "id": 131328,
-            "record_uri": "/repositories/2/archival_objects/131328",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131328",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131328
         },
         {
             "title": "Vouchers - Treasurer's Reports, #16475-13376",
-            "id": 131329,
-            "record_uri": "/repositories/2/archival_objects/131329",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131329",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131329
         },
         {
             "title": "Vouchers - Treasurer's Reports, #13375-28211",
-            "id": 131330,
-            "record_uri": "/repositories/2/archival_objects/131330",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131330",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131330
         },
         {
             "title": "Vouchers - Treasurer's Reports, #28210-24103",
-            "id": 131331,
-            "record_uri": "/repositories/2/archival_objects/131331",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131331",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131331
         },
         {
             "title": "Vouchers - Treasurer's Reports, #24102-34702",
-            "id": 131332,
-            "record_uri": "/repositories/2/archival_objects/131332",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131332",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131332
         },
         {
             "title": "Vouchers - Treasurer's Reports, #34701-39543",
-            "id": 131333,
-            "record_uri": "/repositories/2/archival_objects/131333",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131333",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131333
         },
         {
             "title": "Vouchers - Treasurer's Reports, #39542-35036",
-            "id": 131334,
-            "record_uri": "/repositories/2/archival_objects/131334",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131334",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131334
         },
         {
             "title": "Vouchers - Treasurer's Reports, #35035-44462",
-            "id": 131335,
-            "record_uri": "/repositories/2/archival_objects/131335",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131335",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131335
         },
         {
             "title": "Vouchers - Treasurer's Reports, #44461-57535",
-            "id": 131336,
-            "record_uri": "/repositories/2/archival_objects/131336",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131336",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131336
         },
         {
             "title": "Vouchers - Treasurer's Reports, #57534-52705",
-            "id": 131337,
-            "record_uri": "/repositories/2/archival_objects/131337",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131337",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131337
         },
         {
             "title": "Vouchers - Treasurer's Reports, #52704-67587",
-            "id": 131338,
-            "record_uri": "/repositories/2/archival_objects/131338",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131338",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131338
         },
         {
             "title": "Vouchers - Treasurer's Reports, #67586-60610",
-            "id": 131339,
-            "record_uri": "/repositories/2/archival_objects/131339",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131339",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131339
         },
         {
             "title": "Vouchers - Treasurer's Reports, #60609-71054",
-            "id": 131340,
-            "record_uri": "/repositories/2/archival_objects/131340",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131340",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131340
         },
         {
             "title": "Vouchers - Treasurer's Reports, #71053-80901",
-            "id": 131341,
-            "record_uri": "/repositories/2/archival_objects/131341",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131341",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131341
         },
         {
             "title": "Vouchers - Treasurer's Reports, #80900-90628",
-            "id": 131342,
-            "record_uri": "/repositories/2/archival_objects/131342",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131342",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131342
         },
         {
             "title": "Vouchers - Treasurer's Reports, #90627-101339",
-            "id": 131343,
-            "record_uri": "/repositories/2/archival_objects/131343",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131343",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131343
         },
         {
             "title": "Vouchers - Treasurer's Reports, #101338-113152",
-            "id": 131344,
-            "record_uri": "/repositories/2/archival_objects/131344",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131344",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131344
         },
         {
             "title": "Vouchers - Treasurer's Reports, #113151-124126",
-            "id": 131345,
-            "record_uri": "/repositories/2/archival_objects/131345",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131345",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131345
         },
         {
             "title": "Vouchers - Treasurer's Reports, #124125-115033",
-            "id": 131346,
-            "record_uri": "/repositories/2/archival_objects/131346",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131346",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131346
         },
         {
             "title": "Vouchers - Treasurer's Reports, #428481-126591",
-            "id": 131347,
-            "record_uri": "/repositories/2/archival_objects/131347",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131347",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131347
         },
         {
             "title": "Vouchers - Treasurer's Reports, #126590-129607, 1942-1943, 1942-1943",
-            "id": 131348,
-            "record_uri": "/repositories/2/archival_objects/131348",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131348",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131348
         },
         {
             "title": "Vouchers - Treasurer's Reports, #129606-5221, 1943-1944, 1943-1944",
-            "id": 131349,
-            "record_uri": "/repositories/2/archival_objects/131349",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131349",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131349
         },
         {
             "title": "Vouchers - Treasurer's Reports, #5220-8669, 1944-1945, 1944-1945",
-            "id": 131350,
-            "record_uri": "/repositories/2/archival_objects/131350",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131350",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131350
         },
         {
             "title": "Vouchers - Treasurer's Reports, #8668-130714, 1945-1946, 1945-1946",
-            "id": 131351,
-            "record_uri": "/repositories/2/archival_objects/131351",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131351",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131351
         },
         {
             "title": "Vouchers - Treasurer's Reports, #130713-16979, 1946-1947, 1946-1947",
-            "id": 131352,
-            "record_uri": "/repositories/2/archival_objects/131352",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131352",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131352
         },
         {
             "title": "Vouchers - Treasurer's Reports, #16978-131933, 1947-1948, 1947-1948",
-            "id": 131353,
-            "record_uri": "/repositories/2/archival_objects/131353",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131353",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131353
         },
         {
             "title": "Vouchers - Treasurer's Reports, #131932-133194, 1948-1949, 1948-1949",
-            "id": 131354,
-            "record_uri": "/repositories/2/archival_objects/131354",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131354",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131354
         },
         {
             "title": "Vouchers - Treasurer's Reports, #133193-40914, 1949, 1949",
-            "id": 131355,
-            "record_uri": "/repositories/2/archival_objects/131355",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131355",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131355
         },
         {
             "title": "Vouchers - Treasurer's Reports, #40913-51974, 1949-1950, 1949-1950",
-            "id": 131356,
-            "record_uri": "/repositories/2/archival_objects/131356",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131356",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131356
         },
         {
             "title": "Vouchers - Treasurer's Reports, #51973-113389, 1950-1951, 1950-1951",
-            "id": 131357,
-            "record_uri": "/repositories/2/archival_objects/131357",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131357",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131357
         },
         {
             "title": "Vouchers - Treasurer's Reports, #133818-134946, 1951-1952, 1951-1952",
-            "id": 131358,
-            "record_uri": "/repositories/2/archival_objects/131358",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131358",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131358
         },
         {
             "title": "Vouchers - Treasurer's Reports, #134945-30693, 1952, 1952",
-            "id": 131359,
-            "record_uri": "/repositories/2/archival_objects/131359",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131359",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131359
         },
         {
             "title": "Vouchers - Treasurer's Reports, #30692-136133, 1952-1953, 1952-1953",
-            "id": 131360,
-            "record_uri": "/repositories/2/archival_objects/131360",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131360",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131360
         },
         {
             "title": "Vouchers - Treasurer's Reports, #136132-67753, 1953, 1953",
-            "id": 131361,
-            "record_uri": "/repositories/2/archival_objects/131361",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131361",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131361
         },
         {
             "title": "Vouchers - Treasurer's Reports, #67752-137208, 1953-1954, 1953-1954",
-            "id": 131362,
-            "record_uri": "/repositories/2/archival_objects/131362",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131362",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131362
         },
         {
             "title": "Vouchers - Treasurer's Reports, #137207-79660, 1954-1955, 1954-1955",
-            "id": 131363,
-            "record_uri": "/repositories/2/archival_objects/131363",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131363",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131363
         },
         {
             "title": "Vouchers - Treasurer's Reports, #79659-90679, 1955, 1955",
-            "id": 131364,
-            "record_uri": "/repositories/2/archival_objects/131364",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131364",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131364
         },
         {
             "title": "Vouchers - Treasurer's Reports, #90678-139124, 1956, 1956",
-            "id": 131365,
-            "record_uri": "/repositories/2/archival_objects/131365",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131365",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131365
         },
         {
             "title": "Vouchers - Treasurer's Reports, #139123-94418, 1956-1957, 1956-1957",
-            "id": 131366,
-            "record_uri": "/repositories/2/archival_objects/131366",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131366",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131366
         },
         {
             "title": "Vouchers - Treasurer's Reports, #94417-140414, 1957, 1957",
-            "id": 131367,
-            "record_uri": "/repositories/2/archival_objects/131367",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131367",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131367
         },
         {
             "title": "Vouchers - Treasurer's Reports, #140413-142782, 1957-1958, 1957-1958",
-            "id": 131368,
-            "record_uri": "/repositories/2/archival_objects/131368",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131368",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131368
         },
         {
             "title": "Vouchers - Treasurer's Reports, #142779-108048, 1958, 1958",
-            "id": 131369,
-            "record_uri": "/repositories/2/archival_objects/131369",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131369",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131369
         },
         {
             "title": "Vouchers - Treasurer's Reports, #108047-143431, 1958-1959, 1958-1959",
-            "id": 131370,
-            "record_uri": "/repositories/2/archival_objects/131370",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131370",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131370
         },
         {
             "title": "Vouchers - Treasurer's Reports, #143430-142962, 1959, 1959",
-            "id": 131371,
-            "record_uri": "/repositories/2/archival_objects/131371",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131371",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131371
         },
         {
             "title": "Vouchers - Treasurer's Reports, #142961-109759, 1959, 1959",
-            "id": 131372,
-            "record_uri": "/repositories/2/archival_objects/131372",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131372",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131372
         },
         {
             "title": "Vouchers - Treasurer's Reports, #109758-145759, 1959-1960, 1959-1960",
-            "id": 131373,
-            "record_uri": "/repositories/2/archival_objects/131373",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131373",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131373
         },
         {
             "title": "Vouchers - Treasurer's Reports, #145758-119997, 1960, 1960",
-            "id": 131374,
-            "record_uri": "/repositories/2/archival_objects/131374",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131374",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131374
         },
         {
             "title": "Vouchers - Treasurer's Reports, #119996-150245, 1960-1961, 1960-1961",
-            "id": 131375,
-            "record_uri": "/repositories/2/archival_objects/131375",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131375",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131375
         },
         {
             "title": "Vouchers - Treasurer's Reports, #150244-158347, 1961-1962, 1961-1962",
-            "id": 131376,
-            "record_uri": "/repositories/2/archival_objects/131376",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131376",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131376
         },
         {
             "title": "Vouchers - Treasurer's Reports, #158346-153724, 1962, 1962",
-            "id": 131377,
-            "record_uri": "/repositories/2/archival_objects/131377",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131377",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131377
         },
         {
             "title": "Vouchers - Treasurer's Reports, #153724-162421, 1962-1963, 1962-1963",
-            "id": 131378,
-            "record_uri": "/repositories/2/archival_objects/131378",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131378",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131378
         },
         {
             "title": "Vouchers - Treasurer's Reports, #162420-168128, 1963, 1963",
-            "id": 131379,
-            "record_uri": "/repositories/2/archival_objects/131379",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131379",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131379
         },
         {
             "title": "Vouchers - Treasurer's Reports, #177338-168127, 1963, 1963",
-            "id": 131380,
-            "record_uri": "/repositories/2/archival_objects/131380",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131380",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131380
         },
         {
             "title": "Vouchers - Treasurer's Reports, #177337-183655, 1964, 1964",
-            "id": 131381,
-            "record_uri": "/repositories/2/archival_objects/131381",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131381",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131381
         },
         {
             "title": "Vouchers - Treasurer's Reports, #190697-183654, 1964, 1964",
-            "id": 131382,
-            "record_uri": "/repositories/2/archival_objects/131382",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131382",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131382
         },
         {
             "title": "Vouchers - Treasurer's Reports, #190696-198919, 1965-1966, 1965-1966",
-            "id": 131383,
-            "record_uri": "/repositories/2/archival_objects/131383",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131383",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131383
         },
         {
             "title": "Vouchers - Treasurer's Reports, #198918-192275, 1965-1966, 1965-1966",
-            "id": 131384,
-            "record_uri": "/repositories/2/archival_objects/131384",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131384",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131384
         },
         {
             "title": "Vouchers - Treasurer's Reports, #192274-132144, 1961-1962, 1966, 1961-1962, 1966",
-            "id": 131385,
-            "record_uri": "/repositories/2/archival_objects/131385",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131385",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131385
         },
         {
             "title": "Cash Books - Books 1916-1921, 1916-1921",
-            "id": 131386,
-            "record_uri": "/repositories/2/archival_objects/131386",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131386",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131386
         },
         {
             "title": "Cash Books - Books 1922-1923, 1922-1923",
-            "id": 131387,
-            "record_uri": "/repositories/2/archival_objects/131387",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131387",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131387
         },
         {
             "title": "Cash Books - Books 1929-1940, 1929-1940",
-            "id": 131388,
-            "record_uri": "/repositories/2/archival_objects/131388",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131388",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131388
         },
         {
             "title": "Cash Books - Books 1941-1957, 1941-1957",
-            "id": 131389,
-            "record_uri": "/repositories/2/archival_objects/131389",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131389",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131389
         },
         {
             "title": "Cash Books - Books 1920-1933, 1920-1933",
-            "id": 131390,
-            "record_uri": "/repositories/2/archival_objects/131390",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131390",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131390
         },
         {
             "title": "Cash Books - Books 1938-1960, 1938-1960",
-            "id": 131391,
-            "record_uri": "/repositories/2/archival_objects/131391",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131391",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131391
         },
         {
             "title": "Financial Reports - Reports 1913-1920, 1913-1920",
-            "id": 131392,
-            "record_uri": "/repositories/2/archival_objects/131392",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131392",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131392
         },
         {
             "title": "Financial Reports - Reports 1921-1930, 1921-1930",
-            "id": 131393,
-            "record_uri": "/repositories/2/archival_objects/131393",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131393",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131393
         },
         {
             "title": "Financial Reports - Reports 1931-1938, 1931-1938",
-            "id": 131394,
-            "record_uri": "/repositories/2/archival_objects/131394",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131394",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131394
         },
         {
             "title": "Financial Reports - Reports 1939-1947, 1939-1947",
-            "id": 131395,
-            "record_uri": "/repositories/2/archival_objects/131395",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131395",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131395
         },
         {
             "title": "Financial Reports - Reports 1948-1955, 1948-1955",
-            "id": 131396,
-            "record_uri": "/repositories/2/archival_objects/131396",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131396",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131396
         },
         {
             "title": "Financial Reports - Reports 1956-1962, 1956-1962",
-            "id": 131397,
-            "record_uri": "/repositories/2/archival_objects/131397",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131397",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131397
         },
         {
             "title": "Financial Reports - Reports 1963-1971, 1963-1971",
-            "id": 131398,
-            "record_uri": "/repositories/2/archival_objects/131398",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131398",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131398
         },
         {
             "title": "Financial Reports - Reports 1971-1979, 1971-1979",
-            "id": 131399,
-            "record_uri": "/repositories/2/archival_objects/131399",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131399",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131399
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Univ. of Africa, Appropriations M.N.S. Agriculture",
-            "id": 131400,
-            "record_uri": "/repositories/2/archival_objects/131400",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131400",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131400
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Univ. of Valle, Univ. of Ibadan and Univ. Philippines",
-            "id": 131401,
-            "record_uri": "/repositories/2/archival_objects/131401",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131401",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131401
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Special Payments - Grants in Aid/Trial Balances",
-            "id": 131402,
-            "record_uri": "/repositories/2/archival_objects/131402",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131402",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131402
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Foreign Appropriations, G.E.B. Payments/Grants/Domestic Appropriations",
-            "id": 131403,
-            "record_uri": "/repositories/2/archival_objects/131403",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131403",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131403
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Payments, Appropriations, Misc. Grants A-C",
-            "id": 131404,
-            "record_uri": "/repositories/2/archival_objects/131404",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131404",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131404
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Payments, Appropriations, Misc. Grants D-J",
-            "id": 131405,
-            "record_uri": "/repositories/2/archival_objects/131405",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131405",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131405
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Payments, Appropriations, Misc. Grants K-Q",
-            "id": 131406,
-            "record_uri": "/repositories/2/archival_objects/131406",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131406",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131406
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Payments, Appropriations, Misc. Grants R-T",
-            "id": 131407,
-            "record_uri": "/repositories/2/archival_objects/131407",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131407",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131407
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - Univ. of O.-Z, Co-op Progs, Misc. Section Administration",
-            "id": 131408,
-            "record_uri": "/repositories/2/archival_objects/131408",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131408",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131408
         },
         {
             "title": "Payments, Appropriations, Misc. Grants - C.M.B. Paris Office - Miscellaneous Statements",
-            "id": 131409,
-            "record_uri": "/repositories/2/archival_objects/131409",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131409",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131409
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Geog. Records 1913-1935, Appropriations List 1929-1943, 1913-1935, 1929-1943",
-            "id": 131410,
-            "record_uri": "/repositories/2/archival_objects/131410",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131410",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131410
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1913-1954, Geographical Statements A-C, 1913-1954",
-            "id": 131411,
-            "record_uri": "/repositories/2/archival_objects/131411",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131411",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131411
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Geographical C-Z, 1913-1954",
-            "id": 131412,
-            "record_uri": "/repositories/2/archival_objects/131412",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131412",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131412
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Appropriations List 1944-1955, 1952-1960, 1944-1955, 1952-1960",
-            "id": 131413,
-            "record_uri": "/repositories/2/archival_objects/131413",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131413",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131413
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1913-1945, 1913-1945",
-            "id": 131414,
-            "record_uri": "/repositories/2/archival_objects/131414",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131414",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131414
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1931-1954, 1931-1954",
-            "id": 131415,
-            "record_uri": "/repositories/2/archival_objects/131415",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131415",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131415
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1935-1939, 1935-1939",
-            "id": 131416,
-            "record_uri": "/repositories/2/archival_objects/131416",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131416",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131416
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Budget Ledger 1941-1963, RF Expenditures 1940, 1941-1963, 1940",
-            "id": 131417,
-            "record_uri": "/repositories/2/archival_objects/131417",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131417",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131417
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Geographical Records 1936-1954, 1936-1954",
-            "id": 131418,
-            "record_uri": "/repositories/2/archival_objects/131418",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131418",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131418
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1913-1963, 1913-1963",
-            "id": 131419,
-            "record_uri": "/repositories/2/archival_objects/131419",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131419",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131419
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures 1319-1915, Record of Securities, 1913-1915",
-            "id": 131420,
-            "record_uri": "/repositories/2/archival_objects/131420",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131420",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131420
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - RF Expenditures 1939, 1939",
-            "id": 131421,
-            "record_uri": "/repositories/2/archival_objects/131421",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131421",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131421
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Geographical Records 1960-1963, 1960-1963",
-            "id": 131422,
-            "record_uri": "/repositories/2/archival_objects/131422",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131422",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131422
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Geographical Records 1955-1959, 1955-1959",
-            "id": 131423,
-            "record_uri": "/repositories/2/archival_objects/131423",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131423",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131423
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Endowment Buildings A-E and F-M",
-            "id": 131424,
-            "record_uri": "/repositories/2/archival_objects/131424",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131424",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131424
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Endowment Buildings N-S and T-Z",
-            "id": 131425,
-            "record_uri": "/repositories/2/archival_objects/131425",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131425",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131425
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures A-B and C-F",
-            "id": 131426,
-            "record_uri": "/repositories/2/archival_objects/131426",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131426",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131426
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures G-K and L-N",
-            "id": 131427,
-            "record_uri": "/repositories/2/archival_objects/131427",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131427",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131427
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Expenditures O-Z, T-Z",
-            "id": 131428,
-            "record_uri": "/repositories/2/archival_objects/131428",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131428",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131428
         },
         {
             "title": "Expenditures, Statements & Supp. Rec. - Program Report 1913-1949, RF Statements, 1913-1949",
-            "id": 131429,
-            "record_uri": "/repositories/2/archival_objects/131429",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131429",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131429
         },
         {
             "title": "Miscellaneous - P.U.M.C. Budgets 1928-1933, 1928-1933",
-            "id": 131430,
-            "record_uri": "/repositories/2/archival_objects/131430",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131430",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131430
         },
         {
             "title": "Miscellaneous - Special Fund Investments - R/MR 1939-1943, History of Funds 1913-1933, Treasurers Budgets 1947-1960, WRC Cash Books, Spelman Memorial Balance Sheets, Accounts Reports 1936-1961",
-            "id": 131431,
-            "record_uri": "/repositories/2/archival_objects/131431",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131431",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131431
         },
         {
             "title": "Miscellaneous - Senate Investigations Materials",
-            "id": 131432,
-            "record_uri": "/repositories/2/archival_objects/131432",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131432",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131432
         },
         {
             "title": "Miscellaneous - Senate Investigations Materials",
-            "id": 131433,
-            "record_uri": "/repositories/2/archival_objects/131433",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131433",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131433
         },
         {
             "title": "Miscellaneous - Audit Reports 1916-1935, B.S.H. Accounts Reports, Spelman Fund Brokers Statements 1936-1941, 1916-1935, 1936-1941",
-            "id": 131434,
-            "record_uri": "/repositories/2/archival_objects/131434",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131434",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131434
         },
         {
             "title": "Miscellaneous - LSRM Financial Statements 1919-1928, Spelman Fund Worksheets, Davison Fund, Sales/Worksheets, 1919-1928",
-            "id": 131435,
-            "record_uri": "/repositories/2/archival_objects/131435",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131435",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131435
         },
         {
             "title": "Miscellaneous - Worksheets 1931-1946, 1931-1946",
-            "id": 131436,
-            "record_uri": "/repositories/2/archival_objects/131436",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131436",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131436
         },
         {
             "title": "Miscellaneous - Worksheets 1947-1958, 1947-1958",
-            "id": 131437,
-            "record_uri": "/repositories/2/archival_objects/131437",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131437",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131437
         },
         {
             "title": "Miscellaneous - Tax Worksheets 1951-1976, 1951-1976",
-            "id": 131438,
-            "record_uri": "/repositories/2/archival_objects/131438",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131438",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131438
         },
         {
             "title": "Miscellaneous - Tax Worksheets 1976, Rockefeller Institute Worksheets, G.D.B. Auditors Certificates 1904-1966, 1976, 1904-1966",
-            "id": 131439,
-            "record_uri": "/repositories/2/archival_objects/131439",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131439",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131439
         },
         {
             "title": "Miscellaneous - Auditors Certificates 1954-1966, Worksheets 1951-1965, Auditors Certificates 1913-1942, 1954-1966, 1951-1965, 1913-1942",
-            "id": 131440,
-            "record_uri": "/repositories/2/archival_objects/131440",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131440",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131440
         },
         {
             "title": "Miscellaneous - Auditors Certificates 1943-1973, 1943-1973",
-            "id": 131441,
-            "record_uri": "/repositories/2/archival_objects/131441",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131441",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131441
         },
         {
             "title": "Payroll Registers - Payroll Register 1950-1956, 1950-1956",
-            "id": 131442,
-            "record_uri": "/repositories/2/archival_objects/131442",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131442",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131442
         },
         {
             "title": "Payroll Registers - Payroll Register 1956-1960, 1956-1960",
-            "id": 131443,
-            "record_uri": "/repositories/2/archival_objects/131443",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131443",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131443
         },
         {
             "title": "Payroll Registers - Payroll Accounts 1933-1938, 1933-1938",
-            "id": 131444,
-            "record_uri": "/repositories/2/archival_objects/131444",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131444",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131444
         },
         {
             "title": "Payroll Registers - Payroll Accounts 1939-1943, 1939-1943",
-            "id": 131445,
-            "record_uri": "/repositories/2/archival_objects/131445",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131445",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131445
         },
         {
             "title": "Journals - 1902-1928, 1902-1928",
-            "id": 131446,
-            "record_uri": "/repositories/2/archival_objects/131446",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131446",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131446
         },
         {
             "title": "Journals - 1929-1942, 1929-1942",
-            "id": 131447,
-            "record_uri": "/repositories/2/archival_objects/131447",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131447",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131447
         },
         {
             "title": "Journals - 1920-1932, 1920-1932",
-            "id": 131448,
-            "record_uri": "/repositories/2/archival_objects/131448",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131448",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131448
         },
         {
             "title": "Ledgers - Expense Accounts 1931, 1931",
-            "id": 131449,
-            "record_uri": "/repositories/2/archival_objects/131449",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131449",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131449
         },
         {
             "title": "Ledgers - 1913-1926, 1913-1926",
-            "id": 131450,
-            "record_uri": "/repositories/2/archival_objects/131450",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131450",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131450
         },
         {
             "title": "Ledgers - 1927-1943, 1927-1943",
-            "id": 131451,
-            "record_uri": "/repositories/2/archival_objects/131451",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131451",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131451
         },
         {
             "title": "Securities Ledgers - Securities Ledgers 1913-1968, 1913-1968",
-            "id": 131452,
-            "record_uri": "/repositories/2/archival_objects/131452",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131452",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131452
         },
         {
             "title": "Trial Balances - 1922-1968, 1922-1968",
-            "id": 131453,
-            "record_uri": "/repositories/2/archival_objects/131453",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131453",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131453
         },
         {
             "title": "Finance Committee - 1913-1963, 1913-1963",
-            "id": 131454,
-            "record_uri": "/repositories/2/archival_objects/131454",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/131454",
             "level": "file",
-            "instance_types": [
-                "microform"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 131454
         }
     ]
 }

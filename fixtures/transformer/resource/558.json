@@ -371,269 +371,136 @@
     "children": [
         {
             "title": "General Information",
-            "id": 301358,
-            "record_uri": "/repositories/2/archival_objects/301358",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301358",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301358
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, September 10, 1972",
-            "id": 301359,
-            "record_uri": "/repositories/2/archival_objects/301359",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301359",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301359
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, October 16, 1972",
-            "id": 301360,
-            "record_uri": "/repositories/2/archival_objects/301360",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301360",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301360
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, October 16, 1972",
-            "id": 301361,
-            "record_uri": "/repositories/2/archival_objects/301361",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301361",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301361
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, October 26, 1972",
-            "id": 301362,
-            "record_uri": "/repositories/2/archival_objects/301362",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301362",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301362
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, October 26, 1972",
-            "id": 301363,
-            "record_uri": "/repositories/2/archival_objects/301363",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301363",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301363
         },
         {
             "title": "Report of Receipts and Expenditures to United States Comptroller General, January 31, 1973",
-            "id": 301364,
-            "record_uri": "/repositories/2/archival_objects/301364",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301364",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301364
         },
         {
             "title": "Payroll Changes",
-            "id": 301365,
-            "record_uri": "/repositories/2/archival_objects/301365",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301365",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301365
         },
         {
             "title": "Tax Information",
-            "id": 301366,
-            "record_uri": "/repositories/2/archival_objects/301366",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301366",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301366
         },
         {
             "title": "W-4 Forms (A-L)",
-            "id": 301367,
-            "record_uri": "/repositories/2/archival_objects/301367",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301367",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301367
         },
         {
             "title": "W-4 Forms (A-L)",
-            "id": 301368,
-            "record_uri": "/repositories/2/archival_objects/301368",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301368",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301368
         },
         {
             "title": "W-4 Forms (M-Z)",
-            "id": 301369,
-            "record_uri": "/repositories/2/archival_objects/301369",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301369",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301369
         },
         {
             "title": "W-4 Forms (M-Z)",
-            "id": 301370,
-            "record_uri": "/repositories/2/archival_objects/301370",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301370",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301370
         },
         {
             "title": "Original Box and Folder Listing from NYS Committee to Reelect the President",
-            "id": 1153806,
-            "record_uri": "/repositories/2/archival_objects/1153806",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1153806",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1153806
         },
         {
             "title": "New York State Committee to Reelect the President (CREEP) - Cancelled Payroll and Expense Checks",
-            "id": 301371,
-            "record_uri": "/repositories/2/archival_objects/301371",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301371",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301371
         },
         {
             "title": "Adding Machine Tapes",
-            "id": 301372,
-            "record_uri": "/repositories/2/archival_objects/301372",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301372",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301372
         },
         {
             "title": "New York State Committee to Reelect the President (CREEP) - Cancelled Adminstrative Checks",
-            "id": 301373,
-            "record_uri": "/repositories/2/archival_objects/301373",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301373",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301373
         },
         {
             "title": "New York State Committee to Reelect the President (CREEP) - Contribution Receipts",
-            "id": 301374,
-            "record_uri": "/repositories/2/archival_objects/301374",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301374",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301374
         },
         {
             "title": "New York State Committee to Reelect the President (CREEP) - Contribution Receipts",
-            "id": 301375,
-            "record_uri": "/repositories/2/archival_objects/301375",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301375",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301375
         }
     ]
 }

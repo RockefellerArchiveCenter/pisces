@@ -437,81 +437,45 @@
     "children": [
         {
             "title": "General Correspondence, 1960-1970",
-            "id": 292178,
-            "record_uri": "/repositories/2/archival_objects/292178",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/292178",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292178
         },
         {
             "title": "State Files and Summaries, 1960-1970",
-            "id": 292659,
-            "record_uri": "/repositories/2/archival_objects/292659",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/292659",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292659
         },
         {
             "title": "Talent File, 1960-1970",
-            "id": 292813,
-            "record_uri": "/repositories/2/archival_objects/292813",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/292813",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292813
         },
         {
             "title": "Memos, 1959-1970",
-            "id": 292835,
-            "record_uri": "/repositories/2/archival_objects/292835",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/292835",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292835
         },
         {
             "title": "Correspondence, 1960-1968",
-            "id": 292854,
-            "record_uri": "/repositories/2/archival_objects/292854",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/292854",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292854
         },
         {
             "title": "Congressional Quarterly, 1960-1971",
-            "id": 1035254,
-            "record_uri": "/repositories/2/archival_objects/1035254",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/1035254",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 1035254
         }
     ]
 }

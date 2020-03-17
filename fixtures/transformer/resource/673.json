@@ -228,28 +228,17 @@
     "children": [
         {
             "title": "Accession 1, 1927-1985",
-            "id": 489453,
-            "record_uri": "/repositories/2/archival_objects/489453",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/489453",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 489453
         },
         {
             "title": "Donor Organization, Sherlock Holmes English-speaking Vernacular annual reports, 2009 March 15",
-            "id": 1154313,
-            "record_uri": "/repositories/2/archival_objects/1154313",
-            "publish": false,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1154313",
             "level": "recordgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 1154313
         }
     ]
 }

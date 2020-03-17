@@ -367,250 +367,136 @@
     "children": [
         {
             "title": "International Organizations, 1969-2000",
-            "id": 356152,
-            "record_uri": "/repositories/2/archival_objects/356152",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "103",
+            "ref": "/repositories/2/archival_objects/356152",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 356152
         },
         {
             "title": "Philippines, 1950-1994",
-            "id": 356425,
-            "record_uri": "/repositories/2/archival_objects/356425",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "242",
+            "ref": "/repositories/2/archival_objects/356425",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 356425
         },
         {
             "title": "American Cultural Heritage, 1936, 1960-1984",
-            "id": 357362,
-            "record_uri": "/repositories/2/archival_objects/357362",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "270",
+            "ref": "/repositories/2/archival_objects/357362",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 357362
         },
         {
             "title": "Fellowships for American Playwrights/Playwrights-in-Residence Program, 1968-1997",
-            "id": 357570,
-            "record_uri": "/repositories/2/archival_objects/357570",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "272",
+            "ref": "/repositories/2/archival_objects/357570",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 357570
         },
         {
             "title": "Africa - Entire Continent, 1964-1987",
-            "id": 358152,
-            "record_uri": "/repositories/2/archival_objects/358152",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "475",
+            "ref": "/repositories/2/archival_objects/358152",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358152
         },
         {
             "title": "Kenya, 1961-1987, 1997",
-            "id": 358194,
-            "record_uri": "/repositories/2/archival_objects/358194",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "476",
+            "ref": "/repositories/2/archival_objects/358194",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358194
         },
         {
             "title": "East Africa Region, 1958-1983",
-            "id": 358428,
-            "record_uri": "/repositories/2/archival_objects/358428",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "477",
+            "ref": "/repositories/2/archival_objects/358428",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358428
         },
         {
             "title": "Malawi-Nyasaland, 1970-1977",
-            "id": 358515,
-            "record_uri": "/repositories/2/archival_objects/358515",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "482",
+            "ref": "/repositories/2/archival_objects/358515",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358515
         },
         {
             "title": "Rhodesia / Zimbabwe, 1959-1988",
-            "id": 358519,
-            "record_uri": "/repositories/2/archival_objects/358519",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "483",
+            "ref": "/repositories/2/archival_objects/358519",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358519
         },
         {
             "title": "Uganda, 1959-1986",
-            "id": 358540,
-            "record_uri": "/repositories/2/archival_objects/358540",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "492",
+            "ref": "/repositories/2/archival_objects/358540",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358540
         },
         {
             "title": "Sudan, 1972-1982",
-            "id": 358628,
-            "record_uri": "/repositories/2/archival_objects/358628",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "494",
+            "ref": "/repositories/2/archival_objects/358628",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358628
         },
         {
             "title": "French West Africa-West Africa, 1971-1982",
-            "id": 358634,
-            "record_uri": "/repositories/2/archival_objects/358634",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "495",
+            "ref": "/repositories/2/archival_objects/358634",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358634
         },
         {
             "title": "Ghana-Gold Coast, 1967-1972, 1979-1982",
-            "id": 358654,
-            "record_uri": "/repositories/2/archival_objects/358654",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "496",
+            "ref": "/repositories/2/archival_objects/358654",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358654
         },
         {
             "title": "Nigeria, 1959-1992",
-            "id": 358662,
-            "record_uri": "/repositories/2/archival_objects/358662",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "497",
+            "ref": "/repositories/2/archival_objects/358662",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358662
         },
         {
             "title": "Mali, 1983-1992",
-            "id": 358950,
-            "record_uri": "/repositories/2/archival_objects/358950",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "530",
+            "ref": "/repositories/2/archival_objects/358950",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358950
         },
         {
             "title": "Tunisia, 1973-1987",
-            "id": 358961,
-            "record_uri": "/repositories/2/archival_objects/358961",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "539",
+            "ref": "/repositories/2/archival_objects/358961",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358961
         },
         {
             "title": "Ethiopia, 1966-1990",
-            "id": 358996,
-            "record_uri": "/repositories/2/archival_objects/358996",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "701",
+            "ref": "/repositories/2/archival_objects/358996",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 358996
         },
         {
             "title": "Zaire, 1966-1991, n.d.",
-            "id": 359028,
-            "record_uri": "/repositories/2/archival_objects/359028",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "709",
+            "ref": "/repositories/2/archival_objects/359028",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 359028
         },
         {
             "title": "Tanzania, 1966-1995",
-            "id": 359437,
-            "record_uri": "/repositories/2/archival_objects/359437",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "723",
+            "ref": "/repositories/2/archival_objects/359437",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 359437
         }
     ]
 }

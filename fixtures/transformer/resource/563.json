@@ -381,15 +381,10 @@
     "children": [
         {
             "title": "State Issues",
-            "id": 302355,
-            "record_uri": "/repositories/2/archival_objects/302355",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/302355",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 302355
         }
     ]
 }

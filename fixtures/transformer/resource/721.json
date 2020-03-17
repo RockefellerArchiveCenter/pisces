@@ -222,42 +222,24 @@
     "children": [
         {
             "title": "Administrative Files",
-            "id": 507171,
-            "record_uri": "/repositories/2/archival_objects/507171",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I",
+            "ref": "/repositories/2/archival_objects/507171",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 507171
         },
         {
             "title": "S. David Freeman Files",
-            "id": 507191,
-            "record_uri": "/repositories/2/archival_objects/507191",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "II",
+            "ref": "/repositories/2/archival_objects/507191",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 507191
         },
         {
             "title": "EPP Reports, 1973-1974",
-            "id": 507195,
-            "record_uri": "/repositories/2/archival_objects/507195",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "III",
+            "ref": "/repositories/2/archival_objects/507195",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 507195
         }
     ]
 }

@@ -380,159 +380,87 @@
     "children": [
         {
             "title": "Indian Agricultural Program - General Administrative Files, ca. 1952-1976",
-            "id": 365709,
-            "record_uri": "/repositories/2/archival_objects/365709",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I1",
+            "ref": "/repositories/2/archival_objects/365709",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 365709
         },
         {
             "title": "Indian Agricultural Program - Administrative Files, 1950-1975, n.d.",
-            "id": 365817,
-            "record_uri": "/repositories/2/archival_objects/365817",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I2",
+            "ref": "/repositories/2/archival_objects/365817",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 365817
         },
         {
             "title": "Indian Agricultural Program - Officers' Diaries, 1957-1975",
-            "id": 365930,
-            "record_uri": "/repositories/2/archival_objects/365930",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I3",
+            "ref": "/repositories/2/archival_objects/365930",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 365930
         },
         {
             "title": "Indian Agricultural Program - Crop Improvement Programs, 1955-1973, n.d.",
-            "id": 365973,
-            "record_uri": "/repositories/2/archival_objects/365973",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I4",
+            "ref": "/repositories/2/archival_objects/365973",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 365973
         },
         {
             "title": "Indian Agricultural Program - Agricultural Education, 1955-1973, n.d.",
-            "id": 366353,
-            "record_uri": "/repositories/2/archival_objects/366353",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I5",
+            "ref": "/repositories/2/archival_objects/366353",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366353
         },
         {
             "title": "Indian Agricultural Program - Agricultural Research Institutes, 1956-1973",
-            "id": 366423,
-            "record_uri": "/repositories/2/archival_objects/366423",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I6",
+            "ref": "/repositories/2/archival_objects/366423",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366423
         },
         {
             "title": "Indian Agricultural Program - Personnel Files, 1956-1973",
-            "id": 366540,
-            "record_uri": "/repositories/2/archival_objects/366540",
-            "publish": false,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "I7",
+            "ref": "/repositories/2/archival_objects/366540",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366540
         },
         {
             "title": "Medical and Natural Sciences Program - Administrative Files, 1935-1973",
-            "id": 366736,
-            "record_uri": "/repositories/2/archival_objects/366736",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "II1",
+            "ref": "/repositories/2/archival_objects/366736",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366736
         },
         {
             "title": "Medical and Natural Sciences Program - All India Institute of Medical Sciences (AIIMS), 1957-1973, n.d.",
-            "id": 366749,
-            "record_uri": "/repositories/2/archival_objects/366749",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "II2",
+            "ref": "/repositories/2/archival_objects/366749",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366749
         },
         {
             "title": "Medical and Natural Sciences Program - Virus Research Center, Poona, 1951-1970",
-            "id": 366777,
-            "record_uri": "/repositories/2/archival_objects/366777",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "II3",
+            "ref": "/repositories/2/archival_objects/366777",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366777
         },
         {
             "title": "Humanities and Social Sciences Program - General Correspondence, 1964-1973",
-            "id": 366827,
-            "record_uri": "/repositories/2/archival_objects/366827",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "III1",
+            "ref": "/repositories/2/archival_objects/366827",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366827
         },
         {
             "title": "Humanities and Social Sciences Program - Socio-Economic Study in Uttar Pradesh, 1964-1972, n.d.",
-            "id": 366831,
-            "record_uri": "/repositories/2/archival_objects/366831",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "III2",
+            "ref": "/repositories/2/archival_objects/366831",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 366831
         }
     ]
 }

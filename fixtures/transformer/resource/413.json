@@ -371,81 +371,45 @@
     "children": [
         {
             "title": "Projects (A76), before 1975",
-            "id": 166100,
-            "record_uri": "/repositories/2/archival_objects/166100",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/166100",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 166100
         },
         {
             "title": "Projects (A77)",
-            "id": 167245,
-            "record_uri": "/repositories/2/archival_objects/167245",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/167245",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 167245
         },
         {
             "title": "Projects (A78)",
-            "id": 168056,
-            "record_uri": "/repositories/2/archival_objects/168056",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/168056",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 168056
         },
         {
             "title": "Projects (A79)",
-            "id": 169324,
-            "record_uri": "/repositories/2/archival_objects/169324",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/169324",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 169324
         },
         {
             "title": "Projects (A81)",
-            "id": 171924,
-            "record_uri": "/repositories/2/archival_objects/171924",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "7",
+            "ref": "/repositories/2/archival_objects/171924",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 171924
         },
         {
             "title": "Projects (A82)",
-            "id": 175821,
-            "record_uri": "/repositories/2/archival_objects/175821",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "8",
+            "ref": "/repositories/2/archival_objects/175821",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 175821
         }
     ]
 }

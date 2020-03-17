@@ -554,115 +554,59 @@
     "children": [
         {
             "title": "Correspondence and miscellaneous, 1956-1969",
-            "id": 155814,
-            "record_uri": "/repositories/2/archival_objects/155814",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155814",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": true,
-            "containers": []
+            "type": "collection",
+            "identifier": 155814
         },
         {
             "title": "Correspondence, 1970-1971",
-            "id": 155821,
-            "record_uri": "/repositories/2/archival_objects/155821",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155821",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155821
         },
         {
             "title": "Program of lectures at RU, 1970 October 6 1970 October 13 1970 October 20 1970 October 27 1970 November 3",
-            "id": 155822,
-            "record_uri": "/repositories/2/archival_objects/155822",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155822",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155822
         },
         {
             "title": "News clippings",
-            "id": 155823,
-            "record_uri": "/repositories/2/archival_objects/155823",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155823",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155823
         },
         {
             "title": "Biographical Memoir Fellow of Royal Society 23, 59-89, 1977",
-            "id": 155824,
-            "record_uri": "/repositories/2/archival_objects/155824",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155824",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155824
         },
         {
             "title": "Memoir American Philosophical Society Yearbook 49-53, 1976",
-            "id": 155825,
-            "record_uri": "/repositories/2/archival_objects/155825",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155825",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155825
         },
         {
             "title": "Announcement of Memorial Meeting at Columbia, 1976 April 9-10",
-            "id": 155826,
-            "record_uri": "/repositories/2/archival_objects/155826",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155826",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155826
         },
         {
             "title": "Collected reprints (scattered holdings)",
-            "id": 155827,
-            "record_uri": "/repositories/2/archival_objects/155827",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/155827",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 155827
         }
     ]
 }

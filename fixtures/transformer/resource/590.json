@@ -286,927 +286,542 @@
     "children": [
         {
             "title": "Aitken, Thomas H. G.",
-            "id": 361422,
-            "record_uri": "/repositories/2/archival_objects/361422",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361422",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361422
         },
         {
             "title": "Albaugh, Leland G.",
-            "id": 361425,
-            "record_uri": "/repositories/2/archival_objects/361425",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361425",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361425
         },
         {
             "title": "Allen (Shikoh), Jane",
-            "id": 361427,
-            "record_uri": "/repositories/2/archival_objects/361427",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361427",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361427
         },
         {
             "title": "Allen, LeRoy R.",
-            "id": 361432,
-            "record_uri": "/repositories/2/archival_objects/361432",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361432",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361432
         },
         {
             "title": "Anderson, Charles R.",
-            "id": 361437,
-            "record_uri": "/repositories/2/archival_objects/361437",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361437",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361437
         },
         {
             "title": "Anderson, Richmond K.",
-            "id": 361439,
-            "record_uri": "/repositories/2/archival_objects/361439",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361439",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361439
         },
         {
             "title": "App, Alva A.",
-            "id": 361462,
-            "record_uri": "/repositories/2/archival_objects/361462",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361462",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361462
         },
         {
             "title": "Appleget, Thomas B.",
-            "id": 361464,
-            "record_uri": "/repositories/2/archival_objects/361464",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361464",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361464
         },
         {
             "title": "Arbab, Farzam",
-            "id": 361484,
-            "record_uri": "/repositories/2/archival_objects/361484",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361484",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361484
         },
         {
             "title": "Arnold, Virginia",
-            "id": 361486,
-            "record_uri": "/repositories/2/archival_objects/361486",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361486",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361486
         },
         {
             "title": "Baird, Guy B.",
-            "id": 361498,
-            "record_uri": "/repositories/2/archival_objects/361498",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361498",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361498
         },
         {
             "title": "Bakeman, George W.",
-            "id": 361509,
-            "record_uri": "/repositories/2/archival_objects/361509",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361509",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361509
         },
         {
             "title": "Balfour, Marshall C.",
-            "id": 361511,
-            "record_uri": "/repositories/2/archival_objects/361511",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361511",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361511
         },
         {
             "title": "Barnard, Chester I.",
-            "id": 361518,
-            "record_uri": "/repositories/2/archival_objects/361518",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361518",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361518
         },
         {
             "title": "Barnes, Allan C.",
-            "id": 361521,
-            "record_uri": "/repositories/2/archival_objects/361521",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361521",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361521
         },
         {
             "title": "Barnish, Guy",
-            "id": 361524,
-            "record_uri": "/repositories/2/archival_objects/361524",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361524",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361524
         },
         {
             "title": "Bates, Marston",
-            "id": 361526,
-            "record_uri": "/repositories/2/archival_objects/361526",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361526",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361526
         },
         {
             "title": "Bauer, Johannes H.",
-            "id": 361528,
-            "record_uri": "/repositories/2/archival_objects/361528",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361528",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361528
         },
         {
             "title": "Beach, Byron",
-            "id": 361535,
-            "record_uri": "/repositories/2/archival_objects/361535",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361535",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361535
         },
         {
             "title": "Beard, Mary",
-            "id": 361537,
-            "record_uri": "/repositories/2/archival_objects/361537",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361537",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361537
         },
         {
             "title": "Beck, Glenn H.",
-            "id": 361552,
-            "record_uri": "/repositories/2/archival_objects/361552",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361552",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361552
         },
         {
             "title": "Bell, Philip W.",
-            "id": 361554,
-            "record_uri": "/repositories/2/archival_objects/361554",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361554",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361554
         },
         {
             "title": "Bertheau, Rudolf C.",
-            "id": 361558,
-            "record_uri": "/repositories/2/archival_objects/361558",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361558",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361558
         },
         {
             "title": "Bevier, George",
-            "id": 361560,
-            "record_uri": "/repositories/2/archival_objects/361560",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361560",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361560
         },
         {
             "title": "Black, Joseph E.",
-            "id": 361566,
-            "record_uri": "/repositories/2/archival_objects/361566",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361566",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361566
         },
         {
             "title": "Boyce, Alfred Mullikin",
-            "id": 361591,
-            "record_uri": "/repositories/2/archival_objects/361591",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361591",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361591
         },
         {
             "title": "Brackett, Elizabeth W.",
-            "id": 361595,
-            "record_uri": "/repositories/2/archival_objects/361595",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361595",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361595
         },
         {
             "title": "Bradfield, Richard",
-            "id": 361602,
-            "record_uri": "/repositories/2/archival_objects/361602",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361602",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361602
         },
         {
             "title": "Bradley, William Lee",
-            "id": 361605,
-            "record_uri": "/repositories/2/archival_objects/361605",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361605",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361605
         },
         {
             "title": "Braga, Ernani P.",
-            "id": 361607,
-            "record_uri": "/repositories/2/archival_objects/361607",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361607",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361607
         },
         {
             "title": "Bronte, D. Lydia",
-            "id": 361609,
-            "record_uri": "/repositories/2/archival_objects/361609",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361609",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361609
         },
         {
             "title": "Brown, Dorothy E.",
-            "id": 361616,
-            "record_uri": "/repositories/2/archival_objects/361616",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361616",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361616
         },
         {
             "title": "Brown, Robert Z.",
-            "id": 361618,
-            "record_uri": "/repositories/2/archival_objects/361618",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361618",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361618
         },
         {
             "title": "Bryant, John H.",
-            "id": 361623,
-            "record_uri": "/repositories/2/archival_objects/361623",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361623",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361623
         },
         {
             "title": "Buchanan, Norman S.",
-            "id": 361630,
-            "record_uri": "/repositories/2/archival_objects/361630",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361630",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361630
         },
         {
             "title": "Buchwalter, Ellen Shapiro (Mrs. Steven Buchwalter)",
-            "id": 361635,
-            "record_uri": "/repositories/2/archival_objects/361635",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361635",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361635
         },
         {
             "title": "Bugher, John C.",
-            "id": 361649,
-            "record_uri": "/repositories/2/archival_objects/361649",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361649",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361649
         },
         {
             "title": "Burden, Robert P.",
-            "id": 361651,
-            "record_uri": "/repositories/2/archival_objects/361651",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361651",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361651
         },
         {
             "title": "Burke, Alexander W.",
-            "id": 361659,
-            "record_uri": "/repositories/2/archival_objects/361659",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361659",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361659
         },
         {
             "title": "Cahn, Steven M.",
-            "id": 361662,
-            "record_uri": "/repositories/2/archival_objects/361662",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361662",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361662
         },
         {
             "title": "Carr, Henry P.",
-            "id": 361664,
-            "record_uri": "/repositories/2/archival_objects/361664",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361664",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361664
         },
         {
             "title": "Carter, William S.",
-            "id": 361668,
-            "record_uri": "/repositories/2/archival_objects/361668",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361668",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361668
         },
         {
             "title": "Causey, Ottis R.",
-            "id": 361675,
-            "record_uri": "/repositories/2/archival_objects/361675",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361675",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361675
         },
         {
             "title": "Chadwell, Harris Marshall",
-            "id": 361678,
-            "record_uri": "/repositories/2/archival_objects/361678",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361678",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361678
         },
         {
             "title": "Chandler, Robert Flint, Jr.",
-            "id": 361682,
-            "record_uri": "/repositories/2/archival_objects/361682",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361682",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361682
         },
         {
             "title": "Christie, John D.",
-            "id": 361693,
-            "record_uri": "/repositories/2/archival_objects/361693",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361693",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361693
         },
         {
             "title": "Cobb, William C.",
-            "id": 361695,
-            "record_uri": "/repositories/2/archival_objects/361695",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361695",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361695
         },
         {
             "title": "Cole, Charles Woolsey",
-            "id": 361698,
-            "record_uri": "/repositories/2/archival_objects/361698",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361698",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361698
         },
         {
             "title": "Cole, Patricia",
-            "id": 361700,
-            "record_uri": "/repositories/2/archival_objects/361700",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361700",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361700
         },
         {
             "title": "Collins, Ralph Cable",
-            "id": 361702,
-            "record_uri": "/repositories/2/archival_objects/361702",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361702",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361702
         },
         {
             "title": "Colton, Joel",
-            "id": 361704,
-            "record_uri": "/repositories/2/archival_objects/361704",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361704",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361704
         },
         {
             "title": "Compton, Boyd R.",
-            "id": 361713,
-            "record_uri": "/repositories/2/archival_objects/361713",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361713",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361713
         },
         {
             "title": "Connor, Michael E.",
-            "id": 361742,
-            "record_uri": "/repositories/2/archival_objects/361742",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361742",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361742
         },
         {
             "title": "Cook, Joseph A.",
-            "id": 361744,
-            "record_uri": "/repositories/2/archival_objects/361744",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361744",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361744
         },
         {
             "title": "Corwin, Janet D.",
-            "id": 361747,
-            "record_uri": "/repositories/2/archival_objects/361747",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361747",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361747
         },
         {
             "title": "Court, David",
-            "id": 361749,
-            "record_uri": "/repositories/2/archival_objects/361749",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361749",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361749
         },
         {
             "title": "Crawford, Porter J.",
-            "id": 361757,
-            "record_uri": "/repositories/2/archival_objects/361757",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361757",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361757
         },
         {
             "title": "Crawford, Robert W.",
-            "id": 361759,
-            "record_uri": "/repositories/2/archival_objects/361759",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361759",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361759
         },
         {
             "title": "Crowell, F. Elisabeth",
-            "id": 361769,
-            "record_uri": "/repositories/2/archival_objects/361769",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361769",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361769
         },
         {
             "title": "Cummings, Ralph W., Jr.",
-            "id": 361784,
-            "record_uri": "/repositories/2/archival_objects/361784",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361784",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361784
         },
         {
             "title": "Cummings, Ralph W., Sr.",
-            "id": 361790,
-            "record_uri": "/repositories/2/archival_objects/361790",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361790",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361790
         },
         {
             "title": "D'Arms, Edward F.",
-            "id": 361810,
-            "record_uri": "/repositories/2/archival_objects/361810",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361810",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361810
         },
         {
             "title": "Dalakian, Michael J.",
-            "id": 361828,
-            "record_uri": "/repositories/2/archival_objects/361828",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361828",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361828
         },
         {
             "title": "Dalton, Peter R.",
-            "id": 361830,
-            "record_uri": "/repositories/2/archival_objects/361830",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361830",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361830
         },
         {
             "title": "Daniel, James Manley",
-            "id": 361832,
-            "record_uri": "/repositories/2/archival_objects/361832",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361832",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361832
         },
         {
             "title": "Davidson, Ralph K.",
-            "id": 361835,
-            "record_uri": "/repositories/2/archival_objects/361835",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361835",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361835
         },
         {
             "title": "Davis, William A.",
-            "id": 361872,
-            "record_uri": "/repositories/2/archival_objects/361872",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361872",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361872
         },
         {
             "title": "Deane, Herbert A.",
-            "id": 361874,
-            "record_uri": "/repositories/2/archival_objects/361874",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361874",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361874
         },
         {
             "title": "DeVinney, Leland C.",
-            "id": 361876,
-            "record_uri": "/repositories/2/archival_objects/361876",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361876",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361876
         },
         {
             "title": "Dick, George Williamson A.",
-            "id": 361927,
-            "record_uri": "/repositories/2/archival_objects/361927",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361927",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361927
         },
         {
             "title": "Dinning, James S.",
-            "id": 361929,
-            "record_uri": "/repositories/2/archival_objects/361929",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361929",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361929
         },
         {
             "title": "Downs, Wilbur G.",
-            "id": 361932,
-            "record_uri": "/repositories/2/archival_objects/361932",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361932",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361932
         },
         {
             "title": "Dyer, Brian R.",
-            "id": 361957,
-            "record_uri": "/repositories/2/archival_objects/361957",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361957",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361957
         },
         {
             "title": "Elmendorf, John E.",
-            "id": 361960,
-            "record_uri": "/repositories/2/archival_objects/361960",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361960",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361960
         },
         {
             "title": "Embree, Edwin R.",
-            "id": 361962,
-            "record_uri": "/repositories/2/archival_objects/361962",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361962",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361962
         },
         {
             "title": "Evans, Roger F.",
-            "id": 361995,
-            "record_uri": "/repositories/2/archival_objects/361995",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/361995",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 361995
         },
         {
             "title": "Everton, John Scott",
-            "id": 362007,
-            "record_uri": "/repositories/2/archival_objects/362007",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/362007",
             "level": "Officer",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 362007
         }
     ]
 }

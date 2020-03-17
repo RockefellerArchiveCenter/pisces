@@ -322,1566 +322,815 @@
     "children": [
         {
             "title": "African Matters, 1956-1960, n.d.",
-            "id": 285223,
-            "record_uri": "/repositories/2/archival_objects/285223",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285223",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285223
         },
         {
             "title": "American-Colombian Corporation",
-            "id": 285224,
-            "record_uri": "/repositories/2/archival_objects/285224",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285224",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285224
         },
         {
             "title": "American-European Associates, 1968-1969",
-            "id": 285240,
-            "record_uri": "/repositories/2/archival_objects/285240",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285240",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285240
         },
         {
             "title": "Amun-Israeli Housing Corporation",
-            "id": 285241,
-            "record_uri": "/repositories/2/archival_objects/285241",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285241",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285241
         },
         {
             "title": "Appointment Books, 1932-1968",
-            "id": 285248,
-            "record_uri": "/repositories/2/archival_objects/285248",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285248",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285248
         },
         {
             "title": "Appointments as Special Assistant to President Eisenhower (SAP), 1954-1956",
-            "id": 285284,
-            "record_uri": "/repositories/2/archival_objects/285284",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285284",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285284
         },
         {
             "title": "Articles by and about NAR",
-            "id": 285285,
-            "record_uri": "/repositories/2/archival_objects/285285",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285285",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285285
         },
         {
             "title": "Astronauts, 1968, 1970-1971",
-            "id": 285307,
-            "record_uri": "/repositories/2/archival_objects/285307",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285307",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285307
         },
         {
             "title": "Atom Bomb, 1950",
-            "id": 285308,
-            "record_uri": "/repositories/2/archival_objects/285308",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285308",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285308
         },
         {
             "title": "Biographical Data on NAR, 1947-1971",
-            "id": 285309,
-            "record_uri": "/repositories/2/archival_objects/285309",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285309",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285309
         },
         {
             "title": "Biographical Data on NAR, 1947-1971",
-            "id": 285310,
-            "record_uri": "/repositories/2/archival_objects/285310",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285310",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285310
         },
         {
             "title": "Biographies of NAR",
-            "id": 285311,
-            "record_uri": "/repositories/2/archival_objects/285311",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285311",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285311
         },
         {
             "title": "Books and lectures by NAR",
-            "id": 285323,
-            "record_uri": "/repositories/2/archival_objects/285323",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285323",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285323
         },
         {
             "title": "Books by Others - Guerrant, E. O., \"Roosevelt's Good-Neighbor Policy\" - Galley Proof, 1949-1950",
-            "id": 285396,
-            "record_uri": "/repositories/2/archival_objects/285396",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285396",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285396
         },
         {
             "title": "Capitol Hill Associates/Capitol Hill Club",
-            "id": 285397,
-            "record_uri": "/repositories/2/archival_objects/285397",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285397",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285397
         },
         {
             "title": "Capitol Hill Foundation, 1969-1970",
-            "id": 285403,
-            "record_uri": "/repositories/2/archival_objects/285403",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285403",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285403
         },
         {
             "title": "Chase Bank Interests, 1934-1941",
-            "id": 285404,
-            "record_uri": "/repositories/2/archival_objects/285404",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285404",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285404
         },
         {
             "title": "Chase National Bank, 1949-1953",
-            "id": 285405,
-            "record_uri": "/repositories/2/archival_objects/285405",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285405",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285405
         },
         {
             "title": "Christ the King Foundation, 1958-1962",
-            "id": 285406,
-            "record_uri": "/repositories/2/archival_objects/285406",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285406",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285406
         },
         {
             "title": "Christmas Gift Suggestions, 1949",
-            "id": 285407,
-            "record_uri": "/repositories/2/archival_objects/285407",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285407",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285407
         },
         {
             "title": "Christmas Gift Suggestions - Governor's Staff, 1950-1970",
-            "id": 285408,
-            "record_uri": "/repositories/2/archival_objects/285408",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285408",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285408
         },
         {
             "title": "Christmas Card Files, 1936-1974",
-            "id": 285409,
-            "record_uri": "/repositories/2/archival_objects/285409",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285409",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285409
         },
         {
             "title": "Clubs",
-            "id": 285652,
-            "record_uri": "/repositories/2/archival_objects/285652",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285652",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285652
         },
         {
             "title": "Committee on Washington Relations, 1948",
-            "id": 285682,
-            "record_uri": "/repositories/2/archival_objects/285682",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285682",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285682
         },
         {
             "title": "Compania Anonima Hotelera Venezolana - Complaints, 1946-1950",
-            "id": 285683,
-            "record_uri": "/repositories/2/archival_objects/285683",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285683",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285683
         },
         {
             "title": "Compania Anonima Hotelera Venezolana - Proposed Sale of Stock, 1942-1951",
-            "id": 285684,
-            "record_uri": "/repositories/2/archival_objects/285684",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285684",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285684
         },
         {
             "title": "Compania Anonima Hotelera Venezolana - Proposed Sale of Stock, 1942-1951",
-            "id": 285685,
-            "record_uri": "/repositories/2/archival_objects/285685",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285685",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285685
         },
         {
             "title": "Compania de Fomento Venezolano, 1947",
-            "id": 285686,
-            "record_uri": "/repositories/2/archival_objects/285686",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285686",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285686
         },
         {
             "title": "Contributions by NAR, 1930-1972",
-            "id": 285687,
-            "record_uri": "/repositories/2/archival_objects/285687",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285687",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285687
         },
         {
             "title": "Contributions by NAR, Political, 1946-1971",
-            "id": 285775,
-            "record_uri": "/repositories/2/archival_objects/285775",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285775",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285775
         },
         {
             "title": "Creole Petroleum",
-            "id": 285800,
-            "record_uri": "/repositories/2/archival_objects/285800",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285800",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285800
         },
         {
             "title": "Directorships Held by NAR, 1948-1949, 1952, 1956, 1963",
-            "id": 285805,
-            "record_uri": "/repositories/2/archival_objects/285805",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285805",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285805
         },
         {
             "title": "Economics Group - Memoranda, 1957-1958, 1960, 1966",
-            "id": 285806,
-            "record_uri": "/repositories/2/archival_objects/285806",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285806",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285806
         },
         {
             "title": "Economics Group - Reports, 1947",
-            "id": 285807,
-            "record_uri": "/repositories/2/archival_objects/285807",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285807",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285807
         },
         {
             "title": "Economics Group - Reports, 1949",
-            "id": 285808,
-            "record_uri": "/repositories/2/archival_objects/285808",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285808",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285808
         },
         {
             "title": "Economics Group - Reports, 1952",
-            "id": 285809,
-            "record_uri": "/repositories/2/archival_objects/285809",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285809",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285809
         },
         {
             "title": "Economics Group - Reports, 1958",
-            "id": 285810,
-            "record_uri": "/repositories/2/archival_objects/285810",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285810",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285810
         },
         {
             "title": "Entertainment",
-            "id": 285811,
-            "record_uri": "/repositories/2/archival_objects/285811",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285811",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285811
         },
         {
             "title": "Foundations, 1952",
-            "id": 285932,
-            "record_uri": "/repositories/2/archival_objects/285932",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285932",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285932
         },
         {
             "title": "Gifts from NAR",
-            "id": 285933,
-            "record_uri": "/repositories/2/archival_objects/285933",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285933",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285933
         },
         {
             "title": "Gifts Presented to NAR - Acknowledgments, 1959-1970",
-            "id": 285959,
-            "record_uri": "/repositories/2/archival_objects/285959",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285959",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285959
         },
         {
             "title": "Government Affairs Foundation, 1953-1969",
-            "id": 285960,
-            "record_uri": "/repositories/2/archival_objects/285960",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285960",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285960
         },
         {
             "title": "Governor's Club, 1965-1967, 1970-1971",
-            "id": 285978,
-            "record_uri": "/repositories/2/archival_objects/285978",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285978",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285978
         },
         {
             "title": "Governor's Club, 1965-1967, 1970-1971",
-            "id": 285979,
-            "record_uri": "/repositories/2/archival_objects/285979",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285979",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285979
         },
         {
             "title": "Governors Conferences - San Juan Conference, 1959",
-            "id": 285980,
-            "record_uri": "/repositories/2/archival_objects/285980",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285980",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285980
         },
         {
             "title": "Governors Conferences - San Juan Conference, 1959",
-            "id": 285981,
-            "record_uri": "/repositories/2/archival_objects/285981",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285981",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285981
         },
         {
             "title": "Governors Conferences - Other, 1960, 1967-1970",
-            "id": 285982,
-            "record_uri": "/repositories/2/archival_objects/285982",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285982",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 285982
         },
         {
             "title": "Hemisphere Films",
-            "id": 285983,
-            "record_uri": "/repositories/2/archival_objects/285983",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/285983",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 285983
         },
         {
             "title": "India Development Corporation, 1954",
-            "id": 286007,
-            "record_uri": "/repositories/2/archival_objects/286007",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286007",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286007
         },
         {
             "title": "India Development Corporation, 1954",
-            "id": 286008,
-            "record_uri": "/repositories/2/archival_objects/286008",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286008",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286008
         },
         {
             "title": "International Graphic Arts Society - Correspondence, 1951-1971",
-            "id": 286009,
-            "record_uri": "/repositories/2/archival_objects/286009",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286009",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286009
         },
         {
             "title": "International Graphic Arts Society - Loans and Contributions, 1951-1972",
-            "id": 286010,
-            "record_uri": "/repositories/2/archival_objects/286010",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286010",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286010
         },
         {
             "title": "International Graphic Arts Society - Reports, 1951, 1957",
-            "id": 286011,
-            "record_uri": "/repositories/2/archival_objects/286011",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286011",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286011
         },
         {
             "title": "Invitations",
-            "id": 286012,
-            "record_uri": "/repositories/2/archival_objects/286012",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286012",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286012
         },
         {
             "title": "Italian Interests (Sardinia), 1956-1958",
-            "id": 286055,
-            "record_uri": "/repositories/2/archival_objects/286055",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286055",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286055
         },
         {
             "title": "Jury Duty, 1935-1939, 1946-1950, 1954, 1956",
-            "id": 286056,
-            "record_uri": "/repositories/2/archival_objects/286056",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286056",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286056
         },
         {
             "title": "JY Ranch, 1947-1968",
-            "id": 286057,
-            "record_uri": "/repositories/2/archival_objects/286057",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286057",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286057
         },
         {
             "title": "Loans Made by NAR to Institutions, 1950-1964",
-            "id": 286058,
-            "record_uri": "/repositories/2/archival_objects/286058",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286058",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286058
         },
         {
             "title": "Mayor's Business Advisory Committee, 1940-1947",
-            "id": 286059,
-            "record_uri": "/repositories/2/archival_objects/286059",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286059",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286059
         },
         {
             "title": "Meetings, Special, 1948, 1951",
-            "id": 286079,
-            "record_uri": "/repositories/2/archival_objects/286079",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286079",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286079
         },
         {
             "title": "Memberships",
-            "id": 286080,
-            "record_uri": "/repositories/2/archival_objects/286080",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286080",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286080
         },
         {
             "title": "Miscellaneous Correspondence and Memoranda, 1946, 1949, 1951",
-            "id": 286088,
-            "record_uri": "/repositories/2/archival_objects/286088",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286088",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286088
         },
         {
             "title": "New York State Project, 1957-1958",
-            "id": 286089,
-            "record_uri": "/repositories/2/archival_objects/286089",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286089",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286089
         },
         {
             "title": "Opinion Research Corporation, Reports, 1940",
-            "id": 286090,
-            "record_uri": "/repositories/2/archival_objects/286090",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286090",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286090
         },
         {
             "title": "Permission Requests - 810, 812 Fifth Ave., 1951-1971",
-            "id": 286091,
-            "record_uri": "/repositories/2/archival_objects/286091",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286091",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286091
         },
         {
             "title": "Permission Requests - NAR Home, Seal Harbor, Maine, 1952-1969",
-            "id": 286092,
-            "record_uri": "/repositories/2/archival_objects/286092",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286092",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286092
         },
         {
             "title": "Permission Requests - Requests Declined, 1963-1971",
-            "id": 286093,
-            "record_uri": "/repositories/2/archival_objects/286093",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286093",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286093
         },
         {
             "title": "President's Foreign Intelligence Advisory Board, 1969, 1971",
-            "id": 286094,
-            "record_uri": "/repositories/2/archival_objects/286094",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286094",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286094
         },
         {
             "title": "Projects - Document Processing Company Proposal, 1957",
-            "id": 286095,
-            "record_uri": "/repositories/2/archival_objects/286095",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286095",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286095
         },
         {
             "title": "Projects - Mining - Australian Bauxite Proposal, 1956-1958",
-            "id": 286096,
-            "record_uri": "/repositories/2/archival_objects/286096",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286096",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286096
         },
         {
             "title": "Projects - Mining - Bancroft, Howland, 1955-1960",
-            "id": 286097,
-            "record_uri": "/repositories/2/archival_objects/286097",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286097",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286097
         },
         {
             "title": "Projects - Mining - Cole Gold Mines Proposal, 1951",
-            "id": 286098,
-            "record_uri": "/repositories/2/archival_objects/286098",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286098",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286098
         },
         {
             "title": "Projects - Mining - Holland, Henry, 1958",
-            "id": 286099,
-            "record_uri": "/repositories/2/archival_objects/286099",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286099",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286099
         },
         {
             "title": "Projects - Mining - Miscellaneous Proposals, 1952-1960",
-            "id": 286100,
-            "record_uri": "/repositories/2/archival_objects/286100",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286100",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286100
         },
         {
             "title": "Public Relations Staff Lists, 1951-1952, 1957, 1971",
-            "id": 286101,
-            "record_uri": "/repositories/2/archival_objects/286101",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286101",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286101
         },
         {
             "title": "Quantico III Meeting, 1956",
-            "id": 286102,
-            "record_uri": "/repositories/2/archival_objects/286102",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286102",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286102
         },
         {
             "title": "Queen Elizabeth's New York Visit, 1957",
-            "id": 286103,
-            "record_uri": "/repositories/2/archival_objects/286103",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286103",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286103
         },
         {
             "title": "Real Estate Corporation, 1957",
-            "id": 286104,
-            "record_uri": "/repositories/2/archival_objects/286104",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286104",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286104
         },
         {
             "title": "Rhode Island School of Design, 1945, 1950-1954, 1961, 1966",
-            "id": 286105,
-            "record_uri": "/repositories/2/archival_objects/286105",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286105",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286105
         },
         {
             "title": "Rockefeller Brothers Fund, Inc.",
-            "id": 286106,
-            "record_uri": "/repositories/2/archival_objects/286106",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286106",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286106
         },
         {
             "title": "San Francisco Bay Project, 1966, 1968",
-            "id": 286197,
-            "record_uri": "/repositories/2/archival_objects/286197",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286197",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286197
         },
         {
             "title": "Society of Mayflower Descendants, State of New York, 1946-1947, 1949-1955, 1957, 1963, 1965, 1971-1974",
-            "id": 286198,
-            "record_uri": "/repositories/2/archival_objects/286198",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286198",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286198
         },
         {
             "title": "Soper, Frank malaria research material - Correspondence and Memoranda, 1946, 1948, 1951",
-            "id": 286199,
-            "record_uri": "/repositories/2/archival_objects/286199",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286199",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286199
         },
         {
             "title": "Soper, Frank malaria research material - Reports, 1950-1951",
-            "id": 286200,
-            "record_uri": "/repositories/2/archival_objects/286200",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286200",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286200
         },
         {
             "title": "Soper, Frank malaria research material - Printed Material, 1951",
-            "id": 286201,
-            "record_uri": "/repositories/2/archival_objects/286201",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286201",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286201
         },
         {
             "title": "South America, Interests In - Correspondence, 1939-1940",
-            "id": 286202,
-            "record_uri": "/repositories/2/archival_objects/286202",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286202",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286202
         },
         {
             "title": "South America, Interests In - Notes, 1947",
-            "id": 286203,
-            "record_uri": "/repositories/2/archival_objects/286203",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286203",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286203
         },
         {
             "title": "Special Legislative Committee on the Revision and Simplification of the Constitution of New York, 1958-1959",
-            "id": 286204,
-            "record_uri": "/repositories/2/archival_objects/286204",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286204",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286204
         },
         {
             "title": "Speeches by NAR, 1932-1966",
-            "id": 286209,
-            "record_uri": "/repositories/2/archival_objects/286209",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286209",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286209
         },
         {
             "title": "Standard Oil of California, 1945-1958",
-            "id": 286777,
-            "record_uri": "/repositories/2/archival_objects/286777",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286777",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286777
         },
         {
             "title": "Standard Oil of New Jersey",
-            "id": 286778,
-            "record_uri": "/repositories/2/archival_objects/286778",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286778",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286778
         },
         {
             "title": "Statements by NAR, 1941-1950",
-            "id": 286785,
-            "record_uri": "/repositories/2/archival_objects/286785",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286785",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286785
         },
         {
             "title": "Tate Gallery, 1960-1964",
-            "id": 286786,
-            "record_uri": "/repositories/2/archival_objects/286786",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286786",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286786
         },
         {
             "title": "Temporary Commission on the Fiscal Affairs of State Government (New York), 1954",
-            "id": 286787,
-            "record_uri": "/repositories/2/archival_objects/286787",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286787",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286787
         },
         {
             "title": "Temporary State Commission on the Constitutional Convention, 1956-1958",
-            "id": 286788,
-            "record_uri": "/repositories/2/archival_objects/286788",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286788",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286788
         },
         {
             "title": "Thirty Rockefeller Plaza Associates & Co., 1959-1960, 1963-1964",
-            "id": 286826,
-            "record_uri": "/repositories/2/archival_objects/286826",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286826",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 286826
         },
         {
             "title": "Trips, 1930-1977",
-            "id": 286827,
-            "record_uri": "/repositories/2/archival_objects/286827",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286827",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286827
         },
         {
             "title": "Union Church of Pocantico Hills",
-            "id": 286994,
-            "record_uri": "/repositories/2/archival_objects/286994",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/286994",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 286994
         },
         {
             "title": "United Nations Committee of the City of New York - Directory of Committee Members, 1945-1947",
-            "id": 287014,
-            "record_uri": "/repositories/2/archival_objects/287014",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287014",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287014
         },
         {
             "title": "United Nations Committee of the City of New York - Executive Committee Minutes, 1946",
-            "id": 287015,
-            "record_uri": "/repositories/2/archival_objects/287015",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287015",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287015
         },
         {
             "title": "U.S. Treasury Bills, 1948-1949",
-            "id": 287016,
-            "record_uri": "/repositories/2/archival_objects/287016",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287016",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287016
         },
         {
             "title": "Venrock Associates, 1969",
-            "id": 287017,
-            "record_uri": "/repositories/2/archival_objects/287017",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287017",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287017
         },
         {
             "title": "Veterans' Art Center",
-            "id": 287018,
-            "record_uri": "/repositories/2/archival_objects/287018",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287018",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 287018
         },
         {
             "title": "Colonial Williamsburg, 1942-1950",
-            "id": 287040,
-            "record_uri": "/repositories/2/archival_objects/287040",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287040",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287040
         },
         {
             "title": "Acknowledgements of Appointment to Vice Presidency, 1974",
-            "id": 287041,
-            "record_uri": "/repositories/2/archival_objects/287041",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287041",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 287041
         },
         {
             "title": "Correspondence between NAR and John Davison Rockefeller 3rd, 1976-1978",
-            "id": 287062,
-            "record_uri": "/repositories/2/archival_objects/287062",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287062",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287062
         },
         {
             "title": "Correspondence between NAR and John Davison Rockefeller 3rd, 1976-1978",
-            "id": 287063,
-            "record_uri": "/repositories/2/archival_objects/287063",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287063",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287063
         },
         {
             "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - General Public, 1978",
-            "id": 287064,
-            "record_uri": "/repositories/2/archival_objects/287064",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287064",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287064
         },
         {
             "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - General Public, 1978",
-            "id": 287065,
-            "record_uri": "/repositories/2/archival_objects/287065",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287065",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287065
         },
         {
             "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - VIPs and Friends, 1978",
-            "id": 287066,
-            "record_uri": "/repositories/2/archival_objects/287066",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287066",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287066
         },
         {
             "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - VIPs and Friends, 1978",
-            "id": 287067,
-            "record_uri": "/repositories/2/archival_objects/287067",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287067",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287067
         },
         {
             "title": "Acknowledgements re: Condolences to NAR upon death of John Davison Rockefeller 3rd - VIPs and Friends, 1978",
-            "id": 287068,
-            "record_uri": "/repositories/2/archival_objects/287068",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287068",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287068
         },
         {
             "title": "NAR Memo to Richard Rosenbaum on Vice Presidency, 18 January 1979",
-            "id": 287069,
-            "record_uri": "/repositories/2/archival_objects/287069",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287069",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 287069
         },
         {
             "title": "Middle East Trip, 1977",
-            "id": 287070,
-            "record_uri": "/repositories/2/archival_objects/287070",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287070",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 287070
         },
         {
             "title": "Sarabam Corporation, 1977",
-            "id": 287081,
-            "record_uri": "/repositories/2/archival_objects/287081",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/287081",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 287081
         },
         {
             "title": "Subseries 2, 1941-1980",
-            "id": 1035408,
-            "record_uri": "/repositories/2/archival_objects/1035408",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/1035408",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 1035408
         }
     ]
 }

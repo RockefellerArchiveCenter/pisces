@@ -395,55 +395,31 @@
     "children": [
         {
             "title": "Correspondence, 1967-1970",
-            "id": 315883,
-            "record_uri": "/repositories/2/archival_objects/315883",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/315883",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 315883
         },
         {
             "title": "Kissinger Reports on World Affairs and Countries, 1967-1969",
-            "id": 315958,
-            "record_uri": "/repositories/2/archival_objects/315958",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/315958",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 315958
         },
         {
             "title": "Issues and People, 1966-1973",
-            "id": 316022,
-            "record_uri": "/repositories/2/archival_objects/316022",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/316022",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 316022
         },
         {
             "title": "Campaign 1968, 1968",
-            "id": 316152,
-            "record_uri": "/repositories/2/archival_objects/316152",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/316152",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 316152
         }
     ]
 }

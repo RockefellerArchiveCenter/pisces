@@ -319,16 +319,10 @@
     "children": [
         {
             "title": "Gubernatorial Press Office, 1966, 1969-1973",
-            "id": 474294,
-            "record_uri": "/repositories/2/archival_objects/474294",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/474294",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 474294
         }
     ]
 }

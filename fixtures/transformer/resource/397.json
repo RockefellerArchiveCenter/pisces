@@ -412,123 +412,66 @@
     "children": [
         {
             "title": "Reprints - Tryptic action across a membrane. Physiological chemistry and physics 11 (1979) 481-489, 1979",
-            "id": 164739,
-            "record_uri": "/repositories/2/archival_objects/164739",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164739",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164739
         },
         {
             "title": "Reprints - Influence of metallic shields on presumably cosmic radiation affecting surfaces of nickel-plated slides used in immunological studies. Physiological chemistry and physics 11 (1979) 193-204, 1979",
-            "id": 164740,
-            "record_uri": "/repositories/2/archival_objects/164740",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164740",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164740
         },
         {
             "title": "MS: Alexandre Rothen, \"An Exact Twenty-Four Hour Periodicity in the Superficial Topography of Nickel Plated Glass Slides Presumably Caused by a Solar Radiation of Great Penetration\", circa 1983",
-            "id": 164741,
-            "record_uri": "/repositories/2/archival_objects/164741",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164741",
             "level": "item",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164741
         },
         {
             "title": "Faculty and Personal Files, 1928-1987",
-            "id": 164743,
-            "record_uri": "/repositories/2/archival_objects/164743",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164743",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164743
         },
         {
             "title": "Faculty and Personal Files, 1928-1987",
-            "id": 164744,
-            "record_uri": "/repositories/2/archival_objects/164744",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164744",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164744
         },
         {
             "title": "Photographs, 1929, 1958, 1966, 1949, 1970",
-            "id": 164745,
-            "record_uri": "/repositories/2/archival_objects/164745",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164745",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 164745
         },
         {
             "title": "Figures, graphs, and tables",
-            "id": 164746,
-            "record_uri": "/repositories/2/archival_objects/164746",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164746",
             "level": "file",
-            "has_children": false,
-            "instance_types": [],
-            "containers": []
+            "type": "object",
+            "identifier": 164746
         },
         {
             "title": "Collected Reprints",
-            "id": 164747,
-            "record_uri": "/repositories/2/archival_objects/164747",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/164747",
             "level": "file",
-            "has_children": false,
-            "instance_types": [],
-            "containers": []
+            "type": "object",
+            "identifier": 164747
         },
         {
             "title": "Donor Organization, Draught Beer Preservation Society administrative records, 1971 March 14 - 2014 February 25",
-            "id": 1154315,
-            "record_uri": "/repositories/2/archival_objects/1154315",
-            "publish": false,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1154315",
             "level": "recordgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 1154315
         }
     ]
 }

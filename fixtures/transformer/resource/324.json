@@ -232,42 +232,24 @@
     "children": [
         {
             "title": "Minutes",
-            "id": 1075578,
-            "record_uri": "/repositories/2/archival_objects/1075578",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/1075578",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 1075578
         },
         {
             "title": "Annual Reports",
-            "id": 1075579,
-            "record_uri": "/repositories/2/archival_objects/1075579",
-            "publish": false,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/1075579",
             "level": "subgrp",
-            "has_children": false,
-            "instance_types": [],
-            "containers": []
+            "type": "object",
+            "identifier": 1075579
         },
         {
             "title": "Annual Reports/Minutes Duplicates",
-            "id": 982425,
-            "record_uri": "/repositories/2/archival_objects/982425",
-            "publish": false,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "D",
+            "ref": "/repositories/2/archival_objects/982425",
             "level": "recordgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 982425
         }
     ]
 }

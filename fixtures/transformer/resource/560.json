@@ -367,361 +367,185 @@
     "children": [
         {
             "title": "Aldrich, Alexander",
-            "id": 301447,
-            "record_uri": "/repositories/2/archival_objects/301447",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301447",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 301447
         },
         {
             "title": "Amper, Richard",
-            "id": 301466,
-            "record_uri": "/repositories/2/archival_objects/301466",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301466",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 301466
         },
         {
             "title": "Barr, Daniel",
-            "id": 301490,
-            "record_uri": "/repositories/2/archival_objects/301490",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301490",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301490
         },
         {
             "title": "Corbin, Sol",
-            "id": 301491,
-            "record_uri": "/repositories/2/archival_objects/301491",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301491",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301491
         },
         {
             "title": "Doherty, Frank J.",
-            "id": 301492,
-            "record_uri": "/repositories/2/archival_objects/301492",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301492",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301492
         },
         {
             "title": "Douglass, Robert R.",
-            "id": 301493,
-            "record_uri": "/repositories/2/archival_objects/301493",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301493",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301493
         },
         {
             "title": "Jamieson, Francis A.",
-            "id": 301494,
-            "record_uri": "/repositories/2/archival_objects/301494",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301494",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301494
         },
         {
             "title": "MacCrate, Robert",
-            "id": 301495,
-            "record_uri": "/repositories/2/archival_objects/301495",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301495",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301495
         },
         {
             "title": "Marshall, Alton G.",
-            "id": 301496,
-            "record_uri": "/repositories/2/archival_objects/301496",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301496",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301496
         },
         {
             "title": "McManus, Robert",
-            "id": 301497,
-            "record_uri": "/repositories/2/archival_objects/301497",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301497",
             "level": "file",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 301497
         },
         {
             "title": "Musicus, Milton F.",
-            "id": 301522,
-            "record_uri": "/repositories/2/archival_objects/301522",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301522",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301522
         },
         {
             "title": "Perkins, R. B.",
-            "id": 301523,
-            "record_uri": "/repositories/2/archival_objects/301523",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301523",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301523
         },
         {
             "title": "Remington, Thomas R.",
-            "id": 301524,
-            "record_uri": "/repositories/2/archival_objects/301524",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301524",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301524
         },
         {
             "title": "Root, Orin",
-            "id": 301525,
-            "record_uri": "/repositories/2/archival_objects/301525",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301525",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301525
         },
         {
             "title": "Savell, Isabelle",
-            "id": 301526,
-            "record_uri": "/repositories/2/archival_objects/301526",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301526",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301526
         },
         {
             "title": "Slater, Ilene",
-            "id": 301527,
-            "record_uri": "/repositories/2/archival_objects/301527",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301527",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301527
         },
         {
             "title": "Sloate, Leslie",
-            "id": 301528,
-            "record_uri": "/repositories/2/archival_objects/301528",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301528",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301528
         },
         {
             "title": "Stewart, Richard E.",
-            "id": 301529,
-            "record_uri": "/repositories/2/archival_objects/301529",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301529",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301529
         },
         {
             "title": "Terry, John H.",
-            "id": 301530,
-            "record_uri": "/repositories/2/archival_objects/301530",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301530",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301530
         },
         {
             "title": "Underhill, Jacob B.",
-            "id": 301531,
-            "record_uri": "/repositories/2/archival_objects/301531",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301531",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301531
         },
         {
             "title": "Wainwright, Carroll",
-            "id": 301532,
-            "record_uri": "/repositories/2/archival_objects/301532",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301532",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301532
         },
         {
             "title": "Whiteman, Michael",
-            "id": 301533,
-            "record_uri": "/repositories/2/archival_objects/301533",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301533",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301533
         },
         {
             "title": "Whitman, Ann C.",
-            "id": 301534,
-            "record_uri": "/repositories/2/archival_objects/301534",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301534",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301534
         },
         {
             "title": "Wille, Frank",
-            "id": 301535,
-            "record_uri": "/repositories/2/archival_objects/301535",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301535",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301535
         },
         {
             "title": "Winfield, Richard N.",
-            "id": 301536,
-            "record_uri": "/repositories/2/archival_objects/301536",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301536",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301536
         },
         {
             "title": "Executive Chamber Staff - Personal",
-            "id": 301537,
-            "record_uri": "/repositories/2/archival_objects/301537",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/301537",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 301537
         }
     ]
 }

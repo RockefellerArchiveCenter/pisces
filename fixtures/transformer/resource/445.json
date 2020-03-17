@@ -266,81 +266,45 @@
     "children": [
         {
             "title": "General Files, 1960-1974",
-            "id": 190700,
-            "record_uri": "/repositories/2/archival_objects/190700",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/190700",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 190700
         },
         {
             "title": "Campaign Files, Presidential, 1958-1968",
-            "id": 191260,
-            "record_uri": "/repositories/2/archival_objects/191260",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/191260",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 191260
         },
         {
             "title": "Campaign Files, 1970 Gubernatorial, 1970",
-            "id": 191475,
-            "record_uri": "/repositories/2/archival_objects/191475",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/191475",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 191475
         },
         {
             "title": "Speech Transcripts, 1971-1974",
-            "id": 191574,
-            "record_uri": "/repositories/2/archival_objects/191574",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/191574",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 191574
         },
         {
             "title": "Vice Presidential Press Releases, 1975-1976",
-            "id": 191834,
-            "record_uri": "/repositories/2/archival_objects/191834",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/191834",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 191834
         },
         {
             "title": "Subject Files, 1955-1974",
-            "id": 191869,
-            "record_uri": "/repositories/2/archival_objects/191869",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/191869",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 191869
         }
     ]
 }

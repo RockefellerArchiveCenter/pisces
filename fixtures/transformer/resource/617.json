@@ -289,55 +289,31 @@
     "children": [
         {
             "title": "Digest Files",
-            "id": 409650,
-            "record_uri": "/repositories/2/archival_objects/409650",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/409650",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 409650
         },
         {
             "title": "Witness Files",
-            "id": 410312,
-            "record_uri": "/repositories/2/archival_objects/410312",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/410312",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 410312
         },
         {
             "title": "Washington D. C. Files",
-            "id": 410367,
-            "record_uri": "/repositories/2/archival_objects/410367",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/410367",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 410367
         },
         {
             "title": "Background Information and Miscellaneous",
-            "id": 410865,
-            "record_uri": "/repositories/2/archival_objects/410865",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/410865",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 410865
         }
     ]
 }

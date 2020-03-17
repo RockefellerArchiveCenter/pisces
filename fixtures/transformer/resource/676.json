@@ -289,16 +289,10 @@
     "children": [
         {
             "title": "Rockefeller Foundation records, projects (A99), 1974-1999",
-            "id": 494046,
-            "record_uri": "/repositories/2/archival_objects/494046",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1.25",
+            "ref": "/repositories/2/archival_objects/494046",
             "level": "subgrp",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 494046
         }
     ]
 }

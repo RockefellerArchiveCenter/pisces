@@ -429,55 +429,31 @@
     "children": [
         {
             "title": "Current Issues, 1968",
-            "id": 292901,
-            "record_uri": "/repositories/2/archival_objects/292901",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/292901",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292901
         },
         {
             "title": "NAR Political, 1968",
-            "id": 292928,
-            "record_uri": "/repositories/2/archival_objects/292928",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/292928",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292928
         },
         {
             "title": "OMR General, 1968",
-            "id": 292946,
-            "record_uri": "/repositories/2/archival_objects/292946",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/292946",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292946
         },
         {
             "title": "Notebooks and Reports, 1967-1970",
-            "id": 292954,
-            "record_uri": "/repositories/2/archival_objects/292954",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/292954",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 292954
         }
     ]
 }

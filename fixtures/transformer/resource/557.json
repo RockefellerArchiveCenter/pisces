@@ -371,55 +371,31 @@
     "children": [
         {
             "title": "Robert MacCrate, Bulk, 1959-1962 1958-1966, bulk 1959-1962",
-            "id": 299698,
-            "record_uri": "/repositories/2/archival_objects/299698",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/299698",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 299698
         },
         {
             "title": "Sol Neil Corbin, 1958-1965",
-            "id": 299734,
-            "record_uri": "/repositories/2/archival_objects/299734",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/299734",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 299734
         },
         {
             "title": "Robert R. Douglass, 1959-1972",
-            "id": 299783,
-            "record_uri": "/repositories/2/archival_objects/299783",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/299783",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 299783
         },
         {
             "title": "Michael Whiteman, 1963-1974",
-            "id": 300497,
-            "record_uri": "/repositories/2/archival_objects/300497",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/300497",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 300497
         }
     ]
 }

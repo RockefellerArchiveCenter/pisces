@@ -386,159 +386,87 @@
     "children": [
         {
             "title": "Name File",
-            "id": 316681,
-            "record_uri": "/repositories/2/archival_objects/316681",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/316681",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 316681
         },
         {
             "title": "Subject File",
-            "id": 317856,
-            "record_uri": "/repositories/2/archival_objects/317856",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/317856",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 317856
         },
         {
             "title": "Chronological Files",
-            "id": 318924,
-            "record_uri": "/repositories/2/archival_objects/318924",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/318924",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 318924
         },
         {
             "title": "Invitations",
-            "id": 318939,
-            "record_uri": "/repositories/2/archival_objects/318939",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/318939",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 318939
         },
         {
             "title": "1976 Presidential Campaign - Schedules and Invitations",
-            "id": 319179,
-            "record_uri": "/repositories/2/archival_objects/319179",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/319179",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319179
         },
         {
             "title": "Trip Files",
-            "id": 319183,
-            "record_uri": "/repositories/2/archival_objects/319183",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/319183",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319183
         },
         {
             "title": "Speeches",
-            "id": 319193,
-            "record_uri": "/repositories/2/archival_objects/319193",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "7",
+            "ref": "/repositories/2/archival_objects/319193",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319193
         },
         {
             "title": "Vice President's Recommendations for Federal Appointments",
-            "id": 319208,
-            "record_uri": "/repositories/2/archival_objects/319208",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "8",
+            "ref": "/repositories/2/archival_objects/319208",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319208
         },
         {
             "title": "Oversized Items Sent to the Vice President",
-            "id": 319230,
-            "record_uri": "/repositories/2/archival_objects/319230",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "9",
+            "ref": "/repositories/2/archival_objects/319230",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319230
         },
         {
             "title": "Mail Returned by Secret Service",
-            "id": 319259,
-            "record_uri": "/repositories/2/archival_objects/319259",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "10",
+            "ref": "/repositories/2/archival_objects/319259",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319259
         },
         {
             "title": "Control Slips and Control Cards",
-            "id": 319261,
-            "record_uri": "/repositories/2/archival_objects/319261",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "11",
+            "ref": "/repositories/2/archival_objects/319261",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319261
         },
         {
             "title": "Correspondence Form Manual",
-            "id": 319272,
-            "record_uri": "/repositories/2/archival_objects/319272",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "12",
+            "ref": "/repositories/2/archival_objects/319272",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 319272
         }
     ]
 }

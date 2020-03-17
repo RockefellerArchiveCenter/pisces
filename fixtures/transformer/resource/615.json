@@ -332,16 +332,10 @@
     "children": [
         {
             "title": "Belem Virus Laboratory, 1954-1970",
-            "id": 409262,
-            "record_uri": "/repositories/2/archival_objects/409262",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/409262",
             "level": "series",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 409262
         }
     ]
 }

@@ -398,29 +398,17 @@
     "children": [
         {
             "title": "Revenue Sharing, 1971-1972",
-            "id": 299500,
-            "record_uri": "/repositories/2/archival_objects/299500",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/299500",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 299500
         },
         {
             "title": "Latin American Mission, 1968-1972",
-            "id": 299547,
-            "record_uri": "/repositories/2/archival_objects/299547",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/299547",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 299547
         }
     ]
 }

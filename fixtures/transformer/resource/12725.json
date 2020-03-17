@@ -239,507 +239,255 @@
     "children": [
         {
             "title": "Malcolm P. Aldrich - Commonwealth Fund Financials, 1931-1948, 1986",
-            "id": 1080642,
-            "record_uri": "/repositories/2/archival_objects/1080642",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080642",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080642
         },
         {
             "title": "Commonwealth Fund - Annual Report - Summary 1979, 1979",
-            "id": 1080643,
-            "record_uri": "/repositories/2/archival_objects/1080643",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080643",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080643
         },
         {
             "title": "Metropolitan Museum of Art, 1983",
-            "id": 1080644,
-            "record_uri": "/repositories/2/archival_objects/1080644",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080644",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080644
         },
         {
             "title": "Estate of Mary S. Harkness, 1950, 1978",
-            "id": 1080645,
-            "record_uri": "/repositories/2/archival_objects/1080645",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080645",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080645
         },
         {
             "title": "Edward S. Harkness",
-            "id": 1080646,
-            "record_uri": "/repositories/2/archival_objects/1080646",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080646",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080646
         },
         {
             "title": "Investment Book",
-            "id": 1080647,
-            "record_uri": "/repositories/2/archival_objects/1080647",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080647",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080647
         },
         {
             "title": "Mary S. Harkness - Obituary, 1968",
-            "id": 1080648,
-            "record_uri": "/repositories/2/archival_objects/1080648",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080648",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080648
         },
         {
             "title": "Hedges Inn - East Hampton, 1946-1951",
-            "id": 1080649,
-            "record_uri": "/repositories/2/archival_objects/1080649",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080649",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080649
         },
         {
             "title": "Contributions - Edward S. Harkness and Mary S. Harkness, 1932-1952",
-            "id": 1080650,
-            "record_uri": "/repositories/2/archival_objects/1080650",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080650",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080650
         },
         {
             "title": "Portage Lake Mining Company - Stock",
-            "id": 1080651,
-            "record_uri": "/repositories/2/archival_objects/1080651",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080651",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080651
         },
         {
             "title": "Mary Harkness Convalescent Home",
-            "id": 1080652,
-            "record_uri": "/repositories/2/archival_objects/1080652",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080652",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080652
         },
         {
             "title": "Save the Redwoods League, 1925-1965",
-            "id": 1080653,
-            "record_uri": "/repositories/2/archival_objects/1080653",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080653",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080653
         },
         {
             "title": "Malcolm Aldrich Correspondence and Activities, 1960-1982",
-            "id": 1080654,
-            "record_uri": "/repositories/2/archival_objects/1080654",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080654",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080654
         },
         {
             "title": "Harkness Estate",
-            "id": 1080655,
-            "record_uri": "/repositories/2/archival_objects/1080655",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080655",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080655
         },
         {
             "title": "Harkness Family Home - Bellevue, OH - Clippings",
-            "id": 1080656,
-            "record_uri": "/repositories/2/archival_objects/1080656",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080656",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080656
         },
         {
             "title": "Recommendations and Reports to the Commonwealth Fund Directors-Board of Directors, 1957-1975",
-            "id": 1080657,
-            "record_uri": "/repositories/2/archival_objects/1080657",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080657",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080657
         },
         {
             "title": "A. McGhee Harvey - History of the Commonwealth Fund, 1981",
-            "id": 1080658,
-            "record_uri": "/repositories/2/archival_objects/1080658",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080658",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080658
         },
         {
             "title": "Harkness Fellows, 1964-1985",
-            "id": 1080659,
-            "record_uri": "/repositories/2/archival_objects/1080659",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080659",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080659
         },
         {
             "title": "S. Gorley Putt, 1968-1980",
-            "id": 1080660,
-            "record_uri": "/repositories/2/archival_objects/1080660",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080660",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080660
         },
         {
             "title": "Harkness Fellowships, 1947-1968",
-            "id": 1080661,
-            "record_uri": "/repositories/2/archival_objects/1080661",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080661",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080661
         },
         {
             "title": "History of the Harkness Fellowship Program, 1976",
-            "id": 1080662,
-            "record_uri": "/repositories/2/archival_objects/1080662",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080662",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080662
         },
         {
             "title": "Commonwealth Fund Board of Directors, 1977-1978",
-            "id": 1080663,
-            "record_uri": "/repositories/2/archival_objects/1080663",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080663",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080663
         },
         {
             "title": "Eye Institute, 1974-1983",
-            "id": 1080664,
-            "record_uri": "/repositories/2/archival_objects/1080664",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080664",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080664
         },
         {
             "title": "Harvard University - Correspondence, 1956-1964",
-            "id": 1080665,
-            "record_uri": "/repositories/2/archival_objects/1080665",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080665",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080665
         },
         {
             "title": "Columbia Presbyterian Medical Center Fund, 1973",
-            "id": 1080666,
-            "record_uri": "/repositories/2/archival_objects/1080666",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080666",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080666
         },
         {
             "title": "Commonwealth Fund History of Publications Department, 1973",
-            "id": 1080667,
-            "record_uri": "/repositories/2/archival_objects/1080667",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080667",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080667
         },
         {
             "title": "Commonwealth Fund By-Laws, 1963-1981",
-            "id": 1080668,
-            "record_uri": "/repositories/2/archival_objects/1080668",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080668",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080668
         },
         {
             "title": "Commonwealth Fund Board Meetings and Minutes, 1973-1975",
-            "id": 1080669,
-            "record_uri": "/repositories/2/archival_objects/1080669",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080669",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080669
         },
         {
             "title": "Columbia Presbyterian Medical Center Fund - Contributions and Pledges, 1960-1963",
-            "id": 1080670,
-            "record_uri": "/repositories/2/archival_objects/1080670",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080670",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080670
         },
         {
             "title": "Commonwealth Fund Program Areas, 1931-1984",
-            "id": 1080671,
-            "record_uri": "/repositories/2/archival_objects/1080671",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080671",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080671
         },
         {
             "title": "Harkness Fellowship Program, 1975-1976",
-            "id": 1080672,
-            "record_uri": "/repositories/2/archival_objects/1080672",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080672",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080672
         },
         {
             "title": "Commonwealth Fund Board of Directors Files, 1976-1983",
-            "id": 1080673,
-            "record_uri": "/repositories/2/archival_objects/1080673",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080673",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080673
         },
         {
             "title": "Commonwealth Fund Board of Directors Files, 1966-1984",
-            "id": 1080674,
-            "record_uri": "/repositories/2/archival_objects/1080674",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080674",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080674
         },
         {
             "title": "Commonwealth Fund Program Reviews and Recommendations, 1960s-1980s",
-            "id": 1080675,
-            "record_uri": "/repositories/2/archival_objects/1080675",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080675",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080675
         },
         {
             "title": "Commonwealth Fund Finance Committee Meeting, 1975 November 19",
-            "id": 1080676,
-            "record_uri": "/repositories/2/archival_objects/1080676",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080676",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080676
         },
         {
             "title": "Commonwealth Fund Record of Investments, 1919-1953, 1975",
-            "id": 1080677,
-            "record_uri": "/repositories/2/archival_objects/1080677",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
+            "ref": "/repositories/2/archival_objects/1080677",
             "level": "file",
-            "instance_types": [
-                "mixed materials"
-            ],
-            "has_children": false,
-            "containers": []
+            "type": "object",
+            "identifier": 1080677
         }
     ]
 }

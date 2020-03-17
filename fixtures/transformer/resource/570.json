@@ -414,81 +414,45 @@
     "children": [
         {
             "title": "Human Rights Issues, 1959-1964",
-            "id": 308013,
-            "record_uri": "/repositories/2/archival_objects/308013",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "1",
+            "ref": "/repositories/2/archival_objects/308013",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308013
         },
         {
             "title": "Reference Files, 1945-1971",
-            "id": 308043,
-            "record_uri": "/repositories/2/archival_objects/308043",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "2",
+            "ref": "/repositories/2/archival_objects/308043",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308043
         },
         {
             "title": "Arthur Levitt Clippings, 1959-1966",
-            "id": 308547,
-            "record_uri": "/repositories/2/archival_objects/308547",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "3",
+            "ref": "/repositories/2/archival_objects/308547",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308547
         },
         {
             "title": "Legislation, 1964",
-            "id": 308614,
-            "record_uri": "/repositories/2/archival_objects/308614",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "4",
+            "ref": "/repositories/2/archival_objects/308614",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308614
         },
         {
             "title": "Speeches and Statements, 1963",
-            "id": 308657,
-            "record_uri": "/repositories/2/archival_objects/308657",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "5",
+            "ref": "/repositories/2/archival_objects/308657",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308657
         },
         {
             "title": "General Correspondence, 1959-1966",
-            "id": 308669,
-            "record_uri": "/repositories/2/archival_objects/308669",
-            "publish": true,
-            "suppressed": false,
-            "node_type": "archival_object",
-            "component_id": "6",
+            "ref": "/repositories/2/archival_objects/308669",
             "level": "subseries",
-            "has_children": true,
-            "instance_types": [],
-            "containers": []
+            "type": "collection",
+            "identifier": 308669
         }
     ]
 }
