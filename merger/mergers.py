@@ -96,18 +96,7 @@ class ArchivalObjectMerger(BaseMerger):
     def get_archival_object_collection_data(self, object):
         data = {"children": []}
         data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
-        resource_id = object['resource']['ref']
-        tree_node = self.aspace_helper.aspace.client.get(
-            "{}/tree/node?node_uri={}".format(resource_id, object["uri"])).json()
-        for idx in tree_node["precomputed_waypoints"].get(object["uri"]):
-            for child in tree_node["precomputed_waypoints"].get(object["uri"])[idx]:
-                data["children"].append({
-                    "title": child["title"],
-                    "ref": child["uri"],
-                    "level": child["level"],
-                    "order": child["position"],
-                    "type": "collection" if child["child_count"] > 0 else "object",
-                    "identifier": child["uri"].rstrip("/").split("/")[-1]})
+        data["children"] = self.aspace_helper.get_archival_object_children(object['resource']['ref'], object["uri"])
         return data
 
     def get_archivesspace_data(self, object, object_type):
@@ -154,14 +143,7 @@ class ArrangementMapMerger(BaseMerger):
         data = {"children": []}
         data.update(self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json())
         if not object.get("children"):
-            as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["archivesspace_uri"].rstrip("/"))).json()
-            for child in as_tree.get("children"):
-                data["children"].append({
-                    "title": child["title"],
-                    "ref": child["record_uri"],
-                    "level": child["level"],
-                    "type": "collection" if child["has_children"] else "object",
-                    "identifier": child["id"]})
+            data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
 
     @silk_profile()
@@ -210,14 +192,7 @@ class ResourceMerger(BaseMerger):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
         data = {"children": []}
-        as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
-        for child in as_tree.get("children"):
-            data["children"].append({
-                "title": child["title"],
-                "ref": child["record_uri"],
-                "level": child["level"],
-                "type": "collection" if child["has_children"] else "object",
-                "identifier": child["id"]})
+        data["children"] = self.aspace_helper.get_resource_children(object["uri"])
         return data
 
     @silk_profile()
