@@ -1,35 +1,327 @@
 {
-    "lock_version": 12,
-    "title": "Rockefeller Foundation records, oral histories, RG 13",
-    "publish": true,
-    "restrictions": true,
-    "ead_id": "FA119.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, oral histories, RG 13\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Oral Histories, RG 13 ",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T06:13:42Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-15T19:17:31Z",
-    "suppressed": false,
-    "id_0": "FA119",
-    "language": "eng",
-    "level": "recordgrp",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "153",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:17:31Z",
-            "system_mtime": "2016-10-15T19:17:31Z",
-            "user_mtime": "2016-10-15T19:17:31Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 131455,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131455",
+            "title": "J. Curtis Dixon",
+            "type": "collection"
+        },
+        {
+            "identifier": 131459,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131459",
+            "title": "John B. Grant",
+            "type": "collection"
+        },
+        {
+            "identifier": 770388,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/770388",
+            "title": "Alan Gregg",
+            "type": "collection"
+        },
+        {
+            "identifier": 770389,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/770389",
+            "title": "J. George Harrar",
+            "type": "collection"
+        },
+        {
+            "identifier": 770390,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/770390",
+            "title": "Victor G. Heiser",
+            "type": "collection"
+        },
+        {
+            "identifier": 131470,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131470",
+            "title": "John Marshall",
+            "type": "collection"
+        },
+        {
+            "identifier": 131485,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131485",
+            "title": "Flora M. Rhind",
+            "type": "collection"
+        },
+        {
+            "identifier": 131492,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131492",
+            "title": "Elvin C. Stakman",
+            "type": "collection"
+        },
+        {
+            "identifier": 131502,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131502",
+            "title": "Robert Briggs Watson",
+            "type": "collection"
+        },
+        {
+            "identifier": 770391,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/770391",
+            "title": "Benjamin E. Washburn",
+            "type": "collection"
+        },
+        {
+            "identifier": 131507,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131507",
+            "title": "Warren Weaver",
+            "type": "collection"
+        },
+        {
+            "identifier": 131512,
+            "level": "Oral History",
+            "ref": "/repositories/2/archival_objects/131512",
+            "title": "Rockefeller Foundation Program in Agriculture",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-15T19:17:31Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/323"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3606",
+        "user_mtime": "2016-10-15T19:17:31Z"
+    },
+    "create_time": "2014-12-06T06:13:42Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1960",
+            "create_time": "2016-10-15T19:17:31Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1974",
+            "expression": "1960-1974",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-15T19:17:31Z",
+            "user_mtime": "2016-10-15T19:17:31Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA119.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-15T19:17:31Z",
+            "created_by": "battalb",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "27",
+            "portion": "whole",
+            "system_mtime": "2016-10-15T19:17:31Z",
+            "user_mtime": "2016-10-15T19:17:31Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-15T19:17:31Z",
+            "created_by": "battalb",
+            "external_id": "153",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-15T19:17:31Z",
+            "user_mtime": "2016-10-15T19:17:31Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Oral Histories, RG 13 ",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, oral histories, RG 13\n",
+    "id_0": "FA119",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "recordgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/141",
+            "relator": "ctb",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/142",
+            "relator": "ctb",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/4055",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/51",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/143",
+            "relator": "ctb",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/55",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/140",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 12,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ef4f5731cf6bca0a785b34b003e15afa",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Foundation's archives include:\n\nProjects\nGeneral Correspondence\nAdministration, Program and Policy\nChina Medical Board\nInternational Health Board/Division\nField Offices\nTreasurer's Office\nComptroller\nPersonnel\nFellowships\nInformation Services\nDiaries\nOral Histories\nCounsel\nSecretary\nMinutes and Officers Actions\nDockets\nDeclinations (100F)\nNon-textual Materials\nCommunications Office",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "1b7f55b944c3879aba68bf8b1839fdd4",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Rockefeller Foundation\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\"  Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education.  A Division of Studies was created in 1923 to handle projects outside the medical field.  These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established.  The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier.  When the Foundation was created, the Sanitary Commission was disbanded.  After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs.  The International Health Board of the Foundation was disbanded and an International Health Division was organized.  The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist.  The Division of Studies was dropped and the Division of Medical Education was phased out.  The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation.  The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB).  The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization.  The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents.  A microfilm copy of this index is available at the Archive Center.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "4fe51a719f233b23939b2d475343768d",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "77ee69a1257c3f3d09845e5b08363b44",
+            "publish": false,
+            "subnotes": [
+                {
+                    "content": "RG 13  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office",
+                    "jsonmodel_type": "note_text",
+                    "publish": false
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "4fe1006fdc11fde64649bdd948403027",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Officers' oral histories are open for research subject to any written conditions on access established by the subject of the oral history or his/her designated representative. Please see RAC Head of Reference for details. If no written guidelines exist, an oral history is available for research provided that (1) the subject of the oral history is deceased, and the date of the volume to be examined is prior to 1995.  All reasonable efforts will be made to determine the fate of the subject of the oral history(s), but if such efforts are fruitless then the material will remain closed until the 100th anniversary of the officer's birth.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "25a5f5d46b7fa1dd8ade8caa61b814fa",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Alphabetically by surname.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/650"
+        }
+    ],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": true,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-15T19:17:31Z",
+            "created_by": "battalb",
+            "date": "May 2010",
+            "description": "Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-15T19:17:31Z",
+            "uri": "/revision_statement/2825",
+            "user_mtime": "2016-10-15T19:17:31Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/33"
@@ -62,321 +354,29 @@
             "ref": "/subjects/74"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "27",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:17:31Z",
-            "system_mtime": "2016-10-15T19:17:31Z",
-            "user_mtime": "2016-10-15T19:17:31Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1960-1974",
-            "begin": "1960",
-            "end": "1974",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:17:31Z",
-            "system_mtime": "2016-10-15T19:17:31Z",
-            "user_mtime": "2016-10-15T19:17:31Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        },
-        {
-            "role": "subject",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/141"
-        },
-        {
-            "role": "subject",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/142"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/4055"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/51"
-        },
-        {
-            "role": "subject",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/143"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/55"
-        },
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/140"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "May 2010",
-            "description": "Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-15T19:17:31Z",
-            "system_mtime": "2016-10-15T19:17:31Z",
-            "user_mtime": "2016-10-15T19:17:31Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/2825",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [
-        {
-            "ref": "/repositories/2/accessions/650"
-        }
-    ],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ef4f5731cf6bca0a785b34b003e15afa",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Foundation's archives include:\n\nProjects\nGeneral Correspondence\nAdministration, Program and Policy\nChina Medical Board\nInternational Health Board/Division\nField Offices\nTreasurer's Office\nComptroller\nPersonnel\nFellowships\nInformation Services\nDiaries\nOral Histories\nCounsel\nSecretary\nMinutes and Officers Actions\nDockets\nDeclinations (100F)\nNon-textual Materials\nCommunications Office",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1b7f55b944c3879aba68bf8b1839fdd4",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Rockefeller Foundation\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\"  Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education.  A Division of Studies was created in 1923 to handle projects outside the medical field.  These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established.  The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier.  When the Foundation was created, the Sanitary Commission was disbanded.  After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs.  The International Health Board of the Foundation was disbanded and an International Health Division was organized.  The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist.  The Division of Studies was dropped and the Division of Medical Education was phased out.  The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation.  The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB).  The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization.  The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents.  A microfilm copy of this index is available at the Archive Center.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4fe51a719f233b23939b2d475343768d",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "77ee69a1257c3f3d09845e5b08363b44",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 13  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office",
-                    "publish": false
-                }
-            ],
-            "publish": false
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4fe1006fdc11fde64649bdd948403027",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Officers' oral histories are open for research subject to any written conditions on access established by the subject of the oral history or his/her designated representative. Please see RAC Head of Reference for details. If no written guidelines exist, an oral history is available for research provided that (1) the subject of the oral history is deceased, and the date of the volume to be examined is prior to 1995.  All reasonable efforts will be made to determine the fate of the subject of the oral history(s), but if such efforts are fruitless then the material will remain closed until the 100th anniversary of the officer's birth.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "25a5f5d46b7fa1dd8ade8caa61b814fa",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Alphabetically by surname.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/323",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-15T19:17:31Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-15T19:17:31Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3606",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/323"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-15T19:17:31Z",
-        "system_mtime": "2016-10-15T19:17:31Z",
-        "user_mtime": "2016-10-15T19:17:31Z",
-        "enum_1": "2 - Minimal",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, oral histories, RG 13",
     "tree": {
         "ref": "/repositories/2/resources/323/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "J. Curtis Dixon",
-            "ref": "/repositories/2/archival_objects/131455",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131455
+    "uri": "/repositories/2/resources/323",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-15T19:17:31Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "2 - Minimal",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "John B. Grant",
-            "ref": "/repositories/2/archival_objects/131459",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131459
-        },
-        {
-            "title": "Alan Gregg",
-            "ref": "/repositories/2/archival_objects/770388",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 770388
-        },
-        {
-            "title": "J. George Harrar",
-            "ref": "/repositories/2/archival_objects/770389",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 770389
-        },
-        {
-            "title": "Victor G. Heiser",
-            "ref": "/repositories/2/archival_objects/770390",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 770390
-        },
-        {
-            "title": "John Marshall",
-            "ref": "/repositories/2/archival_objects/131470",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131470
-        },
-        {
-            "title": "Flora M. Rhind",
-            "ref": "/repositories/2/archival_objects/131485",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131485
-        },
-        {
-            "title": "Elvin C. Stakman",
-            "ref": "/repositories/2/archival_objects/131492",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131492
-        },
-        {
-            "title": "Robert Briggs Watson",
-            "ref": "/repositories/2/archival_objects/131502",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131502
-        },
-        {
-            "title": "Benjamin E. Washburn",
-            "ref": "/repositories/2/archival_objects/770391",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 770391
-        },
-        {
-            "title": "Warren Weaver",
-            "ref": "/repositories/2/archival_objects/131507",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131507
-        },
-        {
-            "title": "Rockefeller Foundation Program in Agriculture",
-            "ref": "/repositories/2/archival_objects/131512",
-            "level": "Oral History",
-            "type": "collection",
-            "identifier": 131512
-        }
-    ]
+        "system_mtime": "2016-10-15T19:17:31Z",
+        "user_mtime": "2016-10-15T19:17:31Z"
+    },
+    "user_mtime": "2016-10-15T19:17:31Z"
 }

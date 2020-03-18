@@ -1,35 +1,712 @@
 {
-    "lock_version": 8,
-    "title": "Nelson A. Rockefeller vice presidential records, Working Papers of the Vice President, Series 18",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA384.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, Working Papers of the Vice President, Series 18\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, Working Papers of the Vice President, Series 18",
-    "finding_aid_date": "1999",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T10:19:38Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-11-03T20:09:40Z",
-    "suppressed": false,
-    "id_0": "FA384",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2201",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-03T20:09:40Z",
-            "system_mtime": "2016-11-03T20:09:40Z",
-            "user_mtime": "2016-11-03T20:09:40Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 323322,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323322",
+            "title": "Archives and Records (I)",
+            "type": "object"
+        },
+        {
+            "identifier": 323323,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323323",
+            "title": "Archives and Records (II - Central Files Manual)",
+            "type": "object"
+        },
+        {
+            "identifier": 323324,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323324",
+            "title": "Briefing Papers for the Vice President, 1975 February-July",
+            "type": "object"
+        },
+        {
+            "identifier": 323325,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323325",
+            "title": "Briefing Papers for the Vice President, 1975 August-September 29",
+            "type": "object"
+        },
+        {
+            "identifier": 323326,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323326",
+            "title": "Briefing Papers for the Vice President, 1975 September 29-December 31",
+            "type": "object"
+        },
+        {
+            "identifier": 323327,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323327",
+            "title": "Briefing Papers for the Vice President, 1976 January-March",
+            "type": "object"
+        },
+        {
+            "identifier": 323328,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323328",
+            "title": "Briefing Papers for the Vice President, 1976 April 1976-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323329,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323329",
+            "title": "Digests Prepared by Jeff Krolik, 1975 July-1976 August",
+            "type": "object"
+        },
+        {
+            "identifier": 323330,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323330",
+            "title": "Domestic Council, 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323331,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323331",
+            "title": "Domestic Council Activities Inventory, 1975 March 7",
+            "type": "object"
+        },
+        {
+            "identifier": 323332,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323332",
+            "title": "Domestic Council Study of National Domestic Needs and Major Policy Problems: Initial Assessments by Departments (Submitted to the President March 20, 1975), 1975 March 20",
+            "type": "object"
+        },
+        {
+            "identifier": 323333,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323333",
+            "title": "Domestic Council, 1975",
+            "type": "object"
+        },
+        {
+            "identifier": 323334,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323334",
+            "title": "Domestic Council, 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323335,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323335",
+            "title": "Domestic Council, 1975",
+            "type": "object"
+        },
+        {
+            "identifier": 323336,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323336",
+            "title": "Domestic Council Public Forums - Thank-You Letters, 1975",
+            "type": "object"
+        },
+        {
+            "identifier": 323337,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323337",
+            "title": "Domestic Council Public Forums - Thank-You Letters, 1975",
+            "type": "object"
+        },
+        {
+            "identifier": 323338,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323338",
+            "title": "Domestic Council Privacy Committee (I), 1975 January-October",
+            "type": "object"
+        },
+        {
+            "identifier": 323339,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323339",
+            "title": "Domestic Council Privacy Committee (II), 1975 November- 1976 April",
+            "type": "object"
+        },
+        {
+            "identifier": 323340,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323340",
+            "title": "Domestic Council Privacy Committee (III), 1976 May-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323341,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323341",
+            "title": "Domestic Council Privacy Committee, 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323342,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323342",
+            "title": "Energy Independence Authority, 1975 January-August",
+            "type": "object"
+        },
+        {
+            "identifier": 323343,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323343",
+            "title": "Energy Independence Authority, 1975 September-December",
+            "type": "object"
+        },
+        {
+            "identifier": 323344,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323344",
+            "title": "Energy Independence Authority, 1976 January-March",
+            "type": "object"
+        },
+        {
+            "identifier": 323345,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323345",
+            "title": "Energy Independence Authority, 1976 April-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323346,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323346",
+            "title": "Executive Office of Intergovernmental Coordination Proposal, 1976 January 8",
+            "type": "object"
+        },
+        {
+            "identifier": 323347,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323347",
+            "title": "General Revenue Sharing, 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323348,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323348",
+            "title": "Meetings with the President, 1974 December 27-1975 September 10",
+            "type": "object"
+        },
+        {
+            "identifier": 323349,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323349",
+            "title": "Meetings with the President, 1975 September 16-December",
+            "type": "object"
+        },
+        {
+            "identifier": 323350,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323350",
+            "title": "Meetings with the President, 1976 January-May",
+            "type": "object"
+        },
+        {
+            "identifier": 323351,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323351",
+            "title": "Meetings with the President, 1976 June-August",
+            "type": "object"
+        },
+        {
+            "identifier": 323352,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323352",
+            "title": "Meetings with the President, 1976 September-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323353,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323353",
+            "title": "New York City, 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323354,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323354",
+            "title": "Office of Science and Technology Policy (OSTP), 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323355,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323355",
+            "title": "Office of Science and Technology Policy (OSTP), 1975 July-1976 August",
+            "type": "object"
+        },
+        {
+            "identifier": 323356,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323356",
+            "title": "Office of Science and Technology Policy (OSTP), 1975 December-1976 August",
+            "type": "object"
+        },
+        {
+            "identifier": 323357,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323357",
+            "title": "Office of Science and Technology Policy (OSTP), 1976 September 1",
+            "type": "object"
+        },
+        {
+            "identifier": 323358,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323358",
+            "title": "Office of the Vice President - General - Book I, 1975-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 323359,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323359",
+            "title": "Office of the Vice President - General - Book II, 1975-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 323360,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323360",
+            "title": "Office of the Vice President - Descriptions and Procedures, Book I, 1976 November 18",
+            "type": "object"
+        },
+        {
+            "identifier": 323361,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323361",
+            "title": "Office of the Vice President - Descriptions and Procedures, Book II, 1976 November 18",
+            "type": "object"
+        },
+        {
+            "identifier": 323362,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323362",
+            "title": "Productivity Commission, 1974 December-1975 July",
+            "type": "object"
+        },
+        {
+            "identifier": 323363,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323363",
+            "title": "Productivity Commission, 1975 August-December",
+            "type": "object"
+        },
+        {
+            "identifier": 323364,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323364",
+            "title": "Productivity Center, 1976 January-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323365,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323365",
+            "title": "National Commission on Water Quality (I), 1973-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323366,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323366",
+            "title": "National Commission on Water Quality (II), 1973-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 323367,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323367",
+            "title": "Weekly Briefing Notes for the President and Vice President and STATUS: A Monthly Chartbook of Social and Economic Trends, 1975-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 323368,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323368",
+            "title": "Weekly STATUS Reports to the Vice President, 1975 July 25-December 12",
+            "type": "object"
+        },
+        {
+            "identifier": 323369,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323369",
+            "title": "Weekly STATUS Reports to the Vice President, 1976 January-June",
+            "type": "object"
+        },
+        {
+            "identifier": 323370,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323370",
+            "title": "Weekly STATUS Reports to the Vice President, 1976 July-1977 January",
+            "type": "object"
+        },
+        {
+            "identifier": 323371,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323371",
+            "title": "Press Book (I), 1974 September-December",
+            "type": "object"
+        },
+        {
+            "identifier": 323372,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323372",
+            "title": "Press Book (II), 1975 January-April",
+            "type": "object"
+        },
+        {
+            "identifier": 323373,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323373",
+            "title": "Press Book (III), 1975 May-September 11",
+            "type": "object"
+        },
+        {
+            "identifier": 323374,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323374",
+            "title": "Press Book (IV), 1975 September 12-October 31",
+            "type": "object"
+        },
+        {
+            "identifier": 323375,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323375",
+            "title": "Press Book (V), 1975 November-December",
+            "type": "object"
+        },
+        {
+            "identifier": 323376,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323376",
+            "title": "Press Book (VI), 1976 January-April 12",
+            "type": "object"
+        },
+        {
+            "identifier": 323377,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323377",
+            "title": "Press Book (VII), 1976 April 12-June 30",
+            "type": "object"
+        },
+        {
+            "identifier": 323378,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323378",
+            "title": "Press Book (VIII), 1976 July-September 22",
+            "type": "object"
+        },
+        {
+            "identifier": 323379,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323379",
+            "title": "Press Book (IX), 1976 September 22-October 4",
+            "type": "object"
+        },
+        {
+            "identifier": 323380,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323380",
+            "title": "Press Book (X), 1976 October 7-19",
+            "type": "object"
+        },
+        {
+            "identifier": 323381,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323381",
+            "title": "Press Book (XI), 1976 October 20-1977 January 18",
+            "type": "object"
+        },
+        {
+            "identifier": 323382,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323382",
+            "title": "Letters of Appreciation (I)",
+            "type": "object"
+        },
+        {
+            "identifier": 323383,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323383",
+            "title": "Letters of Appreciation (II)",
+            "type": "object"
+        },
+        {
+            "identifier": 323384,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/323384",
+            "title": "Index",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-11-03T20:09:40Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/583"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/4677",
+        "user_mtime": "2016-11-03T20:09:40Z"
+    },
+    "create_time": "2014-12-06T10:19:38Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1974",
+            "create_time": "2016-11-03T20:09:40Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1977",
+            "expression": "1974-1977",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-11-03T20:09:40Z",
+            "user_mtime": "2016-11-03T20:09:40Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA384.xml",
+    "extents": [
+        {
+            "container_summary": "63 bound volumes",
+            "create_time": "2016-11-03T20:09:40Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "28",
+            "portion": "whole",
+            "system_mtime": "2016-11-03T20:09:40Z",
+            "user_mtime": "2016-11-03T20:09:40Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-11-03T20:09:40Z",
+            "created_by": "battalb",
+            "external_id": "2201",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-11-03T20:09:40Z",
+            "user_mtime": "2016-11-03T20:09:40Z"
+        }
+    ],
+    "finding_aid_date": "1999",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, Working Papers of the Vice President, Series 18",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, Working Papers of the Vice President, Series 18\n",
+    "id_0": "FA384",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/193",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 8,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "5cca06e8ccf495dbdffbffa9d68f169b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "0db1e3f81d33d7c81901df7f4495c5cc",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "034cf163c2c13cd1dd2b315dc84df093",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "a923476d1fcda51eeebedd314f6ab00c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "7e23e1dbaa30315f07977b3ad6604aaa",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "4757f3ff551935629e10cefe7a0bda18",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 26 18\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "661ad2bcf74d301a583c56d340dcdefe",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Over the course of Nelson Rockefeller's tenure as Vice President of the United States, he served on several commissions, including the National Commission on Water Quality. Vice President Rockefeller also served as chair of the Domestic Council. The majority of Rockefeller's actions as Vice President are documented in this series of 63 volumes. They contain schedules, agenda and minutes of meetings, position papers, and memoranda and correspondence generated as part of the Vice President's daily activities.\n\nVolumes 9 through 20 focus on Rockefeller's involvement with President Ford's Domestic Council, while documentation of the Vice President's meeings with President Ford are in Volumes 27 through 31. Volumes 50 through 60 contain press materials issued by the VP's office and transcripts of Rockefeller's speeches, television appearances, press conferences, as well as statements and press releases issued by his office. Of particular note in Volume 32 is documentation of the fiscal crisis that affected New York City and State. The majority of the information was provided by T. Norman Hurd, Special Assistant to Vice President Rockefeller. While Rockefeller was Governor of New York, Hurd served successively as Budget Director, Director of State Operations, and Secretary to the Governor.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "33e72772b0bc61b1bba8206c9851c646",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec, Bethany Antos, September 1999\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "1d9d9158dfd01be83607c1a8ba2f5de9",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA378/overview\">Nelson A. Rockefeller Vice Presidential Records, Central Files (FA378)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA380/overview\">Nelson A. Rockefeller Vice Presidential Records, New York Office (FA380)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "158df15e57e7d1c262c4bcc457114145",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Alphabetically.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-11-03T20:09:40Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-11-03T20:09:40Z",
+            "uri": "/revision_statement/3244",
+            "user_mtime": "2016-11-03T20:09:40Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/538"
@@ -128,706 +805,29 @@
             "ref": "/subjects/586"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "28",
-            "container_summary": "63 bound volumes",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-03T20:09:40Z",
-            "system_mtime": "2016-11-03T20:09:40Z",
-            "user_mtime": "2016-11-03T20:09:40Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1974-1977",
-            "begin": "1974",
-            "end": "1977",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-03T20:09:40Z",
-            "system_mtime": "2016-11-03T20:09:40Z",
-            "user_mtime": "2016-11-03T20:09:40Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/193"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-03T20:09:40Z",
-            "system_mtime": "2016-11-03T20:09:40Z",
-            "user_mtime": "2016-11-03T20:09:40Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3244",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "5cca06e8ccf495dbdffbffa9d68f169b",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "0db1e3f81d33d7c81901df7f4495c5cc",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "034cf163c2c13cd1dd2b315dc84df093",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "a923476d1fcda51eeebedd314f6ab00c",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7e23e1dbaa30315f07977b3ad6604aaa",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4757f3ff551935629e10cefe7a0bda18",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 26 18\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "661ad2bcf74d301a583c56d340dcdefe",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Over the course of Nelson Rockefeller's tenure as Vice President of the United States, he served on several commissions, including the National Commission on Water Quality. Vice President Rockefeller also served as chair of the Domestic Council. The majority of Rockefeller's actions as Vice President are documented in this series of 63 volumes. They contain schedules, agenda and minutes of meetings, position papers, and memoranda and correspondence generated as part of the Vice President's daily activities.\n\nVolumes 9 through 20 focus on Rockefeller's involvement with President Ford's Domestic Council, while documentation of the Vice President's meeings with President Ford are in Volumes 27 through 31. Volumes 50 through 60 contain press materials issued by the VP's office and transcripts of Rockefeller's speeches, television appearances, press conferences, as well as statements and press releases issued by his office. Of particular note in Volume 32 is documentation of the fiscal crisis that affected New York City and State. The majority of the information was provided by T. Norman Hurd, Special Assistant to Vice President Rockefeller. While Rockefeller was Governor of New York, Hurd served successively as Budget Director, Director of State Operations, and Secretary to the Governor.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "33e72772b0bc61b1bba8206c9851c646",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec, Bethany Antos, September 1999\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1d9d9158dfd01be83607c1a8ba2f5de9",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA378/overview\">Nelson A. Rockefeller Vice Presidential Records, Central Files (FA378)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA380/overview\">Nelson A. Rockefeller Vice Presidential Records, New York Office (FA380)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "158df15e57e7d1c262c4bcc457114145",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Alphabetically.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/583",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-11-03T20:09:40Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-11-03T20:09:40Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/4677",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/583"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2016-07-29",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-11-03T20:09:40Z",
-        "system_mtime": "2016-11-03T20:09:40Z",
-        "user_mtime": "2016-11-03T20:09:40Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller vice presidential records, Working Papers of the Vice President, Series 18",
     "tree": {
         "ref": "/repositories/2/resources/583/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Archives and Records (I)",
-            "ref": "/repositories/2/archival_objects/323322",
-            "level": "file",
-            "type": "object",
-            "identifier": 323322
+    "uri": "/repositories/2/resources/583",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-11-03T20:09:40Z",
+        "created_by": "battalb",
+        "date_2": "2016-07-29",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Archives and Records (II - Central Files Manual)",
-            "ref": "/repositories/2/archival_objects/323323",
-            "level": "file",
-            "type": "object",
-            "identifier": 323323
-        },
-        {
-            "title": "Briefing Papers for the Vice President, 1975 February-July",
-            "ref": "/repositories/2/archival_objects/323324",
-            "level": "file",
-            "type": "object",
-            "identifier": 323324
-        },
-        {
-            "title": "Briefing Papers for the Vice President, 1975 August-September 29",
-            "ref": "/repositories/2/archival_objects/323325",
-            "level": "file",
-            "type": "object",
-            "identifier": 323325
-        },
-        {
-            "title": "Briefing Papers for the Vice President, 1975 September 29-December 31",
-            "ref": "/repositories/2/archival_objects/323326",
-            "level": "file",
-            "type": "object",
-            "identifier": 323326
-        },
-        {
-            "title": "Briefing Papers for the Vice President, 1976 January-March",
-            "ref": "/repositories/2/archival_objects/323327",
-            "level": "file",
-            "type": "object",
-            "identifier": 323327
-        },
-        {
-            "title": "Briefing Papers for the Vice President, 1976 April 1976-1977 January",
-            "ref": "/repositories/2/archival_objects/323328",
-            "level": "file",
-            "type": "object",
-            "identifier": 323328
-        },
-        {
-            "title": "Digests Prepared by Jeff Krolik, 1975 July-1976 August",
-            "ref": "/repositories/2/archival_objects/323329",
-            "level": "file",
-            "type": "object",
-            "identifier": 323329
-        },
-        {
-            "title": "Domestic Council, 1975-1976",
-            "ref": "/repositories/2/archival_objects/323330",
-            "level": "file",
-            "type": "object",
-            "identifier": 323330
-        },
-        {
-            "title": "Domestic Council Activities Inventory, 1975 March 7",
-            "ref": "/repositories/2/archival_objects/323331",
-            "level": "file",
-            "type": "object",
-            "identifier": 323331
-        },
-        {
-            "title": "Domestic Council Study of National Domestic Needs and Major Policy Problems: Initial Assessments by Departments (Submitted to the President March 20, 1975), 1975 March 20",
-            "ref": "/repositories/2/archival_objects/323332",
-            "level": "file",
-            "type": "object",
-            "identifier": 323332
-        },
-        {
-            "title": "Domestic Council, 1975",
-            "ref": "/repositories/2/archival_objects/323333",
-            "level": "file",
-            "type": "object",
-            "identifier": 323333
-        },
-        {
-            "title": "Domestic Council, 1975-1976",
-            "ref": "/repositories/2/archival_objects/323334",
-            "level": "file",
-            "type": "object",
-            "identifier": 323334
-        },
-        {
-            "title": "Domestic Council, 1975",
-            "ref": "/repositories/2/archival_objects/323335",
-            "level": "file",
-            "type": "object",
-            "identifier": 323335
-        },
-        {
-            "title": "Domestic Council Public Forums - Thank-You Letters, 1975",
-            "ref": "/repositories/2/archival_objects/323336",
-            "level": "file",
-            "type": "object",
-            "identifier": 323336
-        },
-        {
-            "title": "Domestic Council Public Forums - Thank-You Letters, 1975",
-            "ref": "/repositories/2/archival_objects/323337",
-            "level": "file",
-            "type": "object",
-            "identifier": 323337
-        },
-        {
-            "title": "Domestic Council Privacy Committee (I), 1975 January-October",
-            "ref": "/repositories/2/archival_objects/323338",
-            "level": "file",
-            "type": "object",
-            "identifier": 323338
-        },
-        {
-            "title": "Domestic Council Privacy Committee (II), 1975 November- 1976 April",
-            "ref": "/repositories/2/archival_objects/323339",
-            "level": "file",
-            "type": "object",
-            "identifier": 323339
-        },
-        {
-            "title": "Domestic Council Privacy Committee (III), 1976 May-1977 January",
-            "ref": "/repositories/2/archival_objects/323340",
-            "level": "file",
-            "type": "object",
-            "identifier": 323340
-        },
-        {
-            "title": "Domestic Council Privacy Committee, 1976",
-            "ref": "/repositories/2/archival_objects/323341",
-            "level": "file",
-            "type": "object",
-            "identifier": 323341
-        },
-        {
-            "title": "Energy Independence Authority, 1975 January-August",
-            "ref": "/repositories/2/archival_objects/323342",
-            "level": "file",
-            "type": "object",
-            "identifier": 323342
-        },
-        {
-            "title": "Energy Independence Authority, 1975 September-December",
-            "ref": "/repositories/2/archival_objects/323343",
-            "level": "file",
-            "type": "object",
-            "identifier": 323343
-        },
-        {
-            "title": "Energy Independence Authority, 1976 January-March",
-            "ref": "/repositories/2/archival_objects/323344",
-            "level": "file",
-            "type": "object",
-            "identifier": 323344
-        },
-        {
-            "title": "Energy Independence Authority, 1976 April-1977 January",
-            "ref": "/repositories/2/archival_objects/323345",
-            "level": "file",
-            "type": "object",
-            "identifier": 323345
-        },
-        {
-            "title": "Executive Office of Intergovernmental Coordination Proposal, 1976 January 8",
-            "ref": "/repositories/2/archival_objects/323346",
-            "level": "file",
-            "type": "object",
-            "identifier": 323346
-        },
-        {
-            "title": "General Revenue Sharing, 1975-1976",
-            "ref": "/repositories/2/archival_objects/323347",
-            "level": "file",
-            "type": "object",
-            "identifier": 323347
-        },
-        {
-            "title": "Meetings with the President, 1974 December 27-1975 September 10",
-            "ref": "/repositories/2/archival_objects/323348",
-            "level": "file",
-            "type": "object",
-            "identifier": 323348
-        },
-        {
-            "title": "Meetings with the President, 1975 September 16-December",
-            "ref": "/repositories/2/archival_objects/323349",
-            "level": "file",
-            "type": "object",
-            "identifier": 323349
-        },
-        {
-            "title": "Meetings with the President, 1976 January-May",
-            "ref": "/repositories/2/archival_objects/323350",
-            "level": "file",
-            "type": "object",
-            "identifier": 323350
-        },
-        {
-            "title": "Meetings with the President, 1976 June-August",
-            "ref": "/repositories/2/archival_objects/323351",
-            "level": "file",
-            "type": "object",
-            "identifier": 323351
-        },
-        {
-            "title": "Meetings with the President, 1976 September-1977 January",
-            "ref": "/repositories/2/archival_objects/323352",
-            "level": "file",
-            "type": "object",
-            "identifier": 323352
-        },
-        {
-            "title": "New York City, 1975-1976",
-            "ref": "/repositories/2/archival_objects/323353",
-            "level": "file",
-            "type": "object",
-            "identifier": 323353
-        },
-        {
-            "title": "Office of Science and Technology Policy (OSTP), 1975-1976",
-            "ref": "/repositories/2/archival_objects/323354",
-            "level": "file",
-            "type": "object",
-            "identifier": 323354
-        },
-        {
-            "title": "Office of Science and Technology Policy (OSTP), 1975 July-1976 August",
-            "ref": "/repositories/2/archival_objects/323355",
-            "level": "file",
-            "type": "object",
-            "identifier": 323355
-        },
-        {
-            "title": "Office of Science and Technology Policy (OSTP), 1975 December-1976 August",
-            "ref": "/repositories/2/archival_objects/323356",
-            "level": "file",
-            "type": "object",
-            "identifier": 323356
-        },
-        {
-            "title": "Office of Science and Technology Policy (OSTP), 1976 September 1",
-            "ref": "/repositories/2/archival_objects/323357",
-            "level": "file",
-            "type": "object",
-            "identifier": 323357
-        },
-        {
-            "title": "Office of the Vice President - General - Book I, 1975-1977",
-            "ref": "/repositories/2/archival_objects/323358",
-            "level": "file",
-            "type": "object",
-            "identifier": 323358
-        },
-        {
-            "title": "Office of the Vice President - General - Book II, 1975-1977",
-            "ref": "/repositories/2/archival_objects/323359",
-            "level": "file",
-            "type": "object",
-            "identifier": 323359
-        },
-        {
-            "title": "Office of the Vice President - Descriptions and Procedures, Book I, 1976 November 18",
-            "ref": "/repositories/2/archival_objects/323360",
-            "level": "file",
-            "type": "object",
-            "identifier": 323360
-        },
-        {
-            "title": "Office of the Vice President - Descriptions and Procedures, Book II, 1976 November 18",
-            "ref": "/repositories/2/archival_objects/323361",
-            "level": "file",
-            "type": "object",
-            "identifier": 323361
-        },
-        {
-            "title": "Productivity Commission, 1974 December-1975 July",
-            "ref": "/repositories/2/archival_objects/323362",
-            "level": "file",
-            "type": "object",
-            "identifier": 323362
-        },
-        {
-            "title": "Productivity Commission, 1975 August-December",
-            "ref": "/repositories/2/archival_objects/323363",
-            "level": "file",
-            "type": "object",
-            "identifier": 323363
-        },
-        {
-            "title": "Productivity Center, 1976 January-1977 January",
-            "ref": "/repositories/2/archival_objects/323364",
-            "level": "file",
-            "type": "object",
-            "identifier": 323364
-        },
-        {
-            "title": "National Commission on Water Quality (I), 1973-1976",
-            "ref": "/repositories/2/archival_objects/323365",
-            "level": "file",
-            "type": "object",
-            "identifier": 323365
-        },
-        {
-            "title": "National Commission on Water Quality (II), 1973-1976",
-            "ref": "/repositories/2/archival_objects/323366",
-            "level": "file",
-            "type": "object",
-            "identifier": 323366
-        },
-        {
-            "title": "Weekly Briefing Notes for the President and Vice President and STATUS: A Monthly Chartbook of Social and Economic Trends, 1975-1977",
-            "ref": "/repositories/2/archival_objects/323367",
-            "level": "file",
-            "type": "object",
-            "identifier": 323367
-        },
-        {
-            "title": "Weekly STATUS Reports to the Vice President, 1975 July 25-December 12",
-            "ref": "/repositories/2/archival_objects/323368",
-            "level": "file",
-            "type": "object",
-            "identifier": 323368
-        },
-        {
-            "title": "Weekly STATUS Reports to the Vice President, 1976 January-June",
-            "ref": "/repositories/2/archival_objects/323369",
-            "level": "file",
-            "type": "object",
-            "identifier": 323369
-        },
-        {
-            "title": "Weekly STATUS Reports to the Vice President, 1976 July-1977 January",
-            "ref": "/repositories/2/archival_objects/323370",
-            "level": "file",
-            "type": "object",
-            "identifier": 323370
-        },
-        {
-            "title": "Press Book (I), 1974 September-December",
-            "ref": "/repositories/2/archival_objects/323371",
-            "level": "file",
-            "type": "object",
-            "identifier": 323371
-        },
-        {
-            "title": "Press Book (II), 1975 January-April",
-            "ref": "/repositories/2/archival_objects/323372",
-            "level": "file",
-            "type": "object",
-            "identifier": 323372
-        },
-        {
-            "title": "Press Book (III), 1975 May-September 11",
-            "ref": "/repositories/2/archival_objects/323373",
-            "level": "file",
-            "type": "object",
-            "identifier": 323373
-        },
-        {
-            "title": "Press Book (IV), 1975 September 12-October 31",
-            "ref": "/repositories/2/archival_objects/323374",
-            "level": "file",
-            "type": "object",
-            "identifier": 323374
-        },
-        {
-            "title": "Press Book (V), 1975 November-December",
-            "ref": "/repositories/2/archival_objects/323375",
-            "level": "file",
-            "type": "object",
-            "identifier": 323375
-        },
-        {
-            "title": "Press Book (VI), 1976 January-April 12",
-            "ref": "/repositories/2/archival_objects/323376",
-            "level": "file",
-            "type": "object",
-            "identifier": 323376
-        },
-        {
-            "title": "Press Book (VII), 1976 April 12-June 30",
-            "ref": "/repositories/2/archival_objects/323377",
-            "level": "file",
-            "type": "object",
-            "identifier": 323377
-        },
-        {
-            "title": "Press Book (VIII), 1976 July-September 22",
-            "ref": "/repositories/2/archival_objects/323378",
-            "level": "file",
-            "type": "object",
-            "identifier": 323378
-        },
-        {
-            "title": "Press Book (IX), 1976 September 22-October 4",
-            "ref": "/repositories/2/archival_objects/323379",
-            "level": "file",
-            "type": "object",
-            "identifier": 323379
-        },
-        {
-            "title": "Press Book (X), 1976 October 7-19",
-            "ref": "/repositories/2/archival_objects/323380",
-            "level": "file",
-            "type": "object",
-            "identifier": 323380
-        },
-        {
-            "title": "Press Book (XI), 1976 October 20-1977 January 18",
-            "ref": "/repositories/2/archival_objects/323381",
-            "level": "file",
-            "type": "object",
-            "identifier": 323381
-        },
-        {
-            "title": "Letters of Appreciation (I)",
-            "ref": "/repositories/2/archival_objects/323382",
-            "level": "file",
-            "type": "object",
-            "identifier": 323382
-        },
-        {
-            "title": "Letters of Appreciation (II)",
-            "ref": "/repositories/2/archival_objects/323383",
-            "level": "file",
-            "type": "object",
-            "identifier": 323383
-        },
-        {
-            "title": "Index",
-            "ref": "/repositories/2/archival_objects/323384",
-            "level": "file",
-            "type": "object",
-            "identifier": 323384
-        }
-    ]
+        "system_mtime": "2016-11-03T20:09:40Z",
+        "user_mtime": "2016-11-03T20:09:40Z"
+    },
+    "user_mtime": "2016-11-03T20:09:40Z"
 }

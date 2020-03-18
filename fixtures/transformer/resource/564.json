@@ -1,35 +1,320 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller gubernatorial records, New York Office, Series 22",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA365.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, New York Office, Series 22\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, New York Office, Series 22",
-    "finding_aid_date": "1995",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T09:53:37Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T18:58:40Z",
-    "suppressed": false,
-    "id_0": "FA365",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2183",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:58:40Z",
-            "system_mtime": "2016-10-22T18:58:40Z",
-            "user_mtime": "2016-10-22T18:58:40Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 302375,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/302375",
+            "title": "Appointments Office, 1959-1965",
+            "type": "collection"
+        },
+        {
+            "identifier": 303132,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/303132",
+            "title": "Campaign for the 1964 Republican Presidential Nomination, March 1963-June 1964",
+            "type": "collection"
+        },
+        {
+            "identifier": 303306,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/303306",
+            "title": "Special Assistant to the Governor for Radio and Television, 1961-1965",
+            "type": "collection"
+        },
+        {
+            "identifier": 303485,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/303485",
+            "title": "George Hinman and Ilene Slater Files, 1959-1962",
+            "type": "collection"
+        },
+        {
+            "identifier": 303634,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/303634",
+            "title": "Rockefeller for President Citizens Information Center, 1958-1960",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T18:58:40Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/564"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3852",
+        "user_mtime": "2016-10-22T18:58:40Z"
+    },
+    "create_time": "2014-12-06T09:53:37Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1959",
+            "create_time": "2016-10-22T18:58:40Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1965",
+            "expression": "1959-1965",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T18:58:40Z",
+            "user_mtime": "2016-10-22T18:58:40Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA365.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T18:58:40Z",
+            "created_by": "battalb",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "57",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T18:58:40Z",
+            "user_mtime": "2016-10-22T18:58:40Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T18:58:40Z",
+            "created_by": "battalb",
+            "external_id": "2183",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T18:58:40Z",
+            "user_mtime": "2016-10-22T18:58:40Z"
+        }
+    ],
+    "finding_aid_date": "1995",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, New York Office, Series 22",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, New York Office, Series 22\n",
+    "id_0": "FA365",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "a2743780547a36d0d891ba3f3cd36064",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "9b5fc61479144694518eecbc078bdcad",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "fc011ee5aaa3f5078f6c223a61e75795",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 15 22\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "47225185533d958a9c5a198f0ddf964f",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "3da88a8e073d52f1e3dcc2b0562dbd9f",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "953df5b3b37f6a8fa93c653d842c5d96",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "f7ab4b6af3a5972f017c59df4ce78689",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This series is divided into 5 subseries:\n\nSubseries 1 - Appointments Office, 1959-1965\nSubseries 2 - Campaign for the 1964 Republican Nomination, March 1963-June 1964\nSubseries 3 - Special Assistant to the Governor for Radio and Television, 1961-1965\nSubseries 4 - George Hinman and Ilene Slater Files, 1959-1962 Subseries\n5 - Rockefeller for President Citizens Information Center, 1958-1960\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "fd692c95b3f0bfcfefe0999390f0f62c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "BIOGRAPHICAL SKETCHES\n\nJERRY DANZIG\n\nMr. Danzig was born in New York City in 1913. He graduated from the Horace Mann School for Boys in New York and earned a B.A. from Dartmouth in 1934. He served in a variety of management and executive positions for broadcasting companies in New York City, including radio stations WOR and WINS, and television stations CBS and NBC. In 1961 he served as a television and radio consultant to the New York Republican City Committee. In 1962 he was made Special Assistant to the Governor for Radio and Television, a position he held until 1976. In this position Mr. Danzig's responsibilities included the production and distribution of radio and television commercials, or \"spots,\" for Governor Rockefeller's gubernatorial and presidential campaigns. In 1973 Gov. Rockefeller appointed Mr. Danzig as a member of the New York State Commission on Cable TV, on which he served until 1981. Mr. Danzig was a partner in Chester Burger &amp; Co., a management consulting firm, from 1976 until 1985 when he became a consultant to the National Executive Service Corps.\n\nGEORGE L. HINMAN\n\nMr. Hinman was born in Binghamton, New York in 1905. He was a graduate of Princeton University, and held a bachelor of laws degree from Harvard University. He was also the recipient of many honorary doctoral degrees. He held directorships in many companies, including International Business Machines and New York Telephone. He was also a member of the executive committee of the Salvation Army New York State Advisory Conference. Mr. Hinman was at one time senior partner of the law firm of Hinman, Howard &amp; Kattrell of Binghamton, a firm he was associated with since 1930. In his capacity as an attorney, he was also special counsel to the Rockefeller Family &amp; Associates. He was a member of the Board of Regents of the University of the State of New York (1948-1950). After serving with the Governor, he was appointed to the Board of Trustees of the State University of New York in 1965. He also served as trustee of both Colgate University and Elmira College.\n\nIn addition to his position of executive assistant to the Governor (1958-1959), Mr. Hinman's state service consisted of being: Counsel for the New York State Temporary Commission on the Constitutional Convention and the Special Legislative Committee on the Revision and Simplification of the Constitution (1956-1958); a member of the New York State Attorney General's Committee on Ethical Standards in Government (1955-1959); and a member of the New York State Lt. Governor's Committee on Teachers' Salaries in 1951. Mr. Hinman was also Republican National Committeeman for New York State, as well as Delegate-at-large for the Republican National Conventions in both 1960 and 1964.\n\nGRAHAM MOLITOR\n\nGraham Molitor was born in Seattle in 1934. He earned a B.A. from the University of Washington in 1955 and an LL.B. from the American University in 1963. He was admitted to the bar in the District of Columbia in 1963. After working as a court bailiff in the District of Columbia and as a legislative counsel in the House of Representatives, Mr. Molitor was hired as Director of Candidate Research of the Rockefeller for President Committee in 1963. He was responsible for monitoring and analyzing statements made by other candidates for the Republican presidential nomination. He served until Gov. Rockefeller withdrew his candidacy in 1964, and then served in the same capacity again in Gov. Rockefeller's 1968 presidential campaign. From 1963 to 1977 he worked as a lobbyist for the food industry. In 1977 he established Public Policy Forecasting, Inc., and has written, lectured, consulted and participated in numerous public policy conferences all regarding future trends in food, technology, and related public policy issues.\n\nROSWELL \"ROD\" B. PERKINS\n\nMr. Perkins was born in Boston, Massachusetts, in 1926. He received an A.B. in 1945 and LL.B. in 1949, both from Harvard University. He was admitted to the bar in Massachusetts and New York in 1949. He spent his entire law career with the New York law firm of Debevoise, Plimpton, becoming a partner in 1957. He met Nelson Rockefeller when the two men worked for the Department of Health, Education and Welfare. Mr. Perkins served as Assistant Secretary (1954-1956) and Mr. Rockefeller served as Under Secretary (1953-1954). Mr. Perkins worked in Mr. Rockefeller's 1958 gubernatorial campaign, as well as some of his later campaigns. After the election of 1958 he assisted in establishing the new Rockefeller administration and served as Rockefeller's first Counsel to the Governor. As agreed to beforehand, Mr. Perkins resigned as Counsel on June 1, 1959, and returned to private practice.\n\nMICHAEL N. SCELSI\n\nMr. Scelsi graduated from Louisiana State University with a degree in government in 1941. He served during World War II as a United States Marine stationed in the Pacific. From 1946 to 1948, he worked with the United Nations Relief and Rehabilitation Administration and its successor agency, the International Refugee Organization. He was also very active in community and civic affairs in his native Broom County, New York. Prior to joining the Governor's staff, Mr. Scelsi worked in college administration, primarily at Harpur College of the State University of New York at Binghamton. He then went on to serve as Assistant Industrial Commissioner in the New York State Department of Labor. From 1959 to 1965, he served as executive director of the New York Republican State Committee. On February 1, 1967, after serving as Appointments Officer for two years, Governor Rockefeller appointed Mr. Scelsi to the New York State Civil Service Commission.\n\nILENE J. SLATER\n\nMs. Slater was graduated from Hunter High School in New York City, and received a B.A. from Mount Holyoke College in 1947. From 1947 to 1948, she also attended the Graduate Institute of International Relations, located at the University of Geneva, in Switzerland. She went on to work for the National Bureau of Economic Research (1948-1949), the English Speaking Union (1949-1950), the International Development Advisory Board (1951), the White House administrative staff (1953-1957), and the U.S. Commission for the Brussels Fair (1957-1958). In February of 1958, Ms. Slater became an assistant in the Offices of the Rockefeller Brothers Fund, and went on to join the Governor's personal staff in July 1958.\n\nCARL SPAD\n\nMr. Spad was born in 1904 in Brooklyn, New York. He was educated in New York and Westchester County public schools. He maintained a manufacturer's representative office in New York City (1941-1947), served as a sales manager for a fuel oil concern (1947-1952), as president of the New York State Association of Young Republican Clubs and Youth Director for the Republican State Committee (1952-1954), as an executive assistant to the New York State Building Code Commission (1954-1956), and as assistant to New York State Republican Chairman, L. Judson Morehouse (1956-1959). Mr. Spad served as Gov. Rockefeller's Appointments Officer from 1959 until 1965, when he resigned to head the New York State Republican Committee. He was replaced by Michael N. Scelsi.\n\nSources: \"The New York Red Book (An Illustrated Yearbook of Authentic Information Concerning New York State, Its Departments and Political Subdivisions, and the Officials Who Administer Its Affairs),\" 68th edition (1959-1960), 76th edition (1967-1968).\n\n\"Who's Who in America,\" various editions.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "7764264e54107d3ac83f3d996b360448",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "NOTE TO RESEARCHERS\n\nThis series contains the office files of Carl Spad, Michael Scelsi, Roswell B. Perkins, Graham T. Molitor, Jerry Danzig, George Hinman, Ilene Slater, and Alexander Halpern. They document the official activities of these individuals in the execution of their duties as members of Nelson A. Rockefeller's gubernatorial and/or political campaign staffs. The actions, decisions and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration and/or political campaigns. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nPrior to his election as Governor of New York in November 1958, Nelson A. Rockefeller maintained an office at Rockefeller Center in Manhattan. To separate his work as Governor from his private activities, Governor Rockefeller established an office in Manhattan at 22 West 55th Street. This became known as the New York Office, to distinguish it from the Governor's office in the state capitol building in Albany. Governor Rockefeller was the first governor to maintain a permanent office in New York City. In general, Governor Rockefeller was in Albany only when the state legislature was in session or on special occasion. The management of his public duties was largely undertaken from the New York Office.\n\nThis series primarily documents Rockefeller's travel and public appearances during his first two terms as governor, portions of his 1962 gubernatorial reelection campaign, and portions of his campaigns for the Republican presidential nomination in 1960 and 1964.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "2bf0d921623183ab48fb0a12412da3d1",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec November 1995\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "561c152965a561d28f4e6745aa84d253",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T18:58:40Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T18:58:40Z",
+            "uri": "/revision_statement/3016",
+            "user_mtime": "2016-10-22T18:58:40Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/572"
@@ -125,314 +410,29 @@
             "ref": "/subjects/574"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "57",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:58:40Z",
-            "system_mtime": "2016-10-22T18:58:40Z",
-            "user_mtime": "2016-10-22T18:58:40Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1959-1965",
-            "begin": "1959",
-            "end": "1965",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:58:40Z",
-            "system_mtime": "2016-10-22T18:58:40Z",
-            "user_mtime": "2016-10-22T18:58:40Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:58:40Z",
-            "system_mtime": "2016-10-22T18:58:40Z",
-            "user_mtime": "2016-10-22T18:58:40Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3016",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "a2743780547a36d0d891ba3f3cd36064",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9b5fc61479144694518eecbc078bdcad",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "fc011ee5aaa3f5078f6c223a61e75795",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 15 22\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "47225185533d958a9c5a198f0ddf964f",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3da88a8e073d52f1e3dcc2b0562dbd9f",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "953df5b3b37f6a8fa93c653d842c5d96",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f7ab4b6af3a5972f017c59df4ce78689",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "This series is divided into 5 subseries:\n\nSubseries 1 - Appointments Office, 1959-1965\nSubseries 2 - Campaign for the 1964 Republican Nomination, March 1963-June 1964\nSubseries 3 - Special Assistant to the Governor for Radio and Television, 1961-1965\nSubseries 4 - George Hinman and Ilene Slater Files, 1959-1962 Subseries\n5 - Rockefeller for President Citizens Information Center, 1958-1960\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "fd692c95b3f0bfcfefe0999390f0f62c",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "BIOGRAPHICAL SKETCHES\n\nJERRY DANZIG\n\nMr. Danzig was born in New York City in 1913. He graduated from the Horace Mann School for Boys in New York and earned a B.A. from Dartmouth in 1934. He served in a variety of management and executive positions for broadcasting companies in New York City, including radio stations WOR and WINS, and television stations CBS and NBC. In 1961 he served as a television and radio consultant to the New York Republican City Committee. In 1962 he was made Special Assistant to the Governor for Radio and Television, a position he held until 1976. In this position Mr. Danzig's responsibilities included the production and distribution of radio and television commercials, or \"spots,\" for Governor Rockefeller's gubernatorial and presidential campaigns. In 1973 Gov. Rockefeller appointed Mr. Danzig as a member of the New York State Commission on Cable TV, on which he served until 1981. Mr. Danzig was a partner in Chester Burger &amp; Co., a management consulting firm, from 1976 until 1985 when he became a consultant to the National Executive Service Corps.\n\nGEORGE L. HINMAN\n\nMr. Hinman was born in Binghamton, New York in 1905. He was a graduate of Princeton University, and held a bachelor of laws degree from Harvard University. He was also the recipient of many honorary doctoral degrees. He held directorships in many companies, including International Business Machines and New York Telephone. He was also a member of the executive committee of the Salvation Army New York State Advisory Conference. Mr. Hinman was at one time senior partner of the law firm of Hinman, Howard &amp; Kattrell of Binghamton, a firm he was associated with since 1930. In his capacity as an attorney, he was also special counsel to the Rockefeller Family &amp; Associates. He was a member of the Board of Regents of the University of the State of New York (1948-1950). After serving with the Governor, he was appointed to the Board of Trustees of the State University of New York in 1965. He also served as trustee of both Colgate University and Elmira College.\n\nIn addition to his position of executive assistant to the Governor (1958-1959), Mr. Hinman's state service consisted of being: Counsel for the New York State Temporary Commission on the Constitutional Convention and the Special Legislative Committee on the Revision and Simplification of the Constitution (1956-1958); a member of the New York State Attorney General's Committee on Ethical Standards in Government (1955-1959); and a member of the New York State Lt. Governor's Committee on Teachers' Salaries in 1951. Mr. Hinman was also Republican National Committeeman for New York State, as well as Delegate-at-large for the Republican National Conventions in both 1960 and 1964.\n\nGRAHAM MOLITOR\n\nGraham Molitor was born in Seattle in 1934. He earned a B.A. from the University of Washington in 1955 and an LL.B. from the American University in 1963. He was admitted to the bar in the District of Columbia in 1963. After working as a court bailiff in the District of Columbia and as a legislative counsel in the House of Representatives, Mr. Molitor was hired as Director of Candidate Research of the Rockefeller for President Committee in 1963. He was responsible for monitoring and analyzing statements made by other candidates for the Republican presidential nomination. He served until Gov. Rockefeller withdrew his candidacy in 1964, and then served in the same capacity again in Gov. Rockefeller's 1968 presidential campaign. From 1963 to 1977 he worked as a lobbyist for the food industry. In 1977 he established Public Policy Forecasting, Inc., and has written, lectured, consulted and participated in numerous public policy conferences all regarding future trends in food, technology, and related public policy issues.\n\nROSWELL \"ROD\" B. PERKINS\n\nMr. Perkins was born in Boston, Massachusetts, in 1926. He received an A.B. in 1945 and LL.B. in 1949, both from Harvard University. He was admitted to the bar in Massachusetts and New York in 1949. He spent his entire law career with the New York law firm of Debevoise, Plimpton, becoming a partner in 1957. He met Nelson Rockefeller when the two men worked for the Department of Health, Education and Welfare. Mr. Perkins served as Assistant Secretary (1954-1956) and Mr. Rockefeller served as Under Secretary (1953-1954). Mr. Perkins worked in Mr. Rockefeller's 1958 gubernatorial campaign, as well as some of his later campaigns. After the election of 1958 he assisted in establishing the new Rockefeller administration and served as Rockefeller's first Counsel to the Governor. As agreed to beforehand, Mr. Perkins resigned as Counsel on June 1, 1959, and returned to private practice.\n\nMICHAEL N. SCELSI\n\nMr. Scelsi graduated from Louisiana State University with a degree in government in 1941. He served during World War II as a United States Marine stationed in the Pacific. From 1946 to 1948, he worked with the United Nations Relief and Rehabilitation Administration and its successor agency, the International Refugee Organization. He was also very active in community and civic affairs in his native Broom County, New York. Prior to joining the Governor's staff, Mr. Scelsi worked in college administration, primarily at Harpur College of the State University of New York at Binghamton. He then went on to serve as Assistant Industrial Commissioner in the New York State Department of Labor. From 1959 to 1965, he served as executive director of the New York Republican State Committee. On February 1, 1967, after serving as Appointments Officer for two years, Governor Rockefeller appointed Mr. Scelsi to the New York State Civil Service Commission.\n\nILENE J. SLATER\n\nMs. Slater was graduated from Hunter High School in New York City, and received a B.A. from Mount Holyoke College in 1947. From 1947 to 1948, she also attended the Graduate Institute of International Relations, located at the University of Geneva, in Switzerland. She went on to work for the National Bureau of Economic Research (1948-1949), the English Speaking Union (1949-1950), the International Development Advisory Board (1951), the White House administrative staff (1953-1957), and the U.S. Commission for the Brussels Fair (1957-1958). In February of 1958, Ms. Slater became an assistant in the Offices of the Rockefeller Brothers Fund, and went on to join the Governor's personal staff in July 1958.\n\nCARL SPAD\n\nMr. Spad was born in 1904 in Brooklyn, New York. He was educated in New York and Westchester County public schools. He maintained a manufacturer's representative office in New York City (1941-1947), served as a sales manager for a fuel oil concern (1947-1952), as president of the New York State Association of Young Republican Clubs and Youth Director for the Republican State Committee (1952-1954), as an executive assistant to the New York State Building Code Commission (1954-1956), and as assistant to New York State Republican Chairman, L. Judson Morehouse (1956-1959). Mr. Spad served as Gov. Rockefeller's Appointments Officer from 1959 until 1965, when he resigned to head the New York State Republican Committee. He was replaced by Michael N. Scelsi.\n\nSources: \"The New York Red Book (An Illustrated Yearbook of Authentic Information Concerning New York State, Its Departments and Political Subdivisions, and the Officials Who Administer Its Affairs),\" 68th edition (1959-1960), 76th edition (1967-1968).\n\n\"Who's Who in America,\" various editions.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7764264e54107d3ac83f3d996b360448",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "NOTE TO RESEARCHERS\n\nThis series contains the office files of Carl Spad, Michael Scelsi, Roswell B. Perkins, Graham T. Molitor, Jerry Danzig, George Hinman, Ilene Slater, and Alexander Halpern. They document the official activities of these individuals in the execution of their duties as members of Nelson A. Rockefeller's gubernatorial and/or political campaign staffs. The actions, decisions and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration and/or political campaigns. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nPrior to his election as Governor of New York in November 1958, Nelson A. Rockefeller maintained an office at Rockefeller Center in Manhattan. To separate his work as Governor from his private activities, Governor Rockefeller established an office in Manhattan at 22 West 55th Street. This became known as the New York Office, to distinguish it from the Governor's office in the state capitol building in Albany. Governor Rockefeller was the first governor to maintain a permanent office in New York City. In general, Governor Rockefeller was in Albany only when the state legislature was in session or on special occasion. The management of his public duties was largely undertaken from the New York Office.\n\nThis series primarily documents Rockefeller's travel and public appearances during his first two terms as governor, portions of his 1962 gubernatorial reelection campaign, and portions of his campaigns for the Republican presidential nomination in 1960 and 1964.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2bf0d921623183ab48fb0a12412da3d1",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec November 1995\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "561c152965a561d28f4e6745aa84d253",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/564",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:58:40Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T18:58:40Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3852",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/564"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:58:40Z",
-        "system_mtime": "2016-10-22T18:58:40Z",
-        "user_mtime": "2016-10-22T18:58:40Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, New York Office, Series 22",
     "tree": {
         "ref": "/repositories/2/resources/564/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Appointments Office, 1959-1965",
-            "ref": "/repositories/2/archival_objects/302375",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 302375
+    "uri": "/repositories/2/resources/564",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T18:58:40Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Campaign for the 1964 Republican Presidential Nomination, March 1963-June 1964",
-            "ref": "/repositories/2/archival_objects/303132",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 303132
-        },
-        {
-            "title": "Special Assistant to the Governor for Radio and Television, 1961-1965",
-            "ref": "/repositories/2/archival_objects/303306",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 303306
-        },
-        {
-            "title": "George Hinman and Ilene Slater Files, 1959-1962",
-            "ref": "/repositories/2/archival_objects/303485",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 303485
-        },
-        {
-            "title": "Rockefeller for President Citizens Information Center, 1958-1960",
-            "ref": "/repositories/2/archival_objects/303634",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 303634
-        }
-    ]
+        "system_mtime": "2016-10-22T18:58:40Z",
+        "user_mtime": "2016-10-22T18:58:40Z"
+    },
+    "user_mtime": "2016-10-22T18:58:40Z"
 }

@@ -1,35 +1,1021 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller gubernatorial records, Departmental Reports, Series 28",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA370.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Departmental Reports, Series 28\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Departmental Reports, Series 28",
-    "finding_aid_date": "1999",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T10:00:14Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:05:42Z",
-    "suppressed": false,
-    "id_0": "FA370",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2188",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:05:42Z",
-            "system_mtime": "2016-10-22T19:05:42Z",
-            "user_mtime": "2016-10-22T19:05:42Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 307905,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307905",
+            "title": "Adirondack Park Agency, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307906,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307906",
+            "title": "Office for the Aging, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307907,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307907",
+            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307908,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307908",
+            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307909,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307909",
+            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307910,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307910",
+            "title": "Division of Alchoholic Beverage Control/State Liquor Authority, 1960, 1963-1966, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307911,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307911",
+            "title": "Division of Alchoholic Beverage Control/State Liquor Authority, 1960, 1963-1966, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307912,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307912",
+            "title": "New York State Council on Architecture, circa 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 307913,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307913",
+            "title": "New York State Council on the Arts, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307914,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307914",
+            "title": "Office of Atomic Development, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 307915,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307915",
+            "title": "New York State Atomic Research and Development Authority, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307916,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307916",
+            "title": "Department of Audit and Control, 1963-1966, 1971-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 307917,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307917",
+            "title": "Banking Department, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307918,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307918",
+            "title": "Bingo Control Commission, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307919,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307919",
+            "title": "Division of the Budget, 1963-1966, 1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307920,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307920",
+            "title": "New York State Commission on Cable Television, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307921,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307921",
+            "title": "New York State Civil Defense Commission, 1963-1965, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307922,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307922",
+            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307923,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307923",
+            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307924,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307924",
+            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307925,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307925",
+            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307926,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307926",
+            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307927,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307927",
+            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307928,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307928",
+            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307929,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307929",
+            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307930,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307930",
+            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307931,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307931",
+            "title": "Office for Community Affairs, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307932,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307932",
+            "title": "Conservation Department, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307933,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307933",
+            "title": "Conservation Department, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307934,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307934",
+            "title": "State Consumer Protection Board, 1971, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307935,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307935",
+            "title": "Department of Correction, 1960, 1963-1964, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307936,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307936",
+            "title": "Department of Correction, 1960, 1963-1964, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307937,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307937",
+            "title": "Crime Victims Compensation Board, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 307938,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307938",
+            "title": "Division of Criminal Justice Services, 1972-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307939,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307939",
+            "title": "State Commission Against Discrimination, 1960",
+            "type": "object"
+        },
+        {
+            "identifier": 307940,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307940",
+            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307941,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307941",
+            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307942,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307942",
+            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307943,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307943",
+            "title": "Office of Education Performance Review, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307944,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307944",
+            "title": "Board of Equalization and Assessment, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307945,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307945",
+            "title": "Office of General Services, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307946,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307946",
+            "title": "Office of General Services, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307947,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307947",
+            "title": "Office of General Services, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307948,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307948",
+            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307949,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307949",
+            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307950,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307950",
+            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307951,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307951",
+            "title": "Division of Housing and Community Renewal, 1960, 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307952,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307952",
+            "title": "Division of Housing and Community Renewal - Office of Rent Administration, 1965-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307953,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307953",
+            "title": "Commission/Division of Human Rights, 1963, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307954,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307954",
+            "title": "Identification and Intelligence System, 1970-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 307955,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307955",
+            "title": "Insurance Department, 1960, 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307956,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307956",
+            "title": "Insurance Department, 1960, 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307957,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307957",
+            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307958,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307958",
+            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307959,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307959",
+            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307960,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307960",
+            "title": "Department of Law, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 307961,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307961",
+            "title": "Office for Local Government, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307962,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307962",
+            "title": "Office for Local Government, Bulk, 1963-1965 Bulk, 1963-1965 1960, 1963-1965, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307963,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307963",
+            "title": "Manpower Resources Commission, 1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307964,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307964",
+            "title": "Board of Mediation, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307965,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307965",
+            "title": "Department of Mental Hygiene, 1960, 1963-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307966,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307966",
+            "title": "Department of Mental Hygiene, 1960, 1963-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307967,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307967",
+            "title": "Division of Military and Naval Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 307968,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307968",
+            "title": "Division of Military and Naval Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 307969,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307969",
+            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307970,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307970",
+            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307971,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307971",
+            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307972,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307972",
+            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307973,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307973",
+            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307974,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307974",
+            "title": "Narcotic Addiction Control Commission, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307975,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307975",
+            "title": "Division of Parole, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 307976,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307976",
+            "title": "Office of Parks and Recreation, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307977,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307977",
+            "title": "Division of Probation, 1972-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307978,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307978",
+            "title": "Division of Public Information, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307979,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307979",
+            "title": "Public Service Commission, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 307980,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307980",
+            "title": "Department of Public Works, 1960, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 307981,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307981",
+            "title": "Department of Public Works, 1960, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 307982,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307982",
+            "title": "Department of Public Works - Route 87, 1964",
+            "type": "object"
+        },
+        {
+            "identifier": 307983,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307983",
+            "title": "Office for Regional Development, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 307984,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307984",
+            "title": "Rent Commission, 1960, 1963-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 307985,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307985",
+            "title": "Department of State, 1960, 1963-1966, 1970-1971, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307986,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307986",
+            "title": "Department of State, 1960, 1963-1966, 1970-1971, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307987,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307987",
+            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307988,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307988",
+            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307989,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307989",
+            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307990,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307990",
+            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307991,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307991",
+            "title": "State University of New York, 1960, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307992,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307992",
+            "title": "Department of Social Services, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307993,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307993",
+            "title": "Department of Social Welfare, 1960, 1963-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307994,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307994",
+            "title": "Department of Social Welfare, 1960, 1963-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307995,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307995",
+            "title": "Department of Social Welfare, 1960, 1963-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 307996,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307996",
+            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307997,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307997",
+            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307998,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307998",
+            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 307999,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/307999",
+            "title": "Thruway Authority, 1966",
+            "type": "object"
+        },
+        {
+            "identifier": 308000,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308000",
+            "title": "Department of Transportation, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308001,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308001",
+            "title": "Department of Transportation, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308002,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308002",
+            "title": "Division of Veteran's Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308003,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308003",
+            "title": "Division of Veteran's Affairs, 1960, 1963-1966, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308004,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308004",
+            "title": "Waterfront Commission of New York Harbor, 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308005,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308005",
+            "title": "Division of Youth, 1963-1965, bulk 1970, 1972-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308006,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308006",
+            "title": "Division of Youth, 1963-1965, 1970, 1972-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308007,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308007",
+            "title": "Reporting Format, 1963, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 308008,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308008",
+            "title": "Lists of Reports Received, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 308009,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308009",
+            "title": "Forwarding Memos, 1963-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 308010,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308010",
+            "title": "Forwarding Memos and Summaries, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308011,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308011",
+            "title": "Forwarding Memos and Summaries, 1971-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 308012,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/308012",
+            "title": "Forwarding Memos and Summaries, 1971-1973",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:05:42Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/569"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3857",
+        "user_mtime": "2016-10-22T19:05:42Z"
+    },
+    "create_time": "2014-12-06T10:00:14Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1960",
+            "create_time": "2016-10-22T19:05:42Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1973",
+            "expression": "1960-1973",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:05:42Z",
+            "user_mtime": "2016-10-22T19:05:42Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA370.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T19:05:42Z",
+            "created_by": "battalb",
+            "extent_type": "record cartons",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "5",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:05:42Z",
+            "user_mtime": "2016-10-22T19:05:42Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:05:42Z",
+            "created_by": "battalb",
+            "external_id": "2188",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:05:42Z",
+            "user_mtime": "2016-10-22T19:05:42Z"
+        }
+    ],
+    "finding_aid_date": "1999",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Departmental Reports, Series 28",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Departmental Reports, Series 28\n",
+    "id_0": "FA370",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "62ec140d0f35e351ab0f5a91b5a85eda",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "73bfcf574f0c4a7fab89a0fb07d87554",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "821b9cc9ae0b1b25ceba6f72747de59e",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 15 28\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "2859da76670af25f5ead12af9d802f1f",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "2a4f909696ca961a7efd2f74c63b57ce",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "f8a9cd04d08fec8b25537506f07a89ff",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "05c76ef1b662c7259a2d69efdda8e61d",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The reports are arranged alphabetically by department and then chronologically thereunder.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "66fef2019e0162dae72d7a6f183c9d9e",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "NOTE TO RESEARCHERS\n\nThis material in this series documents the official activities of departments, divisions, and agencies of the executive branch of the New York state government during Nelson A. Rockefeller's governorship. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration. However, unless a document is personally signed by Nelson A. Rockefeller, or is referred to in a document personally signed by him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that these files may contain documents addressed to Rockefeller which were never shown to him.\n\nSCOPE AND CONTENT\n\nThis series consists of periodic reports prepared by departments and agencies of the New York state government for Gov. Nelson A. Rockefeller. The reports are of four different types, from four different periods representing each of Governor Rockefeller's four administrations. In general the reports offer an assessment of each department's responsibilities, goals, performance, problems, and needs. Each of the four different report types is found for most, but not all, of the departments. The four types of reports are as follows:\n\nProgram Meeting Report, 1960. Issued in late 1960, these were the result of meetings by representatives of each department with the Secretary to the Governor and the Counsel to the Governor. The purpose of the meeting was to identify the major issues each department would face in the coming year and to define any legislative and budgetary support necessary to meet the issues.\n\nQuarterly Reports, 1963-1966. These were initiated by Governor Rockefeller in March 1963 in response to a fiscal crisis and a \"taxpayer revolt\" which affected the operation of all departments and construction programs. The reports were to include a one-page \"Commissioner's statement,\" the status of major programs, emergency situations and other unusual developments, and brief summaries of recent research, publications, and management improvement plans. Many of the reports include charts, tables, other graphics, and appendices of departmental publications. The reports were submitted to Dr. William J. Ronan, Secretary to the Governor. Dr. Ronan's staff of Program Associates reviewed the reports and wrote one-page summaries highlighting the most important points and sometimes offering comments on the quality of the report. Copies of the reports, summaries, and a cover letter from Dr. Ronan were then forwarded to Governor Rockefeller, Lt. Gov. Malcolm Wilson, Budget Director Dr. T. Norman Hurd, and Counsel to the Governor Sol Neil Corbin (later Robert R. Douglass). Governor Rockefeller's handwritten comments are found on a few of these reports. The reports begin with the first quarter of 1963. Most agencies reported through the first quarter of 1966. The reason for terminating the reports is not found in this series. Further information on the guidelines for these reports can be found in folder 102, \"Reporting Format.\"\n\nAgency Appraisal Reports, 1970. These reports represent a self-analysis by each agency defining the agency's purpose, the status of its current programs, and its future plans and needs. They are similar to the Program Meeting Reports, but with more depth. The Appraisal Reports were compiled in the summer of 1970 and together they form a detailed snapshot of the executive branch of the New York state government.\n\nMonthly Reports, 1971-1973. Actually issued every four weeks, these reports are short narratives written in memo form by each agency head. The average length is three pages, with no graphics and few appendices. The focus is on immediate issues and activities. The reports were sent to T. Norman Hurd (Director of State Operations, January 1, 1971-August 31, 1972, Secretary to the Governor, September 1, 1972-1975) who reviewed them and identified a few key points from each report in a summary to Governor Rockefeller. Up to a dozen reports were sent to Governor Rockefeller at a time with a one page summary covering all the reports. Points highlighted in the summary were keyed to numbered tabs attached to the reports. These summaries are filed separately in folders 105-107, \"Forwarding Memos and Summaries.\" Many of the summaries bear Governor Rockefeller's handwritten comments. These reports began in March 1971 and the last ones are dated late November or early December 1973, just before Governor Rockefeller's resignation on December 18.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "1e508726dd6cb9470d8e8fd140f1681f",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Harold W. Oakhill\nSeptember 1999\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "8f3f7f9d0ea2d03e0b82f27d3e33c837",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:05:42Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:05:42Z",
+            "uri": "/revision_statement/3021",
+            "user_mtime": "2016-10-22T19:05:42Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/539"
@@ -125,1015 +1111,29 @@
             "ref": "/subjects/572"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "5",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:05:42Z",
-            "system_mtime": "2016-10-22T19:05:42Z",
-            "user_mtime": "2016-10-22T19:05:42Z",
-            "portion": "whole",
-            "extent_type": "record cartons",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1960-1973",
-            "begin": "1960",
-            "end": "1973",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:05:42Z",
-            "system_mtime": "2016-10-22T19:05:42Z",
-            "user_mtime": "2016-10-22T19:05:42Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:05:42Z",
-            "system_mtime": "2016-10-22T19:05:42Z",
-            "user_mtime": "2016-10-22T19:05:42Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3021",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "62ec140d0f35e351ab0f5a91b5a85eda",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "73bfcf574f0c4a7fab89a0fb07d87554",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "821b9cc9ae0b1b25ceba6f72747de59e",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 15 28\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2859da76670af25f5ead12af9d802f1f",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2a4f909696ca961a7efd2f74c63b57ce",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f8a9cd04d08fec8b25537506f07a89ff",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "05c76ef1b662c7259a2d69efdda8e61d",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The reports are arranged alphabetically by department and then chronologically thereunder.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "66fef2019e0162dae72d7a6f183c9d9e",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "NOTE TO RESEARCHERS\n\nThis material in this series documents the official activities of departments, divisions, and agencies of the executive branch of the New York state government during Nelson A. Rockefeller's governorship. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration. However, unless a document is personally signed by Nelson A. Rockefeller, or is referred to in a document personally signed by him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that these files may contain documents addressed to Rockefeller which were never shown to him.\n\nSCOPE AND CONTENT\n\nThis series consists of periodic reports prepared by departments and agencies of the New York state government for Gov. Nelson A. Rockefeller. The reports are of four different types, from four different periods representing each of Governor Rockefeller's four administrations. In general the reports offer an assessment of each department's responsibilities, goals, performance, problems, and needs. Each of the four different report types is found for most, but not all, of the departments. The four types of reports are as follows:\n\nProgram Meeting Report, 1960. Issued in late 1960, these were the result of meetings by representatives of each department with the Secretary to the Governor and the Counsel to the Governor. The purpose of the meeting was to identify the major issues each department would face in the coming year and to define any legislative and budgetary support necessary to meet the issues.\n\nQuarterly Reports, 1963-1966. These were initiated by Governor Rockefeller in March 1963 in response to a fiscal crisis and a \"taxpayer revolt\" which affected the operation of all departments and construction programs. The reports were to include a one-page \"Commissioner's statement,\" the status of major programs, emergency situations and other unusual developments, and brief summaries of recent research, publications, and management improvement plans. Many of the reports include charts, tables, other graphics, and appendices of departmental publications. The reports were submitted to Dr. William J. Ronan, Secretary to the Governor. Dr. Ronan's staff of Program Associates reviewed the reports and wrote one-page summaries highlighting the most important points and sometimes offering comments on the quality of the report. Copies of the reports, summaries, and a cover letter from Dr. Ronan were then forwarded to Governor Rockefeller, Lt. Gov. Malcolm Wilson, Budget Director Dr. T. Norman Hurd, and Counsel to the Governor Sol Neil Corbin (later Robert R. Douglass). Governor Rockefeller's handwritten comments are found on a few of these reports. The reports begin with the first quarter of 1963. Most agencies reported through the first quarter of 1966. The reason for terminating the reports is not found in this series. Further information on the guidelines for these reports can be found in folder 102, \"Reporting Format.\"\n\nAgency Appraisal Reports, 1970. These reports represent a self-analysis by each agency defining the agency's purpose, the status of its current programs, and its future plans and needs. They are similar to the Program Meeting Reports, but with more depth. The Appraisal Reports were compiled in the summer of 1970 and together they form a detailed snapshot of the executive branch of the New York state government.\n\nMonthly Reports, 1971-1973. Actually issued every four weeks, these reports are short narratives written in memo form by each agency head. The average length is three pages, with no graphics and few appendices. The focus is on immediate issues and activities. The reports were sent to T. Norman Hurd (Director of State Operations, January 1, 1971-August 31, 1972, Secretary to the Governor, September 1, 1972-1975) who reviewed them and identified a few key points from each report in a summary to Governor Rockefeller. Up to a dozen reports were sent to Governor Rockefeller at a time with a one page summary covering all the reports. Points highlighted in the summary were keyed to numbered tabs attached to the reports. These summaries are filed separately in folders 105-107, \"Forwarding Memos and Summaries.\" Many of the summaries bear Governor Rockefeller's handwritten comments. These reports began in March 1971 and the last ones are dated late November or early December 1973, just before Governor Rockefeller's resignation on December 18.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1e508726dd6cb9470d8e8fd140f1681f",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Harold W. Oakhill\nSeptember 1999\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "8f3f7f9d0ea2d03e0b82f27d3e33c837",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/569",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:05:42Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:05:42Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3857",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/569"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:05:42Z",
-        "system_mtime": "2016-10-22T19:05:42Z",
-        "user_mtime": "2016-10-22T19:05:42Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, Departmental Reports, Series 28",
     "tree": {
         "ref": "/repositories/2/resources/569/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Adirondack Park Agency, 1973",
-            "ref": "/repositories/2/archival_objects/307905",
-            "level": "file",
-            "type": "object",
-            "identifier": 307905
-        },
-        {
-            "title": "Office for the Aging, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307906",
-            "level": "file",
-            "type": "object",
-            "identifier": 307906
-        },
-        {
-            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307907",
-            "level": "file",
-            "type": "object",
-            "identifier": 307907
-        },
-        {
-            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307908",
-            "level": "file",
-            "type": "object",
-            "identifier": 307908
-        },
-        {
-            "title": "Department of Agriculture and Markets, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307909",
-            "level": "file",
-            "type": "object",
-            "identifier": 307909
-        },
-        {
-            "title": "Division of Alchoholic Beverage Control/State Liquor Authority, 1960, 1963-1966, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307910",
-            "level": "file",
-            "type": "object",
-            "identifier": 307910
-        },
-        {
-            "title": "Division of Alchoholic Beverage Control/State Liquor Authority, 1960, 1963-1966, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307911",
-            "level": "file",
-            "type": "object",
-            "identifier": 307911
-        },
-        {
-            "title": "New York State Council on Architecture, circa 1970",
-            "ref": "/repositories/2/archival_objects/307912",
-            "level": "file",
-            "type": "object",
-            "identifier": 307912
-        },
-        {
-            "title": "New York State Council on the Arts, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307913",
-            "level": "file",
-            "type": "object",
-            "identifier": 307913
-        },
-        {
-            "title": "Office of Atomic Development, 1963-1965",
-            "ref": "/repositories/2/archival_objects/307914",
-            "level": "file",
-            "type": "object",
-            "identifier": 307914
-        },
-        {
-            "title": "New York State Atomic Research and Development Authority, 1963",
-            "ref": "/repositories/2/archival_objects/307915",
-            "level": "file",
-            "type": "object",
-            "identifier": 307915
-        },
-        {
-            "title": "Department of Audit and Control, 1963-1966, 1971-1972",
-            "ref": "/repositories/2/archival_objects/307916",
-            "level": "file",
-            "type": "object",
-            "identifier": 307916
-        },
-        {
-            "title": "Banking Department, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307917",
-            "level": "file",
-            "type": "object",
-            "identifier": 307917
-        },
-        {
-            "title": "Bingo Control Commission, 1963",
-            "ref": "/repositories/2/archival_objects/307918",
-            "level": "file",
-            "type": "object",
-            "identifier": 307918
-        },
-        {
-            "title": "Division of the Budget, 1963-1966, 1971",
-            "ref": "/repositories/2/archival_objects/307919",
-            "level": "file",
-            "type": "object",
-            "identifier": 307919
-        },
-        {
-            "title": "New York State Commission on Cable Television, 1973",
-            "ref": "/repositories/2/archival_objects/307920",
-            "level": "file",
-            "type": "object",
-            "identifier": 307920
-        },
-        {
-            "title": "New York State Civil Defense Commission, 1963-1965, 1970-1971",
-            "ref": "/repositories/2/archival_objects/307921",
-            "level": "file",
-            "type": "object",
-            "identifier": 307921
-        },
-        {
-            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307922",
-            "level": "file",
-            "type": "object",
-            "identifier": 307922
-        },
-        {
-            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307923",
-            "level": "file",
-            "type": "object",
-            "identifier": 307923
-        },
-        {
-            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307924",
-            "level": "file",
-            "type": "object",
-            "identifier": 307924
-        },
-        {
-            "title": "Department of Civil Service, 1960, 1962-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307925",
-            "level": "file",
-            "type": "object",
-            "identifier": 307925
-        },
-        {
-            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307926",
-            "level": "file",
-            "type": "object",
-            "identifier": 307926
-        },
-        {
-            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307927",
-            "level": "file",
-            "type": "object",
-            "identifier": 307927
-        },
-        {
-            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307928",
-            "level": "file",
-            "type": "object",
-            "identifier": 307928
-        },
-        {
-            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307929",
-            "level": "file",
-            "type": "object",
-            "identifier": 307929
-        },
-        {
-            "title": "Department of Commerce, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307930",
-            "level": "file",
-            "type": "object",
-            "identifier": 307930
-        },
-        {
-            "title": "Office for Community Affairs, 1970-1971",
-            "ref": "/repositories/2/archival_objects/307931",
-            "level": "file",
-            "type": "object",
-            "identifier": 307931
-        },
-        {
-            "title": "Conservation Department, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307932",
-            "level": "file",
-            "type": "object",
-            "identifier": 307932
-        },
-        {
-            "title": "Conservation Department, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307933",
-            "level": "file",
-            "type": "object",
-            "identifier": 307933
-        },
-        {
-            "title": "State Consumer Protection Board, 1971, 1973",
-            "ref": "/repositories/2/archival_objects/307934",
-            "level": "file",
-            "type": "object",
-            "identifier": 307934
-        },
-        {
-            "title": "Department of Correction, 1960, 1963-1964, 1970-1971",
-            "ref": "/repositories/2/archival_objects/307935",
-            "level": "file",
-            "type": "object",
-            "identifier": 307935
-        },
-        {
-            "title": "Department of Correction, 1960, 1963-1964, 1970-1971",
-            "ref": "/repositories/2/archival_objects/307936",
-            "level": "file",
-            "type": "object",
-            "identifier": 307936
-        },
-        {
-            "title": "Crime Victims Compensation Board, 1970",
-            "ref": "/repositories/2/archival_objects/307937",
-            "level": "file",
-            "type": "object",
-            "identifier": 307937
-        },
-        {
-            "title": "Division of Criminal Justice Services, 1972-1973",
-            "ref": "/repositories/2/archival_objects/307938",
-            "level": "file",
-            "type": "object",
-            "identifier": 307938
-        },
-        {
-            "title": "State Commission Against Discrimination, 1960",
-            "ref": "/repositories/2/archival_objects/307939",
-            "level": "file",
-            "type": "object",
-            "identifier": 307939
-        },
-        {
-            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307940",
-            "level": "file",
-            "type": "object",
-            "identifier": 307940
-        },
-        {
-            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307941",
-            "level": "file",
-            "type": "object",
-            "identifier": 307941
-        },
-        {
-            "title": "Education Department, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307942",
-            "level": "file",
-            "type": "object",
-            "identifier": 307942
-        },
-        {
-            "title": "Office of Education Performance Review, 1973",
-            "ref": "/repositories/2/archival_objects/307943",
-            "level": "file",
-            "type": "object",
-            "identifier": 307943
-        },
-        {
-            "title": "Board of Equalization and Assessment, 1963",
-            "ref": "/repositories/2/archival_objects/307944",
-            "level": "file",
-            "type": "object",
-            "identifier": 307944
-        },
-        {
-            "title": "Office of General Services, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307945",
-            "level": "file",
-            "type": "object",
-            "identifier": 307945
-        },
-        {
-            "title": "Office of General Services, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307946",
-            "level": "file",
-            "type": "object",
-            "identifier": 307946
-        },
-        {
-            "title": "Office of General Services, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307947",
-            "level": "file",
-            "type": "object",
-            "identifier": 307947
-        },
-        {
-            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307948",
-            "level": "file",
-            "type": "object",
-            "identifier": 307948
-        },
-        {
-            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307949",
-            "level": "file",
-            "type": "object",
-            "identifier": 307949
-        },
-        {
-            "title": "Department of Health, 1960, 1963-1966, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307950",
-            "level": "file",
-            "type": "object",
-            "identifier": 307950
-        },
-        {
-            "title": "Division of Housing and Community Renewal, 1960, 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307951",
-            "level": "file",
-            "type": "object",
-            "identifier": 307951
-        },
-        {
-            "title": "Division of Housing and Community Renewal - Office of Rent Administration, 1965-1966",
-            "ref": "/repositories/2/archival_objects/307952",
-            "level": "file",
-            "type": "object",
-            "identifier": 307952
-        },
-        {
-            "title": "Commission/Division of Human Rights, 1963, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307953",
-            "level": "file",
-            "type": "object",
-            "identifier": 307953
-        },
-        {
-            "title": "Identification and Intelligence System, 1970-1972",
-            "ref": "/repositories/2/archival_objects/307954",
-            "level": "file",
-            "type": "object",
-            "identifier": 307954
-        },
-        {
-            "title": "Insurance Department, 1960, 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307955",
-            "level": "file",
-            "type": "object",
-            "identifier": 307955
-        },
-        {
-            "title": "Insurance Department, 1960, 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307956",
-            "level": "file",
-            "type": "object",
-            "identifier": 307956
-        },
-        {
-            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307957",
-            "level": "file",
-            "type": "object",
-            "identifier": 307957
-        },
-        {
-            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307958",
-            "level": "file",
-            "type": "object",
-            "identifier": 307958
-        },
-        {
-            "title": "Department of Labor, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307959",
-            "level": "file",
-            "type": "object",
-            "identifier": 307959
-        },
-        {
-            "title": "Department of Law, 1963-1965",
-            "ref": "/repositories/2/archival_objects/307960",
-            "level": "file",
-            "type": "object",
-            "identifier": 307960
-        },
-        {
-            "title": "Office for Local Government, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307961",
-            "level": "file",
-            "type": "object",
-            "identifier": 307961
-        },
-        {
-            "title": "Office for Local Government, Bulk, 1963-1965 Bulk, 1963-1965 1960, 1963-1965, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307962",
-            "level": "file",
-            "type": "object",
-            "identifier": 307962
-        },
-        {
-            "title": "Manpower Resources Commission, 1971",
-            "ref": "/repositories/2/archival_objects/307963",
-            "level": "file",
-            "type": "object",
-            "identifier": 307963
-        },
-        {
-            "title": "Board of Mediation, 1963",
-            "ref": "/repositories/2/archival_objects/307964",
-            "level": "file",
-            "type": "object",
-            "identifier": 307964
-        },
-        {
-            "title": "Department of Mental Hygiene, 1960, 1963-1966",
-            "ref": "/repositories/2/archival_objects/307965",
-            "level": "file",
-            "type": "object",
-            "identifier": 307965
-        },
-        {
-            "title": "Department of Mental Hygiene, 1960, 1963-1966",
-            "ref": "/repositories/2/archival_objects/307966",
-            "level": "file",
-            "type": "object",
-            "identifier": 307966
-        },
-        {
-            "title": "Division of Military and Naval Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1972",
-            "ref": "/repositories/2/archival_objects/307967",
-            "level": "file",
-            "type": "object",
-            "identifier": 307967
-        },
-        {
-            "title": "Division of Military and Naval Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1972",
-            "ref": "/repositories/2/archival_objects/307968",
-            "level": "file",
-            "type": "object",
-            "identifier": 307968
-        },
-        {
-            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307969",
-            "level": "file",
-            "type": "object",
-            "identifier": 307969
-        },
-        {
-            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307970",
-            "level": "file",
-            "type": "object",
-            "identifier": 307970
-        },
-        {
-            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307971",
-            "level": "file",
-            "type": "object",
-            "identifier": 307971
-        },
-        {
-            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307972",
-            "level": "file",
-            "type": "object",
-            "identifier": 307972
-        },
-        {
-            "title": "Department of Motor Vehicles, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307973",
-            "level": "file",
-            "type": "object",
-            "identifier": 307973
-        },
-        {
-            "title": "Narcotic Addiction Control Commission, 1971-1973",
-            "ref": "/repositories/2/archival_objects/307974",
-            "level": "file",
-            "type": "object",
-            "identifier": 307974
-        },
-        {
-            "title": "Division of Parole, Bulk, 1963-1965 Bulk, 1963-1965 1960, bulk 1963-1965, 1970",
-            "ref": "/repositories/2/archival_objects/307975",
-            "level": "file",
-            "type": "object",
-            "identifier": 307975
-        },
-        {
-            "title": "Office of Parks and Recreation, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307976",
-            "level": "file",
-            "type": "object",
-            "identifier": 307976
-        },
-        {
-            "title": "Division of Probation, 1972-1973",
-            "ref": "/repositories/2/archival_objects/307977",
-            "level": "file",
-            "type": "object",
-            "identifier": 307977
-        },
-        {
-            "title": "Division of Public Information, 1963",
-            "ref": "/repositories/2/archival_objects/307978",
-            "level": "file",
-            "type": "object",
-            "identifier": 307978
-        },
-        {
-            "title": "Public Service Commission, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1971",
-            "ref": "/repositories/2/archival_objects/307979",
-            "level": "file",
-            "type": "object",
-            "identifier": 307979
-        },
-        {
-            "title": "Department of Public Works, 1960, 1963-1965",
-            "ref": "/repositories/2/archival_objects/307980",
-            "level": "file",
-            "type": "object",
-            "identifier": 307980
-        },
-        {
-            "title": "Department of Public Works, 1960, 1963-1965",
-            "ref": "/repositories/2/archival_objects/307981",
-            "level": "file",
-            "type": "object",
-            "identifier": 307981
-        },
-        {
-            "title": "Department of Public Works - Route 87, 1964",
-            "ref": "/repositories/2/archival_objects/307982",
-            "level": "file",
-            "type": "object",
-            "identifier": 307982
-        },
-        {
-            "title": "Office for Regional Development, 1963",
-            "ref": "/repositories/2/archival_objects/307983",
-            "level": "file",
-            "type": "object",
-            "identifier": 307983
-        },
-        {
-            "title": "Rent Commission, 1960, 1963-1964",
-            "ref": "/repositories/2/archival_objects/307984",
-            "level": "file",
-            "type": "object",
-            "identifier": 307984
-        },
-        {
-            "title": "Department of State, 1960, 1963-1966, 1970-1971, 1973",
-            "ref": "/repositories/2/archival_objects/307985",
-            "level": "file",
-            "type": "object",
-            "identifier": 307985
-        },
-        {
-            "title": "Department of State, 1960, 1963-1966, 1970-1971, 1973",
-            "ref": "/repositories/2/archival_objects/307986",
-            "level": "file",
-            "type": "object",
-            "identifier": 307986
-        },
-        {
-            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307987",
-            "level": "file",
-            "type": "object",
-            "identifier": 307987
-        },
-        {
-            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307988",
-            "level": "file",
-            "type": "object",
-            "identifier": 307988
-        },
-        {
-            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307989",
-            "level": "file",
-            "type": "object",
-            "identifier": 307989
-        },
-        {
-            "title": "Division of State Police, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307990",
-            "level": "file",
-            "type": "object",
-            "identifier": 307990
-        },
-        {
-            "title": "State University of New York, 1960, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307991",
-            "level": "file",
-            "type": "object",
-            "identifier": 307991
-        },
-        {
-            "title": "Department of Social Services, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307992",
-            "level": "file",
-            "type": "object",
-            "identifier": 307992
-        },
-        {
-            "title": "Department of Social Welfare, 1960, 1963-1966",
-            "ref": "/repositories/2/archival_objects/307993",
-            "level": "file",
-            "type": "object",
-            "identifier": 307993
-        },
-        {
-            "title": "Department of Social Welfare, 1960, 1963-1966",
-            "ref": "/repositories/2/archival_objects/307994",
-            "level": "file",
-            "type": "object",
-            "identifier": 307994
-        },
-        {
-            "title": "Department of Social Welfare, 1960, 1963-1966",
-            "ref": "/repositories/2/archival_objects/307995",
-            "level": "file",
-            "type": "object",
-            "identifier": 307995
-        },
-        {
-            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307996",
-            "level": "file",
-            "type": "object",
-            "identifier": 307996
-        },
-        {
-            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307997",
-            "level": "file",
-            "type": "object",
-            "identifier": 307997
-        },
-        {
-            "title": "Department of Taxation and Finance, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/307998",
-            "level": "file",
-            "type": "object",
-            "identifier": 307998
-        },
-        {
-            "title": "Thruway Authority, 1966",
-            "ref": "/repositories/2/archival_objects/307999",
-            "level": "file",
-            "type": "object",
-            "identifier": 307999
-        },
-        {
-            "title": "Department of Transportation, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/308000",
-            "level": "file",
-            "type": "object",
-            "identifier": 308000
-        },
-        {
-            "title": "Department of Transportation, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/308001",
-            "level": "file",
-            "type": "object",
-            "identifier": 308001
-        },
-        {
-            "title": "Division of Veteran's Affairs, Bulk, 1963-1966 Bulk, 1963-1966 1960, bulk 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/308002",
-            "level": "file",
-            "type": "object",
-            "identifier": 308002
-        },
-        {
-            "title": "Division of Veteran's Affairs, 1960, 1963-1966, 1970-1973",
-            "ref": "/repositories/2/archival_objects/308003",
-            "level": "file",
-            "type": "object",
-            "identifier": 308003
-        },
-        {
-            "title": "Waterfront Commission of New York Harbor, 1973",
-            "ref": "/repositories/2/archival_objects/308004",
-            "level": "file",
-            "type": "object",
-            "identifier": 308004
-        },
-        {
-            "title": "Division of Youth, 1963-1965, bulk 1970, 1972-1973",
-            "ref": "/repositories/2/archival_objects/308005",
-            "level": "file",
-            "type": "object",
-            "identifier": 308005
-        },
-        {
-            "title": "Division of Youth, 1963-1965, 1970, 1972-1973",
-            "ref": "/repositories/2/archival_objects/308006",
-            "level": "file",
-            "type": "object",
-            "identifier": 308006
-        },
-        {
-            "title": "Reporting Format, 1963, 1970",
-            "ref": "/repositories/2/archival_objects/308007",
-            "level": "file",
-            "type": "object",
-            "identifier": 308007
-        },
-        {
-            "title": "Lists of Reports Received, 1963-1965",
-            "ref": "/repositories/2/archival_objects/308008",
-            "level": "file",
-            "type": "object",
-            "identifier": 308008
-        },
-        {
-            "title": "Forwarding Memos, 1963-1965",
-            "ref": "/repositories/2/archival_objects/308009",
-            "level": "file",
-            "type": "object",
-            "identifier": 308009
-        },
-        {
-            "title": "Forwarding Memos and Summaries, 1971-1973",
-            "ref": "/repositories/2/archival_objects/308010",
-            "level": "file",
-            "type": "object",
-            "identifier": 308010
-        },
-        {
-            "title": "Forwarding Memos and Summaries, 1971-1973",
-            "ref": "/repositories/2/archival_objects/308011",
-            "level": "file",
-            "type": "object",
-            "identifier": 308011
-        },
-        {
-            "title": "Forwarding Memos and Summaries, 1971-1973",
-            "ref": "/repositories/2/archival_objects/308012",
-            "level": "file",
-            "type": "object",
-            "identifier": 308012
-        }
-    ]
+    "uri": "/repositories/2/resources/569",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T19:05:42Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "system_mtime": "2016-10-22T19:05:42Z",
+        "user_mtime": "2016-10-22T19:05:42Z"
+    },
+    "user_mtime": "2016-10-22T19:05:42Z"
 }

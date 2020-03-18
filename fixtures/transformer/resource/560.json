@@ -1,35 +1,433 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller gubernatorial records, Executive Chamber, Series 14",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA361.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Executive Chamber, Series 14\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Executive Chamber, Series 14",
-    "finding_aid_date": "2000",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T09:51:35Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T18:54:00Z",
-    "suppressed": false,
-    "id_0": "FA361",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2179",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:54:00Z",
-            "system_mtime": "2016-10-22T18:54:00Z",
-            "user_mtime": "2016-10-22T18:54:00Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 301447,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301447",
+            "title": "Aldrich, Alexander",
+            "type": "collection"
+        },
+        {
+            "identifier": 301466,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301466",
+            "title": "Amper, Richard",
+            "type": "collection"
+        },
+        {
+            "identifier": 301490,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301490",
+            "title": "Barr, Daniel",
+            "type": "object"
+        },
+        {
+            "identifier": 301491,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301491",
+            "title": "Corbin, Sol",
+            "type": "object"
+        },
+        {
+            "identifier": 301492,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301492",
+            "title": "Doherty, Frank J.",
+            "type": "object"
+        },
+        {
+            "identifier": 301493,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301493",
+            "title": "Douglass, Robert R.",
+            "type": "object"
+        },
+        {
+            "identifier": 301494,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301494",
+            "title": "Jamieson, Francis A.",
+            "type": "object"
+        },
+        {
+            "identifier": 301495,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301495",
+            "title": "MacCrate, Robert",
+            "type": "object"
+        },
+        {
+            "identifier": 301496,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301496",
+            "title": "Marshall, Alton G.",
+            "type": "object"
+        },
+        {
+            "identifier": 301497,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301497",
+            "title": "McManus, Robert",
+            "type": "collection"
+        },
+        {
+            "identifier": 301522,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301522",
+            "title": "Musicus, Milton F.",
+            "type": "object"
+        },
+        {
+            "identifier": 301523,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301523",
+            "title": "Perkins, R. B.",
+            "type": "object"
+        },
+        {
+            "identifier": 301524,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301524",
+            "title": "Remington, Thomas R.",
+            "type": "object"
+        },
+        {
+            "identifier": 301525,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301525",
+            "title": "Root, Orin",
+            "type": "object"
+        },
+        {
+            "identifier": 301526,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301526",
+            "title": "Savell, Isabelle",
+            "type": "object"
+        },
+        {
+            "identifier": 301527,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301527",
+            "title": "Slater, Ilene",
+            "type": "object"
+        },
+        {
+            "identifier": 301528,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301528",
+            "title": "Sloate, Leslie",
+            "type": "object"
+        },
+        {
+            "identifier": 301529,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301529",
+            "title": "Stewart, Richard E.",
+            "type": "object"
+        },
+        {
+            "identifier": 301530,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301530",
+            "title": "Terry, John H.",
+            "type": "object"
+        },
+        {
+            "identifier": 301531,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301531",
+            "title": "Underhill, Jacob B.",
+            "type": "object"
+        },
+        {
+            "identifier": 301532,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301532",
+            "title": "Wainwright, Carroll",
+            "type": "object"
+        },
+        {
+            "identifier": 301533,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301533",
+            "title": "Whiteman, Michael",
+            "type": "object"
+        },
+        {
+            "identifier": 301534,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301534",
+            "title": "Whitman, Ann C.",
+            "type": "object"
+        },
+        {
+            "identifier": 301535,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301535",
+            "title": "Wille, Frank",
+            "type": "object"
+        },
+        {
+            "identifier": 301536,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301536",
+            "title": "Winfield, Richard N.",
+            "type": "object"
+        },
+        {
+            "identifier": 301537,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/301537",
+            "title": "Executive Chamber Staff - Personal",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T18:54:00Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/560"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3848",
+        "user_mtime": "2016-10-22T18:54:00Z"
+    },
+    "create_time": "2014-12-06T09:51:35Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1958",
+            "create_time": "2016-10-22T18:54:00Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1972",
+            "expression": "1958-1972",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T18:54:00Z",
+            "user_mtime": "2016-10-22T18:54:00Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA361.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T18:54:00Z",
+            "created_by": "battalb",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "5",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T18:54:00Z",
+            "user_mtime": "2016-10-22T18:54:00Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T18:54:00Z",
+            "created_by": "battalb",
+            "external_id": "2179",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T18:54:00Z",
+            "user_mtime": "2016-10-22T18:54:00Z"
+        }
+    ],
+    "finding_aid_date": "2000",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Executive Chamber, Series 14",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Executive Chamber, Series 14\n",
+    "id_0": "FA361",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "db625ec85dbf1bf2c2c17cdcd49e465b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "b6712b568d8f4363f41253f1ba475c72",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "fd6e2112d04e314d0cc94debed80f86b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 15 14\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "a63b2283c8c22817c94e084aa3e777c0",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "69d5b1f310574652dd9e452f48d6af37",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "1569e5d49f9df089adeb4c55293def0d",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "6107da9cc732a2c9aa7f6696a8a20975",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "NOTE TO RESEARCHERS\n\nThis series contains portions of the office files of several members of Nelson A. Rockefeller's staff. They document official activities of these individuals in the execution of their duties as members of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration, political campaigns, and/or Rockefeller's personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nThis series primarily comprises correspondence from New York State residents to members of Governor Rockefeller's staff, specifically those working on the Gubernatorial Executive Branch staff. The correspondence is congenial, thanking the staff members for meeting with them or thanking the staff member for appearing at an event on the Governor' behalf. Many members of the executive staff are represented here, although the series is dominated by correspondence with Alexander Aldrich, Richard Amper, and Robert McManus.\n\nMr. Amper was Governor Rockefeller's first press secretary and was succeeded by Mr. McManus, who served in the position until 1966, when he was appointed executive assistant to the Governor. Mr. Aldrich began his career with New York State as director of the Division for Youth in 1960.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "1771d4da894bbdd811d76585be8758a6",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec, Bethany Antos December 2000\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "1799b929fd8c641eaa811b7c23e66741",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T18:54:00Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T18:54:00Z",
+            "uri": "/revision_statement/3012",
+            "user_mtime": "2016-10-22T18:54:00Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/37"
@@ -125,427 +523,29 @@
             "ref": "/subjects/577"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "5",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:54:00Z",
-            "system_mtime": "2016-10-22T18:54:00Z",
-            "user_mtime": "2016-10-22T18:54:00Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1958-1972",
-            "begin": "1958",
-            "end": "1972",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:54:00Z",
-            "system_mtime": "2016-10-22T18:54:00Z",
-            "user_mtime": "2016-10-22T18:54:00Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:54:00Z",
-            "system_mtime": "2016-10-22T18:54:00Z",
-            "user_mtime": "2016-10-22T18:54:00Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3012",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "db625ec85dbf1bf2c2c17cdcd49e465b",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "b6712b568d8f4363f41253f1ba475c72",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "fd6e2112d04e314d0cc94debed80f86b",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 15 14\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "a63b2283c8c22817c94e084aa3e777c0",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "69d5b1f310574652dd9e452f48d6af37",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1569e5d49f9df089adeb4c55293def0d",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "6107da9cc732a2c9aa7f6696a8a20975",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "NOTE TO RESEARCHERS\n\nThis series contains portions of the office files of several members of Nelson A. Rockefeller's staff. They document official activities of these individuals in the execution of their duties as members of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration, political campaigns, and/or Rockefeller's personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nThis series primarily comprises correspondence from New York State residents to members of Governor Rockefeller's staff, specifically those working on the Gubernatorial Executive Branch staff. The correspondence is congenial, thanking the staff members for meeting with them or thanking the staff member for appearing at an event on the Governor' behalf. Many members of the executive staff are represented here, although the series is dominated by correspondence with Alexander Aldrich, Richard Amper, and Robert McManus.\n\nMr. Amper was Governor Rockefeller's first press secretary and was succeeded by Mr. McManus, who served in the position until 1966, when he was appointed executive assistant to the Governor. Mr. Aldrich began his career with New York State as director of the Division for Youth in 1960.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1771d4da894bbdd811d76585be8758a6",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec, Bethany Antos December 2000\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1799b929fd8c641eaa811b7c23e66741",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/560",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:54:00Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T18:54:00Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3848",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/560"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:54:00Z",
-        "system_mtime": "2016-10-22T18:54:00Z",
-        "user_mtime": "2016-10-22T18:54:00Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, Executive Chamber, Series 14",
     "tree": {
         "ref": "/repositories/2/resources/560/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Aldrich, Alexander",
-            "ref": "/repositories/2/archival_objects/301447",
-            "level": "file",
-            "type": "collection",
-            "identifier": 301447
+    "uri": "/repositories/2/resources/560",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T18:54:00Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Amper, Richard",
-            "ref": "/repositories/2/archival_objects/301466",
-            "level": "file",
-            "type": "collection",
-            "identifier": 301466
-        },
-        {
-            "title": "Barr, Daniel",
-            "ref": "/repositories/2/archival_objects/301490",
-            "level": "file",
-            "type": "object",
-            "identifier": 301490
-        },
-        {
-            "title": "Corbin, Sol",
-            "ref": "/repositories/2/archival_objects/301491",
-            "level": "file",
-            "type": "object",
-            "identifier": 301491
-        },
-        {
-            "title": "Doherty, Frank J.",
-            "ref": "/repositories/2/archival_objects/301492",
-            "level": "file",
-            "type": "object",
-            "identifier": 301492
-        },
-        {
-            "title": "Douglass, Robert R.",
-            "ref": "/repositories/2/archival_objects/301493",
-            "level": "file",
-            "type": "object",
-            "identifier": 301493
-        },
-        {
-            "title": "Jamieson, Francis A.",
-            "ref": "/repositories/2/archival_objects/301494",
-            "level": "file",
-            "type": "object",
-            "identifier": 301494
-        },
-        {
-            "title": "MacCrate, Robert",
-            "ref": "/repositories/2/archival_objects/301495",
-            "level": "file",
-            "type": "object",
-            "identifier": 301495
-        },
-        {
-            "title": "Marshall, Alton G.",
-            "ref": "/repositories/2/archival_objects/301496",
-            "level": "file",
-            "type": "object",
-            "identifier": 301496
-        },
-        {
-            "title": "McManus, Robert",
-            "ref": "/repositories/2/archival_objects/301497",
-            "level": "file",
-            "type": "collection",
-            "identifier": 301497
-        },
-        {
-            "title": "Musicus, Milton F.",
-            "ref": "/repositories/2/archival_objects/301522",
-            "level": "file",
-            "type": "object",
-            "identifier": 301522
-        },
-        {
-            "title": "Perkins, R. B.",
-            "ref": "/repositories/2/archival_objects/301523",
-            "level": "file",
-            "type": "object",
-            "identifier": 301523
-        },
-        {
-            "title": "Remington, Thomas R.",
-            "ref": "/repositories/2/archival_objects/301524",
-            "level": "file",
-            "type": "object",
-            "identifier": 301524
-        },
-        {
-            "title": "Root, Orin",
-            "ref": "/repositories/2/archival_objects/301525",
-            "level": "file",
-            "type": "object",
-            "identifier": 301525
-        },
-        {
-            "title": "Savell, Isabelle",
-            "ref": "/repositories/2/archival_objects/301526",
-            "level": "file",
-            "type": "object",
-            "identifier": 301526
-        },
-        {
-            "title": "Slater, Ilene",
-            "ref": "/repositories/2/archival_objects/301527",
-            "level": "file",
-            "type": "object",
-            "identifier": 301527
-        },
-        {
-            "title": "Sloate, Leslie",
-            "ref": "/repositories/2/archival_objects/301528",
-            "level": "file",
-            "type": "object",
-            "identifier": 301528
-        },
-        {
-            "title": "Stewart, Richard E.",
-            "ref": "/repositories/2/archival_objects/301529",
-            "level": "file",
-            "type": "object",
-            "identifier": 301529
-        },
-        {
-            "title": "Terry, John H.",
-            "ref": "/repositories/2/archival_objects/301530",
-            "level": "file",
-            "type": "object",
-            "identifier": 301530
-        },
-        {
-            "title": "Underhill, Jacob B.",
-            "ref": "/repositories/2/archival_objects/301531",
-            "level": "file",
-            "type": "object",
-            "identifier": 301531
-        },
-        {
-            "title": "Wainwright, Carroll",
-            "ref": "/repositories/2/archival_objects/301532",
-            "level": "file",
-            "type": "object",
-            "identifier": 301532
-        },
-        {
-            "title": "Whiteman, Michael",
-            "ref": "/repositories/2/archival_objects/301533",
-            "level": "file",
-            "type": "object",
-            "identifier": 301533
-        },
-        {
-            "title": "Whitman, Ann C.",
-            "ref": "/repositories/2/archival_objects/301534",
-            "level": "file",
-            "type": "object",
-            "identifier": 301534
-        },
-        {
-            "title": "Wille, Frank",
-            "ref": "/repositories/2/archival_objects/301535",
-            "level": "file",
-            "type": "object",
-            "identifier": 301535
-        },
-        {
-            "title": "Winfield, Richard N.",
-            "ref": "/repositories/2/archival_objects/301536",
-            "level": "file",
-            "type": "object",
-            "identifier": 301536
-        },
-        {
-            "title": "Executive Chamber Staff - Personal",
-            "ref": "/repositories/2/archival_objects/301537",
-            "level": "file",
-            "type": "object",
-            "identifier": 301537
-        }
-    ]
+        "system_mtime": "2016-10-22T18:54:00Z",
+        "user_mtime": "2016-10-22T18:54:00Z"
+    },
+    "user_mtime": "2016-10-22T18:54:00Z"
 }

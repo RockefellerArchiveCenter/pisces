@@ -1,244 +1,244 @@
 {
-    "lock_version": 17,
-    "title": "Rockefeller Foundation records, Officers' Actions, RG 16.3",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA474.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Officers' Actions, RG 16.3\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Officers' Actions, RG 16.3",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T13:27:23Z",
-    "system_mtime": "2018-09-27T21:28:52Z",
-    "user_mtime": "2018-09-27T21:28:52Z",
-    "suppressed": false,
-    "id_0": "FA474",
-    "language": "eng",
-    "level": "recordgrp",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "20127",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2018-09-27T21:28:52Z",
-            "system_mtime": "2018-09-27T21:28:52Z",
-            "user_mtime": "2018-09-27T21:28:52Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "24.89",
-            "container_summary": "65 documents boxes, 1 1/2 document box",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2018-09-27T21:28:52Z",
-            "system_mtime": "2018-09-27T21:28:52Z",
-            "user_mtime": "2018-09-27T21:28:52Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1927-1985",
-            "begin": "1927",
-            "end": "1985",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2018-09-27T21:28:52Z",
-            "system_mtime": "2018-09-27T21:28:52Z",
-            "user_mtime": "2018-09-27T21:28:52Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
+            "identifier": 489453,
+            "level": "subgrp",
+            "ref": "/repositories/2/archival_objects/489453",
+            "title": "Accession 1, 1927-1985",
+            "type": "collection"
         },
         {
-            "lock_version": 0,
-            "expression": "1960-1985",
-            "begin": "1960",
-            "end": "1985",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
+            "identifier": 1154313,
+            "level": "recordgrp",
+            "ref": "/repositories/2/archival_objects/1154313",
+            "title": "Donor Organization, Sherlock Holmes English-speaking Vernacular annual reports, 2009 March 15",
+            "type": "collection"
+        }
+    ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2018-09-27T21:28:52Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/673"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2018-09-27T21:28:52Z",
+        "uri": "/repositories/2/collection_management/6900",
+        "user_mtime": "2018-09-27T21:28:52Z"
+    },
+    "create_time": "2014-12-06T13:27:23Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1927",
             "create_time": "2018-09-27T21:28:52Z",
-            "system_mtime": "2018-09-27T21:28:52Z",
-            "user_mtime": "2018-09-27T21:28:52Z",
-            "date_type": "bulk",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1985",
+            "expression": "1927-1985",
+            "jsonmodel_type": "date",
             "label": "creation",
-            "jsonmodel_type": "date"
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2018-09-27T21:28:52Z",
+            "user_mtime": "2018-09-27T21:28:52Z"
+        },
+        {
+            "begin": "1960",
+            "create_time": "2018-09-27T21:28:52Z",
+            "created_by": "battalb",
+            "date_type": "bulk",
+            "end": "1985",
+            "expression": "1960-1985",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2018-09-27T21:28:52Z",
+            "user_mtime": "2018-09-27T21:28:52Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA474.xml",
+    "extents": [
+        {
+            "container_summary": "65 documents boxes, 1 1/2 document box",
+            "create_time": "2018-09-27T21:28:52Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "24.89",
+            "portion": "whole",
+            "system_mtime": "2018-09-27T21:28:52Z",
+            "user_mtime": "2018-09-27T21:28:52Z"
         }
     ],
     "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
+    "external_ids": [
         {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
+            "create_time": "2018-09-27T21:28:52Z",
+            "created_by": "battalb",
+            "external_id": "20127",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2018-09-27T21:28:52Z",
+            "user_mtime": "2018-09-27T21:28:52Z"
         }
     ],
-    "revision_statements": [],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Officers' Actions, RG 16.3",
+    "finding_aid_language": "English",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Officers' Actions, RG 16.3\n",
+    "id_0": "FA474",
     "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "recordgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 17,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "c4ec8ccf4a6526e4ccd28cb150d8db60",
             "label": "Conditions Governing Use note",
-            "type": "userestrict",
+            "persistent_id": "c4ec8ccf4a6526e4ccd28cb150d8db60",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Rockefeller Foundation retains title, copyright and literary and intellectual property rights to the records, in so far as it holds them.\n\nRAC has authority to grant permission to publish for scholarly purposes.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "userestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "334f8abe70ba47a77d3c325bea9c1ec5",
             "label": "Preferred Citation note",
-            "type": "prefercite",
+            "persistent_id": "334f8abe70ba47a77d3c325bea9c1ec5",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "26614165575ed785d3a15d427e3d5511",
             "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
+            "persistent_id": "26614165575ed785d3a15d427e3d5511",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "096fd6209b31ba9f3ff12d77c1c632fb",
-            "type": "scopecontent",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Types of records include: grant and fellowship material.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "97ada6e729368ec96dc37a4474697e56",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "As received",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "f9c9695b093454474bbe353b4b03ce8b",
-            "type": "processinfo",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Processed by Beth Jaffe-Davis, September 2018",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "processinfo"
         }
     ],
-    "uri": "/repositories/2/resources/673",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2018-09-27T21:28:52Z",
-        "system_mtime": "2018-09-27T21:28:52Z",
-        "user_mtime": "2018-09-27T21:28:52Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/6900",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/673"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2018-09-27",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2018-09-27T21:28:52Z",
-        "system_mtime": "2018-09-27T21:28:52Z",
-        "user_mtime": "2018-09-27T21:28:52Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2018-09-27T21:28:52Z",
+    "title": "Rockefeller Foundation records, Officers' Actions, RG 16.3",
     "tree": {
         "ref": "/repositories/2/resources/673/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Accession 1, 1927-1985",
-            "ref": "/repositories/2/archival_objects/489453",
-            "level": "subgrp",
-            "type": "collection",
-            "identifier": 489453
+    "uri": "/repositories/2/resources/673",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2018-09-27T21:28:52Z",
+        "created_by": "battalb",
+        "date_2": "2018-09-27",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Donor Organization, Sherlock Holmes English-speaking Vernacular annual reports, 2009 March 15",
-            "ref": "/repositories/2/archival_objects/1154313",
-            "level": "recordgrp",
-            "type": "collection",
-            "identifier": 1154313
-        }
-    ]
+        "system_mtime": "2018-09-27T21:28:52Z",
+        "user_mtime": "2018-09-27T21:28:52Z"
+    },
+    "user_mtime": "2018-09-27T21:28:52Z"
 }

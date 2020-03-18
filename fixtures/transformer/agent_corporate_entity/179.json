@@ -1,105 +1,105 @@
 {
-    "lock_version": 216,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:42:12Z",
-    "system_mtime": "2018-07-10T14:38:54Z",
-    "user_mtime": "2014-12-06T02:42:12Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Museum of Primitive Art (New York, N.Y.)",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
             "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
         }
     ],
-    "linked_agent_roles": [
-        "creator",
-        "subject"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Museum of Primitive Art (New York, N.Y.)",
-            "sort_name": "Museum of Primitive Art (New York, N.Y.)",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
-            "system_mtime": "2017-08-22T15:44:40Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
-        },
-        {
-            "lock_version": 0,
-            "primary_name": "New York (City). Museum of Primitive Art.",
-            "sort_name": "New York (City). Museum of Primitive Art.",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
-            "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
-        },
-        {
-            "lock_version": 0,
-            "primary_name": "New York (N.Y.). Museum of Indigenous Art.",
-            "sort_name": "New York (N.Y.). Museum of Indigenous Art.",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
-            "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/corporate_entities/179",
     "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
+    "create_time": "2014-12-06T02:42:12Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
     "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:42:12Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "admin",
         "lock_version": 0,
         "primary_name": "Museum of Primitive Art (New York, N.Y.)",
         "sort_name": "Museum of Primitive Art (New York, N.Y.)",
         "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:42:12Z",
-        "system_mtime": "2017-08-22T15:44:40Z",
-        "user_mtime": "2014-12-06T02:42:12Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "naf",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
+        "system_mtime": "2017-08-22T15:44:40Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:42:12Z"
     },
-    "title": "Museum of Primitive Art (New York, N.Y.)"
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "admin",
+    "linked_agent_roles": [
+        "creator",
+        "subject"
+    ],
+    "lock_version": 216,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "Museum of Primitive Art (New York, N.Y.)",
+            "sort_name": "Museum of Primitive Art (New York, N.Y.)",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2017-08-22T15:44:40Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
+        },
+        {
+            "authorized": false,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "New York (City). Museum of Primitive Art.",
+            "sort_name": "New York (City). Museum of Primitive Art.",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2014-12-06T02:42:12Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
+        },
+        {
+            "authorized": false,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "New York (N.Y.). Museum of Indigenous Art.",
+            "sort_name": "New York (N.Y.). Museum of Indigenous Art.",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2014-12-06T02:42:12Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2018-07-10T14:38:54Z",
+    "title": "Museum of Primitive Art (New York, N.Y.)",
+    "uri": "/agents/corporate_entities/179",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:42:12Z"
 }

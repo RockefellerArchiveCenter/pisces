@@ -1,35 +1,292 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller vice presidential records, New York Office, Series 10",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA380.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, New York Office, Series 10\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, New York Office, Series 10",
-    "finding_aid_date": "1996",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T10:16:11Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:21:47Z",
-    "suppressed": false,
-    "id_0": "FA380",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2197",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:21:47Z",
-            "system_mtime": "2016-10-22T19:21:47Z",
-            "user_mtime": "2016-10-22T19:21:47Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 320746,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/320746",
+            "title": "Vice Presidential Confirmation Hearings, 1974",
+            "type": "collection"
+        },
+        {
+            "identifier": 321078,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/321078",
+            "title": "Office of the Vice President, 1975-1977",
+            "type": "collection"
+        },
+        {
+            "identifier": 321164,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/321164",
+            "title": "Sound Recordings, 1974-1977",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:21:47Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/579"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3866",
+        "user_mtime": "2016-10-22T19:21:47Z"
+    },
+    "create_time": "2014-12-06T10:16:11Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1974",
+            "create_time": "2016-10-22T19:21:47Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1977",
+            "expression": "1974-1977",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:21:47Z",
+            "user_mtime": "2016-10-22T19:21:47Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA380.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T19:21:47Z",
+            "created_by": "battalb",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "29",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:21:47Z",
+            "user_mtime": "2016-10-22T19:21:47Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:21:47Z",
+            "created_by": "battalb",
+            "external_id": "2197",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:21:47Z",
+            "user_mtime": "2016-10-22T19:21:47Z"
+        }
+    ],
+    "finding_aid_date": "1996",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, New York Office, Series 10",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, New York Office, Series 10\n",
+    "id_0": "FA380",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/193",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "192e224f4a2062aa8076b8d1093d4407",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "6c62116a0391305a3932c274de4fb8b1",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "03a36ff6e8394f7d1cd17b107e3da7c5",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "ab2dba07f0a7f37b2ecf5afe8c5ef01d",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "23134c9bc3e10270332b5e21f6ea565b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "1399971da21a0a12e7c5298b0a68c94c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 26 10\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "c568742f3a60ddf65718bf376238af56",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This series is divided into 3 subseries:\n\nSubseries 1: Vice Presidential Confirmation Hearings, 1974\nSubseries 2: Office of the Vice President, 1975-1977\nSubseries 3: Sound Recordings, 1974-1977\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "cbdf5d1c461fcae06fa69829d6ac0751",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "When President Gerald R. Ford selected Nelson A. Rockefeller to fill the vacant vice presidency on August 20, 1974, Rockefeller's staff began preparing material for the confirmation hearings. Much of the material in this series was gathered from the Rockefeller family archives, which was located in Rockefeller Center.\n\nRockefeller's staff spent most of late August and early September preparing background data, developing drafts of testimony, and fulfilling requests for information from Congressional committee members. The files that begin this series are the products of those efforts.\n\nOnce he was confirmed and sworn in as Vice President, Rockefeller and his staff began to accumulate files anew. A new set of subject files was created, as well as files concerned with the daily activities of the Vice President. These files were periodically shipped to the family archives in New York for storage.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "25182a0f5379ff83b0746f788f245156",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec\nJune 1996\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "64d07af97b9f286168a4c6de14938ff8",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA378/overview\">Nelson A. Rockefeller Vice Presidential Records, Central Files (FA378)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA384/overview\">Nelson A. Rockefeller Vice Presidential Records, Working Papers of the Vice President (FA384)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:21:47Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:21:47Z",
+            "uri": "/revision_statement/3030",
+            "user_mtime": "2016-10-22T19:21:47Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/56"
@@ -128,286 +385,29 @@
             "ref": "/subjects/572"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "29",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:21:47Z",
-            "system_mtime": "2016-10-22T19:21:47Z",
-            "user_mtime": "2016-10-22T19:21:47Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1974-1977",
-            "begin": "1974",
-            "end": "1977",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:21:47Z",
-            "system_mtime": "2016-10-22T19:21:47Z",
-            "user_mtime": "2016-10-22T19:21:47Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/193"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:21:47Z",
-            "system_mtime": "2016-10-22T19:21:47Z",
-            "user_mtime": "2016-10-22T19:21:47Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3030",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "192e224f4a2062aa8076b8d1093d4407",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "6c62116a0391305a3932c274de4fb8b1",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "03a36ff6e8394f7d1cd17b107e3da7c5",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ab2dba07f0a7f37b2ecf5afe8c5ef01d",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "23134c9bc3e10270332b5e21f6ea565b",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1399971da21a0a12e7c5298b0a68c94c",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 26 10\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "c568742f3a60ddf65718bf376238af56",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "This series is divided into 3 subseries:\n\nSubseries 1: Vice Presidential Confirmation Hearings, 1974\nSubseries 2: Office of the Vice President, 1975-1977\nSubseries 3: Sound Recordings, 1974-1977\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "cbdf5d1c461fcae06fa69829d6ac0751",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "When President Gerald R. Ford selected Nelson A. Rockefeller to fill the vacant vice presidency on August 20, 1974, Rockefeller's staff began preparing material for the confirmation hearings. Much of the material in this series was gathered from the Rockefeller family archives, which was located in Rockefeller Center.\n\nRockefeller's staff spent most of late August and early September preparing background data, developing drafts of testimony, and fulfilling requests for information from Congressional committee members. The files that begin this series are the products of those efforts.\n\nOnce he was confirmed and sworn in as Vice President, Rockefeller and his staff began to accumulate files anew. A new set of subject files was created, as well as files concerned with the daily activities of the Vice President. These files were periodically shipped to the family archives in New York for storage.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "25182a0f5379ff83b0746f788f245156",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec\nJune 1996\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "64d07af97b9f286168a4c6de14938ff8",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA378/overview\">Nelson A. Rockefeller Vice Presidential Records, Central Files (FA378)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA384/overview\">Nelson A. Rockefeller Vice Presidential Records, Working Papers of the Vice President (FA384)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/579",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:21:47Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:21:47Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3866",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/579"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:21:47Z",
-        "system_mtime": "2016-10-22T19:21:47Z",
-        "user_mtime": "2016-10-22T19:21:47Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller vice presidential records, New York Office, Series 10",
     "tree": {
         "ref": "/repositories/2/resources/579/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Vice Presidential Confirmation Hearings, 1974",
-            "ref": "/repositories/2/archival_objects/320746",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 320746
+    "uri": "/repositories/2/resources/579",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T19:21:47Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Office of the Vice President, 1975-1977",
-            "ref": "/repositories/2/archival_objects/321078",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 321078
-        },
-        {
-            "title": "Sound Recordings, 1974-1977",
-            "ref": "/repositories/2/archival_objects/321164",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 321164
-        }
-    ]
+        "system_mtime": "2016-10-22T19:21:47Z",
+        "user_mtime": "2016-10-22T19:21:47Z"
+    },
+    "user_mtime": "2016-10-22T19:21:47Z"
 }

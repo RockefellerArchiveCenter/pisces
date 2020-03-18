@@ -1,80 +1,80 @@
 {
-    "lock_version": 8,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:46:05Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2014-12-06T02:46:05Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:46:05Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Wyckoff",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:46:05Z",
             "system_mtime": "2014-12-06T02:46:05Z",
-            "user_mtime": "2014-12-06T02:46:05Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:46:05Z"
         }
     ],
+    "agent_type": "agent_person",
+    "create_time": "2014-12-06T02:46:05Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:46:05Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Wyckoff",
+        "rest_of_name": "Gene",
+        "rules": "dacs",
+        "sort_name": "Wyckoff, Gene",
+        "sort_name_auto_generate": true,
+        "source": "local",
+        "system_mtime": "2014-12-06T02:46:05Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:46:05Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "admin",
     "linked_agent_roles": [
         "creator"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
+    "lock_version": 8,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2014-12-06T02:46:05Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Wyckoff",
+            "rest_of_name": "Gene",
+            "rules": "dacs",
+            "sort_name": "Wyckoff, Gene",
+            "sort_name_auto_generate": true,
+            "source": "local",
+            "system_mtime": "2014-12-06T02:46:05Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:46:05Z"
+        }
     ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Wyckoff, Gene",
+    "uri": "/agents/people/1888",
     "used_within_published_repositories": [
         "/repositories/2"
     ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Wyckoff",
-            "rest_of_name": "Gene",
-            "sort_name": "Wyckoff, Gene",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:46:05Z",
-            "system_mtime": "2014-12-06T02:46:05Z",
-            "user_mtime": "2014-12-06T02:46:05Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "local",
-            "rules": "dacs",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
-        }
+    "used_within_repositories": [
+        "/repositories/2"
     ],
-    "related_agents": [],
-    "uri": "/agents/people/1888",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Wyckoff",
-        "rest_of_name": "Gene",
-        "sort_name": "Wyckoff, Gene",
-        "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:46:05Z",
-        "system_mtime": "2014-12-06T02:46:05Z",
-        "user_mtime": "2014-12-06T02:46:05Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "local",
-        "rules": "dacs",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Wyckoff, Gene"
+    "user_mtime": "2014-12-06T02:46:05Z"
 }

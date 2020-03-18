@@ -1,36 +1,111 @@
 {
-    "lock_version": 10,
-    "title": "Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA439.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1\n",
-    "finding_aid_filing_title": "Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T12:53:20Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-11-24T14:07:41Z",
-    "suppressed": false,
-    "id_0": "FA439",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "19894",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-24T14:07:41Z",
-            "system_mtime": "2016-11-24T14:07:41Z",
-            "user_mtime": "2016-11-24T14:07:41Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 462237,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/462237",
+            "title": "First Administration, 1959-1962",
+            "type": "collection"
         }
     ],
-    "subjects": [],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-11-24T14:07:41Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/638"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/5014",
+        "user_mtime": "2016-11-24T14:07:41Z"
+    },
+    "create_time": "2014-12-06T12:53:20Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1959",
+            "create_time": "2016-11-24T14:07:41Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1962",
+            "expression": "1959-1962",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-11-24T14:07:41Z",
+            "user_mtime": "2016-11-24T14:07:41Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA439.xml",
+    "extents": [
+        {
+            "create_time": "2016-11-24T14:07:41Z",
+            "created_by": "battalb",
+            "extent_type": "microform reels",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "171",
+            "portion": "whole",
+            "system_mtime": "2016-11-24T14:07:41Z",
+            "user_mtime": "2016-11-24T14:07:41Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-11-24T14:07:41Z",
+            "created_by": "battalb",
+            "external_id": "19894",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-11-24T14:07:41Z",
+            "user_mtime": "2016-11-24T14:07:41Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1",
+    "finding_aid_language": "English",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1\n",
+    "id_0": "FA439",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/3247",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
     "linked_events": [
         {
             "ref": "/repositories/2/events/54741"
@@ -42,202 +117,127 @@
             "ref": "/repositories/2/events/54743"
         }
     ],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "171",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-24T14:07:41Z",
-            "system_mtime": "2016-11-24T14:07:41Z",
-            "user_mtime": "2016-11-24T14:07:41Z",
-            "portion": "whole",
-            "extent_type": "microform reels",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1959-1962",
-            "begin": "1959",
-            "end": "1962",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-11-24T14:07:41Z",
-            "system_mtime": "2016-11-24T14:07:41Z",
-            "user_mtime": "2016-11-24T14:07:41Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        },
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/3247"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "lock_version": 10,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "09aeab0f6a144b16bb115a95e65259a0",
             "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
+            "persistent_id": "09aeab0f6a144b16bb115a95e65259a0",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Microfilm user copies are available for research. The archival material has been reformatted. Access to the original paper records is restricted.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "1f8e0206464aeba4fed1d8a0b6df8792",
             "label": "Preferred Citation note",
-            "type": "prefercite",
+            "persistent_id": "1f8e0206464aeba4fed1d8a0b6df8792",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "f9b0253ebe19622f0c6fd314c40c13a5",
             "label": "Arrangement note",
-            "type": "arrangement",
+            "persistent_id": "f9b0253ebe19622f0c6fd314c40c13a5",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Series 37 is arranged into 4 subseries:\n\nSubseries 1: First Administration, 1959-1962. Subseries 2: Second Administration, 1963-1966. Subseries 3: Third Administration, 1967-1970. Subseries 4: Fourth Administration, 1971-1973.\n\nMaterial is arranged alphabetically by subject within each subseries.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "8bd3b00f197303554b9417eaff724838",
             "label": "Scope and Contents note",
-            "type": "scopecontent",
+            "persistent_id": "8bd3b00f197303554b9417eaff724838",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Major subjects contained in the files include:\n\nAdministration. Aging. Agriculture. Authorities and Commissions. Banking. Civil Defense. Commemorative Observance. Conservation. Consumers. Correction. Disasters. Discrimination. Education. Executive Clemency. Extradition. Fiscal. Fund raising. Government. Health &amp; Sanitation. Honorary Designation. Horse Racing. Housing. Insurance. Investigations. Invitations. Judiciary. Labor. Law. Legislation. Licensing. Mental Hygiene. Military and Naval. Organizations. Parks and Recreation facilities. Personnel Administration. Politics. Property. Public Safety. Public Utilities. Public Works. Regrets. Resignations and Vacancies. Statements. Transportation. Veterans. Welfare. Youth.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "aae369d70f64ce75e9f8ed487f05539a",
             "label": "Processing Information note",
-            "type": "processinfo",
+            "persistent_id": "aae369d70f64ce75e9f8ed487f05539a",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "This guide was compiled by Brendan Sobie, Rockefeller Archive Center, 1993 and 1994.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "processinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "0bff4157acd9c52b6ae62419a11cf5d8",
-            "type": "otherfindaid",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "<p>Other available finding aid for Nelson A. Rockefeller gubernatorial records, Office Subject Files, Series 37 include:</p>\n<p>FA439A Nelson A. Rockefeller gubernatorial records, Office Subject Files, Second Administration, Series 37.2</p>\n<p>FA439B Nelson A. Rockefeller gubernatorial records, Office Subject Files, Third Administration, Series 37.3</p>\n<p>FA439C Nelson A. Rockefeller gubernatorial records, Office Subject Files, Fourth Administration, Series 37.4</p>\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "otherfindaid"
         }
     ],
-    "uri": "/repositories/2/resources/638",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-11-24T14:07:41Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-11-24T14:07:41Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/5014",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/638"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2016-11-23",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-11-24T14:07:41Z",
-        "system_mtime": "2016-11-24T14:07:41Z",
-        "user_mtime": "2016-11-24T14:07:41Z",
-        "enum_1": "2 - Minimal",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, Office Subject Files, First Administration, Series 37.1",
     "tree": {
         "ref": "/repositories/2/resources/638/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "First Administration, 1959-1962",
-            "ref": "/repositories/2/archival_objects/462237",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 462237
-        }
-    ]
+    "uri": "/repositories/2/resources/638",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-11-24T14:07:41Z",
+        "created_by": "battalb",
+        "date_2": "2016-11-23",
+        "enum_1": "2 - Minimal",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "system_mtime": "2016-11-24T14:07:41Z",
+        "user_mtime": "2016-11-24T14:07:41Z"
+    },
+    "user_mtime": "2016-11-24T14:07:41Z"
 }

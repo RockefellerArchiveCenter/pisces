@@ -1,62 +1,62 @@
 {
-    "lock_version": 37,
-    "publish": true,
-    "created_by": "battalb",
-    "last_modified_by": "battalb",
-    "create_time": "2015-06-03T18:25:28Z",
-    "system_mtime": "2017-12-15T22:26:27Z",
-    "user_mtime": "2015-06-03T18:25:28Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [],
-    "linked_agent_roles": [
-        "subject"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "United States. Office of Inter-American Affairs",
-            "sort_name": "United States. Office of Inter-American Affairs",
-            "sort_name_auto_generate": true,
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2015-06-03T18:25:28Z",
-            "system_mtime": "2017-08-22T15:44:40Z",
-            "user_mtime": "2015-06-03T18:25:28Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/corporate_entities/20019",
     "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
+    "create_time": "2015-06-03T18:25:28Z",
+    "created_by": "battalb",
+    "dates_of_existence": [],
     "display_name": {
+        "authorized": true,
+        "create_time": "2015-06-03T18:25:28Z",
+        "created_by": "battalb",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "battalb",
         "lock_version": 0,
         "primary_name": "United States. Office of Inter-American Affairs",
         "sort_name": "United States. Office of Inter-American Affairs",
         "sort_name_auto_generate": true,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2015-06-03T18:25:28Z",
-        "system_mtime": "2017-08-22T15:44:40Z",
-        "user_mtime": "2015-06-03T18:25:28Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "naf",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
+        "system_mtime": "2017-08-22T15:44:40Z",
+        "use_dates": [],
+        "user_mtime": "2015-06-03T18:25:28Z"
     },
-    "title": "United States. Office of Inter-American Affairs"
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "battalb",
+    "linked_agent_roles": [
+        "subject"
+    ],
+    "lock_version": 37,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2015-06-03T18:25:28Z",
+            "created_by": "battalb",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "primary_name": "United States. Office of Inter-American Affairs",
+            "sort_name": "United States. Office of Inter-American Affairs",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2017-08-22T15:44:40Z",
+            "use_dates": [],
+            "user_mtime": "2015-06-03T18:25:28Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:26:27Z",
+    "title": "United States. Office of Inter-American Affairs",
+    "uri": "/agents/corporate_entities/20019",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-06-03T18:25:28Z"
 }

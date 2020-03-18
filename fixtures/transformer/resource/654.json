@@ -1,35 +1,263 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller photographs, Room 5600, Rockefeller family office, Series 2",
-    "publish": true,
-    "restrictions": true,
-    "ead_id": "FA455.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller photographs, Room 5600, Rockefeller family office, Series 2\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) photographs, Room 5600, Rockefeller family office, Series 2",
-    "finding_aid_date": "2010",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T13:00:41Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-23T15:15:26Z",
-    "suppressed": false,
-    "id_0": "FA455",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "19925",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:15:26Z",
-            "system_mtime": "2016-10-23T15:15:26Z",
-            "user_mtime": "2016-10-23T15:15:26Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 471017,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/471017",
+            "title": "Nelson A. Rockefeller Photographs, Room 5600, Rockefeller family office, 1920-1979",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-23T15:15:26Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/654"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3947",
+        "user_mtime": "2016-10-23T15:15:26Z"
+    },
+    "create_time": "2014-12-06T13:00:41Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1920",
+            "create_time": "2016-10-23T15:15:26Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1979",
+            "expression": "1920-1979",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-23T15:15:26Z",
+            "user_mtime": "2016-10-23T15:15:26Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA455.xml",
+    "extents": [
+        {
+            "container_summary": "Extent is approximate.",
+            "create_time": "2016-10-23T15:15:26Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "18",
+            "portion": "whole",
+            "system_mtime": "2016-10-23T15:15:26Z",
+            "user_mtime": "2016-10-23T15:15:26Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-23T15:15:26Z",
+            "created_by": "battalb",
+            "external_id": "19925",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-23T15:15:26Z",
+            "user_mtime": "2016-10-23T15:15:26Z"
+        }
+    ],
+    "finding_aid_date": "2010",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) photographs, Room 5600, Rockefeller family office, Series 2",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller photographs, Room 5600, Rockefeller family office, Series 2\n",
+    "id_0": "FA455",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/families/1",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "81fcb260e9b504a4cab2122cb10ed28f",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "9628f3673e0fa9788ff8519da40070e7",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Permission is required in order to publish or otherwise use photographs and other visual materials of living members of the Rockefeller family. See RAC Head of Reference for details.\n\nImages of Happy Rockefeller while she is officially serving as the Second Lady of the United States are open for scholarly use.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Related Archival Materials note",
+            "persistent_id": "cacd95be90424c346946c3faca6a718e",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Additional images of Nelson A. Rockefeller and or his interests will be found in the following:\n\nRockefeller Family Photographs. Most of the photos of Nelson A. Rockefeller in his childhood and many photos of Nelson A. Rockefeller as an adult with his parents can be found in 1005 John D. Rockefeller Jr. Family - Children's Albums or Group Portraits. See also John D. Rockefeller Jr. - Business - 17 West 54th Street.\n\nInternational Basic Economy Corporation (IBEC) Archives.\n\nNelson A. Rockefeller papers, Art, Series C (FA340). This series documents the management of Nelson A. Rockefeller's art collection and includes photos of a portion of the works of art he owned.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "relatedmaterial"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "63d19daef1c2f99863c4270e2ab5d503",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Nelson A. Rockefeller photographs are arranged in the following series:\n\nSeries 1008: Nelson A. Rockefeller family. Series 2: Room 5600, Rockefeller family office. Series 3: Gubernatorial Press Office. Series 4: Gubernatorial Press Office. Series 5: Gubernatorial, Robert A. (Bob) Wands. Series 6: Vice Presidential. Series 7: Unprocessed photographs.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "71ec80c2de7a1991fe5776d4e6892b5f",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "6f48571ab6f516da999483e45bb1305a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Rockefeller family photographic holdings are arranged into the following series: \n\nRockefeller family and Avery family photographs, Series 1001. \nWilliam Avery Rockefeller family photographs, Series 1002. \nJohn D. Rockefeller family photographs, Series 1003. \nWilliam Rockefeller family photographs, Series 1004. \nJohn D. Rockefeller Jr. family photographs, Series 1005. \nPocantico Hills photographs, Series 1006. \nJohn D. Rockefeller 3rd family photographs, Series 1007. \nNelson A. Rockefeller family photographs, Series 1008. \nLaurance S. Rockefeller family photographs, Series 1009. \nDavid Rockefeller family photographs, Series 1010.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "9dbd4251ae88fe64747cbf1a0050b2e8",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "For other Nelson A. Rockefeller photographic holdings, please see the following finding aids:\n\n<extref href=\"../FA454/overview\">FA454 Nelson A. Rockefeller photographs, Nelson A. Rockefeller family, Series 1008</extref>\n\n<extref href=\"../FA456/overview\">FA456 Nelson A. Rockefeller photographs, Gubernatorial Press Office, Series 3</extref>\n\n<extref href=\"../FA457/overview\">FA457 Nelson A. Rockefeller photographs, Gubernatorial Press Office, Series 4</extref>\n\n<extref href=\"../FA458/overview\">FA458 Nelson A. Rockefeller photographs, Gubernatorial, Robert A. (Bob) Wands, Series 5</extref>\n\n<extref href=\"../FA459/overview\">FA459 Nelson A. Rockefeller photographs, Vice Presidential, Series 6</extref>\n\n<extref href=\"../FA460/overview\">FA460 Nelson A. Rockefeller photographs, Unprocessed photographs, Series 7</extref>\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "37e59e139fe55263f7a19f88d7bada70",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "For other Rockefeller family photographic holdings, please see the following finding aids:\n\n<extref href=\"../FA445/overview\"> FA445 Rockefeller family and Avery family photographs, Series 1001</extref>\n\n<extref href=\"../FA446/overview\"> FA446 William Avery Rockefeller family photographs, Series 1002</extref>\n\n<extref href=\"../FA447/overview\"> FA447 John D. Rockefeller family photographs, Series 1003</extref>\n\n<extref href=\"../FA448/overview\"> FA448 William Rockefeller family photographs, Series 1004</extref>\n\n<extref href=\"../FA449/overview\"> FA449 John D. Rockefeller Jr. family photographs, Series 1005</extref>\n\n<extref href=\"../FA450/overview\"> FA450 Pocantico Hills photographs, Series 1006</extref>\n\n<extref href=\"../FA451/overview\"> FA451 John D. Rockefeller 3rd family photographs, Series 1007</extref>\n\n<extref href=\"../FA452/overview\"> FA452 Laurance S. Rockefeller family photographs, Series 1009</extref>\n\n<extref href=\"../FA453/overview\"> FA453 David Rockefeller family photographs, Series 1010</extref>\n\nFor related materials, please see the following finding aids:\n\n<extref href=\"../FA340/overview\">FA340 Nelson A. Rockefeller papers, Art, Series C</extref>\n\n<extref href=\"../FA084/overview\">FA084 International Basic Economy Corporation records</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "1d39ab2361c12f08828e19c783dbc01b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Types of records include: photographs.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": true,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-23T15:15:26Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>4 August 2010</date><item>Imported into the Archivists\u2019 Toolkit by Aurexus and Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-23T15:15:26Z",
+            "uri": "/revision_statement/3054",
+            "user_mtime": "2016-10-23T15:15:26Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/537"
@@ -59,257 +287,29 @@
             "ref": "/subjects/329"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "18",
-            "container_summary": "Extent is approximate.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:15:26Z",
-            "system_mtime": "2016-10-23T15:15:26Z",
-            "user_mtime": "2016-10-23T15:15:26Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1920-1979",
-            "begin": "1920",
-            "end": "1979",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:15:26Z",
-            "system_mtime": "2016-10-23T15:15:26Z",
-            "user_mtime": "2016-10-23T15:15:26Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/families/1"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>4 August 2010</date><item>Imported into the Archivists\u2019 Toolkit by Aurexus and Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:15:26Z",
-            "system_mtime": "2016-10-23T15:15:26Z",
-            "user_mtime": "2016-10-23T15:15:26Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3054",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "81fcb260e9b504a4cab2122cb10ed28f",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9628f3673e0fa9788ff8519da40070e7",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Permission is required in order to publish or otherwise use photographs and other visual materials of living members of the Rockefeller family. See RAC Head of Reference for details.\n\nImages of Happy Rockefeller while she is officially serving as the Second Lady of the United States are open for scholarly use.\n\nRAC users must abide by all applicable provisions of United States copyright law.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "cacd95be90424c346946c3faca6a718e",
-            "label": "Related Archival Materials note",
-            "type": "relatedmaterial",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Additional images of Nelson A. Rockefeller and or his interests will be found in the following:\n\nRockefeller Family Photographs. Most of the photos of Nelson A. Rockefeller in his childhood and many photos of Nelson A. Rockefeller as an adult with his parents can be found in 1005 John D. Rockefeller Jr. Family - Children's Albums or Group Portraits. See also John D. Rockefeller Jr. - Business - 17 West 54th Street.\n\nInternational Basic Economy Corporation (IBEC) Archives.\n\nNelson A. Rockefeller papers, Art, Series C (FA340). This series documents the management of Nelson A. Rockefeller's art collection and includes photos of a portion of the works of art he owned.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "63d19daef1c2f99863c4270e2ab5d503",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Nelson A. Rockefeller photographs are arranged in the following series:\n\nSeries 1008: Nelson A. Rockefeller family. Series 2: Room 5600, Rockefeller family office. Series 3: Gubernatorial Press Office. Series 4: Gubernatorial Press Office. Series 5: Gubernatorial, Robert A. (Bob) Wands. Series 6: Vice Presidential. Series 7: Unprocessed photographs.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "71ec80c2de7a1991fe5776d4e6892b5f",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "6f48571ab6f516da999483e45bb1305a",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Rockefeller family photographic holdings are arranged into the following series: \n\nRockefeller family and Avery family photographs, Series 1001. \nWilliam Avery Rockefeller family photographs, Series 1002. \nJohn D. Rockefeller family photographs, Series 1003. \nWilliam Rockefeller family photographs, Series 1004. \nJohn D. Rockefeller Jr. family photographs, Series 1005. \nPocantico Hills photographs, Series 1006. \nJohn D. Rockefeller 3rd family photographs, Series 1007. \nNelson A. Rockefeller family photographs, Series 1008. \nLaurance S. Rockefeller family photographs, Series 1009. \nDavid Rockefeller family photographs, Series 1010.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9dbd4251ae88fe64747cbf1a0050b2e8",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "For other Nelson A. Rockefeller photographic holdings, please see the following finding aids:\n\n<extref href=\"../FA454/overview\">FA454 Nelson A. Rockefeller photographs, Nelson A. Rockefeller family, Series 1008</extref>\n\n<extref href=\"../FA456/overview\">FA456 Nelson A. Rockefeller photographs, Gubernatorial Press Office, Series 3</extref>\n\n<extref href=\"../FA457/overview\">FA457 Nelson A. Rockefeller photographs, Gubernatorial Press Office, Series 4</extref>\n\n<extref href=\"../FA458/overview\">FA458 Nelson A. Rockefeller photographs, Gubernatorial, Robert A. (Bob) Wands, Series 5</extref>\n\n<extref href=\"../FA459/overview\">FA459 Nelson A. Rockefeller photographs, Vice Presidential, Series 6</extref>\n\n<extref href=\"../FA460/overview\">FA460 Nelson A. Rockefeller photographs, Unprocessed photographs, Series 7</extref>\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "37e59e139fe55263f7a19f88d7bada70",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "For other Rockefeller family photographic holdings, please see the following finding aids:\n\n<extref href=\"../FA445/overview\"> FA445 Rockefeller family and Avery family photographs, Series 1001</extref>\n\n<extref href=\"../FA446/overview\"> FA446 William Avery Rockefeller family photographs, Series 1002</extref>\n\n<extref href=\"../FA447/overview\"> FA447 John D. Rockefeller family photographs, Series 1003</extref>\n\n<extref href=\"../FA448/overview\"> FA448 William Rockefeller family photographs, Series 1004</extref>\n\n<extref href=\"../FA449/overview\"> FA449 John D. Rockefeller Jr. family photographs, Series 1005</extref>\n\n<extref href=\"../FA450/overview\"> FA450 Pocantico Hills photographs, Series 1006</extref>\n\n<extref href=\"../FA451/overview\"> FA451 John D. Rockefeller 3rd family photographs, Series 1007</extref>\n\n<extref href=\"../FA452/overview\"> FA452 Laurance S. Rockefeller family photographs, Series 1009</extref>\n\n<extref href=\"../FA453/overview\"> FA453 David Rockefeller family photographs, Series 1010</extref>\n\nFor related materials, please see the following finding aids:\n\n<extref href=\"../FA340/overview\">FA340 Nelson A. Rockefeller papers, Art, Series C</extref>\n\n<extref href=\"../FA084/overview\">FA084 International Basic Economy Corporation records</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1d39ab2361c12f08828e19c783dbc01b",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Types of records include: photographs.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/654",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-23T15:15:26Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-23T15:15:26Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3947",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/654"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2014-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-23T15:15:26Z",
-        "system_mtime": "2016-10-23T15:15:26Z",
-        "user_mtime": "2016-10-23T15:15:26Z",
-        "enum_1": "2 - Minimal",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller photographs, Room 5600, Rockefeller family office, Series 2",
     "tree": {
         "ref": "/repositories/2/resources/654/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Nelson A. Rockefeller Photographs, Room 5600, Rockefeller family office, 1920-1979",
-            "ref": "/repositories/2/archival_objects/471017",
-            "level": "series",
-            "type": "collection",
-            "identifier": 471017
-        }
-    ]
+    "uri": "/repositories/2/resources/654",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-23T15:15:26Z",
+        "created_by": "battalb",
+        "date_2": "2014-12-31",
+        "enum_1": "2 - Minimal",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "system_mtime": "2016-10-23T15:15:26Z",
+        "user_mtime": "2016-10-23T15:15:26Z"
+    },
+    "user_mtime": "2016-10-23T15:15:26Z"
 }

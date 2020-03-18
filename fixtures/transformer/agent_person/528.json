@@ -1,81 +1,81 @@
 {
-    "lock_version": 157,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "pgalligan",
-    "create_time": "2014-12-06T02:42:13Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2015-08-25T14:18:13Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2015-08-25T14:18:13Z",
+            "created_by": "pgalligan",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "pgalligan",
             "lock_version": 0,
             "name": "Hinman, George",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:18:13Z",
             "system_mtime": "2015-08-25T14:18:13Z",
-            "user_mtime": "2015-08-25T14:18:13Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2015-08-25T14:18:13Z"
         }
     ],
+    "agent_type": "agent_person",
+    "create_time": "2014-12-06T02:42:13Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2015-08-25T14:18:13Z",
+        "created_by": "pgalligan",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "pgalligan",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Hinman",
+        "rest_of_name": "George",
+        "rules": "dacs",
+        "sort_name": "Hinman, George",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2015-08-25T14:18:13Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "pgalligan",
     "linked_agent_roles": [
         "creator",
         "subject"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
+    "lock_version": 157,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2015-08-25T14:18:13Z",
+            "created_by": "pgalligan",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Hinman",
+            "rest_of_name": "George",
+            "rules": "dacs",
+            "sort_name": "Hinman, George",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2015-08-25T14:18:13Z"
+        }
     ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Hinman, George",
+    "uri": "/agents/people/528",
     "used_within_published_repositories": [
         "/repositories/2"
     ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Hinman",
-            "rest_of_name": "George",
-            "sort_name": "Hinman, George",
-            "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:18:13Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2015-08-25T14:18:13Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "rules": "dacs",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
-        }
+    "used_within_repositories": [
+        "/repositories/2"
     ],
-    "related_agents": [],
-    "uri": "/agents/people/528",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Hinman",
-        "rest_of_name": "George",
-        "sort_name": "Hinman, George",
-        "sort_name_auto_generate": true,
-        "created_by": "pgalligan",
-        "last_modified_by": "pgalligan",
-        "create_time": "2015-08-25T14:18:13Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2015-08-25T14:18:13Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "rules": "dacs",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Hinman, George"
+    "user_mtime": "2015-08-25T14:18:13Z"
 }

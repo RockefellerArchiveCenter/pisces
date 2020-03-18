@@ -1,76 +1,76 @@
 {
-    "lock_version": 19,
-    "publish": true,
-    "created_by": "pgalligan",
-    "last_modified_by": "pgalligan",
-    "create_time": "2015-04-24T21:54:28Z",
-    "system_mtime": "2017-12-15T22:26:27Z",
-    "user_mtime": "2015-04-24T21:54:28Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [],
-    "linked_agent_roles": [
-        "creator"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "agent_type": "agent_corporate_entity",
+    "create_time": "2015-04-24T21:54:28Z",
+    "created_by": "pgalligan",
     "dates_of_existence": [
         {
-            "lock_version": 0,
             "begin": "1910",
-            "end": "2019",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2019-12-11T20:21:14Z",
-            "system_mtime": "2019-12-11T20:21:14Z",
-            "user_mtime": "2019-12-11T20:21:14Z",
+            "created_by": "admin",
             "date_type": "range",
+            "end": "2019",
+            "jsonmodel_type": "date",
             "label": "existence",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "names": [
-        {
+            "last_modified_by": "admin",
             "lock_version": 0,
-            "primary_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
-            "sort_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
-            "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-04-24T21:54:28Z",
-            "system_mtime": "2015-04-24T21:54:28Z",
-            "user_mtime": "2015-04-24T21:54:28Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "local",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
+            "system_mtime": "2019-12-11T20:21:14Z",
+            "user_mtime": "2019-12-11T20:21:14Z"
         }
     ],
-    "related_agents": [],
-    "uri": "/agents/corporate_entities/10267",
-    "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
     "display_name": {
+        "authorized": true,
+        "create_time": "2015-04-24T21:54:28Z",
+        "created_by": "pgalligan",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "pgalligan",
         "lock_version": 0,
         "primary_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
         "sort_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
         "sort_name_auto_generate": true,
-        "created_by": "pgalligan",
-        "last_modified_by": "pgalligan",
-        "create_time": "2015-04-24T21:54:28Z",
-        "system_mtime": "2015-04-24T21:54:28Z",
-        "user_mtime": "2015-04-24T21:54:28Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "local",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
+        "system_mtime": "2015-04-24T21:54:28Z",
+        "use_dates": [],
+        "user_mtime": "2015-04-24T21:54:28Z"
     },
-    "title": "International Laboratory for Research on Animal Diseases (Ilrad)"
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "pgalligan",
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "lock_version": 19,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2015-04-24T21:54:28Z",
+            "created_by": "pgalligan",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "primary_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
+            "sort_name": "International Laboratory for Research on Animal Diseases (Ilrad)",
+            "sort_name_auto_generate": true,
+            "source": "local",
+            "system_mtime": "2015-04-24T21:54:28Z",
+            "use_dates": [],
+            "user_mtime": "2015-04-24T21:54:28Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:26:27Z",
+    "title": "International Laboratory for Research on Animal Diseases (Ilrad)",
+    "uri": "/agents/corporate_entities/10267",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-04-24T21:54:28Z"
 }

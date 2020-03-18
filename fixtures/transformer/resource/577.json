@@ -1,35 +1,351 @@
 {
-    "lock_version": 6,
-    "title": "Nelson A. Rockefeller Vice Presidential records, Central Files, Series 3",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA378.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, Central Files, Series 3\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, Central Files, Series 3",
-    "finding_aid_date": "1994",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T10:12:26Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:18:18Z",
-    "suppressed": false,
-    "id_0": "FA378",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2120",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:18:18Z",
-            "system_mtime": "2016-10-22T19:18:18Z",
-            "user_mtime": "2016-10-22T19:18:18Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 316681,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/316681",
+            "title": "Name File",
+            "type": "collection"
+        },
+        {
+            "identifier": 317856,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/317856",
+            "title": "Subject File",
+            "type": "collection"
+        },
+        {
+            "identifier": 318924,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/318924",
+            "title": "Chronological Files",
+            "type": "collection"
+        },
+        {
+            "identifier": 318939,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/318939",
+            "title": "Invitations",
+            "type": "collection"
+        },
+        {
+            "identifier": 319179,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319179",
+            "title": "1976 Presidential Campaign - Schedules and Invitations",
+            "type": "collection"
+        },
+        {
+            "identifier": 319183,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319183",
+            "title": "Trip Files",
+            "type": "collection"
+        },
+        {
+            "identifier": 319193,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319193",
+            "title": "Speeches",
+            "type": "collection"
+        },
+        {
+            "identifier": 319208,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319208",
+            "title": "Vice President's Recommendations for Federal Appointments",
+            "type": "collection"
+        },
+        {
+            "identifier": 319230,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319230",
+            "title": "Oversized Items Sent to the Vice President",
+            "type": "collection"
+        },
+        {
+            "identifier": 319259,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319259",
+            "title": "Mail Returned by Secret Service",
+            "type": "collection"
+        },
+        {
+            "identifier": 319261,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319261",
+            "title": "Control Slips and Control Cards",
+            "type": "collection"
+        },
+        {
+            "identifier": 319272,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/319272",
+            "title": "Correspondence Form Manual",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:18:18Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/577"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3864",
+        "user_mtime": "2016-10-22T19:18:18Z"
+    },
+    "create_time": "2014-12-06T10:12:26Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1974",
+            "create_time": "2016-10-22T19:18:18Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1977",
+            "expression": "1974-1977",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:18:18Z",
+            "user_mtime": "2016-10-22T19:18:18Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA378.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T19:18:18Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "247.2",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:18:18Z",
+            "user_mtime": "2016-10-22T19:18:18Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:18:18Z",
+            "created_by": "battalb",
+            "external_id": "2120",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:18:18Z",
+            "user_mtime": "2016-10-22T19:18:18Z"
+        }
+    ],
+    "finding_aid_date": "1994",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Vice Presidential records, Central Files, Series 3",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller, Vice Presidential records, Central Files, Series 3\n",
+    "id_0": "FA378",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/193",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "b31510449b29957635a61fb1af0cd372",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 1: Basic processing has been conducted by Harold Oakhill, March 1994, to establish initial intellectual and physical control, address any immediate preservation concerns, and facilitate access to the holdings. Further processing of the records will be considered in the future, as necessary.\n\nMaterials remain in original record cartons and folders.\n\nThis guide provides file level description. Each file may represent multiple folders.\n\n\n\n\n\n\n\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "fb5db365b19e75868e648384e0654894",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "12d6e720ba43f83af50bad2c5d8afa30",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "878b87c147fa31b9a3cbdfa106341ae2",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA380/overview\">Nelson A. Rockefeller Vice Presidential Records, New York Office (FA380)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA384/overview\">Nelson A. Rockefeller Vice Presidential Records, Working Papers of the Vice President (FA384)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "adec2d7bc6a1d4ec741e1834f6156ed2",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "8e393e27a73fa7bdae3aeb5374b6cb48",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "bbc584291ebb3984446bdce79a31573b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 26 3\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "33e3359e0573640e67fb833321f00835",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Series 3 Central Files is arranged as follows:\n\nSubseries 1: Name Files, Boxes 70-162.\n\nSubseries 2: Subject Files, Boxes 163-201.\n\nSubseries 3: Chronological Files, June 26, 1975 - January 19, 1979, Boxes 39-48, 58-60, 68.\n\nSubseries 4: Invitations, Boxes 19-22, 49-54, 202-208.\n\nSubseries 5: 1976 Presidential Campaign - Schedules and Invitations, Boxes 209-211.\n\nSubseries 6: Trip files, Boxes 23, 192-197.\n\nSubseries 7: Speeches, Boxes 189-192.\n\nSubseries 8: Vice President's recommendations for federal appointments, Boxes 57, 61.\n\nSubseries 9: Oversized items sent to the Vice President, Boxes 18, 25-38, 55, 56, 69.\n\nSubseries 10: Mail Returned by the Secret Service, Box 15.\n\nSubseries 11: Control Slips and Control Cards, Boxes 212-215, 218-223.\n\nSubseries 12: Correspondence Form Manual, Box 224.\n\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "4cc6b893c821b38b99ece1e4b526b86a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Central Files series contains the general correspondence of the Office of the Vice President from Nelson A. Rockefeller's tenure (December 19, 1974, to January 20, 1977). The series offers partial documentation of Rockefeller's role in the development of national policy and his duties as President of the U.S. Senate. There is correspondence with President Gerald R. Ford and members of his staff, congressional representatives, senators, other government officials, and foreign dignitaries. However, there is very little in this series documenting actual policy formation. Much of the correspondence with government officials concerns the Vice President's information-gathering activities on behalf of the White House and executive agencies, as well as his support of the President's policies. There are also reports and position papers on national issues submitted to the Vice President by individuals both within and outside the federal government. Virtually all of these were unsolicited.\n\nAlso documented here are Rockefeller's campaign activities on behalf of President Ford and Senator Robert Dole in the 1976 presidential campaign.\n\nThe bulk of the correspondence consists of letters from U.S. citizens expressing their opinions on issues, inviting the Vice President to speak at events, asking for autographed photographs of the Vice President, or asking for the his assistance in securing an appointment to a federal agency or a military academy. The responses to such correspondence were written by the Vice President's staff.\n\nCarbon copies of outgoing correspondence are filed in the name, subject, and chronological files. Routine incoming correspondence is filed in the name file, while incoming correspondence of significance was photocopied and filed in both the name and subject files. The chronological file contains only outgoing letters.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "content": [
+                "206 standard records cartons -- Boxes 15, 18-23, 25-61, 68-215, 218-224."
+            ],
+            "jsonmodel_type": "note_singlepart",
+            "label": "General Physical Description note",
+            "persistent_id": "91aeba3704277569c9afb39744899971",
+            "publish": true,
+            "type": "physdesc"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:18:18Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:18:18Z",
+            "uri": "/revision_statement/3028",
+            "user_mtime": "2016-10-22T19:18:18Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/539"
@@ -128,345 +444,29 @@
             "ref": "/subjects/577"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "247.2",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:18:18Z",
-            "system_mtime": "2016-10-22T19:18:18Z",
-            "user_mtime": "2016-10-22T19:18:18Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1974-1977",
-            "begin": "1974",
-            "end": "1977",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:18:18Z",
-            "system_mtime": "2016-10-22T19:18:18Z",
-            "user_mtime": "2016-10-22T19:18:18Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/193"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>2 July 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:18:18Z",
-            "system_mtime": "2016-10-22T19:18:18Z",
-            "user_mtime": "2016-10-22T19:18:18Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3028",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "b31510449b29957635a61fb1af0cd372",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 1: Basic processing has been conducted by Harold Oakhill, March 1994, to establish initial intellectual and physical control, address any immediate preservation concerns, and facilitate access to the holdings. Further processing of the records will be considered in the future, as necessary.\n\nMaterials remain in original record cartons and folders.\n\nThis guide provides file level description. Each file may represent multiple folders.\n\n\n\n\n\n\n\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "fb5db365b19e75868e648384e0654894",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provide in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or tems within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "12d6e720ba43f83af50bad2c5d8afa30",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "878b87c147fa31b9a3cbdfa106341ae2",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA377/overview\">Nelson A. Rockefeller Vice Presidential Records, Richard Allison (FA377)</extref>\n\n<extref href=\"../FA379/overview\">Nelson A. Rockefeller Vice Presidential Records, National Commission on Water Quality (FA379)</extref>\n\n<extref href=\"../FA380/overview\">Nelson A. Rockefeller Vice Presidential Records, New York Office (FA380)</extref>\n\n<extref href=\"../FA381/overview\">Nelson A. Rockefeller Vice Presidential Records, Joseph E. Persico (FA381)</extref>\n\n<extref href=\"../FA382/overview\">Nelson A. Rockefeller Vice Presidential Records, Press Releases (FA382)</extref>\n\n<extref href=\"../FA383/overview\">Nelson A. Rockefeller Vice Presidential Records, Speeches (FA383)</extref>\n\n<extref href=\"../FA384/overview\">Nelson A. Rockefeller Vice Presidential Records, Working Papers of the Vice President (FA384)</extref>\n\n<extref href=\"../FA385/overview\">Nelson A. Rockefeller Vice Presidential Records, Foreign Affairs and National Security (FA385)</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "adec2d7bc6a1d4ec741e1834f6156ed2",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "President Gerald R. Ford nominated Nelson A. Rockefeller to fill the vacant vice presidency following the resignation of President Richard M. Nixon in August 1974. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "8e393e27a73fa7bdae3aeb5374b6cb48",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "bbc584291ebb3984446bdce79a31573b",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 26 3\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "33e3359e0573640e67fb833321f00835",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Series 3 Central Files is arranged as follows:\n\nSubseries 1: Name Files, Boxes 70-162.\n\nSubseries 2: Subject Files, Boxes 163-201.\n\nSubseries 3: Chronological Files, June 26, 1975 - January 19, 1979, Boxes 39-48, 58-60, 68.\n\nSubseries 4: Invitations, Boxes 19-22, 49-54, 202-208.\n\nSubseries 5: 1976 Presidential Campaign - Schedules and Invitations, Boxes 209-211.\n\nSubseries 6: Trip files, Boxes 23, 192-197.\n\nSubseries 7: Speeches, Boxes 189-192.\n\nSubseries 8: Vice President's recommendations for federal appointments, Boxes 57, 61.\n\nSubseries 9: Oversized items sent to the Vice President, Boxes 18, 25-38, 55, 56, 69.\n\nSubseries 10: Mail Returned by the Secret Service, Box 15.\n\nSubseries 11: Control Slips and Control Cards, Boxes 212-215, 218-223.\n\nSubseries 12: Correspondence Form Manual, Box 224.\n\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4cc6b893c821b38b99ece1e4b526b86a",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Central Files series contains the general correspondence of the Office of the Vice President from Nelson A. Rockefeller's tenure (December 19, 1974, to January 20, 1977). The series offers partial documentation of Rockefeller's role in the development of national policy and his duties as President of the U.S. Senate. There is correspondence with President Gerald R. Ford and members of his staff, congressional representatives, senators, other government officials, and foreign dignitaries. However, there is very little in this series documenting actual policy formation. Much of the correspondence with government officials concerns the Vice President's information-gathering activities on behalf of the White House and executive agencies, as well as his support of the President's policies. There are also reports and position papers on national issues submitted to the Vice President by individuals both within and outside the federal government. Virtually all of these were unsolicited.\n\nAlso documented here are Rockefeller's campaign activities on behalf of President Ford and Senator Robert Dole in the 1976 presidential campaign.\n\nThe bulk of the correspondence consists of letters from U.S. citizens expressing their opinions on issues, inviting the Vice President to speak at events, asking for autographed photographs of the Vice President, or asking for the his assistance in securing an appointment to a federal agency or a military academy. The responses to such correspondence were written by the Vice President's staff.\n\nCarbon copies of outgoing correspondence are filed in the name, subject, and chronological files. Routine incoming correspondence is filed in the name file, while incoming correspondence of significance was photocopied and filed in both the name and subject files. The chronological file contains only outgoing letters.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "91aeba3704277569c9afb39744899971",
-            "label": "General Physical Description note",
-            "type": "physdesc",
-            "content": [
-                "206 standard records cartons -- Boxes 15, 18-23, 25-61, 68-215, 218-224."
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/577",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:18:18Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:18:18Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3864",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/577"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:18:18Z",
-        "system_mtime": "2016-10-22T19:18:18Z",
-        "user_mtime": "2016-10-22T19:18:18Z",
-        "enum_1": "2 - Minimal",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller Vice Presidential records, Central Files, Series 3",
     "tree": {
         "ref": "/repositories/2/resources/577/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Name File",
-            "ref": "/repositories/2/archival_objects/316681",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 316681
+    "uri": "/repositories/2/resources/577",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T19:18:18Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "2 - Minimal",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Subject File",
-            "ref": "/repositories/2/archival_objects/317856",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 317856
-        },
-        {
-            "title": "Chronological Files",
-            "ref": "/repositories/2/archival_objects/318924",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 318924
-        },
-        {
-            "title": "Invitations",
-            "ref": "/repositories/2/archival_objects/318939",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 318939
-        },
-        {
-            "title": "1976 Presidential Campaign - Schedules and Invitations",
-            "ref": "/repositories/2/archival_objects/319179",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319179
-        },
-        {
-            "title": "Trip Files",
-            "ref": "/repositories/2/archival_objects/319183",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319183
-        },
-        {
-            "title": "Speeches",
-            "ref": "/repositories/2/archival_objects/319193",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319193
-        },
-        {
-            "title": "Vice President's Recommendations for Federal Appointments",
-            "ref": "/repositories/2/archival_objects/319208",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319208
-        },
-        {
-            "title": "Oversized Items Sent to the Vice President",
-            "ref": "/repositories/2/archival_objects/319230",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319230
-        },
-        {
-            "title": "Mail Returned by Secret Service",
-            "ref": "/repositories/2/archival_objects/319259",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319259
-        },
-        {
-            "title": "Control Slips and Control Cards",
-            "ref": "/repositories/2/archival_objects/319261",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319261
-        },
-        {
-            "title": "Correspondence Form Manual",
-            "ref": "/repositories/2/archival_objects/319272",
-            "level": "subseries",
-            "type": "collection",
-            "identifier": 319272
-        }
-    ]
+        "system_mtime": "2016-10-22T19:18:18Z",
+        "user_mtime": "2016-10-22T19:18:18Z"
+    },
+    "user_mtime": "2016-10-22T19:18:18Z"
 }

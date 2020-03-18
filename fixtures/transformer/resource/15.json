@@ -1,97 +1,113 @@
 {
-    "lock_version": 4,
-    "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
-    "other_level": "Accession",
-    "publish": false,
-    "restrictions": true,
-    "repository_processing_note": "Inventory entered by Diane April, June 2014",
-    "finding_aid_title": "\n",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T03:28:23Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2015-09-18T18:53:08Z",
-    "suppressed": false,
-    "is_slug_auto": false,
-    "id_0": "AC",
-    "id_1": "2012",
-    "id_2": "055",
-    "language": "eng",
-    "level": "otherlevel",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
-        {
-            "external_id": "19948",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2015-09-18T18:53:08Z",
-            "system_mtime": "2015-09-18T18:53:08Z",
-            "user_mtime": "2015-09-18T18:53:08Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "8.4",
-            "container_summary": "7 standard record storage boxes",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2015-09-18T18:53:08Z",
-            "system_mtime": "2015-09-18T18:53:08Z",
-            "user_mtime": "2015-09-18T18:53:08Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "undated",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2015-09-18T18:53:08Z",
-            "system_mtime": "2015-09-18T18:53:08Z",
-            "user_mtime": "2015-09-18T18:53:08Z",
-            "date_type": "single",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [],
-    "revision_statements": [],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [],
-    "uri": "/repositories/2/resources/15",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "tree": {
-        "ref": "/repositories/2/resources/15/tree"
-    },
     "ancestors": [
         {
-            "ref": "/api/components/1/",
             "archivesspace_uri": "/repositories/2/resources/93",
             "level": "collection",
+            "ref": "/api/components/1/",
             "type": "collection"
         },
         {
-            "ref": "/api/components/2/",
             "archivesspace_uri": "/repositories/2/resources/12",
             "level": "otherlevel",
+            "ref": "/api/components/2/",
             "type": "collection"
         }
-    ]
+    ],
+    "children": [
+        {
+            "identifier": 2106,
+            "level": "Accession",
+            "ref": "/repositories/2/archival_objects/2106",
+            "title": "AC.2012.055: Michel Nussenzweig papers, Rockefeller University Faculty, undated",
+            "type": "collection"
+        }
+    ],
+    "classifications": [],
+    "create_time": "2014-12-06T03:28:23Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "create_time": "2015-09-18T18:53:08Z",
+            "created_by": "admin",
+            "date_type": "single",
+            "expression": "undated",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2015-09-18T18:53:08Z",
+            "user_mtime": "2015-09-18T18:53:08Z"
+        }
+    ],
+    "deaccessions": [],
+    "extents": [
+        {
+            "container_summary": "7 standard record storage boxes",
+            "create_time": "2015-09-18T18:53:08Z",
+            "created_by": "admin",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "8.4",
+            "portion": "whole",
+            "system_mtime": "2015-09-18T18:53:08Z",
+            "user_mtime": "2015-09-18T18:53:08Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2015-09-18T18:53:08Z",
+            "created_by": "admin",
+            "external_id": "19948",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2015-09-18T18:53:08Z",
+            "user_mtime": "2015-09-18T18:53:08Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_language": "English",
+    "finding_aid_title": "\n",
+    "id_0": "AC",
+    "id_1": "2012",
+    "id_2": "055",
+    "instances": [],
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "admin",
+    "level": "otherlevel",
+    "linked_agents": [
+      {
+          "ref": "/agents/people/320",
+          "relator": "aut",
+          "role": "creator",
+          "terms": []
+      }
+    ],
+    "linked_events": [],
+    "lock_version": 4,
+    "notes": [],
+    "other_level": "Accession",
+    "publish": false,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "repository_processing_note": "Inventory entered by Diane April, June 2014",
+    "restrictions": true,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
+    "tree": {
+        "ref": "/repositories/2/resources/15/tree"
+    },
+    "uri": "/repositories/2/resources/15",
+    "user_mtime": "2015-09-18T18:53:08Z"
 }

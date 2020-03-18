@@ -1,35 +1,815 @@
 {
-    "lock_version": 7,
-    "title": "Nelson A. Rockefeller gubernatorial records, Appointments Office, Series 2",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA353.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Appointments Office, Series 2\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Appointments Office, Series 2",
-    "finding_aid_date": "2001",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T09:48:06Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T18:41:58Z",
-    "suppressed": false,
-    "id_0": "FA353",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2171",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:41:58Z",
-            "system_mtime": "2016-10-22T18:41:58Z",
-            "user_mtime": "2016-10-22T18:41:58Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 298953,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298953",
+            "title": "Correspondence Files (Car-Caz), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298954,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298954",
+            "title": "Correspondence Files (Car-Caz), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298955,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298955",
+            "title": "Correspondence Files (Ce-Ch), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298956,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298956",
+            "title": "Correspondence Files (Ce-Ch), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298957,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298957",
+            "title": "Correspondence Files (Cl), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298958,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298958",
+            "title": "Correspondence Files (Coa-Con), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298959,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298959",
+            "title": "Correspondence Files (Coa-Con), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298960,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298960",
+            "title": "Correspondence Files (Coo-Coz), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298961,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298961",
+            "title": "Correspondence Files (Cr-Cz), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298962,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298962",
+            "title": "Correspondence Files (Cr-Cz), 1959-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 298963,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298963",
+            "title": "Correspondence Files - Crouch, Paul A.",
+            "type": "object"
+        },
+        {
+            "identifier": 298964,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298964",
+            "title": "Correspondence Files - Crouch, Paul A.",
+            "type": "object"
+        },
+        {
+            "identifier": 298965,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298965",
+            "title": "Correspondence Files (Da)",
+            "type": "object"
+        },
+        {
+            "identifier": 298966,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298966",
+            "title": "Correspondence Files (Dea-Del)",
+            "type": "object"
+        },
+        {
+            "identifier": 298967,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298967",
+            "title": "Correspondence Files (Dem-Dez)",
+            "type": "object"
+        },
+        {
+            "identifier": 298968,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298968",
+            "title": "Correspondence Files (Di)",
+            "type": "object"
+        },
+        {
+            "identifier": 298969,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298969",
+            "title": "Correspondence Files (Dm-Do)",
+            "type": "object"
+        },
+        {
+            "identifier": 298970,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298970",
+            "title": "Correspondence Files (Dp-Dz)",
+            "type": "object"
+        },
+        {
+            "identifier": 298971,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298971",
+            "title": "Correspondence Files (Dp-Dz)",
+            "type": "object"
+        },
+        {
+            "identifier": 298972,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298972",
+            "title": "Correspondence Files (E)",
+            "type": "object"
+        },
+        {
+            "identifier": 298973,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298973",
+            "title": "Correspondence Files (E)",
+            "type": "object"
+        },
+        {
+            "identifier": 298974,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298974",
+            "title": "Correspondence Files (Fa-Fe)",
+            "type": "object"
+        },
+        {
+            "identifier": 298975,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298975",
+            "title": "Correspondence Files (Fia-Fin)",
+            "type": "object"
+        },
+        {
+            "identifier": 298976,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298976",
+            "title": "Correspondence Files (Fia-Fin)",
+            "type": "object"
+        },
+        {
+            "identifier": 298977,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298977",
+            "title": "Correspondence Files (Fio-Fiz)",
+            "type": "object"
+        },
+        {
+            "identifier": 298978,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298978",
+            "title": "Correspondence Files (Fl-Fo)",
+            "type": "object"
+        },
+        {
+            "identifier": 298979,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298979",
+            "title": "Correspondence Files (Fra-Fre)",
+            "type": "object"
+        },
+        {
+            "identifier": 298980,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298980",
+            "title": "Correspondence Files (Fri-Fuz)",
+            "type": "object"
+        },
+        {
+            "identifier": 298981,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298981",
+            "title": "Correspondence Files (Ga)",
+            "type": "object"
+        },
+        {
+            "identifier": 298982,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298982",
+            "title": "Correspondence Files (Ga)",
+            "type": "object"
+        },
+        {
+            "identifier": 298983,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298983",
+            "title": "Correspondence Files (Ge-Gh)",
+            "type": "object"
+        },
+        {
+            "identifier": 298984,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298984",
+            "title": "Correspondence Files (Gi)",
+            "type": "object"
+        },
+        {
+            "identifier": 298985,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298985",
+            "title": "Correspondence Files (Gl)",
+            "type": "object"
+        },
+        {
+            "identifier": 298986,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298986",
+            "title": "Correspondence Files (Go)",
+            "type": "object"
+        },
+        {
+            "identifier": 298987,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298987",
+            "title": "Correspondence Files (Go)",
+            "type": "object"
+        },
+        {
+            "identifier": 298988,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298988",
+            "title": "Correspondence Files (Gra-Gre)",
+            "type": "object"
+        },
+        {
+            "identifier": 298989,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298989",
+            "title": "Correspondence Files (Gri)",
+            "type": "object"
+        },
+        {
+            "identifier": 298990,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298990",
+            "title": "Correspondence Files (Gu)",
+            "type": "object"
+        },
+        {
+            "identifier": 298991,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298991",
+            "title": "Correspondence Files (Hab-Hal)",
+            "type": "object"
+        },
+        {
+            "identifier": 298992,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298992",
+            "title": "Correspondence Files (Ham-Hat)",
+            "type": "object"
+        },
+        {
+            "identifier": 298993,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298993",
+            "title": "Correspondence Files (Hau-Haz)",
+            "type": "object"
+        },
+        {
+            "identifier": 298994,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298994",
+            "title": "Correspondence Files (He)",
+            "type": "object"
+        },
+        {
+            "identifier": 298995,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298995",
+            "title": "Correspondence Files (Hi)",
+            "type": "object"
+        },
+        {
+            "identifier": 298996,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298996",
+            "title": "Correspondence Files (Ho)",
+            "type": "object"
+        },
+        {
+            "identifier": 298997,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298997",
+            "title": "Correspondence Files (Hu-Hy)",
+            "type": "object"
+        },
+        {
+            "identifier": 298998,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298998",
+            "title": "Correspondence Files (I)",
+            "type": "object"
+        },
+        {
+            "identifier": 298999,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/298999",
+            "title": "Correspondence Files - Inauguration, 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 299000,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299000",
+            "title": "Correspondence Files - \"Italian-American Herald\"",
+            "type": "object"
+        },
+        {
+            "identifier": 299001,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299001",
+            "title": "Correspondence Files (J)",
+            "type": "object"
+        },
+        {
+            "identifier": 299002,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299002",
+            "title": "Correspondence Files (J)",
+            "type": "object"
+        },
+        {
+            "identifier": 299003,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299003",
+            "title": "Correspondence Files (Ka)",
+            "type": "object"
+        },
+        {
+            "identifier": 299004,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299004",
+            "title": "Correspondence Files (Ke)",
+            "type": "object"
+        },
+        {
+            "identifier": 299005,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299005",
+            "title": "Correspondence Files (Kh-Ki)",
+            "type": "object"
+        },
+        {
+            "identifier": 299006,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299006",
+            "title": "Correspondence Files (Kl-Kn)",
+            "type": "object"
+        },
+        {
+            "identifier": 299007,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299007",
+            "title": "Correspondence Files (Ko)",
+            "type": "object"
+        },
+        {
+            "identifier": 299008,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299008",
+            "title": "Correspondence Files (Kr-Ky)",
+            "type": "object"
+        },
+        {
+            "identifier": 299009,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299009",
+            "title": "Correspondence Files (La)",
+            "type": "object"
+        },
+        {
+            "identifier": 299010,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299010",
+            "title": "Correspondence Files (La)",
+            "type": "object"
+        },
+        {
+            "identifier": 299011,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299011",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299012,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299012",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299013,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299013",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299014,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299014",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299015,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299015",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299016,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299016",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299017,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299017",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299018,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299018",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299019,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299019",
+            "title": "Miscellaneous Files - Abortion, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299020,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299020",
+            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
+            "type": "object"
+        },
+        {
+            "identifier": 299021,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299021",
+            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
+            "type": "object"
+        },
+        {
+            "identifier": 299022,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299022",
+            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
+            "type": "object"
+        },
+        {
+            "identifier": 299023,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299023",
+            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
+            "type": "object"
+        },
+        {
+            "identifier": 299024,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299024",
+            "title": "Miscellaneous Files - Press Releases, 1967-1968",
+            "type": "object"
+        },
+        {
+            "identifier": 299025,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299025",
+            "title": "Miscellaneous Files - 1969 Summer Employment",
+            "type": "object"
+        },
+        {
+            "identifier": 299026,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299026",
+            "title": "Miscellaneous Files - 1969 Summer Employment",
+            "type": "object"
+        },
+        {
+            "identifier": 299027,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299027",
+            "title": "Miscellaneous Files - 1970 Summer Employment, Division of Parks",
+            "type": "object"
+        },
+        {
+            "identifier": 299028,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299028",
+            "title": "Miscellaneous Files - 1970 Summer Employment, Social Services and Conservation",
+            "type": "object"
+        },
+        {
+            "identifier": 299029,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/299029",
+            "title": "Miscellaneous Files - 1970 Summer Employment, Social Services and Conservation",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T18:41:58Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/552"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3840",
+        "user_mtime": "2016-10-22T18:41:58Z"
+    },
+    "create_time": "2014-12-06T09:48:06Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1958",
+            "create_time": "2016-10-22T18:41:58Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1970",
+            "expression": "1958-1970",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA353.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T18:41:58Z",
+            "created_by": "battalb",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "4",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T18:41:58Z",
+            "created_by": "battalb",
+            "external_id": "2171",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "user_mtime": "2016-10-22T18:41:58Z"
+        }
+    ],
+    "finding_aid_date": "2001",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Appointments Office, Series 2",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Appointments Office, Series 2\n",
+    "id_0": "FA353",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/182",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "relator": "aut",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 7,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "29284d64bc6bb8194a6646370584f7ce",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The following 24 series are available for research. Missing numbers denote closed series.\n\nSeries 2 - Appointments Office\nSeries 3 - Assembly and Senate Memos\nSeries 4 - Joseph H. Boyd Files\nSeries 7 - James Cannon Files\nSeries 8 - Affirmative Action Files (N. Lee Cook)\nSeries 10 - Counsel's Office\nSeries 12 - New York State Committee to Reelect the President\nSeries 13 - Jerry A. Danzig Files\nSeries 14 - Executive Chamber\nSeries 16 - 55th Street\nSeries 17 - Issue Books Series\n19 - Arthur Massolo Files\nSeries 22 - New York Office\nSeries 23 - Civil Service Resolutions (Charles H. Palmer)\nSeries 24 - Political Files Series\n25 - Press Office\nSeries 27 - Public Relations\nSeries 28 - Departmental Reports\nSeries 29 - William J. Ronan Files\nSeries 33 - Speeches\nSeries 34 - Diane Van Wie Files\nSeries 35 - Ann C. Whitman, Gubernatorial Files\nSeries 36 - Gene Wyckoff Files\nSeries 38 - New York Republican State Fund Raising Reports\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "f111c4888d04c83f73f1624b132b9967",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "3fb7fdfe9a62d0af1be37f058462079e",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "7b5765ba70f39c421bdea4235f781472",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 15 2\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "e6a2e8268cad91e0c23dab8429b14587",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "96abb5c9e43c4bf7fc51f1c17f6a54a2",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "f36eee9aa010ff12b8af6091c7995fbf",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "cf3b37657d3a97cae301923dd6cdb813",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "NOTE TO RESEARCHERS\n\nThis subseries contains a portion of the office files of several members of Nelson A. Rockefeller's staff, primarily the Appointments Office. They document official activities in the execution of their duties as members of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administrations, political campaigns, and/or Rockefeller's personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nThis is an incomplete portion of Governor Rockefeller's Appointments Office correspondence, dating from 1958 to 1970. Only three boxes of alphabetical correspondence are represented, from C through L. There is no record or indication of what happened to the rest of the alphabetical run. The final box of the series is a box of miscellaneous subject files, dating from 1967 to 1970. Alphabetically arranged by topic, this portion of the series is also incomplete. The material contained withing these files may be duplicated within the official gubernatorial record, maintained on microfilm at both the New York State Archives and the Rockefeller Archive Center.\n\nA function of the Appointments Office was to sift through the letters of application received for positions in the gubernatorial administrations. The series consists of correspondence to and from the individuals making application, as well as internal memoranda to and from other staff of the Appointments Office or to staff of the various state-level departments to which an applicant was referred.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "653d1c79d1e8141a8e7af09b01e35702",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "8642cb4a04964007e2adec58abfa5769",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec July 2001\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T18:41:58Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T18:41:58Z",
+            "uri": "/revision_statement/3004",
+            "user_mtime": "2016-10-22T18:41:58Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/539"
@@ -125,809 +905,29 @@
             "ref": "/subjects/329"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "4",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:41:58Z",
-            "system_mtime": "2016-10-22T18:41:58Z",
-            "user_mtime": "2016-10-22T18:41:58Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1958-1970",
-            "begin": "1958",
-            "end": "1970",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:41:58Z",
-            "system_mtime": "2016-10-22T18:41:58Z",
-            "user_mtime": "2016-10-22T18:41:58Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/182"
-        },
-        {
-            "role": "subject",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>30 June 2010</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T18:41:58Z",
-            "system_mtime": "2016-10-22T18:41:58Z",
-            "user_mtime": "2016-10-22T18:41:58Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3004",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "29284d64bc6bb8194a6646370584f7ce",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The following 24 series are available for research. Missing numbers denote closed series.\n\nSeries 2 - Appointments Office\nSeries 3 - Assembly and Senate Memos\nSeries 4 - Joseph H. Boyd Files\nSeries 7 - James Cannon Files\nSeries 8 - Affirmative Action Files (N. Lee Cook)\nSeries 10 - Counsel's Office\nSeries 12 - New York State Committee to Reelect the President\nSeries 13 - Jerry A. Danzig Files\nSeries 14 - Executive Chamber\nSeries 16 - 55th Street\nSeries 17 - Issue Books Series\n19 - Arthur Massolo Files\nSeries 22 - New York Office\nSeries 23 - Civil Service Resolutions (Charles H. Palmer)\nSeries 24 - Political Files Series\n25 - Press Office\nSeries 27 - Public Relations\nSeries 28 - Departmental Reports\nSeries 29 - William J. Ronan Files\nSeries 33 - Speeches\nSeries 34 - Diane Van Wie Files\nSeries 35 - Ann C. Whitman, Gubernatorial Files\nSeries 36 - Gene Wyckoff Files\nSeries 38 - New York Republican State Fund Raising Reports\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f111c4888d04c83f73f1624b132b9967",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson A. Rockefeller served as governor of New York from January 1, 1959, to December 18, 1973. He was the first person elected to four consecutive four-year terms as a state governor.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3fb7fdfe9a62d0af1be37f058462079e",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7b5765ba70f39c421bdea4235f781472",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 15 2\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "e6a2e8268cad91e0c23dab8429b14587",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "96abb5c9e43c4bf7fc51f1c17f6a54a2",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f36eee9aa010ff12b8af6091c7995fbf",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "cf3b37657d3a97cae301923dd6cdb813",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "NOTE TO RESEARCHERS\n\nThis subseries contains a portion of the office files of several members of Nelson A. Rockefeller's staff, primarily the Appointments Office. They document official activities in the execution of their duties as members of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administrations, political campaigns, and/or Rockefeller's personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nSCOPE AND CONTENT\n\nThis is an incomplete portion of Governor Rockefeller's Appointments Office correspondence, dating from 1958 to 1970. Only three boxes of alphabetical correspondence are represented, from C through L. There is no record or indication of what happened to the rest of the alphabetical run. The final box of the series is a box of miscellaneous subject files, dating from 1967 to 1970. Alphabetically arranged by topic, this portion of the series is also incomplete. The material contained withing these files may be duplicated within the official gubernatorial record, maintained on microfilm at both the New York State Archives and the Rockefeller Archive Center.\n\nA function of the Appointments Office was to sift through the letters of application received for positions in the gubernatorial administrations. The series consists of correspondence to and from the individuals making application, as well as internal memoranda to and from other staff of the Appointments Office or to staff of the various state-level departments to which an applicant was referred.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "653d1c79d1e8141a8e7af09b01e35702",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA242/overview\">Nelson A. Rockefeller Gubernatorial Records, Hugh Morrow (FA242)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "8642cb4a04964007e2adec58abfa5769",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec July 2001\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/552",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:41:58Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T18:41:58Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3840",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/552"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T18:41:58Z",
-        "system_mtime": "2016-10-22T18:41:58Z",
-        "user_mtime": "2016-10-22T18:41:58Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, Appointments Office, Series 2",
     "tree": {
         "ref": "/repositories/2/resources/552/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Correspondence Files (Car-Caz), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298953",
-            "level": "file",
-            "type": "object",
-            "identifier": 298953
-        },
-        {
-            "title": "Correspondence Files (Car-Caz), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298954",
-            "level": "file",
-            "type": "object",
-            "identifier": 298954
-        },
-        {
-            "title": "Correspondence Files (Ce-Ch), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298955",
-            "level": "file",
-            "type": "object",
-            "identifier": 298955
-        },
-        {
-            "title": "Correspondence Files (Ce-Ch), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298956",
-            "level": "file",
-            "type": "object",
-            "identifier": 298956
-        },
-        {
-            "title": "Correspondence Files (Cl), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298957",
-            "level": "file",
-            "type": "object",
-            "identifier": 298957
-        },
-        {
-            "title": "Correspondence Files (Coa-Con), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298958",
-            "level": "file",
-            "type": "object",
-            "identifier": 298958
-        },
-        {
-            "title": "Correspondence Files (Coa-Con), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298959",
-            "level": "file",
-            "type": "object",
-            "identifier": 298959
-        },
-        {
-            "title": "Correspondence Files (Coo-Coz), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298960",
-            "level": "file",
-            "type": "object",
-            "identifier": 298960
-        },
-        {
-            "title": "Correspondence Files (Cr-Cz), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298961",
-            "level": "file",
-            "type": "object",
-            "identifier": 298961
-        },
-        {
-            "title": "Correspondence Files (Cr-Cz), 1959-1970",
-            "ref": "/repositories/2/archival_objects/298962",
-            "level": "file",
-            "type": "object",
-            "identifier": 298962
-        },
-        {
-            "title": "Correspondence Files - Crouch, Paul A.",
-            "ref": "/repositories/2/archival_objects/298963",
-            "level": "file",
-            "type": "object",
-            "identifier": 298963
-        },
-        {
-            "title": "Correspondence Files - Crouch, Paul A.",
-            "ref": "/repositories/2/archival_objects/298964",
-            "level": "file",
-            "type": "object",
-            "identifier": 298964
-        },
-        {
-            "title": "Correspondence Files (Da)",
-            "ref": "/repositories/2/archival_objects/298965",
-            "level": "file",
-            "type": "object",
-            "identifier": 298965
-        },
-        {
-            "title": "Correspondence Files (Dea-Del)",
-            "ref": "/repositories/2/archival_objects/298966",
-            "level": "file",
-            "type": "object",
-            "identifier": 298966
-        },
-        {
-            "title": "Correspondence Files (Dem-Dez)",
-            "ref": "/repositories/2/archival_objects/298967",
-            "level": "file",
-            "type": "object",
-            "identifier": 298967
-        },
-        {
-            "title": "Correspondence Files (Di)",
-            "ref": "/repositories/2/archival_objects/298968",
-            "level": "file",
-            "type": "object",
-            "identifier": 298968
-        },
-        {
-            "title": "Correspondence Files (Dm-Do)",
-            "ref": "/repositories/2/archival_objects/298969",
-            "level": "file",
-            "type": "object",
-            "identifier": 298969
-        },
-        {
-            "title": "Correspondence Files (Dp-Dz)",
-            "ref": "/repositories/2/archival_objects/298970",
-            "level": "file",
-            "type": "object",
-            "identifier": 298970
-        },
-        {
-            "title": "Correspondence Files (Dp-Dz)",
-            "ref": "/repositories/2/archival_objects/298971",
-            "level": "file",
-            "type": "object",
-            "identifier": 298971
-        },
-        {
-            "title": "Correspondence Files (E)",
-            "ref": "/repositories/2/archival_objects/298972",
-            "level": "file",
-            "type": "object",
-            "identifier": 298972
-        },
-        {
-            "title": "Correspondence Files (E)",
-            "ref": "/repositories/2/archival_objects/298973",
-            "level": "file",
-            "type": "object",
-            "identifier": 298973
-        },
-        {
-            "title": "Correspondence Files (Fa-Fe)",
-            "ref": "/repositories/2/archival_objects/298974",
-            "level": "file",
-            "type": "object",
-            "identifier": 298974
-        },
-        {
-            "title": "Correspondence Files (Fia-Fin)",
-            "ref": "/repositories/2/archival_objects/298975",
-            "level": "file",
-            "type": "object",
-            "identifier": 298975
-        },
-        {
-            "title": "Correspondence Files (Fia-Fin)",
-            "ref": "/repositories/2/archival_objects/298976",
-            "level": "file",
-            "type": "object",
-            "identifier": 298976
-        },
-        {
-            "title": "Correspondence Files (Fio-Fiz)",
-            "ref": "/repositories/2/archival_objects/298977",
-            "level": "file",
-            "type": "object",
-            "identifier": 298977
-        },
-        {
-            "title": "Correspondence Files (Fl-Fo)",
-            "ref": "/repositories/2/archival_objects/298978",
-            "level": "file",
-            "type": "object",
-            "identifier": 298978
-        },
-        {
-            "title": "Correspondence Files (Fra-Fre)",
-            "ref": "/repositories/2/archival_objects/298979",
-            "level": "file",
-            "type": "object",
-            "identifier": 298979
-        },
-        {
-            "title": "Correspondence Files (Fri-Fuz)",
-            "ref": "/repositories/2/archival_objects/298980",
-            "level": "file",
-            "type": "object",
-            "identifier": 298980
-        },
-        {
-            "title": "Correspondence Files (Ga)",
-            "ref": "/repositories/2/archival_objects/298981",
-            "level": "file",
-            "type": "object",
-            "identifier": 298981
-        },
-        {
-            "title": "Correspondence Files (Ga)",
-            "ref": "/repositories/2/archival_objects/298982",
-            "level": "file",
-            "type": "object",
-            "identifier": 298982
-        },
-        {
-            "title": "Correspondence Files (Ge-Gh)",
-            "ref": "/repositories/2/archival_objects/298983",
-            "level": "file",
-            "type": "object",
-            "identifier": 298983
-        },
-        {
-            "title": "Correspondence Files (Gi)",
-            "ref": "/repositories/2/archival_objects/298984",
-            "level": "file",
-            "type": "object",
-            "identifier": 298984
-        },
-        {
-            "title": "Correspondence Files (Gl)",
-            "ref": "/repositories/2/archival_objects/298985",
-            "level": "file",
-            "type": "object",
-            "identifier": 298985
-        },
-        {
-            "title": "Correspondence Files (Go)",
-            "ref": "/repositories/2/archival_objects/298986",
-            "level": "file",
-            "type": "object",
-            "identifier": 298986
-        },
-        {
-            "title": "Correspondence Files (Go)",
-            "ref": "/repositories/2/archival_objects/298987",
-            "level": "file",
-            "type": "object",
-            "identifier": 298987
-        },
-        {
-            "title": "Correspondence Files (Gra-Gre)",
-            "ref": "/repositories/2/archival_objects/298988",
-            "level": "file",
-            "type": "object",
-            "identifier": 298988
-        },
-        {
-            "title": "Correspondence Files (Gri)",
-            "ref": "/repositories/2/archival_objects/298989",
-            "level": "file",
-            "type": "object",
-            "identifier": 298989
-        },
-        {
-            "title": "Correspondence Files (Gu)",
-            "ref": "/repositories/2/archival_objects/298990",
-            "level": "file",
-            "type": "object",
-            "identifier": 298990
-        },
-        {
-            "title": "Correspondence Files (Hab-Hal)",
-            "ref": "/repositories/2/archival_objects/298991",
-            "level": "file",
-            "type": "object",
-            "identifier": 298991
-        },
-        {
-            "title": "Correspondence Files (Ham-Hat)",
-            "ref": "/repositories/2/archival_objects/298992",
-            "level": "file",
-            "type": "object",
-            "identifier": 298992
-        },
-        {
-            "title": "Correspondence Files (Hau-Haz)",
-            "ref": "/repositories/2/archival_objects/298993",
-            "level": "file",
-            "type": "object",
-            "identifier": 298993
-        },
-        {
-            "title": "Correspondence Files (He)",
-            "ref": "/repositories/2/archival_objects/298994",
-            "level": "file",
-            "type": "object",
-            "identifier": 298994
-        },
-        {
-            "title": "Correspondence Files (Hi)",
-            "ref": "/repositories/2/archival_objects/298995",
-            "level": "file",
-            "type": "object",
-            "identifier": 298995
-        },
-        {
-            "title": "Correspondence Files (Ho)",
-            "ref": "/repositories/2/archival_objects/298996",
-            "level": "file",
-            "type": "object",
-            "identifier": 298996
-        },
-        {
-            "title": "Correspondence Files (Hu-Hy)",
-            "ref": "/repositories/2/archival_objects/298997",
-            "level": "file",
-            "type": "object",
-            "identifier": 298997
-        },
-        {
-            "title": "Correspondence Files (I)",
-            "ref": "/repositories/2/archival_objects/298998",
-            "level": "file",
-            "type": "object",
-            "identifier": 298998
-        },
-        {
-            "title": "Correspondence Files - Inauguration, 1969",
-            "ref": "/repositories/2/archival_objects/298999",
-            "level": "file",
-            "type": "object",
-            "identifier": 298999
-        },
-        {
-            "title": "Correspondence Files - \"Italian-American Herald\"",
-            "ref": "/repositories/2/archival_objects/299000",
-            "level": "file",
-            "type": "object",
-            "identifier": 299000
-        },
-        {
-            "title": "Correspondence Files (J)",
-            "ref": "/repositories/2/archival_objects/299001",
-            "level": "file",
-            "type": "object",
-            "identifier": 299001
-        },
-        {
-            "title": "Correspondence Files (J)",
-            "ref": "/repositories/2/archival_objects/299002",
-            "level": "file",
-            "type": "object",
-            "identifier": 299002
-        },
-        {
-            "title": "Correspondence Files (Ka)",
-            "ref": "/repositories/2/archival_objects/299003",
-            "level": "file",
-            "type": "object",
-            "identifier": 299003
-        },
-        {
-            "title": "Correspondence Files (Ke)",
-            "ref": "/repositories/2/archival_objects/299004",
-            "level": "file",
-            "type": "object",
-            "identifier": 299004
-        },
-        {
-            "title": "Correspondence Files (Kh-Ki)",
-            "ref": "/repositories/2/archival_objects/299005",
-            "level": "file",
-            "type": "object",
-            "identifier": 299005
-        },
-        {
-            "title": "Correspondence Files (Kl-Kn)",
-            "ref": "/repositories/2/archival_objects/299006",
-            "level": "file",
-            "type": "object",
-            "identifier": 299006
-        },
-        {
-            "title": "Correspondence Files (Ko)",
-            "ref": "/repositories/2/archival_objects/299007",
-            "level": "file",
-            "type": "object",
-            "identifier": 299007
-        },
-        {
-            "title": "Correspondence Files (Kr-Ky)",
-            "ref": "/repositories/2/archival_objects/299008",
-            "level": "file",
-            "type": "object",
-            "identifier": 299008
-        },
-        {
-            "title": "Correspondence Files (La)",
-            "ref": "/repositories/2/archival_objects/299009",
-            "level": "file",
-            "type": "object",
-            "identifier": 299009
-        },
-        {
-            "title": "Correspondence Files (La)",
-            "ref": "/repositories/2/archival_objects/299010",
-            "level": "file",
-            "type": "object",
-            "identifier": 299010
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299011",
-            "level": "file",
-            "type": "object",
-            "identifier": 299011
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299012",
-            "level": "file",
-            "type": "object",
-            "identifier": 299012
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299013",
-            "level": "file",
-            "type": "object",
-            "identifier": 299013
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299014",
-            "level": "file",
-            "type": "object",
-            "identifier": 299014
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299015",
-            "level": "file",
-            "type": "object",
-            "identifier": 299015
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299016",
-            "level": "file",
-            "type": "object",
-            "identifier": 299016
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299017",
-            "level": "file",
-            "type": "object",
-            "identifier": 299017
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299018",
-            "level": "file",
-            "type": "object",
-            "identifier": 299018
-        },
-        {
-            "title": "Miscellaneous Files - Abortion, 1968",
-            "ref": "/repositories/2/archival_objects/299019",
-            "level": "file",
-            "type": "object",
-            "identifier": 299019
-        },
-        {
-            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
-            "ref": "/repositories/2/archival_objects/299020",
-            "level": "file",
-            "type": "object",
-            "identifier": 299020
-        },
-        {
-            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
-            "ref": "/repositories/2/archival_objects/299021",
-            "level": "file",
-            "type": "object",
-            "identifier": 299021
-        },
-        {
-            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
-            "ref": "/repositories/2/archival_objects/299022",
-            "level": "file",
-            "type": "object",
-            "identifier": 299022
-        },
-        {
-            "title": "Miscellaneous Files - Oaths of Office, 1968-1969",
-            "ref": "/repositories/2/archival_objects/299023",
-            "level": "file",
-            "type": "object",
-            "identifier": 299023
-        },
-        {
-            "title": "Miscellaneous Files - Press Releases, 1967-1968",
-            "ref": "/repositories/2/archival_objects/299024",
-            "level": "file",
-            "type": "object",
-            "identifier": 299024
-        },
-        {
-            "title": "Miscellaneous Files - 1969 Summer Employment",
-            "ref": "/repositories/2/archival_objects/299025",
-            "level": "file",
-            "type": "object",
-            "identifier": 299025
-        },
-        {
-            "title": "Miscellaneous Files - 1969 Summer Employment",
-            "ref": "/repositories/2/archival_objects/299026",
-            "level": "file",
-            "type": "object",
-            "identifier": 299026
-        },
-        {
-            "title": "Miscellaneous Files - 1970 Summer Employment, Division of Parks",
-            "ref": "/repositories/2/archival_objects/299027",
-            "level": "file",
-            "type": "object",
-            "identifier": 299027
-        },
-        {
-            "title": "Miscellaneous Files - 1970 Summer Employment, Social Services and Conservation",
-            "ref": "/repositories/2/archival_objects/299028",
-            "level": "file",
-            "type": "object",
-            "identifier": 299028
-        },
-        {
-            "title": "Miscellaneous Files - 1970 Summer Employment, Social Services and Conservation",
-            "ref": "/repositories/2/archival_objects/299029",
-            "level": "file",
-            "type": "object",
-            "identifier": 299029
-        }
-    ]
+    "uri": "/repositories/2/resources/552",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T18:41:58Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "system_mtime": "2016-10-22T18:41:58Z",
+        "user_mtime": "2016-10-22T18:41:58Z"
+    },
+    "user_mtime": "2016-10-22T18:41:58Z"
 }

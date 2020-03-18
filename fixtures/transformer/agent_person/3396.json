@@ -1,78 +1,78 @@
 {
-    "lock_version": 26,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:50:42Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2014-12-06T02:50:42Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:50:42Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Lyman",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:50:42Z",
             "system_mtime": "2014-12-06T02:50:42Z",
-            "user_mtime": "2014-12-06T02:50:42Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:50:42Z"
         }
     ],
-    "linked_agent_roles": [
-        "creator"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Lyman",
-            "rest_of_name": "Richard W.",
-            "sort_name": "Lyman, Richard W.",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:50:42Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2014-12-06T02:50:42Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/people/3396",
     "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
+    "create_time": "2014-12-06T02:50:42Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
     "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:50:42Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "admin",
         "lock_version": 0,
+        "name_order": "inverted",
         "primary_name": "Lyman",
         "rest_of_name": "Richard W.",
         "sort_name": "Lyman, Richard W.",
         "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:50:42Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2014-12-06T02:50:42Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "naf",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:50:42Z"
     },
-    "title": "Lyman, Richard W."
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "admin",
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "lock_version": 26,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2014-12-06T02:50:42Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Lyman",
+            "rest_of_name": "Richard W.",
+            "sort_name": "Lyman, Richard W.",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:50:42Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Lyman, Richard W.",
+    "uri": "/agents/people/3396",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:50:42Z"
 }

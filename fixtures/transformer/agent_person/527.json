@@ -1,156 +1,156 @@
 {
-    "lock_version": 161,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:42:12Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2014-12-06T02:42:12Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Rockefeller",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
             "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
         }
     ],
+    "agent_type": "agent_person",
+    "create_time": "2014-12-06T02:42:12Z",
+    "created_by": "admin",
+    "dates_of_existence": [
+        {
+            "begin": "1907",
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1999",
+            "jsonmodel_type": "date",
+            "label": "existence",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:42:12Z",
+            "user_mtime": "2014-12-06T02:42:12Z"
+        }
+    ],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:42:12Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Rockefeller",
+        "rest_of_name": "Mary (Mary Todhunter Clark)",
+        "sort_name": "Rockefeller, Mary (Mary Todhunter Clark)",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:42:12Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "admin",
     "linked_agent_roles": [
         "creator",
         "source",
         "subject"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [
-        {
-            "lock_version": 0,
-            "begin": "1907",
-            "end": "1999",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
-            "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "date_type": "inclusive",
-            "label": "existence",
-            "jsonmodel_type": "date"
-        }
-    ],
+    "lock_version": 161,
     "names": [
         {
+            "authorized": true,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Rockefeller",
             "rest_of_name": "Mary (Mary Todhunter Clark)",
             "sort_name": "Rockefeller, Mary (Mary Todhunter Clark)",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "authorized": true,
-            "is_display_name": true,
             "source": "naf",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:42:12Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Rockefeller, M.",
             "rest_of_name": "(Mary Todhunter Clark)",
             "sort_name": "Rockefeller, M., (Mary Todhunter Clark)",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
             "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [
                 {
-                    "lock_version": 0,
                     "begin": "1907",
-                    "end": "1999",
-                    "created_by": "admin",
-                    "last_modified_by": "admin",
                     "create_time": "2014-12-06T02:42:12Z",
-                    "system_mtime": "2014-12-06T02:42:12Z",
-                    "user_mtime": "2014-12-06T02:42:12Z",
+                    "created_by": "admin",
                     "date_type": "inclusive",
+                    "end": "1999",
+                    "jsonmodel_type": "date",
                     "label": "usage",
-                    "jsonmodel_type": "date"
+                    "last_modified_by": "admin",
+                    "lock_version": 0,
+                    "system_mtime": "2014-12-06T02:42:12Z",
+                    "user_mtime": "2014-12-06T02:42:12Z"
                 }
             ],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:42:12Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:42:12Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Rockefeller",
             "rest_of_name": "Tod",
             "sort_name": "Rockefeller, Tod",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:42:12Z",
             "system_mtime": "2014-12-06T02:42:12Z",
-            "user_mtime": "2014-12-06T02:42:12Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [
                 {
-                    "lock_version": 0,
                     "begin": "1907",
-                    "end": "1999",
-                    "created_by": "admin",
-                    "last_modified_by": "admin",
                     "create_time": "2014-12-06T02:42:12Z",
-                    "system_mtime": "2014-12-06T02:42:12Z",
-                    "user_mtime": "2014-12-06T02:42:12Z",
+                    "created_by": "admin",
                     "date_type": "inclusive",
+                    "end": "1999",
+                    "jsonmodel_type": "date",
                     "label": "usage",
-                    "jsonmodel_type": "date"
+                    "last_modified_by": "admin",
+                    "lock_version": 0,
+                    "system_mtime": "2014-12-06T02:42:12Z",
+                    "user_mtime": "2014-12-06T02:42:12Z"
                 }
             ],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:42:12Z"
         }
     ],
+    "notes": [],
+    "publish": true,
     "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Rockefeller, Mary (Mary Todhunter Clark)",
     "uri": "/agents/people/527",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Rockefeller",
-        "rest_of_name": "Mary (Mary Todhunter Clark)",
-        "sort_name": "Rockefeller, Mary (Mary Todhunter Clark)",
-        "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:42:12Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2014-12-06T02:42:12Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Rockefeller, Mary (Mary Todhunter Clark)"
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:42:12Z"
 }

@@ -1,35 +1,314 @@
 {
-    "lock_version": 5,
-    "title": "Rockefeller Foundation records, field offices, Cali, Colombia, RG 6, SG 9",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA397.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, Cali, Colombia, RG 6, SG 9\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, Cali, Colombia, RG 6, SG 9",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T11:07:48Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:55:59Z",
-    "suppressed": false,
-    "id_0": "FA397",
-    "language": "eng",
-    "level": "subgrp",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2238",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:55:59Z",
-            "system_mtime": "2016-10-22T19:55:59Z",
-            "user_mtime": "2016-10-22T19:55:59Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 366848,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366848",
+            "title": "Administrative Correspondence, 1960-1977",
+            "type": "collection"
+        },
+        {
+            "identifier": 366885,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366885",
+            "title": "Universidad del Valle--Academic Programs, 1962-1975, n.d.",
+            "type": "collection"
+        },
+        {
+            "identifier": 366928,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366928",
+            "title": "Universidad del Valle--Medical Programs, 1960-1976, 1978",
+            "type": "collection"
+        },
+        {
+            "identifier": 366946,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366946",
+            "title": "Cooperating Universities and Programs, 1960-1976",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:55:59Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/596"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3884",
+        "user_mtime": "2016-10-22T19:55:59Z"
+    },
+    "create_time": "2014-12-06T11:07:48Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1960",
+            "create_time": "2016-10-22T19:55:59Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1978",
+            "expression": "1960-1978, undated",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:55:59Z",
+            "user_mtime": "2016-10-22T19:55:59Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA397.xml",
+    "extents": [
+        {
+            "container_summary": "11 document cases",
+            "create_time": "2016-10-22T19:55:59Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "5",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:55:59Z",
+            "user_mtime": "2016-10-22T19:55:59Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:55:59Z",
+            "created_by": "battalb",
+            "external_id": "2238",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:55:59Z",
+            "user_mtime": "2016-10-22T19:55:59Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, Cali, Colombia, RG 6, SG 9",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, Cali, Colombia, RG 6, SG 9\n",
+    "id_0": "FA397",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "subgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/44",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 5,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "f614ecde7b7fc50fd63b9e6d6a91335b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Important Subjects\n\nDeveloping countries--technical assistance --Medical education--Colombia --Public health--Colombia --Tropical medicine--Colombia --Colombia--Charitable uses, trusts, and foundations --Latin America--technical assistance --Rockefeller Foundation--Colombia",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "4c64eb9711781b3406788eff401e352a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "86fc3f296ea148895be3dae23d4766db",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "RG 6.9.\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "94bee3bbd2aa909ac4a42e3ff0ab4d86",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA396/overview\">FA396 Rockefeller Foundation records, Field Offices, New Delhi, India.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>\n\n<extref href=\"../FA399/overview\">FA399 Rockefeller Foundation records, Field Office, Ankara, Turkey.</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "3df47c8c6ad01f49fec97b345731575e",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "d452ccc04cb85d6c91af61233fd7a59a",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "a42babef87cc68be32cfd0dd97002a70",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Rockefeller Foundation opened a field office in Cali, Colombia in 1960, ten years after the establishment of the Colombian Agricultural Program in Bogota. Guy S. Hayes, an Assistant Director in the Medical and Natural Sciences division, held the post of Field Director in Cali from 1960 until 1970. After 1970, the office was headed by Foundation Representatives Patrick N. Owens (1970-1974) and Farzam Arbab (1974-78). The office closed on December 31, 1983.\n\nRF activity in Colombia reflected the broad reorientation of Foundation programming away from Europe and towards the developing world which took place under RF Presidents Dean Rusk (1952-1961) and J. George Harrar (1961-1972). In Latin America, as in Africa and Southeast Asia, the Foundation sought to relieve basic human needs by establishing rural and community development programs, strengthening disease research facilities, and revitalizing universities that they might become more responsive to local populations. The RF approach to development involved the training of local personnel and the strengthening of local institutions through exchange programs with American universities and fellowships support for Colombian scholars.\n\nOne of the prime beneficiaries of RF support in Colombia was the Universidad del Valle and its Medical School at Cali, which received assistance under the RF's University Development program (1963-1978). (The program was renamed Education for Development (EFD) in 1974). The Universidad del Valle became one of the best medical schools in Latin America, combining the practice of public health at the Candelaria Rural Health Center with the teaching and practice of medicine. The EFD program was phased out in 1978, with future university grants made within the appropriate RF program areas.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "14510d68974c5407bfd2244b2f6e19a4",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Cali office records are arranged in four series:\n\nSeries 1 - Administrative Correspondence;\nSeries 2 - Universidad del Valle--Academic Programs;\nSeries 3 - Universidad del Valle--Medical Programs;\nSeries 4 - Cooperating Universities and Programs.\n\nWithin series, files are arranged in the order received, according to an internal numeric system. Retaining the files' original order preserves the usefulness of numerous cross-reference inserts that refer to related files by number. Gaps in the numbering sequence indicate that the office discarded portions of these records prior to their transfer to New York in 1977, 1978, and 1984.\n\nFolders are arranged by file number. File numbers appear in parentheses following folder title.\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "59c7ff251b7fd4bd6f8460f6d0903430",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The records (1960-1978) of the Rockefeller Foundation's Cali, Colombia field office, consisting of routine administrative correspondence, document to a limited extent the administration of the RF's Education for Development (EFD) program and other programs undertaken in Colombia by the RF's divisions of Medical and Natural Sciences and Humanities and Social Sciences.\n\nWhile the focus of the Bogota office was agriculture, the Cali office coordinated programs in rural, community, and university development. Series I contains eight folders concerning the Cali field station of the RF's Virus Research Program (1964-73), a program for research on arthropod-borne (arbo) viruses. The bulk of the collection, located in Series II and III, relates to the development of the University del Valle's Academic and library programs and its medical school under the auspices of the RF's University Development (1963-74) and Education For Development (1974-78) programs. Series IV includes correspondence between the Cali staff and several American universities cooperating with the Universidad del Valle in rural and tropical disease research, preventitive medicine and nutrition, and child and public health.\n\nCorrespondents include Farzam Arbab, Ulysses J. Grant, Guy S. Hayes, Robert S. Morison, Patrick N. Owens, Dorothy Parker, Virgil C. Scott, Harold Trapido, John Veenstra, and John M. Weir. Some correspondence is in Spanish.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "0d61e2a053a40b4d78d640367084fe7f",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Important Names\n\nArbab, Farzam --Grant, Ulysses J. --Hayes, Guy S. --Morison, Robert S. --Owens, Patrick N. --Parker, Dorothy --Scott, Virgin C. --Trapido, Harold --Veenstra, John --Weir, John",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Related Archival Materials note",
+            "persistent_id": "2e74ca2badf9bac3939426317b7431d8",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "For information about specific grants to individuals or institutions in Colombia, consult the grant files located in Record Group 1.1 and 1.2 (Projects), 311 (Colombia), in the Rockefeller Foundation Archives.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "relatedmaterial"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:55:59Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>May 2010</date><item></item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:55:59Z",
+            "uri": "/revision_statement/3042",
+            "user_mtime": "2016-10-22T19:55:59Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/41"
@@ -89,308 +368,29 @@
             "ref": "/subjects/85"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "5",
-            "container_summary": "11 document cases",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:55:59Z",
-            "system_mtime": "2016-10-22T19:55:59Z",
-            "user_mtime": "2016-10-22T19:55:59Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1960-1978, undated",
-            "begin": "1960",
-            "end": "1978",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:55:59Z",
-            "system_mtime": "2016-10-22T19:55:59Z",
-            "user_mtime": "2016-10-22T19:55:59Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/44"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>May 2010</date><item></item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:55:59Z",
-            "system_mtime": "2016-10-22T19:55:59Z",
-            "user_mtime": "2016-10-22T19:55:59Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3042",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f614ecde7b7fc50fd63b9e6d6a91335b",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Important Subjects\n\nDeveloping countries--technical assistance --Medical education--Colombia --Public health--Colombia --Tropical medicine--Colombia --Colombia--Charitable uses, trusts, and foundations --Latin America--technical assistance --Rockefeller Foundation--Colombia",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4c64eb9711781b3406788eff401e352a",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "86fc3f296ea148895be3dae23d4766db",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 6.9.\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "94bee3bbd2aa909ac4a42e3ff0ab4d86",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA396/overview\">FA396 Rockefeller Foundation records, Field Offices, New Delhi, India.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>\n\n<extref href=\"../FA399/overview\">FA399 Rockefeller Foundation records, Field Office, Ankara, Turkey.</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3df47c8c6ad01f49fec97b345731575e",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d452ccc04cb85d6c91af61233fd7a59a",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "a42babef87cc68be32cfd0dd97002a70",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Rockefeller Foundation opened a field office in Cali, Colombia in 1960, ten years after the establishment of the Colombian Agricultural Program in Bogota. Guy S. Hayes, an Assistant Director in the Medical and Natural Sciences division, held the post of Field Director in Cali from 1960 until 1970. After 1970, the office was headed by Foundation Representatives Patrick N. Owens (1970-1974) and Farzam Arbab (1974-78). The office closed on December 31, 1983.\n\nRF activity in Colombia reflected the broad reorientation of Foundation programming away from Europe and towards the developing world which took place under RF Presidents Dean Rusk (1952-1961) and J. George Harrar (1961-1972). In Latin America, as in Africa and Southeast Asia, the Foundation sought to relieve basic human needs by establishing rural and community development programs, strengthening disease research facilities, and revitalizing universities that they might become more responsive to local populations. The RF approach to development involved the training of local personnel and the strengthening of local institutions through exchange programs with American universities and fellowships support for Colombian scholars.\n\nOne of the prime beneficiaries of RF support in Colombia was the Universidad del Valle and its Medical School at Cali, which received assistance under the RF's University Development program (1963-1978). (The program was renamed Education for Development (EFD) in 1974). The Universidad del Valle became one of the best medical schools in Latin America, combining the practice of public health at the Candelaria Rural Health Center with the teaching and practice of medicine. The EFD program was phased out in 1978, with future university grants made within the appropriate RF program areas.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "14510d68974c5407bfd2244b2f6e19a4",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Cali office records are arranged in four series:\n\nSeries 1 - Administrative Correspondence;\nSeries 2 - Universidad del Valle--Academic Programs;\nSeries 3 - Universidad del Valle--Medical Programs;\nSeries 4 - Cooperating Universities and Programs.\n\nWithin series, files are arranged in the order received, according to an internal numeric system. Retaining the files' original order preserves the usefulness of numerous cross-reference inserts that refer to related files by number. Gaps in the numbering sequence indicate that the office discarded portions of these records prior to their transfer to New York in 1977, 1978, and 1984.\n\nFolders are arranged by file number. File numbers appear in parentheses following folder title.\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "59c7ff251b7fd4bd6f8460f6d0903430",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The records (1960-1978) of the Rockefeller Foundation's Cali, Colombia field office, consisting of routine administrative correspondence, document to a limited extent the administration of the RF's Education for Development (EFD) program and other programs undertaken in Colombia by the RF's divisions of Medical and Natural Sciences and Humanities and Social Sciences.\n\nWhile the focus of the Bogota office was agriculture, the Cali office coordinated programs in rural, community, and university development. Series I contains eight folders concerning the Cali field station of the RF's Virus Research Program (1964-73), a program for research on arthropod-borne (arbo) viruses. The bulk of the collection, located in Series II and III, relates to the development of the University del Valle's Academic and library programs and its medical school under the auspices of the RF's University Development (1963-74) and Education For Development (1974-78) programs. Series IV includes correspondence between the Cali staff and several American universities cooperating with the Universidad del Valle in rural and tropical disease research, preventitive medicine and nutrition, and child and public health.\n\nCorrespondents include Farzam Arbab, Ulysses J. Grant, Guy S. Hayes, Robert S. Morison, Patrick N. Owens, Dorothy Parker, Virgil C. Scott, Harold Trapido, John Veenstra, and John M. Weir. Some correspondence is in Spanish.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "0d61e2a053a40b4d78d640367084fe7f",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Important Names\n\nArbab, Farzam --Grant, Ulysses J. --Hayes, Guy S. --Morison, Robert S. --Owens, Patrick N. --Parker, Dorothy --Scott, Virgin C. --Trapido, Harold --Veenstra, John --Weir, John",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2e74ca2badf9bac3939426317b7431d8",
-            "label": "Related Archival Materials note",
-            "type": "relatedmaterial",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "For information about specific grants to individuals or institutions in Colombia, consult the grant files located in Record Group 1.1 and 1.2 (Projects), 311 (Colombia), in the Rockefeller Foundation Archives.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/596",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:55:59Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:55:59Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3884",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/596"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:55:59Z",
-        "system_mtime": "2016-10-22T19:55:59Z",
-        "user_mtime": "2016-10-22T19:55:59Z",
-        "enum_1": "3 - Standard",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, field offices, Cali, Colombia, RG 6, SG 9",
     "tree": {
         "ref": "/repositories/2/resources/596/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Administrative Correspondence, 1960-1977",
-            "ref": "/repositories/2/archival_objects/366848",
-            "level": "series",
-            "type": "collection",
-            "identifier": 366848
+    "uri": "/repositories/2/resources/596",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2016-10-22T19:55:59Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
+        "enum_1": "3 - Standard",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
         },
-        {
-            "title": "Universidad del Valle--Academic Programs, 1962-1975, n.d.",
-            "ref": "/repositories/2/archival_objects/366885",
-            "level": "series",
-            "type": "collection",
-            "identifier": 366885
-        },
-        {
-            "title": "Universidad del Valle--Medical Programs, 1960-1976, 1978",
-            "ref": "/repositories/2/archival_objects/366928",
-            "level": "series",
-            "type": "collection",
-            "identifier": 366928
-        },
-        {
-            "title": "Cooperating Universities and Programs, 1960-1976",
-            "ref": "/repositories/2/archival_objects/366946",
-            "level": "series",
-            "type": "collection",
-            "identifier": 366946
-        }
-    ]
+        "system_mtime": "2016-10-22T19:55:59Z",
+        "user_mtime": "2016-10-22T19:55:59Z"
+    },
+    "user_mtime": "2016-10-22T19:55:59Z"
 }

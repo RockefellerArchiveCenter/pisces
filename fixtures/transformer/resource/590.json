@@ -1,35 +1,763 @@
 {
-    "lock_version": 12,
-    "title": "Rockefeller Foundation records, officers' diaries, RG 12, A-E",
-    "publish": true,
-    "restrictions": true,
-    "ead_id": "FA391.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, officers' diaries, RG 12, A-E\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, officers' diaries, RG 12, A-E",
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T10:58:43Z",
-    "system_mtime": "2019-02-14T15:19:37Z",
-    "user_mtime": "2019-02-14T15:19:37Z",
-    "suppressed": false,
-    "id_0": "FA391",
-    "language": "eng",
-    "level": "recordgrp",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2212",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2019-02-14T15:19:37Z",
-            "system_mtime": "2019-02-14T15:19:37Z",
-            "user_mtime": "2019-02-14T15:19:37Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 361422,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361422",
+            "title": "Aitken, Thomas H. G.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361425,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361425",
+            "title": "Albaugh, Leland G.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361427,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361427",
+            "title": "Allen (Shikoh), Jane",
+            "type": "collection"
+        },
+        {
+            "identifier": 361432,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361432",
+            "title": "Allen, LeRoy R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361437,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361437",
+            "title": "Anderson, Charles R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361439,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361439",
+            "title": "Anderson, Richmond K.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361462,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361462",
+            "title": "App, Alva A.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361464,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361464",
+            "title": "Appleget, Thomas B.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361484,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361484",
+            "title": "Arbab, Farzam",
+            "type": "collection"
+        },
+        {
+            "identifier": 361486,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361486",
+            "title": "Arnold, Virginia",
+            "type": "collection"
+        },
+        {
+            "identifier": 361498,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361498",
+            "title": "Baird, Guy B.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361509,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361509",
+            "title": "Bakeman, George W.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361511,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361511",
+            "title": "Balfour, Marshall C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361518,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361518",
+            "title": "Barnard, Chester I.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361521,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361521",
+            "title": "Barnes, Allan C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361524,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361524",
+            "title": "Barnish, Guy",
+            "type": "collection"
+        },
+        {
+            "identifier": 361526,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361526",
+            "title": "Bates, Marston",
+            "type": "collection"
+        },
+        {
+            "identifier": 361528,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361528",
+            "title": "Bauer, Johannes H.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361535,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361535",
+            "title": "Beach, Byron",
+            "type": "collection"
+        },
+        {
+            "identifier": 361537,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361537",
+            "title": "Beard, Mary",
+            "type": "collection"
+        },
+        {
+            "identifier": 361552,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361552",
+            "title": "Beck, Glenn H.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361554,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361554",
+            "title": "Bell, Philip W.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361558,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361558",
+            "title": "Bertheau, Rudolf C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361560,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361560",
+            "title": "Bevier, George",
+            "type": "collection"
+        },
+        {
+            "identifier": 361566,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361566",
+            "title": "Black, Joseph E.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361591,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361591",
+            "title": "Boyce, Alfred Mullikin",
+            "type": "collection"
+        },
+        {
+            "identifier": 361595,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361595",
+            "title": "Brackett, Elizabeth W.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361602,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361602",
+            "title": "Bradfield, Richard",
+            "type": "collection"
+        },
+        {
+            "identifier": 361605,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361605",
+            "title": "Bradley, William Lee",
+            "type": "collection"
+        },
+        {
+            "identifier": 361607,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361607",
+            "title": "Braga, Ernani P.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361609,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361609",
+            "title": "Bronte, D. Lydia",
+            "type": "collection"
+        },
+        {
+            "identifier": 361616,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361616",
+            "title": "Brown, Dorothy E.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361618,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361618",
+            "title": "Brown, Robert Z.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361623,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361623",
+            "title": "Bryant, John H.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361630,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361630",
+            "title": "Buchanan, Norman S.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361635,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361635",
+            "title": "Buchwalter, Ellen Shapiro (Mrs. Steven Buchwalter)",
+            "type": "collection"
+        },
+        {
+            "identifier": 361649,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361649",
+            "title": "Bugher, John C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361651,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361651",
+            "title": "Burden, Robert P.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361659,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361659",
+            "title": "Burke, Alexander W.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361662,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361662",
+            "title": "Cahn, Steven M.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361664,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361664",
+            "title": "Carr, Henry P.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361668,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361668",
+            "title": "Carter, William S.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361675,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361675",
+            "title": "Causey, Ottis R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361678,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361678",
+            "title": "Chadwell, Harris Marshall",
+            "type": "collection"
+        },
+        {
+            "identifier": 361682,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361682",
+            "title": "Chandler, Robert Flint, Jr.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361693,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361693",
+            "title": "Christie, John D.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361695,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361695",
+            "title": "Cobb, William C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361698,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361698",
+            "title": "Cole, Charles Woolsey",
+            "type": "collection"
+        },
+        {
+            "identifier": 361700,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361700",
+            "title": "Cole, Patricia",
+            "type": "collection"
+        },
+        {
+            "identifier": 361702,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361702",
+            "title": "Collins, Ralph Cable",
+            "type": "collection"
+        },
+        {
+            "identifier": 361704,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361704",
+            "title": "Colton, Joel",
+            "type": "collection"
+        },
+        {
+            "identifier": 361713,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361713",
+            "title": "Compton, Boyd R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361742,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361742",
+            "title": "Connor, Michael E.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361744,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361744",
+            "title": "Cook, Joseph A.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361747,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361747",
+            "title": "Corwin, Janet D.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361749,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361749",
+            "title": "Court, David",
+            "type": "collection"
+        },
+        {
+            "identifier": 361757,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361757",
+            "title": "Crawford, Porter J.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361759,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361759",
+            "title": "Crawford, Robert W.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361769,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361769",
+            "title": "Crowell, F. Elisabeth",
+            "type": "collection"
+        },
+        {
+            "identifier": 361784,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361784",
+            "title": "Cummings, Ralph W., Jr.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361790,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361790",
+            "title": "Cummings, Ralph W., Sr.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361810,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361810",
+            "title": "D'Arms, Edward F.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361828,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361828",
+            "title": "Dalakian, Michael J.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361830,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361830",
+            "title": "Dalton, Peter R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361832,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361832",
+            "title": "Daniel, James Manley",
+            "type": "collection"
+        },
+        {
+            "identifier": 361835,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361835",
+            "title": "Davidson, Ralph K.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361872,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361872",
+            "title": "Davis, William A.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361874,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361874",
+            "title": "Deane, Herbert A.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361876,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361876",
+            "title": "DeVinney, Leland C.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361927,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361927",
+            "title": "Dick, George Williamson A.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361929,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361929",
+            "title": "Dinning, James S.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361932,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361932",
+            "title": "Downs, Wilbur G.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361957,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361957",
+            "title": "Dyer, Brian R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361960,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361960",
+            "title": "Elmendorf, John E.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361962,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361962",
+            "title": "Embree, Edwin R.",
+            "type": "collection"
+        },
+        {
+            "identifier": 361995,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/361995",
+            "title": "Evans, Roger F.",
+            "type": "collection"
+        },
+        {
+            "identifier": 362007,
+            "level": "Officer",
+            "ref": "/repositories/2/archival_objects/362007",
+            "title": "Everton, John Scott",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2019-02-14T15:19:37Z",
+        "created_by": "admin",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/590"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2019-02-14T15:19:37Z",
+        "uri": "/repositories/2/collection_management/7478",
+        "user_mtime": "2019-02-14T15:19:37Z"
+    },
+    "create_time": "2014-12-06T10:58:43Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1911",
+            "create_time": "2019-02-14T15:19:37Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1992",
+            "expression": "1911-1992",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2019-02-14T15:19:37Z",
+            "user_mtime": "2019-02-14T15:19:37Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA391.xml",
+    "extents": [
+        {
+            "create_time": "2019-02-14T15:19:37Z",
+            "created_by": "admin",
+            "extent_type": "box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "136",
+            "portion": "whole",
+            "system_mtime": "2019-02-14T15:19:37Z",
+            "user_mtime": "2019-02-14T15:19:37Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2019-02-14T15:19:37Z",
+            "created_by": "admin",
+            "external_id": "2212",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2019-02-14T15:19:37Z",
+            "user_mtime": "2019-02-14T15:19:37Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, officers' diaries, RG 12, A-E",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, officers' diaries, RG 12, A-E\n",
+    "id_0": "FA391",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "admin",
+    "level": "recordgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 12,
+    "notes": [
+        {
+            "content": [
+                "<extent>Actual extent is unknown.</extent>"
+            ],
+            "jsonmodel_type": "note_singlepart",
+            "label": "General Physical Description note",
+            "persistent_id": "99054e7dde34ca6b5afbf59c28f19824",
+            "publish": true,
+            "type": "physdesc"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "1c869b808bdb5c12efba7125328fa2b6",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Rockefeller Foundation diaries:\n\nOfficers of the Rockefeller Foundation in New York and its staff members in the field often visited educational, scientific and research institutions and laboratories in many parts of the world to maintain contacts and assess work being done. Officers and field staff frequently conferred with government officials regarding the operation of the RF's programs. In order to preserve accurate records for the guidance of other RF officers, those who carried on these activities kept diaries of their day-to-day contacts and impressions. These diaries were sent to the RF office, where they circulated among officers and staff to the extent deemed advisable.\n\nRockefeller Foundation:\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "4b016ca9e42d5e3b6e1f45a79897950c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "9aba3328eae32fffbea474ef82c0494c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "RG 12\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "2a6a732ae9783b5db739938702482944",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Rockefeller Foundation officers; diaries:\n\nDiaries are of two types: regular daily diaries, and special trip diaries. Some diaries have indexes, which are bound in the annual volume; indexing was not a requirement but was left to the discretion of the officers, and not all diaries are indexed.\n\nDiaries frequently contain information given in confidence, and were thus treated as confidential., The period covered is approximately 1911-1992.\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "1976778a169115010b1493f1d524d3e5",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Officers' diaries are open for scholarly research provided that (1) the diarist is deceased and (2) the volume to be examined is at least twenty years old. All reasonable efforts will be made to determine the fate of the diarist(s), but if such efforts are fruitless then the material will remain closed to scholarly research until the 100th anniversary of the officer's birth.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "84af886e2eefcafa63749e4d079399b5",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Other available finding aids describing Rockefeller Foundation records, Officers' Diaries include:\n\n<extref href=\"../FA392/overview\">FA392 Rockefeller Foundation records, Officers' Diaries F-L.</extref>\n\n<extref href=\"../FA393/overview\">FA393 Rockefeller Foundation records, Officers' Diaries M-R.</extref>\n\n<extref href=\"../FA394/overview\">FA394 Rockefeller Foundation records, Officers' Diaries S-Z.</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "0fcec841f6503bdca8468c00d3311714",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Alphabetically by surname.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/255"
+        },
+        {
+            "ref": "/repositories/2/accessions/302"
+        },
+        {
+            "ref": "/repositories/2/accessions/184"
+        }
+    ],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": true,
+    "revision_statements": [],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/85"
@@ -71,757 +799,29 @@
             "ref": "/subjects/237"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "136",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2019-02-14T15:19:37Z",
-            "system_mtime": "2019-02-14T15:19:37Z",
-            "user_mtime": "2019-02-14T15:19:37Z",
-            "portion": "whole",
-            "extent_type": "box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1911-1992",
-            "begin": "1911",
-            "end": "1992",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2019-02-14T15:19:37Z",
-            "system_mtime": "2019-02-14T15:19:37Z",
-            "user_mtime": "2019-02-14T15:19:37Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        }
-    ],
-    "revision_statements": [],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [
-        {
-            "ref": "/repositories/2/accessions/255"
-        },
-        {
-            "ref": "/repositories/2/accessions/302"
-        },
-        {
-            "ref": "/repositories/2/accessions/184"
-        }
-    ],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "99054e7dde34ca6b5afbf59c28f19824",
-            "label": "General Physical Description note",
-            "type": "physdesc",
-            "content": [
-                "<extent>Actual extent is unknown.</extent>"
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1c869b808bdb5c12efba7125328fa2b6",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Rockefeller Foundation diaries:\n\nOfficers of the Rockefeller Foundation in New York and its staff members in the field often visited educational, scientific and research institutions and laboratories in many parts of the world to maintain contacts and assess work being done. Officers and field staff frequently conferred with government officials regarding the operation of the RF's programs. In order to preserve accurate records for the guidance of other RF officers, those who carried on these activities kept diaries of their day-to-day contacts and impressions. These diaries were sent to the RF office, where they circulated among officers and staff to the extent deemed advisable.\n\nRockefeller Foundation:\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4b016ca9e42d5e3b6e1f45a79897950c",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9aba3328eae32fffbea474ef82c0494c",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 12\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2a6a732ae9783b5db739938702482944",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Rockefeller Foundation officers; diaries:\n\nDiaries are of two types: regular daily diaries, and special trip diaries. Some diaries have indexes, which are bound in the annual volume; indexing was not a requirement but was left to the discretion of the officers, and not all diaries are indexed.\n\nDiaries frequently contain information given in confidence, and were thus treated as confidential., The period covered is approximately 1911-1992.\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "1976778a169115010b1493f1d524d3e5",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Officers' diaries are open for scholarly research provided that (1) the diarist is deceased and (2) the volume to be examined is at least twenty years old. All reasonable efforts will be made to determine the fate of the diarist(s), but if such efforts are fruitless then the material will remain closed to scholarly research until the 100th anniversary of the officer's birth.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "84af886e2eefcafa63749e4d079399b5",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Other available finding aids describing Rockefeller Foundation records, Officers' Diaries include:\n\n<extref href=\"../FA392/overview\">FA392 Rockefeller Foundation records, Officers' Diaries F-L.</extref>\n\n<extref href=\"../FA393/overview\">FA393 Rockefeller Foundation records, Officers' Diaries M-R.</extref>\n\n<extref href=\"../FA394/overview\">FA394 Rockefeller Foundation records, Officers' Diaries S-Z.</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "0fcec841f6503bdca8468c00d3311714",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Alphabetically by surname.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
-    "uri": "/repositories/2/resources/590",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2019-02-14T15:19:37Z",
-        "system_mtime": "2019-02-14T15:19:37Z",
-        "user_mtime": "2019-02-14T15:19:37Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/7478",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/590"
-        }
-    },
-    "user_defined": {
-        "lock_version": 0,
-        "boolean_1": false,
-        "boolean_2": false,
-        "boolean_3": false,
-        "date_2": "2013-12-31",
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2019-02-14T15:19:37Z",
-        "system_mtime": "2019-02-14T15:19:37Z",
-        "user_mtime": "2019-02-14T15:19:37Z",
-        "enum_1": "4 - Advanced",
-        "jsonmodel_type": "user_defined",
-        "repository": {
-            "ref": "/repositories/2"
-        }
-    },
+    "suppressed": false,
+    "system_mtime": "2019-02-14T15:19:37Z",
+    "title": "Rockefeller Foundation records, officers' diaries, RG 12, A-E",
     "tree": {
         "ref": "/repositories/2/resources/590/tree"
     },
-    "ancestors": [],
-    "children": [
-        {
-            "title": "Aitken, Thomas H. G.",
-            "ref": "/repositories/2/archival_objects/361422",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361422
-        },
-        {
-            "title": "Albaugh, Leland G.",
-            "ref": "/repositories/2/archival_objects/361425",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361425
-        },
-        {
-            "title": "Allen (Shikoh), Jane",
-            "ref": "/repositories/2/archival_objects/361427",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361427
-        },
-        {
-            "title": "Allen, LeRoy R.",
-            "ref": "/repositories/2/archival_objects/361432",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361432
-        },
-        {
-            "title": "Anderson, Charles R.",
-            "ref": "/repositories/2/archival_objects/361437",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361437
-        },
-        {
-            "title": "Anderson, Richmond K.",
-            "ref": "/repositories/2/archival_objects/361439",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361439
-        },
-        {
-            "title": "App, Alva A.",
-            "ref": "/repositories/2/archival_objects/361462",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361462
-        },
-        {
-            "title": "Appleget, Thomas B.",
-            "ref": "/repositories/2/archival_objects/361464",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361464
-        },
-        {
-            "title": "Arbab, Farzam",
-            "ref": "/repositories/2/archival_objects/361484",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361484
-        },
-        {
-            "title": "Arnold, Virginia",
-            "ref": "/repositories/2/archival_objects/361486",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361486
-        },
-        {
-            "title": "Baird, Guy B.",
-            "ref": "/repositories/2/archival_objects/361498",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361498
-        },
-        {
-            "title": "Bakeman, George W.",
-            "ref": "/repositories/2/archival_objects/361509",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361509
-        },
-        {
-            "title": "Balfour, Marshall C.",
-            "ref": "/repositories/2/archival_objects/361511",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361511
-        },
-        {
-            "title": "Barnard, Chester I.",
-            "ref": "/repositories/2/archival_objects/361518",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361518
-        },
-        {
-            "title": "Barnes, Allan C.",
-            "ref": "/repositories/2/archival_objects/361521",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361521
-        },
-        {
-            "title": "Barnish, Guy",
-            "ref": "/repositories/2/archival_objects/361524",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361524
-        },
-        {
-            "title": "Bates, Marston",
-            "ref": "/repositories/2/archival_objects/361526",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361526
-        },
-        {
-            "title": "Bauer, Johannes H.",
-            "ref": "/repositories/2/archival_objects/361528",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361528
-        },
-        {
-            "title": "Beach, Byron",
-            "ref": "/repositories/2/archival_objects/361535",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361535
-        },
-        {
-            "title": "Beard, Mary",
-            "ref": "/repositories/2/archival_objects/361537",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361537
-        },
-        {
-            "title": "Beck, Glenn H.",
-            "ref": "/repositories/2/archival_objects/361552",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361552
-        },
-        {
-            "title": "Bell, Philip W.",
-            "ref": "/repositories/2/archival_objects/361554",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361554
-        },
-        {
-            "title": "Bertheau, Rudolf C.",
-            "ref": "/repositories/2/archival_objects/361558",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361558
-        },
-        {
-            "title": "Bevier, George",
-            "ref": "/repositories/2/archival_objects/361560",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361560
-        },
-        {
-            "title": "Black, Joseph E.",
-            "ref": "/repositories/2/archival_objects/361566",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361566
-        },
-        {
-            "title": "Boyce, Alfred Mullikin",
-            "ref": "/repositories/2/archival_objects/361591",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361591
-        },
-        {
-            "title": "Brackett, Elizabeth W.",
-            "ref": "/repositories/2/archival_objects/361595",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361595
-        },
-        {
-            "title": "Bradfield, Richard",
-            "ref": "/repositories/2/archival_objects/361602",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361602
-        },
-        {
-            "title": "Bradley, William Lee",
-            "ref": "/repositories/2/archival_objects/361605",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361605
-        },
-        {
-            "title": "Braga, Ernani P.",
-            "ref": "/repositories/2/archival_objects/361607",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361607
-        },
-        {
-            "title": "Bronte, D. Lydia",
-            "ref": "/repositories/2/archival_objects/361609",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361609
-        },
-        {
-            "title": "Brown, Dorothy E.",
-            "ref": "/repositories/2/archival_objects/361616",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361616
-        },
-        {
-            "title": "Brown, Robert Z.",
-            "ref": "/repositories/2/archival_objects/361618",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361618
-        },
-        {
-            "title": "Bryant, John H.",
-            "ref": "/repositories/2/archival_objects/361623",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361623
-        },
-        {
-            "title": "Buchanan, Norman S.",
-            "ref": "/repositories/2/archival_objects/361630",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361630
-        },
-        {
-            "title": "Buchwalter, Ellen Shapiro (Mrs. Steven Buchwalter)",
-            "ref": "/repositories/2/archival_objects/361635",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361635
-        },
-        {
-            "title": "Bugher, John C.",
-            "ref": "/repositories/2/archival_objects/361649",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361649
-        },
-        {
-            "title": "Burden, Robert P.",
-            "ref": "/repositories/2/archival_objects/361651",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361651
-        },
-        {
-            "title": "Burke, Alexander W.",
-            "ref": "/repositories/2/archival_objects/361659",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361659
-        },
-        {
-            "title": "Cahn, Steven M.",
-            "ref": "/repositories/2/archival_objects/361662",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361662
-        },
-        {
-            "title": "Carr, Henry P.",
-            "ref": "/repositories/2/archival_objects/361664",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361664
-        },
-        {
-            "title": "Carter, William S.",
-            "ref": "/repositories/2/archival_objects/361668",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361668
-        },
-        {
-            "title": "Causey, Ottis R.",
-            "ref": "/repositories/2/archival_objects/361675",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361675
-        },
-        {
-            "title": "Chadwell, Harris Marshall",
-            "ref": "/repositories/2/archival_objects/361678",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361678
-        },
-        {
-            "title": "Chandler, Robert Flint, Jr.",
-            "ref": "/repositories/2/archival_objects/361682",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361682
-        },
-        {
-            "title": "Christie, John D.",
-            "ref": "/repositories/2/archival_objects/361693",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361693
-        },
-        {
-            "title": "Cobb, William C.",
-            "ref": "/repositories/2/archival_objects/361695",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361695
-        },
-        {
-            "title": "Cole, Charles Woolsey",
-            "ref": "/repositories/2/archival_objects/361698",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361698
-        },
-        {
-            "title": "Cole, Patricia",
-            "ref": "/repositories/2/archival_objects/361700",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361700
-        },
-        {
-            "title": "Collins, Ralph Cable",
-            "ref": "/repositories/2/archival_objects/361702",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361702
-        },
-        {
-            "title": "Colton, Joel",
-            "ref": "/repositories/2/archival_objects/361704",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361704
-        },
-        {
-            "title": "Compton, Boyd R.",
-            "ref": "/repositories/2/archival_objects/361713",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361713
-        },
-        {
-            "title": "Connor, Michael E.",
-            "ref": "/repositories/2/archival_objects/361742",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361742
-        },
-        {
-            "title": "Cook, Joseph A.",
-            "ref": "/repositories/2/archival_objects/361744",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361744
-        },
-        {
-            "title": "Corwin, Janet D.",
-            "ref": "/repositories/2/archival_objects/361747",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361747
-        },
-        {
-            "title": "Court, David",
-            "ref": "/repositories/2/archival_objects/361749",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361749
-        },
-        {
-            "title": "Crawford, Porter J.",
-            "ref": "/repositories/2/archival_objects/361757",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361757
-        },
-        {
-            "title": "Crawford, Robert W.",
-            "ref": "/repositories/2/archival_objects/361759",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361759
-        },
-        {
-            "title": "Crowell, F. Elisabeth",
-            "ref": "/repositories/2/archival_objects/361769",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361769
-        },
-        {
-            "title": "Cummings, Ralph W., Jr.",
-            "ref": "/repositories/2/archival_objects/361784",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361784
-        },
-        {
-            "title": "Cummings, Ralph W., Sr.",
-            "ref": "/repositories/2/archival_objects/361790",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361790
-        },
-        {
-            "title": "D'Arms, Edward F.",
-            "ref": "/repositories/2/archival_objects/361810",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361810
-        },
-        {
-            "title": "Dalakian, Michael J.",
-            "ref": "/repositories/2/archival_objects/361828",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361828
-        },
-        {
-            "title": "Dalton, Peter R.",
-            "ref": "/repositories/2/archival_objects/361830",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361830
-        },
-        {
-            "title": "Daniel, James Manley",
-            "ref": "/repositories/2/archival_objects/361832",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361832
-        },
-        {
-            "title": "Davidson, Ralph K.",
-            "ref": "/repositories/2/archival_objects/361835",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361835
-        },
-        {
-            "title": "Davis, William A.",
-            "ref": "/repositories/2/archival_objects/361872",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361872
-        },
-        {
-            "title": "Deane, Herbert A.",
-            "ref": "/repositories/2/archival_objects/361874",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361874
-        },
-        {
-            "title": "DeVinney, Leland C.",
-            "ref": "/repositories/2/archival_objects/361876",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361876
-        },
-        {
-            "title": "Dick, George Williamson A.",
-            "ref": "/repositories/2/archival_objects/361927",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361927
-        },
-        {
-            "title": "Dinning, James S.",
-            "ref": "/repositories/2/archival_objects/361929",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361929
-        },
-        {
-            "title": "Downs, Wilbur G.",
-            "ref": "/repositories/2/archival_objects/361932",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361932
-        },
-        {
-            "title": "Dyer, Brian R.",
-            "ref": "/repositories/2/archival_objects/361957",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361957
-        },
-        {
-            "title": "Elmendorf, John E.",
-            "ref": "/repositories/2/archival_objects/361960",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361960
-        },
-        {
-            "title": "Embree, Edwin R.",
-            "ref": "/repositories/2/archival_objects/361962",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361962
-        },
-        {
-            "title": "Evans, Roger F.",
-            "ref": "/repositories/2/archival_objects/361995",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 361995
-        },
-        {
-            "title": "Everton, John Scott",
-            "ref": "/repositories/2/archival_objects/362007",
-            "level": "Officer",
-            "type": "collection",
-            "identifier": 362007
-        }
-    ]
+    "uri": "/repositories/2/resources/590",
+    "user_defined": {
+        "boolean_1": false,
+        "boolean_2": false,
+        "boolean_3": false,
+        "create_time": "2019-02-14T15:19:37Z",
+        "created_by": "admin",
+        "date_2": "2013-12-31",
+        "enum_1": "4 - Advanced",
+        "jsonmodel_type": "user_defined",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "system_mtime": "2019-02-14T15:19:37Z",
+        "user_mtime": "2019-02-14T15:19:37Z"
+    },
+    "user_mtime": "2019-02-14T15:19:37Z"
 }

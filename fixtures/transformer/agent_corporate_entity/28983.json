@@ -1,62 +1,62 @@
 {
-    "lock_version": 24,
-    "publish": true,
-    "created_by": "pgalligan",
-    "last_modified_by": "pgalligan",
-    "create_time": "2019-01-30T23:42:36Z",
-    "system_mtime": "2019-04-01T18:07:52Z",
-    "user_mtime": "2019-01-30T23:42:36Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [],
-    "linked_agent_roles": [
-        "creator"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Rockefeller Foundation",
-            "sort_name": "Rockefeller Foundation",
-            "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2019-01-30T23:42:36Z",
-            "system_mtime": "2019-01-30T23:42:36Z",
-            "user_mtime": "2019-01-30T23:42:36Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/corporate_entities/28983",
     "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
+    "create_time": "2019-01-30T23:42:36Z",
+    "created_by": "pgalligan",
+    "dates_of_existence": [],
     "display_name": {
+        "authorized": true,
+        "create_time": "2019-01-30T23:42:36Z",
+        "created_by": "pgalligan",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "pgalligan",
         "lock_version": 0,
         "primary_name": "Rockefeller Foundation",
         "sort_name": "Rockefeller Foundation",
         "sort_name_auto_generate": true,
-        "created_by": "pgalligan",
-        "last_modified_by": "pgalligan",
-        "create_time": "2019-01-30T23:42:36Z",
-        "system_mtime": "2019-01-30T23:42:36Z",
-        "user_mtime": "2019-01-30T23:42:36Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "naf",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
+        "system_mtime": "2019-01-30T23:42:36Z",
+        "use_dates": [],
+        "user_mtime": "2019-01-30T23:42:36Z"
     },
-    "title": "Rockefeller Foundation"
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "pgalligan",
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "lock_version": 24,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2019-01-30T23:42:36Z",
+            "created_by": "pgalligan",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "primary_name": "Rockefeller Foundation",
+            "sort_name": "Rockefeller Foundation",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2019-01-30T23:42:36Z",
+            "use_dates": [],
+            "user_mtime": "2019-01-30T23:42:36Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2019-04-01T18:07:52Z",
+    "title": "Rockefeller Foundation",
+    "uri": "/agents/corporate_entities/28983",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2019-01-30T23:42:36Z"
 }
