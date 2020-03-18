@@ -77,7 +77,7 @@ class ArchivalObjectMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {}
+        data = {"ancestors": [], "children": [], "linked_agents": []}
         data.update(self.get_cartographer_data(object))
         data.update(self.get_archivesspace_data(object, object_type))
         return data
@@ -151,7 +151,18 @@ class ArrangementMapMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        return self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json()
+        data = {"children": []}
+        data.update(self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json())
+        if not object.get("children"):
+            as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["archivesspace_uri"].rstrip("/"))).json()
+            for child in as_tree.get("children"):
+                data["children"].append({
+                    "title": child["title"],
+                    "ref": child["record_uri"],
+                    "level": child["level"],
+                    "type": "collection" if child["has_children"] else "object",
+                    "identifier": child["id"]})
+        return data
 
     @silk_profile()
     def combine_data(self, object, additional_data):
