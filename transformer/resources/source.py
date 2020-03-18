@@ -14,7 +14,7 @@ from . import configs
 class SourceAncestor(odin.Resource):
     """Indicates the fields included in an AS ancestor resource."""
     ref = odin.StringField()
-    level = odin.StringField(choices=configs.LEVEL_CHOICES)
+    level = odin.StringField()
 
 
 class SourceRef(odin.Resource):
@@ -157,7 +157,7 @@ class SourceComponentBase(odin.Resource):
     publish = odin.BooleanField()
     title = odin.StringField(null=True)
     suppressed = odin.StringField()
-    level = odin.StringField(choices=configs.LEVEL_CHOICES)
+    level = odin.StringField()
     jsonmodel_type = odin.StringField(choices=COMPONENT_TYPES)
     external_ids = odin.ArrayOf(SourceExternalId)
     subjects = odin.ArrayOf(SourceRef)
@@ -181,6 +181,7 @@ class SourceArchivalObject(SourceComponentBase):
     resource = odin.DictAs(SourceRef)
     parent = odin.DictAs(SourceRef, null=True)
     has_unpublished_ancestor = odin.BooleanField()
+    children = odin.ArrayOf(SourceAncestor, null=True)
     instances = odin.ArrayOf(SourceInstance)
 
 

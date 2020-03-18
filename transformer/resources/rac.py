@@ -97,7 +97,7 @@ class Collection(odin.Resource):
     """Sets the fields in the RAC collection resource."""
     title = odin.StringField()
     type = odin.StringField(default="collection")
-    level = odin.StringField(choices=configs.LEVEL_CHOICES)
+    level = odin.StringField()
     dates = odin.ArrayOf(Date)
     creators = odin.ArrayOf(Reference)
     languages = odin.ArrayOf(Language)
