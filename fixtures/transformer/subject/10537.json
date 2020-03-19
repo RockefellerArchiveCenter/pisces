@@ -1,38 +1,38 @@
 {
-    "lock_version": 13,
-    "title": "Occupational training--United States",
-    "created_by": "pgalligan",
-    "last_modified_by": "pgalligan",
     "create_time": "2015-04-24T20:33:39Z",
-    "system_mtime": "2017-12-15T22:26:27Z",
-    "user_mtime": "2015-04-24T20:33:39Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "pgalligan",
+    "external_documents": [],
     "external_ids": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "pgalligan",
+    "lock_version": 13,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2017-12-15T22:26:27Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Occupational training--United States",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
             "create_time": "2015-04-24T20:33:39Z",
-            "system_mtime": "2015-04-24T20:33:39Z",
-            "user_mtime": "2015-04-24T20:33:39Z",
-            "term_type": "topical",
+            "created_by": "pgalligan",
             "jsonmodel_type": "term",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "system_mtime": "2015-04-24T20:33:39Z",
+            "term": "Occupational training--United States",
+            "term_type": "topical",
             "uri": "/terms/8206",
+            "user_mtime": "2015-04-24T20:33:39Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Occupational training--United States",
     "uri": "/subjects/10537",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-04-24T20:33:39Z",
+    "vocabulary": "/vocabularies/1"
 }

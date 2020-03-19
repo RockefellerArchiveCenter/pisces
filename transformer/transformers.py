@@ -51,7 +51,7 @@ class Transformer:
         except ConnectionError:
             raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
         except jsonschema.exceptions.ValidationError as e:
-            raise TransformError("Transformed data is invalid: {} {}".format(e.message, e.path))
+            raise TransformError("Transformed data is invalid: {}".format(e))
         except Exception as e:
             raise TransformError("Error transforming {} {}: {}".format(object_type, self.identifier, str(e)))
 

@@ -1,49 +1,49 @@
 {
-    "lock_version": 193,
-    "title": "Government agencies",
-    "created_by": "admin",
-    "last_modified_by": "admin",
     "create_time": "2014-12-06T02:30:02Z",
-    "system_mtime": "2019-01-15T19:33:16Z",
-    "user_mtime": "2014-12-06T02:30:02Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "admin",
+    "external_documents": [],
     "external_ids": [
         {
-            "external_id": "231",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:30:02Z",
+            "created_by": "admin",
+            "external_id": "231",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::SUBJECT",
             "system_mtime": "2014-12-06T02:30:02Z",
-            "user_mtime": "2014-12-06T02:30:02Z",
-            "jsonmodel_type": "external_id"
+            "user_mtime": "2014-12-06T02:30:02Z"
         }
     ],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 193,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2019-01-15T19:33:16Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Government agencies",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:30:02Z",
-            "system_mtime": "2014-12-06T02:30:02Z",
-            "user_mtime": "2014-12-06T02:30:02Z",
-            "term_type": "topical",
+            "created_by": "admin",
             "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:30:02Z",
+            "term": "Government agencies",
+            "term_type": "topical",
             "uri": "/terms/198",
+            "user_mtime": "2014-12-06T02:30:02Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Government agencies",
     "uri": "/subjects/192",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:30:02Z",
+    "vocabulary": "/vocabularies/1"
 }

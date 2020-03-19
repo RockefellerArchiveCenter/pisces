@@ -1,36 +1,273 @@
 {
-    "lock_version": 7,
-    "title": "Nelson A. Rockefeller gubernatorial records, Hugh Morrow, Series 21",
-    "publish": true,
-    "restrictions": true,
-    "ead_id": "FA242.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Hugh Morrow, Series 21\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Hugh Morrow, Series 21",
-    "finding_aid_date": "2009",
-    "finding_aid_author": "Monica Blank",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T07:25:55Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-18T20:44:53Z",
-    "suppressed": false,
-    "id_0": "FA242",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "330",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-18T20:44:53Z",
-            "system_mtime": "2016-10-18T20:44:53Z",
-            "user_mtime": "2016-10-18T20:44:53Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 190700,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/190700",
+            "title": "General Files, 1960-1974",
+            "type": "collection"
+        },
+        {
+            "identifier": 191260,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/191260",
+            "title": "Campaign Files, Presidential, 1958-1968",
+            "type": "collection"
+        },
+        {
+            "identifier": 191475,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/191475",
+            "title": "Campaign Files, 1970 Gubernatorial, 1970",
+            "type": "collection"
+        },
+        {
+            "identifier": 191574,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/191574",
+            "title": "Speech Transcripts, 1971-1974",
+            "type": "collection"
+        },
+        {
+            "identifier": 191834,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/191834",
+            "title": "Vice Presidential Press Releases, 1975-1976",
+            "type": "collection"
+        },
+        {
+            "identifier": 191869,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/191869",
+            "title": "Subject Files, 1955-1974",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-18T20:44:53Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/445"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3734",
+        "user_mtime": "2016-10-18T20:44:53Z"
+    },
+    "create_time": "2014-12-06T07:25:55Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1958",
+            "create_time": "2016-10-18T20:44:53Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1977",
+            "expression": "1958-1977",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-18T20:44:53Z",
+            "user_mtime": "2016-10-18T20:44:53Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA242.xml",
+    "extents": [
+        {
+            "container_summary": "107 document boxes",
+            "create_time": "2016-10-18T20:44:53Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "42",
+            "portion": "whole",
+            "system_mtime": "2016-10-18T20:44:53Z",
+            "user_mtime": "2016-10-18T20:44:53Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-18T20:44:53Z",
+            "created_by": "battalb",
+            "external_id": "330",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-18T20:44:53Z",
+            "user_mtime": "2016-10-18T20:44:53Z"
+        }
+    ],
+    "finding_aid_author": "Monica Blank",
+    "finding_aid_date": "2009",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) Gubernatorial records, Hugh Morrow, Series 21",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller Gubernatorial records, Hugh Morrow, Series 21\n",
+    "id_0": "FA242",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/526",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 7,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "76211ffa64436f5c4c509a20289a5f24",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "These papers are organized into the following 6 subseries:\n\n1. General Files;\n2. Campaign Files, Presidential;\n3. Campaign Files, 1970 Gubernatorial;\n4. Speech Transcripts;\n5. Vice Presidential Press Releases;\n6. Subject Files.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "3e6da1b7b7ac9b5aaa3a9ab274be41b1",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "\nThis collection contains the office files of Hugh Morrow. The files document the official activities of Hugh Morrow in the execution of his duties as a member of Nelson A. Rockefeller's gubernatorial and vice presidential staff. The actions, decisions, exchanges of information, and points of view documented occurred in the course of proposing and implementing policies of the Rockefeller administration, political campaigns, or personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should keep in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nThis collection documents portions of Nelson A. Rockefeller's public life from 1958 to 1977. Hugh Morrow was a member of the executive staff during Rockefeller's terms as Governor of New York and subsequently U.S. Vice President.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Immediate Source of Acquisition note",
+            "persistent_id": "bc02f95ea048f76bc442ba3e8a9a6812",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This collection was donated to the Rockefeller Archive Center in 2004.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "acqinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "3a9556a5ab456adb13e2dc926ac8b4a4",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 15 21.2\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "9e9536067bcaebfa36508a303dba6357",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "2d2749619db44c03d62638c55c12680a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "d63b0a191124be72349291eb5c112482",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": true,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-18T20:44:53Z",
+            "created_by": "battalb",
+            "date": "2010 October 25",
+            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-18T20:44:53Z",
+            "uri": "/revision_statement/2956",
+            "user_mtime": "2016-10-18T20:44:53Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/538"
@@ -45,221 +282,29 @@
             "ref": "/subjects/539"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "42",
-            "container_summary": "107 document boxes",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-18T20:44:53Z",
-            "system_mtime": "2016-10-18T20:44:53Z",
-            "user_mtime": "2016-10-18T20:44:53Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1958-1977",
-            "begin": "1958",
-            "end": "1977",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-18T20:44:53Z",
-            "system_mtime": "2016-10-18T20:44:53Z",
-            "user_mtime": "2016-10-18T20:44:53Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "creator",
-            "terms": [],
-            "ref": "/agents/people/526"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "2010 October 25",
-            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-18T20:44:53Z",
-            "system_mtime": "2016-10-18T20:44:53Z",
-            "user_mtime": "2016-10-18T20:44:53Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/2956",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "76211ffa64436f5c4c509a20289a5f24",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "These papers are organized into the following 6 subseries:\n\n1. General Files;\n2. Campaign Files, Presidential;\n3. Campaign Files, 1970 Gubernatorial;\n4. Speech Transcripts;\n5. Vice Presidential Press Releases;\n6. Subject Files.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3e6da1b7b7ac9b5aaa3a9ab274be41b1",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "\nThis collection contains the office files of Hugh Morrow. The files document the official activities of Hugh Morrow in the execution of his duties as a member of Nelson A. Rockefeller's gubernatorial and vice presidential staff. The actions, decisions, exchanges of information, and points of view documented occurred in the course of proposing and implementing policies of the Rockefeller administration, political campaigns, or personal activities. However, unless a document is specifically addressed to or from Nelson A. Rockefeller, or is referred to in a document addressed to him, it should not be assumed that he saw the document or was aware of its existence or substance. Furthermore, researchers should keep in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\nThis collection documents portions of Nelson A. Rockefeller's public life from 1958 to 1977. Hugh Morrow was a member of the executive staff during Rockefeller's terms as Governor of New York and subsequently U.S. Vice President.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "bc02f95ea048f76bc442ba3e8a9a6812",
-            "label": "Immediate Source of Acquisition note",
-            "type": "acqinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "This collection was donated to the Rockefeller Archive Center in 2004.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3a9556a5ab456adb13e2dc926ac8b4a4",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 15 21.2\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9e9536067bcaebfa36508a303dba6357",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2d2749619db44c03d62638c55c12680a",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA353/overview\">Nelson A. Rockefeller Gubernatorial Records, Appointments Office (FA353)</extref>\n\n<extref href=\"../FA354/overview\">Nelson A. Rockefeller Gubernatorial Records, Assembly and Senate Memos (FA354)</extref>\n\n<extref href=\"../FA355/overview\">Nelson A. Rockefeller Gubernatorial Records, Joseph H. Boyd (FA355)</extref>\n\n<extref href=\"../FA356/overview\">Nelson A. Rockefeller Gubernatorial Records, James Cannon (FA356)</extref>\n\n<extref href=\"../FA357/overview\">Nelson A. Rockefeller Gubernatorial Records, Affirmative Action (N. Lee Cook) (FA357)</extref>\n\n<extref href=\"../FA358/overview\">Nelson A. Rockefeller Gubernatorial Records, Counsel's Office (FA358)</extref>\n\n<extref href=\"../FA359/overview\">Nelson A. Rockefeller Gubernatorial Records, New York State Committee to Reelect the President (FA359)</extref>\n\n<extref href=\"../FA360/overview\">Nelson A. Rockefeller Gubernatorial Records, Jerry A. Danzig (FA360)</extref>\n\n<extref href=\"../FA361/overview\">Nelson A. Rockefeller Gubernatorial Records, Executive Chamber (FA361)</extref>\n\n<extref href=\"../FA362/overview\">Nelson A. Rockefeller Gubernatorial Records, 55th Street (FA362)</extref>\n\n<extref href=\"../FA363/overview\">Nelson A. Rockefeller Gubernatorial Records, Issue Books (FA363)</extref>\n\n<extref href=\"../FA364/overview\">Nelson A. Rockefeller Gubernatorial Records, Arthur Massolo (FA364)</extref>\n\n<extref href=\"../FA365/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Office (FA365)</extref>\n\n<extref href=\"../FA366/overview\">Nelson A. Rockefeller Gubernatorial Records, Civil Service Resolutions (Charles H. Palmer) (FA366)</extref>\n\n<extref href=\"../FA367/overview\">Nelson A. Rockefeller Gubernatorial Records, Political Files (FA367)</extref>\n\n<extref href=\"../FA368/overview\">Nelson A. Rockefeller Gubernatorial Records, Press Office (FA368)</extref>\n\n<extref href=\"../FA369/overview\">Nelson A. Rockefeller Gubernatorial Records, Public Relations (FA369)</extref>\n\n<extref href=\"../FA370/overview\">Nelson A. Rockefeller Gubernatorial Records, Departmental Reports (FA370)</extref>\n\n<extref href=\"../FA371/overview\">Nelson A. Rockefeller Gubernatorial Records, William J. Ronan (FA371)</extref>\n\n<extref href=\"../FA372/overview\">Nelson A. Rockefeller Gubernatorial Records, Speeches (FA372)</extref>\n\n<extref href=\"../FA373/overview\">Nelson A. Rockefeller Gubernatorial Records, Diane Van Wie (FA373)</extref>\n\n<extref href=\"../FA374/overview\">Nelson A. Rockefeller Gubernatorial Records, Ann C. Whitman, Gubernatorial (FA374)</extref>\n\n<extref href=\"../FA375/overview\">Nelson A. Rockefeller Gubernatorial Records, Gene Wyckoff (FA375)</extref>\n\n<extref href=\"../FA376/overview\">Nelson A. Rockefeller Gubernatorial Records, New York Republican State Fund Raising Reports (FA376)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d63b0a191124be72349291eb5c112482",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller gubernatorial records, Hugh Morrow, Series 21",
+    "tree": {
+        "ref": "/repositories/2/resources/445/tree"
+    },
     "uri": "/repositories/2/resources/445",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-18T20:44:53Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-18T20:44:53Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3734",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/445"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2010-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-18T20:44:53Z",
-        "system_mtime": "2016-10-18T20:44:53Z",
-        "user_mtime": "2016-10-18T20:44:53Z",
+        "created_by": "battalb",
+        "date_2": "2010-12-31",
         "enum_1": "3 - Standard",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-18T20:44:53Z",
+        "user_mtime": "2016-10-18T20:44:53Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/445/tree"
-    }
+    "user_mtime": "2016-10-18T20:44:53Z"
 }

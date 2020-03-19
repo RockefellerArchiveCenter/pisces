@@ -1,154 +1,154 @@
 {
-    "lock_version": 272,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "pgalligan",
-    "create_time": "2014-12-06T02:42:14Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2015-08-25T14:25:51Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2015-08-25T14:25:52Z",
+            "created_by": "pgalligan",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "pgalligan",
             "lock_version": 0,
             "name": "Whitman",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:25:52Z",
             "system_mtime": "2015-08-25T14:25:52Z",
-            "user_mtime": "2015-08-25T14:25:52Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2015-08-25T14:25:52Z"
         }
     ],
+    "agent_type": "agent_person",
+    "create_time": "2014-12-06T02:42:14Z",
+    "created_by": "admin",
+    "dates_of_existence": [
+        {
+            "create_time": "2015-08-25T14:25:52Z",
+            "created_by": "pgalligan",
+            "date_type": "single",
+            "expression": "1908-",
+            "jsonmodel_type": "date",
+            "label": "existence",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "system_mtime": "2015-08-25T14:25:52Z",
+            "user_mtime": "2015-08-25T14:25:52Z"
+        }
+    ],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2015-08-25T14:25:52Z",
+        "created_by": "pgalligan",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "pgalligan",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Whitman",
+        "rest_of_name": "Ann",
+        "rules": "dacs",
+        "sort_name": "Whitman, Ann",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2015-08-25T14:25:52Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "pgalligan",
     "linked_agent_roles": [
         "creator",
         "subject"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [
-        {
-            "lock_version": 0,
-            "expression": "1908-",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:25:52Z",
-            "system_mtime": "2015-08-25T14:25:52Z",
-            "user_mtime": "2015-08-25T14:25:52Z",
-            "date_type": "single",
-            "label": "existence",
-            "jsonmodel_type": "date"
-        }
-    ],
+    "lock_version": 272,
     "names": [
         {
+            "authorized": true,
+            "create_time": "2015-08-25T14:25:52Z",
+            "created_by": "pgalligan",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "pgalligan",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Whitman",
             "rest_of_name": "Ann",
+            "rules": "dacs",
             "sort_name": "Whitman, Ann",
             "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:25:52Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2015-08-25T14:25:52Z",
-            "authorized": true,
-            "is_display_name": true,
             "source": "naf",
-            "rules": "dacs",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2015-08-25T14:25:52Z"
         },
         {
+            "authorized": false,
+            "create_time": "2015-08-25T14:25:52Z",
+            "created_by": "pgalligan",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "pgalligan",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Cook",
             "rest_of_name": "Ann Elizabeth",
             "sort_name": "Cook, Ann Elizabeth",
             "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:25:52Z",
             "system_mtime": "2015-08-25T14:25:52Z",
-            "user_mtime": "2015-08-25T14:25:52Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [
                 {
-                    "lock_version": 0,
-                    "expression": "1908-",
-                    "created_by": "pgalligan",
-                    "last_modified_by": "pgalligan",
                     "create_time": "2015-08-25T14:25:52Z",
-                    "system_mtime": "2015-08-25T14:25:52Z",
-                    "user_mtime": "2015-08-25T14:25:52Z",
+                    "created_by": "pgalligan",
                     "date_type": "single",
+                    "expression": "1908-",
+                    "jsonmodel_type": "date",
                     "label": "usage",
-                    "jsonmodel_type": "date"
+                    "last_modified_by": "pgalligan",
+                    "lock_version": 0,
+                    "system_mtime": "2015-08-25T14:25:52Z",
+                    "user_mtime": "2015-08-25T14:25:52Z"
                 }
             ],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2015-08-25T14:25:52Z"
         },
         {
+            "authorized": false,
+            "create_time": "2015-08-25T14:25:52Z",
+            "created_by": "pgalligan",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "pgalligan",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Moore",
             "rest_of_name": "Ann",
             "sort_name": "Moore, Ann",
             "sort_name_auto_generate": true,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2015-08-25T14:25:52Z",
             "system_mtime": "2015-08-25T14:25:52Z",
-            "user_mtime": "2015-08-25T14:25:52Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [
                 {
-                    "lock_version": 0,
-                    "expression": "1908-",
-                    "created_by": "pgalligan",
-                    "last_modified_by": "pgalligan",
                     "create_time": "2015-08-25T14:25:52Z",
-                    "system_mtime": "2015-08-25T14:25:52Z",
-                    "user_mtime": "2015-08-25T14:25:52Z",
+                    "created_by": "pgalligan",
                     "date_type": "single",
+                    "expression": "1908-",
+                    "jsonmodel_type": "date",
                     "label": "usage",
-                    "jsonmodel_type": "date"
+                    "last_modified_by": "pgalligan",
+                    "lock_version": 0,
+                    "system_mtime": "2015-08-25T14:25:52Z",
+                    "user_mtime": "2015-08-25T14:25:52Z"
                 }
             ],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2015-08-25T14:25:52Z"
         }
     ],
+    "notes": [],
+    "publish": true,
     "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Whitman, Ann",
     "uri": "/agents/people/529",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Whitman",
-        "rest_of_name": "Ann",
-        "sort_name": "Whitman, Ann",
-        "sort_name_auto_generate": true,
-        "created_by": "pgalligan",
-        "last_modified_by": "pgalligan",
-        "create_time": "2015-08-25T14:25:52Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2015-08-25T14:25:52Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "rules": "dacs",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Whitman, Ann"
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-08-25T14:25:51Z"
 }

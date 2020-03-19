@@ -1,37 +1,676 @@
 {
-    "lock_version": 9,
-    "title": "Nelson A. Rockefeller papers, Speeches, Post-Vice Presidential, Series M",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA349.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller personal papers, Speeches, Post-Vice Presidential, Series M\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) personal papers, Speeches, Post-Vice Presidential, Series M",
-    "finding_aid_date": "1996",
-    "finding_aid_author": "John LeGloahec",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T09:44:14Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T14:06:54Z",
-    "suppressed": false,
-    "id_0": "FA349",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2167",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:06:54Z",
-            "system_mtime": "2016-10-22T14:06:54Z",
-            "user_mtime": "2016-10-22T14:06:54Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 295895,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295895",
+            "title": "January 5, 1977, January 5, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295896,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295896",
+            "title": "January 5, 1977, January 5, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295897,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295897",
+            "title": "January 12, 1977; January 13, 1977, January 12, 1977; January 13, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295898,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295898",
+            "title": "January 18, 1977, January 18, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295899,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295899",
+            "title": "January 29, 1977, January 29, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295900,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295900",
+            "title": "March 16, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295901,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295901",
+            "title": "March 18-30, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295902,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295902",
+            "title": "April 12, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295903,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295903",
+            "title": "May 9, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295904,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295904",
+            "title": "June 2, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295905,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295905",
+            "title": "June 16, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295906,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295906",
+            "title": "August 30, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295907,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295907",
+            "title": "September 13, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295908,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295908",
+            "title": "October 2, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295909,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295909",
+            "title": "October 14, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295910,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295910",
+            "title": "October 26, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295911,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295911",
+            "title": "December 16, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 295912,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295912",
+            "title": "March 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295913,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295913",
+            "title": "March 13, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295914,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295914",
+            "title": "March 28, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295915,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295915",
+            "title": "April 14, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295916,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295916",
+            "title": "May 8, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295917,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295917",
+            "title": "May 25, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295918,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295918",
+            "title": "May 26, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295919,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295919",
+            "title": "May 27, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295920,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295920",
+            "title": "June 5, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295921,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295921",
+            "title": "June 8, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295922,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295922",
+            "title": "July 13, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295923,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295923",
+            "title": "July 25, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295924,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295924",
+            "title": "August 25, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295925,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295925",
+            "title": "September 7, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295926,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295926",
+            "title": "September 20, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295927,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295927",
+            "title": "September 25, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295928,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295928",
+            "title": "October 3, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295929,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295929",
+            "title": "October 3, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295930,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295930",
+            "title": "October 6, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295931,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295931",
+            "title": "October 26, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295932,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295932",
+            "title": "November 15, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 295933,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295933",
+            "title": "January 17, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295934,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295934",
+            "title": "January 26, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295935,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295935",
+            "title": "January 27, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295936,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295936",
+            "title": "January 27, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295937,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295937",
+            "title": "January 27, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295938,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295938",
+            "title": "January 27, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295939,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295939",
+            "title": "January 29, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295940,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295940",
+            "title": "January 29, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295941,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295941",
+            "title": "February 2, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295942,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295942",
+            "title": "February 2, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295943,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295943",
+            "title": "February 2, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295944,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295944",
+            "title": "February 2, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295945,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295945",
+            "title": "February 2, 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 295946,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/295946",
+            "title": "February 9, 1979",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T14:06:54Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/548"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3835",
+        "user_mtime": "2016-10-22T14:06:54Z"
+    },
+    "create_time": "2014-12-06T09:44:14Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1977",
+            "create_time": "2016-10-22T14:06:54Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1979",
+            "expression": "1977-1979",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T14:06:54Z",
+            "user_mtime": "2016-10-22T14:06:54Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA349.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T14:06:54Z",
+            "created_by": "battalb",
+            "extent_type": "document box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "4",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T14:06:54Z",
+            "user_mtime": "2016-10-22T14:06:54Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T14:06:54Z",
+            "created_by": "battalb",
+            "external_id": "2167",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T14:06:54Z",
+            "user_mtime": "2016-10-22T14:06:54Z"
+        }
+    ],
+    "finding_aid_author": "John LeGloahec",
+    "finding_aid_date": "1996",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) personal papers, Speeches, Post-Vice Presidential, Series M",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller personal papers, Speeches, Post-Vice Presidential, Series M\n",
+    "id_0": "FA349",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/346",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/9",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/11",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/52",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/62",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/179",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/182",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/families/1",
+            "role": "subject",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 9,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "7a048eafc29444131997af9ab4d2850f",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson Aldrich Rockefeller was born on July 8, 1908, in Bar Harbor, Maine, the third child of John Davison Rockefeller, Jr., and Abby Aldrich Rockefeller. He graduated from the Lincoln School of Teachers College at Columbia University in New York City in 1926. Mr. Rockefeller attended Dartmouth College where he was elected to Phi Beta Kappa, graduating cum laude in 1930 with an A.B. degree in economics.\n\nAfter college, Mr. Rockefeller was active in family enterprises, including real estate, banking, and family philanthropies. His major business interests in time became focused on Rockefeller Center and Latin America. In 1938, he became the president of Rockefeller Center.\n\nIn 1935, because of his interest in national affairs and his desire to learn about U.S. business abroad, Mr. Rockefeller became a director of Creole Petroleum Company, the Venezuelan subsidiary of Standard Oil of New Jersey. This association led eventually to his deep, life-long interest in Latin America. He made extensive visits to Latin America in 1937 and 1939 to study economic, social, and political conditions. He resigned his directorship in the Creole Petroleum Company in 1940.\n\nIn 1940, Mr. Rockefeller and his four brothers organized the Rockefeller Brothers Fund to carry out a broad range of philanthropic activities.\n\nThroughout his life Mr. Rockefeller was an avid supporter of the arts. He served as a trustee, treasurer, president, and chair of the board of the Museum of Modern Art, which was cofounded by his mother. In 1954, he founded the Museum of Primitive Art, which collected of indigenous art of the Americas, Africa, Oceania, and early Asia and Europe.\n\nAfter his 1939 visit to Latin America, Mr. Rockefeller prepared a memorandum for President Franklin D. Roosevelt outlining his deep concern over Nazi influence and penetration into that part of the world. In the memo he recommended a U.S. program of cooperation with the nations of the western hemisphere to achieve better relations among these nations and to help raise their standards of living. Largely as a result of this memo, President Roosevelt asked Mr. Rockefeller in August of 1940 to initiate and head a new program ultimately known as the Office of Inter-American Affairs. Mr. Rockefeller served as Coordinator of Inter-American Affairs, his first full-time position in public service.\n\nMr. Rockefeller served in this position until December 1944, when President Roosevelt appointed him Assistant Secretary of State for American Republic Affairs. In this post, Mr. Rockefeller initiated the Inter-American Conference on Problems of War and Peace in Mexico City in February of 1945. It resulted in the Act of Chapultepec, which provided the framework for economic, social, and defense cooperation among the nations of the western hemisphere and set the principle that an attack on one of these nations would be regarded as an attack on all and jointly resisted.\n\nMr. Rockefeller signed the Act of Chapultepec on behalf of the United States. He also attended the United Nations Conference on International Organization in San Francisco in 1945. At the conference, there was considerable opposition to the idea of permitting, within the UN Charter, the formation of regional pacts such as the Act of Chapultepec. Mr. Rockefeller, who believed that the inclusion was essential, especially to U.S. policy in Latin America, successfully argued the need for regional pacts within the framework of the United Nations. The importance of this victory was underscored by the subsequent formation of NATO, SEATO, and the Rio Pact.\n\nDuring these war-time years, Mr. Rockefeller also served as Chairman of the Inter-American Development Commission, which was established in June 1940 to reorganize and revitalize Latin American economies following the loss of European markets. He was also the U.S. Co-Chairman of the Mexican-American Development Commission to help Mexico emerge as an industrial nation in the transition from war to peace.\n\nMr. Rockefeller resigned as Assistant Secretary of State on August 24, 1945.\n\nUpon his return to private life in New York in 1946, Mr. Rockefeller became chair of the board of Rockefeller Center and undertook a program of physical expansion. Two other initiatives during this period illustrate Mr. Rockefeller's continuing interest in Latin America and international economic development. In July of 1946, the Rockefeller brothers established a philanthropic organization, the American International Association for Economic and Social Development (AIA). AIA financed nonprofit projects to ameliorate health, educational, agricultural, and other social problems in the poorer areas of Latin America. Nelson Rockefeller served as President from July 1946 to June 1953 and from January 1957 to December 1958. In 1947, he organized the International Basic Economy Corporation (IBEC), a business corporation to help raise living standards in foreign countries through new economic enterprises. In its early years, IBEC concentrated on enterprises in Latin America but later expanded its activities to other regions. Mr. Rockefeller served as IBEC President from January 1947 to June 1953 and from January 1956 to December 1958.\n\nIn his inaugural address in January 1949, President Harry S. Truman announced the Point IV program for providing technical assistance to developing nations. This concept was based in part on programs Mr. Rockefeller and his associates had developed through the Office of the Coordinator of Inter-American Affairs and the private, philanthropic AIA. In November of 1950, President Truman asked Mr. Rockefeller to serve as Chairman of the International Development Advisory Board. The Board was charged with recommending policies for carrying out the Point IV program. The Board's report, entitled \"Partners in Progress,\" provided the basic blueprint for America's foreign assistance program.\n\nOn November 20, 1952, President-elect Dwight D. Eisenhower asked Mr. Rockefeller to serve as Chairman of the President's Advisory Committee on Government Organization, a group created to recommend ways to improve the efficiency of the executive branch of the government. As Chairman of that committee, Mr. Rockefeller recommended 13 reorganization plans to the President, 10 of which were approved by Congress. These plans achieved basic changes in the organization of the Department of Defense, the Department of Agriculture, and the Office of Defense Mobilization, among others. Another of the plans led to the establishment of the Department of Health, Education, and Welfare. In June 1953, Mr. Rockefeller was appointed Under Secretary of the new department. He was especially active in the department's legislative program, recommending measures that covered an additional ten million people under the Social Security program. He resigned as HEW Under Secretary in 1954 to become Special Assistant to the President for Foreign Affairs.\n\nWhile serving as Special Assistant, Mr. Rockefeller played a key role in the development of the \"Open Skies\" proposal for checking on world armaments through mutual air reconnaissance. He accompanied President Eisenhower to the Geneva Summit Conference in 1955, where the plan was proposed to the world by the President. Mr. Rockefeller resigned as Special Assistant on December 31, 1955.\n\nMr. Rockefeller first ran for public office in 1958 and was elected Governor of New York on November 4, defeating incumbent Averill Harriman. He took office January 1, 1959, and was subsequently re-elected Governor three more times, thus becoming the first Governor in the nation's history to be elected to four 4-year terms.\n\nNelson Rockefeller's tenure as a public servant in the federal government was a formative period in his life. By the time he left Washington to assume the governorship of New York, he had received a thorough education in the workings of the federal government. His chairmanship of PACGO permitted him to examine every aspect of the executive branch. This and his work in HEW exposed him to a wide variety of domestic issues. He gained experience in initiating legislation, in foreign policy and diplomacy, in domestic and international economics, and in national security and military affairs. In the process he also received an education in national politics and gained a reputation for being an effective and hardworking administrator. Most importantly, these appointments provided him with the opportunity to form the friendships and personal associations that served him throughout his political career.\n\nMr. Rockefeller resigned as Governor of New York in December 1973. In August 1974, President Gerald R. Ford nominated him to fill the vacant vice presidency following the resignation of President Richard M. Nixon. Mr. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977. Nelson Rockefeller died on January 26, 1979, in New York City.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "7543e1340f7e62d2e8649520f73a7d37",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "43add1e1954f430660eb01411a353f1a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 04 M\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "b2398bbc93d96a073bd8a06d18ae62f4",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "9bd8275e5605dfa73d931438fa9c4309",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "d7e66af45c7a6c5a3adeaec48b03c466",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "0410b12102ed503cd761752f8d1d56d1",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The series is arranged chronologically by date of the speech.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "b4ae3883a95db9ef9847e498acf319b5",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This speech file was maintained by Hugh Morrow, Nelson Rockefeller's press secretary. Mr. Morrow was a speech writer for Mr. Rockefeller during his first term as Governor of New York and became his press secretary beginning with his second term in 1963. Mr. Morrow served Mr. Rockefeller throughout his term as Vice President and during his years as a private citizen before and after the Vice Presidency.\n\nThis collection of speeches and press releases reflects Rockefeller's transition from public official to a private citizen and offers some insight to his public activities during the last two years of his life. Mr. Rockefeller maintained his reputation as a knowledgeable and outspoken observer of politics and foreign affairs by accepting invitations to speak before political, civic, and private groups. He addressed issues such as the energy crisis, Soviet expansion, national security, and peace in the Middle East. After returning to private life, Mr. Rockefeller also indulged his passion for art by establishing two related businesses. The first was an art reproduction company, called the Nelson Rockefeller Collection, Inc. (NRC); the second was an art book publishing business, called Nelson Rockefeller Publications, Inc. This series includes press releases announcing the establishment and development of these two ventures. At Mr. Morrow's suggestion, Nelson Rockefeller began to cultivate a public image as an art dealer and art expert by accepting invitations to give lectures on art. Transcripts for two such lectures, on December 16, 1977, and November 15, 1978, are included. There is also a tape recording of the first one.\n\nThis series begins with files of some public remarks Mr. Rockefeller made during the last days of the Ford Administration in January 1977 and concludes with press releases on the memorial services after Rockefeller's death on January 26, 1979. The speech files contain one or more of four different versions of each speech: draft, reading copy, transcript, or press release. The folder descriptions list which versions exist for each speech. Drafts and reading copies are likely to include Mr. Rockefeller's handwritten changes and notations. A transcript is a verbatim record of the remarks, presumably made from a tape recording. For each speech, Mr. Morrow's office usually issued a press release containing excerpts of Mr. Rockefeller's remarks. Some files contain correspondence, schedules, or background information on the event at which the speech was given.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "e9de5fc9282f456ddc9b071d9a2eb05d",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec January 1996\n\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "c4eef9ad64f75855c499a18810c8171c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA338/overview\">Nelson A. Rockefeller papers, Activities (FA338)</extref>\n\n<extref href=\"../FA339/overview\">Nelson A. Rockefeller Papers, AIA-IBEC (FA339)</extref>\n\n<extref href=\"../FA340/overview\">Nelson A. Rockefeller Papers, Art (FA340)</extref>\n\n<extref href=\"../FA341/overview\">Nelson A. Rockefeller Papers, Countries (FA341)</extref>\n\n<extref href=\"../FA342/overview\">Nelson A. Rockefeller Papers, DNA (FA342)</extref>\n\n<extref href=\"../FA343/overview\">Nelson A. Rockefeller Papers, Family and Friends (FA343)</extref>\n\n<extref href=\"../FA344/overview\">Nelson A. Rockefeller Papers, Oral Histories (FA344)</extref>\n\n<extref href=\"../FA345/overview\">Nelson A. Rockefeller Papers, Politics - New York City Office (FA345)</extref>\n\n<extref href=\"../FA346/overview\">Nelson A. Rockefeller Papers, Politics - George L. Hinman (FA346)</extref>\n\n<extref href=\"../FA347/overview\">Nelson A. Rockefeller Papers, Politics - Oscar M. Ruebhausen (FA347)</extref>\n\n<extref href=\"../FA348/overview\">Nelson A. Rockefeller Papers, Projects (FA348)</extref>\n\n<extref href=\"../FA350/overview\">Nelson A. Rockefeller Papers, Washington, DC (FA350)</extref>\n\n<extref href=\"../FA351/overview\">Nelson A. Rockefeller Papers, Ann C. Whitman - Politics (FA351)</extref>\n\n<extref href=\"../FA352/overview\">Nelson A. Rockefeller Papers, Hugh Morrow Interviews (FA352)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T14:06:54Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>13 February 2012</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T14:06:54Z",
+            "uri": "/revision_statement/3001",
+            "user_mtime": "2016-10-22T14:06:54Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/541"
@@ -157,301 +796,29 @@
             "ref": "/subjects/354"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "4",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:06:54Z",
-            "system_mtime": "2016-10-22T14:06:54Z",
-            "user_mtime": "2016-10-22T14:06:54Z",
-            "portion": "whole",
-            "extent_type": "document box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1977-1979",
-            "begin": "1977",
-            "end": "1979",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:06:54Z",
-            "system_mtime": "2016-10-22T14:06:54Z",
-            "user_mtime": "2016-10-22T14:06:54Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/people/346"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/9"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/11"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/52"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/62"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/179"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/182"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/families/1"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>13 February 2012</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:06:54Z",
-            "system_mtime": "2016-10-22T14:06:54Z",
-            "user_mtime": "2016-10-22T14:06:54Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3001",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7a048eafc29444131997af9ab4d2850f",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson Aldrich Rockefeller was born on July 8, 1908, in Bar Harbor, Maine, the third child of John Davison Rockefeller, Jr., and Abby Aldrich Rockefeller. He graduated from the Lincoln School of Teachers College at Columbia University in New York City in 1926. Mr. Rockefeller attended Dartmouth College where he was elected to Phi Beta Kappa, graduating cum laude in 1930 with an A.B. degree in economics.\n\nAfter college, Mr. Rockefeller was active in family enterprises, including real estate, banking, and family philanthropies. His major business interests in time became focused on Rockefeller Center and Latin America. In 1938, he became the president of Rockefeller Center.\n\nIn 1935, because of his interest in national affairs and his desire to learn about U.S. business abroad, Mr. Rockefeller became a director of Creole Petroleum Company, the Venezuelan subsidiary of Standard Oil of New Jersey. This association led eventually to his deep, life-long interest in Latin America. He made extensive visits to Latin America in 1937 and 1939 to study economic, social, and political conditions. He resigned his directorship in the Creole Petroleum Company in 1940.\n\nIn 1940, Mr. Rockefeller and his four brothers organized the Rockefeller Brothers Fund to carry out a broad range of philanthropic activities.\n\nThroughout his life Mr. Rockefeller was an avid supporter of the arts. He served as a trustee, treasurer, president, and chair of the board of the Museum of Modern Art, which was cofounded by his mother. In 1954, he founded the Museum of Primitive Art, which collected of indigenous art of the Americas, Africa, Oceania, and early Asia and Europe.\n\nAfter his 1939 visit to Latin America, Mr. Rockefeller prepared a memorandum for President Franklin D. Roosevelt outlining his deep concern over Nazi influence and penetration into that part of the world. In the memo he recommended a U.S. program of cooperation with the nations of the western hemisphere to achieve better relations among these nations and to help raise their standards of living. Largely as a result of this memo, President Roosevelt asked Mr. Rockefeller in August of 1940 to initiate and head a new program ultimately known as the Office of Inter-American Affairs. Mr. Rockefeller served as Coordinator of Inter-American Affairs, his first full-time position in public service.\n\nMr. Rockefeller served in this position until December 1944, when President Roosevelt appointed him Assistant Secretary of State for American Republic Affairs. In this post, Mr. Rockefeller initiated the Inter-American Conference on Problems of War and Peace in Mexico City in February of 1945. It resulted in the Act of Chapultepec, which provided the framework for economic, social, and defense cooperation among the nations of the western hemisphere and set the principle that an attack on one of these nations would be regarded as an attack on all and jointly resisted.\n\nMr. Rockefeller signed the Act of Chapultepec on behalf of the United States. He also attended the United Nations Conference on International Organization in San Francisco in 1945. At the conference, there was considerable opposition to the idea of permitting, within the UN Charter, the formation of regional pacts such as the Act of Chapultepec. Mr. Rockefeller, who believed that the inclusion was essential, especially to U.S. policy in Latin America, successfully argued the need for regional pacts within the framework of the United Nations. The importance of this victory was underscored by the subsequent formation of NATO, SEATO, and the Rio Pact.\n\nDuring these war-time years, Mr. Rockefeller also served as Chairman of the Inter-American Development Commission, which was established in June 1940 to reorganize and revitalize Latin American economies following the loss of European markets. He was also the U.S. Co-Chairman of the Mexican-American Development Commission to help Mexico emerge as an industrial nation in the transition from war to peace.\n\nMr. Rockefeller resigned as Assistant Secretary of State on August 24, 1945.\n\nUpon his return to private life in New York in 1946, Mr. Rockefeller became chair of the board of Rockefeller Center and undertook a program of physical expansion. Two other initiatives during this period illustrate Mr. Rockefeller's continuing interest in Latin America and international economic development. In July of 1946, the Rockefeller brothers established a philanthropic organization, the American International Association for Economic and Social Development (AIA). AIA financed nonprofit projects to ameliorate health, educational, agricultural, and other social problems in the poorer areas of Latin America. Nelson Rockefeller served as President from July 1946 to June 1953 and from January 1957 to December 1958. In 1947, he organized the International Basic Economy Corporation (IBEC), a business corporation to help raise living standards in foreign countries through new economic enterprises. In its early years, IBEC concentrated on enterprises in Latin America but later expanded its activities to other regions. Mr. Rockefeller served as IBEC President from January 1947 to June 1953 and from January 1956 to December 1958.\n\nIn his inaugural address in January 1949, President Harry S. Truman announced the Point IV program for providing technical assistance to developing nations. This concept was based in part on programs Mr. Rockefeller and his associates had developed through the Office of the Coordinator of Inter-American Affairs and the private, philanthropic AIA. In November of 1950, President Truman asked Mr. Rockefeller to serve as Chairman of the International Development Advisory Board. The Board was charged with recommending policies for carrying out the Point IV program. The Board's report, entitled \"Partners in Progress,\" provided the basic blueprint for America's foreign assistance program.\n\nOn November 20, 1952, President-elect Dwight D. Eisenhower asked Mr. Rockefeller to serve as Chairman of the President's Advisory Committee on Government Organization, a group created to recommend ways to improve the efficiency of the executive branch of the government. As Chairman of that committee, Mr. Rockefeller recommended 13 reorganization plans to the President, 10 of which were approved by Congress. These plans achieved basic changes in the organization of the Department of Defense, the Department of Agriculture, and the Office of Defense Mobilization, among others. Another of the plans led to the establishment of the Department of Health, Education, and Welfare. In June 1953, Mr. Rockefeller was appointed Under Secretary of the new department. He was especially active in the department's legislative program, recommending measures that covered an additional ten million people under the Social Security program. He resigned as HEW Under Secretary in 1954 to become Special Assistant to the President for Foreign Affairs.\n\nWhile serving as Special Assistant, Mr. Rockefeller played a key role in the development of the \"Open Skies\" proposal for checking on world armaments through mutual air reconnaissance. He accompanied President Eisenhower to the Geneva Summit Conference in 1955, where the plan was proposed to the world by the President. Mr. Rockefeller resigned as Special Assistant on December 31, 1955.\n\nMr. Rockefeller first ran for public office in 1958 and was elected Governor of New York on November 4, defeating incumbent Averill Harriman. He took office January 1, 1959, and was subsequently re-elected Governor three more times, thus becoming the first Governor in the nation's history to be elected to four 4-year terms.\n\nNelson Rockefeller's tenure as a public servant in the federal government was a formative period in his life. By the time he left Washington to assume the governorship of New York, he had received a thorough education in the workings of the federal government. His chairmanship of PACGO permitted him to examine every aspect of the executive branch. This and his work in HEW exposed him to a wide variety of domestic issues. He gained experience in initiating legislation, in foreign policy and diplomacy, in domestic and international economics, and in national security and military affairs. In the process he also received an education in national politics and gained a reputation for being an effective and hardworking administrator. Most importantly, these appointments provided him with the opportunity to form the friendships and personal associations that served him throughout his political career.\n\nMr. Rockefeller resigned as Governor of New York in December 1973. In August 1974, President Gerald R. Ford nominated him to fill the vacant vice presidency following the resignation of President Richard M. Nixon. Mr. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977. Nelson Rockefeller died on January 26, 1979, in New York City.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7543e1340f7e62d2e8649520f73a7d37",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "43add1e1954f430660eb01411a353f1a",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 04 M\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "b2398bbc93d96a073bd8a06d18ae62f4",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9bd8275e5605dfa73d931438fa9c4309",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d7e66af45c7a6c5a3adeaec48b03c466",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "0410b12102ed503cd761752f8d1d56d1",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The series is arranged chronologically by date of the speech.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "b4ae3883a95db9ef9847e498acf319b5",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "This speech file was maintained by Hugh Morrow, Nelson Rockefeller's press secretary. Mr. Morrow was a speech writer for Mr. Rockefeller during his first term as Governor of New York and became his press secretary beginning with his second term in 1963. Mr. Morrow served Mr. Rockefeller throughout his term as Vice President and during his years as a private citizen before and after the Vice Presidency.\n\nThis collection of speeches and press releases reflects Rockefeller's transition from public official to a private citizen and offers some insight to his public activities during the last two years of his life. Mr. Rockefeller maintained his reputation as a knowledgeable and outspoken observer of politics and foreign affairs by accepting invitations to speak before political, civic, and private groups. He addressed issues such as the energy crisis, Soviet expansion, national security, and peace in the Middle East. After returning to private life, Mr. Rockefeller also indulged his passion for art by establishing two related businesses. The first was an art reproduction company, called the Nelson Rockefeller Collection, Inc. (NRC); the second was an art book publishing business, called Nelson Rockefeller Publications, Inc. This series includes press releases announcing the establishment and development of these two ventures. At Mr. Morrow's suggestion, Nelson Rockefeller began to cultivate a public image as an art dealer and art expert by accepting invitations to give lectures on art. Transcripts for two such lectures, on December 16, 1977, and November 15, 1978, are included. There is also a tape recording of the first one.\n\nThis series begins with files of some public remarks Mr. Rockefeller made during the last days of the Ford Administration in January 1977 and concludes with press releases on the memorial services after Rockefeller's death on January 26, 1979. The speech files contain one or more of four different versions of each speech: draft, reading copy, transcript, or press release. The folder descriptions list which versions exist for each speech. Drafts and reading copies are likely to include Mr. Rockefeller's handwritten changes and notations. A transcript is a verbatim record of the remarks, presumably made from a tape recording. For each speech, Mr. Morrow's office usually issued a press release containing excerpts of Mr. Rockefeller's remarks. Some files contain correspondence, schedules, or background information on the event at which the speech was given.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "e9de5fc9282f456ddc9b071d9a2eb05d",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec January 1996\n\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "c4eef9ad64f75855c499a18810c8171c",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA338/overview\">Nelson A. Rockefeller papers, Activities (FA338)</extref>\n\n<extref href=\"../FA339/overview\">Nelson A. Rockefeller Papers, AIA-IBEC (FA339)</extref>\n\n<extref href=\"../FA340/overview\">Nelson A. Rockefeller Papers, Art (FA340)</extref>\n\n<extref href=\"../FA341/overview\">Nelson A. Rockefeller Papers, Countries (FA341)</extref>\n\n<extref href=\"../FA342/overview\">Nelson A. Rockefeller Papers, DNA (FA342)</extref>\n\n<extref href=\"../FA343/overview\">Nelson A. Rockefeller Papers, Family and Friends (FA343)</extref>\n\n<extref href=\"../FA344/overview\">Nelson A. Rockefeller Papers, Oral Histories (FA344)</extref>\n\n<extref href=\"../FA345/overview\">Nelson A. Rockefeller Papers, Politics - New York City Office (FA345)</extref>\n\n<extref href=\"../FA346/overview\">Nelson A. Rockefeller Papers, Politics - George L. Hinman (FA346)</extref>\n\n<extref href=\"../FA347/overview\">Nelson A. Rockefeller Papers, Politics - Oscar M. Ruebhausen (FA347)</extref>\n\n<extref href=\"../FA348/overview\">Nelson A. Rockefeller Papers, Projects (FA348)</extref>\n\n<extref href=\"../FA350/overview\">Nelson A. Rockefeller Papers, Washington, DC (FA350)</extref>\n\n<extref href=\"../FA351/overview\">Nelson A. Rockefeller Papers, Ann C. Whitman - Politics (FA351)</extref>\n\n<extref href=\"../FA352/overview\">Nelson A. Rockefeller Papers, Hugh Morrow Interviews (FA352)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller papers, Speeches, Post-Vice Presidential, Series M",
+    "tree": {
+        "ref": "/repositories/2/resources/548/tree"
+    },
     "uri": "/repositories/2/resources/548",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T14:06:54Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T14:06:54Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3835",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/548"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-22T14:06:54Z",
-        "system_mtime": "2016-10-22T14:06:54Z",
-        "user_mtime": "2016-10-22T14:06:54Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
         "enum_1": "2 - Minimal",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-22T14:06:54Z",
+        "user_mtime": "2016-10-22T14:06:54Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/548/tree"
-    }
+    "user_mtime": "2016-10-22T14:06:54Z"
 }

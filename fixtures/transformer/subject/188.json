@@ -1,49 +1,49 @@
 {
-    "lock_version": 124,
-    "title": "Environmental sciences",
-    "created_by": "admin",
-    "last_modified_by": "admin",
     "create_time": "2014-12-06T02:30:01Z",
-    "system_mtime": "2019-03-08T17:57:17Z",
-    "user_mtime": "2014-12-06T02:30:01Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "admin",
+    "external_documents": [],
     "external_ids": [
         {
-            "external_id": "224",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:30:01Z",
+            "created_by": "admin",
+            "external_id": "224",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::SUBJECT",
             "system_mtime": "2014-12-06T02:30:01Z",
-            "user_mtime": "2014-12-06T02:30:01Z",
-            "jsonmodel_type": "external_id"
+            "user_mtime": "2014-12-06T02:30:01Z"
         }
     ],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 124,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2019-03-08T17:57:17Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Environmental sciences",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:30:01Z",
-            "system_mtime": "2014-12-06T02:30:01Z",
-            "user_mtime": "2014-12-06T02:30:01Z",
-            "term_type": "topical",
+            "created_by": "admin",
             "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:30:01Z",
+            "term": "Environmental sciences",
+            "term_type": "topical",
             "uri": "/terms/194",
+            "user_mtime": "2014-12-06T02:30:01Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Environmental sciences",
     "uri": "/subjects/188",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:30:01Z",
+    "vocabulary": "/vocabularies/1"
 }

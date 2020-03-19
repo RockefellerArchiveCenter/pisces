@@ -1,66 +1,66 @@
 {
-    "lock_version": 21,
-    "publish": true,
-    "created_by": "dyoung",
-    "last_modified_by": "dyoung",
-    "create_time": "2017-06-23T19:38:14Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2017-06-23T19:38:14Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [],
+    "agent_type": "agent_person",
+    "create_time": "2017-06-23T19:38:14Z",
+    "created_by": "dyoung",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2017-06-23T19:38:14Z",
+        "created_by": "dyoung",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "dyoung",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Draper",
+        "rest_of_name": "Edgar D.",
+        "rules": "dacs",
+        "sort_name": "Draper, Edgar D.",
+        "sort_name_auto_generate": true,
+        "system_mtime": "2017-06-23T19:38:14Z",
+        "use_dates": [],
+        "user_mtime": "2017-06-23T19:38:14Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "dyoung",
     "linked_agent_roles": [
         "creator"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
+    "lock_version": 21,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2017-06-23T19:38:14Z",
+            "created_by": "dyoung",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "dyoung",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Draper",
+            "rest_of_name": "Edgar D.",
+            "rules": "dacs",
+            "sort_name": "Draper, Edgar D.",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2017-06-23T19:38:14Z",
+            "use_dates": [],
+            "user_mtime": "2017-06-23T19:38:14Z"
+        }
     ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Draper, Edgar D.",
+    "uri": "/agents/people/22936",
     "used_within_published_repositories": [
         "/repositories/2"
     ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Draper",
-            "rest_of_name": "Edgar D.",
-            "sort_name": "Draper, Edgar D.",
-            "sort_name_auto_generate": true,
-            "created_by": "dyoung",
-            "last_modified_by": "dyoung",
-            "create_time": "2017-06-23T19:38:14Z",
-            "system_mtime": "2017-06-23T19:38:14Z",
-            "user_mtime": "2017-06-23T19:38:14Z",
-            "authorized": true,
-            "is_display_name": true,
-            "rules": "dacs",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
-        }
+    "used_within_repositories": [
+        "/repositories/2"
     ],
-    "related_agents": [],
-    "uri": "/agents/people/22936",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Draper",
-        "rest_of_name": "Edgar D.",
-        "sort_name": "Draper, Edgar D.",
-        "sort_name_auto_generate": true,
-        "created_by": "dyoung",
-        "last_modified_by": "dyoung",
-        "create_time": "2017-06-23T19:38:14Z",
-        "system_mtime": "2017-06-23T19:38:14Z",
-        "user_mtime": "2017-06-23T19:38:14Z",
-        "authorized": true,
-        "is_display_name": true,
-        "rules": "dacs",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Draper, Edgar D."
+    "user_mtime": "2017-06-23T19:38:14Z"
 }

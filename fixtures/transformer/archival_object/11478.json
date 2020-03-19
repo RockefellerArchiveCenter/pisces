@@ -1,96 +1,93 @@
 {
-    "lock_version": 2,
-    "position": 3,
-    "publish": true,
-    "ref_id": "cc0a494427d4405db94c4770c2f4083d",
-    "title": "Portraits - Aitken, Thomas H. G.",
-    "display_string": "Portraits - Aitken, Thomas H. G.",
-    "restrictions_apply": false,
-    "created_by": "admin",
-    "last_modified_by": "pgalligan",
-    "create_time": "2014-12-06T03:43:22Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2017-06-12T17:02:08Z",
-    "suppressed": false,
-    "level": "file",
-    "jsonmodel_type": "archival_object",
-    "external_ids": [
-        {
-            "external_id": "730118",
-            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2017-06-12T17:02:08Z",
-            "system_mtime": "2017-06-12T17:02:08Z",
-            "user_mtime": "2017-06-12T17:02:08Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "circa 1905-1980",
-            "begin": "1905",
-            "end": "1980",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-10T12:39:02Z",
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [],
     "ancestors": [
         {
-            "ref": "/repositories/2/archival_objects/11474",
-            "level": "unspecified"
+            "level": "unspecified",
+            "ref": "/repositories/2/archival_objects/11474"
         },
         {
-            "ref": "/repositories/2/archival_objects/11440",
-            "level": "series"
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/11440"
         },
         {
-            "ref": "/repositories/2/resources/93",
-            "level": "collection"
+            "level": "collection",
+            "ref": "/repositories/2/resources/93"
         }
     ],
+    "children": [],
+    "create_time": "2014-12-06T03:43:22Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1905",
+            "create_time": "2019-10-10T12:39:02Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1980",
+            "expression": "circa 1905-1980",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z"
+        }
+    ],
+    "display_string": "Portraits - Aitken, Thomas H. G.",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2017-06-12T17:02:08Z",
+            "created_by": "pgalligan",
+            "external_id": "730118",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "pgalligan",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2017-06-12T17:02:08Z",
+            "user_mtime": "2017-06-12T17:02:08Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
     "instances": [
         {
-            "lock_version": 0,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
             "create_time": "2017-06-12T17:02:08Z",
-            "system_mtime": "2017-06-12T17:02:08Z",
-            "user_mtime": "2017-06-12T17:02:08Z",
+            "created_by": "pgalligan",
             "instance_type": "mixed materials",
-            "jsonmodel_type": "instance",
             "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
             "sub_container": {
-                "lock_version": 0,
-                "indicator_2": "37",
-                "created_by": "pgalligan",
-                "last_modified_by": "pgalligan",
                 "create_time": "2017-06-12T17:02:08Z",
-                "system_mtime": "2017-06-12T17:02:08Z",
-                "user_mtime": "2017-06-12T17:02:08Z",
-                "type_2": "folder",
+                "created_by": "pgalligan",
+                "indicator_2": "37",
                 "jsonmodel_type": "sub_container",
+                "last_modified_by": "pgalligan",
+                "lock_version": 0,
+                "system_mtime": "2017-06-12T17:02:08Z",
                 "top_container": {
                     "ref": "/repositories/2/top_containers/11133"
-                }
-            }
+                },
+                "type_2": "folder",
+                "user_mtime": "2017-06-12T17:02:08Z"
+            },
+            "system_mtime": "2017-06-12T17:02:08Z",
+            "user_mtime": "2017-06-12T17:02:08Z"
         }
     ],
+    "jsonmodel_type": "archival_object",
+    "language": "eng",
+    "last_modified_by": "pgalligan",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 2,
     "notes": [
         {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "9a2820fbee5bfe8c471612dd3f30b4c6",
+            "publish": true,
             "subnotes": [
                 {
                     "content": "Awards.\n\n",
@@ -98,23 +95,27 @@
                     "publish": true
                 }
             ],
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9a2820fbee5bfe8c471612dd3f30b4c6",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "publish": true
+            "type": "scopecontent"
         }
     ],
-    "uri": "/repositories/2/archival_objects/11478",
+    "parent": {
+        "ref": "/repositories/2/archival_objects/11474"
+    },
+    "position": 3,
+    "publish": true,
+    "ref_id": "cc0a494427d4405db94c4770c2f4083d",
     "repository": {
         "ref": "/repositories/2"
     },
     "resource": {
         "ref": "/repositories/2/resources/93"
     },
-    "parent": {
-        "ref": "/repositories/2/archival_objects/11474"
-    },
-    "has_unpublished_ancestor": false,
-    "language": "eng"
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Portraits - Aitken, Thomas H. G.",
+    "uri": "/repositories/2/archival_objects/11478",
+    "user_mtime": "2017-06-12T17:02:08Z"
 }

@@ -1,35 +1,298 @@
 {
-    "lock_version": 6,
-    "title": "Rockefeller Foundation records, field offices, Ankara, Turkey, RG 6, SG 19",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA399.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, Ankara, Turkey, RG 6, SG 19\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, Ankara, Turkey, RG 6, SG 19",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T11:09:00Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:59:12Z",
-    "suppressed": false,
-    "id_0": "FA399",
-    "language": "eng",
-    "level": "subgrp",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2240",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:59:12Z",
-            "system_mtime": "2016-10-22T19:59:12Z",
-            "user_mtime": "2016-10-22T19:59:12Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 367796,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/367796",
+            "title": "Wheat Research Center",
+            "type": "collection"
+        },
+        {
+            "identifier": 367826,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/367826",
+            "title": "General files",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:59:12Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/598"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3886",
+        "user_mtime": "2016-10-22T19:59:12Z"
+    },
+    "create_time": "2014-12-06T11:09:00Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1968",
+            "create_time": "2016-10-22T19:59:12Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1978",
+            "expression": "1968-1978",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:59:12Z",
+            "user_mtime": "2016-10-22T19:59:12Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA399.xml",
+    "extents": [
+        {
+            "container_summary": "16 document cases",
+            "create_time": "2016-10-22T19:59:12Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "7",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:59:12Z",
+            "user_mtime": "2016-10-22T19:59:12Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:59:12Z",
+            "created_by": "battalb",
+            "external_id": "2240",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:59:12Z",
+            "user_mtime": "2016-10-22T19:59:12Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, Ankara, Turkey, RG 6, SG 19",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, Ankara, Turkey, RG 6, SG 19\n",
+    "id_0": "FA399",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "subgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/784",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 6,
+    "notes": [
+        {
+            "content": [
+                "<extent>16 document cases 202 files </extent>"
+            ],
+            "jsonmodel_type": "note_singlepart",
+            "label": "General Physical Description note",
+            "persistent_id": "1148a70b93803038f7e1833a2e64865b",
+            "publish": true,
+            "type": "physdesc"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "edf38a1571e9c748ddd462ad7649ea29",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "3b25a17f616ba5ec2311fe8cdd219f95",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA396/overview\">FA396 Rockefeller Foundation records, Field Offices, New Delhi, India.</extref>\n\n<extref href=\"../FA397/overview\">FA397 Rockefeller Foundation records, Field Offices, Cali, Colombia.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "59252c7a17da0370652212b339efc349",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "RG 6.19.  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "467f548799437b1629e30f53d08e759a",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Mideast Wheat Research and Training Project records contain general correspondence and administrative documents pertaining to the Turkish wheat stations and the various foundations and institutions connected to wheat research in Turkey during the 1970s. Correspondence, reports, and printed material detail the Center's wheat research work and plant breeding and its interactions with Turkish authorities and with other agricultural institutes and university agronomists. This collection documents the day-to-day work of the Center; for materials regarding the establishment and administration of the Wheat Research Center one should consult the files on Turkish Wheat Research in the Rockefeller Foundation project files, RG 1, Accession 83, Series 105 (804).",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "4b436b85f235f9435aa433c5c493f98b",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The Mideast Wheat Research and Training program was a project funded by the Rockefeller Foundation to help with crop research and agricultural production in Turkey. The program included breeding of adapted varieties of both spring and winter wheat for various ecological conditions, training for wheat scientists from cooperating countries, and advice and assistance in the development of the local research and production programs. In September 1967 the Rockefeller and Turkey began negotiations for the Rockefeller Foundation to participate in the development of the national wheat program. By July 1, 1970, the Turkish Wheat Research and Training Center had been established. The Rockefeller Foundation agreed to a start-up grant of $100,000, which was to expire at the end of 1968. Rockefeller Foundation funding was extended and renewed through the 1970s. In 1977 the Rockefeller Foundation signed a final three-year extension.\n\nQuality was not considered important at the start of the project. Rather, the point was to produce a large amount of wheat. The project pioneered an approach to the problem of a specific crop.\n\nThere were several issues with the Wheat Research Project that quickly became apparent. Initially, only fluent English speakers were eligible for overseas training. As the program developed, staff received English language instruction before going for training, but once abroad they required additional training in order to function effectively and produce. Relations with the Turkish government were also complicated, and issues arose with organization and method. There were also struggles with various governmental departments. These issues were not helped by Turkey's bureaucracy and climate of administrative instability, attributable to constantly changing governments.\n\nOver thirteen years Turkish wheat production increased from around 10 million metric tons to 17 million with general agreement that this increase was largely owing to the wheat improvement project.\n\nVarious names were used to refer to the Wheat Research and Training Program, including: Middle East Wheat Improvement Project, Wheat Improvement Project, Wheat Research Program, Mid-East Wheat Research and Training Center, and Ankara Field Office.\n\nSignificant staff members include: Ahmet Demirlicakmak, Charles K. Mann, E. E. Saari, Jon Michael Prescott, and Bill C. Wright.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "8299cfa80ed4188f2898dfa9399ee23c",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "df4527a425f9c84d56cd3dbf5c782f77",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Related Archival Materials note",
+            "persistent_id": "fa06880d583185b2598d45b12372f3d1",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Administrative and other files relating to the Ankara Field Office, Mid-East Wheat Research and Training Center, are found in the Rockefeller Foundation project files, RG 1, Accession 83, Series 105 (804), under Turkish Wheat Research.\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "relatedmaterial"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "ec303bd72602824468088bfef1662229",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Deryn Cro processed the Ankara Field Office series in July 2011. Processing Level 3: Standard Processing. All material is available in acid-free manuscript boxes and folders.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "095e8b1ccb082c06f747507573b53a29",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Files are arranged in two series:\n\n1. Wheat Research Center\n\n2. General Files.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/218"
+        }
+    ],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:59:12Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>May 2010</date><item></item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:59:12Z",
+            "uri": "/revision_statement/3044",
+            "user_mtime": "2016-10-22T19:59:12Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/43"
@@ -89,275 +352,29 @@
             "ref": "/subjects/85"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "7",
-            "container_summary": "16 document cases",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:59:12Z",
-            "system_mtime": "2016-10-22T19:59:12Z",
-            "user_mtime": "2016-10-22T19:59:12Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1968-1978",
-            "begin": "1968",
-            "end": "1978",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:59:12Z",
-            "system_mtime": "2016-10-22T19:59:12Z",
-            "user_mtime": "2016-10-22T19:59:12Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/784"
-        },
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>May 2010</date><item></item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:59:12Z",
-            "system_mtime": "2016-10-22T19:59:12Z",
-            "user_mtime": "2016-10-22T19:59:12Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3044",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [
-        {
-            "ref": "/repositories/2/accessions/218"
-        }
-    ],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "1148a70b93803038f7e1833a2e64865b",
-            "label": "General Physical Description note",
-            "type": "physdesc",
-            "content": [
-                "<extent>16 document cases 202 files </extent>"
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "edf38a1571e9c748ddd462ad7649ea29",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "3b25a17f616ba5ec2311fe8cdd219f95",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA396/overview\">FA396 Rockefeller Foundation records, Field Offices, New Delhi, India.</extref>\n\n<extref href=\"../FA397/overview\">FA397 Rockefeller Foundation records, Field Offices, Cali, Colombia.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "59252c7a17da0370652212b339efc349",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 6.19.  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "467f548799437b1629e30f53d08e759a",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Mideast Wheat Research and Training Project records contain general correspondence and administrative documents pertaining to the Turkish wheat stations and the various foundations and institutions connected to wheat research in Turkey during the 1970s. Correspondence, reports, and printed material detail the Center's wheat research work and plant breeding and its interactions with Turkish authorities and with other agricultural institutes and university agronomists. This collection documents the day-to-day work of the Center; for materials regarding the establishment and administration of the Wheat Research Center one should consult the files on Turkish Wheat Research in the Rockefeller Foundation project files, RG 1, Accession 83, Series 105 (804).",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4b436b85f235f9435aa433c5c493f98b",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The Mideast Wheat Research and Training program was a project funded by the Rockefeller Foundation to help with crop research and agricultural production in Turkey. The program included breeding of adapted varieties of both spring and winter wheat for various ecological conditions, training for wheat scientists from cooperating countries, and advice and assistance in the development of the local research and production programs. In September 1967 the Rockefeller and Turkey began negotiations for the Rockefeller Foundation to participate in the development of the national wheat program. By July 1, 1970, the Turkish Wheat Research and Training Center had been established. The Rockefeller Foundation agreed to a start-up grant of $100,000, which was to expire at the end of 1968. Rockefeller Foundation funding was extended and renewed through the 1970s. In 1977 the Rockefeller Foundation signed a final three-year extension.\n\nQuality was not considered important at the start of the project. Rather, the point was to produce a large amount of wheat. The project pioneered an approach to the problem of a specific crop.\n\nThere were several issues with the Wheat Research Project that quickly became apparent. Initially, only fluent English speakers were eligible for overseas training. As the program developed, staff received English language instruction before going for training, but once abroad they required additional training in order to function effectively and produce. Relations with the Turkish government were also complicated, and issues arose with organization and method. There were also struggles with various governmental departments. These issues were not helped by Turkey's bureaucracy and climate of administrative instability, attributable to constantly changing governments.\n\nOver thirteen years Turkish wheat production increased from around 10 million metric tons to 17 million with general agreement that this increase was largely owing to the wheat improvement project.\n\nVarious names were used to refer to the Wheat Research and Training Program, including: Middle East Wheat Improvement Project, Wheat Improvement Project, Wheat Research Program, Mid-East Wheat Research and Training Center, and Ankara Field Office.\n\nSignificant staff members include: Ahmet Demirlicakmak, Charles K. Mann, E. E. Saari, Jon Michael Prescott, and Bill C. Wright.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "8299cfa80ed4188f2898dfa9399ee23c",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "df4527a425f9c84d56cd3dbf5c782f77",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "fa06880d583185b2598d45b12372f3d1",
-            "label": "Related Archival Materials note",
-            "type": "relatedmaterial",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Administrative and other files relating to the Ankara Field Office, Mid-East Wheat Research and Training Center, are found in the Rockefeller Foundation project files, RG 1, Accession 83, Series 105 (804), under Turkish Wheat Research.\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ec303bd72602824468088bfef1662229",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Deryn Cro processed the Ankara Field Office series in July 2011. Processing Level 3: Standard Processing. All material is available in acid-free manuscript boxes and folders.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "095e8b1ccb082c06f747507573b53a29",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Files are arranged in two series:\n\n1. Wheat Research Center\n\n2. General Files.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, field offices, Ankara, Turkey, RG 6, SG 19",
+    "tree": {
+        "ref": "/repositories/2/resources/598/tree"
+    },
     "uri": "/repositories/2/resources/598",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:59:12Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:59:12Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3886",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/598"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2011-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-22T19:59:12Z",
-        "system_mtime": "2016-10-22T19:59:12Z",
-        "user_mtime": "2016-10-22T19:59:12Z",
+        "created_by": "battalb",
+        "date_2": "2011-12-31",
         "enum_1": "3 - Standard",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-22T19:59:12Z",
+        "user_mtime": "2016-10-22T19:59:12Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/598/tree"
-    }
+    "user_mtime": "2016-10-22T19:59:12Z"
 }

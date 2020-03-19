@@ -15,8 +15,6 @@ object_types = ["agent_corporate_entity", "agent_family", "agent_person",
                 "archival_object_collection"]
 
 
-# TODO:  update fixtures after mergers have been updated
-
 class TransformerTest(TestCase):
     """Tests the transformations and mappings.
 

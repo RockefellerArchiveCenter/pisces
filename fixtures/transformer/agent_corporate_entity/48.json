@@ -1,137 +1,137 @@
 {
-    "lock_version": 170,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:41:00Z",
-    "system_mtime": "2017-12-15T22:26:27Z",
-    "user_mtime": "2014-12-06T02:41:00Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:41:00Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Rockefeller Foundation",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:41:00Z",
             "system_mtime": "2014-12-06T02:41:00Z",
-            "user_mtime": "2014-12-06T02:41:00Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:41:00Z"
         }
     ],
+    "agent_type": "agent_corporate_entity",
+    "create_time": "2014-12-06T02:41:00Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:41:00Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "primary_name": "Rockefeller Foundation",
+        "sort_name": "Rockefeller Foundation. International Health Board",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "subordinate_name_1": "International Health Board",
+        "system_mtime": "2017-08-22T15:44:40Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:41:00Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "admin",
     "linked_agent_roles": [
         "creator",
         "source",
         "subject"
     ],
-    "external_documents": [],
+    "lock_version": 170,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2014-12-06T02:41:00Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "Rockefeller Foundation",
+            "sort_name": "Rockefeller Foundation. International Health Board",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "subordinate_name_1": "International Health Board",
+            "system_mtime": "2017-08-22T15:44:40Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:41:00Z"
+        },
+        {
+            "authorized": false,
+            "create_time": "2014-12-06T02:41:00Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "I.H.B..",
+            "sort_name": "I.H.B..",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2014-12-06T02:41:00Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:41:00Z"
+        },
+        {
+            "authorized": false,
+            "create_time": "2014-12-06T02:41:00Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "IHB.",
+            "sort_name": "IHB.",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2014-12-06T02:41:00Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:41:00Z"
+        },
+        {
+            "authorized": false,
+            "create_time": "2014-12-06T02:41:00Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "primary_name": "International Health Board.",
+            "sort_name": "International Health Board.",
+            "sort_name_auto_generate": true,
+            "system_mtime": "2014-12-06T02:41:00Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:41:00Z"
+        }
+    ],
     "notes": [
         {
+            "jsonmodel_type": "note_bioghist",
+            "label": "biographical statement",
+            "persistent_id": "5106f6f3f49a3ba91e763dc837798e2a",
+            "publish": true,
             "subnotes": [
                 {
                     "content": "The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928).",
                     "jsonmodel_type": "note_text",
                     "publish": false
                 }
-            ],
-            "label": "biographical statement",
-            "jsonmodel_type": "note_bioghist",
-            "persistent_id": "5106f6f3f49a3ba91e763dc837798e2a",
-            "publish": true
+            ]
         }
+    ],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:26:27Z",
+    "title": "Rockefeller Foundation. International Health Board",
+    "uri": "/agents/corporate_entities/48",
+    "used_within_published_repositories": [
+        "/repositories/2"
     ],
     "used_within_repositories": [
         "/repositories/2"
     ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Rockefeller Foundation",
-            "subordinate_name_1": "International Health Board",
-            "sort_name": "Rockefeller Foundation. International Health Board",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:41:00Z",
-            "system_mtime": "2017-08-22T15:44:40Z",
-            "user_mtime": "2014-12-06T02:41:00Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
-        },
-        {
-            "lock_version": 0,
-            "primary_name": "I.H.B..",
-            "sort_name": "I.H.B..",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:41:00Z",
-            "system_mtime": "2014-12-06T02:41:00Z",
-            "user_mtime": "2014-12-06T02:41:00Z",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
-        },
-        {
-            "lock_version": 0,
-            "primary_name": "IHB.",
-            "sort_name": "IHB.",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:41:00Z",
-            "system_mtime": "2014-12-06T02:41:00Z",
-            "user_mtime": "2014-12-06T02:41:00Z",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
-        },
-        {
-            "lock_version": 0,
-            "primary_name": "International Health Board.",
-            "sort_name": "International Health Board.",
-            "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:41:00Z",
-            "system_mtime": "2014-12-06T02:41:00Z",
-            "user_mtime": "2014-12-06T02:41:00Z",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/corporate_entities/48",
-    "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Rockefeller Foundation",
-        "subordinate_name_1": "International Health Board",
-        "sort_name": "Rockefeller Foundation. International Health Board",
-        "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:41:00Z",
-        "system_mtime": "2017-08-22T15:44:40Z",
-        "user_mtime": "2014-12-06T02:41:00Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
-    },
-    "title": "Rockefeller Foundation. International Health Board"
+    "user_mtime": "2014-12-06T02:41:00Z"
 }

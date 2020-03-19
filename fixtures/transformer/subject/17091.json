@@ -1,38 +1,38 @@
 {
-    "lock_version": 48,
-    "title": "Agriculture -- Latin America",
-    "created_by": "battalb",
-    "last_modified_by": "battalb",
     "create_time": "2015-06-03T18:25:29Z",
-    "system_mtime": "2018-03-29T18:02:18Z",
-    "user_mtime": "2015-06-03T18:25:29Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "battalb",
+    "external_documents": [],
     "external_ids": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "battalb",
+    "lock_version": 48,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2018-03-29T18:02:18Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Agriculture -- Latin America",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
             "create_time": "2015-06-03T18:25:29Z",
-            "system_mtime": "2015-06-03T18:25:29Z",
-            "user_mtime": "2015-06-03T18:25:29Z",
-            "term_type": "topical",
+            "created_by": "battalb",
             "jsonmodel_type": "term",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2015-06-03T18:25:29Z",
+            "term": "Agriculture -- Latin America",
+            "term_type": "topical",
             "uri": "/terms/14650",
+            "user_mtime": "2015-06-03T18:25:29Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Agriculture -- Latin America",
     "uri": "/subjects/17091",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-06-03T18:25:29Z",
+    "vocabulary": "/vocabularies/1"
 }

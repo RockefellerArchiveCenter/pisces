@@ -1,121 +1,121 @@
 {
-    "lock_version": 568,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:40:39Z",
-    "system_mtime": "2018-12-11T20:41:03Z",
-    "user_mtime": "2014-12-06T02:40:39Z",
-    "jsonmodel_type": "agent_corporate_entity",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:40:39Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Museum of Modern Art (New York, N.Y.)",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:39Z",
             "system_mtime": "2014-12-06T02:40:39Z",
-            "user_mtime": "2014-12-06T02:40:39Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:40:39Z"
         }
     ],
+    "agent_type": "agent_corporate_entity",
+    "create_time": "2014-12-06T02:40:39Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:40:39Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_corporate_entity",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "primary_name": "Museum of Modern Art (New York, N.Y.)",
+        "sort_name": "Museum of Modern Art (New York, N.Y.)",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "system_mtime": "2017-08-22T15:44:40Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:40:39Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_corporate_entity",
+    "last_modified_by": "admin",
     "linked_agent_roles": [
         "creator",
         "source",
         "subject"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
+    "lock_version": 568,
     "names": [
         {
+            "authorized": true,
+            "create_time": "2014-12-06T02:40:39Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "primary_name": "Museum of Modern Art (New York, N.Y.)",
             "sort_name": "Museum of Modern Art (New York, N.Y.)",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:39Z",
-            "system_mtime": "2017-08-22T15:44:40Z",
-            "user_mtime": "2014-12-06T02:40:39Z",
-            "authorized": true,
-            "is_display_name": true,
             "source": "naf",
-            "jsonmodel_type": "name_corporate_entity",
-            "use_dates": []
+            "system_mtime": "2017-08-22T15:44:40Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:40:39Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:40:39Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "primary_name": "MOMA.",
             "sort_name": "MOMA.",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:39Z",
             "system_mtime": "2014-12-06T02:40:39Z",
-            "user_mtime": "2014-12-06T02:40:39Z",
-            "jsonmodel_type": "name_corporate_entity",
             "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:40:39Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:40:39Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "primary_name": "New York (City). Museum of Modern Art.",
             "sort_name": "New York (City). Museum of Modern Art.",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:39Z",
             "system_mtime": "2014-12-06T02:40:39Z",
-            "user_mtime": "2014-12-06T02:40:39Z",
-            "jsonmodel_type": "name_corporate_entity",
             "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:40:39Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:40:39Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_corporate_entity",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "primary_name": "New York (N.Y.). Museum of Modern Art.",
             "sort_name": "New York (N.Y.). Museum of Modern Art.",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:39Z",
             "system_mtime": "2014-12-06T02:40:39Z",
-            "user_mtime": "2014-12-06T02:40:39Z",
-            "jsonmodel_type": "name_corporate_entity",
             "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:40:39Z"
         }
     ],
+    "notes": [],
+    "publish": true,
     "related_agents": [],
+    "system_mtime": "2018-12-11T20:41:03Z",
+    "title": "Museum of Modern Art (New York, N.Y.)",
     "uri": "/agents/corporate_entities/9",
-    "agent_type": "agent_corporate_entity",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Museum of Modern Art (New York, N.Y.)",
-        "sort_name": "Museum of Modern Art (New York, N.Y.)",
-        "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:40:39Z",
-        "system_mtime": "2017-08-22T15:44:40Z",
-        "user_mtime": "2014-12-06T02:40:39Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "jsonmodel_type": "name_corporate_entity",
-        "use_dates": []
-    },
-    "title": "Museum of Modern Art (New York, N.Y.)"
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:40:39Z"
 }

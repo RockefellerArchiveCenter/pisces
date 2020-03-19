@@ -1,64 +1,64 @@
 {
-    "lock_version": 20,
-    "publish": true,
-    "created_by": "battalb",
-    "last_modified_by": "battalb",
-    "create_time": "2015-06-03T18:25:30Z",
-    "system_mtime": "2017-12-15T22:30:28Z",
-    "user_mtime": "2015-06-03T18:25:30Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [],
-    "linked_agent_roles": [
-        "subject"
-    ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [],
-    "names": [
-        {
-            "lock_version": 0,
-            "primary_name": "Nixon, Richard M. (Richard Milhous)",
-            "sort_name": "Nixon, Richard M. (Richard Milhous)",
-            "sort_name_auto_generate": true,
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2015-06-03T18:25:30Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2015-06-03T18:25:30Z",
-            "authorized": true,
-            "is_display_name": true,
-            "source": "naf",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
-        }
-    ],
-    "related_agents": [],
-    "uri": "/agents/people/9072",
     "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
+    "create_time": "2015-06-03T18:25:30Z",
+    "created_by": "battalb",
+    "dates_of_existence": [],
     "display_name": {
+        "authorized": true,
+        "create_time": "2015-06-03T18:25:30Z",
+        "created_by": "battalb",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "battalb",
         "lock_version": 0,
+        "name_order": "inverted",
         "primary_name": "Nixon, Richard M. (Richard Milhous)",
         "sort_name": "Nixon, Richard M. (Richard Milhous)",
         "sort_name_auto_generate": true,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2015-06-03T18:25:30Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2015-06-03T18:25:30Z",
-        "authorized": true,
-        "is_display_name": true,
         "source": "naf",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2015-06-03T18:25:30Z"
     },
-    "title": "Nixon, Richard M. (Richard Milhous)"
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "battalb",
+    "linked_agent_roles": [
+        "subject"
+    ],
+    "lock_version": 20,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2015-06-03T18:25:30Z",
+            "created_by": "battalb",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Nixon, Richard M. (Richard Milhous)",
+            "sort_name": "Nixon, Richard M. (Richard Milhous)",
+            "sort_name_auto_generate": true,
+            "source": "naf",
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2015-06-03T18:25:30Z"
+        }
+    ],
+    "notes": [],
+    "publish": true,
+    "related_agents": [],
+    "system_mtime": "2017-12-15T22:30:28Z",
+    "title": "Nixon, Richard M. (Richard Milhous)",
+    "uri": "/agents/people/9072",
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2015-06-03T18:25:30Z"
 }

@@ -1,192 +1,210 @@
 {
-    "lock_version": 11,
-    "title": "Alexandre Rothen papers, Rockefeller University Faculty",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA193.xml",
-    "finding_aid_title": "A Guide to the Alexandre Rothen papers, Rockefeller University Faculty\n",
-    "finding_aid_filing_title": "Rothen (Alexandre) papers",
-    "finding_aid_date": "after 1974",
-    "created_by": "admin",
-    "last_modified_by": "harnold",
-    "create_time": "2014-12-06T06:55:29Z",
-    "system_mtime": "2020-02-28T01:26:54Z",
-    "user_mtime": "2020-02-28T01:26:54Z",
-    "suppressed": false,
-    "is_slug_auto": false,
-    "id_0": "FA193",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "280",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "harnold",
-            "last_modified_by": "harnold",
-            "create_time": "2020-02-28T01:26:54Z",
-            "system_mtime": "2020-02-28T01:26:54Z",
-            "user_mtime": "2020-02-28T01:26:54Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [
-        {
-            "ref": "/subjects/476"
+            "identifier": 164739,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164739",
+            "title": "Reprints - Tryptic action across a membrane. Physiological chemistry and physics 11 (1979) 481-489, 1979",
+            "type": "object"
         },
         {
-            "ref": "/subjects/488"
+            "identifier": 164740,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164740",
+            "title": "Reprints - Influence of metallic shields on presumably cosmic radiation affecting surfaces of nickel-plated slides used in immunological studies. Physiological chemistry and physics 11 (1979) 193-204, 1979",
+            "type": "object"
         },
         {
-            "ref": "/subjects/3"
+            "identifier": 164741,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/164741",
+            "title": "MS: Alexandre Rothen, \"An Exact Twenty-Four Hour Periodicity in the Superficial Topography of Nickel Plated Glass Slides Presumably Caused by a Solar Radiation of Great Penetration\", circa 1983",
+            "type": "object"
         },
         {
-            "ref": "/subjects/489"
+            "identifier": 164743,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164743",
+            "title": "Faculty and Personal Files, 1928-1987",
+            "type": "object"
         },
         {
-            "ref": "/subjects/318"
+            "identifier": 164744,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164744",
+            "title": "Faculty and Personal Files, 1928-1987",
+            "type": "object"
         },
         {
-            "ref": "/subjects/78"
+            "identifier": 164745,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164745",
+            "title": "Photographs, 1929, 1958, 1966, 1949, 1970",
+            "type": "object"
         },
         {
-            "ref": "/subjects/420"
+            "identifier": 164746,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164746",
+            "title": "Figures, graphs, and tables",
+            "type": "object"
         },
         {
-            "ref": "/subjects/45"
+            "identifier": 164747,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/164747",
+            "title": "Collected Reprints",
+            "type": "object"
         },
         {
-            "ref": "/subjects/21"
-        },
-        {
-            "ref": "/subjects/477"
-        },
-        {
-            "ref": "/subjects/20"
-        }
-    ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "0.38",
-            "container_summary": "2 boxes and 2 volumes",
-            "created_by": "harnold",
-            "last_modified_by": "harnold",
-            "create_time": "2020-02-28T01:26:54Z",
-            "system_mtime": "2020-02-28T01:26:54Z",
-            "user_mtime": "2020-02-28T01:26:54Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1928-1987, undated",
-            "begin": "1928",
-            "end": "1987",
-            "created_by": "harnold",
-            "last_modified_by": "harnold",
-            "create_time": "2020-02-28T01:26:54Z",
-            "system_mtime": "2020-02-28T01:26:54Z",
-            "user_mtime": "2020-02-28T01:26:54Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/447"
-        },
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20001"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20083"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "completed",
-            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
-            "created_by": "harnold",
-            "last_modified_by": "harnold",
-            "create_time": "2020-02-28T01:26:54Z",
-            "system_mtime": "2020-02-28T01:26:54Z",
-            "user_mtime": "2020-02-28T01:26:54Z",
-            "publish": false,
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/4567",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [
-        {
-            "ref": "/repositories/2/accessions/4023"
+            "identifier": 1154315,
+            "level": "recordgrp",
+            "ref": "/repositories/2/archival_objects/1154315",
+            "title": "Donor Organization, Draught Beer Preservation Society administrative records, 1971 March 14 - 2014 February 25",
+            "type": "collection"
         }
     ],
     "classifications": [],
+    "collection_management": {
+        "create_time": "2020-02-28T01:26:54Z",
+        "created_by": "harnold",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "harnold",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/397"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2020-02-28T01:26:54Z",
+        "uri": "/repositories/2/collection_management/10569",
+        "user_mtime": "2020-02-28T01:26:54Z"
+    },
+    "create_time": "2014-12-06T06:55:29Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1928",
+            "create_time": "2020-02-28T01:26:54Z",
+            "created_by": "harnold",
+            "date_type": "inclusive",
+            "end": "1987",
+            "expression": "1928-1987, undated",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "harnold",
+            "lock_version": 0,
+            "system_mtime": "2020-02-28T01:26:54Z",
+            "user_mtime": "2020-02-28T01:26:54Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA193.xml",
+    "extents": [
+        {
+            "container_summary": "2 boxes and 2 volumes",
+            "create_time": "2020-02-28T01:26:54Z",
+            "created_by": "harnold",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "harnold",
+            "lock_version": 0,
+            "number": "0.38",
+            "portion": "whole",
+            "system_mtime": "2020-02-28T01:26:54Z",
+            "user_mtime": "2020-02-28T01:26:54Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-02-28T01:26:54Z",
+            "created_by": "harnold",
+            "external_id": "280",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "harnold",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2020-02-28T01:26:54Z",
+            "user_mtime": "2020-02-28T01:26:54Z"
+        }
+    ],
+    "finding_aid_date": "after 1974",
+    "finding_aid_filing_title": "Rothen (Alexandre) papers",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Alexandre Rothen papers, Rockefeller University Faculty\n",
+    "id_0": "FA193",
+    "instances": [],
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "harnold",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/447",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/20001",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/20083",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 11,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "1cc472e1c305e97f437a30f21dd3fa3d",
-            "type": "userestrict",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Collection is open for scholarly research.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "userestrict"
         },
         {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "5a48cc9e67c3311b6e26d442825a2054",
-            "label": "General Physical Description note",
-            "type": "physdesc",
             "content": [
                 "2 boxes and 2 volumes"
             ],
-            "publish": true
+            "jsonmodel_type": "note_singlepart",
+            "label": "General Physical Description note",
+            "persistent_id": "5a48cc9e67c3311b6e26d442825a2054",
+            "publish": true,
+            "type": "physdesc"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "65da1be3592ec273060890c586814f15",
             "label": "Biographical/Historical note",
-            "type": "bioghist",
+            "persistent_id": "65da1be3592ec273060890c586814f15",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Alexandre Rothen, physical chemist at The Rockefeller University (formerly The Rockefeller Institute for Medical Research) from 1927-1970. He built one of the first Polariscopes for the study of rotatory dispersion in the ultraviolet range and developed the air-driven centrifuge (originally designed by Pickels of the Rockefeller Foundation). From 1942 he was interested in monomolecular layers and published many papers on chemical interactions at a liquid-solid interface. He built the first ellipsometer with a half shadow device.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 },
                 {
-                    "jsonmodel_type": "note_chronology",
-                    "title": "Biographical note",
-                    "publish": true,
                     "items": [
                         {
                             "event_date": "1900",
@@ -248,12 +266,12 @@
                                 "Died December 12"
                             ]
                         }
-                    ]
+                    ],
+                    "jsonmodel_type": "note_chronology",
+                    "publish": true,
+                    "title": "Biographical note"
                 },
                 {
-                    "jsonmodel_type": "note_definedlist",
-                    "title": "Defined list",
-                    "publish": true,
                     "items": [
                         {
                             "label": "label",
@@ -263,149 +281,197 @@
                             "label": "another label",
                             "value": "yet another value"
                         }
-                    ]
+                    ],
+                    "jsonmodel_type": "note_definedlist",
+                    "publish": true,
+                    "title": "Defined list"
                 },
                 {
-                    "jsonmodel_type": "note_orderedlist",
-                    "title": "Ordered list",
                     "enumeration": "arabic",
-                    "publish": true,
                     "items": [
                         "apples",
                         "oranges",
                         "pears",
                         "grapes"
-                    ]
+                    ],
+                    "jsonmodel_type": "note_orderedlist",
+                    "publish": true,
+                    "title": "Ordered list"
                 }
             ],
-            "publish": true
+            "type": "bioghist"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "d5e3174d14ff157c5315f66020b088a8",
             "label": "Scope and Contents note",
-            "type": "scopecontent",
+            "persistent_id": "d5e3174d14ff157c5315f66020b088a8",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Biography, Photographs, Bibliography, Collected Reprints.\n\nThe papers consist primarily of materials prepared by Alexandre Rothen for press information and include photocopy of news stories 1960-1970. The copies of correspondence and the summaries of experimental work deal mainly with Dr. Rothen's assumption in 1948 (later shown experimentally) that a \"specific long-range interaction took place across the membrane between the condensed film of protein immobilized on the slide and antibodies or trypsin molecules\", and the violent criticism of this work and the fact that later, the priority of his work did not receive recognition.\n\nAlso includes a short biography written by Dr. Rothen.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "5b1176ff839855f39fbe6f2719a13778",
-            "type": "acqinfo",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Date received or inventoried: June 1975; except for: Faculty and Personal Files (Box 2) which was received from Faculty Administration office on March 25, 1988; and folder of figures, graphs, and tables which was received December 1983 from T.P. King.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "acqinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "55cce2afa8779db569fa6480c4a70942",
             "label": "File Plan note",
-            "type": "fileplan",
+            "persistent_id": "55cce2afa8779db569fa6480c4a70942",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Former Classification: I 450 R743\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "fileplan"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "d7376234b87758e0bc25dd2b177bb993",
             "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
+            "persistent_id": "d7376234b87758e0bc25dd2b177bb993",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Access to this collection is restricted pending permission from Rockefeller University.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "98cd462a3c2585677f802a829296e966",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "fb543163ac4d56c9f43e47d4dda595af",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "As received.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         }
     ],
-    "uri": "/repositories/2/resources/397",
+    "publish": true,
+    "related_accessions": [
+        {
+            "ref": "/repositories/2/accessions/4023"
+        }
+    ],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "harnold",
-        "last_modified_by": "harnold",
-        "create_time": "2020-02-28T01:26:54Z",
-        "system_mtime": "2020-02-28T01:26:54Z",
-        "user_mtime": "2020-02-28T01:26:54Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/10569",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/397"
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2020-02-28T01:26:54Z",
+            "created_by": "harnold",
+            "date": "completed",
+            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "harnold",
+            "publish": false,
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2020-02-28T01:26:54Z",
+            "uri": "/revision_statement/4567",
+            "user_mtime": "2020-02-28T01:26:54Z"
         }
+    ],
+    "rights_statements": [],
+    "subjects": [
+        {
+            "ref": "/subjects/476"
+        },
+        {
+            "ref": "/subjects/488"
+        },
+        {
+            "ref": "/subjects/3"
+        },
+        {
+            "ref": "/subjects/489"
+        },
+        {
+            "ref": "/subjects/318"
+        },
+        {
+            "ref": "/subjects/78"
+        },
+        {
+            "ref": "/subjects/420"
+        },
+        {
+            "ref": "/subjects/45"
+        },
+        {
+            "ref": "/subjects/21"
+        },
+        {
+            "ref": "/subjects/477"
+        },
+        {
+            "ref": "/subjects/20"
+        }
+    ],
+    "suppressed": false,
+    "system_mtime": "2020-02-28T01:26:54Z",
+    "title": "Alexandre Rothen papers, Rockefeller University Faculty",
+    "tree": {
+        "ref": "/repositories/2/resources/397/tree"
     },
+    "uri": "/repositories/2/resources/397",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "harnold",
-        "last_modified_by": "harnold",
         "create_time": "2020-02-28T01:26:54Z",
-        "system_mtime": "2020-02-28T01:26:54Z",
-        "user_mtime": "2020-02-28T01:26:54Z",
+        "created_by": "harnold",
+        "date_2": "2007-12-31",
         "enum_1": "4 - Advanced",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "harnold",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2020-02-28T01:26:54Z",
+        "user_mtime": "2020-02-28T01:26:54Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/397/tree"
-    }
+    "user_mtime": "2020-02-28T01:26:54Z"
 }

@@ -1,49 +1,49 @@
 {
-    "lock_version": 19,
-    "title": "Horse riding",
-    "created_by": "admin",
-    "last_modified_by": "admin",
     "create_time": "2014-12-06T02:40:33Z",
-    "system_mtime": "2019-04-16T19:17:30Z",
-    "user_mtime": "2014-12-06T02:40:33Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "admin",
+    "external_documents": [],
     "external_ids": [
         {
-            "external_id": "10661",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:40:33Z",
+            "created_by": "admin",
+            "external_id": "10661",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::SUBJECT",
             "system_mtime": "2014-12-06T02:40:33Z",
-            "user_mtime": "2014-12-06T02:40:33Z",
-            "jsonmodel_type": "external_id"
+            "user_mtime": "2014-12-06T02:40:33Z"
         }
     ],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 19,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2019-04-16T19:17:30Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Horse riding",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:40:33Z",
-            "system_mtime": "2014-12-06T02:40:33Z",
-            "user_mtime": "2014-12-06T02:40:33Z",
-            "term_type": "topical",
+            "created_by": "admin",
             "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:40:33Z",
+            "term": "Horse riding",
+            "term_type": "topical",
             "uri": "/terms/5080",
+            "user_mtime": "2014-12-06T02:40:33Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Horse riding",
     "uri": "/subjects/7379",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:40:33Z",
+    "vocabulary": "/vocabularies/1"
 }

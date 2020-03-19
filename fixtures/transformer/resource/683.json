@@ -1,271 +1,2738 @@
 {
-    "lock_version": 6,
-    "title": "Rockefeller Foundation records, Biographical File",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA485.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Biographical File\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Biographical File",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
+    "ancestors": [],
+    "children": [
+        {
+            "identifier": 503422,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503422",
+            "title": "Agar, John G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503423,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503423",
+            "title": "Aitken, Thomas H. G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503424,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503424",
+            "title": "Aldrich, Winthrop W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503425,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503425",
+            "title": "Allen (Shikoh), John",
+            "type": "object"
+        },
+        {
+            "identifier": 503426,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503426",
+            "title": "Allen, Leroy R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503427,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503427",
+            "title": "Anderson, Charles R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503428,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503428",
+            "title": "Anderson, Raymond K.",
+            "type": "object"
+        },
+        {
+            "identifier": 503429,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503429",
+            "title": "Anderson, Robert Glenn",
+            "type": "object"
+        },
+        {
+            "identifier": 503430,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503430",
+            "title": "Angell, James R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503431,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503431",
+            "title": "Appleget, Thomas B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503432,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503432",
+            "title": "Arnett, Trevor",
+            "type": "object"
+        },
+        {
+            "identifier": 503433,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503433",
+            "title": "Arnold, Virginia",
+            "type": "object"
+        },
+        {
+            "identifier": 503434,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503434",
+            "title": "Bailey, Charles A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503435,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503435",
+            "title": "Baird, Guy B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503436,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503436",
+            "title": "Balfour, Marshall C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503437,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503437",
+            "title": "Barber, Marshall A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503438,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503438",
+            "title": "Barnard, Chester I.",
+            "type": "object"
+        },
+        {
+            "identifier": 503439,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503439",
+            "title": "Barnes, Allan Campbell",
+            "type": "object"
+        },
+        {
+            "identifier": 503440,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503440",
+            "title": "Bates, Marston",
+            "type": "object"
+        },
+        {
+            "identifier": 503441,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503441",
+            "title": "Bauer, Johannes H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503442,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503442",
+            "title": "Beal, George J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503443,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503443",
+            "title": "Belknap, Chauncey",
+            "type": "object"
+        },
+        {
+            "identifier": 503444,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503444",
+            "title": "Bell, Philip W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503445,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503445",
+            "title": "Berelson, Bernard",
+            "type": "object"
+        },
+        {
+            "identifier": 503446,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503446",
+            "title": "Berrien, William",
+            "type": "object"
+        },
+        {
+            "identifier": 503447,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503447",
+            "title": "Bevier, George",
+            "type": "object"
+        },
+        {
+            "identifier": 503448,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503448",
+            "title": "Bingham, Barry",
+            "type": "object"
+        },
+        {
+            "identifier": 503449,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503449",
+            "title": "Biringer, Roger T.",
+            "type": "object"
+        },
+        {
+            "identifier": 503450,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503450",
+            "title": "Bourne, Leo F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503451,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503451",
+            "title": "Bowers, John Z.",
+            "type": "object"
+        },
+        {
+            "identifier": 503452,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503452",
+            "title": "Bowles, Chester",
+            "type": "object"
+        },
+        {
+            "identifier": 503453,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503453",
+            "title": "Boyce, Alfred M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503454,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503454",
+            "title": "Boyd, Mark F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503455,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503455",
+            "title": "Bradfield, Richard",
+            "type": "object"
+        },
+        {
+            "identifier": 503456,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503456",
+            "title": "Bradley, William L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503457,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503457",
+            "title": "Branscomb, Harvie",
+            "type": "object"
+        },
+        {
+            "identifier": 503458,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503458",
+            "title": "Bronk, Detlev W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503459,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503459",
+            "title": "Bruden, Robert P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503460,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503460",
+            "title": "Buchanan, Norman S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503461,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503461",
+            "title": "Bugher, John C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503462,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503462",
+            "title": "Bunche, Ralph Johnson",
+            "type": "object"
+        },
+        {
+            "identifier": 503463,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503463",
+            "title": "Bureau of Social Hygiene",
+            "type": "object"
+        },
+        {
+            "identifier": 503464,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503464",
+            "title": "Buttrick, Wallace",
+            "type": "object"
+        },
+        {
+            "identifier": 503465,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503465",
+            "title": "Catkins, Robert D.",
+            "type": "object"
+        },
+        {
+            "identifier": 503466,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503466",
+            "title": "Calflin, William H., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503467,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503467",
+            "title": "Capps, Edward",
+            "type": "object"
+        },
+        {
+            "identifier": 503468,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503468",
+            "title": "Carter, William Spencer",
+            "type": "object"
+        },
+        {
+            "identifier": 503469,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503469",
+            "title": "Causey, Ottis R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503470,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503470",
+            "title": "Chandler, Robert Flint, Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503471,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503471",
+            "title": "Chapin, Charles V.",
+            "type": "object"
+        },
+        {
+            "identifier": 503472,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503472",
+            "title": "Claude, Albert",
+            "type": "object"
+        },
+        {
+            "identifier": 503473,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503473",
+            "title": "Cole, Charles W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503474,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503474",
+            "title": "Collidge, T. Jefferson",
+            "type": "object"
+        },
+        {
+            "identifier": 503475,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503475",
+            "title": "Compton, Boyd H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503476,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503476",
+            "title": "Compton, Karl T.",
+            "type": "object"
+        },
+        {
+            "identifier": 503477,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503477",
+            "title": "Conner, M.E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503478,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503478",
+            "title": "Cort, William",
+            "type": "object"
+        },
+        {
+            "identifier": 503479,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503479",
+            "title": "Covington, Platt W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503480,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503480",
+            "title": "Crawford, Robert W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503481,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503481",
+            "title": "Cross, Howard",
+            "type": "object"
+        },
+        {
+            "identifier": 503482,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503482",
+            "title": "Darling, Samuel T.",
+            "type": "object"
+        },
+        {
+            "identifier": 503483,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503483",
+            "title": "Dashiell, Lefferts Mason",
+            "type": "object"
+        },
+        {
+            "identifier": 503484,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503484",
+            "title": "DaVane, William C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503485,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503485",
+            "title": "Davis, Jackson",
+            "type": "object"
+        },
+        {
+            "identifier": 503486,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503486",
+            "title": "Davis, John W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503487,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503487",
+            "title": "Davis, Nelson C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503488,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503488",
+            "title": "Davison Fund",
+            "type": "object"
+        },
+        {
+            "identifier": 503489,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503489",
+            "title": "Day, Edmund Ezra",
+            "type": "object"
+        },
+        {
+            "identifier": 503490,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503490",
+            "title": "Devinney, Leland C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503491,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503491",
+            "title": "Dillon, C. Douglas",
+            "type": "object"
+        },
+        {
+            "identifier": 503492,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503492",
+            "title": "Dilworth, Richard J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503493,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503493",
+            "title": "Dickey, John S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503494,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503494",
+            "title": "Dodds, Harold W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503495,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503495",
+            "title": "Douglas, Lewis W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503496,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503496",
+            "title": "Downs, Wilbur G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503497,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503497",
+            "title": "DuBridge, Lee A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503498,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503498",
+            "title": "Dulles, John Foster",
+            "type": "object"
+        },
+        {
+            "identifier": 503499,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503499",
+            "title": "Dunham, Lawrence B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503500,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503500",
+            "title": "Dunn, Lawrence H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503501,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503501",
+            "title": "Dworsky, Leanord B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503502,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503502",
+            "title": "Dyer, Brian R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503503,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503503",
+            "title": "Earle, Walter Clarence",
+            "type": "object"
+        },
+        {
+            "identifier": 503504,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503504",
+            "title": "Ebert, Robert H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503505,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503505",
+            "title": "Edsall, David L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503506,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503506",
+            "title": "Eliot, Charles W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503507,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503507",
+            "title": "Elmendorf, John E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503508,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503508",
+            "title": "Embree, Edwin",
+            "type": "object"
+        },
+        {
+            "identifier": 503509,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503509",
+            "title": "Evans, Robert F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503510,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503510",
+            "title": "Fahs, Charles Burton",
+            "type": "object"
+        },
+        {
+            "identifier": 503511,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503511",
+            "title": "Fair, Gordon M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503512,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503512",
+            "title": "Ferell, John A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503513,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503513",
+            "title": "Finnerud, Kenneth P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503514,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503514",
+            "title": "Fischelis, Robert L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503515,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503515",
+            "title": "Flexner, Abraham",
+            "type": "object"
+        },
+        {
+            "identifier": 503516,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503516",
+            "title": "Flexner, Simon",
+            "type": "object"
+        },
+        {
+            "identifier": 503517,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503517",
+            "title": "Fosdick, Harry E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503518,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503518",
+            "title": "Fosdick, Raymond B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503519,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503519",
+            "title": "Frank, Lawrence K.",
+            "type": "object"
+        },
+        {
+            "identifier": 503520,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503520",
+            "title": "Franks, Rt. Hon. Lord Franks of Headington",
+            "type": "object"
+        },
+        {
+            "identifier": 503521,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503521",
+            "title": "Freeman, Douglas S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503522,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503522",
+            "title": "Freeman, Ruth Benson",
+            "type": "object"
+        },
+        {
+            "identifier": 503523,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503523",
+            "title": "Freund, Gerald",
+            "type": "object"
+        },
+        {
+            "identifier": 503524,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503524",
+            "title": "Frost, Wade Hampton",
+            "type": "object"
+        },
+        {
+            "identifier": 503525,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503525",
+            "title": "Frye, Theodore R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503526,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503526",
+            "title": "Gallegos, Herman E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503527,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503527",
+            "title": "Gasser, Herbert S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503528,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503528",
+            "title": "Gates, Frederick Lamont",
+            "type": "object"
+        },
+        {
+            "identifier": 503529,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503529",
+            "title": "Gee, Gist N.",
+            "type": "object"
+        },
+        {
+            "identifier": 503530,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503530",
+            "title": "Gibler, John W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503531,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503531",
+            "title": "Gifford, Walter S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503532,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503532",
+            "title": "Gillette, Malcolm H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503533,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503533",
+            "title": "Gilpatric, Chadbourne",
+            "type": "object"
+        },
+        {
+            "identifier": 503534,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503534",
+            "title": "Goheen, Robert F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503535,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503535",
+            "title": "Goldsmith, Arthur A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503536,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503536",
+            "title": "Goodwin, Rev. W.A.R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503537,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503537",
+            "title": "Gorgas, William C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503538,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503538",
+            "title": "Grant, John B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503539,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503539",
+            "title": "Gray, George W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503540,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503540",
+            "title": "Greene, Jerome D.",
+            "type": "object"
+        },
+        {
+            "identifier": 503541,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503541",
+            "title": "Greene, Warwick",
+            "type": "object"
+        },
+        {
+            "identifier": 503542,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503542",
+            "title": "Greenfieldt, John",
+            "type": "object"
+        },
+        {
+            "identifier": 503543,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503543",
+            "title": "Gregg, Alan",
+            "type": "object"
+        },
+        {
+            "identifier": 503544,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503544",
+            "title": "Grevers, John H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503545,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503545",
+            "title": "Guiteras, Juan",
+            "type": "object"
+        },
+        {
+            "identifier": 503546,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503546",
+            "title": "Gunn, Selskar M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503547,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503547",
+            "title": "Hackett, Lewis W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503548,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503548",
+            "title": "Hadley, Herbert S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503549,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503549",
+            "title": "Hahn, Richard G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503550,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503550",
+            "title": "Hanson, Frank B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503551,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503551",
+            "title": "Hanson, Haldore",
+            "type": "object"
+        },
+        {
+            "identifier": 503552,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503552",
+            "title": "Hanson, Henry",
+            "type": "object"
+        },
+        {
+            "identifier": 503553,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503553",
+            "title": "Hardin, Charles W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503554,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503554",
+            "title": "Harrar, George W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503555,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503555",
+            "title": "Harrison, John P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503556,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503556",
+            "title": "Harrison, Leonard V.",
+            "type": "object"
+        },
+        {
+            "identifier": 503557,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503557",
+            "title": "Harrison, Wallace K.",
+            "type": "object"
+        },
+        {
+            "identifier": 503558,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503558",
+            "title": "Hayes, Guy S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503559,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503559",
+            "title": "Hayes, Theodore B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503560,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503560",
+            "title": "Heineman, Ben W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503561,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503561",
+            "title": "Heiser, Victor G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503562,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503562",
+            "title": "Heiser, Victor G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503563,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503563",
+            "title": "Helfrich, Philip",
+            "type": "object"
+        },
+        {
+            "identifier": 503564,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503564",
+            "title": "Hepburn, Alonzo B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503565,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503565",
+            "title": "Heydt, Charles O.",
+            "type": "object"
+        },
+        {
+            "identifier": 503566,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503566",
+            "title": "Hill, Rolla B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503567,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503567",
+            "title": "Hodgman, Gertrude E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503568,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503568",
+            "title": "Hoffman, William Albert",
+            "type": "object"
+        },
+        {
+            "identifier": 503569,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503569",
+            "title": "Hopkins, Ernest M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503570,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503570",
+            "title": "Hopper, David W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503571,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503571",
+            "title": "Houghton, Arthur A., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503572,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503572",
+            "title": "Howland, Charles P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503573,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503573",
+            "title": "Hughes, Charles E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503574,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503574",
+            "title": "Hydrick, John L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503575,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503575",
+            "title": "Ingles, Thelma",
+            "type": "object"
+        },
+        {
+            "identifier": 503576,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503576",
+            "title": "Jackson, Elmore",
+            "type": "object"
+        },
+        {
+            "identifier": 503577,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503577",
+            "title": "Jacocks, William P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503578,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503578",
+            "title": "Janney, John H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503579,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503579",
+            "title": "Jennings, Peter R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503580,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503580",
+            "title": "Jessup, Philip C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503581,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503581",
+            "title": "Johnson, Harold N.",
+            "type": "object"
+        },
+        {
+            "identifier": 503582,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503582",
+            "title": "Johnson, Katherine Mitchell",
+            "type": "object"
+        },
+        {
+            "identifier": 503583,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503583",
+            "title": "Johnson, Lillian A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503584,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503584",
+            "title": "Johnson, Mary",
+            "type": "object"
+        },
+        {
+            "identifier": 503585,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503585",
+            "title": "Jones, Lauder William",
+            "type": "object"
+        },
+        {
+            "identifier": 503586,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503586",
+            "title": "Judson, Harry F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503587,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503587",
+            "title": "July, Robert W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503588,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503588",
+            "title": "Kegan, Elizabeth Hamer",
+            "type": "object"
+        },
+        {
+            "identifier": 503589,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503589",
+            "title": "Kellog, Vernon L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503590,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503590",
+            "title": "Kendrick, John F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503591,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503591",
+            "title": "Kerr, J. Austin",
+            "type": "object"
+        },
+        {
+            "identifier": 503592,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503592",
+            "title": "Kerr, Clark",
+            "type": "object"
+        },
+        {
+            "identifier": 503593,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503593",
+            "title": "Kimball, Lindsley F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503594,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503594",
+            "title": "Kimball, Richard T.",
+            "type": "object"
+        },
+        {
+            "identifier": 503595,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503595",
+            "title": "Kirschner, Leo",
+            "type": "object"
+        },
+        {
+            "identifier": 503596,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503596",
+            "title": "Kittredge, Tracy B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503597,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503597",
+            "title": "Knipe, Frederick W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503598,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503598",
+            "title": "Knowles, John Hilton",
+            "type": "object"
+        },
+        {
+            "identifier": 503599,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503599",
+            "title": "Knowles, John Hilton",
+            "type": "object"
+        },
+        {
+            "identifier": 503600,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503600",
+            "title": "Kumm, Henry",
+            "type": "object"
+        },
+        {
+            "identifier": 503601,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503601",
+            "title": "Lambert, Robert A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503602,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503602",
+            "title": "Lambert, Sylvester Maxwell",
+            "type": "object"
+        },
+        {
+            "identifier": 503603,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503603",
+            "title": "Lambert, Sylvester Maxwell",
+            "type": "object"
+        },
+        {
+            "identifier": 503604,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503604",
+            "title": "Lazarsfeld, Paul F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503605,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503605",
+            "title": "Leach, Charles N.",
+            "type": "object"
+        },
+        {
+            "identifier": 503606,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503606",
+            "title": "Leavell, Hugh R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503607,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503607",
+            "title": "Leob, Robert F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503608,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503608",
+            "title": "Leonard, Irving Albert",
+            "type": "object"
+        },
+        {
+            "identifier": 503609,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503609",
+            "title": "Letort, Robert",
+            "type": "object"
+        },
+        {
+            "identifier": 503610,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503610",
+            "title": "Lewis, Paul A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503611,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503611",
+            "title": "Lim, Robert KHO-Seng",
+            "type": "object"
+        },
+        {
+            "identifier": 503612,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503612",
+            "title": "Lleras, Camargo Albert",
+            "type": "object"
+        },
+        {
+            "identifier": 503613,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503613",
+            "title": "Lloyd, Norman",
+            "type": "object"
+        },
+        {
+            "identifier": 503614,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503614",
+            "title": "Loeb, Jacques",
+            "type": "object"
+        },
+        {
+            "identifier": 503615,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503615",
+            "title": "Logan, John A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503616,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503616",
+            "title": "Lohing, Juome A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503617,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503617",
+            "title": "Lovett, Robert A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503618,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503618",
+            "title": "Lyman, Richard W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503619,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503619",
+            "title": "McCloy, John",
+            "type": "object"
+        },
+        {
+            "identifier": 503620,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503620",
+            "title": "McCloy, Oliver Rufus",
+            "type": "object"
+        },
+        {
+            "identifier": 503621,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503621",
+            "title": "McKinley, Erskine W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503622,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503622",
+            "title": "McIntosh, William A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503623,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503623",
+            "title": "McLean, Don",
+            "type": "object"
+        },
+        {
+            "identifier": 503624,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503624",
+            "title": "Mabry, Thomas Dabney",
+            "type": "object"
+        },
+        {
+            "identifier": 503625,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503625",
+            "title": "Magoon, Estus",
+            "type": "object"
+        },
+        {
+            "identifier": 503626,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503626",
+            "title": "Mahaffy, Alexander F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503627,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503627",
+            "title": "Maier, John",
+            "type": "object"
+        },
+        {
+            "identifier": 503628,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503628",
+            "title": "Malloy, Daniel M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503629,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503629",
+            "title": "Mangelsdorf, Paul C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503630,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503630",
+            "title": "Mann, Albert B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503631,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503631",
+            "title": "Marshall, John",
+            "type": "object"
+        },
+        {
+            "identifier": 503632,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503632",
+            "title": "Mason, Max",
+            "type": "object"
+        },
+        {
+            "identifier": 503633,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503633",
+            "title": "May, Stacy",
+            "type": "object"
+        },
+        {
+            "identifier": 503634,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503634",
+            "title": "Milam, Daniel Franklin",
+            "type": "object"
+        },
+        {
+            "identifier": 503635,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503635",
+            "title": "Miller, Frederick A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503636,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503636",
+            "title": "Miller, Harry M., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503637,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503637",
+            "title": "Mims, Edward",
+            "type": "object"
+        },
+        {
+            "identifier": 503638,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503638",
+            "title": "Mitchell, Leland W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503639,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503639",
+            "title": "Moe, Henry Allen",
+            "type": "object"
+        },
+        {
+            "identifier": 503640,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503640",
+            "title": "Molloy, Daniel M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503641,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503641",
+            "title": "Moock, Joyce L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503642,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503642",
+            "title": "Morison, Robert S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503643,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503643",
+            "title": "Moseman, Albert H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503644,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503644",
+            "title": "Muench, Hugo",
+            "type": "object"
+        },
+        {
+            "identifier": 503645,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503645",
+            "title": "Muller, Henry R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503646,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503646",
+            "title": "Murphy, Starr J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503647,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503647",
+            "title": "Myers, Louis G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503648,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503648",
+            "title": "Myers, William L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503649,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503649",
+            "title": "Myers, William M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503650,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503650",
+            "title": "Niederhauser, John L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503651,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503651",
+            "title": "Niklicek, Ladislav",
+            "type": "object"
+        },
+        {
+            "identifier": 503652,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503652",
+            "title": "Noguchi, Hideyo",
+            "type": "object"
+        },
+        {
+            "identifier": 503653,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503653",
+            "title": "Nolte, Richard H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503654,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503654",
+            "title": "Norton, Edward L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503655,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503655",
+            "title": "Novak, Michael",
+            "type": "object"
+        },
+        {
+            "identifier": 503656,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503656",
+            "title": "O'Brien, Daniel P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503657,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503657",
+            "title": "Oliver, Wade W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503658,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503658",
+            "title": "Organizational Charts (General)",
+            "type": "object"
+        },
+        {
+            "identifier": 503659,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503659",
+            "title": "Oster, Katharine E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503660,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503660",
+            "title": "Owens, Patrick N.",
+            "type": "object"
+        },
+        {
+            "identifier": 503661,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503661",
+            "title": "Paine, Janet M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503662,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503662",
+            "title": "Palmieri, Victor H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503663,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503663",
+            "title": "Parker, Dorothy",
+            "type": "object"
+        },
+        {
+            "identifier": 503664,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503664",
+            "title": "Parkinson, Thomas I.",
+            "type": "object"
+        },
+        {
+            "identifier": 503665,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503665",
+            "title": "Payne, George C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503666,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503666",
+            "title": "Parran, Thomas",
+            "type": "object"
+        },
+        {
+            "identifier": 503667,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503667",
+            "title": "Pearce, Richard Mills",
+            "type": "object"
+        },
+        {
+            "identifier": 503668,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503668",
+            "title": "Perry, Jesse P., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503669,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503669",
+            "title": "Peterson, Olser L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503670,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503670",
+            "title": "Philip, Cornelius B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503671,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503671",
+            "title": "Pomerat, Gerard R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503672,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503672",
+            "title": "Purks, James H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503673,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503673",
+            "title": "Putnam, Dr. Persis",
+            "type": "object"
+        },
+        {
+            "identifier": 503674,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503674",
+            "title": "Ranken, Watson",
+            "type": "object"
+        },
+        {
+            "identifier": 503675,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503675",
+            "title": "Read, Florence M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503676,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503676",
+            "title": "Rhind, Flora M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503677,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503677",
+            "title": "Rice, Justus B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503678,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503678",
+            "title": "Richards, Alfred N.",
+            "type": "object"
+        },
+        {
+            "identifier": 503679,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503679",
+            "title": "Richardson, Ralph W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503680,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503680",
+            "title": "Rickard, Elsmere R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503681,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503681",
+            "title": "Robinson, Edward",
+            "type": "object"
+        },
+        {
+            "identifier": 503682,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503682",
+            "title": "Robinson, Marshall",
+            "type": "object"
+        },
+        {
+            "identifier": 503683,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503683",
+            "title": "Rockefeller Foundation",
+            "type": "object"
+        },
+        {
+            "identifier": 503684,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503684",
+            "title": "Rockefeller, David",
+            "type": "object"
+        },
+        {
+            "identifier": 503685,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503685",
+            "title": "Rockefeller, John D., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503686,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503686",
+            "title": "Rockefeller, John, 3rd.",
+            "type": "object"
+        },
+        {
+            "identifier": 503687,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503687",
+            "title": "Rockefeller, Martha Baird",
+            "type": "object"
+        },
+        {
+            "identifier": 503688,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503688",
+            "title": "Root, Francis M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503689,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503689",
+            "title": "Rose, Wickliffe",
+            "type": "object"
+        },
+        {
+            "identifier": 503690,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503690",
+            "title": "Rosenwald, Julius",
+            "type": "object"
+        },
+        {
+            "identifier": 503691,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503691",
+            "title": "Ruml, Beardsley",
+            "type": "object"
+        },
+        {
+            "identifier": 503692,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503692",
+            "title": "Rupert, Joseph",
+            "type": "object"
+        },
+        {
+            "identifier": 503693,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503693",
+            "title": "Rusk, Dean",
+            "type": "object"
+        },
+        {
+            "identifier": 503694,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503694",
+            "title": "Russell, Frederick F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503695,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503695",
+            "title": "Russell, Paul Farr",
+            "type": "object"
+        },
+        {
+            "identifier": 503696,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503696",
+            "title": "Ryerson, Martin",
+            "type": "object"
+        },
+        {
+            "identifier": 503697,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503697",
+            "title": "Salant, Walter S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503698,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503698",
+            "title": "Sanders, Alvin J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503699,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503699",
+            "title": "Sawyer, Wilbur A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503700,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503700",
+            "title": "Saxton, George A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503701,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503701",
+            "title": "Schapiro, Louis",
+            "type": "object"
+        },
+        {
+            "identifier": 503702,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503702",
+            "title": "Scott, Virgil C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503703,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503703",
+            "title": "Seitz, Frederick",
+            "type": "object"
+        },
+        {
+            "identifier": 503704,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503704",
+            "title": "Shannon, Raymond C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503705,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503705",
+            "title": "Simpson, Marilyn Milton",
+            "type": "object"
+        },
+        {
+            "identifier": 503706,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503706",
+            "title": "Smille, Wilson G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503707,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503707",
+            "title": "Smith, Charles H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503708,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503708",
+            "title": "Smith, Geoffrey S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503709,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503709",
+            "title": "Smith, Hugh H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503710,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503710",
+            "title": "Smith, Kellum J., Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503711,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503711",
+            "title": "Smithburn, Kenneth C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503712,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503712",
+            "title": "Snodgrass, John E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503713,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503713",
+            "title": "Snyder, John C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503714,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503714",
+            "title": "Soper, Fred L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503715,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503715",
+            "title": "Soper, Fred L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503716,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503716",
+            "title": "Spier, Robert Wade",
+            "type": "object"
+        },
+        {
+            "identifier": 503717,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503717",
+            "title": "Spoehr, Herman Augustus",
+            "type": "object"
+        },
+        {
+            "identifier": 503718,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503718",
+            "title": "Sprague, Lucian M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503719,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503719",
+            "title": "Sproul, Robert G.",
+            "type": "object"
+        },
+        {
+            "identifier": 503720,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503720",
+            "title": "Stakman, Elvin Charles",
+            "type": "object"
+        },
+        {
+            "identifier": 503721,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503721",
+            "title": "Stanton, Frank",
+            "type": "object"
+        },
+        {
+            "identifier": 503722,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503722",
+            "title": "Steel, Rowe S.",
+            "type": "object"
+        },
+        {
+            "identifier": 503723,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503723",
+            "title": "Stern, Herbert",
+            "type": "object"
+        },
+        {
+            "identifier": 503724,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503724",
+            "title": "Stevens, David H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503725,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503725",
+            "title": "Stevens, Robert T.",
+            "type": "object"
+        },
+        {
+            "identifier": 503726,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503726",
+            "title": "Stewart, Michael M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503727,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503727",
+            "title": "Stiles, Charles W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503728,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503728",
+            "title": "Stokes, Anson P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503729,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503729",
+            "title": "Strode, George K.",
+            "type": "object"
+        },
+        {
+            "identifier": 503730,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503730",
+            "title": "Strong, Maurice F.",
+            "type": "object"
+        },
+        {
+            "identifier": 503731,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503731",
+            "title": "Struse, Alvin M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503732,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503732",
+            "title": "Sulzberger, Arthur H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503733,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503733",
+            "title": "Sweet, Winfield C.",
+            "type": "object"
+        },
+        {
+            "identifier": 503734,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503734",
+            "title": "Swift, Harold H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503735,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503735",
+            "title": "Tatum, Edward Lawrie",
+            "type": "object"
+        },
+        {
+            "identifier": 503736,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503736",
+            "title": "Taylor, Richard M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503737,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503737",
+            "title": "Tennant, Mary Elizabeth",
+            "type": "object"
+        },
+        {
+            "identifier": 503738,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503738",
+            "title": "Theiler, Max",
+            "type": "object"
+        },
+        {
+            "identifier": 503739,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503739",
+            "title": "Tisdale, Wilbur Earle",
+            "type": "object"
+        },
+        {
+            "identifier": 503740,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503740",
+            "title": "Thomas, Robert M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503741,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503741",
+            "title": "Thompson, Kenneth W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503742,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503742",
+            "title": "Todoro, Michael P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503743,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503743",
+            "title": "Trapido, Harold",
+            "type": "object"
+        },
+        {
+            "identifier": 503744,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503744",
+            "title": "Trowbridge, Augustus",
+            "type": "object"
+        },
+        {
+            "identifier": 503745,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503745",
+            "title": "Van Dusen, Henry P.",
+            "type": "object"
+        },
+        {
+            "identifier": 503746,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503746",
+            "title": "Van Sickle, John V.",
+            "type": "object"
+        },
+        {
+            "identifier": 503747,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503747",
+            "title": "Vincent, George E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503748,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503748",
+            "title": "Wakeman, Maurice A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503749,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503749",
+            "title": "Walker, Sydnor H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503750,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503750",
+            "title": "Warren, Andrew J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503751,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503751",
+            "title": "Washburn, Benjamin E.",
+            "type": "object"
+        },
+        {
+            "identifier": 503752,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503752",
+            "title": "Watson, Robert B.",
+            "type": "object"
+        },
+        {
+            "identifier": 503753,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503753",
+            "title": "Watson, Thomas, Jr.",
+            "type": "object"
+        },
+        {
+            "identifier": 503754,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503754",
+            "title": "Weaver, Warren",
+            "type": "object"
+        },
+        {
+            "identifier": 503755,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503755",
+            "title": "Weir, John M.",
+            "type": "object"
+        },
+        {
+            "identifier": 503756,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503756",
+            "title": "Welch, William Henry",
+            "type": "object"
+        },
+        {
+            "identifier": 503757,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503757",
+            "title": "Wernimont, Kenneth W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503758,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503758",
+            "title": "West, Robert L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503759,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503759",
+            "title": "Westerberg, Nils J.",
+            "type": "object"
+        },
+        {
+            "identifier": 503760,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503760",
+            "title": "Whipple, George R.",
+            "type": "object"
+        },
+        {
+            "identifier": 503761,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503761",
+            "title": "White, Joseph Hill",
+            "type": "object"
+        },
+        {
+            "identifier": 503762,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503762",
+            "title": "White, Kerr L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503763,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503763",
+            "title": "White, William A.",
+            "type": "object"
+        },
+        {
+            "identifier": 503764,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503764",
+            "title": "Whitman, Loring",
+            "type": "object"
+        },
+        {
+            "identifier": 503765,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503765",
+            "title": "Wilbur, Ray L.",
+            "type": "object"
+        },
+        {
+            "identifier": 503766,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503766",
+            "title": "Williams, Greer",
+            "type": "object"
+        },
+        {
+            "identifier": 503767,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503767",
+            "title": "Willits, Joseph H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503768,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503768",
+            "title": "Winikoff, Beverly",
+            "type": "object"
+        },
+        {
+            "identifier": 503769,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503769",
+            "title": "Winter, Robert",
+            "type": "object"
+        },
+        {
+            "identifier": 503770,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503770",
+            "title": "Wolfensohn, James D.",
+            "type": "object"
+        },
+        {
+            "identifier": 503771,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503771",
+            "title": "Wood, Barry W.",
+            "type": "object"
+        },
+        {
+            "identifier": 503772,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503772",
+            "title": "Wood, Peter H.",
+            "type": "object"
+        },
+        {
+            "identifier": 503773,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/503773",
+            "title": "Woods, Arthur",
+            "type": "object"
+        }
+    ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-23T15:58:12Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/683"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3977",
+        "user_mtime": "2016-10-23T15:58:12Z"
+    },
     "create_time": "2014-12-06T13:46:59Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-23T15:58:12Z",
-    "suppressed": false,
-    "id_0": "FA485",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
-        {
-            "external_id": "20503",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:58:12Z",
-            "system_mtime": "2016-10-23T15:58:12Z",
-            "user_mtime": "2016-10-23T15:58:12Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "3.5",
-            "container_summary": "8 document boxes.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T15:58:12Z",
-            "system_mtime": "2016-10-23T15:58:12Z",
-            "user_mtime": "2016-10-23T15:58:12Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
+    "created_by": "admin",
     "dates": [
         {
-            "lock_version": 0,
-            "expression": "undated",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
             "create_time": "2016-10-23T15:58:12Z",
-            "system_mtime": "2016-10-23T15:58:12Z",
-            "user_mtime": "2016-10-23T15:58:12Z",
+            "created_by": "battalb",
             "date_type": "single",
+            "expression": "undated",
+            "jsonmodel_type": "date",
             "label": "creation",
-            "jsonmodel_type": "date"
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-23T15:58:12Z",
+            "user_mtime": "2016-10-23T15:58:12Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA485.xml",
+    "extents": [
+        {
+            "container_summary": "8 document boxes.",
+            "create_time": "2016-10-23T15:58:12Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "3.5",
+            "portion": "whole",
+            "system_mtime": "2016-10-23T15:58:12Z",
+            "user_mtime": "2016-10-23T15:58:12Z"
         }
     ],
     "external_documents": [],
-    "rights_statements": [
+    "external_ids": [
         {
-            "lock_version": 0,
-            "identifier": "65c0e828afbfaf80154cb0b3badc658b",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2019-12-05T14:49:12Z",
-            "system_mtime": "2019-12-05T14:49:12Z",
-            "user_mtime": "2019-12-05T14:49:12Z",
-            "start_date": "2019-12-02",
-            "end_date": "2019-12-31",
-            "determination_date": "2019-12-01",
-            "rights_type": "copyright",
-            "status": "copyrighted",
-            "jurisdiction": "US",
-            "jsonmodel_type": "rights_statement",
-            "external_documents": [],
-            "acts": [
-                {
-                    "start_date": "2019-12-14",
-                    "end_date": "2019-12-31",
-                    "created_by": "admin",
-                    "last_modified_by": "admin",
-                    "create_time": "2019-12-05T14:49:12Z",
-                    "system_mtime": "2019-12-05T14:49:12Z",
-                    "user_mtime": "2019-12-05T14:49:12Z",
-                    "act_type": "disseminate",
-                    "restriction": "allow",
-                    "jsonmodel_type": "rights_statement_act",
-                    "notes": [
-                        {
-                            "jsonmodel_type": "note_rights_statement_act",
-                            "label": "restrictions note",
-                            "type": "restrictions",
-                            "content": [
-                                "granted restrictions note"
-                            ],
-                            "persistent_id": "ac6cf5891d46552762ff86ef586159f4",
-                            "publish": true
-                        }
-                    ]
-                }
-            ],
-            "linked_agents": [],
-            "notes": [
-                {
-                    "jsonmodel_type": "note_rights_statement",
-                    "label": "materials note",
-                    "type": "materials",
-                    "content": [
-                        "materials note content"
-                    ],
-                    "persistent_id": "b15c892aeff64d49529ae21f6734dc34",
-                    "publish": true
-                }
-            ]
+            "create_time": "2016-10-23T15:58:12Z",
+            "created_by": "battalb",
+            "external_id": "20503",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-23T15:58:12Z",
+            "user_mtime": "2016-10-23T15:58:12Z"
         }
     ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Biographical File",
+    "finding_aid_language": "English",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Biographical File\n",
+    "id_0": "FA485",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "collection",
     "linked_agents": [
         {
-            "role": "creator",
+            "ref": "/agents/corporate_entities/4746",
             "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/4746"
+            "role": "creator",
+            "terms": []
         }
     ],
-    "revision_statements": [],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "linked_events": [],
+    "lock_version": 6,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "137a67becfd0bffeb1e324fd364a3c35",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The Rockefeller Foundation Biographical File is arranged alphabetically by the last name/family name of the individual or by institutional name.\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "667f86c573282a16759d5e187c028b2c",
-            "type": "accessrestrict",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Open for research. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "349cd1d84b68be5f177a58fcf418e68b",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "db987b2683395b1762e131e6866275ff",
-            "type": "processinfo",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Level 2 Limited Processing has been conducted by RAC to establish basic intellectual and physical control of the material and assess immediate preservation and conservation needs. Records have been rehoused into acid-free boxes. All records remain in original folders.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "processinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "f418509f7cac95fbe88d25729c9567ac",
-            "type": "acqinfo",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The Rockefeller Foundation Biographical File was created and maintained by the Foundation staff until the 1980's, at which time the File was transferred to the Rockefeller Archive Center.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "acqinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "2bf0e52fbefeecc3d74d876837b635af",
-            "type": "scopecontent",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The scope and breadth of the Biographical File is inconsistent. Some files are rich, while others are sparse.\n\nIndividual files may contain: biographical sketches, curriculum vitaes and resumes, obituaries, press releases, photographs, articles and publications. Files may also document honors, awards, appointments and positions held.\n ",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "7012e6157c591ab96725a5fd83146a66",
-            "type": "physdesc",
             "content": [
                 "8 document boxes."
             ],
-            "publish": true
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "7012e6157c591ab96725a5fd83146a66",
+            "publish": true,
+            "type": "physdesc"
         }
     ],
-    "uri": "/repositories/2/resources/683",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-23T15:58:12Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-23T15:58:12Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3977",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/683"
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [
+        {
+            "acts": [
+                {
+                    "act_type": "disseminate",
+                    "create_time": "2019-12-05T14:49:12Z",
+                    "created_by": "admin",
+                    "end_date": "2019-12-31",
+                    "jsonmodel_type": "rights_statement_act",
+                    "last_modified_by": "admin",
+                    "notes": [
+                        {
+                            "content": [
+                                "granted restrictions note"
+                            ],
+                            "jsonmodel_type": "note_rights_statement_act",
+                            "label": "restrictions note",
+                            "persistent_id": "ac6cf5891d46552762ff86ef586159f4",
+                            "publish": true,
+                            "type": "restrictions"
+                        }
+                    ],
+                    "restriction": "allow",
+                    "start_date": "2019-12-14",
+                    "system_mtime": "2019-12-05T14:49:12Z",
+                    "user_mtime": "2019-12-05T14:49:12Z"
+                }
+            ],
+            "create_time": "2019-12-05T14:49:12Z",
+            "created_by": "admin",
+            "determination_date": "2019-12-01",
+            "end_date": "2019-12-31",
+            "external_documents": [],
+            "identifier": "65c0e828afbfaf80154cb0b3badc658b",
+            "jsonmodel_type": "rights_statement",
+            "jurisdiction": "US",
+            "last_modified_by": "admin",
+            "linked_agents": [],
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "materials note content"
+                    ],
+                    "jsonmodel_type": "note_rights_statement",
+                    "label": "materials note",
+                    "persistent_id": "b15c892aeff64d49529ae21f6734dc34",
+                    "publish": true,
+                    "type": "materials"
+                }
+            ],
+            "rights_type": "copyright",
+            "start_date": "2019-12-02",
+            "status": "copyrighted",
+            "system_mtime": "2019-12-05T14:49:12Z",
+            "user_mtime": "2019-12-05T14:49:12Z"
         }
+    ],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, Biographical File",
+    "tree": {
+        "ref": "/repositories/2/resources/683/tree"
     },
+    "uri": "/repositories/2/resources/683",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2014-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-23T15:58:12Z",
-        "system_mtime": "2016-10-23T15:58:12Z",
-        "user_mtime": "2016-10-23T15:58:12Z",
+        "created_by": "battalb",
+        "date_2": "2014-12-31",
         "enum_1": "2 - Minimal",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-23T15:58:12Z",
+        "user_mtime": "2016-10-23T15:58:12Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/683/tree"
-    }
+    "user_mtime": "2016-10-23T15:58:12Z"
 }

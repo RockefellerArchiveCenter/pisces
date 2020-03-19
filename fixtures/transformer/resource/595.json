@@ -1,35 +1,384 @@
 {
-    "lock_version": 3,
-    "title": "Rockefeller Foundation records, field offices, New Delhi, India, RG 6, SG 7",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA396.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, New Delhi, India, RG 6, SG 7\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, New Delhi, India, RG 6, SG 7",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T11:06:46Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T19:53:19Z",
-    "suppressed": false,
-    "id_0": "FA396",
-    "language": "eng",
-    "level": "subgrp",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2237",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:53:19Z",
-            "system_mtime": "2016-10-22T19:53:19Z",
-            "user_mtime": "2016-10-22T19:53:19Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 365709,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/365709",
+            "title": "Indian Agricultural Program - General Administrative Files, ca. 1952-1976",
+            "type": "collection"
+        },
+        {
+            "identifier": 365817,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/365817",
+            "title": "Indian Agricultural Program - Administrative Files, 1950-1975, n.d.",
+            "type": "collection"
+        },
+        {
+            "identifier": 365930,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/365930",
+            "title": "Indian Agricultural Program - Officers' Diaries, 1957-1975",
+            "type": "collection"
+        },
+        {
+            "identifier": 365973,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/365973",
+            "title": "Indian Agricultural Program - Crop Improvement Programs, 1955-1973, n.d.",
+            "type": "collection"
+        },
+        {
+            "identifier": 366353,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366353",
+            "title": "Indian Agricultural Program - Agricultural Education, 1955-1973, n.d.",
+            "type": "collection"
+        },
+        {
+            "identifier": 366423,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366423",
+            "title": "Indian Agricultural Program - Agricultural Research Institutes, 1956-1973",
+            "type": "collection"
+        },
+        {
+            "identifier": 366540,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366540",
+            "title": "Indian Agricultural Program - Personnel Files, 1956-1973",
+            "type": "collection"
+        },
+        {
+            "identifier": 366736,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366736",
+            "title": "Medical and Natural Sciences Program - Administrative Files, 1935-1973",
+            "type": "collection"
+        },
+        {
+            "identifier": 366749,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366749",
+            "title": "Medical and Natural Sciences Program - All India Institute of Medical Sciences (AIIMS), 1957-1973, n.d.",
+            "type": "collection"
+        },
+        {
+            "identifier": 366777,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366777",
+            "title": "Medical and Natural Sciences Program - Virus Research Center, Poona, 1951-1970",
+            "type": "collection"
+        },
+        {
+            "identifier": 366827,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366827",
+            "title": "Humanities and Social Sciences Program - General Correspondence, 1964-1973",
+            "type": "collection"
+        },
+        {
+            "identifier": 366831,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/366831",
+            "title": "Humanities and Social Sciences Program - Socio-Economic Study in Uttar Pradesh, 1964-1972, n.d.",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T19:53:19Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/595"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3883",
+        "user_mtime": "2016-10-22T19:53:19Z"
+    },
+    "create_time": "2014-12-06T11:06:46Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1935",
+            "create_time": "2016-10-22T19:53:19Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1978",
+            "expression": "1935-1978",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T19:53:19Z",
+            "user_mtime": "2016-10-22T19:53:19Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA396.xml",
+    "extents": [
+        {
+            "container_summary": "149 document cases",
+            "create_time": "2016-10-22T19:53:19Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "60",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T19:53:19Z",
+            "user_mtime": "2016-10-22T19:53:19Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T19:53:19Z",
+            "created_by": "battalb",
+            "external_id": "2237",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T19:53:19Z",
+            "user_mtime": "2016-10-22T19:53:19Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Field Offices, New Delhi, India, RG 6, SG 7",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Offices, New Delhi, India, RG 6, SG 7\n",
+    "id_0": "FA396",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "subgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/43",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 3,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "af6191836f24a7f43755e5f848cdc482",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "a6d8da77071eb559eeefb200810bce2e",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "RG 6.7.  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "090310b5bf737d4f27d219bbefe559d4",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA397/overview\">FA397 Rockefeller Foundation records, Field Offices, Cali, Colombia.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>\n\n<extref href=\"../FA399/overview\">FA399 Rockefeller Foundation records, Field Office, Ankara, Turkey.</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "73b569c5fd555329020f0fadec532add",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "38beba1d2f2a67cf933d773d640e6f18",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "RG 6.7 is arranged in three subgroups, corresponding to program or program area, and thereunder in series.\n\nSubgroup I, Indian Agricultural Program, is comprised of seven series:\n\nSeries 1 - General Administrative Files Series 2 - IAP Administrative Files Series 3 - Officers' Diaries Series 4 - Crop Improvement Programs Series 5 - Agricultural Education Series 6 - Agricultural Research Institutes Series 7 - Personnel Files\n\nIn accordance with RF policy, Series VII is closed to research. Series III, Officers' Diaries, is open with the permission of the Director of the Archive Center.\n\nSubgroup II, Medical and Natural Sciences Program, has been arranged in three series:\n\nSeries 1 - Administrative Files Series 2 - All India Institute of Medical Sciences Series 3 - Virus Research Center, Poona\n\nSubgroup III, Humanities and Social Sciences Program, includes\n\nSeries 1 - General Correspondence Series 2 - Socio-Economic Study in Uttar Pradesh\n\nWithin series, records are typically arranged alphabetically by subject or type of material and thereunder chronologically. The original folder titles given by field office personnel at the time or records transfer to New York in 1973 have been retained. Series were established by the processing archivist in 1994.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "ab61f4ee0f042fba470b9e6fca6d5019",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "From 1935 to 1973, the New Delhi Field Office of the Rockefeller Foundation (RF) administered cooperative programs throughout India in the fields of medicine and public health (1935-1973), agriculture (1956-73), and the humanities and social sciences (1964-72). The New Delhi office also served as the RF's Far Eastern regional headquarters, replacing Shanghai temporarily from 1942 to 1946 and permanently after 1949. Between 1949 and 1952, the office was located in Bangalore.\n\nThe New Delhi office was headed by the Field Director or Foundation Representative in India, who served as a scientist-cum-administrator and reported to the appropriate division director in New York. His staff included an Assistant Field Director, staff scientists and research assistants, and local administrative personnel. The field office staff was continually augmented by visiting specialists from around the world. By 1966, the fifteen-member staff in New Delhi constituted the largest RF contingent outside New York.\n\nThe RF's International Health Division (IHD) had established the first office in New Delhi for the purpose of extending its India hookworm control program, which had begun in the Madras Presidency in 1920. Subsequent medical and public health activities in India included malaria control, the development of demonstration health units, nursing education, nutrition studies, and, increasingly throughout the 1950s and 1960s, medical education and research. Significant grants went to the All India Institute of Hygiene and Public Health in Calcutta (1913-50) and the Virus Research Center at Poona (1951-71). Grants also supported the Indian Council for Medical Research and the All India Institute of Medical Sciences (1952-1973).\n\nThe last year in which grants were made in the medical field from the New Delhi office was 1970. At that time, the RF's Medical and Natural Sciences division separated into two distinct disciplines, Biomedical Sciences and Natural and Environmental Sciences.\n\nThe RF's agricultural work in India officialy began in 1956 when the Government of India and the RF signed a Memorandum of Understanding. This agreement created the Indian Agricultural Program (IAP) and spread the so-called Green Revolution to India. The IAP was the fourth in a series of ambitious \"country\" programs in agriculture begun by the RF in Mexico (1943) and subsequently extended to Colombia (1950) and Chile (1955). Its purpose was twofold: to increase cereal crop production through the development of high-yielding seed, and to strengthen graduate education in agriculture. Under the Memorandum of Understanding, the Government of India arranged for the necessary land and facilities and budget for local staff, while the RF provided a permanent staff of resident specialists and appropriated annual sums for equipment and other expenses incurred by the field programs. The Foundation also made grants to selected agricultural institutions and to Indian scientists to pursue research in the United States.\n\nResearch and postgraduate training were viewed as interrelated activities. In 1958, with the Foundation's support, a postgraduate school was inaugurated at the Indian Agricultural Research Institute, New Delhi (est. 1905), with the authority to award the M.Sc. and Ph.D. degrees. After 1960, new legislation made possible the creation of several state agricultural universities modeled after American land-grant universities. These universities developed relationships with the various crop improvement programs and offered valuable research opportunities for American and Indian agronomists.\n\nThe All India Coordinated Cereal Improvement Projects, the backbone of the IAP research program, represented a new approach to crop research in India. Sponsored by the Indian Council of Agricultural Research (ICAR) and jointly operated by the ICAR and state institutions, each project studies the agronomy, entomology, pathology, genetics, and breeding of an individual crop. For the first time, research stations and substations were established throughout the subcontinent in order to coordinate research activities across the major agro-climatic zones. The programs began with maize in 1957 (although maize work had begun in India in 1945) and came to include sorghum and other millets (1957), wheat (1961), and rice (1965). Notable increases occurred in wheat production with the importation in 1965 of dwarf materials from Mexico. In conducting seed development research, the IAP benefited from the expertise of those RF agronomists who had served first in Mexico, namely Edwin J. Wellhausen, Ulysses J. Grant, Ernest W. Sprague, and the 1970 Nobel Prize winner, Norman E. Borlaug. Allied areas of research included drainage, fertility, soil and water management, and agricultural economics.\n\nIn 1973, the RF decided to bring to a close its Indian Agricultural Program. India continued to carry out crop improvement work, utilizing the administrative, teaching, and research structures jointly established over seventeen years by the IAP and the Government of India. The RF therefore phased out its involvement in all improvement programs except rice, which was continued until 1975 by Wayne H. Freeman at Hyderabad. From 1976 to 1983, the Hyderabad office under Leland R. House operated the International Crops Research Institute for the Semi-Arid Tropics (ICRISAT). This institute functioned as part of the Foundation's \"Conquest of Hunger\" program, which had been formally established in 1963.\n\nIn October 1964, Chadbourne Gilpatric took up residence in India as Visiting Professor in Philosophy at Delhi University, with responsibilities for representing RF interests in the Humanities and Social Sciences (HSS). Under HSS director Joseph E. Black (1964-70), Gilpatric sought to advance research and teaching in the humanities and in the social and hard sciences. He was particularly eager to strengthen curriculum at agricultural universities and to increase and preserve library holdings. From 1968 to 1972, Gilpatric coordinated a socioeconomic study of small farmers in Uttar Pradesh state. Gilpatric returned to the United States in April 1972. The Social Sciences programs had been officially phased out in 1970 and replaced with separate Arts and Humanities divisions.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "ff13070324781b080f169e21955c969c",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The New Delhi Field Office records (RG 6.7) of the Rockefeller Foundation Archives document the operation of the office and the programs it administered in the medical, agricultural, and social sciences. The records span the dates 1935 to 1976, but 90% of the record group dates from the period 1956 to 1973 and relates to the Indian Agricultural Program (IAP), operated by the RF's Natural Sciences and Agriculture Division. The IAP records provide a comprehensive account of the RF's role in establishing an international collaborative program of technical assistance. They also constitute an important source for the study of the history of modern agriculture and agricultural education in India.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "c89dc252d42dea97b04119ddb70fbbb9",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Important Subjects:  \n\nAgricultural education--India; Agricultural experiment stations--India; Agricultural innovation--India; Agriculture and state--India; Agriculture--Asia; Agriculture--India --Green Revolution --High Yielding Varieties Programs; Indian Council of Agricultural Research (New Delhi); Indian Agricultural Research Institute (New Delhi); International Rice Research Institute (Philippines); Plant introduction--India; Virology--Research--India; New Delhi--Charitable uses, trusts, and foundations; Rockefeller Foundation--India; --Rockefeller Foundation--Division of Natural Sciences and Agriculture--India; United States Agency for International Development.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "f2479b3baa548c395b7a001f06f8faba",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Important Names:  \n\nAllen, LeRoy R.; Anderson, Richmond K.; Baird, Guy B.; Balfour, Marshall C.; Barnard, Chester Irving; Borlaug, Norman Ernest; Bugher, John C.; Corwin, J.D.; Cummings, Ralph Waldo; Douglas, Johnson E.; Fosdick, Raymond Blaine; Freeman, Wayne H.; Gilpatric, Chadbourne; Grant, Ulysses J.; Gregg, Lucien A.; Harrar, Jacob George; House, Leland Ralph; Joshi, A. B.; Kerr, J. Austin; Mason, Max; Morison, Robert S.; Moseman, Albert H.; Pal, Benjamin Peary; Parker, Dorothy; Rachie, Kenneth O.; Rusk, Dean; Sprague, Ernest W.; Stakman, Elvin Charles; Starnes, Ordway; Strode, George K.; Swaminathan, S.; Warren, Andrew J.; Weaver, Warren; Weir, John; Wellhausen, Edwin J.; Work, Telford H.; Wortman, Sterling.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "72ff98a35ba954768d1acf87dea920fc",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Rockefeller Foundation Presidents:  \n\nMax Mason, 1929-36; Raymond B. Fosdick, 1936-48; Chester I. Barnard, 1948-51; Dean Rusk, 1951-61; J. George Harrar, 1961-72; John H. Knowles, 1972-79.\n\nMedical Program:\n\nFoundation Representatives in New Delhi:  W.P. Jacocks, 1935-42; Marshall C. Balfour, 1942-46, 1949, 1954-58; Miss J. D. Corwin, 1946-48; Richmond K. Anderson, 1948-54; LeRoy R. Allen, 1958-67; Division Directors in New York:   Richard M. Pearce (Medical Sciences), 1929-30; Alan Gregg (Medical Sciences), 1931-50; George K. Strode (Medicine and Public Health), 1951; Andrew J. Warren (Medicine and Public Health), 1951-54; John C. Bugher (Medical Education and Public Health), 1955-59; Robert S. Morison (Biological and Medical Research), 1955-59; (Medical and Natural Sciences), 1964-70; John M. Weir (Medical and Natural Sciences), 1964-70.\n\nIndian Agricultural Program:\n\nField Directors in New Delhi: Ralph W. Cummings, 1957-66; Guy B. Baird, 1967-71; Ordway Starnes, 1971-73; Wayne H. Freeman, 1974-75\n\nDivision Directors in New York:  Warren Weaver (Natural Sciences and Agriculture), 1951-55; J. George Harrar (Agricultural Sciences), 1955-59; Albert H. Moseman (Agricultural Sciences), 1960-65; Sterling Wortman (Agricultural Sciences), 1966-70; John A. Pino (Agricultural Sciences), 1970-82.\n\nHumanities and Social Sciences Program:  \n\nFoundation Representative in New Delhi: Chadbourne Gilpatric (Humanities and Social Sciences), 1964-72.\n\nDivision Directors in New York:  Kenneth W. Thompson, acting (Humanities and Social Sciences), 1962-64; Joseph E. Black (Humanities and Social Sciences), 1964-70; Norman Lloyd (Arts and Humanities), 1970-73.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Related Archival Materials note",
+            "persistent_id": "312ed4000b85f5aac308131bbb2dad13",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "For information about specific grants to individuals or institutions in India, researchers should consult the grant files (1913-73) for India, located in Record Groups 1.1 and 1.2 (Projects), Series 464 (India), in the Rockefeller Foundation Archives.\n\nRELATED MATERIALS\n\nThe following Record Groups in the Rockefeller Foundation Archives at the Rockefeller Archive Center contain material bearing upon the Foundation's work in India:\n\nRG 1.1: Projects; RG 1.2: Projects; RG 2: General Correspondence; RG 3: Administration, Program, and Policy; RG 5: International Health Board; RG 6.13: Mexico Field Office; RG 12: Officers' Diaries; RG 13: Oral Histories, RF Field Officers.\n\nAnnual reports of the Rockefeller Foundation; Confidential Monthly Report, for the Information of the Trustees.\n\nPHOTOGRAPHS\n\nFour folders of photographs were removed from Record Group 6.7 during processing and added to the Photograph Collection of the Archive Center. These photographs are filed by country number, 464 India, and thereunder alphabetically by subject. They are interfiled with other photographs of India taken from Record Group 1.1 and 1.2 (Projects). Included are photographs of CIMMYT work in Mexico (n.d.), agricultural scenes in India (1958-59), compartment cages used for rearing the sorghum shoot fly (1971), and a disbound scrapbook of captioned photographs (1957) showing investigations into the virus known as Kyasanoor Forest Disease.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "relatedmaterial"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "625cd9fb5d6147751898914b199ae613",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T19:53:19Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>May 2010</date><item></item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T19:53:19Z",
+            "uri": "/revision_statement/3041",
+            "user_mtime": "2016-10-22T19:53:19Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/33"
@@ -89,291 +438,29 @@
             "ref": "/subjects/41"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "60",
-            "container_summary": "149 document cases",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:53:19Z",
-            "system_mtime": "2016-10-22T19:53:19Z",
-            "user_mtime": "2016-10-22T19:53:19Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1935-1978",
-            "begin": "1935",
-            "end": "1978",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:53:19Z",
-            "system_mtime": "2016-10-22T19:53:19Z",
-            "user_mtime": "2016-10-22T19:53:19Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/43"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>May 2010</date><item></item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T19:53:19Z",
-            "system_mtime": "2016-10-22T19:53:19Z",
-            "user_mtime": "2016-10-22T19:53:19Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/3041",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "af6191836f24a7f43755e5f848cdc482",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "a6d8da77071eb559eeefb200810bce2e",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 6.7.  \n\nOrganization of the Foundation's archives:\n\nRG 1 Projects;\n\nRG 2 General Correspondence;\n\nRG 3 Administration, Program and Policy;\n\nRG 4 China Medical Board;\n\nRG 5 International Health Board/Division;\n\nRG 6 Field Offices;\n\nRG 7 Treasurer's Office;\n\nRG 8 Comptroller;\n\nRG 9 Personnel;\n\nRG 10 Fellowships;\n\nRG 11 Information Services;\n\nRG 12 Diaries;\n\nRG 13 Oral Histories;\n\nRG 14 Counsel;\n\nRG 15 Secretary;\n\nRG 16 Minutes and Officers Actions;\n\nRG 17 Dockets;\n\nRG 18 Declinations (100F);\n\nRG 19 Non-textual Materials;\n\nRG 20 Communications Office.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "090310b5bf737d4f27d219bbefe559d4",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Other available finding aids describing Rockefeller Foundation records, Field Offices include:\n\n<extref href=\"../FA395/overview\">FA395 Rockefeller Foundation records, Field Offices, Paris.</extref>\n\n<extref href=\"../FA397/overview\">FA397 Rockefeller Foundation records, Field Offices, Cali, Colombia.</extref>\n\n<extref href=\"../FA398/overview\">FA398 Rockefeller Foundation records, Field Offices, Mexico.</extref>\n\n<extref href=\"../FA399/overview\">FA399 Rockefeller Foundation records, Field Office, Ankara, Turkey.</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "73b569c5fd555329020f0fadec532add",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection, or items within a collection, it is the user\u2019s responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "38beba1d2f2a67cf933d773d640e6f18",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RG 6.7 is arranged in three subgroups, corresponding to program or program area, and thereunder in series.\n\nSubgroup I, Indian Agricultural Program, is comprised of seven series:\n\nSeries 1 - General Administrative Files Series 2 - IAP Administrative Files Series 3 - Officers' Diaries Series 4 - Crop Improvement Programs Series 5 - Agricultural Education Series 6 - Agricultural Research Institutes Series 7 - Personnel Files\n\nIn accordance with RF policy, Series VII is closed to research. Series III, Officers' Diaries, is open with the permission of the Director of the Archive Center.\n\nSubgroup II, Medical and Natural Sciences Program, has been arranged in three series:\n\nSeries 1 - Administrative Files Series 2 - All India Institute of Medical Sciences Series 3 - Virus Research Center, Poona\n\nSubgroup III, Humanities and Social Sciences Program, includes\n\nSeries 1 - General Correspondence Series 2 - Socio-Economic Study in Uttar Pradesh\n\nWithin series, records are typically arranged alphabetically by subject or type of material and thereunder chronologically. The original folder titles given by field office personnel at the time or records transfer to New York in 1973 have been retained. Series were established by the processing archivist in 1994.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ab61f4ee0f042fba470b9e6fca6d5019",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "From 1935 to 1973, the New Delhi Field Office of the Rockefeller Foundation (RF) administered cooperative programs throughout India in the fields of medicine and public health (1935-1973), agriculture (1956-73), and the humanities and social sciences (1964-72). The New Delhi office also served as the RF's Far Eastern regional headquarters, replacing Shanghai temporarily from 1942 to 1946 and permanently after 1949. Between 1949 and 1952, the office was located in Bangalore.\n\nThe New Delhi office was headed by the Field Director or Foundation Representative in India, who served as a scientist-cum-administrator and reported to the appropriate division director in New York. His staff included an Assistant Field Director, staff scientists and research assistants, and local administrative personnel. The field office staff was continually augmented by visiting specialists from around the world. By 1966, the fifteen-member staff in New Delhi constituted the largest RF contingent outside New York.\n\nThe RF's International Health Division (IHD) had established the first office in New Delhi for the purpose of extending its India hookworm control program, which had begun in the Madras Presidency in 1920. Subsequent medical and public health activities in India included malaria control, the development of demonstration health units, nursing education, nutrition studies, and, increasingly throughout the 1950s and 1960s, medical education and research. Significant grants went to the All India Institute of Hygiene and Public Health in Calcutta (1913-50) and the Virus Research Center at Poona (1951-71). Grants also supported the Indian Council for Medical Research and the All India Institute of Medical Sciences (1952-1973).\n\nThe last year in which grants were made in the medical field from the New Delhi office was 1970. At that time, the RF's Medical and Natural Sciences division separated into two distinct disciplines, Biomedical Sciences and Natural and Environmental Sciences.\n\nThe RF's agricultural work in India officialy began in 1956 when the Government of India and the RF signed a Memorandum of Understanding. This agreement created the Indian Agricultural Program (IAP) and spread the so-called Green Revolution to India. The IAP was the fourth in a series of ambitious \"country\" programs in agriculture begun by the RF in Mexico (1943) and subsequently extended to Colombia (1950) and Chile (1955). Its purpose was twofold: to increase cereal crop production through the development of high-yielding seed, and to strengthen graduate education in agriculture. Under the Memorandum of Understanding, the Government of India arranged for the necessary land and facilities and budget for local staff, while the RF provided a permanent staff of resident specialists and appropriated annual sums for equipment and other expenses incurred by the field programs. The Foundation also made grants to selected agricultural institutions and to Indian scientists to pursue research in the United States.\n\nResearch and postgraduate training were viewed as interrelated activities. In 1958, with the Foundation's support, a postgraduate school was inaugurated at the Indian Agricultural Research Institute, New Delhi (est. 1905), with the authority to award the M.Sc. and Ph.D. degrees. After 1960, new legislation made possible the creation of several state agricultural universities modeled after American land-grant universities. These universities developed relationships with the various crop improvement programs and offered valuable research opportunities for American and Indian agronomists.\n\nThe All India Coordinated Cereal Improvement Projects, the backbone of the IAP research program, represented a new approach to crop research in India. Sponsored by the Indian Council of Agricultural Research (ICAR) and jointly operated by the ICAR and state institutions, each project studies the agronomy, entomology, pathology, genetics, and breeding of an individual crop. For the first time, research stations and substations were established throughout the subcontinent in order to coordinate research activities across the major agro-climatic zones. The programs began with maize in 1957 (although maize work had begun in India in 1945) and came to include sorghum and other millets (1957), wheat (1961), and rice (1965). Notable increases occurred in wheat production with the importation in 1965 of dwarf materials from Mexico. In conducting seed development research, the IAP benefited from the expertise of those RF agronomists who had served first in Mexico, namely Edwin J. Wellhausen, Ulysses J. Grant, Ernest W. Sprague, and the 1970 Nobel Prize winner, Norman E. Borlaug. Allied areas of research included drainage, fertility, soil and water management, and agricultural economics.\n\nIn 1973, the RF decided to bring to a close its Indian Agricultural Program. India continued to carry out crop improvement work, utilizing the administrative, teaching, and research structures jointly established over seventeen years by the IAP and the Government of India. The RF therefore phased out its involvement in all improvement programs except rice, which was continued until 1975 by Wayne H. Freeman at Hyderabad. From 1976 to 1983, the Hyderabad office under Leland R. House operated the International Crops Research Institute for the Semi-Arid Tropics (ICRISAT). This institute functioned as part of the Foundation's \"Conquest of Hunger\" program, which had been formally established in 1963.\n\nIn October 1964, Chadbourne Gilpatric took up residence in India as Visiting Professor in Philosophy at Delhi University, with responsibilities for representing RF interests in the Humanities and Social Sciences (HSS). Under HSS director Joseph E. Black (1964-70), Gilpatric sought to advance research and teaching in the humanities and in the social and hard sciences. He was particularly eager to strengthen curriculum at agricultural universities and to increase and preserve library holdings. From 1968 to 1972, Gilpatric coordinated a socioeconomic study of small farmers in Uttar Pradesh state. Gilpatric returned to the United States in April 1972. The Social Sciences programs had been officially phased out in 1970 and replaced with separate Arts and Humanities divisions.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ff13070324781b080f169e21955c969c",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "The New Delhi Field Office records (RG 6.7) of the Rockefeller Foundation Archives document the operation of the office and the programs it administered in the medical, agricultural, and social sciences. The records span the dates 1935 to 1976, but 90% of the record group dates from the period 1956 to 1973 and relates to the Indian Agricultural Program (IAP), operated by the RF's Natural Sciences and Agriculture Division. The IAP records provide a comprehensive account of the RF's role in establishing an international collaborative program of technical assistance. They also constitute an important source for the study of the history of modern agriculture and agricultural education in India.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "c89dc252d42dea97b04119ddb70fbbb9",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Important Subjects:  \n\nAgricultural education--India; Agricultural experiment stations--India; Agricultural innovation--India; Agriculture and state--India; Agriculture--Asia; Agriculture--India --Green Revolution --High Yielding Varieties Programs; Indian Council of Agricultural Research (New Delhi); Indian Agricultural Research Institute (New Delhi); International Rice Research Institute (Philippines); Plant introduction--India; Virology--Research--India; New Delhi--Charitable uses, trusts, and foundations; Rockefeller Foundation--India; --Rockefeller Foundation--Division of Natural Sciences and Agriculture--India; United States Agency for International Development.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "f2479b3baa548c395b7a001f06f8faba",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Important Names:  \n\nAllen, LeRoy R.; Anderson, Richmond K.; Baird, Guy B.; Balfour, Marshall C.; Barnard, Chester Irving; Borlaug, Norman Ernest; Bugher, John C.; Corwin, J.D.; Cummings, Ralph Waldo; Douglas, Johnson E.; Fosdick, Raymond Blaine; Freeman, Wayne H.; Gilpatric, Chadbourne; Grant, Ulysses J.; Gregg, Lucien A.; Harrar, Jacob George; House, Leland Ralph; Joshi, A. B.; Kerr, J. Austin; Mason, Max; Morison, Robert S.; Moseman, Albert H.; Pal, Benjamin Peary; Parker, Dorothy; Rachie, Kenneth O.; Rusk, Dean; Sprague, Ernest W.; Stakman, Elvin Charles; Starnes, Ordway; Strode, George K.; Swaminathan, S.; Warren, Andrew J.; Weaver, Warren; Weir, John; Wellhausen, Edwin J.; Work, Telford H.; Wortman, Sterling.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "72ff98a35ba954768d1acf87dea920fc",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Rockefeller Foundation Presidents:  \n\nMax Mason, 1929-36; Raymond B. Fosdick, 1936-48; Chester I. Barnard, 1948-51; Dean Rusk, 1951-61; J. George Harrar, 1961-72; John H. Knowles, 1972-79.\n\nMedical Program:\n\nFoundation Representatives in New Delhi:  W.P. Jacocks, 1935-42; Marshall C. Balfour, 1942-46, 1949, 1954-58; Miss J. D. Corwin, 1946-48; Richmond K. Anderson, 1948-54; LeRoy R. Allen, 1958-67; Division Directors in New York:   Richard M. Pearce (Medical Sciences), 1929-30; Alan Gregg (Medical Sciences), 1931-50; George K. Strode (Medicine and Public Health), 1951; Andrew J. Warren (Medicine and Public Health), 1951-54; John C. Bugher (Medical Education and Public Health), 1955-59; Robert S. Morison (Biological and Medical Research), 1955-59; (Medical and Natural Sciences), 1964-70; John M. Weir (Medical and Natural Sciences), 1964-70.\n\nIndian Agricultural Program:\n\nField Directors in New Delhi: Ralph W. Cummings, 1957-66; Guy B. Baird, 1967-71; Ordway Starnes, 1971-73; Wayne H. Freeman, 1974-75\n\nDivision Directors in New York:  Warren Weaver (Natural Sciences and Agriculture), 1951-55; J. George Harrar (Agricultural Sciences), 1955-59; Albert H. Moseman (Agricultural Sciences), 1960-65; Sterling Wortman (Agricultural Sciences), 1966-70; John A. Pino (Agricultural Sciences), 1970-82.\n\nHumanities and Social Sciences Program:  \n\nFoundation Representative in New Delhi: Chadbourne Gilpatric (Humanities and Social Sciences), 1964-72.\n\nDivision Directors in New York:  Kenneth W. Thompson, acting (Humanities and Social Sciences), 1962-64; Joseph E. Black (Humanities and Social Sciences), 1964-70; Norman Lloyd (Arts and Humanities), 1970-73.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "312ed4000b85f5aac308131bbb2dad13",
-            "label": "Related Archival Materials note",
-            "type": "relatedmaterial",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "For information about specific grants to individuals or institutions in India, researchers should consult the grant files (1913-73) for India, located in Record Groups 1.1 and 1.2 (Projects), Series 464 (India), in the Rockefeller Foundation Archives.\n\nRELATED MATERIALS\n\nThe following Record Groups in the Rockefeller Foundation Archives at the Rockefeller Archive Center contain material bearing upon the Foundation's work in India:\n\nRG 1.1: Projects; RG 1.2: Projects; RG 2: General Correspondence; RG 3: Administration, Program, and Policy; RG 5: International Health Board; RG 6.13: Mexico Field Office; RG 12: Officers' Diaries; RG 13: Oral Histories, RF Field Officers.\n\nAnnual reports of the Rockefeller Foundation; Confidential Monthly Report, for the Information of the Trustees.\n\nPHOTOGRAPHS\n\nFour folders of photographs were removed from Record Group 6.7 during processing and added to the Photograph Collection of the Archive Center. These photographs are filed by country number, 464 India, and thereunder alphabetically by subject. They are interfiled with other photographs of India taken from Record Group 1.1 and 1.2 (Projects). Included are photographs of CIMMYT work in Mexico (n.d.), agricultural scenes in India (1958-59), compartment cages used for rearing the sorghum shoot fly (1971), and a disbound scrapbook of captioned photographs (1957) showing investigations into the virus known as Kyasanoor Forest Disease.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "625cd9fb5d6147751898914b199ae613",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, field offices, New Delhi, India, RG 6, SG 7",
+    "tree": {
+        "ref": "/repositories/2/resources/595/tree"
+    },
     "uri": "/repositories/2/resources/595",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T19:53:19Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T19:53:19Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3883",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/595"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-22T19:53:19Z",
-        "system_mtime": "2016-10-22T19:53:19Z",
-        "user_mtime": "2016-10-22T19:53:19Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
         "enum_1": "3 - Standard",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-22T19:53:19Z",
+        "user_mtime": "2016-10-22T19:53:19Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/595/tree"
-    }
+    "user_mtime": "2016-10-22T19:53:19Z"
 }

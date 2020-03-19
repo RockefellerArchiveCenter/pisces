@@ -1,101 +1,102 @@
 {
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/11440"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/93"
+        }
+    ],
+    "children": [],
+    "create_time": "2014-12-06T03:43:21Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1905",
+            "create_time": "2019-10-10T12:39:02Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1980",
+            "expression": "circa 1905-1980",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z"
+        }
+    ],
+    "display_string": "Photography",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2017-02-16T22:49:04Z",
+            "created_by": "pgalligan",
+            "external_id": "730124",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "pgalligan",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2017-02-16T22:49:04Z",
+            "user_mtime": "2017-02-16T22:49:04Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
+    "instances": [
+        {
+            "create_time": "2017-02-16T22:49:04Z",
+            "created_by": "pgalligan",
+            "instance_type": "mixed materials",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "sub_container": {
+                "create_time": "2017-02-16T22:49:04Z",
+                "created_by": "pgalligan",
+                "indicator_2": "31",
+                "jsonmodel_type": "sub_container",
+                "last_modified_by": "pgalligan",
+                "lock_version": 0,
+                "system_mtime": "2017-02-16T22:49:04Z",
+                "top_container": {
+                    "ref": "/repositories/2/top_containers/11133"
+                },
+                "type_2": "folder",
+                "user_mtime": "2017-02-16T22:49:04Z"
+            },
+            "system_mtime": "2017-02-16T22:49:04Z",
+            "user_mtime": "2017-02-16T22:49:04Z"
+        }
+    ],
+    "jsonmodel_type": "archival_object",
+    "language": "eng",
+    "last_modified_by": "pgalligan",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
     "lock_version": 1,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/11440"
+    },
     "position": 31,
     "publish": true,
     "ref_id": "55ae33829e6a4eb7a72dac17452dbf3e",
-    "title": "Photography",
-    "display_string": "Photography",
-    "restrictions_apply": false,
-    "created_by": "admin",
-    "last_modified_by": "pgalligan",
-    "create_time": "2014-12-06T03:43:21Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2017-02-16T22:49:03Z",
-    "suppressed": false,
-    "level": "file",
-    "jsonmodel_type": "archival_object",
-    "external_ids": [
-        {
-            "external_id": "730124",
-            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2017-02-16T22:49:04Z",
-            "system_mtime": "2017-02-16T22:49:04Z",
-            "user_mtime": "2017-02-16T22:49:04Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "circa 1905-1980",
-            "begin": "1905",
-            "end": "1980",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-10T12:39:02Z",
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [],
-    "ancestors": [
-        {
-            "ref": "/repositories/2/archival_objects/11440",
-            "level": "series"
-        },
-        {
-            "ref": "/repositories/2/resources/93",
-            "level": "collection"
-        }
-    ],
-    "instances": [
-        {
-            "lock_version": 0,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2017-02-16T22:49:04Z",
-            "system_mtime": "2017-02-16T22:49:04Z",
-            "user_mtime": "2017-02-16T22:49:04Z",
-            "instance_type": "mixed materials",
-            "jsonmodel_type": "instance",
-            "is_representative": false,
-            "sub_container": {
-                "lock_version": 0,
-                "indicator_2": "31",
-                "created_by": "pgalligan",
-                "last_modified_by": "pgalligan",
-                "create_time": "2017-02-16T22:49:04Z",
-                "system_mtime": "2017-02-16T22:49:04Z",
-                "user_mtime": "2017-02-16T22:49:04Z",
-                "type_2": "folder",
-                "jsonmodel_type": "sub_container",
-                "top_container": {
-                    "ref": "/repositories/2/top_containers/11133"
-                }
-            }
-        }
-    ],
-    "notes": [],
-    "uri": "/repositories/2/archival_objects/11471",
     "repository": {
         "ref": "/repositories/2"
     },
     "resource": {
         "ref": "/repositories/2/resources/93"
     },
-    "parent": {
-        "ref": "/repositories/2/archival_objects/11440"
-    },
-    "has_unpublished_ancestor": false,
-    "language": "eng"
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Photography",
+    "uri": "/repositories/2/archival_objects/11471",
+    "user_mtime": "2017-02-16T22:49:03Z"
 }

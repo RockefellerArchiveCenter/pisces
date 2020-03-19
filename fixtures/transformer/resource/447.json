@@ -1,224 +1,1060 @@
 {
-    "lock_version": 10,
-    "title": "Rockefeller Foundation records, fellowships, fellowship files, RG 10.1",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA244.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, fellowships, fellowship files, RG 10.1\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, fellowships, fellowship files, RG 10.1",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T07:34:56Z",
-    "system_mtime": "2019-02-04T19:06:12Z",
-    "user_mtime": "2019-02-04T19:06:12Z",
-    "suppressed": false,
-    "id_0": "FA244",
-    "language": "eng",
-    "level": "subgrp",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "19905",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-02-04T19:06:12Z",
-            "system_mtime": "2019-02-04T19:06:12Z",
-            "user_mtime": "2019-02-04T19:06:12Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 769146,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/769146",
+            "title": "Restricted Materials, 1917-1979",
+            "type": "collection"
+        },
+        {
+            "identifier": 196877,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/196877",
+            "title": "International",
+            "type": "collection"
+        },
+        {
+            "identifier": 196914,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/196914",
+            "title": "United States",
+            "type": "collection"
+        },
+        {
+            "identifier": 197735,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/197735",
+            "title": "Arkansas",
+            "type": "collection"
+        },
+        {
+            "identifier": 197738,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/197738",
+            "title": "Kentucky",
+            "type": "collection"
+        },
+        {
+            "identifier": 197741,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/197741",
+            "title": "Philippines",
+            "type": "collection"
+        },
+        {
+            "identifier": 198026,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198026",
+            "title": "Puerto Rico",
+            "type": "collection"
+        },
+        {
+            "identifier": 198045,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198045",
+            "title": "Virgin Islands",
+            "type": "collection"
+        },
+        {
+            "identifier": 198048,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198048",
+            "title": "Argentina",
+            "type": "collection"
+        },
+        {
+            "identifier": 198183,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198183",
+            "title": "Bolivia",
+            "type": "collection"
+        },
+        {
+            "identifier": 198189,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198189",
+            "title": "Brazil",
+            "type": "collection"
+        },
+        {
+            "identifier": 198191,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198191",
+            "title": "Bolivia",
+            "type": "collection"
+        },
+        {
+            "identifier": 198216,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198216",
+            "title": "Brazil",
+            "type": "collection"
+        },
+        {
+            "identifier": 198670,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198670",
+            "title": "Chile",
+            "type": "collection"
+        },
+        {
+            "identifier": 198991,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/198991",
+            "title": "Colombia",
+            "type": "collection"
+        },
+        {
+            "identifier": 199427,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199427",
+            "title": "Costa Rica",
+            "type": "collection"
+        },
+        {
+            "identifier": 199469,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199469",
+            "title": "Cuba",
+            "type": "collection"
+        },
+        {
+            "identifier": 199483,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199483",
+            "title": "Ecuador",
+            "type": "collection"
+        },
+        {
+            "identifier": 199547,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199547",
+            "title": "Guatemala",
+            "type": "collection"
+        },
+        {
+            "identifier": 199576,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199576",
+            "title": "Haiti",
+            "type": "collection"
+        },
+        {
+            "identifier": 199592,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199592",
+            "title": "Honduras",
+            "type": "collection"
+        },
+        {
+            "identifier": 199608,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/199608",
+            "title": "Mexico",
+            "type": "collection"
+        },
+        {
+            "identifier": 200012,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200012",
+            "title": "Nicaragua",
+            "type": "collection"
+        },
+        {
+            "identifier": 200024,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200024",
+            "title": "Panama",
+            "type": "collection"
+        },
+        {
+            "identifier": 200044,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200044",
+            "title": "Paraguay",
+            "type": "collection"
+        },
+        {
+            "identifier": 200047,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200047",
+            "title": "Peru",
+            "type": "collection"
+        },
+        {
+            "identifier": 200220,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200220",
+            "title": "El Salvador",
+            "type": "collection"
+        },
+        {
+            "identifier": 200240,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200240",
+            "title": "Dominican Republic",
+            "type": "collection"
+        },
+        {
+            "identifier": 200251,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200251",
+            "title": "Uruguay",
+            "type": "collection"
+        },
+        {
+            "identifier": 200298,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200298",
+            "title": "Venezuela",
+            "type": "collection"
+        },
+        {
+            "identifier": 200357,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200357",
+            "title": "England",
+            "type": "collection"
+        },
+        {
+            "identifier": 200699,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200699",
+            "title": "Ireland",
+            "type": "collection"
+        },
+        {
+            "identifier": 200708,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200708",
+            "title": "Scotland",
+            "type": "collection"
+        },
+        {
+            "identifier": 200726,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200726",
+            "title": "Wales",
+            "type": "collection"
+        },
+        {
+            "identifier": 200729,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200729",
+            "title": "Australia",
+            "type": "collection"
+        },
+        {
+            "identifier": 200809,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200809",
+            "title": "Tasmania",
+            "type": "collection"
+        },
+        {
+            "identifier": 200812,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200812",
+            "title": "New Zealand",
+            "type": "collection"
+        },
+        {
+            "identifier": 200836,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200836",
+            "title": "Fiji",
+            "type": "collection"
+        },
+        {
+            "identifier": 200840,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200840",
+            "title": "Guyana",
+            "type": "collection"
+        },
+        {
+            "identifier": 200846,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200846",
+            "title": "Belize",
+            "type": "collection"
+        },
+        {
+            "identifier": 200849,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/200849",
+            "title": "Canada",
+            "type": "collection"
+        },
+        {
+            "identifier": 201036,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201036",
+            "title": "Canada/United States",
+            "type": "collection"
+        },
+        {
+            "identifier": 201039,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201039",
+            "title": "Bermuda",
+            "type": "collection"
+        },
+        {
+            "identifier": 201042,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201042",
+            "title": "Barbados",
+            "type": "collection"
+        },
+        {
+            "identifier": 201045,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201045",
+            "title": "Jamaica",
+            "type": "collection"
+        },
+        {
+            "identifier": 201083,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201083",
+            "title": "Dominica",
+            "type": "collection"
+        },
+        {
+            "identifier": 201086,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201086",
+            "title": "Trinidad and Tobago",
+            "type": "collection"
+        },
+        {
+            "identifier": 201106,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201106",
+            "title": "Grenada",
+            "type": "collection"
+        },
+        {
+            "identifier": 201109,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201109",
+            "title": "St. Lucia",
+            "type": "collection"
+        },
+        {
+            "identifier": 201112,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201112",
+            "title": "Ceylon/Sri Lanka",
+            "type": "collection"
+        },
+        {
+            "identifier": 201148,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201148",
+            "title": "Sri Lanka",
+            "type": "collection"
+        },
+        {
+            "identifier": 201151,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201151",
+            "title": "Hong Kong",
+            "type": "collection"
+        },
+        {
+            "identifier": 201153,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201153",
+            "title": "India",
+            "type": "collection"
+        },
+        {
+            "identifier": 201616,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201616",
+            "title": "Pakistan",
+            "type": "collection"
+        },
+        {
+            "identifier": 201654,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201654",
+            "title": "Burma",
+            "type": "collection"
+        },
+        {
+            "identifier": 201657,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201657",
+            "title": "Iraq",
+            "type": "collection"
+        },
+        {
+            "identifier": 201673,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201673",
+            "title": "Malaysia",
+            "type": "collection"
+        },
+        {
+            "identifier": 201679,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201679",
+            "title": "Kenya",
+            "type": "collection"
+        },
+        {
+            "identifier": 201715,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201715",
+            "title": "East Africa Region",
+            "type": "collection"
+        },
+        {
+            "identifier": 201727,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201727",
+            "title": "Nyasaland/ Malawi",
+            "type": "collection"
+        },
+        {
+            "identifier": 201730,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201730",
+            "title": "Rhodesia",
+            "type": "collection"
+        },
+        {
+            "identifier": 201737,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201737",
+            "title": "North Africa Region",
+            "type": "collection"
+        },
+        {
+            "identifier": 201760,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201760",
+            "title": "South Africa",
+            "type": "collection"
+        },
+        {
+            "identifier": 201764,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201764",
+            "title": "South Africa Region",
+            "type": "collection"
+        },
+        {
+            "identifier": 201779,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201779",
+            "title": "Uganda",
+            "type": "collection"
+        },
+        {
+            "identifier": 201818,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201818",
+            "title": "Sudan",
+            "type": "collection"
+        },
+        {
+            "identifier": 201846,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201846",
+            "title": "West Africa Region",
+            "type": "collection"
+        },
+        {
+            "identifier": 201858,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201858",
+            "title": "Ghana",
+            "type": "collection"
+        },
+        {
+            "identifier": 201876,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201876",
+            "title": "Nigeria",
+            "type": "collection"
+        },
+        {
+            "identifier": 201999,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/201999",
+            "title": "Sierra Leone",
+            "type": "collection"
+        },
+        {
+            "identifier": 202002,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202002",
+            "title": "France",
+            "type": "collection"
+        },
+        {
+            "identifier": 202125,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202125",
+            "title": "Algeria",
+            "type": "collection"
+        },
+        {
+            "identifier": 202128,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202128",
+            "title": "Vietnam",
+            "type": "collection"
+        },
+        {
+            "identifier": 202137,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202137",
+            "title": "Senegal",
+            "type": "collection"
+        },
+        {
+            "identifier": 202140,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202140",
+            "title": "China",
+            "type": "collection"
+        },
+        {
+            "identifier": 202258,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202258",
+            "title": "Taiwan",
+            "type": "collection"
+        },
+        {
+            "identifier": 202273,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202273",
+            "title": "Japan",
+            "type": "collection"
+        },
+        {
+            "identifier": 202719,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202719",
+            "title": "Korea",
+            "type": "collection"
+        },
+        {
+            "identifier": 202762,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202762",
+            "title": "Thailand",
+            "type": "collection"
+        },
+        {
+            "identifier": 202932,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/202932",
+            "title": "Netherlands",
+            "type": "collection"
+        },
+        {
+            "identifier": 203022,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203022",
+            "title": "Indonesia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203093,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203093",
+            "title": "Java",
+            "type": "collection"
+        },
+        {
+            "identifier": 203097,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203097",
+            "title": "Sumatra",
+            "type": "collection"
+        },
+        {
+            "identifier": 203100,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203100",
+            "title": "Surinam",
+            "type": "collection"
+        },
+        {
+            "identifier": 203104,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203104",
+            "title": "Ethiopia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203124,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203124",
+            "title": "Austria",
+            "type": "collection"
+        },
+        {
+            "identifier": 203143,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203143",
+            "title": "Belgium",
+            "type": "collection"
+        },
+        {
+            "identifier": 203182,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203182",
+            "title": "Congo/Zaire",
+            "type": "collection"
+        },
+        {
+            "identifier": 203189,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203189",
+            "title": "Yugoslavia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203222,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203222",
+            "title": "Bulgaria",
+            "type": "collection"
+        },
+        {
+            "identifier": 203227,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203227",
+            "title": "Czechoslovakia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203258,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203258",
+            "title": "Denmark",
+            "type": "collection"
+        },
+        {
+            "identifier": 203368,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203368",
+            "title": "Estonia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203370,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203370",
+            "title": "Iceland",
+            "type": "collection"
+        },
+        {
+            "identifier": 203384,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203384",
+            "title": "Germany",
+            "type": "collection"
+        },
+        {
+            "identifier": 203481,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203481",
+            "title": "Tanzania",
+            "type": "collection"
+        },
+        {
+            "identifier": 203502,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203502",
+            "title": "Greece",
+            "type": "collection"
+        },
+        {
+            "identifier": 203523,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203523",
+            "title": "Hungary",
+            "type": "collection"
+        },
+        {
+            "identifier": 203549,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203549",
+            "title": "Hungary/United States",
+            "type": "collection"
+        },
+        {
+            "identifier": 203552,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203552",
+            "title": "Italy",
+            "type": "collection"
+        },
+        {
+            "identifier": 203628,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203628",
+            "title": "Liberia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203631,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203631",
+            "title": "Morocco",
+            "type": "collection"
+        },
+        {
+            "identifier": 203635,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203635",
+            "title": "Norway",
+            "type": "collection"
+        },
+        {
+            "identifier": 203756,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203756",
+            "title": "Iran",
+            "type": "collection"
+        },
+        {
+            "identifier": 203774,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203774",
+            "title": "Portugal",
+            "type": "collection"
+        },
+        {
+            "identifier": 203803,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203803",
+            "title": "Rumania",
+            "type": "collection"
+        },
+        {
+            "identifier": 203812,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203812",
+            "title": "Latvia",
+            "type": "collection"
+        },
+        {
+            "identifier": 203817,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203817",
+            "title": "Finland",
+            "type": "collection"
+        },
+        {
+            "identifier": 203897,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203897",
+            "title": "Lithuania",
+            "type": "collection"
+        },
+        {
+            "identifier": 203901,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/203901",
+            "title": "Poland",
+            "type": "collection"
+        },
+        {
+            "identifier": 204154,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204154",
+            "title": "Spain",
+            "type": "collection"
+        },
+        {
+            "identifier": 204165,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204165",
+            "title": "Sweden",
+            "type": "collection"
+        },
+        {
+            "identifier": 204289,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204289",
+            "title": "Switzerland",
+            "type": "collection"
+        },
+        {
+            "identifier": 204348,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204348",
+            "title": "Turkey",
+            "type": "collection"
+        },
+        {
+            "identifier": 204455,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204455",
+            "title": "Cyprus",
+            "type": "collection"
+        },
+        {
+            "identifier": 204459,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204459",
+            "title": "Egypt",
+            "type": "collection"
+        },
+        {
+            "identifier": 204473,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204473",
+            "title": "Israel",
+            "type": "collection"
+        },
+        {
+            "identifier": 204482,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204482",
+            "title": "Lebanon/Syria",
+            "type": "collection"
+        },
+        {
+            "identifier": 204539,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/204539",
+            "title": "United States",
+            "type": "collection"
         }
     ],
-    "subjects": [],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2019-02-04T19:06:12Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/447"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2019-02-04T19:06:12Z",
+        "uri": "/repositories/2/collection_management/7427",
+        "user_mtime": "2019-02-04T19:06:12Z"
+    },
+    "create_time": "2014-12-06T07:34:56Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1917",
+            "create_time": "2019-02-04T19:06:12Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1979",
+            "expression": "1917-1979",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-02-04T19:06:12Z",
+            "user_mtime": "2019-02-04T19:06:12Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA244.xml",
+    "extents": [
+        {
+            "container_summary": "495 document boxes.",
+            "create_time": "2019-02-04T19:06:12Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "217.8",
+            "portion": "whole",
+            "system_mtime": "2019-02-04T19:06:12Z",
+            "user_mtime": "2019-02-04T19:06:12Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2019-02-04T19:06:12Z",
+            "created_by": "battalb",
+            "external_id": "19905",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2019-02-04T19:06:12Z",
+            "user_mtime": "2019-02-04T19:06:12Z"
+        }
+    ],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, fellowships, fellowship files, RG 10.1",
+    "finding_aid_language": "English",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, fellowships, fellowship files, RG 10.1\n",
+    "id_0": "FA244",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "subgrp",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
     "linked_events": [
         {
             "ref": "/repositories/2/events/15364"
         }
     ],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "217.8",
-            "container_summary": "495 document boxes.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-02-04T19:06:12Z",
-            "system_mtime": "2019-02-04T19:06:12Z",
-            "user_mtime": "2019-02-04T19:06:12Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1917-1979",
-            "begin": "1917",
-            "end": "1979",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-02-04T19:06:12Z",
-            "system_mtime": "2019-02-04T19:06:12Z",
-            "user_mtime": "2019-02-04T19:06:12Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        }
-    ],
-    "revision_statements": [],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "lock_version": 10,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "c6a0ed4368ac182abc5e2c532f2a856d",
-            "type": "otherfindaid",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "For fellowship recorder cards please see:\n\n<extref href=\"../FA426/overview\">FA426 Rockefeller Foundation records, fellowships, fellowship recorder cards, RG 10.2</extref>\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "otherfindaid"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "3bcdc115ce15b9b7a9ef8d79670f89ed",
-            "type": "processinfo",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Advanced Processing conducted by Beth Jaffe Davis.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "processinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "9ee66f710d8439ad605db295daa5f258",
-            "type": "bioghist",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "History of the Fellowship Program at the Rockefeller Foundation:\n\nThe Rockefeller Foundation Fellowship Program began in 1917 with a few appointments and grew gradually so that there were several hundred fellowships awarded each year by 1925. As stated in the Directory of Fellowship Awards, the basic principle upon which the program was created was \"the conviction that individuals can and should be developed for future leadership and creative achievement in important fields of endeavor. Thus the functions of the Rockefeller Foundation (RF) fellowship program have been to select individuals of outstanding promise in the fields of interest defined by the general program of the Foundation, and to help prepare individuals to make significant contributions to research and teaching or public service in the future.\" [Note: Rockefeller Foundation, Directory of Fellowship Awards, For the Years 1917-1950. New York, 1950.]\n\nThe RF wanted the fellowship program to be an international exchange crossing all racial, cultural and national boundaries. To help facilitate this exchange, the RF installed a general rule that a fellow needed to travel and study outside of his/her own native country. Initially the RF intended for the fellowship program to focus on supporting individuals outside of the United States but over the years, a great number of U.S. citizens were awarded fellowships and related scholarships.\n\nAll fellowships were awarded within the five divisions of the Rockefeller Foundation: International Health Division (IHD), Medical Sciences, Natural Sciences, Social Sciences and Humanities.\n\nThe early fellows mostly came from the Western European countries and concentrated on medical and health issues. During the 1950s and 1960s, the fellowship program changed focus. Beginning in this period, fellows were predominantly from Latin America, Africa and India. Also the emphasis changed; fellowships were awarded primarily in agriculture and public health.\n\nThe Rockefeller Foundation had a standard set of criteria for its fellowship awards. Applicants needed to have finished their formal education with advanced degrees and training. They also needed to be employed by universities, research institutes or governmental bodies. Direct applications were discouraged; potential applicants were identified by RF officers. A fellowship award was typically one to two years in duration.\n\nThe Rockefeller Foundation:\n\nThe Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "bioghist"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "a2df86da7d5c91f5982753ea7384e336",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "d7274a8efd72df0f2d1e285bb4632aea",
-            "type": "accessrestrict",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC.\n\nAll users seeking access to the fellowship files must complete a usage agreement prior to being granted access to the collection. See RAC Head of Reference for details.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "5efa8adbe2719ef2af97c38654f9c669",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "By location.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "44823e6bbde763adba576a4d4af52acb",
-            "type": "scopecontent",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Fellowship files.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         }
     ],
-    "uri": "/repositories/2/resources/447",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2019-02-04T19:06:12Z",
-        "system_mtime": "2019-02-04T19:06:12Z",
-        "user_mtime": "2019-02-04T19:06:12Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/7427",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/447"
-        }
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2019-02-04T19:06:12Z",
+    "title": "Rockefeller Foundation records, fellowships, fellowship files, RG 10.1",
+    "tree": {
+        "ref": "/repositories/2/resources/447/tree"
     },
+    "uri": "/repositories/2/resources/447",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2013-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2019-02-04T19:06:12Z",
-        "system_mtime": "2019-02-04T19:06:12Z",
-        "user_mtime": "2019-02-04T19:06:12Z",
+        "created_by": "battalb",
+        "date_2": "2013-12-31",
         "enum_1": "4 - Advanced",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2019-02-04T19:06:12Z",
+        "user_mtime": "2019-02-04T19:06:12Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/447/tree"
-    }
+    "user_mtime": "2019-02-04T19:06:12Z"
 }

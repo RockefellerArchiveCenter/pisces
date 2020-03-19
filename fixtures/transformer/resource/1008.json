@@ -1,35 +1,204 @@
 {
-    "lock_version": 7,
-    "title": "Rockefeller University records, Special Events and Activities, Medical Electronics Center",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA877.xml",
-    "finding_aid_title": "A Guide to the Rockefeller University records, Special Events and Activities, Medical Electronics Center\n",
-    "finding_aid_filing_title": "Rockefeller University records, Special Events and Activities, Medical Electronics Center",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T15:04:05Z",
-    "system_mtime": "2019-10-31T15:10:01Z",
-    "user_mtime": "2019-10-25T12:14:10Z",
-    "suppressed": false,
-    "is_slug_auto": false,
-    "id_0": "FA877",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "19532",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-25T12:14:10Z",
-            "system_mtime": "2019-10-25T12:14:10Z",
-            "user_mtime": "2019-10-25T12:14:10Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 559590,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/559590",
+            "title": "Bibliography, 1958-1959",
+            "type": "object"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2019-10-25T12:14:10Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/1008"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2019-10-25T12:14:10Z",
+        "uri": "/repositories/2/collection_management/9731",
+        "user_mtime": "2019-10-25T12:14:10Z"
+    },
+    "create_time": "2014-12-06T15:04:05Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1955",
+            "create_time": "2019-10-25T12:14:10Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1963",
+            "expression": "1955-1963",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-10-25T12:14:10Z",
+            "user_mtime": "2019-10-25T12:14:10Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA877.xml",
+    "extents": [
+        {
+            "create_time": "2019-10-25T12:14:10Z",
+            "created_by": "battalb",
+            "extent_type": "Bound Volumes",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "2",
+            "portion": "whole",
+            "system_mtime": "2019-10-25T12:14:10Z",
+            "user_mtime": "2019-10-25T12:14:10Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2019-10-25T12:14:10Z",
+            "created_by": "battalb",
+            "external_id": "19532",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2019-10-25T12:14:10Z",
+            "user_mtime": "2019-10-25T12:14:10Z"
+        }
+    ],
+    "finding_aid_filing_title": "Rockefeller University records, Special Events and Activities, Medical Electronics Center",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Rockefeller University records, Special Events and Activities, Medical Electronics Center\n",
+    "id_0": "FA877",
+    "instances": [],
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/20001",
+            "relator": "ctb",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/20083",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 7,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "ce7debad03055b3795898d77cda0cef1",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "25ef336f7110f71d784c4fc5f3d10da7",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: I 600-6\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "5d58f12b895147985d8d5f0477d20653",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "In 1955 a Medical Electronics Center was temporarily established at the Rockefeller Institute in order to improve contact between electronic specialists and medical and biological scientists.\n\nVladimir K. Zworykin directed the investigations in search of new applications of electronics in biology and medicine.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "d89659abbdd2d8d5da1d5471ab1d26fa",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research. Brittle or damaged items are available at the discretion of the RAC.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "7c394218f9badf2e29d1f55396ed3c00",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Bibliography on Medical Electronics, 1958.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2019-10-25T12:14:10Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>2010 August 19</date><item>Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "publish": false,
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2019-10-25T12:14:10Z",
+            "uri": "/revision_statement/4460",
+            "user_mtime": "2019-10-25T12:14:10Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/21"
@@ -62,188 +231,29 @@
             "ref": "/subjects/254"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "2",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-25T12:14:10Z",
-            "system_mtime": "2019-10-25T12:14:10Z",
-            "user_mtime": "2019-10-25T12:14:10Z",
-            "portion": "whole",
-            "extent_type": "Bound Volumes",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1955-1963",
-            "begin": "1955",
-            "end": "1963",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-25T12:14:10Z",
-            "system_mtime": "2019-10-25T12:14:10Z",
-            "user_mtime": "2019-10-25T12:14:10Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "creator",
-            "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20001"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20083"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>2010 August 19</date><item>Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-25T12:14:10Z",
-            "system_mtime": "2019-10-25T12:14:10Z",
-            "user_mtime": "2019-10-25T12:14:10Z",
-            "publish": false,
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/4460",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "ce7debad03055b3795898d77cda0cef1",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "25ef336f7110f71d784c4fc5f3d10da7",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: I 600-6\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "5d58f12b895147985d8d5f0477d20653",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "In 1955 a Medical Electronics Center was temporarily established at the Rockefeller Institute in order to improve contact between electronic specialists and medical and biological scientists.\n\nVladimir K. Zworykin directed the investigations in search of new applications of electronics in biology and medicine.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d89659abbdd2d8d5da1d5471ab1d26fa",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research. Brittle or damaged items are available at the discretion of the RAC.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "7c394218f9badf2e29d1f55396ed3c00",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Bibliography on Medical Electronics, 1958.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2019-10-31T15:10:01Z",
+    "title": "Rockefeller University records, Special Events and Activities, Medical Electronics Center",
+    "tree": {
+        "ref": "/repositories/2/resources/1008/tree"
+    },
     "uri": "/repositories/2/resources/1008",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2019-10-25T12:14:10Z",
-        "system_mtime": "2019-10-25T12:14:10Z",
-        "user_mtime": "2019-10-25T12:14:10Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/9731",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/1008"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2019-10-25T12:14:10Z",
-        "system_mtime": "2019-10-25T12:14:10Z",
-        "user_mtime": "2019-10-25T12:14:10Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
         "enum_1": "1 - Basic/Preliminary",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2019-10-25T12:14:10Z",
+        "user_mtime": "2019-10-25T12:14:10Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/1008/tree"
-    }
+    "user_mtime": "2019-10-25T12:14:10Z"
 }

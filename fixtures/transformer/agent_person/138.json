@@ -1,125 +1,125 @@
 {
-    "lock_version": 417,
-    "publish": true,
-    "created_by": "admin",
-    "last_modified_by": "admin",
-    "create_time": "2014-12-06T02:40:58Z",
-    "system_mtime": "2019-04-15T20:49:21Z",
-    "user_mtime": "2014-12-06T02:40:58Z",
-    "jsonmodel_type": "agent_person",
     "agent_contacts": [
         {
+            "create_time": "2014-12-06T02:40:59Z",
+            "created_by": "admin",
+            "jsonmodel_type": "agent_contact",
+            "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Rockefeller",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:59Z",
             "system_mtime": "2014-12-06T02:40:59Z",
-            "user_mtime": "2014-12-06T02:40:59Z",
-            "jsonmodel_type": "agent_contact",
-            "telephones": []
+            "telephones": [],
+            "user_mtime": "2014-12-06T02:40:59Z"
         }
     ],
+    "agent_type": "agent_person",
+    "create_time": "2014-12-06T02:40:58Z",
+    "created_by": "admin",
+    "dates_of_existence": [
+        {
+            "create_time": "2014-12-06T02:40:59Z",
+            "created_by": "admin",
+            "date_type": "single",
+            "expression": "1915-",
+            "jsonmodel_type": "date",
+            "label": "existence",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:40:59Z",
+            "user_mtime": "2014-12-06T02:40:59Z"
+        }
+    ],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2014-12-06T02:40:58Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Rockefeller",
+        "rest_of_name": "David",
+        "sort_name": "Rockefeller, David",
+        "sort_name_auto_generate": true,
+        "source": "naf",
+        "system_mtime": "2017-08-22T15:44:45Z",
+        "use_dates": [],
+        "user_mtime": "2014-12-06T02:40:58Z"
+    },
+    "external_documents": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "admin",
     "linked_agent_roles": [
         "creator",
         "source",
         "subject"
     ],
-    "external_documents": [],
-    "notes": [],
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
-    "dates_of_existence": [
-        {
-            "lock_version": 0,
-            "expression": "1915-",
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:59Z",
-            "system_mtime": "2014-12-06T02:40:59Z",
-            "user_mtime": "2014-12-06T02:40:59Z",
-            "date_type": "single",
-            "label": "existence",
-            "jsonmodel_type": "date"
-        }
-    ],
+    "lock_version": 417,
     "names": [
         {
+            "authorized": true,
+            "create_time": "2014-12-06T02:40:58Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "Rockefeller",
             "rest_of_name": "David",
             "sort_name": "Rockefeller, David",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:58Z",
-            "system_mtime": "2017-08-22T15:44:45Z",
-            "user_mtime": "2014-12-06T02:40:58Z",
-            "authorized": true,
-            "is_display_name": true,
             "source": "naf",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
-            "use_dates": []
+            "system_mtime": "2017-08-22T15:44:45Z",
+            "use_dates": [],
+            "user_mtime": "2014-12-06T02:40:58Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:40:58Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "D.R.",
             "sort_name": "D.R.",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:58Z",
             "system_mtime": "2014-12-06T02:40:58Z",
-            "user_mtime": "2014-12-06T02:40:58Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:40:58Z"
         },
         {
+            "authorized": false,
+            "create_time": "2014-12-06T02:40:58Z",
+            "created_by": "admin",
+            "is_display_name": false,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
             "lock_version": 0,
+            "name_order": "inverted",
             "primary_name": "DR",
             "sort_name": "DR",
             "sort_name_auto_generate": true,
-            "created_by": "admin",
-            "last_modified_by": "admin",
-            "create_time": "2014-12-06T02:40:58Z",
             "system_mtime": "2014-12-06T02:40:58Z",
-            "user_mtime": "2014-12-06T02:40:58Z",
-            "name_order": "inverted",
-            "jsonmodel_type": "name_person",
             "use_dates": [],
-            "authorized": false,
-            "is_display_name": false
+            "user_mtime": "2014-12-06T02:40:58Z"
         }
     ],
+    "notes": [],
+    "publish": true,
     "related_agents": [],
+    "system_mtime": "2019-04-15T20:49:21Z",
+    "title": "Rockefeller, David",
     "uri": "/agents/people/138",
-    "agent_type": "agent_person",
-    "is_linked_to_published_record": true,
-    "display_name": {
-        "lock_version": 0,
-        "primary_name": "Rockefeller",
-        "rest_of_name": "David",
-        "sort_name": "Rockefeller, David",
-        "sort_name_auto_generate": true,
-        "created_by": "admin",
-        "last_modified_by": "admin",
-        "create_time": "2014-12-06T02:40:58Z",
-        "system_mtime": "2017-08-22T15:44:45Z",
-        "user_mtime": "2014-12-06T02:40:58Z",
-        "authorized": true,
-        "is_display_name": true,
-        "source": "naf",
-        "name_order": "inverted",
-        "jsonmodel_type": "name_person",
-        "use_dates": []
-    },
-    "title": "Rockefeller, David"
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:40:58Z"
 }

@@ -36,6 +36,35 @@ class ArchivesSpaceHelper:
         """Checks whether an archival object has children using the tree/node endpoint.
         Checks the child_count attribute and if the value is greater than 0, return true, otherwise return False."""
         obj = self.aspace.client.get(uri).json()
-        resource_id = obj['resource']['ref']
-        tree_node = self.aspace.client.get(resource_id + '/tree/node?node_uri=' + obj['uri']).json()
+        resource_uri = obj['resource']['ref']
+        tree_node = self.aspace.client.get(resource_uri + '/tree/node?node_uri=' + obj['uri']).json()
         return True if tree_node['child_count'] > 0 else False
+
+    @silk_profile()
+    def get_resource_children(self, uri):
+        children = []
+        as_tree = self.aspace.client.get("{}/tree".format(uri.rstrip("/"))).json()
+        for child in as_tree.get("children"):
+            children.append({
+                "title": child["title"],
+                "ref": child["record_uri"],
+                "level": child["level"],
+                "type": "collection" if child["has_children"] else "object",
+                "identifier": child["id"]})
+        return children
+
+    @silk_profile()
+    def get_archival_object_children(self, resource_uri, object_uri):
+        children = []
+        tree_node = self.aspace.client.get(
+            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
+        for idx in tree_node["precomputed_waypoints"].get(object_uri):
+            for child in tree_node["precomputed_waypoints"].get(object_uri)[idx]:
+                children.append({
+                    "title": child["title"],
+                    "ref": child["uri"],
+                    "level": child["level"],
+                    "order": child["position"],
+                    "type": "collection" if child["child_count"] > 0 else "object",
+                    "identifier": child["uri"].rstrip("/").split("/")[-1]})
+        return children

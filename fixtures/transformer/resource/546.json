@@ -1,37 +1,311 @@
 {
-    "lock_version": 9,
-    "title": "Nelson A. Rockefeller personal papers, Politics - Oscar M. Ruebhausen, Series J.3",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA347.xml",
-    "finding_aid_title": "A Guide to the Nelson A. Rockefeller personal papers, Politics - Oscar M. Ruebhausen, Series J.3\n",
-    "finding_aid_filing_title": "Rockefeller (Nelson A.) personal papers, Politics - Oscar M. Ruebhausen, Series J.3",
-    "finding_aid_date": "2001",
-    "finding_aid_author": "John LeGloahec",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T09:39:22Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-22T14:02:45Z",
-    "suppressed": false,
-    "id_0": "FA347",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "2165",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:02:45Z",
-            "system_mtime": "2016-10-22T14:02:45Z",
-            "user_mtime": "2016-10-22T14:02:45Z",
-            "jsonmodel_type": "external_id"
+            "identifier": 292901,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/292901",
+            "title": "Current Issues, 1968",
+            "type": "collection"
+        },
+        {
+            "identifier": 292928,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/292928",
+            "title": "NAR Political, 1968",
+            "type": "collection"
+        },
+        {
+            "identifier": 292946,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/292946",
+            "title": "OMR General, 1968",
+            "type": "collection"
+        },
+        {
+            "identifier": 292954,
+            "level": "subseries",
+            "ref": "/repositories/2/archival_objects/292954",
+            "title": "Notebooks and Reports, 1967-1970",
+            "type": "collection"
         }
     ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-22T14:02:45Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/546"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3833",
+        "user_mtime": "2016-10-22T14:02:45Z"
+    },
+    "create_time": "2014-12-06T09:39:22Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1967",
+            "create_time": "2016-10-22T14:02:45Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1970",
+            "expression": "1967-1970",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-22T14:02:45Z",
+            "user_mtime": "2016-10-22T14:02:45Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA347.xml",
+    "extents": [
+        {
+            "create_time": "2016-10-22T14:02:45Z",
+            "created_by": "battalb",
+            "extent_type": "document box(es)",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "8",
+            "portion": "whole",
+            "system_mtime": "2016-10-22T14:02:45Z",
+            "user_mtime": "2016-10-22T14:02:45Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2016-10-22T14:02:45Z",
+            "created_by": "battalb",
+            "external_id": "2165",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-22T14:02:45Z",
+            "user_mtime": "2016-10-22T14:02:45Z"
+        }
+    ],
+    "finding_aid_author": "John LeGloahec",
+    "finding_aid_date": "2001",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller (Nelson A.) personal papers, Politics - Oscar M. Ruebhausen, Series J.3",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Nelson A. Rockefeller personal papers, Politics - Oscar M. Ruebhausen, Series J.3\n",
+    "id_0": "FA347",
+    "instances": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/182",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/352",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/1843",
+            "role": "subject",
+            "terms": []
+        },
+        {
+            "ref": "/agents/people/147",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 9,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Biographical/Historical note",
+            "persistent_id": "52bb8022aaa59d7a5c723978476884c6",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Nelson Aldrich Rockefeller was born on July 8, 1908, in Bar Harbor, Maine, the third child of John Davison Rockefeller, Jr., and Abby Aldrich Rockefeller. He graduated from the Lincoln School of Teachers College at Columbia University in New York City in 1926. Mr. Rockefeller attended Dartmouth College where he was elected to Phi Beta Kappa, graduating cum laude in 1930 with an A.B. degree in economics.\n\nAfter college, Mr. Rockefeller was active in family enterprises, including real estate, banking, and family philanthropies. His major business interests in time became focused on Rockefeller Center and Latin America. In 1938, he became the president of Rockefeller Center.\n\nIn 1935, because of his interest in national affairs and his desire to learn about U.S. business abroad, Mr. Rockefeller became a director of Creole Petroleum Company, the Venezuelan subsidiary of Standard Oil of New Jersey. This association led eventually to his deep, life-long interest in Latin America. He made extensive visits to Latin America in 1937 and 1939 to study economic, social, and political conditions. He resigned his directorship in the Creole Petroleum Company in 1940.\n\nIn 1940, Mr. Rockefeller and his four brothers organized the Rockefeller Brothers Fund to carry out a broad range of philanthropic activities.\n\nThroughout his life Mr. Rockefeller was an avid supporter of the arts. He served as a trustee, treasurer, president, and chair of the board of the Museum of Modern Art, which was cofounded by his mother. In 1954, he founded the Museum of Primitive Art, which collected of indigenous art of the Americas, Africa, Oceania, and early Asia and Europe.\n\nAfter his 1939 visit to Latin America, Mr. Rockefeller prepared a memorandum for President Franklin D. Roosevelt outlining his deep concern over Nazi influence and penetration into that part of the world. In the memo he recommended a U.S. program of cooperation with the nations of the western hemisphere to achieve better relations among these nations and to help raise their standards of living. Largely as a result of this memo, President Roosevelt asked Mr. Rockefeller in August of 1940 to initiate and head a new program ultimately known as the Office of Inter-American Affairs. Mr. Rockefeller served as Coordinator of Inter-American Affairs, his first full-time position in public service.\n\nMr. Rockefeller served in this position until December 1944, when President Roosevelt appointed him Assistant Secretary of State for American Republic Affairs. In this post, Mr. Rockefeller initiated the Inter-American Conference on Problems of War and Peace in Mexico City in February of 1945. It resulted in the Act of Chapultepec, which provided the framework for economic, social, and defense cooperation among the nations of the western hemisphere and set the principle that an attack on one of these nations would be regarded as an attack on all and jointly resisted.\n\nMr. Rockefeller signed the Act of Chapultepec on behalf of the United States. He also attended the United Nations Conference on International Organization in San Francisco in 1945. At the conference, there was considerable opposition to the idea of permitting, within the UN Charter, the formation of regional pacts such as the Act of Chapultepec. Mr. Rockefeller, who believed that the inclusion was essential, especially to U.S. policy in Latin America, successfully argued the need for regional pacts within the framework of the United Nations. The importance of this victory was underscored by the subsequent formation of NATO, SEATO, and the Rio Pact.\n\nDuring these war-time years, Mr. Rockefeller also served as Chairman of the Inter-American Development Commission, which was established in June 1940 to reorganize and revitalize Latin American economies following the loss of European markets. He was also the U.S. Co-Chairman of the Mexican-American Development Commission to help Mexico emerge as an industrial nation in the transition from war to peace.\n\nMr. Rockefeller resigned as Assistant Secretary of State on August 24, 1945.\n\nUpon his return to private life in New York in 1946, Mr. Rockefeller became chair of the board of Rockefeller Center and undertook a program of physical expansion. Two other initiatives during this period illustrate Mr. Rockefeller's continuing interest in Latin America and international economic development. In July of 1946, the Rockefeller brothers established a philanthropic organization, the American International Association for Economic and Social Development (AIA). AIA financed nonprofit projects to ameliorate health, educational, agricultural, and other social problems in the poorer areas of Latin America. Nelson Rockefeller served as President from July 1946 to June 1953 and from January 1957 to December 1958. In 1947, he organized the International Basic Economy Corporation (IBEC), a business corporation to help raise living standards in foreign countries through new economic enterprises. In its early years, IBEC concentrated on enterprises in Latin America but later expanded its activities to other regions. Mr. Rockefeller served as IBEC President from January 1947 to June 1953 and from January 1956 to December 1958.\n\nIn his inaugural address in January 1949, President Harry S. Truman announced the Point IV program for providing technical assistance to developing nations. This concept was based in part on programs Mr. Rockefeller and his associates had developed through the Office of the Coordinator of Inter-American Affairs and the private, philanthropic AIA. In November of 1950, President Truman asked Mr. Rockefeller to serve as Chairman of the International Development Advisory Board. The Board was charged with recommending policies for carrying out the Point IV program. The Board's report, entitled \"Partners in Progress,\" provided the basic blueprint for America's foreign assistance program.\n\nOn November 20, 1952, President-elect Dwight D. Eisenhower asked Mr. Rockefeller to serve as Chairman of the President's Advisory Committee on Government Organization, a group created to recommend ways to improve the efficiency of the executive branch of the government. As Chairman of that committee, Mr. Rockefeller recommended 13 reorganization plans to the President, 10 of which were approved by Congress. These plans achieved basic changes in the organization of the Department of Defense, the Department of Agriculture, and the Office of Defense Mobilization, among others. Another of the plans led to the establishment of the Department of Health, Education, and Welfare. In June 1953, Mr. Rockefeller was appointed Under Secretary of the new department. He was especially active in the department's legislative program, recommending measures that covered an additional ten million people under the Social Security program. He resigned as HEW Under Secretary in 1954 to become Special Assistant to the President for Foreign Affairs.\n\nWhile serving as Special Assistant, Mr. Rockefeller played a key role in the development of the \"Open Skies\" proposal for checking on world armaments through mutual air reconnaissance. He accompanied President Eisenhower to the Geneva Summit Conference in 1955, where the plan was proposed to the world by the President. Mr. Rockefeller resigned as Special Assistant on December 31, 1955.\n\nMr. Rockefeller first ran for public office in 1958 and was elected Governor of New York on November 4, defeating incumbent Averill Harriman. He took office January 1, 1959, and was subsequently re-elected Governor three more times, thus becoming the first Governor in the nation's history to be elected to four 4-year terms.\n\nNelson Rockefeller's tenure as a public servant in the federal government was a formative period in his life. By the time he left Washington to assume the governorship of New York, he had received a thorough education in the workings of the federal government. His chairmanship of PACGO permitted him to examine every aspect of the executive branch. This and his work in HEW exposed him to a wide variety of domestic issues. He gained experience in initiating legislation, in foreign policy and diplomacy, in domestic and international economics, and in national security and military affairs. In the process he also received an education in national politics and gained a reputation for being an effective and hardworking administrator. Most importantly, these appointments provided him with the opportunity to form the friendships and personal associations that served him throughout his political career.\n\nMr. Rockefeller resigned as Governor of New York in December 1973. In August 1974, President Gerald R. Ford nominated him to fill the vacant vice presidency following the resignation of President Richard M. Nixon. Mr. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977. Nelson Rockefeller died on January 26, 1979, in New York City.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "bioghist"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Preferred Citation note",
+            "persistent_id": "587f04fd3502dff00872f72f73f43942",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "prefercite"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "File Plan note",
+            "persistent_id": "38a0dde94b2b574ab312be216556d704",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Former Classification: III 04 J.3\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "fileplan"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "9278ccf563e4e471307d031e2a3c0370",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Processing Level 3: Standard Processing.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Use note",
+            "persistent_id": "d4b4b4343ae163e64213edba1a6f3c0b",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "userestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access note",
+            "persistent_id": "4e5f39cdfe75c4ce72a3f7dfae070213",
+            "publish": true,
+            "rights_restriction": {
+                "local_access_restriction_type": []
+            },
+            "subnotes": [
+                {
+                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note",
+            "persistent_id": "d44e1f7e84e23832723f8e77ceadca75",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "There are four subseries in this series:\n\nSubseries 1 - Current Issues, 1968\n\nSubseries 2 - NAR Political, 1968\n\nSubseries 3 - OMR General, 1968\n\nSubseries 4 - Notebooks and Reports, 1967-1970\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "2eb8138e0b47e3c114b38f103a6053c9",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This series contains a portion of the files of Oscar M. Ruebhausen. They were created primarily during Ruebhausen's service as head of DNA, a research organization for Nelson Rockefeller that was founded by Roswell Perkins. Ruebhausen headed DNA during Governor Rockefeller's run for the Republican presidential nomination in 1968. Some of the materials also cover Rockefeller's gubernatorial reelection campaign in 1970. The majority of these documents may also be found in other series specifically Rockefeller's personal papers, DNA, Series G and Rockefeller's Gubernatorial records, Issue Books, Series 17.\n\nThis series contains the office files of Oscar M. Ruebhausen. They document his official activities as a member of Nelson A. Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration, the political campaigns, and/or Rockefeller's personal activities. However, unless a document is personally signed by Nelson A. Rockefeller, or is referred to in a document personally signed by him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Other Finding Aids note",
+            "persistent_id": "86f256b44918ee5a23fbb4bf03e19a68",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA338/overview\">Nelson A. Rockefeller papers, Activities (FA338)</extref>\n\n<extref href=\"../FA339/overview\">Nelson A. Rockefeller Papers, AIA-IBEC (FA339)</extref>\n\n<extref href=\"../FA340/overview\">Nelson A. Rockefeller Papers, Art (FA340)</extref>\n\n<extref href=\"../FA341/overview\">Nelson A. Rockefeller Papers, Countries (FA341)</extref>\n\n<extref href=\"../FA342/overview\">Nelson A. Rockefeller Papers, DNA (FA342)</extref>\n\n<extref href=\"../FA343/overview\">Nelson A. Rockefeller Papers, Family and Friends (FA343)</extref>\n\n<extref href=\"../FA344/overview\">Nelson A. Rockefeller Papers, Oral Histories (FA344)</extref>\n\n<extref href=\"../FA345/overview\">Nelson A. Rockefeller Papers, Politics - New York City Office (FA345)</extref>\n\n<extref href=\"../FA346/overview\">Nelson A. Rockefeller Papers, Politics - George L. Hinman (FA346)</extref>\n\n<extref href=\"../FA348/overview\">Nelson A. Rockefeller Papers, Projects (FA348)</extref>\n\n<extref href=\"../FA349/overview\">Nelson A. Rockefeller Papers, Speeches, Post-Vice Presidential (FA349)</extref>\n\n<extref href=\"../FA350/overview\">Nelson A. Rockefeller Papers, Washington, DC (FA350)</extref>\n\n<extref href=\"../FA351/overview\">Nelson A. Rockefeller Papers, Ann C. Whitman - Politics (FA351)</extref>\n\n<extref href=\"../FA352/overview\">Nelson A. Rockefeller Papers, Hugh Morrow Interviews (FA352)</extref>",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "otherfindaid"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Processing Information note",
+            "persistent_id": "53c0e792a345f5f111b9e2dbfe4c99d9",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "John LeGloahec\nNovember 2001\n\n",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "processinfo"
+        }
+    ],
+    "publish": true,
+    "related_accessions": [],
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2016-10-22T14:02:45Z",
+            "created_by": "battalb",
+            "date": "finding aid revision date not supplied",
+            "description": "<date>13 February 2012</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2016-10-22T14:02:45Z",
+            "uri": "/revision_statement/2999",
+            "user_mtime": "2016-10-22T14:02:45Z"
+        }
+    ],
+    "rights_statements": [],
     "subjects": [
         {
             "ref": "/subjects/399"
@@ -157,272 +431,29 @@
             "ref": "/subjects/241"
         }
     ],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "8",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:02:45Z",
-            "system_mtime": "2016-10-22T14:02:45Z",
-            "user_mtime": "2016-10-22T14:02:45Z",
-            "portion": "whole",
-            "extent_type": "document box(es)",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1967-1970",
-            "begin": "1967",
-            "end": "1970",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:02:45Z",
-            "system_mtime": "2016-10-22T14:02:45Z",
-            "user_mtime": "2016-10-22T14:02:45Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/182"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/352"
-        },
-        {
-            "role": "subject",
-            "terms": [],
-            "ref": "/agents/corporate_entities/1843"
-        },
-        {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/147"
-        }
-    ],
-    "revision_statements": [
-        {
-            "date": "finding aid revision date not supplied",
-            "description": "<date>13 February 2012</date><item>Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins.</item>",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-22T14:02:45Z",
-            "system_mtime": "2016-10-22T14:02:45Z",
-            "user_mtime": "2016-10-22T14:02:45Z",
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/2999",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
-    "notes": [
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "52bb8022aaa59d7a5c723978476884c6",
-            "label": "Biographical/Historical note",
-            "type": "bioghist",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Nelson Aldrich Rockefeller was born on July 8, 1908, in Bar Harbor, Maine, the third child of John Davison Rockefeller, Jr., and Abby Aldrich Rockefeller. He graduated from the Lincoln School of Teachers College at Columbia University in New York City in 1926. Mr. Rockefeller attended Dartmouth College where he was elected to Phi Beta Kappa, graduating cum laude in 1930 with an A.B. degree in economics.\n\nAfter college, Mr. Rockefeller was active in family enterprises, including real estate, banking, and family philanthropies. His major business interests in time became focused on Rockefeller Center and Latin America. In 1938, he became the president of Rockefeller Center.\n\nIn 1935, because of his interest in national affairs and his desire to learn about U.S. business abroad, Mr. Rockefeller became a director of Creole Petroleum Company, the Venezuelan subsidiary of Standard Oil of New Jersey. This association led eventually to his deep, life-long interest in Latin America. He made extensive visits to Latin America in 1937 and 1939 to study economic, social, and political conditions. He resigned his directorship in the Creole Petroleum Company in 1940.\n\nIn 1940, Mr. Rockefeller and his four brothers organized the Rockefeller Brothers Fund to carry out a broad range of philanthropic activities.\n\nThroughout his life Mr. Rockefeller was an avid supporter of the arts. He served as a trustee, treasurer, president, and chair of the board of the Museum of Modern Art, which was cofounded by his mother. In 1954, he founded the Museum of Primitive Art, which collected of indigenous art of the Americas, Africa, Oceania, and early Asia and Europe.\n\nAfter his 1939 visit to Latin America, Mr. Rockefeller prepared a memorandum for President Franklin D. Roosevelt outlining his deep concern over Nazi influence and penetration into that part of the world. In the memo he recommended a U.S. program of cooperation with the nations of the western hemisphere to achieve better relations among these nations and to help raise their standards of living. Largely as a result of this memo, President Roosevelt asked Mr. Rockefeller in August of 1940 to initiate and head a new program ultimately known as the Office of Inter-American Affairs. Mr. Rockefeller served as Coordinator of Inter-American Affairs, his first full-time position in public service.\n\nMr. Rockefeller served in this position until December 1944, when President Roosevelt appointed him Assistant Secretary of State for American Republic Affairs. In this post, Mr. Rockefeller initiated the Inter-American Conference on Problems of War and Peace in Mexico City in February of 1945. It resulted in the Act of Chapultepec, which provided the framework for economic, social, and defense cooperation among the nations of the western hemisphere and set the principle that an attack on one of these nations would be regarded as an attack on all and jointly resisted.\n\nMr. Rockefeller signed the Act of Chapultepec on behalf of the United States. He also attended the United Nations Conference on International Organization in San Francisco in 1945. At the conference, there was considerable opposition to the idea of permitting, within the UN Charter, the formation of regional pacts such as the Act of Chapultepec. Mr. Rockefeller, who believed that the inclusion was essential, especially to U.S. policy in Latin America, successfully argued the need for regional pacts within the framework of the United Nations. The importance of this victory was underscored by the subsequent formation of NATO, SEATO, and the Rio Pact.\n\nDuring these war-time years, Mr. Rockefeller also served as Chairman of the Inter-American Development Commission, which was established in June 1940 to reorganize and revitalize Latin American economies following the loss of European markets. He was also the U.S. Co-Chairman of the Mexican-American Development Commission to help Mexico emerge as an industrial nation in the transition from war to peace.\n\nMr. Rockefeller resigned as Assistant Secretary of State on August 24, 1945.\n\nUpon his return to private life in New York in 1946, Mr. Rockefeller became chair of the board of Rockefeller Center and undertook a program of physical expansion. Two other initiatives during this period illustrate Mr. Rockefeller's continuing interest in Latin America and international economic development. In July of 1946, the Rockefeller brothers established a philanthropic organization, the American International Association for Economic and Social Development (AIA). AIA financed nonprofit projects to ameliorate health, educational, agricultural, and other social problems in the poorer areas of Latin America. Nelson Rockefeller served as President from July 1946 to June 1953 and from January 1957 to December 1958. In 1947, he organized the International Basic Economy Corporation (IBEC), a business corporation to help raise living standards in foreign countries through new economic enterprises. In its early years, IBEC concentrated on enterprises in Latin America but later expanded its activities to other regions. Mr. Rockefeller served as IBEC President from January 1947 to June 1953 and from January 1956 to December 1958.\n\nIn his inaugural address in January 1949, President Harry S. Truman announced the Point IV program for providing technical assistance to developing nations. This concept was based in part on programs Mr. Rockefeller and his associates had developed through the Office of the Coordinator of Inter-American Affairs and the private, philanthropic AIA. In November of 1950, President Truman asked Mr. Rockefeller to serve as Chairman of the International Development Advisory Board. The Board was charged with recommending policies for carrying out the Point IV program. The Board's report, entitled \"Partners in Progress,\" provided the basic blueprint for America's foreign assistance program.\n\nOn November 20, 1952, President-elect Dwight D. Eisenhower asked Mr. Rockefeller to serve as Chairman of the President's Advisory Committee on Government Organization, a group created to recommend ways to improve the efficiency of the executive branch of the government. As Chairman of that committee, Mr. Rockefeller recommended 13 reorganization plans to the President, 10 of which were approved by Congress. These plans achieved basic changes in the organization of the Department of Defense, the Department of Agriculture, and the Office of Defense Mobilization, among others. Another of the plans led to the establishment of the Department of Health, Education, and Welfare. In June 1953, Mr. Rockefeller was appointed Under Secretary of the new department. He was especially active in the department's legislative program, recommending measures that covered an additional ten million people under the Social Security program. He resigned as HEW Under Secretary in 1954 to become Special Assistant to the President for Foreign Affairs.\n\nWhile serving as Special Assistant, Mr. Rockefeller played a key role in the development of the \"Open Skies\" proposal for checking on world armaments through mutual air reconnaissance. He accompanied President Eisenhower to the Geneva Summit Conference in 1955, where the plan was proposed to the world by the President. Mr. Rockefeller resigned as Special Assistant on December 31, 1955.\n\nMr. Rockefeller first ran for public office in 1958 and was elected Governor of New York on November 4, defeating incumbent Averill Harriman. He took office January 1, 1959, and was subsequently re-elected Governor three more times, thus becoming the first Governor in the nation's history to be elected to four 4-year terms.\n\nNelson Rockefeller's tenure as a public servant in the federal government was a formative period in his life. By the time he left Washington to assume the governorship of New York, he had received a thorough education in the workings of the federal government. His chairmanship of PACGO permitted him to examine every aspect of the executive branch. This and his work in HEW exposed him to a wide variety of domestic issues. He gained experience in initiating legislation, in foreign policy and diplomacy, in domestic and international economics, and in national security and military affairs. In the process he also received an education in national politics and gained a reputation for being an effective and hardworking administrator. Most importantly, these appointments provided him with the opportunity to form the friendships and personal associations that served him throughout his political career.\n\nMr. Rockefeller resigned as Governor of New York in December 1973. In August 1974, President Gerald R. Ford nominated him to fill the vacant vice presidency following the resignation of President Richard M. Nixon. Mr. Rockefeller served as Vice President from December 19, 1974, to January 20, 1977. Nelson Rockefeller died on January 26, 1979, in New York City.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "587f04fd3502dff00872f72f73f43942",
-            "label": "Preferred Citation note",
-            "type": "prefercite",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "38a0dde94b2b574ab312be216556d704",
-            "label": "File Plan note",
-            "type": "fileplan",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Former Classification: III 04 J.3\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "9278ccf563e4e471307d031e2a3c0370",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Processing Level 3: Standard Processing.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d4b4b4343ae163e64213edba1a6f3c0b",
-            "label": "Conditions Governing Use note",
-            "type": "userestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "RAC users must abide by all applicable provisions of U.S. copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use.\" If the RAC does not hold copyright for an archival collection or items within a collection, it is the user's responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "4e5f39cdfe75c4ce72a3f7dfae070213",
-            "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
-            "rights_restriction": {
-                "local_access_restriction_type": []
-            },
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Material in the Rockefeller family collections that provides the names, correspondence, or activities of living members of the Rockefeller family, and/or documents the net wealth of any Rockefeller family members, is restricted. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "d44e1f7e84e23832723f8e77ceadca75",
-            "label": "Arrangement note",
-            "type": "arrangement",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "There are four subseries in this series:\n\nSubseries 1 - Current Issues, 1968\n\nSubseries 2 - NAR Political, 1968\n\nSubseries 3 - OMR General, 1968\n\nSubseries 4 - Notebooks and Reports, 1967-1970\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "2eb8138e0b47e3c114b38f103a6053c9",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "This series contains a portion of the files of Oscar M. Ruebhausen. They were created primarily during Ruebhausen's service as head of DNA, a research organization for Nelson Rockefeller that was founded by Roswell Perkins. Ruebhausen headed DNA during Governor Rockefeller's run for the Republican presidential nomination in 1968. Some of the materials also cover Rockefeller's gubernatorial reelection campaign in 1970. The majority of these documents may also be found in other series specifically Rockefeller's personal papers, DNA, Series G and Rockefeller's Gubernatorial records, Issue Books, Series 17.\n\nThis series contains the office files of Oscar M. Ruebhausen. They document his official activities as a member of Nelson A. Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration, the political campaigns, and/or Rockefeller's personal activities. However, unless a document is personally signed by Nelson A. Rockefeller, or is referred to in a document personally signed by him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "86f256b44918ee5a23fbb4bf03e19a68",
-            "label": "Other Finding Aids note",
-            "type": "otherfindaid",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "Detailed finding aids for each series of this collection are available:\n\n<extref href=\"../FA338/overview\">Nelson A. Rockefeller papers, Activities (FA338)</extref>\n\n<extref href=\"../FA339/overview\">Nelson A. Rockefeller Papers, AIA-IBEC (FA339)</extref>\n\n<extref href=\"../FA340/overview\">Nelson A. Rockefeller Papers, Art (FA340)</extref>\n\n<extref href=\"../FA341/overview\">Nelson A. Rockefeller Papers, Countries (FA341)</extref>\n\n<extref href=\"../FA342/overview\">Nelson A. Rockefeller Papers, DNA (FA342)</extref>\n\n<extref href=\"../FA343/overview\">Nelson A. Rockefeller Papers, Family and Friends (FA343)</extref>\n\n<extref href=\"../FA344/overview\">Nelson A. Rockefeller Papers, Oral Histories (FA344)</extref>\n\n<extref href=\"../FA345/overview\">Nelson A. Rockefeller Papers, Politics - New York City Office (FA345)</extref>\n\n<extref href=\"../FA346/overview\">Nelson A. Rockefeller Papers, Politics - George L. Hinman (FA346)</extref>\n\n<extref href=\"../FA348/overview\">Nelson A. Rockefeller Papers, Projects (FA348)</extref>\n\n<extref href=\"../FA349/overview\">Nelson A. Rockefeller Papers, Speeches, Post-Vice Presidential (FA349)</extref>\n\n<extref href=\"../FA350/overview\">Nelson A. Rockefeller Papers, Washington, DC (FA350)</extref>\n\n<extref href=\"../FA351/overview\">Nelson A. Rockefeller Papers, Ann C. Whitman - Politics (FA351)</extref>\n\n<extref href=\"../FA352/overview\">Nelson A. Rockefeller Papers, Hugh Morrow Interviews (FA352)</extref>",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        },
-        {
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "53c0e792a345f5f111b9e2dbfe4c99d9",
-            "label": "Processing Information note",
-            "type": "processinfo",
-            "subnotes": [
-                {
-                    "jsonmodel_type": "note_text",
-                    "content": "John LeGloahec\nNovember 2001\n\n",
-                    "publish": true
-                }
-            ],
-            "publish": true
-        }
-    ],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Nelson A. Rockefeller personal papers, Politics - Oscar M. Ruebhausen, Series J.3",
+    "tree": {
+        "ref": "/repositories/2/resources/546/tree"
+    },
     "uri": "/repositories/2/resources/546",
-    "repository": {
-        "ref": "/repositories/2"
-    },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-22T14:02:45Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-22T14:02:45Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3833",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/546"
-        }
-    },
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-22T14:02:45Z",
-        "system_mtime": "2016-10-22T14:02:45Z",
-        "user_mtime": "2016-10-22T14:02:45Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
         "enum_1": "4 - Advanced",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-22T14:02:45Z",
+        "user_mtime": "2016-10-22T14:02:45Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/546/tree"
-    }
+    "user_mtime": "2016-10-22T14:02:45Z"
 }

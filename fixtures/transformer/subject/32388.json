@@ -1,38 +1,38 @@
 {
-    "lock_version": 3,
-    "title": "Dry farming",
-    "created_by": "pgalligan",
-    "last_modified_by": "pgalligan",
     "create_time": "2016-01-05T20:04:03Z",
-    "system_mtime": "2019-04-15T20:23:23Z",
-    "user_mtime": "2016-01-05T20:04:03Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "pgalligan",
+    "external_documents": [],
     "external_ids": [],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "pgalligan",
+    "lock_version": 3,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2019-04-15T20:23:23Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Dry farming",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
             "create_time": "2016-01-05T20:04:03Z",
-            "system_mtime": "2016-01-05T20:04:03Z",
-            "user_mtime": "2016-01-05T20:04:03Z",
-            "term_type": "topical",
+            "created_by": "pgalligan",
             "jsonmodel_type": "term",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
+            "system_mtime": "2016-01-05T20:04:03Z",
+            "term": "Dry farming",
+            "term_type": "topical",
             "uri": "/terms/29827",
+            "user_mtime": "2016-01-05T20:04:03Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Dry farming",
     "uri": "/subjects/32388",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2016-01-05T20:04:03Z",
+    "vocabulary": "/vocabularies/1"
 }

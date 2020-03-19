@@ -1,49 +1,49 @@
 {
-    "lock_version": 659,
-    "title": "Public policy",
-    "created_by": "admin",
-    "last_modified_by": "admin",
     "create_time": "2014-12-06T02:29:45Z",
-    "system_mtime": "2019-03-12T15:23:18Z",
-    "user_mtime": "2014-12-06T02:29:45Z",
-    "source": "lcsh",
-    "jsonmodel_type": "subject",
+    "created_by": "admin",
+    "external_documents": [],
     "external_ids": [
         {
-            "external_id": "33",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:29:45Z",
+            "created_by": "admin",
+            "external_id": "33",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::SUBJECT",
             "system_mtime": "2014-12-06T02:29:45Z",
-            "user_mtime": "2014-12-06T02:29:45Z",
-            "jsonmodel_type": "external_id"
+            "user_mtime": "2014-12-06T02:29:45Z"
         }
     ],
+    "is_linked_to_published_record": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 659,
     "publish": true,
-    "used_within_repositories": [
-        "/repositories/2"
-    ],
-    "used_within_published_repositories": [
-        "/repositories/2"
-    ],
+    "source": "lcsh",
+    "system_mtime": "2019-03-12T15:23:18Z",
     "terms": [
         {
-            "lock_version": 0,
-            "term": "Public policy",
-            "created_by": "admin",
-            "last_modified_by": "admin",
             "create_time": "2014-12-06T02:29:46Z",
-            "system_mtime": "2014-12-06T02:29:46Z",
-            "user_mtime": "2014-12-06T02:29:46Z",
-            "term_type": "topical",
+            "created_by": "admin",
             "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2014-12-06T02:29:46Z",
+            "term": "Public policy",
+            "term_type": "topical",
             "uri": "/terms/31",
+            "user_mtime": "2014-12-06T02:29:46Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "external_documents": [],
+    "title": "Public policy",
     "uri": "/subjects/27",
-    "vocabulary": "/vocabularies/1",
-    "is_linked_to_published_record": true
+    "used_within_published_repositories": [
+        "/repositories/2"
+    ],
+    "used_within_repositories": [
+        "/repositories/2"
+    ],
+    "user_mtime": "2014-12-06T02:29:45Z",
+    "vocabulary": "/vocabularies/1"
 }

@@ -1,204 +1,249 @@
 {
-    "lock_version": 7,
-    "title": "Rockefeller Foundation records, Field Staff",
-    "publish": true,
-    "restrictions": true,
-    "ead_id": "FA487.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Staff\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Field Staff",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
+    "ancestors": [],
+    "children": [
+        {
+            "identifier": 503968,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/503968",
+            "title": "Laboratory Records of West African Yellow Fever Commission",
+            "type": "collection"
+        },
+        {
+            "identifier": 503980,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/503980",
+            "title": "International Health Board/Division (IHB/D)",
+            "type": "collection"
+        },
+        {
+            "identifier": 504112,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/504112",
+            "title": "Rockefeller Foundation Health Commission",
+            "type": "collection"
+        },
+        {
+            "identifier": 504115,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/504115",
+            "title": "Field Staff - Collected papers",
+            "type": "collection"
+        },
+        {
+            "identifier": 504188,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/504188",
+            "title": "Rockefeller Foundation War Relief Commission",
+            "type": "collection"
+        },
+        {
+            "identifier": 504190,
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/504190",
+            "title": "Rockefeller Foundation Program Reports",
+            "type": "collection"
+        }
+    ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-23T16:03:35Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/685"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3981",
+        "user_mtime": "2016-10-23T16:03:35Z"
+    },
     "create_time": "2014-12-06T13:47:38Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-23T16:03:35Z",
-    "suppressed": false,
-    "id_0": "FA487",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_description_rules": "dacs",
-    "jsonmodel_type": "resource",
-    "external_ids": [
-        {
-            "external_id": "20511",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T16:03:35Z",
-            "system_mtime": "2016-10-23T16:03:35Z",
-            "user_mtime": "2016-10-23T16:03:35Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "42",
-            "container_summary": "Extent is approximate.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-23T16:03:35Z",
-            "system_mtime": "2016-10-23T16:03:35Z",
-            "user_mtime": "2016-10-23T16:03:35Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
+    "created_by": "admin",
     "dates": [
         {
-            "lock_version": 0,
-            "expression": "1913-1974",
             "begin": "1913",
-            "end": "1974",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
             "create_time": "2016-10-23T16:03:35Z",
-            "system_mtime": "2016-10-23T16:03:35Z",
-            "user_mtime": "2016-10-23T16:03:35Z",
+            "created_by": "battalb",
             "date_type": "inclusive",
+            "end": "1974",
+            "expression": "1913-1974",
+            "jsonmodel_type": "date",
             "label": "creation",
-            "jsonmodel_type": "date"
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-23T16:03:35Z",
+            "user_mtime": "2016-10-23T16:03:35Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA487.xml",
+    "extents": [
+        {
+            "container_summary": "Extent is approximate.",
+            "create_time": "2016-10-23T16:03:35Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "42",
+            "portion": "whole",
+            "system_mtime": "2016-10-23T16:03:35Z",
+            "user_mtime": "2016-10-23T16:03:35Z"
         }
     ],
     "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
+    "external_ids": [
         {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
+            "create_time": "2016-10-23T16:03:35Z",
+            "created_by": "battalb",
+            "external_id": "20511",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-23T16:03:35Z",
+            "user_mtime": "2016-10-23T16:03:35Z"
         }
     ],
-    "revision_statements": [],
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Field Staff",
+    "finding_aid_language": "English",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Field Staff\n",
+    "id_0": "FA487",
     "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "collection",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 7,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "c649638f933f6dca8fa3c2114a6055c2",
             "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
+            "persistent_id": "c649638f933f6dca8fa3c2114a6055c2",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Records more than 20 years old are open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "12133f09bc35afa2ecd664960f5f8d99",
-            "type": "fileplan",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "All material in this collection has not been assigned to a record group within the Rockefeller Foundation archives.\n\n ",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "fileplan"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "43d9c96d67d95be91ebe06701b18cf79",
-            "type": "scopecontent",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Contains reports, surveys and collected papers from Field Staff of the Rockefeller Foundation, International Health Board/Division, and China Medical Board. Also includes a selection of Officers Actions, Minutes, Board and Program reports and publications.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "edeb14da813cfd1e7148f079f90e0c06",
-            "type": "physloc",
             "content": [
                 "All contents of Rockefeller Foundation records, Field Staff -- are located in the front of Vault 102, Units 114, 115, 116 and 117."
             ],
-            "publish": false
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "edeb14da813cfd1e7148f079f90e0c06",
+            "publish": false,
+            "type": "physloc"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "fc03fb9237f79356067b28930bd46460",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "762bfa70dd0658d9bda3ee865ee41876",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Arranged in 6 series primarily by Commission/Board, and file type.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         }
     ],
-    "uri": "/repositories/2/resources/685",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-23T16:03:35Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-23T16:03:35Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3981",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/685"
-        }
+    "restrictions": true,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, Field Staff",
+    "tree": {
+        "ref": "/repositories/2/resources/685/tree"
     },
+    "uri": "/repositories/2/resources/685",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2014-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-23T16:03:35Z",
-        "system_mtime": "2016-10-23T16:03:35Z",
-        "user_mtime": "2016-10-23T16:03:35Z",
+        "created_by": "battalb",
+        "date_2": "2014-12-31",
         "enum_1": "2 - Minimal",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-23T16:03:35Z",
+        "user_mtime": "2016-10-23T16:03:35Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/685/tree"
-    }
+    "user_mtime": "2016-10-23T16:03:35Z"
 }

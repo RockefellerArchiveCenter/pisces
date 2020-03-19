@@ -1,116 +1,117 @@
 {
-    "lock_version": 1,
-    "position": 17,
-    "publish": true,
-    "ref_id": "0b946234d88d416dbea80fdaa6b3af01",
-    "title": "Incinerators",
-    "display_string": "Incinerators",
-    "restrictions_apply": false,
-    "created_by": "admin",
-    "last_modified_by": "pgalligan",
-    "create_time": "2014-12-06T03:43:20Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2017-02-16T22:48:55Z",
-    "suppressed": false,
-    "level": "file",
-    "jsonmodel_type": "archival_object",
-    "external_ids": [
-        {
-            "external_id": "730138",
-            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
-            "create_time": "2017-02-16T22:48:55Z",
-            "system_mtime": "2017-02-16T22:48:55Z",
-            "user_mtime": "2017-02-16T22:48:55Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "circa 1905-1980",
-            "begin": "1905",
-            "end": "1980",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-10T12:39:02Z",
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
-        }
-    ],
-    "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [],
     "ancestors": [
         {
-            "ref": "/repositories/2/archival_objects/11440",
-            "level": "series"
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/11440"
         },
         {
-            "ref": "/repositories/2/resources/93",
-            "level": "collection"
+            "level": "collection",
+            "ref": "/repositories/2/resources/93"
         }
     ],
+    "children": [],
+    "create_time": "2014-12-06T03:43:20Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1905",
+            "create_time": "2019-10-10T12:39:02Z",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1980",
+            "expression": "circa 1905-1980",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-10-10T12:39:02Z",
+            "user_mtime": "2019-10-10T12:39:02Z"
+        }
+    ],
+    "display_string": "Incinerators",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2017-02-16T22:48:55Z",
+            "created_by": "pgalligan",
+            "external_id": "730138",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "pgalligan",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2017-02-16T22:48:55Z",
+            "user_mtime": "2017-02-16T22:48:55Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
     "instances": [
         {
-            "lock_version": 0,
-            "created_by": "pgalligan",
-            "last_modified_by": "pgalligan",
             "create_time": "2017-02-16T22:48:55Z",
-            "system_mtime": "2017-02-16T22:48:55Z",
-            "user_mtime": "2017-02-16T22:48:55Z",
+            "created_by": "pgalligan",
             "instance_type": "mixed materials",
-            "jsonmodel_type": "instance",
             "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "pgalligan",
+            "lock_version": 0,
             "sub_container": {
-                "lock_version": 0,
-                "indicator_2": "17",
-                "created_by": "pgalligan",
-                "last_modified_by": "pgalligan",
                 "create_time": "2017-02-16T22:48:55Z",
-                "system_mtime": "2017-02-16T22:48:55Z",
-                "user_mtime": "2017-02-16T22:48:55Z",
-                "type_2": "folder",
+                "created_by": "pgalligan",
+                "indicator_2": "17",
                 "jsonmodel_type": "sub_container",
+                "last_modified_by": "pgalligan",
+                "lock_version": 0,
+                "system_mtime": "2017-02-16T22:48:55Z",
                 "top_container": {
                     "ref": "/repositories/2/top_containers/11132"
-                }
-            }
+                },
+                "type_2": "folder",
+                "user_mtime": "2017-02-16T22:48:55Z"
+            },
+            "system_mtime": "2017-02-16T22:48:55Z",
+            "user_mtime": "2017-02-16T22:48:55Z"
         }
     ],
+    "jsonmodel_type": "archival_object",
+    "language": "eng",
+    "last_modified_by": "pgalligan",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 1,
     "notes": [
         {
+            "jsonmodel_type": "note_multipart",
+            "label": "Scope and Contents note",
+            "persistent_id": "726cf01c3a97a8460b2a8b32a75be6c3",
+            "publish": true,
             "subnotes": [
                 {
                     "content": "Waste disposal, incinerators.\n\n",
-                    "publish": true,
-                    "jsonmodel_type": "note_text"
+                    "jsonmodel_type": "note_text",
+                    "publish": true
                 }
             ],
-            "jsonmodel_type": "note_multipart",
-            "persistent_id": "726cf01c3a97a8460b2a8b32a75be6c3",
-            "label": "Scope and Contents note",
-            "type": "scopecontent",
-            "publish": true
+            "type": "scopecontent"
         }
     ],
-    "uri": "/repositories/2/archival_objects/11457",
+    "parent": {
+        "ref": "/repositories/2/archival_objects/11440"
+    },
+    "position": 17,
+    "publish": true,
+    "ref_id": "0b946234d88d416dbea80fdaa6b3af01",
     "repository": {
         "ref": "/repositories/2"
     },
     "resource": {
         "ref": "/repositories/2/resources/93"
     },
-    "parent": {
-        "ref": "/repositories/2/archival_objects/11440"
-    },
-    "has_unpublished_ancestor": false,
-    "language": "eng"
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Incinerators",
+    "uri": "/repositories/2/archival_objects/11457",
+    "user_mtime": "2017-02-16T22:48:55Z"
 }

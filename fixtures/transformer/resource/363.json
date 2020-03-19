@@ -1,143 +1,192 @@
 {
-    "lock_version": 10,
-    "title": "Theodosius G. Dobzhansky papers, Rockefeller University Faculty",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA159.xml",
-    "finding_aid_title": "A Guide to the Theodosius G. Dobzhansky papers, Rockefeller University Faculty\n",
-    "finding_aid_filing_title": "Dobzhansky (Theodosius G.) papers",
-    "finding_aid_date": "1980 August",
-    "finding_aid_author": "Ruth Sternfeld",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
+    "ancestors": [],
+    "children": [
+        {
+            "identifier": 155814,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/155814",
+            "title": "Correspondence and miscellaneous, 1956-1969",
+            "type": "collection"
+        },
+        {
+            "identifier": 155821,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155821",
+            "title": "Correspondence, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 155822,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155822",
+            "title": "Program of lectures at RU, 1970 October 6 1970 October 13 1970 October 20 1970 October 27 1970 November 3",
+            "type": "object"
+        },
+        {
+            "identifier": 155823,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155823",
+            "title": "News clippings",
+            "type": "object"
+        },
+        {
+            "identifier": 155824,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155824",
+            "title": "Biographical Memoir Fellow of Royal Society 23, 59-89, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 155825,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155825",
+            "title": "Memoir American Philosophical Society Yearbook 49-53, 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 155826,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155826",
+            "title": "Announcement of Memorial Meeting at Columbia, 1976 April 9-10",
+            "type": "object"
+        },
+        {
+            "identifier": 155827,
+            "level": "item",
+            "ref": "/repositories/2/archival_objects/155827",
+            "title": "Collected reprints (scattered holdings)",
+            "type": "object"
+        }
+    ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2019-10-14T17:42:05Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/363"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2019-10-14T17:42:05Z",
+        "uri": "/repositories/2/collection_management/9416",
+        "user_mtime": "2019-10-14T17:42:05Z"
+    },
     "create_time": "2014-12-06T06:43:27Z",
-    "system_mtime": "2019-10-31T15:10:01Z",
-    "user_mtime": "2019-10-14T17:42:04Z",
-    "suppressed": false,
-    "is_slug_auto": false,
-    "id_0": "FA159",
-    "language": "eng",
-    "level": "collection",
-    "finding_aid_status": "under_revision",
-    "jsonmodel_type": "resource",
-    "external_ids": [
-        {
-            "external_id": "241",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-14T17:42:05Z",
-            "system_mtime": "2019-10-14T17:42:05Z",
-            "user_mtime": "2019-10-14T17:42:05Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "0.38",
-            "container_summary": "1 box",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-14T17:42:05Z",
-            "system_mtime": "2019-10-14T17:42:05Z",
-            "user_mtime": "2019-10-14T17:42:05Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
+    "created_by": "admin",
     "dates": [
         {
-            "lock_version": 0,
-            "expression": "undated",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
             "create_time": "2019-10-14T17:42:05Z",
-            "system_mtime": "2019-10-14T17:42:05Z",
-            "user_mtime": "2019-10-14T17:42:05Z",
+            "created_by": "battalb",
             "date_type": "single",
+            "expression": "undated",
+            "jsonmodel_type": "date",
             "label": "creation",
-            "jsonmodel_type": "date"
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA159.xml",
+    "extents": [
+        {
+            "container_summary": "1 box",
+            "create_time": "2019-10-14T17:42:05Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "0.38",
+            "portion": "whole",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z"
         }
     ],
     "external_documents": [],
-    "rights_statements": [],
+    "external_ids": [
+        {
+            "create_time": "2019-10-14T17:42:05Z",
+            "created_by": "battalb",
+            "external_id": "241",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "user_mtime": "2019-10-14T17:42:05Z"
+        }
+    ],
+    "finding_aid_author": "Ruth Sternfeld",
+    "finding_aid_date": "1980 August",
+    "finding_aid_filing_title": "Dobzhansky (Theodosius G.) papers",
+    "finding_aid_status": "under_revision",
+    "finding_aid_title": "A Guide to the Theodosius G. Dobzhansky papers, Rockefeller University Faculty\n",
+    "id_0": "FA159",
+    "instances": [],
+    "is_slug_auto": false,
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "collection",
     "linked_agents": [
         {
-            "role": "creator",
+            "ref": "/agents/people/79",
             "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/people/79"
+            "role": "creator",
+            "terms": []
         },
         {
-            "role": "creator",
+            "ref": "/agents/corporate_entities/20083",
             "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20083"
+            "role": "creator",
+            "terms": []
         },
         {
-            "role": "creator",
+            "ref": "/agents/corporate_entities/20001",
             "relator": "ctb",
-            "terms": [],
-            "ref": "/agents/corporate_entities/20001"
+            "role": "creator",
+            "terms": []
         },
         {
-            "role": "creator",
+            "ref": "/agents/people/415",
             "relator": "aut",
-            "terms": [],
-            "ref": "/agents/people/415"
+            "role": "creator",
+            "terms": []
         }
     ],
-    "revision_statements": [
-        {
-            "date": "2010 August 25",
-            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2019-10-14T17:42:05Z",
-            "system_mtime": "2019-10-14T17:42:05Z",
-            "user_mtime": "2019-10-14T17:42:05Z",
-            "publish": false,
-            "jsonmodel_type": "revision_statement",
-            "uri": "/revision_statement/4270",
-            "repository": {
-                "ref": "/repositories/2"
-            }
-        }
-    ],
-    "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "linked_events": [],
+    "lock_version": 10,
     "notes": [
         {
-            "jsonmodel_type": "note_singlepart",
-            "persistent_id": "a6ecb93b2d49a3781d1ee79b8710a7f1",
-            "label": "General Physical Description note",
-            "type": "physdesc",
             "content": [
                 "1 box (5 inches)"
             ],
-            "publish": true
+            "jsonmodel_type": "note_singlepart",
+            "label": "General Physical Description note",
+            "persistent_id": "a6ecb93b2d49a3781d1ee79b8710a7f1",
+            "publish": true,
+            "type": "physdesc"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "cd3ee41340f92cf50d41f005917aa987",
             "label": "Biographical/Historical note",
-            "type": "bioghist",
+            "persistent_id": "cd3ee41340f92cf50d41f005917aa987",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Theodosius Dobzhansky, 1900-1975, was \"a major influence on current thought and research on genetic, evolutionary theory and human evolution\". A world renowned geneticist, famous for his research, writing and lecturing about evolution and genetics and their relationship to modern man. He pioneered the use of fruit flies which proved to be excellent research animals.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 },
                 {
-                    "jsonmodel_type": "note_chronology",
-                    "title": "Biographical note",
-                    "publish": true,
                     "items": [
                         {
                             "event_date": "1900",
@@ -217,12 +266,12 @@
                                 "Died December 18 Davis, California"
                             ]
                         }
-                    ]
+                    ],
+                    "jsonmodel_type": "note_chronology",
+                    "publish": true,
+                    "title": "Biographical note"
                 },
                 {
-                    "jsonmodel_type": "note_chronology",
-                    "title": "Awards",
-                    "publish": true,
                     "items": [
                         {
                             "event_date": "1946 ",
@@ -278,12 +327,12 @@
                                 "Benjamin Franklin Medal, Franklin Institute, Philadelphia"
                             ]
                         }
-                    ]
+                    ],
+                    "jsonmodel_type": "note_chronology",
+                    "publish": true,
+                    "title": "Awards"
                 },
                 {
-                    "jsonmodel_type": "note_chronology",
-                    "title": "Honorary degrees",
-                    "publish": true,
                     "items": [
                         {
                             "event_date": "1943 ",
@@ -411,143 +460,153 @@
                                 "Sorbonne, Paris"
                             ]
                         }
-                    ]
+                    ],
+                    "jsonmodel_type": "note_chronology",
+                    "publish": true,
+                    "title": "Honorary degrees"
                 },
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Membership : Genetics Society of America (president 1941), American Society of Naturalists (president 1950), Society for the Study of Evolution (president 1951), American Society of Zoologists (president 1963), American Teilhard de Chardin Association (president 1969), Behavior Genetics Association (president 1973), National Academy of Sciences, American Philosophical Association, American Academy of Arts and Sciences, Genetics Society of Japan (honorary), Royal Swedish Academy of Sciences (foreign member), Royal Danish Academy of Sciences (foreign member), Brazilian Academy of Sciences (foreign member), Academia Nazionale dei Lincei (foreign member), Royal Society of London (foreign member).\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "bioghist"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "a4bfba0b3534f86cd9990d28996654f2",
             "label": "Scope and Contents note",
-            "type": "scopecontent",
+            "persistent_id": "a4bfba0b3534f86cd9990d28996654f2",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "This group of papers consists mainly of correspondence.\n\nList of publications enclosed with papers.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "07f03bc1a1dc23954a019962bb42962a",
             "label": "Immediate Source of Acquisition note",
-            "type": "acqinfo",
+            "persistent_id": "07f03bc1a1dc23954a019962bb42962a",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The papers of Theodosius Dobzhansky were deposited with the Rockefeller University Archives on June 1980 by Office of Faculty and Student Records.\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "acqinfo"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "df07f8994fc154aab607c219b499eebd",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "2de5af77e1ba402d91e5595b751c744d",
             "label": "File Plan note",
-            "type": "fileplan",
+            "persistent_id": "2de5af77e1ba402d91e5595b751c744d",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Former Classification: I 450 D656\n\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "fileplan"
         },
         {
             "jsonmodel_type": "note_multipart",
-            "persistent_id": "b07327f086f30239b4ee07730eadf2ef",
             "label": "Conditions Governing Access note",
-            "type": "accessrestrict",
+            "persistent_id": "b07327f086f30239b4ee07730eadf2ef",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Access to this collection is restricted pending permission from Rockefeller University.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "4b977e58723568844d2fcb334b00ce0f",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "As received.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         }
     ],
-    "uri": "/repositories/2/resources/363",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2019-10-14T17:42:05Z",
-        "system_mtime": "2019-10-14T17:42:05Z",
-        "user_mtime": "2019-10-14T17:42:05Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/9416",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/363"
+    "restrictions": false,
+    "revision_statements": [
+        {
+            "create_time": "2019-10-14T17:42:05Z",
+            "created_by": "battalb",
+            "date": "2010 August 25",
+            "description": "Paper finding aid converted to EAD/XML by AureXus in 2010. Imported into the Archvists\u2019 Toolkit by Becky Robbins.",
+            "jsonmodel_type": "revision_statement",
+            "last_modified_by": "battalb",
+            "publish": false,
+            "repository": {
+                "ref": "/repositories/2"
+            },
+            "system_mtime": "2019-10-14T17:42:05Z",
+            "uri": "/revision_statement/4270",
+            "user_mtime": "2019-10-14T17:42:05Z"
         }
+    ],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2019-10-31T15:10:01Z",
+    "title": "Theodosius G. Dobzhansky papers, Rockefeller University Faculty",
+    "tree": {
+        "ref": "/repositories/2/resources/363/tree"
     },
+    "uri": "/repositories/2/resources/363",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2007-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2019-10-14T17:42:05Z",
-        "system_mtime": "2019-10-14T17:42:05Z",
-        "user_mtime": "2019-10-14T17:42:05Z",
+        "created_by": "battalb",
+        "date_2": "2007-12-31",
         "enum_1": "4 - Advanced",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2019-10-14T17:42:05Z",
+        "user_mtime": "2019-10-14T17:42:05Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/363/tree"
-    }
+    "user_mtime": "2019-10-14T17:42:04Z"
 }

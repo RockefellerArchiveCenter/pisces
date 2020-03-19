@@ -77,7 +77,7 @@ class ArchivalObjectMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {}
+        data = {"ancestors": [], "children": [], "linked_agents": []}
         data.update(self.get_cartographer_data(object))
         data.update(self.get_archivesspace_data(object, object_type))
         return data
@@ -88,21 +88,29 @@ class ArchivalObjectMerger(BaseMerger):
         data = {"ancestors": []}
         resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
-            data["ancestors"] = resp["results"][0].get("ancestors")
+            for a in resp["results"][0].get("ancestors"):
+                a["type"] = "collection"
+                data["ancestors"].append(a)
+        return data
+
+    def get_archival_object_collection_data(self, object):
+        data = {"children": []}
+        data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
+        data["children"] = self.aspace_helper.get_archival_object_children(object['resource']['ref'], object["uri"])
         return data
 
     def get_archivesspace_data(self, object, object_type):
-        """Gets dates, languages and extent data from archival object's resource
-        record in ArchivesSpace."""
-        data = {"linked_agents": []}
+        """Gets dates, languages, extent and children from archival object's
+        resource record in ArchivesSpace."""
+        data = {"linked_agents": [], "children": []}
         base_fields = ["dates", "language"]
         fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
         for field in fields:
             if object.get(field) in ['', [], {}, None]:
-                value = self.aspace_helper.closest_parent_value(object.get("uri"), field)
+                value = self.aspace_helper.closest_parent_value(object["uri"], field)
                 data[field] = value
         if object_type == "archival_object_collection":
-            data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object.get("uri"))
+            data.update(self.get_archival_object_collection_data(object))
         return data
 
     @silk_profile()
@@ -132,12 +140,20 @@ class ArrangementMapMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        return self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json()
+        data = {"children": []}
+        data.update(self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json())
+        if not object.get("children"):
+            data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
+        return data
 
     @silk_profile()
     def combine_data(self, object, additional_data):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
-        additional_data["ancestors"] = object.get("ancestors", [])
+        ancestors = []
+        for a in object.get("ancestors"):
+            a["type"] = "collection"
+            ancestors.append(a)
+        additional_data["ancestors"] = ancestors
         return additional_data
 
 
@@ -176,10 +192,7 @@ class ResourceMerger(BaseMerger):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
         data = {"children": []}
-        as_tree = self.aspace_helper.aspace.client.get("{}/tree".format(object["uri"].rstrip("/"))).json()
-        for child in as_tree.get("children"):
-            del child["children"]
-            data["children"].append(child)
+        data["children"] = self.aspace_helper.get_resource_children(object["uri"])
         return data
 
     @silk_profile()

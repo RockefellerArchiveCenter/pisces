@@ -1,202 +1,3355 @@
 {
-    "lock_version": 10,
-    "title": "Rockefeller Foundation records, Pamphlet File, Series 2",
-    "publish": true,
-    "restrictions": false,
-    "ead_id": "FA264.xml",
-    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Pamphlet File, Series 2\n",
-    "finding_aid_filing_title": "Rockefeller Foundation records, Pamphlet File, Series 2",
-    "finding_aid_date": "2011",
-    "finding_aid_author": "Amy Collier",
-    "finding_aid_language": "English",
-    "created_by": "admin",
-    "last_modified_by": "battalb",
-    "create_time": "2014-12-06T08:17:45Z",
-    "system_mtime": "2017-12-15T22:28:33Z",
-    "user_mtime": "2016-10-19T21:51:34Z",
-    "suppressed": false,
-    "id_0": "FA264",
-    "language": "eng",
-    "level": "series",
-    "finding_aid_description_rules": "dacs",
-    "finding_aid_status": "in_progress",
-    "jsonmodel_type": "resource",
-    "external_ids": [
+    "ancestors": [],
+    "children": [
         {
-            "external_id": "645",
-            "source": "Archivists Toolkit Database::RESOURCE",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-19T21:51:34Z",
-            "system_mtime": "2016-10-19T21:51:34Z",
-            "user_mtime": "2016-10-19T21:51:34Z",
-            "jsonmodel_type": "external_id"
-        }
-    ],
-    "subjects": [],
-    "linked_events": [],
-    "extents": [
-        {
-            "lock_version": 0,
-            "number": "23",
-            "container_summary": "41 manuscript boxes",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-19T21:51:34Z",
-            "system_mtime": "2016-10-19T21:51:34Z",
-            "user_mtime": "2016-10-19T21:51:34Z",
-            "portion": "whole",
-            "extent_type": "cubic_feet",
-            "jsonmodel_type": "extent"
-        }
-    ],
-    "dates": [
-        {
-            "lock_version": 0,
-            "expression": "1878-1988",
-            "begin": "1878",
-            "end": "1988",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
-            "create_time": "2016-10-19T21:51:34Z",
-            "system_mtime": "2016-10-19T21:51:34Z",
-            "user_mtime": "2016-10-19T21:51:34Z",
-            "date_type": "inclusive",
-            "label": "creation",
-            "jsonmodel_type": "date"
+            "identifier": 232608,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232608",
+            "title": "Aa-Af, 1970-1982",
+            "type": "object"
         },
         {
-            "lock_version": 0,
-            "begin": "1935",
-            "end": "1975",
-            "created_by": "battalb",
-            "last_modified_by": "battalb",
+            "identifier": 232609,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232609",
+            "title": "Ad Hoc Committee on the Huntington Estate Buildings, 1966 November",
+            "type": "object"
+        },
+        {
+            "identifier": 232610,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232610",
+            "title": "Advertising Council, 1951",
+            "type": "object"
+        },
+        {
+            "identifier": 232611,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232611",
+            "title": "Ag-Aj, 1957-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232612,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232612",
+            "title": "Agency for International Development, 1970 January 7",
+            "type": "object"
+        },
+        {
+            "identifier": 232613,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232613",
+            "title": "Ak-Ap, 1934-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232614,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232614",
+            "title": "Aldrich, Nelson W., 1913 October 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232615,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232615",
+            "title": "Alfred E. Smith Memorial Exhibition, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232616,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232616",
+            "title": "Alroy, Gil Carl, 1966 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232617,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232617",
+            "title": "American Assembly, 1972 November 2-5 and 1975 April 3-5",
+            "type": "object"
+        },
+        {
+            "identifier": 232618,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232618",
+            "title": "American Assn. of Junior Colleges, 1941-1942 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232619,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232619",
+            "title": "American Association of State Libraries, 1963 July 13",
+            "type": "object"
+        },
+        {
+            "identifier": 232620,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232620",
+            "title": "American Cancer Society, 1969-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232621,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232621",
+            "title": "American Conservation Association, 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 232622,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232622",
+            "title": "American School of Classical Studies at Athens, 1958",
+            "type": "object"
+        },
+        {
+            "identifier": 232623,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232623",
+            "title": "American Society of Agronomy, 1964 July and 1971 August 15-20",
+            "type": "object"
+        },
+        {
+            "identifier": 232624,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232624",
+            "title": "American Symphony Orchestra League, 1958",
+            "type": "object"
+        },
+        {
+            "identifier": 232625,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232625",
+            "title": "American Youth Commission, 1938 April",
+            "type": "object"
+        },
+        {
+            "identifier": 232626,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232626",
+            "title": "Andrews, Wayne, 1957",
+            "type": "object"
+        },
+        {
+            "identifier": 232627,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232627",
+            "title": "Angel, Herbert E., 1968 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232628,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232628",
+            "title": "Appleget, Thomas B., 1936",
+            "type": "object"
+        },
+        {
+            "identifier": 232629,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232629",
+            "title": "Arbona, Guillermo, 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232630,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232630",
+            "title": "Arnett, Trevor, 1937 and 1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232631,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232631",
+            "title": "Arnold, W. F., 1906",
+            "type": "object"
+        },
+        {
+            "identifier": 232632,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232632",
+            "title": "Arnstein, Margaret G., 1956 July",
+            "type": "object"
+        },
+        {
+            "identifier": 232633,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232633",
+            "title": "Art in Science, 1965 September",
+            "type": "object"
+        },
+        {
+            "identifier": 232634,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232634",
+            "title": "Ashcraft, Virginia, 1947 November",
+            "type": "object"
+        },
+        {
+            "identifier": 232635,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232635",
+            "title": "Atwater, Elton, 1936 May",
+            "type": "object"
+        },
+        {
+            "identifier": 232636,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232636",
+            "title": "Atwood, J. Howell, 1941 May",
+            "type": "object"
+        },
+        {
+            "identifier": 232637,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232637",
+            "title": "Australia Politics & Government, 1921 October 19-1923 August 25",
+            "type": "object"
+        },
+        {
+            "identifier": 232638,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232638",
+            "title": "Bailey (Russell D.) and Associates, 1968 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232639,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232639",
+            "title": "Baird, Guy B., 1970 September 10-1971 March 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232640,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232640",
+            "title": "Barker, Randolph, 1970 March 2 - 1974 March 18",
+            "type": "object"
+        },
+        {
+            "identifier": 232641,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232641",
+            "title": "Barnard, Chester I., 1939-1958",
+            "type": "object"
+        },
+        {
+            "identifier": 232642,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232642",
+            "title": "Barnes, M.E., 1925 December 31",
+            "type": "object"
+        },
+        {
+            "identifier": 232643,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232643",
+            "title": "Barreto, Pablo, 1970 September",
+            "type": "object"
+        },
+        {
+            "identifier": 232644,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232644",
+            "title": "Barry, Iris, 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232645,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232645",
+            "title": "Basch, Paul F. , 1969 December",
+            "type": "object"
+        },
+        {
+            "identifier": 232646,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232646",
+            "title": "Bates, Marston, 1952 January 10",
+            "type": "object"
+        },
+        {
+            "identifier": 232647,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232647",
+            "title": "Batten, James K. , 1962 June 30",
+            "type": "object"
+        },
+        {
+            "identifier": 232648,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232648",
+            "title": "Bauer, G. Philip, 1946 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232649,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232649",
+            "title": "Bavarian State Galleries, 1946 January 14",
+            "type": "object"
+        },
+        {
+            "identifier": 232650,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232650",
+            "title": "Beach, Fred F. , 1949",
+            "type": "object"
+        },
+        {
+            "identifier": 232651,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232651",
+            "title": "Be-Bh, 1933-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232652,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232652",
+            "title": "Belkin, John N., 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232653,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232653",
+            "title": "Berger, Morroe, 1960 February 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232654,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232654",
+            "title": "Bi-Bn, 1878 and 1984",
+            "type": "object"
+        },
+        {
+            "identifier": 232655,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232655",
+            "title": "Bly, Robert, 1966",
+            "type": "object"
+        },
+        {
+            "identifier": 232656,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232656",
+            "title": "Bo-Bt, 1938-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232657,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232657",
+            "title": "Boccaccio, Mary, 1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232658,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232658",
+            "title": "Borlaug, Norman, 1965-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232659,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232659",
+            "title": "Organizing National Crop Production Campaigns by Norman Borlaug, 1968 April 2",
+            "type": "object"
+        },
+        {
+            "identifier": 232660,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232660",
+            "title": "Organizing National Crop Production Campaigns by Norman Borlaug, 1968 April 2 - June 27",
+            "type": "object"
+        },
+        {
+            "identifier": 232661,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232661",
+            "title": "Bowman, Isaiah, 1937 October",
+            "type": "object"
+        },
+        {
+            "identifier": 232662,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232662",
+            "title": "Bu-Bz, 1955-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232663,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232663",
+            "title": "British Columbia. Vancouver. Board of Parks and Recreation, 1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232664,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232664",
+            "title": "Brookings Institution, 1931 and 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232665,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232665",
+            "title": "Brown, E. Richard , 1975-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232666,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232666",
+            "title": "Brumbaugh, A.J., 1942 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232667,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232667",
+            "title": "Brunner, Edmund deS., 1934",
+            "type": "object"
+        },
+        {
+            "identifier": 232668,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232668",
+            "title": "Health and the Developing World by John. H. Bryant, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232669,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232669",
+            "title": "Health and the Developing World by John H. Bryant, 1968 May",
+            "type": "object"
+        },
+        {
+            "identifier": 232670,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232670",
+            "title": "Buarque, de Holanda, Sergio, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232671,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232671",
+            "title": "Buchanan, Norman S., 1944",
+            "type": "object"
+        },
+        {
+            "identifier": 232672,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232672",
+            "title": "Bull, Hedley, 1964 September 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232673,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232673",
+            "title": "Bullock, Mary Brown, 1972-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232674,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232674",
+            "title": "Bureau of Community Service, 1950-1951",
+            "type": "object"
+        },
+        {
+            "identifier": 232675,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232675",
+            "title": "Bureau of Public Administration (Tennessee), 1947 January - October",
+            "type": "object"
+        },
+        {
+            "identifier": 232676,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232676",
+            "title": "Bureau of Public Schools, 1961",
+            "type": "object"
+        },
+        {
+            "identifier": 232677,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232677",
+            "title": "Burns, Arthur Lee, 1959 April 2 - June 8",
+            "type": "object"
+        },
+        {
+            "identifier": 232678,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232678",
+            "title": "Ca-Cd, 1958-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232679,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232679",
+            "title": "Cameron, John, 1929-1930",
+            "type": "object"
+        },
+        {
+            "identifier": 232680,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232680",
+            "title": "Campbell, Doak S., 1943 December",
+            "type": "object"
+        },
+        {
+            "identifier": 232681,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232681",
+            "title": "Camps, Miriam, 1957-1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232682,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232682",
+            "title": "Canadian Institute of International Affairs, 1935",
+            "type": "object"
+        },
+        {
+            "identifier": 232683,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232683",
+            "title": "Contril, Hadley, 1941 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232684,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232684",
+            "title": "Carter, Clarence E., 1952 May 22",
+            "type": "object"
+        },
+        {
+            "identifier": 232685,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232685",
+            "title": "Carter, Henry Rose, 1935-1941",
+            "type": "object"
+        },
+        {
+            "identifier": 232686,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232686",
+            "title": "Oral History Typescript. Causey, Otis R. and Calista, 1970 September 21-25",
+            "type": "object"
+        },
+        {
+            "identifier": 232687,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232687",
+            "title": "Ce-Ch, 1921-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232688,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232688",
+            "title": "A Celebration of..., 1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232689,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232689",
+            "title": "Center for Inter-American Relations, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232690,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232690",
+            "title": "Center for Southern Education Studies, 1961",
+            "type": "object"
+        },
+        {
+            "identifier": 232691,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232691",
+            "title": "Center of Planning and Economic Research, 1966",
+            "type": "object"
+        },
+        {
+            "identifier": 232692,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232692",
+            "title": "Central American Cooperative Corn Improvement Project, 1954-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232693,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232693",
+            "title": "Centro Internacional de Mejoramiento de Maiz y Trigo (CIMMYT), undated (1971-1972)",
+            "type": "object"
+        },
+        {
+            "identifier": 232694,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232694",
+            "title": "Chamber of Commerce of the State of New York, 1936",
+            "type": "object"
+        },
+        {
+            "identifier": 232695,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232695",
+            "title": "Chamberlain, Weston P., 1929",
+            "type": "object"
+        },
+        {
+            "identifier": 232696,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232696",
+            "title": "Chambers, M. M., 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232697,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232697",
+            "title": "Chang, Te-Tzu, 1964 August-1965 December",
+            "type": "object"
+        },
+        {
+            "identifier": 232698,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232698",
+            "title": "Chase, Stuart, 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232699,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232699",
+            "title": "Chavez, Ignacio, 1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232700,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232700",
+            "title": "Ci-Cn, 1958-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232701,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232701",
+            "title": "Chiu, S. M., 1961 December 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232702,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232702",
+            "title": "Cleveland Museum of Art, 1939 September - 1941 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232703,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232703",
+            "title": "Cole, David C., 1962",
+            "type": "object"
+        },
+        {
+            "identifier": 232704,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232704",
+            "title": "Collier, Peter, 1979 February 19",
+            "type": "object"
+        },
+        {
+            "identifier": 232705,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232705",
+            "title": "Colloquium III, Bellagio, Italy, July 17-23, 1972, 1972 July 17-23",
+            "type": "object"
+        },
+        {
+            "identifier": 232706,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232706",
+            "title": "Colonial Williamsburg, Inc., 1966",
+            "type": "object"
+        },
+        {
+            "identifier": 232707,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232707",
+            "title": "Columbia University Oral History Research Office, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232708,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232708",
+            "title": "Committee on Child Development, 1929 February",
+            "type": "object"
+        },
+        {
+            "identifier": 232709,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232709",
+            "title": "Committee on Comparative Politics, 1971 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232710,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232710",
+            "title": "Committee on Survey of Chinese Students in American Colleges and Universities, 1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232711,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232711",
+            "title": "Committee on the International Migration of Talent, 1970 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232712,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232712",
+            "title": "Committee on the University and World Affairs, 1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232713,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232713",
+            "title": "Conference on Education Needs & Opportunities in the Southern States Oct. 31-Nov. 2, 1935, 1935 October 31-November 2",
+            "type": "object"
+        },
+        {
+            "identifier": 232714,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232714",
+            "title": "Conference on Graduate Nurse Education, 1951 April 30-May 4",
+            "type": "object"
+        },
+        {
+            "identifier": 232715,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232715",
+            "title": "Conference on \"Industrial Arts in General Education,\" Shoreham Hotel, Washington, D.C., Jan. 21-23, 1937, 1937 January 21-23",
+            "type": "object"
+        },
+        {
+            "identifier": 232716,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232716",
+            "title": "Conference on Music in General Education, Pocono Manor Inn, Jan. 30-Feb. 1, 1936, 1936 January 30-February 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232717,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232717",
+            "title": "Conference on the Place of Art in General Education, Briarcliff Lodge, Jan. 10-12, 1935, 1935 January 10-12",
+            "type": "object"
+        },
+        {
+            "identifier": 232718,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232718",
+            "title": "Cosio Villegas, Daniel, 1953",
+            "type": "object"
+        },
+        {
+            "identifier": 232719,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232719",
+            "title": "Co-Ct, 1917-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232720,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232720",
+            "title": "Craig, Gordon A., 1955 October 24",
+            "type": "object"
+        },
+        {
+            "identifier": 232721,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232721",
+            "title": "The Impact of New Wheat Production Techniques in India and Pakistan by Ralph Cummings, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232722,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232722",
+            "title": "Cu-Cz, 1970 June 21-27",
+            "type": "object"
+        },
+        {
+            "identifier": 232723,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232723",
+            "title": "Da-Dd, 1915-1959",
+            "type": "object"
+        },
+        {
+            "identifier": 232724,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232724",
+            "title": "D'Amico, Victor E., 1935",
+            "type": "object"
+        },
+        {
+            "identifier": 232725,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232725",
+            "title": "Darling, Samuel Taylor, 1925-1926",
+            "type": "object"
+        },
+        {
+            "identifier": 232726,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232726",
+            "title": "Davis, Jackson, 1936",
+            "type": "object"
+        },
+        {
+            "identifier": 232727,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232727",
+            "title": "De-Dh, 1964-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232728,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232728",
+            "title": "Destler, Chester McArthur, 1946 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232729,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232729",
+            "title": "de Souza Campos, Ernesto, 1931 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232730,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232730",
+            "title": "Dewey, John, 1929-1931",
+            "type": "object"
+        },
+        {
+            "identifier": 232731,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232731",
+            "title": "Di-Dn, 1932",
+            "type": "object"
+        },
+        {
+            "identifier": 232732,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232732",
+            "title": "Dillon, Douglas, 1971-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232733,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232733",
+            "title": "Do-Dt, 1943-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232734,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232734",
+            "title": "Dollard, John, 1943",
+            "type": "object"
+        },
+        {
+            "identifier": 232735,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232735",
+            "title": "Downtown-Lower Manhattan Association, Inc., 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 232736,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232736",
+            "title": "Du-Dz, 1959",
+            "type": "object"
+        },
+        {
+            "identifier": 232737,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232737",
+            "title": "Dugan, Alan, 1967",
+            "type": "object"
+        },
+        {
+            "identifier": 232738,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232738",
+            "title": "Dugas, Alvan, 1948",
+            "type": "object"
+        },
+        {
+            "identifier": 232739,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232739",
+            "title": "Duke University, 1946 December 31",
+            "type": "object"
+        },
+        {
+            "identifier": 232740,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232740",
+            "title": "Duke University, 1941",
+            "type": "object"
+        },
+        {
+            "identifier": 232741,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232741",
+            "title": "Ea-Ef, 1977 April 6",
+            "type": "object"
+        },
+        {
+            "identifier": 232742,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232742",
+            "title": "Ebenstein, William, 1960 March 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232743,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232743",
+            "title": "Eckstein, Harry, 1961 April 10",
+            "type": "object"
+        },
+        {
+            "identifier": 232744,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232744",
+            "title": "Entrepreneuring, 1977 Spring",
+            "type": "object"
+        },
+        {
+            "identifier": 232745,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232745",
+            "title": "Entrikin, J. Nicholas, 1984 October",
+            "type": "object"
+        },
+        {
+            "identifier": 232746,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232746",
+            "title": "Epler, Stephen E. , 1940 July",
+            "type": "object"
+        },
+        {
+            "identifier": 232747,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232747",
+            "title": "Ek-Ep, 1931-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232748,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232748",
+            "title": "Eq-Ez, 1977-1981",
+            "type": "object"
+        },
+        {
+            "identifier": 232749,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232749",
+            "title": "Evans, Frank B., 1966-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232750,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232750",
+            "title": "Fa-Fd, 1944-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232751,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232751",
+            "title": "FAO Seminar for Plant Breeders..., 1968 March 20 - April 2",
+            "type": "object"
+        },
+        {
+            "identifier": 232752,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232752",
+            "title": "Fe-Fh, 1949-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232753,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232753",
+            "title": "Feldman, Arnold S., 1960 March 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232754,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232754",
+            "title": "Ferrell, John A., 1914-1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232755,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232755",
+            "title": "Fi-Fn, 1915-1949",
+            "type": "object"
+        },
+        {
+            "identifier": 232756,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232756",
+            "title": "Fishbein, Meyer H., 1970 April",
+            "type": "object"
+        },
+        {
+            "identifier": 232757,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232757",
+            "title": "Fisher, Donald, undated",
+            "type": "object"
+        },
+        {
+            "identifier": 232758,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232758",
+            "title": "Flexner, Abraham, 1915 and 1927",
+            "type": "object"
+        },
+        {
+            "identifier": 232759,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232759",
+            "title": "Flores, Edmundo, 1963 May 20",
+            "type": "object"
+        },
+        {
+            "identifier": 232760,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232760",
+            "title": "Fosdick, Raymond B., 1922-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232761,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232761",
+            "title": "The Foundation Center, 1968-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232762,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232762",
+            "title": "Fox, William T. R., 1952 March 25",
+            "type": "object"
+        },
+        {
+            "identifier": 232763,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232763",
+            "title": "Fo-Ft, 1930-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232764,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232764",
+            "title": "Frank, Charles R., Jr., 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232765,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232765",
+            "title": "Franklin, William M., 1973 Januart 29",
+            "type": "object"
+        },
+        {
+            "identifier": 232766,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232766",
+            "title": "Freeman, G. E., 1943",
+            "type": "object"
+        },
+        {
+            "identifier": 232767,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232767",
+            "title": "Fu-Fz, 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232768,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232768",
+            "title": "Fundacao Raymundo Ottoni de Castro M., 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232769,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232769",
+            "title": "Furniss, Edgar S., Jr., 1954 February 5",
+            "type": "object"
+        },
+        {
+            "identifier": 232770,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232770",
+            "title": "Ga-Gd, 1911-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232771,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232771",
+            "title": "Ge-Gh, 1937",
+            "type": "object"
+        },
+        {
+            "identifier": 232772,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232772",
+            "title": "General Services Administration, 1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232773,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232773",
+            "title": "Gerr, Stanley, 1944 February",
+            "type": "object"
+        },
+        {
+            "identifier": 232774,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232774",
+            "title": "Godwin, Blake-More, 1939",
+            "type": "object"
+        },
+        {
+            "identifier": 232775,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232775",
+            "title": "Gondos Victor, Jr., 1947-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 232776,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232776",
+            "title": "Goodstein, Judith R., 1984 Fall",
+            "type": "object"
+        },
+        {
+            "identifier": 232777,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232777",
+            "title": "Gorgas, William C., 1919-1932",
+            "type": "object"
+        },
+        {
+            "identifier": 232778,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232778",
+            "title": "Grant, James D., 1973 April 20",
+            "type": "object"
+        },
+        {
+            "identifier": 232779,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232779",
+            "title": "Grant, Ulysses J. & others, 1955-1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232780,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232780",
+            "title": "Graumann, C. F., 1985",
+            "type": "object"
+        },
+        {
+            "identifier": 232781,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232781",
+            "title": "Gi-Gn, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232782,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232782",
+            "title": "Go-Gt, 1946-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232783,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232783",
+            "title": "Gregg, Alan (misc.), 1929-1957",
+            "type": "object"
+        },
+        {
+            "identifier": 232784,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232784",
+            "title": "Gregg, Alan 1-34 With List, 1937-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232785,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232785",
+            "title": "Gregg, Alan 35-61 With List, 1921-1955",
+            "type": "object"
+        },
+        {
+            "identifier": 232786,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232786",
+            "title": "Gregg, Alan 62-84, 1933-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232787,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232787",
+            "title": "Gregg, Alan 85-94, 1931-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232788,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232788",
+            "title": "Gropius, Walter, 1945",
+            "type": "object"
+        },
+        {
+            "identifier": 232789,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232789",
+            "title": "Gruenberg, Benjamin C. , 1937",
+            "type": "object"
+        },
+        {
+            "identifier": 232790,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232790",
+            "title": "Gu-Gz, 1924-1937",
+            "type": "object"
+        },
+        {
+            "identifier": 232791,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232791",
+            "title": "Ha-Hd, 1914-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232792,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232792",
+            "title": "Hackett, Lewis W. , 1929-1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232793,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232793",
+            "title": "Hammond, H. P., 1942 February",
+            "type": "object"
+        },
+        {
+            "identifier": 232794,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232794",
+            "title": "Hannan, J. Elizabeth, 1936 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232795,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232795",
+            "title": "Harrar, J. George, 1956-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232796,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232796",
+            "title": "Harrar, J. George, 1953-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232797,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232797",
+            "title": "Haskins, Caryl P., 1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232798,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232798",
+            "title": "Hatheway, William H., 1957",
+            "type": "object"
+        },
+        {
+            "identifier": 232799,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232799",
+            "title": "Hayes, Ralph W., 1945",
+            "type": "object"
+        },
+        {
+            "identifier": 232800,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232800",
+            "title": "He-Hh, 1972-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232801,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232801",
+            "title": "Heaton, Kenneth L., 1940",
+            "type": "object"
+        },
+        {
+            "identifier": 232802,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232802",
+            "title": "Hegner, Robert W., 1921",
+            "type": "object"
+        },
+        {
+            "identifier": 232803,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232803",
+            "title": "Hemphill, Roderick J., 1961",
+            "type": "object"
+        },
+        {
+            "identifier": 232804,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232804",
+            "title": "Hi-Hn, 1922-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232805,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232805",
+            "title": "Oral History Typescript, Hirzel, William, 1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232806,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232806",
+            "title": "Highsaw, Robert Baker, 1947-1948",
+            "type": "object"
+        },
+        {
+            "identifier": 232807,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232807",
+            "title": "Hoeppli, R., 1952",
+            "type": "object"
+        },
+        {
+            "identifier": 232808,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232808",
+            "title": "Ho-Ht, 1926-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232809,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232809",
+            "title": "Holmes, Oliver W., 1964 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232810,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232810",
+            "title": "Howard, H. H., 1915",
+            "type": "object"
+        },
+        {
+            "identifier": 232811,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232811",
+            "title": "Howerton, Huey Blair, 1949-1951",
+            "type": "object"
+        },
+        {
+            "identifier": 232812,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232812",
+            "title": "Hunter, E. C., 1944",
+            "type": "object"
+        },
+        {
+            "identifier": 232813,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232813",
+            "title": "Hurd, Archer Willis, 1947",
+            "type": "object"
+        },
+        {
+            "identifier": 232814,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232814",
+            "title": "Hurd, Archer Willis, 1945 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232815,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232815",
+            "title": "Hurd, Archer Willis, 1946 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232816,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232816",
+            "title": "Hu-Hz, 1965-1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232817,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232817",
+            "title": "Hydrick, John Lee, 1936",
+            "type": "object"
+        },
+        {
+            "identifier": 232818,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232818",
+            "title": "Institute for Advanced Study, 1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232819,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232819",
+            "title": "Ik-Ip, 1934-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232820,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232820",
+            "title": "Institute of Adminstrative Research, 1948",
+            "type": "object"
+        },
+        {
+            "identifier": 232821,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232821",
+            "title": "Institute of International Education, 1949 December",
+            "type": "object"
+        },
+        {
+            "identifier": 232822,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232822",
+            "title": "International Conference on Intra-Uterine Conception, 2nd, New York, 1964 October 2-3",
+            "type": "object"
+        },
+        {
+            "identifier": 232823,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232823",
+            "title": "International Health Division, 1917-1930",
+            "type": "object"
+        },
+        {
+            "identifier": 232824,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232824",
+            "title": "International House, 1920-1939",
+            "type": "object"
+        },
+        {
+            "identifier": 232825,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232825",
+            "title": "International House of Japan, Inc., 1955-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232826,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232826",
+            "title": "Iowa. University. Program in Creative Writing, 1964",
+            "type": "object"
+        },
+        {
+            "identifier": 232827,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232827",
+            "title": "Ittelson, William H., 1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232828,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232828",
+            "title": "Ja-Jd, 1924 (1924-1938)-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232829,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232829",
+            "title": "Janos, Andrew C., 1964-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232830,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232830",
+            "title": "Je-Jh, 1968-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232831,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232831",
+            "title": "Jennings, Peter R., 1966-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232832,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232832",
+            "title": "Jo-Jt, 1957-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232833,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232833",
+            "title": "Jones, Merrill O., 1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232834,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232834",
+            "title": "Joyner, Christine M., 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232835,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232835",
+            "title": "Junker, Buford H., 1940",
+            "type": "object"
+        },
+        {
+            "identifier": 232836,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232836",
+            "title": "Justice, Donald, 1959",
+            "type": "object"
+        },
+        {
+            "identifier": 232837,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232837",
+            "title": "Kammen, Michael, 1983 April 23",
+            "type": "object"
+        },
+        {
+            "identifier": 232838,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232838",
+            "title": "Kandel, I. L., 1944",
+            "type": "object"
+        },
+        {
+            "identifier": 232839,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232839",
+            "title": "Ka-Kd, 1940-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232840,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232840",
+            "title": "Kaplan, Morton A., 1959-1961",
+            "type": "object"
+        },
+        {
+            "identifier": 232841,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232841",
+            "title": "Katz, Evelyn, 1938",
+            "type": "object"
+        },
+        {
+            "identifier": 232842,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232842",
+            "title": "Kaufmann, William W., 1954 November 15",
+            "type": "object"
+        },
+        {
+            "identifier": 232843,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232843",
+            "title": "Kentucky. Tax Revision Commission, 1945-1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232844,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232844",
+            "title": "Ke-Kh, 1959-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232845,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232845",
+            "title": "Ki-Kn, 1947-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232846,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232846",
+            "title": "Kissinger, Henry A. , 1959 July ",
+            "type": "object"
+        },
+        {
+            "identifier": 232847,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232847",
+            "title": "Knoepfle, John, 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232848,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232848",
+            "title": "Knorr, Klaus E. , 1956-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 232849,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232849",
+            "title": "Knorr, Klaus E. , 1954-1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232850,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232850",
+            "title": "Knorr, Klaus E., 1956-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232851,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232851",
+            "title": "Ko-Kt, 1957-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232852,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232852",
+            "title": "Knowles, John H., 1972-1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232853,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232853",
+            "title": "Korea, Republic of. Ministry of Health and Social Affairs, 1967 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232854,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232854",
+            "title": "Koul, Samsar Chand, 1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232855,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232855",
+            "title": "Krampitz, Sydney D., 1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232856,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232856",
+            "title": "Krauskopf, Robert W., 1958 October ",
+            "type": "object"
+        },
+        {
+            "identifier": 232857,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232857",
+            "title": "Kuhlman, A. F., 1943",
+            "type": "object"
+        },
+        {
+            "identifier": 232858,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232858",
+            "title": "Kull, Donald C., 1948",
+            "type": "object"
+        },
+        {
+            "identifier": 232859,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232859",
+            "title": "Kunstadter, Peter, 1965 November 30",
+            "type": "object"
+        },
+        {
+            "identifier": 232860,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232860",
+            "title": "Ku-Kz, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232861,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232861",
+            "title": "Lancaster, John Littlepage, 1947 May",
+            "type": "object"
+        },
+        {
+            "identifier": 232862,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232862",
+            "title": "Larsen, Christian L., 1948 June - 1949 April",
+            "type": "object"
+        },
+        {
+            "identifier": 232863,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232863",
+            "title": "Leahy, Alice M., 1936",
+            "type": "object"
+        },
+        {
+            "identifier": 232864,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232864",
+            "title": "La-Ld, 1931-1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232865,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232865",
+            "title": "Le-Lh, 1945(1945-1946)-(1961-1979)1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232866,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232866",
+            "title": "Legislative Reference Bureau, 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232867,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232867",
+            "title": "Li-Ln, 1970-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232868,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232868",
+            "title": "Lo-Lt, 1923-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 232869,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232869",
+            "title": "Lewis, John P., 1969-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232870,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232870",
+            "title": "Life of Christ by Chinese Artists, 1952",
+            "type": "object"
+        },
+        {
+            "identifier": 232871,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232871",
+            "title": "Lucie-Smith, J.D., 1921",
+            "type": "object"
+        },
+        {
+            "identifier": 232872,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232872",
+            "title": "Ma-Md, 1930-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232873,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232873",
+            "title": "McWhinney, Edward, 1962",
+            "type": "object"
+        },
+        {
+            "identifier": 232874,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232874",
+            "title": "Madison, James H., 1984",
+            "type": "object"
+        },
+        {
+            "identifier": 232875,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232875",
+            "title": "Malmgren, Harald, 1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232876,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232876",
+            "title": "The Martha Baird Rockefeller Fund for Music, Inc., 1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232877,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232877",
+            "title": "Martin, Roscoe C., 1942",
+            "type": "object"
+        },
+        {
+            "identifier": 232878,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232878",
+            "title": "Me-Mh, 1938-1984",
+            "type": "object"
+        },
+        {
+            "identifier": 232879,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232879",
+            "title": "Mead, Pauline A., 1955 October 10",
+            "type": "object"
+        },
+        {
+            "identifier": 232880,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232880",
+            "title": "Melnick, Daniel, 1939-1941",
+            "type": "object"
+        },
+        {
+            "identifier": 232881,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232881",
+            "title": "Memorial Meeting for Simon Flexner, 1946 June 12",
+            "type": "object"
+        },
+        {
+            "identifier": 232882,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232882",
+            "title": "Metcalf, Keyes, 1944",
+            "type": "object"
+        },
+        {
+            "identifier": 232883,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232883",
+            "title": "Miles, John R., 1947",
+            "type": "object"
+        },
+        {
+            "identifier": 232884,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232884",
+            "title": "Mi-Mn, 1957-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232885,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232885",
+            "title": "Minogue, Adelaide, 1943 September",
+            "type": "object"
+        },
+        {
+            "identifier": 232886,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232886",
+            "title": "Modelski, George, 1960-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 232887,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232887",
+            "title": "Moholy-Nagy, Laszlo, 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232888,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232888",
+            "title": "Morrissey, Charles T., 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232889,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232889",
+            "title": "Moseman, Albert H., 1963-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232890,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232890",
+            "title": "Mo-Mt, 1936-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232891,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232891",
+            "title": "Mu-Mz, 1931-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232892,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232892",
+            "title": "Munro, Thomas, 1940",
+            "type": "object"
+        },
+        {
+            "identifier": 232893,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232893",
+            "title": "Muntz, A. Philip, 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 232894,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232894",
+            "title": "Myers, Will M., 1968-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232895,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232895",
+            "title": "Myren, Delbert T., 1969-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232896,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232896",
+            "title": "National Center for Productivity and Quality of Working Life, 1975-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232897,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232897",
+            "title": "National Commission on Productivity and Work Quality, 1975 October",
+            "type": "object"
+        },
+        {
+            "identifier": 232898,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232898",
+            "title": "Na-Nd, 1962-1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232899,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232899",
+            "title": "National Academy of Sciences, 1966",
+            "type": "object"
+        },
+        {
+            "identifier": 232900,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232900",
+            "title": "National Archives Bulletins, 1944 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232901,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232901",
+            "title": "National Archives Staff Information Circulars, 1950 May - July",
+            "type": "object"
+        },
+        {
+            "identifier": 232902,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232902",
+            "title": "National Archives Staff Information Papers, 1950-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 232903,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232903",
+            "title": "National Bureau of Economic Research, 1947-1963",
+            "type": "object"
+        },
+        {
+            "identifier": 232904,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232904",
+            "title": "Ne-Nh, 1951-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232905,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232905",
+            "title": "Nelson, James R., 1953 March 9",
+            "type": "object"
+        },
+        {
+            "identifier": 232906,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232906",
+            "title": "New York State Atomic and Space Development Authority, 1970-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232907,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232907",
+            "title": "New York. State Education Department. Office of State History., 1972 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232908,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232908",
+            "title": "New York State Historical Association, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232909,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232909",
+            "title": "New York Times. Oral History Program., 1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232910,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232910",
+            "title": "Ni-Nn, 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232911,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232911",
+            "title": "No-Nt, 1921-1932",
+            "type": "object"
+        },
+        {
+            "identifier": 232912,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232912",
+            "title": "Noguchi, Hideyo, 1920-1931",
+            "type": "object"
+        },
+        {
+            "identifier": 232913,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232913",
+            "title": "Noguchi, Hideyo; Reprints, 1919-1925",
+            "type": "object"
+        },
+        {
+            "identifier": 232914,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232914",
+            "title": "North Carolina Board of Higher Education, 1959",
+            "type": "object"
+        },
+        {
+            "identifier": 232915,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232915",
+            "title": "North Carolina State University, 1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232916,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232916",
+            "title": "Norton, John K., 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232917,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232917",
+            "title": "Nu-Nz, 1975-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232918,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232918",
+            "title": "Oa-Of, 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 232919,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232919",
+            "title": "Official Guidebook of Colonial Williamsburg, 1951",
+            "type": "object"
+        },
+        {
+            "identifier": 232920,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232920",
+            "title": "Oficina de Estudios Especiales, 1954",
+            "type": "object"
+        },
+        {
+            "identifier": 232921,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232921",
+            "title": "Ok-Op, 1961 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232922,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232922",
+            "title": "Orozco, J. C., 1934",
+            "type": "object"
+        },
+        {
+            "identifier": 232923,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232923",
+            "title": "Owens, Patrick N., 1966 November",
+            "type": "object"
+        },
+        {
+            "identifier": 232924,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232924",
+            "title": "Owens, William A., 1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232925,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232925",
+            "title": "Pa-Pd, 1915-(1961-1974)-1988",
+            "type": "object"
+        },
+        {
+            "identifier": 232926,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232926",
+            "title": "Paarlberg, Don, 1970 December",
+            "type": "object"
+        },
+        {
+            "identifier": 232927,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232927",
+            "title": "Pan American Festival, Annual, 1963 April 8-11",
+            "type": "object"
+        },
+        {
+            "identifier": 232928,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232928",
+            "title": "Paret, Peter, 1961 June 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232929,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232929",
+            "title": "Parker District High School Faculty, 1942",
+            "type": "object"
+        },
+        {
+            "identifier": 232930,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232930",
+            "title": "Patino-Camargo, Luis, 1973 July 12",
+            "type": "object"
+        },
+        {
+            "identifier": 232931,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232931",
+            "title": "Pearce, Richar M., Jr., 1919-1931",
+            "type": "object"
+        },
+        {
+            "identifier": 232932,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232932",
+            "title": "Pe-Ph, 1951-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232933,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232933",
+            "title": "Peiping. Palace Museum., 1931",
+            "type": "object"
+        },
+        {
+            "identifier": 232934,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232934",
+            "title": "Peking Union Medical College, 1917-1940",
+            "type": "object"
+        },
+        {
+            "identifier": 232935,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232935",
+            "title": "Penington, Alan H., 1984 September",
+            "type": "object"
+        },
+        {
+            "identifier": 232936,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232936",
+            "title": "Pi-Pn, 1968-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232937,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232937",
+            "title": "Pokorny & Pertz, Architects and Planners, 1970-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232938,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232938",
+            "title": "Population Council, undated",
+            "type": "object"
+        },
+        {
+            "identifier": 232939,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232939",
+            "title": "Posner, Ernst, 1940",
+            "type": "object"
+        },
+        {
+            "identifier": 232940,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232940",
+            "title": "Progressive Education Assn, 1941",
+            "type": "object"
+        },
+        {
+            "identifier": 232941,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232941",
+            "title": "Po-Pt, 1968-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232942,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232942",
+            "title": "Pu-Pz, 1969",
+            "type": "object"
+        },
+        {
+            "identifier": 232943,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232943",
+            "title": "Puerto Rico Department of Health, 1959",
+            "type": "object"
+        },
+        {
+            "identifier": 232944,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232944",
+            "title": "Ra-Rd, 1963-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232945,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232945",
+            "title": "Rachou, Rene G., 1965 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232946,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232946",
+            "title": "Ramos, Maximo, 1961",
+            "type": "object"
+        },
+        {
+            "identifier": 232947,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232947",
+            "title": "Rankin, Robert S., 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232948,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232948",
+            "title": "Rannells, Edward Warder, 1946 June",
+            "type": "object"
+        },
+        {
+            "identifier": 232949,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232949",
+            "title": "Re-Rh, 1963-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 232950,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232950",
+            "title": "Read, Thornton, 1960-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 232951,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232951",
+            "title": "Reyes, Arturo C., 1954 May",
+            "type": "object"
+        },
+        {
+            "identifier": 232952,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232952",
+            "title": "Richards, I. A., 1937 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232953,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232953",
+            "title": "Ri-Rn, 1932-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 232954,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232954",
+            "title": "Robertson, Jerry, 1955",
+            "type": "object"
+        },
+        {
+            "identifier": 232955,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232955",
+            "title": "Ro-Rt, 1925-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232956,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232956",
+            "title": "Rockefeller Archive Center, 1974-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 232957,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232957",
+            "title": "Rockefeller Brothers Fund, 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232958,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232958",
+            "title": "Rockefeller Foundation, 1930-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232959,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232959",
+            "title": "Rockefeller Foundation, 1915-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 232960,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232960",
+            "title": "Rockefeller Foundation. Agricultural Sciences Division. Chilean Agricultural Program., 1955-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232961,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232961",
+            "title": "Rockefeller Foundation, 1922 October",
+            "type": "object"
+        },
+        {
+            "identifier": 232962,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232962",
+            "title": "Rockefeller Foundation, 1950-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232963,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232963",
+            "title": "Rockefeller Foundation Staff Newsletter, 1966-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 232964,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232964",
+            "title": "Rockefeller Foundation Trustee Newsletter, 1975 February - August",
+            "type": "object"
+        },
+        {
+            "identifier": 232965,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232965",
+            "title": "Rockefeller, John D., 1897-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232966,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232966",
+            "title": "Rockefeller, John D., Jr., 1915(1915-1937)-1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232967,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232967",
+            "title": "Rockefeller, John Davison, 3rd, 1968-1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232968,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232968",
+            "title": "Rockefeller, Laurance Spelman, 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232969,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232969",
+            "title": "Rockefeller, Nelson A., 1976-1979",
+            "type": "object"
+        },
+        {
+            "identifier": 232970,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232970",
+            "title": "Rockefeller University, 1940-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232971,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232971",
+            "title": "Rockefeller University, 1968-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232972,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232972",
+            "title": "Rockefeller University, 1976-1978",
+            "type": "object"
+        },
+        {
+            "identifier": 232973,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232973",
+            "title": "Rockefeller University. Caspary Gallery., 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232974,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232974",
+            "title": "Romulo, Carlos P., 1965",
+            "type": "object"
+        },
+        {
+            "identifier": 232975,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232975",
+            "title": "Rose, Wickliffe, 1911-1932",
+            "type": "object"
+        },
+        {
+            "identifier": 232976,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232976",
+            "title": "Rosenau, James N., 1963-1967",
+            "type": "object"
+        },
+        {
+            "identifier": 232977,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232977",
+            "title": "Rosicky, B., 1960 January",
+            "type": "object"
+        },
+        {
+            "identifier": 232978,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232978",
+            "title": "Royal Institute of International Affairs, 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 232979,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232979",
+            "title": "Russell, Paul F., 1931-1957",
+            "type": "object"
+        },
+        {
+            "identifier": 232980,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232980",
+            "title": "Ru-Rz, 1960",
+            "type": "object"
+        },
+        {
+            "identifier": 232981,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232981",
+            "title": "Rustow, Dankwart A., 1956 March 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232982,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232982",
+            "title": "Ruttan, Vernon W., 1965-1968",
+            "type": "object"
+        },
+        {
+            "identifier": 232983,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232983",
+            "title": "Sa-Sd, 1923-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232984,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232984",
+            "title": "Savell, Isabelle K., 1962",
+            "type": "object"
+        },
+        {
+            "identifier": 232985,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232985",
+            "title": "Scalapino, Robert A., 1961 February",
+            "type": "object"
+        },
+        {
+            "identifier": 232986,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232986",
+            "title": "Schellenberg, T. R., 1939-1956",
+            "type": "object"
+        },
+        {
+            "identifier": 232987,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232987",
+            "title": "School Health Study Committee, 1938 May 1",
+            "type": "object"
+        },
+        {
+            "identifier": 232988,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232988",
+            "title": "Se-Sh, 1922(1959-1975)-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 232989,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232989",
+            "title": "Seabury, Paul, 1957 June 26",
+            "type": "object"
+        },
+        {
+            "identifier": 232990,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232990",
+            "title": "Seal, Incorporated, undated",
+            "type": "object"
+        },
+        {
+            "identifier": 232991,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232991",
+            "title": "Shaw, Gerald W. , 1946 October",
+            "type": "object"
+        },
+        {
+            "identifier": 232992,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232992",
+            "title": "Si-Sn, 1939-1977",
+            "type": "object"
+        },
+        {
+            "identifier": 232993,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232993",
+            "title": "Silliman, Benjamin, Jr., 1949",
+            "type": "object"
+        },
+        {
+            "identifier": 232994,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232994",
+            "title": "So-St, 1928-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 232995,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232995",
+            "title": "Southwest Regional Land Tenure Project, 1948",
+            "type": "object"
+        },
+        {
+            "identifier": 232996,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232996",
+            "title": "Snyder, Glenn H., 1959 January 2",
+            "type": "object"
+        },
+        {
+            "identifier": 232997,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232997",
+            "title": "Spence, L., 1957-1967",
+            "type": "object"
+        },
+        {
+            "identifier": 232998,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232998",
+            "title": "Sprout, Harold, 1968 March",
+            "type": "object"
+        },
+        {
+            "identifier": 232999,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/232999",
+            "title": "Stage, Harry H., 1944 February",
+            "type": "object"
+        },
+        {
+            "identifier": 233000,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233000",
+            "title": "Stakman, E. C., 1946-1969",
+            "type": "object"
+        },
+        {
+            "identifier": 233001,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233001",
+            "title": "Steiner, Zara S., 1961 March 20",
+            "type": "object"
+        },
+        {
+            "identifier": 233002,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233002",
+            "title": "Stewart, R. B., 1941 August",
+            "type": "object"
+        },
+        {
+            "identifier": 233003,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233003",
+            "title": "Stewart, R. M., 1948 October 19",
+            "type": "object"
+        },
+        {
+            "identifier": 233004,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233004",
+            "title": "Story, Isabelle F., 1957",
+            "type": "object"
+        },
+        {
+            "identifier": 233005,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233005",
+            "title": "Su-Sz, 1937-1938",
+            "type": "object"
+        },
+        {
+            "identifier": 233006,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233006",
+            "title": "Ta-Td, 1958-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 233007,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233007",
+            "title": "Tanaka, Akira, 1964-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 233008,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233008",
+            "title": "Te-Th, 1952-1982",
+            "type": "object"
+        },
+        {
+            "identifier": 233009,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233009",
+            "title": "Thompson, Kenneth, 1970",
+            "type": "object"
+        },
+        {
+            "identifier": 233010,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233010",
+            "title": "Ti-Tn, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 233011,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233011",
+            "title": "To-Tz, 1956-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 233012,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233012",
+            "title": "Trever, Karl L., 1941 July",
+            "type": "object"
+        },
+        {
+            "identifier": 233013,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233013",
+            "title": "Tucker, Robert C., 1963 September 15",
+            "type": "object"
+        },
+        {
+            "identifier": 233014,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233014",
+            "title": "Ua-Uz, 1973-1975",
+            "type": "object"
+        },
+        {
+            "identifier": 233015,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233015",
+            "title": "Union Church of Pocantico Hills, 1965-1981",
+            "type": "object"
+        },
+        {
+            "identifier": 233016,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233016",
+            "title": "U.S. Congress, 82d, 2d Session. House. Select Committee to Investigate Foundations & Other Organizations, 1953",
+            "type": "object"
+        },
+        {
+            "identifier": 233017,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233017",
+            "title": "U.S. Congress, 87th, Senate and House of Representatives, 1961 June 30",
+            "type": "object"
+        },
+        {
+            "identifier": 233018,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233018",
+            "title": "U.S. Congress, 88th, House of Representatives, 1964",
+            "type": "object"
+        },
+        {
+            "identifier": 233019,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233019",
+            "title": "U.S. Congress, 90th, House of Representatives, 1967 September 27",
+            "type": "object"
+        },
+        {
+            "identifier": 233020,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233020",
+            "title": "U.S. Congress, 90th, Senate, 1964 October 26",
+            "type": "object"
+        },
+        {
+            "identifier": 233021,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233021",
+            "title": "U.S. Congress, 91st, Senate, 1969 July 9",
+            "type": "object"
+        },
+        {
+            "identifier": 233022,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233022",
+            "title": "U.S. Court of Claims, 1972",
+            "type": "object"
+        },
+        {
+            "identifier": 233023,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233023",
+            "title": "U.S. Dept. of State. Bureau of Public Affairs, 1973 May 14",
+            "type": "object"
+        },
+        {
+            "identifier": 233024,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233024",
+            "title": "U.S. Dept. of the Interior. National Park Service, 1939-1966",
+            "type": "object"
+        },
+        {
+            "identifier": 233025,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233025",
+            "title": "U.S. Dept. of the Interior. National Park Service, 1963",
+            "type": "object"
+        },
+        {
+            "identifier": 233026,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233026",
+            "title": "Uhl, Raymond, 1950",
+            "type": "object"
+        },
+        {
+            "identifier": 233027,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233027",
+            "title": "Uttar Pradesh, 1970-1971",
+            "type": "object"
+        },
+        {
+            "identifier": 233028,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233028",
+            "title": "Va-Vd, 1957-1960",
+            "type": "object"
+        },
+        {
+            "identifier": 233029,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233029",
+            "title": "Ve-Vh, 1976",
+            "type": "object"
+        },
+        {
+            "identifier": 233030,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233030",
+            "title": "Vergara, B. S. , 1969 December",
+            "type": "object"
+        },
+        {
+            "identifier": 233031,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233031",
+            "title": "Vi-Vz, undated",
+            "type": "object"
+        },
+        {
+            "identifier": 233032,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233032",
+            "title": "Vincent, George E., 1918-1930",
+            "type": "object"
+        },
+        {
+            "identifier": 233033,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233033",
+            "title": "Virginia Conservation Commission, 1940-1943",
+            "type": "object"
+        },
+        {
+            "identifier": 233034,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233034",
+            "title": "Wa-Wd, 1933-1974",
+            "type": "object"
+        },
+        {
+            "identifier": 233035,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233035",
+            "title": "Wackerman, A. E., 1945 June",
+            "type": "object"
+        },
+        {
+            "identifier": 233036,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233036",
+            "title": "Wakefield, Dan, 1968 March",
+            "type": "object"
+        },
+        {
+            "identifier": 233037,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233037",
+            "title": "Washburn, A. Michael, 1967 September",
+            "type": "object"
+        },
+        {
+            "identifier": 233038,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233038",
+            "title": "Washington Irving , 1946",
+            "type": "object"
+        },
+        {
+            "identifier": 233039,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233039",
+            "title": "Waynesboro High School Faculty, 1943",
+            "type": "object"
+        },
+        {
+            "identifier": 233040,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233040",
+            "title": "Weaver, Warren, 1961-1964",
+            "type": "object"
+        },
+        {
+            "identifier": 233041,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233041",
+            "title": "Weir, John M., 1952-1965",
+            "type": "object"
+        },
+        {
+            "identifier": 233042,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233042",
+            "title": "Welch, William Henry, 1920 November 5",
+            "type": "object"
+        },
+        {
+            "identifier": 233043,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233043",
+            "title": "Welsch, Delane E., 1969-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 233044,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233044",
+            "title": "We-Wh, 1960-1980",
+            "type": "object"
+        },
+        {
+            "identifier": 233045,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233045",
+            "title": "White, Franc, 1975 June",
+            "type": "object"
+        },
+        {
+            "identifier": 233046,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233046",
+            "title": "Wi-Wn, 1937-1972",
+            "type": "object"
+        },
+        {
+            "identifier": 233047,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233047",
+            "title": "\"Wild Viruses\" by Greer Williams, 1967-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 233048,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233048",
+            "title": "Williams, Greer, 1964-1976",
+            "type": "object"
+        },
+        {
+            "identifier": 233049,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233049",
+            "title": "Willner, Ann Ruth, 1966 September 30",
+            "type": "object"
+        },
+        {
+            "identifier": 233050,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233050",
+            "title": "Wo-Wz, 1957-1970",
+            "type": "object"
+        },
+        {
+            "identifier": 233051,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233051",
+            "title": "Wolfenstein, E. Victor, 1965 October 30",
+            "type": "object"
+        },
+        {
+            "identifier": 233052,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233052",
+            "title": "Works, George A., 1943 December",
+            "type": "object"
+        },
+        {
+            "identifier": 233053,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233053",
+            "title": "Wortman, Sterling, 1964-1973",
+            "type": "object"
+        },
+        {
+            "identifier": 233054,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233054",
+            "title": "Wyatt, Bernard L., 1921",
+            "type": "object"
+        },
+        {
+            "identifier": 233055,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233055",
+            "title": "Ya-Yn, 1970 September",
+            "type": "object"
+        },
+        {
+            "identifier": 233056,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233056",
+            "title": "Yo-Yz, 1977",
+            "type": "object"
+        },
+        {
+            "identifier": 233057,
+            "level": "file",
+            "ref": "/repositories/2/archival_objects/233057",
+            "title": "Young, Oran R. , 1966 January 1",
+            "type": "object"
+        }
+    ],
+    "classifications": [],
+    "collection_management": {
+        "create_time": "2016-10-19T21:51:34Z",
+        "created_by": "battalb",
+        "external_ids": [],
+        "jsonmodel_type": "collection_management",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
+        "parent": {
+            "ref": "/repositories/2/resources/466"
+        },
+        "processing_status": "completed",
+        "repository": {
+            "ref": "/repositories/2"
+        },
+        "rights_determined": false,
+        "system_mtime": "2017-06-02T20:50:51Z",
+        "uri": "/repositories/2/collection_management/3751",
+        "user_mtime": "2016-10-19T21:51:34Z"
+    },
+    "create_time": "2014-12-06T08:17:45Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1878",
             "create_time": "2016-10-19T21:51:34Z",
-            "system_mtime": "2016-10-19T21:51:34Z",
-            "user_mtime": "2016-10-19T21:51:34Z",
-            "date_type": "bulk",
+            "created_by": "battalb",
+            "date_type": "inclusive",
+            "end": "1988",
+            "expression": "1878-1988",
+            "jsonmodel_type": "date",
             "label": "creation",
-            "jsonmodel_type": "date"
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-19T21:51:34Z",
+            "user_mtime": "2016-10-19T21:51:34Z"
+        },
+        {
+            "begin": "1935",
+            "create_time": "2016-10-19T21:51:34Z",
+            "created_by": "battalb",
+            "date_type": "bulk",
+            "end": "1975",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "system_mtime": "2016-10-19T21:51:34Z",
+            "user_mtime": "2016-10-19T21:51:34Z"
+        }
+    ],
+    "deaccessions": [],
+    "ead_id": "FA264.xml",
+    "extents": [
+        {
+            "container_summary": "41 manuscript boxes",
+            "create_time": "2016-10-19T21:51:34Z",
+            "created_by": "battalb",
+            "extent_type": "cubic_feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "battalb",
+            "lock_version": 0,
+            "number": "23",
+            "portion": "whole",
+            "system_mtime": "2016-10-19T21:51:34Z",
+            "user_mtime": "2016-10-19T21:51:34Z"
         }
     ],
     "external_documents": [],
-    "rights_statements": [],
-    "linked_agents": [
+    "external_ids": [
         {
-            "role": "creator",
-            "relator": "aut",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
-        },
-        {
-            "role": "source",
-            "terms": [],
-            "ref": "/agents/corporate_entities/12"
+            "create_time": "2016-10-19T21:51:34Z",
+            "created_by": "battalb",
+            "external_id": "645",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "battalb",
+            "source": "Archivists Toolkit Database::RESOURCE",
+            "system_mtime": "2016-10-19T21:51:34Z",
+            "user_mtime": "2016-10-19T21:51:34Z"
         }
     ],
-    "revision_statements": [],
+    "finding_aid_author": "Amy Collier",
+    "finding_aid_date": "2011",
+    "finding_aid_description_rules": "dacs",
+    "finding_aid_filing_title": "Rockefeller Foundation records, Pamphlet File, Series 2",
+    "finding_aid_language": "English",
+    "finding_aid_status": "in_progress",
+    "finding_aid_title": "A Guide to the Rockefeller Foundation records, Pamphlet File, Series 2\n",
+    "id_0": "FA264",
     "instances": [],
-    "deaccessions": [],
-    "related_accessions": [],
-    "classifications": [],
+    "jsonmodel_type": "resource",
+    "language": "eng",
+    "last_modified_by": "battalb",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/corporate_entities/12",
+            "relator": "aut",
+            "role": "creator",
+            "terms": []
+        },
+        {
+            "ref": "/agents/corporate_entities/12",
+            "role": "source",
+            "terms": []
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 10,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "13de940d494631067ddb448ea897540e",
-            "type": "accessrestrict",
+            "publish": true,
             "rights_restriction": {
                 "local_access_restriction_type": []
             },
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Open for research. Brittle or damaged items are available at the discretion of RAC.",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "accessrestrict"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "782542c65d28ba971529c15d8ab6a19c",
-            "type": "scopecontent",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The Rockefeller Foundation Pamphlet Collection consists of 41 archival boxes and approximately 23 cu. ft. of records. The Rockefeller Foundation maintained a vast collection of published pamphlets, academic papers, book manuscripts, magazine articles, and other booklets that reference the Foundation or members of the Rockefeller family or were created by RF leaders, employees, or grantees. The pamphlets date from 1878 to 1988, with the majority containing dates between 1935 and 1975.\n",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "scopecontent"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "2bc086137d7afea540d3f80994842f5c",
-            "type": "arrangement",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "The collection is organized alphabetically by author, organization, or major subject, depending on the original classification by the Rockefeller Foundation. ",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "arrangement"
         },
         {
             "jsonmodel_type": "note_multipart",
             "persistent_id": "8dff5acb67a0a8953ab0a11f8b966a06",
-            "type": "prefercite",
+            "publish": true,
             "subnotes": [
                 {
-                    "jsonmodel_type": "note_text",
                     "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                    "jsonmodel_type": "note_text",
                     "publish": true
                 }
             ],
-            "publish": true
+            "type": "prefercite"
         }
     ],
-    "uri": "/repositories/2/resources/466",
+    "publish": true,
+    "related_accessions": [],
     "repository": {
         "ref": "/repositories/2"
     },
-    "collection_management": {
-        "lock_version": 0,
-        "rights_determined": false,
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
-        "create_time": "2016-10-19T21:51:34Z",
-        "system_mtime": "2017-06-02T20:50:51Z",
-        "user_mtime": "2016-10-19T21:51:34Z",
-        "processing_status": "completed",
-        "jsonmodel_type": "collection_management",
-        "external_ids": [],
-        "uri": "/repositories/2/collection_management/3751",
-        "repository": {
-            "ref": "/repositories/2"
-        },
-        "parent": {
-            "ref": "/repositories/2/resources/466"
-        }
+    "restrictions": false,
+    "revision_statements": [],
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2017-12-15T22:28:33Z",
+    "title": "Rockefeller Foundation records, Pamphlet File, Series 2",
+    "tree": {
+        "ref": "/repositories/2/resources/466/tree"
     },
+    "uri": "/repositories/2/resources/466",
     "user_defined": {
-        "lock_version": 0,
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "date_2": "2012-12-31",
-        "created_by": "battalb",
-        "last_modified_by": "battalb",
         "create_time": "2016-10-19T21:51:34Z",
-        "system_mtime": "2016-10-19T21:51:34Z",
-        "user_mtime": "2016-10-19T21:51:34Z",
+        "created_by": "battalb",
+        "date_2": "2012-12-31",
         "enum_1": "2 - Minimal",
         "jsonmodel_type": "user_defined",
+        "last_modified_by": "battalb",
+        "lock_version": 0,
         "repository": {
             "ref": "/repositories/2"
-        }
+        },
+        "system_mtime": "2016-10-19T21:51:34Z",
+        "user_mtime": "2016-10-19T21:51:34Z"
     },
-    "tree": {
-        "ref": "/repositories/2/resources/466/tree"
-    }
+    "user_mtime": "2016-10-19T21:51:34Z"
 }
