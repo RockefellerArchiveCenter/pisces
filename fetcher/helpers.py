@@ -68,9 +68,10 @@ def instantiate_aspace(self, config=None):
     default configs are targeted.
     """
     config = config if config else settings.ARCHIVESSPACE
-    aspace = ASpace(baseurl=config['baseurl'],
-                    username=config['username'],
-                    password=config['password'])
+    aspace = ASpace(
+        baseurl=config['baseurl'],
+        username=config['username'],
+        password=config['password'])
     repo = aspace.repositories(config['repo'])
     setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
     if isinstance(repo, dict) and 'error' in repo:

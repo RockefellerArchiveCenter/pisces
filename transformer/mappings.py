@@ -17,6 +17,11 @@ from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceRightsStatementAct, SourceSubject)
 
 
+def transform_language(value):
+    lang_data = languages.get(part2b=value)
+    return [Language(expression=lang_data.name, identifier=value)]
+
+
 class SourceRightsStatementActToRightsGranted(odin.Mapping):
     """Maps SourceRightsStatementsAct to RightsGranted object."""
     from_obj = SourceRightsStatementAct
@@ -148,16 +153,18 @@ class SourceNoteToNote(odin.Mapping):
         if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
             # items is an odin.StringField so we need to re-convert to a dict here
             items = literal_eval(value.items.encode('unicode-escape').decode())
-            return Subnote(type=value.jsonmodel_type.split('note_')[1], content=items)
+            subnote = Subnote(type=value.jsonmodel_type.split('note_')[1], content=items)
         elif value == 'note_bibliography':
-            return self.bibliograpy_subnotes(value.content, value.items)
+            subnote = self.bibliograpy_subnotes(value.content, value.items)
         elif value.jsonmodel_type == 'note_index':
-            return self.index_subnotes(value.content, value.items)
+            subnote = self.index_subnotes(value.content, value.items)
         elif value.jsonmodel_type == 'note_chronology':
-            return self.chronology_subnotes(value.items)
+            subnote = self.chronology_subnotes(value.items)
         else:
-            return Subnote(type='text', content=value.content
-                           if isinstance(value.content, list) else [value.content])
+            subnote = Subnote(
+                type='text', content=value.content
+                if isinstance(value.content, list) else [value.content])
+        return subnote
 
     @odin.map_list_field(from_field='subnotes', to_field='subnotes', to_list=True)
     def subnotes(self, value):
@@ -246,8 +253,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        lang_data = languages.get(part2b=value)
-        return [Language(expression=lang_data.name, identifier=value)]
+        return transform_language(value)
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
@@ -301,8 +307,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        lang_data = languages.get(part2b=value)
-        return [Language(expression=lang_data.name, identifier=value)]
+        return transform_language(value)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
