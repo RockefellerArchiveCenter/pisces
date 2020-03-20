@@ -3,6 +3,7 @@ from asnake.aspace import ASpace
 from electronbonder.client import ElectronBond
 from pisces import settings
 from silk.profiling.profiler import silk_profile
+from transformer.models import DataObject
 
 from .models import FetchRun, FetchRunError
 
@@ -95,3 +96,23 @@ def instantiate_electronbond(self, config=None):
     except Exception as e:
         raise Exception(
             "Cartographer is not available: {}".format(e))
+
+
+def get_es_id(identifier, source, object_type):
+    es_id = None
+    initial_queryset = DataObject.objects.filter(object_type=object_type)
+    matches = DataObject.find_matches(source, identifier, initial_queryset=initial_queryset)
+    for match in matches:
+        if match.indexed:
+            es_id = match.es_ids
+    return es_id
+
+
+def handle_deleted_uri(uri, source, object_type, current_run):
+    updated = None
+    es_id = get_es_id(uri, source, object_type)
+    if es_id:
+        delivered = send_post_request(settings.INDEX_DELETE_URL, es_id, current_run)
+        if delivered:
+            updated = uri
+    return updated

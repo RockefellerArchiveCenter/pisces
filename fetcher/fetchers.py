@@ -2,8 +2,9 @@ from django.utils import timezone
 from pisces import settings
 from silk.profiling.profiler import silk_profile
 
-from .helpers import (instantiate_aspace, instantiate_electronbond,
-                      last_run_time, send_post_request)
+from .helpers import (handle_deleted_uri, instantiate_aspace,
+                      instantiate_electronbond, last_run_time,
+                      send_post_request)
 from .models import FetchRun, FetchRunError
 
 
@@ -67,13 +68,13 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     def get_deleted(self, aspace, object_type, last_run, current_run):
         data = []
         for d in self.deleted_list(aspace, object_type, last_run):
-            delivered = send_post_request(settings.INDEX_DELETE_URL, d, current_run)
-            if delivered:
-                data.append(d)
+            updated = handle_deleted_uri(d, self.source, object_type, current_run)
+            if updated:
+                data.append(updated)
         for u in self.updated_list(aspace, object_type, last_run, False):
-            delivered = send_post_request(settings.INDEX_DELETE_URL, u.uri, current_run)
-            if delivered:
-                data.append(u.uri)
+            updated = handle_deleted_uri(u.uri, self.source, object_type, current_run)
+            if updated:
+                data.append(updated)
         return data
 
     @silk_profile()
@@ -132,13 +133,13 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_deleted(self, client, object_type, last_run, current_run):
         data = []
         for component in self.updated_list(client, last_run, False):
-            delivered = send_post_request(settings.INDEX_DELETE_URL, component.get("ref"), current_run)
-            if delivered:
-                data.append(component.get('ref'))
+            updated = handle_deleted_uri(component.get("ref"), self.source, object_type, current_run)
+            if updated:
+                data.append(updated)
         for uri in self.deleted_list(client, last_run):
-            delivered = send_post_request(settings.INDEX_DELETE_URL, uri, current_run)
-            if delivered:
-                data.append(uri)
+            updated = handle_deleted_uri(uri, self.source, object_type, current_run)
+            if updated:
+                data.append(updated)
         return data
 
     @silk_profile()
