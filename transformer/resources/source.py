@@ -12,18 +12,23 @@ from . import configs
 
 
 class SourceAncestor(odin.Resource):
-    """Indicates the fields included in an AS ancestor resource."""
+    """A related SourceResource or SourceArchivalObject.
+
+    SourceAncestors are parents of the current data object. Order is significant; they
+    are listed from closest to furthest away (in other words the last ancestor
+    will always be the top level of a collection).
+    """
     ref = odin.StringField()
     level = odin.StringField()
 
 
 class SourceRef(odin.Resource):
-    """Indicates the fields included in an AS ref resource."""
+    """A reference to a related object."""
     ref = odin.StringField()
 
 
 class SourceDate(odin.Resource):
-    """Indicates the fields included in an AS date resource."""
+    """Records the dates associated with an aggregation of archival records."""
     expression = odin.StringField(null=True)
     begin = odin.StringField(null=True)
     end = odin.StringField(null=True)
@@ -32,7 +37,7 @@ class SourceDate(odin.Resource):
 
 
 class SourceExtent(odin.Resource):
-    """Indicates the fields included in an AS extent resource."""
+    """Records the size of an aggregation of archival records."""
     number = odin.StringField()
     container_summary = odin.StringField(null=True)
     portion = odin.StringField(choices=(('whole', 'Whole'), ('part', 'Part'))),
@@ -40,34 +45,38 @@ class SourceExtent(odin.Resource):
 
 
 class SourceExternalId(odin.Resource):
-    """Indicates the fields included in an AS external id resource."""
+    """Uniquely identifies a data object."""
     external_id = odin.StringField()
     source = odin.StringField()
 
 
 class SourceSubcontainer(odin.Resource):
-    """Indicates the fields included in an AS sub container resource."""
+    """Provides detailed container information."""
     indicator_2 = odin.StringField()
     type_2 = odin.StringField(choices=configs.CONTAINER_TYPE_CHOICES)
     top_container = odin.DictAs(SourceRef)
 
 
 class SourceInstance(odin.Resource):
-    """Indicates the fields included in an AS instance resource."""
+    """The physical or digital instantiation of a group of records."""
     instance_type = odin.StringField(choices=configs.INSTANCE_TYPE_CHOICES)
     is_representative = odin.BooleanField()
     sub_container = odin.DictAs(SourceSubcontainer)
 
 
 class SourceLinkedAgent(odin.Resource):
-    """Indicates the fields included in an AS linked agent resource."""
+    """A reference to a SourceAgentFamily, SourceAgentPerson or SourceAgentCorporateEntity."""
     role = odin.StringField(choices=configs.AGENT_ROLE_CHOICES)
     relator = odin.StringField(choices=configs.AGENT_RELATOR_CHOICES, null=True)
     ref = odin.StringField()
 
 
 class SourceNameBase(odin.Resource):
-    """Indicates the fields included in an AS name resource. Used in Family, Corporate Entity, and Personal name resources."""
+    """Base class for structured representations of names.
+
+    Subclassed by more specific representations SourceNameCorporateEntity,
+    SourceNamePerson and SourceNameFamily.
+    """
     sort_name = odin.StringField()
     authorized = odin.BooleanField()
     is_display_name = odin.BooleanField()
@@ -77,30 +86,34 @@ class SourceNameBase(odin.Resource):
 
 
 class SourceNameCorporateEntity(SourceNameBase):
-    """Indicates the fields included in an AS corporate entity name resource."""
+    """A structured representation of an SourceAgentCorporateEntity's name."""
     primary_name = odin.StringField()
 
 
 class SourceNameFamily(SourceNameBase):
-    """Indicates the fields included in an AS family name resource."""
+    """A structured representation of a SourceAgentFamily's name."""
     family_name = odin.StringField()
 
 
 class SourceNamePerson(SourceNameBase):
+    """A structured representation of a SourceAgentPerson's name."""
     primary_name = odin.StringField()
     rest_of_name = odin.StringField(null=True)
     name_order = odin.StringField(choices=(('direct', 'Direct'), ('inverted', 'Inverted')))
 
 
 class SourceSubnote(odin.Resource):
-    """Indicates the fields included in an AS subnote resource."""
+    """Contains note content."""
     jsonmodel_type = odin.StringField()
     content = odin.StringField(null=True)
     items = odin.StringField(null=True)
 
 
 class SourceNote(odin.Resource):
-    """Indicates the fields included in an AS note resource."""
+    """Human-readable note.
+
+    SourceNotes contain one or more SourceSubnotes.
+    """
     jsonmodel_type = odin.StringField()
     type = odin.StringField(null=True)
     label = odin.StringField(null=True)
@@ -110,7 +123,7 @@ class SourceNote(odin.Resource):
 
 
 class SourceRightsStatementAct(odin.Resource):
-    """Indicates the fields included in an AS rights statement act resource."""
+    """A representation of permissions or restrictions for an aggregation of records."""
     act_type = odin.StringField()
     start_date = odin.DateField()
     end_date = odin.DateField(null=True)
@@ -119,7 +132,10 @@ class SourceRightsStatementAct(odin.Resource):
 
 
 class SourceRightsStatement(odin.Resource):
-    """Indicates the fields included in an AS rights statement resource."""
+    """A PREMIS-compliant rights statement.
+
+    SourceRightsStatements contain once or more SourceRightsStatementActs, which
+    document permissions or restrictions on archival records."""
     determination_date = odin.DateField(null=True)
     rights_type = odin.StringField()
     start_date = odin.DateField()
@@ -132,20 +148,25 @@ class SourceRightsStatement(odin.Resource):
 
 
 class SourceTerm(odin.Resource):
-    """Indicates the fields included in an AS term resource."""
+    """A controlled term."""
     term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
 
 
 class SourceSubject(odin.Resource):
-    """Indicates the fields included in an AS subject resource."""
+    """A topical term."""
     title = odin.StringField()
+    source = odin.StringField(choices=configs.SUBJECT_SOURCE_CHOICES)
+    external_ids = odin.ArrayOf(SourceExternalId)
+    publish = odin.BooleanField()
     terms = odin.ArrayOf(SourceTerm)
     uri = odin.StringField()
 
 
 class SourceComponentBase(odin.Resource):
-    """Indicates the fields included in an AS component resource. Sets the base fields of an AS component to be used in other
-    resources."""
+    """Base class for archival components.
+
+    Subclassed by SourceArchivalObject and SourceResource.
+    """
     class Meta:
         abstract = True
 
@@ -170,7 +191,7 @@ class SourceComponentBase(odin.Resource):
 
 
 class SourceArchivalObject(SourceComponentBase):
-    """Indicates the fields included in an AS archival object resource."""
+    """A component of a SourceResource."""
     position = odin.IntegerField()
     ref_id = odin.StringField()
     component_id = odin.StringField(null=True)
@@ -186,7 +207,10 @@ class SourceArchivalObject(SourceComponentBase):
 
 
 class SourceResource(SourceComponentBase):
-    """Indicates the fields included in an AS resource resource."""
+    """An aggregation of records.
+
+    SourceResources generally contain SourceArchivalObjects as children.
+    """
     restrictions = odin.BooleanField()
     ead_id = odin.StringField(null=True)
     finding_aid_title = odin.StringField(null=True)
@@ -199,19 +223,12 @@ class SourceResource(SourceComponentBase):
     tree = odin.DictAs(SourceRef)
 
 
-class SourceSubject(odin.Resource):
-    """Indicates the fields included in an AS subject resource."""
-    title = odin.StringField()
-    source = odin.StringField(choices=configs.SUBJECT_SOURCE_CHOICES)
-    external_ids = odin.ArrayOf(SourceExternalId)
-    publish = odin.BooleanField()
-    terms = odin.ArrayOf(SourceSubject)
-    uri = odin.StringField()
-
-
 class SourceAgentBase(odin.Resource):
-    """Indicates the fields included in an AS agent resource. Sets the base fields of an AS component to be used in other
-    agent resources."""
+    """A base class for agents.
+
+    Subclassed by SourceAgentFamily, SourceAgentPerson and
+    SourceAgentCorporateEntity.
+    """
     class Meta:
         abstract = True
 
@@ -230,18 +247,18 @@ class SourceAgentBase(odin.Resource):
 
 
 class SourceAgentCorporateEntity(SourceAgentBase):
-    """Indicates the fields included in an AS agent corporate entity resource."""
+    """An organization."""
     names = odin.ArrayOf(SourceNameCorporateEntity)
     display_name = odin.DictAs(SourceNameCorporateEntity)
 
 
 class SourceAgentFamily(SourceAgentBase):
-    """Indicates the fields included in an AS agent family resource."""
+    """A family."""
     names = odin.ArrayOf(SourceNameFamily)
     display_name = odin.DictAs(SourceNameFamily)
 
 
 class SourceAgentPerson(SourceAgentBase):
-    """Indicates the fields included in an AS agent person resource."""
+    """A person."""
     names = odin.ArrayOf(SourceNamePerson)
     display_name = odin.DictAs(SourceNamePerson)

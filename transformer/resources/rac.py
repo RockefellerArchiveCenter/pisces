@@ -1,4 +1,4 @@
-"""RAC Model resources and their fields."""
+"""RAC data model resources and their fields."""
 
 import odin
 
@@ -6,13 +6,16 @@ from . import configs
 
 
 class Subnote(odin.Resource):
-    """Sets the fields in the RAC subnote resource."""
+    """Contains note content."""
     type = odin.StringField(choices=configs.SUBNOTE_TYPE_CHOICES)
     content = odin.StringField()
 
 
 class Note(odin.Resource):
-    """Sets the fields in the RAC note resource."""
+    """A human-readable note.
+
+    Notes contain one or more Subnotes.
+    """
     type = odin.StringField(choices=configs.NOTE_TYPE_CHOICES)
     title = odin.StringField(null=True)
     source = odin.StringField(null=True, default='archivesspace', choices=configs.SOURCE_CHOICES)
@@ -20,13 +23,22 @@ class Note(odin.Resource):
 
 
 class ExternalIdentifier(odin.Resource):
-    """Sets the fields in the RAC external identifer resource."""
+    """Uniquely identifies a first-class entity."""
     identifier = odin.StringField()
     source = odin.StringField(default='archivesspace', choices=configs.SOURCE_CHOICES)
 
 
 class Reference(odin.Resource):
-    """Sets the fields in the RAC reference resource."""
+    """A short reference to a first-class entity (Agent, Collection, Object or Term).
+
+    Field-specific notes:
+        order: applies only to children and parent Objects and Collections References.
+        type: indicates what type of linked object the Reference points to.
+        uri: applies only to Terms; a URI for the Term in an external vocabulary.
+        relator: applies only to References for Agent objects.
+        level: applies only to Collection and Object References.
+        identifier: applies only to Terms; an identifier for a Term in an external vocabulary.
+    """
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     order = odin.StringField(null=True)
     title = odin.StringField(null=True)
@@ -35,12 +47,11 @@ class Reference(odin.Resource):
     relator = odin.StringField(null=True)
     role = odin.StringField(null=True)
     level = odin.StringField(null=True)
-    expression = odin.StringField(null=True)
     identifier = odin.StringField(null=True)
 
 
 class Date(odin.Resource):
-    """Sets the fields in the RAC date resource."""
+    """Records the dates associated with an aggregation of archival records."""
     # TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
     begin = odin.DateTimeField(default="2019")
     end = odin.DateTimeField()
@@ -51,19 +62,22 @@ class Date(odin.Resource):
 
 
 class Extent(odin.Resource):
-    """Sets the fields in the RAC extent resource."""
+    """Records the size of an aggregation of archival records."""
     value = odin.StringField()
     type = odin.StringField(choices=configs.EXTENT_TYPE_CHOICES)
 
 
 class Language(odin.Resource):
-    """Sets the fields in the RAC language resource."""
+    """A human language."""
     expression = odin.StringField()
     identifier = odin.StringField()
 
 
 class Term(odin.Resource):
-    """Sets the fields in the RAC term resource."""
+    """A controlled term.
+
+    Term is a first-class entity in the RAC data model.
+    """
     title = odin.StringField()
     type = odin.StringField(default="term")
     term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
@@ -71,7 +85,7 @@ class Term(odin.Resource):
 
 
 class RightsGranted(odin.Resource):
-    """Sets the fields in the RAC rights granted resource."""
+    """Documents specific permissions or restrictions."""
     act = odin.StringField(choices=configs.RIGHTS_ACT_CHOICES)
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
@@ -80,7 +94,11 @@ class RightsGranted(odin.Resource):
 
 
 class RightsStatement(odin.Resource):
-    """Sets the fields in the RAC rights statement resource."""
+    """A PREMIS-compliant rights statement.
+
+    RightsStatements contain once or more RightsGranted, which document
+    permissions or restrictions on archival records.
+    """
     determination_date = odin.DateTimeField()
     type = odin.StringField(default="rights_statement")
     rights_type = odin.StringField(choices=configs.RIGHTS_TYPE_CHOICES)
@@ -94,7 +112,12 @@ class RightsStatement(odin.Resource):
 
 
 class Collection(odin.Resource):
-    """Sets the fields in the RAC collection resource."""
+    """An aggregation of archival records.
+
+    Collections contain other aggregations of records (either Objects or
+    Collections), and may themselves be contained within another Collection.
+    Collection is a first-class entity in the RAC data model.
+    """
     title = odin.StringField()
     type = odin.StringField(default="collection")
     level = odin.StringField()
@@ -112,7 +135,11 @@ class Collection(odin.Resource):
 
 
 class Object(odin.Resource):
-    """Sets the fields in the RAC object resource."""
+    """An aggregation of archival records.
+
+    Objects may be contained within Collections, but do not contain other
+    Objects or Collections. Object is a first-class entity in the RAC data model.
+    """
     title = odin.StringField()
     type = odin.StringField(default="object")
     dates = odin.ArrayOf(Date)
@@ -128,7 +155,10 @@ class Object(odin.Resource):
 
 
 class Agent(odin.Resource):
-    """Sets the fields in the RAC agent resource."""
+    """A person, family or organization who acts on or is represented in records.
+
+    Agent is a first-class entity in the RAC data model.
+    """
     title = odin.StringField()
     type = odin.StringField(default="agent")
     agent_type = odin.StringField()
