@@ -58,3 +58,25 @@ class DataObjectViewSet(ModelViewSet):
     @action(detail=False)
     def terms(self, request):
         return self.get_action_response(request, "term")
+
+
+class DataObjectUpdateByIdView(BaseServiceView):
+    """Updates DataObjects after they have been indexed.
+
+    Finds a DataObject by its es_id field and sets indexed to True.
+    """
+
+    def get_service_response(self, request):
+        es_id = request.data.get("identifier")
+        action = request.data.get("action")
+        if action not in ["deleted", "indexed"]:
+            raise Exception("Unrecognized action {}, expecting either `deleted` or `indexed`")
+        obj = DataObject.objects.get(es_id=es_id)
+        if action == "indexed":
+            obj.indexed = True
+            obj.save()
+            msg = "{} {} marked as indexed.".format(obj.object_type, obj.pk)
+        else:
+            obj.delete()
+            msg = "{} {} deleted.".format(obj.object_type, obj.pk)
+        return msg
