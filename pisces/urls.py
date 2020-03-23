@@ -20,7 +20,8 @@ from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                            FetchRunViewSet)
 from merger.views import MergeView
 from rest_framework.schemas import get_schema_view
-from transformer.views import DataObjectViewSet, TransformView
+from transformer.views import (DataObjectUpdateByIdView, DataObjectViewSet,
+                               TransformView)
 
 from .routers import PiscesRouter
 
@@ -42,6 +43,7 @@ urlpatterns = [
     re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
     re_path(r'^merge/$', MergeView.as_view(), name='merge'),
     re_path(r'^transform/$', TransformView.as_view(), name='transform'),
+    re_path(r'^index-complete/$', DataObjectUpdateByIdView.as_view(), name='index-action-complete'),
     re_path(r'^silk/', include('silk.urls', namespace='silk')),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),

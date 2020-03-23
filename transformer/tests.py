@@ -8,7 +8,7 @@ from rest_framework.test import APIRequestFactory
 
 from .models import DataObject
 from .transformers import Transformer
-from .views import DataObjectViewSet
+from .views import DataObjectUpdateByIdView, DataObjectViewSet
 
 object_types = ["agent_corporate_entity", "agent_family", "agent_person",
                 "archival_object", "resource", "subject",
@@ -61,10 +61,12 @@ class TransformerTest(TestCase):
         source_agent_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") != "creator"])
         self.assertTrue(
             source_creator_count == len(transformed.get("creators", [])),
-            "Expecting {} creators, got {}".format(source_agent_count, len(transformed.get("creators", []))))
+            "Expecting {} creators, got {}".format(
+                source_agent_count, len(transformed.get("creators", []))))
         self.assertEqual(
             source_agent_count, len(transformed.get("agents", [])),
-            "Expecting {} agents, got {} instead".format(source_agent_count, len(transformed.get("agents", []))))
+            "Expecting {} agents, got {} instead".format(
+                source_agent_count, len(transformed.get("agents", []))))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
@@ -78,13 +80,39 @@ class TransformerTest(TestCase):
             for clean in ["true", "false"]:
                 request = client.get("{}?clean={}".format(reverse("dataobject-list"), clean))
                 response = view(request)
-                self.assertEqual(response.status_code, 200, "View error:  {}".format(response.data))
+                self.assertEqual(
+                    response.status_code, 200,
+                    "View error:  {}".format(response.data))
                 if clean == "true":
-                    self.assertEqual(response.data["count"], len(DataObject.objects.filter(object_type=action.rstrip("s"))))
+                    self.assertEqual(
+                        response.data["count"],
+                        len(DataObject.objects.filter(object_type=action.rstrip("s"))))
                 else:
-                    self.assertEqual(response.data["count"] + 1, len(DataObject.objects.filter(object_type=action.rstrip("s"))))
+                    self.assertEqual(
+                        response.data["count"] + 1,
+                        len(DataObject.objects.filter(object_type=action.rstrip("s"))))
                 for obj in response.data["results"]:
-                    self.assertTrue("$" not in obj, "Odin mapping keys were not removed from data.")
+                    self.assertTrue(
+                        "$" not in obj,
+                        "Odin mapping keys were not removed from data.")
+
+        for object_type in ["agent", "collection", "object", "term"]:
+            for action in ["deleted", "indexed"]:
+                obj = random.choice(DataObject.objects.filter(object_type=object_type))
+                obj_len = len(DataObject.objects.filter(object_type=object_type))
+                request = client.post(
+                    reverse("index-action-complete"),
+                    data={"identifier": obj.es_id, "action": action},
+                    format="json")
+                response = DataObjectUpdateByIdView.as_view()(request)
+                self.assertEqual(
+                    response.status_code, 200,
+                    "Update by ID error: {}".format(response.data))
+                final_count = obj_len if action == "indexed" else obj_len - 1
+                self.assertEqual(
+                    len(DataObject.objects.filter(object_type=object_type)),
+                    final_count, "{} {} objects were expected but {} found".format(
+                        final_count, object_type, len(DataObject.objects.filter(object_type=object_type))))
 
     def test_transformer(self):
         self.mappings()
