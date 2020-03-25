@@ -150,10 +150,15 @@ class SourceNoteToNote(odin.Mapping):
 
     def map_subnotes(self, value):
         """Maps Subnotes to values based on the note type."""
-        if value.jsonmodel_type in ['note_orderedlist', 'note_definedlist']:
+        if value.jsonmodel_type == 'note_definedlist':
             # items is an odin.StringField so we need to re-convert to a dict here
             items = literal_eval(value.items.encode('unicode-escape').decode())
-            subnote = Subnote(type=value.jsonmodel_type.split('note_')[1], content=items)
+            subnote = Subnote(type=value.jsonmodel_type.split('note_')[1], items=items)
+        elif value.jsonmodel_type == 'note_orderedlist':
+            # items is an odin.StringField so we need to re-convert to a dict here
+            items = literal_eval(value.items.encode('unicode-escape').decode())
+            items_list = [{idx: item} for idx, item in enumerate(items)]
+            subnote = Subnote(type=value.jsonmodel_type.split('note_')[1], items=items_list)
         elif value == 'note_bibliography':
             subnote = self.bibliograpy_subnotes(value.content, value.items)
         elif value.jsonmodel_type == 'note_index':
@@ -195,14 +200,14 @@ class SourceNoteToNote(odin.Mapping):
         items_dict = literal_eval(items.encode('unicode-escape').decode())
         items_list = [{'label': i.get('type'), 'value': i.get('value')} for i in items_dict]
         data.append(Subnote(type='text', content=json.loads(content)))
-        data.append(Subnote(type='definedlist', content=items_list))
+        data.append(Subnote(type='definedlist', items=items_list))
         return data
 
     def chronology_subnotes(self, items):
         # items is an odin.StringField so we need to re-convert to a dict here
         items = literal_eval(items.encode('unicode-escape').decode())
-        content = [{'label': i.get('event_date'), 'value': i.get('events')} for i in items]
-        return Subnote(type='definedlist', content=content)
+        items_list = [{'label': i.get('event_date'), 'value': i.get('events')} for i in items]
+        return Subnote(type='definedlist', items=items_list)
 
 
 class SourceResourceToCollection(odin.Mapping):
