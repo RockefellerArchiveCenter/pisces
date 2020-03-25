@@ -8,7 +8,8 @@ from . import configs
 class Subnote(odin.Resource):
     """Contains note content."""
     type = odin.StringField(choices=configs.SUBNOTE_TYPE_CHOICES)
-    content = odin.StringField()
+    content = odin.StringField(null=True, default=[])
+    items = odin.StringField(null=True, default=[])
 
 
 class Note(odin.Resource):
