@@ -50,6 +50,22 @@ class SourceExternalId(odin.Resource):
     source = odin.StringField()
 
 
+class SourceLanguageAndScript(odin.Resource):
+    """Records the language and scripts of archival records.
+
+    Applies to resources post-ArchivesSpace v2.7 only.
+    """
+    language = odin.StringField(null=True)
+
+
+class SourceLangMaterial(odin.Resource):
+    """Records information about the languages of archival records.
+
+    Applies to resources post-ArchivesSpace v2.7 only.
+    """
+    language_and_script = odin.DictAs(SourceLanguageAndScript, null=True)
+
+
 class SourceSubcontainer(odin.Resource):
     """Provides detailed container information."""
     indicator_2 = odin.StringField()
@@ -166,6 +182,9 @@ class SourceComponentBase(odin.Resource):
     """Base class for archival components.
 
     Subclassed by SourceArchivalObject and SourceResource.
+
+    Both language and lang_material need to exist in order to accomodate
+    ArchivesSpace API changes between v2.6 and v2.7.
     """
     class Meta:
         abstract = True
@@ -184,6 +203,8 @@ class SourceComponentBase(odin.Resource):
     subjects = odin.ArrayOf(SourceRef)
     extents = odin.ArrayOf(SourceExtent)
     dates = odin.ArrayOf(SourceDate)
+    language = odin.StringField(null=True)
+    lang_materials = odin.ArrayOf(SourceLangMaterial, null=True)
     rights_statements = odin.ArrayOf(SourceRightsStatement)
     linked_agents = odin.ArrayOf(SourceLinkedAgent)
     notes = odin.ArrayOf(SourceNote)
@@ -196,7 +217,6 @@ class SourceArchivalObject(SourceComponentBase):
     ref_id = odin.StringField()
     component_id = odin.StringField(null=True)
     display_string = odin.StringField()
-    language = odin.StringField(null=True)
     restrictions_apply = odin.BooleanField()
     ancestors = odin.ArrayOf(SourceAncestor)
     resource = odin.DictAs(SourceRef)
@@ -215,7 +235,6 @@ class SourceResource(SourceComponentBase):
     ead_id = odin.StringField(null=True)
     finding_aid_title = odin.StringField(null=True)
     finding_aid_filing_title = odin.StringField(null=True)
-    language = odin.StringField()
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
     id_0 = odin.StringField(null=True)

@@ -17,9 +17,16 @@ from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceRightsStatementAct, SourceSubject)
 
 
-def transform_language(value):
-    lang_data = languages.get(part2b=value)
-    return [Language(expression=lang_data.name, identifier=value)]
+def transform_language(value, lang_materials):
+    langz = []
+    if value:
+        lang_data = languages.get(part2b=value)
+        langz.append(Language(expression=lang_data.name, identifier=value))
+    elif lang_materials:
+        for lang in lang_materials:
+            if lang.language_and_script:
+                langz += transform_language(lang.language_and_script.language, None)
+    return langz if len(langz) else Language(expression="English", identifier="eng")
 
 
 class SourceRightsStatementActToRightsGranted(odin.Mapping):
@@ -221,10 +228,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        if value:
-            lang_data = languages.get(part2b=value)
-            return [Language(expression=lang_data.name, identifier=value)]
-        return [Language(expression="English", identifier="eng")]
+        return transform_language(value, self.source.lang_materials)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
@@ -258,7 +262,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        return transform_language(value)
+        return transform_language(value, self.source.lang_materials)
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
@@ -312,7 +316,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
-        return transform_language(value)
+        return transform_language(value, self.source.lang_materials)
 
     @odin.map_field(from_field='uri', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
