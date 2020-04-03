@@ -101,14 +101,22 @@ class ArchivalObjectMerger(BaseMerger):
 
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
-        resource record in ArchivesSpace."""
+        resource record in ArchivesSpace.
+
+        Complicated handling of language and lang_materials exists in order to
+        accomodate ArchivesSpace API changes between 2.6 and 2.7.
+        """
         data = {"linked_agents": [], "children": []}
-        base_fields = ["dates", "language"]
-        fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
+        fields = ["dates"] if object_type == "archival_object" else ["dates", "extents"]
         for field in fields:
             if object.get(field) in ['', [], {}, None]:
                 value = self.aspace_helper.closest_parent_value(object["uri"], field)
                 data[field] = value
+        if "lang_materials" in object:
+            if object.get("lang_materials") in ['', [], {}]:
+                data["lang_materials"] = self.aspace_helper.closest_parent_value(object["uri"], "lang_materials")
+        else:
+            data["language"] = self.aspace_helper.closest_parent_value(object["uri"], "language")
         if object_type == "archival_object_collection":
             data.update(self.get_archival_object_collection_data(object))
         return data
