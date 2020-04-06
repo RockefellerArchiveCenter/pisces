@@ -94,21 +94,35 @@ class ArchivalObjectMerger(BaseMerger):
         return data
 
     def get_archival_object_collection_data(self, object):
+        """Gets additional data for archival_object_collections."""
         data = {"children": []}
         data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
         data["children"] = self.aspace_helper.get_archival_object_children(object['resource']['ref'], object["uri"])
         return data
 
+    def get_language_data(self, object, data):
+        """Gets language data from ArchivesSpace.
+
+        This logic accomodates ArchivesSpace API changes between 2.6 and 2.7.
+        """
+        if "lang_materials" in object:
+            if object.get("lang_materials") in ['', [], {}]:
+                data["lang_materials"] = self.aspace_helper.closest_parent_value(object["uri"], "lang_materials")
+        else:
+            data["language"] = self.aspace_helper.closest_parent_value(object["uri"], "language")
+        return data
+
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
-        resource record in ArchivesSpace."""
+        resource record in ArchivesSpace.
+        """
         data = {"linked_agents": [], "children": []}
-        base_fields = ["dates", "language"]
-        fields = base_fields if object_type == "archival_object" else base_fields + ["extents"]
+        fields = ["dates"] if object_type == "archival_object" else ["dates", "extents"]
         for field in fields:
             if object.get(field) in ['', [], {}, None]:
                 value = self.aspace_helper.closest_parent_value(object["uri"], field)
                 data[field] = value
+        data = self.get_language_data(object, data)
         if object_type == "archival_object_collection":
             data.update(self.get_archival_object_collection_data(object))
         return data

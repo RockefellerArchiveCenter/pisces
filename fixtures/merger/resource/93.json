@@ -15,7 +15,45 @@
 	"user_mtime": "2016-12-15T12:31:30Z",
 	"suppressed": false,
 	"id_0": "FA003",
-	"language": "eng",
+	"lang_materials": [{
+			"lock_version": 0,
+			"created_by": "admin",
+			"last_modified_by": "admin",
+			"create_time": "2020-03-31T17:01:30Z",
+			"system_mtime": "2020-03-31T17:01:30Z",
+			"user_mtime": "2020-03-31T17:01:30Z",
+			"jsonmodel_type": "lang_material",
+			"notes": [],
+			"language_and_script": {
+				"lock_version": 0,
+				"created_by": "admin",
+				"last_modified_by": "admin",
+				"create_time": "2020-03-31T17:01:30Z",
+				"system_mtime": "2020-03-31T17:01:30Z",
+				"user_mtime": "2020-03-31T17:01:30Z",
+				"language": "eng",
+				"jsonmodel_type": "language_and_script"
+			}
+		},
+		{
+			"lock_version": 0,
+			"created_by": "admin",
+			"last_modified_by": "admin",
+			"create_time": "2020-03-31T17:01:30Z",
+			"system_mtime": "2020-03-31T17:01:30Z",
+			"user_mtime": "2020-03-31T17:01:30Z",
+			"jsonmodel_type": "lang_material",
+			"notes": [{
+				"jsonmodel_type": "note_langmaterial",
+				"type": "langmaterial",
+				"content": [
+					"English"
+				],
+				"persistent_id": "d0a874f7080acd2eb08b37ad1b4e0742",
+				"publish": true
+			}]
+		}
+	],
 	"level": "collection",
 	"finding_aid_status": "in_progress",
 	"jsonmodel_type": "resource",

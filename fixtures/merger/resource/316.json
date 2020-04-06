@@ -1,1 +1,299 @@
-{"lock_version": 9, "title": "Rockefeller Foundation records, administration, program and policy, RG 3", "publish": true, "restrictions": false, "ead_id": "FA112.xml", "finding_aid_title": "A Guide to the Rockefeller Foundation records, Administration, Program and Policy, RG 3\n", "finding_aid_filing_title": "Rockefeller Foundation records, Administration, Program and Policy, RG 3", "finding_aid_date": "1988 November 1", "finding_aid_author": "Harold W. Oakhill", "created_by": "admin", "last_modified_by": "battalb", "create_time": "2014-12-06T05:57:47Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "suppressed": false, "id_0": "FA112", "language": "eng", "level": "recordgrp", "finding_aid_description_rules": "dacs", "finding_aid_status": "under_revision", "jsonmodel_type": "resource", "external_ids": [{"external_id": "144", "source": "Archivists Toolkit Database::RESOURCE", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "jsonmodel_type": "external_id"}], "subjects": [{"ref": "/subjects/22"}, {"ref": "/subjects/103"}, {"ref": "/subjects/75"}, {"ref": "/subjects/78"}, {"ref": "/subjects/237"}, {"ref": "/subjects/76"}, {"ref": "/subjects/85"}, {"ref": "/subjects/77"}, {"ref": "/subjects/33"}], "linked_events": [], "extents": [{"lock_version": 0, "number": "194", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "portion": "whole", "extent_type": "cubic_feet", "jsonmodel_type": "extent"}], "dates": [{"lock_version": 0, "expression": "1910-2000", "begin": "1910", "end": "2000", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "date_type": "inclusive", "label": "creation", "jsonmodel_type": "date"}], "external_documents": [], "rights_statements": [], "linked_agents": [{"role": "creator", "relator": "cre", "terms": [], "ref": "/agents/people/381"}, {"role": "creator", "relator": "ctb", "terms": [], "ref": "/agents/corporate_entities/4055"}, {"role": "creator", "relator": "aut", "terms": [], "ref": "/agents/corporate_entities/12"}, {"role": "creator", "relator": "ctb", "terms": [], "ref": "/agents/corporate_entities/50"}], "revision_statements": [{"date": "2010 May", "description": "Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins. ", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "jsonmodel_type": "revision_statement", "uri": "/revision_statement/3559", "repository": {"ref": "/repositories/2"}}], "instances": [], "deaccessions": [], "related_accessions": [{"ref": "/repositories/2/accessions/429"}, {"ref": "/repositories/2/accessions/379"}], "classifications": [], "notes": [{"jsonmodel_type": "note_multipart", "persistent_id": "29895ade35b1e5264b8f828961a051a0", "type": "bioghist", "subnotes": [{"jsonmodel_type": "note_text", "content": "The Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "7566940fdbc4a3240a20dabf08c91150", "type": "arrangement", "subnotes": [{"jsonmodel_type": "note_text", "content": "The Administration, Program & Policy material is physically divided into two groups; RG 3.1 and RG 3.2.  The first group contains earlier material, up to about 1950, while the second group contains mostly later material, roughly 1950 to 1980, though there are some exceptions.\n\nThere are 28 separate entries, arbitrarily numbered, dividing the material into areas of administrative or program interest.  Files within these series are arranged alphabetically.\n\nMany files in RG 3.1 continue into RG 3.2.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "a033276e69d891eb95d1ce235aa47b1d", "type": "arrangement", "subnotes": [{"jsonmodel_type": "note_text", "content": "Organization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office\n", "publish": false}], "publish": false}, {"jsonmodel_type": "note_multipart", "persistent_id": "5bbb841d69931deeb9b241c140f43abd", "type": "accessrestrict", "rights_restriction": {"local_access_restriction_type": []}, "subnotes": [{"jsonmodel_type": "note_text", "content": "Open for research. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "2fb830c88a8395b4b0ccb892e6443ae9", "type": "prefercite", "subnotes": [{"jsonmodel_type": "note_text", "content": "When requesting or citing material from this record group it is important to specify RG 3.1 or RG 3.2.", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "526216a1fb1b8a6202e33837d82a3607", "type": "prefercite", "subnotes": [{"jsonmodel_type": "note_text", "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>", "publish": true}], "publish": true}, {"jsonmodel_type": "note_multipart", "persistent_id": "e089f8af6bd171852bbf8f635bb199dd", "type": "fileplan", "subnotes": [{"jsonmodel_type": "note_text", "content": "II RG 3\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\nRG 2 General Correspondence\nRG 3 Administration, Program and Policy\nRG 4 China Medical Board\nRG 5 International Health Board/Division\nRG 6 Field Offices\nRG 7 Treasurer's Office\nRG 8 Comptroller\nRG 9 Personnel\nRG 10 Fellowships\nRG 11 Information Services\nRG 12 Diaries\nRG 13 Oral Histories\nRG 14 Counsel\nRG 15 Secretary\nRG 16 Minutes and Officers Actions\nRG 17 Dockets\nRG 18 Declinations (100F)\nRG 19 Non-textual Materials\nRG 20 Communications Office\n", "publish": false}], "publish": false}, {"jsonmodel_type": "note_multipart", "persistent_id": "36ee90c0df6624eec35005f3e127c253", "type": "scopecontent", "subnotes": [{"jsonmodel_type": "note_text", "content": "This material consists of administrative and program and policy information in the form of correspondence, memoranda, minutes, and reports.\n\nThe Foundation's archives include:\n\nProjects\nGeneral Correspondence\nAdministration, Program and Policy\nChina Medical Board\nInternational Health Board/Division\nField Offices\nTreasurer's Office\nComptroller\nPersonnel\nFellowships\nInformation Services\nDiaries\nOral Histories\nCounsel\nSecretary\nMinutes and Officers Actions\nDockets\nDeclinations (100F)\nNon-textual Materials\nCommunications Office", "publish": true}], "publish": true}], "uri": "/repositories/2/resources/316", "repository": {"ref": "/repositories/2"}, "collection_management": {"lock_version": 0, "rights_determined": false, "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "processing_status": "completed", "jsonmodel_type": "collection_management", "external_ids": [], "uri": "/repositories/2/collection_management/7421", "repository": {"ref": "/repositories/2"}, "parent": {"ref": "/repositories/2/resources/316"}}, "user_defined": {"lock_version": 0, "boolean_1": false, "boolean_2": false, "boolean_3": false, "date_2": "2007-12-31", "created_by": "battalb", "last_modified_by": "battalb", "create_time": "2019-02-04T18:48:34Z", "system_mtime": "2019-02-04T18:48:34Z", "user_mtime": "2019-02-04T18:48:34Z", "enum_1": "3 - Standard", "jsonmodel_type": "user_defined", "repository": {"ref": "/repositories/2"}}, "tree": {"ref": "/repositories/2/resources/316/tree"}}
+{
+	"lock_version": 9,
+	"title": "Rockefeller Foundation records, administration, program and policy, RG 3",
+	"publish": true,
+	"restrictions": false,
+	"ead_id": "FA112.xml",
+	"finding_aid_title": "A Guide to the Rockefeller Foundation records, Administration, Program and Policy, RG 3\n",
+	"finding_aid_filing_title": "Rockefeller Foundation records, Administration, Program and Policy, RG 3",
+	"finding_aid_date": "1988 November 1",
+	"finding_aid_author": "Harold W. Oakhill",
+	"created_by": "admin",
+	"last_modified_by": "battalb",
+	"create_time": "2014-12-06T05:57:47Z",
+	"system_mtime": "2019-02-04T18:48:34Z",
+	"user_mtime": "2019-02-04T18:48:34Z",
+	"suppressed": false,
+	"id_0": "FA112",
+	"lang_materials": [{
+			"lock_version": 0,
+			"created_by": "admin",
+			"last_modified_by": "admin",
+			"create_time": "2020-03-31T17:01:30Z",
+			"system_mtime": "2020-03-31T17:01:30Z",
+			"user_mtime": "2020-03-31T17:01:30Z",
+			"jsonmodel_type": "lang_material",
+			"notes": [],
+			"language_and_script": {
+				"lock_version": 0,
+				"created_by": "admin",
+				"last_modified_by": "admin",
+				"create_time": "2020-03-31T17:01:30Z",
+				"system_mtime": "2020-03-31T17:01:30Z",
+				"user_mtime": "2020-03-31T17:01:30Z",
+				"language": "eng",
+				"jsonmodel_type": "language_and_script"
+			}
+		},
+		{
+			"lock_version": 0,
+			"created_by": "admin",
+			"last_modified_by": "admin",
+			"create_time": "2020-03-31T17:01:30Z",
+			"system_mtime": "2020-03-31T17:01:30Z",
+			"user_mtime": "2020-03-31T17:01:30Z",
+			"jsonmodel_type": "lang_material",
+      "language_and_script": {
+				"lock_version": 0,
+				"created_by": "admin",
+				"last_modified_by": "admin",
+				"create_time": "2020-03-31T17:01:30Z",
+				"system_mtime": "2020-03-31T17:01:30Z",
+				"user_mtime": "2020-03-31T17:01:30Z",
+				"language": "spa",
+				"jsonmodel_type": "language_and_script"
+			},
+			"notes": [{
+				"jsonmodel_type": "note_langmaterial",
+				"type": "langmaterial",
+				"content": [
+					"Spanish"
+				],
+				"persistent_id": "d0a874f7080acd2eb08b37ad1b4e0742",
+				"publish": true
+			}]
+		}
+	],
+	"level": "recordgrp",
+	"finding_aid_description_rules": "dacs",
+	"finding_aid_status": "under_revision",
+	"jsonmodel_type": "resource",
+	"external_ids": [{
+		"external_id": "144",
+		"source": "Archivists Toolkit Database::RESOURCE",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"jsonmodel_type": "external_id"
+	}],
+	"subjects": [{
+		"ref": "/subjects/22"
+	}, {
+		"ref": "/subjects/103"
+	}, {
+		"ref": "/subjects/75"
+	}, {
+		"ref": "/subjects/78"
+	}, {
+		"ref": "/subjects/237"
+	}, {
+		"ref": "/subjects/76"
+	}, {
+		"ref": "/subjects/85"
+	}, {
+		"ref": "/subjects/77"
+	}, {
+		"ref": "/subjects/33"
+	}],
+	"linked_events": [],
+	"extents": [{
+		"lock_version": 0,
+		"number": "194",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"portion": "whole",
+		"extent_type": "cubic_feet",
+		"jsonmodel_type": "extent"
+	}],
+	"dates": [{
+		"lock_version": 0,
+		"expression": "1910-2000",
+		"begin": "1910",
+		"end": "2000",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"date_type": "inclusive",
+		"label": "creation",
+		"jsonmodel_type": "date"
+	}],
+	"external_documents": [],
+	"rights_statements": [],
+	"linked_agents": [{
+		"role": "creator",
+		"relator": "cre",
+		"terms": [],
+		"ref": "/agents/people/381"
+	}, {
+		"role": "creator",
+		"relator": "ctb",
+		"terms": [],
+		"ref": "/agents/corporate_entities/4055"
+	}, {
+		"role": "creator",
+		"relator": "aut",
+		"terms": [],
+		"ref": "/agents/corporate_entities/12"
+	}, {
+		"role": "creator",
+		"relator": "ctb",
+		"terms": [],
+		"ref": "/agents/corporate_entities/50"
+	}],
+	"revision_statements": [{
+		"date": "2010 May",
+		"description": "Migrated from Re:discovery to the Archivists' Toolkit by Becky Robbins. ",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"jsonmodel_type": "revision_statement",
+		"uri": "/revision_statement/3559",
+		"repository": {
+			"ref": "/repositories/2"
+		}
+	}],
+	"instances": [],
+	"deaccessions": [],
+	"related_accessions": [{
+		"ref": "/repositories/2/accessions/429"
+	}, {
+		"ref": "/repositories/2/accessions/379"
+	}],
+	"classifications": [],
+	"notes": [{
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "29895ade35b1e5264b8f828961a051a0",
+		"type": "bioghist",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "The Rockefeller Foundation was established by act of the New York State Legislature approved by the Governor on May 14, 1913, \"to promote the well-being of mankind throughout the world.\" Between 1913 and 1928 the China Medical Board, the International Health Board, and the Division of Medical Education functioned as divisions of the Foundation, concentrating on the administration of programs in public health and medical education. A Division of Studies was created in 1923 to handle projects outside the medical field. These early years were experimental as the new foundation studied the methods of philanthropy and explored its relationships with other Rockefeller boards.\n\nAlthough the Rockefeller Foundation is the largest and best known philanthropy founded by the Rockefeller family, it was neither the first nor the last to be established. The Rockefeller Institute for Medical Research (1901), the General Education Board (1902), the Rockefeller Sanitary Commission for the Eradication of Hookworm Disease (1909), and the Bureau of Social Hygiene (1911) all existed earlier. When the Foundation was created, the Sanitary Commission was disbanded. After the establishment of the Foundation, the Laura Spelman Rockefeller Memorial (1918) and the International Education Board (1923) were created.\n\nThe Rockefeller boards and their programs were reconsidered and reorganized in 1927-1928 in order to avoid overlapping programs. The International Health Board of the Foundation was disbanded and an International Health Division was organized. The China Medical Board, Inc., was established as a separately incorporated institution, and the China Medical Board of the Foundation ceased to exist. The Division of Studies was dropped and the Division of Medical Education was phased out. The Laura Spelman Rockefeller Memorial was combined with the Foundation and the Spelman Fund of New York was chartered to continue activities of the LSRM that were not absorbed by the Foundation. The International Education Board was disbanded.\n\nAs a result of this reorganization, the Foundation adopted a program which included public health work (administered by the IHD), the advancement of knowledge in the medical and natural sciences (in part taken over from the IEB), the social sciences (formerly the field of the LSRM), and the humanities and arts (shared with the GEB). The Rockefeller Institute and the Bureau of Social Hygiene were not affected by the reorganization. The program adopted by the Foundation at this time remained basically the same for the next twenty years.\n\nAs its files accumulated, the Foundation maintained a card index recording the names of institutional and individual grantees and correspondents. A microfilm copy of this index is available at the Archive Center.\n\n",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "7566940fdbc4a3240a20dabf08c91150",
+		"type": "arrangement",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "The Administration, Program & Policy material is physically divided into two groups; RG 3.1 and RG 3.2.  The first group contains earlier material, up to about 1950, while the second group contains mostly later material, roughly 1950 to 1980, though there are some exceptions.\n\nThere are 28 separate entries, arbitrarily numbered, dividing the material into areas of administrative or program interest.  Files within these series are arranged alphabetically.\n\nMany files in RG 3.1 continue into RG 3.2.",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "a033276e69d891eb95d1ce235aa47b1d",
+		"type": "arrangement",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "Organization of the Foundation's archives:\n\nRG 1 Projects\n\nRG 2 General Correspondence\n\nRG 3 Administration, Program and Policy\n\nRG 4 China Medical Board\n\nRG 5 International Health Board/Division\n\nRG 6 Field Offices\n\nRG 7 Treasurer's Office\n\nRG 8 Comptroller\n\nRG 9 Personnel\n\nRG 10 Fellowships\n\nRG 11 Information Services\n\nRG 12 Diaries\n\nRG 13 Oral Histories\n\nRG 14 Counsel\n\nRG 15 Secretary\n\nRG 16 Minutes and Officers Actions\n\nRG 17 Dockets\n\nRG 18 Declinations (100F)\n\nRG 19 Non-textual Materials\n\nRG 20 Communications Office\n",
+			"publish": false
+		}],
+		"publish": false
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "5bbb841d69931deeb9b241c140f43abd",
+		"type": "accessrestrict",
+		"rights_restriction": {
+			"local_access_restriction_type": []
+		},
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "Open for research. Brittle or damaged items are available at the discretion of RAC. Researchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "2fb830c88a8395b4b0ccb892e6443ae9",
+		"type": "prefercite",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "When requesting or citing material from this record group it is important to specify RG 3.1 or RG 3.2.",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "526216a1fb1b8a6202e33837d82a3607",
+		"type": "prefercite",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+			"publish": true
+		}],
+		"publish": true
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "e089f8af6bd171852bbf8f635bb199dd",
+		"type": "fileplan",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "II RG 3\n\nOrganization of the Foundation's archives:\n\nRG 1 Projects\nRG 2 General Correspondence\nRG 3 Administration, Program and Policy\nRG 4 China Medical Board\nRG 5 International Health Board/Division\nRG 6 Field Offices\nRG 7 Treasurer's Office\nRG 8 Comptroller\nRG 9 Personnel\nRG 10 Fellowships\nRG 11 Information Services\nRG 12 Diaries\nRG 13 Oral Histories\nRG 14 Counsel\nRG 15 Secretary\nRG 16 Minutes and Officers Actions\nRG 17 Dockets\nRG 18 Declinations (100F)\nRG 19 Non-textual Materials\nRG 20 Communications Office\n",
+			"publish": false
+		}],
+		"publish": false
+	}, {
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "36ee90c0df6624eec35005f3e127c253",
+		"type": "scopecontent",
+		"subnotes": [{
+			"jsonmodel_type": "note_text",
+			"content": "This material consists of administrative and program and policy information in the form of correspondence, memoranda, minutes, and reports.\n\nThe Foundation's archives include:\n\nProjects\nGeneral Correspondence\nAdministration, Program and Policy\nChina Medical Board\nInternational Health Board/Division\nField Offices\nTreasurer's Office\nComptroller\nPersonnel\nFellowships\nInformation Services\nDiaries\nOral Histories\nCounsel\nSecretary\nMinutes and Officers Actions\nDockets\nDeclinations (100F)\nNon-textual Materials\nCommunications Office",
+			"publish": true
+		}],
+		"publish": true
+	}],
+	"uri": "/repositories/2/resources/316",
+	"repository": {
+		"ref": "/repositories/2"
+	},
+	"collection_management": {
+		"lock_version": 0,
+		"rights_determined": false,
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"processing_status": "completed",
+		"jsonmodel_type": "collection_management",
+		"external_ids": [],
+		"uri": "/repositories/2/collection_management/7421",
+		"repository": {
+			"ref": "/repositories/2"
+		},
+		"parent": {
+			"ref": "/repositories/2/resources/316"
+		}
+	},
+	"user_defined": {
+		"lock_version": 0,
+		"boolean_1": false,
+		"boolean_2": false,
+		"boolean_3": false,
+		"date_2": "2007-12-31",
+		"created_by": "battalb",
+		"last_modified_by": "battalb",
+		"create_time": "2019-02-04T18:48:34Z",
+		"system_mtime": "2019-02-04T18:48:34Z",
+		"user_mtime": "2019-02-04T18:48:34Z",
+		"enum_1": "3 - Standard",
+		"jsonmodel_type": "user_defined",
+		"repository": {
+			"ref": "/repositories/2"
+		}
+	},
+	"tree": {
+		"ref": "/repositories/2/resources/316/tree"
+	}
+}

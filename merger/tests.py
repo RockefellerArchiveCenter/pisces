@@ -62,18 +62,22 @@ class MergerTest(TestCase):
     def check_counts(self, source, source_object_type, merged, target_object_type):
         """Tests counts of data keys in merged object.
 
-        Archival objects are expected to have values in dates and languages fields.
+        Archival objects are expected to have values in dates and one of
+            language or lang_materials fields.
         Archival object collections are expected to have values in dates,
-            languages, extents, linked_agents and children fields
+            extents, linked_agents, children and one of language or lang_materials fields
         Resources should have at least as many ancestors in the merged data as
             in the source.
         """
         if target_object_type == "archival_object":
-            for field in ["dates", "language"]:
-                self.assertTrue(self.not_empty(merged.get(field)), "{} on {} was empty".format(field, merged))
+            self.assertTrue(self.not_empty(merged.get("dates")), "dates on {} was empty".format(merged))
+            self.assertTrue(
+                bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))), merged)
         elif target_object_type == "archival_object_collection":
-            for field in ["dates", "language", "extents", "linked_agents", "children"]:
+            for field in ["dates", "extents", "linked_agents", "children"]:
                 self.assertTrue(self.not_empty(merged.get(field)), "{} on {} was empty".format(field, merged))
+            self.assertTrue(
+                bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))))
         elif target_object_type == "resource":
             if source_object_type == "arrangement_map":
                 self.assertTrue(len(merged.get("ancestors", [])) > len(source.get("ancestors", [])),

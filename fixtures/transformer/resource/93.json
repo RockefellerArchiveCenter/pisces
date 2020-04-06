@@ -78,7 +78,45 @@
     "instances": [],
     "is_slug_auto": false,
     "jsonmodel_type": "resource",
-    "language": "eng",
+    "lang_materials": [{
+  			"lock_version": 0,
+  			"created_by": "admin",
+  			"last_modified_by": "admin",
+  			"create_time": "2020-03-31T17:01:30Z",
+  			"system_mtime": "2020-03-31T17:01:30Z",
+  			"user_mtime": "2020-03-31T17:01:30Z",
+  			"jsonmodel_type": "lang_material",
+  			"notes": [],
+  			"language_and_script": {
+  				"lock_version": 0,
+  				"created_by": "admin",
+  				"last_modified_by": "admin",
+  				"create_time": "2020-03-31T17:01:30Z",
+  				"system_mtime": "2020-03-31T17:01:30Z",
+  				"user_mtime": "2020-03-31T17:01:30Z",
+  				"language": "eng",
+  				"jsonmodel_type": "language_and_script"
+  			}
+  		},
+  		{
+  			"lock_version": 0,
+  			"created_by": "admin",
+  			"last_modified_by": "admin",
+  			"create_time": "2020-03-31T17:01:30Z",
+  			"system_mtime": "2020-03-31T17:01:30Z",
+  			"user_mtime": "2020-03-31T17:01:30Z",
+  			"jsonmodel_type": "lang_material",
+  			"notes": [{
+  				"jsonmodel_type": "note_langmaterial",
+  				"type": "langmaterial",
+  				"content": [
+  					"English"
+  				],
+  				"persistent_id": "d0a874f7080acd2eb08b37ad1b4e0742",
+  				"publish": true
+  			}]
+  		}
+  	],
     "last_modified_by": "battalb",
     "level": "collection",
     "linked_agents": [
