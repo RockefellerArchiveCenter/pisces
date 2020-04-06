@@ -68,8 +68,8 @@ class SourceLangMaterial(odin.Resource):
 
 class SourceSubcontainer(odin.Resource):
     """Provides detailed container information."""
-    indicator_2 = odin.StringField()
-    type_2 = odin.StringField(choices=configs.CONTAINER_TYPE_CHOICES)
+    indicator_2 = odin.StringField(null=True)
+    type_2 = odin.StringField(choices=configs.CONTAINER_TYPE_CHOICES, null=True)
     top_container = odin.DictAs(SourceRef)
 
 
