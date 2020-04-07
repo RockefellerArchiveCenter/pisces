@@ -78,13 +78,27 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         return data
 
     @silk_profile()
+    def get_archival_objects(self, aspace, last_run, publish):
+        """Returns only archival objects belonging to a published resource."""
+        for obj in aspace.repo.archival_objects.with_params(
+                all_ids=True, modified_since=last_run):
+            if obj.resource.publish == publish and obj.resource.id_0.startswith("FA"):
+                yield obj
+
+    @silk_profile()
+    def get_resources(self, aspace, last_run):
+        """Return only resources whose id_0 attribute starts with 'FA'"""
+        for obj in aspace.repo.resources.with_params(
+                all_ids=True, modified_since=last_run):
+            if obj.id_0.startswith("FA"):
+                yield obj
+
+    @silk_profile()
     def updated_list(self, aspace, object_type, last_run, publish):
         if object_type == 'resource':
-            list = aspace.repo.resources.with_params(
-                all_ids=True, modified_since=last_run)
+            list = self.get_resources(aspace, last_run)
         elif object_type == 'archival_object':
-            list = aspace.repo.archival_objects.with_params(
-                all_ids=True, modified_since=last_run)
+            list = self.get_archival_objects(aspace, last_run, publish)
         elif object_type == 'subject':
             list = aspace.subjects.with_params(
                 all_ids=True, modified_since=last_run)
@@ -99,9 +113,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 all_ids=True, modified_since=last_run)
         for obj in list:
             if obj.publish == publish:
-                # If the fetched object is a resource, only return if its id_0 starts with FA
-                if not(obj.jsonmodel_type == "resource" and not (obj.id_0.startswith("FA"))):
-                    yield obj
+                yield obj
 
     @silk_profile()
     def deleted_list(self, aspace, object_type, last_run):
