@@ -122,7 +122,7 @@ class SourceSubnote(odin.Resource):
     """Contains note content."""
     jsonmodel_type = odin.StringField()
     content = odin.StringField(null=True)
-    items = odin.StringField(null=True)
+    items = odin.ArrayField(null=True)
 
 
 class SourceNote(odin.Resource):
