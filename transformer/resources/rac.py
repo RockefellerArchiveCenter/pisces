@@ -35,10 +35,10 @@ class Reference(odin.Resource):
     Field-specific notes:
         order: applies only to children and parent Objects and Collections References.
         type: indicates what type of linked object the Reference points to.
-        uri: applies only to Terms; a URI for the Term in an external vocabulary.
+        uri: generated when objects are indexed.
         relator: applies only to References for Agent objects.
         level: applies only to Collection and Object References.
-        identifier: applies only to Terms; an identifier for a Term in an external vocabulary.
+        identifier: generated when objects are indexed.
     """
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     order = odin.StringField(null=True)
