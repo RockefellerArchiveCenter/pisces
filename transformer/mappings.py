@@ -70,10 +70,6 @@ class SourceRefToReference(odin.Mapping):
     from_obj = SourceRef
     to_obj = Reference
 
-    mappings = (
-        ('ref', None, 'title'),
-    )
-
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
