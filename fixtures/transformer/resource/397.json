@@ -279,7 +279,7 @@
                         },
                         {
                             "label": "another label",
-                            "value": "yet another value"
+                            "value": "yet \"another\" value"
                         }
                     ],
                     "jsonmodel_type": "note_definedlist",
@@ -290,7 +290,7 @@
                     "enumeration": "arabic",
                     "items": [
                         "apples",
-                        "oranges",
+                        "oranges \"and\" peaches",
                         "pears",
                         "grapes"
                     ],
