@@ -30,6 +30,7 @@ class ArchivesSpaceHelper:
         for ancestor in self.get_ancestors(uri):
             if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
                 return [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
+        return []
 
     @silk_profile()
     def has_children(self, uri):
