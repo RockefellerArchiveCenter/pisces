@@ -8,6 +8,7 @@ from transformer.models import DataObject
 from .models import FetchRun, FetchRunError
 
 
+@silk_profile()
 def last_run_time(source, object_status, object_type):
     """Returns a timestamp for a successful fetch.
 
@@ -58,6 +59,7 @@ def send_post_request(url, data, current_run=None):
             raise Exception(resp.json()["detail"])
 
 
+@silk_profile()
 def instantiate_aspace(self, config=None):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
@@ -79,6 +81,7 @@ def instantiate_aspace(self, config=None):
     return aspace
 
 
+@silk_profile()
 def instantiate_electronbond(self, config=None):
     """Instantiates and returns an ElectronBond client.
 
@@ -99,6 +102,7 @@ def instantiate_electronbond(self, config=None):
             "Cartographer is not available: {}".format(e))
 
 
+@silk_profile()
 def get_es_id(identifier, source, object_type):
     es_id = None
     initial_queryset = DataObject.objects.filter(object_type=object_type)
@@ -109,6 +113,7 @@ def get_es_id(identifier, source, object_type):
     return es_id
 
 
+@silk_profile()
 def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
     es_id = get_es_id(uri, source, object_type)

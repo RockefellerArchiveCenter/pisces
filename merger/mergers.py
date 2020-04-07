@@ -82,6 +82,7 @@ class ArchivalObjectMerger(BaseMerger):
         data.update(self.get_archivesspace_data(object, object_type))
         return data
 
+    @silk_profile()
     def get_cartographer_data(self, object):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
@@ -93,6 +94,7 @@ class ArchivalObjectMerger(BaseMerger):
                 data["ancestors"].append(a)
         return data
 
+    @silk_profile()
     def get_archival_object_collection_data(self, object):
         """Gets additional data for archival_object_collections."""
         data = {"children": []}
@@ -100,6 +102,7 @@ class ArchivalObjectMerger(BaseMerger):
         data["children"] = self.aspace_helper.get_archival_object_children(object['resource']['ref'], object["uri"])
         return data
 
+    @silk_profile()
     def get_language_data(self, object, data):
         """Gets language data from ArchivesSpace.
 
@@ -112,6 +115,7 @@ class ArchivalObjectMerger(BaseMerger):
             data["language"] = self.aspace_helper.closest_parent_value(object["uri"], "language")
         return data
 
+    @silk_profile()
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace.
@@ -193,6 +197,7 @@ class ResourceMerger(BaseMerger):
         data.update(self.get_archivesspace_data(object))
         return data
 
+    @silk_profile()
     def get_cartographer_data(self, object):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
@@ -202,6 +207,7 @@ class ResourceMerger(BaseMerger):
             data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
         return data
 
+    @silk_profile()
     def get_archivesspace_data(self, object):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
