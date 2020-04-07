@@ -260,8 +260,8 @@
                             "value": "value"
                         },
                         {
-                            "label": "another label",
-                            "value": "yet another value"
+                            "label": "another's label",
+                            "value": "yet \"another\" value"
                         }
                     ]
                 },
@@ -272,7 +272,7 @@
                     "publish": true,
                     "items": [
                         "apples",
-                        "oranges",
+                        "oranges \"and\" plums",
                         "pears",
                         "grapes"
                     ]
