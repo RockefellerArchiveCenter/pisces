@@ -60,7 +60,7 @@ def send_post_request(url, data, current_run=None):
 
 
 @silk_profile()
-def instantiate_aspace(self, config=None):
+def instantiate_aspace(self, config=None, repo=False):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
     Args:
@@ -74,10 +74,11 @@ def instantiate_aspace(self, config=None):
         baseurl=config['baseurl'],
         username=config['username'],
         password=config['password'])
-    repo = aspace.repositories(config['repo'])
-    setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
-    if isinstance(repo, dict) and 'error' in repo:
-        raise Exception(self.repo['error'])
+    if repo:
+        repo = aspace.repositories(config['repo'])
+        setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
+        if isinstance(repo, dict) and 'error' in repo:
+            raise Exception(self.repo['error'])
     return aspace
 
 
