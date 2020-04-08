@@ -367,18 +367,13 @@ INSTANCE_TYPE_CHOICES = (
     ('bound volume', 'Bound Volume'),
     ('collection', 'Collection'),
     ('computer_disks', 'Computer Disks'),
-    ('digital', 'Digital'),
-    ('digital materials', 'Digital Materials'),
     ('digital_object', 'Digital Object'),
     ('documents', 'Documents'),
     ('Ephemera', 'Ephemera'),
     ('microform', 'Microform'),
     ('mixed materials', 'Mixed Materials'),
-    ('moving image', 'Moving Image'),
     ('moving images', 'Moving Images'),
     ('realia', 'Realia'),
-    ('scanned reports', 'Scanned Reports'),
-    ('Still Image', 'Still Image'),
     ('still image', 'Still Image'),
     ('text', 'Text')
 )
