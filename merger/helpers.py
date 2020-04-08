@@ -5,7 +5,7 @@ from silk.profiling.profiler import silk_profile
 
 class ArchivesSpaceHelper:
     def __init__(self):
-        self.aspace = instantiate_aspace(settings.ARCHIVESSPACE)
+        self.aspace = instantiate_aspace(settings.ARCHIVESSPACE, repo=False)
 
     @silk_profile()
     def get_ancestors(self, uri):

@@ -27,7 +27,7 @@ class BaseDataFetcher:
             object_status=object_status)
         last_run = last_run_time(self.source, object_status, object_type)
         try:
-            client = self.instantiate_client()
+            client = self.instantiate_client(object_type)
             fetched = getattr(
                 self, "get_{}".format(object_status))(
                 client, object_type, last_run, current_run)
@@ -50,8 +50,9 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
 
-    def instantiate_client(self):
-        return instantiate_aspace(settings.ARCHIVESSPACE)
+    def instantiate_client(self, object_type):
+        repo = True if object_type in ["resource", "archival_object"] else False
+        return instantiate_aspace(settings.ARCHIVESSPACE, repo=repo)
 
     @silk_profile()
     def get_updated(self, aspace, object_type, last_run, current_run):
@@ -115,7 +116,7 @@ class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
     source = FetchRun.CARTOGRAPHER
 
-    def instantiate_client(self):
+    def instantiate_client(self, object_type):
         return instantiate_electronbond(settings.CARTOGRAPHER)
 
     @silk_profile()
