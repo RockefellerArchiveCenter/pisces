@@ -82,7 +82,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         """Returns only archival objects belonging to a published resource."""
         for obj in aspace.repo.archival_objects.with_params(
                 all_ids=True, modified_since=last_run):
-            if obj.resource.publish == publish and obj.resource.id_0.startswith("FA"):
+            if not obj.has_unpublished_ancestor:
                 yield obj
 
     @silk_profile()
