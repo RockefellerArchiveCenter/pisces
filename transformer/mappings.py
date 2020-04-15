@@ -87,7 +87,8 @@ class SourceAncestorToReference(odin.Mapping):
 
     @odin.map_field(from_field="order", to_field="order")
     def order(self, value):
-        return int(value)
+        if value:
+            return int(value)
 
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):

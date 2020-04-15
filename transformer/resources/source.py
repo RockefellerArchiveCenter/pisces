@@ -20,9 +20,9 @@ class SourceAncestor(odin.Resource):
     """
     ref = odin.StringField()
     level = odin.StringField()
-    order = odin.StringField()
-    title = odin.StringField()
-    type = odin.StringField()
+    order = odin.StringField(null=True)
+    title = odin.StringField(null=True)
+    type = odin.StringField(null=True)
 
 
 class SourceRef(odin.Resource):
