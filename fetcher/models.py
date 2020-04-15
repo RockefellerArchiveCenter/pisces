@@ -45,6 +45,12 @@ class FetchRun(models.Model):
     def error_count(self):
         return len(FetchRunError.objects.filter(run=self))
 
+    @property
+    def elapsed(self):
+        if (self.end_time and self.end_time):
+            return self.end_time - self.start_time
+        return 0
+
 
 class FetchRunError(models.Model):
     datetime = models.DateTimeField(auto_now_add=True)
