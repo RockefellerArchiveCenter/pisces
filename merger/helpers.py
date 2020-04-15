@@ -44,15 +44,17 @@ class ArchivesSpaceHelper:
     @silk_profile()
     def get_resource_children(self, uri):
         children = []
-        as_tree = self.aspace.client.get("{}/tree".format(uri.rstrip("/"))).json()
-        for child in as_tree.get("children"):
-            children.append({
-                "title": child["title"],
-                "ref": child["record_uri"],
-                "level": child["level"],
-                "type": "collection" if child["has_children"] else "object",
-                "identifier": child["id"]})
-        return children
+        tree_root = self.aspace.client.get(
+            "{}/tree/root".format(uri.rstrip("/"))).json()
+        for idx in tree_root["precomputed_waypoints"].get(""):
+            for child in tree_root["precomputed_waypoints"].get("")[idx]:
+                children.append({
+                    "title": child["title"],
+                    "ref": child["uri"],
+                    "level": child["level"],
+                    "order": child["position"],
+                    "type": "collection" if child["child_count"] > 0 else "object"})
+            return children
 
     @silk_profile()
     def get_archival_object_children(self, resource_uri, object_uri):
@@ -66,6 +68,5 @@ class ArchivesSpaceHelper:
                     "ref": child["uri"],
                     "level": child["level"],
                     "order": child["position"],
-                    "type": "collection" if child["child_count"] > 0 else "object",
-                    "identifier": child["uri"].rstrip("/").split("/")[-1]})
+                    "type": "collection" if child["child_count"] > 0 else "object"})
         return children
