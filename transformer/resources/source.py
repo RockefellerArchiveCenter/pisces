@@ -80,7 +80,7 @@ class SourceInstance(odin.Resource):
     """The physical or digital instantiation of a group of records."""
     instance_type = odin.StringField(choices=configs.INSTANCE_TYPE_CHOICES)
     is_representative = odin.BooleanField()
-    sub_container = odin.DictAs(SourceSubcontainer)
+    sub_container = odin.DictAs(SourceSubcontainer, null=True)
 
 
 class SourceLinkedAgent(odin.Resource):
