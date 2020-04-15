@@ -43,7 +43,7 @@ class Transformer:
             transformed = self.get_transformed_object(data, from_resource, mapping)
             is_valid(transformed, schema)
             self.save_validated(transformed)
-            return json.dumps(transformed)
+            return transformed
         except ConnectionError:
             raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
         except ValidationError as e:
