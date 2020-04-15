@@ -41,28 +41,10 @@ class ArchivesSpaceHelper:
         tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
         return True if tree_node['child_count'] > 0 else False
 
-    @silk_profile()
-    def get_resource_children(self, uri):
+    def tree_children(self, list, key):
         children = []
-        tree_root = self.aspace.client.get(
-            "{}/tree/root".format(uri.rstrip("/"))).json()
-        for idx in tree_root["precomputed_waypoints"].get(""):
-            for child in tree_root["precomputed_waypoints"].get("")[idx]:
-                children.append({
-                    "title": child["title"],
-                    "ref": child["uri"],
-                    "level": child["level"],
-                    "order": child["position"],
-                    "type": "collection" if child["child_count"] > 0 else "object"})
-            return children
-
-    @silk_profile()
-    def get_archival_object_children(self, resource_uri, object_uri):
-        children = []
-        tree_node = self.aspace.client.get(
-            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
-        for idx in tree_node["precomputed_waypoints"].get(object_uri):
-            for child in tree_node["precomputed_waypoints"].get(object_uri)[idx]:
+        for idx in list["precomputed_waypoints"].get(key):
+            for child in list["precomputed_waypoints"].get(key)[idx]:
                 children.append({
                     "title": child["title"],
                     "ref": child["uri"],
@@ -70,3 +52,15 @@ class ArchivesSpaceHelper:
                     "order": child["position"],
                     "type": "collection" if child["child_count"] > 0 else "object"})
         return children
+
+    @silk_profile()
+    def get_resource_children(self, uri):
+        tree_root = self.aspace.client.get(
+            "{}/tree/root".format(uri.rstrip("/"))).json()
+        return self.tree_children(tree_root, "")
+
+    @silk_profile()
+    def get_archival_object_children(self, resource_uri, object_uri):
+        tree_node = self.aspace.client.get(
+            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
+        return self.tree_children(tree_node, object_uri)
