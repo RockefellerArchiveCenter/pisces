@@ -81,6 +81,7 @@ class SourceInstance(odin.Resource):
     instance_type = odin.StringField(choices=configs.INSTANCE_TYPE_CHOICES)
     is_representative = odin.BooleanField()
     sub_container = odin.DictAs(SourceSubcontainer, null=True)
+    digital_object = odin.DictAs(SourceRef, null=True)
 
 
 class SourceLinkedAgent(odin.Resource):
