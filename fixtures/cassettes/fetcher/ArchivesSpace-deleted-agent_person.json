@@ -4,7 +4,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://192.168.50.7:8089/users/admin/login?expiring=False",
+                "uri": "http://as.dev.rockarch.org:8089/users/admin/login?expiring=False",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -30,34 +30,34 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "3936"
+                    "Date": [
+                        "Wed, 15 Apr 2020 17:08:52 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "Date": [
-                        "Tue, 04 Feb 2020 04:32:03 GMT"
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                    "Content-Length": [
+                        "3936"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"f1f7bdf0674e736c2268bde73ae0dac35fcad8ceb618b05ed3189b4865f6af07\",\"user\":{\"lock_version\":104413,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-02-04T04:32:03Z\",\"user_mtime\":\"2020-02-04T04:32:03Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                    "string": "{\"session\":\"6f64311be35769ce00ab63beebc40dc7b6810951e312c6f63c0dd851feef9693\",\"user\":{\"lock_version\":215263,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-04-15T17:08:53Z\",\"user_mtime\":\"2020-04-15T17:08:53Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.7:8089/version",
+                "uri": "http://as.dev.rockarch.org:8089/version",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -80,11 +80,20 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "22"
+                    "Date": [
+                        "Wed, 15 Apr 2020 17:08:53 GMT"
                     ],
                     "Content-Type": [
                         "text/html;charset=UTF-8"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "22"
                     ],
                     "Cache-Control": [
                         "private, must-revalidate, max-age=0"
@@ -92,17 +101,8 @@
                     "X-XSS-Protection": [
                         "1; mode=block"
                     ],
-                    "Date": [
-                        "Tue, 04 Feb 2020 04:32:03 GMT"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
-                    ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
                     ]
                 },
                 "body": {
@@ -113,11 +113,11 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.7:8089/repositories/2",
+                "uri": "http://192.168.50.27:8000/status/health/",
                 "body": null,
                 "headers": {
                     "User-Agent": [
-                        "ArchivesSnake/0.1"
+                        "ElectronBond/0.1"
                     ],
                     "Accept-Encoding": [
                         "gzip, deflate"
@@ -136,34 +136,37 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "636"
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Date": [
+                        "Wed, 15 Apr 2020 16:51:52 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "Date": [
-                        "Tue, 04 Feb 2020 04:32:03 GMT"
-                    ],
                     "Server": [
-                        "Jetty(8.1.5.v20120716)"
+                        "gunicorn/20.0.4"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                    "Content-Length": [
+                        "85"
+                    ],
+                    "Connection": [
+                        "close"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":1,\"repo_code\":\"RAC\",\"name\":\"Rockefeller Archive Center\",\"org_code\":\"NNttR\",\"url\":\"http://www.rockarch.org\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:20:25Z\",\"system_mtime\":\"2018-12-20T15:00:39Z\",\"user_mtime\":\"2018-12-20T15:00:39Z\",\"publish\":true,\"oai_is_disabled\":false,\"oai_sets_available\":\"[\\\"890\\\",\\\"891\\\",\\\"892\\\",\\\"893\\\",\\\"894\\\",\\\"895\\\",\\\"896\\\",\\\"897\\\",\\\"898\\\",\\\"899\\\",\\\"900\\\"]\",\"slug\":\"rac\",\"is_slug_auto\":true,\"jsonmodel_type\":\"repository\",\"uri\":\"/repositories/2\",\"display_string\":\"Rockefeller Archive Center (RAC)\",\"agent_representation\":{\"ref\":\"/agents/corporate_entities/1\"}}\n"
+                    "string": "{\"ping\": {\"pong\": true}, \"databases\": {\"default\": true}, \"caches\": {\"default\": true}}"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.7:8089/delete-feed?modified_since=1580789737&page=1&page_size=100",
+                "uri": "http://as.dev.rockarch.org:8089/delete-feed?page=1&page_size=100",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -186,34 +189,34 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "58"
+                    "Date": [
+                        "Wed, 15 Apr 2020 17:08:53 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "Date": [
-                        "Tue, 04 Feb 2020 04:32:03 GMT"
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                    "Content-Length": [
+                        "1711"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"results\":[]}\n"
+                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"results\":[\"/repositories/2/collection_management/10525\",\"/repositories/2/collection_management/9153\",\"/revision_statement/4043\",\"/repositories/2/collection_management/10208\",\"/repositories/2/collection_management/10572\",\"/repositories/2/collection_management/10205\",\"/repositories/2/collection_management/10222\",\"/repositories/2/collection_management/10223\",\"/repositories/2/collection_management/10237\",\"/repositories/2/collection_management/10242\",\"/repositories/2/collection_management/10244\",\"/repositories/2/collection_management/10248\",\"/repositories/2/collection_management/10580\",\"/repositories/2/collection_management/10512\",\"/repositories/2/collection_management/10582\",\"/repositories/2/collection_management/10583\",\"/repositories/2/collection_management/10584\",\"/repositories/2/collection_management/10585\",\"/repositories/2/collection_management/10257\",\"/repositories/2/collection_management/10586\",\"/repositories/2/collection_management/10587\",\"/repositories/2/collection_management/10589\",\"/repositories/2/collection_management/10588\",\"/repositories/2/collection_management/10591\",\"/repositories/2/collection_management/10592\",\"/repositories/2/collection_management/10590\",\"/repositories/2/collection_management/10594\",\"/repositories/2/collection_management/10593\",\"/repositories/2/collection_management/10596\",\"/repositories/2/collection_management/10595\",\"/repositories/2/collection_management/10598\",\"/repositories/2/collection_management/10597\",\"/repositories/2/collection_management/10600\",\"/repositories/2/digital_objects/3343\",\"/repositories/2/digital_objects/3342\",\"/repositories/2/digital_objects/3341\",\"/repositories/2/digital_objects/3340\"]}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.7:8089/agents/people?all_ids=True&modified_since=1580789737&page=1&page_size=100",
+                "uri": "http://as.dev.rockarch.org:8089/agents/people?all_ids=True&page=1&page_size=100",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -236,27 +239,27 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "68"
+                    "Date": [
+                        "Wed, 15 Apr 2020 17:08:54 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "Date": [
-                        "Tue, 04 Feb 2020 04:32:04 GMT"
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                    "Content-Length": [
+                        "17171"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"total\":0,\"results\":[]}\n"
+                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"total\":8,\"results\":[{\"lock_version\":15,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"k.martin\",\"create_time\":\"2014-12-06T02:40:44Z\",\"system_mtime\":\"2020-03-02T15:27:15Z\",\"user_mtime\":\"2019-10-17T18:08:33Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Inglis\",\"created_by\":\"k.martin\",\"last_modified_by\":\"k.martin\",\"create_time\":\"2019-10-17T18:08:33Z\",\"system_mtime\":\"2019-10-17T18:08:33Z\",\"user_mtime\":\"2019-10-17T18:08:33Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Inglis\",\"rest_of_name\":\"William O.\",\"sort_name\":\"Inglis, William O.\",\"sort_name_auto_generate\":true,\"created_by\":\"k.martin\",\"last_modified_by\":\"k.martin\",\"create_time\":\"2019-10-17T18:08:33Z\",\"system_mtime\":\"2019-10-17T18:08:33Z\",\"user_mtime\":\"2019-10-17T18:08:33Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/56\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Inglis\",\"rest_of_name\":\"William O.\",\"sort_name\":\"Inglis, William O.\",\"sort_name_auto_generate\":true,\"created_by\":\"k.martin\",\"last_modified_by\":\"k.martin\",\"create_time\":\"2019-10-17T18:08:33Z\",\"system_mtime\":\"2019-10-17T18:08:33Z\",\"user_mtime\":\"2019-10-17T18:08:33Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Inglis, William O.\"},{\"lock_version\":118,\"publish\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-26T18:32:46Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2015-08-26T18:32:46Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Rockefeller, John D. (John Davison)\",\"sort_name\":\"Rockefeller, John D. (John Davison)\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-26T18:32:46Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2015-08-26T18:32:46Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/9172\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Rockefeller, John D. (John Davison)\",\"sort_name\":\"Rockefeller, John D. (John Davison)\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-26T18:32:46Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2015-08-26T18:32:46Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Rockefeller, John D. (John Davison)\"},{\"lock_version\":16,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"dyoung\",\"create_time\":\"2014-12-06T02:40:45Z\",\"system_mtime\":\"2020-03-31T19:11:58Z\",\"user_mtime\":\"2019-10-22T15:45:30Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Berlin\",\"created_by\":\"dyoung\",\"last_modified_by\":\"dyoung\",\"create_time\":\"2019-10-22T15:45:30Z\",\"system_mtime\":\"2019-10-22T15:45:30Z\",\"user_mtime\":\"2019-10-22T15:45:30Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[{\"lock_version\":0,\"expression\":\"1917-1962\",\"begin\":\"1917\",\"end\":\"1962\",\"created_by\":\"dyoung\",\"last_modified_by\":\"dyoung\",\"create_time\":\"2019-10-22T15:45:30Z\",\"system_mtime\":\"2019-10-22T15:45:30Z\",\"user_mtime\":\"2019-10-22T15:45:30Z\",\"date_type\":\"range\",\"label\":\"existence\",\"jsonmodel_type\":\"date\"}],\"names\":[{\"lock_version\":0,\"primary_name\":\"Berlin\",\"rest_of_name\":\"Theodore H.\",\"sort_name\":\"Berlin, Theodore H.\",\"sort_name_auto_generate\":true,\"created_by\":\"dyoung\",\"last_modified_by\":\"dyoung\",\"create_time\":\"2019-10-22T15:45:30Z\",\"system_mtime\":\"2019-10-22T15:45:30Z\",\"user_mtime\":\"2019-10-22T15:45:30Z\",\"authorized\":true,\"is_display_name\":true,\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/59\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Berlin\",\"rest_of_name\":\"Theodore H.\",\"sort_name\":\"Berlin, Theodore H.\",\"sort_name_auto_generate\":true,\"created_by\":\"dyoung\",\"last_modified_by\":\"dyoung\",\"create_time\":\"2019-10-22T15:45:30Z\",\"system_mtime\":\"2019-10-22T15:45:30Z\",\"user_mtime\":\"2019-10-22T15:45:30Z\",\"authorized\":true,\"is_display_name\":true,\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Berlin, Theodore H.\"},{\"lock_version\":6,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2020-04-08T17:37:19Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Dodge\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"existence\",\"jsonmodel_type\":\"date\"}],\"names\":[{\"lock_version\":0,\"primary_name\":\"Dodge\",\"rest_of_name\":\"Geraldine R. (Geraldine Rockefeller)\",\"sort_name\":\"Dodge, Geraldine R. (Geraldine Rockefeller)\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},{\"lock_version\":0,\"primary_name\":\"Dodge\",\"rest_of_name\":\"Ethel Geraldine Rockefeller\",\"sort_name\":\"Dodge, Ethel Geraldine Rockefeller\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"usage\",\"jsonmodel_type\":\"date\"}],\"authorized\":false,\"is_display_name\":false},{\"lock_version\":0,\"primary_name\":\"Dodge\",\"rest_of_name\":\"Gerrie\",\"sort_name\":\"Dodge, Gerrie\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"usage\",\"jsonmodel_type\":\"date\"}],\"authorized\":false,\"is_display_name\":false},{\"lock_version\":0,\"primary_name\":\"Rockefeller\",\"rest_of_name\":\"Ethel Geraldine\",\"sort_name\":\"Rockefeller, Ethel Geraldine\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"usage\",\"jsonmodel_type\":\"date\"}],\"authorized\":false,\"is_display_name\":false},{\"lock_version\":0,\"primary_name\":\"Rockefeller\",\"rest_of_name\":\"Geraldine\",\"sort_name\":\"Rockefeller, Geraldine\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"usage\",\"jsonmodel_type\":\"date\"}],\"authorized\":false,\"is_display_name\":false},{\"lock_version\":0,\"primary_name\":\"Rockefeller\",\"rest_of_name\":\"Gerrie\",\"sort_name\":\"Rockefeller, Gerrie\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[{\"lock_version\":0,\"begin\":\"1882\",\"end\":\"1973\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2014-12-06T02:40:58Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"date_type\":\"inclusive\",\"label\":\"usage\",\"jsonmodel_type\":\"date\"}],\"authorized\":false,\"is_display_name\":false}],\"related_agents\":[],\"uri\":\"/agents/people/133\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Dodge\",\"rest_of_name\":\"Geraldine R. (Geraldine Rockefeller)\",\"sort_name\":\"Dodge, Geraldine R. (Geraldine Rockefeller)\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:58Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2014-12-06T02:40:58Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Dodge, Geraldine R. (Geraldine Rockefeller)\"},{\"lock_version\":8,\"publish\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-11-09T17:57:56Z\",\"system_mtime\":\"2020-04-08T17:37:19Z\",\"user_mtime\":\"2015-11-09T17:57:56Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Rockefeller\",\"rest_of_name\":\"William\",\"sort_name\":\"Rockefeller, William\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-11-09T17:57:56Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2015-11-09T17:57:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/9214\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Rockefeller\",\"rest_of_name\":\"William\",\"sort_name\":\"Rockefeller, William\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-11-09T17:57:56Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2015-11-09T17:57:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Rockefeller, William\"},{\"lock_version\":4,\"publish\":true,\"created_by\":\"fitcha\",\"last_modified_by\":\"fitcha\",\"create_time\":\"2019-10-28T15:21:03Z\",\"system_mtime\":\"2020-04-08T17:37:19Z\",\"user_mtime\":\"2019-10-28T15:21:03Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"McAlpin\",\"rest_of_name\":\"Emma Rockefeller\",\"sort_name\":\"McAlpin, Emma Rockefeller\",\"sort_name_auto_generate\":true,\"created_by\":\"fitcha\",\"last_modified_by\":\"fitcha\",\"create_time\":\"2019-10-28T15:21:03Z\",\"system_mtime\":\"2019-10-28T15:21:03Z\",\"user_mtime\":\"2019-10-28T15:21:03Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/23555\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"McAlpin\",\"rest_of_name\":\"Emma Rockefeller\",\"sort_name\":\"McAlpin, Emma Rockefeller\",\"sort_name_auto_generate\":true,\"created_by\":\"fitcha\",\"last_modified_by\":\"fitcha\",\"create_time\":\"2019-10-28T15:21:03Z\",\"system_mtime\":\"2019-10-28T15:21:03Z\",\"user_mtime\":\"2019-10-28T15:21:03Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"McAlpin, Emma Rockefeller\"},{\"lock_version\":79,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:41:36Z\",\"system_mtime\":\"2020-04-08T18:19:11Z\",\"user_mtime\":\"2014-12-06T02:41:36Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Steinman\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:41:36Z\",\"system_mtime\":\"2014-12-06T02:41:36Z\",\"user_mtime\":\"2014-12-06T02:41:36Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Steinman\",\"rest_of_name\":\"Ralph M.\",\"sort_name\":\"Steinman, Ralph M.\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:41:36Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2014-12-06T02:41:36Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/324\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Steinman\",\"rest_of_name\":\"Ralph M.\",\"sort_name\":\"Steinman, Ralph M.\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:41:36Z\",\"system_mtime\":\"2017-08-22T15:44:45Z\",\"user_mtime\":\"2014-12-06T02:41:36Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Steinman, Ralph M.\"},{\"lock_version\":10,\"publish\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2016-07-07T20:39:30Z\",\"system_mtime\":\"2020-04-08T18:33:01Z\",\"user_mtime\":\"2016-07-07T20:39:30Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_person\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Kramer\",\"rest_of_name\":\"Edward\",\"sort_name\":\"Kramer, Edward\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2016-07-07T20:39:30Z\",\"system_mtime\":\"2016-07-07T20:39:30Z\",\"user_mtime\":\"2016-07-07T20:39:30Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"ingest\",\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/people/22730\",\"agent_type\":\"agent_person\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Kramer\",\"rest_of_name\":\"Edward\",\"sort_name\":\"Kramer, Edward\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2016-07-07T20:39:30Z\",\"system_mtime\":\"2016-07-07T20:39:30Z\",\"user_mtime\":\"2016-07-07T20:39:30Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"ingest\",\"rules\":\"dacs\",\"name_order\":\"inverted\",\"jsonmodel_type\":\"name_person\",\"use_dates\":[]},\"title\":\"Kramer, Edward\"}]}\n"
                 }
             }
         }
