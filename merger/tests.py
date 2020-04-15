@@ -82,23 +82,3 @@ class MergerTest(TestCase):
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
-
-    # def test_merge_views(self):
-    #     """Tests MergeView."""
-    #     for object_type, merger, _ in object_types:
-    #         with merger_vcr.use_cassette("{}-merge.json".format(object_type)) as cass:
-    #             transform_count = 0
-    #             for f in os.listdir(os.path.join("fixtures", "merger", object_type)):
-    #                 with open(os.path.join("fixtures", "merger", object_type, f), "r") as json_file:
-    #                     source = json.load(json_file)
-    #                     request = self.factory.post(
-    #                         reverse("merge"),
-    #                         data={"object_type": object_type, "object": source},
-    #                         format="json")
-    #                     response = MergeView().as_view()(request)
-    #                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
-    #                     transform_count += 1
-    #             transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
-    #             self.assertEqual(
-    #                 transform_requests, transform_count,
-    #                 "Transform service should have been called {}, was called {}".format(transform_count, transform_requests))
