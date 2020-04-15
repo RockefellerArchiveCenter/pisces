@@ -37,29 +37,6 @@ def last_run_time(source, object_status, object_type):
 
 
 @silk_profile()
-def send_post_request(url, data, current_run=None):
-    """Sends a POST request to a specified URL with a JSON payload.
-
-    Args:
-        url (str): the URL to which to send the POST request.
-        data (dict): a data payload
-        current_run (FetchRun): the current FetchRun instance.
-    """
-    try:
-        resp = requests.post(url, json=data)
-        resp.raise_for_status()
-        return True
-    except requests.exceptions.HTTPError:
-        if current_run:
-            FetchRunError.objects.create(
-                run=current_run,
-                message=resp.json()["detail"],
-            )
-        else:
-            raise Exception(resp.json()["detail"])
-
-
-@silk_profile()
 def instantiate_aspace(self, config=None, repo=False):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
@@ -119,7 +96,16 @@ def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
     es_id = get_es_id(uri, source, object_type)
     if es_id:
-        delivered = send_post_request(settings.INDEX_DELETE_URL, es_id, current_run)
-        if delivered:
-            updated = uri
+        try:
+            resp = requests.post(settings.INDEX_DELETE_URL, json=es_id)
+            resp.raise_for_status()
+            updated = es_id
+        except requests.exceptions.HTTPError:
+            if current_run:
+                FetchRunError.objects.create(
+                    run=current_run,
+                    message=resp.json()["detail"],
+                )
+        else:
+            raise Exception(resp.json()["detail"])
     return updated
