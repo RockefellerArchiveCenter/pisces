@@ -19,8 +19,7 @@ from fetcher.views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                            CartographerDeletesView, CartographerUpdatesView,
                            FetchRunViewSet)
 from rest_framework.schemas import get_schema_view
-from transformer.views import (DataObjectUpdateByIdView, DataObjectViewSet,
-                               TransformView)
+from transformer.views import DataObjectUpdateByIdView, DataObjectViewSet
 
 from .routers import PiscesRouter
 
@@ -40,7 +39,6 @@ urlpatterns = [
     re_path(r'^fetch/archivesspace/deletes/$', ArchivesSpaceDeletesView.as_view(), name='fetch-archivesspace-deletes'),
     re_path(r'^fetch/cartographer/updates/$', CartographerUpdatesView.as_view(), name='fetch-cartographer-updates'),
     re_path(r'^fetch/cartographer/deletes/$', CartographerDeletesView.as_view(), name='fetch-cartographer-deletes'),
-    re_path(r'^transform/$', TransformView.as_view(), name='transform'),
     re_path(r'^index-complete/$', DataObjectUpdateByIdView.as_view(), name='index-action-complete'),
     re_path(r'^silk/', include('silk.urls', namespace='silk')),
     path('status/', include('health_check.api.urls')),

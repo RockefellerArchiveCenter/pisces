@@ -32,9 +32,8 @@ class TransformerTest(TestCase):
                     self.assertNotEqual(
                         transformed, False,
                         "Transformer returned an error: {}".format(transformed))
-                    transformed_data = json.loads(transformed)
-                    self.check_list_counts(source, transformed_data, object_type)
-                    self.check_agent_counts(source, transformed_data)
+                    self.check_list_counts(source, transformed, object_type)
+                    self.check_agent_counts(source, transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
