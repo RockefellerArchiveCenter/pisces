@@ -20,6 +20,9 @@ class SourceAncestor(odin.Resource):
     """
     ref = odin.StringField()
     level = odin.StringField()
+    order = odin.StringField(null=True)
+    title = odin.StringField(null=True)
+    type = odin.StringField(null=True)
 
 
 class SourceRef(odin.Resource):
@@ -77,7 +80,8 @@ class SourceInstance(odin.Resource):
     """The physical or digital instantiation of a group of records."""
     instance_type = odin.StringField(choices=configs.INSTANCE_TYPE_CHOICES)
     is_representative = odin.BooleanField()
-    sub_container = odin.DictAs(SourceSubcontainer)
+    sub_container = odin.DictAs(SourceSubcontainer, null=True)
+    digital_object = odin.DictAs(SourceRef, null=True)
 
 
 class SourceLinkedAgent(odin.Resource):

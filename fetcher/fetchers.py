@@ -1,10 +1,13 @@
 from django.utils import timezone
+from merger.mergers import (AgentMerger, ArchivalObjectMerger,
+                            ArrangementMapMerger, ResourceMerger,
+                            SubjectMerger)
 from pisces import settings
 from silk.profiling.profiler import silk_profile
+from transformer.transformers import Transformer
 
 from .helpers import (handle_deleted_uri, instantiate_aspace,
-                      instantiate_electronbond, last_run_time,
-                      send_post_request)
+                      instantiate_electronbond, last_run_time)
 from .models import FetchRun, FetchRunError
 
 
@@ -26,48 +29,65 @@ class BaseDataFetcher:
             object_type=object_type,
             object_status=object_status)
         last_run = last_run_time(self.source, object_status, object_type)
+        clients = self.instantiate_clients(object_type)
+        processed = []
+        merger = self.get_merger(object_type)
         try:
-            client = self.instantiate_client(object_type)
             fetched = getattr(
                 self, "get_{}".format(object_status))(
-                client, object_type, last_run, current_run)
-            current_run.status = FetchRun.FINISHED
-            current_run.end_time = timezone.now()
-            current_run.save()
-            return fetched
+                clients, object_type, last_run, current_run)
         except Exception as e:
             current_run.status = FetchRun.ERRORED
             current_run.end_time = timezone.now()
             current_run.save()
             FetchRunError.objects.create(
                 run=current_run,
-                message=str(e),
+                message="Error fetching data: {}".format(e),
             )
-            raise FetcherError("Error fetching data: {}".format(e))
+            raise FetcherError(e)
+        for obj in fetched:
+            try:
+                merged = merger(clients).merge(object_type, obj.json())
+                Transformer().run(object_type, merged)
+                processed.append(merged.get("uri"))
+            except Exception as e:
+                FetchRunError.objects.create(run=current_run, message=str(e))
+        current_run.status = FetchRun.FINISHED
+        current_run.end_time = timezone.now()
+        current_run.save()
+        return processed
+
+    def instantiate_clients(self, object_type):
+        repo = True if object_type in ["resource", "archival_object"] else False
+        return {
+            "aspace": instantiate_aspace(settings.ARCHIVESSPACE, repo=repo),
+            "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
+        }
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
 
-    def instantiate_client(self, object_type):
-        repo = True if object_type in ["resource", "archival_object"] else False
-        return instantiate_aspace(settings.ARCHIVESSPACE, repo=repo)
+    def get_merger(self, object_type):
+        MERGERS = {
+            "resource": ResourceMerger,
+            "archival_object": ArchivalObjectMerger,
+            "subject": SubjectMerger,
+            "agent_person": AgentMerger,
+            "agent_corporate_entity": AgentMerger,
+            "agent_family": AgentMerger,
+        }
+        return MERGERS[object_type]
 
     @silk_profile()
-    def get_updated(self, aspace, object_type, last_run, current_run):
-        data = []
-        for u in self.updated_list(aspace, object_type, last_run, True):
-            delivered = send_post_request(
-                settings.MERGE_URL,
-                {"object_type": object_type, "object": u.json()}, current_run)
-            if delivered:
-                data.append(u.uri)
-        return data
+    def get_updated(self, clients, object_type, last_run, current_run):
+        return self.updated_list(clients["aspace"], object_type, last_run, True)
 
     @silk_profile()
-    def get_deleted(self, aspace, object_type, last_run, current_run):
+    def get_deleted(self, clients, object_type, last_run, current_run):
         data = []
+        aspace = clients["aspace"]
         for d in self.deleted_list(aspace, object_type, last_run):
             updated = handle_deleted_uri(d, self.source, object_type, current_run)
             if updated:
@@ -128,28 +148,21 @@ class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
     source = FetchRun.CARTOGRAPHER
 
-    def instantiate_client(self, object_type):
-        return instantiate_electronbond(settings.CARTOGRAPHER)
+    def get_merger(self, object_type):
+        return ArrangementMapMerger
 
     @silk_profile()
-    def get_updated(self, client, object_type, last_run, current_run):
-        data = []
-        for component in self.updated_list(client, last_run, True):
-            delivered = send_post_request(
-                settings.MERGE_URL,
-                {"object_type": object_type, "object": component}, current_run)
-            if delivered:
-                data.append(component.get('ref'))
-        return data
+    def get_updated(self, clients, object_type, last_run, current_run):
+        return self.updated_list(clients["cartographer"], last_run, True)
 
     @silk_profile()
-    def get_deleted(self, client, object_type, last_run, current_run):
+    def get_deleted(self, clients, object_type, last_run, current_run):
         data = []
-        for component in self.updated_list(client, last_run, False):
+        for component in self.updated_list(clients["cartographer"], last_run, False):
             updated = handle_deleted_uri(component.get("ref"), self.source, object_type, current_run)
             if updated:
                 data.append(updated)
-        for uri in self.deleted_list(client, last_run):
+        for uri in self.deleted_list(clients["cartographer"], last_run):
             updated = handle_deleted_uri(uri, self.source, object_type, current_run)
             if updated:
                 data.append(updated)

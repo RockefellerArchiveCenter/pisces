@@ -1,7 +1,3 @@
-import json
-
-from fetcher.helpers import instantiate_electronbond, send_post_request
-from pisces import settings
 from silk.profiling.profiler import silk_profile
 
 from .helpers import ArchivesSpaceHelper
@@ -14,10 +10,10 @@ class MergeError(Exception):
 class BaseMerger:
     """Base merger class."""
 
-    def __init__(self):
+    def __init__(self, clients):
         try:
-            self.aspace_helper = ArchivesSpaceHelper()
-            self.cartographer_client = instantiate_electronbond(settings.CARTOGRAPHER)
+            self.aspace_helper = ArchivesSpaceHelper(clients["aspace"])
+            self.cartographer_client = clients["cartographer"]
         except Exception as e:
             raise MergeError(e)
 
@@ -31,12 +27,9 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            merged = self.combine_data(object, additional_data) if additional_data else object
-            send_post_request(
-                settings.TRANSFORM_URL,
-                {"object_type": target_object_type, "object": merged})
-            return json.dumps(merged)
+            return self.combine_data(object, additional_data) if additional_data else object
         except Exception as e:
+            print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))
 
     def get_identifier(self, object):
@@ -58,7 +51,7 @@ class BaseMerger:
         without.
         """
         if data.get("jsonmodel_type") == "archival_object":
-            if ArchivesSpaceHelper().has_children(data['uri']):
+            if self.aspace_helper.has_children(data["uri"]):
                 return "archival_object_collection"
         return data.get("jsonmodel_type")
 
@@ -87,7 +80,8 @@ class ArchivalObjectMerger(BaseMerger):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
         data = {"ancestors": []}
-        resp = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
+        resp = self.cartographer_client.get(
+            "/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
             for a in resp["results"][0].get("ancestors"):
                 a["type"] = "collection"
@@ -98,8 +92,10 @@ class ArchivalObjectMerger(BaseMerger):
     def get_archival_object_collection_data(self, object):
         """Gets additional data for archival_object_collections."""
         data = {"children": []}
-        data["linked_agents"] = data.get("linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
-        data["children"] = self.aspace_helper.get_archival_object_children(object['resource']['ref'], object["uri"])
+        data["linked_agents"] = data.get(
+            "linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
+        data["children"] = self.aspace_helper.get_archival_object_children(
+            object["resource"]["ref"], object["uri"])
         return data
 
     @silk_profile()
@@ -109,10 +105,12 @@ class ArchivalObjectMerger(BaseMerger):
         This logic accomodates ArchivesSpace API changes between 2.6 and 2.7.
         """
         if "lang_materials" in object:
-            if object.get("lang_materials") in ['', [], {}]:
-                data["lang_materials"] = self.aspace_helper.closest_parent_value(object["uri"], "lang_materials")
+            if object.get("lang_materials") in ["", [], {}]:
+                data["lang_materials"] = self.aspace_helper.closest_parent_value(
+                    object["uri"], "lang_materials")
         else:
-            data["language"] = self.aspace_helper.closest_parent_value(object["uri"], "language")
+            data["language"] = self.aspace_helper.closest_parent_value(
+                object["uri"], "language")
         return data
 
     @silk_profile()
@@ -123,7 +121,7 @@ class ArchivalObjectMerger(BaseMerger):
         data = {"linked_agents": [], "children": []}
         fields = ["dates"] if object_type == "archival_object" else ["dates", "extents"]
         for field in fields:
-            if object.get(field) in ['', [], {}, None]:
+            if object.get(field) in ["", [], {}, None]:
                 value = self.aspace_helper.closest_parent_value(object["uri"], field)
                 data[field] = value
         data = self.get_language_data(object, data)
@@ -202,7 +200,8 @@ class ResourceMerger(BaseMerger):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
         data = {"ancestors": []}
-        cartographer_data = self.cartographer_client.get("/api/find-by-uri/", params={"uri": object["uri"]}).json()
+        cartographer_data = self.cartographer_client.get(
+            "/api/find-by-uri/", params={"uri": object["uri"]}).json()
         if cartographer_data["count"] > 0:
             data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
         return data

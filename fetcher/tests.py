@@ -4,7 +4,6 @@ import vcr
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
-from pisces import settings
 from rest_framework.test import APIRequestFactory
 
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
@@ -35,7 +34,7 @@ cartographer_vcr = vcr.VCR(
 class FetcherTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
-        time = datetime(2020, 2, 28)
+        time = datetime(2020, 3, 1)
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
             for object_type, _ in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 f = FetchRun.objects.create(
@@ -53,13 +52,11 @@ class FetcherTest(TestCase):
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
-                    with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)) as cass:
+                    with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
                         list = fetcher().fetch(status, object_type)
+                        print(object_type, list)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
-                        self.assertEqual(
-                            len([r for r in cass.requests if r.uri in [settings.MERGE_URL, settings.INDEX_DELETE_URL]]),
-                            len(list))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
             self.assertEqual(len(FetchRunError.objects.all()), 0)
 

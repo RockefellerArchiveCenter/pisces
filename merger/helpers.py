@@ -4,8 +4,8 @@ from silk.profiling.profiler import silk_profile
 
 
 class ArchivesSpaceHelper:
-    def __init__(self):
-        self.aspace = instantiate_aspace(settings.ARCHIVESSPACE, repo=False)
+    def __init__(self, aspace):
+        self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE, repo=False)
 
     @silk_profile()
     def get_ancestors(self, uri):
@@ -41,31 +41,26 @@ class ArchivesSpaceHelper:
         tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
         return True if tree_node['child_count'] > 0 else False
 
-    @silk_profile()
-    def get_resource_children(self, uri):
+    def tree_children(self, list, key):
         children = []
-        as_tree = self.aspace.client.get("{}/tree".format(uri.rstrip("/"))).json()
-        for child in as_tree.get("children"):
-            children.append({
-                "title": child["title"],
-                "ref": child["record_uri"],
-                "level": child["level"],
-                "type": "collection" if child["has_children"] else "object",
-                "identifier": child["id"]})
-        return children
-
-    @silk_profile()
-    def get_archival_object_children(self, resource_uri, object_uri):
-        children = []
-        tree_node = self.aspace.client.get(
-            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
-        for idx in tree_node["precomputed_waypoints"].get(object_uri):
-            for child in tree_node["precomputed_waypoints"].get(object_uri)[idx]:
+        for idx in list["precomputed_waypoints"].get(key):
+            for child in list["precomputed_waypoints"].get(key)[idx]:
                 children.append({
                     "title": child["title"],
                     "ref": child["uri"],
                     "level": child["level"],
                     "order": child["position"],
-                    "type": "collection" if child["child_count"] > 0 else "object",
-                    "identifier": child["uri"].rstrip("/").split("/")[-1]})
+                    "type": "collection" if child["child_count"] > 0 else "object"})
         return children
+
+    @silk_profile()
+    def get_resource_children(self, uri):
+        tree_root = self.aspace.client.get(
+            "{}/tree/root".format(uri.rstrip("/"))).json()
+        return self.tree_children(tree_root, "")
+
+    @silk_profile()
+    def get_archival_object_children(self, resource_uri, object_uri):
+        tree_node = self.aspace.client.get(
+            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
+        return self.tree_children(tree_node, object_uri)

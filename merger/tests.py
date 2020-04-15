@@ -3,13 +3,11 @@ import os
 
 import vcr
 from django.test import TestCase
-from django.urls import reverse
-from pisces import settings
+from fetcher.fetchers import BaseDataFetcher
 from rest_framework.test import APIRequestFactory
 
 from .mergers import (AgentMerger, ArchivalObjectMerger, ArrangementMapMerger,
                       ResourceMerger, SubjectMerger)
-from .views import MergeView
 
 merger_vcr = vcr.VCR(
     serializer='json',
@@ -41,23 +39,19 @@ class MergerTest(TestCase):
     def test_merge(self):
         """Tests Merge."""
         for source_object_type, merger, target_object_types in object_types:
-            with merger_vcr.use_cassette("{}-merge.json".format(source_object_type)) as cass:
+            with merger_vcr.use_cassette("{}-merge.json".format(source_object_type)):
                 transform_count = 0
+                clients = BaseDataFetcher().instantiate_clients(source_object_type)
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged = merger().merge(source_object_type, source)
+                        merged = merger(clients).merge(source_object_type, source)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
-                        merged_data = json.loads(merged)
                         transform_count += 1
-                        self.assertTrue(merged_data.get("jsonmodel_type") in target_object_types)
-                        self.check_counts(source, source_object_type, merged_data, merged_data.get("jsonmodel_type"))
-                transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
-                self.assertEqual(
-                    transform_requests, transform_count,
-                    "Transform service should have been called {}, was called {}".format(transform_count, transform_requests))
+                        self.assertTrue(merged.get("jsonmodel_type") in target_object_types)
+                        self.check_counts(source, source_object_type, merged, merged.get("jsonmodel_type"))
 
     def check_counts(self, source, source_object_type, merged, target_object_type):
         """Tests counts of data keys in merged object.
@@ -88,23 +82,3 @@ class MergerTest(TestCase):
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
-
-    def test_merge_views(self):
-        """Tests MergeView."""
-        for object_type, merger, _ in object_types:
-            with merger_vcr.use_cassette("{}-merge.json".format(object_type)) as cass:
-                transform_count = 0
-                for f in os.listdir(os.path.join("fixtures", "merger", object_type)):
-                    with open(os.path.join("fixtures", "merger", object_type, f), "r") as json_file:
-                        source = json.load(json_file)
-                        request = self.factory.post(
-                            reverse("merge"),
-                            data={"object_type": object_type, "object": source},
-                            format="json")
-                        response = MergeView().as_view()(request)
-                        self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
-                        transform_count += 1
-                transform_requests = len([r for r in cass.requests if r.uri == settings.TRANSFORM_URL])
-                self.assertEqual(
-                    transform_requests, transform_count,
-                    "Transform service should have been called {}, was called {}".format(transform_count, transform_requests))
