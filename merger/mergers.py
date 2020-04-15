@@ -1,7 +1,3 @@
-import json
-
-from fetcher.helpers import instantiate_electronbond, send_post_request
-from pisces import settings
 from silk.profiling.profiler import silk_profile
 
 from .helpers import ArchivesSpaceHelper
@@ -14,10 +10,10 @@ class MergeError(Exception):
 class BaseMerger:
     """Base merger class."""
 
-    def __init__(self):
+    def __init__(self, clients):
         try:
-            self.aspace_helper = ArchivesSpaceHelper()
-            self.cartographer_client = instantiate_electronbond(settings.CARTOGRAPHER)
+            self.aspace_helper = ArchivesSpaceHelper(clients["aspace"])
+            self.cartographer_client = clients["cartographer"]
         except Exception as e:
             raise MergeError(e)
 
@@ -31,12 +27,9 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            merged = self.combine_data(object, additional_data) if additional_data else object
-            send_post_request(
-                settings.TRANSFORM_URL,
-                {"object_type": target_object_type, "object": merged})
-            return json.dumps(merged)
+            return self.combine_data(object, additional_data) if additional_data else object
         except Exception as e:
+            print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))
 
     def get_identifier(self, object):
@@ -58,7 +51,7 @@ class BaseMerger:
         without.
         """
         if data.get("jsonmodel_type") == "archival_object":
-            if ArchivesSpaceHelper().has_children(data['uri']):
+            if self.aspace_helper.has_children(data['uri']):
                 return "archival_object_collection"
         return data.get("jsonmodel_type")
 
