@@ -1,4 +1,5 @@
 from django.contrib.postgres.fields import JSONField
+from django.contrib.postgres.indexes import GinIndex
 from django.db import models
 from silk.profiling.profiler import silk_profile
 
@@ -17,13 +18,19 @@ class DataObject(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        indexes = [
+            GinIndex(
+                fields=['data'],
+                name='data_gin',
+            ),
+        ]
+
     @classmethod
     @silk_profile()
-    def find_matches(self, source, identifier, initial_queryset=None):
-        matches = []
-        initial_queryset = initial_queryset if initial_queryset else self.objects.all()
-        for obj in initial_queryset:
-            for id_obj in obj.data['external_identifiers']:
-                if (id_obj['source'] == source and id_obj['identifier'] == identifier):
-                    matches.append(obj)
-        return matches
+    def find_matches(self, object_type, source, identifier):
+        return DataObject.objects.filter(
+            object_type=object_type,
+            data__external_identifiers__contains=[
+                {"source": source, "identifier": identifier}
+            ])

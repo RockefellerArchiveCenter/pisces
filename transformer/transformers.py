@@ -43,6 +43,7 @@ class Transformer:
             transformed = self.get_transformed_object(data, from_resource, mapping)
             is_valid(transformed, schema)
             self.save_validated(transformed)
+            print(self.identifier)
             return transformed
         except ConnectionError:
             raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
@@ -88,11 +89,8 @@ class Transformer:
 
     @silk_profile()
     def save_validated(self, data):
-        initial_queryset = DataObject.objects.filter(object_type=data["type"])
         for ident in data["external_identifiers"]:
-            matches = DataObject.find_matches(
-                ident["source"], ident["identifier"],
-                initial_queryset=initial_queryset)
+            matches = DataObject.find_matches(data["type"], ident["source"], ident["identifier"])
             if len(matches) > 1:
                 raise Exception(
                     "Too many matches were found for {}".format(ident["identifier"]))
