@@ -83,11 +83,10 @@ def instantiate_electronbond(self, config=None):
 @silk_profile()
 def get_es_id(identifier, source, object_type):
     es_id = None
-    initial_queryset = DataObject.objects.filter(object_type=object_type)
-    matches = DataObject.find_matches(source, identifier, initial_queryset=initial_queryset)
+    matches = DataObject.find_matches(object_type, source, identifier)
     for match in matches:
         if match.indexed:
-            es_id = match.es_ids
+            es_id = match.es_id
     return es_id
 
 
