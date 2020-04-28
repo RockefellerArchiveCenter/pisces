@@ -42,6 +42,10 @@ class FetchRun(models.Model):
     object_status = models.CharField(max_length=100, choices=OBJECT_STATUS_CHOICES)
 
     @property
+    def errors(self):
+        return FetchRunError.objects.filter(run=self)
+
+    @property
     def error_count(self):
         return len(FetchRunError.objects.filter(run=self))
 

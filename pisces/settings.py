@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'merger',
     'transformer',
     'silk',
+    'django_cron',
 ]
 
 MIDDLEWARE = [
@@ -132,6 +133,12 @@ REST_FRAMEWORK = {
 
 # Silk Profiling
 SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER
+
+# Django cron settings
+CRON_CLASSES = [
+    "fetcher.cron.FetchAgents",
+]
+DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
 
 ARCHIVESSPACE = CF.ARCHIVESSPACE
 CARTOGRAPHER = CF.CARTOGRAPHER

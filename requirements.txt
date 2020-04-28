@@ -10,6 +10,7 @@ chardet==3.0.4
 clinner==1.12.3
 colorlog==4.0
 Django==2.2.10
+django-cron==0.5.1
 django-silk==4.0.0
 djangorestframework==3.11.0
 ElectronBonder==0.5

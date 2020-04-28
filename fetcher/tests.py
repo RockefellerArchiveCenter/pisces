@@ -6,6 +6,11 @@ from django.urls import reverse
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
+from .cron import (UpdatedArchivesSpaceArchivalObjects,
+                   UpdatedArchivesSpaceFamilies,
+                   UpdatedArchivesSpaceOrganizations,
+                   UpdatedArchivesSpacePeople, UpdatedArchivesSpaceResources,
+                   UpdatedArchivesSpaceSubjects)
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
 from .models import FetchRun, FetchRunError
@@ -54,7 +59,6 @@ class FetcherTest(TestCase):
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
                         list = fetcher().fetch(status, object_type)
-                        print(object_type, list)
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
@@ -87,3 +91,14 @@ class FetcherTest(TestCase):
                         end_time=time)
                     updated_last_run = last_run_time(source, object_status, object)
                     self.assertEqual(updated_last_run, int(time.timestamp()))
+
+    def test_cron(self):
+        for fetcher_vcr, cassette, cron, in [
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_corporate_entity.json", UpdatedArchivesSpaceOrganizations),
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_family.json", UpdatedArchivesSpaceFamilies),
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_person.json", UpdatedArchivesSpacePeople),
+                (archivesspace_vcr, "ArchivesSpace-updated-subject.json", UpdatedArchivesSpaceSubjects),
+                (archivesspace_vcr, "ArchivesSpace-updated-resource.json", UpdatedArchivesSpaceResources),
+                (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects)]:
+            with fetcher_vcr.use_cassette(cassette):
+                cron().do()
