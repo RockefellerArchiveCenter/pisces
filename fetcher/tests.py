@@ -6,11 +6,18 @@ from django.urls import reverse
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from .cron import (UpdatedArchivesSpaceArchivalObjects,
+from .cron import (DeletedArchivesSpaceArchivalObjects,
+                   DeletedArchivesSpaceFamilies,
+                   DeletedArchivesSpaceOrganizations,
+                   DeletedArchivesSpacePeople, DeletedArchivesSpaceResources,
+                   DeletedArchivesSpaceSubjects,
+                   DeletedCartographerArrangementMapComponents,
+                   UpdatedArchivesSpaceArchivalObjects,
                    UpdatedArchivesSpaceFamilies,
                    UpdatedArchivesSpaceOrganizations,
                    UpdatedArchivesSpacePeople, UpdatedArchivesSpaceResources,
-                   UpdatedArchivesSpaceSubjects)
+                   UpdatedArchivesSpaceSubjects,
+                   UpdatedCartographerArrangementMapComponents)
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
 from .models import FetchRun, FetchRunError
@@ -94,11 +101,19 @@ class FetcherTest(TestCase):
 
     def test_cron(self):
         for fetcher_vcr, cassette, cron, in [
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_corporate_entity.json", DeletedArchivesSpaceOrganizations),
                 (archivesspace_vcr, "ArchivesSpace-updated-agent_corporate_entity.json", UpdatedArchivesSpaceOrganizations),
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_family.json", DeletedArchivesSpaceFamilies),
                 (archivesspace_vcr, "ArchivesSpace-updated-agent_family.json", UpdatedArchivesSpaceFamilies),
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_person.json", DeletedArchivesSpacePeople),
                 (archivesspace_vcr, "ArchivesSpace-updated-agent_person.json", UpdatedArchivesSpacePeople),
+                (archivesspace_vcr, "ArchivesSpace-deleted-subject.json", DeletedArchivesSpaceSubjects),
                 (archivesspace_vcr, "ArchivesSpace-updated-subject.json", UpdatedArchivesSpaceSubjects),
+                (archivesspace_vcr, "ArchivesSpace-deleted-resource.json", DeletedArchivesSpaceResources),
                 (archivesspace_vcr, "ArchivesSpace-updated-resource.json", UpdatedArchivesSpaceResources),
-                (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects)]:
+                (archivesspace_vcr, "ArchivesSpace-deleted-archival_object.json", DeletedArchivesSpaceArchivalObjects),
+                (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects),
+                (cartographer_vcr, "Cartographer-deleted-arrangement_map_component.json", DeletedCartographerArrangementMapComponents),
+                (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents)]:
             with fetcher_vcr.use_cassette(cassette):
                 cron().do()
