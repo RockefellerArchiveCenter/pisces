@@ -11,7 +11,9 @@ python -m venv $ENV_DIR --clear
 env/bin/pip install -r requirements.txt
 
 # set environment variables
-# TODO
+set -a
+. ./env.txt
+set +a
 
 # Run database migrations
 env/bin/python manage.py migrate
