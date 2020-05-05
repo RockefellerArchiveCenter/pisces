@@ -1,61 +1,22 @@
 version: 0.1
 os: linux
-# During the Install deployment lifecycle event (which occurs between the
-#   BeforeInstall and AfterInstall events), copy the specified files
-#   in "source" starting from the root of the revision's file bundle
-#   to "destination" on the Amazon EC2 instance.
 files:
   - source: ./
     destination: /data/app/zodiac/pisces
-# For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
-#   you can specify a "permissions"
-#   section here that describes special permissions to apply to the files
-#   in the "files" section as they are being copied over to
-#   the Amazon EC2 instance.
-#   For more information, see the documentation.
-# If you are deploying to Windows Server instances,
-#   then remove the
-#   "permissions" section altogether. A blank or incomplete "permissions"
-#   section may cause associated deployments to fail.
 permissions:
-  - object:
-    pattern:
-    except:
-    owner:
-    group:
-    mode:
-    acls:
-      -
-    context:
-      user:
-      type:
-      range:
-    type:
-      -
-
+  - object: /data/app/zodiac/pisces
+    owner: apache
+    group: apache
 hooks:
-
-  ApplicationStop:
-    - location: deploy_scripts/application_stop.sh
-      timeout:
-      runas:
-
-  BeforeInstall:
-    - location: deploy_scripts/before_install.sh
-      timeout:
-      runas:
-
   AfterInstall:
     - location: deploy_scripts/after_install.sh
-      timeout:
+      timeout: 300
       runas: apache
-
   ApplicationStart:
     - location: deploy_scripts/application_start.sh
-      timeout:
-      runas:
-
+      timeout: 20
+      runas: root
   ValidateService:
     - location: deploy_scripts/validate_service.sh
-      timeout:
-      runas:
+      timeout: 10
+      runas: root
