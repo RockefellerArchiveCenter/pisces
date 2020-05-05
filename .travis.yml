@@ -39,10 +39,10 @@ after_script:
 
 before_deploy:
 - |
-  if [[ $TRAVIS_BRANCH != $TRAVIS_PULL_REQUEST_BRANCH && $TRAVIS_BRANCH = 'development' ]];
+  if [[ $TRAVIS_BRANCH = 'development' ]];
   then
     deploy_scripts/write_env.sh PISCES_DEV_ PISCES_
-  elsif [[ $TRAVIS_BRANCH != $TRAVIS_PULL_REQUEST_BRANCH && $TRAVIS_BRANCH = 'master' ]];
+  elsif [[ $TRAVIS_BRANCH = 'master' ]];
     deploy_scripts/write_env.sh PISCES_PROD_ PISCES_
   fi
 

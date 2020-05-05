@@ -8,7 +8,7 @@ ENV_DIR="env"
 python -m venv $ENV_DIR --clear
 
 # install dependencies
-env/bin/pip install -r requirements.txt
+$ENV_DIR/bin/pip install -r requirements.txt
 
 # set environment variables
 set -a
