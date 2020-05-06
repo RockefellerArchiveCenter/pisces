@@ -38,13 +38,7 @@ after_script:
 - "./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
-- |
-  if [[ $TRAVIS_BRANCH = 'development' ]];
-  then
-    deploy_scripts/write_env.sh PISCES_DEV_ PISCES_
-  elsif [[ $TRAVIS_BRANCH = 'master' ]];
-    deploy_scripts/write_env.sh PISCES_PROD_ PISCES_
-  fi
+- deploy_scripts/write_env.sh PISCES_
 
 deploy:
   provider: codedeploy
