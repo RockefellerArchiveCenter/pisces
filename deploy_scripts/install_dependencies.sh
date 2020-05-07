@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Running `basename "$0"`
+pwd
 
 ENV_DIR="env"
 PYTHON_PATH=/opt/rh/rh-python36/root/usr/bin/python
