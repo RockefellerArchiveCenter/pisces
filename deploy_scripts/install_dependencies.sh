@@ -1,9 +1,10 @@
 #!/bin/bash
 
-pwd
+ROOT_DIR=/data/app/zodiac/pisces
+ENV_DIR=env
+PYTHON_PATH=/opt/rh/rh-python36/root/usr/bin/pythons
 
-ENV_DIR="env"
-PYTHON_PATH=/opt/rh/rh-python36/root/usr/bin/python
+cd $ROOT_DIR
 
 if [ ! -d $ENV_DIR ]; then
   mkdir $ENV_DIR
