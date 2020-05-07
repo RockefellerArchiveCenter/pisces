@@ -49,5 +49,5 @@ deploy:
   region: us-east-1
   on:
     repo: RockefellerArchiveCenter/pisces
-    branch: deploy
+    branch: development
   skip_cleanup: "true"
