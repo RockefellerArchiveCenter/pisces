@@ -4,7 +4,7 @@ files:
   - source: ./
     destination: /data/app/zodiac/pisces
 permissions:
-  - object: /data/app/zodiac/pisces
+  - object: /data/app/zodiac/
     owner: apache
     group: apache
 hooks:
