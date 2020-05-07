@@ -15,7 +15,6 @@ before_install:
   -s`-`uname -m` > docker-compose
 - chmod +x docker-compose
 - sudo mv docker-compose /usr/local/bin
-- cp pisces/config.py.example pisces/config.py
 - docker-compose up -d
 - sleep 20s
 - docker-compose exec pisces-web pip install coverage pre-commit
@@ -50,5 +49,5 @@ deploy:
   region: us-east-1
   on:
     repo: RockefellerArchiveCenter/pisces
-    branch: development
+    branch: deploy
   skip_cleanup: "true"
