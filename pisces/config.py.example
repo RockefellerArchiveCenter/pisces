@@ -1,10 +1,10 @@
 PISCES_DEBUG = True
 PISCES_PORT = 8007
-PISCES_SECRET_KEY "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
+PISCES_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
 PISCES_DJANGO_ALLOWED_HOSTS = ["localhost", "pisces-web"]
 PISCES_DJANGO_STATIC_ROOT = "/static/"
 PISCES_SQL_ENGINE = "django.db.backends.postgresql"
-PISCES_SQL_DATABASE = "pisces_dev"
+PISCES_SQL_DATABASE = "postgres"
 PISCES_SQL_USER = "postgres"
 PISCES_SQL_PASSWORD = "postgres"
 PISCES_SQL_HOST = "pisces-db"
