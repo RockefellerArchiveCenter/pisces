@@ -38,7 +38,9 @@ after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
-- envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
+- pwd
+- cd $TRAVIS_BUILD_DIR/pisces
+- envsubst < "config.py.deploy" > "deploy_config.py"
 
 deploy:
   provider: codedeploy
