@@ -1,10 +1,7 @@
 #!/bin/bash
 
-ROOT_DIR=/data/app/zodiac/pisces
+TARGET=/etc/profile.d/pisces.sh
 
-cd $ROOT_DIR
+cp /data/app/zodiac/pisces/env.txt $TARGET
 
-# set environment variables
-set -a
-. ./env.txt
-set +a
+sed -i -e 's\PISCES_\export PISCES_\g' $TARGET
