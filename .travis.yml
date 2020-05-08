@@ -39,8 +39,6 @@ after_script:
 
 before_deploy:
 - envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
-- git add pisces/deploy_config.py
-- git commit --amend
 
 deploy:
   skip_cleanup: true
