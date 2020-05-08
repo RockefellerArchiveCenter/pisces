@@ -11,8 +11,6 @@ hooks:
   AfterInstall:
     - location: deploy_scripts/install_dependencies.sh
       timeout: 300
-    - location: deploy_scripts/set_env.sh
-      timeout: 300
     - location: deploy_scripts/run_management_commands.sh
       timeout: 300
   ApplicationStart:
