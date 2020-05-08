@@ -38,12 +38,14 @@ after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
+- git status
 - envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
+- git stash --all
+- git status
 
 deploy:
   skip_cleanup: true
   provider: codedeploy
-  edge: true
   revision_type: github
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
