@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-
 import os
 
-from . import config as CF
+from . import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,16 +21,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*'
+SECRET_KEY = config.PISCES_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.PISCES_DEBUG
 
-ALLOWED_HOSTS = CF.ALLOWED_HOSTS
-
+ALLOWED_HOSTS = config.PISCES_DJANGO_ALLOWED_HOSTS
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,8 +80,16 @@ WSGI_APPLICATION = 'pisces.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = CF.DATABASES
-
+DATABASES = {
+    "default": {
+        "ENGINE": config.PISCES_SQL_ENGINE,
+        "NAME": config.PISCES_SQL_DATABASE,
+        "USER": config.PISCES_SQL_USER,
+        "PASSWORD": config.PISCES_SQL_PASSWORD,
+        "HOST": config.PISCES_SQL_HOST,
+        "PORT": config.PISCES_SQL_PORT,
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -123,7 +128,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = config.PISCES_DJANGO_STATIC_ROOT
 
 # Django REST Framework
 REST_FRAMEWORK = {
@@ -132,7 +138,7 @@ REST_FRAMEWORK = {
 }
 
 # Silk Profiling
-SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER
+SILKY_PYTHON_PROFILER = config.PISCES_SILKY_PYTHON_PROFILER
 
 # Django cron settings
 CRON_CLASSES = [
@@ -140,8 +146,18 @@ CRON_CLASSES = [
 ]
 DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
 
-ARCHIVESSPACE = CF.ARCHIVESSPACE
-CARTOGRAPHER = CF.CARTOGRAPHER
-MERGE_URL = CF.MERGE_URL
-TRANSFORM_URL = CF.TRANSFORM_URL
-INDEX_DELETE_URL = CF.INDEX_DELETE_URL
+ARCHIVESSPACE = {
+    "baseurl": config.PISCES_AS_BASEURL,
+    "username": config.PISCES_AS_USERNAME,
+    "password": config.PISCES_AS_PASSWORD,
+    "repo": config.PISCES_AS_REPO_ID,
+}
+
+CARTOGRAPHER = {
+    "baseurl": config.PISCES_CARTOGRAPHER_BASEURL,
+    "user": config.PISCES_CARTOGRAPHER_USER,
+    "password": config.PISCES_CARTOGRAPHER_PASSWORD,
+    "health_check_path": config.PISCES_CARTOGRAPHER_HEALTH_CHECK_PATH,
+}
+
+INDEX_DELETE_URL = config.PISCES_INDEX_DELETE_URL

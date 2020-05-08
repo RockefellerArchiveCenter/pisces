@@ -1,33 +1,21 @@
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'pisces-db',
-        'PORT': 5432,
-    }
-}
-
-ARCHIVESSPACE = {
-    "baseurl": "http://sandbox.archivesspace.org/",
-    "username": "admin",
-    "password": "admin",
-    "repo": 2,
-}
-
-CARTOGRAPHER = {
-    "baseurl": "http://localhost:8007",
-    "user": "admin",
-    "password": "admin",
-    "health_check_path": "/status/health/",
-}
-
-SILKY_PYTHON_PROFILER = True
-
-MERGE_URL = "http://pisces-web:8007/merge/"
-
-TRANSFORM_URL = "http://pisces-web:8007/transform/"
-
-INDEX_DELETE_URL = "http://scorpio-web:8008/index/delete/"
-
-ALLOWED_HOSTS = ['localhost', 'pisces-web']
+PISCES_DEBUG = True
+PISCES_PORT = 8007
+PISCES_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
+PISCES_DJANGO_ALLOWED_HOSTS = ["localhost", "pisces-web"]
+PISCES_DJANGO_STATIC_ROOT = "/static/"
+PISCES_SQL_ENGINE = "django.db.backends.postgresql"
+PISCES_SQL_DATABASE = "postgres"
+PISCES_SQL_USER = "postgres"
+PISCES_SQL_PASSWORD = "postgres"
+PISCES_SQL_HOST = "pisces-db"
+PISCES_SQL_PORT = 5432
+PISCES_AS_BASEURL = "http://sandbox.archivesspace.org/"
+PISCES_AS_USERNAME = "admin"
+PISCES_AS_PASSWORD = "admin"
+PISCES_AS_REPO_ID = 2
+PISCES_CARTOGRAPHER_BASEURL = "http://localhost:8007"
+PISCES_CARTOGRAPHER_USER = "admin"
+PISCES_CARTOGRAPHER_PASSWORD = "admin"
+PISCES_CARTOGRAPHER_HEALTH_CHECK_PATH = "/status/health/"
+PISCES_SILKY_PYTHON_PROFILER = True
+PISCES_INDEX_DELETE_URL = "http://scorpio-web:8008/index/delete/"
