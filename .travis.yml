@@ -39,9 +39,9 @@ after_script:
 
 before_deploy:
 - envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
-- cat pisces/config.py.deploy
-- cat pisces/deploy_config.py
-- touch foo.txt
+- git status
+- git add pisces/deploy_config.py
+- git commit -- amend
 
 deploy:
   provider: codedeploy
