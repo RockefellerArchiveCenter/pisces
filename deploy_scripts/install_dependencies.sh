@@ -2,7 +2,7 @@
 
 ROOT_DIR=/data/app/zodiac/pisces
 ENV_DIR=env
-PYTHON_PATH=/opt/rh/rh-python36/root/usr/bin/pythons
+PYTHON_PATH=/opt/rh/rh-python36/root/usr/bin/python
 
 cd $ROOT_DIR
 
