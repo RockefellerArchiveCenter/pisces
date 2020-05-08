@@ -3,15 +3,11 @@ version: '3'
 services:
   pisces-db:
     image: postgres:10.4
-    env_file:
-      - ./.env.dev.db
     volumes:
       - piscesdbvolume:/var/lib/postgresql/data/
   pisces-web:
     build: .
     entrypoint: /code/entrypoint.sh
-    env_file:
-      - ./.env.dev
     volumes:
       - .:/code
     ports:

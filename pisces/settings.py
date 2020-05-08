@@ -9,8 +9,9 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-
 import os
+
+import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("PISCES_SECRET_KEY")
+SECRET_KEY = config.PISCES_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(os.environ.get("PISCES_DEBUG", default=0))
+DEBUG = config.PISCES_DEBUG
 
-ALLOWED_HOSTS = os.environ.get("PISCES_DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = config.PISCES_DJANGO_ALLOWED_HOSTS
 
 # Application definition
 INSTALLED_APPS = [
@@ -81,12 +82,12 @@ WSGI_APPLICATION = 'pisces.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": os.environ.get("PISCES_SQL_ENGINE", "django.db.backends.sqlite3"),
-        "NAME": os.environ.get("PISCES_SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
-        "USER": os.environ.get("PISCES_SQL_USER", "user"),
-        "PASSWORD": os.environ.get("PISCES_SQL_PASSWORD", "password"),
-        "HOST": os.environ.get("PISCES_SQL_HOST", "localhost"),
-        "PORT": int(os.environ.get("PISCES_SQL_PORT", "5432")),
+        "ENGINE": config.PISCES_SQL_ENGINE,
+        "NAME": config.PISCES_SQL_DATABASE,
+        "USER": config.PISCES_SQL_USER,
+        "PASSWORD": config.PISCES_SQL_PASSWORD,
+        "HOST": config.PISCES_SQL_HOST,
+        "PORT": config.PISCES_SQL_PORT,
     }
 }
 
@@ -128,7 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.environ.get("PISCES_DJANGO_STATIC_ROOT", os.path.join(BASE_DIR, "static"))
+STATIC_ROOT = config.PISCES_DJANGO_STATIC_ROOT
 
 # Django REST Framework
 REST_FRAMEWORK = {
@@ -137,7 +138,7 @@ REST_FRAMEWORK = {
 }
 
 # Silk Profiling
-SILKY_PYTHON_PROFILER = int(os.environ.get("PISCES_SILKY_PYTHON_PROFILER", default=0))
+SILKY_PYTHON_PROFILER = config.PISCES_SILKY_PYTHON_PROFILER
 
 # Django cron settings
 CRON_CLASSES = [
@@ -146,17 +147,17 @@ CRON_CLASSES = [
 DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
 
 ARCHIVESSPACE = {
-    "baseurl": os.environ.get("PISCES_AS_BASEURL", default="http://sandbox.archivesspace.org/api"),
-    "username": os.environ.get("PISCES_AS_USERNAME", default="admin"),
-    "password": os.environ.get("PISCES_AS_PASSWORD", default="admin"),
-    "repo": os.environ.get("PISCES_AS_REPO_ID", default=2),
+    "baseurl": config.PISCES_AS_BASEURL,
+    "username": config.PISCES_AS_USERNAME,
+    "password": config.PISCES_AS_PASSWORD,
+    "repo": config.PISCES_AS_REPO_ID,
 }
 
 CARTOGRAPHER = {
-    "baseurl": os.environ.get("PISCES_CARTOGRAPHER_BASEURL", default="http://192.168.50.27:8000"),
-    "user": os.environ.get("PISCES_CARTOGRAPHER_USER", default="admin"),
-    "password": os.environ.get("PISCES_CARTOGRAPHER_PASSWORD", default="admin"),
-    "health_check_path": os.environ.get("PISCES_CARTOGRAPHER_HEALTH_CHECK_PATH", default="/status/health/"),
+    "baseurl": config.PISCES_CARTOGRAPHER_BASEURL,
+    "user": config.PISCES_CARTOGRAPHER_USER,
+    "password": config.PISCES_CARTOGRAPHER_PASSWORD,
+    "health_check_path": config.PISCES_CARTOGRAPHER_HEALTH_CHECK_PATH,
 }
 
-INDEX_DELETE_URL = os.environ.get("PISCES_INDEX_DELETE_URL")
+INDEX_DELETE_URL = config.PISCES_INDEX_DELETE_URL
