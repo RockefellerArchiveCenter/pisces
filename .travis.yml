@@ -41,6 +41,7 @@ before_deploy:
 - envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
 - cat pisces/config.py.deploy
 - cat pisces/deploy_config.py
+- touch foo.txt
 
 deploy:
   provider: codedeploy
@@ -53,4 +54,4 @@ deploy:
   on:
     repo: RockefellerArchiveCenter/pisces
     branch: development
-  skip_cleanup: "true"
+  skip_cleanup: true
