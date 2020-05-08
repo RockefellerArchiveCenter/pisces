@@ -86,7 +86,7 @@ DATABASES = {
         "USER": os.environ.get("PISCES_SQL_USER", "user"),
         "PASSWORD": os.environ.get("PISCES_SQL_PASSWORD", "password"),
         "HOST": os.environ.get("PISCES_SQL_HOST", "localhost"),
-        "PORT": os.environ.get("PISCES_SQL_PORT", "5432"),
+        "PORT": int(os.environ.get("PISCES_SQL_PORT", "5432")),
     }
 }
 
@@ -127,7 +127,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = os.environ.get("PISCES_DJANGO_STATIC_ROOT", os.path.join(BASE_DIR, "static")),
 
 # Django REST Framework
 REST_FRAMEWORK = {
