@@ -43,7 +43,9 @@ before_deploy:
 - git commit --amend
 
 deploy:
+  skip_cleanup: true
   provider: codedeploy
+  edge: true
   revision_type: github
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
@@ -53,4 +55,3 @@ deploy:
   on:
     repo: RockefellerArchiveCenter/pisces
     branch: development
-  skip_cleanup: true
