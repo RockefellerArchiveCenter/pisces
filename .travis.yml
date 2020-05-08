@@ -34,7 +34,7 @@ script:
 
 after_script:
 - docker-compose exec pisces-web coverage xml
-- "./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT"
+- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
 - deploy_scripts/write_env.sh PISCES_
