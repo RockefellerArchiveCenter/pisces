@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 ROOT_DIR=/data/app/zodiac/pisces
 
