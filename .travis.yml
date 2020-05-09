@@ -38,10 +38,7 @@ after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
-- git status
 - envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
-- git stash --all
-- git status
 
 deploy:
   skip_cleanup: true
