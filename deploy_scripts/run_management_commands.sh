@@ -5,7 +5,7 @@ ROOT_DIR=/data/app/zodiac/pisces
 
 cd $ROOT_DIR
 
-# cp pisces/deploy_config.py pisces/config.py
+cp pisces/deploy_config.py pisces/config.py
 
 # Run database migrations
 env/bin/python manage.py migrate
