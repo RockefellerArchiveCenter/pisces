@@ -39,11 +39,10 @@ after_script:
 
 before_deploy:
 - envsubst < "pisces/config.py.deploy" > "pisces/config.py"
-- rm -rf fixtures
-- zip -r pisces .
+- rm -rf fixtures .git .github .coverage .flake8 cc-test-reporter
+- rm *__pycache__*
 - mkdir -p deploy_upload
 - mv pisces.zip deploy_upload/pisces.zip
-- tree -a .
 
 deploy:
 - provider: s3
