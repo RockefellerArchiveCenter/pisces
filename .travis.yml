@@ -38,18 +38,32 @@ after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
 before_deploy:
-- envsubst < "pisces/config.py.deploy" > "pisces/deploy_config.py"
+- envsubst < "pisces/config.py.deploy" > "pisces/config.py"
+- rm -rf fixtures
+- zip -r pisces .
+- mkdir -p deploy_upload
+- mv pisces.zip deploy_upload/pisces.zip
+- tree -a .
 
 deploy:
+- provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  local_dir: deploy_upload
   skip_cleanup: true
-  provider: codedeploy
+  on: &2
+    repo: RockefellerArchiveCenter/pisces
+    branch: development
+  bucket: rac-dev-deploy
+  region: us-east-1
+- provider: codedeploy
   wait_until_deployed: true
-  revision_type: github
+  bucket: rac-dev-deploy
+  key: pisces.zip
+  bundle_type: zip
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   application: pisces
   deployment_group: PiscesDevelopment
   region: us-east-1
-  on:
-    repo: RockefellerArchiveCenter/pisces
-    branch: development
+  on: *2
