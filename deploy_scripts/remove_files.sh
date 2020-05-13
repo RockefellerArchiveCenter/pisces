@@ -10,5 +10,6 @@ rm -rf fixtures \
   Dockerfile \
   entrypoint.sh \
   pisces-services.png \
-  wait-for-it.sh \
-  **__pycache__
+  wait-for-it.sh
+
+find . -type d -name __pycache__ -exec rm -r {} \+
