@@ -1,7 +1,5 @@
 language: python
 
-sudo: required
-
 services:
 - docker
 
@@ -27,30 +25,25 @@ before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
 - chmod +x ./cc-test-reporter
-- "./cc-test-reporter before-build"
+- ./cc-test-reporter before-build
 
 script:
 - docker-compose exec pisces-web pre-commit run --all-files --show-diff-on-failure
 - docker-compose exec pisces-web coverage run manage.py test
 
-after_script:
-- docker-compose exec pisces-web coverage xml
-- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
-
 before_deploy:
+- docker-compose exec pisces-web coverage xml
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 - envsubst < "pisces/config.py.deploy" > "pisces/config.py"
-- sudo deploy_scripts/remove_files.sh
-- zip -r pisces.zip .
-- mkdir -p deploy_upload
-- mv pisces.zip deploy_upload/pisces.zip
+- sudo deploy_scripts/make_zip.sh $DEPLOY_ZIP_DIR $DEPLOY_ZIP_NAME
 
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  local_dir: deploy_upload
+  local_dir: $DEPLOY_ZIP_DIR
   skip_cleanup: true
-  on: &2
+  on: &development
     repo: RockefellerArchiveCenter/pisces
     branch: development
   bucket: rac-dev-deploy
@@ -58,11 +51,11 @@ deploy:
 - provider: codedeploy
   wait_until_deployed: true
   bucket: rac-dev-deploy
-  key: pisces.zip
+  key: $DEPLOY_ZIP_NAME
   bundle_type: zip
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   application: pisces
   deployment_group: PiscesDevelopment
   region: us-east-1
-  on: *2
+  on: *development
