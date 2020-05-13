@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # get status endpoint
-curl http://localhost:8007/status/
+curl http://localhost:${PISCES_PORT}/status/

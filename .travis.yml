@@ -31,10 +31,12 @@ script:
 - docker-compose exec pisces-web pre-commit run --all-files --show-diff-on-failure
 - docker-compose exec pisces-web coverage run manage.py test
 
-before_deploy:
+after_script:
 - docker-compose exec pisces-web coverage xml
 - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-- envsubst < "pisces/config.py.deploy" > "pisces/config.py"
+
+before_deploy:
+- deploy_scripts/substitute_env.sh
 - sudo deploy_scripts/make_zip.sh $DEPLOY_ZIP_DIR $DEPLOY_ZIP_NAME
 
 deploy:
