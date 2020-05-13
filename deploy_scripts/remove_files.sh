@@ -11,4 +11,4 @@ rm -rf fixtures \
   entrypoint.sh \
   pisces-services.png \
   wait-for-it.sh \
-  **/__pycache__ \
+  **__pycache__
