@@ -4,7 +4,7 @@ set -e
 ZIP_DIR=$1
 ZIP_NAME=$2
 
-# remove unwanted build files
+# remove unnecessary files
 rm -rf fixtures \
   .git \
   .github \
@@ -12,7 +12,6 @@ rm -rf fixtures \
   .flake8 \
   .gitignore \
   .pre-commit-config.yaml \
-  docker-compose.yml \
   Dockerfile \
   entrypoint.sh \
   pisces-services.png \

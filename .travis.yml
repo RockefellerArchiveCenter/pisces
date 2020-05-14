@@ -48,11 +48,11 @@ deploy:
   on: &development
     repo: RockefellerArchiveCenter/pisces
     branch: development
-  bucket: rac-dev-deploy
+  bucket: $AWS_BUCKET_NAME
   region: us-east-1
 - provider: codedeploy
   wait_until_deployed: true
-  bucket: rac-dev-deploy
+  bucket: $AWS_BUCKET_NAME
   key: $DEPLOY_ZIP_NAME
   bundle_type: zip
   access_key_id: $AWS_ACCESS_KEY
