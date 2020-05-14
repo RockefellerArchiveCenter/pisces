@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config.PISCES_SECRET_KEY
+SECRET_KEY = config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config.PISCES_DEBUG
+DEBUG = config.DJANGO_DEBUG
 
-ALLOWED_HOSTS = config.PISCES_DJANGO_ALLOWED_HOSTS
+ALLOWED_HOSTS = config.DJANGO_ALLOWED_HOSTS
 
 # Application definition
 INSTALLED_APPS = [
@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'pisces.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": config.PISCES_SQL_ENGINE,
-        "NAME": config.PISCES_SQL_DATABASE,
-        "USER": config.PISCES_SQL_USER,
-        "PASSWORD": config.PISCES_SQL_PASSWORD,
-        "HOST": config.PISCES_SQL_HOST,
-        "PORT": config.PISCES_SQL_PORT,
+        "ENGINE": config.SQL_ENGINE,
+        "NAME": config.SQL_DATABASE,
+        "USER": config.SQL_USER,
+        "PASSWORD": config.SQL_PASSWORD,
+        "HOST": config.SQL_HOST,
+        "PORT": config.SQL_PORT,
     }
 }
 
@@ -129,7 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = config.PISCES_DJANGO_STATIC_ROOT
+STATIC_ROOT = config.DJANGO_STATIC_ROOT
 
 # Django REST Framework
 REST_FRAMEWORK = {
@@ -138,7 +138,7 @@ REST_FRAMEWORK = {
 }
 
 # Silk Profiling
-SILKY_PYTHON_PROFILER = config.PISCES_SILKY_PYTHON_PROFILER
+SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
 
 # Django cron settings
 CRON_CLASSES = [
@@ -160,17 +160,15 @@ CRON_CLASSES = [
 DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
 
 ARCHIVESSPACE = {
-    "baseurl": config.PISCES_AS_BASEURL,
-    "username": config.PISCES_AS_USERNAME,
-    "password": config.PISCES_AS_PASSWORD,
-    "repo": config.PISCES_AS_REPO_ID,
+    "baseurl": config.AS_BASEURL,
+    "username": config.AS_USERNAME,
+    "password": config.AS_PASSWORD,
+    "repo": config.AS_REPO_ID,
 }
 
 CARTOGRAPHER = {
-    "baseurl": config.PISCES_CARTOGRAPHER_BASEURL,
-    "user": config.PISCES_CARTOGRAPHER_USER,
-    "password": config.PISCES_CARTOGRAPHER_PASSWORD,
-    "health_check_path": config.PISCES_CARTOGRAPHER_HEALTH_CHECK_PATH,
+    "baseurl": config.CARTOGRAPHER_BASEURL,
+    "health_check_path": config.CARTOGRAPHER_HEALTH_CHECK_PATH,
 }
 
-INDEX_DELETE_URL = config.PISCES_INDEX_DELETE_URL
+INDEX_DELETE_URL = config.INDEX_DELETE_URL
