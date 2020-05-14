@@ -30,8 +30,6 @@ before_script:
 script:
 - docker-compose exec pisces-web pre-commit run --all-files --show-diff-on-failure
 - docker-compose exec pisces-web coverage run manage.py test
-
-after_script:
 - docker-compose exec pisces-web coverage xml
 - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
