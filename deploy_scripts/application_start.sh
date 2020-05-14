@@ -2,4 +2,7 @@
 set -e
 
 # restart apache
-systemctl restart httpd
+sudo systemctl restart httpd
+
+# restart cron
+sudo systemctl start crond

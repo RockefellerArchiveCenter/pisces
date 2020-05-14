@@ -8,6 +8,9 @@ permissions:
     owner: apache
     group: apache
 hooks:
+  ApplicationStop:
+    - location: deploy_scripts/stop_cron.sh
+      timeout: 20
   AfterInstall:
     - location: deploy_scripts/install_dependencies.sh
       timeout: 300
