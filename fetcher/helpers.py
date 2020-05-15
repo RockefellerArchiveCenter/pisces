@@ -67,10 +67,7 @@ def instantiate_electronbond(self, config=None):
         config (dict): an optional config dict
     """
     config = config if config else settings.CARTOGRAPHER
-    client = ElectronBond(
-        baseurl=config['baseurl'],
-        user=config['user'],
-        password=config['password'])
+    client = ElectronBond(baseurl=config['baseurl'])
     try:
         resp = client.get(config['health_check_path'])
         resp.raise_for_status()
