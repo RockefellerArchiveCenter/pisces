@@ -2,7 +2,7 @@
 set -e
 
 # stop all running cron jobs
-if [[ pgrep crond ]]; then
+if [[ `pgrep crond` ]]; then
   sudo pkill crond
 fi
 
