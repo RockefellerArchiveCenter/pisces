@@ -2,7 +2,7 @@
 set -e
 
 # stop all running cron jobs
-sudo killall crond
+sudo pkill crond
 
 # stop cron
 sudo systemctl stop crond
