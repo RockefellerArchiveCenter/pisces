@@ -1,6 +1,6 @@
 DJANGO_DEBUG = True
 DJANGO_PORT = 8007
-DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
+DJANGO_SECRET_KEY = "d$@ip!go1iqfsckz=g7q+*p6epzk$&w*0)yo*!+^rc%jpumn5v"
 DJANGO_ALLOWED_HOSTS = ["localhost", "pisces-web"]
 DJANGO_STATIC_ROOT = "/static/"
 SQL_ENGINE = "django.db.backends.postgresql"
