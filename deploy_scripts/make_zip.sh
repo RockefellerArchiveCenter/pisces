@@ -12,6 +12,8 @@ rm -rf fixtures \
   .flake8 \
   .gitignore \
   .pre-commit-config.yaml \
+  cc-test-reporter \
+  docker-compose.yml \
   Dockerfile \
   entrypoint.sh \
   pisces-services.png \
@@ -19,6 +21,6 @@ rm -rf fixtures \
 find . -type d -name __pycache__ -exec rm -r {} \+
 
 # create zip file
-zip -r $ZIP_NAME . -x "cc-test-reporter"
+zip -r $ZIP_NAME .
 mkdir -p $ZIP_DIR
 mv pisces.zip $ZIP_DIR/$ZIP_NAME
