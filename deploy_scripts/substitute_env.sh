@@ -5,7 +5,9 @@ for TEMPLATE in pisces/config.py.deploy deploy_scripts/install_dependencies.sh.d
 deploy_scripts/run_management_commands.sh.deploy deploy_scripts/validate_service.sh.deploy
 do
   if [[ -f "$TEMPLATE" ]]; then
+    echo $TEMPLATE
     envsubst < "$TEMPLATE" > echo "$TEMPLATE" | sed -e 's/\(\.deploy\)*$//g'
     rm $TEMPLATE
   fi
+  ls deploy_scripts/
 done
