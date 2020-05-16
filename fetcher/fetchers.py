@@ -47,8 +47,8 @@ class BaseDataFetcher:
             raise FetcherError(e)
         for obj in fetched:
             try:
-                merged = merger(clients).merge(object_type, obj.json())
-                Transformer().run(object_type, merged)
+                merged, merged_object_type = merger(clients).merge(object_type, obj.json())
+                Transformer().run(merged_object_type, merged)
                 processed.append(merged.get("uri"))
             except Exception as e:
                 FetchRunError.objects.create(run=current_run, message=str(e))
