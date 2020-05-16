@@ -157,7 +157,7 @@ CRON_CLASSES = [
     "fetcher.cron.UpdatedArchivesSpaceSubjects",
     "fetcher.cron.UpdatedCartographerArrangementMapComponents",
 ]
-DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
+DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.file.FileLock"
 
 ARCHIVESSPACE = {
     "baseurl": config.AS_BASEURL,
