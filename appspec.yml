@@ -7,6 +7,7 @@ permissions:
   - object: /data/app/zodiac/
     owner: apache
     group: apache
+    mode: 775
 hooks:
   ApplicationStop:
     - location: deploy_scripts/stop_cron.sh
