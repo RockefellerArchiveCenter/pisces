@@ -22,7 +22,8 @@ from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
 from .models import FetchRun, FetchRunError
 from .views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
-                    CartographerDeletesView, CartographerUpdatesView)
+                    CartographerDeletesView, CartographerUpdatesView,
+                    FetchRunViewSet)
 
 archivesspace_vcr = vcr.VCR(
     serializer='json',
@@ -71,7 +72,7 @@ class FetcherTest(TestCase):
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
             self.assertEqual(len(FetchRunError.objects.all()), 0)
 
-    def test_views(self):
+    def test_fetch_views(self):
         for view, status, url_name, object_type_choices, fetcher_vcr, cassette_prefix in [
                 (ArchivesSpaceDeletesView, "deleted", "fetch-archivesspace-deletes", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
                 (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
@@ -82,6 +83,17 @@ class FetcherTest(TestCase):
                     request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type))
                     response = view().as_view()(request)
                     self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
+
+    def test_action_views(self):
+        for action in ["archivesspace", "cartographer", "archival_objects",
+                       "families", "organizations", "people", "resources",
+                       "arrangement_map_components"]:
+            view = FetchRunViewSet.as_view({"get": action})
+            request = self.factory.get("fetchrun-list")
+            response = view(request)
+            self.assertEqual(
+                response.status_code, 200,
+                "View error:  {}".format(response.data))
 
     def test_last_run(self):
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
