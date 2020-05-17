@@ -181,7 +181,7 @@ class SourceNoteToNote(odin.Mapping):
             subnotes = (self.map_subnotes(v) for v in value)
         elif self.source.jsonmodel_type in ['note_singlepart', 'note_rights_statement', 'note_rights_statement_act']:
             # Here content is a list passed as a string, so we have to reconvert.
-            content = [self.source.content.strip('[\"\"]')]
+            content = [self.source.content.strip('][\"')]
             subnotes = [Subnote(type='text', content=content)]
         elif self.source.jsonmodel_type == 'note_index':
             subnotes = self.index_subnotes(self.source.content, self.source.items)
