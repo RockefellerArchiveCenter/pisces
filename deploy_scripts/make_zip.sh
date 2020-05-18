@@ -24,4 +24,4 @@ find . -type d -name __pycache__ -exec rm -r {} \+
 # create zip file
 zip -r $ZIP_NAME .
 mkdir -p $ZIP_DIR
-mv pisces.zip $ZIP_DIR/$ZIP_NAME
+mv $ZIP_NAME $ZIP_DIR/$ZIP_NAME
