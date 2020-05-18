@@ -129,3 +129,6 @@ class FetcherTest(TestCase):
                 (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents)]:
             with fetcher_vcr.use_cassette(cassette):
                 cron().do()
+
+    def tearDown(self):
+        FetchRun.objects.all().delete()
