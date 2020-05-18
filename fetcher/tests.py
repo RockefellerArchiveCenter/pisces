@@ -119,14 +119,14 @@ class FetcherTest(TestCase):
 
     def test_error_notifications(self):
         fetch_run = FetchRun.objects.create(
-            object_type=random.choice(FetchRun.OBJECT_TYPE_CHOICES),
-            source=random.choice(FetchRun.SOURCE_CHOICES),
-            status=random.choice(FetchRun.STATUS_CHOICES),
-            object_status=random.choice(FetchRun.OBJECT_STATUS_CHOICES))
+            object_type=random.choice(FetchRun.OBJECT_TYPE_CHOICES)[0],
+            source=random.choice(FetchRun.SOURCE_CHOICES)[0],
+            status=random.choice(FetchRun.STATUS_CHOICES)[0],
+            object_status=random.choice(FetchRun.OBJECT_STATUS_CHOICES)[0])
         error = FetchRunError.objects.create(message="This is an error!", run=fetch_run)
         send_error_notification(fetch_run)
         self.assertEqual(len(mail.outbox), 1)
-        self.assertIn(fetch_run.object_type[1], mail.outbox[0].subject)
-        self.assertIn(fetch_run.source[1], mail.outbox[0].subject)
+        self.assertIn(fetch_run.get_object_type_display(), mail.outbox[0].subject)
+        self.assertIn(fetch_run.get_source_display(), mail.outbox[0].subject)
         self.assertNotIn("errors", mail.outbox[0].subject)
         self.assertIn(error.message, mail.outbox[0].body)

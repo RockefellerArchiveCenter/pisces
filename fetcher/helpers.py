@@ -112,8 +112,8 @@ def send_error_notification(fetch_run):
     try:
         errors = ""
         err_str = "errors" if fetch_run.error_count > 1 else "error"
-        object_type = fetch_run.object_type[1]
-        source = fetch_run.source[1]
+        object_type = fetch_run.get_object_type_display()
+        source = fetch_run.get_source_display()
         for err in fetch_run.errors:
             errors += "{}\n".format(err.message)
         send_mail(
