@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django_cron import CronJobBase, Schedule
 
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
@@ -9,23 +11,24 @@ class BaseCron(CronJobBase):
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
 
     def do(self):
+        start = datetime.now()
         source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == self.fetcher.source][0]
-        print("Export of {} {} records from {} started".format(self.object_status, self.object_type, source))
-        try:
-            out = self.fetcher().fetch(self.object_status, self.object_type)
-            fetch_run = FetchRun.objects.filter(
-                status=FetchRun.FINISHED,
-                source=self.fetcher.source,
-                object_type=self.object_type,
-                object_status=self.object_status).order_by("-end_time")[0]
-        except Exception as e:
-            print(e)
-        print("{} records exported".format(len(out)))
+        print("Export of {} {} records from {} started at {}".format(
+            self.object_status, self.object_type, source, start))
+        out = self.fetcher().fetch(self.object_status, self.object_type)
+        end = datetime.now()
+        fetch_run = FetchRun.objects.filter(
+            status=FetchRun.FINISHED,
+            source=self.fetcher.source,
+            object_type=self.object_type,
+            object_status=self.object_status).order_by("-end_time")[0]
+        print("{} records exported in {}".format(len(out), end - start))
         if fetch_run.error_count:
             print("{} errors".format(fetch_run.error_count))
             for e in fetch_run.errors:
                 print("    {}".format(e.message))
-        print("Export of {} {} from {} complete".format(self.object_status, self.object_type, source))
+        print("Export of {} {} records from {} complete at {}\n".format(
+            self.object_status, self.object_type, source, end))
 
 
 class DeletedArchivesSpacePeople(BaseCron):
