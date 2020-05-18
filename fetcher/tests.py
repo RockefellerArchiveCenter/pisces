@@ -22,7 +22,7 @@ from .cron import (DeletedArchivesSpaceArchivalObjects,
                    UpdatedCartographerArrangementMapComponents)
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time, send_error_notification
-from .models import FetchRun
+from .models import FetchRun, FetchRunError
 from .views import FetchRunViewSet
 
 archivesspace_vcr = vcr.VCR(
