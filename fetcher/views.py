@@ -18,7 +18,7 @@ class FetchRunViewSet(ModelViewSet):
     queryset = FetchRun.objects.all().order_by("-start_time")
 
     def get_serializer_class(self):
-        if self.action == "list":
+        if self.action not in ["create", "retrieve", "update", "partial_update", "destroy"]:
             return FetchRunListSerializer
         return FetchRunSerializer
 
