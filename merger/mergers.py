@@ -27,7 +27,7 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            return self.combine_data(object, additional_data) if additional_data else object
+            return self.combine_data(object, additional_data) if additional_data else object, target_object_type
         except Exception as e:
             print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))

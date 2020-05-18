@@ -31,7 +31,7 @@ object_types = [
 
 
 class MergerTest(TestCase):
-    """Tests Merger and MergerView."""
+    """Tests Merger."""
 
     def setUp(self):
         self.factory = APIRequestFactory()
@@ -45,7 +45,7 @@ class MergerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged = merger(clients).merge(source_object_type, source)
+                        merged, _ = merger(clients).merge(source_object_type, source)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
