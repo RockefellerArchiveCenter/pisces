@@ -31,7 +31,7 @@ object_types = [
 
 
 class MergerTest(TestCase):
-    """Tests Merger and MergerView."""
+    """Tests Merger."""
 
     def setUp(self):
         self.factory = APIRequestFactory()

@@ -9,7 +9,7 @@ hooks:
       timeout: 30
   AfterInstall:
     - location: deploy_scripts/set_permissions.sh
-      timeout: 30x
+      timeout: 30
     - location: deploy_scripts/install_dependencies.sh
       timeout: 300
     - location: deploy_scripts/run_management_commands.sh

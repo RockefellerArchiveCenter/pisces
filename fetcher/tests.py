@@ -1,8 +1,8 @@
 from datetime import datetime
 
+import pytz
 import vcr
 from django.test import TestCase
-from django.urls import reverse
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
@@ -21,9 +21,7 @@ from .cron import (DeletedArchivesSpaceArchivalObjects,
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
 from .models import FetchRun
-from .views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
-                    CartographerDeletesView, CartographerUpdatesView,
-                    FetchRunViewSet)
+from .views import FetchRunViewSet
 
 archivesspace_vcr = vcr.VCR(
     serializer='json',
@@ -47,7 +45,7 @@ cartographer_vcr = vcr.VCR(
 class FetcherTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
-        time = datetime(2020, 3, 1)
+        time = pytz.utc.localize(datetime(2020, 3, 1))
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
             for object_type, _ in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
                 f = FetchRun.objects.create(
@@ -70,18 +68,6 @@ class FetcherTest(TestCase):
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
-
-    def test_fetch_views(self):
-        for view, status, url_name, object_type_choices, fetcher_vcr, cassette_prefix in [
-                (ArchivesSpaceDeletesView, "deleted", "fetch-archivesspace-deletes", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
-                (ArchivesSpaceUpdatesView, "updated", "fetch-archivesspace-updates", FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, archivesspace_vcr, "ArchivesSpace"),
-                (CartographerDeletesView, "deleted", "fetch-cartographer-deletes", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer"),
-                (CartographerUpdatesView, "updated", "fetch-cartographer-updates", FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, cartographer_vcr, "Cartographer")]:
-            for object_type, _ in object_type_choices:
-                with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
-                    request = self.factory.post("{}?object_type={}".format(reverse(url_name), object_type))
-                    response = view().as_view()(request)
-                    self.assertEqual(response.status_code, 200, "Request error: {}".format(response.data))
 
     def test_action_views(self):
         for action in ["archivesspace", "cartographer", "archival_objects",
