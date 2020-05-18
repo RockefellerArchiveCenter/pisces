@@ -20,7 +20,7 @@ from .cron import (DeletedArchivesSpaceArchivalObjects,
                    UpdatedCartographerArrangementMapComponents)
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import last_run_time
-from .models import FetchRun, FetchRunError
+from .models import FetchRun
 from .views import (ArchivesSpaceDeletesView, ArchivesSpaceUpdatesView,
                     CartographerDeletesView, CartographerUpdatesView,
                     FetchRunViewSet)
@@ -70,7 +70,6 @@ class FetcherTest(TestCase):
                         for obj in list:
                             self.assertTrue(isinstance(obj, str))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
-            self.assertEqual(len(FetchRunError.objects.all()), 0)
 
     def test_fetch_views(self):
         for view, status, url_name, object_type_choices, fetcher_vcr, cassette_prefix in [
@@ -129,6 +128,3 @@ class FetcherTest(TestCase):
                 (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents)]:
             with fetcher_vcr.use_cassette(cassette):
                 cron().do()
-
-    def tearDown(self):
-        FetchRun.objects.all().delete()
