@@ -7,7 +7,8 @@ from silk.profiling.profiler import silk_profile
 from transformer.transformers import Transformer
 
 from .helpers import (handle_deleted_uri, instantiate_aspace,
-                      instantiate_electronbond, last_run_time)
+                      instantiate_electronbond, last_run_time,
+                      send_error_notification)
 from .models import FetchRun, FetchRunError
 
 
@@ -55,6 +56,8 @@ class BaseDataFetcher:
         current_run.status = FetchRun.FINISHED
         current_run.end_time = timezone.now()
         current_run.save()
+        if current_run.error_count > 0:
+            send_error_notification(current_run)
         return processed
 
     def instantiate_clients(self, object_type):
