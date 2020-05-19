@@ -22,7 +22,7 @@
         <li class="nav-item dropdown">
           <a href="#" id="fetchesDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fetches</a>
           <div class="dropdown-menu" aria-labelledby="fetchesDropdown">
-            <a class="dropdown-item" href="{% url 'fetchrun-arrangement-map-components' %}">Arrangement Map Components</a>
+            <a class="dropdown-item" href="{% url 'fetchrun-arrangement-map-components' %}?">Arrangement Map Components</a>
             <a class="dropdown-item" href="{% url 'fetchrun-archival-objects' %}">Archival Objects</a>
             <a class="dropdown-item" href="{% url 'fetchrun-families' %}">Families</a>
             <a class="dropdown-item" href="{% url 'fetchrun-organizations' %}">Organizations</a>
@@ -38,10 +38,10 @@
         <li class="nav-item dropdown">
           <a href="#" id="objectDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transformed Objects</a>
           <div class="dropdown-menu" aria-labelledby="objectsDropdown">
-            <a class="dropdown-item" href="{% url 'dataobject-agents' %}">Agents</a>
-            <a class="dropdown-item" href="{% url 'dataobject-collections' %}">Collections</a>
-            <a class="dropdown-item" href="{% url 'dataobject-objects' %}">Objects</a>
-            <a class="dropdown-item" href="{% url 'dataobject-terms' %}">Terms</a>
+            <a class="dropdown-item" href="{% url 'dataobject-agents' %}?clean=True">Agents</a>
+            <a class="dropdown-item" href="{% url 'dataobject-collections' %}?clean=True">Collections</a>
+            <a class="dropdown-item" href="{% url 'dataobject-objects' %}?clean=True">Objects</a>
+            <a class="dropdown-item" href="{% url 'dataobject-terms' %}?clean=True">Terms</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{% url 'dataobject-list' %}">All</a>
           </div>
