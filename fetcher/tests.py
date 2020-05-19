@@ -127,6 +127,7 @@ class FetcherTest(TestCase):
         send_error_notification(fetch_run)
         self.assertEqual(len(mail.outbox), 1)
         self.assertIn(fetch_run.get_object_type_display(), mail.outbox[0].subject)
-        self.assertIn(fetch_run.get_source_display(), mail.outbox[0].subject)
+        source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == fetch_run.source][0]
+        self.assertIn(source, mail.outbox[0].subject)
         self.assertNotIn("errors", mail.outbox[0].subject)
         self.assertIn(error.message, mail.outbox[0].body)
