@@ -7,7 +7,8 @@ from silk.profiling.profiler import silk_profile
 from transformer.transformers import Transformer
 
 from .helpers import (handle_deleted_uri, instantiate_aspace,
-                      instantiate_electronbond, last_run_time)
+                      instantiate_electronbond, last_run_time,
+                      send_error_notification)
 from .models import FetchRun, FetchRunError
 
 
@@ -47,14 +48,16 @@ class BaseDataFetcher:
             raise FetcherError(e)
         for obj in fetched:
             try:
-                merged = merger(clients).merge(object_type, obj.json())
-                Transformer().run(object_type, merged)
+                merged, merged_object_type = merger(clients).merge(object_type, obj.json())
+                Transformer().run(merged_object_type, merged)
                 processed.append(merged.get("uri"))
             except Exception as e:
                 FetchRunError.objects.create(run=current_run, message=str(e))
         current_run.status = FetchRun.FINISHED
         current_run.end_time = timezone.now()
         current_run.save()
+        if current_run.error_count > 0:
+            send_error_notification(current_run)
         return processed
 
     def instantiate_clients(self, object_type):

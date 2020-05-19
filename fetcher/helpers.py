@@ -1,5 +1,6 @@
 import requests
 from asnake.aspace import ASpace
+from django.core.mail import send_mail
 from electronbonder.client import ElectronBond
 from pisces import settings
 from silk.profiling.profiler import silk_profile
@@ -67,10 +68,7 @@ def instantiate_electronbond(self, config=None):
         config (dict): an optional config dict
     """
     config = config if config else settings.CARTOGRAPHER
-    client = ElectronBond(
-        baseurl=config['baseurl'],
-        user=config['user'],
-        password=config['password'])
+    client = ElectronBond(baseurl=config['baseurl'])
     try:
         resp = client.get(config['health_check_path'])
         resp.raise_for_status()
@@ -108,3 +106,23 @@ def handle_deleted_uri(uri, source, object_type, current_run):
         else:
             raise Exception(resp.json()["detail"])
     return updated
+
+
+def send_error_notification(fetch_run):
+    try:
+        errors = ""
+        err_str = "errors" if fetch_run.error_count > 1 else "error"
+        object_type = fetch_run.get_object_type_display()
+        source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == fetch_run.source][0]
+        for err in fetch_run.errors:
+            errors += "{}\n".format(err.message)
+        send_mail(
+            "{} {} exporting {} objects from {}".format(
+                fetch_run.error_count, err_str, object_type, source),
+            "The following errors were encountered while exporting {} objects from {}:\n\n{}".format(
+                object_type, source, errors),
+            "alerts@rockarch.org",
+            [settings.EMAIL_TO_ADDRESS],
+            fail_silently=False,)
+    except Exception as e:
+        print("Unable to send error notification email: {}".format(e))

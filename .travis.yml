@@ -1,28 +1,55 @@
 language: python
-sudo: required
 services:
-  - docker
+- docker
 env:
   global:
-    - DOCKER_COMPOSE_VERSION: 1.18.0
+  - DOCKER_COMPOSE_VERSION: 1.25.5
+  - SERVICE_NAME: pisces-web
+  - APPLICATION_NAME: pisces
 before_install:
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-  - cp pisces/config.py.example pisces/config.py
-  - docker-compose up -d
-  - sleep 20s
-  - docker-compose exec pisces-web pip install coverage pre-commit
-  - docker-compose exec pisces-web pre-commit install
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
+  -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
+- cp ${APPLICATION_NAME}/config.py.example ${APPLICATION_NAME}/config.py
+- docker-compose up -d
+- sleep 20s
+- docker-compose exec ${SERVICE_NAME} pip install coverage pre-commit
+- docker-compose exec ${SERVICE_NAME} pre-commit install
 install: true
 before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
 script:
-  - docker-compose exec pisces-web pre-commit run --all-files --show-diff-on-failure
-  - docker-compose exec pisces-web coverage run manage.py test
-after_script:
-  - docker-compose exec pisces-web coverage xml
-  - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
+- docker-compose exec ${SERVICE_NAME} pre-commit run --all-files --show-diff-on-failure
+- docker-compose exec ${SERVICE_NAME} coverage run manage.py test
+- docker-compose exec ${SERVICE_NAME} coverage xml
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+before_deploy:
+- sudo deploy_scripts/substitute_env.sh
+- sudo deploy_scripts/make_zip.sh $DEPLOY_ZIP_DIR $DEPLOY_ZIP_NAME
+deploy:
+- provider: s3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  local_dir: $DEPLOY_ZIP_DIR
+  skip_cleanup: true
+  on: &development
+    repo: RockefellerArchiveCenter/${APPLICATION_NAME}
+    branch: development
+  bucket: $AWS_BUCKET_NAME
+  region: us-east-1
+- provider: codedeploy
+  wait_until_deployed: true
+  bucket: $AWS_BUCKET_NAME
+  key: $DEPLOY_ZIP_NAME
+  bundle_type: zip
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  application: ${APPLICATION_NAME}
+  deployment_group: PiscesDevelopment
+  region: us-east-1
+  on: *development

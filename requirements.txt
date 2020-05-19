@@ -28,7 +28,6 @@ more-itertools==8.2.0
 multidict==4.7.5
 objectpath==0.6.1
 odin==1.5.1
-psycopg2==2.8.4
 psycopg2-binary==2.8.4
 pycodestyle==2.5.0
 Pygments==2.5.2

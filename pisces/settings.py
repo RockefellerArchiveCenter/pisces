@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-
 import os
 
-from . import config as CF
+from . import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,16 +21,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*'
+SECRET_KEY = config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.DJANGO_DEBUG
 
-ALLOWED_HOSTS = CF.ALLOWED_HOSTS
-
+ALLOWED_HOSTS = config.DJANGO_ALLOWED_HOSTS
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,8 +80,16 @@ WSGI_APPLICATION = 'pisces.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = CF.DATABASES
-
+DATABASES = {
+    "default": {
+        "ENGINE": config.SQL_ENGINE,
+        "NAME": config.SQL_DATABASE,
+        "USER": config.SQL_USER,
+        "PASSWORD": config.SQL_PASSWORD,
+        "HOST": config.SQL_HOST,
+        "PORT": config.SQL_PORT,
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -123,7 +128,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Django REST Framework
 REST_FRAMEWORK = {
@@ -132,16 +138,47 @@ REST_FRAMEWORK = {
 }
 
 # Silk Profiling
-SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER
+SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
 
 # Django cron settings
 CRON_CLASSES = [
-    "fetcher.cron.FetchAgents",
+    "fetcher.cron.DeletedArchivesSpaceArchivalObjects",
+    "fetcher.cron.DeletedArchivesSpaceFamilies",
+    "fetcher.cron.DeletedArchivesSpaceOrganizations",
+    "fetcher.cron.DeletedArchivesSpacePeople",
+    "fetcher.cron.DeletedArchivesSpaceResources",
+    "fetcher.cron.DeletedArchivesSpaceSubjects",
+    "fetcher.cron.DeletedCartographerArrangementMapComponents",
+    "fetcher.cron.UpdatedArchivesSpaceArchivalObjects",
+    "fetcher.cron.UpdatedArchivesSpaceFamilies",
+    "fetcher.cron.UpdatedArchivesSpaceOrganizations",
+    "fetcher.cron.UpdatedArchivesSpacePeople",
+    "fetcher.cron.UpdatedArchivesSpaceResources",
+    "fetcher.cron.UpdatedArchivesSpaceSubjects",
+    "fetcher.cron.UpdatedCartographerArrangementMapComponents",
 ]
-DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.cache.CacheLock"
+DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.file.FileLock"
+DJANGO_CRON_LOCKFILE_PATH = config.DJANGO_CRON_LOCKFILE_PATH
 
-ARCHIVESSPACE = CF.ARCHIVESSPACE
-CARTOGRAPHER = CF.CARTOGRAPHER
-MERGE_URL = CF.MERGE_URL
-TRANSFORM_URL = CF.TRANSFORM_URL
-INDEX_DELETE_URL = CF.INDEX_DELETE_URL
+ARCHIVESSPACE = {
+    "baseurl": config.AS_BASEURL,
+    "username": config.AS_USERNAME,
+    "password": config.AS_PASSWORD,
+    "repo": config.AS_REPO_ID,
+}
+
+CARTOGRAPHER = {
+    "baseurl": config.CARTOGRAPHER_BASEURL,
+    "health_check_path": config.CARTOGRAPHER_HEALTH_CHECK_PATH,
+}
+
+INDEX_DELETE_URL = config.INDEX_DELETE_URL
+
+# Email settings
+EMAIL_HOST = config.EMAIL_HOST
+EMAIL_PORT = config.EMAIL_PORT
+EMAIL_HOST_USER = config.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = config.EMAIL_HOST_PASSWORD
+EMAIL_USE_TLS = config.EMAIL_USE_TLS
+EMAIL_USE_SSL = config.EMAIL_USE_SSL
+EMAIL_TO_ADDRESS = config.EMAIL_TO_ADDRESS

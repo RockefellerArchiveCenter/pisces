@@ -3,9 +3,7 @@ import json
 import shortuuid
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
-from pisces import settings
 from rac_schemas import is_valid
-from requests.exceptions import ConnectionError
 from silk.profiling.profiler import silk_profile
 
 from .mappings import (SourceAgentCorporateEntityToAgent,
@@ -44,8 +42,6 @@ class Transformer:
             is_valid(transformed, schema)
             self.save_validated(transformed)
             return transformed
-        except ConnectionError:
-            raise TransformError("Could not connect to {}".format(settings.MERGE_URL))
         except ValidationError as e:
             raise TransformError("Transformed data is invalid: {}".format(e))
         except Exception as e:
