@@ -101,7 +101,7 @@ class TransformerTest(TestCase):
                 obj_len = len(DataObject.objects.filter(object_type=object_type))
                 request = client.post(
                     reverse("index-action-complete"),
-                    data={"identifier": obj.es_id, "action": action},
+                    data={"identifiers": [obj.es_id], "action": action},
                     format="json")
                 response = DataObjectUpdateByIdView.as_view()(request)
                 self.assertEqual(
