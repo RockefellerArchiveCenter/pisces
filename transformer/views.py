@@ -60,19 +60,22 @@ class DataObjectUpdateByIdView(BaseServiceView):
     """
 
     def get_service_response(self, request):
-        es_id = request.data.get("identifier")
+        identifiers = request.data.get("identifiers")
         action = request.data.get("action")
+        msg = ""
         if action not in ["deleted", "indexed"]:
             raise Exception("Unrecognized action {}, expecting either `deleted` or `indexed`")
-        try:
-            obj = DataObject.objects.get(es_id=es_id)
-            if action == "indexed":
-                obj.indexed = True
-                obj.save()
-                msg = "{} {} marked as indexed.".format(obj.object_type, obj.pk)
-            else:
-                obj.delete()
-                msg = "{} {} deleted.".format(obj.object_type, obj.pk)
-        except DataObject.DoesNotExist:
-            raise Exception("Could not find DataObject with identifier {}".format(es_id))
+        for es_id in identifiers:
+            try:
+                obj = DataObject.objects.get(es_id=es_id)
+                if action == "indexed":
+                    obj.indexed = True
+                    obj.save()
+                else:
+                    obj.delete()
+            except DataObject.DoesNotExist:
+                msg += "Could not find DataObject with identifier {}, skipping".format(es_id)
+        msg += "{} {} {}.".format(
+            obj.object_type, obj.pk,
+            "marked as indexed" if action == "indexed" else "deleted")
         return msg
