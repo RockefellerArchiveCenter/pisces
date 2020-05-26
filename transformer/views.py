@@ -9,7 +9,12 @@ from .serializers import DataObjectListSerializer, DataObjectSerializer
 
 class DataObjectViewSet(ModelViewSet):
     model = DataObject
-    queryset = DataObject.objects.all().order_by("last_modified")
+
+    def get_queryset(self, request):
+        queryset = DataObject.objects.all().order_by("last_modified")
+        if request.GET.get("clean", "").lower() != "true":
+            queryset = queryset.exclude(indexed=True)
+        return queryset
 
     def get_serializer_class(self):
         if self.action == 'list':
