@@ -57,7 +57,7 @@ class ArchivesSpaceHelper:
     def get_resource_children(self, uri):
         tree_root = self.aspace.client.get(
             "{}/tree/root".format(uri.rstrip("/"))).json()
-        return self.tree_children(tree_root, "")
+        return self.tree_children(tree_root, "") if tree_root["child_count"] > 0 else []
 
     @silk_profile()
     def get_archival_object_children(self, resource_uri, object_uri):

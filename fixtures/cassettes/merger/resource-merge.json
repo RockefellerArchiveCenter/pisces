@@ -739,7 +739,7 @@
                     ]
                 },
                 "body": {
-                    "string": "{\"child_count\":1,\"waypoints\":1,\"waypoint_size\":200,\"title\":\"Rockefeller University records, Special Events and Activities, Medical Electronics Center\",\"uri\":\"/repositories/2/resources/1008\",\"slugged_url\":\"\",\"jsonmodel_type\":\"resource\",\"parsed_title\":\"Rockefeller University records, Special Events and Activities, Medical Electronics Center\",\"level\":\"collection\",\"precomputed_waypoints\":{\"\":{\"0\":[{\"child_count\":0,\"waypoints\":0,\"waypoint_size\":200,\"title\":\"Bibliography\",\"slugged_url\":\"\",\"parsed_title\":\"Bibliography\",\"uri\":\"/repositories/2/archival_objects/559590\",\"position\":0,\"parent_id\":null,\"jsonmodel_type\":\"archival_object\",\"level\":\"file\",\"dates\":[{\"type\":\"inclusive\",\"label\":\"creation\",\"expression\":\"1958-1959\",\"begin\":\"1958\",\"end\":\"1959\"}]}]}}}\n"
+                    "string": "{\"child_count\":0,\"waypoints\":0,\"waypoint_size\":200,\"title\":\"Rockefeller University records, Special Events and Activities, Medical Electronics Center\",\"uri\":\"/repositories/2/resources/1008\",\"slugged_url\":\"\",\"jsonmodel_type\":\"resource\",\"parsed_title\":\"Rockefeller University records, Special Events and Activities, Medical Electronics Center\",\"level\":\"collection\",\"precomputed_waypoints\":{}}"
                 }
             }
         },
