@@ -8,8 +8,7 @@ from django.test import TestCase
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from .cron import (CleanUpCompleted,
-                   DeletedArchivesSpaceArchivalObjects,
+from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    DeletedArchivesSpaceFamilies,
                    DeletedArchivesSpaceOrganizations,
                    DeletedArchivesSpacePeople, DeletedArchivesSpaceResources,
@@ -143,4 +142,4 @@ class FetcherTest(TestCase):
                 self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
                 print(object)
                 self.assertEqual(
-                    len(FetchRun.objects.filter(source=source_id, object_type=object[0],status=FetchRun.FINISHED)), 2)
+                    len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 2)
