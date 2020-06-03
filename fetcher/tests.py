@@ -8,7 +8,7 @@ from django.test import TestCase
 from django.utils import timezone
 from rest_framework.test import APIRequestFactory
 
-from .cron import (DeletedArchivesSpaceArchivalObjects,
+from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    DeletedArchivesSpaceFamilies,
                    DeletedArchivesSpaceOrganizations,
                    DeletedArchivesSpacePeople, DeletedArchivesSpaceResources,
@@ -49,15 +49,16 @@ class FetcherTest(TestCase):
         self.factory = APIRequestFactory()
         time = pytz.utc.localize(datetime(2020, 3, 1))
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
-            for object_type, _ in FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES:
-                f = FetchRun.objects.create(
-                    status=FetchRun.FINISHED,
-                    source=FetchRun.ARCHIVESSPACE,
-                    object_type=object_type,
-                    object_status=object_status
-                )
-                f.start_time = time
-                f.save()
+            for _, source in FetchRun.SOURCE_CHOICES:
+                for object_type, _ in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
+                    f = FetchRun.objects.create(
+                        status=FetchRun.FINISHED,
+                        source=getattr(FetchRun, source.upper()),
+                        object_type=object_type,
+                        object_status=object_status
+                    )
+                    f.start_time = time
+                    f.save()
 
     def test_fetchers(self):
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
@@ -131,3 +132,14 @@ class FetcherTest(TestCase):
         self.assertIn(source, mail.outbox[0].subject)
         self.assertNotIn("errors", mail.outbox[0].subject)
         self.assertIn(error.message, mail.outbox[0].body)
+
+    def test_cleanup(self):
+        for source_id, source in FetchRun.SOURCE_CHOICES:
+            for object in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
+                last_run = last_run_time(source, FetchRun.FINISHED, object)
+                cleanup = CleanUpCompleted().do()
+                self.assertIsNot(False, cleanup)
+                self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
+                print(object)
+                self.assertEqual(
+                    len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 2)

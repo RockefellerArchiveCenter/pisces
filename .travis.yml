@@ -53,3 +53,5 @@ deploy:
   deployment_group: PiscesDevelopment
   region: us-east-1
   on: *development
+notifications:
+  email: false
