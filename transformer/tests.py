@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 import random
@@ -28,7 +29,8 @@ class TransformerTest(TestCase):
             for f in os.listdir(os.path.join("fixtures", "transformer", object_type)):
                 with open(os.path.join("fixtures", "transformer", object_type, f), "r") as json_file:
                     source = json.load(json_file)
-                    transformed = Transformer().run(object_type, source)
+                    loop = asyncio.get_event_loop()
+                    transformed = loop.run_until_complete(Transformer().run(object_type, source))
                     self.assertNotEqual(
                         transformed, False,
                         "Transformer returned an error: {}".format(transformed))

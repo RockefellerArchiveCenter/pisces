@@ -1,3 +1,5 @@
+import asyncio
+
 from django.utils import timezone
 from merger.mergers import (AgentMerger, ArchivalObjectMerger,
                             ArrangementMapMerger, ResourceMerger,
@@ -46,13 +48,11 @@ class BaseDataFetcher:
                 message="Error fetching data: {}".format(e),
             )
             raise FetcherError(e)
-        for obj in fetched:
-            try:
-                merged, merged_object_type = merger(clients).merge(object_type, obj.json())
-                Transformer().run(merged_object_type, merged)
-                processed.append(merged.get("uri"))
-            except Exception as e:
-                FetchRunError.objects.create(run=current_run, message=str(e))
+
+        asyncio.get_event_loop().run_until_complete(
+            self.process_fetched_list(
+                fetched, merger, processed, object_type, clients, current_run))
+
         current_run.status = FetchRun.FINISHED
         current_run.end_time = timezone.now()
         current_run.save()
@@ -66,6 +66,21 @@ class BaseDataFetcher:
             "aspace": instantiate_aspace(settings.ARCHIVESSPACE, repo=repo),
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
+
+    async def process_fetched_list(self, fetched, merger, processed, object_type, clients, current_run):
+        tasks = []
+        for obj in fetched:
+            task = asyncio.ensure_future(self.process_obj(obj, merger, processed, object_type, clients, current_run))
+            tasks.append(task)
+        await asyncio.gather(*tasks, return_exceptions=True)
+
+    async def process_obj(self, obj, merger, processed, object_type, clients, current_run):
+        try:
+            merged, merged_object_type = await merger(clients).merge(object_type, obj.json())
+            await Transformer().run(merged_object_type, merged)
+            processed.append(merged.get("uri"))
+        except Exception as e:
+            FetchRunError.objects.create(run=current_run, message=str(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
