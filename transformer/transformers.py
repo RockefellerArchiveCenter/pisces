@@ -34,7 +34,7 @@ class Transformer:
     """
 
     @silk_profile()
-    def run(self, object_type, data):
+    async def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
             from_resource, mapping, schema = self.get_mapping_configs(object_type)

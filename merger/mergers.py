@@ -18,7 +18,7 @@ class BaseMerger:
             raise MergeError(e)
 
     @silk_profile()
-    def merge(self, object_type, object):
+    async def merge(self, object_type, object):
         """Main merge function.
 
         Fetches and merges additional data from secondary data sources, then
