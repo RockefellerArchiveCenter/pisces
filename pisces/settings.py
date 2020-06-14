@@ -172,6 +172,7 @@ CARTOGRAPHER = {
     "health_check_path": config.CARTOGRAPHER_HEALTH_CHECK_PATH,
 }
 
+CHUNK_SIZE = config.CHUNK_SIZE
 INDEX_DELETE_URL = config.INDEX_DELETE_URL
 
 # Email settings

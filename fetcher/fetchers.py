@@ -1,4 +1,5 @@
 import asyncio
+from itertools import chain, islice
 
 from django.utils import timezone
 from merger.mergers import (AgentMerger, ArchivalObjectMerger,
@@ -36,9 +37,11 @@ class BaseDataFetcher:
         processed = []
         merger = self.get_merger(object_type)
         try:
+            print("Starting Fetch")
             fetched = getattr(
                 self, "get_{}".format(object_status))(
                 clients, object_type, last_run, current_run)
+            print("Fetch finished")
         except Exception as e:
             current_run.status = FetchRun.ERRORED
             current_run.end_time = timezone.now()
@@ -49,9 +52,12 @@ class BaseDataFetcher:
             )
             raise FetcherError(e)
 
-        asyncio.get_event_loop().run_until_complete(
-            self.process_fetched_list(
-                fetched, merger, processed, object_type, clients, current_run))
+        print("Calling async.io")
+        for n, chunk in enumerate(self.chunks(fetched, settings.CHUNK_SIZE)):
+            print("Chunk {}".format(n))
+            asyncio.get_event_loop().run_until_complete(
+                self.process_fetched_list(
+                    chunk, merger, processed, object_type, clients, current_run))
 
         current_run.status = FetchRun.FINISHED
         current_run.end_time = timezone.now()
@@ -66,6 +72,11 @@ class BaseDataFetcher:
             "aspace": instantiate_aspace(settings.ARCHIVESSPACE, repo=repo),
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
+
+    def chunks(self, iterable, size):
+        iterator = iter(iterable)
+        for first in iterator:
+            yield chain([first], islice(iterator, size - 1))
 
     async def process_fetched_list(self, fetched, merger, processed, object_type, clients, current_run):
         tasks = []
