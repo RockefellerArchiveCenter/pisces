@@ -74,10 +74,10 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    async def chunks(self, iterable, size):
+    def chunks(self, iterable, size):
         iterator = iter(iterable)
         for first in iterator:
-            await chain([first], islice(iterator, size - 1))
+            yield chain([first], islice(iterator, size - 1))
 
     async def process_fetched_list(self, fetched, merger, processed, object_type, clients, current_run):
         tasks = []
