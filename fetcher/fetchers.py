@@ -1,4 +1,5 @@
 import asyncio
+from datetime import datetime
 from itertools import chain, islice
 
 from django.utils import timezone
@@ -34,7 +35,7 @@ class BaseDataFetcher:
             object_status=object_status)
         last_run = last_run_time(self.source, object_status, object_type)
         clients = self.instantiate_clients(object_type)
-        processed = []
+        processed = 0
         merger = self.get_merger(object_type)
         try:
             print("Starting Fetch")
@@ -54,7 +55,7 @@ class BaseDataFetcher:
 
         print("Calling async.io")
         for n, chunk in enumerate(self.chunks(fetched, settings.CHUNK_SIZE)):
-            print("Chunk {}".format(n))
+            print("Chunk {}".format(n), datetime.now())
             asyncio.get_event_loop().run_until_complete(
                 self.process_fetched_list(
                     chunk, merger, processed, object_type, clients, current_run))
@@ -73,10 +74,10 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    def chunks(self, iterable, size):
+    async def chunks(self, iterable, size):
         iterator = iter(iterable)
         for first in iterator:
-            yield chain([first], islice(iterator, size - 1))
+            await chain([first], islice(iterator, size - 1))
 
     async def process_fetched_list(self, fetched, merger, processed, object_type, clients, current_run):
         tasks = []
@@ -89,7 +90,7 @@ class BaseDataFetcher:
         try:
             merged, merged_object_type = await merger(clients).merge(object_type, obj.json())
             await Transformer().run(merged_object_type, merged)
-            processed.append(merged.get("uri"))
+            processed += 1
         except Exception as e:
             FetchRunError.objects.create(run=current_run, message=str(e))
 
