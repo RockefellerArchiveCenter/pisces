@@ -22,7 +22,7 @@ class BaseCron(CronJobBase):
             source=self.fetcher.source,
             object_type=self.object_type,
             object_status=self.object_status).order_by("-end_time")[0]
-        print("{} records exported in {}".format(len(out), end - start))
+        print("{} records exported in {}".format(out, end - start))
         if fetch_run.error_count:
             print("{} errors".format(fetch_run.error_count))
             for e in fetch_run.errors:
