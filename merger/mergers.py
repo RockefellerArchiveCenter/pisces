@@ -113,12 +113,13 @@ class ArchivalObjectMerger(BaseMerger):
                 object["uri"], "language")
         return data
 
-    def get_extent_data(self, object, data):
+    def get_extent_data(self, object, data, object_type):
         data["extents"] = object.get("extents")
         if not data["extents"]:
             if object.get("instances"):
                 extents = []
-                for instance in object["instances"]:
+                parseable = [i for i in object["instances"] if all(i_type in i for i_type in ["indicator_2", "type_2"])]
+                for instance in parseable:
                     extent = {}
                     range = sorted([int(i.strip()) for i in instance["sub_container"]["indicator_2"].split("-")])
                     number = range[-1] - range[0] if len(range) > 1 else 1
@@ -127,7 +128,7 @@ class ArchivalObjectMerger(BaseMerger):
                     extent["number"] = number
                     extents.append(extent)
                 data["extents"] = extents
-            else:
+            elif object_type == "archival_object_collection":
                 data["extents"] = self.aspace_helper.closest_parent_value(object["uri"], "extents")
         return data
 
@@ -140,7 +141,7 @@ class ArchivalObjectMerger(BaseMerger):
         if object.get("dates") in ["", [], {}, None]:
             data["dates"] = self.aspace_helper.closest_parent_value(object["uri"], "dates")
         data.update(self.get_language_data(object, data))
-        data.update(self.get_extent_data(object, data))
+        data.update(self.get_extent_data(object, data, object_type))
         if object_type == "archival_object_collection":
             data.update(self.get_archival_object_collection_data(object))
         return data
