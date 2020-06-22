@@ -81,9 +81,12 @@ class SourceAncestorToReference(odin.Mapping):
     to_obj = Reference
 
     mappings = (
-        ('title', None, 'title'),
         ('type', None, 'type'),
     )
+
+    @odin.map_field(from_field="title", to_field="title")
+    def title(self, value):
+        return value.strip() if value else None
 
     @odin.map_field(from_field="order", to_field="order")
     def order(self, value):
@@ -252,7 +255,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field
     def title(self, value):
-        return value if value else self.source.display_string
+        return value.strip() if value else self.source.display_string.strip()
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
@@ -306,7 +309,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field
     def title(self, value):
-        return value if value else self.source.display_string
+        return value.strip() if value else self.source.display_string.strip()
 
     @odin.map_field(from_field='language', to_field='languages', to_list=True)
     def languages(self, value):
