@@ -35,7 +35,7 @@ class BaseDataFetcher:
             object_status=object_status)
         last_run = last_run_time(self.source, object_status, object_type)
         clients = self.instantiate_clients(object_type)
-        processed = 0
+        self.processed = 0
         merger = self.get_merger(object_type)
         try:
             print("Starting Fetch")
@@ -54,18 +54,16 @@ class BaseDataFetcher:
             raise FetcherError(e)
 
         print("Calling async.io")
-        for n, chunk in enumerate(self.chunks(fetched, settings.CHUNK_SIZE)):
-            print("Chunk {}".format(n), datetime.now())
-            asyncio.get_event_loop().run_until_complete(
-                self.process_fetched_list(
-                    chunk, merger, processed, object_type, clients, current_run))
+        asyncio.get_event_loop().run_until_complete(
+            self.process_chunks(
+                fetched, merger, object_type, clients, current_run))
 
         current_run.status = FetchRun.FINISHED
         current_run.end_time = timezone.now()
         current_run.save()
         if current_run.error_count > 0:
             send_error_notification(current_run)
-        return processed
+        return self.processed
 
     def instantiate_clients(self, object_type):
         repo = True if object_type in ["resource", "archival_object"] else False
@@ -79,18 +77,26 @@ class BaseDataFetcher:
         for first in iterator:
             yield chain([first], islice(iterator, size - 1))
 
-    async def process_fetched_list(self, fetched, merger, processed, object_type, clients, current_run):
+    async def process_chunks(self, fetched, merger, object_type, clients, current_run):
+        iterator = iter(fetched)
+        for first in iterator:
+            await self.process_fetched_list(
+                chain([first], islice(iterator, settings.CHUNK_SIZE - 1)),
+                merger, object_type, clients, current_run)
+
+    async def process_fetched_list(self, fetched, merger, object_type, clients, current_run):
         tasks = []
+        print("Chunk", datetime.now())
         for obj in fetched:
-            task = asyncio.ensure_future(self.process_obj(obj, merger, processed, object_type, clients, current_run))
+            task = asyncio.ensure_future(self.process_obj(obj, merger, object_type, clients, current_run))
             tasks.append(task)
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, obj, merger, processed, object_type, clients, current_run):
+    async def process_obj(self, obj, merger, object_type, clients, current_run):
         try:
             merged, merged_object_type = await merger(clients).merge(object_type, obj.json())
             await Transformer().run(merged_object_type, merged)
-            processed += 1
+            self.processed += 1
         except Exception as e:
             FetchRunError.objects.create(run=current_run, message=str(e))
 

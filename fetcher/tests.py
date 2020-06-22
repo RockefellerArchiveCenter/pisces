@@ -67,9 +67,8 @@ class FetcherTest(TestCase):
             for status in ["updated", "deleted"]:
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
-                        list = fetcher().fetch(status, object_type)
-                        for obj in list:
-                            self.assertTrue(isinstance(obj, str))
+                        processed = fetcher().fetch(status, object_type)
+                        print(object_type, processed)
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
 
     def test_action_views(self):
