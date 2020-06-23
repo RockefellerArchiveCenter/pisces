@@ -33,6 +33,7 @@ class Transformer:
         data (dict): the source data to be transformed.
     """
 
+    @profile("transformer_run")
     async def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
@@ -79,7 +80,6 @@ class Transformer:
             return data
         return modified_dict
 
-    @profile("transformer_save_validated")
     def save_validated(self, data):
         for ident in data["external_identifiers"]:
             try:
