@@ -68,11 +68,6 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    def chunks(self, iterable, size):
-        iterator = iter(iterable)
-        for first in iterator:
-            yield chain([first], islice(iterator, size - 1))
-
     async def process_chunks(self, fetched, merger, object_type, clients, current_run):
         iterator = iter(fetched)
         for first in iterator:

@@ -3,6 +3,7 @@ import json
 import shortuuid
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
+from pisces.middleware import profile
 from rac_schemas import is_valid
 
 from .mappings import (SourceAgentCorporateEntityToAgent,
@@ -78,6 +79,7 @@ class Transformer:
             return data
         return modified_dict
 
+    @profile("transformer_save_validated")
     def save_validated(self, data):
         for ident in data["external_identifiers"]:
             matches = DataObject.find_matches(data["type"], ident["source"], ident["identifier"])
