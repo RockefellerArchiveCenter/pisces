@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     def add_uri(apps, schema_editor):
         DataObject = apps.get_model('transformer', 'DataObject')
         for obj in DataObject.objects.all():
-            uri = obj.data.get("uri") if obj.data.get("uri") else obj.data.external_identifiers[0].identifier
+            uri = obj.data.get("uri") if obj.data.get("uri") else obj.data["external_identifiers"][0]["identifier"]
             obj.uri = uri
             obj.save()
 
