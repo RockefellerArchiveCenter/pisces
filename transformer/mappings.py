@@ -265,17 +265,17 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     def terms(self, value):
         return SourceRefToReference.apply(value)
 
-    @odin.map_list_field(from_field='dates', to_field='dates')
-    def dates(self, value):
-        return SourceDateToDate.apply(value)
+    # @odin.map_list_field(from_field='dates', to_field='dates')
+    # def dates(self, value):
+    #     return SourceDateToDate.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
         return SourceRightsStatementToRightsStatement.apply(value)
 
-    @odin.map_list_field(from_field='extents', to_field='extents')
-    def extents(self, value):
-        return SourceExtentToExtent.apply(value)
+    # @odin.map_list_field(from_field='extents', to_field='extents')
+    # def extents(self, value):
+    #     return SourceExtentToExtent.apply(value)
 
     @odin.map_list_field(from_field='linked_agents', to_field='creators')
     def creators(self, value):

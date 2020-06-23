@@ -337,7 +337,7 @@ EXTENT_TYPE_CHOICES = (
     ('document box(es)', 'Document Boxes'),
     ('files', 'Files'),
     ('film reels', 'Film Reels'),
-    ('folder(s)', 'Folder(s)'),
+    ('folders', 'Folders'),
     ('gigabytes', 'Gigabytes'),
     ('images', 'Images'),
     ('Item(s)', 'Item(s)'),

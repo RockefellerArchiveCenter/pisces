@@ -113,18 +113,35 @@ class ArchivalObjectMerger(BaseMerger):
                 object["uri"], "language")
         return data
 
+    def get_extent_data(self, object, data, object_type):
+        data["extents"] = object.get("extents")
+        if not data["extents"]:
+            if object.get("instances"):
+                extents = []
+                parseable = [i for i in object["instances"] if all(i_type in i for i_type in ["indicator_2", "type_2"])]
+                for instance in parseable:
+                    extent = {}
+                    range = sorted([int(i.strip()) for i in instance["sub_container"]["indicator_2"].split("-")])
+                    number = range[-1] - range[0] if len(range) > 1 else 1
+                    type = instance["sub_container"]["type_2"]
+                    extent["extent_type"] = "{}s".format(type)
+                    extent["number"] = number
+                    extents.append(extent)
+                data["extents"] = extents
+            elif object_type == "archival_object_collection":
+                data["extents"] = self.aspace_helper.closest_parent_value(object["uri"], "extents")
+        return data
+
     @silk_profile()
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace.
         """
         data = {"linked_agents": [], "children": []}
-        fields = ["dates"] if object_type == "archival_object" else ["dates", "extents"]
-        for field in fields:
-            if object.get(field) in ["", [], {}, None]:
-                value = self.aspace_helper.closest_parent_value(object["uri"], field)
-                data[field] = value
-        data = self.get_language_data(object, data)
+        if object.get("dates") in ["", [], {}, None]:
+            data["dates"] = self.aspace_helper.closest_parent_value(object["uri"], "dates")
+        data.update(self.get_language_data(object, data))
+        data.update(self.get_extent_data(object, data, object_type))
         if object_type == "archival_object_collection":
             data.update(self.get_archival_object_collection_data(object))
         return data

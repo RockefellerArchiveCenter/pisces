@@ -38,11 +38,9 @@ class BaseDataFetcher:
         self.processed = 0
         merger = self.get_merger(object_type)
         try:
-            print("Starting Fetch")
             fetched = getattr(
                 self, "get_{}".format(object_status))(
                 clients, object_type, last_run, current_run)
-            print("Fetch finished")
         except Exception as e:
             current_run.status = FetchRun.ERRORED
             current_run.end_time = timezone.now()
@@ -53,7 +51,6 @@ class BaseDataFetcher:
             )
             raise FetcherError(e)
 
-        print("Calling async.io")
         asyncio.get_event_loop().run_until_complete(
             self.process_chunks(
                 fetched, merger, object_type, clients, current_run))

@@ -68,7 +68,7 @@ class FetcherTest(TestCase):
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
                         processed = fetcher().fetch(status, object_type)
-                        print(object_type, processed)
+                        self.assertTrue(isinstance(processed, int))
             self.assertTrue(len(FetchRun.objects.all()), len(object_type_choices) * 2)
 
     def test_action_views(self):

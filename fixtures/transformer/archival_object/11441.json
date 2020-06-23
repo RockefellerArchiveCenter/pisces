@@ -27,7 +27,12 @@
         }
     ],
     "display_string": "Sculpture for the Pan American Highway, 1954",
-    "extents": [],
+    "extents": [
+      {
+        "number": "4",
+        "extent_type": "folders"
+      }
+    ],
     "external_documents": [],
     "external_ids": [
         {
