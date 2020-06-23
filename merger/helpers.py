@@ -1,13 +1,11 @@
 from fetcher.helpers import instantiate_aspace
 from pisces import settings
-from pisces.middleware import profile
 
 
 class ArchivesSpaceHelper:
     def __init__(self, aspace):
         self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE, repo=False)
 
-    @profile("ashelper_get_ancestors")
     def get_ancestors(self, uri):
         """Returns the full record for each ancestor."""
         obj = self.aspace.client.get(uri).json()
