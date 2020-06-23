@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'fetcher',
     'merger',
     'transformer',
-    'silk',
     'django_cron',
 ]
 
@@ -53,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'pisces.urls'
@@ -136,9 +134,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 25
 }
-
-# Silk Profiling
-SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
 
 # Django cron settings
 CRON_CLASSES = [

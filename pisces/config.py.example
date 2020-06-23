@@ -16,7 +16,6 @@ AS_REPO_ID = 2
 CARTOGRAPHER_BASEURL = "http://localhost:8007"
 CARTOGRAPHER_HEALTH_CHECK_PATH = "/status/health/"
 CHUNK_SIZE = 20000
-SILKY_PYTHON_PROFILER = True
 INDEX_DELETE_URL = "http://scorpio-web:8008/index/delete/"
 EMAIL_HOST = "mail.example.com"
 EMAIL_PORT = 123

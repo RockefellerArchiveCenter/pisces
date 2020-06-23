@@ -1,5 +1,3 @@
-from silk.profiling.profiler import silk_profile
-
 from .helpers import ArchivesSpaceHelper
 
 
@@ -17,7 +15,6 @@ class BaseMerger:
         except Exception as e:
             raise MergeError(e)
 
-    @silk_profile()
     async def merge(self, object_type, object):
         """Main merge function.
 
@@ -43,7 +40,6 @@ class BaseMerger:
     def get_additional_data(self, object, object_type):
         return None
 
-    @silk_profile()
     def get_target_object_type(self, data):
         """Returns object type.
 
@@ -58,7 +54,6 @@ class BaseMerger:
 
 class ArchivalObjectMerger(BaseMerger):
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches additional data from ArchivesSpace and Cartographer.
 
@@ -75,7 +70,6 @@ class ArchivalObjectMerger(BaseMerger):
         data.update(self.get_archivesspace_data(object, object_type))
         return data
 
-    @silk_profile()
     def get_cartographer_data(self, object):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
@@ -88,7 +82,6 @@ class ArchivalObjectMerger(BaseMerger):
                 data["ancestors"].append(a)
         return data
 
-    @silk_profile()
     def get_archival_object_collection_data(self, object):
         """Gets additional data for archival_object_collections."""
         data = {"children": []}
@@ -98,7 +91,6 @@ class ArchivalObjectMerger(BaseMerger):
             object["resource"]["ref"], object["uri"])
         return data
 
-    @silk_profile()
     def get_language_data(self, object, data):
         """Gets language data from ArchivesSpace.
 
@@ -132,7 +124,6 @@ class ArchivalObjectMerger(BaseMerger):
                 data["extents"] = self.aspace_helper.closest_parent_value(object["uri"], "extents")
         return data
 
-    @silk_profile()
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace.
@@ -146,7 +137,6 @@ class ArchivalObjectMerger(BaseMerger):
             data.update(self.get_archival_object_collection_data(object))
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
         for k, v in additional_data.items():
             if isinstance(v, list):
@@ -161,7 +151,6 @@ class ArrangementMapMerger(BaseMerger):
     def get_target_object_type(self, data):
         return "resource"
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches the ArchivesSpace resource record referenced by the
         ArrangementMapComponent.
@@ -179,7 +168,6 @@ class ArrangementMapMerger(BaseMerger):
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
         ancestors = []
@@ -196,7 +184,6 @@ class AgentMerger(BaseMerger):
 
 class ResourceMerger(BaseMerger):
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Gets additional data from Cartographer and ArchivesSpace.
 
@@ -212,7 +199,6 @@ class ResourceMerger(BaseMerger):
         data.update(self.get_archivesspace_data(object))
         return data
 
-    @silk_profile()
     def get_cartographer_data(self, object):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
@@ -223,7 +209,6 @@ class ResourceMerger(BaseMerger):
             data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
         return data
 
-    @silk_profile()
     def get_archivesspace_data(self, object):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
@@ -231,7 +216,6 @@ class ResourceMerger(BaseMerger):
         data["children"] = self.aspace_helper.get_resource_children(object["uri"])
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
         """Combines existing ArchivesSpace data with Cartographer data.
 

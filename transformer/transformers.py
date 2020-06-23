@@ -4,7 +4,6 @@ import shortuuid
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
 from rac_schemas import is_valid
-from silk.profiling.profiler import silk_profile
 
 from .mappings import (SourceAgentCorporateEntityToAgent,
                        SourceAgentFamilyToAgent, SourceAgentPersonToAgent,
@@ -33,7 +32,6 @@ class Transformer:
         data (dict): the source data to be transformed.
     """
 
-    @silk_profile()
     async def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
@@ -59,13 +57,11 @@ class Transformer:
         }
         return TYPE_MAP[object_type]
 
-    @silk_profile()
     def get_transformed_object(self, data, from_resource, mapping):
         from_obj = json_codec.loads(json.dumps(data), resource=from_resource)
         transformed = json.loads(json_codec.dumps(mapping.apply(from_obj)))
         return self.remove_keys_from_dict(transformed)
 
-    @silk_profile()
     def remove_keys_from_dict(self, data, target_key="$"):
         """Removes all matching keys from dict."""
         modified_dict = {}
@@ -82,7 +78,6 @@ class Transformer:
             return data
         return modified_dict
 
-    @silk_profile()
     def save_validated(self, data):
         for ident in data["external_identifiers"]:
             matches = DataObject.find_matches(data["type"], ident["source"], ident["identifier"])
@@ -101,7 +96,6 @@ class Transformer:
                     data=data,
                     indexed=False)
 
-    @silk_profile()
     def generate_identifier(self):
         shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
         return shortuuid.uuid()

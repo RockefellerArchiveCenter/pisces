@@ -3,13 +3,11 @@ from asnake.aspace import ASpace
 from django.core.mail import send_mail
 from electronbonder.client import ElectronBond
 from pisces import settings
-from silk.profiling.profiler import silk_profile
 from transformer.models import DataObject
 
 from .models import FetchRun, FetchRunError
 
 
-@silk_profile()
 def last_run_time(source, object_status, object_type):
     """Returns a timestamp for a successful fetch.
 
@@ -37,7 +35,6 @@ def last_run_time(source, object_status, object_type):
         else 0)
 
 
-@silk_profile()
 def instantiate_aspace(self, config=None, repo=False):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
@@ -60,7 +57,6 @@ def instantiate_aspace(self, config=None, repo=False):
     return aspace
 
 
-@silk_profile()
 def instantiate_electronbond(self, config=None):
     """Instantiates and returns an ElectronBond client.
 
@@ -78,7 +74,6 @@ def instantiate_electronbond(self, config=None):
             "Cartographer is not available: {}".format(e))
 
 
-@silk_profile()
 def get_es_id(identifier, source, object_type):
     es_id = None
     matches = DataObject.find_matches(object_type, source, identifier)
@@ -88,7 +83,6 @@ def get_es_id(identifier, source, object_type):
     return es_id
 
 
-@silk_profile()
 def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
     es_id = get_es_id(uri, source, object_type)
