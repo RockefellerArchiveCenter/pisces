@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'fetcher',
     'merger',
     'transformer',
-    'silk',
     'django_cron',
 ]
 
@@ -53,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'pisces.urls'
@@ -137,9 +135,6 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 25
 }
 
-# Silk Profiling
-SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
-
 # Django cron settings
 CRON_CLASSES = [
     "fetcher.cron.DeletedArchivesSpaceArchivalObjects",
@@ -183,3 +178,6 @@ EMAIL_HOST_PASSWORD = config.EMAIL_HOST_PASSWORD
 EMAIL_USE_TLS = config.EMAIL_USE_TLS
 EMAIL_USE_SSL = config.EMAIL_USE_SSL
 EMAIL_TO_ADDRESS = config.EMAIL_TO_ADDRESS
+
+# Base dir for profile log files
+PROFILE_LOG_BASE = config.PROFILE_LOG_BASE

@@ -7,7 +7,6 @@ from merger.mergers import (AgentMerger, ArchivalObjectMerger,
                             ArrangementMapMerger, ResourceMerger,
                             SubjectMerger)
 from pisces import settings
-from silk.profiling.profiler import silk_profile
 from transformer.transformers import Transformer
 
 from .helpers import (handle_deleted_uri, instantiate_aspace,
@@ -69,11 +68,6 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    def chunks(self, iterable, size):
-        iterator = iter(iterable)
-        for first in iterator:
-            yield chain([first], islice(iterator, size - 1))
-
     async def process_chunks(self, fetched, merger, object_type, clients, current_run):
         iterator = iter(fetched)
         for first in iterator:
@@ -113,11 +107,9 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         }
         return MERGERS[object_type]
 
-    @silk_profile()
     def get_updated(self, clients, object_type, last_run, current_run):
         return self.updated_list(clients["aspace"], object_type, last_run, True)
 
-    @silk_profile()
     def get_deleted(self, clients, object_type, last_run, current_run):
         data = []
         aspace = clients["aspace"]
@@ -131,7 +123,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 data.append(updated)
         return data
 
-    @silk_profile()
     def get_archival_objects(self, aspace, last_run, publish):
         """Returns only archival objects belonging to a published resource."""
         for obj in aspace.repo.archival_objects.with_params(
@@ -139,7 +130,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             if not obj.has_unpublished_ancestor:
                 yield obj
 
-    @silk_profile()
     def get_resources(self, aspace, last_run):
         """Return only resources whose id_0 attribute starts with 'FA'"""
         for obj in aspace.repo.resources.with_params(
@@ -147,7 +137,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             if obj.id_0.startswith("FA"):
                 yield obj
 
-    @silk_profile()
     def updated_list(self, aspace, object_type, last_run, publish):
         if object_type == 'resource':
             list = self.get_resources(aspace, last_run)
@@ -169,7 +158,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             if obj.publish == publish:
                 yield obj
 
-    @silk_profile()
     def deleted_list(self, aspace, object_type, last_run):
         for d in aspace.client.get_paged(
                 "delete-feed", params={"modified_since": str(last_run)}):
@@ -184,11 +172,9 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_merger(self, object_type):
         return ArrangementMapMerger
 
-    @silk_profile()
     def get_updated(self, clients, object_type, last_run, current_run):
         return self.updated_list(clients["cartographer"], last_run, True)
 
-    @silk_profile()
     def get_deleted(self, clients, object_type, last_run, current_run):
         data = []
         for component in self.updated_list(clients["cartographer"], last_run, False):
@@ -201,7 +187,6 @@ class CartographerDataFetcher(BaseDataFetcher):
                 data.append(updated)
         return data
 
-    @silk_profile()
     def updated_list(self, client, last_run, publish):
         for component_ref in client.get(
                 '/api/components/', params={"modified_since": last_run}).json()['results']:
@@ -209,7 +194,6 @@ class CartographerDataFetcher(BaseDataFetcher):
             if component.get('publish') == publish:
                 yield component
 
-    @silk_profile()
     def deleted_list(self, client, last_run):
         for deleted_ref in client.get(
                 '/api/delete-feed/', params={"deleted_since": last_run}).json()['results']:

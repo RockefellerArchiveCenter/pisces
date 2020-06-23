@@ -34,7 +34,6 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^index-complete/$', DataObjectUpdateByIdView.as_view(), name='index-action-complete'),
-    re_path(r'^silk/', include('silk.urls', namespace='silk')),
     path('status/', include('health_check.api.urls')),
     path('schema/', schema_view, name='schema'),
     path('', include(router.urls)),

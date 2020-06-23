@@ -1,7 +1,7 @@
 from django.contrib.postgres.fields import JSONField
 from django.contrib.postgres.indexes import GinIndex
 from django.db import models
-from silk.profiling.profiler import silk_profile
+from pisces.middleware import profile
 
 
 class DataObject(models.Model):
@@ -27,7 +27,7 @@ class DataObject(models.Model):
         ]
 
     @classmethod
-    @silk_profile()
+    @profile("dataobject_find_matches")
     def find_matches(self, object_type, source, identifier):
         return DataObject.objects.filter(
             object_type=object_type,
