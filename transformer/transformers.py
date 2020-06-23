@@ -82,19 +82,16 @@ class Transformer:
     @profile("transformer_save_validated")
     def save_validated(self, data):
         for ident in data["external_identifiers"]:
-            matches = DataObject.find_matches(data["type"], ident["source"], ident["identifier"])
-            if len(matches) > 1:
-                raise Exception(
-                    "Too many matches were found for {}".format(ident["identifier"]))
-            elif len(matches) == 1:
-                existing = matches[0]
+            try:
+                existing = DataObject.objects.get(uri=data["uri"])
                 existing.data = data
                 existing.indexed = False
                 existing.save()
-            else:
+            except DataObject.DoesNotExist:
                 DataObject.objects.create(
                     es_id=self.generate_identifier(),
                     object_type=data["type"],
+                    uri=data["uri"],
                     data=data,
                     indexed=False)
 

@@ -1,7 +1,5 @@
 from django.contrib.postgres.fields import JSONField
-from django.contrib.postgres.indexes import GinIndex
 from django.db import models
-from pisces.middleware import profile
 
 
 class DataObject(models.Model):
@@ -13,24 +11,8 @@ class DataObject(models.Model):
     )
     es_id = models.CharField(max_length=255)
     object_type = models.CharField(max_length=255, choices=TYPE_CHOICES)
+    uri = models.CharField(max_length=255, null=True, blank=True, db_index=True)
     data = JSONField()
     indexed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        indexes = [
-            GinIndex(
-                fields=['data'],
-                name='data_gin',
-            ),
-        ]
-
-    @classmethod
-    @profile("dataobject_find_matches")
-    def find_matches(self, object_type, source, identifier):
-        return DataObject.objects.filter(
-            object_type=object_type,
-            data__external_identifiers__contains=[
-                {"source": source, "identifier": identifier}
-            ])

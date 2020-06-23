@@ -74,18 +74,16 @@ def instantiate_electronbond(self, config=None):
             "Cartographer is not available: {}".format(e))
 
 
-def get_es_id(identifier, source, object_type):
-    es_id = None
-    matches = DataObject.find_matches(object_type, source, identifier)
-    for match in matches:
-        if match.indexed:
-            es_id = match.es_id
-    return es_id
+def get_es_id(uri):
+    try:
+        return DataObject.objects.get(uri=uri).es_id
+    except DataObject.DoesNotExist:
+        return None
 
 
 def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
-    es_id = get_es_id(uri, source, object_type)
+    es_id = get_es_id(uri)
     if es_id:
         try:
             resp = requests.post(settings.INDEX_DELETE_URL, json=es_id)
