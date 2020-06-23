@@ -1,3 +1,5 @@
+import re
+
 from .helpers import ArchivesSpaceHelper
 
 
@@ -110,10 +112,13 @@ class ArchivalObjectMerger(BaseMerger):
         if not data["extents"]:
             if object.get("instances"):
                 extents = []
-                parseable = [i for i in object["instances"] if all(i_type in i.get("sub_container", {}) for i_type in ["indicator_2", "type_2"])]
+                parseable = [i for i in object["instances"] if
+                             all(i_type in i.get("sub_container", {})
+                                 for i_type in ["indicator_2", "type_2"])]
                 for instance in parseable:
                     extent = {}
-                    range = sorted([int(i.strip()) for i in instance["sub_container"]["indicator_2"].split("-")])
+                    range = sorted([int(re.sub("[^0-9]", "", i.strip()))
+                                    for i in instance["sub_container"]["indicator_2"].split("-")])
                     number = range[-1] - range[0] if len(range) > 1 else 1
                     type = instance["sub_container"]["type_2"]
                     extent["extent_type"] = "{}s".format(type)
