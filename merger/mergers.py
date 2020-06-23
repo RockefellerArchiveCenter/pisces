@@ -110,7 +110,7 @@ class ArchivalObjectMerger(BaseMerger):
         if not data["extents"]:
             if object.get("instances"):
                 extents = []
-                parseable = [i for i in object["instances"] if all(i_type in i for i_type in ["indicator_2", "type_2"])]
+                parseable = [i for i in object["instances"] if all(i_type in i["sub_container"] for i_type in ["indicator_2", "type_2"])]
                 for instance in parseable:
                     extent = {}
                     range = sorted([int(i.strip()) for i in instance["sub_container"]["indicator_2"].split("-")])
