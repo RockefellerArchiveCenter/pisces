@@ -44,7 +44,7 @@ class SourceExtent(odin.Resource):
     number = odin.StringField()
     container_summary = odin.StringField(null=True)
     portion = odin.StringField(choices=(('whole', 'Whole'), ('part', 'Part'))),
-    extent_type = odin.StringField(choices=configs.EXTENT_TYPE_CHOICES)
+    extent_type = odin.StringField()
 
 
 class SourceExternalId(odin.Resource):

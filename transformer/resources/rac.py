@@ -65,7 +65,7 @@ class Date(odin.Resource):
 class Extent(odin.Resource):
     """Records the size of an aggregation of archival records."""
     value = odin.StringField()
-    type = odin.StringField(choices=configs.EXTENT_TYPE_CHOICES)
+    type = odin.StringField()
 
 
 class Language(odin.Resource):
