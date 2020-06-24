@@ -1,6 +1,7 @@
 import json
 
 import odin
+from fetcher.helpers import identifier_from_uri
 from iso639 import languages
 
 from .resources.configs import NOTE_TYPE_CHOICES
@@ -13,7 +14,8 @@ from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceArchivalObject, SourceDate, SourceExtent,
                                SourceLinkedAgent, SourceNote, SourceRef,
                                SourceResource, SourceRightsStatement,
-                               SourceRightsStatementAct, SourceSubject)
+                               SourceRightsStatementAct, SourceSubject,
+                               SourceSubjectRef)
 
 
 def transform_language(value, lang_materials):
@@ -75,6 +77,20 @@ class SourceRefToReference(odin.Mapping):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
 
+class SourceSubjectRefToReference(odin.Mapping):
+    """Maps SubjectRef to Reference object."""
+    from_obj = SourceSubjectRef
+    to_obj = Reference
+
+    @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
+    def external_identifiers(self, value):
+        return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_field(from_field='ref', to_field='uri')
+    def uri(self, value):
+        return "/terms/{}".format(identifier_from_uri(value))
+
+
 class SourceAncestorToReference(odin.Mapping):
     """Maps SourceAncestor to Reference object."""
     from_obj = SourceAncestor
@@ -97,6 +113,10 @@ class SourceAncestorToReference(odin.Mapping):
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
 
+    @odin.map_field(from_field='ref', to_field='uri')
+    def uri(self, value):
+        return "/{}s/{}".format(self.source.type, identifier_from_uri(value))
+
 
 class SourceLinkedAgentToReference(odin.Mapping):
     """Maps SourceLinkedAgent to Reference object."""
@@ -110,6 +130,10 @@ class SourceLinkedAgentToReference(odin.Mapping):
     @odin.map_list_field(from_field='ref', to_field='external_identifiers', to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source='archivesspace')]
+
+    @odin.map_field(from_field='ref', to_field='uri')
+    def uri(self, value):
+        return "/agents/{}".format(identifier_from_uri(value))
 
 
 class SourceDateToDate(odin.Mapping):
@@ -233,7 +257,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return SourceRefToReference.apply(value)
+        return SourceSubjectRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):
@@ -263,7 +287,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return SourceRefToReference.apply(value)
+        return SourceSubjectRefToReference.apply(value)
 
     # @odin.map_list_field(from_field='dates', to_field='dates')
     # def dates(self, value):
@@ -321,7 +345,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field='subjects', to_field='terms')
     def terms(self, value):
-        return SourceRefToReference.apply(value)
+        return SourceSubjectRefToReference.apply(value)
 
     @odin.map_list_field(from_field='rights_statements', to_field='rights')
     def rights(self, value):

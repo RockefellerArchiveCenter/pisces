@@ -80,7 +80,6 @@ class ArchivalObjectMerger(BaseMerger):
             "/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
         if resp["count"] >= 1:
             for a in resp["results"][0].get("ancestors"):
-                a["type"] = "collection"
                 data["ancestors"].append(a)
         return data
 
@@ -146,6 +145,8 @@ class ArchivalObjectMerger(BaseMerger):
                 object[k] = object.get(k, []) + v
             else:
                 object[k] = v
+        for ancestor in object.get("ancestors"):
+            ancestor["type"] = "collection"
         return object
 
 

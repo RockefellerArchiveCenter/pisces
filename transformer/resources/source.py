@@ -30,6 +30,11 @@ class SourceRef(odin.Resource):
     ref = odin.StringField()
 
 
+class SourceSubjectRef(odin.Resource):
+    """A reference to a related object."""
+    ref = odin.StringField()
+
+
 class SourceDate(odin.Resource):
     """Records the dates associated with an aggregation of archival records."""
     expression = odin.StringField(null=True)
@@ -204,7 +209,7 @@ class SourceComponentBase(odin.Resource):
     level = odin.StringField()
     jsonmodel_type = odin.StringField(choices=COMPONENT_TYPES)
     external_ids = odin.ArrayOf(SourceExternalId)
-    subjects = odin.ArrayOf(SourceRef)
+    subjects = odin.ArrayOf(SourceSubjectRef)
     extents = odin.ArrayOf(SourceExtent)
     dates = odin.ArrayOf(SourceDate)
     language = odin.StringField(null=True)

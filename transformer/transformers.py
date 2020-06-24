@@ -1,6 +1,6 @@
 import json
 
-import shortuuid
+from fetcher.helpers import identifier_from_uri
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
 from rac_schemas import is_valid
@@ -79,20 +79,15 @@ class Transformer:
         return modified_dict
 
     def save_validated(self, data):
-        for ident in data["external_identifiers"]:
-            try:
-                existing = DataObject.objects.get(uri=data["uri"])
-                existing.data = data
-                existing.indexed = False
-                existing.save()
-            except DataObject.DoesNotExist:
-                DataObject.objects.create(
-                    es_id=self.generate_identifier(),
-                    object_type=data["type"],
-                    uri=data["uri"],
-                    data=data,
-                    indexed=False)
-
-    def generate_identifier(self):
-        shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
-        return shortuuid.uuid()
+        es_id = identifier_from_uri(data["uri"])
+        try:
+            existing = DataObject.objects.get(es_id=es_id)
+            existing.data = data
+            existing.indexed = False
+            existing.save()
+        except DataObject.DoesNotExist:
+            DataObject.objects.create(
+                es_id=es_id,
+                object_type=data["type"],
+                data=data,
+                indexed=False)

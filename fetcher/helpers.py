@@ -1,9 +1,9 @@
 import requests
+import shortuuid
 from asnake.aspace import ASpace
 from django.core.mail import send_mail
 from electronbonder.client import ElectronBond
 from pisces import settings
-from transformer.models import DataObject
 
 from .models import FetchRun, FetchRunError
 
@@ -74,16 +74,14 @@ def instantiate_electronbond(self, config=None):
             "Cartographer is not available: {}".format(e))
 
 
-def get_es_id(uri):
-    try:
-        return DataObject.objects.get(uri=uri).es_id
-    except DataObject.DoesNotExist:
-        return None
+def identifier_from_uri(uri):
+    shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
+    return shortuuid.uuid(name=uri)
 
 
 def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
-    es_id = get_es_id(uri)
+    es_id = identifier_from_uri(uri)
     if es_id:
         try:
             resp = requests.post(settings.INDEX_DELETE_URL, json=es_id)
@@ -93,8 +91,7 @@ def handle_deleted_uri(uri, source, object_type, current_run):
             if current_run:
                 FetchRunError.objects.create(
                     run=current_run,
-                    message=resp.json()["detail"],
-                )
+                    message=resp.json()["detail"])
         else:
             raise Exception(resp.json()["detail"])
     return updated

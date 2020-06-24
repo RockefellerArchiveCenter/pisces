@@ -1,5 +1,6 @@
 import random
 from datetime import datetime
+from unittest.mock import patch
 
 import pytz
 import vcr
@@ -60,7 +61,9 @@ class FetcherTest(TestCase):
                     f.start_time = time
                     f.save()
 
-    def test_fetchers(self):
+    @patch("fetcher.helpers.identifier_from_uri")
+    def test_fetchers(self, mock_id):
+        mock_id.return_value = None
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
                 (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
@@ -98,7 +101,8 @@ class FetcherTest(TestCase):
                     updated_last_run = last_run_time(source, object_status, object)
                     self.assertEqual(updated_last_run, int(time.timestamp()))
 
-    def test_cron(self):
+    @patch("fetcher.helpers.identifier_from_uri")
+    def test_cron(self, mock_id):
         for fetcher_vcr, cassette, cron, error_len in [
                 (archivesspace_vcr, "ArchivesSpace-deleted-agent_corporate_entity.json", DeletedArchivesSpaceOrganizations, 0),
                 (archivesspace_vcr, "ArchivesSpace-updated-agent_corporate_entity.json", UpdatedArchivesSpaceOrganizations, 0),
@@ -115,6 +119,7 @@ class FetcherTest(TestCase):
                 (cartographer_vcr, "Cartographer-deleted-arrangement_map_component.json", DeletedCartographerArrangementMapComponents, 1),
                 (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents, 1)]:
             with fetcher_vcr.use_cassette(cassette):
+                mock_id.return_value = None
                 cron().do()
                 self.assertEqual(len(FetchRunError.objects.all()), error_len)
 

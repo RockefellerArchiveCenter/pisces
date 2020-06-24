@@ -11,7 +11,6 @@ class DataObject(models.Model):
     )
     es_id = models.CharField(max_length=255)
     object_type = models.CharField(max_length=255, choices=TYPE_CHOICES)
-    uri = models.CharField(max_length=255, null=True, blank=True, db_index=True)
     data = JSONField()
     indexed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)

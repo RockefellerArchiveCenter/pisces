@@ -35,7 +35,7 @@ class Reference(odin.Resource):
     Field-specific notes:
         order: applies only to children and parent Objects and Collections References.
         type: indicates what type of linked object the Reference points to.
-        uri: generated when objects are indexed.
+        uri: a concatenation of the object type plus an generated identifier
         relator: applies only to References for Agent objects.
         level: applies only to Collection and Object References.
         identifier: generated when objects are indexed.
@@ -44,7 +44,7 @@ class Reference(odin.Resource):
     order = odin.StringField(null=True)
     title = odin.StringField(null=True)
     type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES, null=True)
-    uri = odin.StringField(null=True)
+    uri = odin.StringField()
     relator = odin.StringField(null=True)
     role = odin.StringField(null=True)
     level = odin.StringField(null=True)
