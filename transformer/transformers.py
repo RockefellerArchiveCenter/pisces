@@ -3,7 +3,6 @@ import json
 import shortuuid
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
-from pisces.middleware import profile
 from rac_schemas import is_valid
 
 from .mappings import (SourceAgentCorporateEntityToAgent,
@@ -33,7 +32,6 @@ class Transformer:
         data (dict): the source data to be transformed.
     """
 
-    @profile("transformer_run")
     async def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
