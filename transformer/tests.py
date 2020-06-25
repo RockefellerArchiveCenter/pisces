@@ -75,7 +75,7 @@ class TransformerTest(TestCase):
             for obj in transformed.get(key, []):
                 self.assertIsNot(
                     obj.get("uri"), None,
-                    "URI missing from {} reference in {} {}".format(key, transformed["type"], transformed["es_id"]))
+                    "URI missing from {} reference in {}".format(key, transformed["uri"]))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
