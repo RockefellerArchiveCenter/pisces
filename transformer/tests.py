@@ -72,7 +72,7 @@ class TransformerTest(TestCase):
 
     def check_uris(self, transformed):
         for key in ["agents", "terms", "creators", "ancestors", "children"]:
-            for obj in transformed.get(key):
+            for obj in transformed.get(key, []):
                 self.assertIsNot(
                     obj.get("uri"), None,
                     "URI missing from {} reference in {} {}".format(key, transformed["type"], transformed["es_id"]))
