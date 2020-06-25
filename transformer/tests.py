@@ -36,6 +36,7 @@ class TransformerTest(TestCase):
                         "Transformer returned an error: {}".format(transformed))
                     self.check_list_counts(source, transformed, object_type)
                     self.check_agent_counts(source, transformed)
+                    self.check_uris(transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -68,6 +69,13 @@ class TransformerTest(TestCase):
             source_agent_count, len(transformed.get("agents", [])),
             "Expecting {} agents, got {} instead".format(
                 source_agent_count, len(transformed.get("agents", []))))
+
+    def check_uris(self, transformed):
+        for key in ["agents", "terms", "creators", "ancestors", "children"]:
+            for obj in transformed.get(key, []):
+                self.assertIsNot(
+                    obj.get("uri"), None,
+                    "URI missing from {} reference in {}".format(key, transformed["uri"]))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
