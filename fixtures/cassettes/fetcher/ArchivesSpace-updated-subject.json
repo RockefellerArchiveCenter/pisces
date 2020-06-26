@@ -4,7 +4,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://as.dev.rockarch.org:8089/users/admin/login?expiring=False",
+                "uri": "http://192.168.1.140:8089/users/admin/login?expiring=False",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -30,34 +30,34 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 17:09:53 GMT"
-                    ],
                     "Content-Length": [
-                        "3936"
+                        "2981"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
-                    ],
                     "Cache-Control": [
                         "private, must-revalidate, max-age=0"
                     ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"8250f5ddf7032cafadc80ff1dda3ebbb6c9c1914fc7277da134105031a8e813d\",\"user\":{\"lock_version\":215267,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-04-15T17:09:53Z\",\"user_mtime\":\"2020-04-15T17:09:53Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                    "string": "{\"session\":\"47f4279b7304a0a117b04266bb22041ddc760d64a4979473dee5b5d33394b21b\",\"user\":{\"lock_version\":58,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-06-26T16:02:36Z\",\"system_mtime\":\"2020-06-26T18:14:21Z\",\"user_mtime\":\"2020-06-26T18:14:21Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"update_enumeration_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"update_enumeration_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://as.dev.rockarch.org:8089/version",
+                "uri": "http://192.168.1.140:8089/version",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -80,9 +80,6 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 17:09:53 GMT"
-                    ],
                     "Content-Length": [
                         "22"
                     ],
@@ -92,28 +89,31 @@
                     "X-XSS-Protection": [
                         "1; mode=block"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
-                    ],
                     "Cache-Control": [
                         "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "ArchivesSpace (v2.6.0)"
+                    "string": "ArchivesSpace (v2.7.1)"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.27:8000/status/health/",
+                "uri": "http://localhost:8007/status/health/",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -136,26 +136,20 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 16:52:53 GMT"
-                    ],
                     "Content-Length": [
                         "85"
-                    ],
-                    "Vary": [
-                        "Origin"
-                    ],
-                    "Connection": [
-                        "close"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
                     ],
                     "Server": [
-                        "gunicorn/20.0.4"
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
                     ]
                 },
                 "body": {
@@ -166,7 +160,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://as.dev.rockarch.org:8089/subjects?all_ids=True&page=1&page_size=100",
+                "uri": "http://192.168.1.140:8089/subjects?all_ids=True",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -189,27 +183,177 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 17:09:54 GMT"
-                    ],
                     "Content-Length": [
-                        "30118"
+                        "8"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
                     "X-Content-Type-Options": [
                         "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "[2,3,4]\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.140:8089/subjects/2?resolve%5B%5D=ancestors&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "809"
+                    ],
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "Cache-Control": [
                         "private, must-revalidate, max-age=0"
                     ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"total\":28,\"results\":[{\"lock_version\":18723,\"title\":\"United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:47Z\",\"system_mtime\":\"2020-03-02T15:27:15Z\",\"user_mtime\":\"2014-12-06T02:29:47Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"46\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:47Z\",\"system_mtime\":\"2014-12-06T02:29:47Z\",\"user_mtime\":\"2014-12-06T02:29:47Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:47Z\",\"system_mtime\":\"2014-12-06T02:29:47Z\",\"user_mtime\":\"2014-12-06T02:29:47Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/44\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/37\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":13,\"title\":\"Spelman family\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:14Z\",\"system_mtime\":\"2020-03-02T15:27:15Z\",\"user_mtime\":\"2014-12-06T02:38:14Z\",\"is_slug_auto\":false,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"8534\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:14Z\",\"system_mtime\":\"2014-12-06T02:38:14Z\",\"user_mtime\":\"2014-12-06T02:38:14Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Spelman family\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:14Z\",\"system_mtime\":\"2014-12-06T02:38:14Z\",\"user_mtime\":\"2014-12-06T02:38:14Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4101\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5701\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":23,\"title\":\"United States -- History -- 19th century\",\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:48Z\",\"system_mtime\":\"2020-03-02T15:27:15Z\",\"user_mtime\":\"2015-06-03T22:52:48Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"United States -- History -- 19th century\",\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:48Z\",\"system_mtime\":\"2015-06-03T22:52:48Z\",\"user_mtime\":\"2015-06-03T22:52:48Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/14659\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/17102\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":99,\"title\":\"Amateur films\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:19Z\",\"system_mtime\":\"2020-03-02T15:27:19Z\",\"user_mtime\":\"2014-12-06T02:31:19Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"1944\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:19Z\",\"system_mtime\":\"2014-12-06T02:31:19Z\",\"user_mtime\":\"2014-12-06T02:31:19Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Amateur films\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:19Z\",\"system_mtime\":\"2014-12-06T02:31:19Z\",\"user_mtime\":\"2014-12-06T02:31:19Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/999\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/1016\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":12,\"title\":\"Church services\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2020-03-02T15:27:19Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10550\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Church services\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5008\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7271\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":12,\"title\":\"Death notices\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:19Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10551\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Death notices\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5009\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7272\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":14,\"title\":\"Bridges\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:37:40Z\",\"system_mtime\":\"2020-03-02T15:27:20Z\",\"user_mtime\":\"2014-12-06T02:37:40Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"7854\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:37:40Z\",\"system_mtime\":\"2014-12-06T02:37:40Z\",\"user_mtime\":\"2014-12-06T02:37:40Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Bridges\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:37:40Z\",\"system_mtime\":\"2014-12-06T02:37:40Z\",\"user_mtime\":\"2014-12-06T02:37:40Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/3787\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5284\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":17,\"title\":\"Parades\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2020-03-02T15:27:20Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10545\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Parades\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5004\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7266\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":13,\"title\":\"Saint Augustine (Fla.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:20Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10552\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Saint Augustine (Fla.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5010\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7273\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":12,\"title\":\"Oil fields -- United States\",\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:48Z\",\"system_mtime\":\"2020-03-02T15:27:20Z\",\"user_mtime\":\"2015-06-03T22:52:48Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Oil fields -- United States\",\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:48Z\",\"system_mtime\":\"2015-06-03T22:52:48Z\",\"user_mtime\":\"2015-06-03T22:52:48Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/14660\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/17103\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":13,\"title\":\"Golf courses\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:02Z\",\"system_mtime\":\"2020-03-02T15:27:21Z\",\"user_mtime\":\"2014-12-06T02:38:02Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"8319\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:02Z\",\"system_mtime\":\"2014-12-06T02:38:02Z\",\"user_mtime\":\"2014-12-06T02:38:02Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Golf courses\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:02Z\",\"system_mtime\":\"2014-12-06T02:38:02Z\",\"user_mtime\":\"2014-12-06T02:38:02Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/3984\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5544\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":13,\"title\":\"Christmas\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:08Z\",\"system_mtime\":\"2020-03-02T15:27:21Z\",\"user_mtime\":\"2014-12-06T02:38:08Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"8405\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:08Z\",\"system_mtime\":\"2014-12-06T02:38:08Z\",\"user_mtime\":\"2014-12-06T02:38:08Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Christmas\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:08Z\",\"system_mtime\":\"2014-12-06T02:38:08Z\",\"user_mtime\":\"2014-12-06T02:38:08Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4043\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5615\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":74,\"title\":\"Golf\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2020-03-02T15:27:21Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10534\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2014-12-06T02:40:23Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Golf\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2014-12-06T02:40:23Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4993\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7255\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":12,\"title\":\"Orchards\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:21Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10553\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Orchards\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5011\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7274\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":59,\"title\":\"Speeches, addresses, etc.\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:20Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:31:20Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"1960\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:20Z\",\"system_mtime\":\"2014-12-06T02:31:20Z\",\"user_mtime\":\"2014-12-06T02:31:20Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Speeches, addresses, etc.\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:20Z\",\"system_mtime\":\"2014-12-06T02:31:20Z\",\"user_mtime\":\"2014-12-06T02:31:20Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/1014\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/1031\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":116,\"title\":\"Pocantico Hills (Sleepy Hollow, N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:31Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:38:31Z\",\"is_slug_auto\":false,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"8809\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:31Z\",\"system_mtime\":\"2014-12-06T02:38:31Z\",\"user_mtime\":\"2014-12-06T02:38:31Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Pocantico Hills (Sleepy Hollow, N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:31Z\",\"system_mtime\":\"2014-12-06T02:38:31Z\",\"user_mtime\":\"2014-12-06T02:38:31Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4219\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5908\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":57,\"title\":\"Ormond Beach (Fla.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:34Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:38:34Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"8865\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:34Z\",\"system_mtime\":\"2014-12-06T02:38:34Z\",\"user_mtime\":\"2014-12-06T02:38:34Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Ormond Beach (Fla.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:38:34Z\",\"system_mtime\":\"2014-12-06T02:38:34Z\",\"user_mtime\":\"2014-12-06T02:38:34Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4241\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5945\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":43,\"title\":\"Birthdays\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10541\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Birthdays\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:24Z\",\"system_mtime\":\"2014-12-06T02:40:24Z\",\"user_mtime\":\"2014-12-06T02:40:24Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5000\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7262\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":37,\"title\":\"Parties\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10554\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Parties\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5012\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7275\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":13,\"title\":\"Railroad stations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:22Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10556\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Railroad stations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5014\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7277\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":90,\"title\":\"Newsreels\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2020-03-02T15:27:23Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10532\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2014-12-06T02:40:23Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Newsreels\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:23Z\",\"system_mtime\":\"2014-12-06T02:40:23Z\",\"user_mtime\":\"2014-12-06T02:40:23Z\",\"term_type\":\"genre_form\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4991\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7253\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":24,\"title\":\"Airplanes\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:23Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10555\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Airplanes\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5013\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7276\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":13,\"title\":\"Railroads\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:25Z\",\"system_mtime\":\"2020-03-02T15:27:24Z\",\"user_mtime\":\"2014-12-06T02:31:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"2020\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:25Z\",\"system_mtime\":\"2014-12-06T02:31:25Z\",\"user_mtime\":\"2014-12-06T02:31:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Railroads\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:31:25Z\",\"system_mtime\":\"2014-12-06T02:31:25Z\",\"user_mtime\":\"2014-12-06T02:31:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/1074\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/1089\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":11,\"title\":\"Locomotives\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:24Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10557\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Locomotives\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5015\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7278\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":11,\"title\":\"Trains\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2020-03-02T15:27:24Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10558\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Trains\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:25Z\",\"system_mtime\":\"2014-12-06T02:40:25Z\",\"user_mtime\":\"2014-12-06T02:40:25Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5016\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7279\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":2120,\"title\":\"New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:45Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2014-12-06T02:29:45Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"32\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:45Z\",\"system_mtime\":\"2014-12-06T02:29:45Z\",\"user_mtime\":\"2014-12-06T02:29:45Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:29:45Z\",\"system_mtime\":\"2014-12-06T02:29:45Z\",\"user_mtime\":\"2014-12-06T02:29:45Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/30\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/26\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":true},{\"lock_version\":11,\"title\":\"Gardening\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10573\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2014-12-06T02:40:26Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Gardening\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2014-12-06T02:40:26Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5025\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7294\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false},{\"lock_version\":11,\"title\":\"Track and field\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"is_slug_auto\":false,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[{\"external_id\":\"10574\",\"source\":\"Archivists Toolkit Database::SUBJECT\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2014-12-06T02:40:26Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"jsonmodel_type\":\"external_id\"}],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"terms\":[{\"lock_version\":0,\"term\":\"Track and field\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:26Z\",\"system_mtime\":\"2014-12-06T02:40:26Z\",\"user_mtime\":\"2014-12-06T02:40:26Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5026\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7295\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}]}\n"
+                    "string": "{\"lock_version\":1,\"title\":\"Chemical warfare\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Chemical warfare\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/2\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/2\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.140:8089/subjects/3?resolve%5B%5D=ancestors&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "801"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Biochemistry\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Biochemistry\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/3\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/3\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.140:8089/subjects/4?resolve%5B%5D=ancestors&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Length": [
+                        "790"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Date": [
+                        "Fri, 26 Jun 2020 18:14:21 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Japan\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Japan\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/4\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
                 }
             }
         }

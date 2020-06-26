@@ -61,9 +61,13 @@ class FetcherTest(TestCase):
                     f.start_time = time
                     f.save()
 
+    @patch("transformer.transformers.Transformer.run")
+    @patch("merger.mergers.ArchivalObjectMerger.merge")
     @patch("fetcher.helpers.identifier_from_uri")
-    def test_fetchers(self, mock_id):
+    def test_fetchers(self, mock_id, mock_merger, mock_transformer):
         mock_id.return_value = None
+        mock_merger.return_value = {}, {}
+        mock_transformer.return_value = {}
         for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
                 (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
                 (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
@@ -101,27 +105,31 @@ class FetcherTest(TestCase):
                     updated_last_run = last_run_time(source, object_status, object)
                     self.assertEqual(updated_last_run, int(time.timestamp()))
 
+    @patch("transformer.transformers.Transformer.run")
+    @patch("merger.mergers.BaseMerger.merge")
     @patch("fetcher.helpers.identifier_from_uri")
-    def test_cron(self, mock_id):
-        for fetcher_vcr, cassette, cron, error_len in [
-                (archivesspace_vcr, "ArchivesSpace-deleted-agent_corporate_entity.json", DeletedArchivesSpaceOrganizations, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-agent_corporate_entity.json", UpdatedArchivesSpaceOrganizations, 0),
-                (archivesspace_vcr, "ArchivesSpace-deleted-agent_family.json", DeletedArchivesSpaceFamilies, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-agent_family.json", UpdatedArchivesSpaceFamilies, 0),
-                (archivesspace_vcr, "ArchivesSpace-deleted-agent_person.json", DeletedArchivesSpacePeople, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-agent_person.json", UpdatedArchivesSpacePeople, 0),
-                (archivesspace_vcr, "ArchivesSpace-deleted-subject.json", DeletedArchivesSpaceSubjects, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-subject.json", UpdatedArchivesSpaceSubjects, 0),
-                (archivesspace_vcr, "ArchivesSpace-deleted-resource.json", DeletedArchivesSpaceResources, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-resource.json", UpdatedArchivesSpaceResources, 0),
-                (archivesspace_vcr, "ArchivesSpace-deleted-archival_object.json", DeletedArchivesSpaceArchivalObjects, 0),
-                (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects, 1),
-                (cartographer_vcr, "Cartographer-deleted-arrangement_map_component.json", DeletedCartographerArrangementMapComponents, 1),
-                (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents, 1)]:
+    def test_cron(self, mock_id, mock_merger, mock_transformer):
+        for fetcher_vcr, cassette, cron in [
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_corporate_entity.json", DeletedArchivesSpaceOrganizations),
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_corporate_entity.json", UpdatedArchivesSpaceOrganizations),
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_family.json", DeletedArchivesSpaceFamilies),
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_family.json", UpdatedArchivesSpaceFamilies),
+                (archivesspace_vcr, "ArchivesSpace-deleted-agent_person.json", DeletedArchivesSpacePeople),
+                (archivesspace_vcr, "ArchivesSpace-updated-agent_person.json", UpdatedArchivesSpacePeople),
+                (archivesspace_vcr, "ArchivesSpace-deleted-subject.json", DeletedArchivesSpaceSubjects),
+                (archivesspace_vcr, "ArchivesSpace-updated-subject.json", UpdatedArchivesSpaceSubjects),
+                (archivesspace_vcr, "ArchivesSpace-deleted-resource.json", DeletedArchivesSpaceResources),
+                (archivesspace_vcr, "ArchivesSpace-updated-resource.json", UpdatedArchivesSpaceResources),
+                (archivesspace_vcr, "ArchivesSpace-deleted-archival_object.json", DeletedArchivesSpaceArchivalObjects),
+                (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects),
+                (cartographer_vcr, "Cartographer-deleted-arrangement_map_component.json", DeletedCartographerArrangementMapComponents),
+                (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents)]:
             with fetcher_vcr.use_cassette(cassette):
                 mock_id.return_value = None
+                mock_merger.return_value = {}, {}
+                mock_transformer.return_value = {}
                 cron().do()
-                self.assertEqual(len(FetchRunError.objects.all()), error_len)
+                self.assertEqual(len(FetchRunError.objects.all()), 0)
 
     def test_error_notifications(self):
         fetch_run = FetchRun.objects.create(
