@@ -92,6 +92,7 @@ class BaseDataFetcher:
                 await handle_deleted_uri(object_id, self.source, self.object_type, self.current_run)
             self.processed += 1
         except Exception as e:
+            print(e)
             FetchRunError.objects.create(run=self.current_run, message=str(e))
 
 
@@ -165,7 +166,7 @@ class CartographerDataFetcher(BaseDataFetcher):
         data = []
         for obj in self.clients["cartographer"].get(
                 self.base_endpoint, params={"modified_since": self.last_run}).json()['results']:
-            data.append("{}{}".format(self.base_endpoint, obj.get("id")))
+            data.append("{}{}/".format(self.base_endpoint, obj.get("id")))
         return data
 
     def get_deleted(self):
