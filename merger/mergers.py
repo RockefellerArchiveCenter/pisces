@@ -1,7 +1,7 @@
 import re
 
 from .helpers import (ArchivesSpaceHelper, closest_creators,
-                      closest_parent_value)
+                      closest_parent_value, combine_references)
 
 
 class MergeError(Exception):
@@ -150,11 +150,7 @@ class ArchivalObjectMerger(BaseMerger):
                 object[k] = object.get(k, []) + v
             else:
                 object[k] = v
-        for key, type_key in (["ancestors", None], ["subjects", "term_type"], ["agents", "agent_type"]):
-            for obj in object.get(key, []):
-                obj["type"] = obj["_resolved"][type_key] if type_key else "collection"
-                obj["title"] = obj["_resolved"]["title"]
-        return object
+        return combine_references(object)
 
 
 class ArrangementMapMerger(BaseMerger):
@@ -173,8 +169,11 @@ class ArrangementMapMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {"children": []}
-        data.update(self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json())
+        data = {"children": [], "ancestors": []}
+        data.update(
+            self.aspace_helper.aspace.client.get(
+                object["archivesspace_uri"],
+                params={"resolve": ["subjects", "linked_agents"]}).json())
         if not object.get("children"):
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
@@ -186,7 +185,7 @@ class ArrangementMapMerger(BaseMerger):
             a["type"] = "collection"
             ancestors.append(a)
         additional_data["ancestors"] = ancestors
-        return additional_data
+        return combine_references(additional_data)
 
 
 class AgentMerger(BaseMerger):
@@ -237,7 +236,7 @@ class ResourceMerger(BaseMerger):
         """
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
-        return object
+        return combine_references(object)
 
 
 class SubjectMerger(BaseMerger):
