@@ -46,13 +46,14 @@ class MergerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged, _ = merger(clients).merge(source_object_type, source)
+                        merged, obj_type = merger(clients).merge(source_object_type, source)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
                         transform_count += 1
                         self.assertTrue(merged.get("jsonmodel_type") in target_object_types)
                         self.check_counts(source, source_object_type, merged, merged.get("jsonmodel_type"))
+                        self.check_embedded(merged)
 
     def check_counts(self, source, source_object_type, merged, target_object_type):
         """Tests counts of data keys in merged object.
@@ -83,3 +84,14 @@ class MergerTest(TestCase):
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
+
+    def check_embedded(self, merged):
+        """Tests for required fields in embedded reference objects."""
+        for key in ["ancestors", "subjects", "linked_agents"]:
+            for obj in merged.get(key, []):
+                self.assertTrue(
+                    self.not_empty(obj.get("title")),
+                    "Title field of {} in {} is empty".format(obj.get("ref"), merged.get("uri")))
+                self.assertTrue(
+                    self.not_empty(obj.get("type")),
+                    "Type field of {} in {} is empty".format(obj.get("ref"), merged.get("uri")))
