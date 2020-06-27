@@ -62,7 +62,7 @@ class FetcherTest(TestCase):
                     f.save()
 
     @patch("transformer.transformers.Transformer.run")
-    @patch("merger.mergers.ArchivalObjectMerger.merge")
+    @patch("merger.mergers.BaseMerger.merge")
     @patch("fetcher.helpers.identifier_from_uri")
     def test_fetchers(self, mock_id, mock_merger, mock_transformer):
         mock_id.return_value = None
