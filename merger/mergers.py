@@ -80,9 +80,9 @@ class ArchivalObjectMerger(BaseMerger):
         resp = self.cartographer_client.get(
             "/api/find-by-uri/", params={"uri": object["resource"]["ref"]})
         if resp.status_code == 200:
-            json = resp.json()
-            if json["count"] >= 1:
-                for a in json["results"][0].get("ancestors"):
+            json_data = resp.json()
+            if json_data["count"] >= 1:
+                for a in json_data["results"][0].get("ancestors"):
                     data["ancestors"].append(a)
         return data
 
@@ -216,9 +216,9 @@ class ResourceMerger(BaseMerger):
         resp = self.cartographer_client.get(
             "/api/find-by-uri/", params={"uri": object["uri"]})
         if resp.status_code == 200:
-            json = resp.json()
-            if json["count"] > 0:
-                data["ancestors"] = json["results"][0].get("ancestors", [])
+            json_data = resp.json()
+            if json_data["count"] > 0:
+                data["ancestors"] = json_data["results"][0].get("ancestors", [])
         return data
 
     def get_archivesspace_data(self, object):
