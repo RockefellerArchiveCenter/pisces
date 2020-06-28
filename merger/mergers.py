@@ -107,7 +107,13 @@ class ArchivalObjectMerger(BaseMerger):
             data["language"] = closest_parent_value(object, "language")
         return data
 
-    def parse_instances(self, object, data):
+    def parse_instances(self, object):
+        """Attempts to parse extents from instances.
+
+        For instances which contain a child subcontainer, parses the indicator
+        to determine the extent number, and uses the instance type as the extent
+        type. Instances which are not parseable return None.
+        """
         extents = []
         parseable = [i for i in object["instances"] if
                      all(i_type in i.get("sub_container", {})
@@ -132,7 +138,7 @@ class ArchivalObjectMerger(BaseMerger):
         if object.get("dates") in ["", [], {}, None]:
             data["dates"] = closest_parent_value(object, "dates")
         data.update(self.get_language_data(object, data))
-        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object, data)
+        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object)
         if not extent_data and object_type == "archival_object_collection":
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data

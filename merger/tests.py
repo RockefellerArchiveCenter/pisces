@@ -97,3 +97,13 @@ class MergerTest(TestCase):
                 self.assertTrue(
                     self.not_empty(obj.get("type")),
                     "Type field of {} in {} is empty".format(obj.get("ref"), merged.get("uri")))
+
+    def test_parse_instances(self):
+        with merger_vcr.use_cassette("archival_object-merge.json"):
+            clients = BaseDataFetcher().instantiate_clients()
+            merger = ArchivalObjectMerger(clients)
+            for f in os.listdir(os.path.join("fixtures", "merger", "instance_parse")):
+                with open(os.path.join("fixtures", "merger", "instance_parse", f), "r") as json_file:
+                    source_data = json.load(json_file)
+                    parsed = merger.parse_instances(source_data["source"])
+                    self.assertEqual(parsed, source_data["parsed"])
