@@ -1,4 +1,3 @@
-import asyncio
 import json
 import os
 import random
@@ -29,14 +28,13 @@ class TransformerTest(TestCase):
             for f in os.listdir(os.path.join("fixtures", "transformer", object_type)):
                 with open(os.path.join("fixtures", "transformer", object_type, f), "r") as json_file:
                     source = json.load(json_file)
-                    loop = asyncio.get_event_loop()
-                    transformed = loop.run_until_complete(Transformer().run(object_type, source))
+                    transformed = Transformer().run(object_type, source)
                     self.assertNotEqual(
                         transformed, False,
                         "Transformer returned an error: {}".format(transformed))
                     self.check_list_counts(source, transformed, object_type)
                     self.check_agent_counts(source, transformed)
-                    self.check_uris(transformed)
+                    self.check_references(transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -70,12 +68,13 @@ class TransformerTest(TestCase):
             "Expecting {} agents, got {} instead".format(
                 source_agent_count, len(transformed.get("agents", []))))
 
-    def check_uris(self, transformed):
+    def check_references(self, transformed):
         for key in ["agents", "terms", "creators", "ancestors", "children"]:
             for obj in transformed.get(key, []):
-                self.assertIsNot(
-                    obj.get("uri"), None,
-                    "URI missing from {} reference in {}".format(key, transformed["uri"]))
+                for prop in ["identifier", "title", "type"]:
+                    self.assertIsNot(
+                        obj.get(prop), None,
+                        "{} missing from {} reference in {}".format(prop, key, transformed["uri"]))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
