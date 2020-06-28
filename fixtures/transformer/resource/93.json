@@ -1,9 +1,28 @@
 {
     "ancestors": [],
-    "children": [],
+    "children": [
+        {
+            "archivesspace_uri": "/repositories/2/resources/12",
+            "level": "otherlevel",
+            "ref": "/api/components/2/",
+            "title": "Michel Nussenzweig papers, Rockefeller University Faculty"
+        },
+        {
+            "archivesspace_uri": "/repositories/2/resources/13",
+            "level": "collection",
+            "ref": "/api/components/3/",
+            "title": "Peter F. Geithner papers"
+        },
+        {
+            "archivesspace_uri": "/repositories/2/resources/318",
+            "level": "otherlevel",
+            "ref": "/api/components/4/",
+            "title": "Rockefeller Foundation records, China Medical Board records, RG 4"
+        }
+    ],
     "classifications": [],
     "collection_management": {
-        "create_time": "2019-10-10T12:39:02Z",
+        "create_time": "2020-01-31T13:31:34Z",
         "created_by": "battalb",
         "external_ids": [],
         "jsonmodel_type": "collection_management",
@@ -17,16 +36,16 @@
             "ref": "/repositories/2"
         },
         "rights_determined": false,
-        "system_mtime": "2019-10-10T12:39:02Z",
-        "uri": "/repositories/2/collection_management/9214",
-        "user_mtime": "2019-10-10T12:39:02Z"
+        "system_mtime": "2020-01-31T13:31:34Z",
+        "uri": "/repositories/2/collection_management/11121",
+        "user_mtime": "2020-01-31T13:31:34Z"
     },
     "create_time": "2014-12-06T03:43:19Z",
     "created_by": "admin",
     "dates": [
         {
             "begin": "1905",
-            "create_time": "2019-10-10T12:39:02Z",
+            "create_time": "2020-01-31T13:31:34Z",
             "created_by": "battalb",
             "date_type": "inclusive",
             "end": "1980",
@@ -35,8 +54,8 @@
             "label": "creation",
             "last_modified_by": "battalb",
             "lock_version": 0,
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z"
+            "system_mtime": "2020-01-31T13:31:34Z",
+            "user_mtime": "2020-01-31T13:31:34Z"
         }
     ],
     "deaccessions": [],
@@ -44,7 +63,7 @@
     "extents": [
         {
             "container_summary": "177 document boxes.",
-            "create_time": "2019-10-10T12:39:02Z",
+            "create_time": "2020-01-31T13:31:34Z",
             "created_by": "battalb",
             "extent_type": "cubic_feet",
             "jsonmodel_type": "extent",
@@ -52,21 +71,21 @@
             "lock_version": 0,
             "number": "88.25",
             "portion": "whole",
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z"
+            "system_mtime": "2020-01-31T13:31:34Z",
+            "user_mtime": "2020-01-31T13:31:34Z"
         }
     ],
     "external_documents": [],
     "external_ids": [
         {
-            "create_time": "2019-10-10T12:39:02Z",
+            "create_time": "2020-01-31T13:31:34Z",
             "created_by": "battalb",
             "external_id": "614",
             "jsonmodel_type": "external_id",
             "last_modified_by": "battalb",
             "source": "Archivists Toolkit Database::RESOURCE",
-            "system_mtime": "2019-10-10T12:39:02Z",
-            "user_mtime": "2019-10-10T12:39:02Z"
+            "system_mtime": "2020-01-31T13:31:34Z",
+            "user_mtime": "2020-01-31T13:31:34Z"
         }
     ],
     "finding_aid_author": "Bethany Francis",
@@ -78,45 +97,7 @@
     "instances": [],
     "is_slug_auto": false,
     "jsonmodel_type": "resource",
-    "lang_materials": [{
-  			"lock_version": 0,
-  			"created_by": "admin",
-  			"last_modified_by": "admin",
-  			"create_time": "2020-03-31T17:01:30Z",
-  			"system_mtime": "2020-03-31T17:01:30Z",
-  			"user_mtime": "2020-03-31T17:01:30Z",
-  			"jsonmodel_type": "lang_material",
-  			"notes": [],
-  			"language_and_script": {
-  				"lock_version": 0,
-  				"created_by": "admin",
-  				"last_modified_by": "admin",
-  				"create_time": "2020-03-31T17:01:30Z",
-  				"system_mtime": "2020-03-31T17:01:30Z",
-  				"user_mtime": "2020-03-31T17:01:30Z",
-  				"language": "eng",
-  				"jsonmodel_type": "language_and_script"
-  			}
-  		},
-  		{
-  			"lock_version": 0,
-  			"created_by": "admin",
-  			"last_modified_by": "admin",
-  			"create_time": "2020-03-31T17:01:30Z",
-  			"system_mtime": "2020-03-31T17:01:30Z",
-  			"user_mtime": "2020-03-31T17:01:30Z",
-  			"jsonmodel_type": "lang_material",
-  			"notes": [{
-  				"jsonmodel_type": "note_langmaterial",
-  				"type": "langmaterial",
-  				"content": [
-  					"English"
-  				],
-  				"persistent_id": "d0a874f7080acd2eb08b37ad1b4e0742",
-  				"publish": true
-  			}]
-  		}
-  	],
+    "language": "eng",
     "last_modified_by": "battalb",
     "level": "collection",
     "linked_agents": [
@@ -124,11 +105,13 @@
             "ref": "/agents/corporate_entities/4884",
             "relator": "aut",
             "role": "creator",
-            "terms": []
+            "terms": [],
+            "title": "Rockefeller Foundation",
+            "type": "agent_corporate_entity"
         }
     ],
     "linked_events": [],
-    "lock_version": 12,
+    "lock_version": 13,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
@@ -194,9 +177,15 @@
     "restrictions": true,
     "revision_statements": [],
     "rights_statements": [],
-    "subjects": [],
+    "subjects": [
+        {
+            "ref": "/subjects/962",
+            "title": "Photographs",
+            "type": "genre_form"
+        }
+    ],
     "suppressed": false,
-    "system_mtime": "2019-10-31T14:22:12Z",
+    "system_mtime": "2020-05-17T13:38:32Z",
     "title": "Rockefeller Foundation records, photographs, series 100-1000",
     "tree": {
         "ref": "/repositories/2/resources/93/tree"
@@ -206,7 +195,7 @@
         "boolean_1": false,
         "boolean_2": false,
         "boolean_3": false,
-        "create_time": "2019-10-10T12:39:02Z",
+        "create_time": "2020-01-31T13:31:34Z",
         "created_by": "battalb",
         "date_2": "2016-12-14",
         "enum_1": "3 - Standard",
@@ -216,8 +205,8 @@
         "repository": {
             "ref": "/repositories/2"
         },
-        "system_mtime": "2019-10-10T12:39:02Z",
-        "user_mtime": "2019-10-10T12:39:02Z"
+        "system_mtime": "2020-01-31T13:31:34Z",
+        "user_mtime": "2020-01-31T13:31:34Z"
     },
-    "user_mtime": "2019-10-10T12:39:02Z"
+    "user_mtime": "2020-01-31T13:31:34Z"
 }

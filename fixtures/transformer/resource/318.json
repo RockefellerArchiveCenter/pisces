@@ -4,36 +4,37 @@
             "archivesspace_uri": "/repositories/2/resources/93",
             "level": "collection",
             "ref": "/api/components/1/",
+            "title": "Rockefeller Foundation records, photographs, series 100-1000",
             "type": "collection"
         }
     ],
     "children": [
         {
-            "identifier": 118905,
             "level": "series",
+            "order": 0,
             "ref": "/repositories/2/archival_objects/118905",
-            "title": "Appropriations, 1913-1929",
+            "title": "Appropriations",
             "type": "collection"
         },
         {
-            "identifier": 121125,
             "level": "series",
+            "order": 1,
             "ref": "/repositories/2/archival_objects/121125",
-            "title": "Finances, 1926-1929",
+            "title": "Finances",
             "type": "collection"
         },
         {
-            "identifier": 121131,
             "level": "series",
+            "order": 2,
             "ref": "/repositories/2/archival_objects/121131",
-            "title": "Minutes and Annual Reports, 1914-1929",
+            "title": "Minutes and Annual Reports",
             "type": "object"
         },
         {
-            "identifier": 1029350,
             "level": "series",
+            "order": 3,
             "ref": "/repositories/2/archival_objects/1029350",
-            "title": "Audiovisual Materials",
+            "title": "China Medical Board Audiovisual Materials",
             "type": "collection"
         }
     ],
@@ -121,13 +122,17 @@
             "ref": "/agents/corporate_entities/60",
             "relator": "aut",
             "role": "creator",
-            "terms": []
+            "terms": [],
+            "title": "Rockefeller Foundation. China Medical Board",
+            "type": "agent_corporate_entity"
         },
         {
             "ref": "/agents/corporate_entities/4884",
             "relator": "aut",
             "role": "creator",
-            "terms": []
+            "terms": [],
+            "title": "Rockefeller Foundation",
+            "type": "agent_corporate_entity"
         }
     ],
     "linked_events": [],
@@ -254,59 +259,93 @@
     "rights_statements": [],
     "subjects": [
         {
-            "ref": "/subjects/23"
+            "ref": "/subjects/23",
+            "title": "Medical care",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/53"
+            "ref": "/subjects/53",
+            "title": "Epidemiology",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/54"
+            "ref": "/subjects/54",
+            "title": "Missionaries -- China",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/85"
+            "ref": "/subjects/85",
+            "title": "Charities",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/55"
+            "ref": "/subjects/55",
+            "title": "Missionaries",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/48"
+            "ref": "/subjects/48",
+            "title": "Beijing (China)",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/51"
+            "ref": "/subjects/51",
+            "title": "Agriculture -- China",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/52"
+            "ref": "/subjects/52",
+            "title": "Epidemics",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/50"
+            "ref": "/subjects/50",
+            "title": "China",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/49"
+            "ref": "/subjects/49",
+            "title": "Shanghai (China)",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/78"
+            "ref": "/subjects/78",
+            "title": "Life sciences",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/411"
+            "ref": "/subjects/411",
+            "title": "Philanthropy, Charity and the Nonprofit Sector",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/22"
+            "ref": "/subjects/22",
+            "title": "Public health",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/33"
+            "ref": "/subjects/33",
+            "title": "Charitable uses, trusts, and foundations",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/42"
+            "ref": "/subjects/42",
+            "title": "Agriculture",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/75"
+            "ref": "/subjects/75",
+            "title": "Medical sciences",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/103"
+            "ref": "/subjects/103",
+            "title": "Philanthropy",
+            "type": "topical"
         }
     ],
     "suppressed": false,
-    "system_mtime": "2019-12-06T18:57:26Z",
+    "system_mtime": "2020-03-23T13:39:07Z",
     "title": "Rockefeller Foundation records, China Medical Board records, RG 4",
     "tree": {
         "ref": "/repositories/2/resources/318/tree"

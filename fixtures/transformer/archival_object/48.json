@@ -1,0 +1,154 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/2",
+            "title": "Laboratory Administration",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [],
+    "component_id": "184",
+    "create_time": "2020-06-26T16:06:12Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1941",
+            "create_time": "2020-06-26T16:06:12Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1945",
+            "expression": "1941\u20131945",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:06:12Z",
+            "user_mtime": "2020-06-26T16:06:12Z"
+        }
+    ],
+    "display_string": "Golumbic, Calvin, 1941\u20131945",
+    "extents": [
+        {
+            "extent_type": "folder",
+            "number": 1
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:06:13Z",
+            "created_by": "admin",
+            "external_id": "184",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:06:13Z",
+            "user_mtime": "2020-06-26T16:06:13Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
+    "instances": [
+        {
+            "create_time": "2020-06-26T16:06:13Z",
+            "created_by": "admin",
+            "instance_type": "mixed materials",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "sub_container": {
+                "create_time": "2020-06-26T16:06:13Z",
+                "created_by": "admin",
+                "indicator_2": "4",
+                "jsonmodel_type": "sub_container",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:13Z",
+                "top_container": {
+                    "ref": "/repositories/2/top_containers/3"
+                },
+                "type_2": "folder",
+                "user_mtime": "2020-06-26T16:06:13Z"
+            },
+            "system_mtime": "2020-06-26T16:06:13Z",
+            "user_mtime": "2020-06-26T16:06:13Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/2"
+    },
+    "position": 31,
+    "publish": true,
+    "ref_id": "7e359ae2cd5c44639a5c6b2e196fdbc4",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:10:29Z",
+    "title": "Golumbic, Calvin",
+    "uri": "/repositories/2/archival_objects/48",
+    "user_mtime": "2020-06-26T16:06:12Z"
+}

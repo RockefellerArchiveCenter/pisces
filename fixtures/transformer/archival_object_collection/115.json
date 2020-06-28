@@ -1,0 +1,180 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/3",
+            "title": "Research",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/187",
+            "title": "KB\u201316 Report",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/2/archival_objects/188",
+            "title": "N\u2013Mustards Reports (8 folders)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/2/archival_objects/189",
+            "title": "Penetration Report",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/2/archival_objects/190",
+            "title": "S\u2013Mustards Reports (7 folders)",
+            "type": "object"
+        }
+    ],
+    "component_id": "88",
+    "create_time": "2020-06-26T16:07:13Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1940",
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1946",
+            "expression": "1940\u20131946",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "display_string": "Drafts and Corrections",
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "1.1",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:07:13Z",
+            "created_by": "admin",
+            "external_id": "88",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:07:13Z",
+            "user_mtime": "2020-06-26T16:07:13Z"
+        }
+    ],
+    "has_unpublished_ancestor": true,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/2",
+            "role": "creator",
+            "terms": [],
+            "title": "Bergmann, M. (Max)",
+            "type": "agent_person"
+        },
+        {
+            "ref": "/agents/corporate_entities/3",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller University",
+            "type": "agent_corporate_entity"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/3"
+    },
+    "position": 1,
+    "publish": true,
+    "ref_id": "0511409cf12942f498ec5f50cca39997",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:12:41Z",
+    "title": "Drafts and Corrections",
+    "uri": "/repositories/2/archival_objects/115",
+    "user_mtime": "2020-06-26T16:07:13Z"
+}

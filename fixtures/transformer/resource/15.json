@@ -4,21 +4,23 @@
             "archivesspace_uri": "/repositories/2/resources/93",
             "level": "collection",
             "ref": "/api/components/1/",
+            "title": "Rockefeller Foundation records, photographs, series 100-1000s",
             "type": "collection"
         },
         {
             "archivesspace_uri": "/repositories/2/resources/12",
             "level": "otherlevel",
             "ref": "/api/components/2/",
+            "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
             "type": "collection"
         }
     ],
     "children": [
         {
-            "identifier": 2106,
             "level": "Accession",
+            "order": 0,
             "ref": "/repositories/2/archival_objects/2106",
-            "title": "AC.2012.055: Michel Nussenzweig papers, Rockefeller University Faculty, undated",
+            "title": "AC.2012.055: Michel Nussenzweig papers, Rockefeller University Faculty",
             "type": "collection"
         }
     ],
@@ -80,14 +82,7 @@
     "language": "eng",
     "last_modified_by": "admin",
     "level": "otherlevel",
-    "linked_agents": [
-      {
-          "ref": "/agents/people/320",
-          "relator": "aut",
-          "role": "creator",
-          "terms": []
-      }
-    ],
+    "linked_agents": [],
     "linked_events": [],
     "lock_version": 4,
     "notes": [],

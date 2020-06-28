@@ -1,0 +1,422 @@
+{
+    "ancestors": [
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/126",
+            "title": "Literature II: A. G. Ogston and R. A. Peters",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/2/archival_objects/127",
+            "title": "Literature III: E thru L",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/2/archival_objects/128",
+            "title": "Literature IV: Miscellaneous",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/2/archival_objects/129",
+            "title": "Literature V: A thru D",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 4,
+            "ref": "/repositories/2/archival_objects/130",
+            "title": "Literature VI: M thru P",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 5,
+            "ref": "/repositories/2/archival_objects/131",
+            "title": "Literature XII: Porton Reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 6,
+            "ref": "/repositories/2/archival_objects/132",
+            "title": "Literature XIII: Q thru Z",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 7,
+            "ref": "/repositories/2/archival_objects/133",
+            "title": "M",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 8,
+            "ref": "/repositories/2/archival_objects/134",
+            "title": "Research: British Notes",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 9,
+            "ref": "/repositories/2/archival_objects/135",
+            "title": "Literature Notes \u2013 H (Chemical)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 10,
+            "ref": "/repositories/2/archival_objects/136",
+            "title": "Literature Notes \u2013 H (Physiological)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 11,
+            "ref": "/repositories/2/archival_objects/137",
+            "title": "Literature Notes \u2013 H and Divinyl Sulfone",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 12,
+            "ref": "/repositories/2/archival_objects/138",
+            "title": "Literature Notes \u2013 MFA",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 13,
+            "ref": "/repositories/2/archival_objects/139",
+            "title": "Literature Notes \u2013 N\u2013Mustards",
+            "type": "object"
+        },
+        {
+            "level": "item",
+            "order": 14,
+            "ref": "/repositories/2/archival_objects/140",
+            "title": "Literature Notes \u2013 Other Agents",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 15,
+            "ref": "/repositories/2/archival_objects/141",
+            "title": "Literature Notes \u2013 W Agent",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 16,
+            "ref": "/repositories/2/archival_objects/142",
+            "title": "Literature II: A. G. Ogston and R. A. Peters",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 17,
+            "ref": "/repositories/2/archival_objects/143",
+            "title": "Literature III: E thru L",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 18,
+            "ref": "/repositories/2/archival_objects/144",
+            "title": "Literature IV: Miscellaneous",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 19,
+            "ref": "/repositories/2/archival_objects/145",
+            "title": "Literature V: A thru D",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 20,
+            "ref": "/repositories/2/archival_objects/146",
+            "title": "Literature VI: M thru P",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 21,
+            "ref": "/repositories/2/archival_objects/147",
+            "title": "Literature XII: Porton Reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 22,
+            "ref": "/repositories/2/archival_objects/148",
+            "title": "Literature XIII: Q thru Z",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 23,
+            "ref": "/repositories/2/archival_objects/149",
+            "title": "M",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 24,
+            "ref": "/repositories/2/archival_objects/150",
+            "title": "Research: British Notes",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 25,
+            "ref": "/repositories/2/archival_objects/151",
+            "title": "Literature Notes \u2013 H (Chemical)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 26,
+            "ref": "/repositories/2/archival_objects/152",
+            "title": "Literature Notes \u2013 H (Physiological)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 27,
+            "ref": "/repositories/2/archival_objects/153",
+            "title": "Literature Notes \u2013 H and Divinyl Sulfone",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 28,
+            "ref": "/repositories/2/archival_objects/154",
+            "title": "Literature Notes \u2013 MFA",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 29,
+            "ref": "/repositories/2/archival_objects/155",
+            "title": "Literature Notes \u2013 N\u2013Mustards",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 30,
+            "ref": "/repositories/2/archival_objects/156",
+            "title": "Literature Notes \u2013 Other Agents",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 31,
+            "ref": "/repositories/2/archival_objects/157",
+            "title": "Literature Notes \u2013 W Agent",
+            "type": "object"
+        }
+    ],
+    "component_id": "5",
+    "create_time": "2020-06-26T16:06:07Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1940",
+            "create_time": "2020-06-26T16:06:07Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1945",
+            "expression": "1940-1945",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:06:07Z",
+            "user_mtime": "2020-06-26T16:06:07Z"
+        }
+    ],
+    "display_string": "Declassifed Reports, 1940-1945",
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:06:07Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "0.4",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:06:07Z",
+            "user_mtime": "2020-06-26T16:06:07Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:07Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "0.4",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:06:07Z",
+            "user_mtime": "2020-06-26T16:06:07Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:06:07Z",
+            "created_by": "admin",
+            "external_id": "751264",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:06:07Z",
+            "user_mtime": "2020-06-26T16:06:07Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "series",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/2",
+            "role": "creator",
+            "terms": [],
+            "title": "Bergmann, M. (Max)",
+            "type": "agent_person"
+        },
+        {
+            "ref": "/agents/corporate_entities/3",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller University",
+            "type": "agent_corporate_entity"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Access:",
+            "persistent_id": "da5dad3b43769e2544a1b8a6e1c66ea8",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Researchers are required to use the stamped declassified photocopies in Box 15. The originals are in Box 16 and are closed.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Summary:",
+            "persistent_id": "6f96754c99c1bf3e9d10f4027369c5be",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "This series contain documents that were declassified by the U.S. Army after this collection was archivally processed. The contents of each folder in series 5 originated from a correlating folder of the same name in either series 2 or series 3. Researchers may wish to review both the folder in this series as well as the one with the same title found in a previous series for a full view of material on a given subject.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Arrangement note:",
+            "persistent_id": "66fc29dc2ecdf3d5467ce11118221f4f",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "The folders in series 5 are in the same order as the correlating folders in series 2 and 3.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "arrangement"
+        }
+    ],
+    "position": 3,
+    "publish": true,
+    "ref_id": "6b94c240307b436ba87257aad3ba8695",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:10:29Z",
+    "title": "Declassifed Reports",
+    "uri": "/repositories/2/archival_objects/5",
+    "user_mtime": "2020-06-26T16:06:07Z"
+}
