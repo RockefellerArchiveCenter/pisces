@@ -30,31 +30,33 @@ class ExternalIdentifier(odin.Resource):
 
 
 class Reference(odin.Resource):
-    """A short reference to a first-class entity (Agent, Collection, Object or Term).
-
-    Field-specific notes:
-        order: applies only to children and parent Objects and Collections References.
-        type: indicates what type of linked object the Reference points to.
-        uri: a concatenation of the object type plus an generated identifier
-        relator: applies only to References for Agent objects.
-        level: applies only to Collection and Object References.
-        identifier: generated when objects are indexed.
-    """
+    """Base class for short references to a first-class entity (Agent, Collection, Object or Term)."""
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
-    order = odin.StringField(null=True)
-    title = odin.StringField(null=True)
-    type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES, null=True)
-    uri = odin.StringField()
-    relator = odin.StringField(null=True)
-    role = odin.StringField(null=True)
-    level = odin.StringField(null=True)
-    identifier = odin.StringField(null=True)
+    title = odin.StringField()
+    type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES)
+    identifier = odin.StringField()
+
+
+class RecordReference(Reference):
+    """Short reference to Collections or Objects."""
+    order = odin.StringField()
+    level = odin.StringField()
+
+
+class AgentReference(Reference):
+    """Short reference to Agents."""
+    relator = odin.StringField()
+    role = odin.StringField()
+
+
+class TermReference(Reference):
+    """Short reference to Terms."""
+    pass
 
 
 class Date(odin.Resource):
     """Records the dates associated with an aggregation of archival records."""
-    # TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
-    begin = odin.DateTimeField(default="2019")
+    begin = odin.DateTimeField()
     end = odin.DateTimeField()
     expression = odin.StringField()
     type = odin.StringField(choices=configs.DATE_TYPE_CHOICES)
@@ -127,14 +129,14 @@ class Collection(BaseResource):
     type = odin.StringField(default="collection")
     level = odin.StringField()
     dates = odin.ArrayOf(Date)
-    creators = odin.ArrayOf(Reference)
+    creators = odin.ArrayOf(AgentReference)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Reference)
-    terms = odin.ArrayOf(Reference)
-    children = odin.ArrayOf(Reference, null=True)
-    ancestors = odin.ArrayOf(Reference, null=True)
+    agents = odin.ArrayOf(AgentReference)
+    terms = odin.ArrayOf(TermReference)
+    children = odin.ArrayOf(RecordReference, null=True)
+    ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
 
 
@@ -149,9 +151,9 @@ class Object(BaseResource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Reference)
-    terms = odin.ArrayOf(Reference)
-    ancestors = odin.ArrayOf(Reference, null=True)
+    agents = odin.ArrayOf(AgentReference)
+    terms = odin.ArrayOf(TermReference)
+    ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
     tree_position = odin.IntegerField()
 

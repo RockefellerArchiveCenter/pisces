@@ -28,11 +28,8 @@ class SourceAncestor(odin.Resource):
 class SourceRef(odin.Resource):
     """A reference to a related object."""
     ref = odin.StringField()
-
-
-class SourceSubjectRef(odin.Resource):
-    """A reference to a related object."""
-    ref = odin.StringField()
+    type = odin.StringField(null=True)
+    title = odin.StringField(null=True)
 
 
 class SourceDate(odin.Resource):
@@ -94,6 +91,8 @@ class SourceLinkedAgent(odin.Resource):
     role = odin.StringField(choices=configs.AGENT_ROLE_CHOICES)
     relator = odin.StringField(choices=configs.AGENT_RELATOR_CHOICES, null=True)
     ref = odin.StringField()
+    type = odin.StringField()
+    title = odin.StringField()
 
 
 class SourceNameBase(odin.Resource):
@@ -209,7 +208,7 @@ class SourceComponentBase(odin.Resource):
     level = odin.StringField()
     jsonmodel_type = odin.StringField(choices=COMPONENT_TYPES)
     external_ids = odin.ArrayOf(SourceExternalId)
-    subjects = odin.ArrayOf(SourceSubjectRef)
+    subjects = odin.ArrayOf(SourceRef)
     extents = odin.ArrayOf(SourceExtent)
     dates = odin.ArrayOf(SourceDate)
     language = odin.StringField(null=True)
@@ -246,9 +245,9 @@ class SourceResource(SourceComponentBase):
     finding_aid_filing_title = odin.StringField(null=True)
     id_0 = odin.StringField()
     id_1 = odin.StringField(null=True)
-    id_0 = odin.StringField(null=True)
+    id_2 = odin.StringField(null=True)
+    ancestors = odin.ArrayOf(SourceAncestor, null=True)
     children = odin.ArrayOf(SourceAncestor)
-    tree = odin.DictAs(SourceRef)
 
 
 class SourceAgentBase(odin.Resource):
