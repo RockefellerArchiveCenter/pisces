@@ -32,10 +32,10 @@ class Transformer:
         data (dict): the source data to be transformed.
     """
 
-    async def run(self, object_type, data):
+    def run(self, object_type, data):
         try:
             self.identifier = data.get("uri")
-            from_resource, mapping, schema = self.get_mapping_configs(object_type)
+            from_resource, mapping, schema = self.get_mapping_classes(object_type)
             transformed = self.get_transformed_object(data, from_resource, mapping)
             is_valid(transformed, schema)
             self.save_validated(transformed)
@@ -45,7 +45,7 @@ class Transformer:
         except Exception as e:
             raise TransformError("Error transforming {} {}: {}".format(object_type, self.identifier, str(e)))
 
-    def get_mapping_configs(self, object_type):
+    def get_mapping_classes(self, object_type):
         TYPE_MAP = {
             "agent_person": (SourceAgentPerson, SourceAgentPersonToAgent, "agent.json"),
             "agent_corporate_entity": (SourceAgentCorporateEntity, SourceAgentCorporateEntityToAgent, "agent.json"),
