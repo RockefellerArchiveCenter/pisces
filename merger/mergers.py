@@ -169,12 +169,14 @@ class ArrangementMapMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {"children": [], "ancestors": []}
+        data = {"children": []}
         data.update(
             self.aspace_helper.aspace.client.get(
                 object["archivesspace_uri"],
                 params={"resolve": ["subjects", "linked_agents"]}).json())
-        if not object.get("children"):
+        if object.get("children"):
+            data["children"] = object["children"]
+        else:
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
 

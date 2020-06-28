@@ -61,9 +61,10 @@ class MergerTest(TestCase):
         Archival objects are expected to have values in dates and one of
             language or lang_materials fields.
         Archival object collections are expected to have values in dates,
-            extents, linked_agents, children and one of language or lang_materials fields
-        Resources should have at least as many ancestors in the merged data as
-            in the source.
+            extents, linked_agents, children and one of language or
+            lang_materials fields
+        Resources are expected to have values in  children, and should have at
+            least as many ancestors in the merged data as in the source.
         """
         if target_object_type == "archival_object":
             self.assertTrue(self.not_empty(merged.get("dates")), "dates on {} was empty".format(merged))
@@ -75,6 +76,7 @@ class MergerTest(TestCase):
             self.assertTrue(
                 bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))))
         elif target_object_type == "resource":
+            self.assertTrue(self.not_empty(merged.get("children")), "children on {} was empty".format(merged))
             if source_object_type == "arrangement_map":
                 self.assertTrue(len(merged.get("ancestors", [])) > len(source.get("ancestors", [])),
                                 "{} does not have more ancestors in merged data than source data.".format(merged))
@@ -86,7 +88,7 @@ class MergerTest(TestCase):
         return False if value in ['', [], {}, None] else True
 
     def check_embedded(self, merged):
-        """Tests for required fields in embedded reference objects."""
+        """Tests that title and type fields are present in embedded reference objects."""
         for key in ["ancestors", "subjects", "linked_agents"]:
             for obj in merged.get(key, []):
                 self.assertTrue(
