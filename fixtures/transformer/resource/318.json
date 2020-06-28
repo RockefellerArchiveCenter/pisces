@@ -1,9 +1,8 @@
 {
     "ancestors": [
         {
-            "archivesspace_uri": "/repositories/2/resources/93",
             "level": "collection",
-            "ref": "/api/components/1/",
+            "ref": "/repositories/2/resources/93",
             "title": "Rockefeller Foundation records, photographs, series 100-1000",
             "type": "collection"
         }

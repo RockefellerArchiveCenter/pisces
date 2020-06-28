@@ -5,19 +5,22 @@
             "archivesspace_uri": "/repositories/2/resources/12",
             "level": "otherlevel",
             "ref": "/api/components/2/",
-            "title": "Michel Nussenzweig papers, Rockefeller University Faculty"
+            "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
+            "type": "collection"
         },
         {
             "archivesspace_uri": "/repositories/2/resources/13",
             "level": "collection",
             "ref": "/api/components/3/",
-            "title": "Peter F. Geithner papers"
+            "title": "Peter F. Geithner papers",
+            "type": "collection"
         },
         {
             "archivesspace_uri": "/repositories/2/resources/318",
             "level": "otherlevel",
             "ref": "/api/components/4/",
-            "title": "Rockefeller Foundation records, China Medical Board records, RG 4"
+            "title": "Rockefeller Foundation records, China Medical Board records, RG 4",
+            "type": "collection"
         }
     ],
     "classifications": [],
