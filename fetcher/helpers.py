@@ -79,7 +79,7 @@ async def handle_deleted_uri(uri, source, object_type, current_run):
     es_id = identifier_from_uri(uri)
     if es_id:
         try:
-            resp = requests.post(settings.INDEX_DELETE_URL, json=es_id)
+            resp = requests.post(settings.INDEX_DELETE_URL, json={"identifier": es_id})
             resp.raise_for_status()
             updated = es_id
         except requests.exceptions.HTTPError:
