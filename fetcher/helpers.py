@@ -75,6 +75,7 @@ def identifier_from_uri(uri):
 
 
 async def handle_deleted_uri(uri, source, object_type, current_run):
+    # TODO: handle 404s (need better status_codes back from ES)
     updated = None
     es_id = identifier_from_uri(uri)
     if es_id:

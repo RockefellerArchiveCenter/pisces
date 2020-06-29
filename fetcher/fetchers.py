@@ -8,9 +8,8 @@ from merger.mergers import (AgentMerger, ArchivalObjectMerger,
 from pisces import settings
 from transformer.transformers import Transformer
 
-from .helpers import (handle_deleted_uri, instantiate_aspace,
-                      instantiate_electronbond, last_run_time,
-                      send_error_notification)
+from .helpers import (instantiate_aspace, instantiate_electronbond,
+                      last_run_time, send_error_notification)
 from .models import FetchRun, FetchRunError
 
 
@@ -87,9 +86,11 @@ class BaseDataFetcher:
                     merged, merged_object_type = await self.merger(self.clients).merge(self.object_type, fetched)
                     Transformer().run(merged_object_type, merged)
                 else:
-                    await handle_deleted_uri(fetched.get("uri"), self.source, self.object_type, self.current_run)
+                    pass
+                    # await handle_deleted_uri(fetched.get("uri"), self.source, self.object_type, self.current_run)
             else:
-                await handle_deleted_uri(object_id, self.source, self.object_type, self.current_run)
+                pass
+                # await handle_deleted_uri(object_id, self.source, self.object_type, self.current_run)
             self.processed += 1
         except Exception as e:
             print(e)
