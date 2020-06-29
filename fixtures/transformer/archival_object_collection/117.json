@@ -1,0 +1,285 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/3",
+            "title": "Research",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/201",
+            "title": "December",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/2/archival_objects/202",
+            "title": "January \u2013 February",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/2/archival_objects/203",
+            "title": "March \u2013 April",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/2/archival_objects/204",
+            "title": "May \u2013 June",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 4,
+            "ref": "/repositories/2/archival_objects/205",
+            "title": "July \u2013 August",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 5,
+            "ref": "/repositories/2/archival_objects/206",
+            "title": "September \u2013 October",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 6,
+            "ref": "/repositories/2/archival_objects/207",
+            "title": "November \u2013 December",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 7,
+            "ref": "/repositories/2/archival_objects/208",
+            "title": "January \u2013 February",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 8,
+            "ref": "/repositories/2/archival_objects/209",
+            "title": "March \u2013 April",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 9,
+            "ref": "/repositories/2/archival_objects/210",
+            "title": "May \u2013 June",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 10,
+            "ref": "/repositories/2/archival_objects/211",
+            "title": "July \u2013 August",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 11,
+            "ref": "/repositories/2/archival_objects/212",
+            "title": "September \u2013 October",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 12,
+            "ref": "/repositories/2/archival_objects/213",
+            "title": "November \u2013 December",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 13,
+            "ref": "/repositories/2/archival_objects/214",
+            "title": "January \u2013 February",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 14,
+            "ref": "/repositories/2/archival_objects/215",
+            "title": "March \u2013 April",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 15,
+            "ref": "/repositories/2/archival_objects/216",
+            "title": "May \u2013 June",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 16,
+            "ref": "/repositories/2/archival_objects/217",
+            "title": "July \u2013 August",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 17,
+            "ref": "/repositories/2/archival_objects/218",
+            "title": "September \u2013 October",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 18,
+            "ref": "/repositories/2/archival_objects/219",
+            "title": "November \u2013 December",
+            "type": "object"
+        }
+    ],
+    "component_id": "57",
+    "create_time": "2020-06-26T16:07:14Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1940",
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1946",
+            "expression": "1940\u20131946",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "display_string": "Informal Progress Reports",
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "1.1",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:07:14Z",
+            "created_by": "admin",
+            "external_id": "57",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:07:14Z",
+            "user_mtime": "2020-06-26T16:07:14Z"
+        }
+    ],
+    "has_unpublished_ancestor": true,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/2",
+            "role": "creator",
+            "terms": [],
+            "title": "Bergmann, M. (Max)",
+            "type": "agent_person"
+        },
+        {
+            "ref": "/agents/corporate_entities/3",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller University",
+            "type": "agent_corporate_entity"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/3"
+    },
+    "position": 3,
+    "publish": true,
+    "ref_id": "ece725825b844ff58843470883d61211",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:12:41Z",
+    "title": "Informal Progress Reports",
+    "uri": "/repositories/2/archival_objects/117",
+    "user_mtime": "2020-06-26T16:07:14Z"
+}

@@ -1,0 +1,183 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/5",
+            "title": "Declassifed Reports",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [],
+    "component_id": "751267",
+    "create_time": "2020-06-26T16:07:18Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1942",
+            "create_time": "2020-06-26T16:07:18Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1944",
+            "expression": "1942-1944",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:07:18Z",
+            "user_mtime": "2020-06-26T16:07:18Z"
+        }
+    ],
+    "display_string": "Literature III: E thru L, 1942-1944",
+    "extents": [
+        {
+            "extent_type": "folder",
+            "number": 1
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:07:18Z",
+            "created_by": "admin",
+            "external_id": "751267",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:07:18Z",
+            "user_mtime": "2020-06-26T16:07:18Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
+    "instances": [
+        {
+            "create_time": "2020-06-26T16:07:18Z",
+            "created_by": "admin",
+            "instance_type": "mixed materials",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "sub_container": {
+                "create_time": "2020-06-26T16:07:18Z",
+                "created_by": "admin",
+                "indicator_2": "2",
+                "jsonmodel_type": "sub_container",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:07:18Z",
+                "top_container": {
+                    "ref": "/repositories/2/top_containers/16"
+                },
+                "type_2": "folder",
+                "user_mtime": "2020-06-26T16:07:18Z"
+            },
+            "system_mtime": "2020-06-26T16:07:18Z",
+            "user_mtime": "2020-06-26T16:07:18Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access",
+            "persistent_id": "329f96f3e2b3d0928983ad5b0b56a864",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Restricted material",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        },
+        {
+            "jsonmodel_type": "note_multipart",
+            "label": "Conditions Governing Access",
+            "persistent_id": "a315bb5f094efa8184727ab2b1b28e06",
+            "publish": true,
+            "subnotes": [
+                {
+                    "content": "Use stamped declassified copies in Box 15 Folder 1. Do not use originals in Box 16.",
+                    "jsonmodel_type": "note_text",
+                    "publish": true
+                }
+            ],
+            "type": "accessrestrict"
+        }
+    ],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/5"
+    },
+    "position": 17,
+    "publish": true,
+    "ref_id": "0af05549a8b6493483bc9e65da889310",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:10:29Z",
+    "title": "Literature III: E thru L",
+    "uri": "/repositories/2/archival_objects/143",
+    "user_mtime": "2020-06-26T16:07:18Z"
+}

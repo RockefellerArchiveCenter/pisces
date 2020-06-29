@@ -1,0 +1,250 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/3",
+            "title": "Research",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/222",
+            "title": "Chapter 19. Chemical Reactions of the Sulfur and Nitrogen Mustards",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/2/archival_objects/223",
+            "title": "Laboratory Notes",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/2/archival_objects/224",
+            "title": "Laboratory Notes",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/2/archival_objects/225",
+            "title": "Literature Notes \u2013 1130",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 4,
+            "ref": "/repositories/2/archival_objects/226",
+            "title": "Literature Notes \u2013 H (Chemical)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 5,
+            "ref": "/repositories/2/archival_objects/227",
+            "title": "Literature Notes \u2013 H (Physiological)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 6,
+            "ref": "/repositories/2/archival_objects/228",
+            "title": "Literature Notes \u2013 H and Divinyl Sulfone",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 7,
+            "ref": "/repositories/2/archival_objects/229",
+            "title": "Literature Notes \u2013 MFA",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 8,
+            "ref": "/repositories/2/archival_objects/230",
+            "title": "Literature Notes \u2013 N\u2013Mustards",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 9,
+            "ref": "/repositories/2/archival_objects/231",
+            "title": "Literature Notes \u2013 Other Agents",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 10,
+            "ref": "/repositories/2/archival_objects/232",
+            "title": "Literature Notes \u2013 Q and Related Compounds",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 11,
+            "ref": "/repositories/2/archival_objects/233",
+            "title": "Literature Notes \u2013 W Agent",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 12,
+            "ref": "/repositories/2/archival_objects/234",
+            "title": "Special Notes",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 13,
+            "ref": "/repositories/2/archival_objects/235",
+            "title": "TL 110",
+            "type": "object"
+        }
+    ],
+    "component_id": "37",
+    "create_time": "2020-06-26T16:07:15Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1940",
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1946",
+            "expression": "1940\u20131946",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "display_string": "Stein, William H.",
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "1.1",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:07:15Z",
+            "created_by": "admin",
+            "external_id": "37",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:07:15Z",
+            "user_mtime": "2020-06-26T16:07:15Z"
+        }
+    ],
+    "has_unpublished_ancestor": true,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/2",
+            "role": "creator",
+            "terms": [],
+            "title": "Bergmann, M. (Max)",
+            "type": "agent_person"
+        },
+        {
+            "ref": "/agents/corporate_entities/3",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller University",
+            "type": "agent_corporate_entity"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/3"
+    },
+    "position": 7,
+    "publish": true,
+    "ref_id": "4d1740d82de446dba252c7cf73e8385c",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:12:41Z",
+    "title": "Stein, William H.",
+    "uri": "/repositories/2/archival_objects/121",
+    "user_mtime": "2020-06-26T16:07:15Z"
+}

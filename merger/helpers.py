@@ -4,29 +4,7 @@ from pisces import settings
 
 class ArchivesSpaceHelper:
     def __init__(self, aspace):
-        self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE, repo=False)
-
-    def get_ancestors(self, uri):
-        """Returns the full record for each ancestor."""
-        obj = self.aspace.client.get(uri).json()
-        for a in obj['ancestors']:
-            yield self.aspace.client.get(a['ref']).json()
-
-    def closest_parent_value(self, uri, key):
-        """Iterates up through an archival object's ancestors looking for the
-        first value in a particular field. Returns that value."""
-        for ancestor in self.get_ancestors(uri):
-            if ancestor.get(key) not in ['', [], {}, None]:
-                return ancestor[key]
-
-    def closest_creators(self, uri):
-        """Iterates up through an archival object's ancestors looking for linked agents.
-        Iterates over the linked agents list while checking if there is a creator using
-        the length of the role. Returns the first creator it finds."""
-        for ancestor in self.get_ancestors(uri):
-            if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
-                return [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
-        return []
+        self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE)
 
     def has_children(self, uri):
         """Checks whether an archival object has children using the tree/node endpoint.
@@ -57,3 +35,47 @@ class ArchivesSpaceHelper:
         tree_node = self.aspace.client.get(
             "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
         return self.tree_children(tree_node, object_uri)
+
+
+def get_ancestors(obj):
+    """Returns the full resolved record for each ancestor."""
+    for a in obj["ancestors"]:
+        yield a["_resolved"]
+
+
+def closest_parent_value(obj, key):
+    """Iterates upwards through a hierarchy and returns the first match for a key.
+
+    Iterates up through an archival object's ancestors and returns the first
+    value which matches a given key."""
+    for ancestor in get_ancestors(obj):
+        if ancestor.get(key) not in ['', [], {}, None]:
+            return ancestor[key]
+
+
+def closest_creators(obj):
+    """Iterates upwards through a hierarchy and returns the first creator.
+
+    Iterates up through an archival object's ancestors looking for linked agents,
+    then iterates over the linked agents to see if it contains an agent with
+    the role of creator. Returns the first creator it finds."""
+    for ancestor in get_ancestors(obj):
+        if len([c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]):
+            return [c for c in ancestor.get("linked_agents") if c.get("role") == "creator"]
+    return []
+
+
+def combine_references(object):
+    """Adds type and title fields to references, then removes unneeded resolved objects."""
+    for key, type_key in (["ancestors", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
+        for obj in object.get(key, []):
+            if obj.get("_resolved"):
+                type = "collection"
+                if key == "subjects":
+                    type = obj["_resolved"]["terms"][0][type_key]
+                elif key == "linked_agents":
+                    type = obj["_resolved"][type_key]
+                obj["type"] = type
+                obj["title"] = obj["_resolved"]["title"]
+                del obj["_resolved"]
+    return object

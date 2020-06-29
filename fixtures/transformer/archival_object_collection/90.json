@@ -1,0 +1,236 @@
+{
+    "ancestors": [
+        {
+            "level": "series",
+            "ref": "/repositories/2/archival_objects/2",
+            "title": "Laboratory Administration",
+            "type": "collection"
+        },
+        {
+            "level": "collection",
+            "ref": "/repositories/2/resources/1",
+            "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/163",
+            "title": "A reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/2/archival_objects/164",
+            "title": "B reports (2 folders)",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/2/archival_objects/165",
+            "title": "Bushnell Weekly News Letters",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/2/archival_objects/166",
+            "title": "C reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 4,
+            "ref": "/repositories/2/archival_objects/167",
+            "title": "CMR Reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 5,
+            "ref": "/repositories/2/archival_objects/168",
+            "title": "Miscellaneous",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 6,
+            "ref": "/repositories/2/archival_objects/169",
+            "title": "Moore, Stanford",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 7,
+            "ref": "/repositories/2/archival_objects/170",
+            "title": "Progress Reports",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 8,
+            "ref": "/repositories/2/archival_objects/171",
+            "title": "Reports Returned to Washington",
+            "type": "object"
+        },
+        {
+            "level": "file",
+            "order": 9,
+            "ref": "/repositories/2/archival_objects/172",
+            "title": "Special Reports (2 folders)",
+            "type": "object"
+        }
+    ],
+    "component_id": "130",
+    "create_time": "2020-06-26T16:06:18Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1934",
+            "create_time": "2020-06-26T16:06:06Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1946",
+            "expression": "1934\u20131946 (bulk 1941\u20131944)",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:06:06Z",
+            "user_mtime": "2020-06-26T16:06:06Z"
+        },
+        {
+            "begin": "1941",
+            "create_time": "2020-06-26T16:06:06Z",
+            "created_by": "admin",
+            "date_type": "bulk",
+            "end": "1944",
+            "expression": "1941-1944",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-06-26T16:06:06Z",
+            "user_mtime": "2020-06-26T16:06:06Z"
+        }
+    ],
+    "display_string": "Receipts",
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:06:06Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "3.5",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:06:06Z",
+            "user_mtime": "2020-06-26T16:06:06Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [
+        {
+            "create_time": "2020-06-26T16:06:18Z",
+            "created_by": "admin",
+            "external_id": "130",
+            "jsonmodel_type": "external_id",
+            "last_modified_by": "admin",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "system_mtime": "2020-06-26T16:06:18Z",
+            "user_mtime": "2020-06-26T16:06:18Z"
+        }
+    ],
+    "has_unpublished_ancestor": false,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [
+        {
+            "ref": "/agents/people/2",
+            "role": "creator",
+            "terms": [],
+            "title": "Bergmann, M. (Max)",
+            "type": "agent_person"
+        },
+        {
+            "ref": "/agents/corporate_entities/3",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller University",
+            "type": "agent_corporate_entity"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/2/archival_objects/2"
+    },
+    "position": 73,
+    "publish": true,
+    "ref_id": "ebd5390ee8ec4a4eb0ef7104c9f9911a",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/1"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-06-26T16:10:29Z",
+    "title": "Receipts",
+    "uri": "/repositories/2/archival_objects/90",
+    "user_mtime": "2020-06-26T16:06:18Z"
+}

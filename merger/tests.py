@@ -1,4 +1,3 @@
-import asyncio
 import json
 import os
 
@@ -43,18 +42,18 @@ class MergerTest(TestCase):
         for source_object_type, merger, target_object_types in object_types:
             with merger_vcr.use_cassette("{}-merge.json".format(source_object_type)):
                 transform_count = 0
-                clients = BaseDataFetcher().instantiate_clients(source_object_type)
+                clients = BaseDataFetcher().instantiate_clients()
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        loop = asyncio.get_event_loop()
-                        merged, _ = loop.run_until_complete(merger(clients).merge(source_object_type, source))
+                        merged, obj_type = merger(clients).merge(source_object_type, source)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
                         transform_count += 1
                         self.assertTrue(merged.get("jsonmodel_type") in target_object_types)
                         self.check_counts(source, source_object_type, merged, merged.get("jsonmodel_type"))
+                        self.check_embedded(merged)
 
     def check_counts(self, source, source_object_type, merged, target_object_type):
         """Tests counts of data keys in merged object.
@@ -62,9 +61,10 @@ class MergerTest(TestCase):
         Archival objects are expected to have values in dates and one of
             language or lang_materials fields.
         Archival object collections are expected to have values in dates,
-            extents, linked_agents, children and one of language or lang_materials fields
-        Resources should have at least as many ancestors in the merged data as
-            in the source.
+            extents, linked_agents, children and one of language or
+            lang_materials fields
+        Resources are expected to have values in  children, and should have at
+            least as many ancestors in the merged data as in the source.
         """
         if target_object_type == "archival_object":
             self.assertTrue(self.not_empty(merged.get("dates")), "dates on {} was empty".format(merged))
@@ -76,6 +76,7 @@ class MergerTest(TestCase):
             self.assertTrue(
                 bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))))
         elif target_object_type == "resource":
+            self.assertTrue(self.not_empty(merged.get("children")), "children on {} was empty".format(merged))
             if source_object_type == "arrangement_map":
                 self.assertTrue(len(merged.get("ancestors", [])) > len(source.get("ancestors", [])),
                                 "{} does not have more ancestors in merged data than source data.".format(merged))
@@ -85,3 +86,24 @@ class MergerTest(TestCase):
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
+
+    def check_embedded(self, merged):
+        """Tests that title and type fields are present in embedded reference objects."""
+        for key in ["ancestors", "subjects", "linked_agents"]:
+            for obj in merged.get(key, []):
+                self.assertTrue(
+                    self.not_empty(obj.get("title")),
+                    "Title field of {} in {} is empty".format(obj.get("ref"), merged.get("uri")))
+                self.assertTrue(
+                    self.not_empty(obj.get("type")),
+                    "Type field of {} in {} is empty".format(obj.get("ref"), merged.get("uri")))
+
+    def test_parse_instances(self):
+        with merger_vcr.use_cassette("archival_object-merge.json"):
+            clients = BaseDataFetcher().instantiate_clients()
+            merger = ArchivalObjectMerger(clients)
+            for f in os.listdir(os.path.join("fixtures", "merger", "instance_parse")):
+                with open(os.path.join("fixtures", "merger", "instance_parse", f), "r") as json_file:
+                    source_data = json.load(json_file)
+                    parsed = merger.parse_instances(source_data["source"])
+                    self.assertEqual(parsed, source_data["parsed"])

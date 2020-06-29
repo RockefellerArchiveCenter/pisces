@@ -35,7 +35,7 @@ def last_run_time(source, object_status, object_type):
         else 0)
 
 
-def instantiate_aspace(self, config=None, repo=False):
+def instantiate_aspace(self, config=None):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
     Args:
@@ -49,11 +49,6 @@ def instantiate_aspace(self, config=None, repo=False):
         baseurl=config['baseurl'],
         username=config['username'],
         password=config['password'])
-    if repo:
-        repo = aspace.repositories(config['repo'])
-        setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
-        if isinstance(repo, dict) and 'error' in repo:
-            raise Exception(self.repo['error'])
     return aspace
 
 
@@ -79,7 +74,7 @@ def identifier_from_uri(uri):
     return shortuuid.uuid(name=uri)
 
 
-def handle_deleted_uri(uri, source, object_type, current_run):
+async def handle_deleted_uri(uri, source, object_type, current_run):
     updated = None
     es_id = identifier_from_uri(uri)
     if es_id:

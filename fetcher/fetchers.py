@@ -1,6 +1,5 @@
 import asyncio
 from datetime import datetime
-from itertools import chain, islice
 
 from django.utils import timezone
 from merger.mergers import (AgentMerger, ArchivalObjectMerger,
@@ -27,69 +26,74 @@ class BaseDataFetcher:
     """
 
     def fetch(self, object_status, object_type):
-        current_run = FetchRun.objects.create(
+        self.object_status = object_status
+        self.object_type = object_type
+        self.last_run = last_run_time(self.source, object_status, object_type)
+        self.clients = self.instantiate_clients()
+        self.processed = 0
+        self.current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
             source=self.source,
             object_type=object_type,
             object_status=object_status)
-        last_run = last_run_time(self.source, object_status, object_type)
-        clients = self.instantiate_clients(object_type)
-        self.processed = 0
-        merger = self.get_merger(object_type)
+        self.merger = self.get_merger(object_type)
+
         try:
             fetched = getattr(
-                self, "get_{}".format(object_status))(
-                clients, object_type, last_run, current_run)
+                self, "get_{}".format(self.object_status))()
+            for chunk in self.chunks(fetched, settings.CHUNK_SIZE):
+                asyncio.get_event_loop().run_until_complete(
+                    self.process_fetched_chunk(chunk))
         except Exception as e:
-            current_run.status = FetchRun.ERRORED
-            current_run.end_time = timezone.now()
-            current_run.save()
+            self.current_run.status = FetchRun.ERRORED
+            self.current_run.end_time = timezone.now()
+            self.current_run.save()
             FetchRunError.objects.create(
-                run=current_run,
+                run=self.current_run,
                 message="Error fetching data: {}".format(e),
             )
             raise FetcherError(e)
 
-        asyncio.get_event_loop().run_until_complete(
-            self.process_chunks(
-                fetched, merger, object_type, clients, current_run))
-
-        current_run.status = FetchRun.FINISHED
-        current_run.end_time = timezone.now()
-        current_run.save()
-        if current_run.error_count > 0:
-            send_error_notification(current_run)
+        self.current_run.status = FetchRun.FINISHED
+        self.current_run.end_time = timezone.now()
+        self.current_run.save()
+        if self.current_run.error_count > 0:
+            send_error_notification(self.current_run)
         return self.processed
 
-    def instantiate_clients(self, object_type):
-        repo = True if object_type in ["resource", "archival_object"] else False
+    def instantiate_clients(self):
         return {
-            "aspace": instantiate_aspace(settings.ARCHIVESSPACE, repo=repo),
+            "aspace": instantiate_aspace(settings.ARCHIVESSPACE),
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    async def process_chunks(self, fetched, merger, object_type, clients, current_run):
-        iterator = iter(fetched)
-        for first in iterator:
-            await self.process_fetched_list(
-                chain([first], islice(iterator, settings.CHUNK_SIZE - 1)),
-                merger, object_type, clients, current_run)
+    def chunks(self, l, n):
+        for i in range(0, len(l), n):
+            yield l[i:i + n]
 
-    async def process_fetched_list(self, fetched, merger, object_type, clients, current_run):
+    async def process_fetched_chunk(self, chunk):
         tasks = []
         print("Chunk", datetime.now())
-        for obj in fetched:
-            task = asyncio.ensure_future(self.process_obj(obj, merger, object_type, clients, current_run))
+        for object_id in chunk:
+            task = asyncio.ensure_future(self.process_obj(object_id))
             tasks.append(task)
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, obj, merger, object_type, clients, current_run):
+    async def process_obj(self, object_id):
         try:
-            merged, merged_object_type = await merger(clients).merge(object_type, obj.json())
-            await Transformer().run(merged_object_type, merged)
+            if self.object_status == "updated":
+                fetched = await self.get_obj(object_id)
+                if fetched.get("publish"):
+                    merged, merged_object_type = self.merger(self.clients).merge(self.object_type, fetched)
+                    Transformer().run(merged_object_type, merged)
+                else:
+                    await handle_deleted_uri(fetched.get("uri"), self.source, self.object_type, self.current_run)
+            else:
+                await handle_deleted_uri(object_id, self.source, self.object_type, self.current_run)
             self.processed += 1
         except Exception as e:
-            FetchRunError.objects.create(run=current_run, message=str(e))
+            print(e)
+            FetchRunError.objects.create(run=self.current_run, message=str(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
@@ -107,95 +111,71 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         }
         return MERGERS[object_type]
 
-    def get_updated(self, clients, object_type, last_run, current_run):
-        return self.updated_list(clients["aspace"], object_type, last_run, True)
+    def get_updated(self):
+        params = {"all_ids": True, "modified_since": self.last_run}
+        endpoint = self.get_endpoint(self.object_type)
+        return self.clients["aspace"].client.get(endpoint, params=params).json()
 
-    def get_deleted(self, clients, object_type, last_run, current_run):
+    def get_deleted(self):
         data = []
-        aspace = clients["aspace"]
-        for d in self.deleted_list(aspace, object_type, last_run):
-            updated = handle_deleted_uri(d, self.source, object_type, current_run)
-            if updated:
-                data.append(updated)
-        for u in self.updated_list(aspace, object_type, last_run, False):
-            updated = handle_deleted_uri(u.uri, self.source, object_type, current_run)
-            if updated:
-                data.append(updated)
+        for d in self.clients["aspace"].client.get_paged(
+                "delete-feed", params={"modified_since": str(self.last_run)}):
+            if self.get_endpoint(self.object_type) in d:
+                data.append(d)
         return data
 
-    def get_archival_objects(self, aspace, last_run, publish):
-        """Returns only archival objects belonging to a published resource."""
-        for obj in aspace.repo.archival_objects.with_params(
-                all_ids=True, modified_since=last_run):
-            if not obj.has_unpublished_ancestor:
-                yield obj
-
-    def get_resources(self, aspace, last_run):
-        """Return only resources whose id_0 attribute starts with 'FA'"""
-        for obj in aspace.repo.resources.with_params(
-                all_ids=True, modified_since=last_run):
-            if obj.id_0.startswith("FA"):
-                yield obj
-
-    def updated_list(self, aspace, object_type, last_run, publish):
+    def get_endpoint(self, object_type):
+        repo_baseurl = "/repositories/{}".format(settings.ARCHIVESSPACE["repo"])
+        endpoint = None
         if object_type == 'resource':
-            list = self.get_resources(aspace, last_run)
+            endpoint = "{}/resources".format(repo_baseurl)
         elif object_type == 'archival_object':
-            list = self.get_archival_objects(aspace, last_run, publish)
+            endpoint = "{}/archival_objects".format(repo_baseurl)
         elif object_type == 'subject':
-            list = aspace.subjects.with_params(
-                all_ids=True, modified_since=last_run)
+            endpoint = "/subjects"
         elif object_type == 'agent_person':
-            list = aspace.agents["people"].with_params(
-                all_ids=True, modified_since=last_run)
+            endpoint = "/agents/people"
         elif object_type == 'agent_corporate_entity':
-            list = aspace.agents["corporate_entities"].with_params(
-                all_ids=True, modified_since=last_run)
+            endpoint = "/agents/corporate_entities"
         elif object_type == 'agent_family':
-            list = aspace.agents["families"].with_params(
-                all_ids=True, modified_since=last_run)
-        for obj in list:
-            if obj.publish == publish:
-                yield obj
+            endpoint = "/agents/families"
+        return endpoint
 
-    def deleted_list(self, aspace, object_type, last_run):
-        for d in aspace.client.get_paged(
-                "delete-feed", params={"modified_since": str(last_run)}):
-            if object_type in d:
-                yield d
+    async def get_obj(self, obj_id):
+        aspace = self.clients["aspace"]
+        obj_endpoint = self.get_endpoint(self.object_type)
+        obj = aspace.client.get(
+            "{}/{}".format(obj_endpoint, obj_id),
+            params={"resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"]}).json()
+        if obj.get("id_0") and not obj.get("id_0").startswith("FA"):
+            pass
+        if obj.get("has_unpublished_ancestor"):
+            pass
+        return obj
 
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
     source = FetchRun.CARTOGRAPHER
+    base_endpoint = "/api/components/"
 
     def get_merger(self, object_type):
         return ArrangementMapMerger
 
-    def get_updated(self, clients, object_type, last_run, current_run):
-        return self.updated_list(clients["cartographer"], last_run, True)
-
-    def get_deleted(self, clients, object_type, last_run, current_run):
+    def get_updated(self):
         data = []
-        for component in self.updated_list(clients["cartographer"], last_run, False):
-            updated = handle_deleted_uri(component.get("ref"), self.source, object_type, current_run)
-            if updated:
-                data.append(updated)
-        for uri in self.deleted_list(clients["cartographer"], last_run):
-            updated = handle_deleted_uri(uri, self.source, object_type, current_run)
-            if updated:
-                data.append(updated)
+        for obj in self.clients["cartographer"].get(
+                self.base_endpoint, params={"modified_since": self.last_run}).json()['results']:
+            data.append("{}{}/".format(self.base_endpoint, obj.get("id")))
         return data
 
-    def updated_list(self, client, last_run, publish):
-        for component_ref in client.get(
-                '/api/components/', params={"modified_since": last_run}).json()['results']:
-            component = client.get('/api/components/{}/'.format(component_ref['id'])).json()
-            if component.get('publish') == publish:
-                yield component
+    def get_deleted(self):
+        data = []
+        for deleted_ref in self.clients["cartographer"].get(
+                '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
+            if self.base_endpoint in deleted_ref['ref']:
+                data.append(deleted_ref['ref'])
+        return data
 
-    def deleted_list(self, client, last_run):
-        for deleted_ref in client.get(
-                '/api/delete-feed/', params={"deleted_since": last_run}).json()['results']:
-            if '/api/components/' in deleted_ref['ref']:
-                yield deleted_ref['ref']
+    async def get_obj(self, obj_ref):
+        return self.clients["cartographer"].get(obj_ref).json()

@@ -1,63 +1,63 @@
 {
     "ancestors": [
         {
-            "archivesspace_uri": "/repositories/2/resources/93",
             "level": "collection",
-            "ref": "/api/components/1/",
+            "ref": "/repositories/2/resources/93",
+            "title": "Rockefeller Foundation records, photographs, series 100-1000",
             "type": "collection"
         }
     ],
     "children": [
         {
-            "identifier": 1059641,
             "level": "series",
+            "order": 0,
             "ref": "/repositories/2/archival_objects/1059641",
-            "title": "Professional and personal files, first run, 1963-2004",
+            "title": "Professional and personal files, first run",
             "type": "collection"
         },
         {
-            "identifier": 1065070,
             "level": "series",
+            "order": 1,
             "ref": "/repositories/2/archival_objects/1065070",
-            "title": "Professional and personal files, second run, 1951-2011",
+            "title": "Professional and personal files, second run",
             "type": "collection"
         },
         {
-            "identifier": 1073827,
             "level": "series",
+            "order": 2,
             "ref": "/repositories/2/archival_objects/1073827",
-            "title": "Ford Foundation, Vietnam and China, 1973-1996",
+            "title": "Ford Foundation, Vietnam and China",
             "type": "collection"
         },
         {
-            "identifier": 1075269,
             "level": "series",
+            "order": 3,
             "ref": "/repositories/2/archival_objects/1075269",
-            "title": "Ford Foundation, Asia-Pacific regional issues, 1994-1999",
+            "title": "Ford Foundation, Asia-Pacific regional issues",
             "type": "collection"
         },
         {
-            "identifier": 1075385,
             "level": "series",
+            "order": 4,
             "ref": "/repositories/2/archival_objects/1075385",
-            "title": "Professional and personal files, third run, 1982-2005",
+            "title": "Professional and personal files, third run",
             "type": "collection"
         },
         {
-            "identifier": 1076788,
             "level": "series",
+            "order": 5,
             "ref": "/repositories/2/archival_objects/1076788",
-            "title": "Ford Foundation, trips, meetings, and conferences, 1989-1997",
+            "title": "Ford Foundation, trips, meetings, and conferences",
             "type": "collection"
         }
     ],
     "classifications": [],
     "collection_management": {
-        "create_time": "2019-10-31T16:53:09Z",
-        "created_by": "battalb",
+        "create_time": "2020-03-26T12:36:09Z",
+        "created_by": "k.martin",
         "external_ids": [],
         "jsonmodel_type": "collection_management",
-        "last_modified_by": "battalb",
+        "last_modified_by": "k.martin",
         "lock_version": 0,
         "parent": {
             "ref": "/repositories/2/resources/13"
@@ -68,26 +68,26 @@
             "ref": "/repositories/2"
         },
         "rights_determined": false,
-        "system_mtime": "2019-10-31T16:53:09Z",
-        "uri": "/repositories/2/collection_management/10424",
-        "user_mtime": "2019-10-31T16:53:09Z"
+        "system_mtime": "2020-03-26T12:36:09Z",
+        "uri": "/repositories/2/collection_management/12439",
+        "user_mtime": "2020-03-26T12:36:09Z"
     },
     "create_time": "2014-12-06T03:28:13Z",
     "created_by": "admin",
     "dates": [
         {
             "begin": "1951",
-            "create_time": "2019-10-31T16:53:09Z",
-            "created_by": "battalb",
+            "create_time": "2020-03-26T12:36:08Z",
+            "created_by": "k.martin",
             "date_type": "inclusive",
             "end": "2011",
             "expression": "1951-2011",
             "jsonmodel_type": "date",
             "label": "creation",
-            "last_modified_by": "battalb",
+            "last_modified_by": "k.martin",
             "lock_version": 0,
-            "system_mtime": "2019-10-31T16:53:09Z",
-            "user_mtime": "2019-10-31T16:53:09Z"
+            "system_mtime": "2020-03-26T12:36:08Z",
+            "user_mtime": "2020-03-26T12:36:08Z"
         }
     ],
     "deaccessions": [],
@@ -95,29 +95,29 @@
     "extents": [
         {
             "container_summary": "123 LTR size Hollinger boxes, 3 Half-LTR size Hollinger boxes, and 18 LGL size Hollinger boxes",
-            "create_time": "2019-10-31T16:53:09Z",
-            "created_by": "battalb",
+            "create_time": "2020-03-26T12:36:08Z",
+            "created_by": "k.martin",
             "extent_type": "cubic_feet",
             "jsonmodel_type": "extent",
-            "last_modified_by": "battalb",
+            "last_modified_by": "k.martin",
             "lock_version": 0,
             "number": "55.77",
             "portion": "whole",
-            "system_mtime": "2019-10-31T16:53:09Z",
-            "user_mtime": "2019-10-31T16:53:09Z"
+            "system_mtime": "2020-03-26T12:36:08Z",
+            "user_mtime": "2020-03-26T12:36:08Z"
         }
     ],
     "external_documents": [],
     "external_ids": [
         {
-            "create_time": "2019-10-31T16:53:09Z",
-            "created_by": "battalb",
+            "create_time": "2020-03-26T12:36:08Z",
+            "created_by": "k.martin",
             "external_id": "2026",
             "jsonmodel_type": "external_id",
-            "last_modified_by": "battalb",
+            "last_modified_by": "k.martin",
             "source": "Archivists Toolkit Database::RESOURCE",
-            "system_mtime": "2019-10-31T16:53:09Z",
-            "user_mtime": "2019-10-31T16:53:09Z"
+            "system_mtime": "2020-03-26T12:36:08Z",
+            "user_mtime": "2020-03-26T12:36:08Z"
         }
     ],
     "finding_aid_description_rules": "dacs",
@@ -129,24 +129,28 @@
     "is_slug_auto": false,
     "jsonmodel_type": "resource",
     "language": "eng",
-    "last_modified_by": "battalb",
+    "last_modified_by": "k.martin",
     "level": "collection",
     "linked_agents": [
         {
             "ref": "/agents/people/11810",
             "relator": "aut",
             "role": "creator",
-            "terms": []
+            "terms": [],
+            "title": "Geithner, Peter F.",
+            "type": "agent_person"
         },
         {
-            "ref": "/agents/corporate_entities/28901",
-            "relator": "ctb",
+            "ref": "/agents/corporate_entities/29020",
+            "relator": "aut",
             "role": "creator",
-            "terms": []
+            "terms": [],
+            "title": "Ford Foundation",
+            "type": "agent_corporate_entity"
         }
     ],
     "linked_events": [],
-    "lock_version": 43,
+    "lock_version": 46,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
@@ -199,7 +203,7 @@
             },
             "subnotes": [
                 {
-                    "content": "RAC users must abide by all applicable provisions of United States copyright law. Reproduction/duplication of archival items is routinely provided in accordance with \"fair use\". If the RAC does not hold copyright for an archival collection, or items within a collection, it is the users responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.",
+                    "content": "Reproduction/duplication of archival items is routinely provided in accordance with \"fair use\". If the RAC does not hold copyright for an archival collection, or items within a collection, it is the users responsibility to contact the copyright holder, or make a fair effort to do so, prior to publication.",
                     "jsonmodel_type": "note_text",
                     "publish": true
                 }
@@ -295,213 +299,347 @@
     "rights_statements": [],
     "subjects": [
         {
-            "ref": "/subjects/7740"
+            "ref": "/subjects/7740",
+            "title": "AIDS (Disease) -- Prevention",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/7970"
+            "ref": "/subjects/7970",
+            "title": "AIDS (Disease) -- Vietnam",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/24392"
+            "ref": "/subjects/24392",
+            "title": "Africa",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/3214"
+            "ref": "/subjects/3214",
+            "title": "Agricultural development projects",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/369"
+            "ref": "/subjects/369",
+            "title": "Asia",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/5767"
+            "ref": "/subjects/5767",
+            "title": "Asia -- Study and teaching",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/17065"
+            "ref": "/subjects/17065",
+            "title": "Bangladesh",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/1229"
+            "ref": "/subjects/1229",
+            "title": "Biodiversity conservation",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1155"
+            "ref": "/subjects/1155",
+            "title": "Biotechnology",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/17069"
+            "ref": "/subjects/17069",
+            "title": "Cambodia",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/14507"
+            "ref": "/subjects/14507",
+            "title": "Censorship",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/26736"
+            "ref": "/subjects/26736",
+            "title": "China",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/47843"
+            "ref": "/subjects/47843",
+            "title": "China--Foreign relations",
+            "type": "genre_form"
         },
         {
-            "ref": "/subjects/342"
+            "ref": "/subjects/342",
+            "title": "China -- Politics and government",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/2569"
+            "ref": "/subjects/2569",
+            "title": "Cultural pluralism",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/795"
+            "ref": "/subjects/795",
+            "title": "Economic assistance",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/135"
+            "ref": "/subjects/135",
+            "title": "Economic development",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/9259"
+            "ref": "/subjects/9259",
+            "title": "Economic development -- China",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/31194"
+            "ref": "/subjects/31194",
+            "title": "Economic development -- Research",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/25630"
+            "ref": "/subjects/25630",
+            "title": "Economic development -- Vietnam",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/351"
+            "ref": "/subjects/351",
+            "title": "Economic policy",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/2184"
+            "ref": "/subjects/2184",
+            "title": "Educational exchanges",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/859"
+            "ref": "/subjects/859",
+            "title": "Energy policy",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1138"
+            "ref": "/subjects/1138",
+            "title": "Environmental protection",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/28077"
+            "ref": "/subjects/28077",
+            "title": "Environmental protection -- Research",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1243"
+            "ref": "/subjects/1243",
+            "title": "Financial crises",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1537"
+            "ref": "/subjects/1537",
+            "title": "Financial institutions, International",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/47775"
+            "ref": "/subjects/47775",
+            "title": "Ford Foundation",
+            "type": "genre_form"
         },
         {
-            "ref": "/subjects/1449"
+            "ref": "/subjects/1449",
+            "title": "Globalization",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/5670"
+            "ref": "/subjects/5670",
+            "title": "Hong Kong (China)",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/577"
+            "ref": "/subjects/577",
+            "title": "Human rights",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/26743"
+            "ref": "/subjects/26743",
+            "title": "India",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/7524"
+            "ref": "/subjects/7524",
+            "title": "Indonesia",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/19880"
+            "ref": "/subjects/19880",
+            "title": "Intellectual freedom",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1268"
+            "ref": "/subjects/1268",
+            "title": "International finance",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/139"
+            "ref": "/subjects/139",
+            "title": "International relations",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1635"
+            "ref": "/subjects/1635",
+            "title": "Investments",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/17010"
+            "ref": "/subjects/17010",
+            "title": "Japan",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/17053"
+            "ref": "/subjects/17053",
+            "title": "Kenya",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/142"
+            "ref": "/subjects/142",
+            "title": "Korea",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/3291"
+            "ref": "/subjects/3291",
+            "title": "Law -- Study and teaching",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/31166"
+            "ref": "/subjects/31166",
+            "title": "Minorities -- Civil rights",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/942"
+            "ref": "/subjects/942",
+            "title": "Multiculturalism",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1165"
+            "ref": "/subjects/1165",
+            "title": "Nonprofit organizations",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1245"
+            "ref": "/subjects/1245",
+            "title": "Pacific Area",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/17030"
+            "ref": "/subjects/17030",
+            "title": "Pakistan",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/46819"
+            "ref": "/subjects/46819",
+            "title": "Philippines",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1469"
+            "ref": "/subjects/1469",
+            "title": "Political persecution",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/20375"
+            "ref": "/subjects/20375",
+            "title": "Portfolio management",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/20429"
+            "ref": "/subjects/20429",
+            "title": "Power resources -- Research",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/22"
+            "ref": "/subjects/22",
+            "title": "Public health",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/2551"
+            "ref": "/subjects/2551",
+            "title": "Regionalism",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/47746"
+            "ref": "/subjects/47746",
+            "title": "Rockefeller Foundation",
+            "type": "genre_form"
         },
         {
-            "ref": "/subjects/11820"
+            "ref": "/subjects/11820",
+            "title": "Rule of law",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1137"
+            "ref": "/subjects/1137",
+            "title": "Security, International",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1459"
+            "ref": "/subjects/1459",
+            "title": "Social responsibility of business",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/7541"
+            "ref": "/subjects/7541",
+            "title": "South Asia",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/8007"
+            "ref": "/subjects/8007",
+            "title": "SouthEast Asia",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/20287"
+            "ref": "/subjects/20287",
+            "title": "Students -- Asia -- Political activity",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/752"
+            "ref": "/subjects/752",
+            "title": "Sustainable development",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/664"
+            "ref": "/subjects/664",
+            "title": "Taiwan",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/17066"
+            "ref": "/subjects/17066",
+            "title": "Thailand",
+            "type": "geographic"
         },
         {
-            "ref": "/subjects/2574"
+            "ref": "/subjects/2574",
+            "title": "United States -- Foreign economic relations",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/2737"
+            "ref": "/subjects/2737",
+            "title": "United States -- Foreign relations -- China",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/37919"
+            "ref": "/subjects/37919",
+            "title": "Vietnam",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/16700"
+            "ref": "/subjects/16700",
+            "title": "Vietnam --Foreign relations",
+            "type": "topical"
         },
         {
-            "ref": "/subjects/1145"
+            "ref": "/subjects/1145",
+            "title": "Women's rights",
+            "type": "topical"
         }
     ],
     "suppressed": false,
-    "system_mtime": "2019-10-31T16:53:09Z",
+    "system_mtime": "2020-03-26T12:36:08Z",
     "title": "Peter F. Geithner papers",
     "tree": {
         "ref": "/repositories/2/resources/13/tree"
     },
     "uri": "/repositories/2/resources/13",
-    "user_mtime": "2019-10-31T16:53:09Z"
+    "user_mtime": "2020-03-26T12:36:08Z"
 }
