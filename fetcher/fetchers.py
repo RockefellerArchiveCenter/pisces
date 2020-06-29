@@ -83,8 +83,8 @@ class BaseDataFetcher:
         try:
             if self.object_status == "updated":
                 fetched = await self.get_obj(object_id)
-                if fetched.get("publish"):
-                    merged, merged_object_type = self.merger(self.clients).merge(self.object_type, fetched)
+                if self.is_exportable(fetched):
+                    merged, merged_object_type = await self.merger(self.clients).merge(self.object_type, fetched)
                     Transformer().run(merged_object_type, merged)
                 else:
                     await handle_deleted_uri(fetched.get("uri"), self.source, self.object_type, self.current_run)
@@ -94,6 +94,19 @@ class BaseDataFetcher:
         except Exception as e:
             print(e)
             FetchRunError.objects.create(run=self.current_run, message=str(e))
+
+    def is_exportable(self, obj):
+        """Determines whether the object can be exported.
+
+        Unpublished objects or object with unpublished ancestors should not be
+        exported. Resource records whose id_0 field does not begin with FA
+        should not be exported.
+        """
+        if not obj.get("published") or obj.get("has_unpublished_ancestor"):
+            return False
+        if obj.get("id_0") and not obj.get("id_0").startswith("FA"):
+            return False
+        return True
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
@@ -147,10 +160,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         obj = aspace.client.get(
             "{}/{}".format(obj_endpoint, obj_id),
             params={"resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"]}).json()
-        if obj.get("id_0") and not obj.get("id_0").startswith("FA"):
-            pass
-        if obj.get("has_unpublished_ancestor"):
-            pass
         return obj
 
 

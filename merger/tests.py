@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 
@@ -46,7 +47,8 @@ class MergerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged, obj_type = merger(clients).merge(source_object_type, source)
+                        loop = asyncio.get_event_loop()
+                        merged, _ = loop.run_until_complete(merger(clients).merge(source_object_type, source))
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))

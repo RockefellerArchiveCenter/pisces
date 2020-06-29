@@ -18,7 +18,7 @@ class BaseMerger:
         except Exception as e:
             raise MergeError(e)
 
-    def merge(self, object_type, object):
+    async def merge(self, object_type, object):
         """Main merge function.
 
         Fetches and merges additional data from secondary data sources, then
