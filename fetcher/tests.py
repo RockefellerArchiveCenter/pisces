@@ -1,3 +1,5 @@
+import json
+import os
 import random
 from datetime import datetime
 from unittest.mock import patch
@@ -21,7 +23,8 @@ from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    UpdatedArchivesSpacePeople, UpdatedArchivesSpaceResources,
                    UpdatedArchivesSpaceSubjects,
                    UpdatedCartographerArrangementMapComponents)
-from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
+from .fetchers import (ArchivesSpaceDataFetcher, BaseDataFetcher,
+                       CartographerDataFetcher)
 from .helpers import last_run_time, send_error_notification
 from .models import FetchRun, FetchRunError
 from .views import FetchRunViewSet
@@ -155,3 +158,14 @@ class FetcherTest(TestCase):
                 self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
                 self.assertEqual(
                     len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 2)
+
+    def test_is_exportable(self):
+        exportable = ["1.json", "2.json", "3.json"]
+        for f in os.listdir(os.path.join("fixtures", "fetcher", "is_exportable")):
+            with open(os.path.join("fixtures", "fetcher", "is_exportable", f), "r") as json_file:
+                source = json.load(json_file)
+                parsed = BaseDataFetcher().is_exportable(source)
+                if f in exportable:
+                    self.assertTrue(parsed)
+                else:
+                    self.assertFalse(parsed)
