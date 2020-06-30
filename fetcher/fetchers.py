@@ -1,4 +1,5 @@
 import asyncio
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
 from django.utils import timezone
@@ -17,6 +18,14 @@ class FetcherError(Exception):
     pass
 
 
+def run_transformer(merged_object_type, merged):
+    Transformer().run(merged_object_type, merged)
+
+
+def run_merger(merger, object_type, fetched):
+    return merger(clients).merge(object_type, fetched)
+
+
 class BaseDataFetcher:
     """Base data fetcher.
 
@@ -28,7 +37,9 @@ class BaseDataFetcher:
         self.object_status = object_status
         self.object_type = object_type
         self.last_run = last_run_time(self.source, object_status, object_type)
-        self.clients = self.instantiate_clients()
+        global clients
+        clients = self.instantiate_clients()
+        self.clients = clients
         self.processed = 0
         self.current_run = FetchRun.objects.create(
             status=FetchRun.STARTED,
@@ -73,18 +84,20 @@ class BaseDataFetcher:
     async def process_fetched_chunk(self, chunk):
         tasks = []
         print("Chunk", datetime.now())
+        loop = asyncio.get_event_loop()
+        _executor = ThreadPoolExecutor()
         for object_id in chunk:
-            task = asyncio.ensure_future(self.process_obj(object_id))
+            task = asyncio.ensure_future(self.process_obj(object_id, loop, _executor))
             tasks.append(task)
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, object_id):
+    async def process_obj(self, object_id, loop, _executor):
         try:
             if self.object_status == "updated":
                 fetched = await self.get_obj(object_id)
                 if self.is_exportable(fetched):
-                    merged, merged_object_type = await self.merger(self.clients).merge(self.object_type, fetched)
-                    Transformer().run(merged_object_type, merged)
+                    merged, merged_object_type = await loop.run_in_executor(_executor, run_merger, self.merger, self.object_type, fetched)
+                    await loop.run_in_executor(_executor, run_transformer, merged_object_type, merged)
                 else:
                     pass
                     # await handle_deleted_uri(fetched.get("uri"), self.source, self.object_type, self.current_run)
@@ -99,11 +112,12 @@ class BaseDataFetcher:
     def is_exportable(self, obj):
         """Determines whether the object can be exported.
 
-        Unpublished objects or object with unpublished ancestors should not be
-        exported. Resource records whose id_0 field does not begin with FA
-        should not be exported.
+        Objects with unpublished ancestors should not be exported.
+        Resource records whose id_0 field does not begin with FA should not be exported.
         """
-        if not obj.get("published") or obj.get("has_unpublished_ancestor"):
+        if obj.get("jsonmodel_type") != "archival_object" and not obj.get("publish"):
+            return False
+        if obj.get("has_unpublished_ancestor"):
             return False
         if obj.get("id_0") and not obj.get("id_0").startswith("FA"):
             return False

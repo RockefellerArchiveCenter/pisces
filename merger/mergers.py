@@ -26,7 +26,7 @@ class BaseMerger:
         try:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
-            additional_data = self.get_additional_data(object, target_object_type)
+            additional_data = await self.get_additional_data(object, target_object_type)
             return self.combine_data(object, additional_data) if additional_data else object, target_object_type
         except Exception as e:
             print(e)
@@ -40,7 +40,7 @@ class BaseMerger:
             identifier = object["ref"]
         return identifier
 
-    def get_additional_data(self, object, object_type):
+    async def get_additional_data(self, object, object_type):
         return None
 
     def get_target_object_type(self, data):
@@ -57,7 +57,7 @@ class BaseMerger:
 
 class ArchivalObjectMerger(BaseMerger):
 
-    def get_additional_data(self, object, object_type):
+    async def get_additional_data(self, object, object_type):
         """Fetches additional data from ArchivesSpace and Cartographer.
 
         Args:
@@ -69,11 +69,13 @@ class ArchivalObjectMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {"ancestors": [], "children": [], "linked_agents": []}
-        data.update(self.get_cartographer_data(object))
-        data.update(self.get_archivesspace_data(object, object_type))
+        cartographer_data = await self.get_cartographer_data(object)
+        archivesspace_data = await self.get_archivesspace_data(object, object_type)
+        data.update(cartographer_data)
+        data.update(archivesspace_data)
         return data
 
-    def get_cartographer_data(self, object):
+    async def get_cartographer_data(self, object):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
         data = {"ancestors": []}
@@ -86,7 +88,7 @@ class ArchivalObjectMerger(BaseMerger):
                     data["ancestors"].append(a)
         return data
 
-    def get_archival_object_collection_data(self, object):
+    async def get_archival_object_collection_data(self, object):
         """Gets additional data for archival_object_collections."""
         data = {"children": []}
         data["linked_agents"] = data.get(
@@ -130,7 +132,7 @@ class ArchivalObjectMerger(BaseMerger):
                 pass
         return extents
 
-    def get_archivesspace_data(self, object, object_type):
+    async def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace.
         """
@@ -143,7 +145,7 @@ class ArchivalObjectMerger(BaseMerger):
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data
         if object_type == "archival_object_collection":
-            data.update(self.get_archival_object_collection_data(object))
+            data.update(await self.get_archival_object_collection_data(object))
         return data
 
     def combine_data(self, object, additional_data):
@@ -164,7 +166,7 @@ class ArrangementMapMerger(BaseMerger):
     def get_target_object_type(self, data):
         return "resource"
 
-    def get_additional_data(self, object, object_type):
+    async def get_additional_data(self, object, object_type):
         """Fetches the ArchivesSpace resource record referenced by the
         ArrangementMapComponent.
 
@@ -204,7 +206,7 @@ class AgentMerger(BaseMerger):
 
 class ResourceMerger(BaseMerger):
 
-    def get_additional_data(self, object, object_type):
+    async def get_additional_data(self, object, object_type):
         """Gets additional data from Cartographer and ArchivesSpace.
 
         Args:
