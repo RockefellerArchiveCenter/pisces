@@ -9,7 +9,7 @@ from merger.mergers import (AgentMerger, ArchivalObjectMerger,
 from pisces import settings
 from transformer.transformers import Transformer
 
-from .helpers import (handle_deleted_uri, instantiate_aspace,
+from .helpers import (handle_deleted_uris, instantiate_aspace,
                       instantiate_electronbond, last_run_time,
                       send_error_notification)
 from .models import FetchRun, FetchRunError
@@ -90,7 +90,7 @@ class BaseDataFetcher:
         for object_id in chunk:
             task = asyncio.ensure_future(self.process_obj(object_id, loop, _executor, to_delete))
             tasks.append(task)
-        tasks.append(asyncio.ensure_future(handle_deleted_uri(to_delete, self.source, self.object_type, self.current_run)))
+        tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
         await asyncio.gather(*tasks, return_exceptions=True)
 
     async def process_obj(self, object_id, loop, _executor, to_delete):

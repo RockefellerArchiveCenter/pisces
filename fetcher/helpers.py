@@ -74,7 +74,7 @@ def identifier_from_uri(uri):
     return shortuuid.uuid(name=uri)
 
 
-async def handle_deleted_uri(uri_list, source, object_type, current_run):
+async def handle_deleted_uris(uri_list, source, object_type, current_run):
     updated = None
     es_ids = [identifier_from_uri(uri) for uri in list(set(uri_list))]
     if es_ids:
