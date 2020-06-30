@@ -112,10 +112,11 @@ class BaseDataFetcher:
     def is_exportable(self, obj):
         """Determines whether the object can be exported.
 
+        Unpublished objects should not be exported.
         Objects with unpublished ancestors should not be exported.
         Resource records whose id_0 field does not begin with FA should not be exported.
         """
-        if obj.get("jsonmodel_type") != "archival_object" and not obj.get("publish"):
+        if not obj.get("publish"):
             return False
         if obj.get("has_unpublished_ancestor"):
             return False
