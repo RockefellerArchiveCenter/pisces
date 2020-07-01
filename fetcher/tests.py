@@ -192,6 +192,11 @@ class FetcherTest(TestCase):
         deleted = loop.run_until_complete(handle_deleted_uris(uris, source, object_type, current_run))
         self.assertEqual(len(deleted), len(uris))
         self.assertEqual(mock_post.call_count, 1)
+        identifiers = mock_post.call_args[1]["json"]["identifiers"]
+        self.assertTrue(isinstance(identifiers, list))
+        for es_id in identifiers:
+            self.assertEqual(len(es_id), 26)
+            self.assertTrue(isinstance(es_id, str))
 
         error_resp = Mock(Response())
         error_resp.raise_for_status.side_effect = HTTPError("blergh")
