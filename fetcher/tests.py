@@ -205,4 +205,4 @@ class FetcherTest(TestCase):
         deleted = loop.run_until_complete(handle_deleted_uris(uris, source, object_type, current_run))
         self.assertFalse(deleted)
         self.assertEqual(len(FetchRunError.objects.all()), 1)
-        self.assertEqual(FetchRunError.objects.get(pk=1).message, "foo")
+        self.assertEqual(FetchRunError.objects.all()[0].message, "foo")
