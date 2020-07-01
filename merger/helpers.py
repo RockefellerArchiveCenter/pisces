@@ -15,11 +15,17 @@ class ArchivesSpaceHelper:
         return True if tree_node['child_count'] > 0 else False
 
     def tree_children(self, list, key):
+        """Returns immediate children of a resource or archival_object.
+
+        In cases where children don't have titles (for example, only a date) the
+        date expression for the first date object is returned.
+        """
         children = []
         for idx in list["precomputed_waypoints"].get(key):
             for child in list["precomputed_waypoints"].get(key)[idx]:
+                title = child["title"] if child["title"] else child["dates"][0]["expression"]
                 children.append({
-                    "title": child["title"],
+                    "title": title,
                     "ref": child["uri"],
                     "level": child["level"],
                     "order": child["position"],
@@ -76,6 +82,6 @@ def combine_references(object):
                 elif key == "linked_agents":
                     type = obj["_resolved"][type_key]
                 obj["type"] = type
-                obj["title"] = obj["_resolved"]["title"]
+                obj["title"] = obj["_resolved"].get("title", obj["_resolved"].get("display_string"))
                 del obj["_resolved"]
     return object
