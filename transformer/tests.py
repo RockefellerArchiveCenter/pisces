@@ -4,6 +4,7 @@ import random
 
 from django.test import TestCase
 from django.urls import reverse
+from fetcher.helpers import identifier_from_uri
 from rest_framework.test import APIRequestFactory
 
 from .models import DataObject
@@ -35,6 +36,7 @@ class TransformerTest(TestCase):
                     self.check_list_counts(source, transformed, object_type)
                     self.check_agent_counts(source, transformed)
                     self.check_references(transformed)
+                    self.check_uri(transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -75,6 +77,11 @@ class TransformerTest(TestCase):
                     self.assertIsNot(
                         obj.get(prop), None,
                         "{} missing from {} reference in {}".format(prop, key, transformed["uri"]))
+
+    def check_uri(self, transformed):
+        path, identifier = transformed["uri"].split("/")
+        self.assertEqual(path, "{}s".format(transformed["type"]))
+        self.assertEqual(identifier, identifier_from_uri(transformed["external_identifiers"][0]["identifier"]))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
