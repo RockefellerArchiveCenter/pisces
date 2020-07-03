@@ -265,6 +265,10 @@ class SourceResourceToCollection(odin.Mapping):
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
 
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "collections/{}".format(identifier_from_uri(value))
+
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
         return SourceRefToTermReference.apply(value)
@@ -315,6 +319,10 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
 
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "collections/{}".format(identifier_from_uri(value))
+
 
 class SourceArchivalObjectToObject(odin.Mapping):
     """Maps SourceArchivalObject to Objects object."""
@@ -340,6 +348,10 @@ class SourceArchivalObjectToObject(odin.Mapping):
     @odin.map_field(from_field="uri", to_field="external_identifiers", to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
+
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "objects/{}".format(identifier_from_uri(value))
 
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
@@ -367,6 +379,10 @@ class SourceSubjectToTerm(odin.Mapping):
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
 
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "terms/{}".format(identifier_from_uri(value))
+
 
 class SourceAgentCorporateEntityToAgent(odin.Mapping):
     """Maps SourceAgentCorporateEntity to Agent object."""
@@ -380,6 +396,10 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
     @odin.map_field(from_field="uri", to_field="external_identifiers", to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
+
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "agents/{}".format(identifier_from_uri(value))
 
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
@@ -399,6 +419,10 @@ class SourceAgentFamilyToAgent(odin.Mapping):
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
 
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "agents/{}".format(identifier_from_uri(value))
+
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
         return "family"
@@ -416,6 +440,10 @@ class SourceAgentPersonToAgent(odin.Mapping):
     @odin.map_field(from_field="uri", to_field="external_identifiers", to_list=True)
     def external_identifiers(self, value):
         return [ExternalIdentifier(identifier=value, source="archivesspace")]
+
+    @odin.map_field(from_field="uri", to_field="uri")
+    def uri(self, value):
+        return "agents/{}".format(identifier_from_uri(value))
 
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
