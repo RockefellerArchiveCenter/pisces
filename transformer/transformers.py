@@ -1,6 +1,5 @@
 import json
 
-from fetcher.helpers import identifier_from_uri
 from jsonschema.exceptions import ValidationError
 from odin.codecs import json_codec
 from rac_schemas import is_valid
@@ -79,7 +78,7 @@ class Transformer:
         return modified_dict
 
     def save_validated(self, data):
-        es_id = identifier_from_uri(data["uri"])
+        es_id = data["uri"].split("/")[-1]
         try:
             existing = DataObject.objects.get(es_id=es_id)
             existing.data = data
