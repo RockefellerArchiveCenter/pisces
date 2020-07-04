@@ -82,6 +82,7 @@ class TransformerTest(TestCase):
         path, identifier = transformed["uri"].split("/")
         self.assertEqual(path, "{}s".format(transformed["type"]))
         self.assertEqual(identifier, identifier_from_uri(transformed["external_identifiers"][0]["identifier"]))
+        self.assertTrue(DataObject.objects.filter(es_id=identifier).exists())
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
