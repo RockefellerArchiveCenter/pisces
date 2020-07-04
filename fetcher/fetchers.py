@@ -1,5 +1,5 @@
 import asyncio
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
 from django.utils import timezone
@@ -85,7 +85,7 @@ class BaseDataFetcher:
         tasks = []
         print("Chunk", datetime.now())
         loop = asyncio.get_event_loop()
-        _executor = ProcessPoolExecutor()
+        _executor = ThreadPoolExecutor()
         for object_id in chunk:
             task = asyncio.ensure_future(self.process_obj(object_id, loop, _executor))
             tasks.append(task)
