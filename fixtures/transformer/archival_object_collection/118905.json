@@ -1,0 +1,168 @@
+{
+    "lock_version": 6,
+    "position": 0,
+    "publish": true,
+    "ref_id": "e5cc86e3ad864041b105f0aca8c8c329",
+    "component_id": "1",
+    "title": "Appropriations",
+    "display_string": "Appropriations, 1913-1929",
+    "restrictions_apply": false,
+    "created_by": "admin",
+    "last_modified_by": "pgalligan",
+    "create_time": "2014-12-06T06:00:38Z",
+    "system_mtime": "2019-10-11T14:29:22Z",
+    "user_mtime": "2017-02-17T14:24:10Z",
+    "suppressed": false,
+    "is_slug_auto": false,
+    "level": "series",
+    "jsonmodel_type": "archival_object",
+    "external_ids": [
+        {
+            "external_id": "292622",
+            "source": "Archivists Toolkit Database::RESOURCE_COMPONENT",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2017-02-17T14:24:10Z",
+            "system_mtime": "2017-02-17T14:24:10Z",
+            "user_mtime": "2017-02-17T14:24:10Z",
+            "jsonmodel_type": "external_id"
+        }
+    ],
+    "subjects": [],
+    "linked_events": [],
+    "extents": [
+        {
+            "create_time": "2020-06-26T16:12:41Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "1.1",
+            "portion": "whole",
+            "system_mtime": "2020-06-26T16:12:41Z",
+            "user_mtime": "2020-06-26T16:12:41Z"
+        }
+    ],
+    "dates": [
+        {
+            "lock_version": 0,
+            "expression": "1913-1929",
+            "begin": "1913",
+            "end": "1929",
+            "created_by": "pgalligan",
+            "last_modified_by": "pgalligan",
+            "create_time": "2017-02-17T14:24:10Z",
+            "system_mtime": "2017-02-17T14:24:10Z",
+            "user_mtime": "2017-02-17T14:24:10Z",
+            "date_type": "inclusive",
+            "label": "creation",
+            "jsonmodel_type": "date"
+        }
+    ],
+    "external_documents": [],
+    "rights_statements": [],
+    "linked_agents": [
+      {
+          "ref": "/agents/corporate_entities/60",
+          "role": "creator",
+          "terms": [],
+          "title": "Rockefeller Foundation",
+          "type": "agent_corporate_entity"
+      }
+    ],
+    "ancestors": [
+        {
+            "ref": "/repositories/2/resources/318",
+            "level": "recordgrp",
+            "title": "Rockefeller Foundation records, China Medical Board records, RG 4",
+            "type": "collection"
+          }
+    ],
+    "children": [
+        {
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/2/archival_objects/222",
+            "title": "Chapter 19. Chemical Reactions of the Sulfur and Nitrogen Mustards",
+            "type": "object"
+        }
+    ],
+    "instances": [],
+    "lang_materials": [
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        },
+        {
+            "create_time": "2020-06-26T16:06:04Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "72838a90b79ccdf2e4e149e068722711",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-06-26T16:06:04Z",
+            "user_mtime": "2020-06-26T16:06:04Z"
+        }
+    ],
+    "notes": [
+        {
+            "subnotes": [
+                {
+                    "content": "Series I, Appropriations, is divided into two subseries.\n\n",
+                    "publish": true,
+                    "jsonmodel_type": "note_text"
+                }
+            ],
+            "jsonmodel_type": "note_multipart",
+            "persistent_id": "057ee5d79e3749182587a58c1443bf41",
+            "label": "Arrangement note",
+            "type": "arrangement",
+            "publish": true
+        },
+        {
+            "jsonmodel_type": "note_index",
+            "items": [],
+            "persistent_id": "ae145c146c76acf64208c6d88d90d66e",
+            "label": "China Medical Board Appropriations Index ",
+            "content": [
+                "A card index to China Medical Board records, Series 1.1: Appropriations – Numerical, and Series 1.2: Appropriations – Alphabetical is available for use.\n\nSeries 1.1 files are indicated by index numbers on the right edge of the index cards. For example, #64 = Church Missionary Society (London). The index cards are located in drawers 1-8 of the 72-drawer cabinet next to the RAC's reading room.\n\nSeries 1.2 files are indicated by the file’s title (without an index number).\n\nThe CMB Appropriations Index cards are located in drawers 5-8 of the 72-drawer cabinet next to the RAC's reading room.\n"
+            ],
+            "publish": true
+        }
+    ],
+    "uri": "/repositories/2/archival_objects/118905",
+    "repository": {
+        "ref": "/repositories/2"
+    },
+    "resource": {
+        "ref": "/repositories/2/resources/318"
+    },
+    "has_unpublished_ancestor": false
+}

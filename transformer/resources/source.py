@@ -143,7 +143,7 @@ class SourceNote(odin.Resource):
     label = odin.StringField(null=True)
     subnotes = odin.ArrayOf(SourceSubnote, null=True)
     content = odin.StringField(null=True)
-    items = odin.StringField(null=True)
+    items = odin.ArrayField(null=True)
 
 
 class SourceRightsStatementAct(odin.Resource):
