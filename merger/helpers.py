@@ -23,7 +23,7 @@ class ArchivesSpaceHelper:
         children = []
         for idx in list["precomputed_waypoints"].get(key):
             for child in list["precomputed_waypoints"].get(key)[idx]:
-                title = child["title"] if child["title"] else child["dates"][0]["expression"]
+                title = child["title"] if child["title"] else self.get_date_string(child["dates"])
                 children.append({
                     "title": title,
                     "ref": child["uri"],
@@ -31,6 +31,17 @@ class ArchivesSpaceHelper:
                     "order": child["position"],
                     "type": "collection" if child["child_count"] > 0 else "object"})
         return children
+
+    def get_date_string(self, dates):
+        date_strings = []
+        for date in dates:
+            if date["expression"]:
+                date_strings.append(date["expression"])
+            elif date["end"]:
+                date_strings.append("{}-{}".format(date["begin"], date["end"]))
+            else:
+                date_strings.append(date["begin"])
+        return ", ".join(date_strings)
 
     def get_resource_children(self, uri):
         tree_root = self.aspace.client.get(
