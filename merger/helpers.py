@@ -35,9 +35,9 @@ class ArchivesSpaceHelper:
     def get_date_string(self, dates):
         date_strings = []
         for date in dates:
-            if date["expression"]:
+            if date.get("expression"):
                 date_strings.append(date["expression"])
-            elif date["end"]:
+            elif date.get("end"):
                 date_strings.append("{}-{}".format(date["begin"], date["end"]))
             else:
                 date_strings.append(date["begin"])
