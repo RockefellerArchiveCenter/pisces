@@ -1,14 +1,17 @@
+import asyncio
 import json
 import os
 import random
 from datetime import datetime
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import pytz
 import vcr
 from django.core import mail
 from django.test import TestCase
 from django.utils import timezone
+from requests import Response
+from requests.exceptions import HTTPError
 from rest_framework.test import APIRequestFactory
 
 from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
@@ -25,7 +28,8 @@ from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    UpdatedCartographerArrangementMapComponents)
 from .fetchers import (ArchivesSpaceDataFetcher, BaseDataFetcher,
                        CartographerDataFetcher)
-from .helpers import last_run_time, send_error_notification
+from .helpers import (handle_deleted_uris, last_run_time,
+                      send_error_notification)
 from .models import FetchRun, FetchRunError
 from .views import FetchRunViewSet
 
@@ -169,3 +173,36 @@ class FetcherTest(TestCase):
                     self.assertTrue(parsed)
                 else:
                     self.assertFalse(parsed)
+
+    @patch("fetcher.helpers.requests.post")
+    def test_handle_deleted_uris(self, mock_post):
+        """Tests POST requests sent to delete objects"""
+        source = random.choice(FetchRun.SOURCE_CHOICES)[0]
+        object_type = random.choice(FetchRun.OBJECT_TYPE_CHOICES)[0]
+        current_run = FetchRun.objects.create(
+            object_type=object_type,
+            source=source,
+            status=random.choice(FetchRun.STATUS_CHOICES)[0],
+            object_status=random.choice(FetchRun.OBJECT_STATUS_CHOICES)[0]
+        )
+        loop = asyncio.get_event_loop()
+        uris = []
+        for x in range(random.randint(2, 10)):
+            uris.append("/repositories/2/resources/{}".format(random.randint(1, 1000)))
+        deleted = loop.run_until_complete(handle_deleted_uris(uris, source, object_type, current_run))
+        self.assertEqual(len(deleted), len(uris))
+        self.assertEqual(mock_post.call_count, 1)
+        identifiers = mock_post.call_args[1]["json"]["identifiers"]
+        self.assertTrue(isinstance(identifiers, list))
+        for es_id in identifiers:
+            self.assertEqual(len(es_id), 26)
+            self.assertTrue(isinstance(es_id, str))
+
+        error_resp = Mock(Response())
+        error_resp.raise_for_status.side_effect = HTTPError("blergh")
+        error_resp.json.return_value = {"detail": "foo"}
+        mock_post.return_value = error_resp
+        deleted = loop.run_until_complete(handle_deleted_uris(uris, source, object_type, current_run))
+        self.assertFalse(deleted)
+        self.assertEqual(len(FetchRunError.objects.all()), 1)
+        self.assertEqual(FetchRunError.objects.all()[0].message, "foo")

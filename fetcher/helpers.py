@@ -74,26 +74,27 @@ def identifier_from_uri(uri):
     return shortuuid.uuid(name=uri)
 
 
-async def handle_deleted_uri(uri, source, object_type, current_run):
-    # TODO: handle 404s (need better status_codes back from ES)
+async def handle_deleted_uris(uri_list, source, object_type, current_run):
+    """Delivers POST request to indexing service with list of ids to be deleted."""
     updated = None
-    es_id = identifier_from_uri(uri)
-    if es_id:
+    es_ids = [identifier_from_uri(uri) for uri in list(set(uri_list))]
+    if es_ids:
         try:
-            resp = requests.post(settings.INDEX_DELETE_URL, json={"identifier": es_id})
+            resp = requests.post(settings.INDEX_DELETE_URL, json={"identifiers": es_ids})
             resp.raise_for_status()
-            updated = es_id
+            updated = es_ids
         except requests.exceptions.HTTPError:
             if current_run:
                 FetchRunError.objects.create(
                     run=current_run,
                     message=resp.json()["detail"])
-        else:
-            raise Exception(resp.json()["detail"])
+        except Exception as e:
+            raise Exception("Error sending delete request: {}".format(e))
     return updated
 
 
 def send_error_notification(fetch_run):
+    """Send email with errors encountered during a fetch run."""
     try:
         errors = ""
         err_str = "errors" if fetch_run.error_count > 1 else "error"
