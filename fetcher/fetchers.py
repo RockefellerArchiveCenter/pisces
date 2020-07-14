@@ -1,6 +1,5 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
 
 from django.utils import timezone
 from merger.mergers import (AgentMerger, ArchivalObjectMerger,
@@ -51,9 +50,8 @@ class BaseDataFetcher:
         try:
             fetched = getattr(
                 self, "get_{}".format(self.object_status))()
-            for chunk in self.chunks(fetched, settings.CHUNK_SIZE):
-                asyncio.get_event_loop().run_until_complete(
-                    self.process_fetched_chunk(chunk))
+            asyncio.get_event_loop().run_until_complete(
+                self.process_fetched(fetched))
         except Exception as e:
             self.current_run.status = FetchRun.ERRORED
             self.current_run.end_time = timezone.now()
@@ -77,37 +75,34 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    def chunks(self, l, n):
-        for i in range(0, len(l), n):
-            yield l[i:i + n]
-
-    async def process_fetched_chunk(self, chunk):
+    async def process_fetched(self, fetched):
         tasks = []
-        print("Chunk", datetime.now())
-        loop = asyncio.get_event_loop()
-        _executor = ThreadPoolExecutor()
         to_delete = []
-        for object_id in chunk:
-            task = asyncio.ensure_future(self.process_obj(object_id, loop, _executor, to_delete))
+        loop = asyncio.get_event_loop()
+        executor = ThreadPoolExecutor()
+        semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE)
+        for object_id in fetched:
+            task = asyncio.ensure_future(self.process_obj(object_id, loop, executor, semaphore, to_delete))
             tasks.append(task)
         tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, object_id, loop, _executor, to_delete):
-        try:
-            if self.object_status == "updated":
-                fetched = await self.get_obj(object_id)
-                if self.is_exportable(fetched):
-                    merged, merged_object_type = await loop.run_in_executor(_executor, run_merger, self.merger, self.object_type, fetched)
-                    await loop.run_in_executor(_executor, run_transformer, merged_object_type, merged)
+    async def process_obj(self, object_id, loop, executor, semaphore, to_delete):
+        async with semaphore:
+            try:
+                if self.object_status == "updated":
+                    fetched = await self.get_obj(object_id)
+                    if self.is_exportable(fetched):
+                        merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, fetched)
+                        await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
+                    else:
+                        to_delete.append(fetched.get("uri", fetched.get("archivesspace_uri")))
                 else:
-                    to_delete.append(fetched.get("uri", fetched.get("archivesspace_uri")))
-            else:
-                to_delete.append(object_id)
-            self.processed += 1
-        except Exception as e:
-            print(e)
-            FetchRunError.objects.create(run=self.current_run, message=str(e))
+                    to_delete.append(object_id)
+                self.processed += 1
+            except Exception as e:
+                print(e)
+                FetchRunError.objects.create(run=self.current_run, message=str(e))
 
     def is_exportable(self, obj):
         """Determines whether the object can be exported.
