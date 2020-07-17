@@ -228,12 +228,12 @@ class SourceNoteToNote(odin.Mapping):
             subnotes = self.chronology_subnotes(self.source.items)
         return subnotes
 
-    def bibliograpy_subnotes(self, content, items):
+    def bibliograpy_subnotes(self, raw_content, items):
         data = []
         # Here content is a list passed as a string, so we have to reconvert.
-        content = list(self.source.content.strip("]["))
+        content = [raw_content.strip("][\'")]
         data.append(Subnote(type="text", content=content))
-        data.append(Subnote(type="orderedlist", content=json.loads(items)))
+        data.append(Subnote(type="orderedlist", content=items))
         return data
 
     def index_subnotes(self, content, items):
