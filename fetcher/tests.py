@@ -161,7 +161,7 @@ class FetcherTest(TestCase):
                 self.assertIsNot(False, cleanup)
                 self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
                 self.assertEqual(
-                    len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 2)
+                    len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 1)
 
     def test_is_exportable(self):
         exportable = ["1.json", "2.json", "3.json"]
