@@ -130,6 +130,7 @@ class UpdatedCartographerArrangementMapComponents(BaseCron):
 
 
 class CleanUpCompleted(CronJobBase):
+    code = "fetcher.cleanup_completed"
     RUN_EVERY_MINS = 0
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
 
