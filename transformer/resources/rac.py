@@ -133,11 +133,16 @@ class Collection(BaseResource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(AgentReference)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
     children = odin.ArrayOf(RecordReference, null=True)
     ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
+    formats = odin.ArrayField()
+    online = odin.BooleanField(default=False)
+    top_collection = odin.StringField(null=True)
 
 
 class Object(BaseResource):
@@ -151,11 +156,16 @@ class Object(BaseResource):
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(AgentReference)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
     ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
     tree_position = odin.IntegerField()
+    formats = odin.ArrayField()
+    online = odin.BooleanField(default=False)
+    top_collection = odin.StringField()
 
 
 class Agent(BaseResource):
@@ -167,6 +177,7 @@ class Agent(BaseResource):
     agent_type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Reference, null=True)
-    objects = odin.ArrayOf(Reference, null=True)
     notes = odin.ArrayOf(Note)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)
