@@ -65,17 +65,18 @@ class DataObjectUpdateByIdView(BaseServiceView):
         msg = "No object identifiers were found."
         if action not in ["deleted", "indexed"]:
             raise Exception("Unrecognized action {}, expecting either `deleted` or `indexed`")
-        for es_id in identifiers:
-            try:
-                obj = DataObject.objects.get(es_id=es_id)
-                if action == "indexed":
-                    obj.indexed = True
-                    obj.save()
-                else:
+        obj_list = DataObject.objects.filter(es_id__in=identifiers)
+        if action == "indexed":
+            for obj in obj_list:
+                obj.indexed = True
+            DataObject.objects.bulk_update(obj_list, ["indexed"])
+        else:
+            for obj in obj_list:
+                try:
                     obj.delete()
-                msg = "{} {} {}.".format(
-                    obj.object_type, obj.pk,
-                    "marked as indexed." if action == "indexed" else "deleted")
-            except DataObject.DoesNotExist:
-                msg = "Could not find DataObject with identifier {}, skipping.".format(es_id)
+                except DataObject.DoesNotExist:
+                    pass
+        msg = "{} {} {}.".format(
+            len(obj_list), obj.object_type,
+            "marked as indexed." if action == "indexed" else "deleted")
         return msg
