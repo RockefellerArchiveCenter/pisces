@@ -37,6 +37,7 @@ class TransformerTest(TestCase):
                     self.check_agent_counts(source, transformed)
                     self.check_references(transformed)
                     self.check_uri(transformed)
+                    self.check_top_collection(source, transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -60,18 +61,39 @@ class TransformerTest(TestCase):
     def check_agent_counts(self, source, transformed):
         """Checks for correct counts of agents and other creators."""
         source_creator_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") == "creator"])
-        source_agent_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") != "creator"])
-        self.assertTrue(
-            source_creator_count == len(transformed.get("creators", [])),
-            "Expecting {} creators, got {}".format(
-                source_agent_count, len(transformed.get("creators", []))))
-        self.assertEqual(
-            source_agent_count, len(transformed.get("agents", [])),
-            "Expecting {} agents, got {} instead".format(
-                source_agent_count, len(transformed.get("agents", []))))
+        source_person_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_person"])
+        source_organization_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_corporate_entity"])
+        source_family_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_family"])
+        if source["jsonmodel_type"] in ["archival_object", "resource"]:
+            self.assertTrue(
+                source_creator_count == len(transformed.get("creators", [])),
+                "Expecting {} creators, got {}".format(
+                    source_creator_count, len(transformed.get("creators", []))))
+            self.assertEqual(
+                source_person_count, len(transformed.get("people", [])),
+                "Expecting {} people, got {} instead".format(
+                    source_person_count, len(transformed.get("agents", []))))
+            self.assertEqual(
+                source_organization_count, len(transformed.get("organizations", [])),
+                "Expecting {} organizations, got {} instead".format(
+                    source_organization_count, len(transformed.get("agents", []))))
+            self.assertEqual(
+                source_family_count, len(transformed.get("families", [])),
+                "Expecting {} families, got {} instead".format(
+                    source_family_count, len(transformed.get("agents", []))))
+        else:
+            key_map = {
+                "agent_corporate_entity": "organizations",
+                "agent_person": "people",
+                "agent_family": "families"
+            }
+            key = key_map[source["jsonmodel_type"]]
+            self.assertEqual(
+                source.get(key), 1,
+                "Expecting a reference to self in {}".format(key))
 
     def check_references(self, transformed):
-        for key in ["agents", "terms", "creators", "ancestors", "children"]:
+        for key in ["people", "organizations", "families", "terms", "creators", "ancestors", "children"]:
             for obj in transformed.get(key, []):
                 for prop in ["identifier", "title", "type"]:
                     self.assertIsNot(
@@ -83,6 +105,12 @@ class TransformerTest(TestCase):
         self.assertEqual(path, "{}s".format(transformed["type"]))
         self.assertEqual(identifier, identifier_from_uri(transformed["external_identifiers"][0]["identifier"]))
         self.assertTrue(DataObject.objects.filter(es_id=identifier).exists())
+
+    def check_top_collection(self, source, transformed):
+        if len(source.get("ancestors", [])):
+            self.assertTrue(isinstance(transformed.get("top_collection", str)))
+        else:
+            self.assertEqual(transformed.get("top_collection"), None)
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
