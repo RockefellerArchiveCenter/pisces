@@ -19,6 +19,7 @@
     "created_by": "admin",
     "dates": [
         {
+            "begin": "1900",
             "calendar": "gregorian",
             "create_time": "2020-06-26T16:06:23Z",
             "created_by": "admin",

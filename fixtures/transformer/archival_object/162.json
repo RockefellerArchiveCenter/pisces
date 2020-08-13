@@ -25,10 +25,12 @@
     "created_by": "admin",
     "dates": [
         {
+            "begin": "1942",
             "calendar": "gregorian",
             "create_time": "2020-06-26T16:07:23Z",
             "created_by": "admin",
-            "date_type": "single",
+            "date_type": "inclusive",
+            "end": "1944",
             "era": "ce",
             "expression": "1942\u20131944",
             "jsonmodel_type": "date",
