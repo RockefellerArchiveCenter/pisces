@@ -31,11 +31,11 @@ def transform_language(value, lang_materials):
 def transform_formats(instances, subjects):
     # TODO: confirm instance types and subject URIs
     formats = ["documents"]
-    if len([v for v in instances if v.instance_type == "moving images"]) or len(s for s in subjects if s.uri == ""):
+    if len([v for v in instances if v.instance_type.lower() == "moving images"]) or len([s for s in subjects if s.ref == "/subjects/48300"]):
         formats.append("moving image")
-    if len([v for v in instances if v.instance_type == "audio"]) or len(s for s in subjects if s.uri == ""):
+    if len([v for v in instances if v.instance_type.lower() == "audio"]) or len([s for s in subjects if s.ref == "/subjects/1313"]):
         formats.append("audio")
-    if len([v for v in instances if v.instance_type == "still images"]) or len(s for s in subjects if s.uri == ""):
+    if len([v for v in instances if v.instance_type.lower() == "still image"]) or len([s for s in subjects if s.ref == "/subjects/962"]):
         formats.append("photographs")
     return formats
 
@@ -295,15 +295,15 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="linked_agents", to_field="people")
     def people(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_person"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_person"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="organizations")
     def organizations(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_corporate_entity"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_corporate_entity"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="families")
     def families(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_family"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_family"]
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
@@ -311,7 +311,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_field(from_field="ancestors", to_field="top_collection")
     def top_collection(self, value):
-        identifier_from_uri(value[-1].ref) if len(value) else None
+        return identifier_from_uri(value[-1].ref) if len(value) else None
 
 
 class SourceArchivalObjectToCollection(odin.Mapping):
@@ -341,15 +341,15 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="linked_agents", to_field="people")
     def people(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_person"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_person"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="organizations")
     def organizations(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_corporate_entity"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_corporate_entity"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="families")
     def families(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_family"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_family"]
 
     @odin.map_field(from_field="uri", to_field="external_identifiers", to_list=True)
     def external_identifiers(self, value):
@@ -365,11 +365,11 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field="instances", to_field="online")
     def online(self, value):
-        return True if len(v for v in value if v.instance_type == "digital_object") else False
+        return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
     @odin.map_field(from_field="ancestors", to_field="top_collection")
     def top_collection(self, value):
-        identifier_from_uri(value[-1].ref) if len(value) else None
+        return identifier_from_uri(value[-1].ref) if len(value) else None
 
 
 class SourceArchivalObjectToObject(odin.Mapping):
@@ -411,15 +411,15 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field="linked_agents", to_field="people")
     def people(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_person"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_person"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="organizations")
     def organizations(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_corporate_entity"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_corporate_entity"]
 
     @odin.map_list_field(from_field="linked_agents", to_field="families")
     def families(self, value):
-        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.jsonmodel_type == "agent_family"]
+        return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.type == "agent_family"]
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
@@ -427,11 +427,11 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field="instances", to_field="online")
     def online(self, value):
-        return True if len(v for v in value if v.instance_type == "digital_object") else False
+        return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
     @odin.map_field(from_field="ancestors", to_field="top_collection")
     def top_collection(self, value):
-        identifier_from_uri(value[-1].ref) if len(value) else None
+        return identifier_from_uri(value[-1].ref) if len(value) else None
 
 
 class SourceSubjectToTerm(odin.Mapping):
