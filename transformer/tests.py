@@ -61,10 +61,10 @@ class TransformerTest(TestCase):
     def check_agent_counts(self, source, transformed):
         """Checks for correct counts of agents and other creators."""
         source_creator_count = len([obj for obj in source.get("linked_agents", []) if obj.get("role") == "creator"])
-        source_person_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_person"])
-        source_organization_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_corporate_entity"])
-        source_family_count = len([obj for obj in source.get("linked_agents", []) if obj.get("jsonmodel_type") == "agent_family"])
-        if source["jsonmodel_type"] in ["archival_object", "resource"]:
+        source_person_count = len([obj for obj in source.get("linked_agents", []) if obj.get("type") == "agent_person"])
+        source_organization_count = len([obj for obj in source.get("linked_agents", []) if obj.get("type") == "agent_corporate_entity"])
+        source_family_count = len([obj for obj in source.get("linked_agents", []) if obj.get("type") == "agent_family"])
+        if source["jsonmodel_type"] in ["archival_object", "resource", "subject"]:
             self.assertTrue(
                 source_creator_count == len(transformed.get("creators", [])),
                 "Expecting {} creators, got {}".format(
@@ -72,15 +72,15 @@ class TransformerTest(TestCase):
             self.assertEqual(
                 source_person_count, len(transformed.get("people", [])),
                 "Expecting {} people, got {} instead".format(
-                    source_person_count, len(transformed.get("agents", []))))
+                    source_person_count, len(transformed.get("people", []))))
             self.assertEqual(
                 source_organization_count, len(transformed.get("organizations", [])),
                 "Expecting {} organizations, got {} instead".format(
-                    source_organization_count, len(transformed.get("agents", []))))
+                    source_organization_count, len(transformed.get("organizations", []))))
             self.assertEqual(
                 source_family_count, len(transformed.get("families", [])),
                 "Expecting {} families, got {} instead".format(
-                    source_family_count, len(transformed.get("agents", []))))
+                    source_family_count, len(transformed.get("families", []))))
         else:
             key_map = {
                 "agent_corporate_entity": "organizations",
@@ -89,7 +89,7 @@ class TransformerTest(TestCase):
             }
             key = key_map[source["jsonmodel_type"]]
             self.assertEqual(
-                source.get(key), 1,
+                len(transformed.get(key)), 1,
                 "Expecting a reference to self in {}".format(key))
 
     def check_references(self, transformed):
@@ -108,7 +108,7 @@ class TransformerTest(TestCase):
 
     def check_top_collection(self, source, transformed):
         if len(source.get("ancestors", [])):
-            self.assertTrue(isinstance(transformed.get("top_collection", str)))
+            self.assertTrue(isinstance(transformed.get("top_collection"), str))
         else:
             self.assertEqual(transformed.get("top_collection"), None)
 
