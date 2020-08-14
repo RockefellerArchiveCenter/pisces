@@ -336,7 +336,7 @@ INSTANCE_TYPE_CHOICES = (
     ('Digital', 'Digital'),
     ('computer_disks', 'Computer Disks'),
     ('digital_object', 'Digital Object'),
-    ('documents', 'Documents')
+    ('documents', 'Documents'),
     ('Ephemera', 'Ephemera'),
     ('microform', 'Microform'),
     ('mixed materials', 'Mixed Materials'),
