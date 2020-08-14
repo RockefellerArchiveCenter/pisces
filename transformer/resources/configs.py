@@ -333,6 +333,7 @@ INSTANCE_TYPE_CHOICES = (
     ('audiovisual materials', 'Audiovisual Materials'),
     ('bound volume', 'Bound Volume'),
     ('collection', 'Collection'),
+    ('Digital', 'Digital'),
     ('computer_disks', 'Computer Disks'),
     ('digital_object', 'Digital Object'),
     ('documents', 'Documents'),
