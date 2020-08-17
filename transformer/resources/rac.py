@@ -143,7 +143,6 @@ class Collection(BaseResource):
     rights = odin.ArrayOf(RightsStatement)
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
-    top_collection = odin.StringField(null=True)
 
 
 class Object(BaseResource):
@@ -166,7 +165,6 @@ class Object(BaseResource):
     tree_position = odin.IntegerField()
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
-    top_collection = odin.StringField()
 
 
 class Agent(BaseResource):
