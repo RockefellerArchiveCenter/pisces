@@ -107,6 +107,7 @@ class BaseResource(odin.Resource):
     """Base class for all first-class entities in the RAC data model."""
     title = odin.StringField()
     uri = odin.StringField()
+    group = odin.StringField()
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 

@@ -37,7 +37,7 @@ class TransformerTest(TestCase):
                     self.check_agent_counts(source, transformed)
                     self.check_references(transformed)
                     self.check_uri(transformed)
-                    self.check_top_collection(source, transformed)
+                    self.check_group(source, transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -101,16 +101,17 @@ class TransformerTest(TestCase):
                         "{} missing from {} reference in {}".format(prop, key, transformed["uri"]))
 
     def check_uri(self, transformed):
-        path, identifier = transformed["uri"].split("/")
+        _, path, identifier = transformed["uri"].split("/")
         self.assertEqual(path, "{}s".format(transformed["type"]))
         self.assertEqual(identifier, identifier_from_uri(transformed["external_identifiers"][0]["identifier"]))
         self.assertTrue(DataObject.objects.filter(es_id=identifier).exists())
 
-    def check_top_collection(self, source, transformed):
+    def check_group(self, source, transformed):
+        group = transformed.get("group")
         if len(source.get("ancestors", [])):
-            self.assertTrue(isinstance(transformed.get("top_collection"), str))
+            self.assertEqual(group, "/collections/{}".format(identifier_from_uri(source["ancestors"][-1]["ref"])))
         else:
-            self.assertEqual(transformed.get("top_collection"), None)
+            self.assertEqual(group, transformed.get("uri"))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
