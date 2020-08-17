@@ -29,7 +29,6 @@ def transform_language(value, lang_materials):
 
 
 def transform_formats(instances, subjects):
-    # TODO: confirm instance types and subject URIs
     formats = ["documents"]
     if len([v for v in instances if v.instance_type.lower() == "moving images"]) or len([s for s in subjects if s.ref == "/subjects/48300"]):
         formats.append("moving image")
@@ -279,7 +278,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "collections/{}".format(identifier_from_uri(value))
+        return "/collections/{}".format(identifier_from_uri(value))
 
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
@@ -309,9 +308,10 @@ class SourceResourceToCollection(odin.Mapping):
     def formats(self, value):
         return transform_formats(value, self.source.subjects)
 
-    @odin.map_field(from_field="ancestors", to_field="top_collection")
-    def top_collection(self, value):
-        return identifier_from_uri(value[-1].ref) if len(value) else None
+    @odin.map_field(from_field="ancestors", to_field="group")
+    def group(self, value):
+        identifier = value[-1].ref if len(value) else self.source.uri
+        return "/collections/{}".format(identifier_from_uri(identifier))
 
 
 class SourceArchivalObjectToCollection(odin.Mapping):
@@ -357,7 +357,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "collections/{}".format(identifier_from_uri(value))
+        return "/collections/{}".format(identifier_from_uri(value))
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
@@ -367,9 +367,10 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     def online(self, value):
         return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
-    @odin.map_field(from_field="ancestors", to_field="top_collection")
-    def top_collection(self, value):
-        return identifier_from_uri(value[-1].ref) if len(value) else None
+    @odin.map_field(from_field="ancestors", to_field="group")
+    def group(self, value):
+        identifier = value[-1].ref if len(value) else self.source.uri
+        return "/collections/{}".format(identifier_from_uri(identifier))
 
 
 class SourceArchivalObjectToObject(odin.Mapping):
@@ -399,7 +400,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "objects/{}".format(identifier_from_uri(value))
+        return "/objects/{}".format(identifier_from_uri(value))
 
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
@@ -429,9 +430,9 @@ class SourceArchivalObjectToObject(odin.Mapping):
     def online(self, value):
         return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
-    @odin.map_field(from_field="ancestors", to_field="top_collection")
-    def top_collection(self, value):
-        return identifier_from_uri(value[-1].ref) if len(value) else None
+    @odin.map_field(from_field="ancestors", to_field="group")
+    def group(self, value):
+        return "/collections/{}".format(identifier_from_uri(value[-1].ref))
 
 
 class SourceSubjectToTerm(odin.Mapping):
@@ -449,7 +450,11 @@ class SourceSubjectToTerm(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "terms/{}".format(identifier_from_uri(value))
+        return "/terms/{}".format(identifier_from_uri(value))
+
+    @odin.map_field(from_field="uri", to_field="group")
+    def group(self, value):
+        return "/terms/{}".format(identifier_from_uri(value))
 
 
 class SourceAgentCorporateEntityToAgentReference(odin.Mapping):
@@ -489,7 +494,7 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "agents/{}".format(identifier_from_uri(value))
+        return "/agents/{}".format(identifier_from_uri(value))
 
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
@@ -498,6 +503,10 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
     @odin.map_list_field(from_field="jsonmodel_type", to_field="organizations")
     def organizations(self, value):
         return [SourceAgentCorporateEntityToAgentReference.apply(self.source)]
+
+    @odin.map_field(from_field="uri", to_field="group")
+    def group(self, value):
+        return "/agents/{}".format(identifier_from_uri(value))
 
 
 class SourceAgentFamilyToAgentReference(odin.Mapping):
@@ -537,7 +546,7 @@ class SourceAgentFamilyToAgent(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "agents/{}".format(identifier_from_uri(value))
+        return "/agents/{}".format(identifier_from_uri(value))
 
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
@@ -546,6 +555,10 @@ class SourceAgentFamilyToAgent(odin.Mapping):
     @odin.map_list_field(from_field="jsonmodel_type", to_field="families")
     def families(self, value):
         return [SourceAgentFamilyToAgentReference.apply(self.source)]
+
+    @odin.map_field(from_field="uri", to_field="group")
+    def group(self, value):
+        return "/agents/{}".format(identifier_from_uri(value))
 
 
 class SourceAgentPersonToAgentReference(odin.Mapping):
@@ -585,7 +598,7 @@ class SourceAgentPersonToAgent(odin.Mapping):
 
     @odin.map_field(from_field="uri", to_field="uri")
     def uri(self, value):
-        return "agents/{}".format(identifier_from_uri(value))
+        return "/agents/{}".format(identifier_from_uri(value))
 
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
@@ -594,3 +607,7 @@ class SourceAgentPersonToAgent(odin.Mapping):
     @odin.map_list_field(from_field="jsonmodel_type", to_field="people")
     def people(self, value):
         return [SourceAgentPersonToAgentReference.apply(self.source)]
+
+    @odin.map_field(from_field="uri", to_field="group")
+    def group(self, value):
+        return "/agents/{}".format(identifier_from_uri(value))
