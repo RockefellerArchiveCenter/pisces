@@ -168,7 +168,7 @@ class SourceDateToDate(odin.Mapping):
 
     @odin.map_field(from_field="end", to_field="end")
     def end(self, value):
-        return self.source.start if self.source.date_type == "single" else value
+        return self.source.begin if self.source.date_type == "single" else value
 
     @odin.map_field(from_field="expression", to_field="expression")
     def expression(self, value):
