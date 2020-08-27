@@ -504,6 +504,10 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
     def agent_types(self):
         return "organization"
 
+    @odin.assign_field(to_field="category")
+    def category(self):
+        return "organizations"
+
     @odin.map_list_field(from_field="jsonmodel_type", to_field="organizations")
     def organizations(self, value):
         return [SourceAgentCorporateEntityToAgentReference.apply(self.source)]
@@ -556,6 +560,10 @@ class SourceAgentFamilyToAgent(odin.Mapping):
     def agent_types(self):
         return "family"
 
+    @odin.assign_field(to_field="category")
+    def category(self):
+        return "people"
+
     @odin.map_list_field(from_field="jsonmodel_type", to_field="families")
     def families(self, value):
         return [SourceAgentFamilyToAgentReference.apply(self.source)]
@@ -607,6 +615,10 @@ class SourceAgentPersonToAgent(odin.Mapping):
     @odin.assign_field(to_field="agent_type")
     def agent_types(self):
         return "person"
+
+    @odin.assign_field(to_field="category")
+    def category(self):
+        return "people"
 
     @odin.map_list_field(from_field="jsonmodel_type", to_field="people")
     def people(self, value):
