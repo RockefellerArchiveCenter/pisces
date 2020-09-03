@@ -128,7 +128,7 @@ class Collection(BaseResource):
     Collection is a first-class entity in the RAC data model.
     """
     type = odin.StringField(default="collection")
-    category = odin.StringField(default="collections")
+    category = odin.StringField(default="collection")
     level = odin.StringField()
     dates = odin.ArrayOf(Date)
     creators = odin.ArrayOf(AgentReference)
@@ -153,7 +153,7 @@ class Object(BaseResource):
     Objects or Collections. Object is a first-class entity in the RAC data model.
     """
     type = odin.StringField(default="object")
-    category = odin.StringField(default="collections")
+    category = odin.StringField(default="collection")
     dates = odin.ArrayOf(Date)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
