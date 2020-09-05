@@ -195,7 +195,7 @@ class FetcherTest(TestCase):
         identifiers = mock_post.call_args[1]["json"]["identifiers"]
         self.assertTrue(isinstance(identifiers, list))
         for es_id in identifiers:
-            self.assertEqual(len(es_id), 26)
+            self.assertEqual(len(es_id), 22, "Expected es_id to be 22 characters long.")
             self.assertTrue(isinstance(es_id, str))
 
         error_resp = Mock(Response())
