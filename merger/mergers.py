@@ -86,7 +86,7 @@ class ArchivalObjectMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] >= 1:
                 for a in json_data["results"][0].get("ancestors"):
-                    data["ancestors"].append(has_unpublished_ancestor(a))
+                    data["ancestors"].append(handle_cartographer_ancestor(a))
         return data
 
     def get_archival_object_collection_data(self, object):

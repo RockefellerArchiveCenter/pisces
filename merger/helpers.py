@@ -97,6 +97,7 @@ def combine_references(object):
                 del obj["_resolved"]
     return object
 
+
 def handle_cartographer_ancestor(ancestor):
     ancestor["type"] = "collection"
     ancestor["ref"] = ancestor["archivesspace_uri"]
