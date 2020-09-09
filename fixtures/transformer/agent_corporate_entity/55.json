@@ -34,6 +34,19 @@
         "user_mtime": "2014-12-06T02:41:01Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/55",
+                "role": "creator",
+                "title": "Rockefeller Foundation. Natural and Environmental Sciences Division",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/55",
+        "title": "Rockefeller Foundation. Natural and Environmental Sciences Division"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

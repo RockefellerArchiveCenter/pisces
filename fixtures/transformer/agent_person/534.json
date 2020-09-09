@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:42:15Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/534",
+                "role": "creator",
+                "title": "Persico, Joseph E.",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/534",
+        "title": "Persico, Joseph E."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

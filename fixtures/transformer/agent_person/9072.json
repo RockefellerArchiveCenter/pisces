@@ -22,6 +22,19 @@
         "user_mtime": "2015-06-03T18:25:30Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/9072",
+                "role": "creator",
+                "title": "Nixon, Richard M. (Richard Milhous)",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/9072",
+        "title": "Nixon, Richard M. (Richard Milhous)"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "battalb",

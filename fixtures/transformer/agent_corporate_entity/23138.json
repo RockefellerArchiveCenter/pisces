@@ -21,6 +21,19 @@
         "user_mtime": "2016-01-05T19:58:21Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/23138",
+                "role": "creator",
+                "title": "International Center for Tropical Agriculture CIAT",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/23138",
+        "title": "International Center for Tropical Agriculture CIAT"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "pgalligan",

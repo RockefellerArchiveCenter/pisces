@@ -3,6 +3,12 @@
     "created_by": "battalb",
     "external_documents": [],
     "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/17093",
+        "title": "Governors -- Election -- New York (State) -- 1970"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "battalb",

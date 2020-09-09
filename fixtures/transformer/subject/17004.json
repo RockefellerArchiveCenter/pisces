@@ -3,6 +3,12 @@
     "created_by": "pgalligan",
     "external_documents": [],
     "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/17004",
+        "title": "International relations -- United States"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "pgalligan",

@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T03:05:58Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/4620",
+                "role": "creator",
+                "title": "Winrock Farms Agri-Services, Inc.",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/4620",
+        "title": "Winrock Farms Agri-Services, Inc."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

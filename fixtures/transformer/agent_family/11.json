@@ -22,6 +22,19 @@
         "user_mtime": "2018-06-22T21:14:27Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/families/11",
+                "role": "creator",
+                "title": "Rockefeller Foundation",
+                "type": "agent_family"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/families/11",
+        "title": "Rockefeller Foundation"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_family",
     "last_modified_by": "sgandhi",

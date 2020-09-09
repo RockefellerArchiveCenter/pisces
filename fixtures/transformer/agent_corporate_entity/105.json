@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T02:41:28Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/105",
+                "role": "creator",
+                "title": "Columbia University",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/105",
+        "title": "Columbia University"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

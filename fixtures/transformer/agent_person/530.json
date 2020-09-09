@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:42:14Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/530",
+                "role": "creator",
+                "title": "Boyd, Joseph H.",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/530",
+        "title": "Boyd, Joseph H."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

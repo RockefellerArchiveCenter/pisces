@@ -21,6 +21,19 @@
         "user_mtime": "2019-01-30T23:42:36Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/28983",
+                "role": "creator",
+                "title": "Rockefeller Foundation",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/28983",
+        "title": "Rockefeller Foundation"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "pgalligan",

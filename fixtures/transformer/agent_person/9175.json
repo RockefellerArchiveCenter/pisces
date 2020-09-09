@@ -22,6 +22,19 @@
         "user_mtime": "2015-08-26T18:32:47Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/9175",
+                "role": "creator",
+                "title": "Rockefeller, Winthrop",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/9175",
+        "title": "Rockefeller, Winthrop"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "pgalligan",

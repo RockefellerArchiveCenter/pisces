@@ -34,6 +34,19 @@
         "user_mtime": "2014-12-06T02:40:59Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/44",
+                "role": "creator",
+                "title": "Rockefeller Foundation. Cali (Colombia)",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/44",
+        "title": "Rockefeller Foundation. Cali (Colombia)"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",
