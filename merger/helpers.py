@@ -53,6 +53,17 @@ class ArchivesSpaceHelper:
             "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
         return self.tree_children(tree_node, object_uri)
 
+    def resolve_cartographer_ancestor(self, ancestor):
+        resolved = self.aspace.client.get(
+            ancestor["archivesspace_uri"],
+            params={"resolve": ["linked_agents"]}).json()
+        resolved["type"] = "collection"
+        resolved["ref"] = ancestor["archivesspace_uri"]
+        for c in resolved["linked_agents"]:
+            c["title"] = c["_resolved"]["title"]
+            del c["_resolved"]
+        return combine_references(resolved)
+
 
 def get_ancestors(obj):
     """Returns the full resolved record for each ancestor."""
@@ -98,8 +109,28 @@ def combine_references(object):
     return object
 
 
-def handle_cartographer_ancestor(ancestor):
-    ancestor["type"] = "collection"
-    ancestor["ref"] = ancestor["archivesspace_uri"]
-    del ancestor["archivesspace_uri"]
-    return ancestor
+def add_group(object):
+    """Adds group object, with data about the highest-level collection containing this object."""
+
+    if object.get("ancestors"):
+        if object.get("ancestors")[-1].get("_resolved"):
+            top_ancestor = object["ancestors"][-1]["_resolved"]
+        else:
+            top_ancestor = object["ancestors"][-1]
+    else:
+        top_ancestor = object
+
+    if object["jsonmodel_type"].startswith("agent_"):
+        creators = [{"ref": object["uri"], "role": "creator", "type": object["jsonmodel_type"], "title": object["title"]}]
+    elif "_resolved" in object.get("linked_agents"):
+        creators = [a for a in top_ancestor["linked_agents"]["_resolved"] if a["role"] == "creator"]
+    else:
+        creators = [a for a in top_ancestor.get("linked_agents", []) if a["role"] == "creator"]
+
+    object["group"] = {
+        "identifier": top_ancestor.get("ref", top_ancestor.get("uri")),
+        "creators": creators,
+        "dates": top_ancestor.get("dates", top_ancestor.get("dates_of_existence")),
+        "title": top_ancestor.get("title"),
+    }
+    return object
