@@ -109,9 +109,9 @@ class TransformerTest(TestCase):
     def check_group(self, source, transformed):
         group = transformed.get("group")
         if len(source.get("ancestors", [])):
-            self.assertEqual(group, "/collections/{}".format(identifier_from_uri(source["ancestors"][-1]["ref"])))
+            self.assertEqual(group["identifier"], "/collections/{}".format(identifier_from_uri(source["ancestors"][-1]["ref"])))
         else:
-            self.assertEqual(group, transformed.get("uri"))
+            self.assertEqual(group["identifier"], transformed.get("uri"))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:

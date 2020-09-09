@@ -6,15 +6,16 @@ from iso639 import languages
 
 from .resources.configs import NOTE_TYPE_CHOICES
 from .resources.rac import (Agent, AgentReference, Collection, Date, Extent,
-                            ExternalIdentifier, Language, Note, Object,
+                            ExternalIdentifier, Group, Language, Note, Object,
                             RecordReference, RightsGranted, RightsStatement,
                             Subnote, Term, TermReference)
 from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceAgentPerson, SourceAncestor,
                                SourceArchivalObject, SourceDate, SourceExtent,
-                               SourceLinkedAgent, SourceNote, SourceRef,
-                               SourceResource, SourceRightsStatement,
-                               SourceRightsStatementAct, SourceSubject)
+                               SourceGroup, SourceLinkedAgent, SourceNote,
+                               SourceRef, SourceResource,
+                               SourceRightsStatement, SourceRightsStatementAct,
+                               SourceSubject)
 
 
 def transform_language(value, lang_materials):
@@ -37,6 +38,12 @@ def transform_formats(instances, subjects):
     if len([v for v in instances if v.instance_type.lower() == "still image"]) or len([s for s in subjects if s.ref == "/subjects/962"]):
         formats.append("photographs")
     return formats
+
+
+def transform_group(value, prefix):
+    group = SourceGroupToGroup.apply(value)
+    group.identifier = "/{}/{}".format(prefix, identifier_from_uri(value.identifier))
+    return group
 
 
 class SourceRightsStatementActToRightsGranted(odin.Mapping):
@@ -188,6 +195,17 @@ class SourceExtentToExtent(odin.Mapping):
     )
 
 
+class SourceGroupToGroup(odin.Mapping):
+    """Maps SourceGroup to Group.
+
+    Since the structure of these object is exactly the same, all field mappings
+    can be assumed. Identifier is overwritten via customized mappings in each
+    object type.
+    """
+    from_obj = SourceGroup
+    to_obj = Group
+
+
 class SourceNoteToNote(odin.Mapping):
     """Maps SourceNote to Note object."""
     from_obj = SourceNote
@@ -312,10 +330,9 @@ class SourceResourceToCollection(odin.Mapping):
     def formats(self, value):
         return transform_formats(value, self.source.subjects)
 
-    @odin.map_field(from_field="ancestors", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        identifier = value[-1].ref if len(value) else self.source.uri
-        return "/collections/{}".format(identifier_from_uri(identifier))
+        return transform_group(value, "collections")
 
 
 class SourceArchivalObjectToCollection(odin.Mapping):
@@ -371,10 +388,9 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     def online(self, value):
         return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
-    @odin.map_field(from_field="ancestors", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        identifier = value[-1].ref if len(value) else self.source.uri
-        return "/collections/{}".format(identifier_from_uri(identifier))
+        return transform_group(value, "collections")
 
 
 class SourceArchivalObjectToObject(odin.Mapping):
@@ -434,9 +450,9 @@ class SourceArchivalObjectToObject(odin.Mapping):
     def online(self, value):
         return True if len([v for v in value if v.instance_type == "digital_object"]) else False
 
-    @odin.map_field(from_field="ancestors", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        return "/collections/{}".format(identifier_from_uri(value[-1].ref))
+        return transform_group(value, "collections")
 
 
 class SourceSubjectToTerm(odin.Mapping):
@@ -456,9 +472,9 @@ class SourceSubjectToTerm(odin.Mapping):
     def uri(self, value):
         return "/terms/{}".format(identifier_from_uri(value))
 
-    @odin.map_field(from_field="uri", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        return "/terms/{}".format(identifier_from_uri(value))
+        return transform_group(value, "terms")
 
 
 class SourceAgentCorporateEntityToAgentReference(odin.Mapping):
@@ -512,9 +528,9 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
     def organizations(self, value):
         return [SourceAgentCorporateEntityToAgentReference.apply(self.source)]
 
-    @odin.map_field(from_field="uri", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        return "/agents/{}".format(identifier_from_uri(value))
+        return transform_group(value, "agents")
 
 
 class SourceAgentFamilyToAgentReference(odin.Mapping):
@@ -568,9 +584,9 @@ class SourceAgentFamilyToAgent(odin.Mapping):
     def families(self, value):
         return [SourceAgentFamilyToAgentReference.apply(self.source)]
 
-    @odin.map_field(from_field="uri", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        return "/agents/{}".format(identifier_from_uri(value))
+        return transform_group(value, "agents")
 
 
 class SourceAgentPersonToAgentReference(odin.Mapping):
@@ -624,6 +640,6 @@ class SourceAgentPersonToAgent(odin.Mapping):
     def people(self, value):
         return [SourceAgentPersonToAgentReference.apply(self.source)]
 
-    @odin.map_field(from_field="uri", to_field="group")
+    @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
-        return "/agents/{}".format(identifier_from_uri(value))
+        return transform_group(value, "agents")

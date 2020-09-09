@@ -171,6 +171,14 @@ class SourceRightsStatement(odin.Resource):
     acts = odin.ArrayOf(SourceRightsStatementAct)
 
 
+class SourceGroup(odin.Resource):
+    """Information about the highest-level collection containing the data object."""
+    creators = odin.ArrayOf(SourceLinkedAgent, null=True)
+    dates = odin.ArrayOf(SourceDate, null=True)
+    identifier = odin.StringField()
+    title = odin.StringField()
+
+
 class SourceTerm(odin.Resource):
     """A controlled term."""
     term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
@@ -178,11 +186,12 @@ class SourceTerm(odin.Resource):
 
 class SourceSubject(odin.Resource):
     """A topical term."""
-    title = odin.StringField()
-    source = odin.StringField(choices=configs.SUBJECT_SOURCE_CHOICES)
     external_ids = odin.ArrayOf(SourceExternalId)
+    group = odin.DictAs(SourceGroup)
     publish = odin.BooleanField()
+    source = odin.StringField(choices=configs.SUBJECT_SOURCE_CHOICES)
     terms = odin.ArrayOf(SourceTerm)
+    title = odin.StringField()
     uri = odin.StringField()
 
 
@@ -202,20 +211,21 @@ class SourceComponentBase(odin.Resource):
         ('resource', 'Resource')
     )
 
-    publish = odin.BooleanField()
-    title = odin.StringField(null=True)
-    suppressed = odin.StringField()
-    level = odin.StringField()
-    jsonmodel_type = odin.StringField(choices=COMPONENT_TYPES)
-    external_ids = odin.ArrayOf(SourceExternalId)
-    subjects = odin.ArrayOf(SourceRef)
-    extents = odin.ArrayOf(SourceExtent)
     dates = odin.ArrayOf(SourceDate)
-    language = odin.StringField(null=True)
+    extents = odin.ArrayOf(SourceExtent)
+    external_ids = odin.ArrayOf(SourceExternalId)
+    group = odin.DictAs(SourceGroup)
+    jsonmodel_type = odin.StringField(choices=COMPONENT_TYPES)
     lang_materials = odin.ArrayOf(SourceLangMaterial, null=True)
-    rights_statements = odin.ArrayOf(SourceRightsStatement)
+    language = odin.StringField(null=True)
+    level = odin.StringField()
     linked_agents = odin.ArrayOf(SourceLinkedAgent)
     notes = odin.ArrayOf(SourceNote)
+    publish = odin.BooleanField()
+    rights_statements = odin.ArrayOf(SourceRightsStatement)
+    subjects = odin.ArrayOf(SourceRef)
+    suppressed = odin.StringField()
+    title = odin.StringField(null=True)
     uri = odin.StringField()
 
 
@@ -266,10 +276,11 @@ class SourceAgentBase(odin.Resource):
         ('agent_person', 'Person')
     )
 
-    publish = odin.BooleanField()
+    dates_of_existence = odin.ArrayOf(SourceDate)
+    group = odin.DictAs(SourceGroup)
     jsonmodel_type = odin.StringField(choices=AGENT_TYPES)
     notes = odin.ArrayOf(SourceNote)
-    dates_of_existence = odin.ArrayOf(SourceDate)
+    publish = odin.BooleanField()
     title = odin.StringField()
     uri = odin.StringField()
 
