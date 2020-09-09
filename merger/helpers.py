@@ -62,7 +62,7 @@ class ArchivesSpaceHelper:
         for c in resolved["linked_agents"]:
             c["title"] = c["_resolved"]["title"]
             del c["_resolved"]
-        return combine_references(resolved)
+        return resolved
 
 
 def get_ancestors(obj):
@@ -120,12 +120,14 @@ def add_group(object):
     else:
         top_ancestor = object
 
+    creators = [a for a in top_ancestor.get("linked_agents", []) if a["role"] == "creator"]
     if object["jsonmodel_type"].startswith("agent_"):
         creators = [{"ref": object["uri"], "role": "creator", "type": object["jsonmodel_type"], "title": object["title"]}]
-    elif "_resolved" in object.get("linked_agents"):
-        creators = [a for a in top_ancestor["linked_agents"]["_resolved"] if a["role"] == "creator"]
-    else:
-        creators = [a for a in top_ancestor.get("linked_agents", []) if a["role"] == "creator"]
+    for c in creators:
+        if c.get("_resolved"):
+            c["title"] = c["_resolved"]["title"]
+            c["type"] = c["_resolved"]["jsonmodel_type"]
+            del c["_resolved"]
 
     object["group"] = {
         "identifier": top_ancestor.get("ref", top_ancestor.get("uri")),
