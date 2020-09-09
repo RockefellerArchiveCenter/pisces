@@ -68,7 +68,7 @@ class Transformer:
             for key, value in data.items():
                 if key != target_key:
                     if isinstance(value, dict):
-                        return self.remove_keys_from_dict(data[key])
+                        modified_dict[key] = self.remove_keys_from_dict(data[key])
                     elif isinstance(value, list):
                         modified_dict[key] = [self.remove_keys_from_dict(i) for i in data[key]]
                     else:
