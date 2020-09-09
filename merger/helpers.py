@@ -120,7 +120,7 @@ def add_group(object):
     object["group"] = {
         "identifier": group_obj.get("ref", group_obj.get("uri")),
         "creators": creators,
-        "dates": group_obj.get("dates", group_obj.get("dates_of_existence")),
+        "dates": group_obj.get("dates", group_obj.get("dates_of_existence", [])),
         "title": group_obj.get("title"),
     }
     return object
