@@ -57,12 +57,10 @@ class ArchivesSpaceHelper:
         resolved = self.aspace.client.get(
             ancestor["archivesspace_uri"],
             params={"resolve": ["linked_agents"]}).json()
-        resolved["type"] = "collection"
-        resolved["ref"] = ancestor["archivesspace_uri"]
-        for c in resolved["linked_agents"]:
-            c["title"] = c["_resolved"]["title"]
-            del c["_resolved"]
-        return resolved
+        ancestor["ref"] = ancestor["archivesspace_uri"]
+        del ancestor["archivesspace_uri"]
+        ancestor["_resolved"] = resolved
+        return combine_references(ancestor)
 
 
 def get_ancestors(obj):
@@ -112,27 +110,17 @@ def combine_references(object):
 def add_group(object):
     """Adds group object, with data about the highest-level collection containing this object."""
 
-    if object.get("ancestors"):
-        if object.get("ancestors")[-1].get("_resolved"):
-            top_ancestor = object["ancestors"][-1]["_resolved"]
-        else:
-            top_ancestor = object["ancestors"][-1]
-    else:
-        top_ancestor = object
+    top_ancestor = object["ancestors"][-1]["_resolved"] if object.get("ancestors") else object
+    group_obj = combine_references(top_ancestor)
 
-    creators = [a for a in top_ancestor.get("linked_agents", []) if a["role"] == "creator"]
+    creators = [a for a in group_obj.get("linked_agents", []) if a["role"] == "creator"]
     if object["jsonmodel_type"].startswith("agent_"):
         creators = [{"ref": object["uri"], "role": "creator", "type": object["jsonmodel_type"], "title": object["title"]}]
-    for c in creators:
-        if c.get("_resolved"):
-            c["title"] = c["_resolved"]["title"]
-            c["type"] = c["_resolved"]["jsonmodel_type"]
-            del c["_resolved"]
 
     object["group"] = {
-        "identifier": top_ancestor.get("ref", top_ancestor.get("uri")),
+        "identifier": group_obj.get("ref", group_obj.get("uri")),
         "creators": creators,
-        "dates": top_ancestor.get("dates", top_ancestor.get("dates_of_existence")),
-        "title": top_ancestor.get("title"),
+        "dates": group_obj.get("dates", group_obj.get("dates_of_existence")),
+        "title": group_obj.get("title"),
     }
     return object

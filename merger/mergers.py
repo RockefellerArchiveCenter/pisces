@@ -187,7 +187,13 @@ class ArrangementMapMerger(BaseMerger):
                 object["archivesspace_uri"],
                 params={"resolve": ["subjects", "linked_agents"]}).json())
         if object.get("children"):
-            data["children"] = [dict(c, **{"type": "collection"}) for c in object["children"]]
+            children = []
+            for c in object["children"]:
+                c["type"] = "collection"
+                c["ref"] = c["archivesspace_uri"]
+                del c["archivesspace_uri"]
+                children.append(c)
+            data["children"] = children
         else:
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
