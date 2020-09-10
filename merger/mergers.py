@@ -1,8 +1,7 @@
 import re
 
-from .helpers import (ArchivesSpaceHelper, closest_creators,
-                      closest_parent_value, combine_references,
-                      handle_cartographer_ancestor)
+from .helpers import (ArchivesSpaceHelper, add_group, closest_creators,
+                      closest_parent_value, combine_references)
 
 
 class MergeError(Exception):
@@ -28,7 +27,7 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            return self.combine_data(object, additional_data) if additional_data else object, target_object_type
+            return self.combine_data(object, additional_data)
         except Exception as e:
             print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))
@@ -42,7 +41,10 @@ class BaseMerger:
         return identifier
 
     def get_additional_data(self, object, object_type):
-        return None
+        pass
+
+    def combine_data(self, object, additional_data):
+        return add_group(object)
 
     def get_target_object_type(self, data):
         """Returns object type.
@@ -86,7 +88,7 @@ class ArchivalObjectMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] >= 1:
                 for a in json_data["results"][0].get("ancestors"):
-                    data["ancestors"].append(handle_cartographer_ancestor(a))
+                    data["ancestors"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
         return data
 
     def get_archival_object_collection_data(self, object):
@@ -154,6 +156,7 @@ class ArchivalObjectMerger(BaseMerger):
 
         Moves data from resolved objects to expected keys within main object.
         """
+        object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
         for k, v in additional_data.items():
             if isinstance(v, list):
                 object[k] = object.get(k, []) + v
@@ -184,7 +187,13 @@ class ArrangementMapMerger(BaseMerger):
                 object["archivesspace_uri"],
                 params={"resolve": ["subjects", "linked_agents"]}).json())
         if object.get("children"):
-            data["children"] = [dict(c, **{"type": "collection"}) for c in object["children"]]
+            children = []
+            for c in object["children"]:
+                c["type"] = "collection"
+                c["ref"] = c["archivesspace_uri"]
+                del c["archivesspace_uri"]
+                children.append(c)
+            data["children"] = children
         else:
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
@@ -193,8 +202,9 @@ class ArrangementMapMerger(BaseMerger):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
         ancestors = []
         for a in object.get("ancestors"):
-            ancestors.append(handle_cartographer_ancestor(a))
+            ancestors.append(self.aspace_helper.resolve_cartographer_ancestor(a))
         additional_data["ancestors"] = ancestors
+        additional_data = add_group(additional_data)
         return combine_references(additional_data)
 
 
@@ -229,7 +239,7 @@ class ResourceMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] > 0:
                 for a in json_data["results"][0].get("ancestors", []):
-                    data["ancestors"].append(handle_cartographer_ancestor(a))
+                    data["ancestors"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
         return data
 
     def get_archivesspace_data(self, object):
@@ -245,6 +255,7 @@ class ResourceMerger(BaseMerger):
         Adds Cartographer ancestors to object's `ancestors` key, and
         ArchivesSpace children to object's `children` key.
         """
+        object = super(ResourceMerger, self).combine_data(object, additional_data)
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
         return combine_references(object)

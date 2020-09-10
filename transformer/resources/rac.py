@@ -70,6 +70,14 @@ class Extent(odin.Resource):
     type = odin.StringField()
 
 
+class Group(odin.Resource):
+    """Information about the highest-level collection containing the data object."""
+    creators = odin.ArrayOf(AgentReference, null=True)
+    dates = odin.ArrayOf(Date, null=True)
+    identifier = odin.StringField()
+    title = odin.StringField()
+
+
 class Language(odin.Resource):
     """A human language."""
     expression = odin.StringField()
@@ -107,7 +115,7 @@ class BaseResource(odin.Resource):
     """Base class for all first-class entities in the RAC data model."""
     title = odin.StringField()
     uri = odin.StringField()
-    group = odin.StringField()
+    group = odin.DictOf(Group)
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 

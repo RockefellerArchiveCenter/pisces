@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T02:42:12Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/181",
+                "role": "creator",
+                "title": "United States. Dept. of State",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/181",
+        "title": "United States. Dept. of State"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

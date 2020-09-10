@@ -46,13 +46,14 @@ class MergerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged, _ = merger(clients).merge(source_object_type, source)
+                        merged = merger(clients).merge(source_object_type, source)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))
                         transform_count += 1
                         self.assertTrue(merged.get("jsonmodel_type") in target_object_types)
                         self.check_counts(source, source_object_type, merged, merged.get("jsonmodel_type"))
+                        self.check_group(merged)
                         self.check_embedded(merged)
 
     def check_counts(self, source, source_object_type, merged, target_object_type):
@@ -83,6 +84,15 @@ class MergerTest(TestCase):
             else:
                 self.assertTrue(len(merged.get("ancestors", [])) >= len(source.get("ancestors", [])),
                                 "{} does not have equal or more ancestors in merged data than source data.".format(merged))
+
+    def check_group(self, merged):
+        field_list = ["identifier", "title", "dates", "creators"]
+        if merged.get("jsonmodel_type") == "subject":
+            field_list = ["identifier", "title"]
+        elif merged.get("jsonmodel_type", "").startswith("agent_"):
+            field_list = ["identifier", "title", "creators"]
+        for field in field_list:
+            self.assertTrue(self.not_empty(merged["group"][field]), "Group field {} on object {} was empty".format(field, merged["uri"]))
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True

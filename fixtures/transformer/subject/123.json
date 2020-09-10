@@ -14,6 +14,12 @@
             "user_mtime": "2014-12-06T02:29:55Z"
         }
     ],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/123",
+        "title": "Prevention and health"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",

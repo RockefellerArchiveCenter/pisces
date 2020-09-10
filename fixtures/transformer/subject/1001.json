@@ -14,6 +14,12 @@
             "user_mtime": "2014-12-06T02:31:17Z"
         }
     ],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/1001",
+        "title": "Political parties"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",

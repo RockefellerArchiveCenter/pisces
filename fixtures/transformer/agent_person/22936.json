@@ -23,6 +23,19 @@
         "user_mtime": "2017-06-23T19:38:14Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/22936",
+                "role": "creator",
+                "title": "Draper, Edgar D.",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/22936",
+        "title": "Draper, Edgar D."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "dyoung",

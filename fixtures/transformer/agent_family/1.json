@@ -50,6 +50,19 @@
         "user_mtime": "2014-12-06T02:40:38Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/families/1",
+                "role": "creator",
+                "title": "Rockefeller family",
+                "type": "agent_family"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/families/1",
+        "title": "Rockefeller family"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_family",
     "last_modified_by": "admin",

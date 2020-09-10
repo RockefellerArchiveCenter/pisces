@@ -35,6 +35,33 @@
         "user_mtime": "2015-04-24T21:54:28Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/10267",
+                "role": "creator",
+                "title": "International Laboratory for Research on Animal Diseases (Ilrad)",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1910",
+                "create_time": "2019-12-11T20:21:14Z",
+                "created_by": "admin",
+                "date_type": "range",
+                "end": "2019",
+                "jsonmodel_type": "date",
+                "label": "existence",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2019-12-11T20:21:14Z",
+                "user_mtime": "2019-12-11T20:21:14Z"
+            }
+        ],
+        "identifier": "/agents/corporate_entities/10267",
+        "title": "International Laboratory for Research on Animal Diseases (Ilrad)"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "pgalligan",

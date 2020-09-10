@@ -17,7 +17,6 @@
     "created_by": "admin",
     "dates_of_existence": [
         {
-            "begin": "1915",
             "create_time": "2014-12-06T02:40:59Z",
             "created_by": "admin",
             "date_type": "single",
@@ -49,6 +48,32 @@
         "user_mtime": "2014-12-06T02:40:58Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/138",
+                "role": "creator",
+                "title": "Rockefeller, David",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [
+            {
+                "create_time": "2014-12-06T02:40:59Z",
+                "created_by": "admin",
+                "date_type": "single",
+                "expression": "1915-",
+                "jsonmodel_type": "date",
+                "label": "existence",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2014-12-06T02:40:59Z",
+                "user_mtime": "2014-12-06T02:40:59Z"
+            }
+        ],
+        "identifier": "/agents/people/138",
+        "title": "Rockefeller, David"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

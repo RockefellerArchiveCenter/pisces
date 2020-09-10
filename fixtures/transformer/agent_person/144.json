@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:41:02Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/144",
+                "role": "creator",
+                "title": "Rockefeller, Abby Aldrich",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/144",
+        "title": "Rockefeller, Abby Aldrich"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

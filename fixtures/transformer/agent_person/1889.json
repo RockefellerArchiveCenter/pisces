@@ -36,6 +36,19 @@
         "user_mtime": "2014-12-06T02:46:05Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/1889",
+                "role": "creator",
+                "title": "Allison, Richard",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/1889",
+        "title": "Allison, Richard"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T02:43:06Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/348",
+                "role": "creator",
+                "title": "Consultative Group on International Agricultural Research",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/348",
+        "title": "Consultative Group on International Agricultural Research"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

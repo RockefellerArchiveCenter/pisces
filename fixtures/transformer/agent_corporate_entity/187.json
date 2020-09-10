@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:42:13Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/187",
+                "role": "creator",
+                "title": "United States. Dept. of State. Bureau of Western Hemisphere Affairs",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/187",
+        "title": "United States. Dept. of State. Bureau of Western Hemisphere Affairs"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

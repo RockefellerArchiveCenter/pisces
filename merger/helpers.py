@@ -53,6 +53,15 @@ class ArchivesSpaceHelper:
             "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
         return self.tree_children(tree_node, object_uri)
 
+    def resolve_cartographer_ancestor(self, ancestor):
+        resolved = self.aspace.client.get(
+            ancestor["archivesspace_uri"],
+            params={"resolve": ["linked_agents"]}).json()
+        ancestor["ref"] = ancestor["archivesspace_uri"]
+        del ancestor["archivesspace_uri"]
+        ancestor["_resolved"] = resolved
+        return combine_references(ancestor)
+
 
 def get_ancestors(obj):
     """Returns the full resolved record for each ancestor."""
@@ -98,8 +107,20 @@ def combine_references(object):
     return object
 
 
-def handle_cartographer_ancestor(ancestor):
-    ancestor["type"] = "collection"
-    ancestor["ref"] = ancestor["archivesspace_uri"]
-    del ancestor["archivesspace_uri"]
-    return ancestor
+def add_group(object):
+    """Adds group object, with data about the highest-level collection containing this object."""
+
+    top_ancestor = object["ancestors"][-1]["_resolved"] if object.get("ancestors") else object
+    group_obj = combine_references(top_ancestor)
+
+    creators = [a for a in group_obj.get("linked_agents", []) if a["role"] == "creator"]
+    if object["jsonmodel_type"].startswith("agent_"):
+        creators = [{"ref": object["uri"], "role": "creator", "type": object["jsonmodel_type"], "title": object["title"]}]
+
+    object["group"] = {
+        "identifier": group_obj.get("ref", group_obj.get("uri")),
+        "creators": creators,
+        "dates": group_obj.get("dates", group_obj.get("dates_of_existence", [])),
+        "title": group_obj.get("title"),
+    }
+    return object

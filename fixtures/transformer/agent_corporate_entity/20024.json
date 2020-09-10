@@ -21,6 +21,19 @@
         "user_mtime": "2015-06-03T18:25:30Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/20024",
+                "role": "creator",
+                "title": "New York (State). Governor (1959-1973 : Rockefeller)",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/20024",
+        "title": "New York (State). Governor (1959-1973 : Rockefeller)"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "battalb",

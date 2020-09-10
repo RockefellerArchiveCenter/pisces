@@ -109,6 +109,36 @@
     "finding_aid_filing_title": "Rockefeller Foundation records, China Medical Board records, RG 4",
     "finding_aid_status": "under_revision",
     "finding_aid_title": "A Guide to the Rockefeller Foundation records, China Medical Board records, RG 4\n",
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/4884",
+                "relator": "aut",
+                "role": "creator",
+                "terms": [],
+                "title": "Rockefeller Foundation",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1905",
+                "create_time": "2020-01-31T13:31:34Z",
+                "created_by": "battalb",
+                "date_type": "inclusive",
+                "end": "1980",
+                "expression": "circa 1905-1980",
+                "jsonmodel_type": "date",
+                "label": "creation",
+                "last_modified_by": "battalb",
+                "lock_version": 0,
+                "system_mtime": "2020-01-31T13:31:34Z",
+                "user_mtime": "2020-01-31T13:31:34Z"
+            }
+        ],
+        "identifier": "/repositories/2/resources/93",
+        "title": "Rockefeller Foundation records, photographs, series 100-1000"
+    },
     "id_0": "FA114",
     "instances": [],
     "is_slug_auto": false,

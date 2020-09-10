@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T02:58:53Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/3247",
+                "role": "creator",
+                "title": "State of New York",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/3247",
+        "title": "State of New York"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

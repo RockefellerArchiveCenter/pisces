@@ -53,11 +53,11 @@
     ],
     "classifications": [],
     "collection_management": {
-        "create_time": "2020-03-26T12:36:09Z",
-        "created_by": "k.martin",
+        "create_time": "2020-07-16T02:22:44Z",
+        "created_by": "bantos",
         "external_ids": [],
         "jsonmodel_type": "collection_management",
-        "last_modified_by": "k.martin",
+        "last_modified_by": "bantos",
         "lock_version": 0,
         "parent": {
             "ref": "/repositories/2/resources/13"
@@ -68,26 +68,26 @@
             "ref": "/repositories/2"
         },
         "rights_determined": false,
-        "system_mtime": "2020-03-26T12:36:09Z",
-        "uri": "/repositories/2/collection_management/12439",
-        "user_mtime": "2020-03-26T12:36:09Z"
+        "system_mtime": "2020-07-16T02:22:44Z",
+        "uri": "/repositories/2/collection_management/13450",
+        "user_mtime": "2020-07-16T02:22:44Z"
     },
     "create_time": "2014-12-06T03:28:13Z",
     "created_by": "admin",
     "dates": [
         {
             "begin": "1951",
-            "create_time": "2020-03-26T12:36:08Z",
-            "created_by": "k.martin",
+            "create_time": "2020-07-16T02:22:44Z",
+            "created_by": "bantos",
             "date_type": "inclusive",
             "end": "2011",
             "expression": "1951-2011",
             "jsonmodel_type": "date",
             "label": "creation",
-            "last_modified_by": "k.martin",
+            "last_modified_by": "bantos",
             "lock_version": 0,
-            "system_mtime": "2020-03-26T12:36:08Z",
-            "user_mtime": "2020-03-26T12:36:08Z"
+            "system_mtime": "2020-07-16T02:22:44Z",
+            "user_mtime": "2020-07-16T02:22:44Z"
         }
     ],
     "deaccessions": [],
@@ -95,41 +95,71 @@
     "extents": [
         {
             "container_summary": "123 LTR size Hollinger boxes, 3 Half-LTR size Hollinger boxes, and 18 LGL size Hollinger boxes",
-            "create_time": "2020-03-26T12:36:08Z",
-            "created_by": "k.martin",
+            "create_time": "2020-07-16T02:22:44Z",
+            "created_by": "bantos",
             "extent_type": "cubic_feet",
             "jsonmodel_type": "extent",
-            "last_modified_by": "k.martin",
+            "last_modified_by": "bantos",
             "lock_version": 0,
             "number": "55.77",
             "portion": "whole",
-            "system_mtime": "2020-03-26T12:36:08Z",
-            "user_mtime": "2020-03-26T12:36:08Z"
+            "system_mtime": "2020-07-16T02:22:44Z",
+            "user_mtime": "2020-07-16T02:22:44Z"
         }
     ],
     "external_documents": [],
     "external_ids": [
         {
-            "create_time": "2020-03-26T12:36:08Z",
-            "created_by": "k.martin",
+            "create_time": "2020-07-16T02:22:44Z",
+            "created_by": "bantos",
             "external_id": "2026",
             "jsonmodel_type": "external_id",
-            "last_modified_by": "k.martin",
+            "last_modified_by": "bantos",
             "source": "Archivists Toolkit Database::RESOURCE",
-            "system_mtime": "2020-03-26T12:36:08Z",
-            "user_mtime": "2020-03-26T12:36:08Z"
+            "system_mtime": "2020-07-16T02:22:44Z",
+            "user_mtime": "2020-07-16T02:22:44Z"
         }
     ],
     "finding_aid_description_rules": "dacs",
     "finding_aid_filing_title": "Geithner (Peter F.) papers",
     "finding_aid_language": "English",
     "finding_aid_title": "A Guide to the Peter F. Geithner papers\n",
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/4884",
+                "relator": "aut",
+                "role": "creator",
+                "terms": [],
+                "title": "Rockefeller Foundation",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1905",
+                "create_time": "2020-01-31T13:31:34Z",
+                "created_by": "battalb",
+                "date_type": "inclusive",
+                "end": "1980",
+                "expression": "circa 1905-1980",
+                "jsonmodel_type": "date",
+                "label": "creation",
+                "last_modified_by": "battalb",
+                "lock_version": 0,
+                "system_mtime": "2020-01-31T13:31:34Z",
+                "user_mtime": "2020-01-31T13:31:34Z"
+            }
+        ],
+        "identifier": "/repositories/2/resources/93",
+        "title": "Rockefeller Foundation records, photographs, series 100-1000"
+    },
     "id_0": "FA1408",
     "instances": [],
     "is_slug_auto": false,
     "jsonmodel_type": "resource",
     "language": "eng",
-    "last_modified_by": "k.martin",
+    "last_modified_by": "bantos",
     "level": "collection",
     "linked_agents": [
         {
@@ -150,7 +180,7 @@
         }
     ],
     "linked_events": [],
-    "lock_version": 46,
+    "lock_version": 47,
     "notes": [
         {
             "jsonmodel_type": "note_multipart",
@@ -264,7 +294,7 @@
             "publish": true,
             "subnotes": [
                 {
-                    "content": "Peter Franz Geithner (1932-2016) worked in the field of international philanthropy for more than 40 years. Between 1968 and 1996, he provided leadership for the Ford Foundation\u2019s program activities in Asia, becoming Ford\u2019s Regional Director of Asia Programs in 1990. After serving at Ford for almost three decades, he retired from the foundation in 1996, but remained active in philanthropic organizations and research institutions for many years after that through advisory positions, consultancy appointments, and memberships on various boards and committees. Geithner was married to Deborah Moore, and together, they had four children: Timothy, Sarah, Jonathan, and David.\n\nRaised in Philadelphia, Pennsylvania, Geithner attended Northeast High School. He graduated in 1950 and then pursued his undergraduate education at Dartmouth College. Between 1954 and 1958, he served in the U.S. Navy as a naval aviator, and he earned his master\u2019s degree from the John Hopkins University School of Advanced International Studies in 1959. Prior to his work at the Ford Foundation, Geithner had jobs at Columbia Carbon International in New York City between 1959 and 1962 and the U.S. Agency for International Development (USAID) in Zimbabwe, Zambia, and Washington D.C. between 1962 and 1968.\n\n\nGeithner began his career at Ford in 1968 as Assistant/Deputy Director for India, Nepal, and Sri Lanka. The Geithner family moved to New Delhi, India in order for him to take up the post. He held this position until 1973 when he and his family relocated to New York where he became Deputy Head, Office of Asia and Pacific. In 1976, he returned to Asia in order to serve as Ford\u2019s Representative for Southeast Asia at the Bangkok, Thailand Office. This position preceded a move back to New York in 1981 when he worked as Program Officer in Charge, Developing Countries Program. He became Ford\u2019s first representative for China in 1988 and was stationed at the foundation\u2019s new Beijing Office. He finished his career at Ford in New York as Regional Director of Asia Programs.\n\n\nFollowing his retirement from the Ford Foundation in 1996, Geithner became Advisor to the Asia Center at Harvard University. He also worked as an advisor for the Japan Center for Global Partnership (CGP) and had a succession of consulting appointments with the Asia Pacific Philanthropy Consortium (APPC), Ford, the Rockefeller Foundation, the Sasakawa Peace Foundation (SPF), and the China Medical Board (CMB). In addition, he served on boards and committees for organizations like the National Committee on U.S.-China Relations (NCUSCR), the Institute of Current World Affairs (ICWA), the University of Pennsylvania Center for the Advanced Study of India (CASI), and the Harvard-Yenching Institute (HYI). \n\n\nGeithner continued to focus on philanthropy and research related to Asia in his post-Ford career. However, he also participated in some philanthropic work related to Africa such as when he assisted the Rockefeller Foundation\u2019s Nairobi, Kenya Office.\n\n\nGeithner\u2019s work in philanthropy, international relations, and development intersected with and influenced many important historical events and movements affecting the Asia-Pacific Region such as the strengthening of diplomatic ties between the United States and countries like China and Vietnam, the international response to China following the June Fourth Incident at Tiananmen Square, China\u2019s economic development and growing place in world politics, the transfer of Hong Kong back to China, the 1997 Asian Financial Crisis, and the impact of terrorism and the War on Terror on philanthropy and international cooperation.  ",
+                    "content": "Peter Franz Geithner (1932-2016) worked in the field of international philanthropy for more than 40 years. Between 1968 and 1996, he provided leadership for the Ford Foundation\u2019s program activities in Asia, becoming Ford\u2019s Regional Director of Asia Programs in 1990. After serving at Ford for almost three decades, he retired from the foundation in 1996, but remained active in philanthropic organizations and research institutions for many years after that through advisory positions, consultancy appointments, and memberships on various boards and committees. Geithner was married to Deborah Moore, and together, they had four children: Timothy, Sarah, Jonathan, and David.\n\nRaised in Philadelphia, Pennsylvania, Geithner attended Northeast High School. He graduated in 1950 and then pursued his undergraduate education at Dartmouth College. Between 1954 and 1958, he served in the U.S. Navy as a naval aviator, and he earned his master\u2019s degree from the Johns Hopkins University School of Advanced International Studies in 1959. Prior to his work at the Ford Foundation, Geithner had jobs at Columbia Carbon International in New York City between 1959 and 1962 and the U.S. Agency for International Development (USAID) in Zimbabwe, Zambia, and Washington D.C. between 1962 and 1968.\n\n\nGeithner began his career at Ford in 1968 as Assistant/Deputy Director for India, Nepal, and Sri Lanka. The Geithner family moved to New Delhi, India in order for him to take up the post. He held this position until 1973 when he and his family relocated to New York where he became Deputy Head, Office of Asia and Pacific. In 1976, he returned to Asia in order to serve as Ford\u2019s Representative for Southeast Asia at the Bangkok, Thailand Office. This position preceded a move back to New York in 1981 when he worked as Program Officer in Charge, Developing Countries Program. He became Ford\u2019s first representative for China in 1988 and was stationed at the foundation\u2019s new Beijing Office. He finished his career at Ford in New York as Regional Director of Asia Programs.\n\n\nFollowing his retirement from the Ford Foundation in 1996, Geithner became Advisor to the Asia Center at Harvard University. He also worked as an advisor for the Japan Center for Global Partnership (CGP) and had a succession of consulting appointments with the Asia Pacific Philanthropy Consortium (APPC), Ford, the Rockefeller Foundation, the Sasakawa Peace Foundation (SPF), and the China Medical Board (CMB). In addition, he served on boards and committees for organizations like the National Committee on U.S.-China Relations (NCUSCR), the Institute of Current World Affairs (ICWA), the University of Pennsylvania Center for the Advanced Study of India (CASI), and the Harvard-Yenching Institute (HYI). \n\n\nGeithner continued to focus on philanthropy and research related to Asia in his post-Ford career. However, he also participated in some philanthropic work related to Africa such as when he assisted the Rockefeller Foundation\u2019s Nairobi, Kenya Office.\n\n\nGeithner\u2019s work in philanthropy, international relations, and development intersected with and influenced many important historical events and movements affecting the Asia-Pacific Region such as the strengthening of diplomatic ties between the United States and countries like China and Vietnam, the international response to China following the June Fourth Incident at Tiananmen Square, China\u2019s economic development and growing place in world politics, the transfer of Hong Kong back to China, the 1997 Asian Financial Crisis, and the impact of terrorism and the War on Terror on philanthropy and international cooperation.  ",
                     "jsonmodel_type": "note_text",
                     "publish": true
                 }
@@ -635,11 +665,11 @@
         }
     ],
     "suppressed": false,
-    "system_mtime": "2020-03-26T12:36:08Z",
+    "system_mtime": "2020-07-16T02:22:44Z",
     "title": "Peter F. Geithner papers",
     "tree": {
         "ref": "/repositories/2/resources/13/tree"
     },
     "uri": "/repositories/2/resources/13",
-    "user_mtime": "2020-03-26T12:36:08Z"
+    "user_mtime": "2020-07-16T02:22:44Z"
 }

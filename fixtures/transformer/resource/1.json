@@ -19,7 +19,7 @@
             "level": "series",
             "order": 2,
             "ref": "/repositories/2/archival_objects/3",
-            "title": "Research",
+            "title": "1940\u20131946",
             "type": "collection"
         },
         {
@@ -108,6 +108,56 @@
     "finding_aid_language_note": "English",
     "finding_aid_script": "Zyyy",
     "finding_aid_title": "A Guide to the Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff <num>FA001</num>",
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/2",
+                "role": "creator",
+                "terms": [],
+                "title": "Bergmann, M. (Max)",
+                "type": "agent_person"
+            },
+            {
+                "ref": "/agents/corporate_entities/3",
+                "role": "creator",
+                "terms": [],
+                "title": "Rockefeller University",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1886",
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "date_type": "inclusive",
+                "end": "1961",
+                "expression": "1886-1961 (bulk 1941-1945)",
+                "jsonmodel_type": "date",
+                "label": "creation",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            },
+            {
+                "begin": "1941",
+                "create_time": "2020-06-26T16:06:04Z",
+                "created_by": "admin",
+                "date_type": "bulk",
+                "end": "1945",
+                "expression": "1941-1945",
+                "jsonmodel_type": "date",
+                "label": "creation",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-06-26T16:06:04Z",
+                "user_mtime": "2020-06-26T16:06:04Z"
+            }
+        ],
+        "identifier": "/repositories/2/resources/1",
+        "title": "Max Bergmann papers, Rockefeller Institute for Medical Research Scientific Staff"
+    },
     "id_0": "FA001",
     "instances": [],
     "is_slug_auto": true,

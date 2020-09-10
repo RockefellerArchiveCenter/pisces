@@ -49,6 +49,33 @@
         "user_mtime": "2014-12-06T02:41:02Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/143",
+                "role": "creator",
+                "title": "Marshall, John",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1903",
+                "create_time": "2014-12-06T02:41:02Z",
+                "created_by": "admin",
+                "date_type": "inclusive",
+                "end": "1980",
+                "jsonmodel_type": "date",
+                "label": "existence",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2014-12-06T02:41:02Z",
+                "user_mtime": "2014-12-06T02:41:02Z"
+            }
+        ],
+        "identifier": "/agents/people/143",
+        "title": "Marshall, John"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",
