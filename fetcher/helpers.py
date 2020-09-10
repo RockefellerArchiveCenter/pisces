@@ -70,7 +70,6 @@ def instantiate_electronbond(self, config=None):
 
 
 def identifier_from_uri(uri):
-    shortuuid.set_alphabet('23456789abcdefghijkmnopqrstuvwxyz')
     return shortuuid.uuid(name=uri)
 
 

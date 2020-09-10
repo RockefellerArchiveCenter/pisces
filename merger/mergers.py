@@ -1,7 +1,8 @@
 import re
 
 from .helpers import (ArchivesSpaceHelper, closest_creators,
-                      closest_parent_value, combine_references)
+                      closest_parent_value, combine_references,
+                      handle_cartographer_ancestor)
 
 
 class MergeError(Exception):
@@ -85,7 +86,7 @@ class ArchivalObjectMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] >= 1:
                 for a in json_data["results"][0].get("ancestors"):
-                    data["ancestors"].append(a)
+                    data["ancestors"].append(handle_cartographer_ancestor(a))
         return data
 
     def get_archival_object_collection_data(self, object):
@@ -192,10 +193,7 @@ class ArrangementMapMerger(BaseMerger):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
         ancestors = []
         for a in object.get("ancestors"):
-            a["type"] = "collection"
-            a["ref"] = a["archivesspace_uri"]
-            del a["archivesspace_uri"]
-            ancestors.append(a)
+            ancestors.append(handle_cartographer_ancestor(a))
         additional_data["ancestors"] = ancestors
         return combine_references(additional_data)
 
@@ -230,7 +228,8 @@ class ResourceMerger(BaseMerger):
         if resp.status_code == 200:
             json_data = resp.json()
             if json_data["count"] > 0:
-                data["ancestors"] = json_data["results"][0].get("ancestors", [])
+                for a in json_data["results"][0].get("ancestors", []):
+                    data["ancestors"].append(handle_cartographer_ancestor(a))
         return data
 
     def get_archivesspace_data(self, object):
