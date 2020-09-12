@@ -72,6 +72,7 @@ class Extent(odin.Resource):
 
 class Group(odin.Resource):
     """Information about the highest-level collection containing the data object."""
+    category = odin.StringField()
     creators = odin.ArrayOf(AgentReference, null=True)
     dates = odin.ArrayOf(Date, null=True)
     identifier = odin.StringField()
@@ -124,6 +125,7 @@ class Term(BaseResource):
 
     Term is a first-class entity in the RAC data model.
     """
+    category = odin.StringField(default="subject")
     type = odin.StringField(default="term")
     term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
 

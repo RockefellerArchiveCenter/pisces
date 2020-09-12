@@ -205,6 +205,17 @@ class SourceGroupToGroup(odin.Mapping):
     from_obj = SourceGroup
     to_obj = Group
 
+    @odin.assign_field(to_field="category")
+    def category(self):
+        category = "collection"
+        if "corporate_entities" in self.source.identifier:
+            category = "organization"
+        elif "subjects" in self.source.identifier:
+            category = "subject"
+        elif any(t in self.source.identifier for t in ["families", "people"]):
+            category = "person"
+        return category
+
 
 class SourceNoteToNote(odin.Mapping):
     """Maps SourceNote to Note object."""
