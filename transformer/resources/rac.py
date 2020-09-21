@@ -41,6 +41,8 @@ class RecordReference(Reference):
     """Short reference to Collections or Objects."""
     order = odin.StringField()
     level = odin.StringField()
+    dates = odin.StringField()
+    description = odin.StringField()
 
 
 class AgentReference(Reference):

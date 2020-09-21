@@ -27,7 +27,7 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            return self.combine_data(object, additional_data)
+            return self.combine_data(object, additional_data), target_object_type
         except Exception as e:
             print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))
@@ -156,12 +156,12 @@ class ArchivalObjectMerger(BaseMerger):
 
         Moves data from resolved objects to expected keys within main object.
         """
-        object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
         for k, v in additional_data.items():
             if isinstance(v, list):
                 object[k] = object.get(k, []) + v
             else:
                 object[k] = v
+        object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
         return combine_references(object)
 
 
@@ -255,9 +255,9 @@ class ResourceMerger(BaseMerger):
         Adds Cartographer ancestors to object's `ancestors` key, and
         ArchivesSpace children to object's `children` key.
         """
-        object = super(ResourceMerger, self).combine_data(object, additional_data)
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
+        object = super(ResourceMerger, self).combine_data(object, additional_data)
         return combine_references(object)
 
 

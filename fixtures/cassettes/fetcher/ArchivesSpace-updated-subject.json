@@ -4,7 +4,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://192.168.1.140:8089/users/admin/login?expiring=False",
+                "uri": "http://192.168.1.9:8089/users/admin/login?expiring=False",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -30,34 +30,34 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:55 GMT"
+                    "Content-Length": [
+                        "2980"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
-                    ],
-                    "Content-Length": [
-                        "2981"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"f85451e5355fee559bc6fb3ce5b8632071046ff2659b35756f80c8c806f9033f\",\"user\":{\"lock_version\":76,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-06-26T16:02:36Z\",\"system_mtime\":\"2020-06-27T02:19:55Z\",\"user_mtime\":\"2020-06-27T02:19:55Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
+                    "string": "{\"session\":\"f4c6a016f5876da278d4f3974a5f62fe63016711a7f54f5e97fe2292c8c2ca22\",\"user\":{\"lock_version\":5,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-09-21T15:50:52Z\",\"user_mtime\":\"2020-09-21T15:50:52Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.140:8089/version",
+                "uri": "http://192.168.1.9:8089/version",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -80,40 +80,40 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "text/html;charset=UTF-8"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
                     ],
                     "Content-Length": [
                         "22"
                     ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
+                    ],
                     "X-XSS-Protection": [
                         "1; mode=block"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "ArchivesSpace (v2.7.1)"
+                    "string": "ArchivesSpace (v2.8.0)"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://localhost:8007/status/health/",
+                "uri": "http://rac-vch-prod.ad.rockarchive.org:8000/status/health/",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -136,20 +136,29 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
-                        "WSGIServer/0.2 CPython/3.6.5"
+                        "Apache/2.4.38 (Debian)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                    "Keep-Alive": [
+                        "timeout=5, max=100"
                     ],
                     "Content-Length": [
                         "85"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:51:18 GMT"
+                    ],
+                    "Vary": [
+                        "Origin"
+                    ],
+                    "Connection": [
+                        "Keep-Alive"
                     ]
                 },
                 "body": {
@@ -160,7 +169,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.140:8089/subjects?all_ids=True",
+                "uri": "http://192.168.1.9:8089/subjects?all_ids=True",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -183,34 +192,34 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
+                    "Content-Length": [
+                        "119"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
-                    ],
-                    "Content-Length": [
-                        "8"
                     ]
                 },
                 "body": {
-                    "string": "[2,3,4]\n"
+                    "string": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42]\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.140:8089/subjects/2?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "uri": "http://192.168.1.9:8089/subjects/1?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -233,34 +242,884 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
+                    "Content-Length": [
+                        "857"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Presidential campaigns -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Presidential campaigns -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:04:58Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/1\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/1\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/2?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "813"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Political science\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Political science\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:04:58Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/2\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/2\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/3?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "839"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Public health -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Public health -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:58Z\",\"system_mtime\":\"2020-09-20T15:04:58Z\",\"user_mtime\":\"2020-09-20T15:04:58Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/3\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/3\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/4?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "913"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Presidential candidates -- United States -- History -- 20th century\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Presidential candidates -- United States -- History -- 20th century\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/4\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/5?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "851"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:52 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Political campaigns -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Political campaigns -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/5\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/5\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/6?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "842"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Philanthropy -- New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Philanthropy -- New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/6\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/6\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/7?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "838"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Philanthropy -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Philanthropy -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/7\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/7\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/8?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "847"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"State governments -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"State governments -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/8\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/8\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/9?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "843"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Social problems -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Social problems -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/9\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/9\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/10?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "802"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Venezuela\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Venezuela\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/10\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/10\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/11?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "810"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/11\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/11\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/12?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "797"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Business\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Business\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/12\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/12\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/13?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "839"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Business enterprises, Foreign\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Business enterprises, Foreign\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/13\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/13\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/14?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "815"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Civic improvement\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Civic improvement\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/14\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/14\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/15?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "793"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Civics\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Civics\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/15\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/15\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/16?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "837"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:53 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Agriculture -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Agriculture -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/16\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/16\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/17?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "806"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Philanthropy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Philanthropy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/17\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/17\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/18?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
                     ],
                     "Content-Length": [
                         "809"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":1,\"title\":\"Chemical warfare\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Chemical warfare\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/2\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/2\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                    "string": "{\"lock_version\":1,\"title\":\"Art, Primitive\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Art, Primitive\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/18\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/18\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.140:8089/subjects/3?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "uri": "http://192.168.1.9:8089/subjects/19?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -283,34 +1142,34 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
+                    "Content-Length": [
+                        "789"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
-                    ],
-                    "Content-Length": [
-                        "801"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":1,\"title\":\"Biochemistry\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Biochemistry\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/3\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/3\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                    "string": "{\"lock_version\":1,\"title\":\"Arts\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Arts\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/19\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/19\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.140:8089/subjects/4?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "uri": "http://192.168.1.9:8089/subjects/20?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -333,27 +1192,1127 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
                     "Content-Type": [
                         "application/json"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Date": [
-                        "Sat, 27 Jun 2020 02:19:56 GMT"
+                    "Content-Length": [
+                        "796"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
-                    ],
-                    "Content-Length": [
-                        "790"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":1,\"title\":\"Japan\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:05Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Japan\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-06-26T16:06:03Z\",\"system_mtime\":\"2020-06-26T16:06:03Z\",\"user_mtime\":\"2020-06-26T16:06:03Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/4\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/4\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                    "string": "{\"lock_version\":1,\"title\":\"Brazil\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Brazil\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/20\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/20\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/21?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "849"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"National security -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"National security -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:04:59Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/21\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/21\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/22?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "814"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:04:59Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:04:59Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"New York (N.Y.)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/22\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/22\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/23?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "816"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"New York (State)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"New York (State)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/23\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/23\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/24?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "821"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Developing countries\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Developing countries\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/24\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/24\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/25?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "811"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Economic policy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Economic policy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/25\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/25\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/26?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "799"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Economics\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Economics\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/26\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/26\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/27?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "799"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Education\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Education\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/27\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/27\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/28?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "879"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:54 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Governors -- Election -- New York (State) -- 1970\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Governors -- Election -- New York (State) -- 1970\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/28\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/28\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/29?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "845"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"International economic relations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"International economic relations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/29\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/29\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/30?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "827"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"International relations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"International relations\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/30\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/30\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/31?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "861"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"International relations -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"International relations -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/31\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/31\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/32?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "810"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"geographic\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/32\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/32\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/33?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "803"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Agriculture\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Agriculture\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/33\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/33\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/34?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "833"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Education -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Education -- Latin America\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/34\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/34\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/35?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "851"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Federal government -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Federal government -- United States\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/35\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/35\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/36?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "819"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Government agencies\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Government agencies\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/36\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/36\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/37?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "815"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Government policy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Government policy\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/37\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/37\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/38?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "879"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Governors -- Election -- New York (State) -- 1958\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Governors -- Election -- New York (State) -- 1958\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/38\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/38\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/39?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "846"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Philanthropy -- New York (State)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"local\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Philanthropy -- New York (State)\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/39\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/39\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/40?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "879"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:55 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Governors -- Election -- New York (State) -- 1962\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Governors -- Election -- New York (State) -- 1962\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/40\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/40\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/41?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "879"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:56 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"title\":\"Governors -- Election -- New York (State) -- 1966\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:04Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Governors -- Election -- New York (State) -- 1966\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:05:00Z\",\"system_mtime\":\"2020-09-20T15:05:00Z\",\"user_mtime\":\"2020-09-20T15:05:00Z\",\"term_type\":\"topical\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/41\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/41\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.9:8089/subjects/42?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=ancestors%3A%3Asubjects&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Content-Length": [
+                        "816"
+                    ],
+                    "Date": [
+                        "Mon, 21 Sep 2020 15:50:56 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":2,\"title\":\"Sound recordings\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:18:54Z\",\"system_mtime\":\"2020-09-20T15:19:03Z\",\"user_mtime\":\"2020-09-20T15:18:54Z\",\"is_slug_auto\":true,\"source\":\"lcsh\",\"jsonmodel_type\":\"subject\",\"external_ids\":[],\"publish\":true,\"used_within_repositories\":[\"/repositories/101\"],\"used_within_published_repositories\":[],\"terms\":[{\"lock_version\":0,\"term\":\"Sound recordings\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:18:54Z\",\"system_mtime\":\"2020-09-20T15:18:54Z\",\"user_mtime\":\"2020-09-20T15:18:54Z\",\"term_type\":\"genre_form\",\"jsonmodel_type\":\"term\",\"uri\":\"/terms/42\",\"vocabulary\":\"/vocabularies/1\"}],\"external_documents\":[],\"uri\":\"/subjects/42\",\"vocabulary\":\"/vocabularies/1\",\"is_linked_to_published_record\":false}\n"
                 }
             }
         }

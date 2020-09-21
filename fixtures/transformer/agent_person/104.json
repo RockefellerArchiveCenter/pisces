@@ -1,0 +1,76 @@
+{
+    "agent_contacts": [],
+    "agent_type": "agent_person",
+    "create_time": "2020-09-20T15:18:54Z",
+    "created_by": "admin",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2020-09-20T15:18:54Z",
+        "created_by": "admin",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "last_modified_by": "admin",
+        "lock_version": 0,
+        "name_order": "inverted",
+        "primary_name": "Linden, Patricia",
+        "sort_name": "Linden, Patricia",
+        "sort_name_auto_generate": true,
+        "source": "local",
+        "system_mtime": "2020-09-20T15:18:54Z",
+        "use_dates": [],
+        "user_mtime": "2020-09-20T15:18:54Z"
+    },
+    "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/104",
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/104",
+        "title": "Linden, Patricia"
+    },
+    "is_linked_to_published_record": false,
+    "is_slug_auto": true,
+    "jsonmodel_type": "agent_person",
+    "last_modified_by": "admin",
+    "linked_agent_roles": [
+        "creator"
+    ],
+    "lock_version": 1,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2020-09-20T15:18:54Z",
+            "created_by": "admin",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "name_order": "inverted",
+            "primary_name": "Linden, Patricia",
+            "sort_name": "Linden, Patricia",
+            "sort_name_auto_generate": true,
+            "source": "local",
+            "system_mtime": "2020-09-20T15:18:54Z",
+            "use_dates": [],
+            "user_mtime": "2020-09-20T15:18:54Z"
+        }
+    ],
+    "notes": [],
+    "publish": false,
+    "related_agents": [],
+    "system_mtime": "2020-09-20T15:19:03Z",
+    "title": "Linden, Patricia",
+    "uri": "/agents/people/104",
+    "used_within_published_repositories": [],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:18:54Z"
+}

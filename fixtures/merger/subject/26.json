@@ -1,49 +1,37 @@
 {
-  "lock_version": 1783,
-  "title": "New York (N.Y.)",
-  "created_by": "admin",
-  "last_modified_by": "admin",
-  "create_time": "2014-12-06T02:29:45Z",
-  "system_mtime": "2019-03-08T17:57:17Z",
-  "user_mtime": "2014-12-06T02:29:45Z",
-  "source": "lcsh",
-  "jsonmodel_type": "subject",
-  "external_ids": [
-    {
-      "external_id": "32",
-      "source": "Archivists Toolkit Database::SUBJECT",
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:29:45Z",
-      "system_mtime": "2014-12-06T02:29:45Z",
-      "user_mtime": "2014-12-06T02:29:45Z",
-      "jsonmodel_type": "external_id"
-    }
-  ],
-  "publish": true,
-  "used_within_repositories": [
-    "/repositories/2"
-  ],
-  "used_within_published_repositories": [
-    "/repositories/2"
-  ],
-  "terms": [
-    {
-      "lock_version": 0,
-      "term": "New York (N.Y.)",
-      "created_by": "admin",
-      "last_modified_by": "admin",
-      "create_time": "2014-12-06T02:29:45Z",
-      "system_mtime": "2014-12-06T02:29:45Z",
-      "user_mtime": "2014-12-06T02:29:45Z",
-      "term_type": "geographic",
-      "jsonmodel_type": "term",
-      "uri": "/terms/30",
-      "vocabulary": "/vocabularies/1"
-    }
-  ],
-  "external_documents": [],
-  "uri": "/subjects/26",
-  "vocabulary": "/vocabularies/1",
-  "is_linked_to_published_record": true
+    "create_time": "2020-09-20T15:05:00Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "is_linked_to_published_record": false,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 1,
+    "publish": true,
+    "source": "lcsh",
+    "system_mtime": "2020-09-20T15:05:04Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:05:00Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:05:00Z",
+            "term": "Economics",
+            "term_type": "topical",
+            "uri": "/terms/26",
+            "user_mtime": "2020-09-20T15:05:00Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "Economics",
+    "uri": "/subjects/26",
+    "used_within_published_repositories": [],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:05:00Z",
+    "vocabulary": "/vocabularies/1"
 }
