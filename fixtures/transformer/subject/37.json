@@ -6,8 +6,8 @@
     "group": {
         "creators": [],
         "dates": [],
-        "identifier": "/subjects/26",
-        "title": "Economics"
+        "identifier": "/subjects/37",
+        "title": "Government policy"
     },
     "is_linked_to_published_record": false,
     "is_slug_auto": true,
@@ -25,15 +25,15 @@
             "last_modified_by": "admin",
             "lock_version": 0,
             "system_mtime": "2020-09-20T15:05:00Z",
-            "term": "Economics",
+            "term": "Government policy",
             "term_type": "topical",
-            "uri": "/terms/26",
+            "uri": "/terms/37",
             "user_mtime": "2020-09-20T15:05:00Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "title": "Economics",
-    "uri": "/subjects/26",
+    "title": "Government policy",
+    "uri": "/subjects/37",
     "used_within_published_repositories": [],
     "used_within_repositories": [
         "/repositories/101"

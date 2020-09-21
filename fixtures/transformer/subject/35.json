@@ -6,8 +6,8 @@
     "group": {
         "creators": [],
         "dates": [],
-        "identifier": "/subjects/26",
-        "title": "Economics"
+        "identifier": "/subjects/35",
+        "title": "Federal government -- United States"
     },
     "is_linked_to_published_record": false,
     "is_slug_auto": true,
@@ -25,15 +25,15 @@
             "last_modified_by": "admin",
             "lock_version": 0,
             "system_mtime": "2020-09-20T15:05:00Z",
-            "term": "Economics",
+            "term": "Federal government -- United States",
             "term_type": "topical",
-            "uri": "/terms/26",
+            "uri": "/terms/35",
             "user_mtime": "2020-09-20T15:05:00Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "title": "Economics",
-    "uri": "/subjects/26",
+    "title": "Federal government -- United States",
+    "uri": "/subjects/35",
     "used_within_published_repositories": [],
     "used_within_repositories": [
         "/repositories/101"

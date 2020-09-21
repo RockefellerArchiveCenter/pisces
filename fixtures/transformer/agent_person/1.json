@@ -1,0 +1,71 @@
+{
+    "agent_contacts": [],
+    "agent_type": "agent_person",
+    "create_time": "2020-09-20T14:45:59Z",
+    "dates_of_existence": [],
+    "display_name": {
+        "authorized": true,
+        "create_time": "2020-09-20T14:45:59Z",
+        "is_display_name": true,
+        "jsonmodel_type": "name_person",
+        "lock_version": 0,
+        "name_order": "direct",
+        "primary_name": "Administrator",
+        "rules": "local",
+        "sort_name": "Administrator",
+        "sort_name_auto_generate": true,
+        "source": "local",
+        "system_mtime": "2020-09-20T14:45:59Z",
+        "use_dates": [],
+        "user_mtime": "2020-09-20T14:45:59Z"
+    },
+    "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/1",
+                "role": "creator",
+                "title": "Administrator",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/1",
+        "title": "Administrator"
+    },
+    "is_linked_to_published_record": false,
+    "is_slug_auto": true,
+    "is_user": "admin",
+    "jsonmodel_type": "agent_person",
+    "linked_agent_roles": [],
+    "lock_version": 0,
+    "names": [
+        {
+            "authorized": true,
+            "create_time": "2020-09-20T14:45:59Z",
+            "is_display_name": true,
+            "jsonmodel_type": "name_person",
+            "lock_version": 0,
+            "name_order": "direct",
+            "primary_name": "Administrator",
+            "rules": "local",
+            "sort_name": "Administrator",
+            "sort_name_auto_generate": true,
+            "source": "local",
+            "system_mtime": "2020-09-20T14:45:59Z",
+            "use_dates": [],
+            "user_mtime": "2020-09-20T14:45:59Z"
+        }
+    ],
+    "notes": [],
+    "publish": false,
+    "related_agents": [],
+    "system_mtime": "2020-09-20T14:45:59Z",
+    "title": "Administrator",
+    "uri": "/agents/people/1",
+    "used_within_published_repositories": [],
+    "used_within_repositories": [
+        "/repositories/1"
+    ],
+    "user_mtime": "2020-09-20T14:45:59Z"
+}

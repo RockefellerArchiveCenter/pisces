@@ -1,13 +1,13 @@
 {
-    "create_time": "2020-09-20T15:05:00Z",
+    "create_time": "2020-09-20T15:04:59Z",
     "created_by": "admin",
     "external_documents": [],
     "external_ids": [],
     "group": {
         "creators": [],
         "dates": [],
-        "identifier": "/subjects/26",
-        "title": "Economics"
+        "identifier": "/subjects/22",
+        "title": "New York (N.Y.)"
     },
     "is_linked_to_published_record": false,
     "is_slug_auto": true,
@@ -25,19 +25,19 @@
             "last_modified_by": "admin",
             "lock_version": 0,
             "system_mtime": "2020-09-20T15:05:00Z",
-            "term": "Economics",
-            "term_type": "topical",
-            "uri": "/terms/26",
+            "term": "New York (N.Y.)",
+            "term_type": "geographic",
+            "uri": "/terms/22",
             "user_mtime": "2020-09-20T15:05:00Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "title": "Economics",
-    "uri": "/subjects/26",
+    "title": "New York (N.Y.)",
+    "uri": "/subjects/22",
     "used_within_published_repositories": [],
     "used_within_repositories": [
         "/repositories/101"
     ],
-    "user_mtime": "2020-09-20T15:05:00Z",
+    "user_mtime": "2020-09-20T15:04:59Z",
     "vocabulary": "/vocabularies/1"
 }
