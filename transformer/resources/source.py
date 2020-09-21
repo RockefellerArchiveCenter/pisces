@@ -11,6 +11,13 @@ import odin
 from . import configs
 
 
+class SourceRef(odin.Resource):
+    """A reference to a related object."""
+    ref = odin.StringField()
+    type = odin.StringField(null=True)
+    title = odin.StringField(null=True)
+
+
 class SourceAncestor(odin.Resource):
     """A related SourceResource or SourceArchivalObject.
 
@@ -23,13 +30,9 @@ class SourceAncestor(odin.Resource):
     order = odin.StringField(null=True)
     title = odin.StringField(null=True)
     type = odin.StringField(null=True)
-
-
-class SourceRef(odin.Resource):
-    """A reference to a related object."""
-    ref = odin.StringField()
-    type = odin.StringField(null=True)
-    title = odin.StringField(null=True)
+    subjects = odin.ArrayOf(SourceRef, null=True)
+    description = odin.StringField(null=True)
+    dates = odin.StringField(null=True)
 
 
 class SourceDate(odin.Resource):
@@ -144,6 +147,7 @@ class SourceNote(odin.Resource):
     subnotes = odin.ArrayOf(SourceSubnote, null=True)
     content = odin.StringField(null=True)
     items = odin.ArrayField(null=True)
+    publish = odin.BooleanField()
 
 
 class SourceRightsStatementAct(odin.Resource):
