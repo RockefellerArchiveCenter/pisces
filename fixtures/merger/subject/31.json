@@ -1,0 +1,37 @@
+{
+    "create_time": "2020-09-20T15:05:00Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "is_linked_to_published_record": false,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 1,
+    "publish": true,
+    "source": "lcsh",
+    "system_mtime": "2020-09-20T15:05:04Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:05:00Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:05:00Z",
+            "term": "International relations -- United States",
+            "term_type": "topical",
+            "uri": "/terms/31",
+            "user_mtime": "2020-09-20T15:05:00Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "International relations -- United States",
+    "uri": "/subjects/31",
+    "used_within_published_repositories": [],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:05:00Z",
+    "vocabulary": "/vocabularies/1"
+}
