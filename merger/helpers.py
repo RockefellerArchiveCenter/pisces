@@ -101,6 +101,8 @@ def combine_references(object):
                     type = obj["_resolved"]["terms"][0][type_key]
                 elif key == "linked_agents":
                     type = obj["_resolved"][type_key]
+                if obj["_resolved"].get("subjects"):
+                    obj["subjects"] = obj["_resolved"]["subjects"]
                 obj["type"] = type
                 obj["title"] = obj["_resolved"].get("title", obj["_resolved"].get("display_string"))
                 del obj["_resolved"]
