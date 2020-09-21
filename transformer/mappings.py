@@ -18,6 +18,11 @@ from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceSubject)
 
 
+def replace_xml(content_list):
+    """Replaces XML entities in notes with HTML tags."""
+    return [c.replace("extref", "a") for c in content_list]
+
+
 def transform_language(value, lang_materials):
     langz = []
     if value:
@@ -26,16 +31,21 @@ def transform_language(value, lang_materials):
     elif lang_materials:
         for lang in [l for l in lang_materials if l.language_and_script]:
             langz += transform_language(lang.language_and_script.language, None)
-    return langz if len(langz) else Language(expression="English", identifier="eng")
+    return langz if len(langz) else [Language(expression="English", identifier="eng")]
 
 
-def transform_formats(instances, subjects):
+def transform_formats(instances, subjects, ancestors):
+    ancestor_subjects = []
+    for a in ancestors:
+        if a.subjects:
+            ancestor_subjects += a.subjects
+    combined_subjects = subjects + ancestor_subjects
     formats = ["documents"]
-    if len([v for v in instances if v.instance_type.lower() == "moving images"]) or len([s for s in subjects if s.ref == "/subjects/48300"]):
+    if len([v for v in instances if v.instance_type.lower() == "moving images"]) or len([s for s in combined_subjects if s.title.lower() == "moving images"]):
         formats.append("moving image")
-    if len([v for v in instances if v.instance_type.lower() == "audio"]) or len([s for s in subjects if s.ref == "/subjects/1313"]):
+    if len([v for v in instances if v.instance_type.lower() == "audio"]) or len([s for s in combined_subjects if s.title.lower() == "sound recordings"]):
         formats.append("audio")
-    if len([v for v in instances if v.instance_type.lower() == "still image"]) or len([s for s in subjects if s.ref == "/subjects/962"]):
+    if len([v for v in instances if v.instance_type.lower() == "still image"]) or len([s for s in combined_subjects if s.title.lower() == "photographs"]):
         formats.append("photographs")
     return formats
 
@@ -60,7 +70,7 @@ class SourceRightsStatementActToRightsGranted(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def rights_notes(self, value):
-        return SourceNoteToNote.apply(value)
+        return SourceNoteToNote.apply([v for v in value if v.published])
 
 
 class SourceRightsStatementToRightsStatement(odin.Mapping):
@@ -77,7 +87,7 @@ class SourceRightsStatementToRightsStatement(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="rights_notes", to_list=True)
     def rights_notes(self, value):
-        return SourceNoteToNote.apply(value)
+        return SourceNoteToNote.apply([v for v in value if v.published])
 
     @odin.map_list_field(from_field="acts", to_field="rights_granted", to_list=True)
     def rights_granted(self, value):
@@ -113,6 +123,8 @@ class SourceAncestorToRecordReference(odin.Mapping):
 
     mappings = (
         ("type", None, "type"),
+        ("description", None, "description"),
+        ("dates", None, "dates"),
     )
 
     @odin.map_field(from_field="title", to_field="title")
@@ -251,8 +263,8 @@ class SourceNoteToNote(odin.Mapping):
             subnote = self.chronology_subnotes(value.items)
         else:
             subnote = Subnote(
-                type="text", content=value.content
-                if isinstance(value.content, list) else [value.content])
+                type="text", content=replace_xml(value.content)
+                if isinstance(value.content, list) else replace_xml([value.content]))
         return subnote
 
     @odin.map_list_field(from_field="subnotes", to_field="subnotes", to_list=True)
@@ -263,7 +275,7 @@ class SourceNoteToNote(odin.Mapping):
         elif self.source.jsonmodel_type in ["note_singlepart", "note_rights_statement", "note_rights_statement_act"]:
             # Here content is a list passed as a string, so we have to reconvert.
             content = [self.source.content.strip("][\"")]
-            subnotes = [Subnote(type="text", content=content)]
+            subnotes = [Subnote(type="text", content=replace_xml(content))]
         elif self.source.jsonmodel_type == "note_index":
             subnotes = self.index_subnotes(self.source.content, self.source.items)
         elif self.source.jsonmodel_type == "note_bibliography":
@@ -276,7 +288,7 @@ class SourceNoteToNote(odin.Mapping):
         data = []
         # Here content is a list passed as a string, so we have to reconvert.
         content = [raw_content.strip("][\'")]
-        data.append(Subnote(type="text", content=content))
+        data.append(Subnote(type="text", content=replace_xml(content)))
         data.append(Subnote(type="orderedlist", content=items))
         return data
 
@@ -296,6 +308,10 @@ class SourceResourceToCollection(odin.Mapping):
     """Maps SourceResource to Collection object."""
     from_obj = SourceResource
     to_obj = Collection
+
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
 
     @odin.map_list_field(from_field="dates", to_field="dates")
     def dates(self, value):
@@ -339,7 +355,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
-        return transform_formats(value, self.source.subjects)
+        return transform_formats(value, self.source.subjects, self.source.ancestors)
 
     @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
@@ -350,6 +366,10 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     """Maps SourceArchivalObject to Collection object."""
     from_obj = SourceArchivalObject
     to_obj = Collection
+
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
 
     @odin.map_field
     def title(self, value):
@@ -393,7 +413,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
-        return transform_formats(value, self.source.subjects)
+        return transform_formats(value, self.source.subjects, self.source.ancestors)
 
     @odin.map_field(from_field="instances", to_field="online")
     def online(self, value):
@@ -412,6 +432,10 @@ class SourceArchivalObjectToObject(odin.Mapping):
     mappings = (
         odin.define(from_field="position", to_field="tree_position"),
     )
+
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
 
     @odin.map_list_field(from_field="dates", to_field="dates")
     def dates(self, value):
@@ -455,7 +479,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field="instances", to_field="formats")
     def formats(self, value):
-        return transform_formats(value, self.source.subjects)
+        return transform_formats(value, self.source.subjects, self.source.ancestors)
 
     @odin.map_field(from_field="instances", to_field="online")
     def online(self, value):
@@ -515,6 +539,10 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
     from_obj = SourceAgentCorporateEntity
     to_obj = Agent
 
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
+
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):
         return SourceDateToDate.apply(value)
@@ -571,6 +599,10 @@ class SourceAgentFamilyToAgent(odin.Mapping):
     from_obj = SourceAgentFamily
     to_obj = Agent
 
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
+
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):
         return SourceDateToDate.apply(value)
@@ -626,6 +658,10 @@ class SourceAgentPersonToAgent(odin.Mapping):
     """Maps SourceAgentPerson to Agent object."""
     from_obj = SourceAgentPerson
     to_obj = Agent
+
+    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
+    def notes(self, value):
+        return SourceNoteToNote.apply([v for v in value if v.publish])
 
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):
