@@ -5,13 +5,13 @@
     "parent": 1,
     "tree_index": 4,
     "level": "otherlevel",
-    "archivesspace_uri": "/repositories/2/resources/318",
+    "archivesspace_uri": "/repositories/101/resources/4",
     "publish": true,
     "ancestors": [
         {
             "title": "Rockefeller Foundation records, photographs, series 100-1000",
             "ref": "/api/components/1/",
-            "archivesspace_uri": "/repositories/2/resources/93",
+            "archivesspace_uri": "/repositories/101/resources/3",
             "level": "collection"
         }
     ],

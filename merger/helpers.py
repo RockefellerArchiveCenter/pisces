@@ -2,67 +2,6 @@ from fetcher.helpers import instantiate_aspace
 from pisces import settings
 
 
-class ArchivesSpaceHelper:
-    def __init__(self, aspace):
-        self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE)
-
-    def has_children(self, uri):
-        """Checks whether an archival object has children using the tree/node endpoint.
-        Checks the child_count attribute and if the value is greater than 0, return true, otherwise return False."""
-        obj = self.aspace.client.get(uri).json()
-        resource_uri = obj['resource']['ref']
-        tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
-        return True if tree_node['child_count'] > 0 else False
-
-    def tree_children(self, list, key):
-        """Returns immediate children of a resource or archival_object.
-
-        In cases where children don't have titles (for example, only a date) the
-        date expression for the first date object is returned.
-        """
-        children = []
-        for idx in list["precomputed_waypoints"].get(key):
-            for child in list["precomputed_waypoints"].get(key)[idx]:
-                title = child["title"] if child["title"] else self.get_date_string(child["dates"])
-                children.append({
-                    "title": title,
-                    "ref": child["uri"],
-                    "level": child["level"],
-                    "order": child["position"],
-                    "type": "collection" if child["child_count"] > 0 else "object"})
-        return children
-
-    def get_date_string(self, dates):
-        date_strings = []
-        for date in dates:
-            if date.get("expression"):
-                date_strings.append(date["expression"])
-            elif date.get("end"):
-                date_strings.append("{}-{}".format(date["begin"], date["end"]))
-            else:
-                date_strings.append(date["begin"])
-        return ", ".join(date_strings)
-
-    def get_resource_children(self, uri):
-        tree_root = self.aspace.client.get(
-            "{}/tree/root".format(uri.rstrip("/"))).json()
-        return self.tree_children(tree_root, "") if tree_root["child_count"] > 0 else []
-
-    def get_archival_object_children(self, resource_uri, object_uri):
-        tree_node = self.aspace.client.get(
-            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
-        return self.tree_children(tree_node, object_uri)
-
-    def resolve_cartographer_ancestor(self, ancestor):
-        resolved = self.aspace.client.get(
-            ancestor["archivesspace_uri"],
-            params={"resolve": ["linked_agents"]}).json()
-        ancestor["ref"] = ancestor["archivesspace_uri"]
-        del ancestor["archivesspace_uri"]
-        ancestor["_resolved"] = resolved
-        return combine_references(ancestor)
-
-
 def get_ancestors(obj):
     """Returns the full resolved record for each ancestor."""
     for a in obj["ancestors"]:
@@ -91,6 +30,26 @@ def closest_creators(obj):
     return []
 
 
+def get_date_string(dates):
+    date_strings = []
+    for date in dates:
+        if date.get("expression"):
+            date_strings.append(date["expression"])
+        elif date.get("end"):
+            date_strings.append("{}-{}".format(date["begin"], date["end"]))
+        else:
+            date_strings.append(date["begin"])
+    return ", ".join(date_strings)
+
+
+def get_description(notes):
+    """Gets text from all published Scope and Contents notes."""
+    description_strings = []
+    for note in [n for n in notes if (n["type"] == "scopecontent" and n["publish"])]:
+        description_strings += [sn["content"] for sn in note["subnotes"]]
+    return ", ".join(description_strings)
+
+
 def combine_references(object):
     """Adds type and title fields to references, then removes unneeded resolved objects."""
     for key, type_key in (["ancestors", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
@@ -102,9 +61,11 @@ def combine_references(object):
                 elif key == "linked_agents":
                     type = obj["_resolved"][type_key]
                 if obj["_resolved"].get("subjects"):
-                    obj["subjects"] = obj["_resolved"]["subjects"]
+                    obj["subjects"] = combine_references(obj["_resolved"])["subjects"]
                 obj["type"] = type
                 obj["title"] = obj["_resolved"].get("title", obj["_resolved"].get("display_string"))
+                obj["dates"] = get_date_string(obj["_resolved"].get("dates", []))
+                obj["description"] = get_description(obj["_resolved"].get("notes", []))
                 del obj["_resolved"]
     return object
 
@@ -126,3 +87,55 @@ def add_group(object):
         "title": group_obj.get("title"),
     }
     return object
+
+
+class ArchivesSpaceHelper:
+    def __init__(self, aspace):
+        self.aspace = aspace if aspace else instantiate_aspace(settings.ARCHIVESSPACE)
+
+    def has_children(self, uri):
+        """Checks whether an archival object has children using the tree/node endpoint.
+        Checks the child_count attribute and if the value is greater than 0, return true, otherwise return False."""
+        obj = self.aspace.client.get(uri).json()
+        resource_uri = obj['resource']['ref']
+        tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
+        return True if tree_node['child_count'] > 0 else False
+
+    def tree_children(self, list, key):
+        """Returns immediate children of a resource or archival_object.
+
+        In cases where children don't have titles (for example, only a date) the
+        date expression for the first date object is returned.
+        """
+        children = []
+        for idx in list["precomputed_waypoints"].get(key):
+            for child in list["precomputed_waypoints"].get(key)[idx]:
+                resolved = self.aspace.client.get(child["uri"]).json()
+                children.append({
+                    "title": resolved.get("title", resolved.get("display_string")),
+                    "ref": child["uri"],
+                    "level": child["level"],
+                    "order": child["position"],
+                    "dates": get_date_string(resolved.get("dates", [])),
+                    "description": get_description(resolved.get("notes", [])),
+                    "type": "collection" if child["child_count"] > 0 else "object"})
+        return children
+
+    def get_resource_children(self, uri):
+        tree_root = self.aspace.client.get(
+            "{}/tree/root".format(uri.rstrip("/"))).json()
+        return self.tree_children(tree_root, "") if tree_root["child_count"] > 0 else []
+
+    def get_archival_object_children(self, resource_uri, object_uri):
+        tree_node = self.aspace.client.get(
+            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
+        return self.tree_children(tree_node, object_uri)
+
+    def resolve_cartographer_ancestor(self, ancestor):
+        resolved = self.aspace.client.get(
+            ancestor["archivesspace_uri"],
+            params={"resolve": ["linked_agents", "subjects"]}).json()
+        ancestor["ref"] = ancestor["archivesspace_uri"]
+        del ancestor["archivesspace_uri"]
+        ancestor["_resolved"] = resolved
+        return combine_references(ancestor)
