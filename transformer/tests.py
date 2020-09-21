@@ -38,6 +38,7 @@ class TransformerTest(TestCase):
                     self.check_references(transformed)
                     self.check_uri(transformed)
                     self.check_group(source, transformed)
+                    self.check_formats(transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -52,7 +53,7 @@ class TransformerTest(TestCase):
                                             (date_source_key, "dates"),
                                             ("extents", "extents"),
                                             ("children", "children")]:
-            source_len = len(source.get(source_key, []))
+            source_len = len([n for n in source.get(source_key, []) if n["publish"]]) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
                              "Found {} {} in source but {} {} in transformed.".format(
@@ -112,6 +113,14 @@ class TransformerTest(TestCase):
             self.assertEqual(group["identifier"], "/collections/{}".format(identifier_from_uri(source["ancestors"][-1]["ref"])))
         else:
             self.assertEqual(group["identifier"], transformed.get("uri"))
+
+    def check_formats(self, transformed):
+        """Cary Reich papers have `Sound recordings` as a subject term at the top
+        level, so all objects from this collection should include `audio` in the
+        formats list.
+        """
+        if transformed["group"]["identifier"] == "/collections/gfvm2HihpLwCTnKgpDtdhR":
+            self.assertIn("audio", transformed.get("formats"))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
