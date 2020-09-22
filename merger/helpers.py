@@ -46,7 +46,7 @@ def get_description(notes):
     """Gets text from all published Scope and Contents notes."""
     description_strings = []
     for note in [n for n in notes if all([n.get("type") == "scopecontent", n["publish"]])]:
-        description_strings += [sn.get("content") for sn in note.get("subnotes")]
+        description_strings += [sn.get("content", "") for sn in note.get("subnotes")]
     return ", ".join(description_strings)
 
 
