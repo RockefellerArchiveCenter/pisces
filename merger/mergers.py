@@ -232,21 +232,26 @@ class ResourceMerger(BaseMerger):
     def get_cartographer_data(self, object):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
-        data = {"ancestors": []}
+        data = {"ancestors": [], "children": []}
         resp = self.cartographer_client.get(
             "/api/find-by-uri/", params={"uri": object["uri"]})
         if resp.status_code == 200:
             json_data = resp.json()
             if json_data["count"] > 0:
-                for a in json_data["results"][0].get("ancestors", []):
+                result = json_data["results"][0]
+                for a in result.get("ancestors", []):
                     data["ancestors"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
+                for a in result.get("children", []):
+                    data["children"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
         return data
 
     def get_archivesspace_data(self, object):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
-        data = {"children": []}
-        data["children"] = self.aspace_helper.get_resource_children(object["uri"])
+        data = {}
+        children = self.aspace_helper.get_resource_children(object["uri"])
+        if len(children):
+            data["children"] = children
         return data
 
     def combine_data(self, object, additional_data):
