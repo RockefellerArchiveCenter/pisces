@@ -136,6 +136,8 @@ class ArchivesSpaceHelper:
             ancestor["archivesspace_uri"],
             params={"resolve": ["linked_agents", "subjects"]}).json()
         ancestor["ref"] = ancestor["archivesspace_uri"]
+        ancestor["type"] = "collection"
+        ancestor["dates"] = get_date_string(resolved.get("dates"))
+        ancestor["description"] = get_description(resolved.get("notes"))
         del ancestor["archivesspace_uri"]
-        ancestor["_resolved"] = resolved
         return combine_references(ancestor)
