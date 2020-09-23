@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/443",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/foWN8FyB4e4rjjAZc7VgNQ",
+        "title": "Syphilis"
+    },
+    "term_type": "topical",
+    "title": "Syphilis",
+    "type": "term",
+    "uri": "/terms/foWN8FyB4e4rjjAZc7VgNQ"
+}

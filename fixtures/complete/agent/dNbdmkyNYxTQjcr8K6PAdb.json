@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/1888",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/1888",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "dNbdmkyNYxTQjcr8K6PAdb",
+                "relator": null,
+                "role": "creator",
+                "title": "Wyckoff, Gene",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/dNbdmkyNYxTQjcr8K6PAdb",
+        "title": "Wyckoff, Gene"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/1888",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "dNbdmkyNYxTQjcr8K6PAdb",
+            "relator": null,
+            "role": "creator",
+            "title": "Wyckoff, Gene",
+            "type": "person"
+        }
+    ],
+    "title": "Wyckoff, Gene",
+    "type": "agent",
+    "uri": "/agents/dNbdmkyNYxTQjcr8K6PAdb"
+}

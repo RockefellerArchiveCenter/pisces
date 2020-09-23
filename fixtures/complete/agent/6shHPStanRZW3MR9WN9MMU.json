@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20012",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20012",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "6shHPStanRZW3MR9WN9MMU",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. International Health Board",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/6shHPStanRZW3MR9WN9MMU",
+        "title": "Rockefeller Foundation. International Health Board"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20012",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "6shHPStanRZW3MR9WN9MMU",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. International Health Board",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. International Health Board",
+    "type": "agent",
+    "uri": "/agents/6shHPStanRZW3MR9WN9MMU"
+}

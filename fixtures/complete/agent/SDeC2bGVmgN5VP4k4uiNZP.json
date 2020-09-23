@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1907",
+            "end": "1999",
+            "expression": "1907-1999",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/527",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/527",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "SDeC2bGVmgN5VP4k4uiNZP",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Mary (Mary Todhunter Clark)",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1907",
+                "end": "1999",
+                "expression": "1907-1999",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/SDeC2bGVmgN5VP4k4uiNZP",
+        "title": "Rockefeller, Mary (Mary Todhunter Clark)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/527",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "SDeC2bGVmgN5VP4k4uiNZP",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, Mary (Mary Todhunter Clark)",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, Mary (Mary Todhunter Clark)",
+    "type": "agent",
+    "uri": "/agents/SDeC2bGVmgN5VP4k4uiNZP"
+}

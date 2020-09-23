@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/1885",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/1885",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "24Hsb33yn8k2HGyZ7Nb2C2",
+                "relator": null,
+                "role": "creator",
+                "title": "Danzig, Jerry A.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/24Hsb33yn8k2HGyZ7Nb2C2",
+        "title": "Danzig, Jerry A."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/1885",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "24Hsb33yn8k2HGyZ7Nb2C2",
+            "relator": null,
+            "role": "creator",
+            "title": "Danzig, Jerry A.",
+            "type": "person"
+        }
+    ],
+    "title": "Danzig, Jerry A.",
+    "type": "agent",
+    "uri": "/agents/24Hsb33yn8k2HGyZ7Nb2C2"
+}

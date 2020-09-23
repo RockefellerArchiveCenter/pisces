@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/102",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/102",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "feDoZAx4EuqVoaLxENcj6L",
+                "relator": null,
+                "role": "creator",
+                "title": "Hinman, George",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/feDoZAx4EuqVoaLxENcj6L",
+        "title": "Hinman, George"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/102",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "feDoZAx4EuqVoaLxENcj6L",
+            "relator": null,
+            "role": "creator",
+            "title": "Hinman, George",
+            "type": "person"
+        }
+    ],
+    "title": "Hinman, George",
+    "type": "agent",
+    "uri": "/agents/feDoZAx4EuqVoaLxENcj6L"
+}

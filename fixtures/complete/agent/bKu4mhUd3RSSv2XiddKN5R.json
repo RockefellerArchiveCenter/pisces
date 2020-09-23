@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/45",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/45",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bKu4mhUd3RSSv2XiddKN5R",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Mexico",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/bKu4mhUd3RSSv2XiddKN5R",
+        "title": "Rockefeller Foundation. Mexico"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/45",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bKu4mhUd3RSSv2XiddKN5R",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Mexico",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Mexico",
+    "type": "agent",
+    "uri": "/agents/bKu4mhUd3RSSv2XiddKN5R"
+}

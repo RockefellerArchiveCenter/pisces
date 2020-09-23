@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/4907",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4907",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "cGhhUy2bzfyhUM2tw7A3tq",
+                "relator": null,
+                "role": "creator",
+                "title": "International Basic Economy Corporation",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/cGhhUy2bzfyhUM2tw7A3tq",
+        "title": "International Basic Economy Corporation"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4907",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "cGhhUy2bzfyhUM2tw7A3tq",
+            "relator": null,
+            "role": "creator",
+            "title": "International Basic Economy Corporation",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "International Basic Economy Corporation",
+    "type": "agent",
+    "uri": "/agents/cGhhUy2bzfyhUM2tw7A3tq"
+}

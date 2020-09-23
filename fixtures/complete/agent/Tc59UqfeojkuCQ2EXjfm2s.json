@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/352",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/352",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Tc59UqfeojkuCQ2EXjfm2s",
+                "relator": null,
+                "role": "creator",
+                "title": "Ruebhausen, Oscar M.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Tc59UqfeojkuCQ2EXjfm2s",
+        "title": "Ruebhausen, Oscar M."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/352",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Tc59UqfeojkuCQ2EXjfm2s",
+            "relator": null,
+            "role": "creator",
+            "title": "Ruebhausen, Oscar M.",
+            "type": "person"
+        }
+    ],
+    "title": "Ruebhausen, Oscar M.",
+    "type": "agent",
+    "uri": "/agents/Tc59UqfeojkuCQ2EXjfm2s"
+}

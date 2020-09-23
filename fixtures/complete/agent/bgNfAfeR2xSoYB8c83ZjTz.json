@@ -1,0 +1,69 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/48",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/48",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bgNfAfeR2xSoYB8c83ZjTz",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. International Health Board",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/bgNfAfeR2xSoYB8c83ZjTz",
+        "title": "Rockefeller Foundation. International Health Board"
+    },
+    "notes": [
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928)."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "biographical statement",
+            "type": "bioghist"
+        }
+    ],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/48",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bgNfAfeR2xSoYB8c83ZjTz",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. International Health Board",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. International Health Board",
+    "type": "agent",
+    "uri": "/agents/bgNfAfeR2xSoYB8c83ZjTz"
+}

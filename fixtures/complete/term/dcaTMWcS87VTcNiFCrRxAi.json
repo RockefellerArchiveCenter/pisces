@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/4763",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/dcaTMWcS87VTcNiFCrRxAi",
+        "title": "Coronary heart disease"
+    },
+    "term_type": "topical",
+    "title": "Coronary heart disease",
+    "type": "term",
+    "uri": "/terms/dcaTMWcS87VTcNiFCrRxAi"
+}

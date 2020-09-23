@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/9175",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/9175",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "aJJJGiKqtbXaUBFEtGvwP5",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Winthrop",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/aJJJGiKqtbXaUBFEtGvwP5",
+        "title": "Rockefeller, Winthrop"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/9175",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "aJJJGiKqtbXaUBFEtGvwP5",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, Winthrop",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, Winthrop",
+    "type": "agent",
+    "uri": "/agents/aJJJGiKqtbXaUBFEtGvwP5"
+}

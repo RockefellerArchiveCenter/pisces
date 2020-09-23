@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/53",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/53",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "2K5b2rqYzaL9HFK42W8iMG",
+                "relator": null,
+                "role": "creator",
+                "title": "Unesco",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/2K5b2rqYzaL9HFK42W8iMG",
+        "title": "Unesco"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/53",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "2K5b2rqYzaL9HFK42W8iMG",
+            "relator": null,
+            "role": "creator",
+            "title": "Unesco",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Unesco",
+    "type": "agent",
+    "uri": "/agents/2K5b2rqYzaL9HFK42W8iMG"
+}

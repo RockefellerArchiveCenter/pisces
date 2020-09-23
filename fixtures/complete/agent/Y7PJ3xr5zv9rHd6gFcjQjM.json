@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/9051",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/9051",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Y7PJ3xr5zv9rHd6gFcjQjM",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, John D. (John Davison)",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Y7PJ3xr5zv9rHd6gFcjQjM",
+        "title": "Rockefeller, John D. (John Davison)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/9051",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Y7PJ3xr5zv9rHd6gFcjQjM",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, John D. (John Davison)",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, John D. (John Davison)",
+    "type": "agent",
+    "uri": "/agents/Y7PJ3xr5zv9rHd6gFcjQjM"
+}

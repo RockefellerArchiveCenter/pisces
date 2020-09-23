@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": null,
+            "end": null,
+            "expression": "1908-",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "single"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/529",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/529",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "2qq5gjQEPwerbwS7vU3tgA",
+                "relator": null,
+                "role": "creator",
+                "title": "Whitman, Ann",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": null,
+                "end": null,
+                "expression": "1908-",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "single"
+            }
+        ],
+        "identifier": "/agents/2qq5gjQEPwerbwS7vU3tgA",
+        "title": "Whitman, Ann"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/529",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "2qq5gjQEPwerbwS7vU3tgA",
+            "relator": null,
+            "role": "creator",
+            "title": "Whitman, Ann",
+            "type": "person"
+        }
+    ],
+    "title": "Whitman, Ann",
+    "type": "agent",
+    "uri": "/agents/2qq5gjQEPwerbwS7vU3tgA"
+}

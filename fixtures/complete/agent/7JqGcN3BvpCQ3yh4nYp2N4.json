@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/44",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/44",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "7JqGcN3BvpCQ3yh4nYp2N4",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Cali (Colombia)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/7JqGcN3BvpCQ3yh4nYp2N4",
+        "title": "Rockefeller Foundation. Cali (Colombia)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/44",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "7JqGcN3BvpCQ3yh4nYp2N4",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Cali (Colombia)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Cali (Colombia)",
+    "type": "agent",
+    "uri": "/agents/7JqGcN3BvpCQ3yh4nYp2N4"
+}

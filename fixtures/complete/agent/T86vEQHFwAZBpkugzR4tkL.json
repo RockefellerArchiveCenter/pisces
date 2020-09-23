@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1903",
+            "end": "1980",
+            "expression": "1903-1980",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/143",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/143",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "T86vEQHFwAZBpkugzR4tkL",
+                "relator": null,
+                "role": "creator",
+                "title": "Marshall, John",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1903",
+                "end": "1980",
+                "expression": "1903-1980",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/T86vEQHFwAZBpkugzR4tkL",
+        "title": "Marshall, John"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/143",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "T86vEQHFwAZBpkugzR4tkL",
+            "relator": null,
+            "role": "creator",
+            "title": "Marshall, John",
+            "type": "person"
+        }
+    ],
+    "title": "Marshall, John",
+    "type": "agent",
+    "uri": "/agents/T86vEQHFwAZBpkugzR4tkL"
+}

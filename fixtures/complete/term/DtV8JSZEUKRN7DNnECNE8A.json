@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/1429",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/DtV8JSZEUKRN7DNnECNE8A",
+        "title": "Educational change"
+    },
+    "term_type": "topical",
+    "title": "Educational change",
+    "type": "term",
+    "uri": "/terms/DtV8JSZEUKRN7DNnECNE8A"
+}

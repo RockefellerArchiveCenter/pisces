@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/3396",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/3396",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "NzTArHx5MFjDjbwyFqCsuf",
+                "relator": null,
+                "role": "creator",
+                "title": "Lyman, Richard W.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/NzTArHx5MFjDjbwyFqCsuf",
+        "title": "Lyman, Richard W."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/3396",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "NzTArHx5MFjDjbwyFqCsuf",
+            "relator": null,
+            "role": "creator",
+            "title": "Lyman, Richard W.",
+            "type": "person"
+        }
+    ],
+    "title": "Lyman, Richard W.",
+    "type": "agent",
+    "uri": "/agents/NzTArHx5MFjDjbwyFqCsuf"
+}

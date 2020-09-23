@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/42",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/byiCJk5LDvFApuUCDNjdxk",
+        "title": "Sound recordings"
+    },
+    "term_type": "genre_form",
+    "title": "Sound recordings",
+    "type": "term",
+    "uri": "/terms/byiCJk5LDvFApuUCDNjdxk"
+}

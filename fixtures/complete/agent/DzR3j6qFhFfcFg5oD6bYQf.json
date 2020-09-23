@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/51",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/51",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "DzR3j6qFhFfcFg5oD6bYQf",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Division of Medicine and Public Health",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/DzR3j6qFhFfcFg5oD6bYQf",
+        "title": "Rockefeller Foundation. Division of Medicine and Public Health"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/51",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "DzR3j6qFhFfcFg5oD6bYQf",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Division of Medicine and Public Health",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Division of Medicine and Public Health",
+    "type": "agent",
+    "uri": "/agents/DzR3j6qFhFfcFg5oD6bYQf"
+}

@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/20",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/BDt7KxpJNmTgWpMnwJNvau",
+        "title": "Brazil"
+    },
+    "term_type": "geographic",
+    "title": "Brazil",
+    "type": "term",
+    "uri": "/terms/BDt7KxpJNmTgWpMnwJNvau"
+}

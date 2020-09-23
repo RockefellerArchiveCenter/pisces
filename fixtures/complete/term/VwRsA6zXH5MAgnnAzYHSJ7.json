@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/11",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/VwRsA6zXH5MAgnnAzYHSJ7",
+        "title": "United States"
+    },
+    "term_type": "geographic",
+    "title": "United States",
+    "type": "term",
+    "uri": "/terms/VwRsA6zXH5MAgnnAzYHSJ7"
+}

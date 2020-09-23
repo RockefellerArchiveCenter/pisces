@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/28",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/8CbxTJnjNb5GrkgqseL7kh",
+        "title": "Governors -- Election -- New York (State) -- 1970"
+    },
+    "term_type": "topical",
+    "title": "Governors -- Election -- New York (State) -- 1970",
+    "type": "term",
+    "uri": "/terms/8CbxTJnjNb5GrkgqseL7kh"
+}

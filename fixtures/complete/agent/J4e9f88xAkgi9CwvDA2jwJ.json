@@ -1,0 +1,87 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1906",
+            "end": "1982",
+            "expression": "1906-1982",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/141",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/141",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "J4e9f88xAkgi9CwvDA2jwJ",
+                "relator": null,
+                "role": "creator",
+                "title": "Harrar, J. George (Jacob George)",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1906",
+                "end": "1982",
+                "expression": "1906-1982",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/J4e9f88xAkgi9CwvDA2jwJ",
+        "title": "Harrar, J. George (Jacob George)"
+    },
+    "notes": [
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "The Rockefeller Foundation International Health Commission is later called the Rockefeller Foundation International Health Board. The Rockefeller Foundation International Health Board was disbanded and an International Health Division was organized (1927-1928)."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "biographical statement",
+            "type": "bioghist"
+        }
+    ],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/141",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "J4e9f88xAkgi9CwvDA2jwJ",
+            "relator": null,
+            "role": "creator",
+            "title": "Harrar, J. George (Jacob George)",
+            "type": "person"
+        }
+    ],
+    "title": "Harrar, J. George (Jacob George)",
+    "type": "agent",
+    "uri": "/agents/J4e9f88xAkgi9CwvDA2jwJ"
+}

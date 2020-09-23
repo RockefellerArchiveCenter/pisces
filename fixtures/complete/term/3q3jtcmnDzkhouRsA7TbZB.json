@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/27",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/3q3jtcmnDzkhouRsA7TbZB",
+        "title": "Education"
+    },
+    "term_type": "topical",
+    "title": "Education",
+    "type": "term",
+    "uri": "/terms/3q3jtcmnDzkhouRsA7TbZB"
+}

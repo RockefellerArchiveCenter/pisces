@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/526",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/526",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "MwP9f4PtjGmAZF754wS4pH",
+                "relator": null,
+                "role": "creator",
+                "title": "Morrow, Hugh",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/MwP9f4PtjGmAZF754wS4pH",
+        "title": "Morrow, Hugh"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/526",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "MwP9f4PtjGmAZF754wS4pH",
+            "relator": null,
+            "role": "creator",
+            "title": "Morrow, Hugh",
+            "type": "person"
+        }
+    ],
+    "title": "Morrow, Hugh",
+    "type": "agent",
+    "uri": "/agents/MwP9f4PtjGmAZF754wS4pH"
+}

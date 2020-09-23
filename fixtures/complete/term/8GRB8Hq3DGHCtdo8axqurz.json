@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/33",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/8GRB8Hq3DGHCtdo8axqurz",
+        "title": "Agriculture"
+    },
+    "term_type": "topical",
+    "title": "Agriculture",
+    "type": "term",
+    "uri": "/terms/8GRB8Hq3DGHCtdo8axqurz"
+}

@@ -1,0 +1,318 @@
+{
+    "ancestors": [
+        {
+            "dates": "1959-1970",
+            "description": "This series contains the office files of George L. Hinman. They document official activities in the execution of his duties as a member of Rockefeller's staff. The actions, decisions, and exchanges of information or points of view documented here occurred in the course of proposing and implementing policies for the Rockefeller administration, political campaigns, and/or Rockefeller's personal activities. However, unless a document is personally signed by Nelson A. Rockefeller, or is referred to in a document personally signed by him, it should not be assumed he saw the document or was aware of its existence or substance. Furthermore, researchers should bear in mind that staff files may contain documents or drafts addressed to Rockefeller that were never shown to him.\n\n Issues of the \"Congressional Quarterly\" from 1962-1971 are also available. Complete yearly runs exist for 1964-1967. Some issues were annotated by Mr. Hinman.",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/3",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Zivy3B6P5nBaZ24Kb8cWEq",
+            "level": "collection",
+            "order": null,
+            "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2",
+            "type": "collection"
+        },
+        {
+            "dates": "1950s-1980s (Bulk 1982)",
+            "description": "This collection primarily contains transcripts, audiotapes, and notes of interviews conducted by author Cary Reich during research for the first volume, and anticipated second volume, of \"The Life of Nelson A. Rockefeller.\" Additionally, it contains partial audiotaped interviews for Reich's \"New York Times\" expose \"The Creative Mind: The Innovator\" from April 21, 1985, as well as other financial articles. \n\nIn addition, there are audio interviews conducted by Patricia Linden, who was gathering stories for a \"Town and Country\" magazine article (\"Rockefellers' Monumental Legacy,\" September 1982) describing the Rockefeller legacy in New York, as well as her own unrealized unauthored biography of Nelson Rockefeller.\n\nLastly, the collection has subject files primarily consisting of research materials and news clippings pertaining to a variety of significant events in Nelson Rockfeller's life, including but not limited to the 1964 U.S. Presidential campaign, the International Basic Economy Corporation (IBEC), his gubernatorial tenure, and the U.S. vice presidency.",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/4",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gfvm2HihpLwCTnKgpDtdhR",
+            "level": "collection",
+            "order": null,
+            "title": "Cary Reich papers",
+            "type": "collection"
+        }
+    ],
+    "category": "collection",
+    "children": [
+        {
+            "dates": "",
+            "description": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2336",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "kqx4Z5uJzTUF2RhdKbF8bB",
+            "level": "series",
+            "order": 0,
+            "title": "Original Audio Tapes",
+            "type": "collection"
+        }
+    ],
+    "creators": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/103",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+            "relator": null,
+            "role": "creator",
+            "title": "Reich, Cary",
+            "type": "person"
+        },
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/104",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bsUcLegffndsdinbdfKZpK",
+            "relator": null,
+            "role": "creator",
+            "title": "Linden, Patricia",
+            "type": "person"
+        }
+    ],
+    "dates": [
+        {
+            "begin": "1950",
+            "end": "1989",
+            "expression": "1950s-1980s (Bulk 1982)",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [
+        {
+            "type": "Cubic Feet",
+            "value": "13.86"
+        }
+    ],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/101/resources/4",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents",
+        "audio"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/103",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+                "relator": null,
+                "role": "creator",
+                "title": "Reich, Cary",
+                "type": "person"
+            },
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/104",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bsUcLegffndsdinbdfKZpK",
+                "relator": null,
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1950",
+                "end": "1989",
+                "expression": "1950s-1980s (Bulk 1982)",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/gfvm2HihpLwCTnKgpDtdhR",
+        "title": "Cary Reich papers"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "level": "collection",
+    "notes": [
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC.\n\nResearchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Conditions Governing Access",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "As received."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Arrangement",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <a xlink:href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</a>"
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Preferred Citation",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "This collection primarily contains transcripts, audiotapes, and notes of interviews conducted by author Cary Reich during research for the first volume, and anticipated second volume, of \"The Life of Nelson A. Rockefeller.\" Additionally, it contains partial audiotaped interviews for Reich's \"New York Times\" expose \"The Creative Mind: The Innovator\" from April 21, 1985, as well as other financial articles. \n\nIn addition, there are audio interviews conducted by Patricia Linden, who was gathering stories for a \"Town and Country\" magazine article (\"Rockefellers' Monumental Legacy,\" September 1982) describing the Rockefeller legacy in New York, as well as her own unrealized unauthored biography of Nelson Rockefeller.\n\nLastly, the collection has subject files primarily consisting of research materials and news clippings pertaining to a variety of significant events in Nelson Rockfeller's life, including but not limited to the 1964 U.S. Presidential campaign, the International Basic Economy Corporation (IBEC), his gubernatorial tenure, and the U.S. vice presidency."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Scope and Contents",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Papers were transferred to RAC in 2012 by the estate of Cary Reich."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Immediate Source of Acquisition",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "The Cary Reich Papers were donated to Rockefeller Archive Center in 2012. The Cary Reich estate retains copyright and all associated intellectual property rights."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Conditions Governing Use",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Minimal processing by Robert Battaly, 2016. Initial inventory created by Diane April, 2013. Audiocassettes were digitized in 2016-2017 and Series 2: Oral History Audio records were modified by Zachary Leming in 2019."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Processing Information",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Digital audio access copies for Series 2 were often made from multiple sources as individual interviews were spread across several audiocassettes. New Identification Numbers were provided to all digital audio access copies (Series 2: Oral History Audio). For all records in Series 2, there is an unpublished processing note that identifies the audiocassette sources that correlate to each title. Box and location information for all original source audiocassettes is in the unpublished Series 3: Original Audio Tapes."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Processing Information",
+            "type": "multipart"
+        }
+    ],
+    "online": false,
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/103",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+            "relator": null,
+            "role": "creator",
+            "title": "Reich, Cary",
+            "type": "person"
+        },
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/104",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bsUcLegffndsdinbdfKZpK",
+            "relator": null,
+            "role": "creator",
+            "title": "Linden, Patricia",
+            "type": "person"
+        }
+    ],
+    "rights": [],
+    "terms": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/subjects/42",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "byiCJk5LDvFApuUCDNjdxk",
+            "title": "Sound recordings",
+            "type": "genre_form"
+        }
+    ],
+    "title": "Cary Reich papers",
+    "type": "collection",
+    "uri": "/collections/gfvm2HihpLwCTnKgpDtdhR"
+}

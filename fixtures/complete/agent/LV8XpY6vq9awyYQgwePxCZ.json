@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/179",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/179",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "LV8XpY6vq9awyYQgwePxCZ",
+                "relator": null,
+                "role": "creator",
+                "title": "Museum of Primitive Art (New York, N.Y.)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/LV8XpY6vq9awyYQgwePxCZ",
+        "title": "Museum of Primitive Art (New York, N.Y.)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/179",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "LV8XpY6vq9awyYQgwePxCZ",
+            "relator": null,
+            "role": "creator",
+            "title": "Museum of Primitive Art (New York, N.Y.)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Museum of Primitive Art (New York, N.Y.)",
+    "type": "agent",
+    "uri": "/agents/LV8XpY6vq9awyYQgwePxCZ"
+}

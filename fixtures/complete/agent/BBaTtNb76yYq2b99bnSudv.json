@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/105",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/105",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "BBaTtNb76yYq2b99bnSudv",
+                "relator": null,
+                "role": "creator",
+                "title": "Columbia University",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/BBaTtNb76yYq2b99bnSudv",
+        "title": "Columbia University"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/105",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "BBaTtNb76yYq2b99bnSudv",
+            "relator": null,
+            "role": "creator",
+            "title": "Columbia University",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Columbia University",
+    "type": "agent",
+    "uri": "/agents/BBaTtNb76yYq2b99bnSudv"
+}

@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/54",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/54",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "96QWcGYWCE5KtDqQYTuPcL",
+                "relator": null,
+                "role": "creator",
+                "title": "United States. Public Health Service",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/96QWcGYWCE5KtDqQYTuPcL",
+        "title": "United States. Public Health Service"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/54",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "96QWcGYWCE5KtDqQYTuPcL",
+            "relator": null,
+            "role": "creator",
+            "title": "United States. Public Health Service",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United States. Public Health Service",
+    "type": "agent",
+    "uri": "/agents/96QWcGYWCE5KtDqQYTuPcL"
+}

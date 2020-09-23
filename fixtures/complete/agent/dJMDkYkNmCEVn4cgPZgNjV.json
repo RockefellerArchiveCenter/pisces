@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/4896",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4896",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "dJMDkYkNmCEVn4cgPZgNjV",
+                "relator": null,
+                "role": "creator",
+                "title": "American International Association for Economic and Social Development",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/dJMDkYkNmCEVn4cgPZgNjV",
+        "title": "American International Association for Economic and Social Development"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4896",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "dJMDkYkNmCEVn4cgPZgNjV",
+            "relator": null,
+            "role": "creator",
+            "title": "American International Association for Economic and Social Development",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "American International Association for Economic and Social Development",
+    "type": "agent",
+    "uri": "/agents/dJMDkYkNmCEVn4cgPZgNjV"
+}

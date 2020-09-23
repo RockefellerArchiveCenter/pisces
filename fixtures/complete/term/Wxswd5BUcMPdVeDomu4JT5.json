@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17004",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/Wxswd5BUcMPdVeDomu4JT5",
+        "title": "International relations -- United States"
+    },
+    "term_type": "topical",
+    "title": "International relations -- United States",
+    "type": "term",
+    "uri": "/terms/Wxswd5BUcMPdVeDomu4JT5"
+}

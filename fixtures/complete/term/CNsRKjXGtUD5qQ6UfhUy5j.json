@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17091",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/CNsRKjXGtUD5qQ6UfhUy5j",
+        "title": "Agriculture -- Latin America"
+    },
+    "term_type": "topical",
+    "title": "Agriculture -- Latin America",
+    "type": "term",
+    "uri": "/terms/CNsRKjXGtUD5qQ6UfhUy5j"
+}

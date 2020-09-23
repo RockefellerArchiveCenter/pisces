@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/188",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/188",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "cZXDdxBsCpHu8Rd9CPTQPe",
+                "relator": null,
+                "role": "creator",
+                "title": "Inter-American Development Commission",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/cZXDdxBsCpHu8Rd9CPTQPe",
+        "title": "Inter-American Development Commission"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/188",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "cZXDdxBsCpHu8Rd9CPTQPe",
+            "relator": null,
+            "role": "creator",
+            "title": "Inter-American Development Commission",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Inter-American Development Commission",
+    "type": "agent",
+    "uri": "/agents/cZXDdxBsCpHu8Rd9CPTQPe"
+}

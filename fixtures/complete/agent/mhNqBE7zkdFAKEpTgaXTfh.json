@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/3247",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/3247",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "mhNqBE7zkdFAKEpTgaXTfh",
+                "relator": null,
+                "role": "creator",
+                "title": "State of New York",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/mhNqBE7zkdFAKEpTgaXTfh",
+        "title": "State of New York"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/3247",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "mhNqBE7zkdFAKEpTgaXTfh",
+            "relator": null,
+            "role": "creator",
+            "title": "State of New York",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "State of New York",
+    "type": "agent",
+    "uri": "/agents/mhNqBE7zkdFAKEpTgaXTfh"
+}

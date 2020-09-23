@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/348",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/348",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "SKk3hEdgLkhE5gBb6R75ej",
+                "relator": null,
+                "role": "creator",
+                "title": "Consultative Group on International Agricultural Research",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/SKk3hEdgLkhE5gBb6R75ej",
+        "title": "Consultative Group on International Agricultural Research"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/348",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "SKk3hEdgLkhE5gBb6R75ej",
+            "relator": null,
+            "role": "creator",
+            "title": "Consultative Group on International Agricultural Research",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Consultative Group on International Agricultural Research",
+    "type": "agent",
+    "uri": "/agents/SKk3hEdgLkhE5gBb6R75ej"
+}

@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/103",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/103",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+                "relator": null,
+                "role": "creator",
+                "title": "Reich, Cary",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/bq4qoqbgjRpaLBCwGfb5fK",
+        "title": "Reich, Cary"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/103",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+            "relator": null,
+            "role": "creator",
+            "title": "Reich, Cary",
+            "type": "person"
+        }
+    ],
+    "title": "Reich, Cary",
+    "type": "agent",
+    "uri": "/agents/bq4qoqbgjRpaLBCwGfb5fK"
+}

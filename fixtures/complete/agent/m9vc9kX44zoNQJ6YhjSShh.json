@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/530",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/530",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "m9vc9kX44zoNQJ6YhjSShh",
+                "relator": null,
+                "role": "creator",
+                "title": "Boyd, Joseph H.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/m9vc9kX44zoNQJ6YhjSShh",
+        "title": "Boyd, Joseph H."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/530",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "m9vc9kX44zoNQJ6YhjSShh",
+            "relator": null,
+            "role": "creator",
+            "title": "Boyd, Joseph H.",
+            "type": "person"
+        }
+    ],
+    "title": "Boyd, Joseph H.",
+    "type": "agent",
+    "uri": "/agents/m9vc9kX44zoNQJ6YhjSShh"
+}

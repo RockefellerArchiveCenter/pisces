@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/26",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/GpyVLH8fSSMrjC52XcGKX5",
+        "title": "Economics"
+    },
+    "term_type": "topical",
+    "title": "Economics",
+    "type": "term",
+    "uri": "/terms/GpyVLH8fSSMrjC52XcGKX5"
+}

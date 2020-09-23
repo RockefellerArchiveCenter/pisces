@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/8",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/JnwF4PfqgMCa8onRGmEtTJ",
+        "title": "State governments -- United States"
+    },
+    "term_type": "topical",
+    "title": "State governments -- United States",
+    "type": "term",
+    "uri": "/terms/JnwF4PfqgMCa8onRGmEtTJ"
+}

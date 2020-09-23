@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17090",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/Ck5Rm2pSeGRvnYAW92hX38",
+        "title": "Governors -- Election -- New York (State) -- 1962"
+    },
+    "term_type": "topical",
+    "title": "Governors -- Election -- New York (State) -- 1962",
+    "type": "term",
+    "uri": "/terms/Ck5Rm2pSeGRvnYAW92hX38"
+}

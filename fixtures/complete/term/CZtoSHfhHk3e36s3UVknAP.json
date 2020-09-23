@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/12",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/CZtoSHfhHk3e36s3UVknAP",
+        "title": "Business"
+    },
+    "term_type": "topical",
+    "title": "Business",
+    "type": "term",
+    "uri": "/terms/CZtoSHfhHk3e36s3UVknAP"
+}

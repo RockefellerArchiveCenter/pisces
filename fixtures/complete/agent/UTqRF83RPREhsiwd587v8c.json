@@ -1,0 +1,54 @@
+{
+    "agent_type": "family",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/families/11",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/families/11",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "UTqRF83RPREhsiwd587v8c",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation",
+            "type": "family"
+        }
+    ],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/families/11",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "UTqRF83RPREhsiwd587v8c",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation",
+                "type": "family"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/UTqRF83RPREhsiwd587v8c",
+        "title": "Rockefeller Foundation"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [],
+    "title": "Rockefeller Foundation",
+    "type": "agent",
+    "uri": "/agents/UTqRF83RPREhsiwd587v8c"
+}

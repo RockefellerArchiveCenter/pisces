@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1890",
+            "end": "1957",
+            "expression": "1890-1957",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/142",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/142",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "WEMac29DykyH9igHzivZ7n",
+                "relator": null,
+                "role": "creator",
+                "title": "Gregg, Alan",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1890",
+                "end": "1957",
+                "expression": "1890-1957",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/WEMac29DykyH9igHzivZ7n",
+        "title": "Gregg, Alan"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/142",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "WEMac29DykyH9igHzivZ7n",
+            "relator": null,
+            "role": "creator",
+            "title": "Gregg, Alan",
+            "type": "person"
+        }
+    ],
+    "title": "Gregg, Alan",
+    "type": "agent",
+    "uri": "/agents/WEMac29DykyH9igHzivZ7n"
+}

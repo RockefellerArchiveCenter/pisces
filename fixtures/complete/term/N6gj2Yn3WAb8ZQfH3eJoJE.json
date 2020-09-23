@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/1681",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/N6gj2Yn3WAb8ZQfH3eJoJE",
+        "title": "Program budgeting"
+    },
+    "term_type": "topical",
+    "title": "Program budgeting",
+    "type": "term",
+    "uri": "/terms/N6gj2Yn3WAb8ZQfH3eJoJE"
+}

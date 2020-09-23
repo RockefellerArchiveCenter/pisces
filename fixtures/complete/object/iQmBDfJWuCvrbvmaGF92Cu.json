@@ -1,0 +1,116 @@
+{
+    "ancestors": [
+        {
+            "dates": "",
+            "description": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2336",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "kqx4Z5uJzTUF2RhdKbF8bB",
+            "level": "series",
+            "order": null,
+            "title": "Original Audio Tapes",
+            "type": "collection"
+        },
+        {
+            "dates": "1950s-1980s (Bulk 1982)",
+            "description": "This collection primarily contains transcripts, audiotapes, and notes of interviews conducted by author Cary Reich during research for the first volume, and anticipated second volume, of \"The Life of Nelson A. Rockefeller.\" Additionally, it contains partial audiotaped interviews for Reich's \"New York Times\" expose \"The Creative Mind: The Innovator\" from April 21, 1985, as well as other financial articles. \n\nIn addition, there are audio interviews conducted by Patricia Linden, who was gathering stories for a \"Town and Country\" magazine article (\"Rockefellers' Monumental Legacy,\" September 1982) describing the Rockefeller legacy in New York, as well as her own unrealized unauthored biography of Nelson Rockefeller.\n\nLastly, the collection has subject files primarily consisting of research materials and news clippings pertaining to a variety of significant events in Nelson Rockfeller's life, including but not limited to the 1964 U.S. Presidential campaign, the International Basic Economy Corporation (IBEC), his gubernatorial tenure, and the U.S. vice presidency.",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/4",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gfvm2HihpLwCTnKgpDtdhR",
+            "level": "collection",
+            "order": null,
+            "title": "Cary Reich papers",
+            "type": "collection"
+        }
+    ],
+    "category": "collection",
+    "dates": [
+        {
+            "begin": "1950",
+            "end": "1989",
+            "expression": "1950s-1980s (Bulk 1982)",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/101/archival_objects/2740",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents",
+        "audio"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/103",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+                "relator": null,
+                "role": "creator",
+                "title": "Reich, Cary",
+                "type": "person"
+            },
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/104",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bsUcLegffndsdinbdfKZpK",
+                "relator": null,
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1950",
+                "end": "1989",
+                "expression": "1950s-1980s (Bulk 1982)",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/gfvm2HihpLwCTnKgpDtdhR",
+        "title": "Cary Reich papers"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "notes": [],
+    "online": false,
+    "organizations": [],
+    "people": [],
+    "rights": [],
+    "terms": [],
+    "title": "AV 6316 - AV 6367",
+    "tree_position": 0,
+    "type": "object",
+    "uri": "/objects/iQmBDfJWuCvrbvmaGF92Cu"
+}

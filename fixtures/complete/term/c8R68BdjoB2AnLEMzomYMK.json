@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/35",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/c8R68BdjoB2AnLEMzomYMK",
+        "title": "Federal government -- United States"
+    },
+    "term_type": "topical",
+    "title": "Federal government -- United States",
+    "type": "term",
+    "uri": "/terms/c8R68BdjoB2AnLEMzomYMK"
+}

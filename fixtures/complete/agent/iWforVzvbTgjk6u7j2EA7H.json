@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20001",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20001",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "iWforVzvbTgjk6u7j2EA7H",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Institute for Medical Research",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/iWforVzvbTgjk6u7j2EA7H",
+        "title": "Rockefeller Institute for Medical Research"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20001",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "iWforVzvbTgjk6u7j2EA7H",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Institute for Medical Research",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Institute for Medical Research",
+    "type": "agent",
+    "uri": "/agents/iWforVzvbTgjk6u7j2EA7H"
+}

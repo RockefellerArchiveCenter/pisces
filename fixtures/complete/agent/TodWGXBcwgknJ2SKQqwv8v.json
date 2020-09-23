@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/9",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/9",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "TodWGXBcwgknJ2SKQqwv8v",
+                "relator": null,
+                "role": "creator",
+                "title": "Museum of Modern Art (New York, N.Y.)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/TodWGXBcwgknJ2SKQqwv8v",
+        "title": "Museum of Modern Art (New York, N.Y.)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/9",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "TodWGXBcwgknJ2SKQqwv8v",
+            "relator": null,
+            "role": "creator",
+            "title": "Museum of Modern Art (New York, N.Y.)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Museum of Modern Art (New York, N.Y.)",
+    "type": "agent",
+    "uri": "/agents/TodWGXBcwgknJ2SKQqwv8v"
+}

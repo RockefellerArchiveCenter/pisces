@@ -1,0 +1,207 @@
+{
+    "ancestors": [],
+    "category": "collection",
+    "children": [
+        {
+            "dates": null,
+            "description": null,
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/2/resources/13",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "nT52N8iK5i5XS5FLn9HUVD",
+            "level": "collection",
+            "order": null,
+            "title": "Peter F. Geithner papers",
+            "type": "collection"
+        },
+        {
+            "dates": null,
+            "description": null,
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/2/resources/318",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "QQNt9DQFsYRoXjP8C7SSc9",
+            "level": "otherlevel",
+            "order": null,
+            "title": "Rockefeller Foundation records, China Medical Board records, RG 4",
+            "type": "collection"
+        }
+    ],
+    "creators": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4884",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "NCf9Q6yeMM5XdmJjwWHQU4",
+            "relator": "aut",
+            "role": "creator",
+            "title": "Rockefeller Foundation",
+            "type": "organization"
+        }
+    ],
+    "dates": [
+        {
+            "begin": "1905",
+            "end": "1980",
+            "expression": "circa 1905-1980",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [
+        {
+            "type": "cubic_feet",
+            "value": "88.25"
+        }
+    ],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/2/resources/93",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents",
+        "photographs"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4884",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "NCf9Q6yeMM5XdmJjwWHQU4",
+                "relator": "aut",
+                "role": "creator",
+                "title": "Rockefeller Foundation",
+                "type": "organization"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1905",
+                "end": "1980",
+                "expression": "circa 1905-1980",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/ntnzqFH9UU4BDwiYxgjaUN",
+        "title": "Rockefeller Foundation records, photographs, series 100-1000"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "level": "collection",
+    "notes": [
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Conditions Governing Access",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <a href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</a>"
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Preferred Citation",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "This collectiion is entirely made up photographs which documenti the activities of the Rockefeller Foundation during the years 1905-1980."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Scope and Contents",
+            "type": "multipart"
+        },
+        {
+            "source": "archivesspace",
+            "subnotes": [
+                {
+                    "content": [
+                        "The Rockefeller Foundation photographs are arranged by topic."
+                    ],
+                    "items": [],
+                    "type": "text"
+                }
+            ],
+            "title": "Arrangement",
+            "type": "multipart"
+        }
+    ],
+    "online": false,
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4884",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "NCf9Q6yeMM5XdmJjwWHQU4",
+            "relator": "aut",
+            "role": "creator",
+            "title": "Rockefeller Foundation",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "rights": [],
+    "terms": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/subjects/962",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "F6xjpr9U7wpT59tAjS2KWy",
+            "title": "Photographs",
+            "type": "genre_form"
+        }
+    ],
+    "title": "Rockefeller Foundation records, photographs, series 100-1000",
+    "type": "collection",
+    "uri": "/collections/ntnzqFH9UU4BDwiYxgjaUN"
+}

@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/24",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/2sikrnarrmY8ijRDvkShqg",
+        "title": "Developing countries"
+    },
+    "term_type": "topical",
+    "title": "Developing countries",
+    "type": "term",
+    "uri": "/terms/2sikrnarrmY8ijRDvkShqg"
+}

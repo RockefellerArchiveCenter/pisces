@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20024",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20024",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "5QZ5KRxQUHXECBceo4pesp",
+                "relator": null,
+                "role": "creator",
+                "title": "New York (State). Governor (1959-1973 : Rockefeller)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/5QZ5KRxQUHXECBceo4pesp",
+        "title": "New York (State). Governor (1959-1973 : Rockefeller)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20024",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "5QZ5KRxQUHXECBceo4pesp",
+            "relator": null,
+            "role": "creator",
+            "title": "New York (State). Governor (1959-1973 : Rockefeller)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "New York (State). Governor (1959-1973 : Rockefeller)",
+    "type": "agent",
+    "uri": "/agents/5QZ5KRxQUHXECBceo4pesp"
+}

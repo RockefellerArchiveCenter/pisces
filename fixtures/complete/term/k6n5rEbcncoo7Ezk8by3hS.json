@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/34",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/k6n5rEbcncoo7Ezk8by3hS",
+        "title": "Education -- Latin America"
+    },
+    "term_type": "topical",
+    "title": "Education -- Latin America",
+    "type": "term",
+    "uri": "/terms/k6n5rEbcncoo7Ezk8by3hS"
+}

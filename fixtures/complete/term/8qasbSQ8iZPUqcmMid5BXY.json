@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/32388",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/8qasbSQ8iZPUqcmMid5BXY",
+        "title": "Dry farming"
+    },
+    "term_type": "topical",
+    "title": "Dry farming",
+    "type": "term",
+    "uri": "/terms/8qasbSQ8iZPUqcmMid5BXY"
+}

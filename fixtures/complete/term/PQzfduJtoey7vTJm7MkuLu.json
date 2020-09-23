@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/32",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/PQzfduJtoey7vTJm7MkuLu",
+        "title": "Latin America"
+    },
+    "term_type": "geographic",
+    "title": "Latin America",
+    "type": "term",
+    "uri": "/terms/PQzfduJtoey7vTJm7MkuLu"
+}

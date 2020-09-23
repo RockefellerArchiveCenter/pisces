@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20021",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20021",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "nrhEHtDN4vKAt7q3vqwxW7",
+                "relator": null,
+                "role": "creator",
+                "title": "United States. Office of the Coordinator of Inter-American Affairs",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/nrhEHtDN4vKAt7q3vqwxW7",
+        "title": "United States. Office of the Coordinator of Inter-American Affairs"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20021",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "nrhEHtDN4vKAt7q3vqwxW7",
+            "relator": null,
+            "role": "creator",
+            "title": "United States. Office of the Coordinator of Inter-American Affairs",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United States. Office of the Coordinator of Inter-American Affairs",
+    "type": "agent",
+    "uri": "/agents/nrhEHtDN4vKAt7q3vqwxW7"
+}
