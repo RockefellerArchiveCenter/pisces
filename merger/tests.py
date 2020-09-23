@@ -46,7 +46,9 @@ class MergerTest(TestCase):
                 for f in os.listdir(os.path.join("fixtures", "merger", source_object_type)):
                     with open(os.path.join("fixtures", "merger", source_object_type, f), "r") as json_file:
                         source = json.load(json_file)
-                        merged, _ = merger(clients).merge(source_object_type, source)
+                        merged, t = merger(clients).merge(source_object_type, source)
+                        with open(os.path.join("fixtures", "transformer", t, "{}.json".format(merged["uri"].split("/")[-1])), "w") as df:
+                            json.dump(merged, df, indent=4, sort_keys=True)
                         self.assertNotEqual(
                             merged, False,
                             "Transformer returned an error: {}".format(merged))

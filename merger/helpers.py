@@ -52,7 +52,7 @@ def get_description(notes):
 
 def combine_references(object):
     """Adds type and title fields to references, then removes unneeded resolved objects."""
-    for key, type_key in (["ancestors", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
+    for key, type_key in (["ancestors", None], ["children", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
         for obj in object.get(key, []):
             if obj.get("_resolved"):
                 type = "collection"
@@ -136,8 +136,6 @@ class ArchivesSpaceHelper:
             ancestor["archivesspace_uri"],
             params={"resolve": ["linked_agents", "subjects"]}).json()
         ancestor["ref"] = ancestor["archivesspace_uri"]
-        ancestor["type"] = "collection"
-        ancestor["dates"] = get_date_string(resolved.get("dates"))
-        ancestor["description"] = get_description(resolved.get("notes"))
+        ancestor["_resolved"] = combine_references(resolved)
         del ancestor["archivesspace_uri"]
-        return combine_references(ancestor)
+        return ancestor
