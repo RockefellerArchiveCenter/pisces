@@ -167,7 +167,7 @@
                 }
             ],
             "title": "Conditions Governing Access",
-            "type": "multipart"
+            "type": "accessrestrict"
         },
         {
             "source": "archivesspace",
@@ -181,7 +181,7 @@
                 }
             ],
             "title": "Arrangement",
-            "type": "multipart"
+            "type": "arrangement"
         },
         {
             "source": "archivesspace",
@@ -195,7 +195,7 @@
                 }
             ],
             "title": "Preferred Citation",
-            "type": "multipart"
+            "type": "prefercite"
         },
         {
             "source": "archivesspace",
@@ -209,7 +209,7 @@
                 }
             ],
             "title": "Scope and Contents",
-            "type": "multipart"
+            "type": "scopecontent"
         },
         {
             "source": "archivesspace",
@@ -223,7 +223,7 @@
                 }
             ],
             "title": "Immediate Source of Acquisition",
-            "type": "multipart"
+            "type": "acqinfo"
         },
         {
             "source": "archivesspace",
@@ -237,7 +237,7 @@
                 }
             ],
             "title": "Conditions Governing Use",
-            "type": "multipart"
+            "type": "userestrict"
         },
         {
             "source": "archivesspace",
@@ -251,7 +251,7 @@
                 }
             ],
             "title": "Processing Information",
-            "type": "multipart"
+            "type": "processinfo"
         },
         {
             "source": "archivesspace",
@@ -265,7 +265,7 @@
                 }
             ],
             "title": "Processing Information",
-            "type": "multipart"
+            "type": "processinfo"
         }
     ],
     "online": false,
