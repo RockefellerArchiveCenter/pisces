@@ -123,7 +123,6 @@ class SourceAncestorToRecordReference(odin.Mapping):
 
     mappings = (
         ("type", None, "type"),
-        ("description", None, "description"),
         ("dates", None, "dates"),
     )
 

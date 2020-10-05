@@ -31,7 +31,6 @@ class SourceAncestor(odin.Resource):
     title = odin.StringField(null=True)
     type = odin.StringField(null=True)
     subjects = odin.ArrayOf(SourceRef, null=True)
-    description = odin.StringField(null=True)
     dates = odin.StringField(null=True)
 
 

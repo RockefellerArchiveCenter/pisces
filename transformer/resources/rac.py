@@ -42,7 +42,6 @@ class RecordReference(Reference):
     order = odin.StringField()
     level = odin.StringField()
     dates = odin.StringField()
-    description = odin.StringField()
 
 
 class AgentReference(Reference):
