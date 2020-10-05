@@ -42,14 +42,6 @@ def get_date_string(dates):
     return ", ".join(date_strings)
 
 
-def get_description(notes):
-    """Gets text from all published Scope and Contents notes."""
-    description_strings = []
-    for note in [n for n in notes if all([n.get("type") == "scopecontent", n["publish"]])]:
-        description_strings += [sn.get("content", "") for sn in note.get("subnotes")]
-    return ", ".join(description_strings)
-
-
 def combine_references(object):
     """Adds type and title fields to references, then removes unneeded resolved objects."""
     for key, type_key in (["ancestors", None], ["children", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
@@ -65,7 +57,6 @@ def combine_references(object):
                 obj["type"] = type
                 obj["title"] = obj["_resolved"].get("title", obj["_resolved"].get("display_string"))
                 obj["dates"] = get_date_string(obj["_resolved"].get("dates", []))
-                obj["description"] = get_description(obj["_resolved"].get("notes", []))
                 del obj["_resolved"]
     return object
 
@@ -110,14 +101,13 @@ class ArchivesSpaceHelper:
         children = []
         for idx in list["precomputed_waypoints"].get(key):
             for child in list["precomputed_waypoints"].get(key)[idx]:
-                resolved = self.aspace.client.get(child["uri"]).json()
+                title = child["title"] if child["title"] else self.get_date_string(child["dates"])
                 children.append({
-                    "title": resolved.get("title", resolved.get("display_string")),
+                    "title": title,
                     "ref": child["uri"],
                     "level": child["level"],
                     "order": child["position"],
-                    "dates": get_date_string(resolved.get("dates", [])),
-                    "description": get_description(resolved.get("notes", [])),
+                    "dates": get_date_string(child.get("dates", [])),
                     "type": "collection" if child["child_count"] > 0 else "object"})
         return children
 
