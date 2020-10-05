@@ -101,7 +101,7 @@ class ArchivesSpaceHelper:
         children = []
         for idx in list["precomputed_waypoints"].get(key):
             for child in list["precomputed_waypoints"].get(key)[idx]:
-                title = child["title"] if child["title"] else self.get_date_string(child["dates"])
+                title = child["title"] if child["title"] else get_date_string(child["dates"])
                 children.append({
                     "title": title,
                     "ref": child["uri"],
