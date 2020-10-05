@@ -244,9 +244,9 @@ class SourceNoteToNote(odin.Mapping):
             title = [v[1] for v in NOTE_TYPE_CHOICES if v[0] == self.source.jsonmodel_type.split("note_")[1]][0]
         return title
 
-    @odin.map_field(from_field="jsonmodel_type", to_field="type")
+    @odin.map_field(from_field="type", to_field="type")
     def type(self, value):
-        return value.split("note_", 1)[1]
+        return value if value else self.source.jsonmodel_type.split("note_", 1)[1]
 
     def map_subnotes(self, value):
         """Maps Subnotes to values based on the note type."""

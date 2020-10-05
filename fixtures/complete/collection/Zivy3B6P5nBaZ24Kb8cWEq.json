@@ -151,7 +151,7 @@
                 }
             ],
             "title": "Biographical/Historical note",
-            "type": "multipart"
+            "type": "bioghist"
         },
         {
             "source": "archivesspace",
@@ -165,7 +165,7 @@
                 }
             ],
             "title": "Biographical/Historical note",
-            "type": "multipart"
+            "type": "bioghist"
         },
         {
             "source": "archivesspace",
@@ -179,7 +179,7 @@
                 }
             ],
             "title": "Preferred Citation note",
-            "type": "multipart"
+            "type": "prefercite"
         },
         {
             "source": "archivesspace",
@@ -193,7 +193,7 @@
                 }
             ],
             "title": "File Plan note",
-            "type": "multipart"
+            "type": "fileplan"
         },
         {
             "source": "archivesspace",
@@ -207,7 +207,7 @@
                 }
             ],
             "title": "Processing Information note",
-            "type": "multipart"
+            "type": "processinfo"
         },
         {
             "source": "archivesspace",
@@ -221,7 +221,7 @@
                 }
             ],
             "title": "Conditions Governing Use note",
-            "type": "multipart"
+            "type": "userestrict"
         },
         {
             "source": "archivesspace",
@@ -235,7 +235,7 @@
                 }
             ],
             "title": "Conditions Governing Access note",
-            "type": "multipart"
+            "type": "accessrestrict"
         },
         {
             "source": "archivesspace",
@@ -249,7 +249,7 @@
                 }
             ],
             "title": "Arrangement note",
-            "type": "multipart"
+            "type": "arrangement"
         },
         {
             "source": "archivesspace",
@@ -263,7 +263,7 @@
                 }
             ],
             "title": "Other Finding Aids note",
-            "type": "multipart"
+            "type": "otherfindaid"
         },
         {
             "source": "archivesspace",
@@ -277,7 +277,7 @@
                 }
             ],
             "title": "Processing Information note",
-            "type": "multipart"
+            "type": "processinfo"
         },
         {
             "source": "archivesspace",
@@ -291,7 +291,7 @@
                 }
             ],
             "title": "Scope and Contents",
-            "type": "multipart"
+            "type": "scopecontent"
         }
     ],
     "online": false,
