@@ -92,15 +92,17 @@ class ArchivesSpaceHelper:
         tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
         return True if tree_node['child_count'] > 0 else False
 
-    def tree_children(self, list, key):
+    def tree_children(self, waypoint_count, base_uri, params):
         """Returns immediate children of a resource or archival_object.
 
         In cases where children don't have titles (for example, only a date) the
         date expression for the first date object is returned.
         """
         children = []
-        for idx in list["precomputed_waypoints"].get(key):
-            for child in list["precomputed_waypoints"].get(key)[idx]:
+        for i in range(waypoint_count):
+            params["offset"] = i
+            waypoint = self.aspace.client.get("{}/tree/waypoint".format(base_uri), params=params).json()
+            for child in waypoint:
                 title = child["title"] if child["title"] else get_date_string(child["dates"])
                 children.append({
                     "title": title,
@@ -114,12 +116,14 @@ class ArchivesSpaceHelper:
     def get_resource_children(self, uri):
         tree_root = self.aspace.client.get(
             "{}/tree/root".format(uri.rstrip("/"))).json()
-        return self.tree_children(tree_root, "") if tree_root["child_count"] > 0 else []
+        params = {"offset": 0}
+        return self.tree_children(tree_root["waypoints"], uri, params) if tree_root["child_count"] > 0 else []
 
     def get_archival_object_children(self, resource_uri, object_uri):
         tree_node = self.aspace.client.get(
             "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
-        return self.tree_children(tree_node, object_uri)
+        params = {"offset": 0, "parent_node": object_uri}
+        return self.tree_children(tree_node["waypoints"], resource_uri, params)
 
     def resolve_cartographer_ancestor(self, ancestor):
         resolved = self.aspace.client.get(

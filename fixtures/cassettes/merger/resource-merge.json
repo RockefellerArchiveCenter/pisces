@@ -30,27 +30,27 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "2981"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:25 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:01 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "2981"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"6f1148412edb6edd72241b0adcbe1a3643547e1f7c45af247dcc9d1a333bacb4\",\"user\":{\"lock_version\":21,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-09-21T20:55:26Z\",\"user_mtime\":\"2020-09-21T20:55:26Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
+                    "string": "{\"session\":\"85efb70aa8969a53062fb34cb82f50abe2bb5fb9d4dc963e1baac8aaa92c69b8\",\"user\":{\"lock_version\":38,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-10-14T21:06:01Z\",\"user_mtime\":\"2020-10-14T21:06:01Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
                 }
             }
         },
@@ -80,29 +80,29 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "22"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:26 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
-                    ],
-                    "X-XSS-Protection": [
-                        "1; mode=block"
+                    "Content-Type": [
+                        "text/html;charset=UTF-8"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "text/html;charset=UTF-8"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:01 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "22"
                     ]
                 },
                 "body": {
@@ -136,29 +136,29 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "85"
-                    ],
-                    "Server": [
-                        "Apache/2.4.38 (Debian)"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "Date": [
-                        "Mon, 21 Sep 2020 20:55:52 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                        "Wed, 14 Oct 2020 21:06:02 GMT"
                     ],
                     "Connection": [
                         "Keep-Alive"
                     ],
+                    "Server": [
+                        "Apache/2.4.38 (Debian)"
+                    ],
                     "Vary": [
                         "Origin"
                     ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
                     "Keep-Alive": [
                         "timeout=5, max=100"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "85"
                     ]
                 },
                 "body": {
@@ -192,32 +192,32 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
                     "Allow": [
                         "GET, HEAD, OPTIONS"
                     ],
-                    "Content-Length": [
-                        "52"
-                    ],
-                    "Server": [
-                        "Apache/2.4.38 (Debian)"
-                    ],
                     "Date": [
-                        "Mon, 21 Sep 2020 20:55:52 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                        "Wed, 14 Oct 2020 21:06:03 GMT"
                     ],
                     "Connection": [
                         "Keep-Alive"
                     ],
+                    "Server": [
+                        "Apache/2.4.38 (Debian)"
+                    ],
                     "Vary": [
                         "Accept,Cookie,Origin"
                     ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
                     "Keep-Alive": [
                         "timeout=5, max=99"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "52"
                     ]
                 },
                 "body": {
@@ -251,23 +251,23 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "754"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:26 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:02 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "754"
                     ]
                 },
                 "body": {
@@ -278,7 +278,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.9:8089/repositories/101/archival_objects/1622",
+                "uri": "http://192.168.1.9:8089/repositories/101/resources/3/tree/waypoint?offset=0",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -301,27 +301,27 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "1206"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:26 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:02 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "382"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":0,\"position\":0,\"publish\":true,\"ref_id\":\"59e3f0b877f28efe3278a6988c73584c\",\"component_id\":\"6\",\"title\":\"Congressional Quarterly\",\"display_string\":\"Congressional Quarterly, 1960-1971\",\"restrictions_apply\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:58:33Z\",\"system_mtime\":\"2020-09-21T16:58:33Z\",\"user_mtime\":\"2020-09-21T16:58:33Z\",\"suppressed\":false,\"is_slug_auto\":true,\"level\":\"subseries\",\"jsonmodel_type\":\"archival_object\",\"external_ids\":[],\"subjects\":[],\"linked_events\":[],\"extents\":[],\"lang_materials\":[],\"dates\":[{\"lock_version\":0,\"expression\":\"1960-1971\",\"begin\":\"1960\",\"end\":\"1971\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:58:33Z\",\"system_mtime\":\"2020-09-21T16:58:33Z\",\"user_mtime\":\"2020-09-21T16:58:33Z\",\"date_type\":\"inclusive\",\"label\":\"creation\",\"jsonmodel_type\":\"date\"}],\"external_documents\":[],\"rights_statements\":[],\"linked_agents\":[],\"ancestors\":[{\"ref\":\"/repositories/101/resources/3\",\"level\":\"series\"}],\"instances\":[],\"notes\":[],\"uri\":\"/repositories/101/archival_objects/1622\",\"repository\":{\"ref\":\"/repositories/101\"},\"resource\":{\"ref\":\"/repositories/101/resources/3\"},\"has_unpublished_ancestor\":false}\n"
+                    "string": "[{\"child_count\":5,\"waypoints\":1,\"waypoint_size\":200,\"title\":\"Congressional Quarterly\",\"slugged_url\":\"\",\"parsed_title\":\"Congressional Quarterly\",\"uri\":\"/repositories/101/archival_objects/1622\",\"position\":0,\"parent_id\":null,\"jsonmodel_type\":\"archival_object\",\"level\":\"subseries\",\"dates\":[{\"type\":\"inclusive\",\"label\":\"creation\",\"expression\":\"1960-1971\",\"begin\":\"1960\",\"end\":\"1971\"}]}]\n"
                 }
             }
         },
@@ -351,32 +351,32 @@
                     "message": "OK"
                 },
                 "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
                     "Allow": [
                         "GET, HEAD, OPTIONS"
                     ],
-                    "Content-Length": [
-                        "52"
-                    ],
-                    "Server": [
-                        "Apache/2.4.38 (Debian)"
-                    ],
                     "Date": [
-                        "Mon, 21 Sep 2020 20:55:52 GMT"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                        "Wed, 14 Oct 2020 21:06:04 GMT"
                     ],
                     "Connection": [
                         "Keep-Alive"
                     ],
+                    "Server": [
+                        "Apache/2.4.38 (Debian)"
+                    ],
                     "Vary": [
                         "Accept,Cookie,Origin"
                     ],
-                    "Content-Type": [
-                        "application/json"
-                    ],
                     "Keep-Alive": [
                         "timeout=5, max=98"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Content-Length": [
+                        "52"
                     ]
                 },
                 "body": {
@@ -410,23 +410,23 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "525"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:27 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:03 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "525"
                     ]
                 },
                 "body": {
@@ -437,7 +437,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.9:8089/repositories/101/archival_objects/2336",
+                "uri": "http://192.168.1.9:8089/repositories/101/resources/4/tree/waypoint?offset=0",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -460,27 +460,27 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Content-Length": [
-                        "900"
-                    ],
-                    "Server": [
-                        "Jetty(8.1.5.v20120716)"
-                    ],
-                    "Date": [
-                        "Mon, 21 Sep 2020 20:55:27 GMT"
-                    ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Content-Type": [
-                        "application/json"
+                    "Date": [
+                        "Wed, 14 Oct 2020 21:06:03 GMT"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ],
+                    "Content-Length": [
+                        "271"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":0,\"position\":0,\"publish\":true,\"ref_id\":\"aspace_b1f076a9f49d369034188c232f7cdf25\",\"component_id\":\"3\",\"title\":\"Original Audio Tapes\",\"display_string\":\"Original Audio Tapes\",\"restrictions_apply\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T17:10:28Z\",\"system_mtime\":\"2020-09-21T17:24:57Z\",\"user_mtime\":\"2020-09-21T17:10:28Z\",\"suppressed\":false,\"is_slug_auto\":true,\"level\":\"series\",\"jsonmodel_type\":\"archival_object\",\"external_ids\":[],\"subjects\":[],\"linked_events\":[],\"extents\":[],\"lang_materials\":[],\"dates\":[],\"external_documents\":[],\"rights_statements\":[],\"linked_agents\":[],\"ancestors\":[{\"ref\":\"/repositories/101/resources/4\",\"level\":\"collection\"}],\"instances\":[],\"notes\":[],\"uri\":\"/repositories/101/archival_objects/2336\",\"repository\":{\"ref\":\"/repositories/101\"},\"resource\":{\"ref\":\"/repositories/101/resources/4\"},\"has_unpublished_ancestor\":false}\n"
+                    "string": "[{\"child_count\":10,\"waypoints\":1,\"waypoint_size\":200,\"title\":\"Original Audio Tapes\",\"slugged_url\":\"\",\"parsed_title\":\"Original Audio Tapes\",\"uri\":\"/repositories/101/archival_objects/2336\",\"position\":0,\"parent_id\":null,\"jsonmodel_type\":\"archival_object\",\"level\":\"series\"}]\n"
                 }
             }
         }
