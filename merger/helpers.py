@@ -61,10 +61,16 @@ def combine_references(object):
     return object
 
 
-def add_group(object):
+def add_group(object, aspace_client):
     """Adds group object, with data about the highest-level collection containing this object."""
 
-    top_ancestor = object["ancestors"][-1]["_resolved"] if object.get("ancestors") else object
+    top_ancestor = object
+    if object.get("ancestors"):
+        last_ancestor = object["ancestors"][-1]
+        top_ancestor = last_ancestor["_resolved"] if last_ancestor.get("_resolved") else aspace_client.get(
+            last_ancestor.get("archivesspace_uri", last_ancestor.get("ref")),
+            params={"resolve": ["linked_agents", "subjects"]}).json()
+
     group_obj = combine_references(top_ancestor)
 
     creators = [a for a in group_obj.get("linked_agents", []) if a["role"] == "creator"]
@@ -78,6 +84,13 @@ def add_group(object):
         "title": group_obj.get("title"),
     }
     return object
+
+
+def handle_cartographer_reference(reference):
+    reference["ref"] = reference["archivesspace_uri"]
+    reference["type"] = "collection"
+    del reference["archivesspace_uri"]
+    return reference
 
 
 class ArchivesSpaceHelper:
@@ -124,12 +137,3 @@ class ArchivesSpaceHelper:
             "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
         params = {"offset": 0, "parent_node": object_uri}
         return self.tree_children(tree_node["waypoints"], resource_uri, params)
-
-    def resolve_cartographer_ancestor(self, ancestor):
-        resolved = self.aspace.client.get(
-            ancestor["archivesspace_uri"],
-            params={"resolve": ["linked_agents", "subjects"]}).json()
-        ancestor["ref"] = ancestor["archivesspace_uri"]
-        ancestor["_resolved"] = combine_references(resolved)
-        del ancestor["archivesspace_uri"]
-        return ancestor

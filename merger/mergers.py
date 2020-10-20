@@ -1,7 +1,8 @@
 import re
 
 from .helpers import (ArchivesSpaceHelper, add_group, closest_creators,
-                      closest_parent_value, combine_references)
+                      closest_parent_value, combine_references,
+                      handle_cartographer_reference)
 
 
 class MergeError(Exception):
@@ -44,7 +45,7 @@ class BaseMerger:
         pass
 
     def combine_data(self, object, additional_data):
-        return add_group(object)
+        return add_group(object, self.aspace_helper.aspace.client)
 
     def get_target_object_type(self, data):
         """Returns object type.
@@ -88,7 +89,7 @@ class ArchivalObjectMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] >= 1:
                 for a in json_data["results"][0].get("ancestors"):
-                    data["ancestors"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
+                    data["ancestors"].append(handle_cartographer_reference(a))
         return data
 
     def get_archival_object_collection_data(self, object):
@@ -187,7 +188,7 @@ class ArrangementMapMerger(BaseMerger):
                 object["archivesspace_uri"],
                 params={"resolve": ["subjects", "linked_agents"]}).json())
         if object.get("children"):
-            data["children"] += [self.aspace_helper.resolve_cartographer_ancestor(c) for c in object["children"]]
+            data["children"] += [handle_cartographer_reference(c) for c in object["children"]]
         else:
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
@@ -196,9 +197,9 @@ class ArrangementMapMerger(BaseMerger):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
         ancestors = []
         for a in object.get("ancestors"):
-            ancestors.append(self.aspace_helper.resolve_cartographer_ancestor(a))
+            ancestors.append(handle_cartographer_reference(a))
         additional_data["ancestors"] = ancestors
-        additional_data = add_group(additional_data)
+        additional_data = add_group(additional_data, self.aspace_helper.aspace.client)
         return combine_references(additional_data)
 
 
@@ -234,9 +235,9 @@ class ResourceMerger(BaseMerger):
             if json_data["count"] > 0:
                 result = json_data["results"][0]
                 for a in result.get("ancestors", []):
-                    data["ancestors"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
+                    data["ancestors"].append(handle_cartographer_reference(a))
                 for a in result.get("children", []):
-                    data["children"].append(self.aspace_helper.resolve_cartographer_ancestor(a))
+                    data["children"].append(handle_cartographer_reference(a))
         return data
 
     def get_archivesspace_data(self, object):
