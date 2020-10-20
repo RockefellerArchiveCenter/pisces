@@ -571,6 +571,15 @@
                 }
             ],
             "type": "scopecontent"
+        },
+        {
+            "jsonmodel_type": "note_singlepart",
+            "persistent_id": "aspace_619c2efb80eade708f494bd37b741198",
+            "type": "physdesc",
+            "content": [
+                "Sound, Color, 11 minutes"
+            ],
+            "publish": true
         }
     ],
     "publish": true,
