@@ -39,6 +39,7 @@ class TransformerTest(TestCase):
                     self.check_uri(transformed)
                     self.check_group(source, transformed)
                     self.check_formats(transformed)
+                    self.check_component_id(source, transformed)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -121,6 +122,10 @@ class TransformerTest(TestCase):
         """
         if transformed["group"]["identifier"] == "/collections/gfvm2HihpLwCTnKgpDtdhR":
             self.assertIn("audio", transformed.get("formats"))
+
+    def check_component_id(self, source, transformed):
+        if source.get("component_id"):
+            self.assertEqual(transformed["title"], "{}, {} {}".format(source["title"], source["level"].capitalize(), source["component_id"]))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
