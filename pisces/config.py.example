@@ -23,4 +23,4 @@ EMAIL_HOST_USER = "test@example.com"
 EMAIL_HOST_PASSWORD = ""
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_TO_ADDRESS = "user@example.com"
+EMAIL_TO_ADDRESSES = ["user@example.com"]

@@ -107,7 +107,7 @@ def send_error_notification(fetch_run):
             "The following errors were encountered while exporting {} objects from {}:\n\n{}".format(
                 object_type, source, errors),
             "alerts@rockarch.org",
-            [settings.EMAIL_TO_ADDRESS],
+            settings.EMAIL_TO_ADDRESSES,
             fail_silently=False,)
     except Exception as e:
         print("Unable to send error notification email: {}".format(e))
