@@ -372,7 +372,11 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field
     def title(self, value):
-        return value.strip() if value else self.source.display_string.strip()
+        title = value.strip() if value else self.source.display_string.strip()
+        if getattr(self.source, "component_id", None):
+            title = "{}, {} {}".format(title, self.source.level.capitalize(), self.source.component_id)
+            print(title)
+        return title
 
     @odin.map_field(from_field="language", to_field="languages", to_list=True)
     def languages(self, value):

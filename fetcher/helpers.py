@@ -70,6 +70,17 @@ def instantiate_electronbond(self, config=None):
 
 
 def identifier_from_uri(uri):
+    """Creates a short UUID.
+
+    Uses `shortuuid`, which first creates a v5 UUID using an object's AS URI as
+    a name, and then converts them to base57 using lowercase and uppercase
+    letters and digits, and removing similar-looking characters such as
+    l, 1, I, O and 0.
+
+    This is a one-way process; while it is possible to consistently generate a
+    given UUID given an AS URI, it is not possible to decode the URI from the
+    UUID.
+    """
     return shortuuid.uuid(name=uri)
 
 

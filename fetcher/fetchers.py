@@ -1,5 +1,6 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
 
 from django.utils import timezone
 from merger.mergers import (AgentMerger, ArchivalObjectMerger,
@@ -92,10 +93,14 @@ class BaseDataFetcher:
             try:
                 if self.object_status == "updated":
                     fetched = await self.get_obj(object_id)
+                    print("{} fetched {}".format(object_id, datetime.now()))
                     if self.is_exportable(fetched):
                         merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, fetched)
+                        print("{} merged {}".format(object_id, datetime.now()))
                         await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
+                        print("{} transformed {}".format(object_id, datetime.now()))
                     else:
+                        print("{} is not exportable {}".format(object_id, datetime.now()))
                         to_delete.append(fetched.get("uri", fetched.get("archivesspace_uri")))
                 else:
                     to_delete.append(object_id)
