@@ -175,7 +175,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         obj_endpoint = self.get_endpoint(self.object_type)
         obj = aspace.client.get(
             "{}/{}".format(obj_endpoint, obj_id),
-            params={"resolve": ["ancestors", "ancestors::linked_agents", "ancestors::subjects", "linked_agents", "subjects"]}).json()
+            params={"resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"]}).json()
         return obj
 
 
