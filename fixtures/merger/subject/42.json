@@ -3,14 +3,14 @@
     "created_by": "admin",
     "external_documents": [],
     "external_ids": [],
-    "is_linked_to_published_record": false,
+    "is_linked_to_published_record": true,
     "is_slug_auto": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",
-    "lock_version": 2,
+    "lock_version": 4,
     "publish": true,
     "source": "lcsh",
-    "system_mtime": "2020-09-20T15:19:03Z",
+    "system_mtime": "2020-09-21T17:10:28Z",
     "terms": [
         {
             "create_time": "2020-09-20T15:18:54Z",
@@ -28,7 +28,9 @@
     ],
     "title": "Sound recordings",
     "uri": "/subjects/42",
-    "used_within_published_repositories": [],
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
     "used_within_repositories": [
         "/repositories/101"
     ],

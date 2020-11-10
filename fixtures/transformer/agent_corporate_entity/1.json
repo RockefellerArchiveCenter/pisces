@@ -1,15 +1,15 @@
 {
     "agent_contacts": [
         {
-            "create_time": "2020-09-20T15:03:55Z",
+            "create_time": "2020-09-21T16:01:56Z",
             "created_by": "admin",
             "jsonmodel_type": "agent_contact",
             "last_modified_by": "admin",
             "lock_version": 0,
             "name": "Test Repository",
-            "system_mtime": "2020-09-20T15:03:55Z",
+            "system_mtime": "2020-09-21T16:01:56Z",
             "telephones": [],
-            "user_mtime": "2020-09-20T15:03:55Z"
+            "user_mtime": "2020-09-21T16:01:56Z"
         }
     ],
     "agent_type": "agent_corporate_entity",
@@ -18,7 +18,7 @@
     "dates_of_existence": [],
     "display_name": {
         "authorized": true,
-        "create_time": "2020-09-20T15:03:55Z",
+        "create_time": "2020-09-21T16:01:56Z",
         "created_by": "admin",
         "is_display_name": true,
         "jsonmodel_type": "name_corporate_entity",
@@ -28,9 +28,9 @@
         "sort_name": "Test Repository",
         "sort_name_auto_generate": true,
         "source": "local",
-        "system_mtime": "2020-09-20T15:03:55Z",
+        "system_mtime": "2020-09-21T16:01:56Z",
         "use_dates": [],
-        "user_mtime": "2020-09-20T15:03:55Z"
+        "user_mtime": "2020-09-21T16:01:56Z"
     },
     "external_documents": [],
     "group": {
@@ -51,11 +51,11 @@
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",
     "linked_agent_roles": [],
-    "lock_version": 0,
+    "lock_version": 1,
     "names": [
         {
             "authorized": true,
-            "create_time": "2020-09-20T15:03:55Z",
+            "create_time": "2020-09-21T16:01:56Z",
             "created_by": "admin",
             "is_display_name": true,
             "jsonmodel_type": "name_corporate_entity",
@@ -65,18 +65,18 @@
             "sort_name": "Test Repository",
             "sort_name_auto_generate": true,
             "source": "local",
-            "system_mtime": "2020-09-20T15:03:55Z",
+            "system_mtime": "2020-09-21T16:01:56Z",
             "use_dates": [],
-            "user_mtime": "2020-09-20T15:03:55Z"
+            "user_mtime": "2020-09-21T16:01:56Z"
         }
     ],
     "notes": [],
     "publish": false,
     "related_agents": [],
-    "system_mtime": "2020-09-20T15:03:55Z",
+    "system_mtime": "2020-09-21T16:01:57Z",
     "title": "Test Repository",
     "uri": "/agents/corporate_entities/1",
     "used_within_published_repositories": [],
     "used_within_repositories": [],
-    "user_mtime": "2020-09-20T15:03:55Z"
+    "user_mtime": "2020-09-21T16:01:56Z"
 }

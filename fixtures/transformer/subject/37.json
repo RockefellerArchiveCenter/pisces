@@ -9,14 +9,14 @@
         "identifier": "/subjects/37",
         "title": "Government policy"
     },
-    "is_linked_to_published_record": false,
+    "is_linked_to_published_record": true,
     "is_slug_auto": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",
-    "lock_version": 1,
+    "lock_version": 2,
     "publish": true,
     "source": "lcsh",
-    "system_mtime": "2020-09-20T15:05:04Z",
+    "system_mtime": "2020-09-21T16:58:31Z",
     "terms": [
         {
             "create_time": "2020-09-20T15:05:00Z",
@@ -34,7 +34,9 @@
     ],
     "title": "Government policy",
     "uri": "/subjects/37",
-    "used_within_published_repositories": [],
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
     "used_within_repositories": [
         "/repositories/101"
     ],

@@ -3,6 +3,7 @@ import json
 import odin
 from fetcher.helpers import identifier_from_uri
 from iso639 import languages
+from pisces import settings
 
 from .resources.configs import NOTE_TYPE_CHOICES
 from .resources.rac import (Agent, AgentReference, Collection, Date, Extent,
@@ -41,12 +42,12 @@ def transform_formats(instances, subjects, ancestors):
             ancestor_subjects += a.subjects
     combined_subjects = subjects + ancestor_subjects
     formats = ["documents"]
-    if len([v for v in instances if v.instance_type.lower() == "moving images"]) or len([s for s in combined_subjects if s.title.lower() == "moving images"]):
-        formats.append("moving image")
-    if len([v for v in instances if v.instance_type.lower() == "audio"]) or len([s for s in combined_subjects if s.title.lower() == "sound recordings"]):
-        formats.append("audio")
-    if len([v for v in instances if v.instance_type.lower() == "still image"]) or len([s for s in combined_subjects if s.title.lower() == "photographs"]):
-        formats.append("photographs")
+    for refs, format in [
+            (settings.MOVING_IMAGE_REFS, "moving image"),
+            (settings.AUDIO_REFS, "audio"),
+            (settings.PHOTOGRAPH_REFS, "photographs")]:
+        if len([s for s in combined_subjects if s.ref in refs]):
+            formats.append(format)
     return formats
 
 
@@ -95,7 +96,7 @@ class SourceRightsStatementToRightsStatement(odin.Mapping):
 
 
 class SourceRefToTermReference(odin.Mapping):
-    """Maps SubjectRef to Reference object."""
+    """Maps SourceRef to TermReference object."""
     from_obj = SourceRef
     to_obj = TermReference
 
@@ -117,7 +118,7 @@ class SourceRefToTermReference(odin.Mapping):
 
 
 class SourceAncestorToRecordReference(odin.Mapping):
-    """Maps SourceAncestor to Reference object."""
+    """Maps SourceAncestor to RecordReference object."""
     from_obj = SourceAncestor
     to_obj = RecordReference
 
@@ -144,7 +145,7 @@ class SourceAncestorToRecordReference(odin.Mapping):
 
 
 class SourceLinkedAgentToAgentReference(odin.Mapping):
-    """Maps SourceLinkedAgent to Reference object."""
+    """Maps SourceLinkedAgent to AgentReference object."""
     from_obj = SourceLinkedAgent
     to_obj = AgentReference
 
@@ -375,7 +376,6 @@ class SourceArchivalObjectToCollection(odin.Mapping):
         title = value.strip() if value else self.source.display_string.strip()
         if getattr(self.source, "component_id", None):
             title = "{}, {} {}".format(title, self.source.level.capitalize(), self.source.component_id)
-            print(title)
         return title
 
     @odin.map_field(from_field="language", to_field="languages", to_list=True)

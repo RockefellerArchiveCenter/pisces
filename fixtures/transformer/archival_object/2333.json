@@ -13,250 +13,127 @@
             "ref": "/repositories/101/resources/3",
             "subjects": [
                 {
-                    "dates": "",
-                    "ref": "/subjects/1",
-                    "title": "Presidential campaigns -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/1"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/2",
-                    "title": "Political science",
-                    "type": "topical"
+                    "ref": "/subjects/2"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/3",
-                    "title": "Public health -- Latin America",
-                    "type": "topical"
+                    "ref": "/subjects/3"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/4",
-                    "title": "Presidential candidates -- United States -- History -- 20th century",
-                    "type": "topical"
+                    "ref": "/subjects/4"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/5",
-                    "title": "Political campaigns -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/5"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/6",
-                    "title": "Philanthropy -- New York (N.Y.)",
-                    "type": "topical"
+                    "ref": "/subjects/6"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/7",
-                    "title": "Philanthropy -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/7"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/8",
-                    "title": "State governments -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/8"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/9",
-                    "title": "Social problems -- Latin America",
-                    "type": "topical"
+                    "ref": "/subjects/9"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/10",
-                    "title": "Venezuela",
-                    "type": "geographic"
+                    "ref": "/subjects/10"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/11",
-                    "title": "United States",
-                    "type": "geographic"
+                    "ref": "/subjects/11"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/12",
-                    "title": "Business",
-                    "type": "topical"
+                    "ref": "/subjects/12"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/13",
-                    "title": "Business enterprises, Foreign",
-                    "type": "topical"
+                    "ref": "/subjects/13"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/14",
-                    "title": "Civic improvement",
-                    "type": "topical"
+                    "ref": "/subjects/14"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/15",
-                    "title": "Civics",
-                    "type": "topical"
+                    "ref": "/subjects/15"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/16",
-                    "title": "Agriculture -- Latin America",
-                    "type": "topical"
+                    "ref": "/subjects/16"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/17",
-                    "title": "Philanthropy",
-                    "type": "topical"
+                    "ref": "/subjects/17"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/18",
-                    "title": "Art, Primitive",
-                    "type": "topical"
+                    "ref": "/subjects/18"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/19",
-                    "title": "Arts",
-                    "type": "topical"
+                    "ref": "/subjects/19"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/20",
-                    "title": "Brazil",
-                    "type": "geographic"
+                    "ref": "/subjects/20"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/21",
-                    "title": "National security -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/21"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/22",
-                    "title": "New York (N.Y.)",
-                    "type": "geographic"
+                    "ref": "/subjects/22"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/23",
-                    "title": "New York (State)",
-                    "type": "geographic"
+                    "ref": "/subjects/23"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/24",
-                    "title": "Developing countries",
-                    "type": "topical"
+                    "ref": "/subjects/24"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/25",
-                    "title": "Economic policy",
-                    "type": "topical"
+                    "ref": "/subjects/25"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/26",
-                    "title": "Economics",
-                    "type": "topical"
+                    "ref": "/subjects/26"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/27",
-                    "title": "Education",
-                    "type": "topical"
+                    "ref": "/subjects/27"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/28",
-                    "title": "Governors -- Election -- New York (State) -- 1970",
-                    "type": "topical"
+                    "ref": "/subjects/28"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/29",
-                    "title": "International economic relations",
-                    "type": "topical"
+                    "ref": "/subjects/29"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/30",
-                    "title": "International relations",
-                    "type": "topical"
+                    "ref": "/subjects/30"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/31",
-                    "title": "International relations -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/31"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/32",
-                    "title": "Latin America",
-                    "type": "geographic"
+                    "ref": "/subjects/32"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/33",
-                    "title": "Agriculture",
-                    "type": "topical"
+                    "ref": "/subjects/33"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/34",
-                    "title": "Education -- Latin America",
-                    "type": "topical"
+                    "ref": "/subjects/34"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/35",
-                    "title": "Federal government -- United States",
-                    "type": "topical"
+                    "ref": "/subjects/35"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/36",
-                    "title": "Government agencies",
-                    "type": "topical"
+                    "ref": "/subjects/36"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/37",
-                    "title": "Government policy",
-                    "type": "topical"
+                    "ref": "/subjects/37"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/38",
-                    "title": "Governors -- Election -- New York (State) -- 1958",
-                    "type": "topical"
+                    "ref": "/subjects/38"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/39",
-                    "title": "Philanthropy -- New York (State)",
-                    "type": "topical"
+                    "ref": "/subjects/39"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/40",
-                    "title": "Governors -- Election -- New York (State) -- 1962",
-                    "type": "topical"
+                    "ref": "/subjects/40"
                 },
                 {
-                    "dates": "",
-                    "ref": "/subjects/41",
-                    "title": "Governors -- Election -- New York (State) -- 1966",
-                    "type": "topical"
+                    "ref": "/subjects/41"
                 }
             ],
             "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2",

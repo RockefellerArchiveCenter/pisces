@@ -44,14 +44,14 @@ def get_date_string(dates):
 
 def combine_references(object):
     """Adds type and title fields to references, then removes unneeded resolved objects."""
-    for key, type_key in (["ancestors", None], ["children", None], ["subjects", "term_type"], ["linked_agents", "agent_type"]):
+    for key in ["ancestors", "children", "subjects", "linked_agents"]:
         for obj in object.get(key, []):
             if obj.get("_resolved"):
                 type = "collection"
                 if key == "subjects":
-                    type = obj["_resolved"]["terms"][0][type_key]
+                    type = obj["_resolved"]["terms"][0]["term_type"]
                 elif key == "linked_agents":
-                    type = obj["_resolved"][type_key]
+                    type = obj["_resolved"]["agent_type"]
                 if obj["_resolved"].get("subjects"):
                     obj["subjects"] = combine_references(obj["_resolved"])["subjects"]
                 obj["type"] = type

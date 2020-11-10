@@ -6,10 +6,7 @@
             "ref": "/repositories/101/resources/4",
             "subjects": [
                 {
-                    "dates": "",
-                    "ref": "/subjects/42",
-                    "title": "Sound recordings",
-                    "type": "genre_form"
+                    "ref": "/subjects/42"
                 }
             ],
             "title": "Cary Reich papers",
