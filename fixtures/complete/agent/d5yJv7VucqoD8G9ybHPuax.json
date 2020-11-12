@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/144",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/144",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "d5yJv7VucqoD8G9ybHPuax",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Abby Aldrich",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/d5yJv7VucqoD8G9ybHPuax",
+        "title": "Rockefeller, Abby Aldrich"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/144",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "d5yJv7VucqoD8G9ybHPuax",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, Abby Aldrich",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, Abby Aldrich",
+    "type": "agent",
+    "uri": "/agents/d5yJv7VucqoD8G9ybHPuax"
+}

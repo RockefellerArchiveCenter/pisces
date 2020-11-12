@@ -37,9 +37,10 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY
   local_dir: $DEPLOY_ZIP_DIR
   skip_cleanup: true
-  on: &development
+  on: &conditionals
     repo: RockefellerArchiveCenter/${APPLICATION_NAME}
-    branch: development
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^(base|development)$
   bucket: $AWS_BUCKET_NAME
   region: us-east-1
 - provider: codedeploy
@@ -52,4 +53,6 @@ deploy:
   application: ${APPLICATION_NAME}
   deployment_group: PiscesDevelopment
   region: us-east-1
-  on: *development
+  on: *conditionals
+notifications:
+  email: false

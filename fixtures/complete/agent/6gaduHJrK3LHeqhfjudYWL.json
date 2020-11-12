@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20003",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20003",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "6gaduHJrK3LHeqhfjudYWL",
+                "relator": null,
+                "role": "creator",
+                "title": "Republican Party (U.S. : 1854- )",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/6gaduHJrK3LHeqhfjudYWL",
+        "title": "Republican Party (U.S. : 1854- )"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20003",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "6gaduHJrK3LHeqhfjudYWL",
+            "relator": null,
+            "role": "creator",
+            "title": "Republican Party (U.S. : 1854- )",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Republican Party (U.S. : 1854- )",
+    "type": "agent",
+    "uri": "/agents/6gaduHJrK3LHeqhfjudYWL"
+}

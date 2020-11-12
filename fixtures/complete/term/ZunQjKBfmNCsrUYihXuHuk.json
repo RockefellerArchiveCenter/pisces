@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/3",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/ZunQjKBfmNCsrUYihXuHuk",
+        "title": "Public health -- Latin America"
+    },
+    "term_type": "topical",
+    "title": "Public health -- Latin America",
+    "type": "term",
+    "uri": "/terms/ZunQjKBfmNCsrUYihXuHuk"
+}

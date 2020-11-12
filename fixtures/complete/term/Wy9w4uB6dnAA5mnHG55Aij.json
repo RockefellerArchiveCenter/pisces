@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17085",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/Wy9w4uB6dnAA5mnHG55Aij",
+        "title": "Presidential candidates -- United States -- History -- 20th century"
+    },
+    "term_type": "topical",
+    "title": "Presidential candidates -- United States -- History -- 20th century",
+    "type": "term",
+    "uri": "/terms/Wy9w4uB6dnAA5mnHG55Aij"
+}

@@ -1,0 +1,39 @@
+{
+    "create_time": "2020-09-20T15:04:59Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "is_linked_to_published_record": true,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 2,
+    "publish": true,
+    "source": "local",
+    "system_mtime": "2020-09-21T16:58:31Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:04:59Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:04:59Z",
+            "term": "Philanthropy -- New York (N.Y.)",
+            "term_type": "topical",
+            "uri": "/terms/6",
+            "user_mtime": "2020-09-20T15:04:59Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "Philanthropy -- New York (N.Y.)",
+    "uri": "/subjects/6",
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:04:59Z",
+    "vocabulary": "/vocabularies/1"
+}

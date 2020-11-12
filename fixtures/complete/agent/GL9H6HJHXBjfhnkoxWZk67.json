@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/534",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/534",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "GL9H6HJHXBjfhnkoxWZk67",
+                "relator": null,
+                "role": "creator",
+                "title": "Persico, Joseph E.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/GL9H6HJHXBjfhnkoxWZk67",
+        "title": "Persico, Joseph E."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/534",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "GL9H6HJHXBjfhnkoxWZk67",
+            "relator": null,
+            "role": "creator",
+            "title": "Persico, Joseph E.",
+            "type": "person"
+        }
+    ],
+    "title": "Persico, Joseph E.",
+    "type": "agent",
+    "uri": "/agents/GL9H6HJHXBjfhnkoxWZk67"
+}

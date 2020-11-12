@@ -4,24 +4,28 @@ set -e
 ZIP_DIR=$1
 ZIP_NAME=$2
 
-# remove unnecessary files
-rm -rf fixtures \
-  .git \
-  .github \
-  .coverage \
-  .flake8 \
-  .gitignore \
-  .pre-commit-config.yaml \
-  cc-test-reporter \
-  coverage.xml \
-  docker-compose.yml \
-  Dockerfile \
-  entrypoint.sh \
-  pisces-services.png \
-  wait-for-it.sh
-find . -type d -name __pycache__ -exec rm -r {} \+
+if [ ! -f $ZIP_DIR/$ZIP_NAME ]; then
 
-# create zip file
-zip -r $ZIP_NAME .
-mkdir -p $ZIP_DIR
-mv $ZIP_NAME $ZIP_DIR/$ZIP_NAME
+  # remove unnecessary files
+  rm -rf fixtures \
+    .git \
+    .github \
+    .coverage \
+    .flake8 \
+    .gitignore \
+    .pre-commit-config.yaml \
+    cc-test-reporter \
+    coverage.xml \
+    docker-compose.yml \
+    Dockerfile \
+    entrypoint.sh \
+    pisces-services.png \
+    wait-for-it.sh
+  find . -type d -name __pycache__ -exec rm -r {} \+
+
+  # create zip file
+  zip -r $ZIP_NAME .
+  mkdir -p $ZIP_DIR
+  mv $ZIP_NAME $ZIP_DIR/$ZIP_NAME
+  
+fi

@@ -1,0 +1,45 @@
+{
+    "create_time": "2020-09-20T15:18:54Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/42",
+        "title": "Sound recordings"
+    },
+    "is_linked_to_published_record": true,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 4,
+    "publish": true,
+    "source": "lcsh",
+    "system_mtime": "2020-09-21T17:10:28Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:18:54Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:18:54Z",
+            "term": "Sound recordings",
+            "term_type": "genre_form",
+            "uri": "/terms/42",
+            "user_mtime": "2020-09-20T15:18:54Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "Sound recordings",
+    "uri": "/subjects/42",
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:18:54Z",
+    "vocabulary": "/vocabularies/1"
+}

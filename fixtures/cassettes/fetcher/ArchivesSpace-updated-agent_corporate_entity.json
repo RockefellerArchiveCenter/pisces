@@ -4,7 +4,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://as.dev.rockarch.org:8089/users/admin/login?expiring=False",
+                "uri": "http://192.168.1.2:8089/users/admin/login?expiring=False",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -31,33 +31,33 @@
                 },
                 "headers": {
                     "Date": [
-                        "Wed, 15 Apr 2020 17:10:04 GMT"
-                    ],
-                    "Content-Length": [
-                        "3936"
+                        "Fri, 06 Nov 2020 14:39:51 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
+                    "Content-Length": [
+                        "2981"
+                    ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"b100140974b0040a00a88d49b919d224258b79c25d1c39e17c881df467a167d0\",\"user\":{\"lock_version\":215269,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2014-12-05T20:32:17Z\",\"system_mtime\":\"2020-04-15T17:10:04Z\",\"user_mtime\":\"2020-04-15T17:10:04Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/2\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"view_repository\",\"transfer_repository\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"update_classification_record\",\"delete_classification_record\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"cancel_job\",\"create_job\"],\"/repositories/1\":[\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\",\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\"],\"_archivesspace\":[\"administer_system\",\"manage_users\",\"become_user\",\"view_all_records\",\"create_repository\",\"delete_repository\",\"transfer_repository\",\"index_system\",\"manage_repository\",\"update_accession_record\",\"update_resource_record\",\"update_digital_object_record\",\"update_event_record\",\"delete_event_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"delete_archival_record\",\"view_suppressed\",\"view_repository\",\"update_classification_record\",\"delete_classification_record\",\"mediate_edits\",\"import_records\",\"cancel_importer_job\",\"manage_subject_record\",\"manage_agent_record\",\"manage_vocabulary_record\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"manage_rde_templates\",\"update_container_record\",\"manage_container_record\",\"manage_container_profile_record\",\"manage_location_profile_record\",\"create_job\",\"cancel_job\",\"update_assessment_record\",\"delete_assessment_record\",\"manage_assessment_attributes\",\"manage_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"update_enumeration_record\"]}}}\n"
+                    "string": "{\"session\":\"3c8ba694764ac67959b6c905745fdfaa310a78e62459a2f1f29c963b09d85abd\",\"user\":{\"lock_version\":52,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-11-06T14:39:51Z\",\"user_mtime\":\"2020-11-06T14:39:51Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://as.dev.rockarch.org:8089/version",
+                "uri": "http://192.168.1.2:8089/version",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -80,40 +80,40 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 17:10:04 GMT"
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
                     ],
-                    "Content-Length": [
-                        "22"
+                    "Date": [
+                        "Fri, 06 Nov 2020 14:39:51 GMT"
                     ],
                     "Content-Type": [
                         "text/html;charset=UTF-8"
                     ],
-                    "X-XSS-Protection": [
-                        "1; mode=block"
+                    "Content-Length": [
+                        "22"
                     ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
+                    "X-XSS-Protection": [
+                        "1; mode=block"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "ArchivesSpace (v2.6.0)"
+                    "string": "ArchivesSpace (v2.8.0)"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.50.27:8000/status/health/",
+                "uri": "http://rac-vch-prod.ad.rockarchive.org:8000/status/health/",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -136,26 +136,29 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Wed, 15 Apr 2020 16:53:03 GMT"
-                    ],
-                    "Content-Length": [
-                        "85"
-                    ],
                     "Vary": [
                         "Origin"
-                    ],
-                    "Connection": [
-                        "close"
-                    ],
-                    "Content-Type": [
-                        "application/json"
                     ],
                     "X-Frame-Options": [
                         "SAMEORIGIN"
                     ],
+                    "Date": [
+                        "Fri, 06 Nov 2020 14:40:13 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Content-Length": [
+                        "85"
+                    ],
+                    "Keep-Alive": [
+                        "timeout=5, max=100"
+                    ],
+                    "Connection": [
+                        "Keep-Alive"
+                    ],
                     "Server": [
-                        "gunicorn/20.0.4"
+                        "Apache/2.4.38 (Debian)"
                     ]
                 },
                 "body": {
@@ -166,7 +169,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://as.dev.rockarch.org:8089/agents/corporate_entities?all_ids=True&page=1&page_size=100",
+                "uri": "http://192.168.1.2:8089/agents/corporate_entities?all_ids=True",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -190,26 +193,76 @@
                 },
                 "headers": {
                     "Date": [
-                        "Wed, 15 Apr 2020 17:10:05 GMT"
-                    ],
-                    "Content-Length": [
-                        "23005"
+                        "Fri, 06 Nov 2020 14:39:51 GMT"
                     ],
                     "Content-Type": [
                         "application/json"
                     ],
+                    "Content-Length": [
+                        "4"
+                    ],
                     "X-Content-Type-Options": [
                         "nosniff"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
-                    ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ]
                 },
                 "body": {
-                    "string": "{\"first_page\":1,\"last_page\":1,\"this_page\":1,\"total\":14,\"results\":[{\"lock_version\":9,\"publish\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-31T14:48:40Z\",\"system_mtime\":\"2020-03-02T15:27:19Z\",\"user_mtime\":\"2015-08-31T14:48:40Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Riverside Church (New York, N.Y.)\",\"sort_name\":\"Riverside Church (New York, N.Y.)\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-31T14:48:40Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-08-31T14:48:40Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/20098\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Riverside Church (New York, N.Y.)\",\"sort_name\":\"Riverside Church (New York, N.Y.)\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-08-31T14:48:40Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-08-31T14:48:40Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Riverside Church (New York, N.Y.)\"},{\"lock_version\":62,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"aberish\",\"create_time\":\"2014-12-06T02:42:11Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2019-11-01T17:59:29Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Cornell University\",\"created_by\":\"aberish\",\"last_modified_by\":\"aberish\",\"create_time\":\"2019-11-01T17:59:29Z\",\"system_mtime\":\"2019-11-01T17:59:29Z\",\"user_mtime\":\"2019-11-01T17:59:29Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Cornell University\",\"sort_name\":\"Cornell University\",\"sort_name_auto_generate\":true,\"created_by\":\"aberish\",\"last_modified_by\":\"aberish\",\"create_time\":\"2019-11-01T17:59:29Z\",\"system_mtime\":\"2019-11-01T17:59:29Z\",\"user_mtime\":\"2019-11-01T17:59:29Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/176\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Cornell University\",\"sort_name\":\"Cornell University\",\"sort_name_auto_generate\":true,\"created_by\":\"aberish\",\"last_modified_by\":\"aberish\",\"create_time\":\"2019-11-01T17:59:29Z\",\"system_mtime\":\"2019-11-01T17:59:29Z\",\"user_mtime\":\"2019-11-01T17:59:29Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Cornell University\"},{\"lock_version\":250,\"publish\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-25T02:30:05Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2015-04-25T02:30:05Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Yale University\",\"sort_name\":\"Yale University\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-25T02:30:05Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-04-25T02:30:05Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/17356\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Yale University\",\"sort_name\":\"Yale University\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-25T02:30:05Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-04-25T02:30:05Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Yale University\"},{\"lock_version\":3,\"publish\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:49Z\",\"system_mtime\":\"2020-03-02T15:27:25Z\",\"user_mtime\":\"2015-06-03T22:52:49Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Princeton University\",\"sort_name\":\"Princeton University\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:49Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-06-03T22:52:49Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/20047\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Princeton University\",\"sort_name\":\"Princeton University\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-06-03T22:52:49Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-06-03T22:52:49Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Princeton University\"},{\"lock_version\":13,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-02-07T21:40:54Z\",\"system_mtime\":\"2020-03-06T16:57:16Z\",\"user_mtime\":\"2020-02-07T21:40:54Z\",\"is_slug_auto\":true,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Office Block Persecution Affinity\",\"sort_name\":\"Office Block Persecution Affinity\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-02-07T21:40:54Z\",\"system_mtime\":\"2020-02-07T21:40:54Z\",\"user_mtime\":\"2020-02-07T21:40:54Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/29028\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Office Block Persecution Affinity\",\"sort_name\":\"Office Block Persecution Affinity\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-02-07T21:40:54Z\",\"system_mtime\":\"2020-02-07T21:40:54Z\",\"user_mtime\":\"2020-02-07T21:40:54Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Office Block Persecution Affinity\"},{\"lock_version\":36,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2020-03-26T20:56:41Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Winthrop Rockefeller Foundation\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2014-12-06T02:40:50Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\",\"source\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Winthrop Rockefeller Foundation\",\"sort_name\":\"Winthrop Rockefeller Foundation\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},{\"lock_version\":0,\"primary_name\":\"W.R.F..\",\"sort_name\":\"W.R.F..\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2014-12-06T02:40:50Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[],\"authorized\":false,\"is_display_name\":false},{\"lock_version\":0,\"primary_name\":\"WRF.\",\"sort_name\":\"WRF.\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2014-12-06T02:40:50Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[],\"authorized\":false,\"is_display_name\":false}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/32\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Winthrop Rockefeller Foundation\",\"sort_name\":\"Winthrop Rockefeller Foundation\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:40:50Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2014-12-06T02:40:50Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Winthrop Rockefeller Foundation\"},{\"lock_version\":14,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:37Z\",\"system_mtime\":\"2020-03-30T22:24:06Z\",\"user_mtime\":\"2020-01-13T22:05:37Z\",\"is_slug_auto\":true,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Desperate Dan Appreciation Society\",\"sort_name\":\"Desperate Dan Appreciation Society\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:37Z\",\"system_mtime\":\"2020-01-13T22:05:37Z\",\"user_mtime\":\"2020-01-13T22:05:37Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/29022\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Desperate Dan Appreciation Society\",\"sort_name\":\"Desperate Dan Appreciation Society\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:37Z\",\"system_mtime\":\"2020-01-13T22:05:37Z\",\"user_mtime\":\"2020-01-13T22:05:37Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Desperate Dan Appreciation Society\"},{\"lock_version\":36,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:42:11Z\",\"system_mtime\":\"2020-04-08T17:59:29Z\",\"user_mtime\":\"2014-12-06T02:42:11Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Medical Letter, Inc\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:42:11Z\",\"system_mtime\":\"2014-12-06T02:42:11Z\",\"user_mtime\":\"2014-12-06T02:42:11Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Medical Letter, Inc\",\"sort_name\":\"Medical Letter, Inc\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:42:11Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2014-12-06T02:42:11Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/178\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Medical Letter, Inc\",\"sort_name\":\"Medical Letter, Inc\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:42:11Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2014-12-06T02:42:11Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Medical Letter, Inc\"},{\"lock_version\":151,\"publish\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-28T19:00:19Z\",\"system_mtime\":\"2020-04-08T18:30:00Z\",\"user_mtime\":\"2015-04-28T19:00:19Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"source\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Rockefeller Institute for Medical Research\",\"sort_name\":\"Rockefeller Institute for Medical Research\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-28T19:00:19Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-04-28T19:00:19Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/20001\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Rockefeller Institute for Medical Research\",\"sort_name\":\"Rockefeller Institute for Medical Research\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2015-04-28T19:00:19Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-04-28T19:00:19Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Rockefeller Institute for Medical Research\"},{\"lock_version\":476,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:44:24Z\",\"system_mtime\":\"2020-04-08T19:19:11Z\",\"user_mtime\":\"2014-12-06T02:44:24Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Rockefeller University Press\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:44:24Z\",\"system_mtime\":\"2014-12-06T02:44:24Z\",\"user_mtime\":\"2014-12-06T02:44:24Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[\"creator\",\"source\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Rockefeller University Press\",\"sort_name\":\"Rockefeller University Press\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:44:24Z\",\"system_mtime\":\"2014-12-06T02:44:24Z\",\"user_mtime\":\"2014-12-06T02:44:24Z\",\"authorized\":true,\"is_display_name\":true,\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/545\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Rockefeller University Press\",\"sort_name\":\"Rockefeller University Press\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2014-12-06T02:44:24Z\",\"system_mtime\":\"2014-12-06T02:44:24Z\",\"user_mtime\":\"2014-12-06T02:44:24Z\",\"authorized\":true,\"is_display_name\":true,\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Rockefeller University Press\"},{\"lock_version\":234,\"publish\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-08-25T16:29:09Z\",\"system_mtime\":\"2020-04-08T19:19:11Z\",\"user_mtime\":\"2015-08-25T16:29:09Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"source\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Rockefeller University\",\"sort_name\":\"Rockefeller University\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-08-25T16:29:09Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-08-25T16:29:09Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/20083\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Rockefeller University\",\"sort_name\":\"Rockefeller University\",\"sort_name_auto_generate\":true,\"created_by\":\"battalb\",\"last_modified_by\":\"battalb\",\"create_time\":\"2015-08-25T16:29:09Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2015-08-25T16:29:09Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Rockefeller University\"},{\"lock_version\":120,\"publish\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2016-01-05T19:59:39Z\",\"system_mtime\":\"2020-04-10T14:40:11Z\",\"user_mtime\":\"2016-01-05T19:59:39Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\",\"subject\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"John A. Hartford Foundation\",\"sort_name\":\"John A. Hartford Foundation\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2016-01-05T19:59:39Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2016-01-05T19:59:39Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/23543\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":true,\"display_name\":{\"lock_version\":0,\"primary_name\":\"John A. Hartford Foundation\",\"sort_name\":\"John A. Hartford Foundation\",\"sort_name_auto_generate\":true,\"created_by\":\"pgalligan\",\"last_modified_by\":\"pgalligan\",\"create_time\":\"2016-01-05T19:59:39Z\",\"system_mtime\":\"2017-08-22T15:44:40Z\",\"user_mtime\":\"2016-01-05T19:59:39Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"naf\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"John A. Hartford Foundation\"},{\"lock_version\":263,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:36Z\",\"system_mtime\":\"2020-04-10T17:26:44Z\",\"user_mtime\":\"2020-01-13T22:05:36Z\",\"is_slug_auto\":true,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Custard Pie Appreciation Consortium\",\"sort_name\":\"Custard Pie Appreciation Consortium\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:37Z\",\"system_mtime\":\"2020-01-13T22:05:37Z\",\"user_mtime\":\"2020-01-13T22:05:37Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/29021\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Custard Pie Appreciation Consortium\",\"sort_name\":\"Custard Pie Appreciation Consortium\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-13T22:05:37Z\",\"system_mtime\":\"2020-01-13T22:05:37Z\",\"user_mtime\":\"2020-01-13T22:05:37Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Custard Pie Appreciation Consortium\"},{\"lock_version\":294,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-28T21:25:46Z\",\"system_mtime\":\"2020-04-10T17:26:44Z\",\"user_mtime\":\"2020-01-28T21:25:46Z\",\"is_slug_auto\":true,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[\"creator\"],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[\"/repositories/2\"],\"used_within_published_repositories\":[\"/repositories/2\"],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Donor Organization\",\"sort_name\":\"Donor Organization\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-28T21:25:46Z\",\"system_mtime\":\"2020-01-28T21:25:46Z\",\"user_mtime\":\"2020-01-28T21:25:46Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/29025\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Donor Organization\",\"sort_name\":\"Donor Organization\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-01-28T21:25:46Z\",\"system_mtime\":\"2020-01-28T21:25:46Z\",\"user_mtime\":\"2020-01-28T21:25:46Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Donor Organization\"}]}\n"
+                    "string": "[1]\n"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://192.168.1.2:8089/agents/corporate_entities/1?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ArchivesSnake/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Date": [
+                        "Fri, 06 Nov 2020 14:39:51 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Content-Length": [
+                        "1637"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "Server": [
+                        "Jetty(8.1.5.v20120716)"
+                    ],
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
+                    ]
+                },
+                "body": {
+                    "string": "{\"lock_version\":1,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:03:55Z\",\"system_mtime\":\"2020-09-21T16:01:57Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Test Repository\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[],\"used_within_published_repositories\":[],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/1\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Test Repository\"}\n"
                 }
             }
         }

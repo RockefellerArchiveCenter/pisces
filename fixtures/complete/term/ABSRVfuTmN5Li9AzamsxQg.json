@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/9",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/ABSRVfuTmN5Li9AzamsxQg",
+        "title": "Social problems -- Latin America"
+    },
+    "term_type": "topical",
+    "title": "Social problems -- Latin America",
+    "type": "term",
+    "uri": "/terms/ABSRVfuTmN5Li9AzamsxQg"
+}

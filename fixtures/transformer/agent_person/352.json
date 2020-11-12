@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:41:43Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/352",
+                "role": "creator",
+                "title": "Ruebhausen, Oscar M.",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/352",
+        "title": "Ruebhausen, Oscar M."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

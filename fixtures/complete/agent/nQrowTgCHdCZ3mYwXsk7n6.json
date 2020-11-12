@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": null,
+            "end": null,
+            "expression": "1915-",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "single"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/138",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/138",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "nQrowTgCHdCZ3mYwXsk7n6",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, David",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": null,
+                "end": null,
+                "expression": "1915-",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "single"
+            }
+        ],
+        "identifier": "/agents/nQrowTgCHdCZ3mYwXsk7n6",
+        "title": "Rockefeller, David"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/138",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "nQrowTgCHdCZ3mYwXsk7n6",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, David",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, David",
+    "type": "agent",
+    "uri": "/agents/nQrowTgCHdCZ3mYwXsk7n6"
+}

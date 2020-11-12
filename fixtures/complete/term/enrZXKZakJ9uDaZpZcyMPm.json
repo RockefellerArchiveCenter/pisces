@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17086",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/enrZXKZakJ9uDaZpZcyMPm",
+        "title": "Presidential campaigns -- United States"
+    },
+    "term_type": "topical",
+    "title": "Presidential campaigns -- United States",
+    "type": "term",
+    "uri": "/terms/enrZXKZakJ9uDaZpZcyMPm"
+}

@@ -1,0 +1,45 @@
+{
+    "create_time": "2020-09-20T15:04:59Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/20",
+        "title": "Brazil"
+    },
+    "is_linked_to_published_record": true,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 2,
+    "publish": true,
+    "source": "lcsh",
+    "system_mtime": "2020-09-21T16:58:31Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:04:59Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:04:59Z",
+            "term": "Brazil",
+            "term_type": "geographic",
+            "uri": "/terms/20",
+            "user_mtime": "2020-09-20T15:04:59Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "Brazil",
+    "uri": "/subjects/20",
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:04:59Z",
+    "vocabulary": "/vocabularies/1"
+}

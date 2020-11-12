@@ -1,0 +1,72 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [
+        {
+            "begin": "1910",
+            "end": "2019",
+            "expression": "1910-2019",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "range"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/10267",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/10267",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "BrnJBH6seFxTYNdGHBxVYN",
+                "relator": null,
+                "role": "creator",
+                "title": "International Laboratory for Research on Animal Diseases (Ilrad)",
+                "type": "organization"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1910",
+                "end": "2019",
+                "expression": "1910-2019",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "range"
+            }
+        ],
+        "identifier": "/agents/BrnJBH6seFxTYNdGHBxVYN",
+        "title": "International Laboratory for Research on Animal Diseases (Ilrad)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/10267",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "BrnJBH6seFxTYNdGHBxVYN",
+            "relator": null,
+            "role": "creator",
+            "title": "International Laboratory for Research on Animal Diseases (Ilrad)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "International Laboratory for Research on Animal Diseases (Ilrad)",
+    "type": "agent",
+    "uri": "/agents/BrnJBH6seFxTYNdGHBxVYN"
+}

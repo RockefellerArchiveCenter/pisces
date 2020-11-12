@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/38",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/gw8aS7a6Gy2tTsbm29AXE2",
+        "title": "Governors -- Election -- New York (State) -- 1958"
+    },
+    "term_type": "topical",
+    "title": "Governors -- Election -- New York (State) -- 1958",
+    "type": "term",
+    "uri": "/terms/gw8aS7a6Gy2tTsbm29AXE2"
+}

@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/238",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/Sve4WG74Q77Um8R3LExny6",
+        "title": "Philanthropy -- New York (N.Y.)"
+    },
+    "term_type": "topical",
+    "title": "Philanthropy -- New York (N.Y.)",
+    "type": "term",
+    "uri": "/terms/Sve4WG74Q77Um8R3LExny6"
+}

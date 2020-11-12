@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/4767",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4767",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Rcr5JUSnndvc5KPtvArjbY",
+                "relator": null,
+                "role": "creator",
+                "title": "United States. Office of the Vice President.",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Rcr5JUSnndvc5KPtvArjbY",
+        "title": "United States. Office of the Vice President."
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4767",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Rcr5JUSnndvc5KPtvArjbY",
+            "relator": null,
+            "role": "creator",
+            "title": "United States. Office of the Vice President.",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United States. Office of the Vice President.",
+    "type": "agent",
+    "uri": "/agents/Rcr5JUSnndvc5KPtvArjbY"
+}

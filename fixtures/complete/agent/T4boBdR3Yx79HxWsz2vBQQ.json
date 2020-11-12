@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/27734",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/27734",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "T4boBdR3Yx79HxWsz2vBQQ",
+                "relator": null,
+                "role": "creator",
+                "title": "International Center for Living Aquatic Resources Management",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/T4boBdR3Yx79HxWsz2vBQQ",
+        "title": "International Center for Living Aquatic Resources Management"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/27734",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "T4boBdR3Yx79HxWsz2vBQQ",
+            "relator": null,
+            "role": "creator",
+            "title": "International Center for Living Aquatic Resources Management",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "International Center for Living Aquatic Resources Management",
+    "type": "agent",
+    "uri": "/agents/T4boBdR3Yx79HxWsz2vBQQ"
+}

@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/55",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/55",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "dBxKhuPa5HyvxWJJotCyGS",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Natural and Environmental Sciences Division",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/dBxKhuPa5HyvxWJJotCyGS",
+        "title": "Rockefeller Foundation. Natural and Environmental Sciences Division"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/55",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "dBxKhuPa5HyvxWJJotCyGS",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Natural and Environmental Sciences Division",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Natural and Environmental Sciences Division",
+    "type": "agent",
+    "uri": "/agents/dBxKhuPa5HyvxWJJotCyGS"
+}

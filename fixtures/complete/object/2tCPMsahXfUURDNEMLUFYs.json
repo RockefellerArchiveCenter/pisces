@@ -1,0 +1,114 @@
+{
+    "ancestors": [
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2336",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "kqx4Z5uJzTUF2RhdKbF8bB",
+            "level": "series",
+            "order": null,
+            "title": "Original Audio Tapes",
+            "type": "collection"
+        },
+        {
+            "dates": "1950s-1980s (Bulk 1982)",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/4",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gfvm2HihpLwCTnKgpDtdhR",
+            "level": "collection",
+            "order": null,
+            "title": "Cary Reich papers",
+            "type": "collection"
+        }
+    ],
+    "category": "collection",
+    "dates": [
+        {
+            "begin": "1950",
+            "end": "1989",
+            "expression": "1950s-1980s (Bulk 1982)",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/101/archival_objects/2741",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents",
+        "audio"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/103",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+                "relator": null,
+                "role": "creator",
+                "title": "Reich, Cary",
+                "type": "person"
+            },
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/104",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bsUcLegffndsdinbdfKZpK",
+                "relator": null,
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1950",
+                "end": "1989",
+                "expression": "1950s-1980s (Bulk 1982)",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/gfvm2HihpLwCTnKgpDtdhR",
+        "title": "Cary Reich papers"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "notes": [],
+    "online": false,
+    "organizations": [],
+    "people": [],
+    "rights": [],
+    "terms": [],
+    "title": "AV 6368 - AV 6419",
+    "tree_position": 1,
+    "type": "object",
+    "uri": "/objects/2tCPMsahXfUURDNEMLUFYs"
+}

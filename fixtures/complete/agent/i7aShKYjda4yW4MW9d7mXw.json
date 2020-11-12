@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": null,
+            "end": null,
+            "expression": "1918-",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "single"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/531",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/531",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "i7aShKYjda4yW4MW9d7mXw",
+                "relator": null,
+                "role": "creator",
+                "title": "Cannon, James M.",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": null,
+                "end": null,
+                "expression": "1918-",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "single"
+            }
+        ],
+        "identifier": "/agents/i7aShKYjda4yW4MW9d7mXw",
+        "title": "Cannon, James M."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/531",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "i7aShKYjda4yW4MW9d7mXw",
+            "relator": null,
+            "role": "creator",
+            "title": "Cannon, James M.",
+            "type": "person"
+        }
+    ],
+    "title": "Cannon, James M.",
+    "type": "agent",
+    "uri": "/agents/i7aShKYjda4yW4MW9d7mXw"
+}

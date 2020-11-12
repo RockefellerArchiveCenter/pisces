@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/1001",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/AKXYFVcBRbvx5yd4TryrqA",
+        "title": "Political parties"
+    },
+    "term_type": "topical",
+    "title": "Political parties",
+    "type": "term",
+    "uri": "/terms/AKXYFVcBRbvx5yd4TryrqA"
+}

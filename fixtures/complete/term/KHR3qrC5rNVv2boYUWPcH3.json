@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/23",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/KHR3qrC5rNVv2boYUWPcH3",
+        "title": "New York (State)"
+    },
+    "term_type": "geographic",
+    "title": "New York (State)",
+    "type": "term",
+    "uri": "/terms/KHR3qrC5rNVv2boYUWPcH3"
+}

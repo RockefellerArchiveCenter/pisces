@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/101",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/101",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "AQQN8Y9XSzKzLi2Z872rCk",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/AQQN8Y9XSzKzLi2Z872rCk",
+        "title": "Rockefeller, Nelson A. (Nelson Aldrich)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/101",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "AQQN8Y9XSzKzLi2Z872rCk",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+    "type": "agent",
+    "uri": "/agents/AQQN8Y9XSzKzLi2Z872rCk"
+}

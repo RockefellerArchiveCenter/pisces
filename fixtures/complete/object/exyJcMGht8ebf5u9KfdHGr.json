@@ -1,0 +1,113 @@
+{
+    "ancestors": [
+        {
+            "dates": "1960-1971",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/1622",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gxzsDBLTNpDADsvwrBS8ad",
+            "level": "subseries",
+            "order": null,
+            "title": "Congressional Quarterly",
+            "type": "collection"
+        },
+        {
+            "dates": "1959-1970",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/3",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Zivy3B6P5nBaZ24Kb8cWEq",
+            "level": "series",
+            "order": null,
+            "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2",
+            "type": "collection"
+        }
+    ],
+    "category": "collection",
+    "dates": [
+        {
+            "begin": "1969",
+            "end": "1971",
+            "expression": "1969-1971",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/101/archival_objects/2332",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/101",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "AQQN8Y9XSzKzLi2Z872rCk",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+                "type": "person"
+            },
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/102",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "feDoZAx4EuqVoaLxENcj6L",
+                "relator": null,
+                "role": "creator",
+                "title": "Hinman, George",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1959",
+                "end": "1970",
+                "expression": "1959-1970",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/Zivy3B6P5nBaZ24Kb8cWEq",
+        "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "notes": [],
+    "online": false,
+    "organizations": [],
+    "people": [],
+    "rights": [],
+    "terms": [],
+    "title": "Congressional Quarterly Bound Volumes",
+    "tree_position": 3,
+    "type": "object",
+    "uri": "/objects/exyJcMGht8ebf5u9KfdHGr"
+}

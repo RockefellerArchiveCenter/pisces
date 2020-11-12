@@ -1,6 +1,8 @@
-from silk.profiling.profiler import silk_profile
+import re
 
-from .helpers import ArchivesSpaceHelper
+from .helpers import (ArchivesSpaceHelper, add_group, closest_creators,
+                      closest_parent_value, combine_references,
+                      handle_cartographer_reference)
 
 
 class MergeError(Exception):
@@ -17,7 +19,6 @@ class BaseMerger:
         except Exception as e:
             raise MergeError(e)
 
-    @silk_profile()
     def merge(self, object_type, object):
         """Main merge function.
 
@@ -27,7 +28,7 @@ class BaseMerger:
             identifier = self.get_identifier(object)
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
-            return self.combine_data(object, additional_data) if additional_data else object, target_object_type
+            return self.combine_data(object, additional_data), target_object_type
         except Exception as e:
             print(e)
             raise MergeError("Error merging {}: {}".format(identifier, e))
@@ -41,9 +42,11 @@ class BaseMerger:
         return identifier
 
     def get_additional_data(self, object, object_type):
-        return None
+        pass
 
-    @silk_profile()
+    def combine_data(self, object, additional_data):
+        return add_group(object, self.aspace_helper.aspace.client)
+
     def get_target_object_type(self, data):
         """Returns object type.
 
@@ -58,7 +61,6 @@ class BaseMerger:
 
 class ArchivalObjectMerger(BaseMerger):
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches additional data from ArchivesSpace and Cartographer.
 
@@ -71,34 +73,34 @@ class ArchivalObjectMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {"ancestors": [], "children": [], "linked_agents": []}
-        data.update(self.get_cartographer_data(object))
-        data.update(self.get_archivesspace_data(object, object_type))
+        cartographer_data = self.get_cartographer_data(object)
+        archivesspace_data = self.get_archivesspace_data(object, object_type)
+        data.update(cartographer_data)
+        data.update(archivesspace_data)
         return data
 
-    @silk_profile()
     def get_cartographer_data(self, object):
         """Gets ancestors, if any, from the archival object's resource record in
         Cartographer."""
         data = {"ancestors": []}
         resp = self.cartographer_client.get(
-            "/api/find-by-uri/", params={"uri": object["resource"]["ref"]}).json()
-        if resp["count"] >= 1:
-            for a in resp["results"][0].get("ancestors"):
-                a["type"] = "collection"
-                data["ancestors"].append(a)
+            "/api/find-by-uri/", params={"uri": object["resource"]["ref"]})
+        if resp.status_code == 200:
+            json_data = resp.json()
+            if json_data["count"] >= 1:
+                for a in json_data["results"][0].get("ancestors"):
+                    data["ancestors"].append(handle_cartographer_reference(a))
         return data
 
-    @silk_profile()
     def get_archival_object_collection_data(self, object):
         """Gets additional data for archival_object_collections."""
         data = {"children": []}
         data["linked_agents"] = data.get(
-            "linked_agents", []) + self.aspace_helper.closest_creators(object["uri"])
+            "linked_agents", []) + closest_creators(object)
         data["children"] = self.aspace_helper.get_archival_object_children(
             object["resource"]["ref"], object["uri"])
         return data
 
-    @silk_profile()
     def get_language_data(self, object, data):
         """Gets language data from ArchivesSpace.
 
@@ -106,37 +108,62 @@ class ArchivalObjectMerger(BaseMerger):
         """
         if "lang_materials" in object:
             if object.get("lang_materials") in ["", [], {}]:
-                data["lang_materials"] = self.aspace_helper.closest_parent_value(
-                    object["uri"], "lang_materials")
+                data["lang_materials"] = closest_parent_value(object, "lang_materials")
         else:
-            data["language"] = self.aspace_helper.closest_parent_value(
-                object["uri"], "language")
+            data["language"] = closest_parent_value(object, "language")
         return data
 
-    @silk_profile()
+    def parse_instances(self, object):
+        """Attempts to parse extents from instances.
+
+        For instances which contain a child subcontainer, parses the indicator
+        to determine the extent number, and uses the instance type as the extent
+        type. Instances which are not parseable return None.
+        """
+        extents = []
+        parseable = [i for i in object["instances"] if
+                     all(i_type in i.get("sub_container", {})
+                         for i_type in ["indicator_2", "type_2"])]
+        for instance in parseable:
+            extent = {}
+            try:
+                range = sorted([int(re.sub("[^0-9]", "", i.strip()))
+                                for i in instance["sub_container"]["indicator_2"].split("-")])
+                extent["extent_type"] = instance["sub_container"]["type_2"]
+                extent["number"] = range[-1] - range[0] if len(range) > 1 else 1
+                extents.append(extent)
+            except ValueError:
+                pass
+        return extents
+
     def get_archivesspace_data(self, object, object_type):
         """Gets dates, languages, extent and children from archival object's
         resource record in ArchivesSpace.
         """
         data = {"linked_agents": [], "children": []}
-        fields = ["dates"] if object_type == "archival_object" else ["dates", "extents"]
-        for field in fields:
-            if object.get(field) in ["", [], {}, None]:
-                value = self.aspace_helper.closest_parent_value(object["uri"], field)
-                data[field] = value
-        data = self.get_language_data(object, data)
+        if object.get("dates") in ["", [], {}, None]:
+            data["dates"] = closest_parent_value(object, "dates")
+        data.update(self.get_language_data(object, data))
+        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object)
+        if not extent_data and object_type == "archival_object_collection":
+            extent_data = closest_parent_value(object, "extents")
+        data["extents"] = extent_data
         if object_type == "archival_object_collection":
             data.update(self.get_archival_object_collection_data(object))
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
+        """Combines additional data with source data.
+
+        Moves data from resolved objects to expected keys within main object.
+        """
         for k, v in additional_data.items():
             if isinstance(v, list):
                 object[k] = object.get(k, []) + v
             else:
                 object[k] = v
-        return object
+        object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
+        return combine_references(object)
 
 
 class ArrangementMapMerger(BaseMerger):
@@ -144,7 +171,6 @@ class ArrangementMapMerger(BaseMerger):
     def get_target_object_type(self, data):
         return "resource"
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Fetches the ArchivesSpace resource record referenced by the
         ArrangementMapComponent.
@@ -157,20 +183,24 @@ class ArrangementMapMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {"children": []}
-        data.update(self.aspace_helper.aspace.client.get(object["archivesspace_uri"]).json())
-        if not object.get("children"):
+        data.update(
+            self.aspace_helper.aspace.client.get(
+                object["archivesspace_uri"],
+                params={"resolve": ["subjects", "linked_agents"]}).json())
+        if object.get("children"):
+            data["children"] += [handle_cartographer_reference(c) for c in object["children"]]
+        else:
             data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
         ancestors = []
         for a in object.get("ancestors"):
-            a["type"] = "collection"
-            ancestors.append(a)
+            ancestors.append(handle_cartographer_reference(a))
         additional_data["ancestors"] = ancestors
-        return additional_data
+        additional_data = add_group(additional_data, self.aspace_helper.aspace.client)
+        return combine_references(additional_data)
 
 
 class AgentMerger(BaseMerger):
@@ -179,7 +209,6 @@ class AgentMerger(BaseMerger):
 
 class ResourceMerger(BaseMerger):
 
-    @silk_profile()
     def get_additional_data(self, object, object_type):
         """Gets additional data from Cartographer and ArchivesSpace.
 
@@ -195,26 +224,31 @@ class ResourceMerger(BaseMerger):
         data.update(self.get_archivesspace_data(object))
         return data
 
-    @silk_profile()
     def get_cartographer_data(self, object):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
-        data = {"ancestors": []}
-        cartographer_data = self.cartographer_client.get(
-            "/api/find-by-uri/", params={"uri": object["uri"]}).json()
-        if cartographer_data["count"] > 0:
-            data["ancestors"] = cartographer_data["results"][0].get("ancestors", [])
+        data = {"ancestors": [], "children": []}
+        resp = self.cartographer_client.get(
+            "/api/find-by-uri/", params={"uri": object["uri"]})
+        if resp.status_code == 200:
+            json_data = resp.json()
+            if json_data["count"] > 0:
+                result = json_data["results"][0]
+                for a in result.get("ancestors", []):
+                    data["ancestors"].append(handle_cartographer_reference(a))
+                for a in result.get("children", []):
+                    data["children"].append(handle_cartographer_reference(a))
         return data
 
-    @silk_profile()
     def get_archivesspace_data(self, object):
         """Returns the first level of the resource record tree from
         ArchivesSpace."""
-        data = {"children": []}
-        data["children"] = self.aspace_helper.get_resource_children(object["uri"])
+        data = {}
+        children = self.aspace_helper.get_resource_children(object["uri"])
+        if len(children):
+            data["children"] = children
         return data
 
-    @silk_profile()
     def combine_data(self, object, additional_data):
         """Combines existing ArchivesSpace data with Cartographer data.
 
@@ -223,7 +257,8 @@ class ResourceMerger(BaseMerger):
         """
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
-        return object
+        object = super(ResourceMerger, self).combine_data(object, additional_data)
+        return combine_references(object)
 
 
 class SubjectMerger(BaseMerger):

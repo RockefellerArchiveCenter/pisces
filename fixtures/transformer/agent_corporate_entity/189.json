@@ -34,6 +34,19 @@
         "user_mtime": "2014-12-06T02:42:13Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/189",
+                "role": "creator",
+                "title": "United States. President's Advisory Committee on Government Organization",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/189",
+        "title": "United States. President's Advisory Committee on Government Organization"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

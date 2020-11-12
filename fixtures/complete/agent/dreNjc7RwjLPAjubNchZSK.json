@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/1",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/1",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "dreNjc7RwjLPAjubNchZSK",
+                "relator": null,
+                "role": "creator",
+                "title": "Test Repository",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/dreNjc7RwjLPAjubNchZSK",
+        "title": "Test Repository"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/1",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "dreNjc7RwjLPAjubNchZSK",
+            "relator": null,
+            "role": "creator",
+            "title": "Test Repository",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Test Repository",
+    "type": "agent",
+    "uri": "/agents/dreNjc7RwjLPAjubNchZSK"
+}

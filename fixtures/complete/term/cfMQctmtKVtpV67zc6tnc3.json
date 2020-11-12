@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/37",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/cfMQctmtKVtpV67zc6tnc3",
+        "title": "Government policy"
+    },
+    "term_type": "topical",
+    "title": "Government policy",
+    "type": "term",
+    "uri": "/terms/cfMQctmtKVtpV67zc6tnc3"
+}

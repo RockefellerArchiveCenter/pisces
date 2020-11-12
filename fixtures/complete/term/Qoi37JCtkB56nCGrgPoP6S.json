@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/7379",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/Qoi37JCtkB56nCGrgPoP6S",
+        "title": "Horse riding"
+    },
+    "term_type": "topical",
+    "title": "Horse riding",
+    "type": "term",
+    "uri": "/terms/Qoi37JCtkB56nCGrgPoP6S"
+}

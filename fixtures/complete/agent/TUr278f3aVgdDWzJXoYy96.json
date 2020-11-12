@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/20025",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/20025",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "TUr278f3aVgdDWzJXoYy96",
+                "relator": null,
+                "role": "creator",
+                "title": "United Nations",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/TUr278f3aVgdDWzJXoYy96",
+        "title": "United Nations"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/20025",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "TUr278f3aVgdDWzJXoYy96",
+            "relator": null,
+            "role": "creator",
+            "title": "United Nations",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United Nations",
+    "type": "agent",
+    "uri": "/agents/TUr278f3aVgdDWzJXoYy96"
+}

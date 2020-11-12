@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/9072",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/9072",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "4sAWzL3X274uPJqF474qV3",
+                "relator": null,
+                "role": "creator",
+                "title": "Nixon, Richard M. (Richard Milhous)",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/4sAWzL3X274uPJqF474qV3",
+        "title": "Nixon, Richard M. (Richard Milhous)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/9072",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "4sAWzL3X274uPJqF474qV3",
+            "relator": null,
+            "role": "creator",
+            "title": "Nixon, Richard M. (Richard Milhous)",
+            "type": "person"
+        }
+    ],
+    "title": "Nixon, Richard M. (Richard Milhous)",
+    "type": "agent",
+    "uri": "/agents/4sAWzL3X274uPJqF474qV3"
+}

@@ -1,49 +1,45 @@
 {
-    "create_time": "2014-12-06T02:29:43Z",
+    "create_time": "2020-09-20T15:04:59Z",
     "created_by": "admin",
     "external_documents": [],
-    "external_ids": [
-        {
-            "create_time": "2014-12-06T02:29:43Z",
-            "created_by": "admin",
-            "external_id": "13",
-            "jsonmodel_type": "external_id",
-            "last_modified_by": "admin",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "system_mtime": "2014-12-06T02:29:43Z",
-            "user_mtime": "2014-12-06T02:29:43Z"
-        }
-    ],
+    "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/9",
+        "title": "Social problems -- Latin America"
+    },
     "is_linked_to_published_record": true,
+    "is_slug_auto": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",
-    "lock_version": 231,
+    "lock_version": 2,
     "publish": true,
     "source": "lcsh",
-    "system_mtime": "2019-04-16T19:17:30Z",
+    "system_mtime": "2020-09-21T16:58:31Z",
     "terms": [
         {
-            "create_time": "2014-12-06T02:29:44Z",
+            "create_time": "2020-09-20T15:04:59Z",
             "created_by": "admin",
             "jsonmodel_type": "term",
             "last_modified_by": "admin",
             "lock_version": 0,
-            "system_mtime": "2014-12-06T02:29:44Z",
-            "term": "Civil defense",
+            "system_mtime": "2020-09-20T15:04:59Z",
+            "term": "Social problems -- Latin America",
             "term_type": "topical",
-            "uri": "/terms/10",
-            "user_mtime": "2014-12-06T02:29:44Z",
+            "uri": "/terms/9",
+            "user_mtime": "2020-09-20T15:04:59Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "title": "Civil defense",
+    "title": "Social problems -- Latin America",
     "uri": "/subjects/9",
     "used_within_published_repositories": [
-        "/repositories/2"
+        "/repositories/101"
     ],
     "used_within_repositories": [
-        "/repositories/2"
+        "/repositories/101"
     ],
-    "user_mtime": "2014-12-06T02:29:43Z",
+    "user_mtime": "2020-09-20T15:04:59Z",
     "vocabulary": "/vocabularies/1"
 }

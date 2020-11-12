@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1894",
+            "end": "1978",
+            "expression": "1894-1978",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/140",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/140",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "D8zqbxgxZdiJGFsLmnCbKS",
+                "relator": null,
+                "role": "creator",
+                "title": "Weaver, Warren",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1894",
+                "end": "1978",
+                "expression": "1894-1978",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/D8zqbxgxZdiJGFsLmnCbKS",
+        "title": "Weaver, Warren"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/140",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "D8zqbxgxZdiJGFsLmnCbKS",
+            "relator": null,
+            "role": "creator",
+            "title": "Weaver, Warren",
+            "type": "person"
+        }
+    ],
+    "title": "Weaver, Warren",
+    "type": "agent",
+    "uri": "/agents/D8zqbxgxZdiJGFsLmnCbKS"
+}

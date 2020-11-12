@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/43",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/43",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "WSZpZmRZiXAkhqpsxPJvLM",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. New Delhi (India)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/WSZpZmRZiXAkhqpsxPJvLM",
+        "title": "Rockefeller Foundation. New Delhi (India)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/43",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "WSZpZmRZiXAkhqpsxPJvLM",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. New Delhi (India)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. New Delhi (India)",
+    "type": "agent",
+    "uri": "/agents/WSZpZmRZiXAkhqpsxPJvLM"
+}

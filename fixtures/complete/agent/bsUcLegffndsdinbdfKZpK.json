@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/104",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/104",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bsUcLegffndsdinbdfKZpK",
+                "relator": null,
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/bsUcLegffndsdinbdfKZpK",
+        "title": "Linden, Patricia"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/104",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bsUcLegffndsdinbdfKZpK",
+            "relator": null,
+            "role": "creator",
+            "title": "Linden, Patricia",
+            "type": "person"
+        }
+    ],
+    "title": "Linden, Patricia",
+    "type": "agent",
+    "uri": "/agents/bsUcLegffndsdinbdfKZpK"
+}

@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/47",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/47",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Kv8KgvnnEvgiX9phci5AMG",
+                "relator": null,
+                "role": "creator",
+                "title": "China Medical Board. Beijing (China)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Kv8KgvnnEvgiX9phci5AMG",
+        "title": "China Medical Board. Beijing (China)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/47",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Kv8KgvnnEvgiX9phci5AMG",
+            "relator": null,
+            "role": "creator",
+            "title": "China Medical Board. Beijing (China)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "China Medical Board. Beijing (China)",
+    "type": "agent",
+    "uri": "/agents/Kv8KgvnnEvgiX9phci5AMG"
+}

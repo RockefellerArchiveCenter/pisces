@@ -1,0 +1,18 @@
+{
+  "source": {
+    "instances": [
+      {
+          "sub_container": {
+              "indicator_2": "10 - 20",
+              "type_2": "folder"
+          }
+      }
+    ]
+  },
+  "parsed": [
+    {
+      "extent_type": "folder",
+      "number": 10
+    }
+  ]
+}

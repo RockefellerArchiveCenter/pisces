@@ -33,6 +33,19 @@
         "user_mtime": "2014-12-06T03:06:37Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/4767",
+                "role": "creator",
+                "title": "United States. Office of the Vice President.",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/4767",
+        "title": "United States. Office of the Vice President."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "admin",

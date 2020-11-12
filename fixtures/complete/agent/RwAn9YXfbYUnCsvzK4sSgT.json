@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/784",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/784",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "RwAn9YXfbYUnCsvzK4sSgT",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Ankara (Turkey)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/RwAn9YXfbYUnCsvzK4sSgT",
+        "title": "Rockefeller Foundation. Ankara (Turkey)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/784",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "RwAn9YXfbYUnCsvzK4sSgT",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Ankara (Turkey)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Ankara (Turkey)",
+    "type": "agent",
+    "uri": "/agents/RwAn9YXfbYUnCsvzK4sSgT"
+}

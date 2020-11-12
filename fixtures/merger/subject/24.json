@@ -1,0 +1,39 @@
+{
+    "create_time": "2020-09-20T15:05:00Z",
+    "created_by": "admin",
+    "external_documents": [],
+    "external_ids": [],
+    "is_linked_to_published_record": true,
+    "is_slug_auto": true,
+    "jsonmodel_type": "subject",
+    "last_modified_by": "admin",
+    "lock_version": 2,
+    "publish": true,
+    "source": "lcsh",
+    "system_mtime": "2020-09-21T16:58:31Z",
+    "terms": [
+        {
+            "create_time": "2020-09-20T15:05:00Z",
+            "created_by": "admin",
+            "jsonmodel_type": "term",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-20T15:05:00Z",
+            "term": "Developing countries",
+            "term_type": "topical",
+            "uri": "/terms/24",
+            "user_mtime": "2020-09-20T15:05:00Z",
+            "vocabulary": "/vocabularies/1"
+        }
+    ],
+    "title": "Developing countries",
+    "uri": "/subjects/24",
+    "used_within_published_repositories": [
+        "/repositories/101"
+    ],
+    "used_within_repositories": [
+        "/repositories/101"
+    ],
+    "user_mtime": "2020-09-20T15:05:00Z",
+    "vocabulary": "/vocabularies/1"
+}

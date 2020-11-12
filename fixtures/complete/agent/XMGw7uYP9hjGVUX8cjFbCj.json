@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/1889",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/1889",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "XMGw7uYP9hjGVUX8cjFbCj",
+                "relator": null,
+                "role": "creator",
+                "title": "Allison, Richard",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/XMGw7uYP9hjGVUX8cjFbCj",
+        "title": "Allison, Richard"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/1889",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "XMGw7uYP9hjGVUX8cjFbCj",
+            "relator": null,
+            "role": "creator",
+            "title": "Allison, Richard",
+            "type": "person"
+        }
+    ],
+    "title": "Allison, Richard",
+    "type": "agent",
+    "uri": "/agents/XMGw7uYP9hjGVUX8cjFbCj"
+}

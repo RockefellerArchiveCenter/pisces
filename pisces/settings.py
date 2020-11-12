@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'fetcher',
     'merger',
     'transformer',
-    'silk',
     'django_cron',
 ]
 
@@ -53,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'pisces.urls'
@@ -137,9 +135,6 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 25
 }
 
-# Silk Profiling
-SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
-
 # Django cron settings
 CRON_CLASSES = [
     "fetcher.cron.DeletedArchivesSpaceArchivalObjects",
@@ -172,6 +167,7 @@ CARTOGRAPHER = {
     "health_check_path": config.CARTOGRAPHER_HEALTH_CHECK_PATH,
 }
 
+CHUNK_SIZE = config.CHUNK_SIZE
 INDEX_DELETE_URL = config.INDEX_DELETE_URL
 
 # Email settings
@@ -181,4 +177,8 @@ EMAIL_HOST_USER = config.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = config.EMAIL_HOST_PASSWORD
 EMAIL_USE_TLS = config.EMAIL_USE_TLS
 EMAIL_USE_SSL = config.EMAIL_USE_SSL
-EMAIL_TO_ADDRESS = config.EMAIL_TO_ADDRESS
+EMAIL_TO_ADDRESSES = config.EMAIL_TO_ADDRESSES
+
+MOVING_IMAGE_REFS = config.MOVING_IMAGE_REFS
+AUDIO_REFS = config.AUDIO_REFS
+PHOTOGRAPH_REFS = config.PHOTOGRAPH_REFS

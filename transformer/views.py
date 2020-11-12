@@ -9,7 +9,12 @@ from .serializers import DataObjectListSerializer, DataObjectSerializer
 
 class DataObjectViewSet(ModelViewSet):
     model = DataObject
-    queryset = DataObject.objects.all().order_by("last_modified")
+
+    def get_queryset(self):
+        queryset = DataObject.objects.all().order_by("last_modified")
+        if self.request.GET.get("clean", "").lower() != "true":
+            queryset = queryset.exclude(indexed=True)
+        return queryset
 
     def get_serializer_class(self):
         if self.action == 'list':
@@ -55,19 +60,22 @@ class DataObjectUpdateByIdView(BaseServiceView):
     """
 
     def get_service_response(self, request):
-        es_id = request.data.get("identifier")
+        identifiers = request.data.get("identifiers")
         action = request.data.get("action")
+        msg = "No object identifiers were found."
         if action not in ["deleted", "indexed"]:
-            raise Exception("Unrecognized action {}, expecting either `deleted` or `indexed`")
-        try:
-            obj = DataObject.objects.get(es_id=es_id)
-            if action == "indexed":
+            raise Exception("Unrecognized action {}, expecting either `deleted` or `indexed`".format(action))
+        obj_list = DataObject.objects.filter(es_id__in=identifiers)
+        if action == "indexed":
+            for obj in obj_list:
                 obj.indexed = True
-                obj.save()
-                msg = "{} {} marked as indexed.".format(obj.object_type, obj.pk)
-            else:
-                obj.delete()
-                msg = "{} {} deleted.".format(obj.object_type, obj.pk)
-        except DataObject.DoesNotExist:
-            raise Exception("Could not find DataObject with identifier {}".format(es_id))
+            DataObject.objects.bulk_update(obj_list, ["indexed"])
+        else:
+            for obj in obj_list:
+                try:
+                    obj.delete()
+                except DataObject.DoesNotExist:
+                    pass
+        msg = "{} objects {}.".format(
+            len(obj_list), "marked as indexed." if action == "indexed" else "deleted")
         return msg

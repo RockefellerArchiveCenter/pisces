@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/42",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/42",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "XRRJDtQaDAw2dosos79o4Y",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Paris (France)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/XRRJDtQaDAw2dosos79o4Y",
+        "title": "Rockefeller Foundation. Paris (France)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/42",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "XRRJDtQaDAw2dosos79o4Y",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Paris (France)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Paris (France)",
+    "type": "agent",
+    "uri": "/agents/XRRJDtQaDAw2dosos79o4Y"
+}

@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/17",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/6DscaFem8XtpafjxBDpimp",
+        "title": "Philanthropy"
+    },
+    "term_type": "topical",
+    "title": "Philanthropy",
+    "type": "term",
+    "uri": "/terms/6DscaFem8XtpafjxBDpimp"
+}

@@ -1,0 +1,302 @@
+{
+    "ancestors": [
+        {
+            "dates": "1950s-1980s (Bulk 1982)",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/resources/4",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gfvm2HihpLwCTnKgpDtdhR",
+            "level": "collection",
+            "order": null,
+            "title": "Cary Reich papers",
+            "type": "collection"
+        }
+    ],
+    "category": "collection",
+    "children": [
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2740",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "iQmBDfJWuCvrbvmaGF92Cu",
+            "level": "file",
+            "order": 0,
+            "title": "AV 6316 - AV 6367",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2741",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "2tCPMsahXfUURDNEMLUFYs",
+            "level": "file",
+            "order": 1,
+            "title": "AV 6368 - AV 6419",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2742",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "fcHNNz4ZbdQWtabKfAEwA9",
+            "level": "file",
+            "order": 2,
+            "title": "AV 6420 - AV 6471",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2743",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "mj5PXfgFhrYtyuJr72teuY",
+            "level": "file",
+            "order": 3,
+            "title": "AV 6472 - AV 6526",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2744",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "V58vKsAz8mW3YTUVURnVk2",
+            "level": "file",
+            "order": 4,
+            "title": "AV 6527 - AV 6581",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2745",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "k9xMXmWPTMkKFbKBM2Mokd",
+            "level": "file",
+            "order": 5,
+            "title": "AV 6582 - AV 6636",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2746",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "AKthgVZcmporYtQbcPmK3d",
+            "level": "file",
+            "order": 6,
+            "title": "AV 6637 - AV 6691",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2747",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "gy4YyqnyUEvyUMUAakW89w",
+            "level": "file",
+            "order": 7,
+            "title": "AV 6692 - AV 6746",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2748",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "ASSM2Z9t6e2hcP6JipR9vs",
+            "level": "file",
+            "order": 8,
+            "title": "AV 6747 - AV 6810",
+            "type": "object"
+        },
+        {
+            "dates": "",
+            "external_identifiers": [
+                {
+                    "identifier": "/repositories/101/archival_objects/2749",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "VhHVWW4YP9hrsxbWmfW5FW",
+            "level": "file",
+            "order": 9,
+            "title": "AV 6802 - AV 6850",
+            "type": "object"
+        }
+    ],
+    "creators": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/103",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+            "relator": null,
+            "role": "creator",
+            "title": "Reich, Cary",
+            "type": "person"
+        },
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/104",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bsUcLegffndsdinbdfKZpK",
+            "relator": null,
+            "role": "creator",
+            "title": "Linden, Patricia",
+            "type": "person"
+        }
+    ],
+    "dates": [
+        {
+            "begin": "1950",
+            "end": "1989",
+            "expression": "1950s-1980s (Bulk 1982)",
+            "label": "creation",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "extents": [
+        {
+            "type": "Cubic Feet",
+            "value": "13.86"
+        }
+    ],
+    "external_identifiers": [
+        {
+            "identifier": "/repositories/101/archival_objects/2336",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "formats": [
+        "documents",
+        "audio"
+    ],
+    "group": {
+        "category": "collection",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/103",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+                "relator": null,
+                "role": "creator",
+                "title": "Reich, Cary",
+                "type": "person"
+            },
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/104",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "bsUcLegffndsdinbdfKZpK",
+                "relator": null,
+                "role": "creator",
+                "title": "Linden, Patricia",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1950",
+                "end": "1989",
+                "expression": "1950s-1980s (Bulk 1982)",
+                "label": "creation",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/collections/gfvm2HihpLwCTnKgpDtdhR",
+        "title": "Cary Reich papers"
+    },
+    "languages": [
+        {
+            "expression": "English",
+            "identifier": "eng"
+        }
+    ],
+    "level": "series",
+    "notes": [],
+    "online": false,
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/103",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bq4qoqbgjRpaLBCwGfb5fK",
+            "relator": null,
+            "role": "creator",
+            "title": "Reich, Cary",
+            "type": "person"
+        },
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/104",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "bsUcLegffndsdinbdfKZpK",
+            "relator": null,
+            "role": "creator",
+            "title": "Linden, Patricia",
+            "type": "person"
+        }
+    ],
+    "rights": [],
+    "terms": [],
+    "title": "Original Audio Tapes",
+    "type": "collection",
+    "uri": "/collections/kqx4Z5uJzTUF2RhdKbF8bB"
+}

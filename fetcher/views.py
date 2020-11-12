@@ -67,5 +67,9 @@ class FetchRunViewSet(ModelViewSet):
         return self.get_action_response(request, object_type="resource")
 
     @action(detail=False)
+    def subjects(self, request):
+        return self.get_action_response(request, object_type="subject")
+
+    @action(detail=False)
     def arrangement_map_components(self, request):
         return self.get_action_response(request, object_type="arrangement_map_component")

@@ -21,6 +21,19 @@
         "user_mtime": "2016-01-05T21:18:30Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/corporate_entities/27734",
+                "role": "creator",
+                "title": "International Center for Living Aquatic Resources Management",
+                "type": "agent_corporate_entity"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/corporate_entities/27734",
+        "title": "International Center for Living Aquatic Resources Management"
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_corporate_entity",
     "last_modified_by": "pgalligan",

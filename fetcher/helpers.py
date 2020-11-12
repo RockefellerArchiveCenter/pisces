@@ -1,15 +1,13 @@
 import requests
+import shortuuid
 from asnake.aspace import ASpace
 from django.core.mail import send_mail
 from electronbonder.client import ElectronBond
 from pisces import settings
-from silk.profiling.profiler import silk_profile
-from transformer.models import DataObject
 
 from .models import FetchRun, FetchRunError
 
 
-@silk_profile()
 def last_run_time(source, object_status, object_type):
     """Returns a timestamp for a successful fetch.
 
@@ -37,8 +35,7 @@ def last_run_time(source, object_status, object_type):
         else 0)
 
 
-@silk_profile()
-def instantiate_aspace(self, config=None, repo=False):
+def instantiate_aspace(self, config=None):
     """Instantiates and returns an ASpace object with a repository as an attribute.
 
     Args:
@@ -52,15 +49,9 @@ def instantiate_aspace(self, config=None, repo=False):
         baseurl=config['baseurl'],
         username=config['username'],
         password=config['password'])
-    if repo:
-        repo = aspace.repositories(config['repo'])
-        setattr(aspace, 'repo', repo)  # TODO: I am unsure whether or not this is a good idea
-        if isinstance(repo, dict) and 'error' in repo:
-            raise Exception(self.repo['error'])
     return aspace
 
 
-@silk_profile()
 def instantiate_electronbond(self, config=None):
     """Instantiates and returns an ElectronBond client.
 
@@ -78,42 +69,47 @@ def instantiate_electronbond(self, config=None):
             "Cartographer is not available: {}".format(e))
 
 
-@silk_profile()
-def get_es_id(identifier, source, object_type):
-    es_id = None
-    matches = DataObject.find_matches(object_type, source, identifier)
-    for match in matches:
-        if match.indexed:
-            es_id = match.es_id
-    return es_id
+def identifier_from_uri(uri):
+    """Creates a short UUID.
+
+    Uses `shortuuid`, which first creates a v5 UUID using an object's AS URI as
+    a name, and then converts them to base57 using lowercase and uppercase
+    letters and digits, and removing similar-looking characters such as
+    l, 1, I, O and 0.
+
+    This is a one-way process; while it is possible to consistently generate a
+    given UUID given an AS URI, it is not possible to decode the URI from the
+    UUID.
+    """
+    return shortuuid.uuid(name=uri)
 
 
-@silk_profile()
-def handle_deleted_uri(uri, source, object_type, current_run):
+async def handle_deleted_uris(uri_list, source, object_type, current_run):
+    """Delivers POST request to indexing service with list of ids to be deleted."""
     updated = None
-    es_id = get_es_id(uri, source, object_type)
-    if es_id:
+    es_ids = [identifier_from_uri(uri) for uri in list(set(uri_list))]
+    if es_ids:
         try:
-            resp = requests.post(settings.INDEX_DELETE_URL, json=es_id)
+            resp = requests.post(settings.INDEX_DELETE_URL, json={"identifiers": es_ids})
             resp.raise_for_status()
-            updated = es_id
+            updated = es_ids
         except requests.exceptions.HTTPError:
             if current_run:
                 FetchRunError.objects.create(
                     run=current_run,
-                    message=resp.json()["detail"],
-                )
-        else:
-            raise Exception(resp.json()["detail"])
+                    message=resp.json()["detail"])
+        except Exception as e:
+            raise Exception("Error sending delete request: {}".format(e))
     return updated
 
 
 def send_error_notification(fetch_run):
+    """Send email with errors encountered during a fetch run."""
     try:
         errors = ""
         err_str = "errors" if fetch_run.error_count > 1 else "error"
         object_type = fetch_run.get_object_type_display()
-        source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == fetch_run.source][0]
+        source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == int(fetch_run.source)][0]
         for err in fetch_run.errors:
             errors += "{}\n".format(err.message)
         send_mail(
@@ -122,7 +118,7 @@ def send_error_notification(fetch_run):
             "The following errors were encountered while exporting {} objects from {}:\n\n{}".format(
                 object_type, source, errors),
             "alerts@rockarch.org",
-            [settings.EMAIL_TO_ADDRESS],
+            settings.EMAIL_TO_ADDRESSES,
             fail_silently=False,)
     except Exception as e:
         print("Unable to send error notification email: {}".format(e))

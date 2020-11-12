@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/19",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/JyMGDnXLhn5jWFNKPELmxm",
+        "title": "Arts"
+    },
+    "term_type": "topical",
+    "title": "Arts",
+    "type": "term",
+    "uri": "/terms/JyMGDnXLhn5jWFNKPELmxm"
+}

@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/181",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/181",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "h35gC77RDdLBW5PgdsMk55",
+                "relator": null,
+                "role": "creator",
+                "title": "United States. Dept. of State",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/h35gC77RDdLBW5PgdsMk55",
+        "title": "United States. Dept. of State"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/181",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "h35gC77RDdLBW5PgdsMk55",
+            "relator": null,
+            "role": "creator",
+            "title": "United States. Dept. of State",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United States. Dept. of State",
+    "type": "agent",
+    "uri": "/agents/h35gC77RDdLBW5PgdsMk55"
+}

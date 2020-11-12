@@ -35,6 +35,19 @@
         "user_mtime": "2014-12-06T02:50:42Z"
     },
     "external_documents": [],
+    "group": {
+        "creators": [
+            {
+                "ref": "/agents/people/3396",
+                "role": "creator",
+                "title": "Lyman, Richard W.",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/people/3396",
+        "title": "Lyman, Richard W."
+    },
     "is_linked_to_published_record": true,
     "jsonmodel_type": "agent_person",
     "last_modified_by": "admin",

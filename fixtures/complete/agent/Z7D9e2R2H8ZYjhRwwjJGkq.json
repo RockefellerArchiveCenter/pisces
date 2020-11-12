@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/23138",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/23138",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Z7D9e2R2H8ZYjhRwwjJGkq",
+                "relator": null,
+                "role": "creator",
+                "title": "International Center for Tropical Agriculture CIAT",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Z7D9e2R2H8ZYjhRwwjJGkq",
+        "title": "International Center for Tropical Agriculture CIAT"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/23138",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Z7D9e2R2H8ZYjhRwwjJGkq",
+            "relator": null,
+            "role": "creator",
+            "title": "International Center for Tropical Agriculture CIAT",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "International Center for Tropical Agriculture CIAT",
+    "type": "agent",
+    "uri": "/agents/Z7D9e2R2H8ZYjhRwwjJGkq"
+}

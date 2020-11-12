@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/4496",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4496",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "Jmvv77ckwqLaTwsgqdp4NA",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller Foundation. Belem (Brazil)",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/Jmvv77ckwqLaTwsgqdp4NA",
+        "title": "Rockefeller Foundation. Belem (Brazil)"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4496",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "Jmvv77ckwqLaTwsgqdp4NA",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller Foundation. Belem (Brazil)",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Rockefeller Foundation. Belem (Brazil)",
+    "type": "agent",
+    "uri": "/agents/Jmvv77ckwqLaTwsgqdp4NA"
+}

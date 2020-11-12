@@ -30,31 +30,34 @@ class ExternalIdentifier(odin.Resource):
 
 
 class Reference(odin.Resource):
-    """A short reference to a first-class entity (Agent, Collection, Object or Term).
-
-    Field-specific notes:
-        order: applies only to children and parent Objects and Collections References.
-        type: indicates what type of linked object the Reference points to.
-        uri: generated when objects are indexed.
-        relator: applies only to References for Agent objects.
-        level: applies only to Collection and Object References.
-        identifier: generated when objects are indexed.
-    """
+    """Base class for short references to a first-class entity (Agent, Collection, Object or Term)."""
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
-    order = odin.StringField(null=True)
-    title = odin.StringField(null=True)
-    type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES, null=True)
-    uri = odin.StringField(null=True)
-    relator = odin.StringField(null=True)
-    role = odin.StringField(null=True)
-    level = odin.StringField(null=True)
-    identifier = odin.StringField(null=True)
+    title = odin.StringField()
+    type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES)
+    identifier = odin.StringField()
+
+
+class RecordReference(Reference):
+    """Short reference to Collections or Objects."""
+    order = odin.StringField()
+    level = odin.StringField()
+    dates = odin.StringField()
+
+
+class AgentReference(Reference):
+    """Short reference to Agents."""
+    relator = odin.StringField()
+    role = odin.StringField()
+
+
+class TermReference(Reference):
+    """Short reference to Terms."""
+    pass
 
 
 class Date(odin.Resource):
     """Records the dates associated with an aggregation of archival records."""
-    # TODO REMOVE DEFAULT WHEN DATE PARSING IS ADDED
-    begin = odin.DateTimeField(default="2019")
+    begin = odin.DateTimeField()
     end = odin.DateTimeField()
     expression = odin.StringField()
     type = odin.StringField(choices=configs.DATE_TYPE_CHOICES)
@@ -65,24 +68,22 @@ class Date(odin.Resource):
 class Extent(odin.Resource):
     """Records the size of an aggregation of archival records."""
     value = odin.StringField()
-    type = odin.StringField(choices=configs.EXTENT_TYPE_CHOICES)
+    type = odin.StringField()
+
+
+class Group(odin.Resource):
+    """Information about the highest-level collection containing the data object."""
+    category = odin.StringField()
+    creators = odin.ArrayOf(AgentReference, null=True)
+    dates = odin.ArrayOf(Date, null=True)
+    identifier = odin.StringField()
+    title = odin.StringField()
 
 
 class Language(odin.Resource):
     """A human language."""
     expression = odin.StringField()
     identifier = odin.StringField()
-
-
-class Term(odin.Resource):
-    """A controlled term.
-
-    Term is a first-class entity in the RAC data model.
-    """
-    title = odin.StringField()
-    type = odin.StringField(default="term")
-    term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
-    external_identifiers = odin.ArrayOf(ExternalIdentifier)
 
 
 class RightsGranted(odin.Resource):
@@ -112,60 +113,84 @@ class RightsStatement(odin.Resource):
     rights_granted = odin.ArrayOf(RightsGranted)
 
 
-class Collection(odin.Resource):
+class BaseResource(odin.Resource):
+    """Base class for all first-class entities in the RAC data model."""
+    title = odin.StringField()
+    uri = odin.StringField()
+    group = odin.DictOf(Group)
+    external_identifiers = odin.ArrayOf(ExternalIdentifier)
+
+
+class Term(BaseResource):
+    """A controlled term.
+
+    Term is a first-class entity in the RAC data model.
+    """
+    category = odin.StringField(default="subject")
+    type = odin.StringField(default="term")
+    term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
+
+
+class Collection(BaseResource):
     """An aggregation of archival records.
 
     Collections contain other aggregations of records (either Objects or
     Collections), and may themselves be contained within another Collection.
     Collection is a first-class entity in the RAC data model.
     """
-    title = odin.StringField()
     type = odin.StringField(default="collection")
+    category = odin.StringField(default="collection")
     level = odin.StringField()
     dates = odin.ArrayOf(Date)
-    creators = odin.ArrayOf(Reference)
+    creators = odin.ArrayOf(AgentReference)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Reference)
-    terms = odin.ArrayOf(Reference)
-    children = odin.ArrayOf(Reference, null=True)
-    ancestors = odin.ArrayOf(Reference, null=True)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)
+    terms = odin.ArrayOf(TermReference)
+    children = odin.ArrayOf(RecordReference, null=True)
+    ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
-    external_identifiers = odin.ArrayOf(ExternalIdentifier)
+    formats = odin.ArrayField()
+    online = odin.BooleanField(default=False)
 
 
-class Object(odin.Resource):
+class Object(BaseResource):
     """An aggregation of archival records.
 
     Objects may be contained within Collections, but do not contain other
     Objects or Collections. Object is a first-class entity in the RAC data model.
     """
-    title = odin.StringField()
     type = odin.StringField(default="object")
+    category = odin.StringField(default="collection")
     dates = odin.ArrayOf(Date)
     languages = odin.ArrayOf(Language)
     extents = odin.ArrayOf(Extent)
     notes = odin.ArrayOf(Note)
-    agents = odin.ArrayOf(Reference)
-    terms = odin.ArrayOf(Reference)
-    ancestors = odin.ArrayOf(Reference, null=True)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)
+    terms = odin.ArrayOf(TermReference)
+    ancestors = odin.ArrayOf(RecordReference, null=True)
     rights = odin.ArrayOf(RightsStatement)
-    external_identifiers = odin.ArrayOf(ExternalIdentifier)
     tree_position = odin.IntegerField()
+    formats = odin.ArrayField()
+    online = odin.BooleanField(default=False)
 
 
-class Agent(odin.Resource):
+class Agent(BaseResource):
     """A person, family or organization who acts on or is represented in records.
 
     Agent is a first-class entity in the RAC data model.
     """
-    title = odin.StringField()
     type = odin.StringField(default="agent")
+    category = odin.StringField()
     agent_type = odin.StringField()
     description = odin.StringField(null=True)
     dates = odin.ArrayOf(Date)
-    collections = odin.ArrayOf(Reference, null=True)
-    objects = odin.ArrayOf(Reference, null=True)
     notes = odin.ArrayOf(Note)
-    external_identifiers = odin.ArrayOf(ExternalIdentifier)
+    people = odin.ArrayOf(AgentReference)
+    organizations = odin.ArrayOf(AgentReference)
+    families = odin.ArrayOf(AgentReference)

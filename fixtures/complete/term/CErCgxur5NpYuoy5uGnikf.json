@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/18",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/CErCgxur5NpYuoy5uGnikf",
+        "title": "Art, Primitive"
+    },
+    "term_type": "topical",
+    "title": "Art, Primitive",
+    "type": "term",
+    "uri": "/terms/CErCgxur5NpYuoy5uGnikf"
+}

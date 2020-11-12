@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/4620",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/4620",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "857qKBoxAfozma2x5hd5Av",
+                "relator": null,
+                "role": "creator",
+                "title": "Winrock Farms Agri-Services, Inc.",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/857qKBoxAfozma2x5hd5Av",
+        "title": "Winrock Farms Agri-Services, Inc."
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/4620",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "857qKBoxAfozma2x5hd5Av",
+            "relator": null,
+            "role": "creator",
+            "title": "Winrock Farms Agri-Services, Inc.",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "Winrock Farms Agri-Services, Inc.",
+    "type": "agent",
+    "uri": "/agents/857qKBoxAfozma2x5hd5Av"
+}

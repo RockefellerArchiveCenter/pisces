@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/1",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/1",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "7gdvKz2bSKaqNGfNFrp9AP",
+                "relator": null,
+                "role": "creator",
+                "title": "Administrator",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/7gdvKz2bSKaqNGfNFrp9AP",
+        "title": "Administrator"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/1",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "7gdvKz2bSKaqNGfNFrp9AP",
+            "relator": null,
+            "role": "creator",
+            "title": "Administrator",
+            "type": "person"
+        }
+    ],
+    "title": "Administrator",
+    "type": "agent",
+    "uri": "/agents/7gdvKz2bSKaqNGfNFrp9AP"
+}

@@ -1,0 +1,338 @@
+{
+    "ancestors": [
+        {
+            "dates": "1959-1970",
+            "level": "series",
+            "ref": "/repositories/101/resources/3",
+            "subjects": [
+                {
+                    "ref": "/subjects/1"
+                },
+                {
+                    "ref": "/subjects/2"
+                },
+                {
+                    "ref": "/subjects/3"
+                },
+                {
+                    "ref": "/subjects/4"
+                },
+                {
+                    "ref": "/subjects/5"
+                },
+                {
+                    "ref": "/subjects/6"
+                },
+                {
+                    "ref": "/subjects/7"
+                },
+                {
+                    "ref": "/subjects/8"
+                },
+                {
+                    "ref": "/subjects/9"
+                },
+                {
+                    "ref": "/subjects/10"
+                },
+                {
+                    "ref": "/subjects/11"
+                },
+                {
+                    "ref": "/subjects/12"
+                },
+                {
+                    "ref": "/subjects/13"
+                },
+                {
+                    "ref": "/subjects/14"
+                },
+                {
+                    "ref": "/subjects/15"
+                },
+                {
+                    "ref": "/subjects/16"
+                },
+                {
+                    "ref": "/subjects/17"
+                },
+                {
+                    "ref": "/subjects/18"
+                },
+                {
+                    "ref": "/subjects/19"
+                },
+                {
+                    "ref": "/subjects/20"
+                },
+                {
+                    "ref": "/subjects/21"
+                },
+                {
+                    "ref": "/subjects/22"
+                },
+                {
+                    "ref": "/subjects/23"
+                },
+                {
+                    "ref": "/subjects/24"
+                },
+                {
+                    "ref": "/subjects/25"
+                },
+                {
+                    "ref": "/subjects/26"
+                },
+                {
+                    "ref": "/subjects/27"
+                },
+                {
+                    "ref": "/subjects/28"
+                },
+                {
+                    "ref": "/subjects/29"
+                },
+                {
+                    "ref": "/subjects/30"
+                },
+                {
+                    "ref": "/subjects/31"
+                },
+                {
+                    "ref": "/subjects/32"
+                },
+                {
+                    "ref": "/subjects/33"
+                },
+                {
+                    "ref": "/subjects/34"
+                },
+                {
+                    "ref": "/subjects/35"
+                },
+                {
+                    "ref": "/subjects/36"
+                },
+                {
+                    "ref": "/subjects/37"
+                },
+                {
+                    "ref": "/subjects/38"
+                },
+                {
+                    "ref": "/subjects/39"
+                },
+                {
+                    "ref": "/subjects/40"
+                },
+                {
+                    "ref": "/subjects/41"
+                }
+            ],
+            "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2",
+            "type": "collection"
+        }
+    ],
+    "children": [
+        {
+            "dates": "1962-1964",
+            "level": "file",
+            "order": 0,
+            "ref": "/repositories/101/archival_objects/2329",
+            "title": "Congressional Quarterly Issues",
+            "type": "object"
+        },
+        {
+            "dates": "1960-1967, 1969-1970",
+            "level": "file",
+            "order": 1,
+            "ref": "/repositories/101/archival_objects/2330",
+            "title": "Congressional Quarterly Issues",
+            "type": "object"
+        },
+        {
+            "dates": "1965-1966",
+            "level": "file",
+            "order": 2,
+            "ref": "/repositories/101/archival_objects/2331",
+            "title": "Congressional Quarterly Bound Volumes",
+            "type": "object"
+        },
+        {
+            "dates": "1969-1971",
+            "level": "file",
+            "order": 3,
+            "ref": "/repositories/101/archival_objects/2332",
+            "title": "Congressional Quarterly Bound Volumes",
+            "type": "object"
+        },
+        {
+            "dates": "1969-1971",
+            "level": "file",
+            "order": 4,
+            "ref": "/repositories/101/archival_objects/2333",
+            "title": "Congressional Quarterly Issues",
+            "type": "object"
+        }
+    ],
+    "component_id": "6",
+    "create_time": "2020-09-21T16:58:33Z",
+    "created_by": "admin",
+    "dates": [
+        {
+            "begin": "1960",
+            "create_time": "2020-09-21T16:58:33Z",
+            "created_by": "admin",
+            "date_type": "inclusive",
+            "end": "1971",
+            "expression": "1960-1971",
+            "jsonmodel_type": "date",
+            "label": "creation",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "system_mtime": "2020-09-21T16:58:33Z",
+            "user_mtime": "2020-09-21T16:58:33Z"
+        }
+    ],
+    "display_string": "Congressional Quarterly, 1960-1971",
+    "extents": [
+        {
+            "create_time": "2020-09-21T16:58:31Z",
+            "created_by": "admin",
+            "extent_type": "Cubic Feet",
+            "jsonmodel_type": "extent",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "number": "44.15",
+            "portion": "whole",
+            "system_mtime": "2020-09-21T16:58:31Z",
+            "user_mtime": "2020-09-21T16:58:31Z"
+        }
+    ],
+    "external_documents": [],
+    "external_ids": [],
+    "group": {
+        "creators": [
+            {
+                "dates": "",
+                "ref": "/agents/people/101",
+                "role": "creator",
+                "terms": [],
+                "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+                "type": "agent_person"
+            },
+            {
+                "dates": "",
+                "ref": "/agents/people/102",
+                "role": "creator",
+                "terms": [],
+                "title": "Hinman, George",
+                "type": "agent_person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1959",
+                "create_time": "2020-09-21T16:58:31Z",
+                "created_by": "admin",
+                "date_type": "inclusive",
+                "end": "1970",
+                "expression": "1959-1970",
+                "jsonmodel_type": "date",
+                "label": "creation",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-09-21T16:58:31Z",
+                "user_mtime": "2020-09-21T16:58:31Z"
+            }
+        ],
+        "identifier": "/repositories/101/resources/3",
+        "title": "Nelson A. Rockefeller personal papers, Politics - George L. Hinman, Series J.2"
+    },
+    "has_unpublished_ancestor": false,
+    "instances": [],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [
+        {
+            "create_time": "2020-09-21T16:58:31Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "language_and_script": {
+                "create_time": "2020-09-21T16:58:31Z",
+                "created_by": "admin",
+                "jsonmodel_type": "language_and_script",
+                "language": "eng",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-09-21T16:58:31Z",
+                "user_mtime": "2020-09-21T16:58:31Z"
+            },
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [],
+            "system_mtime": "2020-09-21T16:58:31Z",
+            "user_mtime": "2020-09-21T16:58:31Z"
+        },
+        {
+            "create_time": "2020-09-21T16:58:31Z",
+            "created_by": "admin",
+            "jsonmodel_type": "lang_material",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "notes": [
+                {
+                    "content": [
+                        "English"
+                    ],
+                    "jsonmodel_type": "note_langmaterial",
+                    "persistent_id": "e6a4823dff82a553ed7c1b60d729e196",
+                    "publish": true,
+                    "type": "langmaterial"
+                }
+            ],
+            "system_mtime": "2020-09-21T16:58:31Z",
+            "user_mtime": "2020-09-21T16:58:31Z"
+        }
+    ],
+    "last_modified_by": "admin",
+    "level": "subseries",
+    "linked_agents": [
+        {
+            "dates": "",
+            "ref": "/agents/people/101",
+            "role": "creator",
+            "terms": [],
+            "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+            "type": "agent_person"
+        },
+        {
+            "dates": "",
+            "ref": "/agents/people/102",
+            "role": "creator",
+            "terms": [],
+            "title": "Hinman, George",
+            "type": "agent_person"
+        }
+    ],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "position": 0,
+    "publish": true,
+    "ref_id": "59e3f0b877f28efe3278a6988c73584c",
+    "repository": {
+        "ref": "/repositories/101"
+    },
+    "resource": {
+        "ref": "/repositories/101/resources/3"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-09-21T16:58:33Z",
+    "title": "Congressional Quarterly",
+    "uri": "/repositories/101/archival_objects/1622",
+    "user_mtime": "2020-09-21T16:58:33Z"
+}

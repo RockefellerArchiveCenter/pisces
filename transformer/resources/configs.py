@@ -327,45 +327,13 @@ DATE_LABEL_CHOICES = (
     ('other', 'Other')
 )
 
-EXTENT_TYPE_CHOICES = (
-    ('Bound Volumes', 'Bound Volumes'),
-    ('box(es)', 'Boxes'),
-    ('bytes', 'Bytes'),
-    ('cassettes', 'Cassettes'),
-    ('cubic_feet', 'Cubic Feet'),
-    ('Cubic Feet', 'Cubic Feet'),
-    ('document box(es)', 'Document Boxes'),
-    ('files', 'Files'),
-    ('film reels', 'Film Reels'),
-    ('folder(s)', 'Folder(s)'),
-    ('gigabytes', 'Gigabytes'),
-    ('images', 'Images'),
-    ('Item(s)', 'Item(s)'),
-    ('Kilobytes', 'Kilobytes'),
-    ('leaves', 'Leaves'),
-    ('linear_feet', 'Linear Feet'),
-    ('Linear Inches', 'Linear Inches'),
-    ('megabytes', 'Megabytes'),
-    ('microform reels', 'Microform Reels'),
-    ('pages', 'Pages'),
-    ('Pages', 'Pages'),
-    ('photographic_prints', 'Photographic Prints'),
-    ('photographic_slides', 'Photographic Slides'),
-    ('record cartons', 'Record Cartons'),
-    ('reels', 'Reels'),
-    ('Reels', 'Reels'),
-    ('sheets', 'Sheets'),
-    ('tapes', 'Tapes'),
-    ('terabytes', 'Terabytes'),
-    ('volumes', 'Volumes')
-)
-
 INSTANCE_TYPE_CHOICES = (
     ('accession', 'Accession'),
     ('audio', 'Audio'),
     ('audiovisual materials', 'Audiovisual Materials'),
     ('bound volume', 'Bound Volume'),
     ('collection', 'Collection'),
+    ('Digital', 'Digital'),
     ('computer_disks', 'Computer Disks'),
     ('digital_object', 'Digital Object'),
     ('documents', 'Documents'),

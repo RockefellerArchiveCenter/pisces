@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": null,
+            "end": null,
+            "expression": "1912-",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "single"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/532",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/532",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "WrKYpzoMrP4VPHDpSmQVW2",
+                "relator": null,
+                "role": "creator",
+                "title": "Ronan, William J. (William John)",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": null,
+                "end": null,
+                "expression": "1912-",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "single"
+            }
+        ],
+        "identifier": "/agents/WrKYpzoMrP4VPHDpSmQVW2",
+        "title": "Ronan, William J. (William John)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/532",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "WrKYpzoMrP4VPHDpSmQVW2",
+            "relator": null,
+            "role": "creator",
+            "title": "Ronan, William J. (William John)",
+            "type": "person"
+        }
+    ],
+    "title": "Ronan, William J. (William John)",
+    "type": "agent",
+    "uri": "/agents/WrKYpzoMrP4VPHDpSmQVW2"
+}

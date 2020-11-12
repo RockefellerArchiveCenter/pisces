@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/13",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/3HP5Ca88B2d7Bea4owx6b7",
+        "title": "Business enterprises, Foreign"
+    },
+    "term_type": "topical",
+    "title": "Business enterprises, Foreign",
+    "type": "term",
+    "uri": "/terms/3HP5Ca88B2d7Bea4owx6b7"
+}

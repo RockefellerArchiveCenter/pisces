@@ -1,0 +1,20 @@
+{
+    "category": "subject",
+    "external_identifiers": [
+        {
+            "identifier": "/subjects/41",
+            "source": "archivesspace"
+        }
+    ],
+    "group": {
+        "category": "subject",
+        "creators": [],
+        "dates": [],
+        "identifier": "/terms/er3kW3CUeMNpx5o9m5PpV2",
+        "title": "Governors -- Election -- New York (State) -- 1966"
+    },
+    "term_type": "topical",
+    "title": "Governors -- Election -- New York (State) -- 1966",
+    "type": "term",
+    "uri": "/terms/er3kW3CUeMNpx5o9m5PpV2"
+}

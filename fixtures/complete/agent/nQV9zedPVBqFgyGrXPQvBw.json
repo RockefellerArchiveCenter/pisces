@@ -1,0 +1,72 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [
+        {
+            "begin": "1908",
+            "end": "1979",
+            "expression": "1908-1979",
+            "label": "existence",
+            "source": "archivesspace",
+            "type": "inclusive"
+        }
+    ],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/147",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/147",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "nQV9zedPVBqFgyGrXPQvBw",
+                "relator": null,
+                "role": "creator",
+                "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+                "type": "person"
+            }
+        ],
+        "dates": [
+            {
+                "begin": "1908",
+                "end": "1979",
+                "expression": "1908-1979",
+                "label": "existence",
+                "source": "archivesspace",
+                "type": "inclusive"
+            }
+        ],
+        "identifier": "/agents/nQV9zedPVBqFgyGrXPQvBw",
+        "title": "Rockefeller, Nelson A. (Nelson Aldrich)"
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/147",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "nQV9zedPVBqFgyGrXPQvBw",
+            "relator": null,
+            "role": "creator",
+            "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+            "type": "person"
+        }
+    ],
+    "title": "Rockefeller, Nelson A. (Nelson Aldrich)",
+    "type": "agent",
+    "uri": "/agents/nQV9zedPVBqFgyGrXPQvBw"
+}

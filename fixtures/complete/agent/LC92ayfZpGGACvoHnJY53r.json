@@ -1,0 +1,54 @@
+{
+    "agent_type": "organization",
+    "category": "organization",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/corporate_entities/190",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "organization",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/corporate_entities/190",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "LC92ayfZpGGACvoHnJY53r",
+                "relator": null,
+                "role": "creator",
+                "title": "United States. Dept. of Health and Human Services",
+                "type": "organization"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/LC92ayfZpGGACvoHnJY53r",
+        "title": "United States. Dept. of Health and Human Services"
+    },
+    "notes": [],
+    "organizations": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/corporate_entities/190",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "LC92ayfZpGGACvoHnJY53r",
+            "relator": null,
+            "role": "creator",
+            "title": "United States. Dept. of Health and Human Services",
+            "type": "organization"
+        }
+    ],
+    "people": [],
+    "title": "United States. Dept. of Health and Human Services",
+    "type": "agent",
+    "uri": "/agents/LC92ayfZpGGACvoHnJY53r"
+}

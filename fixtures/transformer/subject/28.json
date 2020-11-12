@@ -1,49 +1,45 @@
 {
-    "create_time": "2014-12-06T02:29:46Z",
+    "create_time": "2020-09-20T15:05:00Z",
     "created_by": "admin",
     "external_documents": [],
-    "external_ids": [
-        {
-            "create_time": "2014-12-06T02:29:46Z",
-            "created_by": "admin",
-            "external_id": "36",
-            "jsonmodel_type": "external_id",
-            "last_modified_by": "admin",
-            "source": "Archivists Toolkit Database::SUBJECT",
-            "system_mtime": "2014-12-06T02:29:46Z",
-            "user_mtime": "2014-12-06T02:29:46Z"
-        }
-    ],
+    "external_ids": [],
+    "group": {
+        "creators": [],
+        "dates": [],
+        "identifier": "/subjects/28",
+        "title": "Governors -- Election -- New York (State) -- 1970"
+    },
     "is_linked_to_published_record": true,
+    "is_slug_auto": true,
     "jsonmodel_type": "subject",
     "last_modified_by": "admin",
-    "lock_version": 104,
+    "lock_version": 2,
     "publish": true,
     "source": "lcsh",
-    "system_mtime": "2018-11-20T14:34:13Z",
+    "system_mtime": "2020-09-21T16:58:31Z",
     "terms": [
         {
-            "create_time": "2014-12-06T02:29:46Z",
+            "create_time": "2020-09-20T15:05:00Z",
             "created_by": "admin",
             "jsonmodel_type": "term",
             "last_modified_by": "admin",
             "lock_version": 0,
-            "system_mtime": "2014-12-06T02:29:46Z",
-            "term": "Communism",
+            "system_mtime": "2020-09-20T15:05:00Z",
+            "term": "Governors -- Election -- New York (State) -- 1970",
             "term_type": "topical",
-            "uri": "/terms/32",
-            "user_mtime": "2014-12-06T02:29:46Z",
+            "uri": "/terms/28",
+            "user_mtime": "2020-09-20T15:05:00Z",
             "vocabulary": "/vocabularies/1"
         }
     ],
-    "title": "Communism",
+    "title": "Governors -- Election -- New York (State) -- 1970",
     "uri": "/subjects/28",
     "used_within_published_repositories": [
-        "/repositories/2"
+        "/repositories/101"
     ],
     "used_within_repositories": [
-        "/repositories/2"
+        "/repositories/101"
     ],
-    "user_mtime": "2014-12-06T02:29:46Z",
+    "user_mtime": "2020-09-20T15:05:00Z",
     "vocabulary": "/vocabularies/1"
 }

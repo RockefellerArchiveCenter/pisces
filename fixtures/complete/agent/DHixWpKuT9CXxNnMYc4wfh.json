@@ -1,0 +1,54 @@
+{
+    "agent_type": "person",
+    "category": "person",
+    "dates": [],
+    "description": null,
+    "external_identifiers": [
+        {
+            "identifier": "/agents/people/22936",
+            "source": "archivesspace"
+        }
+    ],
+    "families": [],
+    "group": {
+        "category": "person",
+        "creators": [
+            {
+                "external_identifiers": [
+                    {
+                        "identifier": "/agents/people/22936",
+                        "source": "archivesspace"
+                    }
+                ],
+                "identifier": "DHixWpKuT9CXxNnMYc4wfh",
+                "relator": null,
+                "role": "creator",
+                "title": "Draper, Edgar D.",
+                "type": "person"
+            }
+        ],
+        "dates": [],
+        "identifier": "/agents/DHixWpKuT9CXxNnMYc4wfh",
+        "title": "Draper, Edgar D."
+    },
+    "notes": [],
+    "organizations": [],
+    "people": [
+        {
+            "external_identifiers": [
+                {
+                    "identifier": "/agents/people/22936",
+                    "source": "archivesspace"
+                }
+            ],
+            "identifier": "DHixWpKuT9CXxNnMYc4wfh",
+            "relator": null,
+            "role": "creator",
+            "title": "Draper, Edgar D.",
+            "type": "person"
+        }
+    ],
+    "title": "Draper, Edgar D.",
+    "type": "agent",
+    "uri": "/agents/DHixWpKuT9CXxNnMYc4wfh"
+}

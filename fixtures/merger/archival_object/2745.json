@@ -1,0 +1,495 @@
+{
+    "ancestors": [
+        {
+            "_resolved": {
+                "ancestors": [
+                    {
+                        "level": "collection",
+                        "ref": "/repositories/101/resources/4"
+                    }
+                ],
+                "component_id": "3",
+                "create_time": "2020-09-21T17:10:28Z",
+                "created_by": "admin",
+                "dates": [],
+                "display_string": "Original Audio Tapes",
+                "extents": [],
+                "external_documents": [],
+                "external_ids": [],
+                "has_unpublished_ancestor": false,
+                "instances": [],
+                "is_slug_auto": true,
+                "jsonmodel_type": "archival_object",
+                "lang_materials": [],
+                "last_modified_by": "admin",
+                "level": "series",
+                "linked_agents": [],
+                "linked_events": [],
+                "lock_version": 0,
+                "notes": [],
+                "position": 0,
+                "publish": true,
+                "ref_id": "aspace_b1f076a9f49d369034188c232f7cdf25",
+                "repository": {
+                    "ref": "/repositories/101"
+                },
+                "resource": {
+                    "ref": "/repositories/101/resources/4"
+                },
+                "restrictions_apply": false,
+                "rights_statements": [],
+                "subjects": [],
+                "suppressed": false,
+                "system_mtime": "2020-09-21T17:24:57Z",
+                "title": "Original Audio Tapes",
+                "uri": "/repositories/101/archival_objects/2336",
+                "user_mtime": "2020-09-21T17:10:28Z"
+            },
+            "level": "series",
+            "ref": "/repositories/101/archival_objects/2336"
+        },
+        {
+            "_resolved": {
+                "classifications": [],
+                "create_time": "2020-09-21T17:10:28Z",
+                "created_by": "admin",
+                "dates": [
+                    {
+                        "begin": "1950",
+                        "create_time": "2020-09-21T17:10:28Z",
+                        "created_by": "admin",
+                        "date_type": "inclusive",
+                        "end": "1989",
+                        "expression": "1950s-1980s (Bulk 1982)",
+                        "jsonmodel_type": "date",
+                        "label": "creation",
+                        "last_modified_by": "admin",
+                        "lock_version": 0,
+                        "system_mtime": "2020-09-21T17:10:28Z",
+                        "user_mtime": "2020-09-21T17:10:28Z"
+                    }
+                ],
+                "deaccessions": [],
+                "ead_id": "FA1275.xml",
+                "extents": [
+                    {
+                        "container_summary": "10 standard record storage boxes, 10 document boxes containing 565 audio cassettes, and 2 record storage boxes containing special formats.",
+                        "create_time": "2020-09-21T17:10:28Z",
+                        "created_by": "admin",
+                        "extent_type": "Cubic Feet",
+                        "jsonmodel_type": "extent",
+                        "last_modified_by": "admin",
+                        "lock_version": 0,
+                        "number": "13.86",
+                        "portion": "whole",
+                        "system_mtime": "2020-09-21T17:10:28Z",
+                        "user_mtime": "2020-09-21T17:10:28Z"
+                    }
+                ],
+                "external_documents": [],
+                "external_ids": [
+                    {
+                        "create_time": "2020-09-21T17:10:28Z",
+                        "created_by": "admin",
+                        "external_id": "19141",
+                        "jsonmodel_type": "external_id",
+                        "last_modified_by": "admin",
+                        "source": "Archivists Toolkit Database::RESOURCE",
+                        "system_mtime": "2020-09-21T17:10:28Z",
+                        "user_mtime": "2020-09-21T17:10:28Z"
+                    }
+                ],
+                "finding_aid_date": "2019",
+                "finding_aid_description_rules": "Describing Archives: A Content Standard",
+                "finding_aid_filing_title": "Reich, Cary papers",
+                "finding_aid_language": "und",
+                "finding_aid_language_note": "English",
+                "finding_aid_script": "Zyyy",
+                "finding_aid_title": "A Guide to the Cary Reich papers <num>FA1275</num>",
+                "id_0": "FA1275",
+                "instances": [],
+                "is_slug_auto": true,
+                "jsonmodel_type": "resource",
+                "lang_materials": [
+                    {
+                        "create_time": "2020-09-21T17:10:28Z",
+                        "created_by": "admin",
+                        "jsonmodel_type": "lang_material",
+                        "language_and_script": {
+                            "create_time": "2020-09-21T17:10:28Z",
+                            "created_by": "admin",
+                            "jsonmodel_type": "language_and_script",
+                            "language": "eng",
+                            "last_modified_by": "admin",
+                            "lock_version": 0,
+                            "system_mtime": "2020-09-21T17:10:28Z",
+                            "user_mtime": "2020-09-21T17:10:28Z"
+                        },
+                        "last_modified_by": "admin",
+                        "lock_version": 0,
+                        "notes": [],
+                        "system_mtime": "2020-09-21T17:10:28Z",
+                        "user_mtime": "2020-09-21T17:10:28Z"
+                    },
+                    {
+                        "create_time": "2020-09-21T17:10:28Z",
+                        "created_by": "admin",
+                        "jsonmodel_type": "lang_material",
+                        "last_modified_by": "admin",
+                        "lock_version": 0,
+                        "notes": [
+                            {
+                                "content": [
+                                    "English ."
+                                ],
+                                "jsonmodel_type": "note_langmaterial",
+                                "persistent_id": "45ef50be108391678b1194a0ef2f86c9",
+                                "publish": true,
+                                "type": "langmaterial"
+                            }
+                        ],
+                        "system_mtime": "2020-09-21T17:10:28Z",
+                        "user_mtime": "2020-09-21T17:10:28Z"
+                    }
+                ],
+                "last_modified_by": "admin",
+                "level": "collection",
+                "linked_agents": [
+                    {
+                        "_resolved": {
+                            "agent_contacts": [],
+                            "agent_type": "agent_person",
+                            "create_time": "2020-09-20T15:18:54Z",
+                            "created_by": "admin",
+                            "dates_of_existence": [],
+                            "display_name": {
+                                "authorized": true,
+                                "create_time": "2020-09-20T15:18:54Z",
+                                "created_by": "admin",
+                                "is_display_name": true,
+                                "jsonmodel_type": "name_person",
+                                "last_modified_by": "admin",
+                                "lock_version": 0,
+                                "name_order": "inverted",
+                                "primary_name": "Reich, Cary",
+                                "sort_name": "Reich, Cary",
+                                "sort_name_auto_generate": true,
+                                "source": "naf",
+                                "system_mtime": "2020-09-20T15:18:54Z",
+                                "use_dates": [],
+                                "user_mtime": "2020-09-20T15:18:54Z"
+                            },
+                            "external_documents": [],
+                            "is_linked_to_published_record": true,
+                            "is_slug_auto": true,
+                            "jsonmodel_type": "agent_person",
+                            "last_modified_by": "admin",
+                            "linked_agent_roles": [
+                                "creator"
+                            ],
+                            "lock_version": 2,
+                            "names": [
+                                {
+                                    "authorized": true,
+                                    "create_time": "2020-09-20T15:18:54Z",
+                                    "created_by": "admin",
+                                    "is_display_name": true,
+                                    "jsonmodel_type": "name_person",
+                                    "last_modified_by": "admin",
+                                    "lock_version": 0,
+                                    "name_order": "inverted",
+                                    "primary_name": "Reich, Cary",
+                                    "sort_name": "Reich, Cary",
+                                    "sort_name_auto_generate": true,
+                                    "source": "naf",
+                                    "system_mtime": "2020-09-20T15:18:54Z",
+                                    "use_dates": [],
+                                    "user_mtime": "2020-09-20T15:18:54Z"
+                                }
+                            ],
+                            "notes": [],
+                            "publish": false,
+                            "related_agents": [],
+                            "system_mtime": "2020-09-21T17:10:28Z",
+                            "title": "Reich, Cary",
+                            "uri": "/agents/people/103",
+                            "used_within_published_repositories": [],
+                            "used_within_repositories": [],
+                            "user_mtime": "2020-09-20T15:18:54Z"
+                        },
+                        "ref": "/agents/people/103",
+                        "role": "creator",
+                        "terms": []
+                    },
+                    {
+                        "_resolved": {
+                            "agent_contacts": [],
+                            "agent_type": "agent_person",
+                            "create_time": "2020-09-20T15:18:54Z",
+                            "created_by": "admin",
+                            "dates_of_existence": [],
+                            "display_name": {
+                                "authorized": true,
+                                "create_time": "2020-09-20T15:18:54Z",
+                                "created_by": "admin",
+                                "is_display_name": true,
+                                "jsonmodel_type": "name_person",
+                                "last_modified_by": "admin",
+                                "lock_version": 0,
+                                "name_order": "inverted",
+                                "primary_name": "Linden, Patricia",
+                                "sort_name": "Linden, Patricia",
+                                "sort_name_auto_generate": true,
+                                "source": "local",
+                                "system_mtime": "2020-09-20T15:18:54Z",
+                                "use_dates": [],
+                                "user_mtime": "2020-09-20T15:18:54Z"
+                            },
+                            "external_documents": [],
+                            "is_linked_to_published_record": true,
+                            "is_slug_auto": true,
+                            "jsonmodel_type": "agent_person",
+                            "last_modified_by": "admin",
+                            "linked_agent_roles": [
+                                "creator"
+                            ],
+                            "lock_version": 2,
+                            "names": [
+                                {
+                                    "authorized": true,
+                                    "create_time": "2020-09-20T15:18:54Z",
+                                    "created_by": "admin",
+                                    "is_display_name": true,
+                                    "jsonmodel_type": "name_person",
+                                    "last_modified_by": "admin",
+                                    "lock_version": 0,
+                                    "name_order": "inverted",
+                                    "primary_name": "Linden, Patricia",
+                                    "sort_name": "Linden, Patricia",
+                                    "sort_name_auto_generate": true,
+                                    "source": "local",
+                                    "system_mtime": "2020-09-20T15:18:54Z",
+                                    "use_dates": [],
+                                    "user_mtime": "2020-09-20T15:18:54Z"
+                                }
+                            ],
+                            "notes": [],
+                            "publish": false,
+                            "related_agents": [],
+                            "system_mtime": "2020-09-21T17:10:28Z",
+                            "title": "Linden, Patricia",
+                            "uri": "/agents/people/104",
+                            "used_within_published_repositories": [],
+                            "used_within_repositories": [],
+                            "user_mtime": "2020-09-20T15:18:54Z"
+                        },
+                        "ref": "/agents/people/104",
+                        "role": "creator",
+                        "terms": []
+                    }
+                ],
+                "linked_events": [],
+                "lock_version": 0,
+                "notes": [
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Conditions Governing Access",
+                        "persistent_id": "aspace_afeed6d0daf4985b7b706edf7864921a",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "Open for research with select materials restricted as noted. Brittle or damaged items are available at the discretion of RAC.\n\nResearchers interested in accessing digital media (floppy disks, CDs, DVDs, etc.) or audiovisual material (audio cassettes, VHS, etc.) in this collection must use an access surrogate. The original items may not be accessed because of preservation concerns. To request an access surrogate be made, or if you are unsure if there is an access surrogate, please contact an archivist.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "accessrestrict"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Arrangement",
+                        "persistent_id": "aspace_12e2f867ddb38f5f3cc31f26b0a83987",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "As received.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "arrangement"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Preferred Citation",
+                        "persistent_id": "aspace_11643d814b479b19404ff6ada035bc73",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "Information regarding the Rockefeller Archive Center's preferred elements and forms of citation can be found at <extref xlink:href=\"http://www.rockarch.org/research/citations.php\">http://www.rockarch.org/research/citations.php</extref>",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "prefercite"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Scope and Contents",
+                        "persistent_id": "aspace_c8b1072265ac8aa9abf62ef9efa8acd0",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "This collection primarily contains transcripts, audiotapes, and notes of interviews conducted by author Cary Reich during research for the first volume, and anticipated second volume, of \"The Life of Nelson A. Rockefeller.\" Additionally, it contains partial audiotaped interviews for Reich's \"New York Times\" expose \"The Creative Mind: The Innovator\" from April 21, 1985, as well as other financial articles. \n\nIn addition, there are audio interviews conducted by Patricia Linden, who was gathering stories for a \"Town and Country\" magazine article (\"Rockefellers' Monumental Legacy,\" September 1982) describing the Rockefeller legacy in New York, as well as her own unrealized unauthored biography of Nelson Rockefeller.\n\nLastly, the collection has subject files primarily consisting of research materials and news clippings pertaining to a variety of significant events in Nelson Rockfeller's life, including but not limited to the 1964 U.S. Presidential campaign, the International Basic Economy Corporation (IBEC), his gubernatorial tenure, and the U.S. vice presidency.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "scopecontent"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Immediate Source of Acquisition",
+                        "persistent_id": "aspace_7aff0dac4210a375e8ae6d90d447fd89",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "Papers were transferred to RAC in 2012 by the estate of Cary Reich.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "acqinfo"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Conditions Governing Use",
+                        "persistent_id": "aspace_3c94b4a9b787a503153fae94f3bbd4e6",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "The Cary Reich Papers were donated to Rockefeller Archive Center in 2012. The Cary Reich estate retains copyright and all associated intellectual property rights.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "userestrict"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Processing Information",
+                        "persistent_id": "aspace_035c673fe96290e3ff36b9e6253abd8f",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "Minimal processing by Robert Battaly, 2016. Initial inventory created by Diane April, 2013. Audiocassettes were digitized in 2016-2017 and Series 2: Oral History Audio records were modified by Zachary Leming in 2019.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "processinfo"
+                    },
+                    {
+                        "jsonmodel_type": "note_multipart",
+                        "label": "Processing Information",
+                        "persistent_id": "aspace_ce8f7d12abed392c7b4f36258a22824f",
+                        "publish": true,
+                        "subnotes": [
+                            {
+                                "content": "Digital audio access copies for Series 2 were often made from multiple sources as individual interviews were spread across several audiocassettes. New Identification Numbers were provided to all digital audio access copies (Series 2: Oral History Audio). For all records in Series 2, there is an unpublished processing note that identifies the audiocassette sources that correlate to each title. Box and location information for all original source audiocassettes is in the unpublished Series 3: Original Audio Tapes.",
+                                "jsonmodel_type": "note_text",
+                                "publish": true
+                            }
+                        ],
+                        "type": "processinfo"
+                    }
+                ],
+                "publish": true,
+                "related_accessions": [],
+                "repository": {
+                    "ref": "/repositories/101"
+                },
+                "restrictions": false,
+                "revision_statements": [],
+                "rights_statements": [],
+                "subjects": [
+                    {
+                        "ref": "/subjects/42"
+                    }
+                ],
+                "suppressed": false,
+                "system_mtime": "2020-09-21T17:24:57Z",
+                "title": "Cary Reich papers",
+                "tree": {
+                    "ref": "/repositories/101/resources/4/tree"
+                },
+                "uri": "/repositories/101/resources/4",
+                "user_mtime": "2020-09-21T17:10:28Z"
+            },
+            "level": "collection",
+            "ref": "/repositories/101/resources/4"
+        }
+    ],
+    "create_time": "2020-09-21T17:16:26Z",
+    "created_by": "admin",
+    "dates": [],
+    "display_string": "AV 6582 - AV 6636",
+    "extents": [],
+    "external_documents": [],
+    "external_ids": [],
+    "has_unpublished_ancestor": false,
+    "instances": [
+        {
+            "create_time": "2020-09-21T17:16:26Z",
+            "created_by": "admin",
+            "instance_type": "audio",
+            "is_representative": false,
+            "jsonmodel_type": "instance",
+            "last_modified_by": "admin",
+            "lock_version": 0,
+            "sub_container": {
+                "create_time": "2020-09-21T17:16:26Z",
+                "created_by": "admin",
+                "jsonmodel_type": "sub_container",
+                "last_modified_by": "admin",
+                "lock_version": 0,
+                "system_mtime": "2020-09-21T17:16:26Z",
+                "top_container": {
+                    "ref": "/repositories/101/top_containers/506"
+                },
+                "user_mtime": "2020-09-21T17:16:26Z"
+            },
+            "system_mtime": "2020-09-21T17:16:26Z",
+            "user_mtime": "2020-09-21T17:16:26Z"
+        }
+    ],
+    "is_slug_auto": true,
+    "jsonmodel_type": "archival_object",
+    "lang_materials": [],
+    "last_modified_by": "admin",
+    "level": "file",
+    "linked_agents": [],
+    "linked_events": [],
+    "lock_version": 0,
+    "notes": [],
+    "parent": {
+        "ref": "/repositories/101/archival_objects/2336"
+    },
+    "position": 5,
+    "publish": true,
+    "ref_id": "aspace_2c7ed8aa9b44f2201f82aa318d4b619b",
+    "repository": {
+        "ref": "/repositories/101"
+    },
+    "resource": {
+        "ref": "/repositories/101/resources/4"
+    },
+    "restrictions_apply": false,
+    "rights_statements": [],
+    "subjects": [],
+    "suppressed": false,
+    "system_mtime": "2020-09-21T17:24:57Z",
+    "title": "AV 6582 - AV 6636",
+    "uri": "/repositories/101/archival_objects/2745",
+    "user_mtime": "2020-09-21T17:16:26Z"
+}

@@ -5,20 +5,22 @@
     "parent": 1,
     "tree_index": 1,
     "level": "otherlevel",
-    "archivesspace_uri": "/repositories/2/resources/12",
+    "archivesspace_uri": "/repositories/101/resources/4",
     "publish": true,
     "ancestors": [
         {
+            "title": "Rockefeller Foundation records, photographs, series 100-1000",
             "ref": "/api/components/1/",
-            "archivesspace_uri": "/repositories/2/resources/93",
+            "archivesspace_uri": "/repositories/101/resources/3",
             "level": "collection"
         }
     ],
     "children": [
         {
+            "title": "William T. Grant Foundation records",
             "ref": "/api/components/5/",
-            "archivesspace_uri": "/repositories/2/resources/15",
-            "level": "otherlevel"
+            "archivesspace_uri": "/repositories/101/resources/4",
+            "level": "collection"
         }
     ]
 }
