@@ -149,31 +149,6 @@ class SourceNote(odin.Resource):
     publish = odin.BooleanField()
 
 
-class SourceRightsStatementAct(odin.Resource):
-    """A representation of permissions or restrictions for an aggregation of records."""
-    act_type = odin.StringField()
-    start_date = odin.DateField()
-    end_date = odin.DateField(null=True)
-    restriction = odin.StringField()
-    notes = odin.ArrayOf(SourceNote)
-
-
-class SourceRightsStatement(odin.Resource):
-    """A PREMIS-compliant rights statement.
-
-    SourceRightsStatements contain once or more SourceRightsStatementActs, which
-    document permissions or restrictions on archival records."""
-    determination_date = odin.DateField(null=True)
-    rights_type = odin.StringField()
-    start_date = odin.DateField()
-    end_date = odin.DateField(null=True)
-    status = odin.StringField(null=True)
-    other_rights_basis = odin.StringField(null=True)
-    jurisdiction = odin.StringField(null=True)
-    notes = odin.ArrayOf(SourceNote)
-    acts = odin.ArrayOf(SourceRightsStatementAct)
-
-
 class SourceGroup(odin.Resource):
     """Information about the highest-level collection containing the data object."""
     creators = odin.ArrayOf(SourceLinkedAgent, null=True)
@@ -225,7 +200,6 @@ class SourceComponentBase(odin.Resource):
     linked_agents = odin.ArrayOf(SourceLinkedAgent)
     notes = odin.ArrayOf(SourceNote)
     publish = odin.BooleanField()
-    rights_statements = odin.ArrayOf(SourceRightsStatement)
     subjects = odin.ArrayOf(SourceRef)
     suppressed = odin.StringField()
     title = odin.StringField(null=True)

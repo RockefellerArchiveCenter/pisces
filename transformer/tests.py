@@ -50,7 +50,6 @@ class TransformerTest(TestCase):
         """
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         for source_key, transformed_key in [("notes", "notes"),
-                                            ("rights_statements", "rights"),
                                             (date_source_key, "dates"),
                                             ("extents", "extents"),
                                             ("children", "children")]:

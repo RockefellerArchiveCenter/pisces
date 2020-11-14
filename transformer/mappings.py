@@ -8,15 +8,12 @@ from pisces import settings
 from .resources.configs import NOTE_TYPE_CHOICES
 from .resources.rac import (Agent, AgentReference, Collection, Date, Extent,
                             ExternalIdentifier, Group, Language, Note, Object,
-                            RecordReference, RightsGranted, RightsStatement,
-                            Subnote, Term, TermReference)
+                            RecordReference, Subnote, Term, TermReference)
 from .resources.source import (SourceAgentCorporateEntity, SourceAgentFamily,
                                SourceAgentPerson, SourceAncestor,
                                SourceArchivalObject, SourceDate, SourceExtent,
                                SourceGroup, SourceLinkedAgent, SourceNote,
-                               SourceRef, SourceResource,
-                               SourceRightsStatement, SourceRightsStatementAct,
-                               SourceSubject)
+                               SourceRef, SourceResource, SourceSubject)
 
 
 def replace_xml(content_list):
@@ -55,44 +52,6 @@ def transform_group(value, prefix):
     group = SourceGroupToGroup.apply(value)
     group.identifier = "/{}/{}".format(prefix, identifier_from_uri(value.identifier))
     return group
-
-
-class SourceRightsStatementActToRightsGranted(odin.Mapping):
-    """Maps SourceRightsStatementsAct to RightsGranted object."""
-    from_obj = SourceRightsStatementAct
-    to_obj = RightsGranted
-
-    mappings = (
-        ("act_type", None, "act"),
-        ("start_date", None, "begin"),
-        ("end_date", None, "end"),
-        ("restriction", None, "restriction"),
-    )
-
-    @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
-    def rights_notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if v.published])
-
-
-class SourceRightsStatementToRightsStatement(odin.Mapping):
-    """Maps SourceRightsStatement to RightsStatement object."""
-    from_obj = SourceRightsStatement
-    to_obj = RightsStatement
-
-    mappings = (
-        ("start_date", None, "begin"),
-        ("end_date", None, "end"),
-        ("status", None, "copyright_status"),
-        ("other_rights_basis", None, "other_basis"),
-    )
-
-    @odin.map_list_field(from_field="notes", to_field="rights_notes", to_list=True)
-    def rights_notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if v.published])
-
-    @odin.map_list_field(from_field="acts", to_field="rights_granted", to_list=True)
-    def rights_granted(self, value):
-        return SourceRightsStatementActToRightsGranted.apply(value)
 
 
 class SourceRefToTermReference(odin.Mapping):
@@ -272,7 +231,7 @@ class SourceNoteToNote(odin.Mapping):
         """Handles different note types."""
         if self.source.jsonmodel_type in ["note_multipart", "note_bioghist"]:
             subnotes = (self.map_subnotes(v) for v in value)
-        elif self.source.jsonmodel_type in ["note_singlepart", "note_rights_statement", "note_rights_statement_act"]:
+        elif self.source.jsonmodel_type in ["note_singlepart"]:
             # Here content is a list passed as a string, so we have to reconvert.
             content = [self.source.content.strip("][\"\'")]
             subnotes = [Subnote(type="text", content=replace_xml(content))]
@@ -333,10 +292,6 @@ class SourceResourceToCollection(odin.Mapping):
     def terms(self, value):
         return SourceRefToTermReference.apply(value)
 
-    @odin.map_list_field(from_field="rights_statements", to_field="rights")
-    def rights(self, value):
-        return SourceRightsStatementToRightsStatement.apply(value)
-
     @odin.map_list_field(from_field="linked_agents", to_field="creators")
     def creators(self, value):
         return [SourceLinkedAgentToAgentReference.apply(v) for v in value if v.role == "creator"]
@@ -385,10 +340,6 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
         return SourceRefToTermReference.apply(value)
-
-    @odin.map_list_field(from_field="rights_statements", to_field="rights")
-    def rights(self, value):
-        return SourceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field="linked_agents", to_field="creators")
     def creators(self, value):
@@ -463,10 +414,6 @@ class SourceArchivalObjectToObject(odin.Mapping):
     @odin.map_list_field(from_field="subjects", to_field="terms")
     def terms(self, value):
         return SourceRefToTermReference.apply(value)
-
-    @odin.map_list_field(from_field="rights_statements", to_field="rights")
-    def rights(self, value):
-        return SourceRightsStatementToRightsStatement.apply(value)
 
     @odin.map_list_field(from_field="linked_agents", to_field="people")
     def people(self, value):
