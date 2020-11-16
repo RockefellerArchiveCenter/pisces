@@ -106,7 +106,7 @@ class FetcherTest(TestCase):
             "View error:  {}".format(response.data))
         self.assertEqual(
             len(FetchRun.objects.all()),
-            initial_count + FetchRun.OBJECT_TYPE_CHOICES,
+            initial_count + len(FetchRun.OBJECT_TYPE_CHOICES),
             "Wrong number of FetchRun objects created.")
 
     def test_last_run(self):
