@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
@@ -73,3 +75,17 @@ class FetchRunViewSet(ModelViewSet):
     @action(detail=False)
     def arrangement_map_components(self, request):
         return self.get_action_response(request, object_type="arrangement_map_component")
+
+    @action(detail=False, methods=['post'])
+    def update_time(self, request):
+        now = datetime.now()
+        for source, source_str in FetchRun.SOURCE_CHOICES:
+            for object_type, _ in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source_str.upper())):
+                FetchRun.objects.create(
+                    start_time=now,
+                    end_time=now,
+                    status=FetchRun.FINISHED,
+                    source=source,
+                    object_type=object_type,
+                    object_status="updated")
+        return Response({"detail": "Updated last fetched time for all sources and objects"})

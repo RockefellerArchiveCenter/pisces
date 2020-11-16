@@ -96,6 +96,19 @@ class FetcherTest(TestCase):
                 response.status_code, 200,
                 "View error:  {}".format(response.data))
 
+    def test_update_time(self):
+        initial_count = len(FetchRun.objects.all())
+        view = FetchRunViewSet.as_view({"post": "update_time"})
+        request = self.factory.post("fetchrun-list")
+        response = view(request)
+        self.assertEqual(
+            response.status_code, 200,
+            "View error:  {}".format(response.data))
+        self.assertEqual(
+            len(FetchRun.objects.all()),
+            initial_count + len(FetchRun.OBJECT_TYPE_CHOICES),
+            "Wrong number of FetchRun objects created.")
+
     def test_last_run(self):
         for object_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
             for _, source in FetchRun.SOURCE_CHOICES:
