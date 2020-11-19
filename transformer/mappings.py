@@ -316,6 +316,10 @@ class SourceResourceToCollection(odin.Mapping):
     def group(self, value):
         return transform_group(value, "collections")
 
+    @odin.map_field(from_field="ancestors", to_field="parent")
+    def parent(self, value):
+        return identifier_from_uri(value[-1].ref) if value else None
+
 
 class SourceArchivalObjectToCollection(odin.Mapping):
     """Maps SourceArchivalObject to Collection object."""
@@ -377,15 +381,15 @@ class SourceArchivalObjectToCollection(odin.Mapping):
     def group(self, value):
         return transform_group(value, "collections")
 
+    @odin.map_field(from_field="ancestors", to_field="parent")
+    def parent(self, value):
+        return identifier_from_uri(value[-1].ref)
+
 
 class SourceArchivalObjectToObject(odin.Mapping):
     """Maps SourceArchivalObject to Objects object."""
     from_obj = SourceArchivalObject
     to_obj = Object
-
-    mappings = (
-        odin.define(from_field="position", to_field="tree_position"),
-    )
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
@@ -438,6 +442,10 @@ class SourceArchivalObjectToObject(odin.Mapping):
     @odin.map_field(from_field="group", to_field="group")
     def group(self, value):
         return transform_group(value, "collections")
+
+    @odin.map_field(from_field="ancestors", to_field="parent")
+    def parent(self, value):
+        return identifier_from_uri(value[-1].ref)
 
 
 class SourceSubjectToTerm(odin.Mapping):

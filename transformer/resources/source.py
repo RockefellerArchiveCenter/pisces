@@ -215,17 +215,13 @@ class SourceArchivalObject(SourceComponentBase):
     restrictions_apply = odin.BooleanField()
     ancestors = odin.ArrayOf(SourceAncestor)
     resource = odin.DictAs(SourceRef)
-    parent = odin.DictAs(SourceRef, null=True)
     has_unpublished_ancestor = odin.BooleanField()
-    children = odin.ArrayOf(SourceAncestor, null=True)
     instances = odin.ArrayOf(SourceInstance)
 
 
 class SourceResource(SourceComponentBase):
-    """An aggregation of records.
-
-    SourceResources generally contain SourceArchivalObjects as children.
-    """
+    """An aggregation of records."""
+    position = odin.IntegerField()
     restrictions = odin.BooleanField()
     ead_id = odin.StringField(null=True)
     finding_aid_title = odin.StringField(null=True)
@@ -234,7 +230,6 @@ class SourceResource(SourceComponentBase):
     id_1 = odin.StringField(null=True)
     id_2 = odin.StringField(null=True)
     ancestors = odin.ArrayOf(SourceAncestor, null=True)
-    children = odin.ArrayOf(SourceAncestor)
     instances = odin.ArrayOf(SourceInstance)
 
 

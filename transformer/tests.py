@@ -30,6 +30,8 @@ class TransformerTest(TestCase):
                 with open(os.path.join("fixtures", "transformer", object_type, f), "r") as json_file:
                     source = json.load(json_file)
                     transformed = Transformer().run(object_type, source)
+                    # with open(os.path.join("fixtures", "complete", transformed.get("uri")[-1]), "w") as df:
+                    #     json.dump(transformed, df, sort_keys=True, indent=4)
                     self.assertNotEqual(
                         transformed, False,
                         "Transformer returned an error: {}".format(transformed))
@@ -51,8 +53,7 @@ class TransformerTest(TestCase):
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         for source_key, transformed_key in [("notes", "notes"),
                                             (date_source_key, "dates"),
-                                            ("extents", "extents"),
-                                            ("children", "children")]:
+                                            ("extents", "extents")]:
             source_len = len([n for n in source.get(source_key, []) if n["publish"]]) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
@@ -94,7 +95,7 @@ class TransformerTest(TestCase):
                 "Expecting a reference to self in {}".format(key))
 
     def check_references(self, transformed):
-        for key in ["people", "organizations", "families", "terms", "creators", "ancestors", "children"]:
+        for key in ["people", "organizations", "families", "terms", "creators", "ancestors"]:
             for obj in transformed.get(key, []):
                 for prop in ["identifier", "title", "type"]:
                     self.assertIsNot(
