@@ -9,7 +9,7 @@ class DataObject(models.Model):
         ('object', 'Object'),
         ('term', 'Term'),
     )
-    es_id = models.CharField(max_length=255)
+    es_id = models.CharField(primary_key=True, max_length=255)
     object_type = models.CharField(max_length=255, choices=TYPE_CHOICES)
     data = JSONField()
     indexed = models.BooleanField(default=False)
