@@ -235,7 +235,7 @@ class ResourceMerger(BaseMerger):
             json_data = resp.json()
             if json_data["count"] > 0:
                 result = json_data["results"][0]
-                data["tree_position"] = result["tree_position"]
+                data["order"] = result["order"]
                 for a in result.get("ancestors", []):
                     data["ancestors"].append(handle_cartographer_reference(a))
                 for a in result.get("children", []):
@@ -259,7 +259,7 @@ class ResourceMerger(BaseMerger):
         """
         object["ancestors"] = additional_data["ancestors"]
         object["children"] = additional_data["children"]
-        object["position"] = additional_data.get("tree_position", 0)
+        object["position"] = additional_data.get("order", 0)
         object = super(ResourceMerger, self).combine_data(object, additional_data)
         return combine_references(object)
 
