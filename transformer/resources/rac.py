@@ -125,6 +125,8 @@ class Collection(BaseResource):
     terms = odin.ArrayOf(TermReference)
     children = odin.ArrayOf(RecordReference, null=True)
     ancestors = odin.ArrayOf(RecordReference, null=True)
+    parent = odin.StringField(null=True)
+    position = odin.IntegerField()
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
 
@@ -146,7 +148,8 @@ class Object(BaseResource):
     families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
     ancestors = odin.ArrayOf(RecordReference, null=True)
-    tree_position = odin.IntegerField()
+    parent = odin.StringField()
+    position = odin.IntegerField()
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
 
