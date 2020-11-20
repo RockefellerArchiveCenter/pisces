@@ -3,7 +3,7 @@
     "title": "Michel Nussenzweig papers, Rockefeller University Faculty",
     "map": 1,
     "parent": 1,
-    "tree_index": 1,
+    "order": 1,
     "level": "otherlevel",
     "archivesspace_uri": "/repositories/101/resources/4",
     "publish": true,
