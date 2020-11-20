@@ -299,6 +299,7 @@
             "type": "processinfo"
         }
     ],
+    "position": 2,
     "publish": true,
     "related_accessions": [],
     "repository": {
