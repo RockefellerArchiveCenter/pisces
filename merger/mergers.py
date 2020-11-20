@@ -199,7 +199,7 @@ class ArrangementMapMerger(BaseMerger):
         for a in object.get("ancestors"):
             ancestors.append(handle_cartographer_reference(a))
         additional_data["ancestors"] = ancestors
-        additional_data["position"] = object["tree_index"]
+        additional_data["position"] = object["order"]
         additional_data = add_group(additional_data, self.aspace_helper.aspace.client)
         return combine_references(additional_data)
 
