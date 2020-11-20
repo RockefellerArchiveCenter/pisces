@@ -56,6 +56,7 @@ class MergerTest(TestCase):
                         self.assertTrue(merged.get("jsonmodel_type") in target_object_types)
                         self.check_counts(source, source_object_type, merged, merged.get("jsonmodel_type"))
                         self.check_group(merged)
+                        self.check_position(merged)
                         self.check_embedded(merged)
 
     def check_counts(self, source, source_object_type, merged, target_object_type):
@@ -98,6 +99,10 @@ class MergerTest(TestCase):
 
     def not_empty(self, value):
         return False if value in ['', [], {}, None] else True
+
+    def check_position(self, merged):
+        if merged.get("jsonmodel_type") in ["archival_object", "resource"]:
+            self.assertTrue(isinstance(merged.get("position"), int))
 
     def check_embedded(self, merged):
         """Tests that title and type fields are present in embedded reference objects."""

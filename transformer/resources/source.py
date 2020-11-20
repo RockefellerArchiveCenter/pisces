@@ -215,7 +215,6 @@ class SourceArchivalObject(SourceComponentBase):
     restrictions_apply = odin.BooleanField()
     ancestors = odin.ArrayOf(SourceAncestor)
     resource = odin.DictAs(SourceRef)
-    parent = odin.DictAs(SourceRef, null=True)
     has_unpublished_ancestor = odin.BooleanField()
     children = odin.ArrayOf(SourceAncestor, null=True)
     instances = odin.ArrayOf(SourceInstance)
