@@ -192,7 +192,7 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_deleted(self):
         data = []
         for deleted_ref in clients["cartographer"].get(
-                '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
+                '/api/delete-feed/', params={"modified_since": self.last_run}).json()['results']:
             if self.base_endpoint in deleted_ref['ref']:
                 data.append(deleted_ref.get('archivesspace_uri'))
         return data
