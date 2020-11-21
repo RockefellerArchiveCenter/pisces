@@ -40,6 +40,7 @@ class TransformerTest(TestCase):
                     self.check_references(transformed)
                     self.check_uri(transformed)
                     self.check_group(source, transformed)
+                    self.check_parent(transformed)
                     self.check_formats(transformed)
                     self.check_component_id(source, transformed)
 
@@ -107,6 +108,10 @@ class TransformerTest(TestCase):
         self.assertEqual(path, "{}s".format(transformed["type"]))
         self.assertEqual(identifier, identifier_from_uri(transformed["external_identifiers"][0]["identifier"]))
         self.assertTrue(DataObject.objects.filter(es_id=identifier).exists())
+
+    def check_parent(self, transformed):
+        if transformed.get("ancestors"):
+            self.assertEqual(transformed.get("parent"), transformed["ancestors"][-1]["identifier"])
 
     def check_group(self, source, transformed):
         group = transformed.get("group")
