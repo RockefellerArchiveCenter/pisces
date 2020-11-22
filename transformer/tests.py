@@ -8,6 +8,7 @@ from fetcher.helpers import identifier_from_uri
 from rest_framework.test import APIRequestFactory
 
 from .models import DataObject
+from .resources.configs import NOTE_TYPE_CHOICES_TRANSFORM
 from .transformers import Transformer
 from .views import DataObjectUpdateByIdView, DataObjectViewSet
 
@@ -54,7 +55,9 @@ class TransformerTest(TestCase):
                                             (date_source_key, "dates"),
                                             ("extents", "extents"),
                                             ("children", "children")]:
-            source_len = len([n for n in source.get(source_key, []) if n["publish"]]) if source_key == "notes" else len(source.get(source_key, []))
+            source_len = len(
+                [n for n in source.get(source_key, []) if (n["publish"] and n["jsonmodel_type"] in NOTE_TYPE_CHOICES_TRANSFORM)]
+            ) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
                              "Found {} {} in source but {} {} in transformed.".format(
