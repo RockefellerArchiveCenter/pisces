@@ -318,7 +318,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_field(from_field="ancestors", to_field="parent")
     def parent(self, value):
-        return identifier_from_uri(value[-1].ref) if value else None
+        return identifier_from_uri(value[0].ref) if value else None
 
 
 class SourceArchivalObjectToCollection(odin.Mapping):
@@ -383,7 +383,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_field(from_field="ancestors", to_field="parent")
     def parent(self, value):
-        return identifier_from_uri(value[-1].ref)
+        return identifier_from_uri(value[0].ref)
 
 
 class SourceArchivalObjectToObject(odin.Mapping):
@@ -445,7 +445,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_field(from_field="ancestors", to_field="parent")
     def parent(self, value):
-        return identifier_from_uri(value[-1].ref)
+        return identifier_from_uri(value[0].ref)
 
 
 class SourceSubjectToTerm(odin.Mapping):

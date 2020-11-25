@@ -113,7 +113,7 @@ class TransformerTest(TestCase):
 
     def check_parent(self, transformed):
         if transformed.get("ancestors"):
-            self.assertEqual(transformed.get("parent"), transformed["ancestors"][-1]["identifier"])
+            self.assertEqual(transformed.get("parent"), transformed["ancestors"][0]["identifier"])
 
     def check_group(self, source, transformed):
         group = transformed.get("group")
