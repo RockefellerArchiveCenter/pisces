@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import requests
 import shortuuid
 from asnake.aspace import ASpace
@@ -9,7 +11,7 @@ from .models import FetchRun, FetchRunError
 
 
 def last_run_time(source, object_status, object_type):
-    """Returns a timestamp for a successful fetch.
+    """Returns a date object for a successful fetch.
 
     Args:
         source (int): a data source, see FetchRun.SOURCE_CHOICES
@@ -19,20 +21,19 @@ def last_run_time(source, object_status, object_type):
     Returns:
         int: A UTC timestamp coerced to an integer.
     """
-    return (int(
-        FetchRun.objects.filter(
+    if FetchRun.objects.filter(
+            status=FetchRun.FINISHED,
+            source=source,
+            object_type=object_type,
+            object_status=object_status).exists():
+        return FetchRun.objects.filter(
             status=FetchRun.FINISHED,
             source=source,
             object_type=object_type,
             object_status=object_status
-        ).order_by("-start_time")[0].start_time.timestamp())
-        if FetchRun.objects.filter(
-            status=FetchRun.FINISHED,
-            source=source,
-            object_type=object_type,
-            object_status=object_status
-    ).exists()
-        else 0)
+        ).order_by("-start_time")[0].start_time
+    else:
+        return datetime.fromtimestamp(0)
 
 
 def instantiate_aspace(self, config=None):

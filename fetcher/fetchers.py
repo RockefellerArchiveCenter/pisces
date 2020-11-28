@@ -1,4 +1,5 @@
 import asyncio
+import json
 from concurrent.futures import ThreadPoolExecutor
 
 from django.utils import timezone
@@ -48,10 +49,8 @@ class BaseDataFetcher:
         self.merger = self.get_merger(object_type)
 
         try:
-            fetched = getattr(
-                self, "get_{}".format(self.object_status))()
             asyncio.get_event_loop().run_until_complete(
-                self.process_fetched(fetched))
+                getattr(self, "process_{}".format(object_status))())
         except Exception as e:
             self.current_run.status = FetchRun.ERRORED
             self.current_run.end_time = timezone.now()
@@ -75,30 +74,29 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    async def process_fetched(self, fetched):
-        tasks = []
+    async def process_deleted(self):
+        tasks = self.get_delete_tasks()
+        await asyncio.gather(*tasks, return_exceptions=True)
+
+    async def process_updated(self):
         to_delete = []
         loop = asyncio.get_event_loop()
         executor = ThreadPoolExecutor()
         semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE)
-        for object_id in fetched:
-            task = asyncio.ensure_future(self.process_obj(object_id, loop, executor, semaphore, to_delete))
-            tasks.append(task)
-        tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
+        tasks = self.get_update_tasks(loop, executor, semaphore, to_delete)
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, object_id, loop, executor, semaphore, to_delete):
+    async def process_obj(self, data, loop, executor, semaphore, to_delete):
         async with semaphore:
             try:
                 if self.object_status == "updated":
-                    fetched = await self.get_obj(object_id)
-                    if self.is_exportable(fetched):
-                        merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, fetched)
+                    if self.is_exportable(data):
+                        merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
                         await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
                     else:
-                        to_delete.append(fetched.get("uri", fetched.get("archivesspace_uri")))
+                        to_delete.append(data.get("uri", data.get("archivesspace_uri")))
                 else:
-                    to_delete.append(object_id)
+                    to_delete.append(data.get("uri", data.get("archivesspace_uri")))
                 self.processed += 1
             except Exception as e:
                 print(e)
@@ -111,11 +109,7 @@ class BaseDataFetcher:
         Objects with unpublished ancestors should not be exported.
         Resource records whose id_0 field does not begin with FA should not be exported.
         """
-        if not obj.get("publish"):
-            return False
         if obj.get("has_unpublished_ancestor"):
-            return False
-        if obj.get("id_0") and not obj.get("id_0").startswith("FA"):
             return False
         return True
 
@@ -135,43 +129,36 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         }
         return MERGERS[object_type]
 
-    def get_updated(self):
-        params = {"all_ids": True, "modified_since": self.last_run}
-        endpoint = self.get_endpoint(self.object_type)
-        return clients["aspace"].client.get(endpoint, params=params).json()
+    async def get_update_tasks(self, loop, executor, semaphore, to_delete):
+        tasks = []
+        params = {
+            "page": 1,
+            "page_size": 10,
+            "q": "publish:true",
+            "type": self.object_type,
+            "fields": "json",
+            "resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"],
+            "filter": {"query": {"jsonmodel_type": "range_query", "field": "system_mtime", "from": self.last_run}}
+        }
+        if self.object_type == "resource":
+            params.update({"q": ["publish:true", "four_part_id:FA*"]})
+        initial_page = await clients["archivesspace"].client.get("/search", params=params).json()
+        for page_number in range(1, initial_page["last_page"]):
+            params["page"] = page_number
+            page = await clients["archivesspace"].client.get("/search", params=params).json()
+            for result in page["results"]:
+                task = asyncio.ensure_future(self.process_obj(json.loads(result["json"]), loop, executor, semaphore, to_delete))
+                tasks.append(task)
+        tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
+        return tasks
 
-    def get_deleted(self):
-        data = []
+    async def get_delete_tasks(self):
+        deleted = []
         for d in clients["aspace"].client.get_paged(
                 "delete-feed", params={"modified_since": str(self.last_run)}):
             if self.get_endpoint(self.object_type) in d:
-                data.append(d)
-        return data
-
-    def get_endpoint(self, object_type):
-        repo_baseurl = "/repositories/{}".format(settings.ARCHIVESSPACE["repo"])
-        endpoint = None
-        if object_type == 'resource':
-            endpoint = "{}/resources".format(repo_baseurl)
-        elif object_type == 'archival_object':
-            endpoint = "{}/archival_objects".format(repo_baseurl)
-        elif object_type == 'subject':
-            endpoint = "/subjects"
-        elif object_type == 'agent_person':
-            endpoint = "/agents/people"
-        elif object_type == 'agent_corporate_entity':
-            endpoint = "/agents/corporate_entities"
-        elif object_type == 'agent_family':
-            endpoint = "/agents/families"
-        return endpoint
-
-    async def get_obj(self, obj_id):
-        aspace = clients["aspace"]
-        obj_endpoint = self.get_endpoint(self.object_type)
-        obj = aspace.client.get(
-            "{}/{}".format(obj_endpoint, obj_id),
-            params={"resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"]}).json()
-        return obj
+                deleted.append(d)
+        return [asyncio.ensure_future(handle_deleted_uris(deleted, self.source, self.object_type, self.current_run))]
 
 
 class CartographerDataFetcher(BaseDataFetcher):
@@ -182,20 +169,19 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_merger(self, object_type):
         return ArrangementMapMerger
 
-    def get_updated(self):
-        data = []
+    def get_update_tasks(self, loop, executor, semaphore, to_delete):
+        tasks = []
         for obj in clients["cartographer"].get(
                 self.base_endpoint, params={"modified_since": self.last_run}).json()['results']:
-            data.append("{}{}/".format(self.base_endpoint, obj.get("id")))
-        return data
+            obj_data = await clients["cartographer"].get("{}{}/".format(self.base_endpoint, obj.get("id"))).json()
+            task = asyncio.ensure_future(self.process_obj(obj_data), loop, executor, semaphore, to_delete)
+            tasks.append(task)
+        return tasks
 
-    def get_deleted(self):
-        data = []
+    def get_delete_tasks(self):
+        deleted = []
         for deleted_ref in clients["cartographer"].get(
                 '/api/delete-feed/', params={"modified_since": self.last_run}).json()['results']:
             if self.base_endpoint in deleted_ref['ref']:
-                data.append(deleted_ref.get('archivesspace_uri'))
-        return data
-
-    async def get_obj(self, obj_ref):
-        return clients["cartographer"].get(obj_ref).json()
+                deleted.append(deleted_ref.get('archivesspace_uri'))
+        return [asyncio.ensure_future(handle_deleted_uris(deleted, self.source, self.object_type, self.current_run))]
