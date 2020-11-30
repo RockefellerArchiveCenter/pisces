@@ -89,12 +89,9 @@ class BaseDataFetcher:
     async def process_obj(self, data, loop, executor, semaphore, to_delete):
         async with semaphore:
             try:
-                if self.object_status == "updated":
-                    if self.is_exportable(data):
-                        merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
-                        await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
-                    else:
-                        to_delete.append(data.get("uri", data.get("archivesspace_uri")))
+                if self.is_exportable(data):
+                    merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
+                    await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
                 else:
                     to_delete.append(data.get("uri", data.get("archivesspace_uri")))
                 self.processed += 1
@@ -105,9 +102,7 @@ class BaseDataFetcher:
     def is_exportable(self, obj):
         """Determines whether the object can be exported.
 
-        Unpublished objects should not be exported.
         Objects with unpublished ancestors should not be exported.
-        Resource records whose id_0 field does not begin with FA should not be exported.
         """
         if obj.get("has_unpublished_ancestor"):
             return False
@@ -154,7 +149,21 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
 
     async def get_delete_tasks(self):
         deleted = []
-        for d in clients["aspace"].client.get_paged(
+        params = {
+            "page": 1,
+            "page_size": 10,
+            "q": "publish:false",
+            "type": self.object_type,
+            "fields": "uri",
+            "filter": {"query": {"jsonmodel_type": "range_query", "field": "system_mtime", "from": self.last_run}}
+        }
+        initial_page = await clients["archivesspace"].client.get("/search", params=params).json()
+        for page_number in range(1, initial_page["last_page"]):
+            params["page"] = page_number
+            page = await clients["archivesspace"].client.get("/search", params=params).json()
+            for result in page["results"]:
+                deleted.append(result["uri"])
+        for d in await clients["aspace"].client.get_paged(
                 "delete-feed", params={"modified_since": str(self.last_run)}):
             if self.get_endpoint(self.object_type) in d:
                 deleted.append(d)
