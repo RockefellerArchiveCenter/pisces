@@ -73,10 +73,8 @@ class ArchivalObjectMerger(BaseMerger):
             dict: a dictionary of data to be merged.
         """
         data = {"ancestors": [], "linked_agents": []}
-        cartographer_data = self.get_cartographer_data(object)
-        archivesspace_data = self.get_archivesspace_data(object, object_type)
-        data.update(cartographer_data)
-        data.update(archivesspace_data)
+        data.update(self.get_cartographer_data(object))
+        data.update(self.get_archivesspace_data(object, object_type))
         return data
 
     def get_cartographer_data(self, object):
@@ -91,10 +89,6 @@ class ArchivalObjectMerger(BaseMerger):
                 for a in json_data["results"][0].get("ancestors"):
                     data["ancestors"].append(handle_cartographer_reference(a))
         return data
-
-    def get_archival_object_collection_data(self, object):
-        """Gets additional data for archival_object_collections."""
-        return {"linked_agents": closest_creators(object)}
 
     def get_language_data(self, object, data):
         """Gets language data from ArchivesSpace.
@@ -144,7 +138,7 @@ class ArchivalObjectMerger(BaseMerger):
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data
         if object_type == "archival_object_collection":
-            data.update(self.get_archival_object_collection_data(object))
+            data["linked_agents"] = closest_creators(object)
         return data
 
     def combine_data(self, object, additional_data):
