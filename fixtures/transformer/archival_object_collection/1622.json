@@ -133,48 +133,6 @@
             "type": "collection"
         }
     ],
-    "children": [
-        {
-            "dates": "1962-1964",
-            "level": "file",
-            "order": 0,
-            "ref": "/repositories/101/archival_objects/2329",
-            "title": "Congressional Quarterly Issues",
-            "type": "object"
-        },
-        {
-            "dates": "1960-1967, 1969-1970",
-            "level": "file",
-            "order": 1,
-            "ref": "/repositories/101/archival_objects/2330",
-            "title": "Congressional Quarterly Issues",
-            "type": "object"
-        },
-        {
-            "dates": "1965-1966",
-            "level": "file",
-            "order": 2,
-            "ref": "/repositories/101/archival_objects/2331",
-            "title": "Congressional Quarterly Bound Volumes",
-            "type": "object"
-        },
-        {
-            "dates": "1969-1971",
-            "level": "file",
-            "order": 3,
-            "ref": "/repositories/101/archival_objects/2332",
-            "title": "Congressional Quarterly Bound Volumes",
-            "type": "object"
-        },
-        {
-            "dates": "1969-1971",
-            "level": "file",
-            "order": 4,
-            "ref": "/repositories/101/archival_objects/2333",
-            "title": "Congressional Quarterly Issues",
-            "type": "object"
-        }
-    ],
     "component_id": "6",
     "create_time": "2020-09-21T16:58:33Z",
     "created_by": "admin",

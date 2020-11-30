@@ -123,7 +123,6 @@ class Collection(BaseResource):
     organizations = odin.ArrayOf(AgentReference)
     families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
-    children = odin.ArrayOf(RecordReference, null=True)
     ancestors = odin.ArrayOf(RecordReference, null=True)
     parent = odin.StringField(null=True)
     position = odin.IntegerField()
