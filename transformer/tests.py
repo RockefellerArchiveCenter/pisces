@@ -8,6 +8,7 @@ from fetcher.helpers import identifier_from_uri
 from rest_framework.test import APIRequestFactory
 
 from .models import DataObject
+from .resources.configs import NOTE_TYPE_CHOICES_TRANSFORM
 from .transformers import Transformer
 from .views import DataObjectUpdateByIdView, DataObjectViewSet
 
@@ -43,19 +44,22 @@ class TransformerTest(TestCase):
                     self.check_parent(transformed)
                     self.check_formats(transformed)
                     self.check_component_id(source, transformed)
+                    self.check_position(transformed, object_type)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
 
-        Since transformer logic inherits dates from parent objects in some
-        circumstances, the test for these is less stringent and allows for
-        dates on transformed objects that do not exist on source objects.
+        Ensures that only notes in NOTE_TYPE_CHOICES_TRANSFORM are transformed.
+        This includes notes in agents, which do not have a type field, so the
+        jsonmodel_type field must be checked instead.
         """
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         for source_key, transformed_key in [("notes", "notes"),
                                             (date_source_key, "dates"),
                                             ("extents", "extents")]:
-            source_len = len([n for n in source.get(source_key, []) if n["publish"]]) if source_key == "notes" else len(source.get(source_key, []))
+            source_len = len(
+                [n for n in source.get(source_key, []) if (n["publish"] and n.get("type", n["jsonmodel_type"].split("_")[-1]) in NOTE_TYPE_CHOICES_TRANSFORM)]
+            ) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
                              "Found {} {} in source but {} {} in transformed.".format(
@@ -111,7 +115,7 @@ class TransformerTest(TestCase):
 
     def check_parent(self, transformed):
         if transformed.get("ancestors"):
-            self.assertEqual(transformed.get("parent"), transformed["ancestors"][-1]["identifier"])
+            self.assertEqual(transformed.get("parent"), transformed["ancestors"][0]["identifier"])
 
     def check_group(self, source, transformed):
         group = transformed.get("group")
@@ -131,6 +135,10 @@ class TransformerTest(TestCase):
     def check_component_id(self, source, transformed):
         if source.get("component_id"):
             self.assertEqual(transformed["title"], "{}, {} {}".format(source["title"], source["level"].capitalize(), source["component_id"]))
+
+    def check_position(self, transformed, object_type):
+        if object_type in ["archival_object", "resource"]:
+            self.assertTrue(isinstance(transformed["position"], int))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:

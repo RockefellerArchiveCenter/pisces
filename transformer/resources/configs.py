@@ -420,6 +420,10 @@ NOTE_TYPE_CHOICES = (
     ('userestrict', 'Conditions Governing Use'),
 )
 
+NOTE_TYPE_CHOICES_TRANSFORM = [
+    'abstract', 'accessrestrict', 'arrangement', 'bioghist', 'materialspec',
+    'physdesc', 'processinfo', 'scopecontent', 'userestrict']
+
 REFERENCE_TYPE_CHOICES = (
     ("cultural_context", "Cultural Context"),
     ("function", "Function"),
