@@ -42,6 +42,7 @@ class TransformerTest(TestCase):
                     self.check_parent(transformed)
                     self.check_formats(transformed)
                     self.check_component_id(source, transformed)
+                    self.check_position(transformed, object_type)
 
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
@@ -133,6 +134,10 @@ class TransformerTest(TestCase):
     def check_component_id(self, source, transformed):
         if source.get("component_id"):
             self.assertEqual(transformed["title"], "{}, {} {}".format(source["title"], source["level"].capitalize(), source["component_id"]))
+
+    def check_position(self, transformed, object_type):
+        if object_type in ["archival_object", "resource"]:
+            self.assertTrue(isinstance(transformed["position"], int))
 
     def views(self):
         for object_type in ["agent", "collection", "object", "term"]:
