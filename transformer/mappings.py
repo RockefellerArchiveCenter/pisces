@@ -270,7 +270,7 @@ class SourceResourceToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.type in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_list_field(from_field="dates", to_field="dates")
     def dates(self, value):
@@ -328,7 +328,7 @@ class SourceArchivalObjectToCollection(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.type in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_field
     def title(self, value):
@@ -393,7 +393,7 @@ class SourceArchivalObjectToObject(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.type in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_list_field(from_field="dates", to_field="dates")
     def dates(self, value):
@@ -499,7 +499,7 @@ class SourceAgentCorporateEntityToAgent(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type.split("_")[-1] in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):
@@ -559,7 +559,7 @@ class SourceAgentFamilyToAgent(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type.split("_")[-1] in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):
@@ -619,7 +619,7 @@ class SourceAgentPersonToAgent(odin.Mapping):
 
     @odin.map_list_field(from_field="notes", to_field="notes", to_list=True)
     def notes(self, value):
-        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type in NOTE_TYPE_CHOICES_TRANSFORM)])
+        return SourceNoteToNote.apply([v for v in value if (v.publish and v.jsonmodel_type.split("_")[-1] in NOTE_TYPE_CHOICES_TRANSFORM)])
 
     @odin.map_list_field(from_field="dates_of_existence", to_field="dates")
     def dates(self, value):

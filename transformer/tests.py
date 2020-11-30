@@ -47,9 +47,9 @@ class TransformerTest(TestCase):
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
 
-        Since transformer logic inherits dates from parent objects in some
-        circumstances, the test for these is less stringent and allows for
-        dates on transformed objects that do not exist on source objects.
+        Ensures that only notes in NOTE_TYPE_CHOICES_TRANSFORM are transformed.
+        This includes notes in agents, which do not have a type field, so the
+        jsonmodel_type field must be checked instead.
         """
         date_source_key = "dates_of_existence" if object_type.startswith("agent_") else "dates"
         for source_key, transformed_key in [("notes", "notes"),
@@ -57,7 +57,7 @@ class TransformerTest(TestCase):
                                             ("extents", "extents"),
                                             ("children", "children")]:
             source_len = len(
-                [n for n in source.get(source_key, []) if (n["publish"] and n["jsonmodel_type"] in NOTE_TYPE_CHOICES_TRANSFORM)]
+                [n for n in source.get(source_key, []) if (n["publish"] and n.get("type", n["jsonmodel_type"].split("_")[-1]) in NOTE_TYPE_CHOICES_TRANSFORM)]
             ) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
