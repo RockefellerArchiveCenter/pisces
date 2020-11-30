@@ -420,17 +420,9 @@ NOTE_TYPE_CHOICES = (
     ('userestrict', 'Conditions Governing Use'),
 )
 
-NOTE_TYPE_CHOICES_TRANSFORM = (
-    ('abstract', 'Abstract'),
-    ('accessrestrict', 'Conditions Governing Access'),
-    ('arrangement', 'Arrangement'),
-    ('bioghist', 'Biographical / Historical'),
-    ('materialspec', 'Materials Specific Details'),
-    ('physdesc', 'Physical Description'),
-    ('processinfo', 'Processing Information'),
-    ('scopecontent', 'Scope and Contents'),
-    ('userestrict', 'Conditions Governing Use'),
-)
+NOTE_TYPE_CHOICES_TRANSFORM = [
+    'abstract', 'accessrestrict', 'arrangement', 'bioghist', 'materialspec',
+    'physdesc', 'processinfo', 'scopecontent', 'userestrict']
 
 REFERENCE_TYPE_CHOICES = (
     ("cultural_context", "Cultural Context"),
