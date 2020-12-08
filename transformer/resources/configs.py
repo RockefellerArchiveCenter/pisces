@@ -421,7 +421,7 @@ NOTE_TYPE_CHOICES = (
 )
 
 NOTE_TYPE_CHOICES_TRANSFORM = [
-    'abstract', 'accessrestrict', 'arrangement', 'bioghist', 'materialspec',
+    'abstract', 'accessrestrict', 'arrangement', 'bioghist', 'materialspec', 'odd',
     'physdesc', 'processinfo', 'scopecontent', 'userestrict']
 
 REFERENCE_TYPE_CHOICES = (
