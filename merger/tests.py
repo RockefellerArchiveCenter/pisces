@@ -71,7 +71,8 @@ class MergerTest(TestCase):
             data as in the source.
         """
         if target_object_type == "archival_object":
-            self.assertTrue(self.not_empty(merged.get("dates")), "dates on {} was empty".format(merged))
+            for field in ["dates", "extents"]:
+                self.assertTrue(self.not_empty(merged.get(field)), "{} on {} was empty".format(field, merged))
             self.assertTrue(
                 bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))), merged)
         elif target_object_type == "archival_object_collection":
