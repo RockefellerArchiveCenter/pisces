@@ -1,5 +1,23 @@
+import re
+
 from fetcher.helpers import instantiate_aspace
 from pisces import settings
+
+
+def indicator_to_integer(indicator):
+    """Converts an instance indicator to an integer.
+
+    An indicator can be an integer (23) a combination of integers and letters (23b)
+    or just a letter (B).
+    """
+    try:
+        integer = int(indicator)
+    except ValueError:
+        parsed = re.sub("[^0-9]", "", indicator)
+        if len(parsed):
+            return indicator_to_integer(parsed)
+        integer = ord(indicator.lower()) - 97
+    return integer
 
 
 def get_ancestors(obj):

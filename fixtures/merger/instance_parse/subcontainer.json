@@ -1,0 +1,116 @@
+[
+  {
+    "source": [{
+        "sub_container": {
+          "indicator_2": "10",
+          "type_2": "folder"
+        }
+      }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 1
+    }]
+  },
+  {
+    "source": [{
+        "sub_container": {
+          "indicator_2": "10 - 20",
+          "type_2": "folder"
+        }
+      }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 11
+    }]
+  },
+  {
+    "source": [{
+        "sub_container": {
+          "indicator_2": "10a-20b",
+          "type_2": "folder"
+        }
+      }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 11
+    }]
+  },
+  {
+    "source": [{
+        "sub_container": {
+          "indicator_2": "10a-11a",
+          "type_2": "folder"
+        }
+      }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 2
+    }]
+  },
+  {
+    "source": [{
+      "sub_container": {
+        "indicator_2": "A-B",
+        "type_2": "folder"
+      }
+    }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 2
+    }]
+  },
+  {
+    "source": [{
+      "sub_container": {
+        "indicator_2": "1-3",
+        "type_2": "folder"
+      }
+    },
+    {
+      "sub_container": {
+        "indicator_2": "4-5",
+        "type_2": "folder"
+      }
+    }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 5
+    }]
+  },
+  {
+    "source": [{
+      "sub_container": {
+        "indicator_2": "1-3",
+        "type_2": "folder"
+      }
+    },
+    {
+      "sub_container": {
+        "indicator_2": "4a-5b",
+        "type_2": "folder"
+      }
+    }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 5
+    }]
+  },
+  {
+    "source": [{
+      "sub_container": {
+        "indicator_2": "1-3",
+        "type_2": "folder"
+      }
+    },
+    {
+      "sub_container": {
+        "indicator_2": "A - B",
+        "type_2": "folder"
+      }
+    }],
+    "parsed": [{
+      "extent_type": "folder",
+      "number": 5
+    }]
+  }
+]
