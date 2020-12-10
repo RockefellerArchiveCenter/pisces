@@ -1,4 +1,3 @@
 {
-  "publish": true,
-  "has_unpublished_ancestor": false
+  "has_unpublished_ancestor": true
 }
