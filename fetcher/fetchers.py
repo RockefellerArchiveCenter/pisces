@@ -150,7 +150,7 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         for id_chunk in list_chunks(updated_ids, 100):
             params = {
                 "id_set": id_chunk,
-                "resolve": ["ancestors", "ancestors::linked_agents", "linked_agents", "subjects"]}
+                "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
             for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
                 task = asyncio.ensure_future(self.process_obj(obj_data, loop, executor, semaphore, to_delete))
                 tasks.append(task)
