@@ -10,6 +10,26 @@ from pisces import settings
 from .models import FetchRun, FetchRunError
 
 
+def to_timestamp(datetime_obj):
+    """Converts a datetime object into an integer timestamp representation."""
+    return int(datetime_obj.timestamp())
+
+
+def to_isoformat(datetime_obj):
+    return datetime_obj.isoformat().replace('+00:00', 'Z')
+
+
+def list_chunks(lst, n):
+    """Yield successive n-sized chunks from list.
+
+    Args:
+        lst (list): list to chunkify
+        n (integer): size of chunk to produce
+    """
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
+
 def last_run_time(source, object_status, object_type):
     """Returns a date object for a successful fetch.
 
