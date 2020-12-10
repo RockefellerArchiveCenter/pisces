@@ -89,7 +89,7 @@ class BaseDataFetcher:
     async def process_obj(self, data, loop, executor, semaphore, to_delete):
         async with semaphore:
             try:
-                if self.is_exportable(data):
+                if data.get("has_unpublished_ancestor"):
                     merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
                     await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
                 else:
@@ -98,15 +98,6 @@ class BaseDataFetcher:
             except Exception as e:
                 print(e)
                 FetchRunError.objects.create(run=self.current_run, message=str(e))
-
-    def is_exportable(self, obj):
-        """Determines whether the object can be exported.
-
-        Objects with unpublished ancestors should not be exported.
-        """
-        if obj.get("has_unpublished_ancestor"):
-            return False
-        return True
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):

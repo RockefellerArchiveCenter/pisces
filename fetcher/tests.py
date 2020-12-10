@@ -1,6 +1,4 @@
 import asyncio
-import json
-import os
 import random
 from datetime import datetime
 from unittest.mock import Mock, patch
@@ -25,8 +23,7 @@ from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    UpdatedArchivesSpacePeople, UpdatedArchivesSpaceResources,
                    UpdatedArchivesSpaceSubjects,
                    UpdatedCartographerArrangementMapComponents)
-from .fetchers import (ArchivesSpaceDataFetcher, BaseDataFetcher,
-                       CartographerDataFetcher)
+from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import (handle_deleted_uris, last_run_time,
                       send_error_notification, to_timestamp)
 from .models import FetchRun, FetchRunError
@@ -173,17 +170,6 @@ class FetcherTest(TestCase):
                 self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
                 self.assertEqual(
                     len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 1)
-
-    def test_is_exportable(self):
-        exportable = ["1.json"]
-        for f in os.listdir(os.path.join("fixtures", "fetcher", "is_exportable")):
-            with open(os.path.join("fixtures", "fetcher", "is_exportable", f), "r") as json_file:
-                source = json.load(json_file)
-                parsed = BaseDataFetcher().is_exportable(source)
-                if f in exportable:
-                    self.assertTrue(parsed)
-                else:
-                    self.assertFalse(parsed)
 
     @patch("fetcher.helpers.requests.post")
     def test_handle_deleted_uris(self, mock_post):
