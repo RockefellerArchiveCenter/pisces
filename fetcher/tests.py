@@ -1,6 +1,4 @@
 import asyncio
-import json
-import os
 import random
 from datetime import datetime
 from unittest.mock import Mock, patch
@@ -19,17 +17,15 @@ from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    DeletedArchivesSpaceOrganizations,
                    DeletedArchivesSpacePeople, DeletedArchivesSpaceResources,
                    DeletedArchivesSpaceSubjects,
-                   DeletedCartographerArrangementMapComponents,
                    UpdatedArchivesSpaceArchivalObjects,
                    UpdatedArchivesSpaceFamilies,
                    UpdatedArchivesSpaceOrganizations,
                    UpdatedArchivesSpacePeople, UpdatedArchivesSpaceResources,
                    UpdatedArchivesSpaceSubjects,
                    UpdatedCartographerArrangementMapComponents)
-from .fetchers import (ArchivesSpaceDataFetcher, BaseDataFetcher,
-                       CartographerDataFetcher)
+from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import (handle_deleted_uris, last_run_time,
-                      send_error_notification)
+                      send_error_notification, to_timestamp)
 from .models import FetchRun, FetchRunError
 from .views import FetchRunViewSet
 
@@ -47,7 +43,7 @@ cartographer_vcr = vcr.VCR(
     cassette_library_dir='fixtures/cassettes/fetcher',
     record_mode='once',
     match_on=['path', 'method'],
-    filter_query_parameters=['username', 'password', 'modified_since'],
+    filter_query_parameters=['username', 'password'],
     filter_headers=['Authorization', 'X-ArchivesSpace-Session'],
 )
 
@@ -75,10 +71,10 @@ class FetcherTest(TestCase):
         mock_id.return_value = None
         mock_merger.return_value = {}, {}
         mock_transformer.return_value = {}
-        for object_type_choices, fetcher, fetcher_vcr, cassette_prefix in [
-                (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace"),
-                (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer")]:
-            for status in ["updated", "deleted"]:
+        for object_type_choices, fetcher, fetcher_vcr, cassette_prefix, statuses in [
+                (FetchRun.ARCHIVESSPACE_OBJECT_TYPE_CHOICES, ArchivesSpaceDataFetcher, archivesspace_vcr, "ArchivesSpace", ["updated", "deleted"]),
+                (FetchRun.CARTOGRAPHER_OBJECT_TYPE_CHOICES, CartographerDataFetcher, cartographer_vcr, "Cartographer", ["updated"])]:
+            for status in statuses:
                 for object_type, _ in object_type_choices:
                     with fetcher_vcr.use_cassette("{}-{}-{}.json".format(cassette_prefix, status, object_type)):
                         processed = fetcher().fetch(status, object_type)
@@ -114,7 +110,7 @@ class FetcherTest(TestCase):
             for _, source in FetchRun.SOURCE_CHOICES:
                 for object in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
                     last_run = last_run_time(source, object_status, object)
-                    self.assertEqual(last_run, 0)
+                    self.assertEqual(to_timestamp(last_run), 0)
                     time = timezone.now()
                     FetchRun.objects.create(
                         status=FetchRun.FINISHED,
@@ -123,7 +119,7 @@ class FetcherTest(TestCase):
                         object_status=object_status,
                         end_time=time)
                     updated_last_run = last_run_time(source, object_status, object)
-                    self.assertEqual(updated_last_run, int(time.timestamp()))
+                    self.assertEqual(to_timestamp(updated_last_run), int(time.timestamp()))
 
     @patch("transformer.transformers.Transformer.run")
     @patch("merger.mergers.BaseMerger.merge")
@@ -142,7 +138,6 @@ class FetcherTest(TestCase):
                 (archivesspace_vcr, "ArchivesSpace-updated-resource.json", UpdatedArchivesSpaceResources),
                 (archivesspace_vcr, "ArchivesSpace-deleted-archival_object.json", DeletedArchivesSpaceArchivalObjects),
                 (archivesspace_vcr, "ArchivesSpace-updated-archival_object.json", UpdatedArchivesSpaceArchivalObjects),
-                (cartographer_vcr, "Cartographer-deleted-arrangement_map_component.json", DeletedCartographerArrangementMapComponents),
                 (cartographer_vcr, "Cartographer-updated-arrangement_map_component.json", UpdatedCartographerArrangementMapComponents)]:
             with fetcher_vcr.use_cassette(cassette):
                 mock_id.return_value = None
@@ -175,17 +170,6 @@ class FetcherTest(TestCase):
                 self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
                 self.assertEqual(
                     len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 1)
-
-    def test_is_exportable(self):
-        exportable = ["1.json", "2.json", "3.json"]
-        for f in os.listdir(os.path.join("fixtures", "fetcher", "is_exportable")):
-            with open(os.path.join("fixtures", "fetcher", "is_exportable", f), "r") as json_file:
-                source = json.load(json_file)
-                parsed = BaseDataFetcher().is_exportable(source)
-                if f in exportable:
-                    self.assertTrue(parsed)
-                else:
-                    self.assertFalse(parsed)
 
     @patch("fetcher.helpers.requests.post")
     def test_handle_deleted_uris(self, mock_post):
