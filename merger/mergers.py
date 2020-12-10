@@ -135,7 +135,7 @@ class ArchivalObjectMerger(BaseMerger):
                 else:
                     instance_type = instance["instance_type"].lower()
                     sub_container_type = instance["sub_container"]["top_container"]["_resolved"]["type"].lower()
-                    extent_type = "{} {}".format(instance_type, sub_container_type) if instance_type != "mixed materials" else sub_container_type
+                    extent_type = "{} {}".format(instance_type, sub_container_type) if sub_container_type != "box" else sub_container_type
                     extent_number = 1
                 extents = append_to_list(extents, extent_type, extent_number)
             except Exception as e:
