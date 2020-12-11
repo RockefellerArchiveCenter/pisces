@@ -151,7 +151,7 @@ class ArchivalObjectMerger(BaseMerger):
             data["dates"] = closest_parent_value(object, "dates")
         data.update(self.get_language_data(object, data))
         extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object["instances"])
-        if not extent_data and object_type == "archival_object_collection":
+        if object_type == "archival_object_collection" and not extent_data:
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data
         if object_type == "archival_object_collection":
