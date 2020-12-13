@@ -16,7 +16,8 @@ def to_timestamp(datetime_obj):
 
 
 def to_isoformat(datetime_obj):
-    return datetime_obj.isoformat().replace('+00:00', 'Z')
+    isoformat = datetime_obj.isoformat()
+    return isoformat.replace('+00:00', 'Z') if isoformat.endswith('+00:00') else "{}Z".format(isoformat)
 
 
 def list_chunks(lst, n):
