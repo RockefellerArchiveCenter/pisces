@@ -115,13 +115,6 @@ class UpdatedArchivesSpaceArchivalObjects(BaseCron):
     fetcher = ArchivesSpaceDataFetcher
 
 
-class DeletedCartographerArrangementMapComponents(BaseCron):
-    code = "fetcher.deleted_cartographer_arrangement_map_components"
-    object_status = "deleted"
-    object_type = "arrangement_map_component"
-    fetcher = CartographerDataFetcher
-
-
 class UpdatedCartographerArrangementMapComponents(BaseCron):
     code = "fetcher.updated_cartographer_arrangement_map_components"
     object_status = "updated"
