@@ -49,8 +49,10 @@ class BaseDataFetcher:
         self.merger = self.get_merger(object_type)
 
         try:
+            fetched = getattr(
+                self, "get_{}".format(self.object_status))()
             asyncio.get_event_loop().run_until_complete(
-                getattr(self, "process_{}".format(object_status))())
+                self.process_fetched(fetched))
         except Exception as e:
             self.current_run.status = FetchRun.ERRORED
             self.current_run.end_time = timezone.now()
@@ -74,35 +76,39 @@ class BaseDataFetcher:
             "cartographer": instantiate_electronbond(settings.CARTOGRAPHER)
         }
 
-    async def process_deleted(self):
-        tasks = await self.get_delete_tasks()
-        await asyncio.gather(*tasks, return_exceptions=True)
-
-    async def process_updated(self):
+    async def process_fetched(self, fetched):
+        tasks = []
         to_delete = []
         loop = asyncio.get_event_loop()
         executor = ThreadPoolExecutor()
-        semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE)
-        tasks = await self.get_update_tasks(loop, executor, semaphore, to_delete)
+        if self.object_status == "updated":
+            semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
+            async with semaphore:
+                for obj in self.get_objects(fetched):
+                    task = asyncio.ensure_future(self.process_obj(obj, loop, executor, to_delete))
+                    tasks.append(task)
+        else:
+            to_delete = fetched
+        tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, data, loop, executor, semaphore, to_delete):
-        async with semaphore:
-            try:
-                if data.get("has_unpublished_ancestor"):
-                    merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
-                    await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
-                else:
-                    to_delete.append(data.get("uri", data.get("archivesspace_uri")))
-                self.processed += 1
-            except Exception as e:
-                print(e)
-                FetchRunError.objects.create(run=self.current_run, message=str(e))
+    async def process_obj(self, data, loop, executor, to_delete):
+        try:
+            if data.get("has_unpublished_ancestor"):
+                merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
+                await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
+            else:
+                to_delete.append(data.get("uri", data.get("archivesspace_uri")))
+            self.processed += 1
+        except Exception as e:
+            print(e)
+            FetchRunError.objects.create(run=self.current_run, message=str(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
+    page_size = 100
 
     def get_merger(self, object_type):
         MERGERS = {
@@ -132,12 +138,11 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             endpoint = "/agents/families"
         return endpoint
 
-    async def get_update_tasks(self, loop, executor, semaphore, to_delete):
-        tasks = []
+    def get_updated(self):
         updated_ids = []
         params = {
             "page": 1,
-            "page_size": 10,
+            "page_size": self.page_size,
             "q": "publish:true",
             "type[]": self.object_type,
             "fields[]": "uri",
@@ -147,21 +152,13 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             params.update({"q": ["publish:true", "four_part_id:FA*"]})
         for result in clients["aspace"].client.get_paged("/search", params=params):
             updated_ids.append(result["uri"].split("/")[-1])
-        for id_chunk in list_chunks(updated_ids, 100):
-            params = {
-                "id_set": id_chunk,
-                "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
-            for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
-                task = asyncio.ensure_future(self.process_obj(obj_data, loop, executor, semaphore, to_delete))
-                tasks.append(task)
-        tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
-        return tasks
+        return updated_ids
 
-    async def get_delete_tasks(self):
+    def get_deleted(self):
         deleted = []
         params = {
             "page": 1,
-            "page_size": 10,
+            "page_size": self.page_size,
             "q": "publish:false",
             "type[]": self.object_type,
             "fields[]": "uri",
@@ -173,20 +170,32 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
                 "delete-feed", params={"modified_since": to_timestamp(self.last_run)}):
             if self.get_endpoint(self.object_type) in d:
                 deleted.append(d)
-        return [asyncio.ensure_future(handle_deleted_uris(deleted, self.source, self.object_type, self.current_run))]
+        return deleted
+
+    def get_objects(self, id_list):
+        for id_chunk in list_chunks(id_list, 100):
+            params = {
+                "id_set": id_chunk,
+                "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
+            for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
+                yield obj_data
 
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
     source = FetchRun.CARTOGRAPHER
     base_endpoint = "/api/components/"
+    page_size = 100
 
     def get_merger(self, object_type):
         return ArrangementMapMerger
 
+    def get_updated(self):
+        return []
+
     def get_paged(self, client, url, *args, **kwargs):
         """Get list of json objects from URLs of paged items"""
-        params = {"offset": 0, "limit": 100}
+        params = {"offset": 0, "limit": self.page_size}
         if "params" in kwargs:
             params.update(**kwargs["params"])
             del kwargs["params"]
@@ -199,13 +208,10 @@ class CartographerDataFetcher(BaseDataFetcher):
                 yield obj_data
             if not current_json.get("next"):
                 break
-            params["offset"] += 100
+            params["offset"] += self.page_size
             current_page = client.get(current_json.get("next"), params=params)
             current_json = current_page.json()
 
-    async def get_update_tasks(self, loop, executor, semaphore, to_delete):
-        tasks = []
+    def get_objects(self, id_list):
         for obj in self.get_paged(clients["cartographer"], self.base_endpoint, params={"modified_since": to_timestamp(self.last_run)}):
-            task = asyncio.ensure_future(self.process_obj(obj, loop, executor, semaphore, to_delete))
-            tasks.append(task)
-        return tasks
+            yield obj
