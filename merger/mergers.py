@@ -1,8 +1,6 @@
-import re
-
 from .helpers import (ArchivesSpaceHelper, add_group, closest_creators,
                       closest_parent_value, combine_references,
-                      handle_cartographer_reference)
+                      handle_cartographer_reference, indicator_to_integer)
 
 
 class MergeError(Exception):
@@ -102,27 +100,46 @@ class ArchivalObjectMerger(BaseMerger):
             data["language"] = closest_parent_value(object, "language")
         return data
 
-    def parse_instances(self, object):
+    def parse_instances(self, instances):
         """Attempts to parse extents from instances.
 
-        For instances which contain a child subcontainer, parses the indicator
-        to determine the extent number, and uses the instance type as the extent
-        type. Instances which are not parseable return None.
+        Initially, child subcontainers are parsed to determine
+        the extent number and extent type. If a child subcontainer does not
+        exist, the parent container is parsed.
         """
+
+        def append_to_list(extents, extent_type, extent_number):
+            """Merges or appends extent objects to an extent list.
+
+            Args:
+                extents (list): a list of extents to update.
+                extent_type (str): the extent type to add.
+                extent_number (int): the extent number to add
+            """
+            matching_extents = [e for e in extents if e["extent_type"] == extent_type]
+            if matching_extents:
+                matching_extents[0]["number"] += extent_number
+            else:
+                extents.append({"extent_type": extent_type, "number": extent_number})
+            return extents
+
         extents = []
-        parseable = [i for i in object["instances"] if
-                     all(i_type in i.get("sub_container", {})
-                         for i_type in ["indicator_2", "type_2"])]
-        for instance in parseable:
-            extent = {}
+        for instance in instances:
             try:
-                range = sorted([int(re.sub("[^0-9]", "", i.strip()))
-                                for i in instance["sub_container"]["indicator_2"].split("-")])
-                extent["extent_type"] = instance["sub_container"]["type_2"]
-                extent["number"] = range[-1] - range[0] if len(range) > 1 else 1
-                extents.append(extent)
-            except ValueError:
-                pass
+                sub_container_parseable = all(i_type in instance.get("sub_container", {}) for i_type in ["indicator_2", "type_2"])
+                if sub_container_parseable:
+                    number_list = [i.strip() for i in instance["sub_container"]["indicator_2"].split("-")]
+                    range = sorted(map(indicator_to_integer, number_list))
+                    extent_type = instance["sub_container"]["type_2"]
+                    extent_number = range[-1] - range[0] + 1 if len(range) > 1 else 1
+                else:
+                    instance_type = instance["instance_type"].lower()
+                    sub_container_type = instance["sub_container"]["top_container"]["_resolved"]["type"].lower()
+                    extent_type = "{} {}".format(instance_type, sub_container_type) if sub_container_type != "box" else sub_container_type
+                    extent_number = 1
+                extents = append_to_list(extents, extent_type, extent_number)
+            except Exception as e:
+                raise Exception("Error parsing instances") from e
         return extents
 
     def get_archivesspace_data(self, object, object_type):
@@ -133,8 +150,8 @@ class ArchivalObjectMerger(BaseMerger):
         if object.get("dates") in ["", [], {}, None]:
             data["dates"] = closest_parent_value(object, "dates")
         data.update(self.get_language_data(object, data))
-        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object)
-        if not extent_data and object_type == "archival_object_collection":
+        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object["instances"])
+        if object_type == "archival_object_collection" and not extent_data:
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data
         if object_type == "archival_object_collection":

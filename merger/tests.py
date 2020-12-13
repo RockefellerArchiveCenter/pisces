@@ -71,7 +71,8 @@ class MergerTest(TestCase):
             data as in the source.
         """
         if target_object_type == "archival_object":
-            self.assertTrue(self.not_empty(merged.get("dates")), "dates on {} was empty".format(merged))
+            for field in ["dates", "extents"]:
+                self.assertTrue(self.not_empty(merged.get(field)), "{} on {} was empty".format(field, merged))
             self.assertTrue(
                 bool(self.not_empty(merged.get("language")) or self.not_empty(merged.get("lang_materials"))), merged)
         elif target_object_type == "archival_object_collection":
@@ -118,8 +119,10 @@ class MergerTest(TestCase):
         with merger_vcr.use_cassette("archival_object-merge.json"):
             clients = BaseDataFetcher().instantiate_clients()
             merger = ArchivalObjectMerger(clients)
-            for f in os.listdir(os.path.join("fixtures", "merger", "instance_parse")):
-                with open(os.path.join("fixtures", "merger", "instance_parse", f), "r") as json_file:
+            fixture_dir = os.path.join("fixtures", "merger", "instance_parse")
+            for f in os.listdir(fixture_dir):
+                with open(os.path.join(fixture_dir, f), "r") as json_file:
                     source_data = json.load(json_file)
-                    parsed = merger.parse_instances(source_data["source"])
-                    self.assertEqual(parsed, source_data["parsed"])
+                    for parsed_pair in source_data:
+                        parsed = merger.parse_instances(parsed_pair["source"])
+                        self.assertEqual(parsed, parsed_pair["parsed"])
