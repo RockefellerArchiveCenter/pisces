@@ -1,4 +1,5 @@
 from datetime import datetime
+from itertools import zip_longest
 
 import requests
 import shortuuid
@@ -20,15 +21,15 @@ def to_isoformat(datetime_obj):
     return isoformat.replace('+00:00', 'Z') if isoformat.endswith('+00:00') else "{}Z".format(isoformat)
 
 
-def list_chunks(lst, n):
-    """Yield successive n-sized chunks from list.
+def grouper(iterable, n):
+    """Yield successive n-sized chunks from iterable.
 
     Args:
         lst (list): list to chunkify
         n (integer): size of chunk to produce
     """
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
+    args = [iter(iterable)] * n
+    return zip_longest(*args, fillvalue=None)
 
 
 def last_run_time(source, object_status, object_type):

@@ -9,8 +9,8 @@ from merger.mergers import (AgentMerger, ArchivalObjectMerger,
 from pisces import settings
 from transformer.transformers import Transformer
 
-from .helpers import (handle_deleted_uris, instantiate_aspace,
-                      instantiate_electronbond, last_run_time, list_chunks,
+from .helpers import (grouper, handle_deleted_uris, instantiate_aspace,
+                      instantiate_electronbond, last_run_time,
                       send_error_notification, to_isoformat, to_timestamp)
 from .models import FetchRun, FetchRunError
 
@@ -139,7 +139,6 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         return endpoint
 
     def get_updated(self):
-        updated_ids = []
         params = {
             "page": 1,
             "page_size": self.page_size,
@@ -151,11 +150,9 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         if self.object_type == "resource":
             params.update({"q": ["publish:true", "four_part_id:FA*"]})
         for result in clients["aspace"].client.get_paged("/search", params=params):
-            updated_ids.append(result["uri"].split("/")[-1])
-        return updated_ids
+            yield result["uri"].split("/")[-1]
 
     def get_deleted(self):
-        deleted = []
         params = {
             "page": 1,
             "page_size": self.page_size,
@@ -165,15 +162,14 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             "filter": json.dumps({"query": {"jsonmodel_type": "range_query", "field": "system_mtime", "from": to_isoformat(self.last_run)}})
         }
         for d in clients["aspace"].client.get_paged("/search", params=params):
-            deleted.append(d["uri"])
+            yield d["uri"]
         for d in clients["aspace"].client.get_paged(
                 "delete-feed", params={"modified_since": to_timestamp(self.last_run)}):
             if self.get_endpoint(self.object_type) in d:
-                deleted.append(d)
-        return deleted
+                yield d
 
     def get_objects(self, id_list):
-        for id_chunk in list_chunks(id_list, 100):
+        for id_chunk in grouper(id_list, 100):
             params = {
                 "id_set": id_chunk,
                 "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
@@ -191,7 +187,7 @@ class CartographerDataFetcher(BaseDataFetcher):
         return ArrangementMapMerger
 
     def get_updated(self):
-        return []
+        yield []
 
     def get_paged(self, client, url, *args, **kwargs):
         """Get list of json objects from URLs of paged items"""
