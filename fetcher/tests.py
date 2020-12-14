@@ -163,13 +163,16 @@ class FetcherTest(TestCase):
 
     def test_cleanup(self):
         for source_id, source in FetchRun.SOURCE_CHOICES:
-            for object in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
-                last_run = last_run_time(source, FetchRun.FINISHED, object)
-                cleanup = CleanUpCompleted().do()
-                self.assertIsNot(False, cleanup)
-                self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, object))
-                self.assertEqual(
-                    len(FetchRun.objects.filter(source=source_id, object_type=object[0], status=FetchRun.FINISHED)), 1)
+            for obj_type, _ in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
+                for obj_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
+                    last_run = last_run_time(source, FetchRun.FINISHED, object)
+                    cleanup = CleanUpCompleted().do()
+                    self.assertIsNot(False, cleanup)
+                    self.assertEqual(last_run, last_run_time(source, FetchRun.FINISHED, obj_type))
+                    self.assertEqual(
+                        len(FetchRun.objects.filter(
+                            source=source_id, object_type=obj_type,
+                            object_status=obj_status, status=FetchRun.FINISHED)), 1)
 
     @patch("fetcher.helpers.requests.post")
     def test_handle_deleted_uris(self, mock_post):

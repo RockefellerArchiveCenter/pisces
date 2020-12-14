@@ -130,12 +130,14 @@ class CleanUpCompleted(CronJobBase):
     def do(self):
         try:
             for obj_type, _ in FetchRun.OBJECT_TYPE_CHOICES:
-                delete_ids = FetchRun.objects.filter(
-                    object_type=obj_type,
-                    status=FetchRun.FINISHED,
-                    fetchrunerror__isnull=True).order_by("-end_time")[1:].values_list("id", flat=True)
-                FetchRun.objects.filter(pk__in=list(delete_ids)).delete()
-                print("{} {} FetchRun objects deleted".format(len(delete_ids), obj_type))
+                for obj_status, _ in FetchRun.OBJECT_STATUS_CHOICES:
+                    delete_ids = FetchRun.objects.filter(
+                        object_type=obj_type,
+                        object_status=obj_status,
+                        status=FetchRun.FINISHED,
+                        fetchrunerror__isnull=True).order_by("-end_time")[1:].values_list("id", flat=True)
+                    FetchRun.objects.filter(pk__in=list(delete_ids)).delete()
+                    print("{} {} FetchRun objects deleted".format(len(delete_ids), obj_type))
         except Exception as e:
             print("Error cleaning  up completed FetchRun objects: {}".format(e))
             return False
