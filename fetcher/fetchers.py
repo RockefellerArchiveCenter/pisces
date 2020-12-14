@@ -51,6 +51,7 @@ class BaseDataFetcher:
         try:
             fetched = getattr(
                 self, "get_{}".format(self.object_status))()
+            print("Items fetched")
             asyncio.get_event_loop().run_until_complete(
                 self.process_fetched(fetched))
         except Exception as e:
@@ -83,10 +84,13 @@ class BaseDataFetcher:
         executor = ThreadPoolExecutor()
         if self.object_status == "updated":
             semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
+            n = 0
             async with semaphore:
                 for obj in self.get_objects(fetched):
+                    print(n)
                     task = asyncio.ensure_future(self.process_obj(obj, loop, executor, to_delete))
                     tasks.append(task)
+                    n += 1
         else:
             to_delete = fetched
         tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
