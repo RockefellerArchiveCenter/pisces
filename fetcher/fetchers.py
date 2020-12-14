@@ -83,30 +83,30 @@ class BaseDataFetcher:
         loop = asyncio.get_event_loop()
         executor = ThreadPoolExecutor()
         if self.object_status == "updated":
-            semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
+            semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE)
             n = 0
-            async with semaphore:
-                for obj in self.get_objects(fetched):
-                    print(n)
-                    task = asyncio.ensure_future(self.process_obj(obj, loop, executor, to_delete))
-                    tasks.append(task)
-                    n += 1
+            for obj in self.get_objects(fetched):
+                print(n)
+                task = asyncio.ensure_future(self.process_obj(obj, loop, semaphore, executor, to_delete))
+                tasks.append(task)
+                n += 1
         else:
             to_delete = fetched
         tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, data, loop, executor, to_delete):
-        try:
-            if data.get("has_unpublished_ancestor"):
-                merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
-                await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
-            else:
-                to_delete.append(data.get("uri", data.get("archivesspace_uri")))
-            self.processed += 1
-        except Exception as e:
-            print(e)
-            FetchRunError.objects.create(run=self.current_run, message=str(e))
+    async def process_obj(self, data, loop, semaphore, executor, to_delete):
+        async with semaphore:
+            try:
+                if data.get("has_unpublished_ancestor"):
+                    merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
+                    await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
+                else:
+                    to_delete.append(data.get("uri", data.get("archivesspace_uri")))
+                self.processed += 1
+            except Exception as e:
+                print(e)
+                FetchRunError.objects.create(run=self.current_run, message=str(e))
 
 
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
