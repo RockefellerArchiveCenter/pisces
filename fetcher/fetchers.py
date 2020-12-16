@@ -8,8 +8,8 @@ from merger.mergers import (AgentMerger, ArchivalObjectMerger,
 from pisces import settings
 from transformer.transformers import Transformer
 
-from .helpers import (grouper, handle_deleted_uris, instantiate_aspace,
-                      instantiate_electronbond, last_run_time,
+from .helpers import (handle_deleted_uris, instantiate_aspace,
+                      instantiate_electronbond, last_run_time, list_chunks,
                       send_error_notification, to_timestamp)
 from .models import FetchRun, FetchRunError
 
@@ -80,29 +80,51 @@ class BaseDataFetcher:
         to_delete = []
         loop = asyncio.get_event_loop()
         executor = ThreadPoolExecutor()
-        semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
         if self.object_status == "updated":
-            for obj in self.get_objects(fetched):
-                task = asyncio.ensure_future(self.process_obj(obj, loop, executor, semaphore, to_delete))
-                tasks.append(task)
-                self.processed += 1
+            if self.source == FetchRun.ARCHIVESSPACE:
+                semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
+                for id_chunk in list_chunks(fetched, self.page_size):
+                    print("Fetching chunk")
+                    print(id_chunk)
+                    task = asyncio.ensure_future(self.handle_page(id_chunk, loop, executor, semaphore, to_delete))
+                    tasks.append(task)
+            else:
+                semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE)
+                for obj in fetched:
+                    task = asyncio.ensure_future(self.handle_item(obj, loop, executor, semaphore, to_delete))
+                    tasks.append(task)
         else:
             to_delete = fetched
             self.processed = len(fetched)
         tasks.append(asyncio.ensure_future(handle_deleted_uris(to_delete, self.source, self.object_type, self.current_run)))
         await asyncio.gather(*tasks, return_exceptions=True)
 
-    async def process_obj(self, data, loop, executor, semaphore, to_delete):
+    async def handle_page(self, id_list, loop, executor, semaphore, to_delete):
         async with semaphore:
-            try:
-                if self.is_exportable(data):
-                    merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
-                    await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
-                else:
-                    to_delete.append(data.get("uri", data.get("archivesspace_uri")))
-            except Exception as e:
-                print(e)
-                FetchRunError.objects.create(run=self.current_run, message=str(e))
+            for obj in await self.get_page(id_list):
+                print("{} fetched".format(obj.get("uri", obj.get("archivesspace_uri"))))
+                await self.handle_data(obj, loop, executor, semaphore, to_delete)
+                self.processed += 1
+
+    async def handle_item(self, identifier, loop, executor, semaphore, to_delete):
+        async with semaphore:
+            item = await self.get_item(identifier)
+            print("{} fetched".format(item.get("uri", item.get("archivesspace_uri"))))
+            await self.handle_data(item, loop, executor, semaphore, to_delete)
+            self.processed += 1
+
+    async def handle_data(self, data, loop, executor, semaphore, to_delete):
+        try:
+            if self.is_exportable(data):
+                merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
+                print("{} merged".format(data.get("uri", data.get("archivesspace_uri"))))
+                await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
+                print("{} transformed".format(data.get("uri", data.get("archivesspace_uri"))))
+            else:
+                to_delete.append(data.get("uri", data.get("archivesspace_uri")))
+        except Exception as e:
+            print(e)
+            FetchRunError.objects.create(run=self.current_run, message=str(e))
 
     def is_exportable(self, obj):
         """Determines whether the object can be exported.
@@ -123,7 +145,7 @@ class BaseDataFetcher:
 class ArchivesSpaceDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from ArchivesSpace."""
     source = FetchRun.ARCHIVESSPACE
-    page_size = 100
+    page_size = 25
 
     def get_merger(self, object_type):
         MERGERS = {
@@ -166,30 +188,28 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             endpoint = "/agents/families"
         return endpoint
 
-    async def get_obj(self, obj_id):
-        aspace = clients["aspace"]
-        obj_endpoint = self.get_endpoint(self.object_type)
-        obj = aspace.client.get(
-            "{}/{}".format(obj_endpoint, obj_id),
-            params={"resolve": ["ancestors", "ancestors::linked_agents",
-                                "instances::top_container", "linked_agents",
-                                "subjects"]}).json()
-        return obj
+    # async def get_obj(self, obj_id):
+    #     aspace = clients["aspace"]
+    #     obj_endpoint = self.get_endpoint(self.object_type)
+    #     obj = aspace.client.get(
+    #         "{}/{}".format(obj_endpoint, obj_id),
+    #         params={"resolve": ["ancestors", "ancestors::linked_agents",
+    #                             "instances::top_container", "linked_agents",
+    #                             "subjects"]}).json()
+    #     return obj
 
-    def get_objects(self, id_list):
-        for id_chunk in grouper(id_list, self.page_size):
-            params = {
-                "id_set": id_chunk,
-                "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
-            for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
-                yield obj_data
+    async def get_page(self, id_list):
+        params = {
+            "id_set": id_list,
+            "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
+        for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
+            yield obj_data
 
 
 class CartographerDataFetcher(BaseDataFetcher):
     """Fetches updated and deleted data from Cartographer."""
     source = FetchRun.CARTOGRAPHER
     base_endpoint = "/api/components/"
-    page_size = 100
 
     def get_merger(self, object_type):
         return ArrangementMapMerger
@@ -209,9 +229,5 @@ class CartographerDataFetcher(BaseDataFetcher):
                 data.append(deleted_ref.get('archivesspace_uri'))
         return data
 
-    async def get_obj(self, obj_ref):
+    async def get_item(self, obj_ref):
         return clients["cartographer"].get(obj_ref).json()
-
-    def get_objects(self, id_list):
-        for obj in self.get_paged(clients["cartographer"], self.base_endpoint, params={"modified_since": to_timestamp(self.last_run)}):
-            yield obj
