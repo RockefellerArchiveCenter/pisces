@@ -91,5 +91,24 @@
 			"extent_type": "audio tape",
 			"number": 1
 		}]
-	}
+	},
+  {
+    "source": [
+        {
+            "lock_version": 0,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2020-03-04T19:23:27Z",
+            "system_mtime": "2020-03-04T19:23:27Z",
+            "user_mtime": "2020-03-04T19:23:27Z",
+            "instance_type": "digital_object",
+            "jsonmodel_type": "instance",
+            "is_representative": false,
+            "digital_object": {
+                "ref": "/repositories/2/digital_objects/2763"
+            }
+        }
+    ],
+		"parsed": []
+  }
 ]

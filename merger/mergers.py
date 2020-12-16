@@ -111,6 +111,9 @@ class ArchivalObjectMerger(BaseMerger):
         def append_to_list(extents, extent_type, extent_number):
             """Merges or appends extent objects to an extent list.
 
+            Only operates over instances with a sub_container (i.e. skips
+            digital object instances.
+
             Args:
                 extents (list): a list of extents to update.
                 extent_type (str): the extent type to add.
@@ -124,7 +127,7 @@ class ArchivalObjectMerger(BaseMerger):
             return extents
 
         extents = []
-        for instance in instances:
+        for instance in [i for i in instances if i.get("sub_container")]:
             try:
                 sub_container_parseable = all(i_type in instance.get("sub_container", {}) for i_type in ["indicator_2", "type_2"])
                 if sub_container_parseable:
