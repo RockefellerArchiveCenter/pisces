@@ -84,7 +84,6 @@ class BaseDataFetcher:
             if self.source == FetchRun.ARCHIVESSPACE:
                 semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
                 for id_chunk in list_chunks(fetched, self.page_size):
-                    print("Fetching chunk")
                     task = asyncio.ensure_future(self.handle_page(id_chunk, loop, executor, semaphore, to_delete))
                     tasks.append(task)
             else:
@@ -100,7 +99,9 @@ class BaseDataFetcher:
 
     async def handle_page(self, id_list, loop, executor, semaphore, to_delete):
         async with semaphore:
-            for obj in await self.get_page(id_list):
+            page = await self.get_page(id_list)
+            print("Page fetched")
+            for obj in page:
                 print("{} fetched".format(obj.get("uri", obj.get("archivesspace_uri"))))
                 await self.handle_data(obj, loop, executor, semaphore, to_delete)
                 self.processed += 1
@@ -187,22 +188,11 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
             endpoint = "/agents/families"
         return endpoint
 
-    # async def get_obj(self, obj_id):
-    #     aspace = clients["aspace"]
-    #     obj_endpoint = self.get_endpoint(self.object_type)
-    #     obj = aspace.client.get(
-    #         "{}/{}".format(obj_endpoint, obj_id),
-    #         params={"resolve": ["ancestors", "ancestors::linked_agents",
-    #                             "instances::top_container", "linked_agents",
-    #                             "subjects"]}).json()
-    #     return obj
-
     async def get_page(self, id_list):
         params = {
             "id_set": id_list,
             "resolve": ["ancestors", "ancestors::linked_agents", "instances::top_container", "linked_agents", "subjects"]}
-        for obj_data in clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json():
-            yield obj_data
+        return clients["aspace"].client.get(self.get_endpoint(self.object_type), params=params).json()
 
 
 class CartographerDataFetcher(BaseDataFetcher):
