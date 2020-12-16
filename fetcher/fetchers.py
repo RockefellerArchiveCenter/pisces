@@ -85,7 +85,6 @@ class BaseDataFetcher:
                 semaphore = asyncio.BoundedSemaphore(settings.CHUNK_SIZE / self.page_size)
                 for id_chunk in list_chunks(fetched, self.page_size):
                     print("Fetching chunk")
-                    print(id_chunk)
                     task = asyncio.ensure_future(self.handle_page(id_chunk, loop, executor, semaphore, to_delete))
                     tasks.append(task)
             else:
