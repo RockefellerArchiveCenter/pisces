@@ -100,16 +100,13 @@ class BaseDataFetcher:
     async def handle_page(self, id_list, loop, executor, semaphore, to_delete):
         async with semaphore:
             page = await self.get_page(id_list)
-            print("Page fetched")
             for obj in page:
-                print("{} fetched".format(obj.get("uri", obj.get("archivesspace_uri"))))
                 await self.handle_data(obj, loop, executor, semaphore, to_delete)
                 self.processed += 1
 
     async def handle_item(self, identifier, loop, executor, semaphore, to_delete):
         async with semaphore:
             item = await self.get_item(identifier)
-            print("{} fetched".format(item.get("uri", item.get("archivesspace_uri"))))
             await self.handle_data(item, loop, executor, semaphore, to_delete)
             self.processed += 1
 
@@ -117,9 +114,7 @@ class BaseDataFetcher:
         try:
             if self.is_exportable(data):
                 merged, merged_object_type = await loop.run_in_executor(executor, run_merger, self.merger, self.object_type, data)
-                print("{} merged".format(data.get("uri", data.get("archivesspace_uri"))))
                 await loop.run_in_executor(executor, run_transformer, merged_object_type, merged)
-                print("{} transformed".format(data.get("uri", data.get("archivesspace_uri"))))
             else:
                 to_delete.append(data.get("uri", data.get("archivesspace_uri")))
         except Exception as e:
