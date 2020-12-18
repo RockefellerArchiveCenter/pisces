@@ -12,7 +12,7 @@ class DataObjectViewSet(ModelViewSet):
 
     def get_queryset(self):
         queryset = DataObject.objects.all().order_by("last_modified")
-        if self.request.GET.get("clean", "").lower() != "true":
+        if (self.request.GET.get("clean", "").lower() != "true") and (self.action == "list"):
             queryset = queryset.exclude(indexed=True)
         return queryset
 
@@ -32,7 +32,7 @@ class DataObjectViewSet(ModelViewSet):
 
     def get_action_queryset(self, request, object_type):
         queryset = DataObject.objects.filter(object_type=object_type).order_by("last_modified")
-        if request.GET.get("clean", "").lower() != "true":
+        if (request.GET.get("clean", "").lower() != "true") and (self.action == "list"):
             queryset = queryset.exclude(indexed=True)
         return queryset
 
