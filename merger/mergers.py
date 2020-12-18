@@ -137,10 +137,10 @@ class ArchivalObjectMerger(BaseMerger):
                     extent_number = range[-1] - range[0] + 1 if len(range) > 1 else 1
                 else:
                     instance_type = instance["instance_type"].lower()
-                    sub_container_type = instance["sub_container"]["top_container"]["_resolved"]["type"].lower()
+                    sub_container_type = instance["sub_container"]["top_container"]["_resolved"].get("type", "").lower()
                     extent_type = "{} {}".format(instance_type, sub_container_type) if sub_container_type != "box" else sub_container_type
                     extent_number = 1
-                extents = append_to_list(extents, extent_type, extent_number)
+                extents = append_to_list(extents, extent_type.strip(), extent_number)
             except Exception as e:
                 raise Exception("Error parsing instances") from e
         return extents

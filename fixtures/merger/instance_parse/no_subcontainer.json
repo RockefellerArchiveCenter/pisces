@@ -110,5 +110,22 @@
         }
     ],
 		"parsed": []
-  }
+  },
+	{
+		"source": [{
+			"instance_type": "audio",
+			"sub_container": {
+				"jsonmodel_type": "sub_container",
+				"top_container": {
+					"ref": "/repositories/2/top_containers/192607",
+					"_resolved": {
+					}
+				}
+			}
+		}],
+		"parsed": [{
+			"extent_type": "audio",
+			"number": 1
+		}]
+	}
 ]
