@@ -1,0 +1,131 @@
+[{
+		"source": [{
+			"instance_type": "mixed materials",
+			"sub_container": {
+				"top_container": {
+					"ref": "/repositories/2/top_containers/8779",
+					"_resolved": {
+						"type": "box"
+					}
+				}
+			}
+		}],
+		"parsed": [{
+			"extent_type": "box",
+			"number": 1
+		}]
+	},
+	{
+		"source": [{
+				"instance_type": "mixed materials",
+				"sub_container": {
+					"top_container": {
+						"ref": "/repositories/2/top_containers/8779",
+						"_resolved": {
+							"type": "box"
+						}
+					}
+				}
+			},
+			{
+				"instance_type": "mixed materials",
+				"sub_container": {
+					"top_container": {
+						"ref": "/repositories/2/top_containers/8779",
+						"_resolved": {
+							"type": "box"
+						}
+					}
+				}
+			}
+		],
+		"parsed": [{
+			"extent_type": "box",
+			"number": 2
+		}]
+	},
+	{
+		"source": [{
+				"instance_type": "microform",
+				"sub_container": {
+					"jsonmodel_type": "sub_container",
+					"top_container": {
+						"ref": "/repositories/2/top_containers/192607",
+						"_resolved": {
+							"type": "reel"
+						}
+					}
+				}
+			},
+			{
+				"instance_type": "microform",
+				"sub_container": {
+					"top_container": {
+						"ref": "/repositories/2/top_containers/196399",
+						"_resolved": {
+							"type": "reel"
+						}
+					}
+				}
+			}
+		],
+		"parsed": [{
+			"extent_type": "microform reel",
+			"number": 2
+		}]
+	},
+	{
+		"source": [{
+			"instance_type": "audio",
+			"sub_container": {
+				"jsonmodel_type": "sub_container",
+				"top_container": {
+					"ref": "/repositories/2/top_containers/192607",
+					"_resolved": {
+						"type": "Tape"
+					}
+				}
+			}
+		}],
+		"parsed": [{
+			"extent_type": "audio tape",
+			"number": 1
+		}]
+	},
+  {
+    "source": [
+        {
+            "lock_version": 0,
+            "created_by": "admin",
+            "last_modified_by": "admin",
+            "create_time": "2020-03-04T19:23:27Z",
+            "system_mtime": "2020-03-04T19:23:27Z",
+            "user_mtime": "2020-03-04T19:23:27Z",
+            "instance_type": "digital_object",
+            "jsonmodel_type": "instance",
+            "is_representative": false,
+            "digital_object": {
+                "ref": "/repositories/2/digital_objects/2763"
+            }
+        }
+    ],
+		"parsed": []
+  },
+	{
+		"source": [{
+			"instance_type": "audio",
+			"sub_container": {
+				"jsonmodel_type": "sub_container",
+				"top_container": {
+					"ref": "/repositories/2/top_containers/192607",
+					"_resolved": {
+					}
+				}
+			}
+		}],
+		"parsed": [{
+			"extent_type": "audio",
+			"number": 1
+		}]
+	}
+]

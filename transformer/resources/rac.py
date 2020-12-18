@@ -86,33 +86,6 @@ class Language(odin.Resource):
     identifier = odin.StringField()
 
 
-class RightsGranted(odin.Resource):
-    """Documents specific permissions or restrictions."""
-    act = odin.StringField(choices=configs.RIGHTS_ACT_CHOICES)
-    begin = odin.DateTimeField()
-    end = odin.DateTimeField()
-    restriction = odin.StringField(choices=configs.RIGHTS_RESTRICTION_CHOICES)
-    notes = odin.ArrayOf(Note)
-
-
-class RightsStatement(odin.Resource):
-    """A PREMIS-compliant rights statement.
-
-    RightsStatements contain once or more RightsGranted, which document
-    permissions or restrictions on archival records.
-    """
-    determination_date = odin.DateTimeField()
-    type = odin.StringField(default="rights_statement")
-    rights_type = odin.StringField(choices=configs.RIGHTS_TYPE_CHOICES)
-    begin = odin.DateTimeField()
-    end = odin.DateTimeField()
-    copyright_status = odin.StringField(choices=configs.RIGHTS_COPYRIGHT_STATUSES, null=True)
-    other_basis = odin.StringField(null=True)
-    jurisdiction = odin.StringField(null=True)
-    rights_notes = odin.ArrayOf(Note)
-    rights_granted = odin.ArrayOf(RightsGranted)
-
-
 class BaseResource(odin.Resource):
     """Base class for all first-class entities in the RAC data model."""
     title = odin.StringField()
@@ -150,9 +123,9 @@ class Collection(BaseResource):
     organizations = odin.ArrayOf(AgentReference)
     families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
-    children = odin.ArrayOf(RecordReference, null=True)
     ancestors = odin.ArrayOf(RecordReference, null=True)
-    rights = odin.ArrayOf(RightsStatement)
+    parent = odin.StringField(null=True)
+    position = odin.IntegerField()
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
 
@@ -174,8 +147,8 @@ class Object(BaseResource):
     families = odin.ArrayOf(AgentReference)
     terms = odin.ArrayOf(TermReference)
     ancestors = odin.ArrayOf(RecordReference, null=True)
-    rights = odin.ArrayOf(RightsStatement)
-    tree_position = odin.IntegerField()
+    parent = odin.StringField()
+    position = odin.IntegerField()
     formats = odin.ArrayField()
     online = odin.BooleanField(default=False)
 

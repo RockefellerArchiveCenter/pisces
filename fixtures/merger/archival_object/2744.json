@@ -455,6 +455,44 @@
                 "lock_version": 0,
                 "system_mtime": "2020-09-21T17:16:26Z",
                 "top_container": {
+                    "_resolved": {
+                        "active_restrictions": [],
+                        "barcode": "A0000000092833",
+                        "collection": [
+                            {
+                                "display_string": "Cary Reich papers",
+                                "identifier": "FA1275",
+                                "ref": "/repositories/101/resources/4"
+                            }
+                        ],
+                        "container_locations": [],
+                        "create_time": "2020-09-20T15:19:02Z",
+                        "created_by": "admin",
+                        "display_string": "Box 5: Series 3 [Barcode: A0000000092833]",
+                        "indicator": "5",
+                        "is_linked_to_published_record": true,
+                        "jsonmodel_type": "top_container",
+                        "last_modified_by": "admin",
+                        "lock_version": 2,
+                        "long_display_string": "Box 5 [Barcode: A0000000092833], FA1275, Cary Reich papers, Series 3",
+                        "repository": {
+                            "ref": "/repositories/101"
+                        },
+                        "restricted": false,
+                        "series": [
+                            {
+                                "display_string": "Original Audio Tapes",
+                                "identifier": "3",
+                                "level_display_string": "Series",
+                                "publish": true,
+                                "ref": "/repositories/101/archival_objects/2336"
+                            }
+                        ],
+                        "system_mtime": "2020-09-21T17:24:57Z",
+                        "type": "box",
+                        "uri": "/repositories/101/top_containers/505",
+                        "user_mtime": "2020-09-20T15:19:02Z"
+                    },
                     "ref": "/repositories/101/top_containers/505"
                 },
                 "user_mtime": "2020-09-21T17:16:26Z"

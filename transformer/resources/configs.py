@@ -413,14 +413,16 @@ NOTE_TYPE_CHOICES = (
     ('processinfo', 'Processing Information'),
     ('relatedmaterial', 'Related Archival Materials'),
     ('restrictions', 'Restrictions'),
-    ('rights_statement', 'Rights'),
-    ('rights_statement_act', 'Acts'),
     ('scopecontent', 'Scope and Contents'),
     ('separatedmaterial', 'Separated Materials'),
     ('summary', 'Summary'),
     ('type_note', 'Type Note'),
     ('userestrict', 'Conditions Governing Use'),
 )
+
+NOTE_TYPE_CHOICES_TRANSFORM = [
+    'abstract', 'accessrestrict', 'arrangement', 'bioghist', 'materialspec', 'odd',
+    'physdesc', 'processinfo', 'scopecontent', 'userestrict']
 
 REFERENCE_TYPE_CHOICES = (
     ("cultural_context", "Cultural Context"),
@@ -438,35 +440,6 @@ REFERENCE_TYPE_CHOICES = (
     ("software", "Software"),
     ("object", "Object"),
     ("collection", "Collection"),
-)
-
-RIGHTS_ACT_CHOICES = (
-    ('publish', 'Publish'),
-    ('disseminate', 'Disseminate'),
-    ('replicate', 'Replicate'),
-    ('migrate', 'Migrate'),
-    ('modify', 'Modify'),
-    ('use', 'Use'),
-    ('delete', 'Delete'),
-)
-
-RIGHTS_COPYRIGHT_STATUSES = (
-    ('copyrighted', 'copyrighted'),
-    ('public domain', 'public domain'),
-    ('unknown', 'unknown'),
-)
-
-RIGHTS_RESTRICTION_CHOICES = (
-    ('allow', 'Allow'),
-    ('disallow', 'Disallow'),
-    ('conditional', 'Conditional'),
-)
-
-RIGHTS_TYPE_CHOICES = (
-    ('copyright', 'Copyright'),
-    ('statute', 'Statute'),
-    ('license', 'License'),
-    ('other', 'Other')
 )
 
 SOURCE_CHOICES = (

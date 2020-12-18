@@ -12,4 +12,4 @@ class DataObjectSerializer(serializers.ModelSerializer):
 class DataObjectListSerializer(serializers.ModelSerializer):
     class Meta:
         model = DataObject
-        fields = ('id', 'es_id', 'object_type')
+        fields = ('es_id', 'object_type')

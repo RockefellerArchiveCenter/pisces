@@ -4,7 +4,7 @@
         {
             "request": {
                 "method": "POST",
-                "uri": "http://192.168.1.2:8089/users/admin/login?expiring=False",
+                "uri": "http://192.168.1.4:8089/users/admin/login?expiring=False",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -30,34 +30,34 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Fri, 06 Nov 2020 14:39:51 GMT"
-                    ],
-                    "Content-Type": [
-                        "application/json"
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ],
                     "Content-Length": [
-                        "2981"
-                    ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                        "2982"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Wed, 16 Dec 2020 22:01:34 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "{\"session\":\"3c8ba694764ac67959b6c905745fdfaa310a78e62459a2f1f29c963b09d85abd\",\"user\":{\"lock_version\":52,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-11-06T14:39:51Z\",\"user_mtime\":\"2020-11-06T14:39:51Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
+                    "string": "{\"session\":\"fed3d79e561b26be8033301fec71be7b4f184a0b2bb0f7eb234fc8e2f3e41b5c\",\"user\":{\"lock_version\":176,\"username\":\"admin\",\"name\":\"Administrator\",\"is_system_user\":true,\"create_time\":\"2020-09-20T14:45:59Z\",\"system_mtime\":\"2020-12-16T22:01:34Z\",\"user_mtime\":\"2020-12-16T22:01:34Z\",\"jsonmodel_type\":\"user\",\"groups\":[],\"is_admin\":true,\"uri\":\"/users/1\",\"agent_record\":{\"ref\":\"/agents/people/1\"},\"permissions\":{\"/repositories/1\":[\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\",\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\"],\"_archivesspace\":[\"administer_system\",\"become_user\",\"cancel_importer_job\",\"cancel_job\",\"create_job\",\"create_repository\",\"delete_archival_record\",\"delete_assessment_record\",\"delete_classification_record\",\"delete_event_record\",\"delete_repository\",\"import_records\",\"index_system\",\"manage_agent_record\",\"manage_assessment_attributes\",\"manage_container_profile_record\",\"manage_container_record\",\"manage_enumeration_record\",\"manage_location_profile_record\",\"manage_rde_templates\",\"manage_repository\",\"manage_subject_record\",\"manage_users\",\"manage_vocabulary_record\",\"mediate_edits\",\"merge_agents_and_subjects\",\"merge_archival_record\",\"suppress_archival_record\",\"transfer_archival_record\",\"transfer_repository\",\"update_accession_record\",\"update_assessment_record\",\"update_classification_record\",\"update_container_record\",\"update_digital_object_record\",\"update_event_record\",\"update_resource_record\",\"view_agent_contact_record\",\"view_all_records\",\"view_repository\",\"view_suppressed\",\"update_enumeration_record\",\"update_location_record\",\"delete_vocabulary_record\",\"update_subject_record\",\"delete_subject_record\",\"update_agent_record\",\"delete_agent_record\",\"update_vocabulary_record\",\"merge_subject_record\",\"merge_agent_record\",\"update_container_profile_record\",\"update_location_profile_record\"]}}}\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.2:8089/version",
+                "uri": "http://192.168.1.4:8089/version",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -80,29 +80,29 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
-                    ],
-                    "Date": [
-                        "Fri, 06 Nov 2020 14:39:51 GMT"
-                    ],
-                    "Content-Type": [
-                        "text/html;charset=UTF-8"
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ],
                     "Content-Length": [
                         "22"
                     ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
-                    ],
-                    "X-XSS-Protection": [
-                        "1; mode=block"
-                    ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "text/html;charset=UTF-8"
+                    ],
+                    "Date": [
+                        "Wed, 16 Dec 2020 22:01:34 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
                     ]
                 },
                 "body": {
@@ -113,7 +113,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://rac-vch-prod.ad.rockarchive.org:8000/status/health/",
+                "uri": "http://rac-vch.ad.rockarchive.org:8000/status/health/",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -136,29 +136,29 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Vary": [
-                        "Origin"
-                    ],
-                    "X-Frame-Options": [
-                        "SAMEORIGIN"
-                    ],
-                    "Date": [
-                        "Fri, 06 Nov 2020 14:40:13 GMT"
-                    ],
-                    "Content-Type": [
-                        "application/json"
+                    "Server": [
+                        "Apache/2.4.38 (Debian)"
                     ],
                     "Content-Length": [
                         "85"
                     ],
-                    "Keep-Alive": [
-                        "timeout=5, max=100"
-                    ],
                     "Connection": [
                         "Keep-Alive"
                     ],
-                    "Server": [
-                        "Apache/2.4.38 (Debian)"
+                    "Keep-Alive": [
+                        "timeout=5, max=100"
+                    ],
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Wed, 16 Dec 2020 22:02:34 GMT"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Vary": [
+                        "Origin"
                     ]
                 },
                 "body": {
@@ -169,7 +169,7 @@
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.2:8089/agents/corporate_entities?all_ids=True",
+                "uri": "http://192.168.1.4:8089/agents/corporate_entities?all_ids=True",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -192,34 +192,34 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Fri, 06 Nov 2020 14:39:51 GMT"
-                    ],
-                    "Content-Type": [
-                        "application/json"
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ],
                     "Content-Length": [
-                        "4"
-                    ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                        "8"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Wed, 16 Dec 2020 22:01:35 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "[1]\n"
+                    "string": "[1,2,3]\n"
                 }
             }
         },
         {
             "request": {
                 "method": "GET",
-                "uri": "http://192.168.1.2:8089/agents/corporate_entities/1?resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
+                "uri": "http://192.168.1.4:8089/agents/corporate_entities?id_set%5B%5D=1&id_set%5B%5D=2&id_set%5B%5D=3&resolve%5B%5D=ancestors&resolve%5B%5D=ancestors%3A%3Alinked_agents&resolve%5B%5D=instances%3A%3Atop_container&resolve%5B%5D=linked_agents&resolve%5B%5D=subjects",
                 "body": null,
                 "headers": {
                     "User-Agent": [
@@ -242,27 +242,27 @@
                     "message": "OK"
                 },
                 "headers": {
-                    "Date": [
-                        "Fri, 06 Nov 2020 14:39:51 GMT"
-                    ],
-                    "Content-Type": [
-                        "application/json"
+                    "Cache-Control": [
+                        "private, must-revalidate, max-age=0"
                     ],
                     "Content-Length": [
-                        "1637"
-                    ],
-                    "X-Content-Type-Options": [
-                        "nosniff"
+                        "4490"
                     ],
                     "Server": [
                         "Jetty(8.1.5.v20120716)"
                     ],
-                    "Cache-Control": [
-                        "private, must-revalidate, max-age=0"
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "Date": [
+                        "Wed, 16 Dec 2020 22:01:35 GMT"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
                     ]
                 },
                 "body": {
-                    "string": "{\"lock_version\":1,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:03:55Z\",\"system_mtime\":\"2020-09-21T16:01:57Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Test Repository\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[],\"used_within_published_repositories\":[],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/1\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Test Repository\"}\n"
+                    "string": "[{\"lock_version\":1,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-20T15:03:55Z\",\"system_mtime\":\"2020-09-21T16:01:57Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[{\"lock_version\":0,\"name\":\"Test Repository\",\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"jsonmodel_type\":\"agent_contact\",\"telephones\":[]}],\"linked_agent_roles\":[],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[],\"used_within_published_repositories\":[],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/1\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Test Repository\",\"sort_name\":\"Test Repository\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-09-21T16:01:56Z\",\"system_mtime\":\"2020-09-21T16:01:56Z\",\"user_mtime\":\"2020-09-21T16:01:56Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Test Repository\"},{\"lock_version\":0,\"publish\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:09:51Z\",\"system_mtime\":\"2020-12-09T19:09:51Z\",\"user_mtime\":\"2020-12-09T19:09:51Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[],\"used_within_published_repositories\":[],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Test organization\",\"sort_name\":\"Test organization\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:09:51Z\",\"system_mtime\":\"2020-12-09T19:09:51Z\",\"user_mtime\":\"2020-12-09T19:09:51Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/2\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Test organization\",\"sort_name\":\"Test organization\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:09:51Z\",\"system_mtime\":\"2020-12-09T19:09:51Z\",\"user_mtime\":\"2020-12-09T19:09:51Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Test organization\"},{\"lock_version\":0,\"publish\":false,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:10:09Z\",\"system_mtime\":\"2020-12-09T19:10:09Z\",\"user_mtime\":\"2020-12-09T19:10:09Z\",\"is_slug_auto\":false,\"jsonmodel_type\":\"agent_corporate_entity\",\"agent_contacts\":[],\"linked_agent_roles\":[],\"external_documents\":[],\"notes\":[],\"used_within_repositories\":[],\"used_within_published_repositories\":[],\"dates_of_existence\":[],\"names\":[{\"lock_version\":0,\"primary_name\":\"Unpublished agent\",\"sort_name\":\"Unpublished agent\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:10:09Z\",\"system_mtime\":\"2020-12-09T19:10:09Z\",\"user_mtime\":\"2020-12-09T19:10:09Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]}],\"related_agents\":[],\"uri\":\"/agents/corporate_entities/3\",\"agent_type\":\"agent_corporate_entity\",\"is_linked_to_published_record\":false,\"display_name\":{\"lock_version\":0,\"primary_name\":\"Unpublished agent\",\"sort_name\":\"Unpublished agent\",\"sort_name_auto_generate\":true,\"created_by\":\"admin\",\"last_modified_by\":\"admin\",\"create_time\":\"2020-12-09T19:10:09Z\",\"system_mtime\":\"2020-12-09T19:10:09Z\",\"user_mtime\":\"2020-12-09T19:10:09Z\",\"authorized\":true,\"is_display_name\":true,\"source\":\"local\",\"rules\":\"dacs\",\"jsonmodel_type\":\"name_corporate_entity\",\"use_dates\":[]},\"title\":\"Unpublished agent\"}]\n"
                 }
             }
         }

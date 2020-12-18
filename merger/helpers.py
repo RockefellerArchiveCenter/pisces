@@ -1,5 +1,23 @@
+import re
+
 from fetcher.helpers import instantiate_aspace
 from pisces import settings
+
+
+def indicator_to_integer(indicator):
+    """Converts an instance indicator to an integer.
+
+    An indicator can be an integer (23) a combination of integers and letters (23b)
+    or just a letter (B).
+    """
+    try:
+        integer = int(indicator)
+    except ValueError:
+        parsed = re.sub("[^0-9]", "", indicator)
+        if len(parsed):
+            return indicator_to_integer(parsed)
+        integer = ord(indicator.lower()) - 97
+    return integer
 
 
 def get_ancestors(obj):
@@ -104,36 +122,3 @@ class ArchivesSpaceHelper:
         resource_uri = obj['resource']['ref']
         tree_node = self.aspace.client.get('{}/tree/node?node_uri={}'.format(resource_uri, obj['uri'])).json()
         return True if tree_node['child_count'] > 0 else False
-
-    def tree_children(self, waypoint_count, base_uri, params):
-        """Returns immediate children of a resource or archival_object.
-
-        In cases where children don't have titles (for example, only a date) the
-        date expression for the first date object is returned.
-        """
-        children = []
-        for i in range(waypoint_count):
-            params["offset"] = i
-            waypoint = self.aspace.client.get("{}/tree/waypoint".format(base_uri), params=params).json()
-            for child in waypoint:
-                title = child["title"] if child["title"] else get_date_string(child["dates"])
-                children.append({
-                    "title": title,
-                    "ref": child["uri"],
-                    "level": child["level"],
-                    "order": child["position"],
-                    "dates": get_date_string(child.get("dates", [])),
-                    "type": "collection" if child["child_count"] > 0 else "object"})
-        return children
-
-    def get_resource_children(self, uri):
-        tree_root = self.aspace.client.get(
-            "{}/tree/root".format(uri.rstrip("/"))).json()
-        params = {"offset": 0}
-        return self.tree_children(tree_root["waypoints"], uri, params) if tree_root["child_count"] > 0 else []
-
-    def get_archival_object_children(self, resource_uri, object_uri):
-        tree_node = self.aspace.client.get(
-            "{}/tree/node?node_uri={}".format(resource_uri, object_uri)).json()
-        params = {"offset": 0, "parent_node": object_uri}
-        return self.tree_children(tree_node["waypoints"], resource_uri, params)

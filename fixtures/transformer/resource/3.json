@@ -7,16 +7,6 @@
             "type": "collection"
         }
     ],
-    "children": [
-        {
-            "dates": "1960-1971",
-            "level": "subseries",
-            "order": 0,
-            "ref": "/repositories/101/archival_objects/1622",
-            "title": "Congressional Quarterly",
-            "type": "collection"
-        }
-    ],
     "classifications": [],
     "create_time": "2020-09-21T16:58:31Z",
     "created_by": "admin",
@@ -324,6 +314,7 @@
             "type": "scopecontent"
         }
     ],
+    "position": 3,
     "publish": true,
     "related_accessions": [],
     "repository": {

@@ -1,8 +1,6 @@
-import re
-
 from .helpers import (ArchivesSpaceHelper, add_group, closest_creators,
                       closest_parent_value, combine_references,
-                      handle_cartographer_reference)
+                      handle_cartographer_reference, indicator_to_integer)
 
 
 class MergeError(Exception):
@@ -72,11 +70,9 @@ class ArchivalObjectMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {"ancestors": [], "children": [], "linked_agents": []}
-        cartographer_data = self.get_cartographer_data(object)
-        archivesspace_data = self.get_archivesspace_data(object, object_type)
-        data.update(cartographer_data)
-        data.update(archivesspace_data)
+        data = {"ancestors": [], "linked_agents": []}
+        data.update(self.get_cartographer_data(object))
+        data.update(self.get_archivesspace_data(object, object_type))
         return data
 
     def get_cartographer_data(self, object):
@@ -92,15 +88,6 @@ class ArchivalObjectMerger(BaseMerger):
                     data["ancestors"].append(handle_cartographer_reference(a))
         return data
 
-    def get_archival_object_collection_data(self, object):
-        """Gets additional data for archival_object_collections."""
-        data = {"children": []}
-        data["linked_agents"] = data.get(
-            "linked_agents", []) + closest_creators(object)
-        data["children"] = self.aspace_helper.get_archival_object_children(
-            object["resource"]["ref"], object["uri"])
-        return data
-
     def get_language_data(self, object, data):
         """Gets language data from ArchivesSpace.
 
@@ -113,43 +100,65 @@ class ArchivalObjectMerger(BaseMerger):
             data["language"] = closest_parent_value(object, "language")
         return data
 
-    def parse_instances(self, object):
+    def parse_instances(self, instances):
         """Attempts to parse extents from instances.
 
-        For instances which contain a child subcontainer, parses the indicator
-        to determine the extent number, and uses the instance type as the extent
-        type. Instances which are not parseable return None.
+        Initially, child subcontainers are parsed to determine
+        the extent number and extent type. If a child subcontainer does not
+        exist, the parent container is parsed.
         """
+
+        def append_to_list(extents, extent_type, extent_number):
+            """Merges or appends extent objects to an extent list.
+
+            Only operates over instances with a sub_container (i.e. skips
+            digital object instances.
+
+            Args:
+                extents (list): a list of extents to update.
+                extent_type (str): the extent type to add.
+                extent_number (int): the extent number to add
+            """
+            matching_extents = [e for e in extents if e["extent_type"] == extent_type]
+            if matching_extents:
+                matching_extents[0]["number"] += extent_number
+            else:
+                extents.append({"extent_type": extent_type, "number": extent_number})
+            return extents
+
         extents = []
-        parseable = [i for i in object["instances"] if
-                     all(i_type in i.get("sub_container", {})
-                         for i_type in ["indicator_2", "type_2"])]
-        for instance in parseable:
-            extent = {}
+        for instance in [i for i in instances if i.get("sub_container")]:
             try:
-                range = sorted([int(re.sub("[^0-9]", "", i.strip()))
-                                for i in instance["sub_container"]["indicator_2"].split("-")])
-                extent["extent_type"] = instance["sub_container"]["type_2"]
-                extent["number"] = range[-1] - range[0] if len(range) > 1 else 1
-                extents.append(extent)
-            except ValueError:
-                pass
+                sub_container_parseable = all(i_type in instance.get("sub_container", {}) for i_type in ["indicator_2", "type_2"])
+                if sub_container_parseable:
+                    number_list = [i.strip() for i in instance["sub_container"]["indicator_2"].split("-")]
+                    range = sorted(map(indicator_to_integer, number_list))
+                    extent_type = instance["sub_container"]["type_2"]
+                    extent_number = range[-1] - range[0] + 1 if len(range) > 1 else 1
+                else:
+                    instance_type = instance["instance_type"].lower()
+                    sub_container_type = instance["sub_container"]["top_container"]["_resolved"].get("type", "").lower()
+                    extent_type = "{} {}".format(instance_type, sub_container_type) if sub_container_type != "box" else sub_container_type
+                    extent_number = 1
+                extents = append_to_list(extents, extent_type.strip(), extent_number)
+            except Exception as e:
+                raise Exception("Error parsing instances") from e
         return extents
 
     def get_archivesspace_data(self, object, object_type):
-        """Gets dates, languages, extent and children from archival object's
+        """Gets dates, languages, and extent from archival object's
         resource record in ArchivesSpace.
         """
-        data = {"linked_agents": [], "children": []}
+        data = {"linked_agents": []}
         if object.get("dates") in ["", [], {}, None]:
             data["dates"] = closest_parent_value(object, "dates")
         data.update(self.get_language_data(object, data))
-        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object)
-        if not extent_data and object_type == "archival_object_collection":
+        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object["instances"])
+        if object_type == "archival_object_collection" and not extent_data:
             extent_data = closest_parent_value(object, "extents")
         data["extents"] = extent_data
         if object_type == "archival_object_collection":
-            data.update(self.get_archival_object_collection_data(object))
+            data["linked_agents"] = closest_creators(object)
         return data
 
     def combine_data(self, object, additional_data):
@@ -182,16 +191,9 @@ class ArrangementMapMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {"children": []}
-        data.update(
-            self.aspace_helper.aspace.client.get(
-                object["archivesspace_uri"],
-                params={"resolve": ["subjects", "linked_agents"]}).json())
-        if object.get("children"):
-            data["children"] += [handle_cartographer_reference(c) for c in object["children"]]
-        else:
-            data["children"] = self.aspace_helper.get_resource_children(object["archivesspace_uri"])
-        return data
+        return self.aspace_helper.aspace.client.get(
+            object["archivesspace_uri"],
+            params={"resolve": ["subjects", "linked_agents"]}).json()
 
     def combine_data(self, object, additional_data):
         """Adds Cartographer ancestors to ArchivesSpace resource record."""
@@ -199,6 +201,7 @@ class ArrangementMapMerger(BaseMerger):
         for a in object.get("ancestors"):
             ancestors.append(handle_cartographer_reference(a))
         additional_data["ancestors"] = ancestors
+        additional_data["position"] = object["order"]
         additional_data = add_group(additional_data, self.aspace_helper.aspace.client)
         return combine_references(additional_data)
 
@@ -219,44 +222,30 @@ class ResourceMerger(BaseMerger):
         Returns:
             dict: a dictionary of data to be merged.
         """
-        data = {"children": [], "ancestors": []}
-        data.update(self.get_cartographer_data(object))
-        data.update(self.get_archivesspace_data(object))
-        return data
+        return self.get_cartographer_data(object)
 
     def get_cartographer_data(self, object):
         """Returns ancestors (if any) for the resource record from
         Cartographer."""
-        data = {"ancestors": [], "children": []}
+        data = {"ancestors": []}
         resp = self.cartographer_client.get(
             "/api/find-by-uri/", params={"uri": object["uri"]})
         if resp.status_code == 200:
             json_data = resp.json()
             if json_data["count"] > 0:
                 result = json_data["results"][0]
+                data["order"] = result["order"]
                 for a in result.get("ancestors", []):
                     data["ancestors"].append(handle_cartographer_reference(a))
-                for a in result.get("children", []):
-                    data["children"].append(handle_cartographer_reference(a))
-        return data
-
-    def get_archivesspace_data(self, object):
-        """Returns the first level of the resource record tree from
-        ArchivesSpace."""
-        data = {}
-        children = self.aspace_helper.get_resource_children(object["uri"])
-        if len(children):
-            data["children"] = children
         return data
 
     def combine_data(self, object, additional_data):
         """Combines existing ArchivesSpace data with Cartographer data.
 
-        Adds Cartographer ancestors to object's `ancestors` key, and
-        ArchivesSpace children to object's `children` key.
+        Adds Cartographer ancestors to object's `ancestors` key.
         """
         object["ancestors"] = additional_data["ancestors"]
-        object["children"] = additional_data["children"]
+        object["position"] = additional_data.get("order", 0)
         object = super(ResourceMerger, self).combine_data(object, additional_data)
         return combine_references(object)
 
