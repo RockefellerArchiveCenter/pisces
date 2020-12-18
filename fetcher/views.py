@@ -24,8 +24,8 @@ class FetchRunViewSet(ModelViewSet):
             return FetchRunListSerializer
         return FetchRunSerializer
 
-    def get_action_response(self, request, object_type=None, source=None):
-        queryset = self.get_action_queryset(request, object_type, source)
+    def get_action_response(self, request, object_type=None, object_status=None, source=None):
+        queryset = self.get_action_queryset(request, object_type, object_status, source)
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
@@ -33,11 +33,13 @@ class FetchRunViewSet(ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
-    def get_action_queryset(self, request, object_type, source):
+    def get_action_queryset(self, request, object_type, object_status, source):
         if object_type:
             queryset = FetchRun.objects.filter(object_type=object_type)
         if source is not None:
             queryset = FetchRun.objects.filter(source=source)
+        if object_status is not None:
+            queryset = FetchRun.objects.filter(object_status=object_status)
         return queryset.order_by("-start_time")
 
     @action(detail=False)
@@ -75,6 +77,14 @@ class FetchRunViewSet(ModelViewSet):
     @action(detail=False)
     def arrangement_map_components(self, request):
         return self.get_action_response(request, object_type="arrangement_map_component")
+
+    @action(detail=False)
+    def running(self, request):
+        return self.get_action_response(request, object_status=FetchRun.STARTED)
+
+    @action(detail=False)
+    def errored(self, request):
+        return self.get_action_response(request, object_status=FetchRun.ERRORED)
 
     @action(detail=False, methods=['post'])
     def update_time(self, request):
