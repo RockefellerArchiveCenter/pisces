@@ -25,7 +25,7 @@ from .cron import (CleanUpCompleted, DeletedArchivesSpaceArchivalObjects,
                    UpdatedCartographerArrangementMapComponents)
 from .fetchers import ArchivesSpaceDataFetcher, CartographerDataFetcher
 from .helpers import (handle_deleted_uris, last_run_time,
-                      send_error_notification, to_timestamp)
+                      send_error_notification)
 from .models import FetchRun, FetchRunError
 from .views import FetchRunViewSet
 
@@ -110,7 +110,7 @@ class FetcherTest(TestCase):
             for _, source in FetchRun.SOURCE_CHOICES:
                 for object in getattr(FetchRun, "{}_OBJECT_TYPE_CHOICES".format(source.upper())):
                     last_run = last_run_time(source, object_status, object)
-                    self.assertEqual(to_timestamp(last_run), 0)
+                    self.assertEqual(last_run, 0)
                     time = timezone.now()
                     FetchRun.objects.create(
                         status=FetchRun.FINISHED,
@@ -119,7 +119,7 @@ class FetcherTest(TestCase):
                         object_status=object_status,
                         end_time=time)
                     updated_last_run = last_run_time(source, object_status, object)
-                    self.assertEqual(to_timestamp(updated_last_run), int(time.timestamp()))
+                    self.assertEqual(updated_last_run, int(time.timestamp()))
 
     @patch("transformer.transformers.Transformer.run")
     @patch("merger.mergers.BaseMerger.merge")

@@ -19,7 +19,7 @@ before_install:
 - docker-compose exec ${SERVICE_NAME} pre-commit install
 install: true
 before_script:
-- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-0.7.0-linux-amd64
   > ./cc-test-reporter
 - chmod +x ./cc-test-reporter
 - ./cc-test-reporter before-build
