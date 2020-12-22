@@ -159,7 +159,12 @@
         }
     ],
     "display_string": "Congressional Quarterly Issues, 1960-1967, 1969-1970",
-    "extents": [],
+    "extents": [
+        {
+            "extent_type": "box",
+            "number": 1
+        }
+    ],
     "external_documents": [],
     "external_ids": [],
     "group": {

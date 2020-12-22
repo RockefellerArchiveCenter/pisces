@@ -159,7 +159,12 @@
         }
     ],
     "display_string": "Congressional Quarterly Bound Volumes, 1969-1971",
-    "extents": [],
+    "extents": [
+        {
+            "extent_type": "box",
+            "number": 1
+        }
+    ],
     "external_documents": [],
     "external_ids": [],
     "group": {
