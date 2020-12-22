@@ -13,6 +13,7 @@ before_install:
 - chmod +x docker-compose
 - sudo mv docker-compose /usr/local/bin
 - cp ${APPLICATION_NAME}/config.py.example ${APPLICATION_NAME}/config.py
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - docker-compose up -d
 - sleep 20s
 - docker-compose exec ${SERVICE_NAME} pip install coverage pre-commit
