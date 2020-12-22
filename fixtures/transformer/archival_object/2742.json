@@ -39,7 +39,12 @@
         }
     ],
     "display_string": "AV 6420 - AV 6471",
-    "extents": [],
+    "extents": [
+        {
+            "extent_type": "box",
+            "number": 1
+        }
+    ],
     "external_documents": [],
     "external_ids": [],
     "group": {

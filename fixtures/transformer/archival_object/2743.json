@@ -39,7 +39,12 @@
         }
     ],
     "display_string": "AV 6472 - AV 6526",
-    "extents": [],
+    "extents": [
+        {
+            "extent_type": "box",
+            "number": 1
+        }
+    ],
     "external_documents": [],
     "external_ids": [],
     "group": {

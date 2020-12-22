@@ -10,7 +10,7 @@ from transformer.transformers import Transformer
 
 from .helpers import (handle_deleted_uris, instantiate_aspace,
                       instantiate_electronbond, last_run_time, list_chunks,
-                      send_error_notification, to_timestamp)
+                      send_error_notification)
 from .models import FetchRun, FetchRunError
 
 
@@ -154,14 +154,14 @@ class ArchivesSpaceDataFetcher(BaseDataFetcher):
         return MERGERS[object_type]
 
     def get_updated(self):
-        params = {"all_ids": True, "modified_since": to_timestamp(self.last_run)}
+        params = {"all_ids": True, "modified_since": self.last_run}
         endpoint = self.get_endpoint(self.object_type)
         return clients["aspace"].client.get(endpoint, params=params).json()
 
     def get_deleted(self):
         data = []
         for d in clients["aspace"].client.get_paged(
-                "delete-feed", params={"modified_since": to_timestamp(self.last_run)}):
+                "delete-feed", params={"modified_since": self.last_run}):
             if self.get_endpoint(self.object_type) in d:
                 data.append(d)
         return data
@@ -201,14 +201,14 @@ class CartographerDataFetcher(BaseDataFetcher):
     def get_updated(self):
         data = []
         for obj in clients["cartographer"].get(
-                self.base_endpoint, params={"modified_since": to_timestamp(self.last_run)}).json()['results']:
+                self.base_endpoint, params={"modified_since": self.last_run}).json()['results']:
             data.append("{}{}/".format(self.base_endpoint, obj.get("id")))
         return data
 
     def get_deleted(self):
         data = []
         for deleted_ref in clients["cartographer"].get(
-                '/api/delete-feed/', params={"deleted_since": to_timestamp(self.last_run)}).json()['results']:
+                '/api/delete-feed/', params={"deleted_since": self.last_run}).json()['results']:
             if self.base_endpoint in deleted_ref['ref']:
                 data.append(deleted_ref.get('archivesspace_uri'))
         return data

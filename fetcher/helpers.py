@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import requests
 import shortuuid
 from asnake.aspace import ASpace
@@ -8,16 +6,6 @@ from electronbonder.client import ElectronBond
 from pisces import settings
 
 from .models import FetchRun, FetchRunError
-
-
-def to_timestamp(datetime_obj):
-    """Converts a datetime object into an integer timestamp representation."""
-    return int(datetime_obj.timestamp())
-
-
-def to_isoformat(datetime_obj):
-    isoformat = datetime_obj.isoformat()
-    return isoformat.replace('+00:00', 'Z') if isoformat.endswith('+00:00') else "{}Z".format(isoformat)
 
 
 def list_chunks(lst, n):
@@ -46,14 +34,14 @@ def last_run_time(source, object_status, object_type):
             source=source,
             object_type=object_type,
             object_status=object_status).exists():
-        return FetchRun.objects.filter(
+        return int(FetchRun.objects.filter(
             status=FetchRun.FINISHED,
             source=source,
             object_type=object_type,
             object_status=object_status
-        ).order_by("-start_time")[0].start_time
+        ).order_by("-start_time")[0].start_time.timestamp())
     else:
-        return datetime.fromtimestamp(0)
+        return 0
 
 
 def instantiate_aspace(self, config=None):
