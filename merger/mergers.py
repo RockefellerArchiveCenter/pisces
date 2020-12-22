@@ -174,7 +174,7 @@ class ArchivalObjectMerger(BaseMerger):
             else:
                 object[k] = v
         for instance in object.get("instances", []):
-            if instance.get("sub_container").get("top_container").get("_resolved"):
+            if instance.get("sub_container", {}).get("top_container", {}).get("_resolved"):
                 del instance["sub_container"]["top_container"]["_resolved"]
         object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
         return combine_references(object)
