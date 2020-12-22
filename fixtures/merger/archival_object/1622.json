@@ -555,7 +555,20 @@
         }
     ],
     "display_string": "Congressional Quarterly, 1960-1971",
-    "extents": [],
+    "extents": [
+      {
+          "create_time": "2020-09-21T16:58:31Z",
+          "created_by": "admin",
+          "extent_type": "Cubic Feet",
+          "jsonmodel_type": "extent",
+          "last_modified_by": "admin",
+          "lock_version": 0,
+          "number": "44.15",
+          "portion": "whole",
+          "system_mtime": "2020-09-21T16:58:31Z",
+          "user_mtime": "2020-09-21T16:58:31Z"
+      }
+    ],
     "external_documents": [],
     "external_ids": [],
     "has_unpublished_ancestor": false,

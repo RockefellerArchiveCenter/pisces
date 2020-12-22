@@ -153,10 +153,11 @@ class ArchivalObjectMerger(BaseMerger):
         if object.get("dates") in ["", [], {}, None]:
             data["dates"] = closest_parent_value(object, "dates")
         data.update(self.get_language_data(object, data))
-        extent_data = object.get("extents") if object.get("extents") else self.parse_instances(object["instances"])
-        if object_type == "archival_object_collection" and not extent_data:
-            extent_data = closest_parent_value(object, "extents")
-        data["extents"] = extent_data
+        if not object.get("extents"):
+            extent_data = self.parse_instances(object["instances"])
+            if object_type == "archival_object_collection" and not extent_data:
+                extent_data = closest_parent_value(object, "extents")
+            data["extents"] = extent_data
         if object_type == "archival_object_collection":
             data["linked_agents"] = closest_creators(object)
         return data
@@ -165,12 +166,16 @@ class ArchivalObjectMerger(BaseMerger):
         """Combines additional data with source data.
 
         Moves data from resolved objects to expected keys within main object.
+        Removes resolved top_container data.
         """
         for k, v in additional_data.items():
             if isinstance(v, list):
                 object[k] = object.get(k, []) + v
             else:
                 object[k] = v
+        for instance in object.get("instances", []):
+            if instance.get("sub_container").get("top_container").get("_resolved"):
+                del instance["sub_container"]["top_container"]["_resolved"]
         object = super(ArchivalObjectMerger, self).combine_data(object, additional_data)
         return combine_references(object)
 
