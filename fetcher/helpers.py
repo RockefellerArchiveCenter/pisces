@@ -118,14 +118,15 @@ def send_error_notification(fetch_run):
         errors = ""
         err_str = "errors" if fetch_run.error_count > 1 else "error"
         object_type = fetch_run.get_object_type_display()
+        object_status = fetch_run.get_object_status_display()
         source = [s[1] for s in FetchRun.SOURCE_CHOICES if s[0] == int(fetch_run.source)][0]
         for err in fetch_run.errors:
             errors += "{}\n".format(err.message)
         send_mail(
-            "{} {} exporting {} objects from {}".format(
-                fetch_run.error_count, err_str, object_type, source),
-            "The following errors were encountered while exporting {} objects from {}:\n\n{}".format(
-                object_type, source, errors),
+            "{} {} processing {} {} objects from {}".format(
+                fetch_run.error_count, err_str, object_status, object_type, source),
+            "The following errors were encountered while processing {} {} objects from {}:\n\n{}".format(
+                object_status, object_type, source, errors),
             "alerts@rockarch.org",
             settings.EMAIL_TO_ADDRESSES,
             fail_silently=False,)
