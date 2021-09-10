@@ -53,8 +53,6 @@ idna==2.10
     # via
     #   requests
     #   yarl
-importlib-metadata==4.6.0
-    # via jsonschema
 iso-639==0.4.5
     # via -r requirements.in
 jsonschema==3.2.0
@@ -102,17 +100,10 @@ six==1.16.0
     #   vcrpy
 smmap==4.0.0
     # via gitdb
-sqlparse==0.4.1
+sqlparse==0.4.2
     # via django
 structlog==21.1.0
     # via archivessnake
-typing-extensions==3.10.0.0
-    # via
-    #   asgiref
-    #   gitpython
-    #   importlib-metadata
-    #   structlog
-    #   yarl
 uritemplate==3.0.1
     # via -r requirements.in
 urllib3==1.26.6
@@ -123,8 +114,6 @@ wrapt==1.12.1
     # via vcrpy
 yarl==1.6.3
     # via vcrpy
-zipp==3.4.1
-    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
