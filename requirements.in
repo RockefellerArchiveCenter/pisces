@@ -1,6 +1,6 @@
 ArchivesSnake==0.9.1
 asterism==0.7.2
-Django==3.2.10
+Django==3.2.12
 django-cron==0.5.1
 djangorestframework==3.12.4
 ElectronBonder==0.7.2
