@@ -154,7 +154,7 @@ class ArchivalObjectMerger(BaseMerger):
                     extent_number = 1
                 extents = append_to_list(extents, extent_type.strip(), extent_number)
             except Exception as e:
-                raise Exception("Error parsing instances") from e
+                raise Exception(f"Error parsing instances: {e}") from e
         return extents
 
     def get_position(self, object):
