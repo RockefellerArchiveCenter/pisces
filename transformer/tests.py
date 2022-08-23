@@ -12,7 +12,7 @@ from fetcher.helpers import identifier_from_uri
 from .cron import CheckMissingOnlineAssets
 from .mappings import has_online_instance, strip_tags
 from .models import DataObject
-from .resources.configs import NOTE_TYPE_CHOICES_TRANSFORM
+from .resources.configs import NOTE_TRANSFORM_TYPES
 from .transformers import Transformer
 from .views import DataObjectUpdateByIdView, DataObjectViewSet
 
@@ -54,7 +54,7 @@ class TransformerTest(TestCase):
     def check_list_counts(self, source, transformed, object_type):
         """Checks that lists of items are the same on source and data objects.
 
-        Ensures that only notes in NOTE_TYPE_CHOICES_TRANSFORM are transformed.
+        Ensures that only notes in NOTE_TRANSFORM_TYPES are transformed.
         This includes notes in agents, which do not have a type field, so the
         jsonmodel_type field must be checked instead.
         """
@@ -63,7 +63,7 @@ class TransformerTest(TestCase):
                                             (date_source_key, "dates"),
                                             ("extents", "extents")]:
             source_len = len(
-                [n for n in source.get(source_key, []) if (n["publish"] and n.get("type", n["jsonmodel_type"].split("_")[-1]) in NOTE_TYPE_CHOICES_TRANSFORM)]
+                [n for n in source.get(source_key, []) if (n["publish"] and n.get("type", n["jsonmodel_type"].split("_")[-1]) in NOTE_TRANSFORM_TYPES)]
             ) if source_key == "notes" else len(source.get(source_key, []))
             transformed_len = len(transformed.get(transformed_key, []))
             self.assertEqual(source_len, transformed_len,
