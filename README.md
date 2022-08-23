@@ -33,6 +33,8 @@ Pisces configurations are stored in `/pisces/config.py`. This file is excluded f
 
 The first time the container is started, the example config file (`/pisces/config.py.example`) will be copied to create the config file if it doesn't already exist.
 
+There are also enumeration lists stored in the application database, which can be edited via the Django Admin interface. In order to access this area you will need to create a user with the [`is_staff`](https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#django.contrib.auth.models.User.is_staff) attribute set to `True`.
+
 ## Services
 pisces has three main sets of services, all of which are exposed via HTTP endpoints (see [Routes](#routes) section below):
 

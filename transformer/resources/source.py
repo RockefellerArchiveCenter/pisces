@@ -8,7 +8,7 @@ to instantiate these resources.
 
 import odin
 
-from . import configs
+from .configs import config_list
 
 
 class SourceRef(odin.Resource):
@@ -39,8 +39,8 @@ class SourceDate(odin.Resource):
     expression = odin.StringField(null=True)
     begin = odin.StringField(null=True)
     end = odin.StringField(null=True)
-    date_type = odin.StringField(choices=configs.DATE_TYPE_CHOICES)
-    label = odin.StringField(choices=configs.DATE_LABEL_CHOICES)
+    date_type = odin.StringField(choices=config_list('date_types'))
+    label = odin.StringField(choices=config_list('date_labels'))
 
 
 class SourceStructuredDateSingle(odin.Resource):
@@ -59,8 +59,8 @@ class SourceStructuredDateRange(odin.Resource):
 
 class SourceStructuredDate(odin.Resource):
     """An alternative representation of dates, currently associated only with agents."""
-    date_label = odin.StringField(choices=configs.DATE_LABEL_CHOICES)
-    date_type_structured = odin.StringField(choices=configs.DATE_TYPE_CHOICES)
+    date_label = odin.StringField(choices=config_list('date_labels'))
+    date_type_structured = odin.StringField(choices=config_list('date_types'))
     structured_date_single = odin.DictAs(SourceStructuredDateSingle, null=True)
     structured_date_range = odin.DictAs(SourceStructuredDateRange, null=True)
 
@@ -104,13 +104,13 @@ class SourceLangMaterial(odin.Resource):
 class SourceSubcontainer(odin.Resource):
     """Provides detailed container information."""
     indicator_2 = odin.StringField(null=True)
-    type_2 = odin.StringField(choices=configs.CONTAINER_TYPE_CHOICES, null=True)
+    type_2 = odin.StringField(choices=config_list('container_types'), null=True)
     top_container = odin.DictAs(SourceRef)
 
 
 class SourceInstance(odin.Resource):
     """The physical or digital instantiation of a group of records."""
-    instance_type = odin.StringField(choices=configs.INSTANCE_TYPE_CHOICES)
+    instance_type = odin.StringField(choices=config_list('instance_types'))
     is_representative = odin.BooleanField()
     sub_container = odin.DictAs(SourceSubcontainer, null=True)
     digital_object = odin.DictAs(SourceRef, null=True)
@@ -118,8 +118,8 @@ class SourceInstance(odin.Resource):
 
 class SourceLinkedAgent(odin.Resource):
     """A reference to a SourceAgentFamily, SourceAgentPerson or SourceAgentCorporateEntity."""
-    role = odin.StringField(choices=configs.AGENT_ROLE_CHOICES)
-    relator = odin.StringField(choices=configs.AGENT_RELATOR_CHOICES, null=True)
+    role = odin.StringField(choices=config_list('agent_roles'))
+    relator = odin.StringField(choices=config_list('agent_relators'), null=True)
     ref = odin.StringField()
     type = odin.StringField()
     title = odin.StringField()
@@ -135,8 +135,8 @@ class SourceNameBase(odin.Resource):
     authorized = odin.BooleanField()
     is_display_name = odin.BooleanField()
     # use_dates = odin.ArrayOf(SourceStructuredDate) # TODO: account for structured and nonstructured dates
-    rules = odin.StringField(choices=configs.NAME_RULES_CHOICES, null=True)
-    source = odin.StringField(choices=configs.NAME_SOURCE_CHOICES, null=True)
+    rules = odin.StringField(choices=config_list('name_rules'), null=True)
+    source = odin.StringField(choices=config_list('name_sources'), null=True)
 
 
 class SourceNameCorporateEntity(SourceNameBase):
@@ -187,7 +187,7 @@ class SourceGroup(odin.Resource):
 
 class SourceTerm(odin.Resource):
     """A controlled term."""
-    term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
+    term_type = odin.StringField(choices=config_list('term_types'))
 
 
 class SourceSubject(odin.Resource):
@@ -195,7 +195,7 @@ class SourceSubject(odin.Resource):
     external_ids = odin.ArrayOf(SourceExternalId)
     group = odin.DictAs(SourceGroup)
     publish = odin.BooleanField()
-    source = odin.StringField(choices=configs.SUBJECT_SOURCE_CHOICES)
+    source = odin.StringField(choices=config_list('subject_sources'))
     terms = odin.ArrayOf(SourceTerm)
     title = odin.StringField()
     uri = odin.StringField()

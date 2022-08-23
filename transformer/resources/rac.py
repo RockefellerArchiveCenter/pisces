@@ -2,12 +2,12 @@
 
 import odin
 
-from . import configs
+from .configs import config_list
 
 
 class Subnote(odin.Resource):
     """Contains note content."""
-    type = odin.StringField(choices=configs.SUBNOTE_TYPE_CHOICES)
+    type = odin.StringField(choices=config_list('subnote_types'))
     content = odin.StringField(null=True, default=[])
     items = odin.StringField(null=True, default=[])
 
@@ -17,23 +17,23 @@ class Note(odin.Resource):
 
     Notes contain one or more Subnotes.
     """
-    type = odin.StringField(choices=configs.NOTE_TYPE_CHOICES)
+    type = odin.StringField(choices=config_list('note_types'))
     title = odin.StringField(null=True)
-    source = odin.StringField(null=True, default='archivesspace', choices=configs.SOURCE_CHOICES)
+    source = odin.StringField(null=True, default='archivesspace', choices=config_list('sources'))
     subnotes = odin.ArrayOf(Subnote)
 
 
 class ExternalIdentifier(odin.Resource):
     """Uniquely identifies a first-class entity."""
     identifier = odin.StringField()
-    source = odin.StringField(default='archivesspace', choices=configs.SOURCE_CHOICES)
+    source = odin.StringField(default='archivesspace', choices=config_list('sources'))
 
 
 class Reference(odin.Resource):
     """Base class for short references to a first-class entity (Agent, Collection, Object or Term)."""
     external_identifiers = odin.ArrayOf(ExternalIdentifier)
     title = odin.StringField()
-    type = odin.StringField(choices=configs.REFERENCE_TYPE_CHOICES)
+    type = odin.StringField(choices=config_list('reference_types'))
     identifier = odin.StringField()
 
 
@@ -60,9 +60,9 @@ class Date(odin.Resource):
     begin = odin.DateTimeField()
     end = odin.DateTimeField()
     expression = odin.StringField()
-    type = odin.StringField(choices=configs.DATE_TYPE_CHOICES)
-    label = odin.StringField(choices=configs.DATE_LABEL_CHOICES)
-    source = odin.StringField(null=True, default='archivesspace', choices=configs.SOURCE_CHOICES)
+    type = odin.StringField(choices=config_list('date_types'))
+    label = odin.StringField(choices=config_list('date_labels'))
+    source = odin.StringField(null=True, default='archivesspace', choices=config_list('sources'))
 
 
 class Extent(odin.Resource):
@@ -101,7 +101,7 @@ class Term(BaseResource):
     """
     category = odin.StringField(default="subject")
     type = odin.StringField(default="term")
-    term_type = odin.StringField(choices=configs.TERM_TYPE_CHOICES)
+    term_type = odin.StringField(choices=config_list('term_types'))
 
 
 class Collection(BaseResource):
