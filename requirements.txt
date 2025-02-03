@@ -10,7 +10,7 @@ asgiref==3.8.1
     # via django
 asterism==1.1.0
     # via -r requirements.in
-attrs==24.3.0
+attrs==25.1.0
     # via
     #   archivessnake
     #   jsonschema
@@ -19,11 +19,11 @@ bagit==1.8.1
     # via asterism
 boltons==24.1.0
     # via archivessnake
-certifi==2024.12.14
+certifi==2025.1.31
     # via requests
 charset-normalizer==3.4.1
     # via requests
-django==4.2.17
+django==4.2.18
     # via
     #   -r requirements.in
     #   asterism
@@ -52,7 +52,7 @@ jsonschema==4.23.0
     #   rac-schema-validator
 jsonschema-specifications==2024.10.1
     # via jsonschema
-more-itertools==10.5.0
+more-itertools==10.6.0
     # via archivessnake
 multidict==6.1.0
     # via yarl
@@ -71,9 +71,9 @@ pyyaml==6.0.2
     #   vcrpy
 rac-schema-validator==1.0
     # via -r requirements.in
-rapidfuzz==3.11.0
+rapidfuzz==3.12.1
     # via archivessnake
-referencing==0.35.1
+referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -94,12 +94,14 @@ six==1.17.0
     #   odin
 sqlparse==0.5.3
     # via django
-structlog==24.4.0
+structlog==25.1.0
     # via archivessnake
 typing-extensions==4.12.2
     # via
     #   asgiref
     #   multidict
+    #   referencing
+    #   structlog
 uritemplate==4.1.1
     # via -r requirements.in
 urllib3==2.3.0
@@ -108,7 +110,7 @@ urllib3==2.3.0
     #   vcrpy
 vcrpy==7.0.0
     # via -r requirements.in
-wrapt==1.17.0
+wrapt==1.17.2
     # via vcrpy
 yarl==1.18.3
     # via vcrpy
