@@ -21,9 +21,9 @@ boltons==25.0.0
     # via archivessnake
 certifi==2025.4.26
     # via requests
-charset-normalizer==3.4.1
+charset-normalizer==3.4.2
     # via requests
-django==4.2.20
+django==4.2.21
     # via
     #   -r requirements.in
     #   asterism
@@ -46,7 +46,7 @@ idna==3.10
     #   yarl
 iso-639==0.4.5
     # via -r requirements.in
-jsonschema==4.23.0
+jsonschema==4.24.0
     # via
     #   -r requirements.in
     #   rac-schema-validator
@@ -54,7 +54,7 @@ jsonschema-specifications==2025.4.1
     # via jsonschema
 more-itertools==10.7.0
     # via archivessnake
-multidict==6.4.3
+multidict==6.4.4
     # via yarl
 odin==1.8.1
     # via -r requirements.in
@@ -82,7 +82,7 @@ requests==2.32.3
     #   -r requirements.in
     #   archivessnake
     #   electronbonder
-rpds-py==0.24.0
+rpds-py==0.25.1
     # via
     #   jsonschema
     #   referencing
