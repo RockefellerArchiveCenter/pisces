@@ -6,7 +6,7 @@
 #
 archivessnake==0.10.1
     # via -r requirements.in
-asgiref==3.8.1
+asgiref==3.9.1
     # via django
 asterism==1.1.0
     # via -r requirements.in
@@ -19,7 +19,7 @@ bagit==1.9.0
     # via asterism
 boltons==25.0.0
     # via archivessnake
-certifi==2025.6.15
+certifi==2025.7.14
     # via requests
 charset-normalizer==3.4.2
     # via requests
@@ -46,7 +46,7 @@ idna==3.10
     #   yarl
 iso-639==0.4.5
     # via -r requirements.in
-jsonschema==4.24.0
+jsonschema==4.25.0
     # via
     #   -r requirements.in
     #   rac-schema-validator
@@ -82,7 +82,7 @@ requests==2.32.4
     #   -r requirements.in
     #   archivessnake
     #   electronbonder
-rpds-py==0.25.1
+rpds-py==0.26.0
     # via
     #   jsonschema
     #   referencing
@@ -96,7 +96,7 @@ sqlparse==0.5.3
     # via django
 structlog==25.4.0
     # via archivessnake
-typing-extensions==4.14.0
+typing-extensions==4.14.1
     # via
     #   asgiref
     #   multidict
