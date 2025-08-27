@@ -32,8 +32,8 @@ class BaseMerger:
             target_object_type = self.get_target_object_type(object)
             additional_data = self.get_additional_data(object, target_object_type)
             return self.combine_data(object, additional_data), target_object_type
-        except MissingArchivalObjectError:
-            pass
+        except MissingArchivalObjectError as e:
+            raise MergeError(e)
         except ConnectionError as e:
             raise MergeError(f"Error merging {identifier}: {e} for request {e.request.__dict__}")
         except Exception as e:
