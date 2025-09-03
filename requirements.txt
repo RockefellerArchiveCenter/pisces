@@ -19,11 +19,11 @@ bagit==1.9.0
     # via asterism
 boltons==25.0.0
     # via archivessnake
-certifi==2025.7.14
+certifi==2025.8.3
     # via requests
-charset-normalizer==3.4.2
+charset-normalizer==3.4.3
     # via requests
-django==4.2.23
+django==4.2.24
     # via
     #   -r requirements.in
     #   asterism
@@ -34,7 +34,7 @@ django-common-helpers==0.9.2
     # via django4-cron
 django4-cron==0.5.1
     # via -r requirements.in
-djangorestframework==3.16.0
+djangorestframework==3.16.1
     # via
     #   -r requirements.in
     #   asterism
@@ -46,15 +46,15 @@ idna==3.10
     #   yarl
 iso-639==0.4.5
     # via -r requirements.in
-jsonschema==4.25.0
+jsonschema==4.25.1
     # via
     #   -r requirements.in
     #   rac-schema-validator
 jsonschema-specifications==2025.4.1
     # via jsonschema
-more-itertools==10.7.0
+more-itertools==10.8.0
     # via archivessnake
-multidict==6.6.3
+multidict==6.6.4
     # via yarl
 odin==1.8.1
     # via -r requirements.in
@@ -71,18 +71,18 @@ pyyaml==6.0.2
     #   vcrpy
 rac-schema-validator==1.0
     # via -r requirements.in
-rapidfuzz==3.13.0
+rapidfuzz==3.14.0
     # via archivessnake
 referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.4
+requests==2.32.5
     # via
     #   -r requirements.in
     #   archivessnake
     #   electronbonder
-rpds-py==0.26.0
+rpds-py==0.27.1
     # via
     #   jsonschema
     #   referencing
@@ -96,7 +96,7 @@ sqlparse==0.5.3
     # via django
 structlog==25.4.0
     # via archivessnake
-typing-extensions==4.14.1
+typing-extensions==4.15.0
     # via
     #   asgiref
     #   multidict
@@ -110,7 +110,7 @@ urllib3==2.5.0
     #   vcrpy
 vcrpy==7.0.0
     # via -r requirements.in
-wrapt==1.17.2
+wrapt==1.17.3
     # via vcrpy
 yarl==1.20.1
     # via vcrpy
