@@ -13,11 +13,11 @@ bagit==1.9.0
     # via asterism
 boltons==25.0.0
     # via archivessnake
-certifi==2026.2.25
+certifi==2026.4.22
     # via requests
 charset-normalizer==3.4.7
     # via requests
-django==4.2.29
+django==4.2.30
     # via
     #   -r requirements.in
     #   asterism
@@ -34,7 +34,7 @@ djangorestframework==3.17.1
     #   asterism
 electronbonder==1.1
     # via -r requirements.in
-idna==3.11
+idna==3.13
     # via
     #   requests
     #   yarl
@@ -46,7 +46,7 @@ jsonschema==4.26.0
     #   rac-schema-validator
 jsonschema-specifications==2025.9.1
     # via jsonschema
-more-itertools==11.0.1
+more-itertools==11.0.2
     # via archivessnake
 multidict==6.7.1
     # via yarl
@@ -54,7 +54,7 @@ odin==1.8.1
     # via -r requirements.in
 propcache==0.4.1
     # via yarl
-psycopg2==2.9.11
+psycopg2==2.9.12
     # via -r requirements.in
 pytz==2024.2
     # via -r requirements.in
@@ -65,7 +65,7 @@ pyyaml==6.0.3
     #   vcrpy
 rac-schema-validator==1.0
     # via -r requirements.in
-rapidfuzz==3.14.3
+rapidfuzz==3.14.5
     # via archivessnake
 referencing==0.37.0
     # via
