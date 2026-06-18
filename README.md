@@ -1,3 +1,9 @@
+**This application has been marked as read-only and is no longer actively maintained or supported. Application functionality has been reimplemented in:
+
+* [data_fetch](https://github.com/RockefellerArchiveCenter/data_fetch).
+* [data_merge](https://github.com/RockefellerArchiveCenter/data_merge)
+* [data_transform](https://github.com/RockefellerArchiveCenter/data_transforms)
+
 # pisces
 A service for fetching, merging and transforming data for discovery.
 
